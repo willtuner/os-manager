@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório de OS</title>
+</head>
+<body>
+    <h1>OS Abertas</h1>
+    {% if os_list %}
+        <ul>
+        {% for os in os_list %}
+            <li>
+                <strong>{{ os['OS'] }}</strong> - {{ os['Servico'] }}
+                <form method="POST" action="/finalizar">
+                    <input type="hidden" name="os_id" value="{{ os['OS'] }}">
+                    <label>Data de finalização:</label>
+                    <input type="date" name="data">
+                    <button type="submit">Finalizar</button>
+                </form>
+                <form method="POST" action="/pendente">
+                    <input type="hidden" name="os_id" value="{{ os['OS'] }}">
+                    <label>Justificativa:</label>
+                    <input type="text" name="justificativa">
+                    <button type="submit">Marcar como pendente</button>
+                </form>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Nenhuma OS aberta.</p>
+    {% endif %}
+</body>
+</html>

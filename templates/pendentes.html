@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>OS Pendentes</title>
+</head>
+<body>
+    <h1>OS marcadas como pendentes</h1>
+    {% if pendentes %}
+        <ul>
+        {% for os in pendentes %}
+            <li><strong>{{ os['OS'] }}</strong> - {{ os['Justificativa'] }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>Não há OS pendentes.</p>
+    {% endif %}
+</body>
+</html>
