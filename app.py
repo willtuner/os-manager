@@ -45,8 +45,12 @@ def login():
         gerente = request.form.get("gerente", "").strip().lower()
         senha = request.form.get("senha", "").strip()
         
-        with open(USERS_PATH, encoding="utf-8") as f:
-            users = json.load(f)
+        import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(BASE_DIR, "users.json"), encoding="utf-8") as f:
+    users = json.load(f)
+
 
         if gerente in users and users[gerente] == senha:
             session["gerente"] = gerente
