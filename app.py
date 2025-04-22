@@ -52,7 +52,7 @@ with open(os.path.join(BASE_DIR, "users.json"), encoding="utf-8") as f:
     users = json.load(f)
 
 
-        if gerente in users and users[gerente] == senha:
+ if gerente in users and users[gerente] == senha:
             session["gerente"] = gerente
             return redirect(url_for("painel"))
         else:
