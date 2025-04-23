@@ -1,16 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}Sistema OS{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Painel de OS - Suco Prats{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --verde-prats: #2e7d32;
+            --laranja-prats: #e67e22;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .logo-header {
+            height: 50px;
+        }
+        
+        .card-os {
+            border-left: 4px solid var(--verde-prats);
+            transition: transform 0.2s;
+        }
+        
+        .card-os:hover {
+            transform: translateY(-2px);
+        }
+        
+        .badge-dias {
+            font-size: 0.85rem;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+        
+        .btn-prats {
+            background-color: var(--verde-prats);
+            color: white;
+        }
+        
+        .btn-prats-outline {
+            border: 1px solid var(--verde-prats);
+            color: var(--verde-prats);
+        }
+        
+        .footer {
+            font-size: 0.8rem;
+            color: #6c757d;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .logo-header {
+                height: 40px;
+            }
+            
+            .card-body {
+                padding: 1rem;
+            }
+            
+            .btn-mobile {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+    {% block extra_css %}{% endblock %}
 </head>
-<body>
-    <header>
-        <h1>{% block header %}Painel de OS{% endblock %}</h1>
+<body class="d-flex flex-column min-vh-100">
+    <header class="bg-white shadow-sm mb-4">
+        <div class="container py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="/static/logo.png" alt="Suco Prats" class="logo-header me-2">
+                    <span class="d-none d-md-inline fs-5 fw-bold text-success">Painel de OS</span>
+                </div>
+                {% if gerente %}
+                <div class="text-end">
+                    <span class="badge bg-success">👤 {{ gerente }}</span>
+                    <a href="/logout" class="btn btn-sm btn-outline-danger ms-2">Sair</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
     </header>
-    <main>
+
+    <main class="container flex-grow-1 mb-4">
         {% block content %}{% endblock %}
     </main>
+
+    <footer class="mt-auto py-3 bg-light">
+        <div class="container text-center footer">
+            <hr>
+            <p>Desenvolvido com carinho por <strong>Wilson</strong> - Departamento de Manutenção 🚜🍊</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    {% block extra_js %}{% endblock %}
 </body>
 </html>
