@@ -1,196 +1,99 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painel - {{ gerente }}</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --primary-color: #2c3e50;
-      --secondary-color: #e67e22;
-      --danger-color: #e74c3c;
-      --warning-color: #f39c12;
-    }
-    
-    body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
-    }
-    
-    .header-card {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 15px 20px;
-      border-radius: 8px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    
-    .table-container {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-      overflow: hidden;
-    }
-    
-    .table thead {
-      background-color: var(--primary-color);
-      color: white;
-    }
-    
-    .table th {
-      font-weight: 500;
-      padding: 12px 15px;
-    }
-    
-    .badge-frota {
-      background-color: #3498db;
-      color: white;
-      font-weight: 500;
-      padding: 5px 10px;
-      border-radius: 4px;
-    }
-    
-    .badge-dias {
-      font-weight: 500;
-      padding: 5px 10px;
-      border-radius: 4px;
-      min-width: 70px;
-      display: inline-block;
-      text-align: center;
-    }
-    
-    .btn-primary {
-      background-color: var(--primary-color);
-      border: none;
-      padding: 8px 20px;
-      border-radius: 5px;
-    }
-    
-    .btn-danger {
-      background-color: var(--danger-color);
-      border: none;
-      padding: 8px 20px;
-      border-radius: 5px;
-    }
-    
-    .empty-state {
-      padding: 40px;
-      text-align: center;
-      background: #f8f9fa;
-      border-radius: 8px;
-    }
-    
-    .empty-state i {
-      font-size: 3rem;
-      color: #bdc3c7;
-      margin-bottom: 15px;
-    }
-    
-    tr:hover {
-      background-color: #f1f1f1;
-      transition: background-color 0.3s;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Cabeçalho -->
-    <div class="header-card">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <h4><i class="fas fa-clipboard-list me-2"></i>Painel de Ordens de Serviço</h4>
-          <p class="mb-0"><i class="fas fa-user-tie me-2"></i>Gerente: {{ gerente }}</p>
-        </div>
-      </div>
-    </div>
+{% extends "base.html" %}
 
-    <!-- Tabela de OS -->
-    <div class="table-container">
-      <div class="table-responsive">
-        <table class="table table-hover align-middle mb-0">
-          <thead>
-            <tr>
-              <th><i class="fas fa-hashtag me-1"></i>OS</th>
-              <th><i class="far fa-calendar-alt me-1"></i>Data</th>
-              <th><i class="fas fa-truck me-1"></i>Frota</th>
-              <th><i class="fas fa-tools me-1"></i>Serviço</th>
-              <th><i class="fas fa-user-hard-hat me-1"></i>Prestador</th>
-              <th><i class="far fa-clock me-1"></i>Dias Pendentes</th>
-              <th><i class="fas fa-cog me-1"></i>Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for os in os_pendentes %}
-            <tr>
-              <td><strong>{{ os.os }}</strong></td>
-              <td>{{ os.data }}</td>
-              <td><span class="badge-frota">{{ os.frota }}</span></td>
-              <td>{{ os.servico }}</td>
-              <td>
-                {% if os.prestador != "Prestador não definido" %}
-                  {{ os.prestador }}
-                {% else %}
-                  <span class="text-muted">{{ os.prestador }}</span>
-                {% endif %}
-              </td>
-              <td>
-                {% set dias = os.dias|int %}
+{% block title %}OS em Aberto - Suco Prats{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col">
+        <h2 class="h4">
+            <i class="fas fa-tools text-success me-2"></i>
+            Ordens de Serviço em Aberto
+        </h2>
+        <p class="text-muted mb-0">Gerente: <strong>{{ gerente }}</strong></p>
+    </div>
+    <div class="col-auto">
+        <a href="/exportar" class="btn btn-sm btn-prats">
+            <i class="fas fa-file-pdf me-1"></i> Exportar
+        </a>
+    </div>
+</div>
+
+{% if os_pendentes %}
+    {% for os in os_pendentes %}
+    <div class="card card-os mb-3">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">
+                    <span class="badge bg-secondary me-2">#{{ os.os }}</span>
+                    Frota {{ os.frota }}
+                </h5>
                 <span class="badge-dias 
-                  {% if dias > 30 %}bg-danger text-white
-                  {% elif dias > 15 %}bg-warning text-dark
-                  {% else %}bg-secondary text-white{% endif %}">
-                  {{ dias }} dia{{ 's' if dias != 1 else '' }}
+                    {% if os.dias|int > 30 %}bg-danger
+                    {% elif os.dias|int > 15 %}bg-warning text-dark
+                    {% else %}bg-info{% endif %}">
+                    {{ os.dias }} dia{{ 's' if os.dias|int != 1 else '' }}
                 </span>
-              </td>
-              <td>
-                <form method="POST" style="display: inline;">
-                  <input type="hidden" name="os_numero" value="{{ os.os }}">
-                  <input type="date" name="data_finalizacao" required class="form-control form-control-sm mb-1">
-                  <input type="time" name="hora_finalizacao" required class="form-control form-control-sm mb-1">
-                  <textarea name="observacoes" placeholder="Observações" required class="form-control form-control-sm mb-1"></textarea>
-                  <button type="submit" class="btn btn-sm btn-success">
-                    <i class="fas fa-check-circle me-1"></i>Finalizar
-                  </button>
-                </form>
-              </td>
-            </tr>
-            {% else %}
-            <tr>
-              <td colspan="7" class="text-center py-5">
-                <div class="empty-state">
-                  <i class="far fa-check-circle"></i>
-                  <h5 class="mt-3">Nenhuma OS pendente</h5>
-                  <p class="text-muted">Todas as ordens de serviço estão em dia</p>
+            </div>
+            
+            <div class="mb-2">
+                <small class="text-muted d-block mb-1">
+                    <i class="far fa-calendar-alt me-1"></i>
+                    Aberta em: {{ os.data }}
+                </small>
+                <small class="text-muted d-block mb-1">
+                    <i class="fas fa-user-hard-hat me-1"></i>
+                    Prestador: {{ os.prestador if os.prestador != "Prestador não definido" else "Não definido" }}
+                </small>
+            </div>
+            
+            <p class="card-text mb-3">
+                <i class="fas fa-tools me-1 text-muted"></i>
+                {{ os.servico }}
+            </p>
+            
+            <form method="POST" class="mt-3">
+                <input type="hidden" name="os_numero" value="{{ os.os }}">
+                
+                <div class="row g-2 mb-2">
+                    <div class="col-md-4">
+                        <label class="form-label small text-muted mb-0">Data</label>
+                        <input type="date" name="data_finalizacao" class="form-control form-control-sm" 
+                               value="{{ now.strftime('%Y-%m-%d') }}" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label small text-muted mb-0">Hora</label>
+                        <input type="time" name="hora_finalizacao" class="form-control form-control-sm" 
+                               value="{{ now.strftime('%H:%M') }}" required>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button type="submit" name="acao" value="fechar" 
+                                class="btn btn-sm btn-success w-100">
+                            <i class="fas fa-check-circle me-1"></i> Finalizar
+                        </button>
+                    </div>
                 </div>
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
+                
+                <div class="mb-2">
+                    <label class="form-label small text-muted mb-0">Observações</label>
+                    <textarea name="observacoes" class="form-control form-control-sm" 
+                              rows="2" placeholder="Opcional"></textarea>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" name="acao" value="pendente" 
+                            class="btn btn-sm btn-outline-warning">
+                        <i class="fas fa-clock me-1"></i> Marcar Pendente
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <!-- Rodapé -->
-    <div class="d-flex justify-content-between mt-4">
-      <a href="{{ url_for('exportar') }}" class="btn btn-primary">
-        <i class="fas fa-file-pdf me-2"></i>Exportar para PDF
-      </a>
-      <a href="{{ url_for('logout') }}" class="btn btn-danger">
-        <i class="fas fa-sign-out-alt me-2"></i>Sair
-      </a>
-    </div>
-
-    <div class="mt-3 text-end">
-      <small class="text-muted">
-        <i class="fas fa-sync-alt me-1"></i>Atualizado em {{ now.strftime('%d/%m/%Y às %H:%M') }}
-      </small>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    {% endfor %}
+{% else %}
+<div class="text-center py-5 bg-white rounded">
+    <i class="fas fa-check-circle text-success fa-3x mb-3"></i>
+    <h4 class="text-muted">Nenhuma OS pendente</h4>
+    <p>Todas as ordens de serviço estão em dia!</p>
+</div>
+{% endif %}
+{% endblock %}
