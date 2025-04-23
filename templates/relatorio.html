@@ -63,18 +63,18 @@
       text-align: center;
     }
     
-    .btn-logout {
-      background-color: var(--danger-color);
-      color: white;
+    .btn-primary {
+      background-color: var(--primary-color);
       border: none;
       padding: 8px 20px;
       border-radius: 5px;
-      transition: all 0.3s;
     }
     
-    .btn-logout:hover {
-      background-color: #c0392b;
-      transform: translateY(-2px);
+    .btn-danger {
+      background-color: var(--danger-color);
+      border: none;
+      padding: 8px 20px;
+      border-radius: 5px;
     }
     
     .empty-state {
@@ -90,10 +90,9 @@
       margin-bottom: 15px;
     }
     
-    .status-badge {
-      font-size: 0.8rem;
-      padding: 4px 8px;
-      border-radius: 12px;
+    tr:hover {
+      background-color: #f1f1f1;
+      transition: background-color 0.3s;
     }
   </style>
 </head>
@@ -106,90 +105,8 @@
           <h4><i class="fas fa-clipboard-list me-2"></i>Relatório de Ordens de Serviço</h4>
           <p class="mb-0"><i class="fas fa-user-tie me-2"></i>Gerente: {{ gerente }}</p>
         </div>
-        <div>
-          <a href="{{ url_for('logout') }}" class="btn btn-logout">
-            <i class="fas fa-sign-out-alt me-1"></i>Sair
-          </a>
-        </div>
       </div>
     </div>
 
     <!-- Tabela de OS -->
     <div class="table-container">
-      <div class="table-responsive">
-        <table class="table table-hover align-middle mb-0">
-          <thead>
-            <tr>
-              <th><i class="fas fa-hashtag me-1"></i>OS</th>
-              <th><i class="far fa-calendar-alt me-1"></i>Data</th>
-              <th><i class="fas fa-truck me-1"></i>Frota</th>
-              <th><i class="fas fa-tools me-1"></i>Serviço</th>
-              <th><i class="fas fa-user-hard-hat me-1"></i>Prestador</th>
-              <th><i class="far fa-clock me-1"></i>Dias Pendentes</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for item in lista %}
-            <tr>
-              <td><strong>{{ item.OS }}</strong></td>
-              <td>{{ item.DataFechamento }}</td>
-              <td><span class="badge-frota">{{ item.Frota }}</span></td>
-              <td>{{ item.Observacao }}</td>
-              <td>
-                {% if item.Prestador != "Prestador não definido" %}
-                  {{ item.Prestador }}
-                {% else %}
-                  <span class="text-muted">{{ item.Prestador }}</span>
-                {% endif %}
-              </td>
-              <td>
-                {% set dias = item.Dias|int %}
-                <span class="badge-dias 
-                  {% if dias > 30 %}bg-danger text-white
-                  {% elif dias > 15 %}bg-warning text-dark
-                  {% else %}bg-secondary text-white{% endif %}">
-                  {{ dias }} dia{{ 's' if dias != 1 else '' }}
-                </span>
-              </td>
-            </tr>
-            {% else %}
-            <tr>
-              <td colspan="6" class="text-center py-5">
-                <div class="empty-state">
-                  <i class="far fa-check-circle"></i>
-                  <h5 class="mt-3">Nenhuma OS pendente</h5>
-                  <p class="text-muted">Todas as ordens de serviço estão em dia</p>
-                </div>
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- Rodapé -->
-    <div class="mt-4 text-end">
-      <small class="text-muted">
-        <i class="fas fa-sync-alt me-1"></i>Atualizado em {{ now.strftime('%d/%m/%Y às %H:%M') }}
-      </small>
-    </div>
-  </div>
-
-  <!-- Scripts opcionais para funcionalidades extras -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Adiciona efeito de hover nas linhas
-      $('tbody tr').hover(
-        function() {
-          $(this).css('transform', 'translateX(5px)');
-        },
-        function() {
-          $(this).css('transform', 'translateX(0)');
-        }
-      );
-    });
-  </script>
-</body>
-</html>
