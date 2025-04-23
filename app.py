@@ -18,7 +18,8 @@ def login():
     erro = None
 
     if request.method == "POST":
-        gerente = request.form["usuario"]
+        gerente = request.form["gerente"]
+
         senha = request.form["senha"]
 
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
