@@ -9,12 +9,12 @@ import pandas as pd
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 
-def formatar_data(data_str):
-    """Formata a data para o padrão brasileiro"""
+def formatar_data(data_str, formato_entrada='%Y-%m-%d', formato_saida='%d/%m/%Y'):
+    """Formata datas entre diferentes formatos"""
     try:
         if data_str:
-            data = datetime.strptime(data_str, '%Y-%m-%d')
-            return data.strftime('%d/%m/%Y')
+            data = datetime.strptime(data_str, formato_entrada)
+            return data.strftime(formato_saida)
         return "Sem data"
     except (ValueError, TypeError):
         return data_str
@@ -33,10 +33,10 @@ def carregar_os_gerente(gerente):
             for item in dados:
                 os_list.append({
                     "OS": item.get("os", "N/A"),
-                    "DataFechamento": item.get("data", ""),
+                    "DataAbertura": formatar_data(item.get("data"), '%Y-%m-%d', '%d/%m/%Y'),
                     "Observacao": item.get("servico", ""),
                     "Frota": item.get("frota", "Não especificada"),
-                    "Prestador": item.get("prestador", ""),
+                    "Prestador": item.get("prestador", "Prestador não definido"),
                     "Dias": item.get("dias", "0")
                 })
             return os_list
@@ -79,13 +79,37 @@ def remover_os_gerente(gerente, os_numero):
             dados_atualizados = [item for item in dados if str(item.get("os")) != str(os_numero)]
             
             with open(caminho_arquivo, 'w', encoding='utf-8') as f:
-                json.dump(dados_atualizados, f, indent=2)
+                json.dump(dados_atualizados, f, indent=2, ensure_ascii=False)
             
             return True
         return False
     except Exception as e:
         print(f"Erro ao remover OS: {str(e)}")
         return False
+
+def obter_detalhes_os(gerente, os_numero):
+    """Obtém os detalhes de uma OS específica"""
+    try:
+        nome_arquivo = f"{gerente.upper().replace(' ', '_')}.json"
+        caminho_arquivo = os.path.join("mensagens_por_gerente", nome_arquivo)
+        
+        if os.path.exists(caminho_arquivo):
+            with open(caminho_arquivo, 'r', encoding='utf-8') as f:
+                dados = json.load(f)
+            
+            for item in dados:
+                if str(item.get("os")) == str(os_numero):
+                    return {
+                        "OS": item.get("os", "N/A"),
+                        "Frota": item.get("frota", "Não especificada"),
+                        "DataAbertura": formatar_data(item.get("data"), '%Y-%m-%d', '%d/%m/%Y'),
+                        "Dias": item.get("dias", "0"),
+                        "Prestador": item.get("prestador", "Prestador não definido"),
+                        "Servico": item.get("servico", "")
+                    }
+    except Exception as e:
+        print(f"Erro ao buscar OS: {str(e)}")
+    return None
 
 @app.route("/")
 def index():
@@ -131,27 +155,37 @@ def relatorio():
                          gerente=gerente,
                          now=datetime.now())
 
-@app.route("/finalizar_os/<os_numero>", methods=["POST"])
+@app.route("/finalizar_os/<os_numero>", methods=["GET", "POST"])
 def finalizar_os(os_numero):
     if "gerente" not in session:
         return redirect(url_for('login'))
-    
-    data_finalizacao = request.form.get("data_finalizacao")
-    hora_finalizacao = request.form.get("hora_finalizacao")
-    observacoes = request.form.get("observacoes")
+
     gerente = session["gerente"]
-
-    registrar_finalizacao_csv(
-        os_numero,
-        gerente,
-        data_finalizacao,
-        hora_finalizacao,
-        observacoes
-    )
-
-    remover_os_gerente(gerente, os_numero)
     
-    return '', 204
+    if request.method == "POST":
+        data_finalizacao = request.form.get("data_finalizacao")
+        hora_finalizacao = request.form.get("hora_finalizacao")
+        observacoes = request.form.get("observacoes")
+
+        registrar_finalizacao_csv(
+            os_numero,
+            gerente,
+            data_finalizacao,
+            hora_finalizacao,
+            observacoes
+        )
+
+        remover_os_gerente(gerente, os_numero)
+        return redirect(url_for('relatorio'))
+
+    os_info = obter_detalhes_os(gerente, os_numero)
+    
+    if not os_info:
+        return "OS não encontrada", 404
+
+    return render_template("finalizar_os.html", 
+                         os_info=os_info,
+                         now=datetime.now())
 
 @app.route("/exportar_relatorio")
 def exportar_relatorio():
