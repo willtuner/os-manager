@@ -1,246 +1,156 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Relatório de OS - {{ gerente }}</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --primary-color: #2c3e50;
-      --secondary-color: #e67e22;
-      --danger-color: #e74c3c;
-      --warning-color: #f39c12;
-    }
-    
-    body {
-      background-color: #f8f9fa;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding: 20px;
-    }
-    
+{% extends "base.html" %}
+
+{% block title %}Relatório de OS - {{ gerente }}{% endblock %}
+
+{% block extra_css %}
+<style>
     .header-card {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 15px 20px;
-      border-radius: 8px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     
     .table-container {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-      overflow: hidden;
-    }
-    
-    .table thead {
-      background-color: var(--primary-color);
-      color: white;
-    }
-    
-    .table th {
-      font-weight: 500;
-      padding: 12px 15px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        overflow: hidden;
     }
     
     .badge-frota {
-      background-color: #3498db;
-      color: white;
-      font-weight: 500;
-      padding: 5px 10px;
-      border-radius: 4px;
+        background-color: #3498db;
+        color: white;
+        font-weight: 500;
+        padding: 5px 10px;
+        border-radius: 4px;
     }
     
     .badge-dias {
-      font-weight: 500;
-      padding: 5px 10px;
-      border-radius: 4px;
-      min-width: 70px;
-      display: inline-block;
-      text-align: center;
-    }
-    
-    .btn-primary {
-      background-color: var(--primary-color);
-      border: none;
-      padding: 8px 20px;
-      border-radius: 5px;
-    }
-    
-    .btn-danger {
-      background-color: var(--danger-color);
-      border: none;
-      padding: 8px 20px;
-      border-radius: 5px;
+        font-weight: 500;
+        padding: 5px 10px;
+        border-radius: 4px;
+        min-width: 70px;
+        display: inline-block;
+        text-align: center;
     }
     
     .empty-state {
-      padding: 40px;
-      text-align: center;
-      background: #f8f9fa;
-      border-radius: 8px;
-    }
-    
-    .empty-state i {
-      font-size: 3rem;
-      color: #bdc3c7;
-      margin-bottom: 15px;
+        padding: 40px;
+        text-align: center;
+        background: #f8f9fa;
+        border-radius: 8px;
     }
     
     tr:hover {
-      background-color: #f1f1f1;
-      transition: background-color 0.3s;
+        background-color: #f1f1f1;
+        transition: background-color 0.3s;
     }
-  </style>
-</head>
-<body>
-  <div class="container">
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
     <!-- Cabeçalho -->
     <div class="header-card">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <h4><i class="fas fa-clipboard-list me-2"></i>Relatório de Ordens de Serviço</h4>
-          <p class="mb-0"><i class="fas fa-user-tie me-2"></i>Gerente: {{ gerente }}</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h4><i class="fas fa-clipboard-list me-2"></i>Relatório de Ordens de Serviço</h4>
+                <p class="mb-0"><i class="fas fa-user-tie me-2"></i>Gerente: {{ gerente }}</p>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Tabela de OS -->
     <div class="table-container">
-      <div class="table-responsive">
-        <table class="table table-hover align-middle mb-0">
-          <thead>
-            <tr>
-              <th><i class="fas fa-hashtag me-1"></i>OS</th>
-              <th><i class="far fa-calendar-alt me-1"></i>Data</th>
-              <th><i class="fas fa-truck me-1"></i>Frota</th>
-              <th><i class="fas fa-tools me-1"></i>Serviço</th>
-              <th><i class="fas fa-user-hard-hat me-1"></i>Prestador</th>
-              <th><i class="far fa-clock me-1"></i>Dias Pendentes</th>
-              <th><i class="fas fa-cog me-1"></i>Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for item in lista %}
-            <tr>
-              <td><strong>{{ item.OS }}</strong></td>
-              <td>{{ item.DataFechamento }}</td>
-              <td><span class="badge-frota">{{ item.Frota }}</span></td>
-              <td>{{ item.Observacao }}</td>
-              <td>
-                {% if item.Prestador != "Prestador não definido" %}
-                  {{ item.Prestador }}
-                {% else %}
-                  <span class="text-muted">{{ item.Prestador }}</span>
-                {% endif %}
-              </td>
-              <td>
-                {% set dias = item.Dias|int %}
-                <span class="badge-dias 
-                  {% if dias > 30 %}bg-danger text-white
-                  {% elif dias > 15 %}bg-warning text-dark
-                  {% else %}bg-secondary text-white{% endif %}">
-                  {{ dias }} dia{{ 's' if dias != 1 else '' }}
-                </span>
-              </td>
-              <td>
-                <a href="{{ url_for('finalizar_os', os_numero=item.OS) }}" class="btn btn-sm btn-success">
-                  <i class="fas fa-check-circle me-1"></i>Finalizar
-                </a>
-              </td>
-            </tr>
-            {% else %}
-            <tr>
-              <td colspan="7" class="text-center py-5">
-                <div class="empty-state">
-                  <i class="far fa-check-circle"></i>
-                  <h5 class="mt-3">Nenhuma OS pendente</h5>
-                  <p class="text-muted">Todas as ordens de serviço estão em dia</p>
-                </div>
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th><i class="fas fa-hashtag me-1"></i>OS</th>
+                        <th><i class="far fa-calendar-alt me-1"></i>Data</th>
+                        <th><i class="fas fa-truck me-1"></i>Frota</th>
+                        <th><i class="fas fa-tools me-1"></i>Serviço</th>
+                        <th><i class="fas fa-user-hard-hat me-1"></i>Prestador</th>
+                        <th><i class="far fa-clock me-1"></i>Dias</th>
+                        <th><i class="fas fa-cog me-1"></i>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in lista %}
+                    <tr>
+                        <td><strong>{{ item.OS }}</strong></td>
+                        <td>{{ item.DataFechamento }}</td>
+                        <td><span class="badge-frota">{{ item.Frota }}</span></td>
+                        <td>{{ item.Observacao }}</td>
+                        <td>
+                            {% if item.Prestador != "Prestador não definido" %}
+                                {{ item.Prestador }}
+                            {% else %}
+                                <span class="text-muted">{{ item.Prestador }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% set dias = item.Dias|int %}
+                            <span class="badge-dias 
+                                {% if dias > 30 %}bg-danger text-white
+                                {% elif dias > 15 %}bg-warning text-dark
+                                {% else %}bg-secondary text-white{% endif %}">
+                                {{ dias }} dia{{ 's' if dias != 1 else '' }}
+                            </span>
+                        </td>
+                        <td>
+                            <a href="{{ url_for('finalizar_os', os_numero=item.OS) }}" 
+                               class="btn btn-sm btn-success">
+                                <i class="fas fa-check-circle me-1"></i>Finalizar
+                            </a>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="7" class="text-center py-5">
+                            <div class="empty-state">
+                                <i class="far fa-check-circle text-muted"></i>
+                                <h5 class="mt-3">Nenhuma OS pendente</h5>
+                                <p class="text-muted">Todas as ordens de serviço estão em dia</p>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <!-- Rodapé -->
     <div class="d-flex justify-content-between mt-4">
-      <a href="{{ url_for('exportar_relatorio') }}" class="btn btn-primary">
-        <i class="fas fa-file-pdf me-2"></i>Exportar para PDF
-      </a>
-      <a href="{{ url_for('logout') }}" class="btn btn-danger">
-        <i class="fas fa-sign-out-alt me-2"></i>Sair
-      </a>
+        <a href="{{ url_for('exportar_relatorio') }}" class="btn btn-primary">
+            <i class="fas fa-file-pdf me-2"></i>Exportar PDF
+        </a>
+        <div>
+            <a href="/" class="btn btn-outline-secondary me-2">
+                <i class="fas fa-arrow-left me-1"></i>Voltar
+            </a>
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+                <i class="fas fa-sign-out-alt me-1"></i>Sair
+            </a>
+        </div>
     </div>
 
     <div class="mt-3 text-end">
-      <small class="text-muted">
-        <i class="fas fa-sync-alt me-1"></i>Atualizado em {{ now.strftime('%d/%m/%Y às %H:%M') }}
-      </small>
+        <small class="text-muted">
+            <i class="fas fa-sync-alt me-1"></i>Atualizado em {{ now.strftime('%d/%m/%Y às %H:%M') }}
+        </small>
     </div>
-  </div>
-  <!-- Adicione este modal no final do arquivo, antes do fechamento do body -->
-<div class="modal fade" id="finalizarOSModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header bg-primary text-white">
-        <h5 class="modal-title">Finalizar OS <span id="modalOSNumero"></span></h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <form id="finalizarForm" method="POST">
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="dataFinalizacao" class="form-label">Data</label>
-            <input type="date" class="form-control" id="dataFinalizacao" name="data_finalizacao" 
-                   value="{{ now.strftime('%Y-%m-%d') }}" required>
-          </div>
-          <div class="mb-3">
-            <label for="horaFinalizacao" class="form-label">Hora</label>
-            <input type="time" class="form-control" id="horaFinalizacao" name="hora_finalizacao"
-                   value="{{ now.strftime('%H:%M') }}" required>
-          </div>
-          <div class="mb-3">
-            <label for="observacoesFinalizacao" class="form-label">Observações</label>
-            <textarea class="form-control" id="observacoesFinalizacao" name="observacoes" rows="3" required></textarea>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Salvar</button>
-        </div>
-      </form>
-    </div>
-  </div>
 </div>
+{% endblock %}
 
-<!-- Adicione este script no final do arquivo -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+{% block extra_js %}
 <script>
+// Seu código JavaScript existente pode ficar aqui
 document.addEventListener('DOMContentLoaded', function() {
-  const modal = new bootstrap.Modal(document.getElementById('finalizarOSModal'));
-  
-  // Configura o modal quando um botão de finalizar é clicado
-  document.querySelectorAll('.btn-finalizar').forEach(button => {
-    button.addEventListener('click', function() {
-      const osNumero = this.getAttribute('data-os');
-      document.getElementById('modalOSNumero').textContent = osNumero;
-      document.getElementById('finalizarForm').action = `/finalizar_os/${osNumero}`;
-      modal.show();
-    });
-  });
-  
-  // Atualiza a página após salvar
-  document.getElementById('finalizarForm').addEventListener('submit', function() {
-    setTimeout(() => {
-      window.location.reload();
-    }, 500);
-  });
+    // Mantenha seu código JS atual aqui
 });
 </script>
-</body>
-</html>
+{% endblock %}
