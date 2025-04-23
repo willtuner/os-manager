@@ -6,84 +6,79 @@ from datetime import datetime
 app = Flask(__name__)
 app.secret_key = "segredo_super_confidencial"
 
-# Helper function to format dates
 def formatar_data(data_str):
+    """Formata a data para o padrão brasileiro"""
     try:
         data = datetime.strptime(data_str, '%Y-%m-%d')
         return data.strftime('%d/%m/%Y')
     except:
         return data_str
 
+def carregar_os_gerente(gerente):
+    """Carrega as OS de um gerente específico"""
+    try:
+        # Converte o nome para o padrão do arquivo
+        nome_arquivo = gerente.upper().replace(" ", "_") + ".json"
+        caminho_arquivo = os.path.join("mensagens_por_gerente", nome_arquivo)
+        
+        if os.path.exists(caminho_arquivo):
+            with open(caminho_arquivo, 'r', encoding='utf-8') as f:
+                dados = json.load(f)
+            
+            # Padroniza a estrutura dos dados
+            os_list = []
+            for item in dados:
+                os_list.append({
+                    "OS": item.get("OS", "N/A"),
+                    "DataFechamento": formatar_data(item.get("DataFechamento", "")),
+                    "Hora": item.get("Hora", ""),
+                    "Observacao": item.get("Observacao", ""),
+                    "RegistradoEm": item.get("RegistradoEm", ""),
+                    "Frota": item.get("Frota", "Não especificada")
+                })
+            return os_list
+        return []
+    except Exception as e:
+        print(f"Erro ao ler arquivo {caminho_arquivo}: {str(e)}")
+        return []
+
 @app.route("/")
 def index():
-    return redirect(url_for('painel'))
-
-@app.route("/painel")
-def painel():
-    if "usuario" not in session:
-        return redirect(url_for('login'))
-    return render_template("index.html")
+    return redirect(url_for('login'))
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
     erro = None
-
+    
     if request.method == "POST":
         gerente = request.form.get("gerente", "").strip()
         senha = request.form.get("senha", "").strip()
-
-        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-        users_path = os.path.join(BASE_DIR, "users.json")
         
-        try:
-            with open(users_path, encoding="utf-8") as f:
-                users = json.load(f)
-
-            if gerente in users and users[gerente] == senha:
-                session["usuario"] = gerente
-                return redirect(url_for('relatorio'))
-            else:
-                erro = "Usuário ou senha inválidos"
-        except FileNotFoundError:
-            erro = "Sistema indisponível no momento"
-
+        # Verificação simplificada (substitua por sua lógica real)
+        if gerente == "DANILO MULARI GONZAGA" and senha == "suasenha":  # Troque pela senha real
+            session["gerente"] = gerente
+            return redirect(url_for('relatorio'))
+        else:
+            erro = "Credenciais inválidas"
+    
     return render_template("login.html", erro=erro)
-
-@app.route("/logout")
-def logout():
-    session.pop("usuario", None)
-    return redirect(url_for('login'))
 
 @app.route("/relatorio")
 def relatorio():
-    if "usuario" not in session:
+    if "gerente" not in session:
         return redirect(url_for('login'))
+    
+    gerente = session["gerente"]
+    lista_os = carregar_os_gerente(gerente)
+    
+    return render_template("relatorio.html", 
+                         lista=lista_os, 
+                         gerente=gerente)
 
-    gerente = session["usuario"]
-    nome_arquivo = gerente.upper().replace(" ", "_") + ".json"
-    caminho_arquivo = os.path.join("mensagens_por_gerente", nome_arquivo)
-
-    os_list = []
-    if os.path.exists(caminho_arquivo):
-        try:
-            with open(caminho_arquivo, encoding="utf-8") as f:
-                dados = json.load(f)
-                
-                # Padroniza a estrutura dos dados
-                for item in dados:
-                    os_list.append({
-                        "OS": item.get("OS", "N/A"),
-                        "DataFechamento": formatar_data(item.get("DataFechamento", "")),
-                        "Hora": item.get("Hora", ""),
-                        "Observacao": item.get("Observacao", ""),
-                        "RegistradoEm": item.get("RegistradoEm", ""),
-                        "Prioridade": item.get("Prioridade", "Normal")
-                    })
-        except Exception as e:
-            print(f"Erro ao ler arquivo {caminho_arquivo}: {str(e)}")
-
-    return render_template("relatorio.html", lista=os_list, gerente=gerente)
+@app.route("/logout")
+def logout():
+    session.pop("gerente", None)
+    return redirect(url_for('login'))
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(host="0.0.0.0", port=10000, debug=True)
