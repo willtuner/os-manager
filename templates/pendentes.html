@@ -1,20 +1,38 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>OS Pendentes</title>
+  <meta charset="utf-8">
+  <title>Relatório de Pendências ⚠️</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>OS marcadas como pendentes</h1>
-    {% if pendentes %}
-        <ul>
-        {% for os in pendentes %}
-            <li><strong>{{ os['OS'] }}</strong> - {{ os['Justificativa'] }}</li>
-        {% endfor %}
-        </ul>
-    {% else %}
-        <p>Não há OS pendentes.</p>
-    {% endif %}
+<body class="p-4">
+  <h3>📒 Relatório de OS Pendentes</h3>
+  <table class="table table-bordered table-striped mt-3">
+    <thead>
+      <tr>
+        <th>🔢 OS</th>
+        <th>📆 Data</th>
+        <th>🕒 Hora</th>
+        <th>📝 Obs.</th>
+        <th>📍 Registrado em</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in lista %}
+      <tr>
+        <td>{{ item.OS }}</td>
+        <td>{{ item.DataFechamento }}</td>
+        <td>{{ item.Hora }}</td>
+        <td>{{ item.Observacao }}</td>
+        <td>{{ item.RegistradoEm }}</td>
+      </tr>
+      {% endfor %}
+      {% if not lista %}
+      <tr><td colspan="5" class="text-center">Nenhuma pendência registrada ainda.</td></tr>
+      {% endif %}
+    </tbody>
+  </table>
+  <a href="{{ url_for('index', g=gerente) }}" class="btn btn-dark">⬅️ Voltar ao painel</a>
 </body>
 </html>
+
