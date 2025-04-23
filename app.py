@@ -9,7 +9,9 @@ import pandas as pd
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 
-def formatar_data(data_str, formato_entrada='%Y-%m-%d', formato_saida='%d/%m/%Y'):
+# Registra a função como filtro do Jinja2
+@app.template_filter('formatar_data')
+def formatar_data(data_str, formato_entrada='%d/%m/%Y', formato_saida='%d/%m/%Y'):
     try:
         if data_str:
             data = datetime.strptime(data_str, formato_entrada)
@@ -26,7 +28,6 @@ def carregar_os_gerente(gerente):
         if os.path.exists(caminho_arquivo):
             with open(caminho_arquivo, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
-            
             return dados
         return []
     except Exception as e:
@@ -76,6 +77,7 @@ def login():
             else:
                 return render_template("login.html", erro="Credenciais inválidas")
         except Exception as e:
+            print(f"Erro no login: {str(e)}")
             return render_template("login.html", erro="Erro no sistema de autenticação")
     
     return render_template("login.html")
