@@ -8,6 +8,8 @@ import pandas as pd
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
+app.config['SESSION_COOKIE_SECURE'] = True
+app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 
 # Registra a função como filtro do Jinja2
 @app.template_filter('formatar_data')
@@ -115,9 +117,41 @@ def painel():
         
         return redirect(url_for('painel'))
     
+    # Adapta a estrutura dos dados para o template
+    os_pendentes_adaptado = []
+    for os_item in os_pendentes:
+        os_pendentes_adaptado.append({
+            "os": os_item.get("os"),
+            "frota": os_item.get("frota"),
+            "data": os_item.get("data"),
+            "dias": os_item.get("dias"),
+            "prestador": os_item.get("prestador"),
+            "servico": os_item.get("servico")
+        })
+    
     return render_template("painel.html", 
-                         os_pendentes=os_pendentes,
+                         os_pendentes=os_pendentes_adaptado,
                          gerente=gerente,
+                         now=datetime.now())
+
+@app.route("/pendentes")
+def pendentes():
+    if "gerente" not in session:
+        return redirect(url_for('login'))
+    
+    # Carrega as OS pendentes do arquivo CSV
+    registros = []
+    try:
+        with open("finalizacoes_os.csv", mode='r', encoding='utf-8') as f:
+            reader = csv.reader(f)
+            next(reader)  # Pula cabeçalho
+            registros = list(reader)
+    except FileNotFoundError:
+        pass
+    
+    return render_template("pendentes.html",
+                         lista=registros,
+                         gerente=session["gerente"],
                          now=datetime.now())
 
 @app.route("/exportar")
@@ -160,6 +194,11 @@ def exportar():
         as_attachment=True,
         download_name=f"relatorio_os_{datetime.now().strftime('%Y%m%d')}.pdf"
     )
+
+@app.route("/exportar_relatorio")
+def exportar_relatorio():
+    """Alias para /exportar para compatibilidade com os templates"""
+    return exportar()
 
 @app.route("/logout")
 def logout():
