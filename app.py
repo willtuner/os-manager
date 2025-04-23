@@ -1,10 +1,22 @@
+import sys
+import os
 from flask import Flask, render_template, request, redirect, session, url_for, send_file
 import json
-import os
 import csv
 from datetime import datetime
-from fpdf import FPDF  # Funciona com fpdf2
-import pandas as pd
+
+# Verificação de versões antes de importar pandas
+try:
+    import numpy as np
+    print(f"NumPy version: {np.__version__}")
+    
+    import pandas as pd
+    print(f"Pandas version: {pd.__version__}")
+    
+    from fpdf import FPDF
+except ImportError as e:
+    print(f"Erro de importação: {e}")
+    sys.exit(1)
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
