@@ -30,19 +30,21 @@ def carregar_os_gerente(gerente):
             print(f"Dados lidos do arquivo {nome_arquivo}:")
             print(json.dumps(dados, indent=2))
             
-            # Processa os dados
+            # Processa os dados conforme a estrutura do seu JSON
             os_list = []
             for item in dados:
                 os_list.append({
-                    "OS": item.get("OS", "N/A"),
-                    "DataFechamento": formatar_data(item.get("DataFechamento")),
-                    "Hora": item.get("Hora", ""),
-                    "Observacao": item.get("Observacao", ""),
-                    "RegistradoEm": item.get("RegistradoEm", ""),
-                    "Frota": item.get("Frota", "Não especificada"),
-                    "Prioridade": item.get("Prioridade", "Normal")
+                    "OS": item.get("os", "N/A"),
+                    "DataFechamento": item.get("data", ""),
+                    "Observacao": item.get("servico", ""),
+                    "Frota": item.get("frota", "Não especificada"),
+                    "Prestador": item.get("prestador", ""),
+                    "Dias": item.get("dias", "0")
                 })
             return os_list
+        return []
+    except Exception as e:
+        print(f"Erro ao ler arquivo {nome_arquivo}: {str(e)}")
         return []
     except Exception as e:
         print(f"Erro ao ler arquivo {nome_arquivo}: {str(e)}")
