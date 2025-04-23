@@ -63,6 +63,10 @@ def login():
     
     return render_template("login.html", erro=erro)
 
+from datetime import datetime  # Adicione no topo do arquivo
+
+# ... (código existente)
+
 @app.route("/relatorio")
 def relatorio():
     if "gerente" not in session:
@@ -73,7 +77,8 @@ def relatorio():
     
     return render_template("relatorio.html", 
                          lista=lista_os, 
-                         gerente=gerente)
+                         gerente=gerente,
+                         now=datetime.now())  # Adicione esta linha
 
 @app.route("/logout")
 def logout():
