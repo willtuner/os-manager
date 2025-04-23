@@ -11,6 +11,12 @@ app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 app.config['SESSION_COOKIE_SECURE'] = True
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 
+# Usuários administrativos
+ADMIN_USERS = {
+    "zylton": "admin123",
+    "mauricio": "senha456"
+}
+
 # Registra a função como filtro do Jinja2
 @app.template_filter('formatar_data')
 def formatar_data(data_str, formato_entrada='%d/%m/%Y', formato_saida='%d/%m/%Y'):
@@ -66,6 +72,13 @@ def login():
         gerente = request.form.get("gerente", "").strip()
         senha = request.form.get("senha", "").strip()
         
+        # Verificar se é admin
+        if gerente in ADMIN_USERS and ADMIN_USERS[gerente] == senha:
+            session["gerente"] = gerente
+            session["is_admin"] = True
+            return redirect(url_for('admin_panel'))
+        
+        # Verificar se é gerente normal
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         users_path = os.path.join(BASE_DIR, "users.json")
         
@@ -75,6 +88,7 @@ def login():
             
             if gerente in users and users[gerente] == senha:
                 session["gerente"] = gerente
+                session["is_admin"] = False
                 return redirect(url_for('painel'))
             else:
                 return render_template("login.html", erro="Credenciais inválidas")
@@ -97,14 +111,16 @@ def painel():
         data_finalizacao = request.form.get("data_finalizacao")
         hora_finalizacao = request.form.get("hora_finalizacao")
         observacoes = request.form.get("observacoes")
+        acao = request.form.get("acao")
         
-        registrar_finalizacao(
-            os_numero,
-            gerente,
-            data_finalizacao,
-            hora_finalizacao,
-            observacoes
-        )
+        if acao == "fechar":
+            registrar_finalizacao(
+                os_numero,
+                gerente,
+                data_finalizacao,
+                hora_finalizacao,
+                observacoes
+            )
         
         # Atualiza a lista removendo a OS finalizada
         os_pendentes = [os for os in os_pendentes if str(os.get("os")) != str(os_numero)]
@@ -132,6 +148,30 @@ def painel():
     return render_template("painel.html", 
                          os_pendentes=os_pendentes_adaptado,
                          gerente=gerente,
+                         now=datetime.now())
+
+@app.route("/admin")
+def admin_panel():
+    if "gerente" not in session or session["gerente"] not in ADMIN_USERS:
+        return redirect(url_for('login'))
+    
+    # Carregar todas as OS finalizadas
+    finalizadas = []
+    try:
+        with open("finalizacoes_os.csv", mode='r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            finalizadas = list(reader)
+    except FileNotFoundError:
+        pass
+    
+    # Estatísticas
+    total_os = len(finalizadas)
+    gerentes = set(os['Gerente'] for os in finalizadas)
+    
+    return render_template("admin.html",
+                         finalizadas=finalizadas,
+                         total_os=total_os,
+                         gerentes=gerentes,
                          now=datetime.now())
 
 @app.route("/pendentes")
@@ -203,6 +243,7 @@ def exportar_relatorio():
 @app.route("/logout")
 def logout():
     session.pop("gerente", None)
+    session.pop("is_admin", None)
     return redirect(url_for('login'))
 
 if __name__ == "__main__":
