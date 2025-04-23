@@ -10,6 +10,7 @@
         :root {
             --verde-prats: #2e7d32;
             --laranja-prats: #e67e22;
+            --azul-admin: #3498db;
         }
         
         body {
@@ -41,9 +42,29 @@
             color: white;
         }
         
+        .btn-prats:hover {
+            background-color: #1e5a23;
+            color: white;
+        }
+        
         .btn-prats-outline {
             border: 1px solid var(--verde-prats);
             color: var(--verde-prats);
+        }
+        
+        .btn-prats-outline:hover {
+            background-color: var(--verde-prats);
+            color: white;
+        }
+        
+        .btn-admin {
+            background-color: var(--azul-admin);
+            color: white;
+        }
+        
+        .btn-admin:hover {
+            background-color: #2980b9;
+            color: white;
         }
         
         .footer {
@@ -65,22 +86,69 @@
                 width: 100%;
                 margin-bottom: 0.5rem;
             }
+            
+            .header-buttons {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .header-buttons .btn {
+                width: 100%;
+            }
+        }
+        
+        /* Efeito de loading */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            display: none;
+        }
+        
+        .spinner-border {
+            width: 3rem;
+            height: 3rem;
         }
     </style>
     {% block extra_css %}{% endblock %}
 </head>
 <body class="d-flex flex-column min-vh-100">
+    <!-- Loading overlay -->
+    <div class="loading-overlay">
+        <div class="spinner-border text-success" role="status">
+            <span class="visually-hidden">Carregando...</span>
+        </div>
+    </div>
+
     <header class="bg-white shadow-sm mb-4">
         <div class="container py-3">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center">
-                    <img src="/static/logo.png" alt="Suco Prats" class="logo-header me-2">
+                    <a href="/">
+                        <img src="/static/logo.png" alt="Suco Prats" class="logo-header me-2">
+                    </a>
                     <span class="d-none d-md-inline fs-5 fw-bold text-success">Painel de OS</span>
                 </div>
                 {% if gerente %}
-                <div class="text-end">
-                    <span class="badge bg-success">👤 {{ gerente }}</span>
-                    <a href="/logout" class="btn btn-sm btn-outline-danger ms-2">Sair</a>
+                <div class="d-flex align-items-center header-buttons">
+                    <span class="badge {% if session.get('is_admin') %}bg-primary{% else %}bg-success{% endif %} me-2">
+                        <i class="fas fa-user me-1"></i> {{ gerente }}
+                    </span>
+                    {% if session.get('is_admin') %}
+                    <a href="/admin" class="btn btn-sm btn-admin me-2">
+                        <i class="fas fa-cog me-1"></i> Admin
+                    </a>
+                    {% endif %}
+                    <a href="/logout" class="btn btn-sm btn-outline-danger">
+                        <i class="fas fa-sign-out-alt me-1"></i> Sair
+                    </a>
                 </div>
                 {% endif %}
             </div>
@@ -88,17 +156,49 @@
     </header>
 
     <main class="container flex-grow-1 mb-4">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
         {% block content %}{% endblock %}
     </main>
 
     <footer class="mt-auto py-3 bg-light">
         <div class="container text-center footer">
             <hr>
-            <p>Desenvolvido com carinho por <strong>Wilson</strong> - Departamento de Manutenção 🚜🍊</p>
+            <p class="mb-0">Desenvolvido com carinho por <strong>Wilson</strong> - Departamento de Manutenção 🚜🍊</p>
+            <small class="text-muted">Versão 2.0 - {{ now.strftime('%d/%m/%Y') if now else '' }}</small>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mostrar loading durante requisições
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mostrar loading ao submeter formulários
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function() {
+                    document.querySelector('.loading-overlay').style.display = 'flex';
+                });
+            });
+            
+            // Mostrar loading ao clicar em links de ação
+            const actionLinks = document.querySelectorAll('a[href^="/exportar"], a[href^="/finalizar"]');
+            actionLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelector('.loading-overlay').style.display = 'flex';
+                });
+            });
+        });
+    </script>
     {% block extra_js %}{% endblock %}
 </body>
 </html>
