@@ -32,14 +32,19 @@ def carregar_os_gerente(gerente):
     try:
         nome_arquivo = f"{gerente.upper().replace(' ', '_')}.json"
         caminho_arquivo = os.path.join("mensagens_por_gerente", nome_arquivo)
+        print(f"Tentando ler arquivo: {caminho_arquivo}")  # Debug
         
         if os.path.exists(caminho_arquivo):
+            print("Arquivo encontrado!")  # Debug
             with open(caminho_arquivo, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
+            print(f"Dados lidos: {dados}")  # Debug
             return dados
+        else:
+            print("Arquivo NÃO encontrado!")  # Debug
         return []
     except Exception as e:
-        print(f"Erro ao ler arquivo: {str(e)}")
+        print(f"Erro ao ler arquivo: {str(e)}")  # Debug
         return []
 
 def registrar_finalizacao(os_numero, gerente, data, hora, observacoes):
