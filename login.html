@@ -2,22 +2,116 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Login - Suco Prats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de OS - Suco Prats</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="container mt-5">
-    <h2 class="mb-4">🔐 Acesso ao Painel de OS - Suco Prats</h2>
-    {% if erro %}
-        <div class="alert alert-danger">{{ erro }}</div>
-    {% endif %}
-    <form method="POST">
-        <label for="gerente" class="form-label">Usuário</label>
-        <input type="text" name="gerente" id="gerente" class="form-control mb-3" required>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c7a47; /* Verde suco */
+            --secondary-color: #f8a51b; /* Laranja energético */
+        }
         
-        <label for="senha" class="form-label">Senha</label>
-        <input type="password" name="senha" id="senha" class="form-control mb-3" required>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .hero-section {
+            background: url('https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') no-repeat center center;
+            background-size: cover;
+            height: 60vh;
+            position: relative;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .hero-overlay {
+            background: rgba(44, 122, 71, 0.85);
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .login-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .login-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .btn-prats {
+            background-color: var(--secondary-color);
+            border: none;
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+        
+        .btn-prats:hover {
+            background-color: #e69500;
+        }
+        
+        .feature-icon {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-overlay h-100 d-flex align-items-center justify-content-center text-white">
+            <div class="text-center px-4">
+                <h1 class="display-4 fw-bold mb-4">
+                    <i class="fas fa-cogs me-2"></i>Sistema de OS
+                </h1>
+                <p class="lead mb-5">Controle completo de ordens de serviço da Suco Prats</p>
+                <a href="/login" class="btn btn-prats btn-lg px-5 py-3">
+                    <i class="fas fa-sign-in-alt me-2"></i>Acessar Painel
+                </a>
+            </div>
+        </div>
+    </div>
 
-        <button class="btn btn-primary">Entrar</button>
-    </form>
+    <!-- Features Section -->
+    <div class="container py-5">
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="p-4">
+                    <i class="fas fa-tachometer-alt feature-icon"></i>
+                    <h3>Controle Eficiente</h3>
+                    <p class="text-muted">Gerencie todas as ordens de serviço em um único lugar</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>Relatórios</h3>
+                    <p class="text-muted">Acompanhe métricas e desempenho em tempo real</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4">
+                    <i class="fas fa-mobile-alt feature-icon"></i>
+                    <h3>Acesso Mobile</h3>
+                    <p class="text-muted">Disponível em qualquer dispositivo com internet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2023 Suco Prats - Todos os direitos reservados</p>
+            <p class="mb-0 mt-2 text-muted">
+                <small>Desenvolvido por Wilson - Equipe de Manutenção | Suporte: manutencao@sucoprats.com.br</small>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
