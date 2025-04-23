@@ -55,7 +55,7 @@ def login():
         senha = request.form.get("senha", "").strip()
         
         # Verificação simplificada (substitua por sua lógica real)
-        if gerente == "DANILO MULARI GONZAGA" and senha == "suasenha":  # Troque pela senha real
+        if gerente == "DANILO MULARI GONZAGA" and senha == "1234":  # Troque pela senha real
             session["gerente"] = gerente
             return redirect(url_for('relatorio'))
         else:
