@@ -1,34 +1,38 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Relatório de OS</title>
+  <meta charset="utf-8">
+  <title>Relatório de OS Finalizadas ✅</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>OS Abertas</h1>
-    {% if os_list %}
-        <ul>
-        {% for os in os_list %}
-            <li>
-                <strong>{{ os['OS'] }}</strong> - {{ os['Servico'] }}
-                <form method="POST" action="/finalizar">
-                    <input type="hidden" name="os_id" value="{{ os['OS'] }}">
-                    <label>Data de finalização:</label>
-                    <input type="date" name="data">
-                    <button type="submit">Finalizar</button>
-                </form>
-                <form method="POST" action="/pendente">
-                    <input type="hidden" name="os_id" value="{{ os['OS'] }}">
-                    <label>Justificativa:</label>
-                    <input type="text" name="justificativa">
-                    <button type="submit">Marcar como pendente</button>
-                </form>
-            </li>
-        {% endfor %}
-        </ul>
-    {% else %}
-        <p>Nenhuma OS aberta.</p>
-    {% endif %}
+<body class="p-4">
+  <h3>📋 Relatório de OS Finalizadas</h3>
+  <table class="table table-bordered table-striped mt-3">
+    <thead>
+      <tr>
+        <th>🔢 OS</th>
+        <th>📆 Data</th>
+        <th>🕒 Hora</th>
+        <th>📝 Obs.</th>
+        <th>📍 Registrado em</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in lista %}
+      <tr>
+        <td>{{ item.OS }}</td>
+        <td>{{ item.DataFechamento }}</td>
+        <td>{{ item.Hora }}</td>
+        <td>{{ item.Observacao }}</td>
+        <td>{{ item.RegistradoEm }}</td>
+      </tr>
+      {% endfor %}
+      {% if not lista %}
+      <tr><td colspan="5" class="text-center">Nenhuma finalização registrada ainda.</td></tr>
+      {% endif %}
+    </tbody>
+  </table>
+  <a href="{{ url_for('index', g=gerente) }}" class="btn btn-dark">⬅️ Voltar ao painel</a>
 </body>
 </html>
+
