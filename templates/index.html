@@ -8,54 +8,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #2c7a47; /* Verde suco */
-            --secondary-color: #f8a51b; /* Laranja energético */
+            --orange-dark: #e67e22;  /* Cor da laranja */
+            --orange-light: #f39c12;
+            --mechanical: #34495e;   /* Cor mecânica */
+            --agro-green: #27ae60;   /* Verde agrícola */
         }
         
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
-            min-height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Roboto, sans-serif;
         }
         
         .hero-section {
-            background: url('https://images.unsplash.com/photo-1603569283847-aa295f0d016a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80') no-repeat center center;
-            background-size: cover;
-            height: 60vh;
-            position: relative;
-            border-radius: 0 0 20px 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background-color: rgba(52, 73, 94, 0.85); /* Overlay mecânico */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
         
-        .hero-overlay {
-            background: rgba(44, 122, 71, 0.85);
-            border-radius: 0 0 20px 20px;
-        }
-        
-        .login-card {
-            border: none;
+        .hero-content {
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-top: 5px solid var(--orange-dark);
+        }
+        
+        .title-highlight {
+            color: var(--orange-dark);
+            font-weight: 700;
+        }
+        
+        .btn-orange {
+            background: linear-gradient(135deg, var(--orange-dark), var(--orange-light));
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
             transition: transform 0.3s;
         }
         
-        .login-card:hover {
-            transform: translateY(-5px);
+        .btn-orange:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
         }
         
-        .btn-prats {
-            background-color: var(--secondary-color);
-            border: none;
-            padding: 10px 25px;
-            font-weight: 600;
+        .feature-box {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            height: 100%;
+            transition: all 0.3s;
+            border-bottom: 3px solid var(--orange-light);
         }
         
-        .btn-prats:hover {
-            background-color: #e69500;
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         
-        .feature-icon {
-            color: var(--primary-color);
+        .icon-mechanical {
+            color: var(--orange-dark);
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
@@ -63,53 +78,63 @@
 </head>
 <body>
     <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="hero-overlay h-100 d-flex align-items-center justify-content-center text-white">
-            <div class="text-center px-4">
-                <h1 class="display-4 fw-bold mb-4">
-                    <i class="fas fa-cogs me-2"></i>Sistema de OS
-                </h1>
-                <p class="lead mb-5">Controle completo de ordens de serviço da Suco Prats</p>
-                <a href="/login" class="btn btn-prats btn-lg px-5 py-3">
-                    <i class="fas fa-sign-in-alt me-2"></i>Acessar Painel
-                </a>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="hero-content text-center">
+                        <h1 class="display-4 mb-4">
+                            <i class="fas fa-tractor text-mechanical"></i><br>
+                            Sistema de <span class="title-highlight">Ordens de Serviço</span>
+                        </h1>
+                        <p class="lead mb-5">
+                            Controle completo da manutenção agrícola e produção industrial da<br>
+                            <strong class="text-agro">Suco Prats</strong>
+                        </p>
+                        <a href="/login" class="btn btn-orange btn-lg">
+                            <i class="fas fa-sign-in-alt me-2"></i>Acessar o Sistema
+                        </a>
+                        
+                        <div class="row mt-5 g-4">
+                            <div class="col-md-4">
+                                <div class="feature-box">
+                                    <i class="fas fa-wrench icon-mechanical"></i>
+                                    <h4>Manutenção</h4>
+                                    <p>Controle de equipamentos agrícolas e industriais</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-box">
+                                    <i class="fas fa-orange icon-mechanical"></i>
+                                    <h4>Produção</h4>
+                                    <p>Monitoramento da linha de produção de sucos</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-box">
+                                    <i class="fas fa-clipboard-check icon-mechanical"></i>
+                                    <h4>Gestão</h4>
+                                    <p>Relatórios completos de operações</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Features Section -->
-    <div class="container py-5">
-        <div class="row text-center g-4">
-            <div class="col-md-4">
-                <div class="p-4">
-                    <i class="fas fa-tachometer-alt feature-icon"></i>
-                    <h3>Controle Eficiente</h3>
-                    <p class="text-muted">Gerencie todas as ordens de serviço em um único lugar</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-4">
-                    <i class="fas fa-chart-line feature-icon"></i>
-                    <h3>Relatórios</h3>
-                    <p class="text-muted">Acompanhe métricas e desempenho em tempo real</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-4">
-                    <i class="fas fa-mobile-alt feature-icon"></i>
-                    <h3>Acesso Mobile</h3>
-                    <p class="text-muted">Disponível em qualquer dispositivo com internet</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-dark text-white py-4">
         <div class="container text-center">
-            <p class="mb-0">© 2023 Suco Prats - Todos os direitos reservados</p>
+            <p class="mb-0">
+                <i class="fas fa-copyright"></i> 2023 Suco Prats - Todos os direitos reservados
+            </p>
             <p class="mb-0 mt-2 text-muted">
-                <small>Desenvolvido por Wilson - Equipe de Manutenção | Suporte: manutencao@sucoprats.com.br</small>
+                <small>
+                    <i class="fas fa-tools"></i> Desenvolvido por Wilson - Equipe de Manutenção | 
+                    <i class="fas fa-phone"></i> (XX) XXXX-XXXX
+                </small>
             </p>
         </div>
     </footer>
