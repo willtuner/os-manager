@@ -3,11 +3,11 @@ import json
 import os
 import csv
 from datetime import datetime
-from fpdf import FPDF
+from fpdf import FPDF  # Funciona com fpdf2
 import pandas as pd
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', 'segredo_super_confidencial')
+app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 
 def formatar_data(data_str):
     """Formata a data para o padrão brasileiro"""
