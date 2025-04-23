@@ -1,81 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Suco Prats</title>
+  <title>Login | Suco Prats</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    :root {
-      --primary-color: #2c3e50;
-      --secondary-color: #e67e22;
-    }
-    
     body {
       background-color: #f8f9fa;
       height: 100vh;
       display: flex;
       align-items: center;
     }
-    .login-container {
-      max-width: 400px;
-      margin: 0 auto;
-    }
     .login-card {
-      background: white;
+      max-width: 400px;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      overflow: hidden;
+      border-top: 5px solid #2e7d32;
     }
-    .login-header {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .form-control:focus {
-      border-color: var(--secondary-color);
-      box-shadow: 0 0 0 0.25rem rgba(230, 126, 34, 0.25);
-    }
-    .btn-login {
-      background-color: var(--secondary-color);
-      border: none;
-      width: 100%;
-      padding: 12px;
+    .logo {
+      height: 80px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="container login-container">
-    <div class="login-card">
-      <div class="login-header">
-        <h4><i class="fas fa-lock"></i> Acesso ao Sistema</h4>
-      </div>
-      
-      <div class="p-4">
-        {% if erro %}
-        <div class="alert alert-danger alert-dismissible fade show">
-          {{ erro }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card login-card">
+          <div class="card-body p-4">
+            <div class="text-center mb-4">
+              <img src="/static/logo.png" alt="Suco Prats" class="logo">
+              <h4>Acesso ao Sistema</h4>
+            </div>
+            
+            {% if erro %}
+            <div class="alert alert-danger alert-dismissible fade show">
+              {{ erro }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            {% endif %}
+            
+            <form method="POST">
+              <div class="mb-3">
+                <label for="gerente" class="form-label">
+                  <i class="fas fa-user me-1"></i>Usuário
+                </label>
+                <input type="text" class="form-control" id="gerente" name="gerente" required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="senha" class="form-label">
+                  <i class="fas fa-lock me-1"></i>Senha
+                </label>
+                <input type="password" class="form-control" id="senha" name="senha" required>
+              </div>
+              
+              <button type="submit" class="btn btn-success w-100 py-2">
+                <i class="fas fa-sign-in-alt me-1"></i>Entrar
+              </button>
+            </form>
+          </div>
         </div>
-        {% endif %}
         
-        <form method="POST">
-          <div class="mb-3">
-            <label for="gerente" class="form-label">Usuário</label>
-            <input type="text" class="form-control" id="gerente" name="gerente" required>
-          </div>
-          
-          <div class="mb-3">
-            <label for="senha" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="senha" name="senha" required>
-          </div>
-          
-          <button type="submit" class="btn btn-login btn-primary mt-3">
-            <i class="fas fa-sign-in-alt"></i> Entrar
-          </button>
-        </form>
+        <div class="text-center mt-3 text-muted">
+          <small>Sistema de Gestão de OS - Suco Prats</small>
+        </div>
       </div>
     </div>
   </div>
