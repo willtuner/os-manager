@@ -38,15 +38,17 @@ def login():
 def relatorio():
     if "usuario" not in session:
         return redirect("/login")
-    # Aqui você carregaria as OS abertas para esse gerente
-    return render_template("relatorio.html", os_list=[])
 
-@app.route("/pendentes")
-def pendentes():
-    if "usuario" not in session:
-        return redirect("/login")
-    # Aqui você carregaria as pendentes
-    return render_template("pendentes.html", pendentes=[])
+    gerente = session["usuario"]
+    nome_arquivo = gerente.upper().replace(" ", "_") + ".json"
+    caminho_arquivo = os.path.join("mensagens_por_gerente", nome_arquivo)
+
+    os_list = []
+    if os.path.exists(caminho_arquivo):
+        with open(caminho_arquivo, encoding="utf-8") as f:
+            os_list = json.load(f)
+
+    return render_template("relatorio.html", os_list=os_list)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
