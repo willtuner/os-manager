@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}Painel Admin - Suco Prats{% endblock %}
+
+{% block extra_css %}
+<style>
+    .stat-card {
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .stat-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .stat-card.primary {
+        background-color: #2c3e50;
+        color: white;
+    }
+    .stat-card.success {
+        background-color: #27ae60;
+        color: white;
+    }
+    .stat-card.warning {
+        background-color: #f39c12;
+        color: white;
+    }
+    .table-responsive {
+        margin-top: 30px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4"><i class="fas fa-tachometer-alt me-2"></i>Painel Administrativo</h2>
+    
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="stat-card primary">
+                <h3><i class="fas fa-clipboard-list me-2"></i> {{ total_os }}</h3>
+                <p>OS Finalizadas</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card success">
+                <h3><i class="fas fa-users me-2"></i> {{ gerentes|length }}</h3>
+                <p>Gerentes Ativos</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card warning">
+                <h3><i class="fas fa-calendar-day me-2"></i> {{ now.strftime('%d/%m/%Y') }}</h3>
+                <p>Última Atualização</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+            <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico de OS Finalizadas</h4>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>OS</th>
+                            <th>Gerente</th>
+                            <th>Data</th>
+                            <th>Hora</th>
+                            <th>Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for os in finalizadas %}
+                        <tr>
+                            <td>{{ os.OS }}</td>
+                            <td>{{ os.Gerente }}</td>
+                            <td>{{ os.Data_Finalizacao }}</td>
+                            <td>{{ os.Hora_Finalizacao }}</td>
+                            <td>{{ os.Observacoes }}</td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td colspan="5" class="text-center py-4">Nenhuma OS finalizada registrada</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
