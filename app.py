@@ -1,56 +1,61 @@
-from flask import Flask, render_template, request, redirect, session, url_for, send_file
+from flask import Flask, render_template, request, redirect, session, url_for, send_file, flash
 import json
 import os
 import csv
 from datetime import datetime
 from fpdf import FPDF
 import pandas as pd
+import fnmatch
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 app.config['SESSION_COOKIE_SECURE'] = True
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 
-# Usuários administrativos
+# Usuário administrativo (apenas Wilson)
 ADMIN_USERS = {
-    "zylton": "admin123",
-    "mauricio": "senha456"
+    "wilson.santana": "admin321"
 }
-
-# Registra a função como filtro do Jinja2
-@app.template_filter('formatar_data')
-def formatar_data(data_str, formato_entrada='%d/%m/%Y', formato_saida='%d/%m/%Y'):
-    try:
-        if data_str:
-            data = datetime.strptime(data_str, formato_entrada)
-            return data.strftime(formato_saida)
-        return "Sem data"
-    except (ValueError, TypeError):
-        return data_str
 
 def carregar_os_gerente(gerente):
     try:
-        # Corrigindo a formatação do nome do arquivo
-        nome_arquivo = f"{gerente.upper().replace('.', '_').replace(' ', '_')}.json"
+        nome_base = gerente.upper().replace('.', '_')
+        padroes = [
+            f"{nome_base}.json",
+            f"{nome_base}_GONZAGA.json",
+            f"{nome_base.split('_')[0]}*.json"
+        ]
         
-        # Verifica se o arquivo existe com o nome completo
-        caminho_completo = os.path.join("mensagens_por_gerente", "DANILO_MULARI_GONZAGA.json")
-        if os.path.exists(caminho_completo):
-            with open(caminho_completo, 'r', encoding='utf-8') as f:
-                dados = json.load(f)
-            return dados
+        arquivo_encontrado = None
+        for padrao in padroes:
+            for arquivo in os.listdir("mensagens_por_gerente"):
+                if arquivo.upper() == padrao.upper() or fnmatch.fnmatch(arquivo.upper(), padrao.upper()):
+                    arquivo_encontrado = arquivo
+                    break
+            if arquivo_encontrado:
+                break
+        
+        if arquivo_encontrado:
+            caminho = os.path.join("mensagens_por_gerente", arquivo_encontrado)
+            print(f"Arquivo encontrado: {caminho}")
             
-        # Fallback para o nome formatado
-        caminho_arquivo = os.path.join("mensagens_por_gerente", nome_arquivo)
-        if os.path.exists(caminho_arquivo):
-            with open(caminho_arquivo, 'r', encoding='utf-8') as f:
+            with open(caminho, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
-            return dados
             
-        print(f"Arquivo não encontrado: {caminho_completo} ou {caminho_arquivo}")
+            return [{
+                "os": str(item.get("os") or item.get("OS", "")),
+                "frota": str(item.get("frota") or item.get("Frota", "")),
+                "data": str(item.get("data") or item.get("Data", "")),
+                "dias": str(item.get("dias") or item.get("Dias", "0")),
+                "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
+                "servico": str(item.get("servico") or item.get("Servico") or item.get("observacao") or item.get("Observacao", ""))
+            } for item in dados]
+        
+        print(f"Nenhum arquivo encontrado para: {gerente}")
         return []
+        
     except Exception as e:
-        print(f"Erro ao ler arquivo: {str(e)}")
+        print(f"Erro ao carregar OS: {str(e)}")
         return []
 
 def registrar_finalizacao(os_numero, gerente, data, hora, observacoes):
@@ -83,16 +88,15 @@ def login():
         gerente = request.form.get("gerente", "").strip()
         senha = request.form.get("senha", "").strip()
         
-        # Verificar se é admin
+        # Verifica se é o admin Wilson
         if gerente in ADMIN_USERS and ADMIN_USERS[gerente] == senha:
             session["gerente"] = gerente
             session["is_admin"] = True
+            flash("Login administrativo realizado com sucesso", "success")
             return redirect(url_for('admin_panel'))
         
-        # Verificar se é gerente normal
-        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-        users_path = os.path.join(BASE_DIR, "users.json")
-        
+        # Verifica gerentes normais
+        users_path = os.path.join(os.path.dirname(__file__), "users.json")
         try:
             with open(users_path, encoding="utf-8") as f:
                 users = json.load(f)
@@ -102,10 +106,10 @@ def login():
                 session["is_admin"] = False
                 return redirect(url_for('painel'))
             else:
-                return render_template("login.html", erro="Credenciais inválidas")
+                flash("Credenciais inválidas", "danger")
         except Exception as e:
             print(f"Erro no login: {str(e)}")
-            return render_template("login.html", erro="Erro no sistema de autenticação")
+            flash("Erro no sistema de autenticação", "danger")
     
     return render_template("login.html")
 
@@ -132,11 +136,10 @@ def painel():
                 hora_finalizacao,
                 observacoes
             )
+            flash(f"OS {os_numero} finalizada com sucesso", "success")
         
-        # Atualiza a lista removendo a OS finalizada
         os_pendentes = [os for os in os_pendentes if str(os.get("os")) != str(os_numero)]
         
-        # Salva a lista atualizada
         nome_arquivo = f"{gerente.upper().replace(' ', '_')}.json"
         caminho_arquivo = os.path.join("mensagens_por_gerente", nome_arquivo)
         with open(caminho_arquivo, 'w', encoding='utf-8') as f:
@@ -144,29 +147,17 @@ def painel():
         
         return redirect(url_for('painel'))
     
-    # Adapta a estrutura dos dados para o template
-    os_pendentes_adaptado = []
-    for os_item in os_pendentes:
-        os_pendentes_adaptado.append({
-            "os": os_item.get("os"),
-            "frota": os_item.get("frota"),
-            "data": os_item.get("data"),
-            "dias": os_item.get("dias"),
-            "prestador": os_item.get("prestador"),
-            "servico": os_item.get("servico")
-        })
-    
     return render_template("painel.html", 
-                         os_pendentes=os_pendentes_adaptado,
+                         os_pendentes=os_pendentes,
                          gerente=gerente,
                          now=datetime.now())
 
 @app.route("/admin")
 def admin_panel():
-    if "gerente" not in session or session["gerente"] not in ADMIN_USERS:
+    if "gerente" not in session or not session.get("is_admin"):
+        flash("Acesso não autorizado", "danger")
         return redirect(url_for('login'))
     
-    # Carregar todas as OS finalizadas
     finalizadas = []
     try:
         with open("finalizacoes_os.csv", mode='r', encoding='utf-8') as f:
@@ -175,7 +166,6 @@ def admin_panel():
     except FileNotFoundError:
         pass
     
-    # Estatísticas
     total_os = len(finalizadas)
     gerentes = set(os['Gerente'] for os in finalizadas)
     
@@ -183,26 +173,6 @@ def admin_panel():
                          finalizadas=finalizadas,
                          total_os=total_os,
                          gerentes=gerentes,
-                         now=datetime.now())
-
-@app.route("/pendentes")
-def pendentes():
-    if "gerente" not in session:
-        return redirect(url_for('login'))
-    
-    # Carrega as OS pendentes do arquivo CSV
-    registros = []
-    try:
-        with open("finalizacoes_os.csv", mode='r', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            next(reader)  # Pula cabeçalho
-            registros = list(reader)
-    except FileNotFoundError:
-        pass
-    
-    return render_template("pendentes.html",
-                         lista=registros,
-                         gerente=session["gerente"],
                          now=datetime.now())
 
 @app.route("/exportar")
@@ -246,15 +216,10 @@ def exportar():
         download_name=f"relatorio_os_{datetime.now().strftime('%Y%m%d')}.pdf"
     )
 
-@app.route("/exportar_relatorio")
-def exportar_relatorio():
-    """Alias para /exportar para compatibilidade com os templates"""
-    return exportar()
-
 @app.route("/logout")
 def logout():
-    session.pop("gerente", None)
-    session.pop("is_admin", None)
+    session.clear()
+    flash("Você foi desconectado com sucesso", "info")
     return redirect(url_for('login'))
 
 if __name__ == "__main__":
