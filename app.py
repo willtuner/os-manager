@@ -55,16 +55,44 @@ def carregar_os_gerente(gerente):
         print(f"Erro ao carregar OS: {str(e)}")
         return []
 
-def contar_os_gerente(gerente):
-    return len(carregar_os_gerente(gerente))
-
 def contar_os_por_gerente():
+    """Retorna um dicionário com a contagem de OS por gerente"""
     contagem = {}
-    for arquivo in os.listdir("mensagens_por_gerente"):
-        if arquivo.endswith('.json'):
-            gerente = arquivo[:-5].replace('_', ' ').title()
-            contagem[gerente] = len(carregar_os_gerente(gerente))
-    return dict(sorted(contagem.items(), key=lambda item: item[1], reverse=True))
+    try:
+        # Verifica se a pasta existe
+        if not os.path.exists("mensagens_por_gerente"):
+            print("Pasta mensagens_por_gerente não encontrada!")
+            return contagem
+        
+        # Debug: lista os arquivos encontrados
+        arquivos = os.listdir("mensagens_por_gerente")
+        print(f"Arquivos encontrados na pasta: {arquivos}")
+        
+        for arquivo in arquivos:
+            if arquivo.endswith('.json'):
+                try:
+                    # Extrai o nome do gerente do arquivo
+                    nome_gerente = arquivo[:-5].replace('_', ' ').title()
+                    
+                    # Carrega o arquivo para contar
+                    with open(os.path.join("mensagens_por_gerente", arquivo), 'r', encoding='utf-8') as f:
+                        dados = json.load(f)
+                    
+                    # Adiciona ao dicionário
+                    contagem[nome_gerente] = len(dados)
+                    
+                    # Debug: mostra o que está sendo contado
+                    print(f"Gerente: {nome_gerente} - OS: {len(dados)}")
+                    
+                except Exception as e:
+                    print(f"Erro ao processar {arquivo}: {str(e)}")
+                    continue
+        
+        return dict(sorted(contagem.items(), key=lambda item: item[1], reverse=True))
+    
+    except Exception as e:
+        print(f"Erro geral ao contar OS: {str(e)}")
+        return {}
 
 def registrar_finalizacao(os_numero, gerente, data, hora, observacoes):
     arquivo_csv = "finalizacoes_os.csv"
