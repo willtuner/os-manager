@@ -1,128 +1,81 @@
 {% extends "base.html" %}
 
-{% block title %}Painel Admin - Suco Prats{% endblock %}
-
-{% block extra_css %}
-<style>
-    .stat-card {
-        border-radius: 10px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-    .stat-card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-    .stat-card.primary {
-        background-color: #2c3e50;
-        color: white;
-    }
-    .stat-card.success {
-        background-color: #27ae60;
-        color: white;
-    }
-    .stat-card.warning {
-        background-color: #f39c12;
-        color: white;
-    }
-    .table-responsive {
-        margin-top: 30px;
-    }
-    .gerente-list {
-        max-height: 400px;
-        overflow-y: auto;
-    }
-</style>
-{% endblock %}
+{% block title %}Painel Admin - Sistema OS{% endblock %}
 
 {% block content %}
 <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2><i class="fas fa-tachometer-alt me-2"></i>Painel Administrativo</h2>
-        <div>
-            <a href="{{ url_for('exportar') }}" class="btn btn-primary me-2">
-                <i class="fas fa-file-pdf me-2"></i>Exportar PDF
-            </a>
-            <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
-                <i class="fas fa-sign-out-alt me-1"></i>Sair
-            </a>
-        </div>
-    </div>
+    <h2 class="mb-4">Painel Administrativo</h2>
     
     <div class="row mb-4">
-        <div class="col-md-4">
-            <div class="stat-card primary">
-                <h3><i class="fas fa-clipboard-list me-2"></i> {{ total_os }}</h3>
-                <p>OS Finalizadas</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="stat-card success">
-                <h3><i class="fas fa-users me-2"></i> {{ contagem_gerentes|length }}</h3>
-                <p>Gerentes Ativos</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="stat-card warning">
-                <h3><i class="fas fa-calendar-day me-2"></i> {{ now.strftime('%d/%m/%Y') }}</h3>
-                <p>Última Atualização</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-md-6 mb-4">
-            <div class="card shadow-sm h-100">
-                <div class="card-header bg-dark text-white">
-                    <h5 class="mb-0"><i class="fas fa-list-ol me-2"></i>OS em Aberto por Gerente</h5>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Resumo por Gerente</h5>
                 </div>
-                <div class="card-body gerente-list">
-                    <ul class="list-group">
-                        {% for gerente, total in contagem_gerentes.items() %}
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            {{ gerente }}
-                            <span class="badge bg-primary rounded-pill">{{ total }}</span>
-                        </li>
-                        {% endfor %}
-                    </ul>
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Gerente</th>
+                                <th>OS Pendentes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for gerente, quantidade in contagem_gerentes.items() %}
+                            <tr>
+                                <td>{{ gerente }}</td>
+                                <td>{{ quantidade }}</td>
+                            </tr>
+                            {% endfor %}
+                            <tr class="table-secondary">
+                                <td><strong>Total</strong></td>
+                                <td><strong>{{ total_os }}</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
         
         <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">
-                    <h5 class="mb-0"><i class="fas fa-history me-2"></i>Últimas OS Finalizadas</h5>
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0">Últimas Finalizações</h5>
                 </div>
                 <div class="card-body">
-                    {% if finalizadas[:5] %}
+                    {% if finalizacoes %}
                     <div class="table-responsive">
                         <table class="table table-sm">
                             <thead>
                                 <tr>
-                                    <th>OS</th>
+                                    <th>N° de OS</th>
                                     <th>Gerente</th>
-                                    <th>Data</th>
+                                    <th>Data/Hora</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {% for os in finalizadas[:5] %}
+                                {% for item in finalizacoes|reverse %}
                                 <tr>
-                                    <td>{{ os.OS }}</td>
-                                    <td>{{ os.Gerente }}</td>
-                                    <td>{{ os.Data_Finalizacao }}</td>
+                                    <td>{{ item[0] }}</td>
+                                    <td>{{ item[1] }}</td>
+                                    <td>{{ item[2] }} {{ item[3] }}</td>
                                 </tr>
                                 {% endfor %}
                             </tbody>
                         </table>
                     </div>
                     {% else %}
-                    <p class="text-muted">Nenhuma OS finalizada recentemente</p>
+                    <p class="text-muted">Nenhuma finalização registrada</p>
                     {% endif %}
                 </div>
             </div>
         </div>
+    </div>
+    
+    <div class="text-end">
+        <a href="{{ url_for('painel') }}" class="btn btn-secondary">
+            Voltar ao Painel
+        </a>
     </div>
 </div>
 {% endblock %}
