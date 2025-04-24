@@ -55,44 +55,45 @@ def carregar_os_gerente(gerente):
         print(f"Erro ao carregar OS: {str(e)}")
         return []
 
-def contar_os_por_gerente():
-    """Retorna um dicionário com a contagem de OS por gerente"""
-    contagem = {}
+def carregar_os_gerente(gerente):
     try:
-        # Verifica se a pasta existe
-        if not os.path.exists("mensagens_por_gerente"):
-            print("Pasta mensagens_por_gerente não encontrada!")
-            return contagem
+        # Converte o login para o formato de arquivo esperado
+        nome_arquivo = None
         
-        # Debug: lista os arquivos encontrados
-        arquivos = os.listdir("mensagens_por_gerente")
-        print(f"Arquivos encontrados na pasta: {arquivos}")
+        # Primeiro tenta encontrar o arquivo com o nome completo
+        nome_completo = gerente.upper().replace('.', '_') + "_GONZAGA.json"
+        caminho_completo = os.path.join("mensagens_por_gerente", nome_completo)
         
-        for arquivo in arquivos:
-            if arquivo.endswith('.json'):
-                try:
-                    # Extrai o nome do gerente do arquivo
-                    nome_gerente = arquivo[:-5].replace('_', ' ').title()
-                    
-                    # Carrega o arquivo para contar
-                    with open(os.path.join("mensagens_por_gerente", arquivo), 'r', encoding='utf-8') as f:
-                        dados = json.load(f)
-                    
-                    # Adiciona ao dicionário
-                    contagem[nome_gerente] = len(dados)
-                    
-                    # Debug: mostra o que está sendo contado
-                    print(f"Gerente: {nome_gerente} - OS: {len(dados)}")
-                    
-                except Exception as e:
-                    print(f"Erro ao processar {arquivo}: {str(e)}")
-                    continue
+        if os.path.exists(caminho_completo):
+            nome_arquivo = nome_completo
+        else:
+            # Fallback: procura por qualquer arquivo que comece com o primeiro nome
+            primeiro_nome = gerente.split('.')[0].upper()
+            for arquivo in os.listdir("mensagens_por_gerente"):
+                if arquivo.startswith(primeiro_nome) and arquivo.endswith('.json'):
+                    nome_arquivo = arquivo
+                    break
         
-        return dict(sorted(contagem.items(), key=lambda item: item[1], reverse=True))
-    
+        if nome_arquivo:
+            caminho = os.path.join("mensagens_por_gerente", nome_arquivo)
+            print(f"Carregando arquivo: {caminho}")  # Debug
+            with open(caminho, 'r', encoding='utf-8') as f:
+                dados = json.load(f)
+            
+            return [{
+                "os": str(item.get("os") or item.get("OS", "")),
+                "frota": str(item.get("frota") or item.get("Frota", "")),
+                "data": str(item.get("data") or item.get("Data", "")),
+                "dias": str(item.get("dias") or item.get("Dias", "0")),
+                "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
+                "servico": str(item.get("servico") or item.get("Servico") or item.get("observacao") or item.get("Observacao", ""))
+            } for item in dados]
+        
+        print(f"Nenhum arquivo encontrado para o gerente: {gerente}")
+        return []
     except Exception as e:
-        print(f"Erro geral ao contar OS: {str(e)}")
-        return {}
+        print(f"Erro ao carregar OS para {gerente}: {str(e)}")
+        return []
 
 def registrar_finalizacao(os_numero, gerente, data, hora, observacoes):
     arquivo_csv = "finalizacoes_os.csv"
@@ -152,36 +153,44 @@ def painel():
         return redirect(url_for('login'))
     
     gerente = session["gerente"]
-    arquivo_gerente = f"{gerente.upper().replace('.', '_')}.json"
-    caminho_arquivo = os.path.join("mensagens_por_gerente", arquivo_gerente)
     
-    # Carrega as OS atuais
-    try:
-        with open(caminho_arquivo, 'r', encoding='utf-8') as f:
-            os_pendentes = json.load(f)
-    except:
-        os_pendentes = []
+    # Carrega as OS usando a função corrigida
+    os_pendentes = carregar_os_gerente(gerente)
     
     if request.method == "POST":
         os_numero = request.form.get("os_numero")
         
-        # Remove a OS do arquivo do gerente
+        # Remove a OS da lista
         os_pendentes = [os for os in os_pendentes if str(os.get("os")) != str(os_numero)]
         
-        # Salva a lista atualizada
-        with open(caminho_arquivo, 'w', encoding='utf-8') as f:
-            json.dump(os_pendentes, f, indent=2, ensure_ascii=False)
+        # Encontra o arquivo correto para salvar
+        nome_arquivo = None
+        primeiro_nome = gerente.split('.')[0].upper()
+        for arquivo in os.listdir("mensagens_por_gerente"):
+            if arquivo.startswith(primeiro_nome) and arquivo.endswith('.json'):
+                nome_arquivo = arquivo
+                break
         
-        # Registra a finalização
-        if request.form.get("acao") == "fechar":
-            registrar_finalizacao(
-                os_numero,
-                gerente,
-                request.form.get("data_finalizacao"),
-                request.form.get("hora_finalizacao"),
-                request.form.get("observacoes")
-            )
-            flash(f"OS {os_numero} finalizada com sucesso", "success")
+        if nome_arquivo:
+            caminho = os.path.join("mensagens_por_gerente", nome_arquivo)
+            try:
+                with open(caminho, 'w', encoding='utf-8') as f:
+                    json.dump(os_pendentes, f, indent=2, ensure_ascii=False)
+                
+                if request.form.get("acao") == "fechar":
+                    registrar_finalizacao(
+                        os_numero,
+                        gerente,
+                        request.form.get("data_finalizacao"),
+                        request.form.get("hora_finalizacao"),
+                        request.form.get("observacoes")
+                    )
+                    flash(f"OS {os_numero} finalizada com sucesso", "success")
+            except Exception as e:
+                print(f"Erro ao salvar arquivo {caminho}: {str(e)}")
+                flash("Erro ao salvar alterações", "danger")
+        else:
+            flash("Arquivo de OS não encontrado", "danger")
         
         return redirect(url_for('painel'))
     
@@ -223,46 +232,59 @@ def exportar():
         return redirect(url_for('login'))
     
     try:
-        # Cria diretório temporário se não existir
-        os.makedirs("temp", exist_ok=True)
-        pdf_path = os.path.join("temp", "relatorio_finalizacoes.pdf")
+        # No Render, precisamos usar /tmp para arquivos temporários
+        os.makedirs("/tmp/relatorios", exist_ok=True)
+        pdf_path = "/tmp/relatorios/relatorio_finalizacoes.pdf"
         
         pdf = FPDF()
         pdf.add_page()
-        pdf.set_font("Arial", size=12)
+        pdf.set_font("Arial", size=10)  # Tamanho menor para caber mais conteúdo
         
         # Título
-        pdf.cell(200, 10, txt="Relatório de OS Finalizadas", ln=1, align='C')
-        pdf.ln(10)
+        pdf.cell(200, 10, txt="Relatório de OS Finalizadas - " + datetime.now().strftime('%d/%m/%Y'), ln=1, align='C')
+        pdf.ln(8)
         
         # Verifica se o arquivo CSV existe
         if not os.path.exists("finalizacoes_os.csv"):
             pdf.cell(200, 10, txt="Nenhuma OS finalizada ainda", ln=1, align='C')
         else:
-            # Lê os dados
-            df = pd.read_csv("finalizacoes_os.csv")
+            # Lê os dados com tratamento de erro
+            try:
+                df = pd.read_csv("finalizacoes_os.csv")
+            except Exception as e:
+                print(f"Erro ao ler CSV: {str(e)}")
+                pdf.cell(200, 10, txt="Erro ao ler dados das OS", ln=1, align='C')
+                pdf.output(pdf_path)
+                return send_file(pdf_path, as_attachment=True)
+            
+            # Configurações da tabela
+            colunas = ["OS", "Gerente", "Data", "Hora", "Observações"]
+            larguras = [15, 30, 20, 15, 110]  # Ajuste as larguras
             
             # Cabeçalho
-            colunas = ["OS", "Gerente", "Data", "Hora", "Observações"]
-            larguras = [20, 40, 30, 20, 80]
-            
             for col, larg in zip(colunas, larguras):
-                pdf.cell(larg, 10, txt=col, border=1)
+                pdf.cell(larg, 10, txt=col, border=1, fill=True)
             pdf.ln()
             
-            # Dados
-            for _, row in df.iterrows():
-                pdf.cell(larguras[0], 10, txt=str(row["OS"]), border=1)
-                pdf.cell(larguras[1], 10, txt=str(row["Gerente"]), border=1)
-                pdf.cell(larguras[2], 10, txt=str(row["Data_Finalizacao"]), border=1)
-                pdf.cell(larguras[3], 10, txt=str(row["Hora_Finalizacao"]), border=1)
-                pdf.cell(larguras[4], 10, txt=str(row["Observacoes"]), border=1)
+            # Dados (limita a 100 linhas para evitar PDF muito grande)
+            for _, row in df.head(100).iterrows():
+                for i, col in enumerate(colunas):
+                    valor = ""
+                    if col == "OS":
+                        valor = str(row["OS"])
+                    elif col == "Gerente":
+                        valor = str(row["Gerente"])
+                    elif col == "Data":
+                        valor = str(row["Data_Finalizacao"])
+                    elif col == "Hora":
+                        valor = str(row["Hora_Finalizacao"])
+                    elif col == "Observações":
+                        valor = str(row["Observacoes"])[:60]  # Limita o tamanho
+                    
+                    pdf.cell(larguras[i], 10, txt=valor, border=1)
                 pdf.ln()
         
-        # Gera o PDF
         pdf.output(pdf_path)
-        
-        # Envia o arquivo
         return send_file(
             pdf_path,
             as_attachment=True,
@@ -272,7 +294,7 @@ def exportar():
         
     except Exception as e:
         print(f"Erro ao gerar PDF: {str(e)}")
-        flash("Erro ao gerar relatório PDF", "danger")
+        flash(f"Erro ao gerar PDF: {str(e)}", "danger")
         return redirect(url_for('admin_panel'))
 @app.route("/logout")
 def logout():
