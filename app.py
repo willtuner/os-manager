@@ -222,42 +222,58 @@ def exportar():
         flash("Acesso não autorizado", "danger")
         return redirect(url_for('login'))
     
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font("Arial", size=12)
-    
-    pdf.cell(200, 10, txt="Relatório de OS Finalizadas", ln=1, align='C')
-    pdf.ln(10)
-    
     try:
-        df = pd.read_csv("finalizacoes_os.csv")
+        # Cria diretório temporário se não existir
+        os.makedirs("temp", exist_ok=True)
+        pdf_path = os.path.join("temp", "relatorio_finalizacoes.pdf")
         
-        colunas = ["OS", "Data Finalização", "Hora", "Observações"]
-        larguras = [30, 40, 30, 90]
+        pdf = FPDF()
+        pdf.add_page()
+        pdf.set_font("Arial", size=12)
         
-        for col, larg in zip(colunas, larguras):
-            pdf.cell(larg, 10, txt=col, border=1)
-        pdf.ln()
+        # Título
+        pdf.cell(200, 10, txt="Relatório de OS Finalizadas", ln=1, align='C')
+        pdf.ln(10)
         
-        for _, row in df.iterrows():
-            pdf.cell(larguras[0], 10, txt=str(row["OS"]), border=1)
-            pdf.cell(larguras[1], 10, txt=row["Data_Finalizacao"], border=1)
-            pdf.cell(larguras[2], 10, txt=row["Hora_Finalizacao"], border=1)
-            pdf.cell(larguras[3], 10, txt=row["Observacoes"], border=1)
+        # Verifica se o arquivo CSV existe
+        if not os.path.exists("finalizacoes_os.csv"):
+            pdf.cell(200, 10, txt="Nenhuma OS finalizada ainda", ln=1, align='C')
+        else:
+            # Lê os dados
+            df = pd.read_csv("finalizacoes_os.csv")
+            
+            # Cabeçalho
+            colunas = ["OS", "Gerente", "Data", "Hora", "Observações"]
+            larguras = [20, 40, 30, 20, 80]
+            
+            for col, larg in zip(colunas, larguras):
+                pdf.cell(larg, 10, txt=col, border=1)
             pdf.ln()
             
-    except FileNotFoundError:
-        pdf.cell(200, 10, txt="Nenhuma OS finalizada ainda", ln=1, align='C')
-    
-    pdf_path = "relatorio_finalizacoes.pdf"
-    pdf.output(pdf_path)
-    
-    return send_file(
-        pdf_path,
-        as_attachment=True,
-        download_name=f"relatorio_os_{datetime.now().strftime('%Y%m%d')}.pdf"
-    )
-
+            # Dados
+            for _, row in df.iterrows():
+                pdf.cell(larguras[0], 10, txt=str(row["OS"]), border=1)
+                pdf.cell(larguras[1], 10, txt=str(row["Gerente"]), border=1)
+                pdf.cell(larguras[2], 10, txt=str(row["Data_Finalizacao"]), border=1)
+                pdf.cell(larguras[3], 10, txt=str(row["Hora_Finalizacao"]), border=1)
+                pdf.cell(larguras[4], 10, txt=str(row["Observacoes"]), border=1)
+                pdf.ln()
+        
+        # Gera o PDF
+        pdf.output(pdf_path)
+        
+        # Envia o arquivo
+        return send_file(
+            pdf_path,
+            as_attachment=True,
+            download_name=f"relatorio_os_{datetime.now().strftime('%Y%m%d')}.pdf",
+            mimetype='application/pdf'
+        )
+        
+    except Exception as e:
+        print(f"Erro ao gerar PDF: {str(e)}")
+        flash("Erro ao gerar relatório PDF", "danger")
+        return redirect(url_for('admin_panel'))
 @app.route("/logout")
 def logout():
     session.clear()
