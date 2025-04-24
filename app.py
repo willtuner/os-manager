@@ -6,13 +6,14 @@ from datetime import datetime
 from fpdf import FPDF
 import pandas as pd
 import fnmatch
+from threading import Thread
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 app.config['SESSION_COOKIE_SECURE'] = True
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
 
-# Usuário administrativo (apenas Wilson)
+# Usuário administrativo
 ADMIN_USERS = {
     "wilson.santana": "admin321"
 }
@@ -37,8 +38,6 @@ def carregar_os_gerente(gerente):
         
         if arquivo_encontrado:
             caminho = os.path.join("mensagens_por_gerente", arquivo_encontrado)
-            print(f"Arquivo encontrado: {caminho}")
-            
             with open(caminho, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
             
@@ -51,12 +50,21 @@ def carregar_os_gerente(gerente):
                 "servico": str(item.get("servico") or item.get("Servico") or item.get("observacao") or item.get("Observacao", ""))
             } for item in dados]
         
-        print(f"Nenhum arquivo encontrado para: {gerente}")
         return []
-        
     except Exception as e:
         print(f"Erro ao carregar OS: {str(e)}")
         return []
+
+def contar_os_gerente(gerente):
+    return len(carregar_os_gerente(gerente))
+
+def contar_os_por_gerente():
+    contagem = {}
+    for arquivo in os.listdir("mensagens_por_gerente"):
+        if arquivo.endswith('.json'):
+            gerente = arquivo[:-5].replace('_', ' ').title()
+            contagem[gerente] = len(carregar_os_gerente(gerente))
+    return dict(sorted(contagem.items(), key=lambda item: item[1], reverse=True))
 
 def registrar_finalizacao(os_numero, gerente, data, hora, observacoes):
     arquivo_csv = "finalizacoes_os.csv"
@@ -88,14 +96,11 @@ def login():
         gerente = request.form.get("gerente", "").strip()
         senha = request.form.get("senha", "").strip()
         
-        # Verifica se é o admin Wilson
         if gerente in ADMIN_USERS and ADMIN_USERS[gerente] == senha:
             session["gerente"] = gerente
             session["is_admin"] = True
-            flash("Login administrativo realizado com sucesso", "success")
             return redirect(url_for('admin_panel'))
         
-        # Verifica gerentes normais
         users_path = os.path.join(os.path.dirname(__file__), "users.json")
         try:
             with open(users_path, encoding="utf-8") as f:
@@ -120,6 +125,7 @@ def painel():
     
     gerente = session["gerente"]
     os_pendentes = carregar_os_gerente(gerente)
+    total_os = len(os_pendentes)
     
     if request.method == "POST":
         os_numero = request.form.get("os_numero")
@@ -150,7 +156,8 @@ def painel():
     return render_template("painel.html", 
                          os_pendentes=os_pendentes,
                          gerente=gerente,
-                         now=datetime.now())
+                         now=datetime.now(),
+                         total_os=total_os)
 
 @app.route("/admin")
 def admin_panel():
@@ -168,16 +175,19 @@ def admin_panel():
     
     total_os = len(finalizadas)
     gerentes = set(os['Gerente'] for os in finalizadas)
+    contagem_gerentes = contar_os_por_gerente()
     
     return render_template("admin.html",
                          finalizadas=finalizadas,
                          total_os=total_os,
                          gerentes=gerentes,
-                         now=datetime.now())
+                         now=datetime.now(),
+                         contagem_gerentes=contagem_gerentes)
 
 @app.route("/exportar")
 def exportar():
-    if "gerente" not in session:
+    if "gerente" not in session or not session.get("is_admin"):
+        flash("Acesso não autorizado", "danger")
         return redirect(url_for('login'))
     
     pdf = FPDF()
