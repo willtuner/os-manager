@@ -24,33 +24,45 @@ ADMIN_USERS = {
 
 def carregar_os_gerente(gerente):
     try:
-        nome_arquivo = None
-        nome_completo = gerente.upper().replace('.', '_') + "_GONZAGA.json"
-        caminho_completo = os.path.join(MENSAGENS_DIR, nome_completo)
+        # Padroniza o nome do arquivo
+        nome_base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
+        caminho_arquivo = os.path.join(MENSAGENS_DIR, nome_base)
+        
+        print(f"Procurando arquivo de OS para {gerente} em: {caminho_arquivo}")
 
-        if os.path.exists(caminho_completo):
-            nome_arquivo = nome_completo
-        else:
+        # Verifica se o arquivo existe
+        if not os.path.exists(caminho_arquivo):
+            # Tenta encontrar arquivo alternativo
             primeiro_nome = gerente.split('.')[0].upper()
             for arquivo in os.listdir(MENSAGENS_DIR):
                 if arquivo.startswith(primeiro_nome) and arquivo.endswith('.json'):
-                    nome_arquivo = arquivo
+                    caminho_arquivo = os.path.join(MENSAGENS_DIR, arquivo)
+                    print(f"Arquivo alternativo encontrado: {caminho_arquivo}")
                     break
 
-        if nome_arquivo:
-            caminho = os.path.join(MENSAGENS_DIR, nome_arquivo)
-            with open(caminho, 'r', encoding='utf-8') as f:
+        if os.path.exists(caminho_arquivo):
+            print(f"Carregando arquivo: {caminho_arquivo}")
+            with open(caminho_arquivo, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
-            return [{
-                "OS": str(item.get("os") or item.get("OS", "")),
-                "Frota": str(item.get("frota") or item.get("Frota", "")),
-                "DataFechamento": str(item.get("data") or item.get("Data", "")),
-                "Dias": str(item.get("dias") or item.get("Dias", "0")),
-                "Prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
-                "Observacao": str(item.get("servico") or item.get("Servico") or 
-                            item.get("observacao") or item.get("Observacao", ""))
-            } for item in dados]
+            
+            # Converter para o formato esperado
+            os_list = []
+            for item in dados:
+                os_item = {
+                    "OS": str(item.get("os") or item.get("OS", "")),
+                    "Frota": str(item.get("frota") or item.get("Frota", "")),
+                    "DataFechamento": str(item.get("data") or item.get("Data", "")),
+                    "Dias": str(item.get("dias") or item.get("Dias", "0")),
+                    "Prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
+                    "Observacao": str(item.get("servico") or item.get("Servico") or 
+                                    item.get("observacao") or item.get("Observacao", ""))
+                }
+                os_list.append(os_item)
+                print(f"OS carregada: {os_item}")
+            
+            return os_list
 
+        print(f"Nenhum arquivo encontrado para o gerente {gerente}")
         return []
     except Exception as e:
         print(f"Erro ao carregar OS para {gerente}: {str(e)}")
@@ -147,6 +159,9 @@ def painel():
     gerente = session["gerente"]
     lista_os = carregar_os_gerente(gerente)
     
+    if not lista_os:
+        flash("Nenhuma OS pendente encontrada", "info")
+    
     return render_template("painel.html",
                          lista=lista_os,
                          gerente=gerente,
@@ -190,7 +205,7 @@ def admin_panel():
             os_abertas_por_gerente[gerente] = len(os_pendentes)
 
     return render_template("admin.html",
-                         finalizadas=finalizadas[-100:],  # Mostra apenas as 100 últimas
+                         finalizadas=finalizadas[-100:],
                          total_os=len(finalizadas),
                          gerentes=gerentes_ativos,
                          contagem_gerentes=contagem_gerentes,
