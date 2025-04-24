@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}OS em Aberto - Suco Prats{% endblock %}
+{% block title %}Painel de OS - {{ gerente }}{% endblock %}
 
 {% block content %}
 <div class="row mb-4">
@@ -8,13 +8,23 @@
         <h2 class="h4">
             <i class="fas fa-tools text-success me-2"></i>
             Ordens de Serviço em Aberto
-            <span class="badge {% if total_os > 10 %}bg-danger{% else %}bg-primary{% endif %} ms-2">
-                {{ total_os }} OS
-            </span>
         </h2>
         <p class="text-muted mb-0">Gerente: <strong>{{ gerente }}</strong></p>
     </div>
+    <div class="col-auto">
+        <a href="/exportar" class="btn btn-sm btn-prats">
+            <i class="fas fa-file-pdf me-1"></i> Exportar
+        </a>
+    </div>
 </div>
+
+{% if gerente == "Admin" %}
+<div class="mb-3">
+    <a href="{{ url_for('admin_panel') }}" class="btn btn-warning">
+        <i class="fas fa-cog me-1"></i> Painel Admin
+    </a>
+</div>
+{% endif %}
 
 {% if os_pendentes %}
     {% for os in os_pendentes %}
@@ -22,7 +32,7 @@
         <div class="card-body">
             <div class="d-flex justify-content-between align-items-start mb-2">
                 <h5 class="card-title mb-0">
-                    <span class="badge bg-secondary me-2">#{{ os.os }}</span>
+                    <span class="badge bg-secondary me-2">N° de OS {{ os.os }}</span>
                     Frota {{ os.frota }}
                 </h5>
                 <span class="badge-dias 
