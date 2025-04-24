@@ -29,12 +29,26 @@
     .table-responsive {
         margin-top: 30px;
     }
+    .gerente-list {
+        max-height: 400px;
+        overflow-y: auto;
+    }
 </style>
 {% endblock %}
 
 {% block content %}
 <div class="container">
-    <h2 class="mb-4"><i class="fas fa-tachometer-alt me-2"></i>Painel Administrativo</h2>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-tachometer-alt me-2"></i>Painel Administrativo</h2>
+        <div>
+            <a href="{{ url_for('exportar') }}" class="btn btn-primary me-2">
+                <i class="fas fa-file-pdf me-2"></i>Exportar PDF
+            </a>
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+                <i class="fas fa-sign-out-alt me-1"></i>Sair
+            </a>
+        </div>
+    </div>
     
     <div class="row mb-4">
         <div class="col-md-4">
@@ -45,7 +59,7 @@
         </div>
         <div class="col-md-4">
             <div class="stat-card success">
-                <h3><i class="fas fa-users me-2"></i> {{ gerentes|length }}</h3>
+                <h3><i class="fas fa-users me-2"></i> {{ contagem_gerentes|length }}</h3>
                 <p>Gerentes Ativos</p>
             </div>
         </div>
@@ -57,38 +71,56 @@
         </div>
     </div>
     
-    <div class="card shadow-sm">
-        <div class="card-header bg-dark text-white">
-            <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico de OS Finalizadas</h4>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead class="table-light">
-                        <tr>
-                            <th>OS</th>
-                            <th>Gerente</th>
-                            <th>Data</th>
-                            <th>Hora</th>
-                            <th>Observações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for os in finalizadas %}
-                        <tr>
-                            <td>{{ os.OS }}</td>
-                            <td>{{ os.Gerente }}</td>
-                            <td>{{ os.Data_Finalizacao }}</td>
-                            <td>{{ os.Hora_Finalizacao }}</td>
-                            <td>{{ os.Observacoes }}</td>
-                        </tr>
-                        {% else %}
-                        <tr>
-                            <td colspan="5" class="text-center py-4">Nenhuma OS finalizada registrada</td>
-                        </tr>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0"><i class="fas fa-list-ol me-2"></i>OS em Aberto por Gerente</h5>
+                </div>
+                <div class="card-body gerente-list">
+                    <ul class="list-group">
+                        {% for gerente, total in contagem_gerentes.items() %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            {{ gerente }}
+                            <span class="badge bg-primary rounded-pill">{{ total }}</span>
+                        </li>
                         {% endfor %}
-                    </tbody>
-                </table>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0"><i class="fas fa-history me-2"></i>Últimas OS Finalizadas</h5>
+                </div>
+                <div class="card-body">
+                    {% if finalizadas[:5] %}
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>OS</th>
+                                    <th>Gerente</th>
+                                    <th>Data</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for os in finalizadas[:5] %}
+                                <tr>
+                                    <td>{{ os.OS }}</td>
+                                    <td>{{ os.Gerente }}</td>
+                                    <td>{{ os.Data_Finalizacao }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-muted">Nenhuma OS finalizada recentemente</p>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
