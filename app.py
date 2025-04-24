@@ -200,6 +200,25 @@ def painel():
                          now=datetime.now(),
                          total_os=len(os_pendentes))
 
+def contar_os_por_gerente():
+    from os import listdir
+    from os.path import join
+    import json
+
+    pasta = "mensagens_por_gerente"
+    arquivos = [f for f in listdir(pasta) if f.endswith(".json")]
+
+    contagem = {}
+    for arquivo in arquivos:
+        caminho = join(pasta, arquivo)
+        with open(caminho, encoding="utf-8") as f:
+            dados = json.load(f)
+            if dados:
+                gerente = dados[0].get("Gerente", "Desconhecido")
+                contagem[gerente] = contagem.get(gerente, 0) + len(dados)
+
+    return contagem
+
 @app.route("/admin")
 def admin_panel():
     if "gerente" not in session or not session.get("is_admin"):
