@@ -152,40 +152,44 @@ def painel():
         return redirect(url_for('login'))
     
     gerente = session["gerente"]
-    os_pendentes = carregar_os_gerente(gerente)
-    total_os = len(os_pendentes)
+    arquivo_gerente = f"{gerente.upper().replace('.', '_')}.json"
+    caminho_arquivo = os.path.join("mensagens_por_gerente", arquivo_gerente)
+    
+    # Carrega as OS atuais
+    try:
+        with open(caminho_arquivo, 'r', encoding='utf-8') as f:
+            os_pendentes = json.load(f)
+    except:
+        os_pendentes = []
     
     if request.method == "POST":
         os_numero = request.form.get("os_numero")
-        data_finalizacao = request.form.get("data_finalizacao")
-        hora_finalizacao = request.form.get("hora_finalizacao")
-        observacoes = request.form.get("observacoes")
-        acao = request.form.get("acao")
         
-        if acao == "fechar":
-            registrar_finalizacao(
-                os_numero,
-                gerente,
-                data_finalizacao,
-                hora_finalizacao,
-                observacoes
-            )
-            flash(f"OS {os_numero} finalizada com sucesso", "success")
-        
+        # Remove a OS do arquivo do gerente
         os_pendentes = [os for os in os_pendentes if str(os.get("os")) != str(os_numero)]
         
-        nome_arquivo = f"{gerente.upper().replace(' ', '_')}.json"
-        caminho_arquivo = os.path.join("mensagens_por_gerente", nome_arquivo)
+        # Salva a lista atualizada
         with open(caminho_arquivo, 'w', encoding='utf-8') as f:
             json.dump(os_pendentes, f, indent=2, ensure_ascii=False)
         
+        # Registra a finalização
+        if request.form.get("acao") == "fechar":
+            registrar_finalizacao(
+                os_numero,
+                gerente,
+                request.form.get("data_finalizacao"),
+                request.form.get("hora_finalizacao"),
+                request.form.get("observacoes")
+            )
+            flash(f"OS {os_numero} finalizada com sucesso", "success")
+        
         return redirect(url_for('painel'))
     
-    return render_template("painel.html", 
+    return render_template("painel.html",
                          os_pendentes=os_pendentes,
                          gerente=gerente,
                          now=datetime.now(),
-                         total_os=total_os)
+                         total_os=len(os_pendentes))
 
 @app.route("/admin")
 def admin_panel():
