@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Login - Suco Prats{% endblock %}
+{% block title %}Login - Sistema OS{% endblock %}
 
 {% block extra_css %}
 <style>
@@ -9,6 +9,7 @@
     }
     .login-card {
         border-top: 4px solid var(--verde-prats);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 </style>
 {% endblock %}
@@ -21,7 +22,7 @@
             <h4 class="mt-3">Acesso ao Sistema</h4>
         </div>
         
-        <div class="card login-card shadow-sm">
+        <div class="card login-card">
             <div class="card-body p-4">
                 {% if erro %}
                 <div class="alert alert-danger alert-dismissible fade show">
