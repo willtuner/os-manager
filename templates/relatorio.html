@@ -12,14 +12,14 @@
         margin-bottom: 25px;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    
+
     .table-container {
         background: white;
         border-radius: 8px;
         box-shadow: 0 2px 15px rgba(0,0,0,0.05);
         overflow: hidden;
     }
-    
+
     .badge-frota {
         background-color: #3498db;
         color: white;
@@ -27,7 +27,7 @@
         padding: 5px 10px;
         border-radius: 4px;
     }
-    
+
     .badge-dias {
         font-weight: 500;
         padding: 5px 10px;
@@ -36,14 +36,14 @@
         display: inline-block;
         text-align: center;
     }
-    
+
     .empty-state {
         padding: 40px;
         text-align: center;
         background: #f8f9fa;
         border-radius: 8px;
     }
-    
+
     tr:hover {
         background-color: #f1f1f1;
         transition: background-color 0.3s;
@@ -124,33 +124,21 @@
         </div>
     </div>
 
-    <div class="d-flex justify-content-between mt-4">
-        <a href="{{ url_for('exportar_relatorio') }}" class="btn btn-primary">
-            <i class="fas fa-file-pdf me-2"></i>Exportar PDF
+    <div class="d-flex justify-content-end mt-4">
+        <a href="/" class="btn btn-outline-secondary me-2">
+            <i class="fas fa-arrow-left me-1"></i>Voltar
         </a>
-        <div>
-            <a href="/" class="btn btn-outline-secondary me-2">
-                <i class="fas fa-arrow-left me-1"></i>Voltar
-            </a>
-            <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
-                <i class="fas fa-sign-out-alt me-1"></i>Sair
-            </a>
-        </div>
-    </div>
-
-    <div class="mt-3 text-end">
-        <small class="text-muted">
-            <i class="fas fa-sync-alt me-1"></i>Atualizado em {{ now.strftime('%d/%m/%Y às %H:%M') }}
-        </small>
+        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+            <i class="fas fa-sign-out-alt me-1"></i>Sair
+        </a>
     </div>
 </div>
 {% endblock %}
 
 {% block extra_js %}
 <script>
-// Seu código JavaScript existente pode ficar aqui
 document.addEventListener('DOMContentLoaded', function() {
-    // Mantenha seu código JS atual aqui
+    // JS futuro pode entrar aqui
 });
 </script>
 {% endblock %}
