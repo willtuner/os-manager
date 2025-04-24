@@ -26,8 +26,17 @@
         background-color: #f39c12;
         color: white;
     }
+    .stat-card.danger {
+        background-color: #e74c3c;
+        color: white;
+    }
     .table-responsive {
         margin-top: 30px;
+    }
+    .badge-os-aberta {
+        background-color: #e74c3c;
+        color: white;
+        font-weight: normal;
     }
 </style>
 {% endblock %}
@@ -37,29 +46,75 @@
     <h2 class="mb-4"><i class="fas fa-tachometer-alt me-2"></i>Painel Administrativo</h2>
     
     <div class="row mb-4">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="stat-card primary">
                 <h3><i class="fas fa-clipboard-list me-2"></i> {{ total_os }}</h3>
                 <p>OS Finalizadas</p>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="stat-card success">
                 <h3><i class="fas fa-users me-2"></i> {{ gerentes|length }}</h3>
                 <p>Gerentes Ativos</p>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="stat-card warning">
                 <h3><i class="fas fa-calendar-day me-2"></i> {{ now.strftime('%d/%m/%Y') }}</h3>
                 <p>Última Atualização</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card danger">
+                <h3><i class="fas fa-exclamation-circle me-2"></i> {{ os_abertas.values()|sum }}</h3>
+                <p>OS Pendentes</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between mb-3">
+        <h4><i class="fas fa-user-tie me-2"></i>Gerentes e OS Pendentes</h4>
+        <a href="{{ url_for('exportar_os_finalizadas') }}" class="btn btn-primary">
+            <i class="fas fa-file-export me-1"></i> Exportar OS Finalizadas
+        </a>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Gerente</th>
+                            <th>OS Finalizadas</th>
+                            <th>OS Pendentes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for gerente in gerentes %}
+                        <tr>
+                            <td>{{ gerente }}</td>
+                            <td>{{ contagem_gerentes.get(gerente, 0) }}</td>
+                            <td>
+                                <span class="badge badge-os-aberta">
+                                    {{ os_abertas.get(gerente, 0) }} pendente{{ 's' if os_abertas.get(gerente, 0) != 1 else '' }}
+                                </span>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td colspan="3" class="text-center py-4">Nenhum gerente com OS registrada</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
     
     <div class="card shadow-sm">
         <div class="card-header bg-dark text-white">
-            <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico de OS Finalizadas</h4>
+            <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico de OS Finalizadas (Últimas 100)</h4>
         </div>
         <div class="card-body">
             <div class="table-responsive">
