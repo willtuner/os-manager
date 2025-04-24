@@ -11,11 +11,7 @@
         </h2>
         <p class="text-muted mb-0">Gerente: <strong>{{ gerente }}</strong></p>
     </div>
-    <div class="col-auto">
-        <a href="/exportar" class="btn btn-sm btn-prats">
-            <i class="fas fa-file-pdf me-1"></i> Exportar
-        </a>
-    </div>
+    {# botão Exportar removido #}
 </div>
 
 {% if gerente == "Admin" %}
@@ -61,17 +57,17 @@
             
             <form method="POST" class="mt-3">
                 <input type="hidden" name="os_numero" value="{{ os.os }}">
-                
+
                 <div class="row g-2 mb-2">
                     <div class="col-md-4">
                         <label class="form-label small text-muted mb-0">Data</label>
-                        <input type="date" name="data_finalizacao" class="form-control form-control-sm" 
-                               value="{{ now.strftime('%Y-%m-%d') }}" required>
+                        <!-- valor removido -->
+                        <input type="date" name="data_finalizacao" class="form-control form-control-sm" required>
                     </div>
                     <div class="col-md-4">
                         <label class="form-label small text-muted mb-0">Hora</label>
-                        <input type="time" name="hora_finalizacao" class="form-control form-control-sm" 
-                               value="{{ now.strftime('%H:%M') }}" required>
+                        <!-- valor removido -->
+                        <input type="time" name="hora_finalizacao" class="form-control form-control-sm" required>
                     </div>
                     <div class="col-md-4 d-flex align-items-end">
                         <button type="submit" name="acao" value="fechar" 
@@ -80,7 +76,7 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="mb-2">
                     <label class="form-label small text-muted mb-0">Observações</label>
                     <textarea name="observacoes" class="form-control form-control-sm" 
