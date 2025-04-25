@@ -157,13 +157,25 @@ def painel():
         return redirect(url_for('login'))
 
     gerente = session["gerente"]
-    lista_os = carregar_os_gerente(gerente)
+    os_pendentes = carregar_os_gerente(gerente)
+    
+    # Converter para o formato esperado pelo template
+    lista_os = []
+    for item in os_pendentes:
+        lista_os.append({
+            "os": item["OS"],
+            "frota": item["Frota"],
+            "data": item["DataFechamento"],
+            "dias": item["Dias"],
+            "prestador": item["Prestador"],
+            "servico": item["Observacao"]
+        })
     
     if not lista_os:
         flash("Nenhuma OS pendente encontrada", "info")
     
     return render_template("painel.html",
-                         lista=lista_os,
+                         os_pendentes=lista_os,
                          gerente=gerente,
                          now=datetime.now())
 
