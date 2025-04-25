@@ -6,8 +6,7 @@
 <div class="row mb-4">
   <div class="col">
     <h2 class="h4">
-      <i class="fas fa-tools text-success me-2"></i>
-      Ordens de Serviço em Aberto
+      <i class="fas fa-tools text-success me-2"></i>Ordens de Serviço em Aberto
     </h2>
     <p class="text-muted mb-0">Gerente: <strong>{{ gerente }}</strong></p>
   </div>
@@ -22,56 +21,56 @@
 
 {% if os_pendentes %}
   {% for os in os_pendentes %}
-  <form action="{{ url_for('painel') }}" method="POST" class="card card-os mb-3">
+  <form action="{{ url_for('finalizar_os', os_numero=os.os) }}"
+        method="POST"
+        class="card card-os mb-3">
     <div class="card-body">
       <input type="hidden" name="os_numero" value="{{ os.os }}">
-      <div class="d-flex justify-content-between align-items-start mb-2">
+      <div class="d-flex justify-content-between mb-2">
         <h5 class="mb-0">
           <span class="badge bg-secondary me-2">OS {{ os.os }}</span>
           Frota {{ os.frota }}
         </h5>
         <span class="badge-dias
-           {% if os.dias|int > 30 %}bg-danger
-           {% elif os.dias|int > 15 %}bg-warning text-dark
-           {% else %}bg-info{% endif %}">
+          {% if os.dias|int > 30 %}bg-danger
+          {% elif os.dias|int > 15 %}bg-warning text-dark
+          {% else %}bg-info{% endif %}">
           {{ os.dias }} dia{{ 's' if os.dias|int != 1 else '' }}
         </span>
       </div>
-      <div class="mb-2">
-        <small class="text-muted d-block mb-1">
-          <i class="far fa-calendar-alt me-1"></i>Aberta em: {{ os.data }}
-        </small>
-        <small class="text-muted d-block mb-1">
-          <i class="fas fa-user-hard-hat me-1"></i>
-          Prestador: {{ os.prestador if os.prestador != "Prestador não definido" else "Não definido" }}
-        </small>
-      </div>
-      <p class="mb-3"><i class="fas fa-tools me-1 text-muted"></i>{{ os.servico }}</p>
+
+      <small class="text-muted d-block mb-1">
+        <i class="far fa-calendar-alt me-1"></i>Aberta em: {{ os.data }}
+      </small>
+      <small class="text-muted d-block mb-3">
+        <i class="fas fa-user-hard-hat me-1"></i>
+        Prestador: {{ os.prestador if os.prestador!="Prestador não definido" else "Não definido" }}
+      </small>
+
+      <p class="card-text mb-3"><i class="fas fa-tools me-1 text-muted"></i>{{ os.servico }}</p>
 
       <div class="row g-2 mb-2">
         <div class="col-md-4">
-          <label class="form-label small text-muted mb-0">Data</label>
           <input type="date" name="data_finalizacao"
                  class="form-control form-control-sm" required>
         </div>
         <div class="col-md-4">
-          <label class="form-label small text-muted mb-0">Hora</label>
           <input type="time" name="hora_finalizacao"
                  class="form-control form-control-sm" required>
         </div>
         <div class="col-md-4 d-flex align-items-end">
-          <button type="submit" name="acao" value="fechar"
+          <button type="submit"
                   class="btn btn-success btn-sm w-100">
             <i class="fas fa-check-circle me-1"></i>Finalizar
           </button>
         </div>
       </div>
 
-      <div>
-        <label class="form-label small text-muted mb-0">Observações</label>
-        <textarea name="observacoes" rows="2"
+      <div class="mb-2">
+        <textarea name="observacoes"
                   class="form-control form-control-sm"
-                  placeholder="Opcional"></textarea>
+                  rows="2"
+                  placeholder="Observações (opcional)"></textarea>
       </div>
     </div>
   </form>
