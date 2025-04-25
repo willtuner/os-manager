@@ -71,7 +71,6 @@
                         <th><i class="fas fa-tools me-1"></i>Serviço</th>
                         <th><i class="fas fa-user-hard-hat me-1"></i>Prestador</th>
                         <th><i class="far fa-clock me-1"></i>Dias</th>
-                        <th><i class="fas fa-cog me-1"></i>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -97,16 +96,10 @@
                                 {{ dias }} dia{{ 's' if dias != 1 else '' }}
                             </span>
                         </td>
-                        <td>
-                            <a href="{{ url_for('finalizar_os', os_numero=item.OS) }}" 
-                               class="btn btn-sm btn-success">
-                                <i class="fas fa-check-circle me-1"></i>Finalizar
-                            </a>
-                        </td>
                     </tr>
                     {% else %}
                     <tr>
-                        <td colspan="7" class="text-center py-5">
+                        <td colspan="6" class="text-center py-5">
                             <div class="empty-state">
                                 <i class="far fa-check-circle text-muted"></i>
                                 <h5 class="mt-3">Nenhuma OS pendente</h5>
@@ -120,7 +113,7 @@
         </div>
     </div>
 
-    <!-- Barra de ações simplificada -->
+    <!-- Botões de navegação -->
     <div class="d-flex justify-content-between mt-4">
         <a href="/" class="btn btn-outline-secondary">
             <i class="fas fa-arrow-left me-1"></i>Voltar
