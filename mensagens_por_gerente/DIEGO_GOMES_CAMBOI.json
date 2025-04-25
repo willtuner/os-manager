@@ -1,9 +1,57 @@
 [
   {
+    "frota": "267",
+    "os": "109382",
+    "data": "24/04/2025",
+    "dias": "1",
+    "prestador": "BOMBAS DIESEL NOROESTE LTDA",
+    "servico": "Revisar bomba de combustivel"
+  },
+  {
+    "frota": "5081",
+    "os": "109372",
+    "data": "24/04/2025",
+    "dias": "1",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar esteira não isola os lados - (Fazenda Santa Izabel)"
+  },
+  {
+    "frota": "267",
+    "os": "109360",
+    "data": "24/04/2025",
+    "dias": "1",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Colocar corrente de segurança - (Fazenda Santa Izabel)"
+  },
+  {
+    "frota": "5706",
+    "os": "109299",
+    "data": "23/04/2025",
+    "dias": "2",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar bateria não está carregando - (Fazenda Santa Izabel)"
+  },
+  {
+    "frota": "273",
+    "os": "109273",
+    "data": "23/04/2025",
+    "dias": "2",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar corrente e parafuso do rabicho - (Fazenda Santa Izabel)"
+  },
+  {
+    "frota": "5137",
+    "os": "109272",
+    "data": "23/04/2025",
+    "dias": "2",
+    "prestador": "Prestador não definido",
+    "servico": "Tirar vazamento das camisas da bomba e trocar correias - (Fazenda Estrela)"
+  },
+  {
     "frota": "5210",
     "os": "109230",
     "data": "15/04/2025",
-    "dias": "8",
+    "dias": "10",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Corrigir vazamento no retentor traseiro do virabrequim da bomba de pulverização."
   },
@@ -11,55 +59,15 @@
     "frota": "131",
     "os": "107983",
     "data": "02/04/2025",
-    "dias": "21",
+    "dias": "23",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Corrigir vazamentos de óleo embaixo da bomba e filtro hidráulico, acertar vazamento na bomba alimentadora de combustível e avaliar comando hidráulico não responde ao acionar a alavanca."
-  },
-  {
-    "frota": "5159",
-    "os": "108012",
-    "data": "01/04/2025",
-    "dias": "22",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar chapa defletora por debaixo da esteira para evitar cair produto no chão."
-  },
-  {
-    "frota": "5696",
-    "os": "107907",
-    "data": "29/03/2025",
-    "dias": "25",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar suporte para apoio das mangueiras na estrutura do lado direito e esquerdo."
-  },
-  {
-    "frota": "5290",
-    "os": "107778",
-    "data": "27/03/2025",
-    "dias": "27",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer soldas em trincas nas barras, desentortar haste de sustentação da asa e soldar a mesma."
-  },
-  {
-    "frota": "5210",
-    "os": "107662",
-    "data": "25/03/2025",
-    "dias": "29",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Aumentar tamanho da caixa traseira para transportes dos produtos, fazer suporte para transporte dos cones e soldar suporte de fixação do corote."
-  },
-  {
-    "frota": "5740",
-    "os": "107483",
-    "data": "21/03/2025",
-    "dias": "33",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar suporte de fixação do parafuso de ajuste de alturas do patim lado esquerdo."
   },
   {
     "frota": "5290",
     "os": "105867",
     "data": "19/02/2025",
-    "dias": "63",
+    "dias": "65",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar jogo no rolamento do eixo - (Fazenda Santa Izabel)"
   }

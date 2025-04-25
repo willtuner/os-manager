@@ -1,33 +1,25 @@
 [
   {
+    "frota": "5778",
+    "os": "109401",
+    "data": "24/04/2025",
+    "dias": "1",
+    "prestador": "Prestador não definido",
+    "servico": "Quebra do eixo - (Fazenda Santa Luiza)"
+  },
+  {
     "frota": "5205",
     "os": "109192",
     "data": "22/04/2025",
-    "dias": "1",
-    "prestador": "Prestador não definido",
+    "dias": "3",
+    "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Folga no rotor - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "5542",
-    "os": "109190",
-    "data": "22/04/2025",
-    "dias": "1",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "5723",
-    "os": "108563",
-    "data": "10/04/2025",
-    "dias": "13",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Fazer proteção das partes moveis e colocar suporte para manter as mangueira hidráulicas suspensas - (Fazenda Santa Luiza)"
   },
   {
     "frota": "209",
     "os": "107679",
     "data": "03/04/2025",
-    "dias": "20",
+    "dias": "22",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar coifa danificada e folga no terminal de direção lado direito."
   },
@@ -35,7 +27,7 @@
     "frota": "112",
     "os": "107603",
     "data": "24/03/2025",
-    "dias": "30",
+    "dias": "32",
     "prestador": "Prestador não definido",
     "servico": "Verificar e corrigir vazamento de óleo no resfriador de óleo do motor e verificar vazamento na junta do cabeçote do motor."
   },
@@ -43,7 +35,7 @@
     "frota": "67",
     "os": "107350",
     "data": "19/03/2025",
-    "dias": "35",
+    "dias": "37",
     "prestador": "Prestador não definido",
     "servico": "Verificar vazamentos de óleo no motor, vaza na junta do mapa, na junção do motor com a caixa seca, motor está consumindo óleo e fumaceia na primeira partida, e jogando oleo pela mangueira de respiro da tampa de válvulas."
   }

@@ -1,41 +1,17 @@
 [
   {
-    "frota": "73",
-    "os": "108859",
-    "data": "15/04/2025",
-    "dias": "8",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar trator afogou e não pega mais - (Fazenda Alvorada)"
-  },
-  {
     "frota": "5147",
     "os": "108806",
     "data": "15/04/2025",
-    "dias": "8",
+    "dias": "10",
     "prestador": "Prestador não definido",
     "servico": "Reforma do equipamento - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "73",
-    "os": "108090",
-    "data": "02/04/2025",
-    "dias": "21",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar trator com motor oscilando."
-  },
-  {
-    "frota": "65",
-    "os": "107404",
-    "data": "25/03/2025",
-    "dias": "29",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar suporte de fixação dos braços de levante hidráulico, lado esquerdo falta um parafuso e do lado direito tem dois parafusos quebrados."
   },
   {
     "frota": "5626",
     "os": "107799",
     "data": "22/03/2025",
-    "dias": "32",
+    "dias": "34",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Fabricar lateral para instalação do esqui conserto do suporte da roda traseira, troca dos rolamentos das rodas traseiras, troca dos facão, conserto da estrutura da roçadeira, fabricar suporte da roda dianteira. (Fazenda Alvorada)"
   },
@@ -43,7 +19,7 @@
     "frota": "247",
     "os": "105385",
     "data": "12/02/2025",
-    "dias": "70",
+    "dias": "72",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Remendar buracos no assoalho da cabine - (Fazenda Alvorada)"
   }

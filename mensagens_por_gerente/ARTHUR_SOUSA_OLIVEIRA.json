@@ -3,7 +3,7 @@
     "frota": "84",
     "os": "109160",
     "data": "22/04/2025",
-    "dias": "1",
+    "dias": "3",
     "prestador": "Prestador não definido",
     "servico": "Fazer solda em trinca no suporte da empilhadeira - (Industria)"
   },
@@ -11,7 +11,7 @@
     "frota": "87",
     "os": "108582",
     "data": "10/04/2025",
-    "dias": "13",
+    "dias": "15",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Avaliar vazamento na bomba injetora - (Fazenda São Severino)"
   },
@@ -19,7 +19,7 @@
     "frota": "04",
     "os": "108580",
     "data": "10/04/2025",
-    "dias": "13",
+    "dias": "15",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Verificar vazamento no sistema de combustível - (Oficina)"
   },
@@ -27,32 +27,8 @@
     "frota": "100",
     "os": "107578",
     "data": "21/03/2025",
-    "dias": "33",
+    "dias": "35",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sistema elétrico - Faz Pedra Verde - Solicitado Romes - Autorizado Arthur"
-  },
-  {
-    "frota": "24",
-    "os": "107406",
-    "data": "20/03/2025",
-    "dias": "34",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Recupera suporte do radiador - Fazenda NSA - Autorizado Arthur"
-  },
-  {
-    "frota": "313",
-    "os": "107405",
-    "data": "18/03/2025",
-    "dias": "36",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção lateral - Oficina - Autorizado Arthur"
-  },
-  {
-    "frota": "133",
-    "os": "108483",
-    "data": "18/03/2025",
-    "dias": "36",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Desmontar equipamento para mudar direção do escape da fumaça - (Oficina)"
   }
 ]

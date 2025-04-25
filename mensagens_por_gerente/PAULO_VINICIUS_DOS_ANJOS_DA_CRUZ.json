@@ -1,25 +1,33 @@
 [
   {
+    "frota": "5671",
+    "os": "109351",
+    "data": "24/04/2025",
+    "dias": "1",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar acionamento eletrico dos bicos TK não acionado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5487",
+    "os": "109350",
+    "data": "24/04/2025",
+    "dias": "1",
+    "prestador": "Prestador não definido",
+    "servico": "Rolamento da turbina roncando - (Fazenda Estrela)"
+  },
+  {
     "frota": "5491",
     "os": "109153",
     "data": "22/04/2025",
-    "dias": "1",
-    "prestador": "Prestador não definido",
+    "dias": "3",
+    "prestador": "FM MANUTENÇÃO",
     "servico": "Adaptar ramal para adequar quantidade de bico - (Fazenda Estrela)"
-  },
-  {
-    "frota": "309",
-    "os": "109146",
-    "data": "21/04/2025",
-    "dias": "2",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento no retentor da TDP - (Fazenda Estrela)"
   },
   {
     "frota": "5068",
     "os": "109127",
     "data": "21/04/2025",
-    "dias": "2",
+    "dias": "4",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu L/D furado - (Fazenda Estrela)"
   },
@@ -27,7 +35,7 @@
     "frota": "110",
     "os": "109126",
     "data": "21/04/2025",
-    "dias": "2",
+    "dias": "4",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu dianteiro L/E furado - (Fazenda Estrela)"
   },
@@ -35,7 +43,7 @@
     "frota": "230",
     "os": "109099",
     "data": "17/04/2025",
-    "dias": "6",
+    "dias": "8",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar possível vazamento de óleo na parte superior do cabeçote do motor e vazamento na mangueira do retorno da turbina - (Fazenda Estrela)"
   },
@@ -43,7 +51,7 @@
     "frota": "288",
     "os": "109057",
     "data": "17/04/2025",
-    "dias": "6",
+    "dias": "8",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Cibié traseiro quebrado - (Fazenda Estrela)"
   },
@@ -51,7 +59,7 @@
     "frota": "230",
     "os": "109056",
     "data": "17/04/2025",
-    "dias": "6",
+    "dias": "8",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Cibié traseiro quebrado - (Fazenda Estrela)"
   },
@@ -59,7 +67,7 @@
     "frota": "221",
     "os": "108895",
     "data": "15/04/2025",
-    "dias": "8",
+    "dias": "10",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Cibié traseiro queimado - (Fazenda Estrela)"
   },
@@ -67,7 +75,7 @@
     "frota": "5523",
     "os": "108702",
     "data": "14/04/2025",
-    "dias": "9",
+    "dias": "11",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Trocar correia do agitador - (Fazenda Estrela)"
   },
@@ -75,31 +83,15 @@
     "frota": "5214",
     "os": "107682",
     "data": "14/03/2025",
-    "dias": "40",
+    "dias": "42",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Trocar correias (Fazenda Estrela)"
-  },
-  {
-    "frota": "5367",
-    "os": "107062",
-    "data": "14/03/2025",
-    "dias": "40",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trinca na estrutura da torre - (Fazenda Estrela)"
-  },
-  {
-    "frota": "268",
-    "os": "106661",
-    "data": "06/03/2025",
-    "dias": "48",
-    "prestador": "Prestador não definido",
-    "servico": "Trocar embreagem (Fazenda Estrela)"
   },
   {
     "frota": "5645",
     "os": "107177",
     "data": "05/03/2025",
-    "dias": "49",
+    "dias": "51",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Troca do olhal da 1 lança, troca da buchas do pedestal,  instalação de reforço no pedestal, instalação de proteção das mangueiras, instalação de caixa de ferramentas (Fazenda Estrela)"
   },
@@ -107,7 +99,7 @@
     "frota": "10223",
     "os": "106340",
     "data": "28/02/2025",
-    "dias": "54",
+    "dias": "56",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Substituir reparo do retorno de combustível, alternador. - (Fazenda Estrela)"
   },
@@ -115,7 +107,7 @@
     "frota": "5491",
     "os": "106230",
     "data": "26/02/2025",
-    "dias": "56",
+    "dias": "58",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Vazamento nas canecas - (Fazenda Estrela)"
   },
@@ -123,7 +115,7 @@
     "frota": "5298",
     "os": "107187",
     "data": "14/02/2025",
-    "dias": "68",
+    "dias": "70",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "reforma do transbordo (Fazenda Estrela)"
   },
@@ -131,7 +123,7 @@
     "frota": "5542",
     "os": "104945",
     "data": "06/02/2025",
-    "dias": "76",
+    "dias": "78",
     "prestador": "Prestador não definido",
     "servico": "Serviço de solda - (Fazenda Estrela)"
   }

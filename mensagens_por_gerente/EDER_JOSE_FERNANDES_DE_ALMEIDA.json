@@ -1,9 +1,17 @@
 [
   {
+    "frota": "10222",
+    "os": "109366",
+    "data": "24/04/2025",
+    "dias": "1",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar entrada de ar no sistema de diesel - (Fazenda Terra Branca)"
+  },
+  {
     "frota": "5398",
     "os": "109003",
     "data": "16/04/2025",
-    "dias": "7",
+    "dias": "9",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra em trincas na estrutura da torre - (Fazenda Terra Branca)"
   },
@@ -11,7 +19,7 @@
     "frota": "5001",
     "os": "108264",
     "data": "04/04/2025",
-    "dias": "19",
+    "dias": "21",
     "prestador": "Prestador não definido",
     "servico": "Suporte do braço de ligação da barra direita na estrutura quebrado."
   },
@@ -19,87 +27,23 @@
     "frota": "5623",
     "os": "108694",
     "data": "31/03/2025",
-    "dias": "23",
+    "dias": "25",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar vazamento de óleo na junta inferior do multiplicador esquerdo."
-  },
-  {
-    "frota": "79",
-    "os": "107921",
-    "data": "31/03/2025",
-    "dias": "23",
-    "prestador": "Prestador não definido",
-    "servico": "Soldar cano de saída de escape do silencioso."
-  },
-  {
-    "frota": "10222",
-    "os": "107825",
-    "data": "27/03/2025",
-    "dias": "27",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar tanque de combustível furado devido a super aquecimento do comando e corrigir vazamento nos tuchos."
-  },
-  {
-    "frota": "5001",
-    "os": "107776",
-    "data": "27/03/2025",
-    "dias": "27",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar suporte de fixação da barra esquerda danificado e soldar barra do lado esquerdo."
-  },
-  {
-    "frota": "220",
-    "os": "106656",
-    "data": "06/03/2025",
-    "dias": "48",
-    "prestador": "Prestador não definido",
-    "servico": "Vidro da porta quebrado (Fazenda Terra Branca)"
   },
   {
     "frota": "5227",
     "os": "106583",
     "data": "05/03/2025",
-    "dias": "49",
+    "dias": "51",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Quebra do suporte dos fações - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "10221",
-    "os": "106443",
-    "data": "04/03/2025",
-    "dias": "50",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sinalização - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5662",
-    "os": "105923",
-    "data": "20/02/2025",
-    "dias": "62",
-    "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
-    "servico": "Vazamento de óleo hidráulico na bomba - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "10222",
-    "os": "105911",
-    "data": "20/02/2025",
-    "dias": "62",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar braço hidráulico oscilando - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "132",
-    "os": "105853",
-    "data": "19/02/2025",
-    "dias": "63",
-    "prestador": "Prestador não definido",
-    "servico": "Quebra do rabicho - (Fazenda Terra Branca)"
   },
   {
     "frota": "224",
     "os": "105813",
     "data": "18/02/2025",
-    "dias": "64",
+    "dias": "66",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Lanterna da cabine quebrada L/D - (Fazenda Terra Branca)"
   },
@@ -107,32 +51,8 @@
     "frota": "5623",
     "os": "105514",
     "data": "14/02/2025",
-    "dias": "68",
+    "dias": "70",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Colocar proteção anti arremesso - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5057",
-    "os": "105179",
-    "data": "10/02/2025",
-    "dias": "72",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Regularizar rabicho com folga - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5495",
-    "os": "104021",
-    "data": "23/01/2025",
-    "dias": "90",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Fabricar proteção das partes móveis - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5462",
-    "os": "103445",
-    "data": "14/01/2025",
-    "dias": "99",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Fazer solda em trinca - (Fazenda Terra Branca)"
   }
 ]

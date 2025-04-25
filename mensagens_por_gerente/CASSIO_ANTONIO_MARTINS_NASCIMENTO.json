@@ -1,66 +1,34 @@
 [
   {
-    "frota": "5425",
-    "os": "109176",
-    "data": "22/04/2025",
-    "dias": "1",
+    "frota": "228",
+    "os": "109327",
+    "data": "23/04/2025",
+    "dias": "2",
+    "prestador": "DARCI CAPEL & CIA LTDA",
+    "servico": "Recuperar desgaste alojamento rolamento eixo piloto do cambio"
+  },
+  {
+    "frota": "64",
+    "os": "109252",
+    "data": "23/04/2025",
+    "dias": "2",
     "prestador": "Prestador não definido",
-    "servico": "Fazer solda em trinca no braço da barrinha - (Fazenda São Severino)"
+    "servico": "Verificar vazamento na junta do eixo de transmissão - (Fazenda São Severino)"
   },
   {
     "frota": "5658",
     "os": "109174",
     "data": "22/04/2025",
-    "dias": "1",
-    "prestador": "Prestador não definido",
+    "dias": "3",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Avaliar ruído característico (roncando) no rolamento da turbina, com suspeita de desgaste ou necessidade de substituição - (Fazenda São Severino)"
   },
   {
     "frota": "228",
     "os": "109169",
     "data": "22/04/2025",
-    "dias": "1",
+    "dias": "3",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Revisar caixa inversora"
-  },
-  {
-    "frota": "226",
-    "os": "109143",
-    "data": "21/04/2025",
-    "dias": "2",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar trator falhando - (Fazenda São Severino)"
-  },
-  {
-    "frota": "75",
-    "os": "109132",
-    "data": "21/04/2025",
-    "dias": "2",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar entrada de ar no sistema de diesel - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5570",
-    "os": "109097",
-    "data": "17/04/2025",
-    "dias": "6",
-    "prestador": "Prestador não definido",
-    "servico": "Fazer solda em trinca no braço hidráulico do guincho - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5612",
-    "os": "108510",
-    "data": "10/04/2025",
-    "dias": "13",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar válvula com vazamento - (Fazenda São Severino)"
-  },
-  {
-    "frota": "75",
-    "os": "105776",
-    "data": "18/02/2025",
-    "dias": "64",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Reforma da barrinha de herbicida - (Fazenda São Severino)"
   }
 ]

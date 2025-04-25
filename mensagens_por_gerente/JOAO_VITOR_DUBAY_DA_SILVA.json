@@ -1,17 +1,49 @@
 [
   {
+    "frota": "266",
+    "os": "109369",
+    "data": "24/04/2025",
+    "dias": "1",
+    "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
+    "servico": "Fazer revisão de 400 hrs, verificar vazamento no munhão e verificar temperatura - (Fazenda Estrela)"
+  },
+  {
+    "frota": "274",
+    "os": "109324",
+    "data": "23/04/2025",
+    "dias": "2",
+    "prestador": "Prestador não definido",
+    "servico": "Identificada a ruptura do tubo de lubrificação da balança da suspensão dianteira - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5631",
+    "os": "109087",
+    "data": "23/04/2025",
+    "dias": "2",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Corrigir vazamento de óleo no motor hidráulico traseiro"
+  },
+  {
+    "frota": "5631",
+    "os": "109242",
+    "data": "23/04/2025",
+    "dias": "2",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Esteira quebrada - (Fazenda Estrela)"
+  },
+  {
     "frota": "5174",
     "os": "109180",
     "data": "22/04/2025",
-    "dias": "1",
-    "prestador": "Prestador não definido",
+    "dias": "3",
+    "prestador": "TORNEARIA STEINHAUSER LTDA",
     "servico": "Quebra do engate - (Fazenda Estrela)"
   },
   {
     "frota": "266",
     "os": "108521",
     "data": "10/04/2025",
-    "dias": "13",
+    "dias": "15",
     "prestador": "Prestador não definido",
     "servico": "Troca da 2ª VCR traseira do trator por defeito operacional - (Fazenda Estrela)"
   },
@@ -19,7 +51,7 @@
     "frota": "279",
     "os": "108457",
     "data": "09/04/2025",
-    "dias": "14",
+    "dias": "16",
     "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
     "servico": "Revisão de 1200 hrs - (Fazenda Estrela)"
   },
@@ -27,63 +59,23 @@
     "frota": "266",
     "os": "108422",
     "data": "08/04/2025",
-    "dias": "15",
+    "dias": "17",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Cibié traseiro L/E queimado e alerta não funciona  - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5648",
-    "os": "107730",
-    "data": "26/03/2025",
-    "dias": "28",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar disco quebrado da seção traseira."
-  },
-  {
-    "frota": "5632",
-    "os": "107772",
-    "data": "26/03/2025",
-    "dias": "28",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar adubadeira danificada: acertar laterais superior lado direito e esquerdo amassada, corrigir chapa frontal danificada na parte inferior, colocar tampa do cubo de roda dianteira esquerda, avaliar possível torção nos eixos, corrigir folga excessiva no engate do cabeçario, verificar travessa superior torta e podre onde fixa nas laterais, corrigir pratos de distribuição estão tortos."
   },
   {
     "frota": "5159",
     "os": "107471",
     "data": "21/03/2025",
-    "dias": "33",
+    "dias": "35",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Retirar conjunto de pratos e montar conjunto de esteira lateral."
-  },
-  {
-    "frota": "5105",
-    "os": "107358",
-    "data": "19/03/2025",
-    "dias": "35",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar haste de apoio e sustentação das mangueiras."
-  },
-  {
-    "frota": "5631",
-    "os": "107316",
-    "data": "19/03/2025",
-    "dias": "35",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar prisioneiros e porcas da roda dianteira esquerda não está dando aperto."
-  },
-  {
-    "frota": "5631",
-    "os": "107123",
-    "data": "17/03/2025",
-    "dias": "37",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar corrente da esteira danificada."
   },
   {
     "frota": "274",
     "os": "105955",
     "data": "20/02/2025",
-    "dias": "62",
+    "dias": "64",
     "prestador": "Prestador não definido",
     "servico": "TDP não liga - (Fazenda Bela Manhã)"
   },
@@ -91,7 +83,7 @@
     "frota": "274",
     "os": "105810",
     "data": "18/02/2025",
-    "dias": "64",
+    "dias": "66",
     "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
     "servico": "Verificar trator perdendo sinal do GPS - (Fazenda Estrela)"
   }
