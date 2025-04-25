@@ -145,9 +145,36 @@ def painel():
 def finalizar_os(os_numero):
     if "gerente" not in session:
         return redirect(url_for('login'))
-    registrar_finalizacao(os_numero, session["gerente"], request.form.get("observacoes",""))
+
+    gerente = session["gerente"]
+
+    # 1) Registrar no CSV
+    registrar_finalizacao(os_numero, gerente, request.form.get("observacoes", ""))
+
+    # 2) Remover a OS do JSON do gerente
+    # localiza o arquivo JSON
+    nome_base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
+    caminho = os.path.join(MENSAGENS_DIR, nome_base)
+    if not os.path.exists(caminho):
+        primeiro = gerente.split('.')[0].upper()
+        for f in os.listdir(MENSAGENS_DIR):
+            if f.startswith(primeiro) and f.endswith('.json'):
+                caminho = os.path.join(MENSAGENS_DIR, f)
+                break
+
+    try:
+        with open(caminho, 'r', encoding='utf-8') as f:
+            dados = json.load(f)
+        # filtra a OS removendo a finalizada
+        dados = [item for item in dados if str(item.get("os") or item.get("OS","")) != str(os_numero)]
+        with open(caminho, 'w', encoding='utf-8') as f:
+            json.dump(dados, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"Erro ao atualizar JSON após finalizar OS: {e}")
+
     flash(f"OS {os_numero} finalizada com sucesso", "success")
     return redirect(url_for('painel'))
+
 
 @app.route("/admin")
 def admin_panel():
