@@ -19,57 +19,47 @@ USERS_FILE = os.path.join(BASE_DIR, 'users.json')
 # Garante que a pasta de mensagens exista
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
+# Usuário(s) admin
 ADMIN_USERS = {
     "wilson.santana": "admin321"
 }
 
+
 def carregar_os_gerente(gerente):
-    """
-    Busca o arquivo JSON do gerente, tenta variações de nome,
-    e carrega a lista de OS.
-    """
-    try:
-        nome_base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
-        caminho = os.path.join(MENSAGENS_DIR, nome_base)
+    """Carrega OS pendentes do JSON do gerente."""
+    nome_base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
+    caminho = os.path.join(MENSAGENS_DIR, nome_base)
+    if not os.path.exists(caminho):
+        primeiro = gerente.split('.')[0].upper()
+        for f in os.listdir(MENSAGENS_DIR):
+            if f.upper().startswith(primeiro) and f.lower().endswith('.json'):
+                caminho = os.path.join(MENSAGENS_DIR, f)
+                break
+    if not os.path.exists(caminho):
+        return []
+    with open(caminho, encoding='utf-8') as f:
+        dados = json.load(f)
+    resultado = []
+    for item in dados:
+        resultado.append({
+            "os":        str(item.get("os") or item.get("OS", "")),
+            "frota":     str(item.get("frota") or item.get("Frota", "")),
+            "data":      str(item.get("data") or item.get("Data", "")),
+            "dias":      str(item.get("dias") or item.get("Dias", "0")),
+            "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
+            "servico":   str(item.get("servico") or item.get("Servico") or item.get("observacao") or item.get("Observacao", ""))
+        })
+    return resultado
 
-        if not os.path.exists(caminho):
-            primeiro_nome = gerente.split('.')[0].upper()
-            for f in os.listdir(MENSAGENS_DIR):
-                if f.startswith(primeiro_nome) and f.endswith('.json'):
-                    caminho = os.path.join(MENSAGENS_DIR, f)
-                    break
-
-        if os.path.exists(caminho):
-            with open(caminho, 'r', encoding='utf-8') as f:
-                dados = json.load(f)
-            resultado = []
-            for item in dados:
-                resultado.append({
-                    "os": str(item.get("os") or item.get("OS", "")),
-                    "frota": str(item.get("frota") or item.get("Frota", "")),
-                    "data": str(item.get("data") or item.get("Data", "")),
-                    "dias": str(item.get("dias") or item.get("Dias", "0")),
-                    "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
-                    "servico": str(item.get("servico") or item.get("Servico") or item.get("observacao") or item.get("Observacao", ""))
-                })
-            return resultado
-    except Exception as e:
-        print(f"Erro ao carregar OS para {gerente}: {e}")
-    return []
 
 def registrar_finalizacao(os_numero, gerente, observacoes=""):
-    """
-    Anexa uma linha de finalização no CSV.
-    """
-    cabeçalho = ["OS", "Gerente", "Data_Finalizacao", "Hora_Finalizacao", "Observacoes", "Data_Registro"]
+    """Anexa uma linha de finalização no CSV."""
+    cabecalho = ["OS", "Gerente", "Data_Finalizacao", "Hora_Finalizacao", "Observacoes", "Data_Registro"]
     if not os.path.exists(FINALIZACOES_FILE):
         with open(FINALIZACOES_FILE, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerow(cabeçalho)
-
+            csv.writer(f).writerow(cabecalho)
     with open(FINALIZACOES_FILE, 'a', newline='', encoding='utf-8') as f:
-        writer = csv.writer(f)
-        writer.writerow([
+        csv.writer(f).writerow([
             os_numero,
             gerente,
             datetime.now().strftime('%Y-%m-%d'),
@@ -78,47 +68,44 @@ def registrar_finalizacao(os_numero, gerente, observacoes=""):
             datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         ])
 
+
 def contar_os_por_gerente():
-    """
-    Conta quantas OS cada gerente finalizou.
-    """
-    contagem = {}
+    """Conta quantas OS cada gerente já finalizou."""
+    cont = {}
     if os.path.exists(FINALIZACOES_FILE):
         with open(FINALIZACOES_FILE, encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
+            for row in csv.DictReader(f):
                 g = row.get("Gerente", "Desconhecido")
-                contagem[g] = contagem.get(g, 0) + 1
-    return contagem
+                cont[g] = cont.get(g, 0) + 1
+    return cont
+
 
 def listar_gerentes_ativos():
-    """
-    Lista gerentes que possuem JSON ou já finalizaram ao menos uma OS.
-    """
+    """Lista gerentes que têm JSON ou já finalizaram ao menos uma OS."""
     gerentes = set(contar_os_por_gerente().keys())
     for f in os.listdir(MENSAGENS_DIR):
-        if f.endswith('.json'):
+        if f.lower().endswith('.json'):
             nome = f.replace('_GONZAGA.json', '').replace('_', '.').lower()
             gerentes.add(nome)
     return sorted(gerentes)
+
 
 @app.route("/")
 def index():
     return redirect(url_for('login'))
 
-@app.route("/login", methods=["GET","POST"])
+
+@app.route("/login", methods=["GET", "POST"])
 def login():
     erro = None
     if request.method == "POST":
-        gerente = request.form["gerente"].strip()
+        gerente = request.form["gerente"].strip().lower()
         senha = request.form["senha"].strip()
-
         # Admin?
-        if gerente in ADMIN_USERS and ADMIN_USERS[gerente] == senha:
+        if ADMIN_USERS.get(gerente) == senha:
             session["gerente"] = gerente
             session["is_admin"] = True
             return redirect(url_for('admin_panel'))
-
         # Usuário normal
         if os.path.exists(USERS_FILE):
             with open(USERS_FILE, encoding='utf-8') as f:
@@ -127,50 +114,49 @@ def login():
                 session["gerente"] = gerente
                 session["is_admin"] = False
                 return redirect(url_for('painel'))
-
         erro = "Usuário ou senha inválidos"
+        flash(erro, "danger")
     return render_template("login.html", erro=erro)
 
-@app.route("/painel", methods=["GET","POST"])
+
+@app.route("/painel")
 def painel():
     if "gerente" not in session:
         return redirect(url_for('login'))
     gerente = session["gerente"]
     os_pendentes = carregar_os_gerente(gerente)
+    return render_template("painel.html",
+                           os_pendentes=os_pendentes,
+                           gerente=gerente,
+                           now=datetime.now())
 
-    # exibe sem botão de exportar, data/hora em branco no template
-    return render_template("painel.html", os_pendentes=os_pendentes, gerente=gerente, now=datetime.now())
 
 @app.route("/finalizar_os/<os_numero>", methods=["POST"])
 def finalizar_os(os_numero):
     if "gerente" not in session:
         return redirect(url_for('login'))
-
     gerente = session["gerente"]
 
-    # 1) Registrar no CSV
-    registrar_finalizacao(os_numero, gerente, request.form.get("observacoes", ""))
+    # 1) registra no CSV
+    registrar_finalizacao(os_numero, gerente, request.form.get("observacoes",""))
 
-    # 2) Remover a OS do JSON do gerente
-    # localiza o arquivo JSON
+    # 2) remove do JSON do gerente
     nome_base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
     caminho = os.path.join(MENSAGENS_DIR, nome_base)
     if not os.path.exists(caminho):
         primeiro = gerente.split('.')[0].upper()
         for f in os.listdir(MENSAGENS_DIR):
-            if f.startswith(primeiro) and f.endswith('.json'):
+            if f.upper().startswith(primeiro) and f.lower().endswith('.json'):
                 caminho = os.path.join(MENSAGENS_DIR, f)
                 break
-
     try:
-        with open(caminho, 'r', encoding='utf-8') as f:
+        with open(caminho, encoding='utf-8') as f:
             dados = json.load(f)
-        # filtra a OS removendo a finalizada
-        dados = [item for item in dados if str(item.get("os") or item.get("OS","")) != str(os_numero)]
+        dados = [i for i in dados if str(i.get("os") or i.get("OS","")) != str(os_numero)]
         with open(caminho, 'w', encoding='utf-8') as f:
             json.dump(dados, f, indent=2, ensure_ascii=False)
     except Exception as e:
-        print(f"Erro ao atualizar JSON após finalizar OS: {e}")
+        print(f"Erro ao atualizar JSON: {e}")
 
     flash(f"OS {os_numero} finalizada com sucesso", "success")
     return redirect(url_for('painel'))
@@ -182,7 +168,6 @@ def admin_panel():
         flash("Acesso não autorizado", "danger")
         return redirect(url_for('login'))
 
-    # carrega finalizações e contagens
     finalizadas = []
     if os.path.exists(FINALIZACOES_FILE):
         with open(FINALIZACOES_FILE, encoding='utf-8') as f:
@@ -200,13 +185,13 @@ def admin_panel():
                            os_abertas=abertas,
                            now=datetime.now())
 
+
 @app.route("/exportar_os_finalizadas")
 def exportar_os_finalizadas():
     if "gerente" not in session or not session.get("is_admin"):
         flash("Acesso não autorizado", "danger")
         return redirect(url_for('login'))
 
-    # lê todas as finalizações
     finalizadas = []
     if os.path.exists(FINALIZACOES_FILE):
         with open(FINALIZACOES_FILE, encoding='utf-8') as f:
@@ -216,7 +201,6 @@ def exportar_os_finalizadas():
         flash("Nenhuma OS finalizada para exportar", "warning")
         return redirect(url_for('admin_panel'))
 
-    # gera PDF
     os.makedirs("/tmp/relatorios", exist_ok=True)
     pdf_path = "/tmp/relatorios/relatorio_finalizacoes.pdf"
 
@@ -226,15 +210,14 @@ def exportar_os_finalizadas():
     pdf.cell(0, 10, "Relatório de OS Finalizadas", ln=True, align='C')
     pdf.ln(5)
 
-    # cabeçalho da tabela
-    cols = ["OS","Gerente","Data_Finalizacao","Hora_Finalizacao","Observacoes"]
+    cols = ["OS", "Gerente", "Data_Finalizacao", "Hora_Finalizacao", "Observacoes"]
     widths = [20, 40, 30, 25, 75]
-    pdf.set_font("Arial","B",10)
+    pdf.set_font("Arial", "B", 10)
     for col, w in zip(cols, widths):
-        pdf.cell(w, 8, col.replace("_"," "), border=1)
+        pdf.cell(w, 8, col.replace("_", " "), border=1)
     pdf.ln()
 
-    pdf.set_font("Arial","",9)
+    pdf.set_font("Arial", "", 9)
     for row in finalizadas:
         pdf.cell(widths[0], 6, row["OS"], border=1)
         pdf.cell(widths[1], 6, row["Gerente"], border=1)
@@ -245,7 +228,6 @@ def exportar_os_finalizadas():
         pdf.ln()
 
     pdf.output(pdf_path)
-
     return send_file(
         pdf_path,
         as_attachment=True,
@@ -253,11 +235,13 @@ def exportar_os_finalizadas():
         mimetype='application/pdf'
     )
 
+
 @app.route("/logout")
 def logout():
     session.clear()
     flash("Você foi desconectado com sucesso", "info")
     return redirect(url_for('login'))
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
