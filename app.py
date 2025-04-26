@@ -106,9 +106,17 @@ def login():
 def painel():
     if 'gerente' not in session:
         return redirect(url_for('login'))
+    # OS pendentes do JSON
     pend = carregar_os_gerente(session['gerente'])
+    # Últimas 100 OS finalizadas deste gerente
+    finalizadas = (Finalizacao.query
+                   .filter_by(gerente=session['gerente'])
+                   .order_by(Finalizacao.registrado_em.desc())
+                   .limit(100)
+                   .all())
     return render_template('painel.html',
                            os_pendentes=pend,
+                           finalizadas=finalizadas,
                            gerente=session['gerente'],
                            now=datetime.now())
 
@@ -205,7 +213,6 @@ def logout():
 def relatorio():
     if 'gerente' not in session:
         return redirect(url_for('login'))
-    # traz apenas as OS do gerente logado; para todas, remova o filter_by
     qry = Finalizacao.query \
                       .filter_by(gerente=session['gerente']) \
                       .order_by(Finalizacao.registrado_em.desc()) \
@@ -214,7 +221,6 @@ def relatorio():
                            registros=qry,
                            gerente=session['gerente'],
                            now=datetime.now())
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
