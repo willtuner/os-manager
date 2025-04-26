@@ -21,14 +21,13 @@
 
 {% if os_pendentes %}
   {% for os in os_pendentes %}
-  <form action="{{ url_for('finalizar_os', os_numero=os.os_numero) }}"
+  <form action="{{ url_for('finalizar_os', os_numero=os.os) }}"
         method="POST"
         class="card card-os mb-3">
     <div class="card-body">
-      <input type="hidden" name="os_numero" value="{{ os.os_numero }}">
       <div class="d-flex justify-content-between mb-2">
         <h5 class="mb-0">
-          <span class="badge bg-secondary me-2">OS {{ os.os_numero }}</span>
+          <span class="badge bg-secondary me-2">OS {{ os.os }}</span>
           Frota {{ os.frota }}
         </h5>
         <span class="badge-dias
