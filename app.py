@@ -44,14 +44,13 @@ os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
 ADMIN_USERNAMES = {'wilson.santana'}
 
-# --- DB initialization ---
+# --- DB initialization & import of users.json ---
 with app.app_context():
     db.create_all()
-    # importa users.json se ainda não houver usuários
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
-            js = json.load(f)
-        for username, pwd in js.items():
+            users_js = json.load(f)
+        for username, pwd in users_js.items():
             db.session.add(User(
                 username=username.lower(),
                 password=pwd,
@@ -126,7 +125,7 @@ def finalizar_os(os_numero):
                     observacoes=o)
     db.session.add(f)
     db.session.commit()
-    # remove do JSON
+    # remove from JSON
     base = session['gerente'].upper().replace('.','_') + '_GONZAGA.json'
     path = os.path.join(MENSAGENS_DIR, base)
     if not os.path.exists(path):
@@ -154,8 +153,8 @@ def admin_panel():
     finalizadas = (Finalizacao.query
                    .order_by(Finalizacao.registrado_em.desc())
                    .limit(100).all())
-    users      = User.query.order_by(User.username).all()
-    gerentes   = [u.username for u in users]
+    users_list = User.query.order_by(User.username).all()
+    gerentes   = [u.username for u in users_list]
     contagem   = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
     abertas    = {g: len(carregar_os_gerente(g)) for g in gerentes}
     return render_template('admin.html',
@@ -180,7 +179,8 @@ def exportar_os_finalizadas():
     pdf.cell(0,10,'Relatório de OS Finalizadas',ln=True,align='C'); pdf.ln(5)
     cols, w = ['OS','Gerente','Data','Hora','Obs'], [20,40,30,25,75]
     pdf.set_font('Arial','B',10)
-    for c,width in zip(cols,w): pdf.cell(width,8,c,border=1)
+    for c,width in zip(cols,w):
+        pdf.cell(width,8,c,border=1)
     pdf.ln(); pdf.set_font('Arial','',9)
     for r in allf:
         pdf.cell(w[0],6,r.os_numero,border=1)
