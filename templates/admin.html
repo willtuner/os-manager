@@ -75,7 +75,7 @@
               <td>{{ contagem_gerentes.get(g, 0) }}</td>
               <td>
                 <span class="badge badge-os-aberta">
-                  {{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0) != 1 }}
+                  {{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0) != 1 else '' }}
                 </span>
               </td>
             </tr>
@@ -109,11 +109,11 @@
           <tbody>
             {% for os in finalizadas %}
             <tr>
-              <td>{{ os.OS }}</td>
-              <td>{{ os.Gerente }}</td>
-              <td>{{ os.Data_Finalizacao }}</td>
-              <td>{{ os.Hora_Finalizacao }}</td>
-              <td>{{ os.Observacoes }}</td>
+              <td>{{ os.os_numero }}</td>
+              <td>{{ os.gerente }}</td>
+              <td>{{ os.data_fin }}</td>
+              <td>{{ os.hora_fin }}</td>
+              <td>{{ os.observacoes or '-' }}</td>
             </tr>
             {% else %}
             <tr>
