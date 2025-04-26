@@ -5,20 +5,18 @@ import os
 from datetime import datetime
 from fpdf import FPDF
 
-# --- Configuração básica do Flask e SQLAlchemy ---
+# --- Configuração do app e banco ---
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
-app.config['SESSION_COOKIE_SECURE'] = True
-app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(BASE_DIR, 'app.db')
-app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{DB_PATH}"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_SAMESITE='Lax',
+    SQLALCHEMY_DATABASE_URI=f"sqlite:///{os.path.join(os.path.dirname(__file__),'app.db')}",
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
+)
 db = SQLAlchemy(app)
 
-# --- Modelos ---
+# --- Models ---
 class User(db.Model):
     __tablename__ = 'users'
     id        = db.Column(db.Integer, primary_key=True)
@@ -36,160 +34,167 @@ class Finalizacao(db.Model):
     observacoes    = db.Column(db.Text)
     registrado_em  = db.Column(db.DateTime, default=datetime.utcnow)
 
-# --- Diretórios de arquivos de OS pendentes (JSON) ---
-MENSAGENS_DIR     = os.path.join(BASE_DIR, 'mensagens_por_gerente')
-USERS_FILE        = os.path.join(BASE_DIR, 'users.json')
+# --- Inicialização do DB e import de users.json ---
+MENSAGENS_DIR = os.path.join(os.path.dirname(__file__), 'mensagens_por_gerente')
+USERS_FILE    = os.path.join(os.path.dirname(__file__), 'users.json')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
-# --- Se não existir, cria o DB e popula a tabela de usuários do users.json ---
 with app.app_context():
     db.create_all()
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
-            users = json.load(f)
-        for username, pwd in users.items():
-            is_admin = False  # se quiser marcar alguns como admin, ajuste aqui
-            db.session.add(User(username=username, password=pwd, is_admin=is_admin))
+            js = json.load(f)
+        # Defina aqui quem será admin
+        admins = {'wilson.santana'}
+        for u,pwd in js.items():
+            db.session.add(User(
+                username=u.lower(),
+                password=pwd,
+                is_admin=(u.lower() in admins)
+            ))
         db.session.commit()
 
-# --- Funções auxiliares ---
+# --- Helpers ---
 def carregar_os_gerente(gerente):
-    nome_base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
-    caminho = os.path.join(MENSAGENS_DIR, nome_base)
+    base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
+    caminho = os.path.join(MENSAGENS_DIR, base)
     if not os.path.exists(caminho):
-        primeiro = gerente.split('.')[0].upper()
+        prefixo = gerente.split('.')[0].upper()
         for f in os.listdir(MENSAGENS_DIR):
-            if f.upper().startswith(primeiro) and f.lower().endswith('.json'):
+            if f.upper().startswith(prefixo) and f.lower().endswith('.json'):
                 caminho = os.path.join(MENSAGENS_DIR, f)
                 break
     if not os.path.exists(caminho):
         return []
     with open(caminho, encoding='utf-8') as f:
-        dados = json.load(f)
-    resultado = []
-    for item in dados:
-        resultado.append({
-            "os":        str(item.get("os") or item.get("OS", "")),
-            "frota":     str(item.get("frota") or item.get("Frota", "")),
-            "data":      str(item.get("data") or item.get("Data", "")),
-            "dias":      str(item.get("dias") or item.get("Dias", "0")),
-            "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
-            "servico":   str(item.get("servico") or item.get("Servico") or item.get("observacao") or item.get("Observacao", ""))
+        data = json.load(f)
+    out = []
+    for i in data:
+        out.append({
+            'os':        str(i.get('os') or i.get('OS','')),
+            'frota':     str(i.get('frota') or i.get('Frota','')),
+            'data':      str(i.get('data') or i.get('Data','')),
+            'dias':      str(i.get('dias') or i.get('Dias','0')),
+            'prestador': str(i.get('prestador') or i.get('Prestador','Prestador não definido')),
+            'servico':   str(i.get('servico') or i.get('Servico') or i.get('observacao') or i.get('Observacao',''))
         })
-    return resultado
+    return out
 
 # --- Rotas ---
-@app.route("/")
+@app.route('/')
 def index():
     return redirect(url_for('login'))
 
-@app.route("/login", methods=["GET", "POST"])
+@app.route('/login', methods=['GET','POST'])
 def login():
-    if request.method == "POST":
-        u = request.form["gerente"].strip().lower()
-        pwd = request.form["senha"].strip()
+    if request.method == 'POST':
+        u = request.form['gerente'].strip().lower()
+        p = request.form['senha'].strip()
         user = User.query.filter_by(username=u).first()
-        if user and user.password == pwd:
-            session["gerente"]  = u
-            session["is_admin"] = user.is_admin
+        if user and user.password == p:
+            session['gerente']  = u
+            session['is_admin'] = user.is_admin
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
-        flash("Usuário ou senha inválidos", "danger")
-    return render_template("login.html")
+        flash('Usuário ou senha inválidos','danger')
+    return render_template('login.html')
 
-@app.route("/painel")
+@app.route('/painel')
 def painel():
-    if "gerente" not in session:
+    if 'gerente' not in session:
         return redirect(url_for('login'))
-    os_pendentes = carregar_os_gerente(session["gerente"])
-    return render_template("painel.html",
-                           os_pendentes=os_pendentes,
-                           gerente=session["gerente"],
+    pend = carregar_os_gerente(session['gerente'])
+    return render_template('painel.html',
+                           os_pendentes=pend,
+                           gerente=session['gerente'],
                            now=datetime.now())
 
-@app.route("/finalizar_os/<os_numero>", methods=["POST"])
+@app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
-    if "gerente" not in session:
+    if 'gerente' not in session:
         return redirect(url_for('login'))
-    data = request.form["data_finalizacao"]
-    hora = request.form["hora_finalizacao"]
-    obs  = request.form.get("observacoes","")
-    # Salva no banco
-    fin = Finalizacao(os_numero=os_numero,
-                      gerente=session["gerente"],
-                      data_fin=data,
-                      hora_fin=hora,
-                      observacoes=obs)
-    db.session.add(fin)
+    d = request.form['data_finalizacao']
+    h = request.form['hora_finalizacao']
+    o = request.form.get('observacoes','')
+    f = Finalizacao(os_numero=os_numero,
+                    gerente=session['gerente'],
+                    data_fin=d, hora_fin=h,
+                    observacoes=o)
+    db.session.add(f)
     db.session.commit()
-    # Remove do JSON pendente
-    caminho = os.path.join(MENSAGENS_DIR, session["gerente"].upper().replace('.', '_') + "_GONZAGA.json")
-    if not os.path.exists(caminho):
-        primeiro = session["gerente"].split('.')[0].upper()
-        for f in os.listdir(MENSAGENS_DIR):
-            if f.upper().startswith(primeiro): caminho = os.path.join(MENSAGENS_DIR, f); break
+    # remove json pendente
+    base = session['gerente'].upper().replace('.','_') + '_GONZAGA.json'
+    path = os.path.join(MENSAGENS_DIR, base)
+    if not os.path.exists(path):
+        pre = session['gerente'].split('.')[0].upper()
+        for fn in os.listdir(MENSAGENS_DIR):
+            if fn.upper().startswith(pre):
+                path = os.path.join(MENSAGENS_DIR, fn)
+                break
     try:
-        with open(caminho, encoding='utf-8') as f:
-            lista = json.load(f)
-        lista = [i for i in lista if str(i.get("os") or i.get("OS","")) != os_numero]
-        with open(caminho, 'w', encoding='utf-8') as f:
-            json.dump(lista, f, indent=2, ensure_ascii=False)
-    except: pass
-    flash(f"OS {os_numero} finalizada com sucesso", "success")
+        with open(path, encoding='utf-8') as fjson:
+            lst = json.load(fjson)
+        lst = [x for x in lst if str(x.get('os') or x.get('OS')) != os_numero]
+        with open(path, 'w', encoding='utf-8') as fjson:
+            json.dump(lst, fjson, indent=2, ensure_ascii=False)
+    except:
+        pass
+    flash(f'OS {os_numero} finalizada','success')
     return redirect(url_for('painel'))
 
-@app.route("/admin")
+@app.route('/admin')
 def admin_panel():
-    if not session.get("is_admin"):
-        flash("Acesso não autorizado", "danger")
+    if not session.get('is_admin'):
+        flash('Acesso negado','danger')
         return redirect(url_for('login'))
-    finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc())\
-                                   .limit(100).all()
-    gerentes    = [u.username for u in User.query.all()]
-    contagem    = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
-    os_abertas  = {g: len(carregar_os_gerente(g))        for g in gerentes}
-    return render_template("admin.html",
+    finalizadas = (Finalizacao.query
+                   .order_by(Finalizacao.registrado_em.desc())
+                   .limit(100).all())
+    users = User.query.order_by(User.username).all()
+    gerentes = [u.username for u in users]
+    contagem = {g: Finalizacao.query.filter_by(gerente=g).count()
+                for g in gerentes}
+    abertas  = {g: len(carregar_os_gerente(g)) for g in gerentes}
+    return render_template('admin.html',
                            finalizadas=finalizadas,
                            total_os=len(finalizadas),
                            gerentes=gerentes,
                            contagem_gerentes=contagem,
-                           os_abertas=os_abertas,
+                           os_abertas=abertas,
                            now=datetime.now())
 
-@app.route("/exportar_os_finalizadas")
+@app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():
-    if not session.get("is_admin"):
-        flash("Acesso não autorizado", "danger")
+    if not session.get('is_admin'):
+        flash('Acesso negado','danger')
         return redirect(url_for('login'))
-    finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).all()
-    if not finalizadas:
-        flash("Nenhuma OS finalizada para exportar", "warning")
+    allf = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).all()
+    if not allf:
+        flash('Nenhuma OS finalizada','warning')
         return redirect(url_for('admin_panel'))
-    # Gera PDF...
-    pdf_path = os.path.join(BASE_DIR, 'relatorio.pdf')
-    pdf = FPDF(); pdf.add_page(); pdf.set_font("Arial","B",12)
-    pdf.cell(0,10,"Relatório de OS Finalizadas",ln=True,align='C'); pdf.ln(5)
-    cols, widths = ["OS","Gerente","Data","Hora","Obs"], [20,40,30,25,75]
-    pdf.set_font("Arial","B",10)
-    for c,w in zip(cols,widths): pdf.cell(w,8,c,border=1)
-    pdf.ln(); pdf.set_font("Arial","",9)
-    for fz in finalizadas:
-        pdf.cell(widths[0],6,fz.os_numero,border=1)
-        pdf.cell(widths[1],6,fz.gerente,  border=1)
-        pdf.cell(widths[2],6,fz.data_fin, border=1)
-        pdf.cell(widths[3],6,fz.hora_fin, border=1)
-        pdf.cell(widths[4],6,(fz.observacoes or "")[:40],border=1)
+    pdf_path = os.path.join(os.path.dirname(__file__),'relatorio.pdf')
+    pdf = FPDF(); pdf.add_page(); pdf.set_font('Arial','B',12)
+    pdf.cell(0,10,'Relatório de OS Finalizadas',ln=True,align='C'); pdf.ln(5)
+    cols, w = ['OS','Gerente','Data','Hora','Obs'], [20,40,30,25,75]
+    pdf.set_font('Arial','B',10)
+    for c,width in zip(cols,w): pdf.cell(width,8,c,border=1)
+    pdf.ln(); pdf.set_font('Arial','',9)
+    for r in allf:
+        pdf.cell(w[0],6,r.os_numero,border=1)
+        pdf.cell(w[1],6,r.gerente,   border=1)
+        pdf.cell(w[2],6,r.data_fin,  border=1)
+        pdf.cell(w[3],6,r.hora_fin,  border=1)
+        pdf.cell(w[4],6,(r.observacoes or '')[:40],border=1)
         pdf.ln()
     pdf.output(pdf_path)
-    return send_file(pdf_path,
-                     as_attachment=True,
-                     download_name=f"relatorio_{datetime.now():%Y%m%d}.pdf",
+    return send_file(pdf_path, as_attachment=True,
+                     download_name=f'relatorio_{datetime.now():%Y%m%d}.pdf',
                      mimetype='application/pdf')
 
-@app.route("/logout")
+@app.route('/logout')
 def logout():
     session.clear()
-    flash("Você foi desconectado com sucesso", "info")
+    flash('Desconectado','info')
     return redirect(url_for('login'))
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=int(os.environ.get("PORT",10000)), debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT',10000)), debug=True)
