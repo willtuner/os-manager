@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 import json
 import os
 from datetime import datetime
 from fpdf import FPDF
 
-# --- Configuração do app e banco ---
+# --- App & DB setup ---
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 app.config.update(
@@ -15,6 +16,7 @@ app.config.update(
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 # --- Models ---
 class User(db.Model):
@@ -34,39 +36,44 @@ class Finalizacao(db.Model):
     observacoes    = db.Column(db.Text)
     registrado_em  = db.Column(db.DateTime, default=datetime.utcnow)
 
-# --- Inicialização do DB e import de users.json ---
-MENSAGENS_DIR = os.path.join(os.path.dirname(__file__), 'mensagens_por_gerente')
-USERS_FILE    = os.path.join(os.path.dirname(__file__), 'users.json')
+# --- File paths ---
+BASE_DIR        = os.path.dirname(__file__)
+MENSAGENS_DIR   = os.path.join(BASE_DIR, 'mensagens_por_gerente')
+USERS_FILE      = os.path.join(BASE_DIR, 'users.json')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
-with app.app_context():
+ADMIN_USERNAMES = {'wilson.santana'}
+
+# --- Initialize DB & import users.json ---
+@app.before_first_request
+def initialize_database():
+    # create tables
     db.create_all()
+    # import users if table empty
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
             js = json.load(f)
-        # Defina aqui quem será admin
-        admins = {'wilson.santana'}
-        for u,pwd in js.items():
+        for username, pwd in js.items():
             db.session.add(User(
-                username=u.lower(),
+                username=username.lower(),
                 password=pwd,
-                is_admin=(u.lower() in admins)
+                is_admin=(username.lower() in ADMIN_USERNAMES)
             ))
         db.session.commit()
 
 # --- Helpers ---
 def carregar_os_gerente(gerente):
     base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
-    caminho = os.path.join(MENSAGENS_DIR, base)
-    if not os.path.exists(caminho):
+    path = os.path.join(MENSAGENS_DIR, base)
+    if not os.path.exists(path):
         prefixo = gerente.split('.')[0].upper()
-        for f in os.listdir(MENSAGENS_DIR):
-            if f.upper().startswith(prefixo) and f.lower().endswith('.json'):
-                caminho = os.path.join(MENSAGENS_DIR, f)
+        for fn in os.listdir(MENSAGENS_DIR):
+            if fn.upper().startswith(prefixo) and fn.lower().endswith('.json'):
+                path = os.path.join(MENSAGENS_DIR, fn)
                 break
-    if not os.path.exists(caminho):
+    if not os.path.exists(path):
         return []
-    with open(caminho, encoding='utf-8') as f:
+    with open(path, encoding='utf-8') as f:
         data = json.load(f)
     out = []
     for i in data:
@@ -80,7 +87,7 @@ def carregar_os_gerente(gerente):
         })
     return out
 
-# --- Rotas ---
+# --- Routes ---
 @app.route('/')
 def index():
     return redirect(url_for('login'))
@@ -121,7 +128,7 @@ def finalizar_os(os_numero):
                     observacoes=o)
     db.session.add(f)
     db.session.commit()
-    # remove json pendente
+    # remove from JSON
     base = session['gerente'].upper().replace('.','_') + '_GONZAGA.json'
     path = os.path.join(MENSAGENS_DIR, base)
     if not os.path.exists(path):
@@ -131,11 +138,11 @@ def finalizar_os(os_numero):
                 path = os.path.join(MENSAGENS_DIR, fn)
                 break
     try:
-        with open(path, encoding='utf-8') as fjson:
-            lst = json.load(fjson)
-        lst = [x for x in lst if str(x.get('os') or x.get('OS')) != os_numero]
-        with open(path, 'w', encoding='utf-8') as fjson:
-            json.dump(lst, fjson, indent=2, ensure_ascii=False)
+        with open(path, encoding='utf-8') as jf:
+            lst = json.load(jf)
+        lst = [x for x in lst if str(x.get('os') or x.get('OS','')) != os_numero]
+        with open(path, 'w', encoding='utf-8') as jf:
+            json.dump(lst, jf, indent=2, ensure_ascii=False)
     except:
         pass
     flash(f'OS {os_numero} finalizada','success')
@@ -149,11 +156,11 @@ def admin_panel():
     finalizadas = (Finalizacao.query
                    .order_by(Finalizacao.registrado_em.desc())
                    .limit(100).all())
-    users = User.query.order_by(User.username).all()
-    gerentes = [u.username for u in users]
-    contagem = {g: Finalizacao.query.filter_by(gerente=g).count()
-                for g in gerentes}
-    abertas  = {g: len(carregar_os_gerente(g)) for g in gerentes}
+    users      = User.query.order_by(User.username).all()
+    gerentes   = [u.username for u in users]
+    contagem   = {g: Finalizacao.query.filter_by(gerente=g).count()
+                  for g in gerentes}
+    abertas    = {g: len(carregar_os_gerente(g)) for g in gerentes}
     return render_template('admin.html',
                            finalizadas=finalizadas,
                            total_os=len(finalizadas),
@@ -171,7 +178,7 @@ def exportar_os_finalizadas():
     if not allf:
         flash('Nenhuma OS finalizada','warning')
         return redirect(url_for('admin_panel'))
-    pdf_path = os.path.join(os.path.dirname(__file__),'relatorio.pdf')
+    pdf_path = os.path.join(BASE_DIR, 'relatorio.pdf')
     pdf = FPDF(); pdf.add_page(); pdf.set_font('Arial','B',12)
     pdf.cell(0,10,'Relatório de OS Finalizadas',ln=True,align='C'); pdf.ln(5)
     cols, w = ['OS','Gerente','Data','Hora','Obs'], [20,40,30,25,75]
@@ -186,7 +193,8 @@ def exportar_os_finalizadas():
         pdf.cell(w[4],6,(r.observacoes or '')[:40],border=1)
         pdf.ln()
     pdf.output(pdf_path)
-    return send_file(pdf_path, as_attachment=True,
+    return send_file(pdf_path,
+                     as_attachment=True,
                      download_name=f'relatorio_{datetime.now():%Y%m%d}.pdf',
                      mimetype='application/pdf')
 
