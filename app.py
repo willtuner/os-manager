@@ -106,14 +106,19 @@ def login():
 def painel():
     if 'gerente' not in session:
         return redirect(url_for('login'))
+
     # OS pendentes do JSON
     pend = carregar_os_gerente(session['gerente'])
+
     # Últimas 100 OS finalizadas deste gerente
-    finalizadas = (Finalizacao.query
-                   .filter_by(gerente=session['gerente'])
-                   .order_by(Finalizacao.registrado_em.desc())
-                   .limit(100)
-                   .all())
+    finalizadas = (
+        Finalizacao.query
+            .filter_by(gerente=session['gerente'])
+            .order_by(Finalizacao.registrado_em.desc())
+            .limit(100)
+            .all()
+    )
+
     return render_template('painel.html',
                            os_pendentes=pend,
                            finalizadas=finalizadas,
@@ -133,7 +138,7 @@ def finalizar_os(os_numero):
                     observacoes=o)
     db.session.add(f)
     db.session.commit()
-    # remove from JSON
+    # remove do JSON
     base = session['gerente'].upper().replace('.','_') + '_GONZAGA.json'
     path = os.path.join(MENSAGENS_DIR, base)
     if not os.path.exists(path):
@@ -213,10 +218,10 @@ def logout():
 def relatorio():
     if 'gerente' not in session:
         return redirect(url_for('login'))
-    qry = Finalizacao.query \
-                      .filter_by(gerente=session['gerente']) \
-                      .order_by(Finalizacao.registrado_em.desc()) \
-                      .all()
+    qry = (Finalizacao.query
+           .filter_by(gerente=session['gerente'])
+           .order_by(Finalizacao.registrado_em.desc())
+           .all())
     return render_template('relatorio.html',
                            registros=qry,
                            gerente=session['gerente'],
