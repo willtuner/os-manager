@@ -201,6 +201,21 @@ def logout():
     flash('Desconectado','info')
     return redirect(url_for('login'))
 
+@app.route('/relatorio')
+def relatorio():
+    if 'gerente' not in session:
+        return redirect(url_for('login'))
+    # traz apenas as OS do gerente logado; para todas, remova o filter_by
+    qry = Finalizacao.query \
+                      .filter_by(gerente=session['gerente']) \
+                      .order_by(Finalizacao.registrado_em.desc()) \
+                      .all()
+    return render_template('relatorio.html',
+                           registros=qry,
+                           gerente=session['gerente'],
+                           now=datetime.now())
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
             port=int(os.environ.get('PORT',10000)),
