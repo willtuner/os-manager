@@ -36,7 +36,7 @@ class Finalizacao(db.Model):
     observacoes    = db.Column(db.Text)
     registrado_em  = db.Column(db.DateTime, default=datetime.utcnow)
 
-# --- File paths ---
+# --- File paths & constants ---
 BASE_DIR        = os.path.dirname(__file__)
 MENSAGENS_DIR   = os.path.join(BASE_DIR, 'mensagens_por_gerente')
 USERS_FILE      = os.path.join(BASE_DIR, 'users.json')
@@ -44,12 +44,10 @@ os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
 ADMIN_USERNAMES = {'wilson.santana'}
 
-# --- Initialize DB & import users.json ---
-@app.before_first_request
-def initialize_database():
-    # create tables
+# --- DB initialization ---
+with app.app_context():
     db.create_all()
-    # import users if table empty
+    # importa users.json se ainda não houver usuários
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
             js = json.load(f)
@@ -128,7 +126,7 @@ def finalizar_os(os_numero):
                     observacoes=o)
     db.session.add(f)
     db.session.commit()
-    # remove from JSON
+    # remove do JSON
     base = session['gerente'].upper().replace('.','_') + '_GONZAGA.json'
     path = os.path.join(MENSAGENS_DIR, base)
     if not os.path.exists(path):
@@ -158,8 +156,7 @@ def admin_panel():
                    .limit(100).all())
     users      = User.query.order_by(User.username).all()
     gerentes   = [u.username for u in users]
-    contagem   = {g: Finalizacao.query.filter_by(gerente=g).count()
-                  for g in gerentes}
+    contagem   = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
     abertas    = {g: len(carregar_os_gerente(g)) for g in gerentes}
     return render_template('admin.html',
                            finalizadas=finalizadas,
@@ -205,4 +202,6 @@ def logout():
     return redirect(url_for('login'))
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT',10000)), debug=True)
+    app.run(host='0.0.0.0',
+            port=int(os.environ.get('PORT',10000)),
+            debug=True)
