@@ -17,7 +17,7 @@ USERS_FILE = os.path.join(BASE_DIR, 'users.json')
 
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
-# Credenciais de admin
+# Usuários admin
 ADMIN_USERS = {
     "wilson.santana": "admin321"
 }
@@ -106,7 +106,7 @@ def login():
         flash(erro, "danger")
     return render_template("login.html", erro=erro)
 
-@app.route("/painel", methods=["GET", "POST"])
+@app.route("/painel")
 def painel():
     if "gerente" not in session:
         return redirect(url_for('login'))
@@ -122,13 +122,12 @@ def finalizar_os(os_numero):
     if "gerente" not in session:
         return redirect(url_for('login'))
     gerente = session["gerente"]
-    # lê data/hora vindo do form
     data = request.form.get("data_finalizacao")
     hora = request.form.get("hora_finalizacao")
     obs  = request.form.get("observacoes", "")
+    # 1) registrar
     registrar_finalizacao(os_numero, gerente, data, hora, obs)
-
-    # remove do JSON
+    # 2) remover do JSON
     nome_base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
     caminho = os.path.join(MENSAGENS_DIR, nome_base)
     if not os.path.exists(caminho):
@@ -145,7 +144,6 @@ def finalizar_os(os_numero):
             json.dump(dados, f, indent=2, ensure_ascii=False)
     except Exception as e:
         print(f"Erro ao atualizar JSON: {e}")
-
     flash(f"OS {os_numero} finalizada com sucesso", "success")
     return redirect(url_for('painel'))
 
@@ -154,16 +152,13 @@ def admin_panel():
     if "gerente" not in session or not session.get("is_admin"):
         flash("Acesso não autorizado", "danger")
         return redirect(url_for('login'))
-
     finalizadas = []
     if os.path.exists(FINALIZACOES_FILE):
         with open(FINALIZACOES_FILE, encoding='utf-8') as f:
             finalizadas = list(csv.DictReader(f))
-
-    contagem    = contar_os_por_gerente()
-    ativos      = listar_gerentes_ativos()
-    os_abertas  = {g: len(carregar_os_gerente(g)) for g in ativos}
-
+    contagem     = contar_os_por_gerente()
+    ativos       = listar_gerentes_ativos()
+    os_abertas   = {g: len(carregar_os_gerente(g)) for g in ativos}
     return render_template("admin.html",
                            finalizadas=finalizadas[-100:],
                            total_os=len(finalizadas),
@@ -177,17 +172,14 @@ def exportar_os_finalizadas():
     if "gerente" not in session or not session.get("is_admin"):
         flash("Acesso não autorizado", "danger")
         return redirect(url_for('login'))
-
     finalizadas = []
     if os.path.exists(FINALIZACOES_FILE):
         with open(FINALIZACOES_FILE, encoding='utf-8') as f:
             finalizadas = list(csv.DictReader(f))
-
     if not finalizadas:
         flash("Nenhuma OS finalizada para exportar", "warning")
         return redirect(url_for('admin_panel'))
-
-    # Geração do PDF
+    # Gera PDF
     os.makedirs("/tmp/relatorios", exist_ok=True)
     pdf_path = "/tmp/relatorios/relatorio_finalizacoes.pdf"
     pdf = FPDF()
@@ -195,14 +187,12 @@ def exportar_os_finalizadas():
     pdf.set_font("Arial", "B", 12)
     pdf.cell(0, 10, "Relatório de OS Finalizadas", ln=True, align='C')
     pdf.ln(5)
-
     cols   = ["OS","Gerente","Data_Finalizacao","Hora_Finalizacao","Observacoes"]
     widths = [20,40,30,25,75]
     pdf.set_font("Arial","B",10)
     for col,w in zip(cols,widths):
         pdf.cell(w, 8, col.replace("_"," "), border=1)
     pdf.ln()
-
     pdf.set_font("Arial","",9)
     for row in finalizadas:
         pdf.cell(widths[0],6, row["OS"],               border=1)
@@ -212,7 +202,6 @@ def exportar_os_finalizadas():
         obs = (row["Observacoes"] or "")[:40]
         pdf.cell(widths[4],6, obs, border=1)
         pdf.ln()
-
     pdf.output(pdf_path)
     return send_file(pdf_path,
                      as_attachment=True,
@@ -226,5 +215,5 @@ def logout():
     return redirect(url_for('login'))
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT",10000))
+    port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port, debug=True)
