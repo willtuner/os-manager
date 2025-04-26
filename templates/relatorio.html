@@ -1,134 +1,76 @@
 {% extends "base.html" %}
 
-{% block title %}Relatório de OS - {{ gerente }}{% endblock %}
+{% block title %}Relatório de OS – {{ gerente }}{% endblock %}
 
 {% block extra_css %}
 <style>
-    .header-card {
-        background-color: #2c3e50;
-        color: white;
-        padding: 15px 20px;
-        border-radius: 8px;
-        margin-bottom: 25px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    .table-container {
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-        overflow: hidden;
-    }
-
-    .badge-frota {
-        background-color: #3498db;
-        color: white;
-        font-weight: 500;
-        padding: 5px 10px;
-        border-radius: 4px;
-    }
-
-    .badge-dias {
-        font-weight: 500;
-        padding: 5px 10px;
-        border-radius: 4px;
-        min-width: 70px;
-        display: inline-block;
-        text-align: center;
-    }
-
-    .empty-state {
-        padding: 40px;
-        text-align: center;
-        background: #f8f9fa;
-        border-radius: 8px;
-    }
-
-    tr:hover {
-        background-color: #f1f1f1;
-        transition: background-color 0.3s;
-    }
+  .table-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s;
+  }
 </style>
 {% endblock %}
 
 {% block content %}
 <div class="container">
-    <!-- Cabeçalho simplificado -->
-    <div class="header-card">
-        <h4><i class="fas fa-clipboard-list me-2"></i>Relatório de Ordens de Serviço</h4>
-        <p class="mb-0"><i class="fas fa-user-tie me-2"></i>Gerente: {{ gerente }}</p>
-    </div>
+  <div class="my-4">
+    <h4><i class="fas fa-clipboard-list me-2"></i>Relatório de Ordens de Serviço</h4>
+    <p class="text-muted mb-0"><i class="fas fa-user-tie me-2"></i>Gerente: <strong>{{ gerente }}</strong></p>
+  </div>
 
-    <!-- Tabela de OS -->
-    <div class="table-container">
-        <div class="table-responsive">
-            <table class="table table-hover align-middle mb-0">
-                <thead class="table-dark">
-                    <tr>
-                        <th><i class="fas fa-hashtag me-1"></i>OS</th>
-                        <th><i class="far fa-calendar-alt me-1"></i>Data</th>
-                        <th><i class="fas fa-truck me-1"></i>Frota</th>
-                        <th><i class="fas fa-tools me-1"></i>Serviço</th>
-                        <th><i class="fas fa-user-hard-hat me-1"></i>Prestador</th>
-                        <th><i class="far fa-clock me-1"></i>Dias</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for item in lista %}
-                    <tr>
-                        <td><strong>{{ item.OS }}</strong></td>
-                        <td>{{ item.DataFechamento }}</td>
-                        <td><span class="badge-frota">{{ item.Frota }}</span></td>
-                        <td>{{ item.Observacao }}</td>
-                        <td>
-                            {% if item.Prestador != "Prestador não definido" %}
-                                {{ item.Prestador }}
-                            {% else %}
-                                <span class="text-muted">{{ item.Prestador }}</span>
-                            {% endif %}
-                        </td>
-                        <td>
-                            {% set dias = item.Dias|int %}
-                            <span class="badge-dias 
-                                {% if dias > 30 %}bg-danger text-white
-                                {% elif dias > 15 %}bg-warning text-dark
-                                {% else %}bg-secondary text-white{% endif %}">
-                                {{ dias }} dia{{ 's' if dias != 1 else '' }}
-                            </span>
-                        </td>
-                    </tr>
-                    {% else %}
-                    <tr>
-                        <td colspan="6" class="text-center py-5">
-                            <div class="empty-state">
-                                <i class="far fa-check-circle text-muted"></i>
-                                <h5 class="mt-3">Nenhuma OS pendente</h5>
-                                <p class="text-muted">Todas as ordens de serviço estão em dia</p>
-                            </div>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
+  <div class="table-container">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th>OS</th>
+            <th>Data</th>
+            <th>Frota</th>
+            <th>Serviço</th>
+            <th>Prestador</th>
+            <th>Dias</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if os_pendentes %}
+            {% for os in os_pendentes %}
+            <tr>
+              <td>{{ os.os }}</td>
+              <td>{{ os.data }}</td>
+              <td>{{ os.frota }}</td>
+              <td>{{ os.servico }}</td>
+              <td>{{ os.prestador }}</td>
+              <td>{{ os.dias }} dia{{ 's' if os.dias|int != 1 }}</td>
+            </tr>
+            {% endfor %}
+          {% else %}
+            <tr>
+              <td colspan="6" class="text-center py-5">
+                <div class="text-muted">
+                  <i class="far fa-check-circle fa-3x mb-3"></i>
+                  <p>Nenhuma OS pendente</p>
+                </div>
+              </td>
+            </tr>
+          {% endif %}
+        </tbody>
+      </table>
     </div>
+  </div>
 
-    <!-- Botões de navegação -->
-    <div class="d-flex justify-content-between mt-4">
-        <a href="/" class="btn btn-outline-secondary">
-            <i class="fas fa-arrow-left me-1"></i>Voltar
-        </a>
-        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
-            <i class="fas fa-sign-out-alt me-1"></i>Sair
-        </a>
-    </div>
+  <div class="d-flex justify-content-between mt-4">
+    <a href="{{ url_for('painel') }}" class="btn btn-outline-secondary">
+      <i class="fas fa-arrow-left me-1"></i>Voltar
+    </a>
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+      <i class="fas fa-sign-out-alt me-1"></i>Sair
+    </a>
+  </div>
 </div>
-{% endblock %}
-
-{% block extra_js %}
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // JS futuro pode entrar aqui
-});
-</script>
 {% endblock %}
