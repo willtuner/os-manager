@@ -121,7 +121,7 @@ def login():
             session['is_admin'] = user.is_admin
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
         flash('Usuário ou senha inválidos','danger')
-    return render_template('login.html'))
+    return render_template('login.html')
 
 @app.route('/painel')
 def painel():
