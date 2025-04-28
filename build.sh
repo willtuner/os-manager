@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
-# exit on error
 set -o errexit
 
-pip install Flask-SQLAlchemy Flask-Migrate
+# 1) Cria / ativa o ambiente
+export FLASK_APP=app.py
+
+# 2) Instala o pip e deps
 pip install --upgrade pip
-pip install --force-reinstall numpy==1.24.3
 pip install -r requirements.txt
+
+# 3) Inicializa e aplica migrations (sem erro se já inicializado)
+flask db init 2>/dev/null || true
+flask db migrate -m "Inicial: criar tabelas"
+flask db upgrade
