@@ -1,121 +1,61 @@
 [
   {
-    "frota": "283",
-    "os": "109388",
-    "data": "24/04/2025",
-    "dias": "1",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar cibeis traseiros"
+    "frota": "217",
+    "os": "109541",
+    "prestador": "Prestador não definido",
+    "servico": "A/C só funciona o 4° estagio - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "223",
+    "os": "109529",
+    "prestador": "Prestador não definido",
+    "servico": "Identificar e avaliar vazamento no meio do trator - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5604",
+    "os": "109458",
+    "prestador": "Prestador não definido",
+    "servico": "SERVIÇO DE MANUTENÇÃO"
   },
   {
     "frota": "152",
     "os": "109357",
-    "data": "24/04/2025",
-    "dias": "1",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Remover vazamentos"
   },
   {
-    "frota": "69",
-    "os": "109354",
-    "data": "24/04/2025",
-    "dias": "1",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento de óleo em baixo do trator - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5136",
     "os": "109155",
-    "data": "22/04/2025",
-    "dias": "3",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Trocar reparo do registro  vazamento no guia da bomba - (Fazenda Pedra Verde)"
   },
   {
     "frota": "5666",
     "os": "109154",
-    "data": "22/04/2025",
-    "dias": "3",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)"
   },
   {
     "frota": "5604",
     "os": "108948",
-    "data": "16/04/2025",
-    "dias": "9",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Frota 5133"
   },
   {
-    "frota": "189",
-    "os": "108380",
-    "data": "07/04/2025",
-    "dias": "18",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar coifas do cambio danificadas - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5604",
     "os": "108333",
-    "data": "07/04/2025",
-    "dias": "18",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra na torre do lado esquerdo."
   },
   {
-    "frota": "1144",
-    "os": "108843",
-    "data": "04/04/2025",
-    "dias": "21",
-    "prestador": "NILSON DA SILVA 06145762969",
-    "servico": "nan"
-  },
-  {
-    "frota": "119",
-    "os": "108253",
-    "data": "03/04/2025",
-    "dias": "22",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar cabeçote do filtro hidráulico"
-  },
-  {
     "frota": "5117",
     "os": "108185",
-    "data": "02/04/2025",
-    "dias": "23",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar proteção de correntes anti-arremesso do lado direito próximo a roga guia, fazer solda em trincas na estrutura próximo aos rotores direito e esquerdo, repor correntes de proteção que estão faltando, regularizar parafuso de fixação do patim esquerdo, corrigir proteção do cardan e verificar folga no engate do cabeçario."
   },
   {
-    "frota": "223",
-    "os": "107980",
-    "data": "01/04/2025",
-    "dias": "24",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar pistão de ajuste do volante e tração dianteira não funciona."
-  },
-  {
-    "frota": "5133",
-    "os": "107854",
-    "data": "31/03/2025",
-    "dias": "25",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar parafusos de fixação da base da bomba de pulverização não dão mais aperto, soldar suporte da base da bomba e regularizar proteção da correia da bomba que está solta."
-  },
-  {
-    "frota": "299",
-    "os": "107840",
-    "data": "28/03/2025",
-    "dias": "28",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Corrigir vazamento de óleo na mangueira da turbina e verificar vazamento de óleo no motor do lado esquerdo."
-  },
-  {
     "frota": "5177",
     "os": "103725",
-    "data": "17/01/2025",
-    "dias": "98",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção na hélice - (Fazenda Pedra Verde)"
   }

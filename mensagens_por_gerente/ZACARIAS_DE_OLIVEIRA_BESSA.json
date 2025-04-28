@@ -1,41 +1,25 @@
 [
   {
+    "frota": "5786",
+    "os": "109538",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Instalar plataforma traseira e estrutura para os braços do drench."
+  },
+  {
     "frota": "5432",
     "os": "109331",
-    "data": "22/04/2025",
-    "dias": "3",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer revisão parcial."
   },
   {
-    "frota": "5458",
-    "os": "108992",
-    "data": "16/04/2025",
-    "dias": "9",
-    "prestador": "Prestador não definido",
-    "servico": "nan"
-  },
-  {
-    "frota": "5782",
-    "os": "108377",
-    "data": "07/04/2025",
-    "dias": "18",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar suporte para fixação do painel de drench e suporte para alojamento da haste/lança de pulverização e instalar plataforma traseira para transporte de pessoas."
-  },
-  {
     "frota": "5351",
     "os": "106259",
-    "data": "25/02/2025",
-    "dias": "59",
     "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
     "servico": "Instalar conjunto de esteira lateral e inverter esteira de travessas que está montada invertida."
   },
   {
     "frota": "5522",
     "os": "105991",
-    "data": "17/02/2025",
-    "dias": "67",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Fazer montagem da bomba  de pulverização e realizar a ligação das mangueiras, montagem dos cardans, barras e pistões."
   }

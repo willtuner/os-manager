@@ -1,74 +1,26 @@
 [
   {
-    "frota": "5349",
-    "os": "109338",
-    "data": "23/04/2025",
-    "dias": "2",
-    "prestador": "Prestador não definido",
-    "servico": "Quebra do eixo da roda guia e troca dos rolamentos do mancal (F204) - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "10216",
-    "os": "109253",
-    "data": "23/04/2025",
-    "dias": "2",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5737",
-    "os": "109188",
-    "data": "22/04/2025",
-    "dias": "3",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar fações empenados e suporte do fação - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5650",
     "os": "108826",
-    "data": "15/04/2025",
-    "dias": "10",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Fazer solda no cabeçario e trocar corrente de segurança - (Fazenda São Pedro)"
   },
   {
-    "frota": "287",
-    "os": "107834",
-    "data": "28/03/2025",
-    "dias": "28",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Substituir faróis de serviço convencional dianteiro e traseiro por de led: trator está na trincha e necessita de melhor iluminação."
-  },
-  {
     "frota": "117",
     "os": "106647",
-    "data": "06/03/2025",
-    "dias": "50",
     "prestador": "Prestador não definido",
     "servico": "Verificar trator quando o motor está quente e afoga não pega na partida, só volta a pegar quando esfria."
   },
   {
     "frota": "5233",
     "os": "104987",
-    "data": "07/02/2025",
-    "dias": "77",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Trocar comando - (Fazenda São Pedro)"
   },
   {
     "frota": "5615",
     "os": "103451",
-    "data": "14/01/2025",
-    "dias": "101",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Trocar reparos da bomba - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5422",
-    "os": "103150",
-    "data": "08/01/2025",
-    "dias": "107",
-    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Fazer fibra na estrutura do tanque - (Fazenda São Pedro)"
   }
 ]
