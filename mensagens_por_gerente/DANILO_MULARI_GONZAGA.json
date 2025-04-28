@@ -1,79 +1,93 @@
 [
   {
+    "solicitado": "DANILO MULARI GONZAGA",
     "frota": "288",
     "os": "109509",
+    "data": "26/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar iluminação traseira"
   },
   {
     "frota": "289",
     "os": "109508",
+    "data": "26/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar iluminação traseira"
   },
   {
     "frota": "5367",
     "os": "109507",
+    "data": "26/04/2025",
     "prestador": "Prestador não definido",
     "servico": "Trocar parafusos da torre, esticador, o rolamento da turbina e remover trincos das estrutura"
   },
   {
     "frota": "5451",
     "os": "109417",
+    "data": "25/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda no pino da direção - (Fazenda Estrela)"
   },
   {
     "frota": "5532",
     "os": "108504",
+    "data": "10/04/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Vazamento de óleo na caixa de faca - (Fazenda Estrela)"
   },
   {
     "frota": "116",
     "os": "105743",
+    "data": "17/02/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Substituir barra de tração, elevação e estabilizador - (Fazenda Estrela)"
   },
   {
     "frota": "89",
     "os": "105591",
+    "data": "14/02/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Sacar parafuso do eixo de transmissão (Fazenda Estrela)"
   },
   {
     "frota": "91",
     "os": "105590",
+    "data": "14/02/2025",
     "prestador": "Prestador não definido",
     "servico": "Substituir estofamento do banco (Fazenda Estrela)"
   },
   {
     "frota": "91",
     "os": "105440",
+    "data": "13/02/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar barulho nos cubos das rodas - (Fazenda Estrela)"
   },
   {
     "frota": "5459",
     "os": "105316",
+    "data": "11/02/2025",
     "prestador": "Prestador não definido",
     "servico": "Substituir cardam completo - (Fazenda Estrela)"
   },
   {
     "frota": "5169",
     "os": "105111",
+    "data": "10/02/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Substituir engate - (Fazenda Estrela)"
   },
   {
     "frota": "5106",
     "os": "104943",
+    "data": "06/02/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Soldar pino de proteção - (Fazenda Estrela)"
   },
   {
     "frota": "91",
     "os": "104086",
+    "data": "24/01/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar freio estacionário não funciona - (Fazenda Estrela)"
   }

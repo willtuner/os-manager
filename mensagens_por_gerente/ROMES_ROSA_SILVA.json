@@ -1,73 +1,86 @@
 [
   {
+    "solicitado": "ROMES ROSA SILVA",
     "frota": "100",
     "os": "109531",
+    "data": "28/04/2025",
     "prestador": "Prestador não definido",
     "servico": "Avaliar e colocar porca do terminal da direção - (Fazenda São Pedro)"
   },
   {
     "frota": "5404",
     "os": "109516",
+    "data": "26/04/2025",
     "prestador": "Prestador não definido",
     "servico": "Trocar os arrastadores"
   },
   {
     "frota": "5726",
     "os": "109514",
+    "data": "26/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar funcionamento do Painel"
   },
   {
     "frota": "5171",
     "os": "109375",
+    "data": "24/04/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Verificar bomba misturando agua com o óleo e produto - (Fazenda São Pedro)"
   },
   {
     "frota": "5404",
     "os": "109302",
+    "data": "23/04/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Soldar corrente - (Fazenda São Pedro)"
   },
   {
     "frota": "5403",
     "os": "108951",
+    "data": "16/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em trinca no chassi - (Fazenda São Pedro)"
   },
   {
     "frota": "5126",
     "os": "108943",
+    "data": "16/04/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Verificar correia \"comendo\" - (Fazenda São Pedro)"
   },
   {
     "frota": "5349",
     "os": "107899",
+    "data": "28/03/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda no suporte do pé de apoio do cabeçalho."
   },
   {
     "frota": "5222",
     "os": "107800",
+    "data": "21/03/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Tirar medidas para fabricação de engate articulado para tanque (Fazenda São Pedro)"
   },
   {
     "frota": "10216",
     "os": "107226",
+    "data": "18/03/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar sirene de ré está baixa."
   },
   {
     "frota": "5537",
     "os": "105037",
+    "data": "07/02/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Ajustar tamanho do cardan e alinhamento do mesmo e revisar cardans de engate no implemento."
   },
   {
     "frota": "287",
     "os": "104923",
+    "data": "05/02/2025",
     "prestador": "Prestador não definido",
     "servico": "Trocar sensor da TDP - (Fazenda São Pedro)"
   }

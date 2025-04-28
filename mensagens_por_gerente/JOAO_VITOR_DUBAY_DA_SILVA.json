@@ -1,37 +1,44 @@
 [
   {
+    "solicitado": "JOAO VITOR DUBAY DA SILVA",
     "frota": "274",
     "os": "109324",
+    "data": "23/04/2025",
     "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
     "servico": "Identificada a ruptura do tubo de lubrificação da balança da suspensão dianteira - (Fazenda Estrela)"
   },
   {
     "frota": "5631",
     "os": "109087",
+    "data": "23/04/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Corrigir vazamento de óleo no motor hidráulico traseiro"
   },
   {
     "frota": "5631",
     "os": "109242",
+    "data": "23/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Esteira quebrada - (Fazenda Estrela)"
   },
   {
     "frota": "5174",
     "os": "109180",
+    "data": "22/04/2025",
     "prestador": "TORNEARIA STEINHAUSER LTDA",
     "servico": "Quebra do engate - (Fazenda Estrela)"
   },
   {
     "frota": "274",
     "os": "105955",
+    "data": "20/02/2025",
     "prestador": "Prestador não definido",
     "servico": "TDP não liga - (Fazenda Bela Manhã)"
   },
   {
     "frota": "274",
     "os": "105810",
+    "data": "18/02/2025",
     "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
     "servico": "Verificar trator perdendo sinal do GPS - (Fazenda Estrela)"
   }

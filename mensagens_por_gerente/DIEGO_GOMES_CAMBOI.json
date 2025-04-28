@@ -1,61 +1,72 @@
 [
   {
+    "solicitado": "DIEGO GOMES CAMBOI",
     "frota": "5740",
     "os": "109518",
+    "data": "26/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Solda trinco no chassi"
   },
   {
     "frota": "291",
     "os": "109517",
+    "data": "26/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Soldar grade de proteção do capô"
   },
   {
     "frota": "148",
     "os": "109418",
+    "data": "25/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar curto no chicote dos faróis, queimando fusíveis - (Fazenda Santa Izabel)"
   },
   {
     "frota": "5081",
     "os": "109372",
+    "data": "24/04/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Verificar esteira não isola os lados - (Fazenda Santa Izabel)"
   },
   {
     "frota": "267",
     "os": "109360",
+    "data": "24/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Colocar corrente de segurança - (Fazenda Santa Izabel)"
   },
   {
     "frota": "5706",
     "os": "109299",
+    "data": "23/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar bateria não está carregando - (Fazenda Santa Izabel)"
   },
   {
     "frota": "273",
     "os": "109273",
+    "data": "23/04/2025",
     "prestador": "Prestador não definido",
     "servico": "Trocar corrente e parafuso do rabicho - (Fazenda Santa Izabel)"
   },
   {
     "frota": "5137",
     "os": "109272",
+    "data": "23/04/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Tirar vazamento das camisas da bomba e trocar correias - (Fazenda Estrela)"
   },
   {
     "frota": "5210",
     "os": "109230",
+    "data": "15/04/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Corrigir vazamento no retentor traseiro do virabrequim da bomba de pulverização."
   },
   {
     "frota": "5290",
     "os": "105867",
+    "data": "19/02/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar jogo no rolamento do eixo - (Fazenda Santa Izabel)"
   }
