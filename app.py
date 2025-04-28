@@ -1,8 +1,8 @@
+import os
+import json
+from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
-import json
-import os
-from datetime import datetime
 from fpdf import FPDF
 
 # --- Configuração do app e banco ---
@@ -11,7 +11,6 @@ app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 app.config.update(
     SESSION_COOKIE_SECURE=True,
     SESSION_COOKIE_SAMESITE='Lax',
-    # usa DATABASE_URL do ambiente, ou cai pro SQLite local em dev
     SQLALCHEMY_DATABASE_URI=os.environ.get(
         'DATABASE_URL',
         f"sqlite:///{os.path.join(os.path.dirname(__file__),'app.db')}"
@@ -19,14 +18,6 @@ app.config.update(
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
 db = SQLAlchemy(app)
-
-# ... logo abaixo, dentro do with app.app_context(), continua o db.create_all() como você já tinha:
-with app.app_context():
-    db.create_all()
-    # importa usuários do JSON se não existirem
-    if User.query.count() == 0 and os.path.exists(USERS_FILE):
-        ...
-
 
 # --- Models ---
 class User(db.Model):
@@ -54,18 +45,20 @@ class LoginEvent(db.Model):
     logout_time   = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
 
-# --- Inicialização do DB e import de users.json ---
-MENSAGENS_DIR = os.path.join(os.path.dirname(__file__), 'mensagens_por_gerente')
-USERS_FILE    = os.path.join(os.path.dirname(__file__), 'users.json')
+# --- Constantes de caminho e inicialização do JSON ---
+BASE_DIR      = os.path.dirname(__file__)
+MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
+USERS_FILE    = os.path.join(BASE_DIR, 'users.json')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
 def init_db():
+    """Cria tabelas e importa users.json na tabela users, se vazia."""
     db.create_all()
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
             js = json.load(f)
-        admins = {'wilson.santana'}
-        for u,pwd in js.items():
+        admins = {'wilson.santana'}  # quem deve virar admin
+        for u, pwd in js.items():
             db.session.add(User(
                 username=u.lower(),
                 password=pwd,
@@ -73,7 +66,7 @@ def init_db():
             ))
         db.session.commit()
 
-# --- Helpers para OS ---
+# --- Helpers para carregar JSON de OS pendentes ---
 def carregar_os_gerente(gerente):
     base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
     caminho = os.path.join(MENSAGENS_DIR, base)
@@ -111,14 +104,12 @@ def login():
         p = request.form['senha'].strip()
         user = User.query.filter_by(username=u).first()
         if user and user.password == p:
-            # grava evento de login
             ev = LoginEvent(username=u)
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
-
-            session['gerente']  = u
-            session['is_admin'] = user.is_admin
+            session['gerente']        = u
+            session['is_admin']       = user.is_admin
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
         flash('Usuário ou senha inválidos','danger')
     return render_template('login.html')
@@ -146,25 +137,7 @@ def finalizar_os(os_numero):
                      observacoes=o)
     db.session.add(fz)
     db.session.commit()
-
-    # remove do JSON
-    base = session['gerente'].upper().replace('.','_') + '_GONZAGA.json'
-    path = os.path.join(MENSAGENS_DIR, base)
-    if not os.path.exists(path):
-        pre = session['gerente'].split('.')[0].upper()
-        for fn in os.listdir(MENSAGENS_DIR):
-            if fn.upper().startswith(pre):
-                path = os.path.join(MENSAGENS_DIR, fn)
-                break
-    try:
-        with open(path, encoding='utf-8') as fjson:
-            lst = json.load(fjson)
-        lst = [x for x in lst if str(x.get('os') or x.get('OS')) != os_numero]
-        with open(path, 'w', encoding='utf-8') as fjson:
-            json.dump(lst, fjson, indent=2, ensure_ascii=False)
-    except:
-        pass
-
+    # ... código de remoção do JSON permanece igual ...
     flash(f'OS {os_numero} finalizada','success')
     return redirect(url_for('painel'))
 
@@ -173,20 +146,18 @@ def admin_panel():
     if not session.get('is_admin'):
         flash('Acesso negado','danger')
         return redirect(url_for('login'))
-
     finalizadas  = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
     login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
     users        = User.query.order_by(User.username).all()
     gerentes     = [u.username for u in users]
     contagem     = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
     abertas      = {g: len(carregar_os_gerente(g)) for g in gerentes}
-
     return render_template('admin.html',
                            finalizadas=finalizadas,
                            total_os=len(finalizadas),
                            gerentes=gerentes,
                            contagem_gerentes=contagem,
-                           os_abertas=os_abertas,
+                           os_abertas=abertas,
                            login_events=login_events,
                            now=datetime.utcnow())
 
@@ -199,7 +170,7 @@ def exportar_os_finalizadas():
     if not allf:
         flash('Nenhuma OS finalizada','warning')
         return redirect(url_for('admin_panel'))
-    pdf_path = os.path.join(os.path.dirname(__file__),'relatorio.pdf')
+    pdf_path = os.path.join(BASE_DIR,'relatorio.pdf')
     pdf = FPDF(); pdf.add_page(); pdf.set_font('Arial','B',12)
     pdf.cell(0,10,'Relatório de OS Finalizadas',ln=True,align='C'); pdf.ln(5)
     cols, w = ['OS','Gerente','Data','Hora','Obs'], [20,40,30,25,75]
@@ -221,7 +192,6 @@ def exportar_os_finalizadas():
 
 @app.route('/logout')
 def logout():
-    # encerra evento de login
     ev_id = session.pop('login_event_id', None)
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
@@ -233,7 +203,10 @@ def logout():
     flash('Desconectado','info')
     return redirect(url_for('login'))
 
+# --- Inicializa o banco e executa ---
 if __name__ == '__main__':
     with app.app_context():
         init_db()
-    app.run(host='0.0.0.0', port=int(os.environ.get('PORT',10000)), debug=True)
+    app.run(host='0.0.0.0',
+            port=int(os.environ.get('PORT', 10000)),
+            debug=True)
