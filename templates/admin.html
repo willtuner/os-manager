@@ -4,18 +4,13 @@
 
 {% block extra_css %}
 <style>
-  .stat-card {
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
+  .stat-card { border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
   .stat-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
-  .stat-card.primary    { background-color: #2c3e50; color: white; }
-  .stat-card.success    { background-color: #27ae60; color: white; }
-  .stat-card.warning    { background-color: #f39c12; color: white; }
-  .stat-card.danger     { background-color: #e74c3c; color: white; }
-  .badge-os-aberta      { background-color: #e74c3c; color: white; }
+  .stat-card.primary { background-color: #2c3e50; color: white; }
+  .stat-card.success { background-color: #27ae60; color: white; }
+  .stat-card.warning { background-color: #f39c12; color: white; }
+  .stat-card.danger { background-color: #e74c3c; color: white; }
+  .badge-os-aberta { background-color: #e74c3c; color: white; }
   .table-responsive { margin-top: 30px; }
 </style>
 {% endblock %}
@@ -56,33 +51,24 @@
     </div>
   </div>
 
+  <!-- Gerentes & OS -->
   <div class="card shadow-sm mb-4">
     <div class="card-body">
       <h4><i class="fas fa-user-tie me-2"></i>Gerentes &amp; OS Pendentes</h4>
       <div class="table-responsive">
         <table class="table table-hover">
           <thead class="table-light">
-            <tr>
-              <th>Gerente</th>
-              <th>OS Finalizadas</th>
-              <th>OS Pendentes</th>
-            </tr>
+            <tr><th>Gerente</th><th>Finalizadas</th><th>Pendentes</th></tr>
           </thead>
           <tbody>
             {% for g in gerentes %}
             <tr>
               <td>{{ g }}</td>
-              <td>{{ contagem_gerentes.get(g, 0) }}</td>
-              <td>
-                <span class="badge badge-os-aberta">
-                  {{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0) != 1 else '' }}
-                </span>
-              </td>
+              <td>{{ contagem_gerentes.get(g,0) }}</td>
+              <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
             </tr>
             {% else %}
-            <tr>
-              <td colspan="3" class="text-center py-4">Nenhum gerente com OS registrada</td>
-            </tr>
+            <tr><td colspan="3" class="text-center py-4">Nenhum gerente com OS registrada</td></tr>
             {% endfor %}
           </tbody>
         </table>
@@ -90,21 +76,16 @@
     </div>
   </div>
 
-  <div class="card shadow-sm">
+  <!-- Histórico de Finalizações -->
+  <div class="card shadow-sm mb-4">
     <div class="card-header bg-dark text-white">
-      <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico de OS Finalizadas (Últimas 100)</h4>
+      <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico OS Finalizadas (Últimas 100)</h4>
     </div>
     <div class="card-body">
       <div class="table-responsive">
         <table class="table table-hover">
           <thead class="table-light">
-            <tr>
-              <th>OS</th>
-              <th>Gerente</th>
-              <th>Data</th>
-              <th>Hora</th>
-              <th>Observações</th>
-            </tr>
+            <tr><th>OS</th><th>Gerente</th><th>Data</th><th>Hora</th><th>Obs</th></tr>
           </thead>
           <tbody>
             {% for os in finalizadas %}
@@ -116,9 +97,52 @@
               <td>{{ os.observacoes or '-' }}</td>
             </tr>
             {% else %}
+            <tr><td colspan="5" class="text-center py-4">Nenhuma OS finalizada</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Histórico de Logins -->
+  <div class="card shadow-sm">
+    <div class="card-header bg-secondary text-white">
+      <h4 class="mb-0"><i class="fas fa-history me-2"></i>Histórico de Logins (Últimos 50)</h4>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-sm table-hover">
+          <thead class="table-light">
             <tr>
-              <td colspan="5" class="text-center py-4">Nenhuma OS finalizada registrada</td>
+              <th>Usuário</th>
+              <th>Login</th>
+              <th>Logout</th>
+              <th>Duração</th>
             </tr>
+          </thead>
+          <tbody>
+            {% for ev in login_events %}
+            <tr>
+              <td>{{ ev.username }}</td>
+              <td>{{ ev.login_time.strftime('%d/%m/%Y %H:%M:%S') }}</td>
+              <td>
+                {% if ev.logout_time %}
+                  {{ ev.logout_time.strftime('%d/%m/%Y %H:%M:%S') }}
+                {% else %}
+                  <span class="text-muted">ativo</span>
+                {% endif %}
+              </td>
+              <td>
+                {% if ev.duration_secs %}
+                  {{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s
+                {% else %}
+                  <span class="text-muted">—</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% else %}
+            <tr><td colspan="4" class="text-center py-4">Nenhum evento de login</td></tr>
             {% endfor %}
           </tbody>
         </table>
