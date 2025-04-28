@@ -63,7 +63,7 @@ def init_db():
                 username=u.lower(),
                 password=pwd,
                 is_admin=(u.lower() in admins)
-            ))
+            )
         db.session.commit()
 
 # --- Helpers para carregar JSON de OS pendentes ---
@@ -78,15 +78,24 @@ def carregar_os_gerente(gerente):
                 break
     if not os.path.exists(caminho):
         return []
+    
     with open(caminho, encoding='utf-8') as f:
         data = json.load(f)
+    
     out = []
     for i in data:
+        data_os_str = str(i.get('data') or i.get('Data',''))
+        try:
+            data_os = datetime.strptime(data_os_str, '%d/%m/%Y').date()
+            dias = (datetime.utcnow().date() - data_os).days
+        except:
+            dias = 0
+        
         out.append({
             'os':        str(i.get('os') or i.get('OS','')),
             'frota':     str(i.get('frota') or i.get('Frota','')),
-            'data':      str(i.get('data') or i.get('Data','')),
-            'dias':      str(i.get('dias') or i.get('Dias','0')),
+            'data':      data_os_str,
+            'dias':      str(dias),
             'prestador': str(i.get('prestador') or i.get('Prestador','Prestador não definido')),
             'servico':   str(i.get('servico') or i.get('Servico') or i.get('observacao') or i.get('Observacao',''))
         })
@@ -119,8 +128,10 @@ def painel():
     if 'gerente' not in session:
         return redirect(url_for('login'))
     pend = carregar_os_gerente(session['gerente'])
+    finalizadas = Finalizacao.query.filter_by(gerente=session['gerente']).order_by(Finalizacao.registrado_em.desc()).limit(100).all()
     return render_template('painel.html',
                            os_pendentes=pend,
+                           finalizadas=finalizadas,
                            gerente=session['gerente'],
                            now=datetime.utcnow())
 
@@ -128,6 +139,8 @@ def painel():
 def finalizar_os(os_numero):
     if 'gerente' not in session:
         return redirect(url_for('login'))
+    
+    # Adiciona ao banco de dados
     d = request.form['data_finalizacao']
     h = request.form['hora_finalizacao']
     o = request.form.get('observacoes','')
@@ -136,8 +149,30 @@ def finalizar_os(os_numero):
                      data_fin=d, hora_fin=h,
                      observacoes=o)
     db.session.add(fz)
+    
+    # Remove do JSON
+    gerente = session['gerente']
+    base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
+    caminho = os.path.join(MENSAGENS_DIR, base)
+    
+    if not os.path.exists(caminho):
+        prefixo = gerente.split('.')[0].upper()
+        for fn in os.listdir(MENSAGENS_DIR):
+            if fn.upper().startswith(prefixo) and fn.lower().endswith('.json'):
+                caminho = os.path.join(MENSAGENS_DIR, fn)
+                break
+    
+    if os.path.exists(caminho):
+        with open(caminho, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Filtra removendo a OS finalizada
+        data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
+        
+        with open(caminho, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    
     db.session.commit()
-    # ... código de remoção do JSON permanece igual ...
     flash(f'OS {os_numero} finalizada','success')
     return redirect(url_for('painel'))
 
@@ -212,4 +247,3 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
             port=int(os.environ.get('PORT', 10000)),
             debug=True)
-
