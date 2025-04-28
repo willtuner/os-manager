@@ -8,16 +8,25 @@ from fpdf import FPDF
 # --- Configuração do app e banco ---
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
-
-# usa DATABASE_URL do Render
-DATABASE_URL = os.environ.get('DATABASE_URL')
-if not DATABASE_URL:
-    raise RuntimeError("É preciso definir a variável DATABASE_URL no ambiente")
-
-app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_SAMESITE='Lax',
+    # usa DATABASE_URL do ambiente, ou cai pro SQLite local em dev
+    SQLALCHEMY_DATABASE_URI=os.environ.get(
+        'DATABASE_URL',
+        f"sqlite:///{os.path.join(os.path.dirname(__file__),'app.db')}"
+    ),
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
+)
 db = SQLAlchemy(app)
+
+# ... logo abaixo, dentro do with app.app_context(), continua o db.create_all() como você já tinha:
+with app.app_context():
+    db.create_all()
+    # importa usuários do JSON se não existirem
+    if User.query.count() == 0 and os.path.exists(USERS_FILE):
+        ...
+
 
 # --- Models ---
 class User(db.Model):
