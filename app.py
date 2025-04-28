@@ -203,10 +203,13 @@ def logout():
     flash('Desconectado','info')
     return redirect(url_for('login'))
 
-# --- Inicializa o banco e executa ---
+# garante que as tabelas serão criadas tanto no gunicorn quanto no 'python app.py'
+with app.app_context():
+    init_db()
+
+# só para quem rodar 'python app.py' em dev:
 if __name__ == '__main__':
-    with app.app_context():
-        init_db()
     app.run(host='0.0.0.0',
             port=int(os.environ.get('PORT', 10000)),
             debug=True)
+
