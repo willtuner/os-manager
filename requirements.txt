@@ -5,3 +5,6 @@ gunicorn==20.1.0
 numpy==1.24.3  # Versão específica para evitar conflitos
 Flask-SQLAlchemy==3.0.3
 Flask-Migrate==4.0.4
+flask db init
+flask db migrate -m "Inicial"
+flask db upgrade
