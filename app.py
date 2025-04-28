@@ -1,23 +1,23 @@
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-import json, os
+import json
+import os
 from datetime import datetime
 from fpdf import FPDF
 
-# --- Configuração ---
+# --- Configuração do app e banco ---
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
-app.config.update(
-    SESSION_COOKIE_SECURE=True,
-    SESSION_COOKIE_SAMESITE='Lax',
-    SQLALCHEMY_DATABASE_URI   = os.environ.get('DATABASE_URL', 
-        f"sqlite:///{os.path.join(os.path.dirname(__file__),'app.db')}"),
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
-)
+
+# usa DATABASE_URL do Render
+DATABASE_URL = os.environ.get('DATABASE_URL')
+if not DATABASE_URL:
+    raise RuntimeError("É preciso definir a variável DATABASE_URL no ambiente")
+
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)   # <<< ativa as migrations
 
 # --- Models ---
 class User(db.Model):
@@ -29,13 +29,13 @@ class User(db.Model):
 
 class Finalizacao(db.Model):
     __tablename__ = 'finalizacoes'
-    id            = db.Column(db.Integer, primary_key=True)
-    os_numero     = db.Column(db.String(50), nullable=False)
-    gerente       = db.Column(db.String(80), nullable=False)
-    data_fin      = db.Column(db.String(10), nullable=False)
-    hora_fin      = db.Column(db.String(5), nullable=False)
-    observacoes   = db.Column(db.Text)
-    registrado_em = db.Column(db.DateTime, default=datetime.utcnow)
+    id             = db.Column(db.Integer, primary_key=True)
+    os_numero      = db.Column(db.String(50), nullable=False)
+    gerente        = db.Column(db.String(80), nullable=False)
+    data_fin       = db.Column(db.String(10), nullable=False)
+    hora_fin       = db.Column(db.String(5), nullable=False)
+    observacoes    = db.Column(db.Text)
+    registrado_em  = db.Column(db.DateTime, default=datetime.utcnow)
 
 class LoginEvent(db.Model):
     __tablename__ = 'login_events'
@@ -45,20 +45,18 @@ class LoginEvent(db.Model):
     logout_time   = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
 
-# Diretórios
+# --- Inicialização do DB e import de users.json ---
 MENSAGENS_DIR = os.path.join(os.path.dirname(__file__), 'mensagens_por_gerente')
 USERS_FILE    = os.path.join(os.path.dirname(__file__), 'users.json')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
-# --- Inicialização do DB ---
-with app.app_context():
+def init_db():
     db.create_all()
-    # importa usuário do JSON se tabela vazia
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
             js = json.load(f)
         admins = {'wilson.santana'}
-        for u, pwd in js.items():
+        for u,pwd in js.items():
             db.session.add(User(
                 username=u.lower(),
                 password=pwd,
@@ -66,7 +64,7 @@ with app.app_context():
             ))
         db.session.commit()
 
-# --- Funções auxiliares ---
+# --- Helpers para OS ---
 def carregar_os_gerente(gerente):
     base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
     caminho = os.path.join(MENSAGENS_DIR, base)
@@ -92,8 +90,7 @@ def carregar_os_gerente(gerente):
         })
     return out
 
-# --- Rotas (idem ao que você já tem) ---
-
+# --- Rotas ---
 @app.route('/')
 def index():
     return redirect(url_for('login'))
@@ -125,7 +122,7 @@ def painel():
     return render_template('painel.html',
                            os_pendentes=pend,
                            gerente=session['gerente'],
-                           now=datetime.now())
+                           now=datetime.utcnow())
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
@@ -140,7 +137,25 @@ def finalizar_os(os_numero):
                      observacoes=o)
     db.session.add(fz)
     db.session.commit()
-    # (remove do JSON como antes…)
+
+    # remove do JSON
+    base = session['gerente'].upper().replace('.','_') + '_GONZAGA.json'
+    path = os.path.join(MENSAGENS_DIR, base)
+    if not os.path.exists(path):
+        pre = session['gerente'].split('.')[0].upper()
+        for fn in os.listdir(MENSAGENS_DIR):
+            if fn.upper().startswith(pre):
+                path = os.path.join(MENSAGENS_DIR, fn)
+                break
+    try:
+        with open(path, encoding='utf-8') as fjson:
+            lst = json.load(fjson)
+        lst = [x for x in lst if str(x.get('os') or x.get('OS')) != os_numero]
+        with open(path, 'w', encoding='utf-8') as fjson:
+            json.dump(lst, fjson, indent=2, ensure_ascii=False)
+    except:
+        pass
+
     flash(f'OS {os_numero} finalizada','success')
     return redirect(url_for('painel'))
 
@@ -149,6 +164,7 @@ def admin_panel():
     if not session.get('is_admin'):
         flash('Acesso negado','danger')
         return redirect(url_for('login'))
+
     finalizadas  = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
     login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
     users        = User.query.order_by(User.username).all()
@@ -163,7 +179,7 @@ def admin_panel():
                            contagem_gerentes=contagem,
                            os_abertas=os_abertas,
                            login_events=login_events,
-                           now=datetime.now())
+                           now=datetime.utcnow())
 
 @app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():
@@ -191,11 +207,12 @@ def exportar_os_finalizadas():
     pdf.output(pdf_path)
     return send_file(pdf_path,
                      as_attachment=True,
-                     download_name=f'relatorio_{datetime.now():%Y%m%d}.pdf',
+                     download_name=f'relatorio_{datetime.utcnow():%Y%m%d}.pdf',
                      mimetype='application/pdf')
 
 @app.route('/logout')
 def logout():
+    # encerra evento de login
     ev_id = session.pop('login_event_id', None)
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
@@ -208,4 +225,6 @@ def logout():
     return redirect(url_for('login'))
 
 if __name__ == '__main__':
+    with app.app_context():
+        init_db()
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT',10000)), debug=True)
