@@ -1,10 +1,7 @@
 Flask==2.3.2
+Flask-SQLAlchemy==3.0.3
+Flask-Migrate==4.0.4
 pandas==2.0.3
 fpdf2==2.7.4
 gunicorn==20.1.0
-numpy==1.24.3  # Versão específica para evitar conflitos
-Flask-SQLAlchemy==3.0.3
-Flask-Migrate==4.0.4
-flask db init
-flask db migrate -m "Inicial"
-flask db upgrade
+numpy==1.24.3
