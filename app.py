@@ -103,6 +103,43 @@ def carregar_os_gerente(gerente):
         dados = json.load(f)
 
     resultado = []
+    hoje = datetime.utcnow().date()
+    for item in dados:
+        # extrai a string de data de abertura
+        data_str = item.get("data") or item.get("Data") or ""
+        # tenta vários formatos
+        for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y"):
+            try:
+                data_abertura = datetime.strptime(data_str, fmt).date()
+                break
+            except Exception:
+                data_abertura = None
+        # calcula dias em aberto
+        if data_abertura:
+            dias_abertos = (hoje - data_abertura).days
+        else:
+            dias_abertos = 0
+
+        resultado.append({
+            "os":        str(item.get("os") or item.get("OS", "")),
+            "frota":     str(item.get("frota") or item.get("Frota", "")),
+            "data":      data_str,
+            "dias":      str(dias_abertos),
+            "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
+            "servico":   str(
+                item.get("servico")
+                or item.get("Servico")
+                or item.get("observacao")
+                or item.get("Observacao", "")
+            )
+        })
+    return resultado
+
+    # finalmente lê o JSON
+    with open(caminho_encontrado, encoding="utf-8") as f:
+        dados = json.load(f)
+
+    resultado = []
     for item in dados:
         resultado.append({
             "os":        str(item.get("os") or item.get("OS", "")),
