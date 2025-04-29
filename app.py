@@ -69,24 +69,56 @@ def init_db():
 # --- Helpers para carregar JSON de OS pendentes ---
 def carregar_os_gerente(gerente):
     """
-    Carrega apenas o JSON do usuário exato.
-    Tenta primeiro GERENTE.json, depois GERENTE_GONZAGA.json.
-    Se não encontrar nenhum, devolve lista vazia.
+    Carrega apenas o JSON do gerente exato.
+    Tenta, nessa ordem:
+     1) GERENTE.json
+     2) GERENTE_GONZAGA.json
+     3) Qualquer arquivo que comece com GERENTE_ (ex: GERENTE_QUALQUERCOISA.json)
+    Se nada for encontrado, retorna lista vazia.
     """
-    # monta os nomes esperados de arquivo
     base = gerente.upper().replace('.', '_')
-    possiveis = [f"{base}.json", f"{base}_GONZAGA.json"]
-    caminho = None
+    caminho_encontrado = None
 
-    for nome in possiveis:
+    # 1) arquivo exato
+    for sufixo in ("", "_GONZAGA"):
+        nome = f"{base}{sufixo}.json"
         p = os.path.join(MENSAGENS_DIR, nome)
         if os.path.exists(p):
-            caminho = p
+            caminho_encontrado = p
             break
 
-    if not caminho:
-        # não encontrou nenhum arquivo específico
+    # 2) fallback: qualquer arquivo que inicie com base + "_"
+    if not caminho_encontrado:
+        for nome_arquivo in os.listdir(MENSAGENS_DIR):
+            if nome_arquivo.upper().startswith(base + "_") and nome_arquivo.lower().endswith(".json"):
+                caminho_encontrado = os.path.join(MENSAGENS_DIR, nome_arquivo)
+                break
+
+    # 3) se ainda nada, retorna vazio
+    if not caminho_encontrado:
         return []
+
+    # finalmente lê o JSON
+    with open(caminho_encontrado, encoding="utf-8") as f:
+        dados = json.load(f)
+
+    resultado = []
+    for item in dados:
+        resultado.append({
+            "os":        str(item.get("os") or item.get("OS", "")),
+            "frota":     str(item.get("frota") or item.get("Frota", "")),
+            "data":      str(item.get("data") or item.get("Data", "")),
+            "dias":      str(item.get("dias") or item.get("Dias", "0")),
+            "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
+            "servico":   str(
+                item.get("servico")
+                or item.get("Servico")
+                or item.get("observacao")
+                or item.get("Observacao", "")
+            )
+        })
+    return resultado
+
 
     with open(caminho, encoding='utf-8') as f:
         dados = json.load(f)
