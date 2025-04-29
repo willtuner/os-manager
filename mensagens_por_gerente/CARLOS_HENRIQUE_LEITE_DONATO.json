@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "CARLOS HENRIQUE LEITE DONATO",
+    "frota": "250",
+    "os": "109657",
+    "data": "29/04/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trator não dá partida e o painel de instrumentos permanece completamente apagado, mesmo após tentativa de acionamento com bateria auxiliar - (Fazenda Estrela)"
+  },
+  {
     "frota": "269",
     "os": "109567",
     "data": "28/04/2025",
@@ -11,22 +18,8 @@
     "frota": "250",
     "os": "109566",
     "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Trocar lanternas de seta quebrada - (Fazenda Estrela)"
-  },
-  {
-    "frota": "248",
-    "os": "109565",
-    "data": "28/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar lanternas de seta quebrada - (Fazenda Estrela)"
-  },
-  {
-    "frota": "258",
-    "os": "109564",
-    "data": "28/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Buzina não funciona - (Fazenda Estrela)"
   },
   {
     "frota": "5748",

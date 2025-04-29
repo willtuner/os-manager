@@ -1,11 +1,32 @@
 [
   {
     "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-    "frota": "288",
-    "os": "109615",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Soldar escada quebrada  - (Fazenda Estrela)"
+    "frota": "5491",
+    "os": "109686",
+    "data": "29/04/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Acertar agulhas, sacar parafusos de ajuste da torre, modificar fixação da plataforma traseira  com parafusos, para facilitar a manutenção na traseira do equipamento (eixo, torre e turbina)"
+  },
+  {
+    "frota": "221",
+    "os": "109662",
+    "data": "29/04/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar sistema de ar-condicionado, que apresenta funcionamento do ventilador, porém sem emissão de ar refrigerado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "289",
+    "os": "109661",
+    "data": "29/04/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar sistema de ar-condicionado, que apresenta funcionamento do ventilador, porém sem emissão de ar refrigerado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5491",
+    "os": "109638",
+    "data": "29/04/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Inspecionar ruído anormal na região traseira do tanque, possivelmente proveniente dos rolamentos, embora a origem exata ainda não tenha sido identificada - (Fazenda Estrela)"
   },
   {
     "frota": "219",
@@ -22,25 +43,11 @@
     "servico": "Vazamento na mangueira da turbina e trocar cabo do afogador quebrado  - (Fazenda Estrela)"
   },
   {
-    "frota": "5367",
-    "os": "109546",
-    "data": "28/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar parafusos da torre, acertar esticador e remover trincos da estrutura."
-  },
-  {
     "frota": "219",
     "os": "109534",
     "data": "28/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Soldar pinos de suporte da bateria quebrada - (Fazenda Estrela)"
-  },
-  {
-    "frota": "221",
-    "os": "109533",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Quebra dos pinos de suporte da grade de proteção dianteira - (Fazenda Estrela)"
   },
   {
     "frota": "5430",
@@ -55,13 +62,6 @@
     "data": "22/04/2025",
     "prestador": "FM MANUTENÇÃO",
     "servico": "Adaptar ramal para adequar quantidade de bico - (Fazenda Estrela)"
-  },
-  {
-    "frota": "288",
-    "os": "109057",
-    "data": "17/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié traseiro quebrado - (Fazenda Estrela)"
   },
   {
     "frota": "5298",

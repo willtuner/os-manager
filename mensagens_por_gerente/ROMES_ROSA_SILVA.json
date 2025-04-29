@@ -1,11 +1,18 @@
 [
   {
     "solicitado": "ROMES ROSA SILVA",
-    "frota": "5404",
-    "os": "109516",
-    "data": "26/04/2025",
+    "frota": "5134",
+    "os": "109674",
+    "data": "29/04/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Troca de reparos dos 4 pistão do giro (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5134",
+    "os": "109665",
+    "data": "29/04/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar os arrastadores"
+    "servico": "Vazamento de óleo lubrificante em componente ainda não especificado, requerendo inspeção para localização e diagnóstico da origem - (Fazenda São Pedro)"
   },
   {
     "frota": "5726",
@@ -15,18 +22,11 @@
     "servico": "Verificar funcionamento do Painel"
   },
   {
-    "frota": "5171",
-    "os": "109375",
-    "data": "24/04/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar bomba misturando agua com o óleo e produto - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5404",
-    "os": "109302",
-    "data": "23/04/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Soldar corrente - (Fazenda São Pedro)"
+    "frota": "5644",
+    "os": "109672",
+    "data": "22/04/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Instalação das laterais frente e traseira, instalação da bica, instalação de caixa de ferramentas, troca do embuchamento do pedestal e primeira lança, mudança dos pistão da bica, conserto do pé de apoio, troca da bucha do engate, troca do suporte do comando. (Fazenda São Pedro)"
   },
   {
     "frota": "5403",
@@ -62,12 +62,5 @@
     "data": "07/02/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Ajustar tamanho do cardan e alinhamento do mesmo e revisar cardans de engate no implemento."
-  },
-  {
-    "frota": "287",
-    "os": "104923",
-    "data": "05/02/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Trocar sensor da TDP - (Fazenda São Pedro)"
   }
 ]

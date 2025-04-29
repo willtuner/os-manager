@@ -1,11 +1,39 @@
 [
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
-    "frota": "5599",
-    "os": "109522",
-    "data": "26/04/2025",
-    "prestador": "SOLOMAQ LTDA",
-    "servico": "Verificar programação do computador de bordo do premix - (Fazenda São Severino)"
+    "frota": "234",
+    "os": "109668",
+    "data": "29/04/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Substituir cabo da bateria devido a comprimento insuficiente e má qualidade do condutor, comprometendo a eficiência do sistema elétrico - (Fazenda São Severino)"
+  },
+  {
+    "frota": "233",
+    "os": "109656",
+    "data": "29/04/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar sistema da Tomada de Potência (TDP), que permanece em funcionamento mesmo após o desacionamento da alavanca de comando -  (Fazenda São Severino)"
+  },
+  {
+    "frota": "318",
+    "os": "109648",
+    "data": "29/04/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Revisão de 300 hrs - (Fazenda São Severino)"
+  },
+  {
+    "frota": "153",
+    "os": "109641",
+    "data": "29/04/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Instalar faróis auxiliares voltados para as barras de herbicidas, visando melhorar a iluminação durante as operações noturnas. - (Fazenda São Severino)"
+  },
+  {
+    "frota": "227",
+    "os": "109640",
+    "data": "29/04/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar falha total na sinalização veicular; nenhuma das luzes acende, mesmo após teste prévio dos fusíveis - (Fazenda São Severino)"
   },
   {
     "frota": "5429",
@@ -20,13 +48,6 @@
     "data": "23/04/2025",
     "prestador": "DARCI CAPEL & CIA LTDA",
     "servico": "Recuperar desgaste alojamento rolamento eixo piloto do cambio"
-  },
-  {
-    "frota": "5658",
-    "os": "109174",
-    "data": "22/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Avaliar ruído característico (roncando) no rolamento da turbina, com suspeita de desgaste ou necessidade de substituição - (Fazenda São Severino)"
   },
   {
     "frota": "228",

@@ -1,17 +1,17 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
-    "frota": "93",
-    "os": "109610",
-    "data": "28/04/2025",
-    "prestador": "NILSON DA SILVA 06145762969",
-    "servico": "Pneu L/D furado - (Fazenda Nova Manhã)"
+    "frota": "314",
+    "os": "109653",
+    "data": "29/04/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS - UMUAR",
+    "servico": "Trocar borracha da porta - (Fazenda Nova Manhã)"
   },
   {
     "frota": "142",
     "os": "109589",
     "data": "28/04/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "TDP não liga - (Fazenda Nova Manhã)"
   },
   {
@@ -36,13 +36,6 @@
     "servico": "Verificar trinco da porta não funciona - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "5129",
-    "os": "109512",
-    "data": "26/04/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu furado lado esquerdo"
-  },
-  {
     "frota": "5202",
     "os": "109447",
     "data": "25/04/2025",
@@ -64,32 +57,11 @@
     "servico": "Cibié dianteiros queimados - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "5505",
-    "os": "109414",
-    "data": "25/04/2025",
-    "prestador": "ZAVAN MOTOS LTDA",
-    "servico": "Fazenda Nova Manhã"
-  },
-  {
     "frota": "5087",
     "os": "109379",
     "data": "24/04/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Lavar"
-  },
-  {
-    "frota": "5505",
-    "os": "109359",
-    "data": "24/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Troar válvulas e rolamento dianteiro - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5529",
-    "os": "109358",
-    "data": "24/04/2025",
-    "prestador": "MURILO SILVA 09207298945",
-    "servico": "Reinstalar kit SPE - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5191",
@@ -99,18 +71,11 @@
     "servico": "Vazamento nos pistões da bomba - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "5087",
-    "os": "109504",
+    "frota": "5275",
+    "os": "109700",
     "data": "24/04/2025",
-    "prestador": "ZAVAN MOTOS LTDA",
-    "servico": "Coletar na fazenda e levar para o Jorginho"
-  },
-  {
-    "frota": "5529",
-    "os": "109503",
-    "data": "24/04/2025",
-    "prestador": "ZAVAN MOTOS LTDA",
-    "servico": "Coletar no Jorginho e levar para fazenda"
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
+    "servico": "Trocar os rolamentos do cubo da hélice, e trocar pá da hélice (Fazenda Nova Manhã)"
   },
   {
     "frota": "235",
@@ -183,48 +148,6 @@
     "servico": "REVISÃO DO EQUIPAMENTO - (FAZ NOVA MANHA) LIBERADO ARTHUR"
   },
   {
-    "frota": "147",
-    "os": "106715",
-    "data": "07/03/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar sensor de combustível que não funciona (Fazenda Nova manhã)"
-  },
-  {
-    "frota": "5530",
-    "os": "106694",
-    "data": "07/03/2025",
-    "prestador": "MARCELO SOLETTI E CIA LTDA ME",
-    "servico": "Verificar rolamento do eixo da esteira estourado."
-  },
-  {
-    "frota": "5196",
-    "os": "106693",
-    "data": "07/03/2025",
-    "prestador": "MARCELO SOLETTI E CIA LTDA ME",
-    "servico": "Verificar eixo está pegando no chassi da adubadeira."
-  },
-  {
-    "frota": "5204",
-    "os": "106689",
-    "data": "07/03/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Consertar pneu direito furado."
-  },
-  {
-    "frota": "93",
-    "os": "106601",
-    "data": "06/03/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento de oleo nos terminais da mangueira."
-  },
-  {
-    "frota": "94",
-    "os": "106449",
-    "data": "04/03/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu traseiro L/D furado - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "5130",
     "os": "105884",
     "data": "19/02/2025",
@@ -237,12 +160,5 @@
     "data": "14/02/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar suporte de proteção dos Cibié - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "85",
-    "os": "104515",
-    "data": "30/01/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento no cabeçote do filtro de óleo hidráulico - (Fazenda Nova Manhã)"
   }
 ]

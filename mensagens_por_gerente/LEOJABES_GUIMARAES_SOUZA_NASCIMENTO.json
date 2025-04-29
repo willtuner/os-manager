@@ -1,6 +1,27 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "132",
+    "os": "109678",
+    "data": "29/04/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar sistema de partida do trator; mesmo após a realização do procedimento de sangria do sistema de combustível, o motor não entra em funcionamento. - (Fazenda NSA)"
+  },
+  {
+    "frota": "315",
+    "os": "109649",
+    "data": "29/04/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Revisão de 300 hrs - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5749",
+    "os": "109634",
+    "data": "29/04/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Realocar o ramal para posicionamento protegido, evitando exposição e risco de ruptura.  - (Fazenda SP)"
+  },
+  {
     "frota": "5504",
     "os": "109620",
     "data": "28/04/2025",
@@ -27,55 +48,6 @@
     "data": "28/04/2025",
     "prestador": "Prestador não definido",
     "servico": "Fazer solda em trinca na base da estrutura - (Fazenda SP)"
-  },
-  {
-    "frota": "5063",
-    "os": "109511",
-    "data": "26/04/2025",
-    "prestador": "MURILO SILVA 09207298945",
-    "servico": "Soldar chicote eletrico do SPE"
-  },
-  {
-    "frota": "5350",
-    "os": "109449",
-    "data": "25/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar jogo de embreagem - (Fazenda SP)"
-  },
-  {
-    "frota": "5504",
-    "os": "109443",
-    "data": "25/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar luva do eixo cardam - (Fazenda SP)"
-  },
-  {
-    "frota": "5559",
-    "os": "109395",
-    "data": "24/04/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar lança empanada e parafuso quebrado - (Fazenda SP)"
-  },
-  {
-    "frota": "5259",
-    "os": "109367",
-    "data": "24/04/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar equipamento com perca de potencia - (Fazenda SP)"
-  },
-  {
-    "frota": "5063",
-    "os": "109334",
-    "data": "23/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar vazamento na bomba - (Fazenda SP)"
-  },
-  {
-    "frota": "5504",
-    "os": "109161",
-    "data": "22/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Instalação das agulhas no conjunto estrutural da torre, conforme especificações técnicas do equipamento - (Fazenda  SP)"
   },
   {
     "frota": "5746",
@@ -132,12 +104,5 @@
     "data": "03/04/2025",
     "prestador": "Prestador não definido",
     "servico": "Colocar proteção para os bicos dos pneus."
-  },
-  {
-    "frota": "66",
-    "os": "105307",
-    "data": "11/02/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento de óleo na bomba hidráulica e nas alavancas do comando - (Fazenda SP)"
   }
 ]

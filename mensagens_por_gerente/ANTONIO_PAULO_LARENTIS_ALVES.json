@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "ANTONIO PAULO LARENTIS ALVES",
+    "frota": "253",
+    "os": "109666",
+    "data": "29/04/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D traseiro - (Fazenda Minuano)"
+  },
+  {
     "frota": "5667",
     "os": "109561",
     "data": "28/04/2025",
@@ -29,13 +36,6 @@
     "servico": "Trocar alavanca do comando hidráulico da concha - (Fazenda Minuano)"
   },
   {
-    "frota": "5006",
-    "os": "109163",
-    "data": "22/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar vazamento de produto no pé da bomba - (Fazenda Minuano)"
-  },
-  {
     "frota": "5674",
     "os": "108180",
     "data": "02/04/2025",
@@ -48,13 +48,6 @@
     "data": "28/03/2025",
     "prestador": "JOCAR LTDA",
     "servico": "Verificar ar condicionado não está refrigerando."
-  },
-  {
-    "frota": "5674",
-    "os": "107338",
-    "data": "19/03/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS",
-    "servico": "Fazer embuchamentos das barras em ambos os lados e desamassar suporte da barra."
   },
   {
     "frota": "5631",
