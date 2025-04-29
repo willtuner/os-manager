@@ -68,38 +68,42 @@ def init_db():
 
 # --- Helpers para carregar JSON de OS pendentes ---
 def carregar_os_gerente(gerente):
-    base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
-    caminho = os.path.join(MENSAGENS_DIR, base)
-    if not os.path.exists(caminho):
-        prefixo = gerente.split('.')[0].upper()
-        for fn in os.listdir(MENSAGENS_DIR):
-            if fn.upper().startswith(prefixo) and fn.lower().endswith('.json'):
-                caminho = os.path.join(MENSAGENS_DIR, fn)
-                break
-    if not os.path.exists(caminho):
+    """
+    Carrega apenas o JSON do usuário exato.
+    Tenta primeiro GERENTE.json, depois GERENTE_GONZAGA.json.
+    Se não encontrar nenhum, devolve lista vazia.
+    """
+    # monta os nomes esperados de arquivo
+    base = gerente.upper().replace('.', '_')
+    possiveis = [f"{base}.json", f"{base}_GONZAGA.json"]
+    caminho = None
+
+    for nome in possiveis:
+        p = os.path.join(MENSAGENS_DIR, nome)
+        if os.path.exists(p):
+            caminho = p
+            break
+
+    if not caminho:
+        # não encontrou nenhum arquivo específico
         return []
-    
+
     with open(caminho, encoding='utf-8') as f:
-        data = json.load(f)
-    
-    out = []
-    for i in data:
-        data_os_str = str(i.get('data') or i.get('Data',''))
-        try:
-            data_os = datetime.strptime(data_os_str, '%d/%m/%Y').date()
-            dias = (datetime.utcnow().date() - data_os).days
-        except:
-            dias = 0
-        
-        out.append({
-            'os': str(i.get('os') or i.get('OS','')),
-            'frota': str(i.get('frota') or i.get('Frota','')),
-            'data': data_os_str,
-            'dias': str(dias),
-            'prestador': str(i.get('prestador') or i.get('Prestador','Prestador não definido')),
-            'servico': str(i.get('servico') or i.get('Servico') or i.get('observacao') or i.get('Observacao',''))
+        dados = json.load(f)
+
+    resultado = []
+    for item in dados:
+        resultado.append({
+            "os":        str(item.get("os") or item.get("OS", "")),
+            "frota":     str(item.get("frota") or item.get("Frota", "")),
+            "data":      str(item.get("data") or item.get("Data", "")),
+            "dias":      str(item.get("dias") or item.get("Dias", "0")),
+            "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
+            "servico":   str(item.get("servico") or item.get("Servico")
+                             or item.get("observacao") or item.get("Observacao", ""))
         })
-    return out
+    return resultado
+
 
 # --- Rotas ---
 @app.route('/')
