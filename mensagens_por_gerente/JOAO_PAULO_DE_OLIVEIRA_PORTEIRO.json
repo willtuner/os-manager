@@ -2,6 +2,34 @@
   {
     "solicitado": "JOAO PAULO DE OLIVEIRA PORTEIRO",
     "frota": "263",
+    "os": "109815",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Entrada de ar - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5229",
+    "os": "109814",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Instalar cibié - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "302",
+    "os": "109760",
+    "data": "01/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Regularizar junção do escapamento no silencioso: perdeu um parafuso e está faltando a junta, ocasionando saída excessiva de fumaça em cima da bomba injetora."
+  },
+  {
+    "frota": "265",
+    "os": "109750",
+    "data": "01/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Acertar furo na dianteira direita do teto preto, afim de que seja possível a instalação do farol de serviço."
+  },
+  {
+    "frota": "263",
     "os": "109731",
     "data": "30/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
@@ -54,7 +82,7 @@
     "os": "109536",
     "data": "28/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Ajustar  ferros do suporte de proteção da lona anti deriva - (Fazenda Casa Branca)"
+    "servico": "Ajustar  ferros do suporte de proteção da lona anti deriva e trocar pino de articulação da barra direita - (Fazenda Casa Branca)"
   },
   {
     "frota": "265",

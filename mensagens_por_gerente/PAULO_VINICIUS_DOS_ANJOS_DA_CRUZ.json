@@ -1,6 +1,34 @@
 [
   {
     "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+    "frota": "5767",
+    "os": "109784",
+    "data": "02/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E furado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5367",
+    "os": "109773",
+    "data": "01/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Cortar parafusos de ajuste da torre, ajustar correias da turbina e trocar parafusos quebrado que segura o mancal da turbina."
+  },
+  {
+    "frota": "5491",
+    "os": "109763",
+    "data": "01/05/2025",
+    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
+    "servico": "Regularizar mangueira do ramal estourada, de produtos."
+  },
+  {
+    "frota": "246",
+    "os": "109738",
+    "data": "30/04/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento na mangueira da bomba d'água e trinca do capô não fecha - (Fazenda Estrela)"
+  },
+  {
     "frota": "149",
     "os": "109720",
     "data": "30/04/2025",
