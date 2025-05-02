@@ -1,59 +1,17 @@
 [
   {
     "solicitado": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+    "frota": "159",
+    "os": "109875",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Varão da embreagem quebrado - (Fazenda São Pedro)"
+  },
+  {
     "frota": "260",
     "os": "109796",
     "data": "02/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Avaliar funcionamento do A/C, equipamento não está gelando de maneira desejada - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5760",
-    "os": "109736",
-    "data": "30/04/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Fazer solda no cotovelo da barrinha e soldar trincha na estrutura traseira esquerda do chassi - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "159",
-    "os": "109651",
-    "data": "29/04/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "195",
-    "os": "109559",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar volante travando e verificar T.D.P   - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5650",
-    "os": "108826",
-    "data": "15/04/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Fazer solda no cabeçario e trocar corrente de segurança - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "117",
-    "os": "106647",
-    "data": "06/03/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar trator quando o motor está quente e afoga não pega na partida, só volta a pegar quando esfria."
-  },
-  {
-    "frota": "5233",
-    "os": "104987",
-    "data": "07/02/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar comando - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5615",
-    "os": "103451",
-    "data": "14/01/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar reparos da bomba - (Fazenda São Pedro)"
   }
 ]

@@ -1,6 +1,34 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "10223",
+    "os": "109921",
+    "data": "02/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Relógio horimetro não funciona - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5106",
+    "os": "109822",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituir eixo da roda guia quebrado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "309",
+    "os": "109821",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituir mangueira hidráulica furada - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5543",
+    "os": "109818",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda na  proteção do cabeçalho - (Fazenda Estrela)"
+  },
+  {
     "frota": "5524",
     "os": "109779",
     "data": "01/05/2025",
@@ -15,32 +43,11 @@
     "servico": "Verificar coroas de transmissão danificadas, avaliar a corrente e demais engrenagens."
   },
   {
-    "frota": "258",
-    "os": "109752",
-    "data": "01/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Substituir cabo do afogador danificado."
-  },
-  {
-    "frota": "10229",
-    "os": "109751",
-    "data": "01/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Corrigir vazamento de óleo na caixa do hidráulico."
-  },
-  {
     "frota": "91",
     "os": "109745",
     "data": "30/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Confeccionar suporte de farol e cibie"
-  },
-  {
-    "frota": "289",
-    "os": "109733",
-    "data": "30/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Substituir engate da proteção fronte - (Fazenda Estrela)"
   },
   {
     "frota": "5214",
@@ -64,32 +71,11 @@
     "servico": "Revisar sistema eletrico"
   },
   {
-    "frota": "5459",
-    "os": "109644",
-    "data": "29/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir facão e arrastador devido a desgaste ou avarias nos componentes. - (Fazenda Estrela)"
-  },
-  {
     "frota": "5635",
     "os": "109554",
     "data": "28/04/2025",
     "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
     "servico": "Alinhar pratos e bica - (Fazenda Estrela)"
-  },
-  {
-    "frota": "289",
-    "os": "109508",
-    "data": "26/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar iluminação traseira"
-  },
-  {
-    "frota": "5367",
-    "os": "109507",
-    "data": "26/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar parafusos da torre, esticador, o rolamento da turbina e remover trincos das estrutura"
   },
   {
     "frota": "89",

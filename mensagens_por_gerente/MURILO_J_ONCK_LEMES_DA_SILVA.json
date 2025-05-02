@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "MURILO J ONCK LEMES DA SILVA",
+    "frota": "143",
+    "os": "109876",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar freios não funcionam - (Fazenda Bela Manhã)"
+  },
+  {
     "frota": "5603",
     "os": "109742",
     "data": "30/04/2025",
@@ -15,53 +22,11 @@
     "servico": "Quebra do cabo do acelerador de mão - (Fazenda Bela Manhã)"
   },
   {
-    "frota": "5597",
-    "os": "109688",
-    "data": "29/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Realizar a substituição do chicote elétrico do drash devido a rompimento, comprometendo o funcionamento do sistema - (Fazenda Bela Manhã)"
-  },
-  {
     "frota": "5528",
     "os": "109676",
     "data": "29/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar placa do painel de controle do drash, que não responde aos comandos de acionamento. - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5502",
-    "os": "109583",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar solenoides não funcionam - (Fazenda  NSA)"
-  },
-  {
-    "frota": "5502",
-    "os": "109581",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar solenoides não funcionam - (Fazenda  NSA)"
-  },
-  {
-    "frota": "5502",
-    "os": "109579",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar solenoides não funcionam - (Fazenda  NSA)"
-  },
-  {
-    "frota": "5502",
-    "os": "109578",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar solenoides não funcionam - (Fazenda  NSA)"
-  },
-  {
-    "frota": "141",
-    "os": "109433",
-    "data": "25/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento no engata rápido - (Fazenda Bela Manhã)"
   },
   {
     "frota": "5597",

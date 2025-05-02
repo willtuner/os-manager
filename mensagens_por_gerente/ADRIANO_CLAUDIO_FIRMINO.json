@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "5204",
+    "os": "109924",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Rolamento da roda L/E estourado - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "251",
     "os": "109795",
     "data": "02/05/2025",
@@ -34,13 +41,6 @@
     "data": "01/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Corrigir vazamento de óleo na bomba de pulverização."
-  },
-  {
-    "frota": "10218",
-    "os": "109770",
-    "data": "01/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na tubagem do escapamento."
   },
   {
     "frota": "94",
@@ -79,13 +79,6 @@
   },
   {
     "frota": "147",
-    "os": "109544",
-    "data": "28/04/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento na turbina - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "147",
     "os": "109543",
     "data": "28/04/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
@@ -97,13 +90,6 @@
     "data": "25/04/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Rolamento da roda L/E estourado - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "251",
-    "os": "109445",
-    "data": "25/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar paralama traseiro e instalar proteção"
   },
   {
     "frota": "93",
@@ -146,13 +132,6 @@
     "data": "23/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Farol dianteiro queimado e verificar  motor - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "147",
-    "os": "109165",
-    "data": "22/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar trator sem partida - (Fazenda Nova Manhã)"
   },
   {
     "frota": "94",

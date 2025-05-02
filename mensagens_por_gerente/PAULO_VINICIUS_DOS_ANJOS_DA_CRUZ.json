@@ -1,7 +1,21 @@
 [
   {
     "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-    "frota": "5767",
+    "frota": "289",
+    "os": "109905",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento de diesel no cabeçote do filtro de diesel - (Fazenda Estrela)"
+  },
+  {
+    "frota": "289",
+    "os": "109903",
+    "data": "02/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Troca dos gonzo de fixação da grade frontal - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5747",
     "os": "109784",
     "data": "02/05/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
@@ -13,13 +27,6 @@
     "data": "01/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Cortar parafusos de ajuste da torre, ajustar correias da turbina e trocar parafusos quebrado que segura o mancal da turbina."
-  },
-  {
-    "frota": "5491",
-    "os": "109763",
-    "data": "01/05/2025",
-    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
-    "servico": "Regularizar mangueira do ramal estourada, de produtos."
   },
   {
     "frota": "246",
@@ -41,13 +48,6 @@
     "data": "30/04/2025",
     "prestador": "Prestador não definido",
     "servico": "Pneu L/D furado - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5491",
-    "os": "109686",
-    "data": "29/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Acertar agulhas, sacar parafusos de ajuste da torre, modificar fixação da plataforma traseira  com parafusos, para facilitar a manutenção na traseira do equipamento (eixo, torre e turbina)"
   },
   {
     "frota": "221",
