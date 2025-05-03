@@ -63,10 +63,9 @@ def init_db():
                 username=u.lower(),
                 password=pwd,
                 is_admin=(u.lower() in admins)
-            ))  # Faltava este parêntese de fechamento
+            ))
         db.session.commit()
 
-# --- Helpers para carregar JSON de OS pendentes ---
 def carregar_os_gerente(gerente):
     """
     Carrega apenas o JSON do gerente exato.
@@ -134,45 +133,6 @@ def carregar_os_gerente(gerente):
             )
         })
     return resultado
-
-    # finalmente lê o JSON
-    with open(caminho_encontrado, encoding="utf-8") as f:
-        dados = json.load(f)
-
-    resultado = []
-    for item in dados:
-        resultado.append({
-            "os":        str(item.get("os") or item.get("OS", "")),
-            "frota":     str(item.get("frota") or item.get("Frota", "")),
-            "data":      str(item.get("data") or item.get("Data", "")),
-            "dias":      str(item.get("dias") or item.get("Dias", "0")),
-            "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
-            "servico":   str(
-                item.get("servico")
-                or item.get("Servico")
-                or item.get("observacao")
-                or item.get("Observacao", "")
-            )
-        })
-    return resultado
-
-
-    with open(caminho, encoding='utf-8') as f:
-        dados = json.load(f)
-
-    resultado = []
-    for item in dados:
-        resultado.append({
-            "os":        str(item.get("os") or item.get("OS", "")),
-            "frota":     str(item.get("frota") or item.get("Frota", "")),
-            "data":      str(item.get("data") or item.get("Data", "")),
-            "dias":      str(item.get("dias") or item.get("Dias", "0")),
-            "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
-            "servico":   str(item.get("servico") or item.get("Servico")
-                             or item.get("observacao") or item.get("Observacao", ""))
-        })
-    return resultado
-
 
 # --- Rotas ---
 @app.route('/')
@@ -260,12 +220,17 @@ def admin_panel():
     gerentes = [u.username for u in users]
     contagem = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
     abertas = {g: len(carregar_os_gerente(g)) for g in gerentes}
+    
+    # Cria o ranking ordenado por quantidade de OS abertas (decrescente)
+    ranking_os_abertas = sorted(abertas.items(), key=lambda x: x[1], reverse=True)
+    
     return render_template('admin.html',
                          finalizadas=finalizadas,
                          total_os=len(finalizadas),
                          gerentes=gerentes,
                          contagem_gerentes=contagem,
                          os_abertas=abertas,
+                         ranking_os_abertas=ranking_os_abertas,
                          login_events=login_events,
                          now=datetime.utcnow())
 
