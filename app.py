@@ -4,6 +4,7 @@ import re
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate  # <--- importação do Flask-Migrate
 from fpdf import FPDF
 
 # --- Configuração do app e banco ---
@@ -18,7 +19,9 @@ app.config.update(
     ),
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
+
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)  # <--- inicialização do Flask-Migrate
 
 # --- Models ---
 class User(db.Model):
@@ -32,7 +35,7 @@ class Finalizacao(db.Model):
     __tablename__ = 'finalizacoes'
     id             = db.Column(db.Integer, primary_key=True)
     os_numero      = db.Column(db.String(50), nullable=False)
-    usuario        = db.Column(db.String(80), nullable=False)  # gerente ou prestador
+    gerente        = db.Column(db.String(80), nullable=False)
     data_fin       = db.Column(db.String(10), nullable=False)
     hora_fin       = db.Column(db.String(5), nullable=False)
     observacoes    = db.Column(db.Text)
