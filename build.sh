@@ -12,3 +12,4 @@ pip install -r requirements.txt
 flask db init 2>/dev/null || true
 flask db migrate -m "Inicial: criar tabelas"
 flask db upgrade
+python extract_prestadores.py
