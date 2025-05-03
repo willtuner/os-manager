@@ -12,6 +12,11 @@
   .stat-card.danger { background-color: #e74c3c; color: white; }
   .badge-os-aberta { background-color: #e74c3c; color: white; }
   .table-responsive { margin-top: 30px; }
+  .ranking-badge { font-size: 0.9rem; padding: 5px 8px; color: white; }
+  .ranking-1 { background-color: #e74c3c; }
+  .ranking-2 { background-color: #f39c12; }
+  .ranking-3 { background-color: #f1c40f; }
+  .ranking-other { background-color: #95a5a6; }
 </style>
 {% endblock %}
 
@@ -47,6 +52,41 @@
       <div class="stat-card danger">
         <h3><i class="fas fa-exclamation-circle me-2"></i> {{ os_abertas.values()|sum }}</h3>
         <p>OS Pendentes</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ranking de OS Abertas -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-header bg-info text-white">
+      <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking de OS Pendentes</h4>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead class="table-light">
+            <tr>
+              <th>Posição</th>
+              <th>Gerente</th>
+              <th>OS Pendentes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for gerente, count in ranking_os_abertas %}
+            <tr>
+              <td>
+                <span class="badge ranking-badge ranking-{{ loop.index if loop.index <= 3 else 'other' }}">
+                  {{ loop.index }}º
+                </span>
+              </td>
+              <td>{{ gerente }}</td>
+              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+            </tr>
+            {% else %}
+            <tr><td colspan="3" class="text-center py-4">Nenhuma OS pendente</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
