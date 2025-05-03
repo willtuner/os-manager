@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 set -o errexit
 
-# 1) Cria / ativa o ambiente
+# 1) Define a app
 export FLASK_APP=app.py
 
-# 2) Instala o pip e deps
+# 2) Instala dependências
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# 3) Inicializa e aplica migrations (sem erro se já inicializado)
+# 3) Aplica migrations
 flask db init 2>/dev/null || true
 flask db migrate -m "Inicial: criar tabelas"
 flask db upgrade
+
+# 4) Extrai prestadores
 python extract_prestadores.py
