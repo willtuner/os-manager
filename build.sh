@@ -12,6 +12,8 @@ pip install -r requirements.txt
 # Executa migrações do banco de dados
 if [ -d "migrations" ]; then
     flask db upgrade
+else
+    flask db init
+    flask db migrate -m "Initial migration"
+    flask db upgrade
 fi
-
-# O Render executará automaticamente o gunicorn app:app
