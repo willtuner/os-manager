@@ -4,7 +4,8 @@ import re
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
-from fpdf import FPDF
+from flask_migrate import Migrate        # import correto do Migrate
+from fpdf import FPDF                   # import correto do FPDF
 
 # --- Configuração do app e banco ---
 app = Flask(__name__)
@@ -19,6 +20,8 @@ app.config.update(
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)  # instancia o Flask-Migrate
+
 
 # --- Models ---
 class User(db.Model):
