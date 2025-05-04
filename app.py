@@ -106,24 +106,48 @@ def carregar_json(dirpath, key):
 def montar_lista(items):
     out = []
     hoje = datetime.utcnow().date()
+    
+    # Verifica se é a estrutura com ORDENS_DE_SERVICO
+    if isinstance(items, dict) and 'ORDENS_DE_SERVICO' in items:
+        items = items['ORDENS_DE_SERVICO']
+    
     for it in items:
-        data_str = it.get('data') or it.get('Data','')
-        data_dt = None
-        for fmt in ('%d/%m/%Y','%Y-%m-%d','%d-%m-%Y'):
-            try:
-                data_dt = datetime.strptime(data_str, fmt).date()
-                break
-            except:
-                continue
-        dias = (hoje - data_dt).days if data_dt else 0
-        out.append({
-            'os':        str(it.get('os') or it.get('OS','')),
-            'frota':     str(it.get('frota') or it.get('Frota','')),
-            'data':      data_str,
-            'dias':      dias,
-            'servico':   str(it.get('servico') or it.get('Servico') or it.get('Observacao','')),
-            'prestador': str(it.get('prestador') or it.get('Prestador',''))
-        })
+        try:
+            # Extrai os campos com várias alternativas possíveis
+            os_num = str(it.get('os') or it.get('OS') or it.get('NO-SERVIÇO') or '')
+            frota = str(it.get('frota') or it.get('Frota') or it.get('CD_EQT') or '')
+            servico = str(it.get('servico') or it.get('Servico') or it.get('SERVIÇO') or '')
+            
+            # O prestador pode vir do nível superior do JSON
+            prestador = str(it.get('prestador') or it.get('Prestador') or 
+                          it.get('PREST_SERVIÇO') or 'Prestador não definido')
+            
+            # Processamento de data
+            data_str = it.get('data') or it.get('Data') or it.get('DT_ENTRADA') or ''
+            data_dt = None
+            
+            for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%d-%m-%Y'):
+                try:
+                    data_dt = datetime.strptime(data_str, fmt).date()
+                    break
+                except:
+                    continue
+            
+            dias = (hoje - data_dt).days if data_dt else 0
+            
+            out.append({
+                'os': os_num,
+                'frota': frota,
+                'data': data_str,
+                'dias': dias,
+                'servico': servico,
+                'prestador': prestador
+            })
+            
+        except Exception as e:
+            print(f"Erro ao processar item {it}: {str(e)}")
+            continue
+    
     return out
 
 # --- Rotas Gerente ---
