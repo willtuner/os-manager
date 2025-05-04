@@ -4,26 +4,23 @@ import re
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate               # ← import
 from fpdf import FPDF
 
 # --- Configuração do app e banco ---
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
-BASE_DIR = os.path.dirname(__file__)
-MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
-PRESTADORES_DIR = os.path.join(BASE_DIR, 'mensagens_por_prestador')
-USERS_FILE = os.path.join(BASE_DIR, 'users.json')
-
 app.config.update(
     SESSION_COOKIE_SECURE=True,
     SESSION_COOKIE_SAMESITE='Lax',
     SQLALCHEMY_DATABASE_URI=os.environ.get(
         'DATABASE_URL',
-        f"sqlite:///{os.path.join(BASE_DIR,'app.db')}"
+        f"sqlite:///{os.path.join(os.path.dirname(__file__),'app.db')}"
     ),
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)                      # ← inicializa as migrações
 
 # --- Models ---
 class User(db.Model):
@@ -50,6 +47,8 @@ class LoginEvent(db.Model):
     login_time    = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
     logout_time   = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
+
+
 
 # --- Inicialização de diretórios ---
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
