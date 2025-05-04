@@ -8,12 +8,12 @@ export FLASK_APP=app.py
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# 3) Executa migrações (no primeiro deploy cria a pasta migrations)
-flask db init 2>/dev/null || true
-flask db migrate -m "Inicial: criar tabelas"
-flask db upgrade
+# 3) Executa migrações (só inicializa a pasta migrations se ainda não existir)
+if [ ! -d migrations ]; then
+  flask db init
+fi
+flask db migrate --no-input -m "Inicial: criar tabelas"
+flask db upgrade --no-input
 
 # 4) Extrai prestadores, se tiver script
 python extract_prestadores.py
-
-# 5) Pronto — o Render vai rodar 'gunicorn app:app' automaticamente
