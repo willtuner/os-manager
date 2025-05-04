@@ -23,7 +23,7 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
-    is_prestador = db.Column(db.Boolean, default=False)
+    is_prestador = db.Column(db.Boolean, default=False)  # Esta é a coluna faltante
     nome_exibicao = db.Column(db.String(100))
 
 class OS(db.Model):
