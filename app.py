@@ -4,61 +4,63 @@ import re
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
 from fpdf import FPDF
 
 # --- Configuração do app e banco ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
-USERS_FILE = os.path.join(BASE_DIR, 'users.json')
-DATABASE_URL = os.environ.get('DATABASE_URL', f"sqlite:///{os.path.join(BASE_DIR,'app.db')}")
-
-os.makedirs(MENSAGENS_DIR, exist_ok=True)
-
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 app.config.update(
-    SQLALCHEMY_DATABASE_URI=DATABASE_URL,
-    SQLALCHEMY_TRACK_MODIFICATIONS=False,
     SESSION_COOKIE_SECURE=True,
-    SESSION_COOKIE_SAMESITE='Lax'
+    SESSION_COOKIE_SAMESITE='Lax',
+    SQLALCHEMY_DATABASE_URI=os.environ.get(
+        'DATABASE_URL',
+        f"sqlite:///{os.path.join(os.path.dirname(__file__),'app.db')}"
+    ),
+    SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
-
-# Extensões
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)
 
 # --- Models ---
 class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    password = db.Column(db.String(128), nullable=False)
-    is_admin = db.Column(db.Boolean, default=False)
+    __tablename__ = 'users'
+    id        = db.Column(db.Integer, primary_key=True)
+    username  = db.Column(db.String(80), unique=True, nullable=False)
+    password  = db.Column(db.String(128), nullable=False)
+    is_admin  = db.Column(db.Boolean, default=False)
 
 class Finalizacao(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    os_numero = db.Column(db.String(50), nullable=False)
-    gerente = db.Column(db.String(80), nullable=False)
-    data_fin = db.Column(db.String(10), nullable=False)
-    hora_fin = db.Column(db.String(5), nullable=False)
-    observacoes = db.Column(db.Text)
-    registrado_em = db.Column(db.DateTime, default=datetime.utcnow)
+    __tablename__ = 'finalizacoes'
+    id             = db.Column(db.Integer, primary_key=True)
+    os_numero      = db.Column(db.String(50), nullable=False)
+    gerente        = db.Column(db.String(80), nullable=False)
+    data_fin       = db.Column(db.String(10), nullable=False)
+    hora_fin       = db.Column(db.String(5), nullable=False)
+    observacoes    = db.Column(db.Text)
+    registrado_em  = db.Column(db.DateTime, default=datetime.utcnow)
 
 class LoginEvent(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), nullable=False)
-    login_time = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
-    logout_time = db.Column(db.DateTime)
+    __tablename__ = 'login_events'
+    id            = db.Column(db.Integer, primary_key=True)
+    username      = db.Column(db.String(80), nullable=False)
+    login_time    = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+    logout_time   = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
 
+# --- Constantes de caminho ---
+BASE_DIR       = os.path.dirname(__file__)
+MENSAGENS_DIR  = os.path.join(BASE_DIR, 'mensagens_por_gerente')
+USERS_FILE     = os.path.join(BASE_DIR, 'users.json')
+os.makedirs(MENSAGENS_DIR, exist_ok=True)
+
 # --- Inicialização do DB e import de users.json ---
-with app.app_context():
+def init_db():
     db.create_all()
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
-            data = json.load(f)
+            js = json.load(f)
+        # defina aqui quem será admin
         admins = {'wilson.santana'}
-        for u, pwd in data.items():
+        for u, pwd in js.items():
             db.session.add(User(
                 username=u.lower(),
                 password=pwd,
@@ -66,83 +68,60 @@ with app.app_context():
             ))
         db.session.commit()
 
-# --- Funções auxiliares ---
+# --- Helpers para OS de gerente ---
 def carregar_os_gerente(gerente):
-    # tenta GERENTE.json e GERENTE_GONZAGA.json
     base = gerente.upper().replace('.', '_')
-    candidates = [f"{base}.json", f"{base}_GONZAGA.json"]
-    path = None
-    for name in candidates:
-        p = os.path.join(MENSAGENS_DIR, name)
+    possiveis = [f"{base}.json", f"{base}_GONZAGA.json"]
+    caminho = None
+    for nome in possiveis:
+        p = os.path.join(MENSAGENS_DIR, nome)
         if os.path.exists(p):
-            path = p
+            caminho = p
             break
-    if not path:
-        # fallback: qualquer que inicie com base_
+    if not caminho:
         for fn in os.listdir(MENSAGENS_DIR):
-            if fn.upper().startswith(base + '_') and fn.lower().endswith('.json'):
-                path = os.path.join(MENSAGENS_DIR, fn)
+            if fn.upper().startswith(base + "_") and fn.lower().endswith(".json"):
+                caminho = os.path.join(MENSAGENS_DIR, fn)
                 break
-    if not path:
-        return []
-    # lê JSON e calcula dias em aberto
-    with open(path, encoding='utf-8') as f:
-        items = json.load(f)
-    result = []
-    today = datetime.utcnow().date()
-    for it in items:
-        date_str = it.get('data') or it.get('Data', '')
-        opened = None
-        for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%d-%m-%Y'):
-            try:
-                opened = datetime.strptime(date_str, fmt).date()
-                break
-            except:
-                continue
-        days_open = (today - opened).days if opened else 0
-        result.append({
-            'os': str(it.get('os') or it.get('OS', '')),
-            'frota': str(it.get('frota') or it.get('Frota', '')),
-            'data': date_str,
-            'dias': str(days_open),
-            'prestador': str(it.get('prestador') or it.get('Prestador', 'Prestador não definido')),
-            'servico': str(it.get('servico') or it.get('Servico') or it.get('observacao') or it.get('Observacao', ''))
-        })
-    return result
-
-def carregar_os_prestador(prest_key):
-    """
-    Lê o JSON de pendentes do prestador (slug) e calcula dias em aberto.
-    """
-    caminho = os.path.join(PRESTADORES_DIR, f"{prest_key}.json")
-    if not os.path.exists(caminho):
+    if not caminho:
         return []
     with open(caminho, encoding='utf-8') as f:
-        items = json.load(f)
-
-    hoje = datetime.utcnow().date()
+        dados = json.load(f)
     resultado = []
-    for it in items:
-        data_str = it.get('data') or it.get('Data', '')
-        aberto = None
-        for fmt in ('%d/%m/%Y','%Y-%m-%d','%d-%m-%Y'):
-            try:
-                aberto = datetime.strptime(data_str, fmt).date()
-                break
-            except:
-                continue
-        dias = (hoje - aberto).days if aberto else 0
-
+    for item in dados:
         resultado.append({
-            'os':        str(it.get('os') or it.get('OS','')),
-            'frota':     str(it.get('frota') or it.get('Frota','')),
-            'data':      data_str,
-            'dias':      str(dias),
-            'servico':   str(it.get('servico') or it.get('Servico') or it.get('observacao') or it.get('Observacao',''))
+            "os":        str(item.get("os") or item.get("OS", "")),
+            "frota":     str(item.get("frota") or item.get("Frota", "")),
+            "data":      str(item.get("data") or item.get("Data", "")),
+            "dias":      str(item.get("dias") or item.get("Dias", "0")),
+            "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
+            "servico":   str(item.get("servico") or item.get("Servico") or item.get("observacao") or item.get("Observacao", ""))
         })
     return resultado
 
-# --- Rotas de Gerente ---
+# --- Helper para OS de prestador ---
+def carregar_os_prestador(prestador_login):
+    termos = prestador_login.split('.')  # e.g. ["pedro","montessani"]
+    resultado = []
+    # varre todos os JSON de gerente
+    for fn in os.listdir(MENSAGENS_DIR):
+        if fn.lower().endswith('.json'):
+            with open(os.path.join(MENSAGENS_DIR, fn), encoding='utf-8') as f:
+                dados = json.load(f)
+            for item in dados:
+                prest = item.get("prestador","").lower()
+                if all(t in prest for t in termos):
+                    resultado.append({
+                        "os":        str(item.get("os") or item.get("OS", "")),
+                        "frota":     str(item.get("frota") or item.get("Frota", "")),
+                        "data":      str(item.get("data") or item.get("Data", "")),
+                        "dias":      str(item.get("dias") or item.get("Dias", "0")),
+                        "prestador": str(item.get("prestador")),
+                        "servico":   str(item.get("servico") or item.get("Servico") or item.get("observacao") or item.get("Observacao", ""))
+                    })
+    return resultado
+
+# --- Rotas ---
 @app.route('/')
 def index():
     return redirect(url_for('login'))
@@ -155,87 +134,160 @@ def login():
         p = request.form['senha'].strip()
         user = User.query.filter_by(username=u).first()
         if user and user.password == p:
+            # registra evento
             ev = LoginEvent(username=u)
-            db.session.add(ev); db.session.commit()
+            db.session.add(ev)
+            db.session.commit()
             session['login_event_id'] = ev.id
-            session['user_type'] = 'gerente'
-            session['user']      = u
+            session['gerente'] = u
+            session['is_admin'] = user.is_admin
+            # decide painel
+            if user.is_admin:
+                return redirect(url_for('admin_panel'))
+            # vê se é prestador (não-admin e sem JSON próprio de gerente)
+            base = u.upper().replace('.', '_')
+            if not any(fn.upper().startswith(base) for fn in os.listdir(MENSAGENS_DIR)):
+                session['is_prestador'] = True
+                return redirect(url_for('painel_prestador'))
+            # caso contrário é gerente
             return redirect(url_for('painel'))
         flash('Usuário ou senha inválidos','danger')
     return render_template('login.html', erro=erro)
 
 @app.route('/painel')
 def painel():
-    if session.get('user_type') != 'gerente':
+    if 'gerente' not in session or session.get('is_prestador'):
         return redirect(url_for('login'))
-    u    = session['user']
-    pend = carregar_os_gerente(u)
+    pend = carregar_os_gerente(session['gerente'])
+    finalizadas = Finalizacao.query.filter_by(gerente=session['gerente'])\
+                       .order_by(Finalizacao.registrado_em.desc()).limit(100).all()
     return render_template('painel.html',
                            os_pendentes=pend,
-                           gerente=u,
+                           finalizadas=finalizadas,
+                           gerente=session['gerente'],
                            now=datetime.utcnow())
-
-# --- Rotas de Prestador ---
-@app.route('/login_prestador', methods=['GET','POST'])
-def login_prestador():
-    erro = None
-    if request.method == 'POST':
-        key   = request.form['prestador_key'].strip().lower()
-        senha = request.form['senha'].strip()
-        users = json.load(open(USERS_FILE, encoding='utf-8'))
-        if users.get(key) == senha:
-            session['user_type'] = 'prestador'
-            session['user']      = key
-            return redirect(url_for('painel_prestador'))
-        flash('Chave ou senha inválidos','danger')
-    return render_template('login_prestador.html', erro=erro)
 
 @app.route('/painel_prestador')
 def painel_prestador():
-    if session.get('user_type') != 'prestador':
-        return redirect(url_for('login_prestador'))
-    key  = session['user']
-    pend = carregar_os_prestador(key)
+    if 'gerente' not in session or not session.get('is_prestador'):
+        return redirect(url_for('login'))
+    pend = carregar_os_prestador(session['gerente'])
+    finalizadas = Finalizacao.query.filter_by(gerente=session['gerente'])\
+                       .order_by(Finalizacao.registrado_em.desc()).limit(100).all()
     return render_template('painel_prestador.html',
                            os_pendentes=pend,
-                           prestador=key,
+                           finalizadas=finalizadas,
+                           prestador=session['gerente'],
                            now=datetime.utcnow())
 
-# --- Rota comum de finalizar OS ---
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
-    if 'user_type' not in session:
+    if 'gerente' not in session:
         return redirect(url_for('login'))
-    tipo = session['user_type']
-    usr  = session['user']
-    d    = request.form['data_finalizacao']
-    h    = request.form['hora_finalizacao']
-    o    = request.form.get('observacoes','')
-    fz   = Finalizacao(
-        os_numero=os_numero,
-        gerente  = usr if tipo == 'gerente' else None,
-        prestador= usr if tipo == 'prestador' else None,
-        data_fin = d,
-        hora_fin = h,
-        observacoes=o
-    )
-    db.session.add(fz); db.session.commit()
+    d = request.form['data_finalizacao']
+    h = request.form['hora_finalizacao']
+    o = request.form.get('observacoes','')
+    fz = Finalizacao(os_numero=os_numero,
+                     gerente=session['gerente'],
+                     data_fin=d, hora_fin=h,
+                     observacoes=o)
+    db.session.add(fz)
+    # remove do JSON de gerente
+    gerente = session['gerente']
+    base = gerente.upper().replace('.', '_')
+    # tenta arquivo exato
+    for sufixo in ("", "_GONZAGA"):
+        p = os.path.join(MENSAGENS_DIR, f"{base}{sufixo}.json")
+        if os.path.exists(p):
+            caminho = p
+            break
+    else:
+        # fallback por prefixo
+        caminho = None
+        for fn in os.listdir(MENSAGENS_DIR):
+            if fn.upper().startswith(base + "_") and fn.lower().endswith(".json"):
+                caminho = os.path.join(MENSAGENS_DIR, fn)
+                break
+    if caminho:
+        with open(caminho, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        data = [item for item in data
+                if str(item.get('os') or item.get('OS')) != os_numero]
+        with open(caminho, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+    db.session.commit()
     flash(f'OS {os_numero} finalizada','success')
-    return redirect(url_for('painel' if tipo=='gerente' else 'painel_prestador'))
+    # volta pro painel adequado
+    return redirect(url_for('painel_prestador' if session.get('is_prestador') else 'painel'))
+
+@app.route('/admin')
+def admin_panel():
+    if not session.get('is_admin'):
+        flash('Acesso negado','danger')
+        return redirect(url_for('login'))
+    finalizadas  = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
+    login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
+    users        = User.query.order_by(User.username).all()
+    gerentes     = [u.username for u in users if not u.is_admin]
+    contagem     = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
+    abertas      = {g: len(carregar_os_gerente(g)) for g in gerentes}
+    return render_template('admin.html',
+                           finalizadas=finalizadas,
+                           total_os=len(finalizadas),
+                           gerentes=gerentes,
+                           contagem_gerentes=contagem,
+                           os_abertas=abertas,
+                           login_events=login_events,
+                           now=datetime.utcnow())
+
+@app.route('/exportar_os_finalizadas')
+def exportar_os_finalizadas():
+    if not session.get('is_admin'):
+        flash('Acesso negado','danger')
+        return redirect(url_for('login'))
+    allf = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).all()
+    if not allf:
+        flash('Nenhuma OS finalizada','warning')
+        return redirect(url_for('admin_panel'))
+    pdf_path = os.path.join(BASE_DIR,'relatorio_finalizacoes.pdf')
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font('Arial','B',12)
+    pdf.cell(0,10,'Relatório de OS Finalizadas',ln=True,align='C'); pdf.ln(5)
+    cols, w = ['OS','Gerente','Data','Hora','Obs'], [20,40,30,25,75]
+    pdf.set_font('Arial','B',10)
+    for c,width in zip(cols,w): pdf.cell(width,8,c,border=1)
+    pdf.ln(); pdf.set_font('Arial','',9)
+    for r in allf:
+        pdf.cell(w[0],6,r.os_numero,border=1)
+        pdf.cell(w[1],6,r.gerente,   border=1)
+        pdf.cell(w[2],6,r.data_fin,  border=1)
+        pdf.cell(w[3],6,r.hora_fin,  border=1)
+        pdf.cell(w[4],6,(r.observacoes or '')[:40],border=1)
+        pdf.ln()
+    pdf.output(pdf_path)
+    return send_file(pdf_path,
+                     as_attachment=True,
+                     download_name=f'relatorio_{datetime.utcnow():%Y%m%d}.pdf',
+                     mimetype='application/pdf')
 
 @app.route('/logout')
 def logout():
     ev_id = session.pop('login_event_id', None)
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
-        ev.logout_time   = datetime.utcnow()
-        ev.duration_secs = int((ev.logout_time - ev.login_time).total_seconds())
-        db.session.commit()
+        if ev:
+            ev.logout_time   = datetime.utcnow()
+            ev.duration_secs = int((ev.logout_time - ev.login_time).total_seconds())
+            db.session.commit()
     session.clear()
     flash('Desconectado','info')
     return redirect(url_for('login'))
 
-# --- main ---
+# cria as tabelas e importa usuários
+with app.app_context():
+    init_db()
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
             port=int(os.environ.get('PORT',10000)),
