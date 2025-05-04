@@ -116,7 +116,7 @@ def login():
             return redirect(url_for('painel'))
         
         flash('Credenciais inválidas', 'danger')
-    return render_template('login.html'))
+    return render_template('login.html')
 
 @app.route('/logout')
 def logout():
