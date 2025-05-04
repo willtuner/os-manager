@@ -61,8 +61,27 @@ def init_db():
         db.session.commit()
 
 def carregar_json(dirpath, key):
+    """
+    Tenta:
+      1) arquivo exato key.json
+      2) qualquer JSON em dirpath cujo nome contenha todas as partes de `key`
+    """
+    data = []
+
+    # exato
     fn = os.path.join(dirpath, f"{key}.json")
-    return json.load(open(fn, encoding='utf-8')) if os.path.exists(fn) else []
+    if os.path.exists(fn):
+        data.extend(json.load(open(fn, encoding='utf-8')))
+    else:
+        parts = key.split('.')
+        for arq in os.listdir(dirpath):
+            if not arq.lower().endswith('.json'):
+                continue
+            name = arq[:-5].lower()
+            if all(p in name for p in parts):
+                data.extend(json.load(open(os.path.join(dirpath, arq), encoding='utf-8')))
+
+    return data
 
 def montar_lista(items):
     out = []
@@ -70,19 +89,20 @@ def montar_lista(items):
     for it in items:
         data_str = it.get('data') or it.get('Data','')
         data_dt = None
-        for fmt in ('%d/%m/%Y','%Y-%m-%d'):
+        for fmt in ('%d/%m/%Y','%Y-%m-%d','%d-%m-%Y'):
             try:
                 data_dt = datetime.strptime(data_str, fmt).date()
                 break
             except:
-                pass
+                continue
         dias = (hoje - data_dt).days if data_dt else 0
         out.append({
-            'os':      str(it.get('os') or it.get('OS','')),
-            'frota':   str(it.get('frota') or it.get('Frota','')),
-            'data':    data_str,
-            'dias':    dias,
-            'servico': str(it.get('servico') or it.get('Servico') or it.get('Observacao',''))
+            'os':        str(it.get('os') or it.get('OS','')),
+            'frota':     str(it.get('frota') or it.get('Frota','')),
+            'data':      data_str,
+            'dias':      dias,
+            'servico':   str(it.get('servico') or it.get('Servico') or it.get('Observacao','')),
+            'prestador': str(it.get('prestador') or it.get('Prestador',''))
         })
     return out
 
@@ -132,7 +152,9 @@ def painel_prestador():
     if session.get('type') != 'prestador':
         return redirect(url_for('login_prestador'))
     pend = montar_lista(carregar_json(PRESTADORES_DIR, session['user']))
-    return render_template('painel_prestador.html', os_pendentes=pend, prestador=session['user'])
+    return render_template('painel_prestador.html',
+                           os_pendentes=pend,
+                           prestador=session['user'])
 
 # --- Finalizar OS ---
 @app.route('/finalizar/<os_numero>', methods=['POST'])
@@ -141,11 +163,11 @@ def finalizar(os_numero):
     if tipo not in ('gerente','prestador'):
         return redirect(url_for('login'))
     dados = {
-        'os_numero': os_numero,
-        'gerente':   session['user'] if tipo=='gerente' else None,
-        'prestador': session['user'] if tipo=='prestador' else None,
-        'data_fin':  request.form['data_finalizacao'],
-        'hora_fin':  request.form['hora_finalizacao'],
+        'os_numero':   os_numero,
+        'gerente':     session['user'] if tipo=='gerente'   else None,
+        'prestador':   session['user'] if tipo=='prestador' else None,
+        'data_fin':    request.form['data_finalizacao'],
+        'hora_fin':    request.form['hora_finalizacao'],
         'observacoes': request.form.get('observacoes','')
     }
     db.session.add(Finalizacao(**dados))
