@@ -4,24 +4,26 @@ import re
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate  # <--- importação do Flask-Migrate
 from fpdf import FPDF
 
 # --- Configuração do app e banco ---
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
+BASE_DIR = os.path.dirname(__file__)
+MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
+PRESTADORES_DIR = os.path.join(BASE_DIR, 'mensagens_por_prestador')
+USERS_FILE = os.path.join(BASE_DIR, 'users.json')
+
 app.config.update(
     SESSION_COOKIE_SECURE=True,
     SESSION_COOKIE_SAMESITE='Lax',
     SQLALCHEMY_DATABASE_URI=os.environ.get(
         'DATABASE_URL',
-        f"sqlite:///{os.path.join(os.path.dirname(__file__),'app.db')}"
+        f"sqlite:///{os.path.join(BASE_DIR,'app.db')}"
     ),
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
-
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)  # <--- inicialização do Flask-Migrate
 
 # --- Models ---
 class User(db.Model):
@@ -49,55 +51,19 @@ class LoginEvent(db.Model):
     logout_time   = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
 
-# --- Paths e inicialização ---
-BASE_DIR         = os.path.dirname(__file__)
-GERENTES_DIR     = os.path.join(BASE_DIR, 'mensagens_por_gerente')
-PRESTADORES_DIR  = os.path.join(BASE_DIR, 'mensagens_por_prestador')
-USERS_FILE       = os.path.join(BASE_DIR, 'users.json')
-os.makedirs(GERENTES_DIR, exist_ok=True)
+# --- Inicialização de diretórios ---
+os.makedirs(MENSAGENS_DIR, exist_ok=True)
 os.makedirs(PRESTADORES_DIR, exist_ok=True)
 
-# --- Helpers ---
-def slugify(name):
-    s = name.strip().upper()
-    # remove acentos
-    s = re.sub(r'[ÀÁÂÃÄÅ]', 'A', s)
-    s = re.sub(r'[ÈÉÊË]',   'E', s)
-    s = re.sub(r'[ÍÌÎÏ]',   'I', s)
-    s = re.sub(r'[ÓÒÔÕÖ]',  'O', s)
-    s = re.sub(r'[ÚÙÛÜ]',   'U', s)
-    # tudo que não for letra/número vira ponto
-    s = re.sub(r'[^A-Z0-9]+', '.', s)
-    s = re.sub(r'\.+', '.', s).strip('.')
-    return s.lower()
-
-def carregar_os_gerente(gerente):
-    base = gerente.upper().replace('.', '_')
-    # tenta GERENTE.json e GERENTE_GONZAGA.json
-    for suf in ('', '_GONZAGA'):
-        p = os.path.join(GERENTES_DIR, f"{base}{suf}.json")
-        if os.path.exists(p):
-            return json.load(open(p, encoding='utf-8'))
-    # fallback: qualquer que comece com base + '_'
-    for fn in os.listdir(GERENTES_DIR):
-        if fn.upper().startswith(base + '_') and fn.lower().endswith('.json'):
-            return json.load(open(os.path.join(GERENTES_DIR, fn), encoding='utf-8'))
-    return []
-
-def carregar_os_prestador(prestador):
-    slug = slugify(prestador)
-    p = os.path.join(PRESTADORES_DIR, f"{slug}.json")
-    if os.path.exists(p):
-        return json.load(open(p, encoding='utf-8'))
-    return []
-
 def init_db():
+    # cria tabelas
     db.create_all()
-    # importa usuários do JSON se tabela vazia
+    # importa users.json se tabela vazia
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
-        js = json.load(open(USERS_FILE, encoding='utf-8'))
+        with open(USERS_FILE, encoding='utf-8') as f:
+            js = json.load(f)
         admins = {'wilson.santana'}
-        for u,pwd in js.items():
+        for u, pwd in js.items():
             db.session.add(User(
                 username=u.lower(),
                 password=pwd,
@@ -105,112 +71,146 @@ def init_db():
             ))
         db.session.commit()
 
-# garante criação/interrupção
-with app.app_context():
-    init_db()
+def extract_prestadores():
+    """
+    Varre todas as OS em mensagens_por_gerente e gera um JSON por prestador
+    em mensagens_por_prestador/{prestador_key}.json
+    """
+    # limpa pasta de prestadores
+    for fn in os.listdir(PRESTADORES_DIR):
+        os.remove(os.path.join(PRESTADORES_DIR, fn))
 
-# --- Rotas ---
+    for arquivo in os.listdir(MENSAGENS_DIR):
+        if not arquivo.lower().endswith('.json'):
+            continue
+        data = json.load(open(os.path.join(MENSAGENS_DIR,arquivo), encoding='utf-8'))
+        for item in data:
+            prest = item.get('prestador','').strip()
+            if not prest:
+                continue
+            # normaliza o nome para filename
+            key = re.sub(r'\W+', '.', prest.lower())
+            path = os.path.join(PRESTADORES_DIR, f'{key}.json')
+            arr = []
+            if os.path.exists(path):
+                arr = json.load(open(path, encoding='utf-8'))
+            arr.append(item)
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump(arr, f, ensure_ascii=False, indent=2)
+
+def carregar_os_gerente(gerente):
+    """carrega apenas o JSON exato de um gerente"""
+    base = gerente.upper().replace('.', '_')
+    poss = [f"{base}.json", f"{base}_GONZAGA.json"]
+    for nome in poss:
+        p = os.path.join(MENSAGENS_DIR, nome)
+        if os.path.exists(p):
+            dados = json.load(open(p, encoding='utf-8'))
+            return [{
+                "os": str(i.get("os") or i.get("OS","")),
+                "frota": str(i.get("frota") or i.get("Frota","")),
+                "data": str(i.get("data") or i.get("Data","")),
+                "dias": str(i.get("dias") or i.get("Dias","0")),
+                "prestador": str(i.get("prestador") or i.get("Prestador","")),
+                "servico": str(i.get("servico") or i.get("Servico") or i.get("Observacao",""))
+            } for i in dados]
+    return []
+
+def carregar_os_prestador(prestador_key):
+    """carrega o JSON do prestador normalizado (key gerada pelo extract_prestadores)"""
+    p = os.path.join(PRESTADORES_DIR, f'{prestador_key}.json')
+    if not os.path.exists(p):
+        return []
+    dados = json.load(open(p, encoding='utf-8'))
+    return [{
+        "os": str(i.get("os") or i.get("OS","")),
+        "frota": str(i.get("frota") or i.get("Frota","")),
+        "data": str(i.get("data") or i.get("Data","")),
+        "dias": str(i.get("dias") or i.get("Dias","0")),
+        "servico": str(i.get("servico") or i.get("Servico") or i.get("Observacao",""))
+    } for i in dados]
+
+# --- Rotas de login/painel gerente ---
 @app.route('/')
 def index():
     return redirect(url_for('login'))
 
 @app.route('/login', methods=['GET','POST'])
 def login():
+    erro = None
     if request.method == 'POST':
         u = request.form['gerente'].strip().lower()
         p = request.form['senha'].strip()
         user = User.query.filter_by(username=u).first()
         if user and user.password == p:
-            # registra evento de login
+            # evento de login
             ev = LoginEvent(username=u)
             db.session.add(ev); db.session.commit()
             session['login_event_id'] = ev.id
+            session['user_type'] = 'gerente'
             session['user'] = u
-            session['is_admin'] = user.is_admin
-            # define tipo de painel
-            if user.is_admin:
-                target = 'admin_panel'
-            elif os.path.exists(os.path.join(PRESTADORES_DIR, f"{slugify(u)}.json")):
-                session['tipo'] = 'prestador'
-                target = 'prestador_painel'
-            else:
-                session['tipo'] = 'gerente'
-                target = 'painel'
-            return redirect(url_for(target))
+            return redirect(url_for('painel'))
         flash('Usuário ou senha inválidos','danger')
-    return render_template('login.html')
+    return render_template('login.html', erro=erro)
 
 @app.route('/painel')
 def painel():
-    if 'user' not in session or session.get('tipo') != 'gerente':
+    if session.get('user_type')!='gerente':
         return redirect(url_for('login'))
-    pend = carregar_os_gerente(session['user'])
+    u = session['user']
+    pend = carregar_os_gerente(u)
     return render_template('painel.html',
                            os_pendentes=pend,
-                           gerente=session['user'],
+                           gerente=u,
                            now=datetime.utcnow())
 
-@app.route('/prestador_painel')
-def prestador_painel():
-    if 'user' not in session or session.get('tipo') != 'prestador':
-        return redirect(url_for('login'))
-    pend = carregar_os_prestador(session['user'])
+# --- Rotas de login/painel prestador ---
+@app.route('/login_prestador', methods=['GET','POST'])
+def login_prestador():
+    erro = None
+    if request.method=='POST':
+        key = request.form['prestador_key'].strip()
+        senha = request.form['senha'].strip()
+        # validador mínimo: checa trio [key,senha] no users.json
+        users = json.load(open(USERS_FILE, encoding='utf-8'))
+        if users.get(key)==senha:
+            session['user_type'] = 'prestador'
+            session['user'] = key
+            return redirect(url_for('painel_prestador'))
+        flash('Chave ou senha inválidos','danger')
+    return render_template('login_prestador.html', erro=erro)
+
+@app.route('/painel_prestador')
+def painel_prestador():
+    if session.get('user_type')!='prestador':
+        return redirect(url_for('login_prestador'))
+    key = session['user']
+    pend = carregar_os_prestador(key)
     return render_template('painel_prestador.html',
                            os_pendentes=pend,
-                           prestador=session['user'],
+                           prestador=key,
                            now=datetime.utcnow())
 
+# --- Finalizar OS (comum a ambos gerentes e prestadores) ---
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
-    if 'user' not in session:
+    if 'user_type' not in session:
         return redirect(url_for('login'))
+    tipo = session['user_type']
+    user = session['user']
+    # lê dados do form
     d = request.form['data_finalizacao']
     h = request.form['hora_finalizacao']
     o = request.form.get('observacoes','')
-    fz = Finalizacao(
-        os_numero=os_numero,
-        usuario=session['user'],
-        data_fin=d, hora_fin=h,
-        observacoes=o
-    )
-    db.session.add(fz)
-    # remove do JSON de acordo com tipo
-    if session.get('tipo') == 'gerente':
-        lista = carregar_os_gerente(session['user'])
-        path  = os.path.join(GERENTES_DIR, f"{session['user'].upper().replace('.', '_')}.json")
-    else:
-        lista = carregar_os_prestador(session['user'])
-        path  = os.path.join(PRESTADORES_DIR, f"{slugify(session['user'])}.json")
-    # filtra e sobrescreve
-    lista = [i for i in lista if str(i.get('os') or i.get('OS')) != os_numero]
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(lista, f, ensure_ascii=False, indent=2)
-    db.session.commit()
+    # grava no banco
+    fz = Finalizacao(os_numero=os_numero,
+                     gerente=(user if tipo=='gerente' else None),
+                     data_fin=d, hora_fin=h,
+                     observacoes=o)
+    db.session.add(fz); db.session.commit()
     flash(f'OS {os_numero} finalizada','success')
-    # redireciona ao painel correto
-    if session.get('tipo') == 'prestador':
-        return redirect(url_for('prestador_painel'))
-    return redirect(url_for('painel'))
-
-@app.route('/admin')
-def admin_panel():
-    if not session.get('is_admin'):
-        flash('Acesso negado','danger')
-        return redirect(url_for('login'))
-    finalizadas  = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
-    login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
-    users        = User.query.order_by(User.username).all()
-    gerentes     = [u.username for u in users if not u.is_admin]
-    contagem     = {g: Finalizacao.query.filter_by(usuario=g).count() for g in gerentes}
-    abertas      = {g: len(carregar_os_gerente(g)) for g in gerentes}
-    return render_template('admin.html',
-                           finalizadas=finalizadas,
-                           total_os=len(finalizadas),
-                           gerentes=gerentes,
-                           contagem_gerentes=contagem,
-                           os_abertas=abertas,
-                           login_events=login_events,
-                           now=datetime.utcnow())
+    # redireciona de volta pro painel certo
+    return redirect(url_for('painel' if tipo=='gerente' else 'painel_prestador'))
 
 @app.route('/logout')
 def logout():
@@ -223,6 +223,11 @@ def logout():
     session.clear()
     flash('Desconectado','info')
     return redirect(url_for('login'))
+
+# --- Boot ---
+with app.app_context():
+    init_db()
+    extract_prestadores()
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
