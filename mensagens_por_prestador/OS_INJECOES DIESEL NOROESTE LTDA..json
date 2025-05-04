@@ -1,0 +1,21 @@
+{
+    "PREST_SERVIÇO": "INJECOES DIESEL NOROESTE LTDA.",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109786",
+            "CD_EQT": "10121",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "Verificar vazamento na bomba de combustível - (Oficina)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "108582",
+            "CD_EQT": "87",
+            "MODELO": "TRATOR JOHN DEERE 5403 4X4",
+            "DT_ENTRADA": "10/04/2025",
+            "SERVIÇO": "Avaliar vazamento na bomba injetora - (Fazenda São Severino)\nLiberado Sr. Arthur"
+        }
+    ],
+    "TOTAL_OS": 2,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

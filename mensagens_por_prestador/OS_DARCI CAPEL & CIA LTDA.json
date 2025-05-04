@@ -1,0 +1,21 @@
+{
+    "PREST_SERVIÇO": "DARCI CAPEL & CIA LTDA",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109569",
+            "CD_EQT": "87",
+            "MODELO": "TRATOR JOHN DEERE 5403 4X4",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "Encher e usinar eixo do levante\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109327",
+            "CD_EQT": "228",
+            "MODELO": "TRATO NEW HOLLAND 5.8 4W DW",
+            "DT_ENTRADA": "23/04/2025",
+            "SERVIÇO": "Recuperar desgaste alojamento rolamento eixo piloto do cambio\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
+        }
+    ],
+    "TOTAL_OS": 2,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

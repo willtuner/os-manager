@@ -1,0 +1,154 @@
+{
+    "PREST_SERVIÇO": "ANDERSON DIEGO BICUDO 08122062903",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109663",
+            "CD_EQT": "10121",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Revisão parcial - (Fazenda NSA)\nLibertado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109654",
+            "CD_EQT": "220",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Ruído anormal na TDP - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109646",
+            "CD_EQT": "86",
+            "MODELO": "TRATOR JOHN DEERE 5403 4X4",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109575",
+            "CD_EQT": "121",
+            "MODELO": "TRATOR MASSEY FERGUSON 4275/4",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "Verificar trator sem freio - (Fazenda Alvorada)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109543",
+            "CD_EQT": "147",
+            "MODELO": "TRATOR JOHN DEERE 5075 EF 4X4",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "Verificar trinco da porta não funciona - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109529",
+            "CD_EQT": "223",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "Identificar e avaliar vazamento no meio do trator - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109519",
+            "CD_EQT": "118",
+            "MODELO": "TRATOR JOHN DEERE 5078 E 4X4",
+            "DT_ENTRADA": "26/04/2025",
+            "SERVIÇO": "Verificar funcionamento da direção\nFazenda Minuano\nSolicitado Antônio\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109357",
+            "CD_EQT": "152",
+            "MODELO": "TRATOR JOHN DEERE 5055E",
+            "DT_ENTRADA": "24/04/2025",
+            "SERVIÇO": "Remover vazamentos\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109169",
+            "CD_EQT": "228",
+            "MODELO": "TRATO NEW HOLLAND 5.8 4W DW",
+            "DT_ENTRADA": "22/04/2025",
+            "SERVIÇO": "Revisar caixa inversora\nFaz Sâo Severino\nSolicitado Cassio\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "108581",
+            "CD_EQT": "87",
+            "MODELO": "TRATOR JOHN DEERE 5403 4X4",
+            "DT_ENTRADA": "10/04/2025",
+            "SERVIÇO": "Avaliar carenagens, trocar banco e avaliar braços do hidráulico tortos - (Fazenda São Severino)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "108247",
+            "CD_EQT": "133",
+            "MODELO": "TRATOR NEW HOLLAND TL75E",
+            "DT_ENTRADA": "03/04/2025",
+            "SERVIÇO": "Trocar cabo do acelerador de pé quebrado.\nFazenda Minuano\nSolicitado Sr. Antônio\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "107679",
+            "CD_EQT": "209",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "03/04/2025",
+            "SERVIÇO": "Verificar coifa danificada e folga no terminal de direção lado direito.\nFazenda Santa Luiza\nSolicitado Sr. John Lennon\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "107983",
+            "CD_EQT": "131",
+            "MODELO": "TRATOR NEW HOLLAND TL75E",
+            "DT_ENTRADA": "02/04/2025",
+            "SERVIÇO": "Corrigir vazamentos de óleo embaixo da bomba e filtro hidráulico, acertar vazamento na bomba alimentadora de combustível e avaliar comando hidráulico não responde ao acionar a alavanca.\nFazenda Santa Izabel\nSolicitado Sr. Diego\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "108032",
+            "CD_EQT": "230",
+            "MODELO": "TRATOR VALTRA A124L 4X4",
+            "DT_ENTRADA": "01/04/2025",
+            "SERVIÇO": "Verificar trator está sem freio e óleo do reservatório contaminado.\nFazenda SL1\nSolicitado Sr. Wagner\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "107980",
+            "CD_EQT": "223",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "01/04/2025",
+            "SERVIÇO": "Verificar pistão de ajuste do volante e tração dianteira não funciona.\nFazenda Pedra Verde\nSolicitado Sr. Cléber\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "107922",
+            "CD_EQT": "268",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "31/03/2025",
+            "SERVIÇO": "Verificar trator perdendo força ao ligar a TDP.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "107611",
+            "CD_EQT": "24",
+            "MODELO": "TRATOR VALTRA BF 75 4X4",
+            "DT_ENTRADA": "17/03/2025",
+            "SERVIÇO": "Recuperar pinos do munhão dianteiro - Faz NSA - Solicitado Rennan - Autorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "106927",
+            "CD_EQT": "152",
+            "MODELO": "TRATOR JOHN DEERE 5055E",
+            "DT_ENTRADA": "13/03/2025",
+            "SERVIÇO": "Avaliar vazamento no meio do trator - (Fazenda Pedra Verde)\nLiberado Sr. Arthur\n- Troca do pistão do capo.\n- Troca do bujão.\n- Troca dos reparos do cabeçote do filtro de óleo do motor.\n- Troca do anel de vedação do eixo da bomba injetora.\n- Troca do rolamento da embreagem que vai no volante.\n- Troca do retentor do virabrequim.\n-"
+        },
+        {
+            "NO-SERVIÇO": "106950",
+            "CD_EQT": "95",
+            "MODELO": "TRATOR JOHN DEERE 5065 4X4",
+            "DT_ENTRADA": "11/03/2025",
+            "SERVIÇO": "REVISÃO DO EQUIPAMENTO - (FAZ NOVA MANHA) LIBERADO ARTHUR"
+        },
+        {
+            "NO-SERVIÇO": "106678",
+            "CD_EQT": "10223",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "06/03/2025",
+            "SERVIÇO": "Substituir suporte do filtro. (Fazenda Estrela)\nLiberado Sr. William\n- Buscado cabeçote do filtro complete na Cocamar."
+        },
+        {
+            "NO-SERVIÇO": "103996",
+            "CD_EQT": "24",
+            "MODELO": "TRATOR VALTRA BF 75 4X4",
+            "DT_ENTRADA": "22/01/2025",
+            "SERVIÇO": "Vazamento na tração, terminais do pistão da direção, trocar banco e verificar comando hidráulico não funciona - (Fazenda NSA)\nLiberado Sr. William"
+        }
+    ],
+    "TOTAL_OS": 21,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

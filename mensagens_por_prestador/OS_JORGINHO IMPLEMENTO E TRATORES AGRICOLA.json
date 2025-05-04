@@ -1,0 +1,56 @@
+{
+    "PREST_SERVIÇO": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109885",
+            "CD_EQT": "5257",
+            "MODELO": "ATOMIZADOR FMC 4000 LT",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "TURBO EM REFORMA NO JORGINHO TRATORES EM PARANAVAI"
+        },
+        {
+            "NO-SERVIÇO": "109698",
+            "CD_EQT": "5723",
+            "MODELO": "PULVERIZADOR ALCITOWER 4000LT",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Conferir reaperto de aperto de mancais, conferir folga no cubo de rodas conferir tenciona mento de correias e conferir cardans  (Fazenda Santa Luiza)\nLiberado Sr. Rafael"
+        },
+        {
+            "NO-SERVIÇO": "109700",
+            "CD_EQT": "5275",
+            "MODELO": "ATOMIZADOR FMC 4000 LT",
+            "DT_ENTRADA": "24/04/2025",
+            "SERVIÇO": "Trocar os rolamentos do cubo da hélice, e trocar pá da hélice (Fazenda Nova Manhã)\nLiberado Sr. Rafael"
+        },
+        {
+            "NO-SERVIÇO": "109230",
+            "CD_EQT": "5210",
+            "MODELO": "PULVERIZADOR 4000 LT - NATALI",
+            "DT_ENTRADA": "15/04/2025",
+            "SERVIÇO": "Corrigir vazamento no retentor traseiro do virabrequim da bomba de pulverização.\nFazenda Santa Izabel\nSolicitado Sr. Diego\nLiberado Sr. Maurício"
+        },
+        {
+            "NO-SERVIÇO": "108668",
+            "CD_EQT": "5130",
+            "MODELO": "ROCADEIRA RC2/E 3100 LSL S701",
+            "DT_ENTRADA": "11/04/2025",
+            "SERVIÇO": "Revisar os dois multiplicadores  do lado direito e esquerdo: o entalhado do eixo onde engata as luvas estão com desgaste.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
+        },
+        {
+            "NO-SERVIÇO": "107723",
+            "CD_EQT": "5345",
+            "MODELO": "PULVERIZADOR 4000 LT - NATALI",
+            "DT_ENTRADA": "25/03/2025",
+            "SERVIÇO": "- Revisão geral.\n(Fazenda Bela Manhã)\n- Liberado Sr: Rafael Venâncio."
+        },
+        {
+            "NO-SERVIÇO": "104864",
+            "CD_EQT": "5037",
+            "MODELO": "TRITURADOR TRITUCAP 2.0 P TDF",
+            "DT_ENTRADA": "04/02/2025",
+            "SERVIÇO": "- Reforma geral.\nLiberado Sr: Rafael Venâncio."
+        }
+    ],
+    "TOTAL_OS": 7,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

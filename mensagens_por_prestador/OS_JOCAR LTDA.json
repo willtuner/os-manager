@@ -1,0 +1,35 @@
+{
+    "PREST_SERVIÇO": "JOCAR LTDA",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109662",
+            "CD_EQT": "221",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Verificar sistema de ar-condicionado, que apresenta funcionamento do ventilador, porém sem emissão de ar refrigerado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109661",
+            "CD_EQT": "289",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Verificar sistema de ar-condicionado, que apresenta funcionamento do ventilador, porém sem emissão de ar refrigerado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109541",
+            "CD_EQT": "217",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "A/C só funciona o 4° estagio - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "107475",
+            "CD_EQT": "130",
+            "MODELO": "TRATOR JOHN DEERE 5075 E 4X4",
+            "DT_ENTRADA": "21/03/2025",
+            "SERVIÇO": "Verificar ar condicionado, a informação é que está vazando gás.\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício"
+        }
+    ],
+    "TOTAL_OS": 4,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

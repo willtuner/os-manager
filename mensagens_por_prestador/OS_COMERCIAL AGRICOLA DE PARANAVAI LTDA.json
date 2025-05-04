@@ -1,0 +1,21 @@
+{
+    "PREST_SERVIÇO": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109324",
+            "CD_EQT": "274",
+            "MODELO": "TRATOR VALTRA T250 CVT",
+            "DT_ENTRADA": "23/04/2025",
+            "SERVIÇO": "Identificada a ruptura do tubo de lubrificação da balança da suspensão dianteira - (Fazenda Estrela)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109147",
+            "CD_EQT": "206",
+            "MODELO": "TRATOR VALTRA A990R 4X4",
+            "DT_ENTRADA": "21/04/2025",
+            "SERVIÇO": "Verificar luz de advertência no painel - (Fazenda SP)\nLiberado Sr. Arthur"
+        }
+    ],
+    "TOTAL_OS": 2,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

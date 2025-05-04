@@ -1,0 +1,21 @@
+{
+    "PREST_SERVIÇO": "OMC AGRICOLA",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109314",
+            "CD_EQT": "81",
+            "MODELO": "TRATOR JOHN DEERE 5403 4X4",
+            "DT_ENTRADA": "23/04/2025",
+            "SERVIÇO": "Trocar alavanca do comando hidráulico da concha - (Fazenda Minuano)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "105932",
+            "CD_EQT": "127",
+            "MODELO": "GATOR JOHNN DEERE",
+            "DT_ENTRADA": "20/02/2025",
+            "SERVIÇO": "Verificar aquecimento excessivo do motor, temperatura elevada.\nFazenda São Paulo\nSolicitado Sr. Maurício Marques\nLiberado Sr. Maurício Barreto"
+        }
+    ],
+    "TOTAL_OS": 2,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}
