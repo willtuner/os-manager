@@ -1,20 +1,19 @@
 import os
 import json
+import re
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from fpdf import FPDF
 
-# --- Configurações de diretórios e banco ---
-BASE_DIR         = os.path.dirname(os.path.abspath(__file__))
-MENSAGENS_DIR    = os.path.join(BASE_DIR, 'mensagens_por_gerente')
-PRESTADORES_DIR  = os.path.join(BASE_DIR, 'mensagens_por_prestador')
-USERS_FILE       = os.path.join(BASE_DIR, 'users.json')
-DATABASE_URL     = os.environ.get('DATABASE_URL', f"sqlite:///{os.path.join(BASE_DIR,'app.db')}")
+# --- Configuração do app e banco ---
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
+USERS_FILE = os.path.join(BASE_DIR, 'users.json')
+DATABASE_URL = os.environ.get('DATABASE_URL', f"sqlite:///{os.path.join(BASE_DIR,'app.db')}")
 
-os.makedirs(MENSAGENS_DIR,   exist_ok=True)
-os.makedirs(PRESTADORES_DIR, exist_ok=True)
+os.makedirs(MENSAGENS_DIR, exist_ok=True)
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
@@ -25,34 +24,34 @@ app.config.update(
     SESSION_COOKIE_SAMESITE='Lax'
 )
 
-db      = SQLAlchemy(app)
+# Extensões
+db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 # --- Models ---
 class User(db.Model):
-    id        = db.Column(db.Integer, primary_key=True)
-    username  = db.Column(db.String(80), unique=True, nullable=False)
-    password  = db.Column(db.String(128), nullable=False)
-    is_admin  = db.Column(db.Boolean, default=False)
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(128), nullable=False)
+    is_admin = db.Column(db.Boolean, default=False)
 
 class Finalizacao(db.Model):
-    id             = db.Column(db.Integer, primary_key=True)
-    os_numero      = db.Column(db.String(50), nullable=False)
-    gerente        = db.Column(db.String(80))  # pode ser null quando for prestador
-    prestador      = db.Column(db.String(80))  # opcionalmente guardar quem finalizou
-    data_fin       = db.Column(db.String(10), nullable=False)
-    hora_fin       = db.Column(db.String(5), nullable=False)
-    observacoes    = db.Column(db.Text)
-    registrado_em  = db.Column(db.DateTime, default=datetime.utcnow)
+    id = db.Column(db.Integer, primary_key=True)
+    os_numero = db.Column(db.String(50), nullable=False)
+    gerente = db.Column(db.String(80), nullable=False)
+    data_fin = db.Column(db.String(10), nullable=False)
+    hora_fin = db.Column(db.String(5), nullable=False)
+    observacoes = db.Column(db.Text)
+    registrado_em = db.Column(db.DateTime, default=datetime.utcnow)
 
 class LoginEvent(db.Model):
-    id            = db.Column(db.Integer, primary_key=True)
-    username      = db.Column(db.String(80), nullable=False)
-    login_time    = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
-    logout_time   = db.Column(db.DateTime)
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), nullable=False)
+    login_time = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+    logout_time = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
 
-# --- Inicialização do banco e import de users.json ---
+# --- Inicialização do DB e import de users.json ---
 with app.app_context():
     db.create_all()
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
@@ -67,53 +66,49 @@ with app.app_context():
             ))
         db.session.commit()
 
-# --- Auxiliares de carregamento de OS ---
-def carregar_os_gerente(gerente_key):
-    """
-    Lê o JSON de pendentes do gerente e calcula dias em aberto.
-    """
-    base = gerente_key.upper().replace('.', '_')
+# --- Funções auxiliares ---
+def carregar_os_gerente(gerente):
     # tenta GERENTE.json e GERENTE_GONZAGA.json
-    candidatos = [f"{base}.json", f"{base}_GONZAGA.json"]
-    caminho = None
-    for nome in candidatos:
-        p = os.path.join(MENSAGENS_DIR, nome)
+    base = gerente.upper().replace('.', '_')
+    candidates = [f"{base}.json", f"{base}_GONZAGA.json"]
+    path = None
+    for name in candidates:
+        p = os.path.join(MENSAGENS_DIR, name)
         if os.path.exists(p):
-            caminho = p; break
-    # fallback: qualquer que comece com base_
-    if not caminho:
+            path = p
+            break
+    if not path:
+        # fallback: qualquer que inicie com base_
         for fn in os.listdir(MENSAGENS_DIR):
             if fn.upper().startswith(base + '_') and fn.lower().endswith('.json'):
-                caminho = os.path.join(MENSAGENS_DIR, fn)
+                path = os.path.join(MENSAGENS_DIR, fn)
                 break
-    if not caminho:
+    if not path:
         return []
-
-    with open(caminho, encoding='utf-8') as f:
+    # lê JSON e calcula dias em aberto
+    with open(path, encoding='utf-8') as f:
         items = json.load(f)
-
-    hoje = datetime.utcnow().date()
-    resultado = []
+    result = []
+    today = datetime.utcnow().date()
     for it in items:
-        data_str = it.get('data') or it.get('Data', '')
-        aberto = None
-        for fmt in ('%d/%m/%Y','%Y-%m-%d','%d-%m-%Y'):
+        date_str = it.get('data') or it.get('Data', '')
+        opened = None
+        for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%d-%m-%Y'):
             try:
-                aberto = datetime.strptime(data_str, fmt).date()
+                opened = datetime.strptime(date_str, fmt).date()
                 break
             except:
                 continue
-        dias = (hoje - aberto).days if aberto else 0
-
-        resultado.append({
-            'os':        str(it.get('os') or it.get('OS','')),
-            'frota':     str(it.get('frota') or it.get('Frota','')),
-            'data':      data_str,
-            'dias':      str(dias),
-            'prestador': str(it.get('prestador') or it.get('Prestador','Prestador não definido')),
-            'servico':   str(it.get('servico') or it.get('Servico') or it.get('observacao') or it.get('Observacao',''))
+        days_open = (today - opened).days if opened else 0
+        result.append({
+            'os': str(it.get('os') or it.get('OS', '')),
+            'frota': str(it.get('frota') or it.get('Frota', '')),
+            'data': date_str,
+            'dias': str(days_open),
+            'prestador': str(it.get('prestador') or it.get('Prestador', 'Prestador não definido')),
+            'servico': str(it.get('servico') or it.get('Servico') or it.get('observacao') or it.get('Observacao', ''))
         })
-    return resultado
+    return result
 
 def carregar_os_prestador(prest_key):
     """
