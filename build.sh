@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 set -o errexit
 
+# Configurações básicas
 export FLASK_APP=app.py
 
+# Atualiza pip e instala dependências
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# extrai prestadores se tiver esse script
-python extract_prestadores.py
+# Executa migrações do banco de dados (opcional)
+flask db upgrade
 
-# o Render vai chamar gunicorn app:app automaticamente
+# O Render executará automaticamente o gunicorn app:app
