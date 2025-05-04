@@ -6,7 +6,7 @@ from flask import Flask, render_template, request, redirect, session, url_for, f
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from fpdf import FPDF
-from extract_prestadores import extract_prestadores  # certifique-se de ter transformado o script em função
+from extract_prestadores import extract_prestadores
 
 # --- Configuração do Flask e do banco ---
 app = Flask(__name__)
