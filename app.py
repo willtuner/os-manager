@@ -4,65 +4,61 @@ import re
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate               # ← import
+from flask_migrate import Migrate
 from fpdf import FPDF
 
 # --- Configuração do app e banco ---
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
+USERS_FILE = os.path.join(BASE_DIR, 'users.json')
+DATABASE_URL = os.environ.get('DATABASE_URL', f"sqlite:///{os.path.join(BASE_DIR,'app.db')}")
+
+os.makedirs(MENSAGENS_DIR, exist_ok=True)
+
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
 app.config.update(
+    SQLALCHEMY_DATABASE_URI=DATABASE_URL,
+    SQLALCHEMY_TRACK_MODIFICATIONS=False,
     SESSION_COOKIE_SECURE=True,
-    SESSION_COOKIE_SAMESITE='Lax',
-    SQLALCHEMY_DATABASE_URI=os.environ.get(
-        'DATABASE_URL',
-        f"sqlite:///{os.path.join(os.path.dirname(__file__),'app.db')}"
-    ),
-    SQLALCHEMY_TRACK_MODIFICATIONS=False
+    SESSION_COOKIE_SAMESITE='Lax'
 )
+
+# Extensões
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)                      # ← inicializa as migrações
+migrate = Migrate(app, db)
 
 # --- Models ---
 class User(db.Model):
-    __tablename__ = 'users'
-    id        = db.Column(db.Integer, primary_key=True)
-    username  = db.Column(db.String(80), unique=True, nullable=False)
-    password  = db.Column(db.String(128), nullable=False)
-    is_admin  = db.Column(db.Boolean, default=False)
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(128), nullable=False)
+    is_admin = db.Column(db.Boolean, default=False)
 
 class Finalizacao(db.Model):
-    __tablename__ = 'finalizacoes'
-    id             = db.Column(db.Integer, primary_key=True)
-    os_numero      = db.Column(db.String(50), nullable=False)
-    gerente        = db.Column(db.String(80), nullable=False)
-    data_fin       = db.Column(db.String(10), nullable=False)
-    hora_fin       = db.Column(db.String(5), nullable=False)
-    observacoes    = db.Column(db.Text)
-    registrado_em  = db.Column(db.DateTime, default=datetime.utcnow)
+    id = db.Column(db.Integer, primary_key=True)
+    os_numero = db.Column(db.String(50), nullable=False)
+    gerente = db.Column(db.String(80), nullable=False)
+    data_fin = db.Column(db.String(10), nullable=False)
+    hora_fin = db.Column(db.String(5), nullable=False)
+    observacoes = db.Column(db.Text)
+    registrado_em = db.Column(db.DateTime, default=datetime.utcnow)
 
 class LoginEvent(db.Model):
-    __tablename__ = 'login_events'
-    id            = db.Column(db.Integer, primary_key=True)
-    username      = db.Column(db.String(80), nullable=False)
-    login_time    = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
-    logout_time   = db.Column(db.DateTime)
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), nullable=False)
+    login_time = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+    logout_time = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
 
-
-
-# --- Inicialização de diretórios ---
-os.makedirs(MENSAGENS_DIR, exist_ok=True)
-os.makedirs(PRESTADORES_DIR, exist_ok=True)
-
-def init_db():
-    # cria tabelas
+# --- Inicialização do DB e import de users.json ---
+with app.app_context():
     db.create_all()
-    # importa users.json se tabela vazia
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
-            js = json.load(f)
+            data = json.load(f)
         admins = {'wilson.santana'}
-        for u, pwd in js.items():
+        for u, pwd in data.items():
             db.session.add(User(
                 username=u.lower(),
                 password=pwd,
@@ -70,64 +66,52 @@ def init_db():
             ))
         db.session.commit()
 
-def extract_prestadores():
-    """
-    Varre todas as OS em mensagens_por_gerente e gera um JSON por prestador
-    em mensagens_por_prestador/{prestador_key}.json
-    """
-    # limpa pasta de prestadores
-    for fn in os.listdir(PRESTADORES_DIR):
-        os.remove(os.path.join(PRESTADORES_DIR, fn))
-
-    for arquivo in os.listdir(MENSAGENS_DIR):
-        if not arquivo.lower().endswith('.json'):
-            continue
-        data = json.load(open(os.path.join(MENSAGENS_DIR,arquivo), encoding='utf-8'))
-        for item in data:
-            prest = item.get('prestador','').strip()
-            if not prest:
-                continue
-            # normaliza o nome para filename
-            key = re.sub(r'\W+', '.', prest.lower())
-            path = os.path.join(PRESTADORES_DIR, f'{key}.json')
-            arr = []
-            if os.path.exists(path):
-                arr = json.load(open(path, encoding='utf-8'))
-            arr.append(item)
-            with open(path, 'w', encoding='utf-8') as f:
-                json.dump(arr, f, ensure_ascii=False, indent=2)
-
+# --- Funções auxiliares ---
 def carregar_os_gerente(gerente):
-    """carrega apenas o JSON exato de um gerente"""
+    # tenta GERENTE.json e GERENTE_GONZAGA.json
     base = gerente.upper().replace('.', '_')
-    poss = [f"{base}.json", f"{base}_GONZAGA.json"]
-    for nome in poss:
-        p = os.path.join(MENSAGENS_DIR, nome)
+    candidates = [f"{base}.json", f"{base}_GONZAGA.json"]
+    path = None
+    for name in candidates:
+        p = os.path.join(MENSAGENS_DIR, name)
         if os.path.exists(p):
-            dados = json.load(open(p, encoding='utf-8'))
-            return [{
-                "os": str(i.get("os") or i.get("OS","")),
-                "frota": str(i.get("frota") or i.get("Frota","")),
-                "data": str(i.get("data") or i.get("Data","")),
-                "dias": str(i.get("dias") or i.get("Dias","0")),
-                "prestador": str(i.get("prestador") or i.get("Prestador","")),
-                "servico": str(i.get("servico") or i.get("Servico") or i.get("Observacao",""))
-            } for i in dados]
-    return []
-
-def carregar_os_prestador(prestador_key):
-    """carrega o JSON do prestador normalizado (key gerada pelo extract_prestadores)"""
-    p = os.path.join(PRESTADORES_DIR, f'{prestador_key}.json')
-    if not os.path.exists(p):
+            path = p
+            break
+    if not path:
+        # fallback: qualquer que inicie com base_
+        for fn in os.listdir(MENSAGENS_DIR):
+            if fn.upper().startswith(base + '_') and fn.lower().endswith('.json'):
+                path = os.path.join(MENSAGENS_DIR, fn)
+                break
+    if not path:
         return []
-    dados = json.load(open(p, encoding='utf-8'))
-    return [{
-        "os": str(i.get("os") or i.get("OS","")),
-        "frota": str(i.get("frota") or i.get("Frota","")),
-        "data": str(i.get("data") or i.get("Data","")),
-        "dias": str(i.get("dias") or i.get("Dias","0")),
-        "servico": str(i.get("servico") or i.get("Servico") or i.get("Observacao",""))
-    } for i in dados]
+    # lê JSON e calcula dias em aberto
+    with open(path, encoding='utf-8') as f:
+        items = json.load(f)
+    result = []
+    today = datetime.utcnow().date()
+    for it in items:
+        date_str = it.get('data') or it.get('Data', '')
+        opened = None
+        for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%d-%m-%Y'):
+            try:
+                opened = datetime.strptime(date_str, fmt).date()
+                break
+            except:
+                continue
+        days_open = (today - opened).days if opened else 0
+        result.append({
+            'os': str(it.get('os') or it.get('OS', '')),
+            'frota': str(it.get('frota') or it.get('Frota', '')),
+            'data': date_str,
+            'dias': str(days_open),
+            'prestador': str(it.get('prestador') or it.get('Prestador', 'Prestador não definido')),
+            'servico': str(it.get('servico') or it.get('Servico') or it.get('observacao') or it.get('Observacao', ''))
+        })
+    return result
+
+# restantes das rotas (login, painel, finalizar, admin, exportar) seguem inalteradas...
+
 
 # --- Rotas de login/painel gerente ---
 @app.route('/')
