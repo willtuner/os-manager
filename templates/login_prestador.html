@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Login Prestador - Suco Prats{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0 text-center">
+                        <i class="fas fa-user-hard-hat"></i> Acesso Prestadores
+                    </h4>
+                </div>
+                <div class="card-body">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                            <div class="alert alert-{{ category }} alert-dismissible fade show">
+                                {{ message }}
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                            </div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    
+                    <form method="POST" action="{{ url_for('login_prestador') }}">
+                        <div class="mb-3">
+                            <label for="prestador_key" class="form-label">
+                                <i class="fas fa-user-tag"></i> Código do Prestador
+                            </label>
+                            <input type="text" class="form-control" id="prestador_key" 
+                                   name="prestador_key" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">
+                                <i class="fas fa-lock"></i> Senha
+                            </label>
+                            <input type="password" class="form-control" id="senha" 
+                                   name="senha" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">
+                            <i class="fas fa-sign-in-alt"></i> Entrar
+                        </button>
+                    </form>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">
+                        Sistema de Gestão de OS - Suco Prats
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
