@@ -14,7 +14,7 @@
 
 {% if os_pendentes %}
     {% for os in os_pendentes %}
-    <form action="{{ url_for('finalizar_os', os_numero=os.os) }}"
+    <form action="{{ url_for('finalizar', os_numero=os.os) }}"
           method="POST"
           class="card card-os mb-3">
         <div class="card-body">
