@@ -1,0 +1,70 @@
+{
+    "PREST_SERVIÇO": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109674",
+            "CD_EQT": "5134",
+            "MODELO": "CARRETA GUINCHO - SCHULTER",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Vazamento de óleo lubrificante em componente ainda não especificado, requerendo inspeção para localização e diagnóstico da origem e troca de reparos dos 4 pistão do giro - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+        },
+        {
+            "NO-SERVIÇO": "109548",
+            "CD_EQT": "44",
+            "MODELO": "TRATOR JOHN DEERE 6415 4X4",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "Fazer proteção na parte de baixo da maquina e na parte traseira - (Fazenda SP)\nLiberado Sr. Leojabes"
+        },
+        {
+            "NO-SERVIÇO": "109672",
+            "CD_EQT": "5644",
+            "MODELO": "TRANSBORDO MOD.TC-7000 GTM",
+            "DT_ENTRADA": "22/04/2025",
+            "SERVIÇO": "Instalação das laterais frente e traseira, instalação da bica, instalação de caixa de ferramentas, troca do embuchamento do pedestal e primeira lança, mudança dos pistão da bica, conserto do pé de apoio, troca da bucha do engate, troca do suporte do comando. (Fazenda São Pedro)\nLiberado Sr. Romes"
+        },
+        {
+            "NO-SERVIÇO": "109673",
+            "CD_EQT": "5147",
+            "MODELO": "ROCADEIRA RC2/E 3100 LSL S701",
+            "DT_ENTRADA": "15/04/2025",
+            "SERVIÇO": "Reforma da roçadeira (Fazenda Alvorada)\nLiberado Sr. Natalino"
+        },
+        {
+            "NO-SERVIÇO": "107799",
+            "CD_EQT": "5626",
+            "MODELO": "ROCADEIRA NINJA ECO300 CRUIS",
+            "DT_ENTRADA": "22/03/2025",
+            "SERVIÇO": "Fabricar lateral para instalação do esqui conserto do suporte da roda traseira, troca dos rolamentos das rodas traseiras, troca dos facão, conserto da estrutura da roçadeira, fabricar suporte da roda dianteira. (Fazenda Alvorada)\nLiberado Sr. Natalino"
+        },
+        {
+            "NO-SERVIÇO": "107800",
+            "CD_EQT": "5222",
+            "MODELO": "TANQUE DE AGUA 6500L R16 VERM.",
+            "DT_ENTRADA": "21/03/2025",
+            "SERVIÇO": "Tirar medidas para fabricação de engate articulado para tanque (Fazenda São Pedro)\nLiberado Sr. Romes"
+        },
+        {
+            "NO-SERVIÇO": "107468",
+            "CD_EQT": "5779",
+            "MODELO": "VALETADEIRA",
+            "DT_ENTRADA": "14/03/2025",
+            "SERVIÇO": "Fabricar uma nova corrente.\nFazenda São Pedro\nSolicitado Sr. Zylton"
+        },
+        {
+            "NO-SERVIÇO": "105939",
+            "CD_EQT": "5674",
+            "MODELO": "PULV.BARRA SUBCOPA DUPLA FRON",
+            "DT_ENTRADA": "20/02/2025",
+            "SERVIÇO": "Quebra do suporte do pistão - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+        },
+        {
+            "NO-SERVIÇO": "107187",
+            "CD_EQT": "5298",
+            "MODELO": "CARRETA TRANSBORDO SCHULTER",
+            "DT_ENTRADA": "14/02/2025",
+            "SERVIÇO": "reforma do transbordo (Fazenda Estrela)\nLiberado Sr. Vadinho"
+        }
+    ],
+    "TOTAL_OS": 9,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

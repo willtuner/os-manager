@@ -1,0 +1,14 @@
+{
+    "PREST_SERVIÇO": "PUMA  CENTRO AUTOMOTIVO",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "106889",
+            "CD_EQT": "10154",
+            "MODELO": "CARRO FIAT STRADA",
+            "DT_ENTRADA": "06/03/2025",
+            "SERVIÇO": "nan"
+        }
+    ],
+    "TOTAL_OS": 1,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

@@ -1,0 +1,21 @@
+{
+    "PREST_SERVIÇO": "CICERO MUNIZ DA SILVA",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109589",
+            "CD_EQT": "142",
+            "MODELO": "TRATOR MASSEY FERGUSON 4275 4R",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "TDP não liga - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "108349",
+            "CD_EQT": "244",
+            "MODELO": "TRATOR MASSEY FERGUSON 3307",
+            "DT_ENTRADA": "07/04/2025",
+            "SERVIÇO": "Trator não engata grupo de  marchas A - (Fazenda SP)\nLiberado Sr. Mauricio\n- Recolhido oficina para manutenção"
+        }
+    ],
+    "TOTAL_OS": 2,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

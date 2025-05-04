@@ -1,0 +1,224 @@
+{
+    "PREST_SERVIÇO": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109921",
+            "CD_EQT": "10223",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "Relógio horimetro não funciona - (Fazenda Estrela)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109873",
+            "CD_EQT": "26",
+            "MODELO": "TRATOR MASSEY FERGUSON 275/2",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "Trocar farol dianteiro - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109872",
+            "CD_EQT": "10217",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "Verificar farol dianteiro solto - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109805",
+            "CD_EQT": "10121",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "Revisar sistema eletrico\n(Oficina)\nSolicitado Rennan\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109795",
+            "CD_EQT": "251",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "Instalar lanterna traseira\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109788",
+            "CD_EQT": "68",
+            "MODELO": "TRATOR JOHN DEERE 5403 4X4",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "Revisar sinalização, trator não funciona sirene de ré, faróis e buzina - (Pecuaria)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109785",
+            "CD_EQT": "5479",
+            "MODELO": "PULVERIZADOR 600 LT JACTO",
+            "DT_ENTRADA": "02/05/2025",
+            "SERVIÇO": "Verificar drash não aciona - (Fazenda Biscui)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109746",
+            "CD_EQT": "5786",
+            "MODELO": "PULVERIZADOR 600 LT",
+            "DT_ENTRADA": "30/04/2025",
+            "SERVIÇO": "Instalar equipamento de drash - (Oficina)\nLiberado Sr. Zacarias"
+        },
+        {
+            "NO-SERVIÇO": "109731",
+            "CD_EQT": "263",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "30/04/2025",
+            "SERVIÇO": "Instalar cibié dianteiro - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109676",
+            "CD_EQT": "5528",
+            "MODELO": "PULV.FMCOPLING JB 80/600 A",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Verificar placa do painel de controle do drash, que não responde aos comandos de acionamento. - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109668",
+            "CD_EQT": "234",
+            "MODELO": "TRATO NEW HOLLAND 5.8 4W DW",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Substituir cabo da bateria devido a comprimento insuficiente e má qualidade do condutor, comprometendo a eficiência do sistema elétrico - (Fazenda São Severino)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109667",
+            "CD_EQT": "91",
+            "MODELO": "TRATOR JOHN DEERE 5403 4X4",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Revisar sistema eletrico\nFaz Estrela\nSolicitado Danilo\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109657",
+            "CD_EQT": "250",
+            "MODELO": "TRATOR JOHN DEERE 5080EN",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Trator não dá partida e o painel de instrumentos permanece completamente apagado, mesmo após tentativa de acionamento com bateria auxiliar - (Fazenda Estrela)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109641",
+            "CD_EQT": "153",
+            "MODELO": "TRATOR JOHN DEERE 5055E",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Instalar faróis auxiliares voltados para as barras de herbicidas, visando melhorar a iluminação durante as operações noturnas. - (Fazenda São Severino)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109640",
+            "CD_EQT": "227",
+            "MODELO": "TRATO NEW HOLLAND 5.8 4W DW",
+            "DT_ENTRADA": "29/04/2025",
+            "SERVIÇO": "Verificar falha total na sinalização veicular; nenhuma das luzes acende, mesmo após teste prévio dos fusíveis - (Fazenda São Severino)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109567",
+            "CD_EQT": "269",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "Meia luz de freio não ascende  - (Fazenda Estrela)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109566",
+            "CD_EQT": "250",
+            "MODELO": "TRATOR JOHN DEERE 5080EN",
+            "DT_ENTRADA": "28/04/2025",
+            "SERVIÇO": "Trocar lanternas de seta quebrada - (Fazenda Estrela)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109514",
+            "CD_EQT": "5726",
+            "MODELO": "PULV.BARRA SUBCOPA DUPLA FRON",
+            "DT_ENTRADA": "26/04/2025",
+            "SERVIÇO": "Verificar funcionamento do Painel\nFaz São Pedro\nSolicitado Romes\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109513",
+            "CD_EQT": "5429",
+            "MODELO": "PULVERIZADOR 600 LT FMC",
+            "DT_ENTRADA": "26/04/2025",
+            "SERVIÇO": "Trocar caixa do contador do Drench\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109419",
+            "CD_EQT": "5430",
+            "MODELO": "PULVERIZADOR 600 LT FMC",
+            "DT_ENTRADA": "25/04/2025",
+            "SERVIÇO": "Verificar drash não aciona nenhum dos lados - (Fazenda Estrela)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109418",
+            "CD_EQT": "148",
+            "MODELO": "TRATOR JOHN DEERE 5055E",
+            "DT_ENTRADA": "25/04/2025",
+            "SERVIÇO": "Verificar curto no chicote dos faróis, queimando fusíveis - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109299",
+            "CD_EQT": "5706",
+            "MODELO": "PULVERIZADOR BARRAS TRICICLO",
+            "DT_ENTRADA": "23/04/2025",
+            "SERVIÇO": "Verificar bateria não está carregando - (Fazenda Santa Izabel)\nP.S bateria do implemento, que toca a bomba \nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109250",
+            "CD_EQT": "235",
+            "MODELO": "TRATO NEW HOLLAND 5.8 4W DW",
+            "DT_ENTRADA": "23/04/2025",
+            "SERVIÇO": "Farol dianteiro queimado e verificar  motor - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "109027",
+            "CD_EQT": "211",
+            "MODELO": "TRATOR JOHN DEERE 5070 E",
+            "DT_ENTRADA": "17/04/2025",
+            "SERVIÇO": "Instalar lampadas traseiras - (Fazenda SP)\nLiberado Sr. Wilson\nPendencia N° 4243"
+        },
+        {
+            "NO-SERVIÇO": "108864",
+            "CD_EQT": "216",
+            "MODELO": "TRATOR JOHN DEERE 5070 E",
+            "DT_ENTRADA": "15/04/2025",
+            "SERVIÇO": "Trocar setas quebradas - (Fazenda SP)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "108472",
+            "CD_EQT": "87",
+            "MODELO": "TRATOR JOHN DEERE 5403 4X4",
+            "DT_ENTRADA": "09/04/2025",
+            "SERVIÇO": "Verificar chicote eletrico em curto - (Fazenda São Severino)\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "108207",
+            "CD_EQT": "106",
+            "MODELO": "TRATOR JOHN DEERE 5078 E 4X4",
+            "DT_ENTRADA": "03/04/2025",
+            "SERVIÇO": "Substituir correia do alternador danificada.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Arthur"
+        },
+        {
+            "NO-SERVIÇO": "108131",
+            "CD_EQT": "24",
+            "MODELO": "TRATOR VALTRA BF 75 4X4",
+            "DT_ENTRADA": "02/04/2025",
+            "SERVIÇO": "Revisar sistema elétrico\nFaz NSA\nSolicitado Rennan\nAutorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "107578",
+            "CD_EQT": "100",
+            "MODELO": "TRATOR JOHN DEERE 5078 E 4X4",
+            "DT_ENTRADA": "21/03/2025",
+            "SERVIÇO": "Revisar sistema elétrico - Faz Pedra Verde - Solicitado Romes - Autorizado Arthur"
+        },
+        {
+            "NO-SERVIÇO": "106664",
+            "CD_EQT": "127",
+            "MODELO": "GATOR JOHNN DEERE",
+            "DT_ENTRADA": "06/03/2025",
+            "SERVIÇO": "Revisão elétrica (Oficina)\n(solicitante William)"
+        },
+        {
+            "NO-SERVIÇO": "105813",
+            "CD_EQT": "224",
+            "MODELO": "TRATOR JOHN DEERE 5080E",
+            "DT_ENTRADA": "18/02/2025",
+            "SERVIÇO": "Lanterna da cabine quebrada L/D - (Fazenda Terra Branca)\nLiberado Sr. William"
+        }
+    ],
+    "TOTAL_OS": 31,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}

@@ -1,0 +1,56 @@
+{
+    "PREST_SERVIÇO": "M G VEDACOES E PECAS LTDA",
+    "ORDENS_DE_SERVICO": [
+        {
+            "NO-SERVIÇO": "109775",
+            "CD_EQT": "5530",
+            "MODELO": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+            "DT_ENTRADA": "01/05/2025",
+            "SERVIÇO": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
+        },
+        {
+            "NO-SERVIÇO": "109730",
+            "CD_EQT": "5350",
+            "MODELO": "ROCADEIRA RC2/E 3100 LSL S701",
+            "DT_ENTRADA": "30/04/2025",
+            "SERVIÇO": "Trocar luva do cardam quebrada - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+        },
+        {
+            "NO-SERVIÇO": "109729",
+            "CD_EQT": "5205",
+            "MODELO": "PODADEIRA DUPLA LAT HIDRAUTEC",
+            "DT_ENTRADA": "30/04/2025",
+            "SERVIÇO": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)\nLiberado Sr. Mauricio"
+        },
+        {
+            "NO-SERVIÇO": "109154",
+            "CD_EQT": "5666",
+            "MODELO": "PODADEIRA HIDRAUTEC HLD1",
+            "DT_ENTRADA": "22/04/2025",
+            "SERVIÇO": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+        },
+        {
+            "NO-SERVIÇO": "109026",
+            "CD_EQT": "5205",
+            "MODELO": "PODADEIRA DUPLA LAT HIDRAUTEC",
+            "DT_ENTRADA": "17/04/2025",
+            "SERVIÇO": "Verificar jogo no embuchamento - (Fazenda SP)\nLiberado Sr. Mauricio"
+        },
+        {
+            "NO-SERVIÇO": "107601",
+            "CD_EQT": "5121",
+            "MODELO": "PODADEIRA DUPLA LATERAL IFLO",
+            "DT_ENTRADA": "24/03/2025",
+            "SERVIÇO": "Verificar podadeira roda o braço mas não gira o disco.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
+        },
+        {
+            "NO-SERVIÇO": "105037",
+            "CD_EQT": "5537",
+            "MODELO": "ROCADEIRA RC2 E 3100 S0516",
+            "DT_ENTRADA": "07/02/2025",
+            "SERVIÇO": "Ajustar tamanho do cardan e alinhamento do mesmo e revisar cardans de engate no implemento.\nFazenda São Pedro (Oficina)\nSolictado Sr. Romes\nLiberado Sr. Maurício"
+        }
+    ],
+    "TOTAL_OS": 7,
+    "DATA_GERACAO": "04/05/2025 19:08:36"
+}
