@@ -62,25 +62,45 @@ def init_db():
 
 def carregar_json(dirpath, key):
     """
-    Tenta:
-      1) arquivo exato key.json
-      2) qualquer JSON em dirpath cujo nome contenha todas as partes de `key`
+    Versão adaptada para fazer match entre nomes de usuário simplificados e arquivos OS_*.json
+    Exemplo:
+    - Usuário: "pedro.montessani"
+    - Arquivo: "OS_PEDRO PEREIRA MONTESSANI EIRELI - ME.json"
     """
+    print(f"\n[DEBUG] Buscando arquivos para usuário: {key}")  # Log de depuração
+    
     data = []
-
-    # exato
-    fn = os.path.join(dirpath, f"{key}.json")
-    if os.path.exists(fn):
-        data.extend(json.load(open(fn, encoding='utf-8')))
-    else:
-        parts = key.split('.')
-        for arq in os.listdir(dirpath):
-            if not arq.lower().endswith('.json'):
-                continue
-            name = arq[:-5].lower()
-            if all(p in name for p in parts):
-                data.extend(json.load(open(os.path.join(dirpath, arq), encoding='utf-8')))
-
+    user_parts = key.lower().split('.')
+    
+    # Lista todos os arquivos JSON no diretório
+    for filename in os.listdir(dirpath):
+        if not filename.lower().endswith('.json') or not filename.startswith('OS_'):
+            continue
+            
+        # Remove 'OS_' e '.json', então divide em partes
+        file_key = filename[3:-5].lower()
+        file_parts = file_key.split()
+        
+        # Verifica se todas as partes do usuário estão presentes no nome do arquivo
+        match = all(any(user_part in file_part for file_part in file_parts) 
+                  for user_part in user_parts)
+        
+        if match:
+            print(f"[DEBUG] Arquivo correspondente encontrado: {filename}")  # Log
+            try:
+                with open(os.path.join(dirpath, filename), encoding='utf-8') as f:
+                    content = json.load(f)
+                    
+                    # Extrai as ordens de serviço do formato específico
+                    if isinstance(content, dict) and 'ORDENS_DE_SERVICO' in content:
+                        data.extend(content['ORDENS_DE_SERVICO'])
+                    else:
+                        data.extend(content)
+                        
+            except Exception as e:
+                print(f"[ERRO] Falha ao ler arquivo {filename}: {str(e)}")  # Log de erro
+    
+    print(f"[DEBUG] Total de itens carregados para {key}: {len(data)}")  # Log
     return data
 
 def montar_lista(items):
