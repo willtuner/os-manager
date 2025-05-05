@@ -20,8 +20,7 @@ app.config.update(
 db = SQLAlchemy(app)
 
 # --- Models ---
-class User(db.Model):
-    __tablename__ = 'users'
+VILLE = 'users'
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(128), nullable=False)
@@ -214,44 +213,65 @@ def painel_prestador():
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
-    if 'gerente' not in session:
+    responsavel = session.get('gerente') or session.get('prestador')
+    if not responsavel:
         return redirect(url_for('login'))
-    
+
     # Adiciona ao banco de dados
     d = request.form['data_finalizacao']
     h = request.form['hora_finalizacao']
     o = request.form.get('observacoes','')
-    fz = Finalizacao(os_numero=os_numero,
-                    gerente=session['gerente'],
-                    data_fin=d, hora_fin=h,
-                    observacoes=o)
+    fz = Finalizacao(
+        os_numero=os_numero,
+        gerente=responsavel,  # pode ser gerente ou prestador
+        data_fin=d,
+        hora_fin=h,
+        observacoes=o
+    )
     db.session.add(fz)
-    
-    # Remove do JSON
-    gerente = session['gerente']
-    base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
-    caminho = os.path.join(MENSAGENS_DIR, base)
-    
-    if not os.path.exists(caminho):
-        prefixo = gerente.split('.')[0].upper()
-        for fn in os.listdir(MENSAGENS_DIR):
-            if fn.upper().startswith(prefixo) and fn.lower().endswith('.json'):
-                caminho = os.path.join(MENSAGENS_DIR, fn)
-                break
-    
-    if os.path.exists(caminho):
-        with open(caminho, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        
-        # Filtra removendo a OS finalizada
-        data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
-        
-        with open(caminho, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-    
+
+    # Remove do JSON do gerente, se for gerente
+    if 'gerente' in session:
+        gerente = session['gerente']
+        base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
+        caminho = os.path.join(MENSAGENS_DIR, base)
+
+        if not os.path.exists(caminho):
+            prefixo = gerente.split('.')[0].upper()
+            for fn in os.listdir(MENSAGENS_DIR):
+                if fn.upper().startswith(prefixo) and fn.lower().endswith('.json'):
+                    caminho = os.path.join(MENSAGENS_DIR, fn)
+                    break
+
+        if os.path.exists(caminho):
+            with open(caminho, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+
+            # Filtra removendo a OS finalizada
+            data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
+
+            with open(caminho, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+
+    # Remove do JSON do prestador, se for prestador
+    if 'prestador' in session:
+        prestadores = carregar_prestadores()
+        prestador = next((p for p in prestadores if p['usuario'] == session['prestador']), None)
+        if prestador:
+            caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
+            if os.path.exists(caminho):
+                with open(caminho, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+
+                # Filtra removendo a OS finalizada
+                data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
+
+                with open(caminho, 'w', encoding='utf-8') as f:
+                    json.dump(data, f, ensure_ascii=False, indent=2)
+
     db.session.commit()
     flash(f'OS {os_numero} finalizada','success')
-    return redirect(url_for('painel'))
+    return redirect(url_for('painel' if 'gerente' in session else 'painel_prestador'))
 
 @app.route('/admin')
 def admin_panel():
@@ -264,10 +284,10 @@ def admin_panel():
     gerentes = [u.username for u in users]
     contagem = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
     abertas = {g: len(carregar_os_gerente(g)) for g in gerentes}
-    
+
     # Cria o ranking ordenado por quantidade de OS abertas (decrescente)
     ranking_os_abertas = sorted(abertas.items(), key=lambda x: x[1], reverse=True)
-    
+
     return render_template('admin.html',
                          finalizadas=finalizadas,
                          total_os=len(finalizadas),
