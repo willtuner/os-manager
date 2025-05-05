@@ -49,7 +49,10 @@ class LoginEvent(db.Model):
 BASE_DIR = os.path.dirname(__file__)
 MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
 USERS_FILE = os.path.join(BASE_DIR, 'users.json')
+PRESTADORES_FILE = os.path.join(BASE_DIR, 'prestadores.json')
+MENSAGENS_PRESTADORES_DIR = os.path.join(BASE_DIR, 'mensagens_por_prestador')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
+os.makedirs(MENSAGENS_PRESTADORES_DIR, exist_ok=True)
 
 def init_db():
     """Cria tabelas e importa users.json na tabela users, se vazia."""
@@ -134,6 +137,12 @@ def carregar_os_gerente(gerente):
         })
     return resultado
 
+def carregar_prestadores():
+    if os.path.exists(PRESTADORES_FILE):
+        with open(PRESTADORES_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
 # --- Rotas ---
 @app.route('/')
 def index():
@@ -156,6 +165,21 @@ def login():
         flash('Usuário ou senha inválidos','danger')
     return render_template('login.html')
 
+@app.route('/login_prestador', methods=['GET', 'POST'])
+def login_prestador():
+    if request.method == 'POST':
+        usuario = request.form['usuario'].strip().lower()
+        senha = request.form['senha'].strip()
+        prestadores = carregar_prestadores()
+
+        prestador = next((p for p in prestadores if p['usuario'] == usuario and p['senha'] == senha), None)
+        if prestador:
+            session['prestador'] = prestador['usuario']
+            return redirect(url_for('painel_prestador'))
+
+        flash('Usuário ou senha inválidos.', 'danger')
+    return render_template('login_prestador.html')
+
 @app.route('/painel')
 def painel():
     if 'gerente' not in session:
@@ -167,6 +191,26 @@ def painel():
                          finalizadas=finalizadas,
                          gerente=session['gerente'],
                          now=datetime.utcnow())
+
+@app.route('/painel_prestador')
+def painel_prestador():
+    if 'prestador' not in session:
+        return redirect(url_for('login_prestador'))
+
+    prestadores = carregar_prestadores()
+    prestador = next((p for p in prestadores if p['usuario'] == session['prestador']), None)
+    if not prestador:
+        flash('Prestador não encontrado', 'danger')
+        return redirect(url_for('login_prestador'))
+
+    caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
+    if not os.path.exists(caminho):
+        os_list = []
+    else:
+        with open(caminho, 'r', encoding='utf-8') as f:
+            os_list = json.load(f)
+
+    return render_template('painel_prestador.html', nome=prestador['nome_exibicao'], os_list=os_list)
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
@@ -290,4 +334,3 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
-
