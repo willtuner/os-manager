@@ -11,13 +11,34 @@
   .stat-card.warning { background-color: #f39c12; color: white; }
   .stat-card.danger { background-color: #e74c3c; color: white; }
   .badge-os-aberta { background-color: #e74c3c; color: white; }
-  .table-responsive { margin-top: 30px; }
-  .ranking-badge { font-size: 0.9rem; padding: 5px 8px; color: white; }
+  .table-responsive { margin-top: 20px; }
+  .ranking-badge { font-size: 0.9rem; padding: 5px 8px; color: white; border-radius: 5px; }
   .ranking-1 { background-color: #e74c3c; }
   .ranking-2 { background-color: #f39c12; }
   .ranking-3 { background-color: #f1c40f; }
   .ranking-other { background-color: #95a5a6; }
+  .table-compact tbody tr { font-size: 0.9rem; }
+  .table-compact th, .table-compact td { padding: 8px; }
+  .toggle-btn { cursor: pointer; }
+  .hidden-rows { display: none; }
 </style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.getAttribute('data-target');
+        const rows = document.getElementById(targetId);
+        const isHidden = rows.classList.contains('hidden-rows');
+        rows.classList.toggle('hidden-rows', !isHidden);
+        button.innerHTML = isHidden ? '<i class="fas fa-minus-circle me-1"></i> Ver menos' : '<i class="fas fa-plus-circle me-1"></i> Ver mais';
+      });
+    });
+  });
+</script>
 {% endblock %}
 
 {% block content %}
@@ -56,14 +77,14 @@
     </div>
   </div>
 
-  <!-- Ranking de OS Abertas -->
+  <!-- Ranking de OS Abertas (Gerentes) -->
   <div class="card shadow-sm mb-4">
     <div class="card-header bg-info text-white">
-      <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking de OS Pendentes</h4>
+      <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking de OS Pendentes (Gerentes)</h4>
     </div>
     <div class="card-body">
       <div class="table-responsive">
-        <table class="table table-hover">
+        <table class="table table-hover table-compact">
           <thead class="table-light">
             <tr>
               <th>Posição</th>
@@ -91,12 +112,47 @@
     </div>
   </div>
 
+  <!-- Ranking de OS Abertas (Prestadores) -->
+  <div class="card shadow-sm mb-4">
+    <div class="card-header bg-primary text-white">
+      <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking de OS Pendentes (Prestadores)</h4>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-hover table-compact">
+          <thead class="table-light">
+            <tr>
+              <th>Posição</th>
+              <th>Prestador</th>
+              <th>OS Pendentes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for prestador, count in ranking_os_prestadores %}
+            <tr>
+              <td>
+                <span class="badge ranking-badge ranking-{{ loop.index if loop.index <= 3 else 'other' }}">
+                  {{ loop.index }}º
+                </span>
+              </td>
+              <td>{{ prestador }}</td>
+              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+            </tr>
+            {% else %}
+            <tr><td colspan="3" class="text-center py-4">Nenhuma OS pendente</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
   <!-- Gerentes & OS -->
   <div class="card shadow-sm mb-4">
     <div class="card-body">
       <h4><i class="fas fa-user-tie me-2"></i>Gerentes &amp; OS Pendentes</h4>
       <div class="table-responsive">
-        <table class="table table-hover">
+        <table class="table table-hover table-compact">
           <thead class="table-light">
             <tr><th>Gerente</th><th>Finalizadas</th><th>Pendentes</th></tr>
           </thead>
@@ -123,9 +179,9 @@
     </div>
     <div class="card-body">
       <div class="table-responsive">
-        <table class="table table-hover">
+        <table class="table table-hover table-compact">
           <thead class="table-light">
-            <tr><th>OS</th><th>Gerente</th><th>Data</th><th>Hora</th><th>Obs</th></tr>
+            <tr><th>OS</th><th>Responsável</th><th>Data</th><th>Hora</th><th>Obs</th></tr>
           </thead>
           <tbody>
             {% for os in finalizadas %}
@@ -147,15 +203,19 @@
 
   <!-- Histórico de Logins -->
   <div class="card shadow-sm">
-    <div class="card-header bg-secondary text-white">
+    <div class="card-header bg-secondary text-white d-flex justify-content-between align-items-center">
       <h4 class="mb-0"><i class="fas fa-history me-2"></i>Histórico de Logins (Últimos 50)</h4>
+      <button class="btn btn-sm btn-light toggle-btn" data-target="login-rows">
+        <i class="fas fa-plus-circle me-1"></i> Ver mais
+      </button>
     </div>
     <div class="card-body">
       <div class="table-responsive">
-        <table class="table table-sm table-hover">
+        <table class="table table-sm table-hover table-compact">
           <thead class="table-light">
             <tr>
               <th>Usuário</th>
+              <th>Tipo</th>
               <th>Login</th>
               <th>Logout</th>
               <th>Duração</th>
@@ -163,8 +223,9 @@
           </thead>
           <tbody>
             {% for ev in login_events %}
-            <tr>
+            <tr {% if loop.index > 10 %}class="hidden-rows" id="login-rows"{% endif %}>
               <td>{{ ev.username }}</td>
+              <td>{{ ev.user_type.capitalize() }}</td>
               <td>{{ ev.login_time.strftime('%d/%m/%Y %H:%M:%S') }}</td>
               <td>
                 {% if ev.logout_time %}
@@ -182,7 +243,7 @@
               </td>
             </tr>
             {% else %}
-            <tr><td colspan="4" class="text-center py-4">Nenhum evento de login</td></tr>
+            <tr><td colspan="5" class="text-center py-4">Nenhum evento de login</td></tr>
             {% endfor %}
           </tbody>
         </table>
