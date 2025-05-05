@@ -61,71 +61,57 @@ def init_db():
         db.session.commit()
 
 def carregar_json(dirpath, key):
-    """
-    Versão adaptada para fazer match entre nomes de usuário simplificados e arquivos OS_*.json
-    Exemplo:
-    - Usuário: "pedro.montessani"
-    - Arquivo: "OS_PEDRO PEREIRA MONTESSANI EIRELI - ME.json"
-    """
-    print(f"\n[DEBUG] Buscando arquivos para usuário: {key}")  # Log de depuração
-    
+    print(f"\n[DEBUG] Buscando arquivos para: {key} em {dirpath}")
     data = []
-    user_parts = key.lower().split('.')
     
-    # Lista todos os arquivos JSON no diretório
-    for filename in os.listdir(dirpath):
-        if not filename.lower().endswith('.json') or not filename.startswith('OS_'):
-            continue
-            
-        # Remove 'OS_' e '.json', então divide em partes
-        file_key = filename[3:-5].lower()
-        file_parts = file_key.split()
+    # Padrão de nomes para gerentes (ADRIANO_CLAUDIO_FIRMINO.json)
+    if dirpath == GERENTES_DIR:
+        filename = f"{key.replace('.', '_').upper()}.json"
+        filepath = os.path.join(dirpath, filename)
         
-        # Verifica se todas as partes do usuário estão presentes no nome do arquivo
-        match = all(any(user_part in file_part for file_part in file_parts) 
-                  for user_part in user_parts)
+        if os.path.exists(filepath):
+            print(f"[DEBUG] Arquivo de gerente encontrado: {filename}")
+            with open(filepath, encoding='utf-8') as f:
+                content = json.load(f)
+                if isinstance(content, list):
+                    data.extend(content)
+                else:
+                    data.append(content)  # Converte objeto único em lista
+
+    # Padrão para prestadores (OS_NOME PRESTADOR.json)
+    else:
+        search_parts = key.replace('.', ' ').lower().split()
         
-        if match:
-            print(f"[DEBUG] Arquivo correspondente encontrado: {filename}")  # Log
-            try:
+        for filename in os.listdir(dirpath):
+            if not filename.startswith('OS_') or not filename.endswith('.json'):
+                continue
+                
+            # Verifica matching parcial (ex: "anderson.bicudo" → "OS_ANDERSON DIEGO BICUDO...")
+            if all(part in filename.lower() for part in search_parts):
+                print(f"[DEBUG] Arquivo de prestador encontrado: {filename}")
                 with open(os.path.join(dirpath, filename), encoding='utf-8') as f:
                     content = json.load(f)
-                    
-                    # Extrai as ordens de serviço do formato específico
                     if isinstance(content, dict) and 'ORDENS_DE_SERVICO' in content:
                         data.extend(content['ORDENS_DE_SERVICO'])
-                    else:
-                        data.extend(content)
-                        
-            except Exception as e:
-                print(f"[ERRO] Falha ao ler arquivo {filename}: {str(e)}")  # Log de erro
-    
-    print(f"[DEBUG] Total de itens carregados para {key}: {len(data)}")  # Log
+
+    print(f"[DEBUG] Total de OS carregadas: {len(data)}")
     return data
 
 def montar_lista(items):
     out = []
     hoje = datetime.utcnow().date()
     
-    # Verifica se é a estrutura com ORDENS_DE_SERVICO
-    if isinstance(items, dict) and 'ORDENS_DE_SERVICO' in items:
-        items = items['ORDENS_DE_SERVICO']
-    
-    for it in items:
+    for item in items:
         try:
-            # Extrai os campos com várias alternativas possíveis
-            os_num = str(it.get('os') or it.get('OS') or it.get('NO-SERVIÇO') or '')
-            frota = str(it.get('frota') or it.get('Frota') or it.get('CD_EQT') or '')
-            servico = str(it.get('servico') or it.get('Servico') or it.get('SERVIÇO') or '')
-            
-            # O prestador pode vir do nível superior do JSON
-            prestador = str(it.get('prestador') or it.get('Prestador') or 
-                          it.get('PREST_SERVIÇO') or 'Prestador não definido')
+            # Trata ambos formatos
+            os_num = str(item.get('os') or item.get('NO-SERVIÇO') or '')
+            frota = str(item.get('frota') or item.get('CD_EQT') or '')
+            servico = str(item.get('servico') or item.get('SERVIÇO') or '')
+            prestador = str(item.get('prestador') or item.get('PREST_SERVIÇO', 'Prestador não definido'))
             
             # Processamento de data
-            data_str = it.get('data') or it.get('Data') or it.get('DT_ENTRADA') or ''
+            data_str = item.get('data') or item.get('DT_ENTRADA') or ''
             data_dt = None
-            
             for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%d-%m-%Y'):
                 try:
                     data_dt = datetime.strptime(data_str, fmt).date()
@@ -145,10 +131,21 @@ def montar_lista(items):
             })
             
         except Exception as e:
-            print(f"Erro ao processar item {it}: {str(e)}")
-            continue
+            print(f"[ERRO] Erro ao processar item: {item}\nErro: {str(e)}")
     
     return out
+
+
+@app.route('/teste_carregar/<tipo>/<nome>')
+def teste_carregar(tipo, nome):
+    dirpath = GERENTES_DIR if tipo == 'gerente' else PRESTADORES_DIR
+    dados = carregar_json(dirpath, nome)
+    return jsonify({
+        'tipo': tipo,
+        'nome': nome,
+        'dados_brutos': dados,
+        'dados_processados': montar_lista(dados)
+    })
 
 # --- Rotas Gerente ---
 @app.route('/')
@@ -173,8 +170,19 @@ def login():
 def painel_gerente():
     if session.get('type') != 'gerente':
         return redirect(url_for('login'))
-    pend = montar_lista(carregar_json(GERENTES_DIR, session['user']))
-    return render_template('painel.html', os_pendentes=pend, gerente=session['user'])
+    
+    user_key = session['user'].replace('.', '_').upper()  # Converte "adriano.claudio" → "ADRIANO_CLAUDIO"
+    pendentes = montar_lista(carregar_json(GERENTES_DIR, user_key))
+    
+    return render_template('painel.html', os_pendentes=pendentes, gerente=session['user'])
+
+@app.route('/painel_prestador')
+def painel_prestador():
+    if session.get('type') != 'prestador':
+        return redirect(url_for('login_prestador'))
+    
+    pendentes = montar_lista(carregar_json(PRESTADORES_DIR, session['user']))
+    return render_template('painel_prestador.html', os_pendentes=pendentes, prestador=session['user'])
 
 # --- Rotas Prestador ---
 @app.route('/login_prestador', methods=['GET','POST'])
