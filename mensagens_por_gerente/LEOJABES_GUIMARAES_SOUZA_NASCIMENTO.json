@@ -1,11 +1,25 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-    "frota": "5759",
-    "os": "109812",
+    "frota": "46",
+    "os": "109944",
+    "data": "05/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar chicote do alternador em curto - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "90",
+    "os": "109935",
+    "data": "05/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda SP)"
+  },
+  {
+    "frota": "218",
+    "os": "109926",
     "data": "02/05/2025",
     "prestador": "Prestador não definido",
-    "servico": "Vazamento no comando hidráulico - (Fazenda SP)"
+    "servico": "Fazer solda e reforço na escada - (Fazenda SP)"
   },
   {
     "frota": "308",
@@ -15,41 +29,6 @@
     "servico": "Furo no tanque de combustível - (Fazenda SP)"
   },
   {
-    "frota": "522",
-    "os": "109798",
-    "data": "02/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar motor não  pega na partida - (Fazenda SP)"
-  },
-  {
-    "frota": "5259",
-    "os": "109797",
-    "data": "02/05/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Quebra da chaveta no eixo de transmissão, fazendo o conjunto girar em falso e causando disparo de velocidade. Necessária substituição da chaveta e verificação do encaixe. - (Fazenda SP)"
-  },
-  {
-    "frota": "216",
-    "os": "109791",
-    "data": "02/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento de diesel na bomba manual de alimentação de diesel - (Fazenda SP)"
-  },
-  {
-    "frota": "5749",
-    "os": "109790",
-    "data": "02/05/2025",
-    "prestador": "MURILO SILVA 09207298945",
-    "servico": "Fazer solda no terminal do SPE - (Fazenda SP)"
-  },
-  {
-    "frota": "5063",
-    "os": "109789",
-    "data": "02/05/2025",
-    "prestador": "MURILO SILVA 09207298945",
-    "servico": "Fazer solda no terminal do SPE - (Fazenda SP)"
-  },
-  {
     "frota": "5479",
     "os": "109785",
     "data": "02/05/2025",
@@ -57,81 +36,18 @@
     "servico": "Verificar drash não aciona - (Fazenda Biscui)"
   },
   {
-    "frota": "5504",
-    "os": "109758",
-    "data": "01/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar conexão do ladrão de drenagem inferior danificada."
-  },
-  {
-    "frota": "44",
-    "os": "109743",
-    "data": "30/04/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Troca da caixa de embreagem e troca da caixa de tração"
-  },
-  {
-    "frota": "5661",
-    "os": "109737",
-    "data": "30/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento na bomba - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5350",
     "os": "109730",
     "data": "30/04/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Trocar luva do cardam quebrada - (Fazenda São Paulo)"
   },
   {
     "frota": "5205",
     "os": "109729",
     "data": "30/04/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)"
-  },
-  {
-    "frota": "5107",
-    "os": "109726",
-    "data": "30/04/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Soldar fio do terminal quebrado - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5759",
-    "os": "109722",
-    "data": "30/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento na bomba - (Fazenda Biscui)"
-  },
-  {
-    "frota": "5749",
-    "os": "109634",
-    "data": "29/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realocar o ramal para posicionamento protegido, evitando exposição e risco de ruptura.  - (Fazenda SP)"
-  },
-  {
-    "frota": "5504",
-    "os": "109620",
-    "data": "28/04/2025",
-    "prestador": "MURILO SILVA 09207298945",
-    "servico": "Soldar terminais - (Fazenda SP)"
-  },
-  {
-    "frota": "308",
-    "os": "109613",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar A/C não gela - (Fazenda SP)"
-  },
-  {
-    "frota": "44",
-    "os": "109548",
-    "data": "28/04/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Fazer proteção na parte de baixo da maquina e na parte traseira - (Fazenda SP)"
   },
   {
     "frota": "5063",
