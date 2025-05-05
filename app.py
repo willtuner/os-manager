@@ -1,9 +1,15 @@
 import os
 import json
+import logging
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
 from fpdf import FPDF
+from collections import Counter
+
+# Configuração de logging para depuração
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 # --- Configuração do app e banco ---
 app = Flask(__name__)
@@ -26,7 +32,6 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
-
 
 class Finalizacao(db.Model):
     __tablename__ = 'finalizacoes'
@@ -139,10 +144,26 @@ def carregar_os_gerente(gerente):
     return resultado
 
 def carregar_prestadores():
-    if os.path.exists(PRESTADORES_FILE):
+    """Carrega a lista de prestadores a partir do arquivo prestadores.json."""
+    if not os.path.exists(PRESTADORES_FILE):
+        logger.error(f"Arquivo {PRESTADORES_FILE} não encontrado.")
+        return []
+    try:
         with open(PRESTADORES_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return []
+            prestadores = json.load(f)
+        # Verifica duplicatas em 'usuario'
+        usuarios = [p.get('usuario', '').lower() for p in prestadores]
+        duplicatas = [item for item, count in Counter(usuarios).items() if count > 1]
+        if duplicatas:
+            logger.warning(f"Usuários duplicados encontrados em prestadores.json: {duplicatas}")
+        logger.debug(f"Prestadores carregados: {[p['usuario'] for p in prestadores]}")
+        return prestadores
+    except json.JSONDecodeError as e:
+        logger.error(f"Erro ao decodificar {PRESTADORES_FILE}: {e}")
+        return []
+    except Exception as e:
+        logger.error(f"Erro ao carregar prestadores: {e}")
+        return []
 
 # --- Rotas ---
 @app.route('/')
@@ -162,23 +183,34 @@ def login():
             session['login_event_id'] = ev.id
             session['gerente'] = u
             session['is_admin'] = user.is_admin
+            logger.info(f"Login bem-sucedido para gerente: {u}")
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
         flash('Usuário ou senha inválidos','danger')
+        logger.warning(f"Falha no login para gerente: {u}")
     return render_template('login.html')
 
 @app.route('/login_prestador', methods=['GET', 'POST'])
 def login_prestador():
     if request.method == 'POST':
-        usuario = request.form['usuario'].strip().lower()
-        senha = request.form['senha'].strip()
-        prestadores = carregar_prestadores()
+        usuario = request.form.get('usuario', '').strip().lower()
+        senha = request.form.get('senha', '').strip()
+        logger.debug(f"Tentativa de login para prestador: {usuario}, senha fornecida: {'*' * len(senha)}")
 
-        prestador = next((p for p in prestadores if p['usuario'] == usuario and p['senha'] == senha), None)
+        prestadores = carregar_prestadores()
+        if not prestadores:
+            flash('Erro ao carregar lista de prestadores. Contate o administrador.', 'danger')
+            logger.error("Lista de prestadores vazia ou não carregada.")
+            return render_template('login_prestador.html')
+
+        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario and p.get('senha', '') == senha), None)
         if prestador:
             session['prestador'] = prestador['usuario']
+            session['prestador_nome'] = prestador.get('nome_exibicao', usuario)
+            logger.info(f"Login bem-sucedido para prestador: {usuario}")
             return redirect(url_for('painel_prestador'))
 
-        flash('Usuário ou senha inválidos.', 'danger')
+        flash('Usuário ou senha inválidos. Verifique suas credenciais.', 'danger')
+        logger.warning(f"Falha no login para prestador: {usuario}")
     return render_template('login_prestador.html')
 
 @app.route('/painel')
@@ -199,17 +231,23 @@ def painel_prestador():
         return redirect(url_for('login_prestador'))
 
     prestadores = carregar_prestadores()
-    prestador = next((p for p in prestadores if p['usuario'] == session['prestador']), None)
+    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
     if not prestador:
         flash('Prestador não encontrado', 'danger')
+        logger.error(f"Prestador não encontrado na sessão: {session['prestador']}")
         return redirect(url_for('login_prestador'))
 
     caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
     if not os.path.exists(caminho):
+        logger.warning(f"Arquivo de OS não encontrado: {caminho}")
         os_list = []
     else:
-        with open(caminho, 'r', encoding='utf-8') as f:
-            os_list = json.load(f)
+        try:
+            with open(caminho, 'r', encoding='utf-8') as f:
+                os_list = json.load(f)
+        except json.JSONDecodeError as e:
+            logger.error(f"Erro ao decodificar {caminho}: {e}")
+            os_list = []
 
     return render_template('painel_prestador.html', nome=prestador['nome_exibicao'], os_list=os_list)
 
@@ -241,7 +279,7 @@ def finalizar_os(os_numero):
         if not os.path.exists(caminho):
             prefixo = gerente.split('.')[0].upper()
             for fn in os.listdir(MENSAGENS_DIR):
-                if fn.upper().startswith(prefixo) and fn.lower().endswith('.json'):
+                if fn.upper().startswith(prefixo) and fn.lower().endswith(".json"):
                     caminho = os.path.join(MENSAGENS_DIR, fn)
                     break
 
@@ -258,7 +296,7 @@ def finalizar_os(os_numero):
     # Remove do JSON do prestador, se for prestador
     if 'prestador' in session:
         prestadores = carregar_prestadores()
-        prestador = next((p for p in prestadores if p['usuario'] == session['prestador']), None)
+        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
         if prestador:
             caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
             if os.path.exists(caminho):
