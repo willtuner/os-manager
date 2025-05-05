@@ -170,48 +170,43 @@ def carregar_prestadores():
 def index():
     return redirect(url_for('login'))
 
-@app.route('/login', methods=['GET','POST'])
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        u = request.form['gerente'].strip().lower()
-        p = request.form['senha'].strip()
-        user = User.query.filter_by(username=u).first()
-        if user and user.password == p:
-            ev = LoginEvent(username=u)
+        username = request.form.get('username', '').strip().lower()
+        senha = request.form.get('senha', '').strip()
+        logger.debug(f"Tentativa de login: {username}, senha fornecida: {'*' * len(senha)}")
+
+        # Tenta autenticar como gerente
+        user = User.query.filter_by(username=username).first()
+        if user and user.password == senha:
+            ev = LoginEvent(username=username)
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
-            session['gerente'] = u
+            session['gerente'] = username
             session['is_admin'] = user.is_admin
-            logger.info(f"Login bem-sucedido para gerente: {u}")
+            logger.info(f"Login bem-sucedido para gerente: {username}")
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
-        flash('Usuário ou senha inválidos','danger')
-        logger.warning(f"Falha no login para gerente: {u}")
-    return render_template('login.html')
 
-@app.route('/login_prestador', methods=['GET', 'POST'])
-def login_prestador():
-    if request.method == 'POST':
-        usuario = request.form.get('usuario', '').strip().lower()
-        senha = request.form.get('senha', '').strip()
-        logger.debug(f"Tentativa de login para prestador: {usuario}, senha fornecida: {'*' * len(senha)}")
-
+        # Tenta autenticar como prestador
         prestadores = carregar_prestadores()
         if not prestadores:
             flash('Erro ao carregar lista de prestadores. Contate o administrador.', 'danger')
             logger.error("Lista de prestadores vazia ou não carregada.")
-            return render_template('login_prestador.html')
+            return render_template('login.html')
 
-        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario and p.get('senha', '') == senha), None)
+        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
             session['prestador'] = prestador['usuario']
-            session['prestador_nome'] = prestador.get('nome_exibicao', usuario)
-            logger.info(f"Login bem-sucedido para prestador: {usuario}")
+            session['prestador_nome'] = prestador.get('nome_exibicao', username)
+            logger.info(f"Login bem-sucedido para prestador: {username}")
             return redirect(url_for('painel_prestador'))
 
-        flash('Usuário ou senha inválidos. Verifique suas credenciais.', 'danger')
-        logger.warning(f"Falha no login para prestador: {usuario}")
-    return render_template('login_prestador.html')
+        # Falha na autenticação
+        flash('Usuário ou senha inválidos.', 'danger')
+        logger.warning(f"Falha no login: {username}")
+    return render_template('login.html')
 
 @app.route('/painel')
 def painel():
@@ -228,14 +223,14 @@ def painel():
 @app.route('/painel_prestador')
 def painel_prestador():
     if 'prestador' not in session:
-        return redirect(url_for('login_prestador'))
+        return redirect(url_for('login'))
 
     prestadores = carregar_prestadores()
     prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
     if not prestador:
         flash('Prestador não encontrado', 'danger')
         logger.error(f"Prestador não encontrado na sessão: {session['prestador']}")
-        return redirect(url_for('login_prestador'))
+        return redirect(url_for('login'))
 
     caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
     if not os.path.exists(caminho):
