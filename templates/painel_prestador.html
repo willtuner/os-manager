@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Painel de OS – {{ prestador }}{% endblock %}
+{% block title %}Painel de OS – {{ nome }}{% endblock %}
 
 {% block content %}
 <div class="row mb-4">
@@ -8,27 +8,28 @@
         <h2 class="h4">
             <i class="fas fa-tools text-success me-2"></i>Ordens de Serviço Atribuídas
         </h2>
-        <p class="text-muted mb-0">Prestador: <strong>{{ prestador }}</strong></p>
+        <p class="text-muted mb-0">Prestador: <strong>{{ nome }}</strong></p>
     </div>
 </div>
 
-{% if os_pendentes %}
-    {% for os in os_pendentes %}
-    <form action="{{ url_for('finalizar', os_numero=os.os) }}"
+{% if os_list %}
+    {% for item in os_list %}
+    <form action="{{ url_for('finalizar_os', os_numero=item.os) }}"
           method="POST"
           class="card card-os mb-3">
         <div class="card-body">
             <h5 class="card-title mb-2">
-                <span class="badge bg-secondary me-2">OS {{ os.os }}</span>
-                Frota {{ os.frota }}
+                <span class="badge bg-secondary me-2">OS {{ item.os }}</span>
+                Frota {{ item.frota }}
             </h5>
             <p class="card-text mb-2">
                 <small class="text-muted">
-                    Aberta em {{ os.data }} &bull; {{ os.dias }} dia{{ 's' if os.dias|int != 1 else '' }}
+                    Aberta em {{ item.data_entrada }} &bull; Modelo {{ item.modelo }}
                 </small>
             </p>
             <p class="card-text mb-3">
-                <i class="fas fa-tools me-1 text-muted"></i> {{ os.servico }}
+                <i class="fas fa-tools me-1 text-muted"></i>
+                <span style="white-space: pre-wrap;">{{ item.servico }}</span>
             </p>
             <div class="row g-2 mb-2">
                 <div class="col-md-4">
