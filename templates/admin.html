@@ -106,20 +106,38 @@
             </tr>
           </thead>
           <tbody>
-            {% for gerente, count in ranking_os_abertas %}
-            <tr {% if loop.index > 3 %}class="hidden-rows" id="gerente-ranking-rows"{% endif %}>
+            {% for gerente, count in ranking_os_abertas if loop.index <= 3 %}
+            <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ loop.index if loop.index <= 3 else 'other' }}">
+                <span class="badge ranking-badge ranking-{{ loop.index }}">
                   {{ loop.index }}º
                 </span>
               </td>
               <td>{{ gerente }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
-            {% else %}
-            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
             {% endfor %}
           </tbody>
+          {% if ranking_os_abertas|length > 3 %}
+          <tbody class="hidden-rows" id="gerente-ranking-rows">
+            {% for gerente, count in ranking_os_abertas if loop.index > 3 %}
+            <tr>
+              <td>
+                <span class="badge ranking-badge ranking-other">
+                  {{ loop.index }}º
+                </span>
+              </td>
+              <td>{{ gerente }}</td>
+              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+          {% endif %}
+          {% if not ranking_os_abertas %}
+          <tbody>
+            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+          </tbody>
+          {% endif %}
         </table>
       </div>
     </div>
@@ -146,20 +164,38 @@
             </tr>
           </thead>
           <tbody>
-            {% for prestador, count in ranking_os_prestadores %}
-            <tr {% if loop.index > 3 %}class="hidden-rows" id="prestador-ranking-rows"{% endif %}>
+            {% for prestador, count in ranking_os_prestadores if loop.index <= 3 %}
+            <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ loop.index if loop.index <= 3 else 'other' }}">
+                <span class="badge ranking-badge ranking-{{ loop.index }}">
                   {{ loop.index }}º
                 </span>
               </td>
               <td>{{ prestador }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
-            {% else %}
-            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
             {% endfor %}
           </tbody>
+          {% if ranking_os_prestadores|length > 3 %}
+          <tbody class="hidden-rows" id="prestador-ranking-rows">
+            {% for prestador, count in ranking_os_prestadores if loop.index > 3 %}
+            <tr>
+              <td>
+                <span class="badge ranking-badge ranking-other">
+                  {{ loop.index }}º
+                </span>
+              </td>
+              <td>{{ prestador }}</td>
+              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+          {% endif %}
+          {% if not ranking_os_prestadores %}
+          <tbody>
+            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+          </tbody>
+          {% endif %}
         </table>
       </div>
     </div>
@@ -182,16 +218,30 @@
             <tr><th>Gerente</th><th>Finalizadas</th><th>Pendentes</th></tr>
           </thead>
           <tbody>
-            {% for g in gerentes %}
-            <tr {% if loop.index > 3 %}class="hidden-rows" id="gerentes-rows"{% endif %}>
+            {% for g in gerentes if loop.index <= 3 %}
+            <tr>
               <td>{{ g }}</td>
               <td>{{ contagem_gerentes.get(g,0) }}</td>
               <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
             </tr>
-            {% else %}
-            <tr><td colspan="3" class="text-center py-3">Nenhum gerente com OS registrada</td></tr>
             {% endfor %}
           </tbody>
+          {% if gerentes|length > 3 %}
+          <tbody class="hidden-rows" id="gerentes-rows">
+            {% for g in gerentes if loop.index > 3 %}
+            <tr>
+              <td>{{ g }}</td>
+              <td>{{ contagem_gerentes.get(g,0) }}</td>
+              <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+          {% endif %}
+          {% if not gerentes %}
+          <tbody>
+            <tr><td colspan="3" class="text-center py-3">Nenhum gerente com OS registrada</td></tr>
+          </tbody>
+          {% endif %}
         </table>
       </div>
     </div>
@@ -214,18 +264,34 @@
             <tr><th>OS</th><th>Responsável</th><th>Data</th><th>Hora</th><th>Obs</th></tr>
           </thead>
           <tbody>
-            {% for os in finalizadas %}
-            <tr {% if loop.index > 3 %}class="hidden-rows" id="finalizadas-rows"{% endif %}>
+            {% for os in finalizadas if loop.index <= 3 %}
+            <tr>
               <td>{{ os.os_numero }}</td>
               <td>{{ os.gerente }}</td>
               <td>{{ os.data_fin }}</td>
               <td>{{ os.hora_fin }}</td>
               <td>{{ os.observacoes or '-' }}</td>
             </tr>
-            {% else %}
-            <tr><td colspan="5" class="text-center py-3">Nenhuma OS finalizada</td></tr>
             {% endfor %}
           </tbody>
+          {% if finalizadas|length > 3 %}
+          <tbody class="hidden-rows" id="finalizadas-rows">
+            {% for os in finalizadas if loop.index > 3 %}
+            <tr>
+              <td>{{ os.os_numero }}</td>
+              <td>{{ os.gerente }}</td>
+              <td>{{ os.data_fin }}</td>
+              <td>{{ os.hora_fin }}</td>
+              <td>{{ os.observacoes or '-' }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+          {% endif %}
+          {% if not finalizadas %}
+          <tbody>
+            <tr><td colspan="5" class="text-center py-3">Nenhuma OS finalizada</td></tr>
+          </tbody>
+          {% endif %}
         </table>
       </div>
     </div>
@@ -254,8 +320,8 @@
             </tr>
           </thead>
           <tbody>
-            {% for ev in login_events %}
-            <tr {% if loop.index > 3 %}class="hidden-rows" id="login-rows"{% endif %}>
+            {% for ev in login_events if loop.index <= 3 %}
+            <tr>
               <td>{{ ev.username }}</td>
               <td>{{ ev.user_type.capitalize() }}</td>
               <td>{{ ev.login_time.strftime('%d/%m/%Y %H:%M:%S') }}</td>
@@ -274,10 +340,38 @@
                 {% endif %}
               </td>
             </tr>
-            {% else %}
-            <tr><td colspan="5" class="text-center py-3">Nenhum evento de login</td></tr>
             {% endfor %}
           </tbody>
+          {% if login_events|length > 3 %}
+          <tbody class="hidden-rows" id="login-rows">
+            {% for ev in login_events if loop.index > 3 %}
+            <tr>
+              <td>{{ ev.username }}</td>
+              <td>{{ ev.user_type.capitalize() }}</td>
+              <td>{{ ev.login_time.strftime('%d/%m/%Y %H:%M:%S') }}</td>
+              <td>
+                {% if ev.logout_time %}
+                  {{ ev.logout_time.strftime('%d/%m/%Y %H:%M:%S') }}
+                {% else %}
+                  <span class="text-muted">ativo</span>
+                {% endif %}
+              </td>
+              <td>
+                {% if ev.duration_secs %}
+                  {{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s
+                {% else %}
+                  <span class="text-muted">—</span>
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+          {% endif %}
+          {% if not login_events %}
+          <tbody>
+            <tr><td colspan="5" class="text-center py-3">Nenhum evento de login</td></tr>
+          </tbody>
+          {% endif %}
         </table>
       </div>
     </div>
