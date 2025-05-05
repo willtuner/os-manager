@@ -6,6 +6,7 @@ from flask import Flask, render_template, request, redirect, session, url_for, f
 from flask_sqlalchemy import SQLAlchemy
 from fpdf import FPDF
 from collections import Counter
+from sqlalchemy.sql import text
 
 # Configuração de logging para depuração
 logging.basicConfig(level=logging.DEBUG)
@@ -62,8 +63,30 @@ os.makedirs(MENSAGENS_DIR, exist_ok=True)
 os.makedirs(MENSAGENS_PRESTADORES_DIR, exist_ok=True)
 
 def init_db():
-    """Cria tabelas e importa users.json na tabela users, se vazia."""
+    """Cria tabelas, importa users.json na tabela users e aplica migrações necessárias."""
     db.create_all()
+    
+    # Migração: Adicionar coluna user_type à tabela login_events, se não existir
+    try:
+        # Verifica se a coluna user_type existe
+        result = db.session.execute(text(
+            "SELECT column_name FROM information_schema.columns "
+            "WHERE table_name = 'login_events' AND column_name = 'user_type'"
+        ))
+        if not result.fetchone():
+            logger.info("Adicionando coluna user_type à tabela login_events")
+            db.session.execute(text(
+                "ALTER TABLE login_events ADD COLUMN user_type VARCHAR(20) NOT NULL DEFAULT 'gerente'"
+            ))
+            db.session.commit()
+            logger.info("Coluna user_type adicionada com sucesso")
+        else:
+            logger.debug("Coluna user_type já existe em login_events")
+    except Exception as e:
+        logger.error(f"Erro ao verificar/adicionar coluna user_type: {e}")
+        db.session.rollback()
+    
+    # Importa users.json, se a tabela users estiver vazia
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
             js = json.load(f)
