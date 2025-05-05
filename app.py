@@ -116,7 +116,7 @@ def processar_os_items(items):
         try:
             # Extração robusta de campos
             os_num = str(item.get('os') or item.get('NO-SERVIÇO') or item.get('numero') or '')
-            frota = str(item.get('frota') or item.get('CD_EQT') or item.get('equipamento') or ''
+            frota = str(item.get('frota') or item.get('CD_EQT') or item.get('equipamento') or '')
             servico = str(item.get('servico') or item.get('SERVIÇO') or item.get('descricao') or ''
             prestador = str(item.get('prestador') or item.get('PREST_SERVIÇO') or 'Prestador não definido'
             
