@@ -1,7 +1,7 @@
 import os
 import json
 from datetime import datetime
-from flask import Flask, render_template, request, redirect, session, url_for, flash
+from flask import Flask, render_template, request, redirect, session, url_for, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from fpdf import FPDF
 
@@ -76,7 +76,7 @@ def carregar_json(dirpath, key):
                 if isinstance(content, list):
                     data.extend(content)
                 else:
-                    data.append(content)  # Converte objeto único em lista
+                    data.append(content)
 
     # Padrão para prestadores (OS_NOME PRESTADOR.json)
     else:
@@ -86,13 +86,15 @@ def carregar_json(dirpath, key):
             if not filename.startswith('OS_') or not filename.endswith('.json'):
                 continue
                 
-            # Verifica matching parcial (ex: "anderson.bicudo" → "OS_ANDERSON DIEGO BICUDO...")
             if all(part in filename.lower() for part in search_parts):
                 print(f"[DEBUG] Arquivo de prestador encontrado: {filename}")
-                with open(os.path.join(dirpath, filename), encoding='utf-8') as f:
-                    content = json.load(f)
-                    if isinstance(content, dict) and 'ORDENS_DE_SERVICO' in content:
-                        data.extend(content['ORDENS_DE_SERVICO'])
+                try:
+                    with open(os.path.join(dirpath, filename), encoding='utf-8') as f:
+                        content = json.load(f)
+                        if isinstance(content, dict) and 'ORDENS_DE_SERVICO' in content:
+                            data.extend(content['ORDENS_DE_SERVICO'])
+                except Exception as e:
+                    print(f"[ERRO] Falha ao ler {filename}: {str(e)}")
 
     print(f"[DEBUG] Total de OS carregadas: {len(data)}")
     return data
@@ -103,13 +105,11 @@ def montar_lista(items):
     
     for item in items:
         try:
-            # Trata ambos formatos
             os_num = str(item.get('os') or item.get('NO-SERVIÇO') or '')
             frota = str(item.get('frota') or item.get('CD_EQT') or '')
             servico = str(item.get('servico') or item.get('SERVIÇO') or '')
             prestador = str(item.get('prestador') or item.get('PREST_SERVIÇO', 'Prestador não definido'))
             
-            # Processamento de data
             data_str = item.get('data') or item.get('DT_ENTRADA') or ''
             data_dt = None
             for fmt in ('%d/%m/%Y', '%Y-%m-%d', '%d-%m-%Y'):
@@ -135,7 +135,7 @@ def montar_lista(items):
     
     return out
 
-
+# --- Rotas de Teste ---
 @app.route('/teste_carregar/<tipo>/<nome>')
 def teste_carregar(tipo, nome):
     dirpath = GERENTES_DIR if tipo == 'gerente' else PRESTADORES_DIR
@@ -171,18 +171,9 @@ def painel_gerente():
     if session.get('type') != 'gerente':
         return redirect(url_for('login'))
     
-    user_key = session['user'].replace('.', '_').upper()  # Converte "adriano.claudio" → "ADRIANO_CLAUDIO"
+    user_key = session['user'].replace('.', '_').upper()
     pendentes = montar_lista(carregar_json(GERENTES_DIR, user_key))
-    
     return render_template('painel.html', os_pendentes=pendentes, gerente=session['user'])
-
-@app.route('/painel_prestador')
-def painel_prestador():
-    if session.get('type') != 'prestador':
-        return redirect(url_for('login_prestador'))
-    
-    pendentes = montar_lista(carregar_json(PRESTADORES_DIR, session['user']))
-    return render_template('painel_prestador.html', os_pendentes=pendentes, prestador=session['user'])
 
 # --- Rotas Prestador ---
 @app.route('/login_prestador', methods=['GET','POST'])
@@ -190,23 +181,28 @@ def login_prestador():
     erro = None
     if request.method == 'POST':
         key = request.form['prestador_key'].strip().lower()
-        p   = request.form['senha'].strip()
-        users = json.load(open(USERS_FILE, encoding='utf-8'))
-        if users.get(key) == p:
-            session['type'] = 'prestador'
-            session['user'] = key
-            return redirect(url_for('painel_prestador'))
-        flash('Chave ou senha inválidos','danger')
+        p = request.form['senha'].strip()
+        try:
+            users = json.load(open(USERS_FILE, encoding='utf-8'))
+            if users.get(key) == p:
+                session['type'] = 'prestador'
+                session['user'] = key
+                return redirect(url_for('painel_prestador'))
+            flash('Chave ou senha inválidos','danger')
+        except Exception as e:
+            flash('Erro ao carregar dados de usuários','danger')
+            print(f"[ERRO] {str(e)}")
     return render_template('login_prestador.html', erro=erro)
 
 @app.route('/painel_prestador')
 def painel_prestador():
     if session.get('type') != 'prestador':
         return redirect(url_for('login_prestador'))
-    pend = montar_lista(carregar_json(PRESTADORES_DIR, session['user']))
-    return render_template('painel_prestador.html',
-                           os_pendentes=pend,
-                           prestador=session['user'])
+    
+    pendentes = montar_lista(carregar_json(PRESTADORES_DIR, session['user']))
+    return render_template('painel_prestador.html', 
+                         os_pendentes=pendentes, 
+                         prestador=session['user'])
 
 # --- Finalizar OS ---
 @app.route('/finalizar/<os_numero>', methods=['POST'])
@@ -214,20 +210,20 @@ def finalizar(os_numero):
     tipo = session.get('type')
     if tipo not in ('gerente','prestador'):
         return redirect(url_for('login'))
+    
     dados = {
-        'os_numero':   os_numero,
-        'gerente':     session['user'] if tipo=='gerente'   else None,
-        'prestador':   session['user'] if tipo=='prestador' else None,
-        'data_fin':    request.form['data_finalizacao'],
-        'hora_fin':    request.form['hora_finalizacao'],
+        'os_numero': os_numero,
+        'gerente': session['user'] if tipo=='gerente' else None,
+        'prestador': session['user'] if tipo=='prestador' else None,
+        'data_fin': request.form['data_finalizacao'],
+        'hora_fin': request.form['hora_finalizacao'],
         'observacoes': request.form.get('observacoes','')
     }
+    
     db.session.add(Finalizacao(**dados))
     db.session.commit()
     flash(f'OS {os_numero} finalizada','success')
-    return (redirect(url_for('painel_gerente'))
-            if tipo=='gerente'
-            else redirect(url_for('painel_prestador')))
+    return redirect(url_for('painel_gerente' if tipo=='gerente' else 'painel_prestador'))
 
 @app.route('/logout')
 def logout():
@@ -235,7 +231,7 @@ def logout():
     flash('Desconectado com sucesso','info')
     return redirect(url_for('login'))
 
-# --- Inicializa o banco ---
+# --- Inicialização ---
 with app.app_context():
     init_db()
 
