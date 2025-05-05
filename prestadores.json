@@ -25,12 +25,6 @@
   },
   {
     "usuario": "comercial",
-    "nome_exibicao": "Comercial Agricola De Paranavai",
-    "senha": "comercial123",
-    "arquivo_os": "COMERCIAL_AGRICOLA_DE_PARANAVAI.json"
-  },
-  {
-    "usuario": "comercial",
     "nome_exibicao": "Comercial Agricola De Paranavai Ltda",
     "senha": "comercial123",
     "arquivo_os": "COMERCIAL_AGRICOLA_DE_PARANAVAI_LTDA.json"
@@ -58,12 +52,6 @@
     "nome_exibicao": "Fm Manutenção",
     "senha": "fm123",
     "arquivo_os": "FM_MANUTENÇÃO.json"
-  },
-  {
-    "usuario": "gilson",
-    "nome_exibicao": "Gilson Cesar Alves Dos Santos",
-    "senha": "gilson123",
-    "arquivo_os": "GILSON_CESAR_ALVES_DOS_SANTOS.json"
   },
   {
     "usuario": "gilson",
