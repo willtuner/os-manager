@@ -1,54 +1,268 @@
 {
-  "adriano.claudio": "1234",
-  "alexandre.iablanski": "1234",
-  "altieres.soares": "1234",
-  "anderson.maicon": "1234",
-  "antonio.paulo": "1234",
-  "antonio.vinicio": "1234",
-  "arthur.sousa": "1234",
-  "carlos.henrique": "1234",
-  "cassio.antonio": "1234",
-  "danilo.mulari": "1234",
-  "diego.gomes": "1234",
-  "eder.jose": "1234",
-  "elielson.brisola": "1234",
-  "elismar.siqueira": "1234",
-  "elizangela.maria": "1234",
-  "fabricio.nabarro": "1234",
-  "gabriel.augusto": "1234",
-  "gilberto.cordeiro": "1234",
-  "joao.paulo": "1234",
-  "joao.vitor": "1234",
-  "joao.vitor2": "1234",
-  "john.lennon": "1234",
-  "josimar.badias": "1234",
-  "jucelio.pereira": "1234",
-  "leojabes.guimaraes": "1234",
-  "luiz.alves": "1234",
-  "marcio.junio": "1234",
-  "matheus.dias": "1234",
-  "mauricio.jose": "1234",
-  "mauricio.marques": "1234",
-  "murilo.j": "1234",
-  "natalino.antonio": "1234",
-  "paulo.barbosa": "1234",
-  "paulo.edson": "1234",
-  "paulo.vinicius": "1234",
-  "rafael.venancio": "1234",
-  "rennan.arcanjo": "1234",
-  "romes.rosa": "1234",
-  "valdomiro.caris": "1234",
-  "wagner.galdino": "1234",
-  "wellington.gomes": "1234",
-  "willian.silva": "1234",
-  "wilson.santana": "admin321",
-  "zacarias.oliveira": "1234",
-  "zylton.figueredo": "1234",
-  "pedro.montessani": "1234",
-  "mateus.aparecido": "1234",
-  "anderson.bicudo": "1234",
-  "m.g.vedacoes": "1234",
-  "jose.renato": "1234",
-  "iago.manutencao": "1234",
-  "gilson.cesar": "1234"
+  "admin": {
+    "wilson.santana": {
+      "password": "admin321",
+      "is_admin": true,
+      "is_gerente": true
+    }
+  },
+  "gerentes": {
+    "adriano.claudio": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "alexandre.iablanski": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "altieres.soares": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "anderson.maicon": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "antonio.paulo": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "antonio.vinicio": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "arthur.sousa": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "carlos.henrique": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "cassio.antonio": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "danilo.mulari": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "diego.gomes": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "eder.jose": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "elielson.brisola": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "elismar.siqueira": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "elizangela.maria": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "fabricio.nabarro": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "gabriel.augusto": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "gilberto.cordeiro": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "joao.paulo": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "joao.vitor": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "joao.vitor2": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "john.lennon": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "josimar.badias": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "jucelio.pereira": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "leojabes.guimaraes": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "luiz.alves": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "marcio.junio": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "matheus.dias": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "mauricio.jose": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "mauricio.marques": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "murilo.j": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "natalino.antonio": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "paulo.barbosa": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "paulo.edson": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "paulo.vinicius": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "rafael.venancio": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "rennan.arcanjo": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "romes.rosa": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "valdomiro.caris": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "wagner.galdino": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "wellington.gomes": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "willian.silva": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "zacarias.oliveira": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    },
+    "zylton.figueredo": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": true
+    }
+  },
+  "prestadores": {
+    "pedro.montessani": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": false
+    },
+    "mateus.aparecido": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": false
+    },
+    "anderson.bicudo": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": false
+    },
+    "m.g.vedacoes": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": false
+    },
+    "jose.renato": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": false
+    },
+    "iago.manutencao": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": false
+    },
+    "gilson.cesar": {
+      "password": "1234",
+      "is_admin": false,
+      "is_gerente": false
+    }
+  }
 }
