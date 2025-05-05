@@ -106,11 +106,11 @@
             </tr>
           </thead>
           <tbody>
-            {% for gerente, count in ranking_os_abertas if loop.index <= 3 %}
+            {% for gerente, count in ranking_os_abertas[:3] %}
             <tr>
               <td>
                 <span class="badge ranking-badge ranking-{{ loop.index }}">
-                  {{ loop.index }}º
+                  {{ loop.index + 1 }}º
                 </span>
               </td>
               <td>{{ gerente }}</td>
@@ -120,11 +120,11 @@
           </tbody>
           {% if ranking_os_abertas|length > 3 %}
           <tbody class="hidden-rows" id="gerente-ranking-rows">
-            {% for gerente, count in ranking_os_abertas if loop.index > 3 %}
+            {% for gerente, count in ranking_os_abertas[3:] %}
             <tr>
               <td>
                 <span class="badge ranking-badge ranking-other">
-                  {{ loop.index }}º
+                  {{ loop.index + 4 }}º
                 </span>
               </td>
               <td>{{ gerente }}</td>
@@ -164,11 +164,11 @@
             </tr>
           </thead>
           <tbody>
-            {% for prestador, count in ranking_os_prestadores if loop.index <= 3 %}
+            {% for prestador, count in ranking_os_prestadores[:3] %}
             <tr>
               <td>
                 <span class="badge ranking-badge ranking-{{ loop.index }}">
-                  {{ loop.index }}º
+                  {{ loop.index + 1 }}º
                 </span>
               </td>
               <td>{{ prestador }}</td>
@@ -178,11 +178,11 @@
           </tbody>
           {% if ranking_os_prestadores|length > 3 %}
           <tbody class="hidden-rows" id="prestador-ranking-rows">
-            {% for prestador, count in ranking_os_prestadores if loop.index > 3 %}
+            {% for prestador, count in ranking_os_prestadores[3:] %}
             <tr>
               <td>
                 <span class="badge ranking-badge ranking-other">
-                  {{ loop.index }}º
+                  {{ loop.index + 4 }}º
                 </span>
               </td>
               <td>{{ prestador }}</td>
@@ -218,7 +218,7 @@
             <tr><th>Gerente</th><th>Finalizadas</th><th>Pendentes</th></tr>
           </thead>
           <tbody>
-            {% for g in gerentes if loop.index <= 3 %}
+            {% for g in gerentes[:3] %}
             <tr>
               <td>{{ g }}</td>
               <td>{{ contagem_gerentes.get(g,0) }}</td>
@@ -228,7 +228,7 @@
           </tbody>
           {% if gerentes|length > 3 %}
           <tbody class="hidden-rows" id="gerentes-rows">
-            {% for g in gerentes if loop.index > 3 %}
+            {% for g in gerentes[3:] %}
             <tr>
               <td>{{ g }}</td>
               <td>{{ contagem_gerentes.get(g,0) }}</td>
@@ -264,7 +264,7 @@
             <tr><th>OS</th><th>Responsável</th><th>Data</th><th>Hora</th><th>Obs</th></tr>
           </thead>
           <tbody>
-            {% for os in finalizadas if loop.index <= 3 %}
+            {% for os in finalizadas[:3] %}
             <tr>
               <td>{{ os.os_numero }}</td>
               <td>{{ os.gerente }}</td>
@@ -276,7 +276,7 @@
           </tbody>
           {% if finalizadas|length > 3 %}
           <tbody class="hidden-rows" id="finalizadas-rows">
-            {% for os in finalizadas if loop.index > 3 %}
+            {% for os in finalizadas[3:] %}
             <tr>
               <td>{{ os.os_numero }}</td>
               <td>{{ os.gerente }}</td>
@@ -320,7 +320,7 @@
             </tr>
           </thead>
           <tbody>
-            {% for ev in login_events if loop.index <= 3 %}
+            {% for ev in login_events[:3] %}
             <tr>
               <td>{{ ev.username }}</td>
               <td>{{ ev.user_type.capitalize() }}</td>
@@ -344,7 +344,7 @@
           </tbody>
           {% if login_events|length > 3 %}
           <tbody class="hidden-rows" id="login-rows">
-            {% for ev in login_events if loop.index > 3 %}
+            {% for ev in login_events[3:] %}
             <tr>
               <td>{{ ev.username }}</td>
               <td>{{ ev.user_type.capitalize() }}</td>
