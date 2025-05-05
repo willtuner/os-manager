@@ -24,7 +24,7 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
-    is_gerente = db.Column(db.Boolean, default=False)  # Novo campo para identificar gerentes
+    is_gerente = db.Column(db.Boolean, default=False)
 
 class Finalizacao(db.Model):
     __tablename__ = 'finalizacao'
@@ -42,7 +42,6 @@ BASE_DIR = os.path.dirname(__file__)
 GERENTES_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
 PRESTADORES_DIR = os.path.join(BASE_DIR, 'mensagens_por_prestador')
 USERS_FILE = os.path.join(BASE_DIR, 'users.json')
-GERENTES_FILE = os.path.join(BASE_DIR, 'gerentes.json')  # Arquivo com mapeamento de gerentes
 
 os.makedirs(GERENTES_DIR, exist_ok=True)
 os.makedirs(PRESTADORES_DIR, exist_ok=True)
@@ -50,24 +49,38 @@ os.makedirs(PRESTADORES_DIR, exist_ok=True)
 def init_db():
     with app.app_context():
         db.create_all()
-        if User.query.count() == 0:
+        if User.query.count() == 0 and os.path.exists(USERS_FILE):
             try:
-                # Carrega usuários gerentes
-                with open(GERENTES_FILE) as f:
-                    gerentes = json.load(f)
+                with open(USERS_FILE, encoding='utf-8') as f:
+                    users_data = json.load(f)
                 
-                # Carrega demais usuários
-                with open(USERS_FILE) as f:
-                    users = json.load(f)
-                
-                for username, password in users.items():
-                    user = User(
+                # Processa admin
+                for username, info in users_data['admin'].items():
+                    db.session.add(User(
                         username=username.lower(),
-                        password=password,
-                        is_admin=(username.lower() == 'wilson.santana'),
-                        is_gerente=(username.lower() in gerentes)
-                    )
-                    db.session.add(user)
+                        password=info['password'],
+                        is_admin=info['is_admin'],
+                        is_gerente=info['is_gerente']
+                    ))
+                
+                # Processa gerentes
+                for username, info in users_data['gerentes'].items():
+                    db.session.add(User(
+                        username=username.lower(),
+                        password=info['password'],
+                        is_admin=info['is_admin'],
+                        is_gerente=info['is_gerente']
+                    ))
+                
+                # Processa prestadores
+                for username, info in users_data['prestadores'].items():
+                    db.session.add(User(
+                        username=username.lower(),
+                        password=info['password'],
+                        is_admin=info['is_admin'],
+                        is_gerente=info['is_gerente']
+                    ))
+                
                 db.session.commit()
             except Exception as e:
                 print(f"Erro ao inicializar banco: {str(e)}")
@@ -118,7 +131,7 @@ def processar_os_items(items):
             os_num = str(item.get('os') or item.get('NO-SERVIÇO') or item.get('numero') or '')
             frota = str(item.get('frota') or item.get('CD_EQT') or item.get('equipamento') or '')
             servico = str(item.get('servico') or item.get('SERVIÇO') or item.get('descricao') or '')
-            prestador = str(item.get('prestador') or item.get('PREST_SERVIÇO') or 'Prestador não definido'
+            prestador = str(item.get('prestador') or item.get('PREST_SERVIÇO') or 'Prestador não definido')
             
             # Processamento de data
             data_str = item.get('data') or item.get('DT_ENTRADA') or item.get('data_entrada') or ''
