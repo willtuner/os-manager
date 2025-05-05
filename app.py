@@ -47,6 +47,7 @@ class LoginEvent(db.Model):
     __tablename__ = 'login_events'
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), nullable=False)
+    user_type = db.Column(db.String(20), nullable=False)  # 'gerente' ou 'prestador'
     login_time = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
     logout_time = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
@@ -165,6 +166,36 @@ def carregar_prestadores():
         logger.error(f"Erro ao carregar prestadores: {e}")
         return []
 
+def carregar_os_prestadores():
+    """Conta OSs pendentes por prestador a partir dos arquivos em mensagens_por_prestador."""
+    prestadores = carregar_prestadores()
+    os_por_prestador = {}
+    
+    for prestador in prestadores:
+        usuario = prestador.get('usuario', '').lower()
+        arquivo_os = prestador.get('arquivo_os', '')
+        caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, arquivo_os)
+        
+        if not os.path.exists(caminho):
+            logger.warning(f"Arquivo de OS não encontrado para {usuario}: {caminho}")
+            os_por_prestador[usuario] = 0
+            continue
+        
+        try:
+            with open(caminho, 'r', encoding='utf-8') as f:
+                os_list = json.load(f)
+            os_por_prestador[usuario] = len(os_list)
+        except json.JSONDecodeError as e:
+            logger.error(f"Erro ao decodificar {caminho}: {e}")
+            os_por_prestador[usuario] = 0
+        except Exception as e:
+            logger.error(f"Erro ao carregar OS para {usuario}: {e}")
+            os_por_prestador[usuario] = 0
+    
+    # Ordena por número de OSs (decrescente)
+    ranking = sorted(os_por_prestador.items(), key=lambda x: x[1], reverse=True)
+    return ranking
+
 # --- Rotas ---
 @app.route('/')
 def index():
@@ -180,7 +211,7 @@ def login():
         # Tenta autenticar como gerente
         user = User.query.filter_by(username=username).first()
         if user and user.password == senha:
-            ev = LoginEvent(username=username)
+            ev = LoginEvent(username=username, user_type='gerente')
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
@@ -198,6 +229,10 @@ def login():
 
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
+            ev = LoginEvent(username=username, user_type='prestador')
+            db.session.add(ev)
+            db.session.commit()
+            session['login_event_id'] = ev.id
             session['prestador'] = prestador['usuario']
             session['prestador_nome'] = prestador.get('nome_exibicao', username)
             logger.info(f"Login bem-sucedido para prestador: {username}")
@@ -319,9 +354,8 @@ def admin_panel():
     gerentes = [u.username for u in users]
     contagem = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
     abertas = {g: len(carregar_os_gerente(g)) for g in gerentes}
-
-    # Cria o ranking ordenado por quantidade de OS abertas (decrescente)
     ranking_os_abertas = sorted(abertas.items(), key=lambda x: x[1], reverse=True)
+    ranking_os_prestadores = carregar_os_prestadores()
 
     return render_template('admin.html',
                          finalizadas=finalizadas,
@@ -330,6 +364,7 @@ def admin_panel():
                          contagem_gerentes=contagem,
                          os_abertas=abertas,
                          ranking_os_abertas=ranking_os_abertas,
+                         ranking_os_prestadores=ranking_os_prestadores,
                          login_events=login_events,
                          now=datetime.utcnow())
 
