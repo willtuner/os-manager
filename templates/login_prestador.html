@@ -26,11 +26,11 @@
                     
                     <form method="POST" action="{{ url_for('login_prestador') }}">
                         <div class="mb-3">
-                            <label for="prestador_key" class="form-label">
-                                <i class="fas fa-user-tag"></i> Código do Prestador
+                            <label for="usuario" class="form-label">
+                                <i class="fas fa-user-tag"></i> Usuário
                             </label>
-                            <input type="text" class="form-control" id="prestador_key" 
-                                   name="prestador_key" required>
+                            <input type="text" class="form-control" id="usuario" 
+                                   name="usuario" required>
                         </div>
                         <div class="mb-3">
                             <label for="senha" class="form-label">
@@ -48,6 +48,9 @@
                     <small class="text-muted">
                         Sistema de Gestão de OS - Suco Prats
                     </small>
+                    <p class="mt-2">
+                        <a href="{{ url_for('login') }}">↩ Voltar para login de gerente</a>
+                    </p>
                 </div>
             </div>
         </div>
