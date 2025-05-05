@@ -44,20 +44,46 @@ os.makedirs(PRESTADORES_DIR, exist_ok=True)
 def init_db():
     with app.app_context():
         db.create_all()
-        if User.query.count() == 0 and os.path.exists(USERS_FILE):
-            with open(USERS_FILE, encoding='utf-8') as f:
-                users_data = json.load(f)
-            for username, password in users_data.items():
-                db.session.add(User(
-                    username=username.lower(),
-                    password=password,
-                    is_admin=(username.lower() == 'wilson.santana')
-                ))
-            db.session.commit()
+        if User.query.count() == 0:
+            try:
+                if os.path.exists(USERS_FILE):
+                    print(f"[INIT] Inicializando banco de dados a partir de {USERS_FILE}")
+                    with open(USERS_FILE, encoding='utf-8') as f:
+                        users_data = json.load(f)
+                    
+                    print(f"[INIT] {len(users_data)} usuários encontrados no arquivo")
+                    
+                    for username, password in users_data.items():
+                        username_lower = username.lower()
+                        if not User.query.filter_by(username=username_lower).first():
+                            new_user = User(
+                                username=username_lower,
+                                password=password.strip(),
+                                is_admin=(username_lower == 'wilson.santana')
+                            )
+                            db.session.add(new_user)
+                            print(f"[INIT] Usuário cadastrado: {username_lower}")
+                    
+                    db.session.commit()
+                    print("[INIT] Banco de dados inicializado com sucesso!")
+                else:
+                    print(f"[ERRO] Arquivo {USERS_FILE} não encontrado!")
+                    # Cria um usuário padrão se o arquivo não existir
+                    if not User.query.filter_by(username='admin').first():
+                        db.session.add(User(
+                            username='admin',
+                            password='admin',
+                            is_admin=True
+                        ))
+                        db.session.commit()
+                        print("[INIT] Usuário admin padrão criado")
+            except Exception as e:
+                print(f"[ERRO CRÍTICO] Falha ao inicializar banco: {str(e)}")
+                db.session.rollback()
 
 def carregar_os(dirpath, identifier):
     """Carrega OS com tratamento robusto para diferentes formatos"""
-    print(f"\n[DEBUG] Buscando OS para '{identifier}' em {dirpath}")
+    print(f"\n[OS] Buscando para '{identifier}' em {dirpath}")
     data = []
     
     # Para gerentes (formato NOME_SOBRENOME.json)
@@ -66,22 +92,26 @@ def carregar_os(dirpath, identifier):
         filepath = os.path.join(dirpath, filename)
         
         if os.path.exists(filepath):
-            print(f"[DEBUG] Tentando ler: {filepath}")
+            print(f"[OS] Lendo arquivo de gerente: {filename}")
             try:
                 with open(filepath, 'r', encoding='utf-8') as f:
                     content = json.load(f)
                     data.extend(content if isinstance(content, list) else [content])
             except Exception as e:
                 print(f"[ERRO] Falha ao ler {filename}: {str(e)}")
+        else:
+            print(f"[OS] Arquivo não encontrado: {filepath}")
     
     # Para prestadores (formato OS_NOME*.json)
     else:
         search_parts = identifier.replace('.', ' ').lower().split()
+        print(f"[OS] Buscando arquivos que contenham: {search_parts}")
         
         for filename in os.listdir(dirpath):
             if filename.lower().startswith('os_') and filename.lower().endswith('.json'):
                 if all(part in filename.lower() for part in search_parts):
                     filepath = os.path.join(dirpath, filename)
+                    print(f"[OS] Arquivo candidato: {filename}")
                     try:
                         with open(filepath, 'r', encoding='utf-8') as f:
                             content = json.load(f)
@@ -92,13 +122,17 @@ def carregar_os(dirpath, identifier):
                     except Exception as e:
                         print(f"[ERRO] Falha ao ler {filename}: {str(e)}")
 
-    print(f"[DEBUG] Total de OS carregadas: {len(data)}")
+    print(f"[OS] Total de OS carregadas: {len(data)}")
     return data
 
 def processar_os_items(items):
     """Processa itens de OS com tratamento robusto"""
     resultado = []
     hoje = datetime.utcnow().date()
+    
+    if not items:
+        print("[OS] Nenhum item recebido para processar")
+        return resultado
     
     for item in items:
         try:
@@ -145,25 +179,43 @@ def login():
         username = request.form.get('username', '').strip().lower()
         password = request.form.get('password', '').strip()
         
+        print(f"\n[LOGIN] Tentativa de acesso: {username}")
+        print(f"[LOGIN] Verificando usuário no banco...")
+        
         user = User.query.filter_by(username=username).first()
-        if user and user.password == password:
-            session['user'] = username
-            session['type'] = 'gerente' if '.' in username else 'prestador'
-            return redirect(url_for('painel_gerente' if session['type'] == 'gerente' else 'painel_prestador'))
+        
+        if user:
+            print(f"[LOGIN] Usuário encontrado. Verificando senha...")
+            print(f"[DEBUG] Senha fornecida: '{password}'")
+            print(f"[DEBUG] Senha armazenada: '{user.password}'")
+            
+            if user.password == password:
+                session['user'] = user.username
+                session['type'] = 'gerente' if '.' in user.username else 'prestador'
+                print(f"[LOGIN] Acesso concedido! Tipo: {session['type']}")
+                return redirect(url_for('painel_gerente' if session['type'] == 'gerente' else 'painel_prestador'))
+            else:
+                print("[LOGIN] Senha incorreta!")
+        else:
+            print("[LOGIN] Usuário não encontrado!")
         
         flash('Credenciais inválidas', 'danger')
     return render_template('login.html')
 
 @app.route('/painel_gerente')
 def painel_gerente():
-    if session.get('type') != 'gerente':
+    if 'user' not in session or session.get('type') != 'gerente':
+        flash('Acesso não autorizado', 'danger')
         return redirect(url_for('login'))
     
     user_id = session['user']
+    print(f"\n[PAINEL] Carregando painel para gerente: {user_id}")
+    
     os_items = carregar_os(GERENTES_DIR, user_id)
     
     # Fallback: se não encontrou como gerente, tenta como prestador
     if not os_items:
+        print("[PAINEL] Nenhuma OS encontrada como gerente, tentando como prestador")
         os_items = carregar_os(PRESTADORES_DIR, user_id)
     
     pendentes = processar_os_items(os_items)
@@ -173,18 +225,19 @@ def painel_gerente():
 
 @app.route('/painel_prestador')
 def painel_prestador():
-    if session.get('type') != 'prestador':
+    if 'user' not in session or session.get('type') != 'prestador':
+        flash('Acesso não autorizado', 'danger')
         return redirect(url_for('login'))
     
     prestador_id = session['user']
+    print(f"\n[PAINEL] Carregando painel para prestador: {prestador_id}")
+    
     os_items = carregar_os(PRESTADORES_DIR, prestador_id)
     pendentes = processar_os_items(os_items)
     
     if not pendentes:
-        print(f"[DEBUG] Nenhuma OS encontrada para {prestador_id}. Verifique:")
-        print(f"1. Arquivo existe em {PRESTADORES_DIR}?")
-        print(f"2. Nome do arquivo contém partes de '{prestador_id}'?")
-        print("3. Estrutura do JSON está correta?")
+        print(f"[PAINEL] Nenhuma OS encontrada para {prestador_id}")
+        print(f"[DEBUG] Conteúdo de {PRESTADORES_DIR}: {os.listdir(PRESTADORES_DIR)}")
     
     return render_template('painel_prestador.html',
                          os_pendentes=pendentes,
@@ -193,6 +246,7 @@ def painel_prestador():
 @app.route('/finalizar/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
     if 'user' not in session:
+        flash('Sessão expirada', 'danger')
         return redirect(url_for('login'))
     
     dados = {
@@ -220,6 +274,20 @@ def logout():
     return redirect(url_for('login'))
 
 # --- Rotas de diagnóstico ---
+@app.route('/debug/users')
+def debug_users():
+    users = User.query.all()
+    users_data = [{
+        'username': u.username, 
+        'password': u.password, 
+        'is_admin': u.is_admin
+    } for u in users]
+    return jsonify({
+        'count': len(users_data),
+        'users': users_data,
+        'db_path': os.path.abspath(os.path.join(BASE_DIR, 'app.db'))
+    })
+
 @app.route('/debug/dir/<tipo>')
 def debug_dir(tipo):
     dirpath = GERENTES_DIR if tipo == 'gerente' else PRESTADORES_DIR
@@ -229,25 +297,9 @@ def debug_dir(tipo):
         'caminho_absoluto': os.path.abspath(dirpath)
     })
 
-@app.route('/debug/user/<username>')
-def debug_user(username):
-    tipo = 'gerente' if '.' in username else 'prestador'
-    dirpath = GERENTES_DIR if tipo == 'gerente' else PRESTADORES_DIR
-    os_items = carregar_os(dirpath, username)
-    
-    return jsonify({
-        'username': username,
-        'type': tipo,
-        'dir': dirpath,
-        'arquivos_encontrados': [f for f in os.listdir(dirpath) 
-                                if all(p in f.lower() 
-                                     for p in username.replace('.', ' ').lower().split())],
-        'os_carregadas': len(os_items),
-        'os_processadas': len(processar_os_items(os_items))
-    })
-
 # --- Inicialização ---
-init_db()
-
 if __name__ == '__main__':
+    init_db()
+    print("\n[INIT] Aplicação iniciada com sucesso!")
+    print(f"[INIT] Modo debug: {'ON' if app.debug else 'OFF'}")
     app.run(debug=True)
