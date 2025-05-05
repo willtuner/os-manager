@@ -1,0 +1,154 @@
+[
+  {
+    "frota": "5128",
+    "cd_equipamento": "5128",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "109771",
+    "data_entrada": "01/05/2025",
+    "servico": "Corrigir vazamento de óleo na bomba de pulverização.\nFazenda Nova Manhã\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "109766",
+    "data_entrada": "01/05/2025",
+    "servico": "Verificar coroas de transmissão danificadas, avaliar a corrente e demais engrenagens.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5613",
+    "cd_equipamento": "5613",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "109759",
+    "data_entrada": "01/05/2025",
+    "servico": "Verificar barulho anormal na traseira do equipamento, avaliar rolamentos e correias.\nFazenda Severino\nSolicitado Sr. Márcio\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5352",
+    "cd_equipamento": "5352",
+    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
+    "os": "109739",
+    "data_entrada": "30/04/2025",
+    "servico": "Rosca do vagão travada - (Pecuaria)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5491",
+    "cd_equipamento": "5491",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "109638",
+    "data_entrada": "29/04/2025",
+    "servico": "Inspecionar ruído anormal na região traseira do tanque, possivelmente proveniente dos rolamentos, embora a origem exata ainda não tenha sido identificada - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5202",
+    "cd_equipamento": "5202",
+    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
+    "os": "109447",
+    "data_entrada": "25/04/2025",
+    "servico": "Rolamento da roda L/E estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5165",
+    "cd_equipamento": "5165",
+    "modelo": "ROCADEIRA TATU",
+    "os": "109411",
+    "data_entrada": "25/04/2025",
+    "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5138",
+    "cd_equipamento": "5138",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "109355",
+    "data_entrada": "24/04/2025",
+    "servico": "Instalar caixa incorporadora e corote de água - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "108202",
+    "data_entrada": "03/04/2025",
+    "servico": "Substituir bomba de pulverização com vazamento por outra reserva revisada.\nFazenda Estrela\nSolicitado Sr. Carlos\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5623",
+    "cd_equipamento": "5623",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "108694",
+    "data_entrada": "31/03/2025",
+    "servico": "Verificar vazamento de óleo na junta inferior do multiplicador esquerdo.\nFazenda Terra Branca\nSolicitado Sr. Éder\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5629",
+    "cd_equipamento": "5629",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "107660",
+    "data_entrada": "24/03/2025",
+    "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "107272",
+    "data_entrada": "18/03/2025",
+    "servico": "Verificar vazamento de óleo no retentor do virabrequim da bomba.\nFazenda Estrela\nSolicitado Sr. Carlos\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5366",
+    "cd_equipamento": "5366",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "106861",
+    "data_entrada": "11/03/2025",
+    "servico": "Vazamento nas canecas da bomba - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5227",
+    "cd_equipamento": "5227",
+    "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
+    "os": "106583",
+    "data_entrada": "05/03/2025",
+    "servico": "Quebra do suporte dos fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5366",
+    "cd_equipamento": "5366",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "106206",
+    "data_entrada": "26/02/2025",
+    "servico": "Vazamento na graxeta - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5130",
+    "cd_equipamento": "5130",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "105884",
+    "data_entrada": "19/02/2025",
+    "servico": "Trocar as luvas que engata no multiplicador - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5290",
+    "cd_equipamento": "5290",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "105867",
+    "data_entrada": "19/02/2025",
+    "servico": "Verificar jogo no rolamento do eixo - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5545",
+    "cd_equipamento": "5545",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "105826",
+    "data_entrada": "18/02/2025",
+    "servico": "Verificar equipamento sem freio traseiro - (Pecuaria)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5522",
+    "cd_equipamento": "5522",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "105991",
+    "data_entrada": "17/02/2025",
+    "servico": "Fazer montagem da bomba  de pulverização e realizar a ligação das mangueiras, montagem dos cardans, barras e pistões.\nFazenda Santa Izabel (Oficina)\nLiberado Sr. Maurício"
+  }
+]
