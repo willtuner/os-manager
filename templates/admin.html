@@ -34,11 +34,15 @@
       button.addEventListener('click', () => {
         const targetId = button.getAttribute('data-target');
         const rows = document.getElementById(targetId);
-        const isHidden = rows.classList.contains('hidden-rows');
-        rows.classList.toggle('hidden-rows', !isHidden);
-        button.innerHTML = isHidden 
-          ? '<i class="fas fa-minus-circle me-1"></i> Ver menos' 
-          : '<i class="fas fa-plus-circle me-1"></i> Ver mais';
+        if (rows) {
+          const isHidden = rows.classList.contains('hidden-rows');
+          rows.classList.toggle('hidden-rows', !isHidden);
+          button.innerHTML = isHidden 
+            ? '<i class="fas fa-minus-circle me-1"></i> Ver menos' 
+            : '<i class="fas fa-plus-circle me-1"></i> Ver mais';
+        } else {
+          console.error(`Elemento com ID ${targetId} não encontrado`);
+        }
       });
     });
   });
@@ -161,10 +165,17 @@
     </div>
   </div>
 
-  <!-- Gerentes & OS -->
+  <!-- Gerentes & OS Pendentes -->
   <div class="card shadow-sm mb-4">
     <div class="card-body">
-      <h4><i class="fas fa-user-tie me-2"></i>Gerentes & OS Pendentes</h4>
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4><i class="fas fa-user-tie me-2"></i>Gerentes & OS Pendentes</h4>
+        {% if gerentes|length > 3 %}
+        <button class="btn btn-sm btn-light toggle-btn" data-target="gerentes-rows">
+          <i class="fas fa-plus-circle me-1"></i> Ver mais
+        </button>
+        {% endif %}
+      </div>
       <div class="table-responsive">
         <table class="table table-hover table-compact">
           <thead class="table-light">
@@ -172,7 +183,7 @@
           </thead>
           <tbody>
             {% for g in gerentes %}
-            <tr>
+            <tr {% if loop.index > 3 %}class="hidden-rows" id="gerentes-rows"{% endif %}>
               <td>{{ g }}</td>
               <td>{{ contagem_gerentes.get(g,0) }}</td>
               <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
@@ -188,8 +199,13 @@
 
   <!-- Histórico de Finalizações -->
   <div class="card shadow-sm mb-4">
-    <div class="card-header bg-dark text-white">
+    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
       <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico OS Finalizadas (Últimas 100)</h4>
+      {% if finalizadas|length > 3 %}
+      <button class="btn btn-sm btn-light toggle-btn" data-target="finalizadas-rows">
+        <i class="fas fa-plus-circle me-1"></i> Ver mais
+      </button>
+      {% endif %}
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -199,7 +215,7 @@
           </thead>
           <tbody>
             {% for os in finalizadas %}
-            <tr>
+            <tr {% if loop.index > 3 %}class="hidden-rows" id="finalizadas-rows"{% endif %}>
               <td>{{ os.os_numero }}</td>
               <td>{{ os.gerente }}</td>
               <td>{{ os.data_fin }}</td>
