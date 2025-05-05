@@ -11,16 +11,18 @@
   .stat-card.warning { background-color: #f39c12; color: white; }
   .stat-card.danger { background-color: #e74c3c; color: white; }
   .badge-os-aberta { background-color: #e74c3c; color: white; }
-  .table-responsive { margin-top: 20px; }
-  .ranking-badge { font-size: 0.9rem; padding: 5px 8px; color: white; border-radius: 5px; }
+  .table-responsive { margin-top: 15px; }
+  .ranking-badge { font-size: 0.85rem; padding: 4px 7px; color: white; border-radius: 5px; }
   .ranking-1 { background-color: #e74c3c; }
   .ranking-2 { background-color: #f39c12; }
   .ranking-3 { background-color: #f1c40f; }
   .ranking-other { background-color: #95a5a6; }
-  .table-compact tbody tr { font-size: 0.9rem; }
-  .table-compact th, .table-compact td { padding: 8px; }
-  .toggle-btn { cursor: pointer; }
+  .table-compact tbody tr { font-size: 0.85rem; }
+  .table-compact th, .table-compact td { padding: 6px; }
+  .toggle-btn { cursor: pointer; font-size: 0.9rem; }
   .hidden-rows { display: none; }
+  .card-header { padding: 10px 15px; }
+  .card-body { padding: 15px; }
 </style>
 {% endblock %}
 
@@ -34,7 +36,9 @@
         const rows = document.getElementById(targetId);
         const isHidden = rows.classList.contains('hidden-rows');
         rows.classList.toggle('hidden-rows', !isHidden);
-        button.innerHTML = isHidden ? '<i class="fas fa-minus-circle me-1"></i> Ver menos' : '<i class="fas fa-plus-circle me-1"></i> Ver mais';
+        button.innerHTML = isHidden 
+          ? '<i class="fas fa-minus-circle me-1"></i> Ver menos' 
+          : '<i class="fas fa-plus-circle me-1"></i> Ver mais';
       });
     });
   });
@@ -79,8 +83,13 @@
 
   <!-- Ranking de OS Abertas (Gerentes) -->
   <div class="card shadow-sm mb-4">
-    <div class="card-header bg-info text-white">
+    <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
       <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking de OS Pendentes (Gerentes)</h4>
+      {% if ranking_os_abertas|length > 3 %}
+      <button class="btn btn-sm btn-light toggle-btn" data-target="gerente-ranking-rows">
+        <i class="fas fa-plus-circle me-1"></i> Ver mais
+      </button>
+      {% endif %}
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -94,7 +103,7 @@
           </thead>
           <tbody>
             {% for gerente, count in ranking_os_abertas %}
-            <tr>
+            <tr {% if loop.index > 3 %}class="hidden-rows" id="gerente-ranking-rows"{% endif %}>
               <td>
                 <span class="badge ranking-badge ranking-{{ loop.index if loop.index <= 3 else 'other' }}">
                   {{ loop.index }}º
@@ -104,8 +113,8 @@
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
             {% else %}
-            <tr><td colspan="3" class="text-center py-4">Nenhuma OS pendente</td></tr>
-            {% endfor %}
+            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+            {% endif %}
           </tbody>
         </table>
       </div>
@@ -114,8 +123,13 @@
 
   <!-- Ranking de OS Abertas (Prestadores) -->
   <div class="card shadow-sm mb-4">
-    <div class="card-header bg-primary text-white">
+    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
       <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking de OS Pendentes (Prestadores)</h4>
+      {% if ranking_os_prestadores|length > 3 %}
+      <button class="btn btn-sm btn-light toggle-btn" data-target="prestador-ranking-rows">
+        <i class="fas fa-plus-circle me-1"></i> Ver mais
+      </button>
+      {% endif %}
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -129,7 +143,7 @@
           </thead>
           <tbody>
             {% for prestador, count in ranking_os_prestadores %}
-            <tr>
+            <tr {% if loop.index > 3 %}class="hidden-rows" id="prestador-ranking-rows"{% endif %}>
               <td>
                 <span class="badge ranking-badge ranking-{{ loop.index if loop.index <= 3 else 'other' }}">
                   {{ loop.index }}º
@@ -139,8 +153,8 @@
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
             {% else %}
-            <tr><td colspan="3" class="text-center py-4">Nenhuma OS pendente</td></tr>
-            {% endfor %}
+            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+            {% endif %}
           </tbody>
         </table>
       </div>
@@ -150,7 +164,7 @@
   <!-- Gerentes & OS -->
   <div class="card shadow-sm mb-4">
     <div class="card-body">
-      <h4><i class="fas fa-user-tie me-2"></i>Gerentes &amp; OS Pendentes</h4>
+      <h4><i class="fas fa-user-tie me-2"></i>Gerentes & OS Pendentes</h4>
       <div class="table-responsive">
         <table class="table table-hover table-compact">
           <thead class="table-light">
@@ -164,8 +178,8 @@
               <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
             </tr>
             {% else %}
-            <tr><td colspan="3" class="text-center py-4">Nenhum gerente com OS registrada</td></tr>
-            {% endfor %}
+            <tr><td colspan="3" class="text-center py-3">Nenhum gerente com OS registrada</td></tr>
+            {% endif %}
           </tbody>
         </table>
       </div>
@@ -193,8 +207,8 @@
               <td>{{ os.observacoes or '-' }}</td>
             </tr>
             {% else %}
-            <tr><td colspan="5" class="text-center py-4">Nenhuma OS finalizada</td></tr>
-            {% endfor %}
+            <tr><td colspan="5" class="text-center py-3">Nenhuma OS finalizada</td></tr>
+            {% endif %}
           </tbody>
         </table>
       </div>
@@ -205,9 +219,11 @@
   <div class="card shadow-sm">
     <div class="card-header bg-secondary text-white d-flex justify-content-between align-items-center">
       <h4 class="mb-0"><i class="fas fa-history me-2"></i>Histórico de Logins (Últimos 50)</h4>
+      {% if login_events|length > 3 %}
       <button class="btn btn-sm btn-light toggle-btn" data-target="login-rows">
         <i class="fas fa-plus-circle me-1"></i> Ver mais
       </button>
+      {% endif %}
     </div>
     <div class="card-body">
       <div class="table-responsive">
@@ -223,7 +239,7 @@
           </thead>
           <tbody>
             {% for ev in login_events %}
-            <tr {% if loop.index > 10 %}class="hidden-rows" id="login-rows"{% endif %}>
+            <tr {% if loop.index > 3 %}class="hidden-rows" id="login-rows"{% endif %}>
               <td>{{ ev.username }}</td>
               <td>{{ ev.user_type.capitalize() }}</td>
               <td>{{ ev.login_time.strftime('%d/%m/%Y %H:%M:%S') }}</td>
@@ -243,8 +259,8 @@
               </td>
             </tr>
             {% else %}
-            <tr><td colspan="5" class="text-center py-4">Nenhum evento de login</td></tr>
-            {% endfor %}
+            <tr><td colspan="5" class="text-center py-3">Nenhum evento de login</td></tr>
+            {% endif %}
           </tbody>
         </table>
       </div>
