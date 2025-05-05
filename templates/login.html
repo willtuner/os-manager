@@ -24,26 +24,30 @@
         
         <div class="card login-card">
             <div class="card-body p-4">
-                {% if erro %}
-                <div class="alert alert-danger alert-dismissible fade show">
-                    {{ erro }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                </div>
-                {% endif %}
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                        <div class="alert alert-{{ 'danger' if category == 'danger' else 'success' }} alert-dismissible fade show">
+                            {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
                 
-                <form method="POST">
+                <form method="POST" action="{{ url_for('login') }}">
                     <div class="mb-3">
-                        <label for="gerente" class="form-label">
+                        <label for="username" class="form-label">
                             <i class="fas fa-user me-1"></i> Usuário
                         </label>
-                        <input type="text" class="form-control" id="gerente" name="gerente" required>
+                        <input type="text" class="form-control" id="username" name="username" required autofocus>
                     </div>
                     
                     <div class="mb-3">
-                        <label for="senha" class="form-label">
+                        <label for="password" class="form-label">
                             <i class="fas fa-lock me-1"></i> Senha
                         </label>
-                        <input type="password" class="form-control" id="senha" name="senha" required>
+                        <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                     
                     <button type="submit" class="btn btn-prats w-100 py-2">
