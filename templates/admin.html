@@ -107,35 +107,21 @@
           </thead>
           <tbody>
             {% set rank = 1 %}
-            {% for gerente, count in ranking_os_abertas[:3] %}
+            {% for gerente, count in ranking_os_abertas %}
             <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ rank }}">
+                <span class="badge ranking-badge {% if rank == 1 %}ranking-1{% elif rank == 2 %}ranking-2{% elif rank == 3 %}ranking-3{% else %}ranking-other{% endif %}">
                   {{ rank }}º
                 </span>
               </td>
               <td>{{ gerente|capitalize_name }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
+            {% if not loop.last %}
             {% set rank = rank + 1 %}
+            {% endif %}
             {% endfor %}
           </tbody>
-          {% if ranking_os_abertas|length > 3 %}
-          <tbody class="hidden-rows" id="gerente-ranking-rows">
-            {% for gerente, count in ranking_os_abertas[3:] %}
-            <tr>
-              <td>
-                <span class="badge ranking-badge ranking-other">
-                  {{ rank }}º
-                </span>
-              </td>
-              <td>{{ gerente|capitalize_name }}</td>
-              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-            </tr>
-            {% set rank = rank + 1 %}
-            {% endfor %}
-          </tbody>
-          {% endif %}
           {% if not ranking_os_abertas %}
           <tbody>
             <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
@@ -168,35 +154,21 @@
           </thead>
           <tbody>
             {% set rank = 1 %}
-            {% for prestador, count in ranking_os_prestadores[:3] %}
+            {% for prestador, count in ranking_os_prestadores %}
             <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ rank }}">
+                <span class="badge ranking-badge {% if rank == 1 %}ranking-1{% elif rank == 2 %}ranking-2{% elif rank == 3 %}ranking-3{% else %}ranking-other{% endif %}">
                   {{ rank }}º
                 </span>
               </td>
               <td>{{ prestador|capitalize_name }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
+            {% if not loop.last %}
             {% set rank = rank + 1 %}
+            {% endif %}
             {% endfor %}
           </tbody>
-          {% if ranking_os_prestadores|length > 3 %}
-          <tbody class="hidden-rows" id="prestador-ranking-rows">
-            {% for prestador, count in ranking_os_prestadores[3:] %}
-            <tr>
-              <td>
-                <span class="badge ranking-badge ranking-other">
-                  {{ rank }}º
-                </span>
-              </td>
-              <td>{{ prestador|capitalize_name }}</td>
-              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-            </tr>
-            {% set rank = rank + 1 %}
-            {% endfor %}
-          </tbody>
-          {% endif %}
           {% if not ranking_os_prestadores %}
           <tbody>
             <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
