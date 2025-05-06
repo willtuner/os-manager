@@ -2,6 +2,7 @@ import os
 import json
 import logging
 from datetime import datetime
+import pytz
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
 from fpdf import FPDF
@@ -25,6 +26,9 @@ app.config.update(
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
 db = SQLAlchemy(app)
+
+# --- Fuso horário de São Paulo ---
+saopaulo_tz = pytz.timezone('America/Sao_Paulo')
 
 # --- Filtro personalizado para capitalizar nomes ---
 def capitalize_name(name):
@@ -51,14 +55,14 @@ class Finalizacao(db.Model):
     data_fin = db.Column(db.String(10), nullable=False)
     hora_fin = db.Column(db.String(5), nullable=False)
     observacoes = db.Column(db.Text)
-    registrado_em = db.Column(db.DateTime, default=datetime.utcnow)
+    registrado_em = db.Column(db.DateTime, default=lambda: saopaulo_tz.localize(datetime.now()))
 
 class LoginEvent(db.Model):
     __tablename__ = 'login_events'
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), nullable=False)
     user_type = db.Column(db.String(20), nullable=False)
-    login_time = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+    login_time = db.Column(db.DateTime, default=lambda: saopaulo_tz.localize(datetime.now()), nullable=False)
     logout_time = db.Column(db.DateTime)
     duration_secs = db.Column(db.Integer)
 
@@ -145,7 +149,7 @@ def carregar_os_gerente(gerente):
         dados = json.load(f)
 
     resultado = []
-    hoje = datetime.utcnow().date()
+    hoje = saopaulo_tz.localize(datetime.now()).date()
     for item in dados:
         # extrai a string de data de abertura
         data_str = item.get("data") or item.get("Data") or ""
@@ -286,7 +290,7 @@ def painel():
                          os_pendentes=pend,
                          finalizadas=finalizadas,
                          gerente=session['gerente'],
-                         now=datetime.utcnow())
+                         now=saopaulo_tz.localize(datetime.now()))
 
 @app.route('/painel_prestador')
 def painel_prestador():
@@ -399,7 +403,7 @@ def admin_panel():
                          ranking_os_abertas=ranking_os_abertas,
                          ranking_os_prestadores=ranking_os_prestadores,
                          login_events=login_events,
-                         now=datetime.utcnow())
+                         now=saopaulo_tz.localize(datetime.now()))
 
 @app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():
@@ -432,7 +436,7 @@ def exportar_os_finalizadas():
     pdf.output(pdf_path)
     return send_file(pdf_path,
                    as_attachment=True,
-                   download_name=f'relatorio_{datetime.utcnow():%Y%m%d}.pdf',
+                   download_name=f'relatorio_{saopaulo_tz.localize(datetime.now()):%Y%m%d}.pdf',
                    mimetype='application/pdf')
 
 @app.route('/logout')
@@ -441,7 +445,7 @@ def logout():
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
         if ev:
-            ev.logout_time = datetime.utcnow()
+            ev.logout_time = saopaulo_tz.localize(datetime.now())
             ev.duration_secs = int((ev.logout_time - ev.login_time).total_seconds())
             db.session.commit()
     session.clear()
