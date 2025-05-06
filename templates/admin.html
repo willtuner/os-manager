@@ -109,8 +109,8 @@
             {% for gerente, count in ranking_os_abertas[:3] %}
             <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ loop.index + 1 }}">
-                  {{ loop.index + 1 }}º
+                <span class="badge ranking-badge ranking-{{ loop.index0 + 1 }}">
+                  {{ loop.index0 + 1 }}º
                 </span>
               </td>
               <td>{{ gerente }}</td>
@@ -124,7 +124,7 @@
             <tr>
               <td>
                 <span class="badge ranking-badge ranking-other">
-                  {{ loop.index + 4 }}º
+                  {{ loop.index0 + 4 }}º
                 </span>
               </td>
               <td>{{ gerente }}</td>
@@ -167,8 +167,8 @@
             {% for prestador, count in ranking_os_prestadores[:3] %}
             <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ loop.index + 1 }}">
-                  {{ loop.index + 1 }}º
+                <span class="badge ranking-badge ranking-{{ loop.index0 + 1 }}">
+                  {{ loop.index0 + 1 }}º
                 </span>
               </td>
               <td>{{ prestador }}</td>
@@ -182,7 +182,7 @@
             <tr>
               <td>
                 <span class="badge ranking-badge ranking-other">
-                  {{ loop.index + 4 }}º
+                  {{ loop.index0 + 4 }}º
                 </span>
               </td>
               <td>{{ prestador }}</td>
