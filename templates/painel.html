@@ -2,95 +2,286 @@
 
 {% block title %}Painel de OS – {{ gerente }}{% endblock %}
 
+{% block extra_css %}
+<style>
+  /* Estilo geral */
+  .card-os {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border: none;
+  }
+  .card-os:hover {
+    transform: translateY(-5px);
+  }
+  .card-header {
+    background: linear-gradient(135deg, var(--verde-prats), #1e5a23);
+    color: white;
+    border-radius: 12px 12px 0 0;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-body {
+    padding: 20px;
+    background: #fff;
+  }
+  .badge-dias {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+  .table-modern {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  .table-modern th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  .table-modern td {
+    vertical-align: middle;
+    font-size: 0.95rem;
+  }
+  .table-modern tr:hover {
+    background: #f1f3f5;
+  }
+  .form-control-sm {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+  }
+  .form-control-sm:focus {
+    border-color: var(--verde-prats);
+    box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+  }
+  .btn-prats {
+    background-color: var(--verde-prats);
+    border-color: var(--verde-prats);
+    color: white;
+    transition: background-color 0.3s;
+  }
+  .btn-prats:hover {
+    background-color: #1e5a23;
+  }
+
+  /* Filtro da tabela */
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  .filter-container input {
+    max-width: 300px;
+  }
+
+  /* Toast */
+  .toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+  }
+
+  /* Responsividade */
+  @media (max-width: 576px) {
+    .card-body {
+      padding: 15px;
+    }
+    .row.g-2 {
+      flex-direction: column;
+    }
+    .row.g-2 > div {
+      width: 100%;
+    }
+    .table-modern {
+      font-size: 0.85rem;
+    }
+    .card-header h5 {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Toggle para expandir/recolher cards
+    const headers = document.querySelectorAll('.card-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const body = header.nextElementSibling;
+        body.classList.toggle('d-none');
+        const icon = header.querySelector('.toggle-icon');
+        icon.classList.toggle('fa-chevron-down');
+        icon.classList.toggle('fa-chevron-up');
+      });
+    });
+
+    // Validação de formulários
+    const forms = document.querySelectorAll('.needs-validation');
+    forms.forEach(form => {
+      form.addEventListener('submit', e => {
+        if (!form.checkValidity()) {
+          e.preventDefault();
+          e.stopPropagation();
+        } else {
+          // Mostrar toast de sucesso (simulado, já que o flash é tratado no servidor)
+          const toast = document.createElement('div');
+          toast.className = 'toast align-items-center text-white bg-success border-0';
+          toast.setAttribute('role', 'alert');
+          toast.setAttribute('aria-live', 'assertive');
+          toast.setAttribute('aria-atomic', 'true');
+          toast.innerHTML = `
+            <div class="d-flex">
+              <div class="toast-body">
+                OS finalizada com sucesso!
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+          `;
+          document.querySelector('.toast-container').appendChild(toast);
+          const bsToast = new bootstrap.Toast(toast);
+          bsToast.show();
+        }
+        form.classList.add('was-validated');
+      });
+    });
+
+    // Filtro para tabela de histórico
+    const filterInput = document.querySelector('#filter-os');
+    const tableRows = document.querySelectorAll('.table-modern tbody tr');
+    filterInput.addEventListener('input', () => {
+      const filter = filterInput.value.toLowerCase();
+      tableRows.forEach(row => {
+        const osNumber = row.cells[0].textContent.toLowerCase();
+        const observacoes = row.cells[3].textContent.toLowerCase();
+        row.style.display = (osNumber.includes(filter) || observacoes.includes(filter)) ? '' : 'none';
+      });
+    });
+  });
+</script>
+{% endblock %}
+
 {% block content %}
-  <div class="row mb-4">
-    <div class="col">
-      <h2 class="h4">
+<div class="container py-4">
+  <!-- Toast container -->
+  <div class="toast-container"></div>
+
+  <!-- Cabeçalho -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h2 class="h4 mb-1">
         <i class="fas fa-tools text-success me-2"></i> Ordens de Serviço em Aberto
       </h2>
-      <p class="text-muted mb-0">Gerente: <strong>{{ gerente }}</strong></p>
+      <p class="text-muted mb-0">Gerente: <strong>{{ gerente|capitalize_name }}</strong></p>
     </div>
     {% if session.get('is_admin') %}
-    <div class="col-auto">
-      <a href="{{ url_for('admin_panel') }}" class="btn btn-warning btn-sm">
-        <i class="fas fa-cog me-1"></i> Painel Admin
-      </a>
-    </div>
+    <a href="{{ url_for('admin_panel') }}" class="btn btn-prats btn-sm">
+      <i class="fas fa-cog me-1"></i> Painel Admin
+    </a>
     {% endif %}
   </div>
 
+  <!-- OS Pendentes -->
   {% if os_pendentes %}
     {% for os in os_pendentes %}
-    <form action="{{ url_for('finalizar_os', os_numero=os.os) }}"
-          method="POST"
-          class="card card-os mb-3">
-      <div class="card-body">
-        <div class="d-flex justify-content-between mb-2">
-          <h5 class="mb-0">
-            <span class="badge bg-secondary me-2">OS {{ os.os }}</span>
-            Frota {{ os.frota }}
-          </h5>
+    <div class="card card-os mb-3">
+      <div class="card-header">
+        <h5 class="mb-0">
+          <span class="badge bg-secondary me-2">OS {{ os.os }}</span>
+          Frota {{ os.frota }}
+        </h5>
+        <div>
           <span class="badge-dias
             {% if os.dias|int > 30 %}bg-danger
             {% elif os.dias|int > 15 %}bg-warning text-dark
-            {% else %}bg-info{% endif %}">
+            {% else %}bg-info{% endif %} me-2">
             {{ os.dias }} dia{{ 's' if os.dias|int != 1 else '' }}
           </span>
-        </div>
-
-        <small class="text-muted d-block mb-1">
-          <i class="far fa-calendar-alt me-1"></i> Aberta em: {{ os.data }}
-        </small>
-        <small class="text-muted d-block mb-3">
-          <i class="fas fa-user-hard-hat me-1"></i>
-          Prestador: {{ os.prestador if os.prestador!="Prestador não definido" else "Não definido" }}
-        </small>
-
-        <p class="card-text mb-3">
-          <i class="fas fa-tools me-1 text-muted"></i>{{ os.servico }}
-        </p>
-
-        <div class="row g-2 mb-2">
-          <div class="col-md-4">
-            <input type="date" name="data_finalizacao"
-                   class="form-control form-control-sm" required>
-          </div>
-          <div class="col-md-4">
-            <input type="time" name="hora_finalizacao"
-                   class="form-control form-control-sm" required>
-          </div>
-          <div class="col-md-4 d-flex align-items-end">
-            <button type="submit" class="btn btn-success btn-sm w-100">
-              <i class="fas fa-check-circle me-1"></i> Finalizar
-            </button>
-          </div>
-        </div>
-
-        <div class="mb-2">
-          <textarea name="observacoes"
-                    class="form-control form-control-sm"
-                    rows="2"
-                    placeholder="Observações (opcional)"></textarea>
+          <i class="fas fa-chevron-down toggle-icon"></i>
         </div>
       </div>
-    </form>
+      <div class="card-body">
+        <form action="{{ url_for('finalizar_os', os_numero=os.os) }}"
+              method="POST"
+              class="needs-validation"
+              novalidate>
+          <div class="mb-3">
+            <small class="text-muted d-block mb-1">
+              <i class="far fa-calendar-alt me-1"></i> Aberta em: {{ os.data }}
+            </small>
+            <small class="text-muted d-block mb-2">
+              <i class="fas fa-user-hard-hat me-1"></i>
+              Prestador: {{ os.prestador if os.prestador != "Prestador não definido" else "Não definido" }}
+            </small>
+            <p class="card-text mb-0">
+              <i class="fas fa-tools me-1 text-muted"></i> {{ os.servico }}
+            </p>
+          </div>
+          <div class="row g-2 mb-3">
+            <div class="col-md-4">
+              <label for="data_finalizacao_{{ os.os }}" class="form-label small">Data de Finalização</label>
+              <input type="date" id="data_finalizacao_{{ os.os }}"
+                     name="data_finalizacao"
+                     class="form-control form-control-sm"
+                     required
+                     data-bs-toggle="tooltip"
+                     title="Selecione a data de finalização da OS">
+              <div class="invalid-feedback">Por favor, informe a data.</div>
+            </div>
+            <div class="col-md-4">
+              <label for="hora_finalizacao_{{ os.os }}" class="form-label small">Hora</label>
+              <input type="time" id="hora_finalizacao_{{ os.os }}"
+                     name="hora_finalizacao"
+                     class="form-control form-control-sm"
+                     required
+                     data-bs-toggle="tooltip"
+                     title="Selecione a hora de finalização">
+              <div class="invalid-feedback">Por favor, informe a hora.</div>
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+              <button type="submit" class="btn btn-prats btn-sm w-100">
+                <i class="fas fa-check-circle me-1"></i> Finalizar
+              </button>
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="observacoes_{{ os.os }}" class="form-label small">Observações (opcional)</label>
+            <textarea id="observacoes_{{ os.os }}"
+                      name="observacoes"
+                      class="form-control form-control-sm"
+                      rows="3"
+                      placeholder="Digite suas observações aqui"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
     {% endfor %}
   {% else %}
-    <div class="text-center py-5 bg-white rounded">
+    <div class="text-center py-5 bg-white rounded shadow-sm">
       <i class="fas fa-check-circle text-success fa-3x mb-3"></i>
-      <h4 class="text-muted">Nenhuma OS pendente</h4>
+      <h4 class="text-muted">Nenhuma OS Pendente</h4>
       <p>Todas as ordens de serviço estão em dia!</p>
     </div>
   {% endif %}
 
-  <hr class="my-4">
+  <!-- Histórico de OS Finalizadas -->
+  <hr class="my-5">
   <h2 class="h5 mb-3">
-    <i class="fas fa-history me-2"></i> Histórico de OS Finalizadas (Últimas 100)
+    <i class="fas fa-history me-2 text-primary"></i> Histórico de OS Finalizadas (Últimas 100)
   </h2>
 
   {% if finalizadas %}
+    <div class="filter-container">
+      <input type="text" id="filter-os" class="form-control form-control-sm"
+             placeholder="Filtrar por número da OS ou observações...">
+    </div>
     <div class="table-responsive">
-      <table class="table table-sm">
+      <table class="table table-modern table-sm">
         <thead>
           <tr>
             <th>OS</th>
@@ -112,15 +303,19 @@
       </table>
     </div>
   {% else %}
-    <p class="text-muted">Você ainda não finalizou nenhuma OS.</p>
+    <div class="text-center py-4 bg-white rounded shadow-sm">
+      <p class="text-muted">Você ainda não finalizou nenhuma OS.</p>
+    </div>
   {% endif %}
 
+  <!-- Navegação -->
   <div class="d-flex justify-content-between mt-4">
-    <a href="/" class="btn btn-outline-secondary">
+    <a href="/" class="btn btn-outline-secondary btn-sm">
       <i class="fas fa-arrow-left me-1"></i> Voltar
     </a>
-    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
       <i class="fas fa-sign-out-alt me-1"></i> Sair
     </a>
   </div>
+</div>
 {% endblock %}
