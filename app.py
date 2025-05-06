@@ -291,8 +291,14 @@ with app.app_context():
     columns = [col['name'] for col in inspector.get_columns('login_event')]
     if 'user_type' not in columns:
         logger.debug("Adicionando coluna user_type à tabela login_event")
-        db.session.execute(text('ALTER TABLE login_event ADD COLUMN user_type VARCHAR(20) NOT NULL DEFAULT "gerente"'))
+        # Passo 1: Adicionar a coluna como NULLABLE
+        db.session.execute(text('ALTER TABLE login_event ADD COLUMN user_type VARCHAR(20)'))
+        # Passo 2: Atualizar linhas existentes com valor padrão
+        db.session.execute(text('UPDATE login_event SET user_type = \'gerente\' WHERE user_type IS NULL'))
+        # Passo 3: Adicionar restrição NOT NULL
+        db.session.execute(text('ALTER TABLE login_event ALTER COLUMN user_type SET NOT NULL'))
         db.session.commit()
+        logger.debug("Coluna user_type adicionada com sucesso")
     else:
         logger.debug("Coluna user_type já existe em login_events")
 
