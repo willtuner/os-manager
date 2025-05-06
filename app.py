@@ -26,6 +26,15 @@ app.config.update(
 )
 db = SQLAlchemy(app)
 
+# --- Filtro personalizado para capitalizar nomes ---
+def capitalize_name(name):
+    if not name:
+        return name
+    parts = name.replace('.', ' ').split()
+    capitalized_parts = [part.capitalize() for part in parts]
+    return '.'.join(capitalized_parts) if '.' in name else ' '.join(capitalized_parts)
+app.jinja_env.filters['capitalize_name'] = capitalize_name
+
 # --- Models ---
 class User(db.Model):
     __tablename__ = 'users'
