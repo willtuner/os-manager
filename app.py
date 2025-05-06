@@ -39,6 +39,16 @@ def capitalize_name(name):
     return '.'.join(capitalized_parts) if '.' in name else ' '.join(capitalized_parts)
 app.jinja_env.filters['capitalize_name'] = capitalize_name
 
+# --- Helper para formatar datas no horário de São Paulo ---
+def format_datetime(dt):
+    if dt:
+        # Se a data já tiver fuso horário, converte para São Paulo
+        if dt.tzinfo is not None:
+            return dt.astimezone(saopaulo_tz).strftime('%d/%m/%Y %H:%M:%S')
+        # Se não tiver fuso horário, assume que é UTC e converte
+        return saopaulo_tz.localize(dt).strftime('%d/%m/%Y %H:%M:%S')
+    return None
+
 # --- Models ---
 class User(db.Model):
     __tablename__ = 'users'
@@ -387,6 +397,12 @@ def admin_panel():
         return redirect(url_for('login'))
     finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
     login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
+    
+    # Formatar os timestamps para o horário de São Paulo
+    for event in login_events:
+        event.login_time_formatted = format_datetime(event.login_time)
+        event.logout_time_formatted = format_datetime(event.logout_time)
+
     users = User.query.order_by(User.username).all()
     gerentes = [u.username for u in users]
     contagem = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
