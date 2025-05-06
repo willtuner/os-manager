@@ -1,11 +1,19 @@
 [
   {
+    "frota": "5222",
+    "cd_equipamento": "5222",
+    "modelo": "TANQUE DE AGUA 6500L R16 VERM.",
+    "os": "110066",
+    "data_entrada": "06/05/2025",
+    "servico": "Pneu L/E dianteiro furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "69",
     "cd_equipamento": "69",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "109949",
     "data_entrada": "05/05/2025",
-    "servico": "Pneu traseiro furado e com corte lateral, recomendado trocar - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+    "servico": "Pneu traseiro direito furado e com corte lateral, recomendado trocar - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "90",
@@ -14,21 +22,5 @@
     "os": "109935",
     "data_entrada": "05/05/2025",
     "servico": "Pneu dianteiro L/E furado - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109761",
-    "data_entrada": "01/05/2025",
-    "servico": "Consertar pneu dianteiro esquerdo furado.\nFazenda Estrela\nSolicitado Sr. Paulo Comboio\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109666",
-    "data_entrada": "29/04/2025",
-    "servico": "Pneu L/D traseiro - (Fazenda Minuano)\nLiberado Sr. Mauricio"
   }
 ]

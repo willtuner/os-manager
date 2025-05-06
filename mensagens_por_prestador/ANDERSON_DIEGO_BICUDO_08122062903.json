@@ -1,5 +1,61 @@
 [
   {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110057",
+    "data_entrada": "06/05/2025",
+    "servico": "Trocar cabo do acelerador de mão - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "219",
+    "cd_equipamento": "219",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110024",
+    "data_entrada": "06/05/2025",
+    "servico": "Identificado retorno de óleo do motor para o reservatório de aditivo, indicando possível falha na junta do cabeçote, trocador de calor ou sistema de vedação interna. Necessário diagnóstico detalhado para identificar a origem da contaminação e evitar danos ao sistema de arrefecimento - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5262",
+    "cd_equipamento": "5262",
+    "modelo": "MOTOCANA",
+    "os": "109943",
+    "data_entrada": "05/05/2025",
+    "servico": "Furo na mangueira de óleo hidráulico - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "10121",
+    "cd_equipamento": "10121",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109663",
+    "data_entrada": "29/04/2025",
+    "servico": "Revisão parcial - (Fazenda NSA)\nLibertado Sr. Arthur"
+  },
+  {
+    "frota": "86",
+    "cd_equipamento": "86",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "109646",
+    "data_entrada": "29/04/2025",
+    "servico": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "121",
+    "cd_equipamento": "121",
+    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+    "os": "109575",
+    "data_entrada": "28/04/2025",
+    "servico": "Verificar trator sem freio - (Fazenda Alvorada)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "147",
+    "cd_equipamento": "147",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "109543",
+    "data_entrada": "28/04/2025",
+    "servico": "Verificar trinco da porta não funciona - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "223",
     "cd_equipamento": "223",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -14,5 +70,29 @@
     "os": "109357",
     "data_entrada": "24/04/2025",
     "servico": "Remover vazamentos\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
+  },
+  {
+    "frota": "228",
+    "cd_equipamento": "228",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "109169",
+    "data_entrada": "22/04/2025",
+    "servico": "Revisar caixa inversora\nFaz Sâo Severino\nSolicitado Cassio\nAutorizado Arthur"
+  },
+  {
+    "frota": "87",
+    "cd_equipamento": "87",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "108581",
+    "data_entrada": "10/04/2025",
+    "servico": "Avaliar carenagens, trocar banco e avaliar braços do hidráulico tortos - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "95",
+    "cd_equipamento": "95",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "106950",
+    "data_entrada": "11/03/2025",
+    "servico": "REVISÃO DO EQUIPAMENTO - (FAZ NOVA MANHA) LIBERADO ARTHUR"
   }
 ]

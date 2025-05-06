@@ -1,5 +1,69 @@
 [
   {
+    "frota": "5111",
+    "cd_equipamento": "5111",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "109972",
+    "data_entrada": "05/05/2025",
+    "servico": "Fazer chapa para a fixação de proteção do cardam - (Oficina)\nLiberado Sr. Rafael"
+  },
+  {
+    "frota": "85",
+    "cd_equipamento": "85",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "109963",
+    "data_entrada": "05/05/2025",
+    "servico": "Soldar suporte dos farois\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
+  },
+  {
+    "frota": "5117",
+    "cd_equipamento": "5117",
+    "modelo": "ROCADEIRA 3,0 TATU",
+    "os": "109961",
+    "data_entrada": "05/05/2025",
+    "servico": "Fazer solda e reforço em trincas - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5135",
+    "cd_equipamento": "5135",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "109960",
+    "data_entrada": "05/05/2025",
+    "servico": "Fazer solda e reforço - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5129",
+    "cd_equipamento": "5129",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "109959",
+    "data_entrada": "05/05/2025",
+    "servico": "Serpentina sem o bico regulador de pressão; necessário instalar para correto funcionamento do sistema - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5128",
+    "cd_equipamento": "5128",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "109958",
+    "data_entrada": "05/05/2025",
+    "servico": "Serpentina sem o bico regulador de pressão; necessário instalar para correto funcionamento do sistema - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "283",
+    "cd_equipamento": "283",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109931",
+    "data_entrada": "05/05/2025",
+    "servico": "Sacar parafuso do suporte da escada quebrado - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109926",
+    "data_entrada": "02/05/2025",
+    "servico": "Fazer solda e reforço na escada - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5204",
     "cd_equipamento": "5204",
     "modelo": "CARRETINHA DE MADEIRA VERMELHA",
@@ -48,6 +112,14 @@
     "servico": "Soldar manivela de regulagem da vazão do produto - (Fazenda Biscui)\nLiberado Sr. Mauricio"
   },
   {
+    "frota": "68",
+    "cd_equipamento": "68",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "109787",
+    "data_entrada": "02/05/2025",
+    "servico": "Verificar e reparar o suporte do rabicho da máquina, pois foi identificado que um dos parafusos de fixação está espanado - (Pecuaria)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5530",
     "cd_equipamento": "5530",
     "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
@@ -56,12 +128,12 @@
     "servico": "Fazer solda em ambas as caixas de distribuição dos dois pratos.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
   },
   {
-    "frota": "5500",
-    "cd_equipamento": "5500",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "109768",
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109772",
     "data_entrada": "01/05/2025",
-    "servico": "Fazer solda em trinca na estrutura lateral do lado esquerdo.\nFazenda Minuano\nSolicitado Sr. Antônio\nLiberado Sr. Maurício"
+    "servico": "Fazer solda na grade de proteção frontal do capô e recuperar tampa da caixa da bateria.\nFazenda Terra Branca\nSolicitado e liberado Sr. Arthur"
   },
   {
     "frota": "91",
@@ -118,14 +190,6 @@
     "os": "109622",
     "data_entrada": "28/04/2025",
     "servico": "Trocar agulhas, fazer solda em trinca, cabeçalho com desgaste - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109537",
-    "data_entrada": "28/04/2025",
-    "servico": "Fazer solda em suporte da proteção dianteira - (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5786",
@@ -302,13 +366,5 @@
     "os": "104756",
     "data_entrada": "03/02/2025",
     "servico": "Fazer proteção e desamassar suporte do esqui - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5598",
-    "cd_equipamento": "5598",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "104726",
-    "data_entrada": "03/02/2025",
-    "servico": "Fazer suporte para transportar produtos - (Fazenda NSA)\nLiberado Sr. Mauricio"
   }
 ]

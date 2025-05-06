@@ -1,10 +1,42 @@
 [
   {
-    "frota": "5604",
-    "cd_equipamento": "5604",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "108948",
-    "data_entrada": "16/04/2025",
-    "servico": "Frota 5133\nOS 108946\nVerificar possível falha na sucção do produto a partir da caixa incorporadora do tanque - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+    "frota": "5537",
+    "cd_equipamento": "5537",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "109980",
+    "data_entrada": "05/05/2025",
+    "servico": "Substituição do rolamento da roda guia danificado e do eixo com desgaste acentuado. Realizar também a troca do parafuso do suporte das facas, devido a avarias identificadas - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5136",
+    "cd_equipamento": "5136",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "109988",
+    "data_entrada": "05/05/2025",
+    "servico": "Verificar e corrigir vazamento de produto nas cerâmicas da bomba.\nFazenda Pedra Verde\nSolicitado Sr. Cléber\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5117",
+    "cd_equipamento": "5117",
+    "modelo": "ROCADEIRA 3,0 TATU",
+    "os": "109962",
+    "data_entrada": "05/05/2025",
+    "servico": "Vazamento nos retentores dos multiplicadores e no retentor no eixo que segura a falanges - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "109900",
+    "data_entrada": "02/05/2025",
+    "servico": "Substituir bomba de pulverização sem pressão por outra reserva.\nFazenda Bela Manhã\nSolicitado Sr. Zacarias\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5188",
+    "cd_equipamento": "5188",
+    "modelo": "PULVERIZADOR 600 LT MONTANA",
+    "os": "109725",
+    "data_entrada": "30/04/2025",
+    "servico": "Substituir polia do agitador da turbina-hélice, que se encontra quebrada, comprometendo o funcionamento do sistema de agitação da calda. Verificar o estado geral do mecanismo e demais componentes associados - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

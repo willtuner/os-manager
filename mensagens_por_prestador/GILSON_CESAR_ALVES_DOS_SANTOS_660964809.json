@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "109984",
+    "data_entrada": "05/05/2025",
+    "servico": "Fazer solda - (Fazenda São Pedro)\nLiberado Sr. Elismar"
+  },
+  {
     "frota": "5644",
     "cd_equipamento": "5644",
     "modelo": "TRANSBORDO MOD.TC-7000 GTM",
@@ -38,14 +46,6 @@
     "os": "107468",
     "data_entrada": "14/03/2025",
     "servico": "Fabricar uma nova corrente.\nFazenda São Pedro\nSolicitado Sr. Zylton"
-  },
-  {
-    "frota": "5674",
-    "cd_equipamento": "5674",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "105939",
-    "data_entrada": "20/02/2025",
-    "servico": "Quebra do suporte do pistão - (Fazenda Minuano)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5298",

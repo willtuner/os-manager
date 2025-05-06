@@ -1,5 +1,69 @@
 [
   {
+    "frota": "288",
+    "cd_equipamento": "288",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110065",
+    "data_entrada": "06/05/2025",
+    "servico": "Cibié dianteiro lado esquerdo (L/E) da cabine queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "254",
+    "cd_equipamento": "254",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110053",
+    "data_entrada": "06/05/2025",
+    "servico": "Trocar lâmpada do farol queimado - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "118",
+    "cd_equipamento": "118",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "110051",
+    "data_entrada": "06/05/2025",
+    "servico": "Farol L/E queimado - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "144",
+    "cd_equipamento": "144",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "110047",
+    "data_entrada": "06/05/2025",
+    "servico": "Instalar lanternas do alerta quebrada - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "308",
+    "cd_equipamento": "308",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "109957",
+    "data_entrada": "05/05/2025",
+    "servico": "Cibié traseiros queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "109952",
+    "data_entrada": "05/05/2025",
+    "servico": "Verificar acionamento do drash, não aciona um dos lados - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "46",
+    "cd_equipamento": "46",
+    "modelo": "TRATOR JOHN DEERE 5600 4X4",
+    "os": "109944",
+    "data_entrada": "05/05/2025",
+    "servico": "Verificar chicote do alternador em curto - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109942",
+    "data_entrada": "05/05/2025",
+    "servico": "Trocar cibié dianteiro por led - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "96",
     "cd_equipamento": "96",
     "modelo": "TRATOR JOHN DEERE 5065 4X4",
@@ -70,6 +134,14 @@
     "os": "109746",
     "data_entrada": "30/04/2025",
     "servico": "Instalar equipamento de drash - (Oficina)\nLiberado Sr. Zacarias"
+  },
+  {
+    "frota": "77",
+    "cd_equipamento": "77",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "109734",
+    "data_entrada": "30/04/2025",
+    "servico": "Verificar motor de arranque falhando - (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
   },
   {
     "frota": "263",
@@ -214,14 +286,6 @@
     "os": "108472",
     "data_entrada": "09/04/2025",
     "servico": "Verificar chicote eletrico em curto - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "106",
-    "cd_equipamento": "106",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "108207",
-    "data_entrada": "03/04/2025",
-    "servico": "Substituir correia do alternador danificada.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Arthur"
   },
   {
     "frota": "24",
