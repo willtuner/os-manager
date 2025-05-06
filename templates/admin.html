@@ -13,10 +13,10 @@
   .badge-os-aberta { background-color: #e74c3c; color: white; }
   .table-responsive { margin-top: 15px; }
   .ranking-badge { font-size: 0.85rem; padding: 4px 7px; color: white; border-radius: 5px; }
-  .ranking-1 { background-color: #e74c3c; } /* 1º, vermelho */
-  .ranking-2 { background-color: #f39c12; } /* 2º, laranja */
-  .ranking-3 { background-color: #f1c40f; } /* 3º, amarelo */
-  .ranking-other { background-color: #95a5a6; } /* 4º em diante, cinza */
+  .ranking-1 { background-color: #e74c3c; }
+  .ranking-2 { background-color: #f39c12; }
+  .ranking-3 { background-color: #f1c40f; }
+  .ranking-other { background-color: #95a5a6; }
   .table-compact tbody tr { font-size: 0.85rem; }
   .table-compact th, .table-compact td { padding: 6px; }
   .toggle-btn { cursor: pointer; font-size: 0.9rem; }
@@ -106,18 +106,16 @@
             </tr>
           </thead>
           <tbody>
-            {% set rank = 1 %}
             {% for gerente, count in ranking_os_abertas[:3] %}
             <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ rank }}">
-                  {{ rank }}º
+                <span class="badge ranking-badge ranking-{{ loop.index }}">
+                  {{ loop.index + 1 }}º
                 </span>
               </td>
-              <td>{{ gerente|capitalize_name }}</td>
+              <td>{{ gerente }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
-            {% set rank = rank + 1 %}
             {% endfor %}
           </tbody>
           {% if ranking_os_abertas|length > 3 %}
@@ -126,13 +124,12 @@
             <tr>
               <td>
                 <span class="badge ranking-badge ranking-other">
-                  {{ rank }}º
+                  {{ loop.index + 4 }}º
                 </span>
               </td>
-              <td>{{ gerente|capitalize_name }}</td>
+              <td>{{ gerente }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
-            {% set rank = rank + 1 %}
             {% endfor %}
           </tbody>
           {% endif %}
@@ -167,18 +164,16 @@
             </tr>
           </thead>
           <tbody>
-            {% set rank = 1 %}
             {% for prestador, count in ranking_os_prestadores[:3] %}
             <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ rank }}">
-                  {{ rank }}º
+                <span class="badge ranking-badge ranking-{{ loop.index }}">
+                  {{ loop.index + 1 }}º
                 </span>
               </td>
-              <td>{{ prestador|capitalize_name }}</td>
+              <td>{{ prestador }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
-            {% set rank = rank + 1 %}
             {% endfor %}
           </tbody>
           {% if ranking_os_prestadores|length > 3 %}
@@ -187,13 +182,12 @@
             <tr>
               <td>
                 <span class="badge ranking-badge ranking-other">
-                  {{ rank }}º
+                  {{ loop.index + 4 }}º
                 </span>
               </td>
-              <td>{{ prestador|capitalize_name }}</td>
+              <td>{{ prestador }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
             </tr>
-            {% set rank = rank + 1 %}
             {% endfor %}
           </tbody>
           {% endif %}
@@ -226,7 +220,7 @@
           <tbody>
             {% for g in gerentes[:3] %}
             <tr>
-              <td>{{ g|capitalize_name }}</td>
+              <td>{{ g }}</td>
               <td>{{ contagem_gerentes.get(g,0) }}</td>
               <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
             </tr>
@@ -236,7 +230,7 @@
           <tbody class="hidden-rows" id="gerentes-rows">
             {% for g in gerentes[3:] %}
             <tr>
-              <td>{{ g|capitalize_name }}</td>
+              <td>{{ g }}</td>
               <td>{{ contagem_gerentes.get(g,0) }}</td>
               <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
             </tr>
@@ -273,7 +267,7 @@
             {% for os in finalizadas[:3] %}
             <tr>
               <td>{{ os.os_numero }}</td>
-              <td>{{ os.gerente|capitalize_name }}</td>
+              <td>{{ os.gerente }}</td>
               <td>{{ os.data_fin }}</td>
               <td>{{ os.hora_fin }}</td>
               <td>{{ os.observacoes or '-' }}</td>
@@ -285,7 +279,7 @@
             {% for os in finalizadas[3:] %}
             <tr>
               <td>{{ os.os_numero }}</td>
-              <td>{{ os.gerente|capitalize_name }}</td>
+              <td>{{ os.gerente }}</td>
               <td>{{ os.data_fin }}</td>
               <td>{{ os.hora_fin }}</td>
               <td>{{ os.observacoes or '-' }}</td>
@@ -328,7 +322,7 @@
           <tbody>
             {% for ev in login_events[:3] %}
             <tr>
-              <td>{{ ev.username|capitalize_name }}</td>
+              <td>{{ ev.username }}</td>
               <td>{{ ev.user_type.capitalize() }}</td>
               <td>{{ ev.login_time.strftime('%d/%m/%Y %H:%M:%S') }}</td>
               <td>
@@ -352,7 +346,7 @@
           <tbody class="hidden-rows" id="login-rows">
             {% for ev in login_events[3:] %}
             <tr>
-              <td>{{ ev.username|capitalize_name }}</td>
+              <td>{{ ev.username }}</td>
               <td>{{ ev.user_type.capitalize() }}</td>
               <td>{{ ev.login_time.strftime('%d/%m/%Y %H:%M:%S') }}</td>
               <td>
