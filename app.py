@@ -9,6 +9,7 @@ from collections import defaultdict
 import pytz
 import io
 import csv
+from sqlalchemy.sql import text  # Importar text para queries SQL
 
 # Configuração de logging
 logging.basicConfig(level=logging.DEBUG)
@@ -290,7 +291,7 @@ with app.app_context():
     columns = [col['name'] for col in inspector.get_columns('login_event')]
     if 'user_type' not in columns:
         logger.debug("Adicionando coluna user_type à tabela login_event")
-        db.session.execute('ALTER TABLE login_event ADD COLUMN user_type VARCHAR(20) NOT NULL DEFAULT "gerente"')
+        db.session.execute(text('ALTER TABLE login_event ADD COLUMN user_type VARCHAR(20) NOT NULL DEFAULT "gerente"'))
         db.session.commit()
     else:
         logger.debug("Coluna user_type já existe em login_events")
