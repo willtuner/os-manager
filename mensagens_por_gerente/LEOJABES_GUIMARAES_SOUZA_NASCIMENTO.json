@@ -1,10 +1,24 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "135",
+    "os": "110086",
+    "data": "06/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar volante solto e colocar sinto de segurança - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "44",
+    "os": "110068",
+    "data": "06/05/2025",
+    "prestador": "OMC AGRICOLA",
+    "servico": "Trator sofreu impacto por galho de laranja na parte inferior, ocasionando a quebra dos cabos do sistema de marchas. O equipamento encontra-se impossibilitado de engatar ou desengatar as marchas. Recomendado substituir os cabos danificados e inspecionar possíveis avarias adicionais causadas pelo impacto - (Fazenda São Paulo)"
+  },
+  {
     "frota": "218",
     "os": "110038",
     "data": "06/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar cibié traseiro não ascendem - (Fazenda São Paulo)"
   },
   {
@@ -69,13 +83,6 @@
     "data": "30/04/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)"
-  },
-  {
-    "frota": "5063",
-    "os": "109528",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Fazer solda em trinca na base da estrutura - (Fazenda SP)"
   },
   {
     "frota": "5746",

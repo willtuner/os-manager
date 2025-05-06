@@ -8,6 +8,13 @@
     "servico": "Verificar e corrigir vazamento de produto nas cerâmicas da bomba."
   },
   {
+    "frota": "5661",
+    "os": "110096",
+    "data": "05/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desentortado chapas realinhado, soldado estruturas montado, fabricado e instalado torre de sustentação. (Fazenda Pedra Verde)"
+  },
+  {
     "frota": "5117",
     "os": "109962",
     "data": "05/05/2025",
@@ -39,7 +46,7 @@
     "frota": "97",
     "os": "109948",
     "data": "05/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Trava da alavanca de marchar quebrada - (Fazenda Pedra Verde)"
   },
   {
@@ -48,13 +55,6 @@
     "data": "05/05/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Vazamento de óleo na bomba injetora - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "299",
-    "os": "109932",
-    "data": "05/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Condensador do ar condicionado furado - (Fazenda Pedra Verde)"
   },
   {
     "frota": "283",
