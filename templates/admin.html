@@ -13,10 +13,10 @@
   .badge-os-aberta { background-color: #e74c3c; color: white; }
   .table-responsive { margin-top: 15px; }
   .ranking-badge { font-size: 0.85rem; padding: 4px 7px; color: white; border-radius: 5px; }
-  .ranking-1 { background-color: #e74c3c; }
-  .ranking-2 { background-color: #f39c12; }
-  .ranking-3 { background-color: #f1c40f; }
-  .ranking-other { background-color: #95a5a6; }
+  .ranking-1 { background-color: #e74c3c; } /* 1º, vermelho */
+  .ranking-2 { background-color: #f39c12; } /* 2º, laranja */
+  .ranking-3 { background-color: #f1c40f; } /* 3º, amarelo */
+  .ranking-other { background-color: #95a5a6; } /* 4º em diante, cinza */
   .table-compact tbody tr { font-size: 0.85rem; }
   .table-compact th, .table-compact td { padding: 6px; }
   .toggle-btn { cursor: pointer; font-size: 0.9rem; }
@@ -109,7 +109,7 @@
             {% for gerente, count in ranking_os_abertas[:3] %}
             <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ loop.index }}">
+                <span class="badge ranking-badge ranking-{{ loop.index + 1 }}">
                   {{ loop.index + 1 }}º
                 </span>
               </td>
@@ -167,7 +167,7 @@
             {% for prestador, count in ranking_os_prestadores[:3] %}
             <tr>
               <td>
-                <span class="badge ranking-badge ranking-{{ loop.index }}">
+                <span class="badge ranking-badge ranking-{{ loop.index + 1 }}">
                   {{ loop.index + 1 }}º
                 </span>
               </td>
