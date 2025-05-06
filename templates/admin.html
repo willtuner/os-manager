@@ -111,13 +111,11 @@
             </tr>
           </thead>
           <tbody>
-            {% set rank = 0 %}
             {% for gerente, count in ranking_os_abertas %}
-            {% set rank = rank + 1 %}
-            <tr class="{% if rank > 3 %}gerente-ranking-row hidden-row{% endif %}">
+            <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
               <td>
-                <span class="badge ranking-badge {% if rank == 1 %}ranking-1{% elif rank == 2 %}ranking-2{% elif rank == 3 %}ranking-3{% else %}ranking-other{% endif %}">
-                  {{ rank }}º
+                <span class="badge ranking-badge {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">
+                  {{ loop.index }}º
                 </span>
               </td>
               <td>{{ gerente|capitalize_name }}</td>
@@ -154,13 +152,11 @@
             </tr>
           </thead>
           <tbody>
-            {% set rank = 0 %}
             {% for prestador, count in ranking_os_prestadores %}
-            {% set rank = rank + 1 %}
-            <tr class="{% if rank > 3 %}prestador-ranking-row hidden-row{% endif %}">
+            <tr class="{% if loop.index > 3 %}prestador-ranking-row hidden-row{% endif %}">
               <td>
-                <span class="badge ranking-badge {% if rank == 1 %}ranking-1{% elif rank == 2 %}ranking-2{% elif rank == 3 %}ranking-3{% else %}ranking-other{% endif %}">
-                  {{ rank }}º
+                <span class="badge ranking-badge {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">
+                  {{ loop.index }}º
                 </span>
               </td>
               <td>{{ prestador|capitalize_name }}</td>
