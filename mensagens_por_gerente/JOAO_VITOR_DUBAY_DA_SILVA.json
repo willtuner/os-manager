@@ -1,17 +1,24 @@
 [
   {
     "solicitado": "JOAO VITOR DUBAY DA SILVA",
+    "frota": "279",
+    "os": "109975",
+    "data": "05/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar sensor de temperatura do óleo hidráulico - (Fazenda Estrela)"
+  },
+  {
     "frota": "5262",
     "os": "109943",
     "data": "05/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Furo na mangueira de óleo hidráulico - (Fazenda Estrela)"
   },
   {
     "frota": "309",
     "os": "109778",
     "data": "01/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS - UMUAR",
     "servico": "Verificar e corrigir vazamento de óleo na traseira do equipamento, embaixo na mesa da barra de tração, próximo ao encaixe das barras de levante hidráulico."
   },
   {

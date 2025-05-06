@@ -1,6 +1,34 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "314",
+    "os": "109970",
+    "data": "05/05/2025",
+    "prestador": "MURILO SILVA 09207298945",
+    "servico": "Instalar modulo SPE"
+  },
+  {
+    "frota": "85",
+    "os": "109963",
+    "data": "05/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar suporte dos farois"
+  },
+  {
+    "frota": "5129",
+    "os": "109959",
+    "data": "05/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Serpentina sem o bico regulador de pressão; necessário instalar para correto funcionamento do sistema - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5128",
+    "os": "109958",
+    "data": "05/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Serpentina sem o bico regulador de pressão; necessário instalar para correto funcionamento do sistema - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "235",
     "os": "109947",
     "data": "05/05/2025",
@@ -39,7 +67,7 @@
     "frota": "142",
     "os": "109783",
     "data": "02/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Trator não engata TDP - (Fazenda Nova Manhã)"
   },
   {
@@ -71,25 +99,11 @@
     "servico": "Trocar borracha da porta - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "142",
-    "os": "109589",
-    "data": "28/04/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "TDP não liga - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "147",
     "os": "109543",
     "data": "28/04/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar trinco da porta não funciona - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5202",
-    "os": "109447",
-    "data": "25/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Rolamento da roda L/E estourado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "93",
@@ -146,13 +160,6 @@
     "data": "04/04/2025",
     "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
     "servico": "Revisar motor"
-  },
-  {
-    "frota": "106",
-    "os": "108207",
-    "data": "03/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Substituir correia do alternador danificada."
   },
   {
     "frota": "130",

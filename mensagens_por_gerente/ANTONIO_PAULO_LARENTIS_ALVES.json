@@ -1,11 +1,25 @@
 [
   {
     "solicitado": "ANTONIO PAULO LARENTIS ALVES",
-    "frota": "5500",
-    "os": "109768",
-    "data": "01/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na estrutura lateral do lado esquerdo."
+    "frota": "254",
+    "os": "110053",
+    "data": "06/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar lâmpada do farol queimado - (Fazenda Minuano)"
+  },
+  {
+    "frota": "118",
+    "os": "110051",
+    "data": "06/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Farol L/E queimado - (Fazenda Minuano)"
+  },
+  {
+    "frota": "144",
+    "os": "110047",
+    "data": "06/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Instalar lanternas do alerta quebrada - (Fazenda Minuano)"
   },
   {
     "frota": "253",
@@ -22,41 +36,6 @@
     "servico": "Verificar possível vazamento de aditivo na bomba d'água. Inspecionar conexões, juntas e a própria bomba quanto a trincas, desgaste ou falhas de vedação - (Fazenda Minuano)"
   },
   {
-    "frota": "144",
-    "os": "109714",
-    "data": "30/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Quebra do suporte da alavanca do comando hidráulico - (Fazenda Minuano)"
-  },
-  {
-    "frota": "253",
-    "os": "109666",
-    "data": "29/04/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D traseiro - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5667",
-    "os": "109561",
-    "data": "28/04/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento no regulador de pressão - (Fazenda Minuano)"
-  },
-  {
-    "frota": "253",
-    "os": "109537",
-    "data": "28/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em suporte da proteção dianteira - (Fazenda Minuano)"
-  },
-  {
-    "frota": "118",
-    "os": "109519",
-    "data": "26/04/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar funcionamento da direção"
-  },
-  {
     "frota": "81",
     "os": "109314",
     "data": "23/04/2025",
@@ -69,27 +48,6 @@
     "data": "12/03/2025",
     "prestador": "Prestador não definido",
     "servico": "Instalar correntes de proteção - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5366",
-    "os": "106861",
-    "data": "11/03/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento nas canecas da bomba - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5366",
-    "os": "106206",
-    "data": "26/02/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento na graxeta - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5674",
-    "os": "105939",
-    "data": "20/02/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Quebra do suporte do pistão - (Fazenda Minuano)"
   },
   {
     "frota": "5500",

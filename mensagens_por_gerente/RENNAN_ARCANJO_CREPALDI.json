@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "RENNAN ARCANJO CREPALDI",
+    "frota": "5660",
+    "os": "110029",
+    "data": "05/05/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Realinhar o mancal do eixo da turbina, devido a desalinhamento que pode comprometer o desempenho e causar desgaste prematuro do conjunto.- (Fazenda NSA)"
+  },
+  {
+    "frota": "5058",
+    "os": "109964",
+    "data": "05/05/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar bomba do drash - (Fazenda Bela Manhã)"
+  },
+  {
     "frota": "5673",
     "os": "109938",
     "data": "05/05/2025",
@@ -18,7 +32,7 @@
     "frota": "321",
     "os": "109930",
     "data": "05/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Quebra do eixo da TDP - (Fazenda NSA)"
   },
   {
@@ -32,7 +46,7 @@
     "frota": "5673",
     "os": "109808",
     "data": "02/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "MURILO SILVA 09207298945",
     "servico": "Trocar válvulas solenoides de acionamento L/E - (Fazenda NSA)"
   },
   {
@@ -62,20 +76,6 @@
     "data": "02/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Verificar fechadura, só abre por dentro - (Fazenda NSA)"
-  },
-  {
-    "frota": "259",
-    "os": "109800",
-    "data": "02/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "A/C não liga - (Fazenda NSA)"
-  },
-  {
-    "frota": "96",
-    "os": "109764",
-    "data": "01/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar e corrigir vazamento de óleo na junção das reduções finais traseiras direita e esquerda com a caixa do diferencial."
   },
   {
     "frota": "10121",
@@ -132,12 +132,5 @@
     "data": "20/02/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer suporte para pé de apoio e trocar chaparia podre - (Fazenda NSA)"
-  },
-  {
-    "frota": "24",
-    "os": "103996",
-    "data": "22/01/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento na tração, terminais do pistão da direção, trocar banco e verificar comando hidráulico não funciona - (Fazenda NSA)"
   }
 ]
