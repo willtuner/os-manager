@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5660",
+    "cd_equipamento": "5660",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "110091",
+    "data_entrada": "06/05/2025",
+    "servico": "Ramal L/E furado - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5210",
+    "cd_equipamento": "5210",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "110077",
+    "data_entrada": "06/05/2025",
+    "servico": "Colocar limitador nas asas e tirar folga nas rodas - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5747",
+    "cd_equipamento": "5747",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "110064",
+    "data_entrada": "06/05/2025",
+    "servico": "Esticador da torre com rosca espanada, comprometendo a fixação. Avaliar necessidade de substituição da peça ou execução de reparo com solda - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110063",
+    "data_entrada": "06/05/2025",
+    "servico": "Fazer solda em trinca na escada - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5402",
+    "cd_equipamento": "5402",
+    "modelo": "ROÇADEIRA - 850 KG ANTONIOSI",
+    "os": "110060",
+    "data_entrada": "06/05/2025",
+    "servico": "Quebra do eixo de fixação da roda guia - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5524",
+    "cd_equipamento": "5524",
+    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+    "os": "110017",
+    "data_entrada": "06/05/2025",
+    "servico": "Substituir engate com eixo explanado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5111",
     "cd_equipamento": "5111",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -8,12 +56,12 @@
     "servico": "Fazer chapa para a fixação de proteção do cardam - (Oficina)\nLiberado Sr. Rafael"
   },
   {
-    "frota": "85",
-    "cd_equipamento": "85",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "109963",
+    "frota": "5661",
+    "cd_equipamento": "5661",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "110096",
     "data_entrada": "05/05/2025",
-    "servico": "Soldar suporte dos farois\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
+    "servico": "Desentortado chapas realinhado, soldado estruturas montado, fabricado e instalado torre de sustentação. (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5117",
@@ -80,14 +128,6 @@
     "servico": "Substituir eixo da roda guia quebrado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5543",
-    "cd_equipamento": "5543",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "109818",
-    "data_entrada": "02/05/2025",
-    "servico": "Fazer solda na  proteção do cabeçalho - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5502",
     "cd_equipamento": "5502",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -120,28 +160,12 @@
     "servico": "Verificar e reparar o suporte do rabicho da máquina, pois foi identificado que um dos parafusos de fixação está espanado - (Pecuaria)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5530",
-    "cd_equipamento": "5530",
-    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
-    "os": "109776",
-    "data_entrada": "01/05/2025",
-    "servico": "Fazer solda em ambas as caixas de distribuição dos dois pratos.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
-  },
-  {
     "frota": "224",
     "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "109772",
     "data_entrada": "01/05/2025",
     "servico": "Fazer solda na grade de proteção frontal do capô e recuperar tampa da caixa da bateria.\nFazenda Terra Branca\nSolicitado e liberado Sr. Arthur"
-  },
-  {
-    "frota": "91",
-    "cd_equipamento": "91",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "109745",
-    "data_entrada": "30/04/2025",
-    "servico": "Confeccionar suporte de farol e cibie\nFaz Estrela\nAutorizado Arthur"
   },
   {
     "frota": "5603",
@@ -192,14 +216,6 @@
     "servico": "Trocar agulhas, fazer solda em trinca, cabeçalho com desgaste - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5786",
-    "cd_equipamento": "5786",
-    "modelo": "PULVERIZADOR 600 LT",
-    "os": "109538",
-    "data_entrada": "28/04/2025",
-    "servico": "Instalar plataforma traseira e estrutura para os braços do drench.\nFazenda Estrela (Oficina)\nSolicitado Sr. Zacarias\nLiberado Sr. Maurício"
-  },
-  {
     "frota": "5095",
     "cd_equipamento": "5095",
     "modelo": "BARRA APLICACAO DE HERBICIDA",
@@ -216,36 +232,12 @@
     "servico": "Soldar pinos de suporte da bateria quebrada - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5740",
-    "cd_equipamento": "5740",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "109518",
-    "data_entrada": "26/04/2025",
-    "servico": "Solda trinco no chassi \nFaz São Pedro\nSolicitado Diego\nAutorizado Arthur"
-  },
-  {
-    "frota": "291",
-    "cd_equipamento": "291",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109517",
-    "data_entrada": "26/04/2025",
-    "servico": "Soldar grade de proteção do capô\nFaz São Pedro\nSolicitado Diego\nAutorizado Arthur"
-  },
-  {
     "frota": "5597",
     "cd_equipamento": "5597",
     "modelo": "PULVERIZADOR 2000 LT FMC",
     "os": "109432",
     "data_entrada": "25/04/2025",
     "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5196",
-    "cd_equipamento": "5196",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "109769",
-    "data_entrada": "23/04/2025",
-    "servico": "Verificar rolamento da rodas estourado.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
   },
   {
     "frota": "5712",

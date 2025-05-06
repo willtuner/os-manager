@@ -1,11 +1,19 @@
 [
   {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110029",
+    "frota": "5569",
+    "cd_equipamento": "5569",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "110013",
+    "data_entrada": "06/05/2025",
+    "servico": "Trocar rolamento da roda guia - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5626",
+    "cd_equipamento": "5626",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "110001",
     "data_entrada": "05/05/2025",
-    "servico": "Realinhar o mancal do eixo da turbina, devido a desalinhamento que pode comprometer o desempenho e causar desgaste prematuro do conjunto.- (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "servico": "Trocar rolamento do rotor - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5290",
@@ -30,22 +38,6 @@
     "os": "109981",
     "data_entrada": "05/05/2025",
     "servico": "Verificar e substituir o pistão de acionamento da abertura do ramal, que apresenta empenamento - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5459",
-    "cd_equipamento": "5459",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "109995",
-    "data_entrada": "05/05/2025",
-    "servico": "Verificar roçadeira não está cortando, facões são novos porém não estão cortando.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5058",
-    "cd_equipamento": "5058",
-    "modelo": "PULVERIZADOR 600 LT FMC",
-    "os": "109964",
-    "data_entrada": "05/05/2025",
-    "servico": "Verificar bomba do drash - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5264",

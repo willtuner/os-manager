@@ -32,6 +32,14 @@
     "servico": "Instalar lanternas do alerta quebrada - (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110038",
+    "data_entrada": "06/05/2025",
+    "servico": "Verificar cibié traseiro não ascendem - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "308",
     "cd_equipamento": "308",
     "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
@@ -62,6 +70,14 @@
     "os": "109942",
     "data_entrada": "05/05/2025",
     "servico": "Trocar cibié dianteiro por led - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5673",
+    "cd_equipamento": "5673",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "109938",
+    "data_entrada": "05/05/2025",
+    "servico": "Verificar comando não funciona - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "96",
@@ -150,6 +166,22 @@
     "os": "109731",
     "data_entrada": "30/04/2025",
     "servico": "Instalar cibié dianteiro - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "149",
+    "cd_equipamento": "149",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "109720",
+    "data_entrada": "30/04/2025",
+    "servico": "Polia do alternador travada - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109717",
+    "data_entrada": "30/04/2025",
+    "servico": "Faróis da capota não funcionam - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5528",

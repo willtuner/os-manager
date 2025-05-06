@@ -1,5 +1,21 @@
 [
   {
+    "frota": "230",
+    "cd_equipamento": "230",
+    "modelo": "TRATOR VALTRA A124L 4X4",
+    "os": "110098",
+    "data_entrada": "06/05/2025",
+    "servico": "Identificado vazamento no bujão de dreno da ponteira da roda dianteira lado direito (L/D), além da ausência do bocal e do filtro do tanque de combustível - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "135",
+    "cd_equipamento": "135",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "110086",
+    "data_entrada": "06/05/2025",
+    "servico": "Verificar volante solto e colocar sinto de segurança - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "224",
     "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -16,12 +32,52 @@
     "servico": "Identificado retorno de óleo do motor para o reservatório de aditivo, indicando possível falha na junta do cabeçote, trocador de calor ou sistema de vedação interna. Necessário diagnóstico detalhado para identificar a origem da contaminação e evitar danos ao sistema de arrefecimento - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
+    "frota": "226",
+    "cd_equipamento": "226",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110014",
+    "data_entrada": "06/05/2025",
+    "servico": "Identificado vazamento de óleo da direção hidráulica no tubo localizado nas proximidades da bomba - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "97",
+    "cd_equipamento": "97",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "109948",
+    "data_entrada": "05/05/2025",
+    "servico": "Trava da alavanca de marchar quebrada - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5262",
     "cd_equipamento": "5262",
     "modelo": "MOTOCANA",
     "os": "109943",
     "data_entrada": "05/05/2025",
     "servico": "Furo na mangueira de óleo hidráulico - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "253",
+    "cd_equipamento": "253",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109723",
+    "data_entrada": "30/04/2025",
+    "servico": "Avaliar ruído anormal na TDP - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109716",
+    "data_entrada": "30/04/2025",
+    "servico": "Verificar possível vazamento de óleo na mangueira do retorno da turbina e na junta localizada na parte central do trator - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "300",
+    "cd_equipamento": "300",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109715",
+    "data_entrada": "30/04/2025",
+    "servico": "Verificar possível vazamento de aditivo na bomba d'água. Inspecionar conexões, juntas e a própria bomba quanto a trincas, desgaste ou falhas de vedação - (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10121",
@@ -78,6 +134,14 @@
     "os": "109169",
     "data_entrada": "22/04/2025",
     "servico": "Revisar caixa inversora\nFaz Sâo Severino\nSolicitado Cassio\nAutorizado Arthur"
+  },
+  {
+    "frota": "94",
+    "cd_equipamento": "94",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "108685",
+    "data_entrada": "14/04/2025",
+    "servico": "vazamento no retentor da roda dianteira direita - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "87",
