@@ -70,6 +70,11 @@ def login_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
+# Rota raiz para redirecionar para /login
+@app.route('/')
+def index():
+    return redirect(url_for('login'))
+
 # Rota de login
 @app.route('/login', methods=['GET', 'POST'])
 def login():
