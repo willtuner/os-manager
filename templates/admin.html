@@ -53,9 +53,14 @@
 <div class="container">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h2><i class="fas fa-tachometer-alt me-2"></i>Painel Administrativo</h2>
-    <a href="{{ url_for('logout') }}" class="btn btn-danger btn-sm">
-      <i class="fas fa-sign-out-alt me-1"></i>Sair
-    </a>
+    <div>
+      <a href="{{ url_for('exportar_os_finalizadas') }}" class="btn btn-prats btn-sm me-2">
+        <i class="fas fa-file-export me-1"></i>Exportar PDF
+      </a>
+      <a href="{{ url_for('logout') }}" class="btn btn-danger btn-sm">
+        <i class="fas fa-sign-out-alt me-1"></i>Sair
+      </a>
+    </div>
   </div>
 
   <div class="row mb-4">
@@ -266,10 +271,10 @@
             <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
               <td>{{ ev.username|capitalize_name }}</td>
               <td>{{ ev.user_type.capitalize() }}</td>
-              <td>{{ ev.login_time.replace(tzinfo=timezone('America/Sao_Paulo')).strftime('%d/%m/%Y %H:%M:%S') }}</td>
+              <td>{{ ev.login_time_formatted }}</td>
               <td>
-                {% if ev.logout_time %}
-                  {{ ev.logout_time.replace(tzinfo=timezone('America/Sao_Paulo')).strftime('%d/%m/%Y %H:%M:%S') }}
+                {% if ev.logout_time_formatted %}
+                  {{ ev.logout_time_formatted }}
                 {% else %}
                   <span class="text-muted">ativo</span>
                 {% endif %}
