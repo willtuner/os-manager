@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "RENNAN ARCANJO CREPALDI",
+    "frota": "5603",
+    "os": "110177",
+    "data": "07/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Melhorar o suporte do comando abre e fecha. chapa fina e fica vibrando, verificar chapa de fixação da torre solta, fixar caixa do SPE na torre e soldar trinca na base da bomba"
+  },
+  {
     "frota": "5660",
     "os": "110091",
     "data": "06/05/2025",
@@ -64,13 +71,6 @@
     "servico": "Realinhas asas do tanque - (Fazenda NSA)"
   },
   {
-    "frota": "259",
-    "os": "109801",
-    "data": "02/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar fechadura, só abre por dentro - (Fazenda NSA)"
-  },
-  {
     "frota": "10121",
     "os": "109663",
     "data": "29/04/2025",
@@ -83,13 +83,6 @@
     "data": "17/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Refazer cabeçalho desalinhado - (Fazenda NSA)"
-  },
-  {
-    "frota": "24",
-    "os": "108131",
-    "data": "02/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema elétrico"
   },
   {
     "frota": "5592",

@@ -1,18 +1,25 @@
 [
   {
     "solicitado": "EDER JOSE FERNANDES DE ALMEIDA",
+    "frota": "10221",
+    "os": "110161",
+    "data": "07/05/2025",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
+    "servico": "Trocar banco - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "220",
+    "os": "110148",
+    "data": "07/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar radiador"
+  },
+  {
     "frota": "5402",
     "os": "110060",
     "data": "06/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Quebra do eixo de fixação da roda guia - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "224",
-    "os": "110057",
-    "data": "06/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar cabo do acelerador de mão - (Fazenda Terra Branca)"
   },
   {
     "frota": "224",
@@ -43,13 +50,6 @@
     "servico": "Verificar possível vazamento de óleo na mangueira do retorno da turbina e na junta localizada na parte central do trator - (Fazenda Terra Branca)"
   },
   {
-    "frota": "79",
-    "os": "109427",
-    "data": "25/04/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Reformar banco"
-  },
-  {
     "frota": "5001",
     "os": "108264",
     "data": "04/04/2025",
@@ -69,13 +69,6 @@
     "data": "05/03/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Quebra do suporte dos fações - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "224",
-    "os": "105813",
-    "data": "18/02/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Lanterna da cabine quebrada L/D - (Fazenda Terra Branca)"
   },
   {
     "frota": "5623",
