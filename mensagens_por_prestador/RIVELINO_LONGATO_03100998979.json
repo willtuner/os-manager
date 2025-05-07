@@ -1,5 +1,13 @@
 [
   {
+    "frota": "228",
+    "cd_equipamento": "228",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110156",
+    "data_entrada": "07/05/2025",
+    "servico": "Trocar pneus dianteiros desgastados (enviar para recapar).\nFazenda Severino (Oficina)\nLiberado Sr. Maurício"
+  },
+  {
     "frota": "250",
     "cd_equipamento": "250",
     "modelo": "TRATOR JOHN DEERE 5080EN",
@@ -14,21 +22,5 @@
     "os": "110066",
     "data_entrada": "06/05/2025",
     "servico": "Pneu L/E dianteiro furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "69",
-    "cd_equipamento": "69",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "109949",
-    "data_entrada": "05/05/2025",
-    "servico": "Pneu traseiro direito furado e com corte lateral, recomendado trocar - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "90",
-    "cd_equipamento": "90",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "109935",
-    "data_entrada": "05/05/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda SP)\nLiberado Sr. Mauricio"
   }
 ]
