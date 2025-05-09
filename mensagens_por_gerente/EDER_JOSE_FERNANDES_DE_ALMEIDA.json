@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "EDER JOSE FERNANDES DE ALMEIDA",
+    "frota": "5657",
+    "os": "110222",
+    "data": "08/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trincas na torre - (Fazenda Terra Branca)"
+  },
+  {
     "frota": "10221",
     "os": "110161",
     "data": "07/05/2025",
@@ -20,34 +27,6 @@
     "data": "06/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Quebra do eixo de fixação da roda guia - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "224",
-    "os": "109942",
-    "data": "05/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar cibié dianteiro por led - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "10222",
-    "os": "109765",
-    "data": "01/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar os dois faróis de serviço frontal não estão acendendo."
-  },
-  {
-    "frota": "286",
-    "os": "109717",
-    "data": "30/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Faróis da capota não funcionam - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "286",
-    "os": "109716",
-    "data": "30/04/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar possível vazamento de óleo na mangueira do retorno da turbina e na junta localizada na parte central do trator - (Fazenda Terra Branca)"
   },
   {
     "frota": "5001",

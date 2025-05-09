@@ -1,6 +1,27 @@
 [
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
+    "frota": "233",
+    "os": "110292",
+    "data": "09/05/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar polia do compressor do ar-condicionado emitindo ruído (chiado ou canto), possivelmente por folga, desalinhamento ou desgaste do rolamento - (Fazenda São Severino)"
+  },
+  {
+    "frota": "153",
+    "os": "110227",
+    "data": "08/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar suporte para instalação de luz"
+  },
+  {
+    "frota": "227",
+    "os": "110203",
+    "data": "08/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/D furado - (Fazenda São Severino)"
+  },
+  {
     "frota": "234",
     "os": "110162",
     "data": "07/05/2025",
@@ -22,25 +43,11 @@
     "servico": "Trocar rolamento da roda guia - (Fazenda São Severino)"
   },
   {
-    "frota": "234",
-    "os": "109668",
-    "data": "29/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Substituir cabo da bateria devido a comprimento insuficiente e má qualidade do condutor, comprometendo a eficiência do sistema elétrico - (Fazenda São Severino)"
-  },
-  {
     "frota": "153",
     "os": "109641",
     "data": "29/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar faróis auxiliares voltados para as barras de herbicidas, visando melhorar a iluminação durante as operações noturnas. - (Fazenda São Severino)"
-  },
-  {
-    "frota": "227",
-    "os": "109640",
-    "data": "29/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar falha total na sinalização veicular; nenhuma das luzes acende, mesmo após teste prévio dos fusíveis - (Fazenda São Severino)"
   },
   {
     "frota": "5429",

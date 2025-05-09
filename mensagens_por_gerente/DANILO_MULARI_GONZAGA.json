@@ -1,25 +1,74 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "5467",
+    "os": "110307",
+    "data": "09/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Colocar barras de corte frontal e traseira - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5214",
+    "os": "110306",
+    "data": "09/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar folga no cubo da roda L/E - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5214",
+    "os": "110305",
+    "data": "09/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar folga no cubo da roda L/E - (Fazenda Estrela)"
+  },
+  {
+    "frota": "10229",
+    "os": "110286",
+    "data": "09/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Solda em trinca no escapamento, realinhar escada  e trinca na lateral do capô - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5543",
+    "os": "110285",
+    "data": "09/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Substituir parafuso do suporte da roda guia - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5580",
+    "os": "110241",
+    "data": "08/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituir corda da partida e regular - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5543",
+    "os": "110219",
+    "data": "08/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda na roda guia L/D - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5346",
+    "os": "110218",
+    "data": "08/05/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Folga no cubo de roda traseira L/D - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5543",
+    "os": "110217",
+    "data": "08/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Colocar correntes de proteção anti arremesso - (Fazenda Estrela)"
+  },
+  {
     "frota": "10219",
     "os": "110154",
     "data": "07/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar faróis dianteiros não ascendem - (Fazenda Estrela)"
-  },
-  {
-    "frota": "10223",
-    "os": "110153",
-    "data": "07/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "substituir filtro sedimentador - (Fazenda Estrela)"
-  },
-  {
-    "frota": "230",
-    "os": "110098",
-    "data": "06/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Identificado vazamento no bujão de dreno da ponteira da roda dianteira lado direito (L/D), além da ausência do bocal e do filtro do tanque de combustível - (Fazenda Estrela)"
   },
   {
     "frota": "5106",
@@ -43,13 +92,6 @@
     "servico": "Montar cardam completo - (Fazenda Estrela)"
   },
   {
-    "frota": "308",
-    "os": "109957",
-    "data": "05/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié traseiros queimado - (Fazenda Estrela)"
-  },
-  {
     "frota": "10223",
     "os": "109921",
     "data": "02/05/2025",
@@ -67,7 +109,7 @@
     "frota": "309",
     "os": "109821",
     "data": "02/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Substituir mangueira hidráulica furada - (Fazenda Estrela)"
   },
   {

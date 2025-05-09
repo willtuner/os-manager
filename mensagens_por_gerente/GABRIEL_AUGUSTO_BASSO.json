@@ -1,25 +1,11 @@
 [
   {
     "solicitado": "GABRIEL AUGUSTO BASSO",
-    "frota": "5713",
-    "os": "110072",
-    "data": "06/05/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Quebra da alavanca do pé de apoio - (Pecuaria)"
-  },
-  {
     "frota": "68",
     "os": "109788",
     "data": "02/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sinalização, trator não funciona sirene de ré, faróis e buzina - (Pecuaria)"
-  },
-  {
-    "frota": "68",
-    "os": "109787",
-    "data": "02/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar e reparar o suporte do rabicho da máquina, pois foi identificado que um dos parafusos de fixação está espanado - (Pecuaria)"
   },
   {
     "frota": "5352",
@@ -41,12 +27,5 @@
     "data": "18/02/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar equipamento sem freio traseiro - (Pecuaria)"
-  },
-  {
-    "frota": "5168",
-    "os": "105887",
-    "data": "18/02/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS",
-    "servico": "Instalar pé de apoio do cabeçario."
   }
 ]

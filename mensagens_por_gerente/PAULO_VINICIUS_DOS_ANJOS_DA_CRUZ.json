@@ -1,11 +1,32 @@
 [
   {
     "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-    "frota": "288",
-    "os": "110065",
-    "data": "06/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié dianteiro lado esquerdo (L/E) da cabine queimado - (Fazenda Estrela)"
+    "frota": "5523",
+    "os": "110290",
+    "data": "09/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D estourado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "89",
+    "os": "110216",
+    "data": "08/05/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Vazamento no pistão da barra de herbicida L/E - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5718",
+    "os": "110215",
+    "data": "08/05/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento nas \"canecas\" da bomba e no regulador de pressão - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5367",
+    "os": "110214",
+    "data": "08/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E furado - (Fazenda Estrela)"
   },
   {
     "frota": "5747",
@@ -22,13 +43,6 @@
     "servico": "Fazer solda em trinca na escada - (Fazenda Estrela)"
   },
   {
-    "frota": "219",
-    "os": "110024",
-    "data": "06/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Identificado retorno de óleo do motor para o reservatório de aditivo, indicando possível falha na junta do cabeçote, trocador de calor ou sistema de vedação interna. Necessário diagnóstico detalhado para identificar a origem da contaminação e evitar danos ao sistema de arrefecimento - (Fazenda Estrela)"
-  },
-  {
     "frota": "5068",
     "os": "110021",
     "data": "06/05/2025",
@@ -37,16 +51,9 @@
   },
   {
     "frota": "289",
-    "os": "109905",
-    "data": "02/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento de diesel no cabeçote do filtro de diesel - (Fazenda Estrela)"
-  },
-  {
-    "frota": "289",
     "os": "109903",
     "data": "02/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Troca dos gonzo de fixação da grade frontal - (Fazenda Estrela)"
   },
   {
@@ -67,14 +74,14 @@
     "frota": "219",
     "os": "109558",
     "data": "28/04/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Trocar borrachas de vedação da porta - (Fazenda Estrela)"
   },
   {
     "frota": "258",
     "os": "109556",
     "data": "28/04/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
     "servico": "Vazamento na mangueira da turbina e trocar cabo do afogador quebrado  - (Fazenda Estrela)"
   },
   {
