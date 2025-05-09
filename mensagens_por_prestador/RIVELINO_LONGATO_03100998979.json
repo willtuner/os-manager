@@ -1,5 +1,45 @@
 [
   {
+    "frota": "155",
+    "cd_equipamento": "155",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "110309",
+    "data_entrada": "09/05/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5523",
+    "cd_equipamento": "5523",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "110290",
+    "data_entrada": "09/05/2025",
+    "servico": "Pneu L/D estourado - (Fazenda Estrela)\nLiberado Sr. Mauricio\nPendencia N° 4227"
+  },
+  {
+    "frota": "5261",
+    "cd_equipamento": "5261",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "110225",
+    "data_entrada": "08/05/2025",
+    "servico": "Pneu L/E furado - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5367",
+    "cd_equipamento": "5367",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "110214",
+    "data_entrada": "08/05/2025",
+    "servico": "Pneu L/E furado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110203",
+    "data_entrada": "08/05/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "228",
     "cd_equipamento": "228",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",

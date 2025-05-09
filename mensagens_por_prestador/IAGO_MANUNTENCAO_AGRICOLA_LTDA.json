@@ -1,5 +1,93 @@
 [
   {
+    "frota": "5492",
+    "cd_equipamento": "5492",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "110295",
+    "data_entrada": "09/05/2025",
+    "servico": "Trocar conexão \"T\" e verificar peça onde vai o manômetro quebrado - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5603",
+    "cd_equipamento": "5603",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "110294",
+    "data_entrada": "09/05/2025",
+    "servico": "Trocar correias do tanque - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5693",
+    "cd_equipamento": "5693",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "110273",
+    "data_entrada": "08/05/2025",
+    "servico": "Verificar bomba sem pressão - (Fazenda Biscui)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5630",
+    "cd_equipamento": "5630",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "110239",
+    "data_entrada": "08/05/2025",
+    "servico": "Verificar sistema de transmissão, pois o movimento não está sendo transferido ao rotor dos facões. Inspecionar acoplamentos, eixos, engrenagens - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5603",
+    "cd_equipamento": "5603",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "110223",
+    "data_entrada": "08/05/2025",
+    "servico": "Substituir eixo cardan devido a empenamento (eixo dobrado), comprometendo o alinhamento e podendo gerar vibração ou danos ao sistema de transmissão - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5346",
+    "cd_equipamento": "5346",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "110218",
+    "data_entrada": "08/05/2025",
+    "servico": "Folga no cubo de roda traseira L/D - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5718",
+    "cd_equipamento": "5718",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "110215",
+    "data_entrada": "08/05/2025",
+    "servico": "Vazamento nas \"canecas\" da bomba e no regulador de pressão - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5058",
+    "cd_equipamento": "5058",
+    "modelo": "PULVERIZADOR 600 LT FMC",
+    "os": "110206",
+    "data_entrada": "08/05/2025",
+    "servico": "Vazamento nos pistões da bomba - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5721",
+    "cd_equipamento": "5721",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "110182",
+    "data_entrada": "07/05/2025",
+    "servico": "Trocar retentor da bomba - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5603",
+    "cd_equipamento": "5603",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "110164",
+    "data_entrada": "07/05/2025",
+    "servico": "Vazamento de óleo no retentor da bomba e trocar chapa de sustentação dos pistões do comando - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "5063",
+    "cd_equipamento": "5063",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "110140",
+    "data_entrada": "07/05/2025",
+    "servico": "Suporte que segura linha dos filtros quebrada - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5569",
     "cd_equipamento": "5569",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
@@ -8,44 +96,12 @@
     "servico": "Trocar rolamento da roda guia - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5626",
-    "cd_equipamento": "5626",
-    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
-    "os": "110001",
-    "data_entrada": "05/05/2025",
-    "servico": "Trocar rolamento do rotor - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5290",
-    "cd_equipamento": "5290",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "109983",
-    "data_entrada": "05/05/2025",
-    "servico": "Montagem de cardan\nFaz Estrela\nSolicitado Diego\nAutorizado Arthur"
-  },
-  {
-    "frota": "5210",
-    "cd_equipamento": "5210",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "109982",
-    "data_entrada": "05/05/2025",
-    "servico": "Montagem de cardan\nFaz Estrela\nSolicitado Diego\nAutorizado Arthur"
-  },
-  {
     "frota": "5759",
     "cd_equipamento": "5759",
     "modelo": "PULVERIZADOR 4000 SMART DUPLO",
     "os": "109981",
     "data_entrada": "05/05/2025",
     "servico": "Verificar e substituir o pistão de acionamento da abertura do ramal, que apresenta empenamento - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5264",
-    "cd_equipamento": "5264",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "109953",
-    "data_entrada": "05/05/2025",
-    "servico": "Quebra da carcaça da bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5128",
@@ -120,14 +176,6 @@
     "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
   },
   {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "107272",
-    "data_entrada": "18/03/2025",
-    "servico": "Verificar vazamento de óleo no retentor do virabrequim da bomba.\nFazenda Estrela\nSolicitado Sr. Carlos\nLiberado Sr. Maurício"
-  },
-  {
     "frota": "5227",
     "cd_equipamento": "5227",
     "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
@@ -150,13 +198,5 @@
     "os": "105826",
     "data_entrada": "18/02/2025",
     "servico": "Verificar equipamento sem freio traseiro - (Pecuaria)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5522",
-    "cd_equipamento": "5522",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "105991",
-    "data_entrada": "17/02/2025",
-    "servico": "Fazer montagem da bomba  de pulverização e realizar a ligação das mangueiras, montagem dos cardans, barras e pistões.\nFazenda Santa Izabel (Oficina)\nLiberado Sr. Maurício"
   }
 ]

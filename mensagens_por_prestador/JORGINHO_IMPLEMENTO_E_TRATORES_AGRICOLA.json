@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5522",
+    "cd_equipamento": "5522",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "110284",
+    "data_entrada": "09/05/2025",
+    "servico": "Vazamento na entrada do agitador de calda e vazamento nos reparos da bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5529",
+    "cd_equipamento": "5529",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "110209",
+    "data_entrada": "08/05/2025",
+    "servico": "Vazamento no retentor da bomba  - (Fazenda Nova Manhã)\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5129",
+    "cd_equipamento": "5129",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "110207",
+    "data_entrada": "08/05/2025",
+    "servico": "Verificar desalinhamento ou folga no conjunto de polias e correia, que está ocasionando o desengrenamento da correia durante o funcionamento.- (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5275",
     "cd_equipamento": "5275",
     "modelo": "ATOMIZADOR FMC 4000 LT",

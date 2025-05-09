@@ -1,11 +1,35 @@
 [
   {
+    "frota": "5705",
+    "cd_equipamento": "5705",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "110238",
+    "data_entrada": "08/05/2025",
+    "servico": "Verificar rolamento da polia da bomba e do ventilador - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5217",
+    "cd_equipamento": "5217",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "110180",
+    "data_entrada": "07/05/2025",
+    "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5741",
+    "cd_equipamento": "5741",
+    "modelo": "DIST. ADUBO DCA2 7500 S-0114",
+    "os": "110179",
+    "data_entrada": "07/05/2025",
+    "servico": "Retirar folga dos cubos e sacar parafuso do cubo - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5421",
     "cd_equipamento": "5421",
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "110015",
     "data_entrada": "06/05/2025",
-    "servico": "Verificar comando não abre os ramais - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+    "servico": "Verificar comando não abre os ramais e trocar rolamento do eixo da turbina  - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5136",

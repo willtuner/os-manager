@@ -1,5 +1,69 @@
 [
   {
+    "frota": "10229",
+    "cd_equipamento": "10229",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110286",
+    "data_entrada": "09/05/2025",
+    "servico": "Solda em trinca no escapamento, realinhar escada  e trinca na lateral do capô - (Fazenda Estrela)\nPendencias N° 4323, 4322 e 4321"
+  },
+  {
+    "frota": "5543",
+    "cd_equipamento": "5543",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "110285",
+    "data_entrada": "09/05/2025",
+    "servico": "Substituir parafuso do suporte da roda guia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "44",
+    "cd_equipamento": "44",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "110231",
+    "data_entrada": "08/05/2025",
+    "servico": "Desamassar proteções (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "153",
+    "cd_equipamento": "153",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "110227",
+    "data_entrada": "08/05/2025",
+    "servico": "Soldar suporte para instalação de luz\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
+  },
+  {
+    "frota": "5657",
+    "cd_equipamento": "5657",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "110222",
+    "data_entrada": "08/05/2025",
+    "servico": "Fazer solda em trincas na torre - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5543",
+    "cd_equipamento": "5543",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "110219",
+    "data_entrada": "08/05/2025",
+    "servico": "Fazer solda na roda guia L/D - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5543",
+    "cd_equipamento": "5543",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "110217",
+    "data_entrada": "08/05/2025",
+    "servico": "Colocar correntes de proteção anti arremesso - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5600",
+    "cd_equipamento": "5600",
+    "modelo": "ATOMIZADOR NATALI 4000 LT",
+    "os": "110212",
+    "data_entrada": "08/05/2025",
+    "servico": "Soldar suporte do filtro de sucção - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5603",
     "cd_equipamento": "5603",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -128,6 +192,14 @@
     "servico": "Rolamento da roda L/E estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
+    "frota": "289",
+    "cd_equipamento": "289",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109903",
+    "data_entrada": "02/05/2025",
+    "servico": "Troca dos gonzo de fixação da grade frontal - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5106",
     "cd_equipamento": "5106",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -158,14 +230,6 @@
     "os": "109794",
     "data_entrada": "02/05/2025",
     "servico": "Soldar manivela de regulagem da vazão do produto - (Fazenda Biscui)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "68",
-    "cd_equipamento": "68",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "109787",
-    "data_entrada": "02/05/2025",
-    "servico": "Verificar e reparar o suporte do rabicho da máquina, pois foi identificado que um dos parafusos de fixação está espanado - (Pecuaria)\nLiberado Sr. Arthur"
   },
   {
     "frota": "224",
@@ -206,14 +270,6 @@
     "os": "109684",
     "data_entrada": "29/04/2025",
     "servico": "Instalar correntes de proteção anti-arremesso na parte frontal da roçadeira.\nFazenda SL1\nSolicitado Sr. Wagner\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5049",
-    "cd_equipamento": "5049",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "109630",
-    "data_entrada": "29/04/2025",
-    "servico": "Soldar trinca na roda guia, acertar cremalheira de regulagem do esqui e colocar parafuso de fixação do rotor - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5197",

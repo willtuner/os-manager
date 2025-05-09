@@ -1,27 +1,51 @@
 [
   {
+    "frota": "81",
+    "cd_equipamento": "81",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "110289",
+    "data_entrada": "09/05/2025",
+    "servico": "Verificar concha baixando sozinha - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "308",
+    "cd_equipamento": "308",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "110287",
+    "data_entrada": "09/05/2025",
+    "servico": "Vazamento no anel de vedação da TDP - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110228",
+    "data_entrada": "08/05/2025",
+    "servico": "Verificar vazamento no braço hidráulico, vazamento no cudo da roda dianteira L/? e vazamento nas conexões da mangueira do comando hidráulico - (Fazenda SP)\nLiberado Sr. Arthur\nPendencias 4308, 4309 e 4310"
+  },
+  {
+    "frota": "5262",
+    "cd_equipamento": "5262",
+    "modelo": "MOTOCANA",
+    "os": "110226",
+    "data_entrada": "08/05/2025",
+    "servico": "Vazamento no pistão da lança - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "206",
+    "cd_equipamento": "206",
+    "modelo": "TRATOR VALTRA A990R 4X4",
+    "os": "110204",
+    "data_entrada": "08/05/2025",
+    "servico": "Revisar sistema de arrefecimento.\nFaz São Paulo\nSolicitado LeoJabes\nAutorizado Arthur"
+  },
+  {
     "frota": "234",
     "cd_equipamento": "234",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
     "os": "110162",
     "data_entrada": "07/05/2025",
     "servico": "Vazamento no cano do comando hidráulico - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "260",
-    "cd_equipamento": "260",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110159",
-    "data_entrada": "07/05/2025",
-    "servico": "Verificar trator baixando nível do liquido de arrefecimento do radiador - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "10223",
-    "cd_equipamento": "10223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110153",
-    "data_entrada": "07/05/2025",
-    "servico": "substituir filtro sedimentador - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "119",
@@ -40,36 +64,28 @@
     "servico": "Trocar radiador\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
   },
   {
-    "frota": "230",
-    "cd_equipamento": "230",
-    "modelo": "TRATOR VALTRA A124L 4X4",
-    "os": "110098",
-    "data_entrada": "06/05/2025",
-    "servico": "Identificado vazamento no bujão de dreno da ponteira da roda dianteira lado direito (L/D), além da ausência do bocal e do filtro do tanque de combustível - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "135",
-    "cd_equipamento": "135",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "110086",
-    "data_entrada": "06/05/2025",
-    "servico": "Verificar volante solto e colocar sinto de segurança - (Fazenda São Paulo)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "219",
-    "cd_equipamento": "219",
+    "frota": "275",
+    "cd_equipamento": "275",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110024",
-    "data_entrada": "06/05/2025",
-    "servico": "Identificado retorno de óleo do motor para o reservatório de aditivo, indicando possível falha na junta do cabeçote, trocador de calor ou sistema de vedação interna. Necessário diagnóstico detalhado para identificar a origem da contaminação e evitar danos ao sistema de arrefecimento - (Fazenda Estrela)\nLiberado Sr. Arthur"
+    "os": "109922",
+    "data_entrada": "02/05/2025",
+    "servico": "Fazer regulagem da TDP - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "97",
-    "cd_equipamento": "97",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "109948",
-    "data_entrada": "05/05/2025",
-    "servico": "Trava da alavanca de marchar quebrada - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+    "frota": "309",
+    "cd_equipamento": "309",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "109821",
+    "data_entrada": "02/05/2025",
+    "servico": "Substituir mangueira hidráulica furada - (Fazenda Estrela)\nLiberado Sr. Danilo"
+  },
+  {
+    "frota": "302",
+    "cd_equipamento": "302",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109760",
+    "data_entrada": "01/05/2025",
+    "servico": "Regularizar junção do escapamento no silencioso: perdeu um parafuso e está faltando a junta, ocasionando saída excessiva de fumaça em cima da bomba injetora.\nFazenda Santa Izabel\nSolicitado Sr. Lucas\nLiberado Sr. Arthur"
   },
   {
     "frota": "253",
@@ -78,22 +94,6 @@
     "os": "109723",
     "data_entrada": "30/04/2025",
     "servico": "Avaliar ruído anormal na TDP - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "286",
-    "cd_equipamento": "286",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109716",
-    "data_entrada": "30/04/2025",
-    "servico": "Verificar possível vazamento de óleo na mangueira do retorno da turbina e na junta localizada na parte central do trator - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "10121",
-    "cd_equipamento": "10121",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109663",
-    "data_entrada": "29/04/2025",
-    "servico": "Revisão parcial - (Fazenda NSA)\nLibertado Sr. Arthur"
   },
   {
     "frota": "86",
@@ -118,14 +118,6 @@
     "os": "109543",
     "data_entrada": "28/04/2025",
     "servico": "Verificar trinco da porta não funciona - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "223",
-    "cd_equipamento": "223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109529",
-    "data_entrada": "28/04/2025",
-    "servico": "Identificar e avaliar vazamento no meio do trator - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   },
   {
     "frota": "152",
