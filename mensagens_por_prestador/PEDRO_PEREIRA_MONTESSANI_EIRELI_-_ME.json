@@ -1,5 +1,21 @@
 [
   {
+    "frota": "142",
+    "cd_equipamento": "142",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "110357",
+    "data_entrada": "12/05/2025",
+    "servico": "Trator sem partida pelo sistema convencional; somente funciona ao realizar ligação direta. Suspeita de falha no circuito de ignição, relé de partida, chave de ignição ou motor de arranque. - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "98",
+    "cd_equipamento": "98",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "110338",
+    "data_entrada": "09/05/2025",
+    "servico": "Trocar sensor de rotação\nFaz Estrela\nSolicitado Danilo\nAutorizado Arthur"
+  },
+  {
     "frota": "235",
     "cd_equipamento": "235",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -134,14 +150,6 @@
     "os": "109937",
     "data_entrada": "05/05/2025",
     "servico": "Revisar sinalização não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "10223",
-    "cd_equipamento": "10223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109921",
-    "data_entrada": "02/05/2025",
-    "servico": "Relógio horimetro não funciona - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5229",

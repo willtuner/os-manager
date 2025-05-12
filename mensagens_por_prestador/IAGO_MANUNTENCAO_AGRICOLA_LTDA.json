@@ -1,19 +1,27 @@
 [
   {
+    "frota": "5061",
+    "cd_equipamento": "5061",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "110354",
+    "data_entrada": "12/05/2025",
+    "servico": "Trocar parafusos do suporte da bomba espanados - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5022",
+    "cd_equipamento": "5022",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "110353",
+    "data_entrada": "12/05/2025",
+    "servico": "Trocar parafusos do suporte da bomba espanados - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5492",
     "cd_equipamento": "5492",
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "110295",
     "data_entrada": "09/05/2025",
     "servico": "Trocar conexão \"T\" e verificar peça onde vai o manômetro quebrado - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "110294",
-    "data_entrada": "09/05/2025",
-    "servico": "Trocar correias do tanque - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5693",
@@ -32,14 +40,6 @@
     "servico": "Verificar sistema de transmissão, pois o movimento não está sendo transferido ao rotor dos facões. Inspecionar acoplamentos, eixos, engrenagens - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "110223",
-    "data_entrada": "08/05/2025",
-    "servico": "Substituir eixo cardan devido a empenamento (eixo dobrado), comprometendo o alinhamento e podendo gerar vibração ou danos ao sistema de transmissão - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5346",
     "cd_equipamento": "5346",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
@@ -56,76 +56,12 @@
     "servico": "Vazamento nas \"canecas\" da bomba e no regulador de pressão - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5058",
-    "cd_equipamento": "5058",
-    "modelo": "PULVERIZADOR 600 LT FMC",
-    "os": "110206",
-    "data_entrada": "08/05/2025",
-    "servico": "Vazamento nos pistões da bomba - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5721",
-    "cd_equipamento": "5721",
-    "modelo": "TANQUE DE AGUA 2000 LT",
-    "os": "110182",
-    "data_entrada": "07/05/2025",
-    "servico": "Trocar retentor da bomba - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "110164",
-    "data_entrada": "07/05/2025",
-    "servico": "Vazamento de óleo no retentor da bomba e trocar chapa de sustentação dos pistões do comando - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "110140",
-    "data_entrada": "07/05/2025",
-    "servico": "Suporte que segura linha dos filtros quebrada - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5569",
-    "cd_equipamento": "5569",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "110013",
-    "data_entrada": "06/05/2025",
-    "servico": "Trocar rolamento da roda guia - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5759",
-    "cd_equipamento": "5759",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "109981",
-    "data_entrada": "05/05/2025",
-    "servico": "Verificar e substituir o pistão de acionamento da abertura do ramal, que apresenta empenamento - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5128",
     "cd_equipamento": "5128",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "109771",
     "data_entrada": "01/05/2025",
     "servico": "Corrigir vazamento de óleo na bomba de pulverização.\nFazenda Nova Manhã\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5214",
-    "cd_equipamento": "5214",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "109766",
-    "data_entrada": "01/05/2025",
-    "servico": "Verificar coroas de transmissão danificadas, avaliar a corrente e demais engrenagens.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5613",
-    "cd_equipamento": "5613",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "109759",
-    "data_entrada": "01/05/2025",
-    "servico": "Verificar barulho anormal na traseira do equipamento, avaliar rolamentos e correias.\nFazenda Severino\nSolicitado Sr. Márcio\nLiberado Sr. Maurício"
   },
   {
     "frota": "5352",

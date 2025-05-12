@@ -112,14 +112,6 @@
     "servico": "Quebra do eixo de fixação da roda guia - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5524",
-    "cd_equipamento": "5524",
-    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
-    "os": "110017",
-    "data_entrada": "06/05/2025",
-    "servico": "Substituir engate com eixo explanado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5111",
     "cd_equipamento": "5111",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -392,28 +384,12 @@
     "servico": "Fazer alavanca - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "89",
-    "cd_equipamento": "89",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "105591",
-    "data_entrada": "14/02/2025",
-    "servico": "Sacar parafuso do eixo de transmissão (Fazenda Estrela)\nLiberado Sr. William"
-  },
-  {
     "frota": "5623",
     "cd_equipamento": "5623",
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
     "os": "105514",
     "data_entrada": "14/02/2025",
     "servico": "Colocar proteção anti arremesso - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5106",
-    "cd_equipamento": "5106",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "104943",
-    "data_entrada": "06/02/2025",
-    "servico": "Soldar pino de proteção - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5500",

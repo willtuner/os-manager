@@ -1,19 +1,11 @@
 [
   {
-    "frota": "81",
-    "cd_equipamento": "81",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "110289",
-    "data_entrada": "09/05/2025",
-    "servico": "Verificar concha baixando sozinha - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "110287",
-    "data_entrada": "09/05/2025",
-    "servico": "Vazamento no anel de vedação da TDP - (Fazenda SP)\nLiberado Sr. Arthur"
+    "frota": "221",
+    "cd_equipamento": "221",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110358",
+    "data_entrada": "12/05/2025",
+    "servico": "Vazamento no retentor da TDP - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "218",
@@ -32,14 +24,6 @@
     "servico": "Vazamento no pistão da lança - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "206",
-    "cd_equipamento": "206",
-    "modelo": "TRATOR VALTRA A990R 4X4",
-    "os": "110204",
-    "data_entrada": "08/05/2025",
-    "servico": "Revisar sistema de arrefecimento.\nFaz São Paulo\nSolicitado LeoJabes\nAutorizado Arthur"
-  },
-  {
     "frota": "234",
     "cd_equipamento": "234",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -54,30 +38,6 @@
     "os": "110150",
     "data_entrada": "07/05/2025",
     "servico": "Vazamento na bomba hidráulica\nTrinco do capô não funciona\nFixação dos  faróis quebrados  - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "220",
-    "cd_equipamento": "220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110148",
-    "data_entrada": "07/05/2025",
-    "servico": "Trocar radiador\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
-  },
-  {
-    "frota": "275",
-    "cd_equipamento": "275",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109922",
-    "data_entrada": "02/05/2025",
-    "servico": "Fazer regulagem da TDP - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "309",
-    "cd_equipamento": "309",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "109821",
-    "data_entrada": "02/05/2025",
-    "servico": "Substituir mangueira hidráulica furada - (Fazenda Estrela)\nLiberado Sr. Danilo"
   },
   {
     "frota": "302",
