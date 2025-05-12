@@ -1,25 +1,32 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "116",
+    "os": "110365",
+    "data": "12/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar eixo de tração com folga - (Fazenda Estrela)"
+  },
+  {
+    "frota": "206",
+    "os": "110364",
+    "data": "12/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar código de erro no painel \"E-18\"  - (Fazenda Estrela)"
+  },
+  {
+    "frota": "98",
+    "os": "110338",
+    "data": "09/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar sensor de rotação"
+  },
+  {
     "frota": "5467",
     "os": "110307",
     "data": "09/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Colocar barras de corte frontal e traseira - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5214",
-    "os": "110306",
-    "data": "09/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar folga no cubo da roda L/E - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5214",
-    "os": "110305",
-    "data": "09/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar folga no cubo da roda L/E - (Fazenda Estrela)"
   },
   {
     "frota": "10229",
@@ -78,13 +85,6 @@
     "servico": "Fazer proteção anti arremesso frente e atrás - (Fazenda Estrela)"
   },
   {
-    "frota": "5524",
-    "os": "110017",
-    "data": "06/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir engate com eixo explanado - (Fazenda Estrela)"
-  },
-  {
     "frota": "5031",
     "os": "109971",
     "data": "05/05/2025",
@@ -92,32 +92,11 @@
     "servico": "Montar cardam completo - (Fazenda Estrela)"
   },
   {
-    "frota": "10223",
-    "os": "109921",
-    "data": "02/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Relógio horimetro não funciona - (Fazenda Estrela)"
-  },
-  {
     "frota": "5106",
     "os": "109822",
     "data": "02/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Substituir eixo da roda guia quebrado - (Fazenda Estrela)"
-  },
-  {
-    "frota": "309",
-    "os": "109821",
-    "data": "02/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Substituir mangueira hidráulica furada - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5214",
-    "os": "109766",
-    "data": "01/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar coroas de transmissão danificadas, avaliar a corrente e demais engrenagens."
   },
   {
     "frota": "5214",
@@ -139,19 +118,5 @@
     "data": "28/04/2025",
     "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
     "servico": "Alinhar pratos e bica - (Fazenda Estrela)"
-  },
-  {
-    "frota": "89",
-    "os": "105591",
-    "data": "14/02/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Sacar parafuso do eixo de transmissão (Fazenda Estrela)"
-  },
-  {
-    "frota": "5106",
-    "os": "104943",
-    "data": "06/02/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar pino de proteção - (Fazenda Estrela)"
   }
 ]
