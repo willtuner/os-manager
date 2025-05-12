@@ -1,11 +1,27 @@
 [
   {
+    "frota": "116",
+    "cd_equipamento": "116",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "110365",
+    "data_entrada": "12/05/2025",
+    "servico": "Verificar eixo de tração com folga - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "221",
     "cd_equipamento": "221",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "110358",
     "data_entrada": "12/05/2025",
     "servico": "Vazamento no retentor da TDP - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "10227",
+    "cd_equipamento": "10227",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110308",
+    "data_entrada": "09/05/2025",
+    "servico": "Verificar problema na caixa C, que está escapando marcha durante o uso e  ruído identificado na embreagem durante a saída - (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
   },
   {
     "frota": "218",
@@ -86,14 +102,6 @@
     "os": "109357",
     "data_entrada": "24/04/2025",
     "servico": "Remover vazamentos\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
-  },
-  {
-    "frota": "228",
-    "cd_equipamento": "228",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "109169",
-    "data_entrada": "22/04/2025",
-    "servico": "Revisar caixa inversora\nFaz Sâo Severino\nSolicitado Cassio\nAutorizado Arthur"
   },
   {
     "frota": "94",

@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5264",
+    "cd_equipamento": "5264",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "110375",
+    "data_entrada": "12/05/2025",
+    "servico": "Ajustar chapa da base de fixação da bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "118",
+    "cd_equipamento": "118",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "110366",
+    "data_entrada": "12/05/2025",
+    "servico": "Fazer solda na escada quebrada - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5631",
+    "cd_equipamento": "5631",
+    "modelo": "DISTRIBUIDO FARTUS 15.0 GRANEL",
+    "os": "110346",
+    "data_entrada": "12/05/2025",
+    "servico": "Realizar a remoção de um gomo da esteira para ajuste do tensionamento - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "10229",
     "cd_equipamento": "10229",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -30,6 +54,14 @@
     "os": "110227",
     "data_entrada": "08/05/2025",
     "servico": "Soldar suporte para instalação de luz\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
+  },
+  {
+    "frota": "5730",
+    "cd_equipamento": "5730",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "110224",
+    "data_entrada": "08/05/2025",
+    "servico": "Instalar correntes anti-arremesso no lado direito e realizar solda corretiva em trincas identificadas na estrutura. Verificar conjunto de fixação do eixo cardan, pois os parafusos não permanecem firmemente parafusados - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5657",

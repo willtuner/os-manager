@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5068",
+    "cd_equipamento": "5068",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "110382",
+    "data_entrada": "12/05/2025",
+    "servico": "Consertar sistema de tríplice lavagem - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "110381",
+    "data_entrada": "12/05/2025",
+    "servico": "Trocar rolamento da turbina quebrado - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5061",
     "cd_equipamento": "5061",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -14,6 +30,22 @@
     "os": "110353",
     "data_entrada": "12/05/2025",
     "servico": "Trocar parafusos do suporte da bomba espanados - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5620",
+    "cd_equipamento": "5620",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "110310",
+    "data_entrada": "09/05/2025",
+    "servico": "Montar kit de embreagem - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5467",
+    "cd_equipamento": "5467",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "110307",
+    "data_entrada": "09/05/2025",
+    "servico": "Colocar barras de corte frontal e traseira - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5492",
