@@ -1,11 +1,25 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
-    "frota": "142",
-    "os": "110357",
+    "frota": "147",
+    "os": "110486",
+    "data": "13/05/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar ar condicionado e alternador (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5354",
+    "os": "110473",
+    "data": "13/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "93",
+    "os": "110411",
     "data": "12/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator sem partida pelo sistema convencional; somente funciona ao realizar ligação direta. Suspeita de falha no circuito de ignição, relé de partida, chave de ignição ou motor de arranque. - (Fazenda Nova Manhã)"
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar bomba de combustivel manual"
   },
   {
     "frota": "17",
@@ -22,25 +36,11 @@
     "servico": "Vazamento na bomba injetora - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "235",
-    "os": "110313",
-    "data": "09/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator sem partida  - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "5129",
     "os": "110312",
     "data": "09/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Vazamento no pistão - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "93",
-    "os": "110311",
-    "data": "09/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar motor de arranque em curto - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5600",
@@ -160,13 +160,6 @@
     "data": "26/04/2025",
     "prestador": "JORGE HENRIQUE MENDES LOURENCO- ME  JZ",
     "servico": "Montar pistoleira"
-  },
-  {
-    "frota": "93",
-    "os": "109444",
-    "data": "25/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié dianteiros queimados - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5275",
