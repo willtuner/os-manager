@@ -1,35 +1,19 @@
 [
   {
+    "frota": "147",
+    "cd_equipamento": "147",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "110486",
+    "data_entrada": "13/05/2025",
+    "servico": "Verificar ar condicionado e alternador (Fazenda Nova Manhã)\nLiberado Sr. Wilson"
+  },
+  {
     "frota": "253",
     "cd_equipamento": "253",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "110380",
     "data_entrada": "12/05/2025",
     "servico": "Revisar ar-condicionado\nFaz Minuano\nSolicitado Antônio\nAutorizado Arthur"
-  },
-  {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110359",
-    "data_entrada": "12/05/2025",
-    "servico": "Sistema de ar-condicionado parou de gelar, permanecendo apenas a ventilação com ar ambiente. - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110292",
-    "data_entrada": "09/05/2025",
-    "servico": "Verificar polia do compressor do ar-condicionado emitindo ruído (chiado ou canto), possivelmente por folga, desalinhamento ou desgaste do rolamento - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "260",
-    "cd_equipamento": "260",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110158",
-    "data_entrada": "07/05/2025",
-    "servico": "Verificar A/C não gela, apenas ventila - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "130",

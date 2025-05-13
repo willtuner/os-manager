@@ -1,5 +1,45 @@
 [
   {
+    "frota": "44",
+    "cd_equipamento": "44",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "110450",
+    "data_entrada": "13/05/2025",
+    "servico": "Sensor de temperatura quebrou após impacto com galho. Necessária substituição do sensor danificado - (Fazenda São Paulo)\nLiberaod Sr. Arthur"
+  },
+  {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "110434",
+    "data_entrada": "13/05/2025",
+    "servico": "Trocar cibié, verificar sirene de ré não funciona e painel não marca combustível - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "90",
+    "cd_equipamento": "90",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "110427",
+    "data_entrada": "13/05/2025",
+    "servico": "Trator sem o cibié dianteiro e os traseiros não ascendem - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "229",
+    "cd_equipamento": "229",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110419",
+    "data_entrada": "12/05/2025",
+    "servico": "Faróis não ascendem - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "151",
+    "cd_equipamento": "151",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "110417",
+    "data_entrada": "12/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Alvorada(oficina)\nSolicitado Natalino\nAutorizado Arthur"
+  },
+  {
     "frota": "82",
     "cd_equipamento": "82",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -8,36 +48,12 @@
     "servico": "Revisar sinalização, não acende nada - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "142",
-    "cd_equipamento": "142",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "110357",
-    "data_entrada": "12/05/2025",
-    "servico": "Trator sem partida pelo sistema convencional; somente funciona ao realizar ligação direta. Suspeita de falha no circuito de ignição, relé de partida, chave de ignição ou motor de arranque. - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "98",
     "cd_equipamento": "98",
     "modelo": "TRATOR JOHN DEERE 5065 4X4",
     "os": "110338",
     "data_entrada": "09/05/2025",
     "servico": "Trocar sensor de rotação\nFaz Estrela\nSolicitado Danilo\nAutorizado Arthur"
-  },
-  {
-    "frota": "235",
-    "cd_equipamento": "235",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110313",
-    "data_entrada": "09/05/2025",
-    "servico": "Trator sem partida  - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "93",
-    "cd_equipamento": "93",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110311",
-    "data_entrada": "09/05/2025",
-    "servico": "Verificar motor de arranque em curto - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "283",
@@ -278,14 +294,6 @@
     "os": "109513",
     "data_entrada": "26/04/2025",
     "servico": "Trocar caixa do contador do Drench\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
-  },
-  {
-    "frota": "93",
-    "cd_equipamento": "93",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "109444",
-    "data_entrada": "25/04/2025",
-    "servico": "Cibié dianteiros queimados - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5430",

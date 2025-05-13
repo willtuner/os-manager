@@ -1,5 +1,61 @@
 [
   {
+    "frota": "131",
+    "cd_equipamento": "131",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "110488",
+    "data_entrada": "13/05/2025",
+    "servico": "Avaliar trator não da embreagem - (Fazenda Santa Izabel)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "196",
+    "cd_equipamento": "196",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110478",
+    "data_entrada": "13/05/2025",
+    "servico": "Avaliar trator jogando óleo pelo respiro - (Fazenda São Pedro)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "206",
+    "cd_equipamento": "206",
+    "modelo": "TRATOR VALTRA A990R 4X4",
+    "os": "110476",
+    "data_entrada": "13/05/2025",
+    "servico": "Alavanca não está acionando a tomada de força - (Fazenda Estrela)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "309",
+    "cd_equipamento": "309",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "110445",
+    "data_entrada": "13/05/2025",
+    "servico": "Identificado vazamento de óleo no retentor da Tomada de Potência (TDP). Necessário desmontar o conjunto para substituição do anel de vedação\n- (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "86",
+    "cd_equipamento": "86",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "110426",
+    "data_entrada": "13/05/2025",
+    "servico": "Avaliar motor apresentando ruído anormal (batendo) - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "151",
+    "cd_equipamento": "151",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "110415",
+    "data_entrada": "12/05/2025",
+    "servico": "Revisar caixa do grupo escapando marca\nFaz Alvorada(OFICINA)\nSolicitado Natalino\nAutorizado Arthur"
+  },
+  {
+    "frota": "93",
+    "cd_equipamento": "93",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "110411",
+    "data_entrada": "12/05/2025",
+    "servico": "Trocar bomba de combustivel manual\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
+  },
+  {
     "frota": "116",
     "cd_equipamento": "116",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
