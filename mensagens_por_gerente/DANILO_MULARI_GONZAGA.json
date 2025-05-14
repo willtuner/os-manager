@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "5494",
+    "os": "110534",
+    "data": "14/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituir corrente das engrenagens do sistema de transmissão - (Fazenda Estrela)"
+  },
+  {
     "frota": "268",
     "os": "110496",
     "data": "14/05/2025",
@@ -8,25 +15,11 @@
     "servico": "Realinhar e realizar solda na escada de acesso ao trator, devido a desalinhamento estrutural que compromete a segurança do operador - (Fazenda Estrela)"
   },
   {
-    "frota": "116",
-    "os": "110365",
-    "data": "12/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar eixo de tração com folga - (Fazenda Estrela)"
-  },
-  {
     "frota": "206",
     "os": "110364",
     "data": "12/05/2025",
     "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
     "servico": "Verificar código de erro no painel \"E-18\"  - (Fazenda Estrela)"
-  },
-  {
-    "frota": "98",
-    "os": "110338",
-    "data": "09/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar sensor de rotação"
   },
   {
     "frota": "10229",
@@ -43,25 +36,11 @@
     "servico": "Substituir parafuso do suporte da roda guia - (Fazenda Estrela)"
   },
   {
-    "frota": "5580",
-    "os": "110241",
-    "data": "08/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Substituir corda da partida e regular - (Fazenda Estrela)"
-  },
-  {
     "frota": "5543",
     "os": "110219",
     "data": "08/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda na roda guia L/D - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5346",
-    "os": "110218",
-    "data": "08/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Folga no cubo de roda traseira L/D - (Fazenda Estrela)"
   },
   {
     "frota": "5543",
@@ -71,25 +50,11 @@
     "servico": "Colocar correntes de proteção anti arremesso - (Fazenda Estrela)"
   },
   {
-    "frota": "10219",
-    "os": "110154",
-    "data": "07/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar faróis dianteiros não ascendem - (Fazenda Estrela)"
-  },
-  {
     "frota": "5106",
     "os": "110097",
     "data": "06/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Fazer proteção anti arremesso frente e atrás - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5031",
-    "os": "109971",
-    "data": "05/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Montar cardam completo - (Fazenda Estrela)"
   },
   {
     "frota": "5106",
@@ -104,13 +69,6 @@
     "data": "30/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)"
-  },
-  {
-    "frota": "91",
-    "os": "109667",
-    "data": "29/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
   },
   {
     "frota": "5635",
