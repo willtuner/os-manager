@@ -1,5 +1,13 @@
 [
   {
+    "frota": "189",
+    "cd_equipamento": "189",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "110510",
+    "data_entrada": "14/05/2025",
+    "servico": "Confeccionar e instalar proteções das lanternas do paralamas\nFaz Estrela\nSolicitado Vadinho\nAutorizado Arthur"
+  },
+  {
     "frota": "5459",
     "cd_equipamento": "5459",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -22,14 +30,6 @@
     "os": "110413",
     "data_entrada": "12/05/2025",
     "servico": "Confeccionar teto e trocar paralama lado esquerdo\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
-  },
-  {
-    "frota": "5264",
-    "cd_equipamento": "5264",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "110375",
-    "data_entrada": "12/05/2025",
-    "servico": "Ajustar chapa da base de fixação da bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "118",
@@ -200,22 +200,6 @@
     "servico": "Fazer solda e reforço - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5129",
-    "cd_equipamento": "5129",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "109959",
-    "data_entrada": "05/05/2025",
-    "servico": "Serpentina sem o bico regulador de pressão; necessário instalar para correto funcionamento do sistema - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5128",
-    "cd_equipamento": "5128",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "109958",
-    "data_entrada": "05/05/2025",
-    "servico": "Serpentina sem o bico regulador de pressão; necessário instalar para correto funcionamento do sistema - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "283",
     "cd_equipamento": "283",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -230,14 +214,6 @@
     "os": "109926",
     "data_entrada": "02/05/2025",
     "servico": "Fazer solda e reforço na escada - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5204",
-    "cd_equipamento": "5204",
-    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
-    "os": "109924",
-    "data_entrada": "02/05/2025",
-    "servico": "Rolamento da roda L/E estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "289",

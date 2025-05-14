@@ -1,35 +1,11 @@
 [
   {
-    "frota": "131",
-    "cd_equipamento": "131",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "110488",
-    "data_entrada": "13/05/2025",
-    "servico": "Avaliar trator não da embreagem - (Fazenda Santa Izabel)\nLiberado Sr. Wilson"
-  },
-  {
     "frota": "196",
     "cd_equipamento": "196",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "110478",
     "data_entrada": "13/05/2025",
     "servico": "Avaliar trator jogando óleo pelo respiro - (Fazenda São Pedro)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "206",
-    "cd_equipamento": "206",
-    "modelo": "TRATOR VALTRA A990R 4X4",
-    "os": "110476",
-    "data_entrada": "13/05/2025",
-    "servico": "Alavanca não está acionando a tomada de força - (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "309",
-    "cd_equipamento": "309",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "110445",
-    "data_entrada": "13/05/2025",
-    "servico": "Identificado vazamento de óleo no retentor da Tomada de Potência (TDP). Necessário desmontar o conjunto para substituição do anel de vedação\n- (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
   },
   {
     "frota": "86",
@@ -62,14 +38,6 @@
     "os": "110365",
     "data_entrada": "12/05/2025",
     "servico": "Verificar eixo de tração com folga - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "221",
-    "cd_equipamento": "221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110358",
-    "data_entrada": "12/05/2025",
-    "servico": "Vazamento no retentor da TDP - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10227",

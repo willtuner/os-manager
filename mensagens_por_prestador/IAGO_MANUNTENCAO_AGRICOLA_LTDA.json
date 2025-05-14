@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5730",
+    "cd_equipamento": "5730",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "110504",
+    "data_entrada": "14/05/2025",
+    "servico": "Suporte dos fações quebrado - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5418",
     "cd_equipamento": "5418",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -24,14 +32,6 @@
     "servico": "Vazamento de óleo no eixo da bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5767",
-    "cd_equipamento": "5767",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "110409",
-    "data_entrada": "12/05/2025",
-    "servico": "Vazamento de óleo no eixo da bomba - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5660",
     "cd_equipamento": "5660",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -48,44 +48,12 @@
     "servico": "Trocar rolamento da turbina quebrado - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5061",
-    "cd_equipamento": "5061",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "110354",
-    "data_entrada": "12/05/2025",
-    "servico": "Trocar parafusos do suporte da bomba espanados - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5022",
-    "cd_equipamento": "5022",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "110353",
-    "data_entrada": "12/05/2025",
-    "servico": "Trocar parafusos do suporte da bomba espanados - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5620",
     "cd_equipamento": "5620",
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
     "os": "110310",
     "data_entrada": "09/05/2025",
     "servico": "Montar kit de embreagem - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5467",
-    "cd_equipamento": "5467",
-    "modelo": "CONJUNTO PODADOR WWD",
-    "os": "110307",
-    "data_entrada": "09/05/2025",
-    "servico": "Colocar barras de corte frontal e traseira - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5492",
-    "cd_equipamento": "5492",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "110295",
-    "data_entrada": "09/05/2025",
-    "servico": "Trocar conexão \"T\" e verificar peça onde vai o manômetro quebrado - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5693",
@@ -110,14 +78,6 @@
     "os": "110218",
     "data_entrada": "08/05/2025",
     "servico": "Folga no cubo de roda traseira L/D - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5718",
-    "cd_equipamento": "5718",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "110215",
-    "data_entrada": "08/05/2025",
-    "servico": "Vazamento nas \"canecas\" da bomba e no regulador de pressão - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5128",
@@ -152,14 +112,6 @@
     "servico": "Instalar caixa incorporadora e corote de água - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "108202",
-    "data_entrada": "03/04/2025",
-    "servico": "Substituir bomba de pulverização com vazamento por outra reserva revisada.\nFazenda Estrela\nSolicitado Sr. Carlos\nLiberado Sr. Maurício"
-  },
-  {
     "frota": "5623",
     "cd_equipamento": "5623",
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
@@ -174,14 +126,6 @@
     "os": "107660",
     "data_entrada": "24/03/2025",
     "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5227",
-    "cd_equipamento": "5227",
-    "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
-    "os": "106583",
-    "data_entrada": "05/03/2025",
-    "servico": "Quebra do suporte dos fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5130",

@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5262",
+    "cd_equipamento": "5262",
+    "modelo": "MOTOCANA",
+    "os": "110517",
+    "data_entrada": "14/05/2025",
+    "servico": "Verificar equipamento não pega na partida - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5058",
+    "cd_equipamento": "5058",
+    "modelo": "PULVERIZADOR 600 LT FMC",
+    "os": "110513",
+    "data_entrada": "14/05/2025",
+    "servico": "Lado derreio 'B' não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "275",
+    "cd_equipamento": "275",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110501",
+    "data_entrada": "14/05/2025",
+    "servico": "Verificar funcionamento do alternador, tensão de carga, integridade das correias, chicote elétrico e conexões com a bateria - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110498",
+    "data_entrada": "14/05/2025",
+    "servico": "Painel não exibe a temperatura do motor, verificar sensor de temperatura, chicote elétrico e possível falha no painel ou central eletrônica. - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "221",
+    "cd_equipamento": "221",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110497",
+    "data_entrada": "14/05/2025",
+    "servico": "Faróis traseiro queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "79",
+    "cd_equipamento": "79",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "110494",
+    "data_entrada": "14/05/2025",
+    "servico": "Substituir cibié auxiliar queimado localizado na barra de pulverização - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "44",
     "cd_equipamento": "44",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
