@@ -56,28 +56,12 @@
     "servico": "Montar kit de embreagem - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5693",
-    "cd_equipamento": "5693",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "110273",
-    "data_entrada": "08/05/2025",
-    "servico": "Verificar bomba sem pressão - (Fazenda Biscui)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5630",
     "cd_equipamento": "5630",
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
     "os": "110239",
     "data_entrada": "08/05/2025",
     "servico": "Verificar sistema de transmissão, pois o movimento não está sendo transferido ao rotor dos facões. Inspecionar acoplamentos, eixos, engrenagens - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5346",
-    "cd_equipamento": "5346",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "110218",
-    "data_entrada": "08/05/2025",
-    "servico": "Folga no cubo de roda traseira L/D - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5128",
@@ -88,28 +72,12 @@
     "servico": "Corrigir vazamento de óleo na bomba de pulverização.\nFazenda Nova Manhã\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício"
   },
   {
-    "frota": "5352",
-    "cd_equipamento": "5352",
-    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
-    "os": "109739",
-    "data_entrada": "30/04/2025",
-    "servico": "Rosca do vagão travada - (Pecuaria)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5165",
     "cd_equipamento": "5165",
     "modelo": "ROCADEIRA TATU",
     "os": "109411",
     "data_entrada": "25/04/2025",
     "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5138",
-    "cd_equipamento": "5138",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "109355",
-    "data_entrada": "24/04/2025",
-    "servico": "Instalar caixa incorporadora e corote de água - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5623",
@@ -126,21 +94,5 @@
     "os": "107660",
     "data_entrada": "24/03/2025",
     "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5130",
-    "cd_equipamento": "5130",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "105884",
-    "data_entrada": "19/02/2025",
-    "servico": "Trocar as luvas que engata no multiplicador - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5545",
-    "cd_equipamento": "5545",
-    "modelo": "PULVERIZADOR BARRAS TRICICLO",
-    "os": "105826",
-    "data_entrada": "18/02/2025",
-    "servico": "Verificar equipamento sem freio traseiro - (Pecuaria)\nLiberado Sr. Mauricio"
   }
 ]

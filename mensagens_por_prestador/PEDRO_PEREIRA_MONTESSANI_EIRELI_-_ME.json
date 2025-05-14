@@ -1,5 +1,21 @@
 [
   {
+    "frota": "10221",
+    "cd_equipamento": "10221",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110527",
+    "data_entrada": "14/05/2025",
+    "servico": "Faróis quebrados e queimados e cibié queimado - (Fazenda Terra Branca)\nLiberado Sr. Arthur \nPendencia 4333"
+  },
+  {
+    "frota": "5660",
+    "cd_equipamento": "5660",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "110519",
+    "data_entrada": "14/05/2025",
+    "servico": "Hélice ventilando com baixa eficiência e possível ruído, indicando falha nos rolamentos - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5262",
     "cd_equipamento": "5262",
     "modelo": "MOTOCANA",
@@ -22,6 +38,14 @@
     "os": "110501",
     "data_entrada": "14/05/2025",
     "servico": "Verificar funcionamento do alternador, tensão de carga, integridade das correias, chicote elétrico e conexões com a bateria - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5492",
+    "cd_equipamento": "5492",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "110500",
+    "data_entrada": "14/05/2025",
+    "servico": "Ramal de pulverização acionando apenas um dos lados, verificar eletroválvulas, chicote elétrico, conexões e comandos. - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
     "frota": "198",
@@ -48,30 +72,6 @@
     "servico": "Substituir cibié auxiliar queimado localizado na barra de pulverização - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "110450",
-    "data_entrada": "13/05/2025",
-    "servico": "Sensor de temperatura quebrou após impacto com galho. Necessária substituição do sensor danificado - (Fazenda São Paulo)\nLiberaod Sr. Arthur"
-  },
-  {
-    "frota": "100",
-    "cd_equipamento": "100",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "110434",
-    "data_entrada": "13/05/2025",
-    "servico": "Trocar cibié, verificar sirene de ré não funciona e painel não marca combustível - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "90",
-    "cd_equipamento": "90",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "110427",
-    "data_entrada": "13/05/2025",
-    "servico": "Trator sem o cibié dianteiro e os traseiros não ascendem - (Fazenda São Paulo)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "229",
     "cd_equipamento": "229",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -96,44 +96,12 @@
     "servico": "Revisar sinalização, não acende nada - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "98",
-    "cd_equipamento": "98",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110338",
-    "data_entrada": "09/05/2025",
-    "servico": "Trocar sensor de rotação\nFaz Estrela\nSolicitado Danilo\nAutorizado Arthur"
-  },
-  {
-    "frota": "283",
-    "cd_equipamento": "283",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110304",
-    "data_entrada": "09/05/2025",
-    "servico": "Instalar cibié dianteiro - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "228",
     "cd_equipamento": "228",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
     "os": "110293",
     "data_entrada": "09/05/2025",
     "servico": "Revisar sistema eletrico\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
-  },
-  {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "110288",
-    "data_entrada": "09/05/2025",
-    "servico": "Relógio horimetro não funciona e faróis traseiro não ascendem - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "110240",
-    "data_entrada": "08/05/2025",
-    "servico": "Verificar ventilador do sistema de arrefecimento não funciona - (Fazenda São Paulo)\nLiberado Sr. Arthur"
   },
   {
     "frota": "303",
@@ -176,36 +144,12 @@
     "servico": "Trocar cibié da torre queimado - (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "10219",
-    "cd_equipamento": "10219",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110154",
-    "data_entrada": "07/05/2025",
-    "servico": "Verificar faróis dianteiros não ascendem - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "103",
-    "cd_equipamento": "103",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110147",
-    "data_entrada": "07/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Minuano\nSolicitado Antônio\nAutorizado Arthur"
-  },
-  {
     "frota": "144",
     "cd_equipamento": "144",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
     "os": "110047",
     "data_entrada": "06/05/2025",
     "servico": "Instalar lanternas do alerta quebrada - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5697",
-    "cd_equipamento": "5697",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "109952",
-    "data_entrada": "05/05/2025",
-    "servico": "Verificar acionamento do drash, não aciona um dos lados - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5673",
@@ -222,14 +166,6 @@
     "os": "109937",
     "data_entrada": "05/05/2025",
     "servico": "Revisar sinalização não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5229",
-    "cd_equipamento": "5229",
-    "modelo": "PODADEIRA HIDRAUTEC HLC 3",
-    "os": "109814",
-    "data_entrada": "02/05/2025",
-    "servico": "Instalar cibié - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10121",
@@ -256,14 +192,6 @@
     "servico": "Revisar sinalização, trator não funciona sirene de ré, faróis e buzina - (Pecuaria)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5479",
-    "cd_equipamento": "5479",
-    "modelo": "PULVERIZADOR 600 LT JACTO",
-    "os": "109785",
-    "data_entrada": "02/05/2025",
-    "servico": "Verificar drash não aciona - (Fazenda Biscui)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5786",
     "cd_equipamento": "5786",
     "modelo": "PULVERIZADOR 600 LT",
@@ -272,84 +200,12 @@
     "servico": "Instalar equipamento de drash - (Oficina)\nLiberado Sr. Zacarias"
   },
   {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109731",
-    "data_entrada": "30/04/2025",
-    "servico": "Instalar cibié dianteiro - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "149",
-    "cd_equipamento": "149",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "109720",
-    "data_entrada": "30/04/2025",
-    "servico": "Polia do alternador travada - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5528",
-    "cd_equipamento": "5528",
-    "modelo": "PULV.FMCOPLING JB 80/600 A",
-    "os": "109676",
-    "data_entrada": "29/04/2025",
-    "servico": "Verificar placa do painel de controle do drash, que não responde aos comandos de acionamento. - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "91",
-    "cd_equipamento": "91",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "109667",
-    "data_entrada": "29/04/2025",
-    "servico": "Revisar sistema eletrico\nFaz Estrela\nSolicitado Danilo\nAutorizado Arthur"
-  },
-  {
     "frota": "153",
     "cd_equipamento": "153",
     "modelo": "TRATOR JOHN DEERE 5055E",
     "os": "109641",
     "data_entrada": "29/04/2025",
     "servico": "Instalar faróis auxiliares voltados para as barras de herbicidas, visando melhorar a iluminação durante as operações noturnas. - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109567",
-    "data_entrada": "28/04/2025",
-    "servico": "Meia luz de freio não ascende  - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "250",
-    "cd_equipamento": "250",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "109566",
-    "data_entrada": "28/04/2025",
-    "servico": "Trocar lanternas de seta quebrada - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5726",
-    "cd_equipamento": "5726",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "109514",
-    "data_entrada": "26/04/2025",
-    "servico": "Verificar funcionamento do Painel\nFaz São Pedro\nSolicitado Romes\nAutorizado Arthur"
-  },
-  {
-    "frota": "5429",
-    "cd_equipamento": "5429",
-    "modelo": "PULVERIZADOR 600 LT FMC",
-    "os": "109513",
-    "data_entrada": "26/04/2025",
-    "servico": "Trocar caixa do contador do Drench\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
-  },
-  {
-    "frota": "5430",
-    "cd_equipamento": "5430",
-    "modelo": "PULVERIZADOR 600 LT FMC",
-    "os": "109419",
-    "data_entrada": "25/04/2025",
-    "servico": "Verificar drash não aciona nenhum dos lados - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "211",

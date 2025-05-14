@@ -1,5 +1,37 @@
 [
   {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110536",
+    "data_entrada": "14/05/2025",
+    "servico": "Barra de direção quebrada e trocar parafuso da cabine - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "96",
+    "cd_equipamento": "96",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "110515",
+    "data_entrada": "14/05/2025",
+    "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110505",
+    "data_entrada": "14/05/2025",
+    "servico": "Verificar cabo do acelerador de mão - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "189",
+    "cd_equipamento": "189",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "110492",
+    "data_entrada": "14/05/2025",
+    "servico": "Cabo de acelerador de mão quebrado - (Fazenda Estrela)\nLiberado Sr. Wilson"
+  },
+  {
     "frota": "196",
     "cd_equipamento": "196",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -32,12 +64,12 @@
     "servico": "Trocar bomba de combustivel manual\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
   },
   {
-    "frota": "116",
-    "cd_equipamento": "116",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "110365",
+    "frota": "78",
+    "cd_equipamento": "78",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "110379",
     "data_entrada": "12/05/2025",
-    "servico": "Verificar eixo de tração com folga - (Fazenda Estrela)\nLiberado Sr. Arthur"
+    "servico": "Trocar banco e verificar freio estacionário não funciona - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10227",

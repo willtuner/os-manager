@@ -1,5 +1,21 @@
 [
   {
+    "frota": "314",
+    "cd_equipamento": "314",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "110532",
+    "data_entrada": "14/05/2025",
+    "servico": "Farol dianteiro queimado - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5261",
+    "cd_equipamento": "5261",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "110530",
+    "data_entrada": "14/05/2025",
+    "servico": "Pneu L/? furado - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "233",
     "cd_equipamento": "233",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -32,14 +48,6 @@
     "servico": "Pneu traseiro furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5523",
-    "cd_equipamento": "5523",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "110428",
-    "data_entrada": "13/05/2025",
-    "servico": "Pneu L/E furado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "155",
     "cd_equipamento": "155",
     "modelo": "TRATOR JOHN DEERE 5055E",
@@ -64,14 +72,6 @@
     "servico": "Pneu L/E furado - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5367",
-    "cd_equipamento": "5367",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "110214",
-    "data_entrada": "08/05/2025",
-    "servico": "Pneu L/E furado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "227",
     "cd_equipamento": "227",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -86,21 +86,5 @@
     "os": "110156",
     "data_entrada": "07/05/2025",
     "servico": "Trocar pneus dianteiros desgastados (enviar para recapar).\nFazenda Severino (Oficina)\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "250",
-    "cd_equipamento": "250",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "110075",
-    "data_entrada": "06/05/2025",
-    "servico": "Pneu L/D traseiro furado - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5222",
-    "cd_equipamento": "5222",
-    "modelo": "TANQUE DE AGUA 6500L R16 VERM.",
-    "os": "110066",
-    "data_entrada": "06/05/2025",
-    "servico": "Pneu L/E dianteiro furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]
