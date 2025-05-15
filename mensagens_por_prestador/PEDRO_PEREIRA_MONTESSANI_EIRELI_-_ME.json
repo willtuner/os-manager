@@ -1,5 +1,69 @@
 [
   {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110594",
+    "data_entrada": "15/05/2025",
+    "servico": "Cibié traseiro queimado L/E - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "208",
+    "cd_equipamento": "208",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110575",
+    "data_entrada": "15/05/2025",
+    "servico": "Farol dianteiro e traseiro queimado - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "93",
+    "cd_equipamento": "93",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "110574",
+    "data_entrada": "15/05/2025",
+    "servico": "Revisar sinalização, cibiés não ascendem - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "29",
+    "cd_equipamento": "29",
+    "modelo": "TRATOR MASSEY FERGUSON 275/2",
+    "os": "110571",
+    "data_entrada": "15/05/2025",
+    "servico": "Trator sem partida e farol dianteiro quebrado - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110569",
+    "data_entrada": "15/05/2025",
+    "servico": "Avaliar sistema elétrico de iluminação apresentando curto-circuito, ocasionando queima de fusível e derretimento do chicote - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "90",
+    "cd_equipamento": "90",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "110547",
+    "data_entrada": "14/05/2025",
+    "servico": "Verificar relógio horimetro não funciona - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "46",
+    "cd_equipamento": "46",
+    "modelo": "TRATOR JOHN DEERE 5600 4X4",
+    "os": "110544",
+    "data_entrada": "14/05/2025",
+    "servico": "Trator não marca temperatura no painel - (Fazenda Minuano)\n- Já avaliado por eletricista e solicitado troca do painel \nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "314",
+    "cd_equipamento": "314",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "110532",
+    "data_entrada": "14/05/2025",
+    "servico": "Farol dianteiro queimado - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "10221",
     "cd_equipamento": "10221",
     "modelo": "TRATOR JOHN DEERE 5080E",

@@ -1,5 +1,45 @@
 [
   {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110573",
+    "data_entrada": "15/05/2025",
+    "servico": "Verificar TDP ligando sozinha - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "228",
+    "cd_equipamento": "228",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110572",
+    "data_entrada": "15/05/2025",
+    "servico": "Avaliar embreagem roncando ao ligar TDP - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "275",
+    "cd_equipamento": "275",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110559",
+    "data_entrada": "15/05/2025",
+    "servico": "Avaliar vazamento de aditivo - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "272",
+    "cd_equipamento": "272",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110549",
+    "data_entrada": "14/05/2025",
+    "servico": "Vazamento na caixa seca - (Fazenda SL1)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "257",
+    "cd_equipamento": "257",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110545",
+    "data_entrada": "14/05/2025",
+    "servico": "Pino de trava da alavanca do câmbio quebrado, comprometendo o correto acionamento das marchas. (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "233",
     "cd_equipamento": "233",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -38,14 +78,6 @@
     "os": "110478",
     "data_entrada": "13/05/2025",
     "servico": "Avaliar trator jogando óleo pelo respiro - (Fazenda São Pedro)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "86",
-    "cd_equipamento": "86",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "110426",
-    "data_entrada": "13/05/2025",
-    "servico": "Avaliar motor apresentando ruído anormal (batendo) - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "151",
