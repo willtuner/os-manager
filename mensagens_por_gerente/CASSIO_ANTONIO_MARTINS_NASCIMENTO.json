@@ -1,6 +1,48 @@
 [
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
+    "frota": "228",
+    "os": "110579",
+    "data": "15/05/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Quebra do fio do compressor de A/C - (Fazenda São Severino)"
+  },
+  {
+    "frota": "227",
+    "os": "110573",
+    "data": "15/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar TDP ligando sozinha - (Fazenda São Severino)"
+  },
+  {
+    "frota": "228",
+    "os": "110572",
+    "data": "15/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar embreagem roncando ao ligar TDP - (Fazenda São Severino)"
+  },
+  {
+    "frota": "29",
+    "os": "110571",
+    "data": "15/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trator sem partida e farol dianteiro quebrado - (Fazenda São Severino)"
+  },
+  {
+    "frota": "134",
+    "os": "110564",
+    "data": "15/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda na roda traseira L/E - (Fazenda São Severino)"
+  },
+  {
+    "frota": "134",
+    "os": "110562",
+    "data": "15/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Desmontar roda traseira L/E para fazer solda em trinca - (Fazenda São Severino)"
+  },
+  {
     "frota": "233",
     "os": "110536",
     "data": "14/05/2025",
@@ -20,13 +62,6 @@
     "data": "14/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Hélice ventilando com baixa eficiência e possível ruído, indicando falha nos rolamentos - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5660",
-    "os": "110437",
-    "data": "13/05/2025",
-    "prestador": "MURILO SILVA 09207298945",
-    "servico": "Instalar cabo que liga SPE a bateria - (Fazenda São Severino)"
   },
   {
     "frota": "5614",
