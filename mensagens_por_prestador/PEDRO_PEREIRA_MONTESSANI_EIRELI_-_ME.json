@@ -1,5 +1,29 @@
 [
   {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "110607",
+    "data_entrada": "15/05/2025",
+    "servico": "Verificar painel de instrumentos, luz da TDP e sensor de temperatura não marcam com precisão no painel e luz interna da cabine queimada    - (Fazenda NSA)"
+  },
+  {
+    "frota": "5725",
+    "cd_equipamento": "5725",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "110602",
+    "data_entrada": "15/05/2025",
+    "servico": "Trocar painel de controle da barra de herbicida quebrado - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5605",
+    "cd_equipamento": "5605",
+    "modelo": "PULVERIZADOR 600LT CIMAG",
+    "os": "110600",
+    "data_entrada": "15/05/2025",
+    "servico": "Verificar drash não abre um dos lados - (Fazenda Biscui)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "258",
     "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -70,14 +94,6 @@
     "os": "110527",
     "data_entrada": "14/05/2025",
     "servico": "Faróis quebrados e queimados e cibié queimado - (Fazenda Terra Branca)\nLiberado Sr. Arthur \nPendencia 4333"
-  },
-  {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110519",
-    "data_entrada": "14/05/2025",
-    "servico": "Hélice ventilando com baixa eficiência e possível ruído, indicando falha nos rolamentos - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5262",
@@ -214,14 +230,6 @@
     "os": "110047",
     "data_entrada": "06/05/2025",
     "servico": "Instalar lanternas do alerta quebrada - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5673",
-    "cd_equipamento": "5673",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "109938",
-    "data_entrada": "05/05/2025",
-    "servico": "Verificar comando não funciona - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "96",

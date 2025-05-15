@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5031",
+    "cd_equipamento": "5031",
+    "modelo": "RC2 E 2600 LSL TATU",
+    "os": "110626",
+    "data_entrada": "15/05/2025",
+    "servico": "Substituir facão e arrastador - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5366",
+    "cd_equipamento": "5366",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "110601",
+    "data_entrada": "15/05/2025",
+    "servico": "Folga no eixo da roda L/D - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "110560",
+    "data_entrada": "15/05/2025",
+    "servico": "Verificar tanque de 4.000 litros que apresenta falha na sucção do produto ao atingir aproximadamente 1.500 litros; suspeita de problema no pescador. - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5755",
+    "cd_equipamento": "5755",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "110551",
+    "data_entrada": "15/05/2025",
+    "servico": "Vazamento de óleo no retentor do multiplicador - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "110534",
+    "data_entrada": "14/05/2025",
+    "servico": "Substituir corrente das engrenagens do sistema de transmissão e trocar rolamento L/D  - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5660",
+    "cd_equipamento": "5660",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "110519",
+    "data_entrada": "14/05/2025",
+    "servico": "Hélice ventilando com baixa eficiência e possível ruído, indicando falha nos rolamentos - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5730",
     "cd_equipamento": "5730",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
@@ -8,12 +56,20 @@
     "servico": "Suporte dos fações quebrado - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5418",
-    "cd_equipamento": "5418",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "110483",
+    "frota": "5657",
+    "cd_equipamento": "5657",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "110493",
+    "data_entrada": "14/05/2025",
+    "servico": "Verificada ocorrência de vazamento na bomba e folga na polia do eixo, resultando em deslizamento. Recomendada desmontagem para inspeção, substituição de vedação e verificação da fixação da polia. - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5614",
+    "cd_equipamento": "5614",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "110436",
     "data_entrada": "13/05/2025",
-    "servico": "Reacionar caixa incorporadora - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "servico": "Hélice em contato com as laterais do tanque, gerando atrito e risco de danos ao conjunto - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5612",

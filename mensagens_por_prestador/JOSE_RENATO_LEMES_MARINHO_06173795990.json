@@ -1,19 +1,35 @@
 [
   {
+    "frota": "5031",
+    "cd_equipamento": "5031",
+    "modelo": "RC2 E 2600 LSL TATU",
+    "os": "110625",
+    "data_entrada": "15/05/2025",
+    "servico": "Soldar suporte da roda guia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5681",
+    "cd_equipamento": "5681",
+    "modelo": "PCA 600 S0117 PA CAR AGRICOLA",
+    "os": "110618",
+    "data_entrada": "15/05/2025",
+    "servico": "Fazer solda no cano do pistão - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "110593",
+    "data_entrada": "15/05/2025",
+    "servico": "Fazer solda em trinca no escapamento - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5455",
     "cd_equipamento": "5455",
     "modelo": "CARRETA TRASNP LAR 510/154/030",
     "os": "110563",
     "data_entrada": "15/05/2025",
     "servico": "Verificar rolamento das duas rodas danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5202",
-    "cd_equipamento": "5202",
-    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
-    "os": "110567",
-    "data_entrada": "15/05/2025",
-    "servico": "Verificar rolamento da roda direita danificada.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
   },
   {
     "frota": "5204",
@@ -32,12 +48,28 @@
     "servico": "Fazer modificação na torre e ramal para instalar SPE - (Fazenda NSA)\nLiberado Sr. Wilson"
   },
   {
+    "frota": "5291",
+    "cd_equipamento": "5291",
+    "modelo": "PAM 600-PA AGRICOLA P/TRATORES",
+    "os": "110552",
+    "data_entrada": "15/05/2025",
+    "servico": "Desamassar e soldar lamina da pá torta - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "189",
     "cd_equipamento": "189",
     "modelo": "TRATOR NEW HOLAND TL 5.80",
     "os": "110510",
     "data_entrada": "14/05/2025",
     "servico": "Confeccionar e instalar proteções das lanternas do paralamas\nFaz Estrela\nSolicitado Vadinho\nAutorizado Arthur"
+  },
+  {
+    "frota": "5128",
+    "cd_equipamento": "5128",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "110507",
+    "data_entrada": "14/05/2025",
+    "servico": "Trinco no chassi e agulha de esticar correia da turbina quebrada  - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5354",
@@ -112,22 +144,6 @@
     "servico": "Instalar correntes anti-arremesso no lado direito e realizar solda corretiva em trincas identificadas na estrutura. Verificar conjunto de fixação do eixo cardan, pois os parafusos não permanecem firmemente parafusados - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5657",
-    "cd_equipamento": "5657",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110222",
-    "data_entrada": "08/05/2025",
-    "servico": "Fazer solda em trincas na torre - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5543",
-    "cd_equipamento": "5543",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "110219",
-    "data_entrada": "08/05/2025",
-    "servico": "Fazer solda na roda guia L/D - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5543",
     "cd_equipamento": "5543",
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
@@ -152,12 +168,12 @@
     "servico": "Melhorar o suporte do comando abre e fecha. chapa fina e fica vibrando, verificar chapa de fixação da torre solta, fixar caixa do SPE na torre e soldar trinca na base da bomba\nFazenda NSA\nSolicitado Sr. Murilo\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110091",
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "110097",
     "data_entrada": "06/05/2025",
-    "servico": "Ramal L/E furado - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "servico": "Fazer proteção anti arremesso frente e atrás - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5210",
@@ -174,14 +190,6 @@
     "os": "110063",
     "data_entrada": "06/05/2025",
     "servico": "Fazer solda em trinca na escada - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5402",
-    "cd_equipamento": "5402",
-    "modelo": "ROÇADEIRA - 850 KG ANTONIOSI",
-    "os": "110060",
-    "data_entrada": "06/05/2025",
-    "servico": "Quebra do eixo de fixação da roda guia - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5111",
@@ -230,14 +238,6 @@
     "os": "109926",
     "data_entrada": "02/05/2025",
     "servico": "Fazer solda e reforço na escada - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5106",
-    "cd_equipamento": "5106",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "109822",
-    "data_entrada": "02/05/2025",
-    "servico": "Substituir eixo da roda guia quebrado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5502",

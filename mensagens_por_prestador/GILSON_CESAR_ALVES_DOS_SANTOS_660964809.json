@@ -1,35 +1,43 @@
 [
   {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110458",
-    "data_entrada": "13/05/2025",
-    "servico": "Ramal furado, causado por atrito entre o ramal e chapa de fixação - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+    "frota": "134",
+    "cd_equipamento": "134",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "110564",
+    "data_entrada": "15/05/2025",
+    "servico": "Fazer solda na roda traseira L/E - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5784",
-    "cd_equipamento": "5784",
-    "modelo": "DESENROLADOR DE MANGUEIRA",
-    "os": "110430",
-    "data_entrada": "13/05/2025",
-    "servico": "Parafuso quebrou dentro da porca no braço responsável pela regulagem da distância do plantio. - (Fazenda Renascer)\nLiberado Sr. Mauricio"
+    "frota": "5598",
+    "cd_equipamento": "5598",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "110516",
+    "data_entrada": "14/05/2025",
+    "servico": "Vazamento nos pistão L/E e L/D - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5345",
-    "cd_equipamento": "5345",
+    "frota": "5673",
+    "cd_equipamento": "5673",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "110514",
+    "data_entrada": "14/05/2025",
+    "servico": "Vazamento no sistema hidráulico - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5205",
+    "cd_equipamento": "5205",
+    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
+    "os": "110512",
+    "data_entrada": "14/05/2025",
+    "servico": "Vazamento no pistão - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5210",
+    "cd_equipamento": "5210",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "110301",
-    "data_entrada": "09/05/2025",
-    "servico": "Fazer solda em suporte quebrado - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5759",
-    "cd_equipamento": "5759",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "110414",
-    "data_entrada": "07/05/2025",
-    "servico": "Troca da aste e reparos do pistão de acionamento de abertura do ramal (Fazenda SP)\nLiberado Sr. Leojabes"
+    "os": "110213",
+    "data_entrada": "08/05/2025",
+    "servico": "Realizar serviço de reparo com fibra de vidro nas saídas desativadas do tanque - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5618",
@@ -40,27 +48,11 @@
     "servico": "Revisar estrutura - trinca por baixo e desgaste nos rolamentos da roda guia - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5644",
-    "cd_equipamento": "5644",
-    "modelo": "TRANSBORDO MOD.TC-7000 GTM",
-    "os": "109672",
-    "data_entrada": "22/04/2025",
-    "servico": "Instalação das laterais frente e traseira, instalação da bica, instalação de caixa de ferramentas, troca do embuchamento do pedestal e primeira lança, mudança dos pistão da bica, conserto do pé de apoio, troca da bucha do engate, troca do suporte do comando. (Fazenda São Pedro)\nLiberado Sr. Romes"
-  },
-  {
     "frota": "5147",
     "cd_equipamento": "5147",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "109673",
     "data_entrada": "15/04/2025",
     "servico": "Reforma da roçadeira (Fazenda Alvorada)\nLiberado Sr. Natalino"
-  },
-  {
-    "frota": "5298",
-    "cd_equipamento": "5298",
-    "modelo": "CARRETA TRANSBORDO SCHULTER",
-    "os": "107187",
-    "data_entrada": "14/02/2025",
-    "servico": "reforma do transbordo (Fazenda Estrela)\nLiberado Sr. Vadinho"
   }
 ]

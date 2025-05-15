@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5072",
+    "cd_equipamento": "5072",
+    "modelo": "GRADE NIVELADORA",
+    "os": "110627",
+    "data_entrada": "15/05/2025",
+    "servico": "Pneu L/E furado - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "134",
     "cd_equipamento": "134",
     "modelo": "TRATOR NEW HOLLAND TL75E",
@@ -40,12 +48,12 @@
     "servico": "Consertar pneu dianteiro esquerdo furado.\nFábrica Prats\nSolicitado Sr. Jeovane\nLiberado Sr. Maurício"
   },
   {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "110499",
+    "frota": "5502",
+    "cd_equipamento": "5502",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "110502",
     "data_entrada": "14/05/2025",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+    "servico": "Vazamento no regulador de pressão - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "249",

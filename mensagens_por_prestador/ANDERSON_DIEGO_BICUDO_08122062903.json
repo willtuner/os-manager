@@ -56,22 +56,6 @@
     "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "218",
-    "cd_equipamento": "218",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110505",
-    "data_entrada": "14/05/2025",
-    "servico": "Verificar cabo do acelerador de mão - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "189",
-    "cd_equipamento": "189",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "110492",
-    "data_entrada": "14/05/2025",
-    "servico": "Cabo de acelerador de mão quebrado - (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
     "frota": "196",
     "cd_equipamento": "196",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -86,14 +70,6 @@
     "os": "110415",
     "data_entrada": "12/05/2025",
     "servico": "Revisar caixa do grupo escapando marca\nFaz Alvorada(OFICINA)\nSolicitado Natalino\nAutorizado Arthur"
-  },
-  {
-    "frota": "93",
-    "cd_equipamento": "93",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110411",
-    "data_entrada": "12/05/2025",
-    "servico": "Trocar bomba de combustivel manual\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
   },
   {
     "frota": "78",
@@ -174,14 +150,6 @@
     "os": "109575",
     "data_entrada": "28/04/2025",
     "servico": "Verificar trator sem freio - (Fazenda Alvorada)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "147",
-    "cd_equipamento": "147",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "109543",
-    "data_entrada": "28/04/2025",
-    "servico": "Verificar trinco da porta não funciona - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "152",
