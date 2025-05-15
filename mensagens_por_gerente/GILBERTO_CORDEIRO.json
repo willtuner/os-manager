@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "GILBERTO CORDEIRO",
+    "frota": "210",
+    "os": "110631",
+    "data": "14/05/2025",
+    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
+    "servico": "Colocar parafusos do U da concha no chassi do trator (Fazenda São José)"
+  },
+  {
+    "frota": "47",
+    "os": "110630",
+    "data": "13/05/2025",
+    "prestador": "BORRACHARIA DO SHESHEO - CELINO F DAS N",
+    "servico": "Pneu direito dianteiro furado (Fazenda São José)"
+  },
+  {
     "frota": "262",
     "os": "110390",
     "data": "09/05/2025",
@@ -15,59 +29,10 @@
     "servico": "Montar e arrumar banco do operador (Fazenda São José)"
   },
   {
-    "frota": "316",
-    "os": "110334",
-    "data": "08/05/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Colocar vidro da porta direita (Fazenda São José)"
-  },
-  {
     "frota": "5267",
     "os": "110155",
     "data": "07/05/2025",
     "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
     "servico": "Trocar rolamento do mancal do eixo dianteiro - (Fazenda São José)"
-  },
-  {
-    "frota": "256",
-    "os": "110073",
-    "data": "06/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Revisar o motor"
-  },
-  {
-    "frota": "5493",
-    "os": "109925",
-    "data": "02/05/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Trocar de rolamentos e manutenção da esteira - (Fazenda São José)"
-  },
-  {
-    "frota": "5021",
-    "os": "109642",
-    "data": "29/04/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Solda na estrutura do eixo - (Fazenda São José)"
-  },
-  {
-    "frota": "262",
-    "os": "109609",
-    "data": "25/04/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Desentortar frente de proteção do trator e colocar pino (Fazenda São José)"
-  },
-  {
-    "frota": "5076",
-    "os": "110109",
-    "data": "05/04/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Colocar travas no eixo da Esteira (Fazenda São José)"
-  },
-  {
-    "frota": "5011",
-    "os": "105886",
-    "data": "19/02/2025",
-    "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
-    "servico": "Afiar jogo de discos da podadeira (2 serras)."
   }
 ]
