@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5425",
+    "cd_equipamento": "5425",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "110674",
+    "data_entrada": "16/05/2025",
+    "servico": "Fazer proteção na caixa de transporte - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5031",
     "cd_equipamento": "5031",
     "modelo": "RC2 E 2600 LSL TATU",
@@ -78,6 +86,14 @@
     "os": "110413",
     "data_entrada": "12/05/2025",
     "servico": "Confeccionar teto e trocar paralama lado esquerdo\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
+  },
+  {
+    "frota": "5352",
+    "cd_equipamento": "5352",
+    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
+    "os": "110741",
+    "data_entrada": "12/05/2025",
+    "servico": "Verificar rosca travada, engate da boca de lobo e fechar fundo - (Pecuaria)\nLiberado Sr. Zacarias"
   },
   {
     "frota": "118",
@@ -206,14 +222,6 @@
     "os": "109961",
     "data_entrada": "05/05/2025",
     "servico": "Fazer solda e reforço em trincas - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5135",
-    "cd_equipamento": "5135",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "109960",
-    "data_entrada": "05/05/2025",
-    "servico": "Fazer solda e reforço - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "283",

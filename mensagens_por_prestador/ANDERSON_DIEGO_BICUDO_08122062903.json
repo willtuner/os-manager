@@ -1,5 +1,13 @@
 [
   {
+    "frota": "267",
+    "cd_equipamento": "267",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110710",
+    "data_entrada": "16/05/2025",
+    "servico": "Trocar mangueira da turbina - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "285",
     "cd_equipamento": "285",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -40,14 +48,6 @@
     "servico": "Avaliar vazamento de aditivo - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "257",
-    "cd_equipamento": "257",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110545",
-    "data_entrada": "14/05/2025",
-    "servico": "Pino de trava da alavanca do câmbio quebrado, comprometendo o correto acionamento das marchas. (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "233",
     "cd_equipamento": "233",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -70,14 +70,6 @@
     "os": "110415",
     "data_entrada": "12/05/2025",
     "servico": "Revisar caixa do grupo escapando marca\nFaz Alvorada(OFICINA)\nSolicitado Natalino\nAutorizado Arthur"
-  },
-  {
-    "frota": "78",
-    "cd_equipamento": "78",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "110379",
-    "data_entrada": "12/05/2025",
-    "servico": "Trocar banco e verificar freio estacionário não funciona - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10227",
@@ -128,28 +120,12 @@
     "servico": "Regularizar junção do escapamento no silencioso: perdeu um parafuso e está faltando a junta, ocasionando saída excessiva de fumaça em cima da bomba injetora.\nFazenda Santa Izabel\nSolicitado Sr. Lucas\nLiberado Sr. Arthur"
   },
   {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109723",
-    "data_entrada": "30/04/2025",
-    "servico": "Avaliar ruído anormal na TDP - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "86",
     "cd_equipamento": "86",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "109646",
     "data_entrada": "29/04/2025",
     "servico": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "121",
-    "cd_equipamento": "121",
-    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
-    "os": "109575",
-    "data_entrada": "28/04/2025",
-    "servico": "Verificar trator sem freio - (Fazenda Alvorada)\nLiberado Sr. Arthur"
   },
   {
     "frota": "152",
