@@ -1,13 +1,6 @@
 [
   {
     "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-    "frota": "269",
-    "os": "110569",
-    "data": "15/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar sistema elétrico de iluminação apresentando curto-circuito, ocasionando queima de fusível e derretimento do chicote - (Fazenda Estrela)"
-  },
-  {
     "frota": "323",
     "os": "110568",
     "data": "15/05/2025",
@@ -36,20 +29,6 @@
     "servico": "Confeccionar e instalar proteções das lanternas do paralamas"
   },
   {
-    "frota": "221",
-    "os": "110497",
-    "data": "14/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Faróis traseiro queimado - (Fazenda Estrela)"
-  },
-  {
-    "frota": "189",
-    "os": "110492",
-    "data": "14/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Cabo de acelerador de mão quebrado - (Fazenda Estrela)"
-  },
-  {
     "frota": "222",
     "os": "110345",
     "data": "12/05/2025",
@@ -76,12 +55,5 @@
     "data": "22/04/2025",
     "prestador": "FM MANUTENÇÃO",
     "servico": "Adaptar ramal para adequar quantidade de bico - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5298",
-    "os": "107187",
-    "data": "14/02/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "reforma do transbordo (Fazenda Estrela)"
   }
 ]

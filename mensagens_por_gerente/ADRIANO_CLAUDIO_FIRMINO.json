@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "94",
+    "os": "110656",
+    "data": "16/05/2025",
+    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
+    "servico": "Pneu L/E furado - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "5600",
     "os": "110590",
     "data": "15/05/2025",
@@ -22,13 +29,6 @@
     "servico": "Revisar sinalização, cibiés não ascendem - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "5202",
-    "os": "110567",
-    "data": "15/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar rolamento da roda direita danificada."
-  },
-  {
     "frota": "5204",
     "os": "110561",
     "data": "15/05/2025",
@@ -43,20 +43,6 @@
     "servico": "Farol dianteiro queimado - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "208",
-    "os": "110531",
-    "data": "14/05/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu traseiro L/E furado - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5275",
-    "os": "110509",
-    "data": "14/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Bomba do pulverizador apresentando ruído anormal, semelhante a \"batidas\" - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "235",
     "os": "110508",
     "data": "14/05/2025",
@@ -67,7 +53,7 @@
     "frota": "5128",
     "os": "110507",
     "data": "14/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trinco no chassi e agulha de esticar correia da turbina quebrada  - (Fazenda Nova Manhã)"
   },
   {
@@ -76,13 +62,6 @@
     "data": "13/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "93",
-    "os": "110411",
-    "data": "12/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar bomba de combustivel manual"
   },
   {
     "frota": "251",
@@ -106,46 +85,11 @@
     "servico": "Soldar suporte do filtro de sucção - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "5529",
-    "os": "110209",
-    "data": "08/05/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Vazamento no retentor da bomba  - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5129",
-    "os": "110207",
-    "data": "08/05/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Verificar desalinhamento ou folga no conjunto de polias e correia, que está ocasionando o desengrenamento da correia durante o funcionamento.- (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "314",
-    "os": "109970",
-    "data": "05/05/2025",
-    "prestador": "MURILO SILVA 09207298945",
-    "servico": "Instalar modulo SPE"
-  },
-  {
-    "frota": "33",
-    "os": "109946",
-    "data": "05/05/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Cambio encavalado - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "251",
     "os": "109795",
     "data": "02/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar lanterna traseira"
-  },
-  {
-    "frota": "142",
-    "os": "109783",
-    "data": "02/05/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Trator não engata TDP - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5530",
@@ -160,20 +104,6 @@
     "data": "01/05/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Corrigir vazamento de óleo na bomba de pulverização."
-  },
-  {
-    "frota": "314",
-    "os": "109653",
-    "data": "29/04/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Trocar borracha da porta - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "147",
-    "os": "109543",
-    "data": "28/04/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar trinco da porta não funciona - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5505",
@@ -195,13 +125,6 @@
     "data": "14/04/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "vazamento no retentor da roda dianteira direita - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5130",
-    "os": "108668",
-    "data": "11/04/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Revisar os dois multiplicadores  do lado direito e esquerdo: o entalhado do eixo onde engata as luvas estão com desgaste."
   },
   {
     "frota": "95",

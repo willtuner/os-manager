@@ -1,6 +1,27 @@
 [
   {
     "solicitado": "PAULO EDSON ABREU VILELA JUNIOR",
+    "frota": "301",
+    "os": "110681",
+    "data": "16/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trator só entra em funcionamento com partida direta. Verificar sistema de ignição, chave de partida, relés e possíveis falhas no chicote elétrico - (Fazenda NSA)"
+  },
+  {
+    "frota": "285",
+    "os": "110680",
+    "data": "16/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar acelerador de mão que não mantém rotação constante. Suspeita de folga, desgaste no mecanismo de fixação ou cabo com regulagem incorreta - (Fazenda NSA)"
+  },
+  {
+    "frota": "285",
+    "os": "110679",
+    "data": "16/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié apaga após certo tempo de uso, possivelmente por superaquecimento. Verificar fiação, conexões e integridade do farol, suspeita de mau contato ou falha no soquete/lâmpada. - (Fazenda NSA)"
+  },
+  {
     "frota": "275",
     "os": "110559",
     "data": "15/05/2025",
@@ -18,22 +39,8 @@
     "frota": "5502",
     "os": "110502",
     "data": "14/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Vazamento no regulador de pressão - (Fazenda NSA)"
-  },
-  {
-    "frota": "275",
-    "os": "110501",
-    "data": "14/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar funcionamento do alternador, tensão de carga, integridade das correias, chicote elétrico e conexões com a bateria - (Fazenda NSA)"
-  },
-  {
-    "frota": "5492",
-    "os": "110500",
-    "data": "14/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Ramal de pulverização acionando apenas um dos lados, verificar eletroválvulas, chicote elétrico, conexões e comandos. - (Fazenda NSA)"
   },
   {
     "frota": "5660",
