@@ -1,5 +1,21 @@
 [
   {
+    "frota": "285",
+    "cd_equipamento": "285",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110680",
+    "data_entrada": "16/05/2025",
+    "servico": "Verificar acelerador de mão que não mantém rotação constante. Suspeita de folga, desgaste no mecanismo de fixação ou cabo com regulagem incorreta - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "203",
+    "cd_equipamento": "203",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "110677",
+    "data_entrada": "16/05/2025",
+    "servico": "Vazamento na direção - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "227",
     "cd_equipamento": "227",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -24,14 +40,6 @@
     "servico": "Avaliar vazamento de aditivo - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "272",
-    "cd_equipamento": "272",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110549",
-    "data_entrada": "14/05/2025",
-    "servico": "Vazamento na caixa seca - (Fazenda SL1)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "257",
     "cd_equipamento": "257",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -54,14 +62,6 @@
     "os": "110515",
     "data_entrada": "14/05/2025",
     "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "196",
-    "cd_equipamento": "196",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110478",
-    "data_entrada": "13/05/2025",
-    "servico": "Avaliar trator jogando óleo pelo respiro - (Fazenda São Pedro)\nLiberado Sr. Wilson"
   },
   {
     "frota": "151",
