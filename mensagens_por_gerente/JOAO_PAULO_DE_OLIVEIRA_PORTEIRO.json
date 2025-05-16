@@ -2,9 +2,16 @@
   {
     "solicitado": "JOAO PAULO DE OLIVEIRA PORTEIRO",
     "frota": "5197",
-    "os": "110669",
+    "os": "110744",
     "data": "16/05/2025",
     "prestador": "Prestador não definido",
+    "servico": "Trocar rolamento do eixo da bomba e trocar correias - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5197",
+    "os": "110669",
+    "data": "16/05/2025",
+    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra na torre - (Fazenda Casa Branca)"
   },
   {
@@ -36,13 +43,6 @@
     "servico": "Vazamento na bomba de combustível - (Fazenda Casa Branca)"
   },
   {
-    "frota": "263",
-    "os": "110614",
-    "data": "15/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Avaliar vazamento de diesel - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "265",
     "os": "110612",
     "data": "15/05/2025",
@@ -62,13 +62,6 @@
     "data": "14/05/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu L/? furado - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "78",
-    "os": "110379",
-    "data": "12/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar banco e verificar freio estacionário não funciona - (Fazenda Casa Branca)"
   },
   {
     "frota": "5620",
