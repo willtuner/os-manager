@@ -21,8 +21,8 @@
     background: linear-gradient(180deg, var(--cinza-claro), #fff);
     border-radius: 8px;
     padding: 20px;
-    padding-top: 5px;
-    margin-top: -10px !important;
+    padding-top: 2px;
+    margin-top: -5px !important;
     min-height: 100vh;
   }
   .stat-card {
@@ -302,7 +302,7 @@
     // Toggle para rankings e tabelas
     const toggleButtons = document.querySelectorAll('.btn-toggle');
     toggleButtons.forEach(button => {
-      button.addEventListener('click', () => {
+      btn.addEventListener('click', () => {
         const targetClass = button.getAttribute('data-target');
         const rows = document.querySelectorAll(`tr.${targetClass}`);
         if (rows.length > 0) {
