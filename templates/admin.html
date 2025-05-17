@@ -3,58 +3,211 @@
 {% block title %}Painel Admin – Suco Prats{% endblock %}
 
 {% block extra_css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <style>
-  .stat-card { border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-  .stat-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
-  .stat-card.primary { background-color: #2c3e50; color: white; }
-  .stat-card.success { background-color: #27ae60; color: white; }
-  .stat-card.warning { background-color: #f39c12; color: white; }
-  .stat-card.danger { background-color: #e74c3c; color: white; }
-  .badge-os-aberta { background-color: #e74c3c; color: white; }
-  .table-responsive { margin-top: 15px; }
-  .ranking-badge { font-size: 0.85rem; padding: 4px 7px; color: white; border-radius: 5px; }
-  .ranking-1 { background-color: #e74c3c; } /* 1º, vermelho */
-  .ranking-2 { background-color: #f39c12; } /* 2º, laranja */
-  .ranking-3 { background-color: #f1c40f; } /* 3º, amarelo */
-  .ranking-other { background-color: #95a5a6; } /* 4º em diante, cinza */
-  .table-compact tbody tr { font-size: 0.85rem; }
-  .table-compact th, .table-compact td { padding: 6px; }
-  .toggle-btn { cursor: pointer; font-size: 0.9rem; }
-  .hidden-row { display: none; }
-  .card-header { padding: 10px 15px; }
-  .card-body { padding: 15px; }
+  :root {
+    --verde-prats: #2e7d32;
+    --verde-prats-dark: #1e5a23;
+  }
+  .stat-card {
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, var(--verde-prats), var(--verde-prats-dark));
+    color: white;
+  }
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .stat-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .stat-card p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  .card-modern {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  .card-header {
+    background: linear-gradient(135deg, var(--verde-prats), var(--verde-prats-dark));
+    color: white;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+  }
+  .table-modern {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .table-modern th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  .table-modern td {
+    vertical-align: middle;
+    font-size: 0.95rem;
+  }
+  .table-modern tr:hover {
+    background: #f1f3f5;
+  }
+  .badge-ranking {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  .ranking-1 { background-color: #e74c3c; }
+  .ranking-2 { background-color: #f39c12; }
+  .ranking-3 { background-color: #f1c40f; }
+  .ranking-other { background-color: #95a5a6; }
+  .period-btn {
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+  }
+  .period-btn.active {
+    background-color: var(--verde-prats);
+    border-color: var(--verde-prats);
+    color: white;
+  }
+  .chart-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .flatpickr-input {
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 576px) {
+    .stat-card h3 { font-size: 1.4rem; }
+    .table-modern { font-size: 0.85rem; }
+    .filter-container { flex-direction: column; align-items: stretch; }
+    .period-btn { width: 100%; margin-bottom: 5px; }
+  }
 </style>
 {% endblock %}
 
 {% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const toggleButtons = document.querySelectorAll('.toggle-btn');
-    toggleButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        const targetClass = button.getAttribute('data-target');
-        const rows = document.querySelectorAll(`tr.${targetClass}`);
-        if (rows.length > 0) {
-          const isHidden = rows[0].classList.contains('hidden-row');
-          rows.forEach(row => row.classList.toggle('hidden-row', !isHidden));
-          button.innerHTML = isHidden 
-            ? '<i class="fas fa-minus-circle me-1"></i> Ver menos' 
-            : '<i class="fas fa-plus-circle me-1"></i> Ver mais';
-        } else {
-          console.error(`Nenhuma linha com a classe ${targetClass} encontrada`);
+    // Inicializar Flatpickr para intervalo de datas
+    flatpickr('#date-range', {
+      mode: 'range',
+      dateFormat: 'Y-m-d',
+      locale: {
+        firstDayOfWeek: 1,
+        weekdays: { shorthand: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'], longhand: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'] },
+        months: { shorthand: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], longhand: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'] }
+      },
+      onChange: (selectedDates) => {
+        if (selectedDates.length === 2) {
+          const [start, end] = selectedDates;
+          const url = new URL(window.location);
+          url.searchParams.set('periodo', 'custom');
+          url.searchParams.set('data_inicio', start.toISOString().split('T')[0]);
+          url.searchParams.set('data_fim', end.toISOString().split('T')[0]);
+          window.location = url;
         }
+      }
+    });
+
+    // Configurar botões de período
+    const periodButtons = document.querySelectorAll('.period-btn');
+    periodButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const periodo = btn.dataset.periodo;
+        const url = new URL(window.location);
+        url.searchParams.set('periodo', periodo);
+        url.searchParams.delete('data_inicio');
+        url.searchParams.delete('data_fim');
+        window.location = url;
+      });
+    });
+
+    // Gráfico de OS por período
+    const ctxPeriodo = document.getElementById('osPorPeriodo').getContext('2d');
+    new Chart(ctxPeriodo, {
+      type: 'bar',
+      data: {
+        labels: Object.keys({{ chart_data.os_por_periodo|tojson }}),
+        datasets: [{
+          label: 'OS Finalizadas',
+          data: Object.values({{ chart_data.os_por_periodo|tojson }}),
+          backgroundColor: 'rgba(46, 125, 50, 0.6)',
+          borderColor: 'rgba(46, 125, 50, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: { y: { beginAtZero: true } },
+        plugins: { legend: { display: false } }
+      }
+    });
+
+    // Gráfico de OS por gerente
+    const ctxGerente = document.getElementById('osPorGerente').getContext('2d');
+    new Chart(ctxGerente, {
+      type: 'pie',
+      data: {
+        labels: Object.keys({{ chart_data.os_por_gerente|tojson }}).map(name => name.split('.')[0].capitalize()),
+        datasets: [{
+          data: Object.values({{ chart_data.os_por_gerente|tojson }}),
+          backgroundColor: ['#2e7d32', '#e74c3c', '#f39c12', '#f1c40f', '#3498db', '#9b59b6'],
+          borderColor: '#fff',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: { legend: { position: 'right' } }
+      }
+    });
+
+    // Filtro da tabela
+    const filterInput = document.querySelector('#filter-os');
+    const tableRows = document.querySelectorAll('.table-modern tbody tr');
+    filterInput.addEventListener('input', () => {
+      const filter = filterInput.value.toLowerCase();
+      tableRows.forEach(row => {
+        const osNumber = row.cells[0].textContent.toLowerCase();
+        const gerente = row.cells[1].textContent.toLowerCase();
+        const observacoes = row.cells[4].textContent.toLowerCase();
+        row.style.display = (osNumber.includes(filter) || gerente.includes(filter) || observacoes.includes(filter)) ? '' : 'none';
       });
     });
   });
+
+  // Função para capitalizar nomes
+  String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+  };
 </script>
 {% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container py-4">
   <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2><i class="fas fa-tachometer-alt me-2"></i>Painel Administrativo</h2>
+    <h2 class="h4 mb-0"><i class="fas fa-tachometer-alt me-2"></i>Painel Administrativo</h2>
     <div>
-      <a href="{{ url_for('exportar_os_finalizadas') }}" class="btn btn-prats btn-sm me-2">
+      <a href="{{ url_for('exportar_os_finalizadas', periodo=periodo, data_inicio=data_inicio, data_fim=data_fim) }}" class="btn btn-prats btn-sm me-2">
         <i class="fas fa-file-export me-1"></i>Exportar PDF
       </a>
       <a href="{{ url_for('logout') }}" class="btn btn-danger btn-sm">
@@ -63,167 +216,93 @@
     </div>
   </div>
 
+  <!-- Cartões de Estatísticas -->
   <div class="row mb-4">
-    <div class="col-md-3">
-      <div class="stat-card primary">
-        <h3><i class="fas fa-clipboard-list me-2"></i> {{ total_os }}</h3>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-card">
+        <h3><i class="fas fa-clipboard-list me-2"></i>{{ total_os }}</h3>
         <p>OS Finalizadas</p>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="stat-card success">
-        <h3><i class="fas fa-users me-2"></i> {{ gerentes|length }}</h3>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-card">
+        <h3><i class="fas fa-users me-2"></i>{{ gerentes|length }}</h3>
         <p>Gerentes Ativos</p>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="stat-card warning">
-        <h3><i class="fas fa-calendar-day me-2"></i> {{ now.strftime('%d/%m/%Y %H:%M:%S') }}</h3>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-card">
+        <h3><i class="fas fa-calendar-day me-2"></i>{{ now.strftime('%d/%m/%Y %H:%M:%S') }}</h3>
         <p>Última Atualização</p>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="stat-card danger">
-        <h3><i class="fas fa-exclamation-circle me-2"></i> {{ os_abertas.values()|sum }}</h3>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-card">
+        <h3><i class="fas fa-exclamation-circle me-2"></i>{{ os_abertas.values()|sum }}</h3>
         <p>OS Pendentes</p>
       </div>
     </div>
   </div>
 
-  <!-- Ranking de OS Abertas (Gerentes) -->
-  <div class="card shadow-sm mb-4">
-    <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
-      <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking de OS Pendentes (Gerentes)</h4>
-      {% if ranking_os_abertas|length > 3 %}
-      <button class="btn btn-sm btn-light toggle-btn" data-target="gerente-ranking-row">
-        <i class="fas fa-plus-circle me-1"></i> Ver mais
-      </button>
-      {% endif %}
+  <!-- Gráficos -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <div class="card-modern">
+        <div class="card-header">
+          <h4 class="mb-0"><i class="fas fa-chart-bar me-2"></i>OS Finalizadas por Período</h4>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas id="osPorPeriodo"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-modern">
+        <div class="card-header">
+          <h4 class="mb-0"><i class="fas fa-chart-pie me-2"></i>OS Finalizadas por Gerente</h4>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas id="osPorGerente"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filtros e Histórico de Finalizações -->
+  <div class="card-modern mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico OS Finalizadas</h4>
     </div>
     <div class="card-body">
+      <div class="filter-container">
+        <div class="btn-group">
+          <button class="btn btn-outline-secondary period-btn {% if periodo == 'todos' %}active{% endif %}" data-periodo="todos">Todos</button>
+          <button class="btn btn-outline-secondary period-btn {% if periodo == 'diario' %}active{% endif %}" data-periodo="diario">Diário</button>
+          <button class="btn btn-outline-secondary period-btn {% if periodo == 'semanal' %}active{% endif %}" data-periodo="semanal">Semanal</button>
+          <button class="btn btn-outline-secondary period-btn {% if periodo == 'mensal' %}active{% endif %}" data-periodo="mensal">Mensal</button>
+          <button class="btn btn-outline-secondary period-btn {% if periodo == 'anual' %}active{% endif %}" data-periodo="anual">Anual</button>
+        </div>
+        <input type="text" id="date-range" class="flatpickr-input form-control" placeholder="Intervalo de datas" value="{% if data_inicio and data_fim %}{{ data_inicio }} to {{ data_fim }}{% endif %}">
+        <input type="text" id="filter-os" class="form-control form-control-sm" placeholder="Filtrar por OS, gerente ou observações...">
+      </div>
       <div class="table-responsive">
-        <table class="table table-hover table-compact">
-          <thead class="table-light">
+        <table class="table table-modern table-sm">
+          <thead>
             <tr>
-              <th>Posição</th>
+              <th>OS</th>
               <th>Gerente</th>
-              <th>OS Pendentes</th>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Observações</th>
             </tr>
-          </thead>
-          <tbody>
-            {% for gerente, count in ranking_os_abertas %}
-            <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
-              <td>
-                <span class="badge ranking-badge {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">
-                  {{ loop.index }}º
-                </span>
-              </td>
-              <td>{{ gerente|capitalize_name }}</td>
-              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-            </tr>
-            {% endfor %}
-            {% if not ranking_os_abertas %}
-            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-            {% endif %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <!-- Ranking de OS Abertas (Prestadores) -->
-  <div class="card shadow-sm mb-4">
-    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
-      <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking de OS Pendentes (Prestadores)</h4>
-      {% if ranking_os_prestadores|length > 3 %}
-      <button class="btn btn-sm btn-light toggle-btn" data-target="prestador-ranking-row">
-        <i class="fas fa-plus-circle me-1"></i> Ver mais
-      </button>
-      {% endif %}
-    </div>
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-hover table-compact">
-          <thead class="table-light">
-            <tr>
-              <th>Posição</th>
-              <th>Prestador</th>
-              <th>OS Pendentes</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for prestador, count in ranking_os_prestadores %}
-            <tr class="{% if loop.index > 3 %}prestador-ranking-row hidden-row{% endif %}">
-              <td>
-                <span class="badge ranking-badge {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">
-                  {{ loop.index }}º
-                </span>
-              </td>
-              <td>{{ prestador|capitalize_name }}</td>
-              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-            </tr>
-            {% endfor %}
-            {% if not ranking_os_prestadores %}
-            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-            {% endif %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <!-- Gerentes & OS Pendentes -->
-  <div class="card shadow-sm mb-4">
-    <div class="card-body">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <h4><i class="fas fa-user-tie me-2"></i>Gerentes & OS Pendentes</h4>
-        {% if gerentes|length > 3 %}
-        <button class="btn btn-sm btn-light toggle-btn" data-target="gerente-row">
-          <i class="fas fa-plus-circle me-1"></i> Ver mais
-        </button>
-        {% endif %}
-      </div>
-      <div class="table-responsive">
-        <table class="table table-hover table-compact">
-          <thead class="table-light">
-            <tr><th>Gerente</th><th>Finalizadas</th><th>Pendentes</th></tr>
-          </thead>
-          <tbody>
-            {% for g in gerentes %}
-            <tr class="{% if loop.index > 3 %}gerente-row hidden-row{% endif %}">
-              <td>{{ g|capitalize_name }}</td>
-              <td>{{ contagem_gerentes.get(g,0) }}</td>
-              <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
-            </tr>
-            {% endfor %}
-            {% if not gerentes %}
-            <tr><td colspan="3" class="text-center py-3">Nenhum gerente com OS registrada</td></tr>
-            {% endif %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-  <!-- Histórico de Finalizações -->
-  <div class="card shadow-sm mb-4">
-    <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
-      <h4 class="mb-0"><i class="fas fa-list me-2"></i>Histórico OS Finalizadas (Últimas 100)</h4>
-      {% if finalizadas|length > 3 %}
-      <button class="btn btn-sm btn-light toggle-btn" data-target="finalizada-row">
-        <i class="fas fa-plus-circle me-1"></i> Ver mais
-      </button>
-      {% endif %}
-    </div>
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-hover table-compact">
-          <thead class="table-light">
-            <tr><th>OS</th><th>Responsável</th><th>Data</th><th>Hora</th><th>Obs</th></tr>
           </thead>
           <tbody>
             {% for os in finalizadas %}
-            <tr class="{% if loop.index > 3 %}finalizada-row hidden-row{% endif %}">
+            <tr>
               <td>{{ os.os_numero }}</td>
               <td>{{ os.gerente|capitalize_name }}</td>
               <td>{{ os.data_fin }}</td>
@@ -240,48 +319,85 @@
     </div>
   </div>
 
+  <!-- Rankings -->
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card-modern mb-4">
+        <div class="card-header">
+          <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking OS Pendentes (Gerentes)</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-modern table-sm">
+              <thead>
+                <tr><th>Posição</th><th>Gerente</th><th>OS Pendentes</th></tr>
+              </thead>
+              <tbody>
+                {% for gerente, count in ranking_os_abertas %}
+                <tr>
+                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+                  <td>{{ gerente|capitalize_name }}</td>
+                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+                </tr>
+                {% endfor %}
+                {% if not ranking_os_abertas %}
+                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-modern mb-4">
+        <div class="card-header">
+          <h4 class="mb-0"><i class="fas fa-trophy me-2"></i>Ranking OS Pendentes (Prestadores)</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-modern table-sm">
+              <thead>
+                <tr><th>Posição</th><th>Prestador</th><th>OS Pendentes</th></tr>
+              </thead>
+              <tbody>
+                {% for prestador, count in ranking_os_prestadores %}
+                <tr>
+                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+                  <td>{{ prestador|capitalize_name }}</td>
+                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+                </tr>
+                {% endfor %}
+                {% if not ranking_os_prestadores %}
+                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Histórico de Logins -->
-  <div class="card shadow-sm">
-    <div class="card-header bg-secondary text-white d-flex justify-content-between align-items-center">
+  <div class="card-modern">
+    <div class="card-header">
       <h4 class="mb-0"><i class="fas fa-history me-2"></i>Histórico de Logins (Últimos 50)</h4>
-      {% if login_events|length > 3 %}
-      <button class="btn btn-sm btn-light toggle-btn" data-target="login-row">
-        <i class="fas fa-plus-circle me-1"></i> Ver mais
-      </button>
-      {% endif %}
     </div>
     <div class="card-body">
       <div class="table-responsive">
-        <table class="table table-sm table-hover table-compact">
-          <thead class="table-light">
-            <tr>
-              <th>Usuário</th>
-              <th>Tipo</th>
-              <th>Login</th>
-              <th>Logout</th>
-              <th>Duração</th>
-            </tr>
+        <table class="table table-modern table-sm">
+          <thead>
+            <tr><th>Usuário</th><th>Tipo</th><th>Login</th><th>Logout</th><th>Duração</th></tr>
           </thead>
           <tbody>
             {% for ev in login_events %}
-            <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
+            <tr>
               <td>{{ ev.username|capitalize_name }}</td>
               <td>{{ ev.user_type.capitalize() }}</td>
               <td>{{ ev.login_time_formatted }}</td>
-              <td>
-                {% if ev.logout_time_formatted %}
-                  {{ ev.logout_time_formatted }}
-                {% else %}
-                  <span class="text-muted">ativo</span>
-                {% endif %}
-              </td>
-              <td>
-                {% if ev.duration_secs %}
-                  {{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s
-                {% else %}
-                  <span class="text-muted">—</span>
-                {% endif %}
-              </td>
+              <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
+              <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
             </tr>
             {% endfor %}
             {% if not login_events %}
