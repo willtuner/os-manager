@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "93",
+    "os": "110772",
+    "data": "17/05/2025",
+    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
+    "servico": "Pneu L/E traseiro furado - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "142",
+    "os": "110763",
+    "data": "16/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trator não engata TDP - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "106",
     "os": "110746",
     "data": "16/05/2025",
@@ -29,25 +43,11 @@
     "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "94",
-    "os": "110656",
-    "data": "16/05/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu L/E furado - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "5600",
     "os": "110590",
     "data": "15/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Vazamento na bomba, instalar coimando do abre e fecha - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "208",
-    "os": "110575",
-    "data": "15/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Farol dianteiro e traseiro queimado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "93",
@@ -62,13 +62,6 @@
     "data": "15/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar desgaste no engate do cabeçário danificado."
-  },
-  {
-    "frota": "314",
-    "os": "110532",
-    "data": "14/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Farol dianteiro queimado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "235",
@@ -125,20 +118,6 @@
     "data": "01/05/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo."
-  },
-  {
-    "frota": "5128",
-    "os": "109771",
-    "data": "01/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Corrigir vazamento de óleo na bomba de pulverização."
-  },
-  {
-    "frota": "5275",
-    "os": "109700",
-    "data": "24/04/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Trocar os rolamentos do cubo da hélice, e trocar pá da hélice (Fazenda Nova Manhã)"
   },
   {
     "frota": "94",
