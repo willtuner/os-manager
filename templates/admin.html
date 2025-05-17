@@ -21,8 +21,8 @@
     background: linear-gradient(180deg, var(--cinza-claro), #fff);
     border-radius: 8px;
     padding: 20px;
-    padding-top: 0.5rem;
-    margin-top: 0.5rem;
+    padding-top: 0.25rem;
+    margin-top: 0 !important;
     min-height: 100vh;
   }
   .stat-card {
@@ -40,15 +40,25 @@
   .stat-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: white;
   }
   .stat-card p {
     font-size: 0.9rem;
-    color: #455A64;
+    color: white;
   }
-  .stat-card.primary { background-color: var(--azul-escuro); color: white; }
-  .stat-card.success { background-color: var(--verde-agro); color: white; }
-  .stat-card.warning { background-color: var(--laranja-suco); color: white; }
-  .stat-card.danger { background-color: var(--vermelho-erro); color: white; }
+  .stat-card.primary { background-color: var(--azul-escuro); }
+  .stat-card.success { background-color: var(--verde-agro); }
+  .stat-card.warning { background-color: var(--laranja-suco); }
+  .stat-card.danger { background-color: var(--vermelho-erro); }
+  .stat-card.primary h3, .stat-card.primary p,
+  .stat-card.success h3, .stat-card.success p,
+  .stat-card.warning h3, .stat-card.warning p,
+  .stat-card.danger h3, .stat-card.danger p {
+    color: white;
+  }
+  .stat-card .icon-agro {
+    color: white;
+  }
   .card-modern {
     background: #fff;
     border-radius: 8px;
@@ -360,7 +370,7 @@
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="stat-card warning">
-            <h3><i class="fas fa-calendar-day icon-agro"></i>{{ now.strftime('%d/%m/%Y %H:%M:%S') }}</h3>
+            <h3><i class="fas fa-calendar-day icon-agro"></i>{{ now.strftime('%d/%m/%Y') }}</h3>
             <p>Última Atualização</p>
           </div>
         </div>
