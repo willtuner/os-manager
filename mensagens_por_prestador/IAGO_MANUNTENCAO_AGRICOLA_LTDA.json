@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "110744",
+    "data_entrada": "16/05/2025",
+    "servico": "Trocar rolamento do eixo da bomba e trocar correias - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5031",
     "cd_equipamento": "5031",
     "modelo": "RC2 E 2600 LSL TATU",
@@ -46,14 +54,6 @@
     "os": "110519",
     "data_entrada": "14/05/2025",
     "servico": "Hélice ventilando com baixa eficiência e possível ruído, indicando falha nos rolamentos - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5730",
-    "cd_equipamento": "5730",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "110504",
-    "data_entrada": "14/05/2025",
-    "servico": "Suporte dos fações quebrado - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5657",
@@ -110,14 +110,6 @@
     "os": "110239",
     "data_entrada": "08/05/2025",
     "servico": "Verificar sistema de transmissão, pois o movimento não está sendo transferido ao rotor dos facões. Inspecionar acoplamentos, eixos, engrenagens - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5128",
-    "cd_equipamento": "5128",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "109771",
-    "data_entrada": "01/05/2025",
-    "servico": "Corrigir vazamento de óleo na bomba de pulverização.\nFazenda Nova Manhã\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício"
   },
   {
     "frota": "5165",

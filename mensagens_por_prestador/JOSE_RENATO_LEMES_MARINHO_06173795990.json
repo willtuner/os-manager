@@ -1,27 +1,35 @@
 [
   {
+    "frota": "5078",
+    "cd_equipamento": "5078",
+    "modelo": "RC2 E 2600 LSL TATU",
+    "os": "110736",
+    "data_entrada": "16/05/2025",
+    "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã) \nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5603",
+    "cd_equipamento": "5603",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "110734",
+    "data_entrada": "16/05/2025",
+    "servico": "Solda ramal - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5052",
+    "cd_equipamento": "5052",
+    "modelo": "TERRACIADOR CIVEMASA",
+    "os": "110729",
+    "data_entrada": "16/05/2025",
+    "servico": "Fazer solda em trinca - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5425",
     "cd_equipamento": "5425",
     "modelo": "PULVERIZADOR 2000 LT FMC",
     "os": "110674",
     "data_entrada": "16/05/2025",
     "servico": "Fazer proteção na caixa de transporte - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5031",
-    "cd_equipamento": "5031",
-    "modelo": "RC2 E 2600 LSL TATU",
-    "os": "110625",
-    "data_entrada": "15/05/2025",
-    "servico": "Soldar suporte da roda guia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5681",
-    "cd_equipamento": "5681",
-    "modelo": "PCA 600 S0117 PA CAR AGRICOLA",
-    "os": "110618",
-    "data_entrada": "15/05/2025",
-    "servico": "Fazer solda no cano do pistão - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "100",
@@ -118,14 +126,6 @@
     "os": "110286",
     "data_entrada": "09/05/2025",
     "servico": "Solda em trinca no escapamento, realinhar escada  e trinca na lateral do capô - (Fazenda Estrela)\nPendencias N° 4323, 4322 e 4321"
-  },
-  {
-    "frota": "5543",
-    "cd_equipamento": "5543",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "110285",
-    "data_entrada": "09/05/2025",
-    "servico": "Substituir parafuso do suporte da roda guia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "44",
@@ -286,22 +286,6 @@
     "os": "109707",
     "data_entrada": "30/04/2025",
     "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5185",
-    "cd_equipamento": "5185",
-    "modelo": "ROCADEIRA TATU",
-    "os": "109684",
-    "data_entrada": "29/04/2025",
-    "servico": "Instalar correntes de proteção anti-arremesso na parte frontal da roçadeira.\nFazenda SL1\nSolicitado Sr. Wagner\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5197",
-    "cd_equipamento": "5197",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "109622",
-    "data_entrada": "28/04/2025",
-    "servico": "Trocar agulhas, fazer solda em trinca, cabeçalho com desgaste - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5095",
