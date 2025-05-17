@@ -6,19 +6,21 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <style>
   :root {
-    --verde-john-deere: #4CAF50;
-    --amarelo-suave: #FFECB3;
-    --cinza-rural: #ECEFF1;
-    --laranja-sutil: #FF8A65;
+    --verde-agro: #27ae60;
+    --laranja-suco: #f39c12;
+    --azul-escuro: #2c3e50;
+    --amarelo-john-deere: #f1c40f;
+    --vermelho-erro: #e74c3c;
+    --cinza-claro: #f8f9fa;
   }
   .container {
-    background: linear-gradient(180deg, var(--cinza-rural), #fff);
+    background: linear-gradient(180deg, var(--cinza-claro), #fff);
     border-radius: 8px;
     padding: 20px;
     min-height: 100vh;
   }
   .stat-card {
-    background: var(--cinza-rural);
+    background: var(--cinza-claro);
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
@@ -31,21 +33,25 @@
   }
   .stat-card h3 {
     font-size: 1.6rem;
-    color: var(--verde-john-deere);
+    color: var(--azul-escuro);
     margin-bottom: 5px;
   }
   .stat-card p {
     font-size: 0.9rem;
     color: #455A64;
   }
+  .stat-card.primary { background-color: var(--azul-escuro); color: white; }
+  .stat-card.success { background-color: var(--verde-agro); color: white; }
+  .stat-card.warning { background-color: var(--laranja-suco); color: white; }
+  .stat-card.danger { background-color: var(--vermelho-erro); color: white; }
   .card-modern {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   .card-header {
-    background: var(--amarelo-suave);
-    color: var(--verde-john-deere);
+    background: var(--azul-escuro);
+    color: white;
     padding: 10px 15px;
     border-radius: 8px 8px 0 0;
     font-weight: 500;
@@ -56,17 +62,17 @@
     overflow: hidden;
   }
   .table-modern th {
-    background: var(--cinza-rural);
-    color: var(--verde-john-deere);
+    background: var(--cinza-claro);
+    color: var(--azul-escuro);
     font-weight: 500;
   }
   .table-modern td {
     vertical-align: middle;
     font-size: 0.95rem;
-    border-bottom: 1px solid var(--cinza-rural);
+    border-bottom: 1px solid var(--cinza-claro);
   }
   .table-modern tr:hover {
-    background: var(--amarelo-suave);
+    background: var(--amarelo-john-deere);
   }
   .badge-ranking {
     font-size: 0.8rem;
@@ -74,30 +80,36 @@
     border-radius: 4px;
     color: white;
   }
-  .ranking-1 { background-color: #EF5350; }
-  .ranking-2 { background-color: #FFA726; }
-  .ranking-3 { background-color: #4CAF50; }
-  .ranking-other { background-color: #90A4AE; }
+  .ranking-1 { background-color: var(--vermelho-erro); }
+  .ranking-2 { background-color: var(--laranja-suco); }
+  .ranking-3 { background-color: var(--amarelo-john-deere); }
+  .ranking-other { background-color: #95a5a6; }
+  .badge-os-aberta {
+    background-color: var(--vermelho-erro);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
   .period-btn {
     border: none;
     border-radius: 8px;
     padding: 6px 12px;
     font-size: 0.9rem;
     margin-right: 5px;
-    background: var(--cinza-rural);
-    color: var(--verde-john-deere);
+    background: var(--cinza-claro);
+    color: var(--azul-escuro);
     transition: all 0.3s ease;
   }
   .period-btn.active {
-    background-color: var(--laranja-sutil);
+    background-color: var(--laranja-suco);
     color: white;
   }
   .period-btn:hover {
-    background-color: var(--verde-john-deere);
+    background-color: var(--verde-agro);
     color: white;
   }
   .btn-agro {
-    background-color: var(--laranja-sutil);
+    background-color: var(--laranja-suco);
     border: none;
     color: white;
     border-radius: 8px;
@@ -105,7 +117,19 @@
     transition: all 0.3s ease;
   }
   .btn-agro:hover {
-    background-color: var(--verde-john-deere);
+    background-color: var(--verde-agro);
+  }
+  .btn-toggle {
+    background-color: var(--cinza-claro);
+    color: var(--azul-escuro);
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  .btn-toggle:hover {
+    background-color: var(--amarelo-john-deere);
+    color: white;
   }
   .chart-container {
     max-width: 100%;
@@ -122,35 +146,36 @@
     margin-bottom: 20px;
   }
   .flatpickr-input {
-    border: 1px solid var(--cinza-rural);
+    border: 1px solid var(--cinza-claro);
     border-radius: 8px;
     padding: 6px 12px;
     font-size: 0.9rem;
   }
   .nav-tabs {
-    border-bottom: 2px solid var(--verde-john-deere);
+    border-bottom: 2px solid var(--verde-agro);
   }
   .nav-tabs .nav-link {
     border: none;
     border-radius: 8px 8px 0 0;
-    color: #455A64;
+    color: var(--azul-escuro);
     font-weight: 500;
-    background: var(--cinza-rural);
+    background: var(--cinza-claro);
     transition: all 0.3s ease;
   }
   .nav-tabs .nav-link.active {
-    background-color: var(--verde-john-deere);
+    background-color: var(--verde-agro);
     color: white;
   }
   .nav-tabs .nav-link:hover {
-    background-color: var(--amarelo-suave);
-    color: var(--verde-john-deere);
+    background-color: var(--amarelo-john-deere);
+    color: var(--azul-escuro);
   }
   .icon-agro {
     font-size: 1rem;
     margin-right: 6px;
-    color: var(--verde-john-deere);
+    color: var(--verde-agro);
   }
+  .hidden-row { display: none; }
   @media (max-width: 576px) {
     .stat-card h3 { font-size: 1.3rem; }
     .table-modern { font-size: 0.85rem; }
@@ -166,7 +191,7 @@
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Inicializar Flatpickr para intervalo de datas
+    // Inicializar Flatpickr
     flatpickr('#date-range', {
       mode: 'range',
       dateFormat: 'Y-m-d',
@@ -187,7 +212,7 @@
       }
     });
 
-    // Configurar botões de período
+    // Botões de período
     const periodButtons = document.querySelectorAll('.period-btn');
     periodButtons.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -209,8 +234,8 @@
         datasets: [{
           label: 'Manutenções Concluídas',
           data: Object.values({{ chart_data.os_por_periodo|tojson }}),
-          backgroundColor: 'rgba(76, 175, 80, 0.6)',
-          borderColor: 'rgba(76, 175, 80, 1)',
+          backgroundColor: 'rgba(39, 174, 96, 0.6)',
+          borderColor: 'rgba(39, 174, 96, 1)',
           borderWidth: 1
         }]
       },
@@ -229,7 +254,7 @@
         labels: Object.keys({{ chart_data.os_por_gerente|tojson }}).map(name => name.split('.')[0].capitalize()),
         datasets: [{
           data: Object.values({{ chart_data.os_por_gerente|tojson }}),
-          backgroundColor: ['#4CAF50', '#FFECB3', '#FF8A65', '#90A4AE', '#0288D1', '#8BC34A'],
+          backgroundColor: ['#27ae60', '#f39c12', '#f1c40f', '#e74c3c', '#2c3e50', '#17a2b8'],
           borderColor: '#fff',
           borderWidth: 1
         }]
@@ -252,9 +277,26 @@
         row.style.display = (osNumber.includes(filter) || gerente.includes(filter) || observacoes.includes(filter)) ? '' : 'none';
       });
     });
+
+    // Toggle para rankings e tabelas
+    const toggleButtons = document.querySelectorAll('.btn-toggle');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetClass = button.getAttribute('data-target');
+        const rows = document.querySelectorAll(`tr.${targetClass}`);
+        if (rows.length > 0) {
+          const isHidden = rows[0].classList.contains('hidden-row');
+          rows.forEach(row => row.classList.toggle('hidden-row', !isHidden));
+          button.innerHTML = isHidden 
+            ? '<i class="fas fa-minus-circle icon-agro"></i> Ver menos' 
+            : '<i class="fas fa-plus-circle icon-agro"></i> Ver mais';
+        } else {
+          console.error(`Nenhuma linha com a classe ${targetClass} encontrada`);
+        }
+      });
+    });
   });
 
-  // Função para capitalizar nomes
   String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
   };
@@ -295,25 +337,25 @@
       <!-- Cartões de Estatísticas -->
       <div class="row mb-4">
         <div class="col-md-3 col-sm-6">
-          <div class="stat-card">
+          <div class="stat-card primary">
             <h3><i class="fas fa-tools icon-agro"></i>{{ total_os }}</h3>
             <p>Manutenções Concluídas</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="stat-card">
+          <div class="stat-card success">
             <h3><i class="fas fa-users icon-agro"></i>{{ gerentes|length }}</h3>
             <p>Supervisores Ativos</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="stat-card">
+          <div class="stat-card warning">
             <h3><i class="fas fa-calendar-day icon-agro"></i>{{ now.strftime('%d/%m/%Y %H:%M:%S') }}</h3>
             <p>Última Atualização</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
-          <div class="stat-card">
+          <div class="stat-card danger">
             <h3><i class="fas fa-exclamation-circle icon-agro"></i>{{ os_abertas.values()|sum }}</h3>
             <p>Manutenções Pendentes</p>
           </div>
@@ -324,6 +366,11 @@
       <div class="card-modern mb-4">
         <div class="card-header d-flex justify-content-between align-items-center">
           <h4 class="mb-0"><i class="fas fa-tools icon-agro"></i>Histórico de Manutenções</h4>
+          {% if finalizadas|length > 3 %}
+          <button class="btn btn-sm btn-toggle" data-target="finalizada-row">
+            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+          </button>
+          {% endif %}
         </div>
         <div class="card-body">
           <div class="filter-container">
@@ -350,7 +397,7 @@
               </thead>
               <tbody>
                 {% for os in finalizadas %}
-                <tr>
+                <tr class="{% if loop.index > 3 %}finalizada-row hidden-row{% endif %}">
                   <td>{{ os.os_numero }}</td>
                   <td>{{ os.gerente|capitalize_name }}</td>
                   <td>{{ os.data_fin }}</td>
@@ -367,70 +414,114 @@
         </div>
       </div>
 
-      <!-- Rankings -->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card-modern mb-4">
-            <div class="card-header">
-              <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Supervisores)</h4>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-modern table-sm">
-                  <thead>
-                    <tr><th>Posição</th><th>Supervisor</th><th>OS Pendentes</th></tr>
-                  </thead>
-                  <tbody>
-                    {% for gerente, count in ranking_os_abertas %}
-                    <tr>
-                      <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
-                      <td>{{ gerente|capitalize_name }}</td>
-                      <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-                    </tr>
-                    {% endfor %}
-                    {% if not ranking_os_abertas %}
-                    <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-                    {% endif %}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+      <!-- Ranking de OS Pendentes (Supervisores) -->
+      <div class="card-modern mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Supervisores)</h4>
+          {% if ranking_os_abertas|length > 3 %}
+          <button class="btn btn-sm btn-toggle" data-target="gerente-ranking-row">
+            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+          </button>
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-modern table-sm">
+              <thead>
+                <tr><th>Posição</th><th>Supervisor</th><th>OS Pendentes</th></tr>
+              </thead>
+              <tbody>
+                {% for gerente, count in ranking_os_abertas %}
+                <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
+                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+                  <td>{{ gerente|capitalize_name }}</td>
+                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+                </tr>
+                {% endfor %}
+                {% if not ranking_os_abertas %}
+                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+                {% endif %}
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card-modern mb-4">
-            <div class="card-header">
-              <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Prestadores)</h4>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-modern table-sm">
-                  <thead>
-                    <tr><th>Posição</th><th>Prestador</th><th>OS Pendentes</th></tr>
-                  </thead>
-                  <tbody>
-                    {% for prestador, count in ranking_os_prestadores %}
-                    <tr>
-                      <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
-                      <td>{{ prestador|capitalize_name }}</td>
-                      <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-                    </tr>
-                    {% endfor %}
-                    {% if not ranking_os_prestadores %}
-                    <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-                    {% endif %}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+      </div>
+
+      <!-- Ranking de OS Pendentes (Prestadores) -->
+      <div class="card-modern mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Prestadores)</h4>
+          {% if ranking_os_prestadores|length > 3 %}
+          <button class="btn btn-sm btn-toggle" data-target="prestador-ranking-row">
+            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+          </button>
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-modern table-sm">
+              <thead>
+                <tr><th>Posição</th><th>Prestador</th><th>OS Pendentes</th></tr>
+              </thead>
+              <tbody>
+                {% for prestador, count in ranking_os_prestadores %}
+                <tr class="{% if loop.index > 3 %}prestador-ranking-row hidden-row{% endif %}">
+                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+                  <td>{{ prestador|capitalize_name }}</td>
+                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+                </tr>
+                {% endfor %}
+                {% if not ranking_os_prestadores %}
+                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Supervisores & OS Pendentes -->
+      <div class="card-modern mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h4 class="mb-0"><i class="fas fa-user-tie icon-agro"></i>Supervisores & OS Pendentes</h4>
+          {% if gerentes|length > 3 %}
+          <button class="btn btn-sm btn-toggle" data-target="gerente-row">
+            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+          </button>
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-modern table-sm">
+              <thead>
+                <tr><th>Supervisor</th><th>Concluídas</th><th>Pendentes</th></tr>
+              </thead>
+              <tbody>
+                {% for g in gerentes %}
+                <tr class="{% if loop.index > 3 %}gerente-row hidden-row{% endif %}">
+                  <td>{{ g|capitalize_name }}</td>
+                  <td>{{ contagem_gerentes.get(g,0) }}</td>
+                  <td><span class="badge badge-os-aberta">{{ os_abertas.get(g,0) }} pendente{{ 's' if os_abertas.get(g,0)!=1 else '' }}</span></td>
+                </tr>
+                {% endfor %}
+                {% if not gerentes %}
+                <tr><td colspan="3" class="text-center py-3">Nenhum supervisor com OS registrada</td></tr>
+                {% endif %}
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
 
       <!-- Histórico de Logins -->
       <div class="card-modern">
-        <div class="card-header">
+        <div class="card-header d-flex justify-content-between align-items-center">
           <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de Acesso (Últimos 50)</h4>
+          {% if login_events|length > 3 %}
+          <button class="btn btn-sm btn-toggle" data-target="login-row">
+            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+          </button>
+          {% endif %}
         </div>
         <div class="card-body">
           <div class="table-responsive">
@@ -440,7 +531,7 @@
               </thead>
               <tbody>
                 {% for ev in login_events %}
-                <tr>
+                <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
                   <td>{{ ev.username|capitalize_name }}</td>
                   <td>{{ ev.user_type.capitalize() }}</td>
                   <td>{{ ev.login_time_formatted }}</td>
