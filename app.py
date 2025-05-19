@@ -370,6 +370,10 @@ def admin_panel():
                 fim = hoje.replace(month=12, day=31, hour=23, minute=59, second=59)
             query = query.filter(Finalizacao.registrado_em.between(inicio, fim))
     
+    # Calcular o total de manutenções concluídas (sem limite)
+    total_os = query.count()
+    
+    # Limitar apenas para exibição da tabela
     finalizadas = query.limit(100).all()
     login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
     
@@ -395,7 +399,7 @@ def admin_panel():
     
     return render_template('admin.html',
                          finalizadas=finalizadas,
-                         total_os=len(finalizadas),
+                         total_os=total_os,
                          gerentes=gerentes,
                          contagem_gerentes=contagem,
                          os_abertas=abertas,
