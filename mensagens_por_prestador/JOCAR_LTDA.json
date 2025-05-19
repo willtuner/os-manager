@@ -1,11 +1,27 @@
 [
   {
-    "frota": "223",
-    "cd_equipamento": "223",
+    "frota": "288",
+    "cd_equipamento": "288",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110731",
-    "data_entrada": "16/05/2025",
-    "servico": "Verificar A/C não gela - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+    "os": "110815",
+    "data_entrada": "19/05/2025",
+    "servico": "Condensador do A/C furado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110812",
+    "data_entrada": "19/05/2025",
+    "servico": "Verificar A/C não gela, apenas ventila - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "110779",
+    "data_entrada": "19/05/2025",
+    "servico": "Mangueira de A/C furada - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
     "frota": "265",
@@ -14,46 +30,6 @@
     "os": "110612",
     "data_entrada": "15/05/2025",
     "servico": "Desmontar teto\nFaz Casa Branca\nSolicitado João\nAutorizado Arthur"
-  },
-  {
-    "frota": "228",
-    "cd_equipamento": "228",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110579",
-    "data_entrada": "15/05/2025",
-    "servico": "Quebra do fio do compressor de A/C - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "222",
-    "cd_equipamento": "222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110565",
-    "data_entrada": "15/05/2025",
-    "servico": "Verificar A/C não gela - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "97",
-    "cd_equipamento": "97",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110557",
-    "data_entrada": "15/05/2025",
-    "servico": "Revisar sinalização - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "217",
-    "cd_equipamento": "217",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110548",
-    "data_entrada": "14/05/2025",
-    "servico": "Ar-condicionado parou de funcionar - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110380",
-    "data_entrada": "12/05/2025",
-    "servico": "Revisar ar-condicionado\nFaz Minuano\nSolicitado Antônio\nAutorizado Arthur"
   },
   {
     "frota": "130",

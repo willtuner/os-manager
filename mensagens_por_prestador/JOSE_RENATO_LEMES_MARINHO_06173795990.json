@@ -120,14 +120,6 @@
     "servico": "Realizar a remoção de um gomo da esteira para ajuste do tensionamento - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "10229",
-    "cd_equipamento": "10229",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110286",
-    "data_entrada": "09/05/2025",
-    "servico": "Solda em trinca no escapamento, realinhar escada  e trinca na lateral do capô - (Fazenda Estrela)\nPendencias N° 4323, 4322 e 4321"
-  },
-  {
     "frota": "44",
     "cd_equipamento": "44",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
@@ -192,14 +184,6 @@
     "servico": "Colocar limitador nas asas e tirar folga nas rodas - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110063",
-    "data_entrada": "06/05/2025",
-    "servico": "Fazer solda em trinca na escada - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5111",
     "cd_equipamento": "5111",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -224,22 +208,6 @@
     "servico": "Fazer solda e reforço em trincas - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "283",
-    "cd_equipamento": "283",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109931",
-    "data_entrada": "05/05/2025",
-    "servico": "Sacar parafuso do suporte da escada quebrado - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "218",
-    "cd_equipamento": "218",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109926",
-    "data_entrada": "02/05/2025",
-    "servico": "Fazer solda e reforço na escada - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5502",
     "cd_equipamento": "5502",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -262,22 +230,6 @@
     "os": "109794",
     "data_entrada": "02/05/2025",
     "servico": "Soldar manivela de regulagem da vazão do produto - (Fazenda Biscui)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "224",
-    "cd_equipamento": "224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109772",
-    "data_entrada": "01/05/2025",
-    "servico": "Fazer solda na grade de proteção frontal do capô e recuperar tampa da caixa da bateria.\nFazenda Terra Branca\nSolicitado e liberado Sr. Arthur"
-  },
-  {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "109742",
-    "data_entrada": "30/04/2025",
-    "servico": "Realinhar tanque pegando na bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5214",

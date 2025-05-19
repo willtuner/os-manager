@@ -1,5 +1,53 @@
 [
   {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110903",
+    "data_entrada": "19/05/2025",
+    "servico": "Trocar cibie traseiro queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5429",
+    "cd_equipamento": "5429",
+    "modelo": "PULVERIZADOR 600 LT FMC",
+    "os": "110813",
+    "data_entrada": "19/05/2025",
+    "servico": "Verificar acionamento das pistolas do drash. Estão acionando sozinhas - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "110811",
+    "data_entrada": "19/05/2025",
+    "servico": "Inspecionar a solenoide do sistema de pulverização - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "157",
+    "cd_equipamento": "157",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "110786",
+    "data_entrada": "19/05/2025",
+    "servico": "Inspecionar trator com indícios de queima de fusíveis - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110781",
+    "data_entrada": "19/05/2025",
+    "servico": "Verificar painel de instrumentos não funciona nada  - (Fazenda São Severino)\nLiberado Sr Arthur"
+  },
+  {
+    "frota": "303",
+    "cd_equipamento": "303",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110780",
+    "data_entrada": "19/05/2025",
+    "servico": "Verificar buzina não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "106",
     "cd_equipamento": "106",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",

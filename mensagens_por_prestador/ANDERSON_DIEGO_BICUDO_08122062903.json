@@ -1,5 +1,45 @@
 [
   {
+    "frota": "132",
+    "cd_equipamento": "132",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "110820",
+    "data_entrada": "19/05/2025",
+    "servico": "Trocar bomba do hidraulico\nFaz Minuano\nSolicitado Vadinho\nAutorizado Arthur"
+  },
+  {
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110783",
+    "data_entrada": "19/05/2025",
+    "servico": "Verificar possível troca de embreagem - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "133",
+    "cd_equipamento": "133",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "110778",
+    "data_entrada": "19/05/2025",
+    "servico": "Verificar braços hidráulicos não sobem e cabo do acelerador de pé quebrado - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5262",
+    "cd_equipamento": "5262",
+    "modelo": "MOTOCANA",
+    "os": "110773",
+    "data_entrada": "17/05/2025",
+    "servico": "Fazer troca de óleo completa - (Fazenda Estrela)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "147",
+    "cd_equipamento": "147",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "110740",
+    "data_entrada": "16/05/2025",
+    "servico": "Avaliar barulho anormal na TDP - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "267",
     "cd_equipamento": "267",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -24,28 +64,12 @@
     "servico": "Vazamento na direção - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "227",
-    "cd_equipamento": "227",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110573",
-    "data_entrada": "15/05/2025",
-    "servico": "Verificar TDP ligando sozinha - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "228",
     "cd_equipamento": "228",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
     "os": "110572",
     "data_entrada": "15/05/2025",
     "servico": "Avaliar embreagem roncando ao ligar TDP - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110536",
-    "data_entrada": "14/05/2025",
-    "servico": "Barra de direção quebrada e trocar parafuso da cabine - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "96",
