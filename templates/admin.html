@@ -20,16 +20,15 @@
   .container {
     background: linear-gradient(180deg, var(--cinza-claro), #fff);
     border-radius: 8px;
-    padding: 20px;
-    padding-top: 0;
+    padding: 10px; /* Reduzido de 20px */
     margin-top: 0 !important;
-    min-height: 100vh;
+    min-height: auto; /* Alterado de 100vh para evitar espaço forçado */
   }
   .d-flex.justify-content-between.align-items-center.mb-4 {
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important; /* Reduzido de 1rem */
   }
   .nav-tabs.mb-4 {
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important; /* Reduzido de 1rem */
   }
   .stat-card {
     background: var(--cinza-claro);
@@ -561,7 +560,7 @@
                 <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
                   <td>{{ ev.username|capitalize_name }}</td>
                   <td>{{ ev.user_type.capitalize() }}</td>
-                  <td>{{ ev.login_time_formatted }}</td>
+                  <td>{{ ev.loginqwe login_time_formatted }}</td>
                   <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
                   <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
                 </tr>
