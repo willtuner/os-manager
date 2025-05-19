@@ -540,41 +540,39 @@
       </div>
 
       <!-- Histórico de Logins -->
-      <div class="card-modern">
-        <div class="card-header historico-logins d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de Acesso (Últimos 50)</h4>
-          {% if login_events|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="login-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
+<div class="card-modern">
+  <div class="card-header historico-logins d-flex justify-content-between align-items-center">
+    <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de Acesso (Últimos 50)</h4>
+    {% if login_events|length > 3 %}
+    <button class="btn btn-sm btn-toggle" data-target="login-row">
+      <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+    </button>
+    {% endif %}
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-modern table-sm">
+        <thead>
+          <tr><th>Usuário</th><th>Tipo</th><th>Login</th><th>Logout</th><th>Duração</th></tr>
+        </thead>
+        <tbody>
+          {% for ev in login_events %}
+          <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
+            <td>{{ ev.username|capitalize_name }}</td>
+            <td>{{ ev.user_type.capitalize() }}</td>
+            <td>{{ ev.login_time_formatted }}</td>  <!-- CORREÇÃO AQUI -->
+            <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
+            <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
+          </tr>
+          {% endfor %}
+          {% if not login_events %}
+          <tr><td colspan="5" class="text-center py-3">Nenhum evento de acesso</td></tr>
           {% endif %}
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-modern table-sm">
-              <thead>
-                <tr><th>Usuário</th><th>Tipo</th><th>Login</th><th>Logout</th><th>Duração</th></tr>
-              </thead>
-              <tbody>
-                {% for ev in login_events %}
-                <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
-                  <td>{{ ev.username|capitalize_name }}</td>
-                  <td>{{ ev.user_type.capitalize() }}</td>
-                  <td>{{ ev.loginqwe login_time_formatted }}</td>
-                  <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
-                  <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
-                </tr>
-                {% endfor %}
-                {% if not login_events %}
-                <tr><td colspan="5" class="text-center py-3">Nenhum evento de acesso</td></tr>
-                {% endif %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+        </tbody>
+      </table>
     </div>
-
+  </div>
+</div>
     <!-- Aba: Análises Gráficas -->
     <div class="tab-pane fade" id="graficos" role="tabpanel" aria-labelledby="graficos-tab">
       <div class="row">
