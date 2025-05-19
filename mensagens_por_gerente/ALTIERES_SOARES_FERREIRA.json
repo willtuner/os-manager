@@ -1,11 +1,18 @@
 [
   {
     "solicitado": "ALTIERES SOARES FERREIRA",
-    "frota": "223",
-    "os": "110731",
-    "data": "16/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar A/C não gela - (Fazenda Pedra Verde)"
+    "frota": "5621",
+    "os": "110777",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda e reforço e vazamento de óleo no multiplicador - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5228",
+    "os": "110776",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda em trincas e fazer reforço - (Fazenda Pedra Verde)"
   },
   {
     "frota": "5111",
@@ -20,34 +27,6 @@
     "data": "15/05/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu dianteiro L/D furado - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "97",
-    "os": "110557",
-    "data": "15/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Revisar sinalização - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "217",
-    "os": "110548",
-    "data": "14/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Ar-condicionado parou de funcionar - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5118",
-    "os": "110378",
-    "data": "12/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar e substituir, se necessário, os terminais da barra de direção do tanque de água, devido a folgas ou desgaste nos componentes. - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5661",
-    "os": "110349",
-    "data": "12/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar ruído anormal (ronco) no rolamento da turbina do pulverizador - (Fazenda Pedra Verde)"
   },
   {
     "frota": "119",
@@ -72,24 +51,10 @@
   },
   {
     "frota": "5117",
-    "os": "109962",
-    "data": "05/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Vazamento nos retentores dos multiplicadores e no retentor no eixo que segura a falanges - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5117",
     "os": "109961",
     "data": "05/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda e reforço em trincas - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "283",
-    "os": "109931",
-    "data": "05/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Sacar parafuso do suporte da escada quebrado - (Fazenda Pedra Verde)"
   },
   {
     "frota": "152",

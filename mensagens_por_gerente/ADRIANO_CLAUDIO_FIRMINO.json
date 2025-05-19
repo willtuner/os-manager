@@ -1,17 +1,24 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
-    "frota": "93",
-    "os": "110772",
-    "data": "17/05/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu L/E traseiro furado - (Fazenda Nova Manhã)"
+    "frota": "251",
+    "os": "110805",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar cabo do acelerador - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5600",
+    "os": "110804",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar bomba oscilando -  (Fazenda Nova Manhã)"
   },
   {
     "frota": "142",
     "os": "110763",
     "data": "16/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Trator não engata TDP - (Fazenda Nova Manhã)"
   },
   {
@@ -25,15 +32,8 @@
     "frota": "147",
     "os": "110740",
     "data": "16/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Avaliar barulho anormal na TDP - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "85",
-    "os": "110713",
-    "data": "16/05/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu dianteiro L/E vazando no bico - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5433",
@@ -83,13 +83,6 @@
     "data": "13/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "251",
-    "os": "110314",
-    "data": "09/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento na bomba injetora - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5129",

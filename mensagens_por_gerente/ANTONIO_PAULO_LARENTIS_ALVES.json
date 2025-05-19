@@ -2,10 +2,17 @@
   {
     "solicitado": "ANTONIO PAULO LARENTIS ALVES",
     "frota": "46",
-    "os": "110663",
-    "data": "16/05/2025",
+    "os": "110790",
+    "data": "19/05/2025",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
+    "servico": "Inspecionar assento do trator com desalinhamento ou deformação - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5766",
+    "os": "110787",
+    "data": "19/05/2025",
     "prestador": "Prestador não definido",
-    "servico": "Vazamento na mangueira de diesel e entrada de ar no sistema de combustível - (Fazenda Minuano)"
+    "servico": "Vazamento de óleo no eixo da bomba - (Fazenda Minuano)"
   },
   {
     "frota": "5366",
@@ -27,13 +34,6 @@
     "data": "13/05/2025",
     "prestador": "MURILO SILVA 09207298945",
     "servico": "Verificar fio do SPE quebrado - (Fazenda Minuano)"
-  },
-  {
-    "frota": "253",
-    "os": "110380",
-    "data": "12/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Revisar ar-condicionado"
   },
   {
     "frota": "118",

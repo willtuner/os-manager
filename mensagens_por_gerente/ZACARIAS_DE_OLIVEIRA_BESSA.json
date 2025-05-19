@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "ZACARIAS DE OLIVEIRA BESSA",
+    "frota": "138",
+    "os": "110785",
+    "data": "19/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Trocar os dois pneus dianteiros (retirado para recapar)."
+  },
+  {
     "frota": "206",
     "os": "110495",
     "data": "14/05/2025",
@@ -8,25 +15,11 @@
     "servico": "Alavanca não está acionando a tomada de força - (Fazenda Estrela)"
   },
   {
-    "frota": "43",
-    "os": "110211",
-    "data": "08/05/2025",
-    "prestador": "DARCI CAPEL & CIA LTDA",
-    "servico": "Sacar engrenagem planetário do suporte e recuperar desgaste suporte."
-  },
-  {
     "frota": "5697",
     "os": "109900",
     "data": "02/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Substituir bomba de pulverização sem pressão por outra reserva."
-  },
-  {
-    "frota": "5564",
-    "os": "109824",
-    "data": "02/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar pino de articulação da barra escapando."
   },
   {
     "frota": "5786",

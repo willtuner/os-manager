@@ -1,25 +1,18 @@
 [
   {
     "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+    "frota": "269",
+    "os": "110812",
+    "data": "19/05/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar A/C não gela, apenas ventila - (Fazenda Estrela)"
+  },
+  {
     "frota": "323",
     "os": "110568",
     "data": "15/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Quebra do pino do pistão da porta - (Fazenda Estrela)"
-  },
-  {
-    "frota": "89",
-    "os": "110566",
-    "data": "15/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento na mangueira de diesel da bomba injetora - (Fazenda Estrela)"
-  },
-  {
-    "frota": "222",
-    "os": "110565",
-    "data": "15/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar A/C não gela - (Fazenda Estrela)"
   },
   {
     "frota": "189",
@@ -41,13 +34,6 @@
     "data": "09/05/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu L/D estourado - (Fazenda Estrela)"
-  },
-  {
-    "frota": "269",
-    "os": "110063",
-    "data": "06/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na escada - (Fazenda Estrela)"
   },
   {
     "frota": "5491",
