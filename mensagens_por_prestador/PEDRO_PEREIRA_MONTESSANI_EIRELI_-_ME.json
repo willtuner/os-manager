@@ -1,5 +1,45 @@
 [
   {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "111000",
+    "data_entrada": "20/05/2025",
+    "servico": "Correia do alternador quebrado - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "197",
+    "cd_equipamento": "197",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110986",
+    "data_entrada": "20/05/2025",
+    "servico": "Trocar chave de ignição e chave de luz\nFazenda Casa Branca\nSolicitado Vadinho\nAutorizado Arthur"
+  },
+  {
+    "frota": "267",
+    "cd_equipamento": "267",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110976",
+    "data_entrada": "20/05/2025",
+    "servico": "Troca buzina e luz baixa queimada - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5667",
+    "cd_equipamento": "5667",
+    "modelo": "PODADEIRA HIDRAUTEC HLD1",
+    "os": "110971",
+    "data_entrada": "20/05/2025",
+    "servico": "Verificar eletroventilador de  resfriamento de óleo não liga - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "131",
+    "cd_equipamento": "131",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "110944",
+    "data_entrada": "20/05/2025",
+    "servico": "Verificar trator sem partida - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "258",
     "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -166,14 +206,6 @@
     "os": "110419",
     "data_entrada": "12/05/2025",
     "servico": "Faróis não ascendem - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "151",
-    "cd_equipamento": "151",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "110417",
-    "data_entrada": "12/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Alvorada(oficina)\nSolicitado Natalino\nAutorizado Arthur"
   },
   {
     "frota": "228",

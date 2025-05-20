@@ -1,5 +1,21 @@
 [
   {
+    "frota": "113",
+    "cd_equipamento": "113",
+    "modelo": "TRATOR JOHN DEERE 5603 4X4",
+    "os": "110978",
+    "data_entrada": "20/05/2025",
+    "servico": "Avaliar ruído anormal no motor - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110941",
+    "data_entrada": "20/05/2025",
+    "servico": "Trocar reparos dos tuchos - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "132",
     "cd_equipamento": "132",
     "modelo": "TRATOR NEW HOLLAND TL75E",
@@ -30,22 +46,6 @@
     "os": "110773",
     "data_entrada": "17/05/2025",
     "servico": "Fazer troca de óleo completa - (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "147",
-    "cd_equipamento": "147",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "110740",
-    "data_entrada": "16/05/2025",
-    "servico": "Avaliar barulho anormal na TDP - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "267",
-    "cd_equipamento": "267",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110710",
-    "data_entrada": "16/05/2025",
-    "servico": "Trocar mangueira da turbina - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
   },
   {
     "frota": "285",
@@ -134,14 +134,6 @@
     "os": "109357",
     "data_entrada": "24/04/2025",
     "servico": "Remover vazamentos\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
-  },
-  {
-    "frota": "94",
-    "cd_equipamento": "94",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "108685",
-    "data_entrada": "14/04/2025",
-    "servico": "vazamento no retentor da roda dianteira direita - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "87",

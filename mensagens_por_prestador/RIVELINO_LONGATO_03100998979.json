@@ -1,5 +1,13 @@
 [
   {
+    "frota": "159",
+    "cd_equipamento": "159",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "110948",
+    "data_entrada": "20/05/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5460",
     "cd_equipamento": "5460",
     "modelo": "TANQUE DE AGUA 4000 LT",
@@ -102,14 +110,6 @@
     "os": "110502",
     "data_entrada": "14/05/2025",
     "servico": "Vazamento no regulador de pressão - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "249",
-    "cd_equipamento": "249",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "110461",
-    "data_entrada": "13/05/2025",
-    "servico": "Pneu traseiro furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "155",
