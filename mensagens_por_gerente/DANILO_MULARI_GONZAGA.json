@@ -1,32 +1,25 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "5451",
+    "os": "110984",
+    "data": "20/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5106",
+    "os": "110940",
+    "data": "20/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituir arrastador L/E - (Fazenda Estrela)"
+  },
+  {
     "frota": "132",
     "os": "110820",
     "data": "19/05/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Trocar bomba do hidraulico"
-  },
-  {
-    "frota": "325",
-    "os": "110809",
-    "data": "19/05/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 50 hrs - (Fazenda Estrela)"
-  },
-  {
-    "frota": "323",
-    "os": "110808",
-    "data": "19/05/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 50 hrs - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5121",
-    "os": "110737",
-    "data": "16/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Substituir as correias - (Fazenda Estrela)"
   },
   {
     "frota": "5031",

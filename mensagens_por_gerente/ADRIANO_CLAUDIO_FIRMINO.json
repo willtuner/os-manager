@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "130",
+    "os": "110972",
+    "data": "20/05/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Avaliar trator fumaceando branco - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "251",
     "os": "110805",
     "data": "19/05/2025",
@@ -27,13 +34,6 @@
     "data": "16/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "147",
-    "os": "110740",
-    "data": "16/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar barulho anormal na TDP - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5433",
@@ -111,13 +111,6 @@
     "data": "01/05/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo."
-  },
-  {
-    "frota": "94",
-    "os": "108685",
-    "data": "14/04/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "vazamento no retentor da roda dianteira direita - (Fazenda Nova Manhã)"
   },
   {
     "frota": "95",

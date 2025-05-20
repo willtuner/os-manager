@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "ANTONIO PAULO LARENTIS ALVES",
+    "frota": "5667",
+    "os": "110971",
+    "data": "20/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar eletroventilador de  resfriamento de óleo não liga - (Fazenda Minuano)"
+  },
+  {
+    "frota": "118",
+    "os": "110952",
+    "data": "20/05/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "A/C so liga no 4° estágio - (Fazenda Minuano)"
+  },
+  {
     "frota": "46",
     "os": "110790",
     "data": "19/05/2025",
@@ -27,13 +41,6 @@
     "data": "14/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trator não marca temperatura no painel - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5767",
-    "os": "110438",
-    "data": "13/05/2025",
-    "prestador": "MURILO SILVA 09207298945",
-    "servico": "Verificar fio do SPE quebrado - (Fazenda Minuano)"
   },
   {
     "frota": "118",

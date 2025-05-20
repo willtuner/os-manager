@@ -1,13 +1,6 @@
 [
   {
     "solicitado": "JOAO VITOR DUBAY DA SILVA",
-    "frota": "5052",
-    "os": "110729",
-    "data": "16/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca - (Fazenda Estrela)"
-  },
-  {
     "frota": "5072",
     "os": "110627",
     "data": "15/05/2025",
@@ -27,13 +20,6 @@
     "data": "08/05/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento no pistão da lança - (Fazenda Estrela)"
-  },
-  {
-    "frota": "309",
-    "os": "109778",
-    "data": "01/05/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS - UMUAR",
-    "servico": "Verificar e corrigir vazamento de óleo na traseira do equipamento, embaixo na mesa da barra de tração, próximo ao encaixe das barras de levante hidráulico."
   },
   {
     "frota": "274",
