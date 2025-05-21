@@ -1,6 +1,41 @@
 [
   {
     "solicitado": "ALTIERES SOARES FERREIRA",
+    "frota": "5604",
+    "os": "111032",
+    "data": "21/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em furos no ramal - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "217",
+    "os": "111022",
+    "data": "21/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Realizar diagnóstico no sistema de embreagem para verificar desgaste ou falha funcional. Avaliar necessidade de troca do kit completo (disco, platô e rolamento). - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "113",
+    "os": "110978",
+    "data": "20/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar ruído anormal no motor - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5621",
+    "os": "110777",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda e reforço e vazamento de óleo no multiplicador - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5228",
+    "os": "110776",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda em trincas e fazer reforço - (Fazenda Pedra Verde)"
+  },
+  {
     "frota": "5111",
     "os": "110578",
     "data": "15/05/2025",
@@ -13,5 +48,40 @@
     "data": "15/05/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu dianteiro L/D furado - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "119",
+    "os": "110150",
+    "data": "07/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Vazamento na bomba hidráulica"
+  },
+  {
+    "frota": "5661",
+    "os": "110096",
+    "data": "05/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desentortado chapas realinhado, soldado estruturas montado, fabricado e instalado torre de sustentação. (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5117",
+    "os": "109961",
+    "data": "05/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda e reforço em trincas - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "152",
+    "os": "109357",
+    "data": "24/04/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Remover vazamentos"
+  },
+  {
+    "frota": "5666",
+    "os": "109154",
+    "data": "22/04/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)"
   }
 ]

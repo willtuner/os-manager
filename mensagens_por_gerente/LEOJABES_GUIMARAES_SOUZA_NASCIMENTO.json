@@ -1,6 +1,104 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "246",
+    "os": "111040",
+    "data": "21/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar painel de instrumentos - (Fazenda SP)"
+  },
+  {
+    "frota": "216",
+    "os": "111038",
+    "data": "21/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar cabo do afogador (Fazenda SP)"
+  },
+  {
+    "frota": "5749",
+    "os": "111036",
+    "data": "21/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D furado - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "216",
+    "os": "111034",
+    "data": "21/05/2025",
+    "prestador": "MURILO SILVA 09207298945",
+    "servico": "Trocar cabo que liga modulo a bateria quebrado - (Fazenda SP)"
+  },
+  {
+    "frota": "135",
+    "os": "110951",
+    "data": "20/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar vazamentos - (Fazenda Biscui)"
+  },
+  {
+    "frota": "5345",
+    "os": "110950",
+    "data": "20/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda no braço do ramal quebrado - (Fazenda SP)"
+  },
+  {
+    "frota": "218",
+    "os": "110949",
+    "data": "20/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar luz de óleo do motor acessa no painel - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "44",
+    "os": "110834",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Durante a operação com a podadeira acoplada ao trator, um galho foi lançado contra o para-brisa, resultando na quebra da parte inferior do vidro dianteiro - (Fazenda SP)"
+  },
+  {
+    "frota": "5722",
+    "os": "110819",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Quebra da corrente de transmissão da bomba - (Fazenda SP)"
+  },
+  {
+    "frota": "78",
+    "os": "110807",
+    "data": "19/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E dianteiro furado - (Fazenda SP)"
+  },
+  {
+    "frota": "5693",
+    "os": "110803",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar vazamento na bomba - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5693",
+    "os": "110802",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar vazamento na bomba - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5709",
+    "os": "110801",
+    "data": "19/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Inspecionar os pistões do equipamento que apresentam ausência de movimento - (Fazenda SP)"
+  },
+  {
+    "frota": "5749",
+    "os": "110793",
+    "data": "19/05/2025",
+    "prestador": "MURILO SILVA 09207298945",
+    "servico": "Fazer solda em terminal do SPE -  (Fazenda Biscui)"
+  },
+  {
     "frota": "5759",
     "os": "110666",
     "data": "16/05/2025",
@@ -39,7 +137,56 @@
     "frota": "218",
     "os": "110347",
     "data": "12/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
     "servico": "Verificar possível contaminação entre os sistemas de arrefecimento e lubrificação. Foi identificado que o nível do radiador está baixando constantemente enquanto o nível de óleo do motor está subindo, sem indícios de vazamento externo - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5205",
+    "os": "110237",
+    "data": "08/05/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Avaliar vazamento de óleo no rotor e régua empenada - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "44",
+    "os": "110231",
+    "data": "08/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desamassar proteções (Fazenda SP)"
+  },
+  {
+    "frota": "218",
+    "os": "110228",
+    "data": "08/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar vazamento no braço hidráulico, vazamento no cudo da roda dianteira L/? e vazamento nas conexões da mangueira do comando hidráulico - (Fazenda SP)"
+  },
+  {
+    "frota": "5205",
+    "os": "109729",
+    "data": "30/04/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)"
+  },
+  {
+    "frota": "211",
+    "os": "109062",
+    "data": "17/04/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fabricar e instalar proteção para as lanternas traseiras - (Fazenda SP)"
+  },
+  {
+    "frota": "211",
+    "os": "109027",
+    "data": "17/04/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Instalar lampadas traseiras - (Fazenda SP)"
+  },
+  {
+    "frota": "5205",
+    "os": "109026",
+    "data": "17/04/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Verificar jogo no embuchamento - (Fazenda SP)"
   }
 ]

@@ -4,7 +4,7 @@
     "frota": "112",
     "os": "110511",
     "data": "14/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento no cárter - (Fazenda Santa Luiza)"
   },
   {
@@ -13,5 +13,33 @@
     "data": "12/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Substituir rolamento danificado e verificar mancal oposto, que apresenta trinca visível - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "10227",
+    "os": "110308",
+    "data": "09/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar problema na caixa C, que está escapando marcha durante o uso e  ruído identificado na embreagem durante a saída - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "5217",
+    "os": "110180",
+    "data": "07/05/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "5741",
+    "os": "110179",
+    "data": "07/05/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Retirar folga dos cubos e sacar parafuso do cubo - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "5618",
+    "os": "110149",
+    "data": "07/05/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Revisar estrutura - trinca por baixo e desgaste nos rolamentos da roda guia - (Fazenda Santa Luiza)"
   }
 ]
