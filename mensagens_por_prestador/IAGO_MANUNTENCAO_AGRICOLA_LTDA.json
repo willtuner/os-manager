@@ -1,13 +1,5 @@
 [
   {
-    "frota": "5088",
-    "cd_equipamento": "5088",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "110895",
-    "data_entrada": "19/05/2025",
-    "servico": "Trocar rolamento da turbina - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5031",
     "cd_equipamento": "5031",
     "modelo": "RC2 E 2600 LSL TATU",
@@ -70,21 +62,5 @@
     "os": "110406",
     "data_entrada": "12/05/2025",
     "servico": "Correia da bomba pegando nas proteções - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5165",
-    "cd_equipamento": "5165",
-    "modelo": "ROCADEIRA TATU",
-    "os": "109411",
-    "data_entrada": "25/04/2025",
-    "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5629",
-    "cd_equipamento": "5629",
-    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
-    "os": "107660",
-    "data_entrada": "24/03/2025",
-    "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
   }
 ]
