@@ -1,27 +1,6 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
-    "frota": "130",
-    "os": "110972",
-    "data": "20/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Avaliar trator fumaceando branco - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "251",
-    "os": "110805",
-    "data": "19/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Trocar cabo do acelerador - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5600",
-    "os": "110804",
-    "data": "19/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar bomba oscilando -  (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "142",
     "os": "110763",
     "data": "16/05/2025",
@@ -83,54 +62,5 @@
     "data": "13/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5129",
-    "os": "110312",
-    "data": "09/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento no pistão - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5600",
-    "os": "110212",
-    "data": "08/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar suporte do filtro de sucção - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "251",
-    "os": "109795",
-    "data": "02/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar lanterna traseira"
-  },
-  {
-    "frota": "5530",
-    "os": "109775",
-    "data": "01/05/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo."
-  },
-  {
-    "frota": "95",
-    "os": "108270",
-    "data": "04/04/2025",
-    "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
-    "servico": "Revisar motor"
-  },
-  {
-    "frota": "130",
-    "os": "107475",
-    "data": "21/03/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar ar condicionado, a informação é que está vazando gás."
-  },
-  {
-    "frota": "95",
-    "os": "106950",
-    "data": "11/03/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "REVISÃO DO EQUIPAMENTO - (FAZ NOVA MANHA) LIBERADO ARTHUR"
   }
 ]

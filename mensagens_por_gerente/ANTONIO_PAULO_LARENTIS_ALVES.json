@@ -1,34 +1,6 @@
 [
   {
     "solicitado": "ANTONIO PAULO LARENTIS ALVES",
-    "frota": "5667",
-    "os": "110971",
-    "data": "20/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar eletroventilador de  resfriamento de óleo não liga - (Fazenda Minuano)"
-  },
-  {
-    "frota": "118",
-    "os": "110952",
-    "data": "20/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "A/C so liga no 4° estágio - (Fazenda Minuano)"
-  },
-  {
-    "frota": "46",
-    "os": "110790",
-    "data": "19/05/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Inspecionar assento do trator com desalinhamento ou deformação - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5766",
-    "os": "110787",
-    "data": "19/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento de óleo no eixo da bomba - (Fazenda Minuano)"
-  },
-  {
     "frota": "5366",
     "os": "110601",
     "data": "15/05/2025",
@@ -48,33 +20,5 @@
     "data": "12/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda na escada quebrada - (Fazenda Minuano)"
-  },
-  {
-    "frota": "155",
-    "os": "110309",
-    "data": "09/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)"
-  },
-  {
-    "frota": "144",
-    "os": "110047",
-    "data": "06/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar lanternas do alerta quebrada - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5631",
-    "os": "106948",
-    "data": "12/03/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Instalar correntes de proteção - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5500",
-    "os": "104756",
-    "data": "03/02/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção e desamassar suporte do esqui - (Fazenda Minuano)"
   }
 ]
