@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5749",
+    "cd_equipamento": "5749",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111036",
+    "data_entrada": "21/05/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111025",
+    "data_entrada": "21/05/2025",
+    "servico": "Pneu dianteiro L/E vazando pelo bico - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "159",
+    "cd_equipamento": "159",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "110948",
+    "data_entrada": "20/05/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5460",
+    "cd_equipamento": "5460",
+    "modelo": "TANQUE DE AGUA 4000 LT",
+    "os": "110814",
+    "data_entrada": "19/05/2025",
+    "servico": "Pneu L/D dianteiro deslocado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "78",
+    "cd_equipamento": "78",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "110807",
+    "data_entrada": "19/05/2025",
+    "servico": "Pneu L/E dianteiro furado - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "138",
+    "cd_equipamento": "138",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "110785",
+    "data_entrada": "19/05/2025",
+    "servico": "Trocar os dois pneus dianteiros (retirado para recapar). \nFazenda Minuano (Oficina) \nLiberado Sr. Maurício\n\nColocado dois pneus novos."
+  },
+  {
     "frota": "82",
     "cd_equipamento": "82",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -78,5 +126,45 @@
     "os": "110502",
     "data_entrada": "14/05/2025",
     "servico": "Vazamento no regulador de pressão - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "155",
+    "cd_equipamento": "155",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "110309",
+    "data_entrada": "09/05/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5523",
+    "cd_equipamento": "5523",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "110290",
+    "data_entrada": "09/05/2025",
+    "servico": "Pneu L/D estourado - (Fazenda Estrela)\nLiberado Sr. Mauricio\nPendencia N° 4227"
+  },
+  {
+    "frota": "5261",
+    "cd_equipamento": "5261",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "110225",
+    "data_entrada": "08/05/2025",
+    "servico": "Pneu L/E furado - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110203",
+    "data_entrada": "08/05/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "228",
+    "cd_equipamento": "228",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "110156",
+    "data_entrada": "07/05/2025",
+    "servico": "Trocar pneus dianteiros desgastados (enviar para recapar).\nFazenda Severino (Oficina)\nLiberado Sr. Maurício"
   }
 ]

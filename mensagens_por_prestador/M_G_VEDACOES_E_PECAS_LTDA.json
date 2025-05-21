@@ -6,5 +6,45 @@
     "os": "110742",
     "data_entrada": "16/05/2025",
     "servico": "Tirar vazamento do motor hidráulico - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5205",
+    "cd_equipamento": "5205",
+    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
+    "os": "110237",
+    "data_entrada": "08/05/2025",
+    "servico": "Avaliar vazamento de óleo no rotor e régua empenada - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5530",
+    "cd_equipamento": "5530",
+    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+    "os": "109775",
+    "data_entrada": "01/05/2025",
+    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5205",
+    "cd_equipamento": "5205",
+    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
+    "os": "109729",
+    "data_entrada": "30/04/2025",
+    "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5666",
+    "cd_equipamento": "5666",
+    "modelo": "PODADEIRA HIDRAUTEC HLD1",
+    "os": "109154",
+    "data_entrada": "22/04/2025",
+    "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5205",
+    "cd_equipamento": "5205",
+    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
+    "os": "109026",
+    "data_entrada": "17/04/2025",
+    "servico": "Verificar jogo no embuchamento - (Fazenda SP)\nLiberado Sr. Mauricio"
   }
 ]

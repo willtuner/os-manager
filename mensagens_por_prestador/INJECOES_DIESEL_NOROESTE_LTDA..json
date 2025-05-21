@@ -1,10 +1,26 @@
 [
   {
+    "frota": "130",
+    "cd_equipamento": "130",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "110972",
+    "data_entrada": "20/05/2025",
+    "servico": "Avaliar trator fumaceando branco - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "224",
     "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "110439",
     "data_entrada": "13/05/2025",
     "servico": "Trator apresenta consumo de combustível acima do normal. Necessário realizar diagnóstico completo - (Fazenda Terra Branca) \nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "87",
+    "cd_equipamento": "87",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "108582",
+    "data_entrada": "10/04/2025",
+    "servico": "Avaliar vazamento na bomba injetora - (Fazenda São Severino)\nLiberado Sr. Arthur"
   }
 ]

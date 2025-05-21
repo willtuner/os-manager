@@ -6,5 +6,37 @@
     "os": "110725",
     "data_entrada": "16/05/2025",
     "servico": "Vazamento no retentor do multiplicador  - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5217",
+    "cd_equipamento": "5217",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "110180",
+    "data_entrada": "07/05/2025",
+    "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5741",
+    "cd_equipamento": "5741",
+    "modelo": "DIST. ADUBO DCA2 7500 S-0114",
+    "os": "110179",
+    "data_entrada": "07/05/2025",
+    "servico": "Retirar folga dos cubos e sacar parafuso do cubo - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "109900",
+    "data_entrada": "02/05/2025",
+    "servico": "Substituir bomba de pulverização sem pressão por outra reserva.\nFazenda Bela Manhã\nSolicitado Sr. Zacarias\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5188",
+    "cd_equipamento": "5188",
+    "modelo": "PULVERIZADOR 600 LT MONTANA",
+    "os": "109725",
+    "data_entrada": "30/04/2025",
+    "servico": "Substituir polia do agitador da turbina-hélice, que se encontra quebrada, comprometendo o funcionamento do sistema de agitação da calda. Verificar o estado geral do mecanismo e demais componentes associados - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]
