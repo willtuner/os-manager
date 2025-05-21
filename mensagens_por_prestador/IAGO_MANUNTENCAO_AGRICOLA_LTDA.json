@@ -16,22 +16,6 @@
     "servico": "Verificar equipamento está pulverizando em apenas um dos lados (já verificado parte elétrica).\nFazenda Aparecida\nSolicitado Sr. Paulo\nLiberado Sr. Maurício"
   },
   {
-    "frota": "5486",
-    "cd_equipamento": "5486",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111018",
-    "data_entrada": "21/05/2025",
-    "servico": "Rolamento da polia traseira roncando - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5088",
-    "cd_equipamento": "5088",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "110895",
-    "data_entrada": "19/05/2025",
-    "servico": "Trocar rolamento da turbina - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5722",
     "cd_equipamento": "5722",
     "modelo": "TANQUE DE AGUA 2000 LT",
@@ -72,36 +56,12 @@
     "servico": "Substituir corrente das engrenagens do sistema de transmissão e trocar rolamento L/D  - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110519",
-    "data_entrada": "14/05/2025",
-    "servico": "Hélice ventilando com baixa eficiência e possível ruído, indicando falha nos rolamentos - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5657",
     "cd_equipamento": "5657",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "110493",
     "data_entrada": "14/05/2025",
     "servico": "Verificada ocorrência de vazamento na bomba e folga na polia do eixo, resultando em deslizamento. Recomendada desmontagem para inspeção, substituição de vedação e verificação da fixação da polia. - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5614",
-    "cd_equipamento": "5614",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110436",
-    "data_entrada": "13/05/2025",
-    "servico": "Hélice em contato com as laterais do tanque, gerando atrito e risco de danos ao conjunto - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5612",
-    "cd_equipamento": "5612",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110435",
-    "data_entrada": "13/05/2025",
-    "servico": "Hélice em contato com as laterais do tanque, gerando atrito e risco de danos ao conjunto - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5660",
