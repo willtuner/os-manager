@@ -1,11 +1,19 @@
 [
   {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "110790",
+    "frota": "44",
+    "cd_equipamento": "44",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "110834",
     "data_entrada": "19/05/2025",
-    "servico": "Inspecionar assento do trator com desalinhamento ou deformação - (Fazenda Minuano)\nLiberado Sr. Arthur"
+    "servico": "Durante a operação com a podadeira acoplada ao trator, um galho foi lançado contra o para-brisa, resultando na quebra da parte inferior do vidro dianteiro - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "10220",
+    "cd_equipamento": "10220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110667",
+    "data_entrada": "16/05/2025",
+    "servico": "Trocar banco danificado - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "248",

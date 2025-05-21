@@ -1,5 +1,13 @@
 [
   {
+    "frota": "22",
+    "cd_equipamento": "22",
+    "modelo": "TRATOR VALTRA BH 180 4X4",
+    "os": "111050",
+    "data_entrada": "21/05/2025",
+    "servico": "Sacar porca do bujão da roda dianteira espanada - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "216",
     "cd_equipamento": "216",
     "modelo": "TRATOR JOHN DEERE 5070 E",
@@ -16,6 +24,14 @@
     "servico": "Realizar diagnóstico no sistema de embreagem para verificar desgaste ou falha funcional. Avaliar necessidade de troca do kit completo (disco, platô e rolamento). - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   },
   {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "111019",
+    "data_entrada": "21/05/2025",
+    "servico": "Verificar parafusos de fixação da cabine não dão mais aperto - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "285",
     "cd_equipamento": "285",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -24,12 +40,12 @@
     "servico": "Trocar junta do escapamento e parafusos de fixação - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "113",
-    "cd_equipamento": "113",
-    "modelo": "TRATOR JOHN DEERE 5603 4X4",
-    "os": "110978",
+    "frota": "135",
+    "cd_equipamento": "135",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "110951",
     "data_entrada": "20/05/2025",
-    "servico": "Avaliar ruído anormal no motor - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+    "servico": "Verificar vazamentos - (Fazenda Biscui)\nLiberado Sr. Arthur"
   },
   {
     "frota": "224",
@@ -48,6 +64,14 @@
     "servico": "Trocar bomba do hidraulico\nFaz Minuano\nSolicitado Vadinho\nAutorizado Arthur"
   },
   {
+    "frota": "193",
+    "cd_equipamento": "193",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "110816",
+    "data_entrada": "19/05/2025",
+    "servico": "Soldar chapa de reforço do cabo da embreagem  - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "298",
     "cd_equipamento": "298",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -56,20 +80,20 @@
     "servico": "Verificar possível troca de embreagem - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "133",
-    "cd_equipamento": "133",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "110778",
-    "data_entrada": "19/05/2025",
-    "servico": "Verificar braços hidráulicos não sobem e cabo do acelerador de pé quebrado - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5262",
     "cd_equipamento": "5262",
     "modelo": "MOTOCANA",
     "os": "110773",
     "data_entrada": "17/05/2025",
     "servico": "Fazer troca de óleo completa - (Fazenda Estrela)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "110684",
+    "data_entrada": "16/05/2025",
+    "servico": "Trocar reparo dos pistões da direção - (Fazenda são Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "285",
@@ -88,12 +112,12 @@
     "servico": "Vazamento na direção - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "228",
-    "cd_equipamento": "228",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110572",
+    "frota": "98",
+    "cd_equipamento": "98",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "110570",
     "data_entrada": "15/05/2025",
-    "servico": "Avaliar embreagem roncando ao ligar TDP - (Fazenda São Severino)\nLiberado Sr. Arthur"
+    "servico": "Verificar trator não desengata marcha - (Fazenda Casa Branca)\nLiberado Sr. Arthur\nPendencias 4313,  4612 e 4311\nCaixa de filtro e tampa do reservatório"
   },
   {
     "frota": "96",
@@ -102,14 +126,6 @@
     "os": "110515",
     "data_entrada": "14/05/2025",
     "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "112",
-    "cd_equipamento": "112",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110511",
-    "data_entrada": "14/05/2025",
-    "servico": "Vazamento no cárter - (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
   },
   {
     "frota": "235",
@@ -142,14 +158,6 @@
     "os": "110226",
     "data_entrada": "08/05/2025",
     "servico": "Vazamento no pistão da lança - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "234",
-    "cd_equipamento": "234",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110162",
-    "data_entrada": "07/05/2025",
-    "servico": "Vazamento no cano do comando hidráulico - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "119",

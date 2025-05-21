@@ -1,5 +1,13 @@
 [
   {
+    "frota": "72",
+    "cd_equipamento": "72",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111070",
+    "data_entrada": "21/05/2025",
+    "servico": "Verificar pneu dianteiro L/E com \"problema\" - (Industria)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5749",
     "cd_equipamento": "5749",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -64,14 +72,6 @@
     "servico": "Trocar os dois pneus dianteiros. \nFazenda São Pedro \nSolicitado Sr. Romes\nLiberado Sr. Maurício\n\nColocado dois pneus recapados."
   },
   {
-    "frota": "5646",
-    "cd_equipamento": "5646",
-    "modelo": "TRANSBORDO MOD.TC-7000 GTM",
-    "os": "110658",
-    "data_entrada": "16/05/2025",
-    "servico": "Avaliar pneu abrindo nas laterais - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5221",
     "cd_equipamento": "5221",
     "modelo": "TANQUE DE AGUA 6500L R16 VERM.",
@@ -86,14 +86,6 @@
     "os": "110627",
     "data_entrada": "15/05/2025",
     "servico": "Pneu L/E furado - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "134",
-    "cd_equipamento": "134",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "110562",
-    "data_entrada": "15/05/2025",
-    "servico": "Desmontar roda traseira L/E para fazer solda em trinca - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "69",
@@ -128,14 +120,6 @@
     "servico": "Vazamento no regulador de pressão - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "155",
-    "cd_equipamento": "155",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "110309",
-    "data_entrada": "09/05/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5523",
     "cd_equipamento": "5523",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
@@ -150,14 +134,6 @@
     "os": "110225",
     "data_entrada": "08/05/2025",
     "servico": "Pneu L/E furado - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "227",
-    "cd_equipamento": "227",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110203",
-    "data_entrada": "08/05/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "228",

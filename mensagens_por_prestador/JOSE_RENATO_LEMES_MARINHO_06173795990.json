@@ -1,5 +1,13 @@
 [
   {
+    "frota": "217",
+    "cd_equipamento": "217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111118",
+    "data_entrada": "21/05/2025",
+    "servico": "Sacar parafuso do volante\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
+  },
+  {
     "frota": "5604",
     "cd_equipamento": "5604",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -16,6 +24,38 @@
     "servico": "Adaptar a bica do adubadora\nPecuária\nSolicitado Gabriel\nAutorizado Arthur"
   },
   {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "110963",
+    "data_entrada": "20/05/2025",
+    "servico": "Sacar parafusos do suporte da barra de tração quebrados - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5623",
+    "cd_equipamento": "5623",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "110806",
+    "data_entrada": "19/05/2025",
+    "servico": "Desentortar e solda eixo de suporte da roda guia - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5621",
+    "cd_equipamento": "5621",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "110777",
+    "data_entrada": "19/05/2025",
+    "servico": "Fazer solda e reforço e vazamento de óleo no multiplicador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5228",
+    "cd_equipamento": "5228",
+    "modelo": "PAM 600-PA AGRICOLA P/TRATORES",
+    "os": "110776",
+    "data_entrada": "19/05/2025",
+    "servico": "Fazer solda em trincas e fazer reforço - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5078",
     "cd_equipamento": "5078",
     "modelo": "RC2 E 2600 LSL TATU",
@@ -24,12 +64,28 @@
     "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã) \nLiberado Sr. Mauricio"
   },
   {
+    "frota": "5433",
+    "cd_equipamento": "5433",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "110712",
+    "data_entrada": "16/05/2025",
+    "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5425",
     "cd_equipamento": "5425",
     "modelo": "PULVERIZADOR 2000 LT FMC",
     "os": "110674",
     "data_entrada": "16/05/2025",
     "servico": "Fazer proteção na caixa de transporte - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "10220",
+    "cd_equipamento": "10220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110665",
+    "data_entrada": "16/05/2025",
+    "servico": "Instalar grade de proteção frontal - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "100",
@@ -80,14 +136,6 @@
     "servico": "Confeccionar e instalar proteções das lanternas do paralamas\nFaz Estrela\nSolicitado Vadinho\nAutorizado Arthur"
   },
   {
-    "frota": "5128",
-    "cd_equipamento": "5128",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "110507",
-    "data_entrada": "14/05/2025",
-    "servico": "Trinco no chassi e agulha de esticar correia da turbina quebrada  - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5354",
     "cd_equipamento": "5354",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -104,14 +152,6 @@
     "servico": "Verificar rosca travada, engate da boca de lobo e fechar fundo - (Pecuaria)\nLiberado Sr. Zacarias"
   },
   {
-    "frota": "118",
-    "cd_equipamento": "118",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "110366",
-    "data_entrada": "12/05/2025",
-    "servico": "Fazer solda na escada quebrada - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5631",
     "cd_equipamento": "5631",
     "modelo": "DISTRIBUIDO FARTUS 15.0 GRANEL",
@@ -126,30 +166,6 @@
     "os": "110231",
     "data_entrada": "08/05/2025",
     "servico": "Desamassar proteções (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "153",
-    "cd_equipamento": "153",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "110227",
-    "data_entrada": "08/05/2025",
-    "servico": "Soldar suporte para instalação de luz\nFaz São Severino\nSolicitado Cassio\nAutorizado Arthur"
-  },
-  {
-    "frota": "5543",
-    "cd_equipamento": "5543",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "110217",
-    "data_entrada": "08/05/2025",
-    "servico": "Colocar correntes de proteção anti arremesso - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5600",
-    "cd_equipamento": "5600",
-    "modelo": "ATOMIZADOR NATALI 4000 LT",
-    "os": "110212",
-    "data_entrada": "08/05/2025",
-    "servico": "Soldar suporte do filtro de sucção - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5603",
@@ -184,14 +200,6 @@
     "servico": "Fazer chapa para a fixação de proteção do cardam - (Oficina)\nLiberado Sr. Rafael"
   },
   {
-    "frota": "5661",
-    "cd_equipamento": "5661",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110096",
-    "data_entrada": "05/05/2025",
-    "servico": "Desentortado chapas realinhado, soldado estruturas montado, fabricado e instalado torre de sustentação. (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5117",
     "cd_equipamento": "5117",
     "modelo": "ROCADEIRA 3,0 TATU",
@@ -214,14 +222,6 @@
     "os": "109803",
     "data_entrada": "02/05/2025",
     "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5746",
-    "cd_equipamento": "5746",
-    "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
-    "os": "109794",
-    "data_entrada": "02/05/2025",
-    "servico": "Soldar manivela de regulagem da vazão do produto - (Fazenda Biscui)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5214",
@@ -302,37 +302,5 @@
     "os": "106712",
     "data_entrada": "07/03/2025",
     "servico": "Revisar fixação do tanque, soldar trincos, trocar os 2 registros, verificar folga no cabeçario e corrigir trincas no mesmo (Fazenda N. S. A.)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5053",
-    "cd_equipamento": "5053",
-    "modelo": "CARRETINHA DE FERRO",
-    "os": "105934",
-    "data_entrada": "20/02/2025",
-    "servico": "Fazer suporte para pé de apoio e trocar chaparia podre - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5081",
-    "cd_equipamento": "5081",
-    "modelo": "ADUBADEIRA DCA DC 2500",
-    "os": "105822",
-    "data_entrada": "18/02/2025",
-    "servico": "Fazer alavanca - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5623",
-    "cd_equipamento": "5623",
-    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
-    "os": "105514",
-    "data_entrada": "14/02/2025",
-    "servico": "Colocar proteção anti arremesso - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5500",
-    "cd_equipamento": "5500",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "104756",
-    "data_entrada": "03/02/2025",
-    "servico": "Fazer proteção e desamassar suporte do esqui - (Fazenda Minuano)\nLiberado Sr. Mauricio"
   }
 ]

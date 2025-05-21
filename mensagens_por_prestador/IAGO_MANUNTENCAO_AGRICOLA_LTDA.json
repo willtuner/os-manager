@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5599",
+    "cd_equipamento": "5599",
+    "modelo": "PREMIX PRIME 2T 2000",
+    "os": "111104",
+    "data_entrada": "21/05/2025",
+    "servico": "Fazer instalação do rotor, intermediário e selo mecânico no motor elétrico reserva do equipamento.\nFazenda Severino\nLiberado Sr. Maurício"
+  },
+  {
     "frota": "5492",
     "cd_equipamento": "5492",
     "modelo": "PULVERIZADOR GULIVER 4000",
@@ -22,6 +30,22 @@
     "os": "110895",
     "data_entrada": "19/05/2025",
     "servico": "Trocar rolamento da turbina - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5722",
+    "cd_equipamento": "5722",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "110819",
+    "data_entrada": "19/05/2025",
+    "servico": "Quebra da corrente de transmissão da bomba - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5693",
+    "cd_equipamento": "5693",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "110803",
+    "data_entrada": "19/05/2025",
+    "servico": "Verificar vazamento na bomba - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5031",

@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5470",
+    "cd_equipamento": "5470",
+    "modelo": "MOTOBOMBA MWM MOD 6.12TCA",
+    "os": "111084",
+    "data_entrada": "21/05/2025",
+    "servico": "Fazer revisão elétrica - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "84",
+    "cd_equipamento": "84",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111071",
+    "data_entrada": "21/05/2025",
+    "servico": "Verificar trator sem partida - (Industria)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "246",
     "cd_equipamento": "246",
     "modelo": "TRATOR MASSEY FERGUSON 3308",
@@ -182,14 +198,6 @@
     "os": "109788",
     "data_entrada": "02/05/2025",
     "servico": "Revisar sinalização, trator não funciona sirene de ré, faróis e buzina - (Pecuaria)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "153",
-    "cd_equipamento": "153",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "109641",
-    "data_entrada": "29/04/2025",
-    "servico": "Instalar faróis auxiliares voltados para as barras de herbicidas, visando melhorar a iluminação durante as operações noturnas. - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "211",
