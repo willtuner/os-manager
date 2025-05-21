@@ -1,18 +1,25 @@
 [
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
+    "frota": "5599",
+    "os": "111104",
+    "data": "21/05/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Fazer instalação do rotor, intermediário e selo mecânico no motor elétrico reserva do equipamento."
+  },
+  {
+    "frota": "274",
+    "os": "111047",
+    "data": "21/05/2025",
+    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
+    "servico": "Vazamento na bomba d'água - (Fazenda Bela Manhã)"
+  },
+  {
     "frota": "233",
     "os": "111019",
     "data": "21/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar parafusos de fixação da cabine não dão mais aperto - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5242",
-    "os": "110973",
-    "data": "20/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Inverter secção - (Fazenda Bela Manhã)"
   },
   {
     "frota": "5614",
@@ -25,21 +32,14 @@
     "frota": "226",
     "os": "110945",
     "data": "20/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra na lateral - (Fazenda São Severino)"
-  },
-  {
-    "frota": "318",
-    "os": "110867",
-    "data": "19/05/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 600 hrs - (Fazenda São Severino)"
   },
   {
     "frota": "193",
     "os": "110816",
     "data": "19/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Soldar chapa de reforço do cabo da embreagem  - (Fazenda São Severino)"
   },
   {
@@ -48,27 +48,6 @@
     "data": "16/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção na caixa de transporte - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5646",
-    "os": "110658",
-    "data": "16/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Avaliar pneu abrindo nas laterais - (Fazenda São Severino)"
-  },
-  {
-    "frota": "228",
-    "os": "110572",
-    "data": "15/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar embreagem roncando ao ligar TDP - (Fazenda São Severino)"
-  },
-  {
-    "frota": "134",
-    "os": "110562",
-    "data": "15/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Desmontar roda traseira L/E para fazer solda em trinca - (Fazenda São Severino)"
   },
   {
     "frota": "5660",
@@ -97,33 +76,5 @@
     "data": "12/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Faróis não ascendem - (Fazenda São Severino)"
-  },
-  {
-    "frota": "153",
-    "os": "110227",
-    "data": "08/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar suporte para instalação de luz"
-  },
-  {
-    "frota": "227",
-    "os": "110203",
-    "data": "08/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/D furado - (Fazenda São Severino)"
-  },
-  {
-    "frota": "234",
-    "os": "110162",
-    "data": "07/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento no cano do comando hidráulico - (Fazenda São Severino)"
-  },
-  {
-    "frota": "153",
-    "os": "109641",
-    "data": "29/04/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar faróis auxiliares voltados para as barras de herbicidas, visando melhorar a iluminação durante as operações noturnas. - (Fazenda São Severino)"
   }
 ]
