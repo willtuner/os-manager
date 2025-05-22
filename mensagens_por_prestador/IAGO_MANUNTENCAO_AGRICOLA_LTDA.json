@@ -1,11 +1,11 @@
 [
   {
-    "frota": "5599",
-    "cd_equipamento": "5599",
-    "modelo": "PREMIX PRIME 2T 2000",
-    "os": "111104",
-    "data_entrada": "21/05/2025",
-    "servico": "Fazer instalação do rotor, intermediário e selo mecânico no motor elétrico reserva do equipamento.\nFazenda Severino\nLiberado Sr. Maurício"
+    "frota": "5677",
+    "cd_equipamento": "5677",
+    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
+    "os": "111155",
+    "data_entrada": "22/05/2025",
+    "servico": "Instalar palhetas distribuidoras nos discos de distribuição de adubo e protetores traseiros nas esteiras. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5492",
@@ -14,6 +14,14 @@
     "os": "111030",
     "data_entrada": "21/05/2025",
     "servico": "Verificar equipamento está pulverizando em apenas um dos lados (já verificado parte elétrica).\nFazenda Aparecida\nSolicitado Sr. Paulo\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5569",
+    "cd_equipamento": "5569",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "111020",
+    "data_entrada": "21/05/2025",
+    "servico": "Tirar jogo das rodas guias  - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5722",
@@ -38,6 +46,14 @@
     "os": "110626",
     "data_entrada": "15/05/2025",
     "servico": "Substituir facão e arrastador - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5599",
+    "cd_equipamento": "5599",
+    "modelo": "PREMIX PRIME 2T 2000",
+    "os": "111104",
+    "data_entrada": "15/05/2025",
+    "servico": "Fazer instalação do rotor, intermediário e selo mecânico no motor elétrico reserva do equipamento.\nFazenda Severino\nLiberado Sr. Maurício"
   },
   {
     "frota": "5366",

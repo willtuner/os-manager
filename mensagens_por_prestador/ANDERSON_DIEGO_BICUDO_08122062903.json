@@ -1,5 +1,29 @@
 [
   {
+    "frota": "254",
+    "cd_equipamento": "254",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111151",
+    "data_entrada": "22/05/2025",
+    "servico": "Avaliar rigidez excessiva no acionamento da embreagem da Tomada de Potência (TDP) - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "255",
+    "cd_equipamento": "255",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111141",
+    "data_entrada": "22/05/2025",
+    "servico": "Verificar vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "228",
+    "cd_equipamento": "228",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "111131",
+    "data_entrada": "22/05/2025",
+    "servico": "Avaliar nível do óleo do motor subindo e aparenta diferença na viscosidade - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "22",
     "cd_equipamento": "22",
     "modelo": "TRATOR VALTRA BH 180 4X4",
@@ -24,14 +48,6 @@
     "servico": "Realizar diagnóstico no sistema de embreagem para verificar desgaste ou falha funcional. Avaliar necessidade de troca do kit completo (disco, platô e rolamento). - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "111019",
-    "data_entrada": "21/05/2025",
-    "servico": "Verificar parafusos de fixação da cabine não dão mais aperto - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "285",
     "cd_equipamento": "285",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -40,20 +56,20 @@
     "servico": "Trocar junta do escapamento e parafusos de fixação - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
+    "frota": "203",
+    "cd_equipamento": "203",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "110677",
+    "data_entrada": "20/05/2025",
+    "servico": "Vazamento na direção - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "132",
     "cd_equipamento": "132",
     "modelo": "TRATOR NEW HOLLAND TL75E",
     "os": "110820",
     "data_entrada": "19/05/2025",
     "servico": "Trocar bomba do hidraulico\nFaz Minuano\nSolicitado Vadinho\nAutorizado Arthur"
-  },
-  {
-    "frota": "193",
-    "cd_equipamento": "193",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "110816",
-    "data_entrada": "19/05/2025",
-    "servico": "Soldar chapa de reforço do cabo da embreagem  - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "100",
@@ -70,14 +86,6 @@
     "os": "110680",
     "data_entrada": "16/05/2025",
     "servico": "Verificar acelerador de mão que não mantém rotação constante. Suspeita de folga, desgaste no mecanismo de fixação ou cabo com regulagem incorreta - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "203",
-    "cd_equipamento": "203",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "110677",
-    "data_entrada": "16/05/2025",
-    "servico": "Vazamento na direção - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
   },
   {
     "frota": "98",
@@ -110,14 +118,6 @@
     "os": "110228",
     "data_entrada": "08/05/2025",
     "servico": "Verificar vazamento no braço hidráulico, vazamento no cudo da roda dianteira L/? e vazamento nas conexões da mangueira do comando hidráulico - (Fazenda SP)\nLiberado Sr. Arthur\nPendencias 4308, 4309 e 4310"
-  },
-  {
-    "frota": "5262",
-    "cd_equipamento": "5262",
-    "modelo": "MOTOCANA",
-    "os": "110226",
-    "data_entrada": "08/05/2025",
-    "servico": "Vazamento no pistão da lança - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "119",

@@ -1,19 +1,19 @@
 [
   {
+    "frota": "5571",
+    "cd_equipamento": "5571",
+    "modelo": "CARRETA TRANSBORDO GTM",
+    "os": "111150",
+    "data_entrada": "22/05/2025",
+    "servico": "Fazer solda - (Fazenda Estrela)\nLiberado Sr. Valdomiro"
+  },
+  {
     "frota": "5205",
     "cd_equipamento": "5205",
     "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
     "os": "111046",
     "data_entrada": "21/05/2025",
     "servico": "Desmontar conjunto de corte para possibilitar o transporte do Trator.\nFazenda São Paulo\nSolicitado Sr. Zacarias\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5709",
-    "cd_equipamento": "5709",
-    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-    "os": "110801",
-    "data_entrada": "19/05/2025",
-    "servico": "Inspecionar os pistões do equipamento que apresentam ausência de movimento - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5264",
@@ -43,8 +43,8 @@
     "frota": "5147",
     "cd_equipamento": "5147",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "109673",
+    "os": "108806",
     "data_entrada": "15/04/2025",
-    "servico": "Reforma da roçadeira (Fazenda Alvorada)\nLiberado Sr. Natalino"
+    "servico": "Reforma do equipamento - (Fazenda Alvorada)\nLiberado Sr. Rafael"
   }
 ]

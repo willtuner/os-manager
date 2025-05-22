@@ -1,35 +1,19 @@
 [
   {
+    "frota": "10229",
+    "cd_equipamento": "10229",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111135",
+    "data_entrada": "22/05/2025",
+    "servico": "Painel de instrumentos não funciona - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5470",
     "cd_equipamento": "5470",
     "modelo": "MOTOBOMBA MWM MOD 6.12TCA",
     "os": "111084",
     "data_entrada": "21/05/2025",
     "servico": "Fazer revisão elétrica - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "84",
-    "cd_equipamento": "84",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "111071",
-    "data_entrada": "21/05/2025",
-    "servico": "Verificar trator sem partida - (Industria)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "287",
-    "cd_equipamento": "287",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111027",
-    "data_entrada": "21/05/2025",
-    "servico": "Pisca alerta não funciona - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "215",
-    "cd_equipamento": "215",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "111000",
-    "data_entrada": "20/05/2025",
-    "servico": "Correia do alternador quebrado - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
     "frota": "267",
@@ -46,14 +30,6 @@
     "os": "110903",
     "data_entrada": "19/05/2025",
     "servico": "Trocar cibie traseiro queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "157",
-    "cd_equipamento": "157",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "110786",
-    "data_entrada": "19/05/2025",
-    "servico": "Inspecionar trator com indícios de queima de fusíveis - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "106",
@@ -112,14 +88,6 @@
     "servico": "Revisar sinalização, cibiés não ascendem - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "90",
-    "cd_equipamento": "90",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "110547",
-    "data_entrada": "14/05/2025",
-    "servico": "Verificar relógio horimetro não funciona - (Fazenda São Paulo)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "46",
     "cd_equipamento": "46",
     "modelo": "TRATOR JOHN DEERE 5600 4X4",
@@ -134,22 +102,6 @@
     "os": "110527",
     "data_entrada": "14/05/2025",
     "servico": "Faróis quebrados e queimados e cibié queimado - (Fazenda Terra Branca)\nLiberado Sr. Arthur \nPendencia 4333"
-  },
-  {
-    "frota": "79",
-    "cd_equipamento": "79",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "110494",
-    "data_entrada": "14/05/2025",
-    "servico": "Substituir cibié auxiliar queimado localizado na barra de pulverização - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "229",
-    "cd_equipamento": "229",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110419",
-    "data_entrada": "12/05/2025",
-    "servico": "Faróis não ascendem - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "228",

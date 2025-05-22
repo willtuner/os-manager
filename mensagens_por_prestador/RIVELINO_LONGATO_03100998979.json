@@ -1,19 +1,43 @@
 [
   {
+    "frota": "74",
+    "cd_equipamento": "74",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111144",
+    "data_entrada": "22/05/2025",
+    "servico": "Pneu dianteiro furado L/? - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "144",
+    "cd_equipamento": "144",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "111134",
+    "data_entrada": "22/05/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "111133",
+    "data_entrada": "22/05/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "308",
+    "cd_equipamento": "308",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "111130",
+    "data_entrada": "22/05/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "72",
     "cd_equipamento": "72",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "111070",
     "data_entrada": "21/05/2025",
     "servico": "Verificar pneu dianteiro L/E com \"problema\" - (Industria)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5749",
-    "cd_equipamento": "5749",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111036",
-    "data_entrada": "21/05/2025",
-    "servico": "Pneu L/D furado - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "224",
@@ -38,14 +62,6 @@
     "os": "110814",
     "data_entrada": "19/05/2025",
     "servico": "Pneu L/D dianteiro deslocado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "78",
-    "cd_equipamento": "78",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "110807",
-    "data_entrada": "19/05/2025",
-    "servico": "Pneu L/E dianteiro furado - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "138",

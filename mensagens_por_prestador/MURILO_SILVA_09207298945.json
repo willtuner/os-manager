@@ -1,13 +1,5 @@
 [
   {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "111034",
-    "data_entrada": "21/05/2025",
-    "servico": "Trocar cabo que liga modulo a bateria quebrado - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5659",
     "cd_equipamento": "5659",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -30,14 +22,6 @@
     "os": "110979",
     "data_entrada": "20/05/2025",
     "servico": "Fazer solda nos terminais - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5749",
-    "cd_equipamento": "5749",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "110793",
-    "data_entrada": "19/05/2025",
-    "servico": "Fazer solda em terminal do SPE -  (Fazenda Biscui)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5418",
