@@ -6,8 +6,8 @@
   .card-os:hover { transform: translateY(-5px); }
   .btn-manutencao { background-color: #f39c12; border-color: #f39c12; color: white; }
   .btn-manutencao:hover { background-color: #e67e22; }
-  .btn-consignar { background-color: #28a745; border-color: #28a745; color: white; }
-  .btn-consignar:hover { background-color: #218838; }
+  .btn-atribuir { background-color: #007bff; border-color: #007bff; color: white; }
+  .btn-atribuir:hover { background-color: #0056b3; }
 </style>
 {% endblock %}
 {% block content %}
@@ -35,10 +35,10 @@
       </form>
     </div>
   </div>
-  <!-- Seção de OS sem prestador -->
+  <!-- Seção de atribuição de prestadores -->
   {% if os_sem_prestador %}
     <div class="mb-5">
-      <h3 class="h5 mb-3">OS Sem Prestador Definido</h3>
+      <h3 class="h5 mb-3">Atribuir Prestadores às OS</h3>
       {% for item in os_sem_prestador %}
         <div class="card card-os mb-3">
           <div class="card-body">
@@ -55,10 +55,18 @@
               <i class="fas fa-tools me-1 text-muted"></i>
               <span style="white-space: pre-wrap;">{{ item.servico }}</span>
             </p>
-            <form action="{{ url_for('consignar_os', os_numero=item.os) }}" method="POST">
-              <button type="submit" class="btn btn-consignar btn-sm">
-                <i class="fas fa-plus-circle me-1"></i>Consignar para Mim
-              </button>
+            <form action="{{ url_for('atribuir_prestador', os_numero=item.os) }}" method="POST">
+              <div class="input-group">
+                <select name="prestador" class="form-select form-select-sm" required>
+                  <option value="" disabled selected>Selecione um prestador</option>
+                  {% for p in prestadores %}
+                    <option value="{{ p.usuario }}">{{ p.nome_exibicao }}</option>
+                  {% endfor %}
+                </select>
+                <button type="submit" class="btn btn-atribuir btn-sm">
+                  <i class="fas fa-user-plus me-1"></i>Atribuir
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -66,7 +74,7 @@
     </div>
   {% else %}
     <div class="alert alert-info mb-5">
-      <i class="fas fa-info-circle me-2"></i>Nenhuma OS sem prestador definida no momento.
+      <i class="fas fa-info-circle me-2"></i>Nenhuma OS sem prestador para atribuir no momento.
     </div>
   {% endif %}
   <!-- Seção de OS do usuário -->
