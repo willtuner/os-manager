@@ -137,18 +137,4 @@
     "senha": "serralheria123",
     "arquivo_os": "SERRALHERIA_E_CENTRO_DE_MOLAS_SANTA_CAT.json"
   },
-  {
-    "usuario": "mauricio",
-    "senha": "1234",
-    "nome_exibicao": "Mauricio",
-    "arquivo_os": "relatorio_mauricio.json",
-    "tipo": "manutencao"
-  },
-  {
-    "usuario": "arthur",
-    "senha": "1234",
-    "nome_exibicao": "Arthur",
-    "arquivo_os": "relatorio_arthur.json",
-    "tipo": "manutencao"
-  }
 ]
