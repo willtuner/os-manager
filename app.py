@@ -238,6 +238,7 @@ def carregar_os_manutencao(usuario):
 
 def carregar_os_sem_prestador():
     os_sem_prestador = []
+    hoje = saopaulo_tz.localize(datetime.now()).date()
     for arquivo in os.listdir(MENSAGENS_DIR):
         if arquivo.lower().endswith('.json'):
             caminho = os.path.join(MENSAGENS_DIR, arquivo)
@@ -247,13 +248,20 @@ def carregar_os_sem_prestador():
                 for item in dados:
                     prestador = str(item.get('prestador') or item.get('Prestador', '')).lower()
                     if prestador in ('nan', '', 'none', 'não definido', 'prestador não definido'):
+                        data_str = str(item.get('data') or item.get('Data', ''))
+                        try:
+                            data_entrada = datetime.strptime(data_str, '%d/%m/%Y').date()
+                            dias_abertos = (hoje - data_entrada).days
+                        except Exception:
+                            dias_abertos = 0
                         os_sem_prestador.append({
                             'os': str(item.get('os') or item.get('OS', '')),
                             'frota': str(item.get('frota') or item.get('Frota', '')),
-                            'data_entrada': str(item.get('data') or item.get('Data', '')),
+                            'data_entrada': data_str,
                             'modelo': str(item.get('modelo') or item.get('Modelo', '')),
                             'servico': str(item.get('servico') or item.get('Servico') or item.get('observacao') or item.get('Observacao', '')),
-                            'arquivo_origem': arquivo
+                            'arquivo_origem': arquivo,
+                            'dias_abertos': dias_abertos
                         })
             except Exception as e:
                 logger.error(f"Erro ao carregar {caminho}: {e}")
