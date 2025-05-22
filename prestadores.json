@@ -141,14 +141,14 @@
     "usuario": "mauricio",
     "senha": "1234",
     "nome_exibicao": "Mauricio",
-    "arquivo_os": "mauricio_manutencao_os.json",
+    "arquivo_os": "relatorio_mauricio.json",
     "tipo": "manutencao"
   },
   {
     "usuario": "arthur",
     "senha": "1234",
     "nome_exibicao": "Arthur",
-    "arquivo_os": "arthur_manutencao_os.json",
+    "arquivo_os": "relatorio_arthur.json",
     "tipo": "manutencao"
   }
 ]
