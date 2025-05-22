@@ -117,19 +117,6 @@ def init_db():
             ))
         db.session.commit()
 
-    nome = session['usuario'].capitalize()
-    caminho = os.path.join("static", "json", f"relatorio_{nome.lower()}.json")
-
-    os_list = []
-    if os.path.exists(caminho):
-        try:
-            with open(caminho, "r", encoding="utf-8") as f:
-                os_list = json.load(f)
-        except Exception as e:
-            logger.error(f"Erro ao carregar JSON para {nome}: {e}")
-
-    return render_template("painel_manutencao.html", nome=nome, os_list=os_list)
-
 def carregar_os_gerente(gerente):
     base = gerente.upper().replace('.', '_')
     caminho_encontrado = None
@@ -275,8 +262,6 @@ def painel():
 
 @app.route('/painel_prestador')
 def painel_prestador():
-
-
     if 'prestador' not in session:
         return redirect(url_for('login'))
     prestadores = carregar_prestadores()
@@ -297,6 +282,37 @@ def painel_prestador():
             logger.error(f"Erro ao decodificar {caminho}: {e}")
             os_list = []
     return render_template('painel_prestador.html', nome=prestador['nome_exibicao'], os_list=os_list)
+
+@app.route('/painel_manutencao')
+def painel_manutencao():
+    if 'gerente' not in session and 'prestador' not in session:
+        flash('Acesso negado. Faça login.', 'danger')
+        return redirect(url_for('login'))
+
+    os_list = []
+    nome = ""
+    
+    if 'gerente' in session:
+        nome = session['gerente'].capitalize()
+        os_list = carregar_os_gerente(session['gerente'])
+    elif 'prestador' in session:
+        prestadores = carregar_prestadores()
+        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
+        if not prestador:
+            flash('Prestador não encontrado', 'danger')
+            logger.error(f"Prestador não encontrado na sessão: {session['prestador']}")
+            return redirect(url_for('login'))
+        nome = prestador.get('nome_exibicao', session['prestador']).capitalize()
+        caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
+        if os.path.exists(caminho):
+            try:
+                with open(caminho, 'r', encoding='utf-8') as f:
+                    os_list = json.load(f)
+            except json.JSONDecodeError as e:
+                logger.error(f"Erro ao decodificar {caminho}: {e}")
+                os_list = []
+
+    return render_template('painel_manutencao.html', nome=nome, os_list=os_list)
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
