@@ -213,13 +213,13 @@ def carregar_os_prestadores():
 def index():
     return redirect(url_for('login'))
 
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form.get('username', '').strip().lower()
         senha = request.form.get('senha', '').strip()
         logger.debug(f"Tentativa de login: {username}, senha fornecida: {'*' * len(senha)}")
+
         user = User.query.filter_by(username=username).first()
         if user and user.password == senha:
             ev = LoginEvent(username=username, user_type='gerente')
@@ -230,20 +230,27 @@ def login():
             session['is_admin'] = user.is_admin
             logger.info(f"Login bem-sucedido para gerente: {username}")
 
-            if user.is_admin:
-                return redirect(url_for('admin_panel'))
-            elif username in ['mauricio.jose', 'mauricio.marques', 'arthur.sousa']:
-                return redirect(url_for('painel'))
-            elif username in ['mauricio', 'arthur']:
-                return redirect(url_for('painel_manutencao'))
-            else:
-                return redirect(url_for('painel'))
+            if username in {'arthur', 'mauricio'}:
+                session["usuario"] = username
+                return redirect(url_for("painel_manutencao"))
+
+            return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
 
         prestadores = carregar_prestadores()
-        if not prestadores:
-            flash('Erro ao carregar lista de prestadores. Contate o administrador.', 'danger')
-            logger.error("Lista de prestadores vazia ou não carregada.")
-            return render_template('login.html')
+        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
+        if prestador:
+            ev = LoginEvent(username=username, user_type='prestador')
+            db.session.add(ev)
+            db.session.commit()
+            session['login_event_id'] = ev.id
+            session['prestador'] = prestador['usuario']
+            session['prestador_nome'] = prestador.get('nome_exibicao', username)
+            logger.info(f"Login bem-sucedido para prestador: {username}")
+            return redirect(url_for('painel_prestador'))
+
+        flash('Usuário ou senha inválidos.', 'danger')
+        logger.warning(f"Falha no login: {username}")
+    return render_template('login.html')
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
             ev = LoginEvent(username=username, user_type='prestador')
@@ -257,6 +264,7 @@ def login():
         flash('Usuário ou senha inválidos.', 'danger')
         logger.warning(f"Falha no login: {username}")
     return render_template('login.html')
+
 @app.route('/painel')
 def painel():
     if 'gerente' not in session:
@@ -526,11 +534,13 @@ def logout():
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
         if ev:
-            ev.logout_time = saopaulo_tz.localize(datetime.now())
+            ev.logout_time = datetime.now(saopaulo_tz)
+            if ev.login_time.tzinfo is None:
+                ev.login_time = saopaulo_tz.localize(ev.login_time)
             ev.duration_secs = int((ev.logout_time - ev.login_time).total_seconds())
             db.session.commit()
     session.clear()
-    flash('Desconectado','info')
+    flash('Desconectado', 'info')
     return redirect(url_for('login'))
 
 with app.app_context():
@@ -540,3 +550,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
+
