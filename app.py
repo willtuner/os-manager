@@ -368,7 +368,8 @@ def painel_manutencao():
                          os_list=os_list, 
                          total_os=total_os, 
                          os_sem_prestador=os_sem_prestador, 
-                         ordenar=ordenar)
+                         ordenar=ordenar,
+                         prestadores=prestadores)
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
@@ -418,8 +419,8 @@ def finalizar_os(os_numero):
     flash(f'OS {os_numero} finalizada','success')
     return redirect(url_for('painel' if 'gerente' in session else 'painel_manutencao' if 'manutencao' in session else 'painel_prestador'))
 
-@app.route('/consignar_os/<os_numero>', methods=['POST'])
-def consignar_os(os_numero):
+@app.route('/atribuir_prestador/<os_numero>', methods=['POST'])
+def atribuir_prestador(os_numero):
     if 'manutencao' not in session:
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
@@ -430,46 +431,38 @@ def consignar_os(os_numero):
         flash('Usuário de manutenção não encontrado', 'danger')
         return redirect(url_for('login'))
     
+    prestador_selecionado = request.form.get('prestador')
+    if not prestador_selecionado:
+        flash('Nenhum prestador selecionado', 'danger')
+        return redirect(url_for('painel_manutencao'))
+    
+    # Verificar se o prestador selecionado existe
+    prestador_valido = next((p for p in prestadores if p.get('usuario', '').lower() == prestador_selecionado.lower()), None)
+    if not prestador_valido:
+        flash('Prestador inválido', 'danger')
+        return redirect(url_for('painel_manutencao'))
+    
     os_sem_prestador = carregar_os_sem_prestador()
     os_target = next((os for os in os_sem_prestador if os['os'] == os_numero), None)
     if not os_target:
-        flash('OS não encontrada ou já consignada', 'danger')
+        flash('OS não encontrada ou já possui prestador', 'danger')
         return redirect(url_for('painel_manutencao'))
     
-    # Remover a OS do arquivo original
+    # Atualizar o prestador no arquivo original
     caminho_origem = os.path.join(MENSAGENS_DIR, os_target['arquivo_origem'])
     try:
         with open(caminho_origem, 'r', encoding='utf-8') as f:
             dados = json.load(f)
-        dados = [item for item in dados if str(item.get('os') or item.get('OS', '')) != os_numero]
+        for item in dados:
+            if str(item.get('os') or item.get('OS', '')) == os_numero:
+                item['prestador'] = prestador_valido['nome_exibicao']
+                break
         with open(caminho_origem, 'w', encoding='utf-8') as f:
             json.dump(dados, f, ensure_ascii=False, indent=2)
+        flash(f'Prestador {prestador_valido["nome_exibicao"]} atribuído à OS {os_numero} com sucesso', 'success')
     except Exception as e:
         logger.error(f"Erro ao atualizar {caminho_origem}: {e}")
-        flash('Erro ao consignar OS', 'danger')
-        return redirect(url_for('painel_manutencao'))
-    
-    # Adicionar a OS ao arquivo do usuário
-    caminho_destino = os.path.join(JSON_DIR, prestador['arquivo_os'])
-    try:
-        if os.path.exists(caminho_destino):
-            with open(caminho_destino, 'r', encoding='utf-8') as f:
-                os_list = json.load(f)
-        else:
-            os_list = []
-        os_list.append({
-            'os': os_target['os'],
-            'frota': os_target['frota'],
-            'data_entrada': os_target['data_entrada'],
-            'modelo': os_target['modelo'],
-            'servico': os_target['servico']
-        })
-        with open(caminho_destino, 'w', encoding='utf-8') as f:
-            json.dump(os_list, f, ensure_ascii=False, indent=2)
-        flash(f'OS {os_numero} consignada com sucesso', 'success')
-    except Exception as e:
-        logger.error(f"Erro ao adicionar OS a {caminho_destino}: {e}")
-        flash('Erro ao consignar OS', 'danger')
+        flash('Erro ao atribuir prestador', 'danger')
     return redirect(url_for('painel_manutencao'))
 
 @app.route('/adicionar_comentario/<os_numero>', methods=['POST'])
