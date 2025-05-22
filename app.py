@@ -520,3 +520,23 @@ if __name__ == '__main__':
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
 
+
+
+@app.route('/painel_manutencao')
+def painel_manutencao():
+    if 'usuario' not in session:
+        return redirect(url_for('login'))
+
+    nome = session['usuario'].capitalize()
+    caminho = os.path.join("static", "json", f"relatorio_{nome.lower()}.json")
+
+    os_list = []
+    if os.path.exists(caminho):
+        try:
+            with open(caminho, "r", encoding="utf-8") as f:
+                os_list = json.load(f)
+        except Exception as e:
+            logger.error(f"Erro ao carregar JSON para {nome}: {e}")
+
+    return render_template("painel_manutencao.html", nome=nome, os_list=os_list)
+
