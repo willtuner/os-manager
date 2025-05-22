@@ -1,0 +1,42 @@
+
+{% extends "base.html" %}
+
+{% block title %}Painel da Equipe de Manutenção{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <h2 class="h4 mb-4">
+    <i class="fas fa-wrench text-success me-2"></i>OS Atribuídas – {{ nome }}
+  </h2>
+
+  {% if os_list %}
+    {% for os in os_list %}
+    <div class="card card-os mb-3">
+      <div class="card-header">
+        <strong>OS {{ os.os }}</strong> – Frota {{ os.frota }}
+      </div>
+      <div class="card-body">
+        <p class="mb-1"><strong>Modelo:</strong> {{ os.modelo }}</p>
+        <p class="mb-1"><strong>Data de Entrada:</strong> {{ os.data_entrada }}</p>
+        <p class="mb-1"><strong>Previsão de Saída:</strong> {{ os.previsao_saida }}</p>
+        <p class="mb-1"><strong>Prestador:</strong> {{ os.prestador }}</p>
+        <p><strong>Serviço:</strong><br>{{ os.servico }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  {% else %}
+    <div class="alert alert-info text-center">
+      <i class="fas fa-info-circle me-1"></i> Nenhuma OS pendente atribuída a você.
+    </div>
+  {% endif %}
+
+  <div class="d-flex justify-content-between mt-4">
+    <a href="/" class="btn btn-outline-secondary">
+      <i class="fas fa-arrow-left me-1"></i> Voltar
+    </a>
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+      <i class="fas fa-sign-out-alt me-1"></i> Sair
+    </a>
+  </div>
+</div>
+{% endblock %}
