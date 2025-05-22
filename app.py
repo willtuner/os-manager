@@ -431,15 +431,9 @@ def atribuir_prestador(os_numero):
         flash('Usuário de manutenção não encontrado', 'danger')
         return redirect(url_for('login'))
     
-    prestador_selecionado = request.form.get('prestador')
-    if not prestador_selecionado:
-        flash('Nenhum prestador selecionado', 'danger')
-        return redirect(url_for('painel_manutencao'))
-    
-    # Verificar se o prestador selecionado existe
-    prestador_valido = next((p for p in prestadores if p.get('usuario', '').lower() == prestador_selecionado.lower()), None)
-    if not prestador_valido:
-        flash('Prestador inválido', 'danger')
+    prestador_nome = request.form.get('prestador', '').strip()
+    if not prestador_nome:
+        flash('O nome do prestador não pode estar vazio', 'danger')
         return redirect(url_for('painel_manutencao'))
     
     os_sem_prestador = carregar_os_sem_prestador()
@@ -455,11 +449,11 @@ def atribuir_prestador(os_numero):
             dados = json.load(f)
         for item in dados:
             if str(item.get('os') or item.get('OS', '')) == os_numero:
-                item['prestador'] = prestador_valido['nome_exibicao']
+                item['prestador'] = prestador_nome
                 break
         with open(caminho_origem, 'w', encoding='utf-8') as f:
             json.dump(dados, f, ensure_ascii=False, indent=2)
-        flash(f'Prestador {prestador_valido["nome_exibicao"]} atribuído à OS {os_numero} com sucesso', 'success')
+        flash(f'Prestador {prestador_nome} atribuído à OS {os_numero} com sucesso', 'success')
     except Exception as e:
         logger.error(f"Erro ao atualizar {caminho_origem}: {e}")
         flash('Erro ao atribuir prestador', 'danger')
