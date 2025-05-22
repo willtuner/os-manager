@@ -213,6 +213,7 @@ def carregar_os_prestadores():
 def index():
     return redirect(url_for('login'))
 
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -228,14 +229,15 @@ def login():
             session['gerente'] = username
             session['is_admin'] = user.is_admin
             logger.info(f"Login bem-sucedido para gerente: {username}")
+
             if user.is_admin:
-    return redirect(url_for('admin_panel'))
-elif username in ['mauricio.jose', 'mauricio.marques', 'arthur.sousa']:
-    return redirect(url_for('painel'))
-elif username in ['mauricio', 'arthur']:
-    return redirect(url_for('painel_manutencao'))
-else:
-    return redirect(url_for('painel'))
+                return redirect(url_for('admin_panel'))
+            elif username in ['mauricio.jose', 'mauricio.marques', 'arthur.sousa']:
+                return redirect(url_for('painel'))
+            elif username in ['mauricio', 'arthur']:
+                return redirect(url_for('painel_manutencao'))
+            else:
+                return redirect(url_for('painel'))
 
         prestadores = carregar_prestadores()
         if not prestadores:
@@ -255,7 +257,6 @@ else:
         flash('Usuário ou senha inválidos.', 'danger')
         logger.warning(f"Falha no login: {username}")
     return render_template('login.html')
-
 @app.route('/painel')
 def painel():
     if 'gerente' not in session:
