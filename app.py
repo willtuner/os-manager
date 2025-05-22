@@ -532,6 +532,7 @@ if __name__ == '__main__':
 
     return render_template("painel_manutencao.html", nome=nome, os_list=os_list)
 
+
 @app.route('/painel_manutencao')
 def painel_manutencao():
     if 'usuario' not in session:
@@ -549,3 +550,5 @@ def painel_manutencao():
             logger.error(f"Erro ao carregar JSON para {nome}: {e}")
 
     return render_template("painel_manutencao.html", nome=nome, os_list=os_list)
+
+
