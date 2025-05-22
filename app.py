@@ -116,10 +116,6 @@ def init_db():
                 is_admin=(u.lower() in admins)
             ))
         db.session.commit()
-        @app.route('/painel_manutencao')
-def painel_manutencao():
-    if 'usuario' not in session:
-        return redirect(url_for('login'))
 
     nome = session['usuario'].capitalize()
     caminho = os.path.join("static", "json", f"relatorio_{nome.lower()}.json")
@@ -236,54 +232,36 @@ def login():
         username = request.form.get('username', '').strip().lower()
         senha = request.form.get('senha', '').strip()
         logger.debug(f"Tentativa de login: {username}, senha fornecida: {'*' * len(senha)}")
-
-        # Tenta carregar usuários com perfil (users.json com tipo)
-        try:
-            with open(USERS_FILE, encoding='utf-8') as f:
-                usuarios = json.load(f)
-        except Exception as e:
-            logger.error(f"Erro ao carregar users.json: {e}")
-            flash('Erro interno de autenticação.', 'danger')
-            return render_template('login.html')
-
-        user_data = usuarios.get(username)
-
-        if isinstance(user_data, dict) and user_data.get("senha") == senha:
-            tipo = user_data.get("tipo", "gerente")
-            session.clear()
-            session["usuario"] = username
-
-            # Registrar login
-            ev = LoginEvent(username=username, user_type=tipo)
+        user = User.query.filter_by(username=username).first()
+        if user and user.password == senha:
+            ev = LoginEvent(username=username, user_type='gerente')
             db.session.add(ev)
             db.session.commit()
-            session["login_event_id"] = ev.id
-
-            if tipo == "admin":
-                session["is_admin"] = True
-                return redirect(url_for("admin_panel"))
-            elif tipo == "manutencao":
-                return redirect(url_for("painel_manutencao"))
-            else:  # gerente
-                session["gerente"] = username
-                return redirect(url_for("painel"))
-
-        # Tenta login como prestador (legacy)
+            session['login_event_id'] = ev.id
+            session['gerente'] = username
+            session['is_admin'] = user.is_admin
+            logger.info(f"Login bem-sucedido para gerente: {username}")
+            return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
         prestadores = carregar_prestadores()
+        if not prestadores:
+            flash('Erro ao carregar lista de prestadores. Contate o administrador.', 'danger')
+            logger.error("Lista de prestadores vazia ou não carregada.")
+            return render_template('login.html')
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
             ev = LoginEvent(username=username, user_type='prestador')
             db.session.add(ev)
             db.session.commit()
-            session["login_event_id"] = ev.id
-            session["prestador"] = prestador["usuario"]
-            session["prestador_nome"] = prestador.get("nome_exibicao", username)
-            return redirect(url_for("painel_prestador"))
-
-        flash("Usuário ou senha inválidos.", "danger")
+            session['login_event_id'] = ev.id
+            session['prestador'] = prestador['usuario']
+            session['prestador_nome'] = prestador.get('nome_exibicao', username)
+            logger.info(f"Login bem-sucedido para prestador: {username}")
+            return redirect(url_for('painel_prestador'))
+        flash('Usuário ou senha inválidos.', 'danger')
         logger.warning(f"Falha no login: {username}")
+    return render_template('login.html')
 
-    return render_template("login.html")
+@app.route('/painel')
 def painel():
     if 'gerente' not in session:
         return redirect(url_for('login'))
@@ -297,6 +275,12 @@ def painel():
 
 @app.route('/painel_prestador')
 def painel_prestador():
+
+        @app.route('/painel_manutencao')
+def painel_manutencao():
+    if 'usuario' not in session:
+        return redirect(url_for('login'))
+
     if 'prestador' not in session:
         return redirect(url_for('login'))
     prestadores = carregar_prestadores()
@@ -535,3 +519,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
+
