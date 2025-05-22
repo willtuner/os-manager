@@ -78,11 +78,11 @@ class LoginEvent(db.Model):
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
 MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
+JSON_DIR = os.path.join(BASE_DIR, 'static', 'json')  # Caminho para arquivos de OS
 USERS_FILE = os.path.join(BASE_DIR, 'users.json')
 PRESTADORES_FILE = os.path.join(BASE_DIR, 'prestadores.json')
-MENSAGENS_PRESTADORES_DIR = os.path.join(BASE_DIR, 'mensagens_por_prestador')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
-os.makedirs(MENSAGENS_PRESTADORES_DIR, exist_ok=True)
+os.makedirs(JSON_DIR, exist_ok=True)
 
 def init_db():
     """Cria tabelas, importa users.json na tabela users e aplica migrações necessárias."""
@@ -190,7 +190,7 @@ def carregar_os_prestadores():
     for prestador in prestadores:
         usuario = prestador.get('usuario', '').lower()
         arquivo_os = prestador.get('arquivo_os', '')
-        caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, arquivo_os)
+        caminho = os.path.join(JSON_DIR, arquivo_os)
         if not os.path.exists(caminho):
             logger.warning(f"Arquivo de OS não encontrado para {usuario}: {caminho}")
             os_por_prestador[usuario] = 0
@@ -207,6 +207,27 @@ def carregar_os_prestadores():
             os_por_prestador[usuario] = 0
     ranking = sorted(os_por_prestador.items(), key=lambda x: x[1], reverse=True)
     return ranking
+
+def carregar_os_manutencao(usuario):
+    prestadores = carregar_prestadores()
+    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario.lower()), None)
+    if not prestador or prestador.get('tipo') != 'manutencao':
+        logger.warning(f"Usuário {usuario} não é um usuário de manutenção")
+        return []
+    caminho = os.path.join(JSON_DIR, prestador['arquivo_os'])
+    if not os.path.exists(caminho):
+        logger.warning(f"Arquivo de OS não encontrado: {caminho}")
+        return []
+    try:
+        with open(caminho, 'r', encoding='utf-8') as f:
+            os_list = json.load(f)
+        return os_list
+    except json.JSONDecodeError as e:
+        logger.error(f"Erro ao decodificar {caminho}: {e}")
+        return []
+    except Exception as e:
+        logger.error(f"Erro ao carregar OS para {usuario}: {e}")
+        return []
 
 # --- Rotas ---
 @app.route('/')
@@ -229,39 +250,27 @@ def login():
             session['gerente'] = username
             session['is_admin'] = user.is_admin
             logger.info(f"Login bem-sucedido para gerente: {username}")
-
-            if username in {'arthur', 'mauricio'}:
-                session["usuario"] = username
-                return redirect(url_for("painel_manutencao"))
-
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
 
         prestadores = carregar_prestadores()
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
-            ev = LoginEvent(username=username, user_type='prestador')
+            ev = LoginEvent(username=username, user_type=prestador.get('tipo', 'prestador'))
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
-            session['prestador'] = prestador['usuario']
-            session['prestador_nome'] = prestador.get('nome_exibicao', username)
-            logger.info(f"Login bem-sucedido para prestador: {username}")
-            return redirect(url_for('painel_prestador'))
+            if prestador.get('tipo') == 'manutencao':
+                session['manutencao'] = prestador['usuario']
+                session['manutencao_nome'] = prestador.get('nome_exibicao', username.capitalize())
+                logger.info(f"Login bem-sucedido para usuário de manutenção: {username}")
+                return redirect(url_for('painel_manutencao'))
+            else:
+                session['prestador'] = prestador['usuario']
+                session['prestador_nome'] = prestador.get('nome_exibicao', username.capitalize())
+                logger.info(f"Login bem-sucedido para prestador: {username}")
+                return redirect(url_for('painel_prestador'))
 
-        flash('Usuário ou senha inválidos.', 'danger')
-        logger.warning(f"Falha no login: {username}")
-    return render_template('login.html')
-        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
-        if prestador:
-            ev = LoginEvent(username=username, user_type='prestador')
-            db.session.add(ev)
-            db.session.commit()
-            session['login_event_id'] = ev.id
-            session['prestador'] = prestador['usuario']
-            session['prestador_nome'] = prestador.get('nome_exibicao', username)
-            logger.info(f"Login bem-sucedido para prestador: {username}")
-            return redirect(url_for('painel_prestador'))
-        flash('Usuário ou senha inválidos.', 'danger')
+        flash('Usuário ou senha inválidos. Gerentes: use nome.sobrenome (ex: mauricio.jose). Manutenção: use primeiro nome (ex: mauricio).', 'danger')
         logger.warning(f"Falha no login: {username}")
     return render_template('login.html')
 
@@ -287,7 +296,7 @@ def painel_prestador():
         flash('Prestador não encontrado', 'danger')
         logger.error(f"Prestador não encontrado na sessão: {session['prestador']}")
         return redirect(url_for('login'))
-    caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
+    caminho = os.path.join(JSON_DIR, prestador['arquivo_os'])
     if not os.path.exists(caminho):
         logger.warning(f"Arquivo de OS não encontrado: {caminho}")
         os_list = []
@@ -302,38 +311,21 @@ def painel_prestador():
 
 @app.route('/painel_manutencao')
 def painel_manutencao():
-    if 'gerente' not in session and 'prestador' not in session:
+    if 'manutencao' not in session:
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
-
-    os_list = []
-    nome = ""
-    
-    if 'gerente' in session:
-        nome = session['gerente'].capitalize()
-        os_list = carregar_os_gerente(session['gerente'])
-    elif 'prestador' in session:
-        prestadores = carregar_prestadores()
-        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
-        if not prestador:
-            flash('Prestador não encontrado', 'danger')
-            logger.error(f"Prestador não encontrado na sessão: {session['prestador']}")
-            return redirect(url_for('login'))
-        nome = prestador.get('nome_exibicao', session['prestador']).capitalize()
-        caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
-        if os.path.exists(caminho):
-            try:
-                with open(caminho, 'r', encoding='utf-8') as f:
-                    os_list = json.load(f)
-            except json.JSONDecodeError as e:
-                logger.error(f"Erro ao decodificar {caminho}: {e}")
-                os_list = []
-
-    return render_template('painel_manutencao.html', nome=nome, os_list=os_list)
+    prestadores = carregar_prestadores()
+    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['manutencao']), None)
+    if not prestador or prestador.get('tipo') != 'manutencao':
+        flash('Usuário de manutenção não encontrado', 'danger')
+        logger.error(f"Usuário de manutenção não encontrado na sessão: {session['manutencao']}")
+        return redirect(url_for('login'))
+    os_list = carregar_os_manutencao(session['manutencao'])
+    return render_template('painel_manutencao.html', nome=prestador['nome_exibicao'], os_list=os_list)
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
-    responsavel = session.get('gerente') or session.get('prestador')
+    responsavel = session.get('gerente') or session.get('prestador') or session.get('manutencao')
     if not responsavel:
         return redirect(url_for('login'))
     d = request.form['data_finalizacao']
@@ -363,11 +355,12 @@ def finalizar_os(os_numero):
             data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
             with open(caminho, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=2)
-    if 'prestador' in session:
+    if 'prestador' in session or 'manutencao' in session:
+        usuario = session.get('prestador') or session.get('manutencao')
         prestadores = carregar_prestadores()
-        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
+        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario), None)
         if prestador:
-            caminho = os.path.join(MENSAGENS_PRESTADORES_DIR, prestador['arquivo_os'])
+            caminho = os.path.join(JSON_DIR, prestador['arquivo_os'])
             if os.path.exists(caminho):
                 with open(caminho, 'r', encoding='utf-8') as f:
                     data = json.load(f)
@@ -376,7 +369,7 @@ def finalizar_os(os_numero):
                     json.dump(data, f, ensure_ascii=False, indent=2)
     db.session.commit()
     flash(f'OS {os_numero} finalizada','success')
-    return redirect(url_for('painel' if 'gerente' in session else 'painel_prestador'))
+    return redirect(url_for('painel' if 'gerente' in session else 'painel_manutencao' if 'manutencao' in session else 'painel_prestador'))
 
 @app.route('/admin')
 def admin_panel():
@@ -550,4 +543,3 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
-
