@@ -1,41 +1,160 @@
-
 {% extends "base.html" %}
-
-{% block title %}Painel da Equipe de Manutenção{% endblock %}
-
+{% block title %}Painel de Manutenção – {{ nome }}{% endblock %}
+{% block extra_css %}
+<style>
+  .card-os { border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out; border: none; }
+  .card-os:hover { transform: translateY(-5px); }
+  .btn-manutencao { background-color: #f39c12; border-color: #f39c12; color: white; }
+  .btn-manutencao:hover { background-color: #e67e22; }
+  .btn-consignar { background-color: #28a745; border-color: #28a745; color: white; }
+  .btn-consignar:hover { background-color: #218838; }
+</style>
+{% endblock %}
 {% block content %}
 <div class="container py-4">
-  <h2 class="h4 mb-4">
-    <i class="fas fa-wrench text-success me-2"></i>OS Atribuídas – {{ nome }}
-  </h2>
-
-  {% if os_list %}
-    {% for os in os_list %}
-    <div class="card card-os mb-3">
-      <div class="card-header">
-        <strong>OS {{ os.os }}</strong> – Frota {{ os.frota }}
-      </div>
-      <div class="card-body">
-        <p class="mb-1"><strong>Modelo:</strong> {{ os.modelo }}</p>
-        <p class="mb-1"><strong>Data de Entrada:</strong> {{ os.data_entrada }}</p>
-        <p class="mb-1"><strong>Previsão de Saída:</strong> {{ os.previsao_saida }}</p>
-        <p class="mb-1"><strong>Prestador:</strong> {{ os.prestador }}</p>
-        <p><strong>Serviço:</strong><br>{{ os.servico }}</p>
-      </div>
+  <div class="row mb-4">
+    <div class="col">
+      <h2 class="h4">
+        <i class="fas fa-tools text-warning me-2"></i>Ordens de Serviço de Manutenção
+      </h2>
+      <p class="text-muted mb-0">Usuário: <strong>{{ nome }}</strong> | Total de OS Abertas: <strong>{{ total_os }}</strong></p>
     </div>
-    {% endfor %}
+  </div>
+  <!-- Filtro de ordenação -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <form method="GET" action="{{ url_for('painel_manutencao') }}">
+        <div class="input-group">
+          <select name="ordenar" class="form-select">
+            <option value="data_desc" {% if ordenar == 'data_desc' %}selected{% endif %}>Mais recentes</option>
+            <option value="data_asc" {% if ordenar == 'data_asc' %}selected{% endif %}>Mais antigas</option>
+            <option value="frota" {% if ordenar == 'frota' %}selected{% endif %}>Frota (A-Z)</option>
+          </select>
+          <button type="submit" class="btn btn-outline-primary">Filtrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Seção de OS sem prestador -->
+  {% if os_sem_prestador %}
+    <div class="mb-5">
+      <h3 class="h5 mb-3">OS Sem Prestador Definido</h3>
+      {% for item in os_sem_prestador %}
+        <div class="card card-os mb-3">
+          <div class="card-body">
+            <h5 class="card-title mb-2">
+              <span class="badge bg-secondary me-2">OS {{ item.os }}</span>
+              Frota {{ item.frota }}
+            </h5>
+            <p class="card-text mb-2">
+              <small class="text-muted">
+                Aberta em {{ item.data_entrada }} • Modelo {{ item.modelo }}
+              </small>
+            </p>
+            <p class="card-text mb-3">
+              <i class="fas fa-tools me-1 text-muted"></i>
+              <span style="white-space: pre-wrap;">{{ item.servico }}</span>
+            </p>
+            <form action="{{ url_for('consignar_os', os_numero=item.os) }}" method="POST">
+              <button type="submit" class="btn btn-consignar btn-sm">
+                <i class="fas fa-plus-circle me-1"></i>Consignar para Mim
+              </button>
+            </form>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   {% else %}
-    <div class="alert alert-info text-center">
-      <i class="fas fa-info-circle me-1"></i> Nenhuma OS pendente atribuída a você.
+    <div class="alert alert-info mb-5">
+      <i class="fas fa-info-circle me-2"></i>Nenhuma OS sem prestador definida no momento.
     </div>
   {% endif %}
-
+  <!-- Seção de OS do usuário -->
+  <h3 class="h5 mb-3">Minhas OS Abertas</h3>
+  {% if os_list %}
+    {% for item in os_list %}
+      <form action="{{ url_for('finalizar_os', os_numero=item.os) }}"
+            method="POST"
+            class="card card-os mb-3">
+        <div class="card-body">
+          <h5 class="card-title mb-2">
+            <span class="badge bg-secondary me-2">OS {{ item.os }}</span>
+            Frota {{ item.frota }}
+            {% if item.dias_abertos > 7 %}
+              <i class="fas fa-exclamation-triangle text-danger ms-2" title="OS urgente (aberta há mais de 7 dias)"></i>
+            {% endif %}
+          </h5>
+          <p class="card-text mb-2">
+            <small class="text-muted">
+              Aberta em {{ item.data_entrada }} • Modelo {{ item.modelo }} • 
+              <span class="{% if item.dias_abertos > 7 %}text-danger{% else %}text-muted{% endif %}">
+                Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
+              </span>
+            </small>
+          </p>
+          <p class="card-text mb-3">
+            <i class="fas fa-tools me-1 text-muted"></i>
+            <span style="white-space: pre-wrap;">{{ item.servico }}</span>
+          </p>
+          <div class="row g-2 mb-2">
+            <div class="col-md-4">
+              <input type="date" name="data_finalizacao"
+                     class="form-control form-control-sm" required>
+            </div>
+            <div class="col-md-4">
+              <input type="time" name="hora_finalizacao"
+                     class="form-control form-control-sm" required>
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+              <button type="submit"
+                      class="btn btn-manutencao btn-sm w-100">
+                <i class="fas fa-check-circle me-1"></i>Finalizar
+              </button>
+            </div>
+          </div>
+          <div class="mb-2">
+            <textarea name="observacoes"
+                      class="form-control form-control-sm"
+                      rows="2"
+                      placeholder="Observações (opcional)"></textarea>
+          </div>
+          <!-- Comentários -->
+          <div class="mb-2">
+            <form action="{{ url_for('adicionar_comentario', os_numero=item.os) }}" method="POST">
+              <div class="input-group">
+                <textarea name="comentario" class="form-control form-control-sm" rows="2" placeholder="Adicionar comentário (ex.: Aguardando peça)"></textarea>
+                <button type="submit" class="btn btn-outline-secondary btn-sm">
+                  <i class="fas fa-comment-dots me-1"></i>Comentar
+                </button>
+              </div>
+            </form>
+            {% if item.comentarios %}
+              <div class="mt-2">
+                <small class="text-muted">Comentários:</small>
+                <ul class="list-unstyled ms-3">
+                  {% for comentario in item.comentarios %}
+                    <li><small><strong>{{ comentario.autor }} ({{ comentario.data }}):</strong> {{ comentario.texto }}</small></li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </form>
+    {% endfor %}
+  {% else %}
+    <div class="text-center py-5 bg-white rounded">
+      <i class="fas fa-check-circle text-warning fa-3x mb-3"></i>
+      <h4 class="text-muted">Nenhuma OS pendente</h4>
+      <p>Todas as ordens de serviço de manutenção estão em dia!</p>
+    </div>
+  {% endif %}
   <div class="d-flex justify-content-between mt-4">
     <a href="/" class="btn btn-outline-secondary">
-      <i class="fas fa-arrow-left me-1"></i> Voltar
+      <i class="fas fa-arrow-left me-1"></i>Voltar
     </a>
     <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
-      <i class="fas fa-sign-out-alt me-1"></i> Sair
+      <i class="fas fa-sign-out-alt me-1"></i>Sair
     </a>
   </div>
 </div>
