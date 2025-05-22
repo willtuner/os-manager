@@ -369,7 +369,8 @@ def painel_manutencao():
                          total_os=total_os, 
                          os_sem_prestador=os_sem_prestador, 
                          ordenar=ordenar,
-                         prestadores=prestadores)
+                         prestadores=prestadores,
+                         now=saopaulo_tz.localize(datetime.now()))
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
