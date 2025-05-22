@@ -213,40 +213,30 @@ def carregar_os_prestadores():
 def index():
     return redirect(url_for('login'))
 
-
-# ... (cabeçalho e imports omitidos para brevidade) ...
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form.get('username', '').strip().lower()
         senha = request.form.get('senha', '').strip()
         logger.debug(f"Tentativa de login: {username}, senha fornecida: {'*' * len(senha)}")
-        user = User.query.filter_by(username=username).first()
 
+        user = User.query.filter_by(username=username).first()
         if user and user.password == senha:
             ev = LoginEvent(username=username, user_type='gerente')
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
-            session['usuario'] = username
+            session['gerente'] = username
             session['is_admin'] = user.is_admin
             logger.info(f"Login bem-sucedido para gerente: {username}")
 
-            # Verificações específicas
-            if username in ['mauricio.jose', 'mauricio.marques', 'arthur.sousa']:
-                return redirect(url_for('painel'))
-            elif username in ['mauricio', 'arthur']:
-                return redirect(url_for('painel_manutencao'))
-            else:
-                return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
+            if username in {'arthur', 'mauricio'}:
+                session["usuario"] = username
+                return redirect(url_for("painel_manutencao"))
+
+            return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
 
         prestadores = carregar_prestadores()
-        if not prestadores:
-            flash('Erro ao carregar lista de prestadores. Contate o administrador.', 'danger')
-            logger.error("Lista de prestadores vazia ou não carregada.")
-            return render_template('login.html')
-
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
             ev = LoginEvent(username=username, user_type='prestador')
@@ -261,7 +251,6 @@ def login():
         flash('Usuário ou senha inválidos.', 'danger')
         logger.warning(f"Falha no login: {username}")
     return render_template('login.html')
-
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
             ev = LoginEvent(username=username, user_type='prestador')
