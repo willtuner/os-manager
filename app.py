@@ -78,7 +78,7 @@ class LoginEvent(db.Model):
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
 MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
-JSON_DIR = os.path.join(BASE_DIR, 'static', 'json')  # Caminho para arquivos de OS
+JSON_DIR = os.path.join(BASE_DIR, 'static', 'json')
 USERS_FILE = os.path.join(BASE_DIR, 'users.json')
 PRESTADORES_FILE = os.path.join(BASE_DIR, 'prestadores.json')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
@@ -221,6 +221,13 @@ def carregar_os_manutencao(usuario):
     try:
         with open(caminho, 'r', encoding='utf-8') as f:
             os_list = json.load(f)
+        hoje = saopaulo_tz.localize(datetime.now()).date()
+        for item in os_list:
+            try:
+                data_entrada = datetime.strptime(item['data_entrada'], '%d/%m/%Y').date()
+                item['dias_abertos'] = (hoje - data_entrada).days
+            except Exception:
+                item['dias_abertos'] = 0
         return os_list
     except json.JSONDecodeError as e:
         logger.error(f"Erro ao decodificar {caminho}: {e}")
@@ -228,6 +235,29 @@ def carregar_os_manutencao(usuario):
     except Exception as e:
         logger.error(f"Erro ao carregar OS para {usuario}: {e}")
         return []
+
+def carregar_os_sem_prestador():
+    os_sem_prestador = []
+    for arquivo in os.listdir(MENSAGENS_DIR):
+        if arquivo.lower().endswith('.json'):
+            caminho = os.path.join(MENSAGENS_DIR, arquivo)
+            try:
+                with open(caminho, 'r', encoding='utf-8') as f:
+                    dados = json.load(f)
+                for item in dados:
+                    prestador = str(item.get('prestador') or item.get('Prestador', '')).lower()
+                    if prestador in ('nan', '', 'none', 'não definido', 'prestador não definido'):
+                        os_sem_prestador.append({
+                            'os': str(item.get('os') or item.get('OS', '')),
+                            'frota': str(item.get('frota') or item.get('Frota', '')),
+                            'data_entrada': str(item.get('data') or item.get('Data', '')),
+                            'modelo': str(item.get('modelo') or item.get('Modelo', '')),
+                            'servico': str(item.get('servico') or item.get('Servico') or item.get('observacao') or item.get('Observacao', '')),
+                            'arquivo_origem': arquivo
+                        })
+            except Exception as e:
+                logger.error(f"Erro ao carregar {caminho}: {e}")
+    return os_sem_prestador
 
 # --- Rotas ---
 @app.route('/')
@@ -321,7 +351,24 @@ def painel_manutencao():
         logger.error(f"Usuário de manutenção não encontrado na sessão: {session['manutencao']}")
         return redirect(url_for('login'))
     os_list = carregar_os_manutencao(session['manutencao'])
-    return render_template('painel_manutencao.html', nome=prestador['nome_exibicao'], os_list=os_list)
+    total_os = len(os_list)
+    os_sem_prestador = carregar_os_sem_prestador()
+    
+    # Ordenação
+    ordenar = request.args.get('ordenar', 'data_desc')
+    if ordenar == 'data_asc':
+        os_list.sort(key=lambda x: datetime.strptime(x['data_entrada'], '%d/%m/%Y'))
+    elif ordenar == 'data_desc':
+        os_list.sort(key=lambda x: datetime.strptime(x['data_entrada'], '%d/%m/%Y'), reverse=True)
+    elif ordenar == 'frota':
+        os_list.sort(key=lambda x: x['frota'])
+    
+    return render_template('painel_manutencao.html', 
+                         nome=prestador['nome_exibicao'], 
+                         os_list=os_list, 
+                         total_os=total_os, 
+                         os_sem_prestador=os_sem_prestador, 
+                         ordenar=ordenar)
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
@@ -370,6 +417,95 @@ def finalizar_os(os_numero):
     db.session.commit()
     flash(f'OS {os_numero} finalizada','success')
     return redirect(url_for('painel' if 'gerente' in session else 'painel_manutencao' if 'manutencao' in session else 'painel_prestador'))
+
+@app.route('/consignar_os/<os_numero>', methods=['POST'])
+def consignar_os(os_numero):
+    if 'manutencao' not in session:
+        flash('Acesso negado. Faça login.', 'danger')
+        return redirect(url_for('login'))
+    usuario = session['manutencao']
+    prestadores = carregar_prestadores()
+    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario), None)
+    if not prestador or prestador.get('tipo') != 'manutencao':
+        flash('Usuário de manutenção não encontrado', 'danger')
+        return redirect(url_for('login'))
+    
+    os_sem_prestador = carregar_os_sem_prestador()
+    os_target = next((os for os in os_sem_prestador if os['os'] == os_numero), None)
+    if not os_target:
+        flash('OS não encontrada ou já consignada', 'danger')
+        return redirect(url_for('painel_manutencao'))
+    
+    # Remover a OS do arquivo original
+    caminho_origem = os.path.join(MENSAGENS_DIR, os_target['arquivo_origem'])
+    try:
+        with open(caminho_origem, 'r', encoding='utf-8') as f:
+            dados = json.load(f)
+        dados = [item for item in dados if str(item.get('os') or item.get('OS', '')) != os_numero]
+        with open(caminho_origem, 'w', encoding='utf-8') as f:
+            json.dump(dados, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        logger.error(f"Erro ao atualizar {caminho_origem}: {e}")
+        flash('Erro ao consignar OS', 'danger')
+        return redirect(url_for('painel_manutencao'))
+    
+    # Adicionar a OS ao arquivo do usuário
+    caminho_destino = os.path.join(JSON_DIR, prestador['arquivo_os'])
+    try:
+        if os.path.exists(caminho_destino):
+            with open(caminho_destino, 'r', encoding='utf-8') as f:
+                os_list = json.load(f)
+        else:
+            os_list = []
+        os_list.append({
+            'os': os_target['os'],
+            'frota': os_target['frota'],
+            'data_entrada': os_target['data_entrada'],
+            'modelo': os_target['modelo'],
+            'servico': os_target['servico']
+        })
+        with open(caminho_destino, 'w', encoding='utf-8') as f:
+            json.dump(os_list, f, ensure_ascii=False, indent=2)
+        flash(f'OS {os_numero} consignada com sucesso', 'success')
+    except Exception as e:
+        logger.error(f"Erro ao adicionar OS a {caminho_destino}: {e}")
+        flash('Erro ao consignar OS', 'danger')
+    return redirect(url_for('painel_manutencao'))
+
+@app.route('/adicionar_comentario/<os_numero>', methods=['POST'])
+def adicionar_comentario(os_numero):
+    if 'manutencao' not in session:
+        flash('Acesso negado. Faça login.', 'danger')
+        return redirect(url_for('login'))
+    usuario = session['manutencao']
+    prestadores = carregar_prestadores()
+    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario), None)
+    if not prestador or prestador.get('tipo') != 'manutencao':
+        flash('Usuário de manutenção não encontrado', 'danger')
+        return redirect(url_for('login'))
+    comentario = request.form.get('comentario', '').strip()
+    if not comentario:
+        flash('Comentário não pode estar vazio', 'danger')
+        return redirect(url_for('painel_manutencao'))
+    caminho = os.path.join(JSON_DIR, prestador['arquivo_os'])
+    try:
+        with open(caminho, 'r', encoding='utf-8') as f:
+            os_list = json.load(f)
+        for item in os_list:
+            if str(item.get('os', '')) == os_numero:
+                item['comentarios'] = item.get('comentarios', []) + [{
+                    'texto': comentario,
+                    'data': saopaulo_tz.localize(datetime.now()).strftime('%d/%m/%Y %H:%M'),
+                    'autor': usuario
+                }]
+                break
+        with open(caminho, 'w', encoding='utf-8') as f:
+            json.dump(os_list, f, ensure_ascii=False, indent=2)
+        flash('Comentário adicionado com sucesso', 'success')
+    except Exception as e:
+        logger.error(f"Erro ao adicionar comentário em {caminho}: {e}")
+        flash('Erro ao adicionar comentário', 'danger')
+    return redirect(url_for('painel_manutencao'))
 
 @app.route('/admin')
 def admin_panel():
