@@ -2,6 +2,27 @@
   {
     "solicitado": "DANILO MULARI GONZAGA",
     "frota": "5459",
+    "os": "111148",
+    "data": "22/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda no suporte da roda guia L/E - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5467",
+    "os": "111139",
+    "data": "22/05/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Verificar fluxo de óleo contínuo no sistema hidráulico. Avaliar condições das válvulas e funcionamento da bomba hidráulica, identificando possíveis falhas de pressão, vazamento ou retorno inadequado."
+  },
+  {
+    "frota": "10229",
+    "os": "111135",
+    "data": "22/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Painel de instrumentos não funciona - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5459",
     "os": "111127",
     "data": "21/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
