@@ -40,21 +40,20 @@
     <div class="mb-5">
       <h3 class="h5 mb-3">Atribuir Prestadores às OS</h3>
       {% for item in os_sem_prestador %}
-        {% set dias_abertos = ((now.date() - item.data_entrada | parse_date('%d/%m/%Y')).days if item.data_entrada else 0) %}
         <div class="card card-os mb-3">
           <div class="card-body">
             <h5 class="card-title mb-2">
               <span class="badge bg-secondary me-2">OS {{ item.os }}</span>
               Frota {{ item.frota }}
-              {% if dias_abertos > 7 %}
+              {% if item.dias_abertos > 7 %}
                 <i class="fas fa-exclamation-triangle text-danger ms-2" title="OS urgente (aberta há mais de 7 dias)"></i>
               {% endif %}
             </h5>
             <p class="card-text mb-2">
               <small class="text-muted">
                 Aberta em {{ item.data_entrada }} • Modelo {{ item.modelo }} • 
-                <span class="{% if dias_abertos > 7 %}text-danger{% else %}text-muted{% endif %}">
-                  Aberta há {{ dias_abertos }} dia{% if dias_abertos != 1 %}s{% endif %}
+                <span class="{% if item.dias_abertos > 7 %}text-danger{% else %}text-muted{% endif %}">
+                  Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
                 </span>
               </small>
             </p>
@@ -188,17 +187,4 @@
     </a>
   </div>
 </div>
-{% endblock %}
-{% block extra_js %}
-<script>
-  // Adicionar filtro personalizado para parsear datas
-  window.parse_date = function(dateStr) {
-    try {
-      const [day, month, year] = dateStr.split('/');
-      return new Date(year, month - 1, day);
-    } catch (e) {
-      return new Date();
-    }
-  };
-</script>
 {% endblock %}
