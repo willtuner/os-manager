@@ -228,7 +228,15 @@ def login():
             session['gerente'] = username
             session['is_admin'] = user.is_admin
             logger.info(f"Login bem-sucedido para gerente: {username}")
-            return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
+            if user.is_admin:
+    return redirect(url_for('admin_panel'))
+elif username in ['mauricio.jose', 'mauricio.marques', 'arthur.sousa']:
+    return redirect(url_for('painel'))
+elif username in ['mauricio', 'arthur']:
+    return redirect(url_for('painel_manutencao'))
+else:
+    return redirect(url_for('painel'))
+
         prestadores = carregar_prestadores()
         if not prestadores:
             flash('Erro ao carregar lista de prestadores. Contate o administrador.', 'danger')
