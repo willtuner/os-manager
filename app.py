@@ -81,6 +81,7 @@ MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
 JSON_DIR = os.path.join(BASE_DIR, 'static', 'json')
 USERS_FILE = os.path.join(BASE_DIR, 'users.json')
 PRESTADORES_FILE = os.path.join(BASE_DIR, 'prestadores.json')
+MANUTENCAO_FILE = os.path.join(BASE_DIR, 'manutencao.json')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
 os.makedirs(JSON_DIR, exist_ok=True)
 
@@ -184,11 +185,34 @@ def carregar_prestadores():
         logger.error(f"Erro ao carregar prestadores: {e}")
         return []
 
+def carregar_manutencao():
+    if not os.path.exists(MANUTENCAO_FILE):
+        logger.error(f"Arquivo {MANUTENCAO_FILE} não encontrado.")
+        return []
+    try:
+        with open(MANUTENCAO_FILE, "r", encoding="utf-8") as f:
+            manutencao = json.load(f)
+        usuarios = [p.get('usuario', '').lower() for p in manutencao]
+        duplicatas = [item for item, count in Counter(usuarios).items() if count > 1]
+        if duplicatas:
+            logger.warning(f"Usuários duplicados encontrados em manutencao.json: {duplicatas}")
+        logger.debug(f"Usuários de manutenção carregados: {[p['usuario'] for p in manutencao]}")
+        return manutencao
+    except json.JSONDecodeError as e:
+        logger.error(f"Erro ao decodificar {MANUTENCAO_FILE}: {e}")
+        return []
+    except Exception as e:
+        logger.error(f"Erro ao carregar manutencao: {e}")
+        return []
+
 def carregar_os_prestadores():
     prestadores = carregar_prestadores()
     os_por_prestador = {}
     for prestador in prestadores:
         usuario = prestador.get('usuario', '').lower()
+        # Ignorar usuários de manutenção
+        if prestador.get('tipo') == 'manutencao':
+            continue
         arquivo_os = prestador.get('arquivo_os', '')
         caminho = os.path.join(JSON_DIR, arquivo_os)
         if not os.path.exists(caminho):
@@ -209,12 +233,12 @@ def carregar_os_prestadores():
     return ranking
 
 def carregar_os_manutencao(usuario):
-    prestadores = carregar_prestadores()
-    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario.lower()), None)
-    if not prestador or prestador.get('tipo') != 'manutencao':
+    manutencao_users = carregar_manutencao()
+    manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == usuario.lower()), None)
+    if not manutencao:
         logger.warning(f"Usuário {usuario} não é um usuário de manutenção")
         return []
-    caminho = os.path.join(JSON_DIR, prestador['arquivo_os'])
+    caminho = os.path.join(JSON_DIR, manutencao['arquivo_os'])
     if not os.path.exists(caminho):
         logger.warning(f"Arquivo de OS não encontrado: {caminho}")
         return []
@@ -290,6 +314,20 @@ def login():
             logger.info(f"Login bem-sucedido para gerente: {username}")
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
 
+        # Verificar usuários de manutenção (manutencao.json)
+        manutencao_users = carregar_manutencao()
+        manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
+        if manutencao:
+            ev = LoginEvent(username=username, user_type='manutencao')
+            db.session.add(ev)
+            db.session.commit()
+            session['login_event_id'] = ev.id
+            session['manutencao'] = manutencao['usuario']
+            session['manutencao_nome'] = manutencao.get('nome_exibicao', username.capitalize())
+            logger.info(f"Login bem-sucedido para usuário de manutenção: {username}")
+            return redirect(url_for('painel_manutencao'))
+
+        # Verificar prestadores (prestadores.json)
         prestadores = carregar_prestadores()
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
@@ -297,16 +335,10 @@ def login():
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
-            if username in ('mauricio', 'arthur'):
-                session['manutencao'] = prestador['usuario']
-                session['manutencao_nome'] = prestador.get('nome_exibicao', username.capitalize())
-                logger.info(f"Login bem-sucedido para usuário de manutenção: {username}")
-                return redirect(url_for('painel_manutencao'))
-            else:
-                session['prestador'] = prestador['usuario']
-                session['prestador_nome'] = prestador.get('nome_exibicao', username.capitalize())
-                logger.info(f"Login bem-sucedido para prestador: {username}")
-                return redirect(url_for('painel_prestador'))
+            session['prestador'] = prestador['usuario']
+            session['prestador_nome'] = prestador.get('nome_exibicao', username.capitalize())
+            logger.info(f"Login bem-sucedido para prestador: {username}")
+            return redirect(url_for('painel_prestador'))
 
         flash('Usuário ou senha inválidos. Gerentes: use nome.sobrenome (ex: mauricio.jose). Manutenção: use primeiro nome (ex: mauricio).', 'danger')
         logger.warning(f"Falha no login: {username}")
@@ -352,9 +384,9 @@ def painel_manutencao():
     if 'manutencao' not in session:
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
-    prestadores = carregar_prestadores()
-    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['manutencao']), None)
-    if not prestador or prestador.get('tipo') != 'manutencao':
+    manutencao_users = carregar_manutencao()
+    manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == session['manutencao']), None)
+    if not manutencao:
         flash('Usuário de manutenção não encontrado', 'danger')
         logger.error(f"Usuário de manutenção não encontrado na sessão: {session['manutencao']}")
         return redirect(url_for('login'))
@@ -372,12 +404,12 @@ def painel_manutencao():
         os_list.sort(key=lambda x: x['frota'])
     
     return render_template('painel_manutencao.html', 
-                         nome=prestador['nome_exibicao'], 
+                         nome=manutencao['nome_exibicao'], 
                          os_list=os_list, 
                          total_os=total_os, 
                          os_sem_prestador=os_sem_prestador, 
                          ordenar=ordenar,
-                         prestadores=prestadores,
+                         prestadores=carregar_prestadores(),
                          now=saopaulo_tz.localize(datetime.now()))
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
@@ -414,10 +446,13 @@ def finalizar_os(os_numero):
                 json.dump(data, f, ensure_ascii=False, indent=2)
     if 'prestador' in session or 'manutencao' in session:
         usuario = session.get('prestador') or session.get('manutencao')
-        prestadores = carregar_prestadores()
-        prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario), None)
-        if prestador:
-            caminho = os.path.join(JSON_DIR, prestador['arquivo_os'])
+        if 'prestador' in session:
+            usuarios = carregar_prestadores()
+        else:
+            usuarios = carregar_manutencao()
+        usuario_data = next((p for p in usuarios if p.get('usuario', '').lower() == usuario), None)
+        if usuario_data:
+            caminho = os.path.join(JSON_DIR, usuario_data['arquivo_os'])
             if os.path.exists(caminho):
                 with open(caminho, 'r', encoding='utf-8') as f:
                     data = json.load(f)
@@ -434,9 +469,9 @@ def atribuir_prestador(os_numero):
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
     usuario = session['manutencao']
-    prestadores = carregar_prestadores()
-    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario), None)
-    if not prestador or prestador.get('tipo') != 'manutencao':
+    manutencao_users = carregar_manutencao()
+    manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == usuario), None)
+    if not manutencao:
         flash('Usuário de manutenção não encontrado', 'danger')
         return redirect(url_for('login'))
     
@@ -474,16 +509,16 @@ def adicionar_comentario(os_numero):
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
     usuario = session['manutencao']
-    prestadores = carregar_prestadores()
-    prestador = next((p for p in prestadores if p.get('usuario', '').lower() == usuario), None)
-    if not prestador or prestador.get('tipo') != 'manutencao':
+    manutencao_users = carregar_manutencao()
+    manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == usuario), None)
+    if not manutencao:
         flash('Usuário de manutenção não encontrado', 'danger')
         return redirect(url_for('login'))
     comentario = request.form.get('comentario', '').strip()
     if not comentario:
         flash('Comentário não pode estar vazio', 'danger')
         return redirect(url_for('painel_manutencao'))
-    caminho = os.path.join(JSON_DIR, prestador['arquivo_os'])
+    caminho = os.path.join(JSON_DIR, manutencao['arquivo_os'])
     try:
         with open(caminho, 'r', encoding='utf-8') as f:
             os_list = json.load(f)
