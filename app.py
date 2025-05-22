@@ -289,7 +289,7 @@ def login():
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
-            if prestador.get('tipo') == 'manutencao':
+            if username in ('mauricio', 'arthur'):
                 session['manutencao'] = prestador['usuario']
                 session['manutencao_nome'] = prestador.get('nome_exibicao', username.capitalize())
                 logger.info(f"Login bem-sucedido para usuário de manutenção: {username}")
