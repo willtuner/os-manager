@@ -76,6 +76,25 @@
         padding: 4px 8px;
         border-radius: 4px;
     }
+    /* Estilos para a seção de foto de perfil */
+    .profile-section {
+        margin-top: 20px;
+    }
+    .profile-section img.rounded-circle {
+        border: 2px solid var(--azul-escuro);
+    }
+    .form-control {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .btn-primary {
+        background-color: var(--verde-agro);
+        border-color: var(--verde-agro);
+    }
+    .btn-primary:hover {
+        background-color: var(--laranja-suco);
+        border-color: var(--laranja-suco);
+    }
 </style>
 {% endblock %}
 
@@ -148,6 +167,24 @@
 
 {% block content %}
 <div class="container">
+    <!-- Seção de Foto de Perfil -->
+    {% if manutencao.lower() in ['arthur', 'mauricio'] %}
+    <div class="profile-section text-center mb-4">
+        {% if profile_picture %}
+            <img src="{{ url_for('static', filename=profile_picture) }}" alt="Foto de Perfil" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;">
+        {% else %}
+            <img src="{{ url_for('static', filename='uploads/default_profile.jpg') }}" alt="Foto de Perfil Padrão" class="rounded-circle" style="width: 100px; height: 100px; object-fit: cover;">
+        {% endif %}
+        <form action="{{ url_for('upload_profile_picture') }}" method="post" enctype="multipart/form-data" class="mt-2">
+            <div class="mb-3">
+                <label for="profile_picture" class="form-label">Alterar Foto de Perfil</label>
+                <input type="file" class="form-control" id="profile_picture" name="profile_picture" accept="image/png, image/jpeg, image/gif">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    {% endif %}
+
     <!-- Mensagens flash -->
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
