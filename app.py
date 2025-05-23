@@ -78,11 +78,13 @@ class LoginEvent(db.Model):
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
 MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
+MENSAGENS_PRESTADOR_DIR = os.path.join(BASE_DIR, 'mensagens_por_prestador')
 JSON_DIR = os.path.join(BASE_DIR, 'static', 'json')
 USERS_FILE = os.path.join(BASE_DIR, 'users.json')
 PRESTADORES_FILE = os.path.join(BASE_DIR, 'prestadores.json')
 MANUTENCAO_FILE = os.path.join(BASE_DIR, 'manutencao.json')
 os.makedirs(MENSAGENS_DIR, exist_ok=True)
+os.makedirs(MENSAGENS_PRESTADOR_DIR, exist_ok=True)
 os.makedirs(JSON_DIR, exist_ok=True)
 
 def init_db():
@@ -216,7 +218,7 @@ def carregar_os_prestadores():
         if prestador.get('tipo') == 'manutencao':
             continue
         arquivo_os = prestador.get('arquivo_os', '')
-        caminho = os.path.join(JSON_DIR, arquivo_os)
+        caminho = os.path.join(MENSAGENS_PRESTADOR_DIR, arquivo_os)
         if not os.path.exists(caminho):
             logger.warning(f"Arquivo de OS não encontrado para {usuario}: {caminho}")
             os_por_prestador[usuario] = 0
@@ -383,7 +385,7 @@ def painel_prestador():
         flash('Prestador não encontrado', 'danger')
         logger.error(f"Prestador não encontrado na sessão: {session['prestador']}")
         return redirect(url_for('login'))
-    caminho = os.path.join(JSON_DIR, prestador['arquivo_os'])
+    caminho = os.path.join(MENSAGENS_PRESTADOR_DIR, prestador['arquivo_os'])
     if not os.path.exists(caminho):
         logger.warning(f"Arquivo de OS não encontrado: {caminho}")
         os_list = []
@@ -470,11 +472,13 @@ def finalizar_os(os_numero):
         usuario = session.get('prestador') or session.get('manutencao')
         if 'prestador' in session:
             usuarios = carregar_prestadores()
+            diretorio = MENSAGENS_PRESTADOR_DIR
         else:
             usuarios = carregar_manutencao()
+            diretorio = JSON_DIR
         usuario_data = next((p for p in usuarios if p.get('usuario', '').lower() == usuario), None)
         if usuario_data:
-            caminho = os.path.join(JSON_DIR, usuario_data['arquivo_os'])
+            caminho = os.path.join(diretorio, usuario_data['arquivo_os'])
             if os.path.exists(caminho):
                 with open(caminho, 'r', encoding='utf-8') as f:
                     data = json.load(f)
