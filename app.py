@@ -228,7 +228,7 @@ def carregar_os_prestadores():
     prestadores = carregar_prestadores()
     os_por_prestador = {}
     for prestador in prestadores:
-        usuario = prest    prestador.get('usuario', '').lower()
+        usuario = prestador.get('usuario', '').lower()
         if prestador.get('tipo') == 'manutencao':
             continue
         arquivo_os = prestador.get('arquivo_os', '')
