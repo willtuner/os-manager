@@ -1,217 +1,190 @@
 {% extends "base.html" %}
 
-{% block title %}Painel de Prestador – Suco Prats Agro{% endblock %}
-
-{% block extra_css %}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<style>
-  :root {
-    --azul-escuro: #2c3e50;
-    --verde-agro: #27ae60;
-    --laranja-suco: #f39c12;
-    --vermelho-erro: #e74c3c;
-    --amarelo-john-deere: #f1c40f;
-    --cinza-claro: #f8f9fa;
-    --ciano: #17a2b8;
-    --azul: #007bff;
-    --cinza-escuro: #343a40;
-    --cinza-medio: #6c757d;
-  }
-  .container {
-    background: linear-gradient(180deg, var(--cinza-claro), #fff);
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 20px;
-    min-height: auto;
-  }
-  .card-modern {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  .card-header {
-    background: var(--azul-escuro);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px 8px 0 0;
-    font-weight: 500;
-  }
-  .table-modern {
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .table-modern th {
-    background: var(--cinza-claro);
-    color: var(--azul-escuro);
-    font-weight: 500;
-  }
-  .table-modern td {
-    vertical-align: middle;
-    font-size: 0.95rem;
-    border-bottom: 1px solid var(--cinza-claro);
-  }
-  .table-modern tr:hover {
-    background: var(--amarelo-john-deere);
-  }
-  .btn-agro {
-    background-color: var(--verde-agro);
-    border: none;
-    color: white;
-    border-radius: 8px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  .btn-agro:hover {
-    background-color: var(--laranja-suco);
-  }
-  .icon-agro {
-    font-size: 1rem;
-    margin-right: 6px;
-    color: var(--verde-agro);
-  }
-  .badge-os-aberta {
-    background-color: var(--vermelho-erro);
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
-</style>
-{% endblock %}
-
-{% block extra_js %}
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Inicializar Flatpickr para campos de data
-    flatpickr('.flatpickr-data', {
-      dateFormat: 'd/m/Y',
-      locale: {
-        firstDayOfWeek: 1,
-        weekdays: { shorthand: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'], longhand: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'] },
-        months: { shorthand: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], longhand: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'] }
-      }
-    });
-  });
-</script>
-{% endblock %}
+{% block title %}Painel de OS – {{ nome }}{% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2 class="h4 mb-0"><i class="fas fa-tractor icon-agro"></i>Painel de Prestador – {{ nome|capitalize_name }}</h2>
-    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
-      <i class="fas fa-sign-out-alt icon-agro"></i>Desconectar
-    </a>
-  </div>
+<style>
+    :root {
+        --azul-escuro: #2c3e50;
+        --verde-agro: #27ae60;
+    }
+    .container {
+        margin-top: 0 !important;
+        padding: 10px;
+    }
+    .card-os {
+        border-color: var(--verde-agro);
+        transition: transform 0.2s;
+    }
+    .card-os:hover {
+        transform: translateY(-2px);
+    }
+    .btn-success {
+        background-color: var(--verde-agro);
+        border-color: var(--verde-agro);
+    }
+    .btn-success:hover {
+        background-color: darken(var(--verde-agro), 10%);
+    }
+</style>
 
-  <!-- OS Pendentes -->
-  <div class="card-modern mb-4">
-    <div class="card-header d-flex justify-content-between align-items-center">
-      <h4 class="mb-0"><i class="fas fa-tools icon-agro"></i>Ordens de Serviço Pendentes</h4>
+<div class="container">
+    <!-- Mensagens flash -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <div class="row mb-3">
+        <div class="col">
+            <h2 class="h4 text-dark">
+                <i class="fas fa-tools text-success me-2"></i>Ordens de Serviço Atribuídas
+            </h2>
+            <p class="text-muted mb-0">Prestador: <strong>{{ nome }}</strong></p>
+        </div>
     </div>
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-modern table-sm">
-          <thead>
-            <tr>
-              <th>OS</th>
-              <th>Frota</th>
-              <th>Modelo</th>
-              <th>Serviço</th>
-              <th>Data Entrada</th>
-              <th>Dias Abertos</th>
-              <th>Ações</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for os in os_list %}
-            <tr>
-              <td>{{ os.os }}</td>
-              <td>{{ os.frota }}</td>
-              <td>{{ os.modelo or 'Não informado' }}</td>
-              <td>{{ os.servico }}</td>
-              <td>{{ os.data_entrada }}</td>
-              <td>{{ os.dias_abertos }} dia{{ 's' if os.dias_abertos != 1 else '' }}</td>
-              <td>
-                <button class="btn btn-agro btn-sm" data-bs-toggle="modal" data-bs-target="#finalizarModal{{ os.os }}">
-                  <i class="fas fa-check icon-agro"></i>Finalizar
-                </button>
-              </td>
-            </tr>
-            <!-- Modal Finalizar -->
-            <div class="modal fade" id="finalizarModal{{ os.os }}" tabindex="-1" aria-labelledby="finalizarModalLabel{{ os.os }}" aria-hidden="true">
-              <div class="modal-dialog">
+
+    {% if os_list %}
+        {% for item in os_list %}
+        <form action="{{ url_for('finalizar_os', os_numero=item.os) }}"
+              method="POST"
+              class="card card-os mb-3"
+              enctype="multipart/form-data"
+              onsubmit="return validateForm(this)">
+            <div class="card-body">
+                <h5 class="card-title mb-2">
+                    <span class="badge bg-secondary me-2">OS {{ item.os }}</span>
+                    Frota {{ item.frota }}
+                </h5>
+                <p class="card-text mb-2">
+                    <small class="text-muted">
+                        Aberta em {{ item.data_entrada }} &bull; Modelo {{ item.modelo }} &bull;
+                        Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
+                    </small>
+                </p>
+                <p class="card-text mb-3">
+                    <i class="fas fa-tools me-1 text-muted"></i>
+                    <span style="white-space: pre-wrap;">{{ item.servico }}</span>
+                </p>
+                <div class="row g-2 mb-2">
+                    <div class="col-md-4">
+                        <label class="form-label small">Data de Finalização</label>
+                        <input type="date" name="data_finalizacao"
+                               class="form-control form-control-sm"
+                               required
+                               max="{{ today_date }}">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label small">Hora de Finalização</label>
+                        <input type="time" name="hora_finalizacao"
+                               class="form-control form-control-sm"
+                               required>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button type="submit"
+                                class="btn btn-success btn-sm w-100"
+                                id="submit-btn-{{ item.os }}"
+                                disabled>
+                            <i class="fas fa-check-circle me-1"></i>Finalizar
+                        </button>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label small">Observações</label>
+                    <textarea name="observacoes"
+                              class="form-control form-control-sm"
+                              rows="4"
+                              placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label small">Anexar Evidência (opcional)</label>
+                    <input type="file" name="evidencia"
+                           class="form-control form-control-sm"
+                           accept="image/*,.pdf">
+                </div>
+                <div class="text-end">
+                    <button type="button"
+                            class="btn btn-outline-primary btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detalhesModal-{{ item.os }}">
+                        <i class="fas fa-eye me-1"></i>Ver Detalhes
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Modal de Detalhes -->
+        <div class="modal fade" id="detalhesModal-{{ item.os }}" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="finalizarModalLabel{{ os.os }}">Finalizar OS {{ os.os }}</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detalhes da OS {{ item.os }}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                     <div class="modal-body">
-                      <div class="mb-3">
-                        <label for="data_finalizacao{{ os.os }}" class="form-label">Data de Finalização</label>
-                        <input type="text" class="form-control flatpickr-data" id="data_finalizacao{{ os.os }}" name="data_finalizacao" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="hora_finalizacao{{ os.os }}" class="form-label">Hora de Finalização</label>
-                        <input type="time" class="form-control" id="hora_finalizacao{{ os.os }}" name="hora_finalizacao" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="observacoes{{ os.os }}" class="form-label">Observações</label>
-                        <textarea class="form-control" id="observacoes{{ os.os }}" name="observacoes" rows="4"></textarea>
-                      </div>
+                        <p><strong>Frota:</strong> {{ item.frota }}</p>
+                        <p><strong>Modelo:</strong> {{ item.modelo }}</p>
+                        <p><strong>Data de Entrada:</strong> {{ item.data_entrada }}</p>
+                        <p><strong>Serviço:</strong> {{ item.servico }}</p>
+                        {% if item.observacoes %}
+                            <p><strong>Observações Anteriores:</strong> {{ item.observacoes }}</p>
+                        {% endif %}
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="submit" class="btn btn-agro">Finalizar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                     </div>
-                  </form>
                 </div>
-              </div>
             </div>
-            {% endfor %}
-            {% if not os_list %}
-            <tr><td colspan="7" class="text-center py-3">Nenhuma OS pendente</td></tr>
-            {% endif %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <div class="text-center py-5 bg-white rounded shadow-sm">
+            <i class="fas fa-check-circle text-success fa-3x mb-3"></i>
+            <h4 class="text-muted">Nenhuma OS pendente</h4>
+            <p>Todas as ordens de serviço atribuídas estão em dia!</p>
+        </div>
+    {% endif %}
 
-  <!-- Histórico de OS Finalizadas -->
-  <div class="card-modern">
-    <div class="card-header d-flex justify-content-between align-items-center">
-      <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de OS Finalizadas</h4>
+    <div class="d-flex justify-content-between mt-4">
+        <a href="/" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-1"></i>Voltar
+        </a>
+        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+            <i class="fas fa-sign-out-alt me-1"></i>Sair
+        </a>
     </div>
-    <div class="card-body">
-      <div class="table-responsive">
-        <table class="table table-modern table-sm">
-          <thead>
-            <tr>
-              <th>OS</th>
-              <th>Data</th>
-              <th>Hora</th>
-              <th>Observações</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for os in finalizadas %}
-            <tr>
-              <td>{{ os.os_numero }}</td>
-              <td>{{ os.data_fin }}</td>
-              <td>{{ os.hora_fin }}</td>
-              <td>{{ os.observacoes or '-' }}</td>
-            </tr>
-            {% endfor %}
-            {% if not finalizadas %}
-            <tr><td colspan="4" class="text-center py-3">Nenhuma OS finalizada</td></tr>
-            {% endif %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
 </div>
+
+<script>
+    // Validação do formulário
+    function validateForm(form) {
+        const data = form.querySelector('input[name="data_finalizacao"]');
+        const hora = form.querySelector('input[name="hora_finalizacao"]');
+        if (!data.value || !hora.value) {
+            alert('Por favor, preencha a data e hora de finalização.');
+            return false;
+        }
+        return true;
+    }
+
+    // Habilitar botão de submit quando campos obrigatórios estiverem preenchidos
+    document.querySelectorAll('.card-os').forEach(form => {
+        const data = form.querySelector('input[name="data_finalizacao"]');
+        const hora = form.querySelector('input[name="hora_finalizacao"]');
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        function checkInputs() {
+            submitBtn.disabled = !(data.value && hora.value);
+        }
+
+        data.addEventListener('input', checkInputs);
+        hora.addEventListener('input', checkInputs);
+    });
+</script>
 {% endblock %}
