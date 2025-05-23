@@ -11,6 +11,7 @@ from collections import Counter
 from sqlalchemy.sql import text
 from dateutil.parser import parse
 from werkzeug.utils import secure_filename
+from PIL import Image
 
 # Configuração de logging para depuração
 logging.basicConfig(level=logging.DEBUG)
@@ -445,6 +446,16 @@ def upload_profile_picture():
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
 
+        # Redimensionar a imagem para 100x100
+        try:
+            img = Image.open(file_path)
+            img = img.resize((100, 100), Image.Resampling.LANCZOS)
+            img.save(file_path)
+        except Exception as e:
+            logger.error(f"Erro ao redimensionar imagem: {e}")
+            flash('Erro ao processar a imagem.', 'danger')
+            return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
+
         # Atualizar o caminho da foto no banco de dados
         user = User.query.filter_by(username=username).first()
         if user:
@@ -524,6 +535,7 @@ def painel_manutencao():
 
     return render_template('painel_manutencao.html', 
                          nome=manutencao['nome_exibicao'], 
+                         manutencao=session['manutencao'],  # Passar o nome de usuário da sessão
                          os_list=os_list, 
                          total_os=total_os, 
                          os_sem_prestador=os_sem_prestador, 
