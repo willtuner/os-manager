@@ -1,190 +1,358 @@
 {% extends "base.html" %}
-{% block title %}Painel de Manutenção – {{ nome }}{% endblock %}
+
+{% block title %}Painel de Manutenção – Suco Prats Agro{% endblock %}
+
 {% block extra_css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <style>
-  .card-os { border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out; border: none; }
-  .card-os:hover { transform: translateY(-5px); }
-  .btn-manutencao { background-color: #f39c12; border-color: #f39c12; color: white; }
-  .btn-manutencao:hover { background-color: #e67e22; }
-  .btn-atribuir { background-color: #007bff; border-color: #007bff; color: white; }
-  .btn-atribuir:hover { background-color: #0056b3; }
+  :root {
+    --azul-escuro: #2c3e50;
+    --verde-agro: #27ae60;
+    --laranja-suco: #f39c12;
+    --vermelho-erro: #e74c3c;
+    --amarelo-john-deere: #f1c40f;
+    --cinza-claro: #f8f9fa;
+    --ciano: #17a2b8;
+    --azul: #007bff;
+    --cinza-escuro: #343a40;
+    --cinza-medio: #6c757d;
+  }
+  .container {
+    background: linear-gradient(180deg, var(--cinza-claro), #fff);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    min-height: auto;
+  }
+  .card-modern {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .card-header {
+    background: var(--azul-escuro);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px 8px 0 0;
+    font-weight: 500;
+  }
+  .table-modern {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .table-modern th {
+    background: var(--cinza-claro);
+    color: var(--azul-escuro);
+    font-weight: 500;
+  }
+  .table-modern td {
+    vertical-align: middle;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--cinza-claro);
+  }
+  .table-modern tr:hover {
+    background: var(--amarelo-john-deere);
+  }
+  .btn-agro {
+    background-color: var(--verde-agro);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  .btn-agro:hover {
+    background-color: var(--laranja-suco);
+  }
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .form-control-sm {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  .icon-agro {
+    font-size: 1rem;
+    margin-right: 6px;
+    color: var(--verde-agro);
+  }
+  .badge-os-aberta {
+    background-color: var(--vermelho-erro);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
 </style>
 {% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Inicializar Flatpickr para campos de data
+    flatpickr('.flatpickr-data', {
+      dateFormat: 'd/m/Y',
+      locale: {
+        firstDayOfWeek: 1,
+        weekdays: { shorthand: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'], longhand: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'] },
+        months: { shorthand: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], longhand: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'] }
+      }
+    });
+
+    // Filtro da tabela
+    const filterInput = document.querySelector('#filter-os');
+    const tableRows = document.querySelectorAll('.table-modern tbody tr:not(.historico-row)');
+    filterInput.addEventListener('input', () => {
+      const filter = filterInput.value.toLowerCase();
+      tableRows.forEach(row => {
+        const os = row.cells[0].textContent.toLowerCase();
+        const frota = row.cells[1].textContent.toLowerCase();
+        const modelo = row.cells[2].textContent.toLowerCase();
+        const servico = row.cells[3].textContent.toLowerCase();
+        const prestador = row.cells[4].textContent.toLowerCase();
+        row.style.display = (os.includes(filter) || frota.includes(filter) || modelo.includes(filter) || servico.includes(filter) || prestador.includes(filter)) ? '' : 'none';
+      });
+    });
+  });
+</script>
+{% endblock %}
+
 {% block content %}
-<div class="container py-4">
-  <div class="row mb-4">
-    <div class="col">
-      <h2 class="h4">
-        <i class="fas fa-tools text-warning me-2"></i>Ordens de Serviço de Manutenção
-      </h2>
-      <p class="text-muted mb-0">Usuário: <strong>{{ nome }}</strong> | Total de OS Abertas: <strong>{{ total_os }}</strong></p>
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="h4 mb-0"><i class="fas fa-tractor icon-agro"></i>Painel de Manutenção – {{ nome|capitalize_name }}</h2>
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
+      <i class="fas fa-sign-out-alt icon-agro"></i>Desconectar
+    </a>
+  </div>
+
+  <!-- OS Pendentes -->
+  <div class="card-modern mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-tools icon-agro"></i>Ordens de Serviço Pendentes ({{ total_os }})</h4>
+    </div>
+    <div class="card-body">
+      <div class="filter-container">
+        <input type="text" id="filter-os" class="form-control form-control-sm" placeholder="Filtrar por OS, frota, modelo, serviço ou prestador...">
+      </div>
+      <div class="table-responsive">
+        <table class="table table-modern table-sm">
+          <thead>
+            <tr>
+              <th>OS</th>
+              <th>Frota</th>
+              <th>Modelo</th>
+              <th>Serviço</th>
+              <th>Prestador</th>
+              <th>Data Entrada</th>
+              <th>Dias Abertos</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for os in os_list %}
+            <tr>
+              <td>{{ os.os }}</td>
+              <td>{{ os.frota }}</td>
+              <td>{{ os.modelo or 'Não informado' }}</td>
+              <td>{{ os.servico }}</td>
+              <td>{{ os.prestador|capitalize_name }}</td>
+              <td>{{ os.data_entrada }}</td>
+              <td>{{ os.dias_abertos }} dia{{ 's' if os.dias_abertos != 1 else '' }}</td>
+              <td>
+                <button class="btn btn-agro btn-sm" data-bs-toggle="modal" data-bs-target="#finalizarModal{{ os.os }}">
+                  <i class="fas fa-check icon-agro"></i>Finalizar
+                </button>
+                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#comentarModal{{ os.os }}">
+                  <i class="fas fa-comment icon-agro"></i>Comentar
+                </button>
+              </td>
+            </tr>
+            <!-- Modal Finalizar -->
+            <div class="modal fade" id="finalizarModal{{ os.os }}" tabindex="-1" aria-labelledby="finalizarModalLabel{{ os.os }}" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="finalizarModalLabel{{ os.os }}">Finalizar OS {{ os.os }}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="POST">
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="data_finalizacao{{ os.os }}" class="form-label">Data de Finalização</label>
+                        <input type="text" class="form-control flatpickr-data" id="data_finalizacao{{ os.os }}" name="data_finalizacao" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="hora_finalizacao{{ os.os }}" class="form-label">Hora de Finalização</label>
+                        <input type="time" class="form-control" id="hora_finalizacao{{ os.os }}" name="hora_finalizacao" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="observacoes{{ os.os }}" class="form-label">Observações</label>
+                        <textarea class="form-control" id="observacoes{{ os.os }}" name="observacoes" rows="4"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="submit" class="btn btn-agro">Finalizar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Modal Comentar -->
+            <div class="modal fade" id="comentarModal{{ os.os }}" tabindex="-1" aria-labelledby="comentarModalLabel{{ os.os }}" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="comentarModalLabel{{ os.os }}">Adicionar Comentário à OS {{ os.os }}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <form action="{{ url_for('adicionar_comentario', os_numero=os.os) }}" method="POST">
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="comentario{{ os.os }}" class="form-label">Comentário</label>
+                        <textarea class="form-control" id="comentario{{ os.os }}" name="comentario" rows="4" required></textarea>
+                      </div>
+                      {% if os.comentarios %}
+                      <h6>Comentários Anteriores</h6>
+                      <ul class="list-group">
+                        {% for comentario in os.comentarios %}
+                        <li class="list-group-item">
+                          <strong>{{ comentario.autor|capitalize_name }}</strong> em {{ comentario.data }}:<br>
+                          {{ comentario.texto }}
+                        </li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="submit" class="btn btn-agro">Adicionar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+            {% if not os_list %}
+            <tr><td colspan="8" class="text-center py-3">Nenhuma OS pendente</td></tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-  <!-- Filtro de ordenação -->
-  <div class="row mb-4">
-    <div class="col-md-6">
-      <form method="GET" action="{{ url_for('painel_manutencao') }}">
-        <div class="input-group">
-          <select name="ordenar" class="form-select">
-            <option value="data_desc" {% if ordenar == 'data_desc' %}selected{% endif %}>Mais recentes</option>
-            <option value="data_asc" {% if ordenar == 'data_asc' %}selected{% endif %}>Mais antigas</option>
-            <option value="frota" {% if ordenar == 'frota' %}selected{% endif %}>Frota (A-Z)</option>
-          </select>
-          <button type="submit" class="btn btn-outline-primary">Filtrar</button>
-        </div>
-      </form>
+
+  <!-- OS Sem Prestador -->
+  <div class="card-modern mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-exclamation-circle icon-agro"></i>OS Sem Prestador</h4>
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-modern table-sm">
+          <thead>
+            <tr>
+              <th>OS</th>
+              <th>Frota</th>
+              <th>Modelo</th>
+              <th>Serviço</th>
+              <th>Data Entrada</th>
+              <th>Dias Abertos</th>
+              <th>Atribuir Prestador</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for os in os_sem_prestador %}
+            <tr>
+              <td>{{ os.os }}</td>
+              <td>{{ os.frota }}</td>
+              <td>{{ os.modelo or 'Não informado' }}</td>
+              <td>{{ os.servico }}</td>
+              <td>{{ os.data_entrada }}</td>
+              <td>{{ os.dias_abertos }} dia{{ 's' if os.dias_abertos != 1 else '' }}</td>
+              <td>
+                <button class="btn btn-agro btn-sm" data-bs-toggle="modal" data-bs-target="#atribuirModal{{ os.os }}">
+                  <i class="fas fa-user-plus icon-agro"></i>Atribuir
+                </button>
+              </td>
+            </tr>
+            <!-- Modal Atribuir Prestador -->
+            <div class="modal fade" id="atribuirModal{{ os.os }}" tabindex="-1" aria-labelledby="atribuirModalLabel{{ os.os }}" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="atribuirModalLabel{{ os.os }}">Atribuir Prestador à OS {{ os.os }}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <form action="{{ url_for('atribuir_prestador', os_numero=os.os) }}" method="POST">
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="prestador{{ os.os }}" class="form-label">Selecionar Prestador</label>
+                        <select class="form-control" id="prestador{{ os.os }}" name="prestador" required>
+                          <option value="" disabled selected>Escolha um prestador</option>
+                          {% for prestador in prestadores %}
+                          <option value="{{ prestador.nome_exibicao }}">{{ prestador.nome_exibicao }}</option>
+                          {% endfor %}
+                        </select>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                      <button type="submit" class="btn btn-agro">Atribuir</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+            {% if not os_sem_prestador %}
+            <tr><td colspan="7" class="text-center py-3">Nenhuma OS sem prestador</td></tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-  <!-- Seção de atribuição de prestadores -->
-  {% if os_sem_prestador %}
-    <div class="mb-5">
-      <h3 class="h5 mb-3">Atribuir Prestadores às OS</h3>
-      {% for item in os_sem_prestador %}
-        <div class="card card-os mb-3">
-          <div class="card-body">
-            <h5 class="card-title mb-2">
-              <span class="badge bg-secondary me-2">OS {{ item.os }}</span>
-              Frota {{ item.frota }}
-              {% if item.dias_abertos > 7 %}
-                <i class="fas fa-exclamation-triangle text-danger ms-2" title="OS urgente (aberta há mais de 7 dias)"></i>
-              {% endif %}
-            </h5>
-            <p class="card-text mb-2">
-              <small class="text-muted">
-                Aberta em {{ item.data_entrada }} • Modelo {{ item.modelo }} • 
-                <span class="{% if item.dias_abertos > 7 %}text-danger{% else %}text-muted{% endif %}">
-                  Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
-                </span>
-              </small>
-            </p>
-            <p class="card-text mb-3">
-              <i class="fas fa-tools me-1 text-muted"></i>
-              <span style="white-space: pre-wrap;">{{ item.servico }}</span>
-            </p>
-            <!-- Formulário para atribuir prestador -->
-            <form action="{{ url_for('atribuir_prestador', os_numero=item.os) }}" method="POST" class="mb-3">
-              <div class="input-group">
-                <input type="text" name="prestador" class="form-control form-control-sm" placeholder="Digite o nome do prestador" required>
-                <button type="submit" class="btn btn-atribuir btn-sm">
-                  <i class="fas fa-user-plus me-1"></i>Atribuir
-                </button>
-              </div>
-            </form>
-            <!-- Formulário para finalizar OS -->
-            <form action="{{ url_for('finalizar_os', os_numero=item.os) }}" method="POST">
-              <div class="row g-2 mb-2">
-                <div class="col-md-4">
-                  <input type="date" name="data_finalizacao" class="form-control form-control-sm" required>
-                </div>
-                <div class="col-md-4">
-                  <input type="time" name="hora_finalizacao" class="form-control form-control-sm" required>
-                </div>
-                <div class="col-md-4 d-flex align-items-end">
-                  <button type="submit" class="btn btn-manutencao btn-sm w-100">
-                    <i class="fas fa-check-circle me-1"></i>Finalizar
-                  </button>
-                </div>
-              </div>
-              <div class="mb-2">
-                <textarea name="observacoes" class="form-control form-control-sm" rows="2" placeholder="Observações (opcional)"></textarea>
-              </div>
-            </form>
-          </div>
-        </div>
-      {% endfor %}
+
+  <!-- Histórico de OS Finalizadas -->
+  <div class="card-modern">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de OS Finalizadas</h4>
     </div>
-  {% else %}
-    <div class="alert alert-info mb-5">
-      <i class="fas fa-info-circle me-2"></i>Nenhuma OS sem prestador para atribuir no momento.
-    </div>
-  {% endif %}
-  <!-- Seção de OS do usuário -->
-  <h3 class="h5 mb-3">Minhas OS Abertas</h3>
-  {% if os_list %}
-    {% for item in os_list %}
-      <form action="{{ url_for('finalizar_os', os_numero=item.os) }}"
-            method="POST"
-            class="card card-os mb-3">
-        <div class="card-body">
-          <h5 class="card-title mb-2">
-            <span class="badge bg-secondary me-2">OS {{ item.os }}</span>
-            Frota {{ item.frota }}
-            {% if item.dias_abertos > 7 %}
-              <i class="fas fa-exclamation-triangle text-danger ms-2" title="OS urgente (aberta há mais de 7 dias)"></i>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-modern table-sm">
+          <thead>
+            <tr>
+              <th>OS</th>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Observações</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for os in finalizadas %}
+            <tr class="historico-row">
+              <td>{{ os.os_numero }}</td>
+              <td>{{ os.data_fin }}</td>
+              <td>{{ os.hora_fin }}</td>
+              <td>{{ os.observacoes or '-' }}</td>
+            </tr>
+            {% endfor %}
+            {% if not finalizadas %}
+            <tr><td colspan="4" class="text-center py-3">Nenhuma OS finalizada</td></tr>
             {% endif %}
-          </h5>
-          <p class="card-text mb-2">
-            <small class="text-muted">
-              Aberta em {{ item.data_entrada }} • Modelo {{ item.modelo }} • 
-              <span class="{% if item.dias_abertos > 7 %}text-danger{% else %}text-muted{% endif %}">
-                Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
-              </span>
-            </small>
-          </p>
-          <p class="card-text mb-3">
-            <i class="fas fa-tools me-1 text-muted"></i>
-            <span style="white-space: pre-wrap;">{{ item.servico }}</span>
-          </p>
-          <div class="row g-2 mb-2">
-            <div class="col-md-4">
-              <input type="date" name="data_finalizacao"
-                     class="form-control form-control-sm" required>
-            </div>
-            <div class="col-md-4">
-              <input type="time" name="hora_finalizacao"
-                     class="form-control form-control-sm" required>
-            </div>
-            <div class="col-md-4 d-flex align-items-end">
-              <button type="submit"
-                      class="btn btn-manutencao btn-sm w-100">
-                <i class="fas fa-check-circle me-1"></i>Finalizar
-              </button>
-            </div>
-          </div>
-          <div class="mb-2">
-            <textarea name="observacoes"
-                      class="form-control form-control-sm"
-                      rows="2"
-                      placeholder="Observações (opcional)"></textarea>
-          </div>
-          <!-- Comentários -->
-          <div class="mb-2">
-            <form action="{{ url_for('adicionar_comentario', os_numero=item.os) }}" method="POST">
-              <div class="input-group">
-                <textarea name="comentario" class="form-control form-control-sm" rows="2" placeholder="Adicionar comentário (ex.: Aguardando peça)"></textarea>
-                <button type="submit" class="btn btn-outline-secondary btn-sm">
-                  <i class="fas fa-comment-dots me-1"></i>Comentar
-                </button>
-              </div>
-            </form>
-            {% if item.comentarios %}
-              <div class="mt-2">
-                <small class="text-muted">Comentários:</small>
-                <ul class="list-unstyled ms-3">
-                  {% for comentario in item.comentarios %}
-                    <li><small><strong>{{ comentario.autor }} ({{ comentario.data }}):</strong> {{ comentario.texto }}</small></li>
-                  {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-          </div>
-        </div>
-      </form>
-    {% endfor %}
-  {% else %}
-    <div class="text-center py-5 bg-white rounded">
-      <i class="fas fa-check-circle text-warning fa-3x mb-3"></i>
-      <h4 class="text-muted">Nenhuma OS pendente</h4>
-      <p>Todas as ordens de serviço de manutenção estão em dia!</p>
+          </tbody>
+        </table>
+      </div>
     </div>
-  {% endif %}
-  <div class="d-flex justify-content-between mt-4">
-    <a href="/" class="btn btn-outline-secondary">
-      <i class="fas fa-arrow-left me-1"></i>Voltar
-    </a>
-    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
-      <i class="fas fa-sign-out-alt me-1"></i>Sair
-    </a>
   </div>
 </div>
 {% endblock %}
