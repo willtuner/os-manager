@@ -109,7 +109,6 @@ def init_db():
         logger.error(f"Erro ao verificar/adicionar coluna user_type: {e}")
         db.session.rollback()
 
-    # AJUSTE PRINCIPAL AQUI:
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
             js = json.load(f)
@@ -125,7 +124,6 @@ def init_db():
                 is_admin=(u.lower() in admins)
             ))
         db.session.commit()
-
 
 def carregar_os_gerente(gerente):
     base = gerente.upper().replace('.', '_')
@@ -266,8 +264,10 @@ def carregar_os_manutencao(usuario):
             try:
                 data_entrada = datetime.strptime(item['data_entrada'], '%d/%m/%Y').date()
                 item['dias_abertos'] = (hoje - data_entrada).days
+                item['modelo'] = str(item.get('modelo', 'Desconhecido') or 'Desconhecido')
             except Exception:
                 item['dias_abertos'] = 0
+                item['modelo'] = 'Desconhecido'
         return os_list
     except json.JSONDecodeError as e:
         logger.error(f"Erro ao decodificar {caminho}: {e}")
@@ -293,12 +293,13 @@ def carregar_os_sem_prestador():
                             data_entrada = datetime.strptime(data_str, '%d/%m/%Y').date()
                             dias_abertos = (hoje - data_entrada).days
                         except Exception:
+                            data_entrada = hoje
                             dias_abertos = 0
                         os_sem_prestador.append({
                             'os': str(item.get('os') or item.get('OS', '')),
                             'frota': str(item.get('frota') or item.get('Frota', '')),
                             'data_entrada': data_str,
-                            'modelo': str(item.get('modelo') or item.get('Modelo', '')),
+                            'modelo': str(item.get('modelo') or item.get('Modelo', 'Desconhecido') or 'Desconhecido'),
                             'servico': str(item.get('servico') or item.get('Servico') or item.get('observacao') or item.get('Observacao', '')),
                             'arquivo_origem': arquivo,
                             'dias_abertos': dias_abertos
@@ -427,8 +428,9 @@ def painel_manutencao():
         logger.error(f"Usuário de manutenção não encontrado na sessão: {session['manutencao']}")
         return redirect(url_for('login'))
     os_list = carregar_os_manutencao(session['manutencao'])
-    total_os = len(os_list)
     os_sem_prestador = carregar_os_sem_prestador()
+    total_os = len(os_list)
+    total_os_sem_prestador = len(os_sem_prestador)
 
     # Ordenação
     ordenar = request.args.get('ordenar', 'data_desc')
@@ -439,11 +441,15 @@ def painel_manutencao():
     elif ordenar == 'frota':
         os_list.sort(key=lambda x: x['frota'])
 
+    finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
+
     return render_template('painel_manutencao.html', 
                          nome=manutencao['nome_exibicao'], 
                          os_list=os_list, 
                          total_os=total_os, 
                          os_sem_prestador=os_sem_prestador, 
+                         total_os_sem_prestador=total_os_sem_prestador,
+                         finalizadas=finalizadas,
                          ordenar=ordenar,
                          prestadores=carregar_prestadores(),
                          now=saopaulo_tz.localize(datetime.now()))
@@ -452,16 +458,28 @@ def painel_manutencao():
 def finalizar_os(os_numero):
     responsavel = session.get('gerente') or session.get('prestador') or session.get('manutencao')
     if not responsavel:
+        flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
-    d = request.form['data_finalizacao']
-    h = request.form['hora_finalizacao']
-    o = request.form.get('observacoes','')
+    data_fin = request.form.get('data_finalizacao')
+    hora_fin = request.form.get('hora_finalizacao')
+    observacoes = request.form.get('observacoes', '')
+    if not data_fin or not hora_fin:
+        flash('Data e hora de finalização são obrigatórias.', 'danger')
+        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel_prestador' if 'prestador' in session else 'painel'))
+    
+    # Validar formato da data
+    try:
+        datetime.strptime(data_fin, '%d/%m/%Y')
+    except ValueError:
+        flash('Formato de data inválido. Use DD/MM/AAAA.', 'danger')
+        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel_prestador' if 'prestador' in session else 'painel'))
+
     fz = Finalizacao(
         os_numero=os_numero,
         gerente=responsavel,
-        data_fin=d,
-        hora_fin=h,
-        observacoes=o
+        data_fin=data_fin,
+        hora_fin=hora_fin,
+        observacoes=observacoes
     )
     db.session.add(fz)
     if 'gerente' in session:
@@ -498,8 +516,8 @@ def finalizar_os(os_numero):
                 with open(caminho, 'w', encoding='utf-8') as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
     db.session.commit()
-    flash(f'OS {os_numero} finalizada','success')
-    return redirect(url_for('painel' if 'gerente' in session else 'painel_manutencao' if 'manutencao' in session else 'painel_prestador'))
+    flash(f'OS {os_numero} finalizada com sucesso', 'success')
+    return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel_prestador' if 'prestador' in session else 'painel'))
 
 @app.route('/atribuir_prestador/<os_numero>', methods=['POST'])
 def atribuir_prestador(os_numero):
@@ -544,46 +562,6 @@ def atribuir_prestador(os_numero):
     except Exception as e:
         logger.error(f"Erro ao atualizar {caminho_origem}: {e}")
         flash('Erro ao atribuir prestador', 'danger')
-    return redirect(url_for('painel_manutencao'))
-
-@app.route('/adicionar_comentario/<os_numero>', methods=['POST'])
-def adicionar_comentario(os_numero):
-    if 'manutencao' not in session:
-        flash('Acesso negado. Faça login.', 'danger')
-        return redirect(url_for('login'))
-    usuario = session['manutencao']
-    manutencao_users = carregar_manutencao()
-    if not manutencao_users and os.path.exists(MANUTENCAO_FILE):
-        flash('Erro interno: Não foi possível carregar a lista de usuários de manutenção', 'danger')
-        logger.error(f"Erro ao carregar manutencao para adicionar_comentario: {usuario}")
-        return redirect(url_for('login'))
-
-    manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == usuario), None)
-    if not manutencao:
-        flash('Usuário de manutenção não encontrado', 'danger')
-        return redirect(url_for('login'))
-    comentario = request.form.get('comentario', '').strip()
-    if not comentario:
-        flash('Comentário não pode estar vazio', 'danger')
-        return redirect(url_for('painel_manutencao'))
-    caminho = os.path.join(JSON_DIR, manutencao['arquivo_os'])
-    try:
-        with open(caminho, 'r', encoding='utf-8') as f:
-            os_list = json.load(f)
-        for item in os_list:
-            if str(item.get('os', '')) == os_numero:
-                item['comentarios'] = item.get('comentarios', []) + [{
-                    'texto': comentario,
-                    'data': saopaulo_tz.localize(datetime.now()).strftime('%d/%m/%Y %H:%M'),
-                    'autor': usuario
-                }]
-                break
-        with open(caminho, 'w', encoding='utf-8') as f:
-            json.dump(os_list, f, ensure_ascii=False, indent=2)
-        flash('Comentário adicionado com sucesso', 'success')
-    except Exception as e:
-        logger.error(f"Erro ao adicionar comentário em {caminho}: {e}")
-        flash('Erro ao adicionar comentário', 'danger')
     return redirect(url_for('painel_manutencao'))
 
 @app.route('/admin')
@@ -742,6 +720,7 @@ def exportar_os_finalizadas():
                    as_attachment=True,
                    download_name=f'relatorio_{saopaulo_tz.localize(datetime.now()):%Y%m%d}.pdf',
                    mimetype='application/pdf')
+
 @app.route('/logout')
 def logout():
     ev_id = session.pop('login_event_id', None)
@@ -764,4 +743,3 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
-
