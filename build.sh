@@ -12,5 +12,6 @@ pip install -r requirements.txt
 flask db init 2>/dev/null || true
 flask db migrate -m "Inicial: criar tabelas"
 flask db upgrade
-pip install fpdf2 --force-reinstall
+
+
 
