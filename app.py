@@ -109,17 +109,23 @@ def init_db():
         logger.error(f"Erro ao verificar/adicionar coluna user_type: {e}")
         db.session.rollback()
 
+    # AJUSTE PRINCIPAL AQUI:
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
             js = json.load(f)
         admins = {'wilson.santana'}
-        for u, pwd in js.items():
+        for u, valor in js.items():
+            if isinstance(valor, dict):
+                senha = valor.get("senha", "")
+            else:
+                senha = valor
             db.session.add(User(
                 username=u.lower(),
-                password=pwd,
+                password=senha,
                 is_admin=(u.lower() in admins)
             ))
         db.session.commit()
+
 
 def carregar_os_gerente(gerente):
     base = gerente.upper().replace('.', '_')
