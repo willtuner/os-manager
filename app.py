@@ -535,7 +535,7 @@ def painel_manutencao():
 
     return render_template('painel_manutencao.html', 
                          nome=manutencao['nome_exibicao'], 
-                         manutencao=session['manutencao'],  # Passar o nome de usuário da sessão
+                         manutencao=session['manutencao'], 
                          os_list=os_list, 
                          total_os=total_os, 
                          os_sem_prestador=os_sem_prestador, 
@@ -546,70 +546,95 @@ def painel_manutencao():
                          now=saopaulo_tz.localize(datetime.now()),
                          profile_picture=profile_picture)
 
-@app.route('/finalizar_os/<os_numero>', methods=['POST'])
+@app.route('/finalizar_os/<os_numero>', methods=['GET', 'POST'])
 def finalizar_os(os_numero):
     responsavel = session.get('gerente') or session.get('prestador') or session.get('manutencao')
     if not responsavel:
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
-    data_fin = request.form.get('data_finalizacao')
-    hora_fin = request.form.get('hora_finalizacao')
-    observacoes = request.form.get('observacoes', '')
-    if not data_fin or not hora_fin:
-        flash('Data e hora de finalização são obrigatórias.', 'danger')
-        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel_prestador' if 'prestador' in session else 'painel'))
-    
-    # Validar formato da data
-    try:
-        datetime.strptime(data_fin, '%d/%m/%Y')
-    except ValueError:
-        flash('Formato de data inválido. Use DD/MM/AAAA.', 'danger')
-        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel_prestador' if 'prestador' in session else 'painel'))
 
-    fz = Finalizacao(
-        os_numero=os_numero,
-        gerente=responsavel,
-        data_fin=data_fin,
-        hora_fin=hora_fin,
-        observacoes=observacoes
-    )
-    db.session.add(fz)
-    if 'gerente' in session:
-        gerente = session['gerente']
-        base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
-        caminho = os.path.join(MENSAGENS_DIR, base)
-        if not os.path.exists(caminho):
-            prefixo = gerente.split('.')[0].upper()
-            for fn in os.listdir(MENSAGENS_DIR):
-                if fn.upper().startswith(prefixo) and fn.lower().endswith(".json"):
-                    caminho = os.path.join(MENSAGENS_DIR, fn)
-                    break
-        if os.path.exists(caminho):
-            with open(caminho, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
-            with open(caminho, 'w', encoding='utf-8') as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-    if 'prestador' in session or 'manutencao' in session:
-        usuario = session.get('prestador') or session.get('manutencao')
-        if 'prestador' in session:
-            usuarios = carregar_prestadores()
-            diretorio = MENSAGENS_PRESTADOR_DIR
-        else:
-            usuarios = carregar_manutencao()
-            diretorio = JSON_DIR
-        usuario_data = next((p for p in usuarios if p.get('usuario', '').lower() == usuario), None)
-        if usuario_data:
-            caminho = os.path.join(diretorio, usuario_data['arquivo_os'])
+    if request.method == 'GET':
+        # Carregar dados da OS para exibir na interface de finalização
+        os_list = carregar_os_manutencao(session['manutencao']) if 'manutencao' in session else carregar_os_gerente(session['gerente'])
+        os_data = next((os for os in os_list if os['os'] == os_numero), None)
+
+        # Carregar dados do usuário para obter a foto de perfil
+        user = User.query.filter_by(username=session['manutencao'] if 'manutencao' in session else session['gerente']).first()
+        profile_picture = user.profile_picture if user else None
+
+        return render_template('painel_manutencao.html',
+                             nome=session.get('manutencao_nome') or session.get('gerente'),
+                             manutencao=session.get('manutencao'),
+                             os_list=os_list,
+                             total_os=len(os_list),
+                             os_sem_prestador=carregar_os_sem_prestador(),
+                             total_os_sem_prestador=len(carregar_os_sem_prestador()),
+                             finalizadas=Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all(),
+                             ordenar='data_desc',
+                             prestadores=carregar_prestadores(),
+                             now=saopaulo_tz.localize(datetime.now()),
+                             profile_picture=profile_picture,
+                             os_numero=os_numero)
+
+    if request.method == 'POST':
+        data_fin = request.form.get('data_finalizacao')
+        hora_fin = request.form.get('hora_finalizacao')
+        observacoes = request.form.get('observacoes', '')
+        if not data_fin or not hora_fin:
+            flash('Data e hora de finalização são obrigatórias.', 'danger')
+            return redirect(url_for('finalizar_os', os_numero=os_numero))
+        
+        # Validar formato da data
+        try:
+            datetime.strptime(data_fin, '%d/%m/%Y')
+        except ValueError:
+            flash('Formato de data inválido. Use DD/MM/AAAA.', 'danger')
+            return redirect(url_for('finalizar_os', os_numero=os_numero))
+
+        fz = Finalizacao(
+            os_numero=os_numero,
+            gerente=responsavel,
+            data_fin=data_fin,
+            hora_fin=hora_fin,
+            observacoes=observacoes
+        )
+        db.session.add(fz)
+        if 'gerente' in session:
+            gerente = session['gerente']
+            base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
+            caminho = os.path.join(MENSAGENS_DIR, base)
+            if not os.path.exists(caminho):
+                prefixo = gerente.split('.')[0].upper()
+                for fn in os.listdir(MENSAGENS_DIR):
+                    if fn.upper().startswith(prefixo) and fn.lower().endswith(".json"):
+                        caminho = os.path.join(MENSAGENS_DIR, fn)
+                        break
             if os.path.exists(caminho):
                 with open(caminho, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                 data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
                 with open(caminho, 'w', encoding='utf-8') as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
-    db.session.commit()
-    flash(f'OS {os_numero} finalizada com sucesso', 'success')
-    return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel_prestador' if 'prestador' in session else 'painel'))
+        if 'prestador' in session or 'manutencao' in session:
+            usuario = session.get('prestador') or session.get('manutencao')
+            if 'prestador' in session:
+                usuarios = carregar_prestadores()
+                diretorio = MENSAGENS_PRESTADOR_DIR
+            else:
+                usuarios = carregar_manutencao()
+                diretorio = JSON_DIR
+            usuario_data = next((p for p in usuarios if p.get('usuario', '').lower() == usuario), None)
+            if usuario_data:
+                caminho = os.path.join(diretorio, usuario_data['arquivo_os'])
+                if os.path.exists(caminho):
+                    with open(caminho, 'r', encoding='utf-8') as f:
+                        data = json.load(f)
+                    data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
+                    with open(caminho, 'w', encoding='utf-8') as f:
+                        json.dump(data, f, ensure_ascii=False, indent=2)
+        db.session.commit()
+        flash(f'OS {os_numero} finalizada com sucesso', 'success')
+        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel_prestador' if 'prestador' in session else 'painel'))
 
 @app.route('/atribuir_prestador/<os_numero>', methods=['POST'])
 def atribuir_prestador(os_numero):
