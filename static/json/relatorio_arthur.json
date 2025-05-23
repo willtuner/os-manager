@@ -1,5 +1,38 @@
 [
     {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "135",
+        "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+        "os": "111215",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Quebra da barra de direção necessário avaliação para substituição do componente. - (Fazenda Biscui)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "125",
+        "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+        "os": "111200",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar superaquecimento do motor do trator - (Fazenda São Paulo)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "JOSIMAR BADIAS DE JESUS",
+        "frota": "157",
+        "modelo": "TRATOR JOHN DEERE 5055E",
+        "os": "111197",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Verificar trator não funciona ponteiro do RPM - (Fazenda São Pedro)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "ANTONIO PAULO LARENTIS ALVES",
         "frota": "254",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -8,17 +41,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Avaliar rigidez excessiva no acionamento da embreagem da Tomada de Potência (TDP) - (Fazenda Minuano)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
-        "frota": "255",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "111141",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Verificar vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Minuano)",
         "liberado_por": "Arthur"
     },
     {
@@ -41,17 +63,6 @@
         "previsao_saida": "---",
         "prestador": "nan",
         "servico": "Borracha de vedação da porta solda - (Fazenda Alvorada)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "DANILO MULARI GONZAGA",
-        "frota": "10229",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "111135",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Painel de instrumentos não funciona - (Fazenda Estrela)",
         "liberado_por": "Arthur"
     },
     {
@@ -88,28 +99,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "5470",
-        "modelo": "MOTOBOMBA MWM MOD 6.12TCA",
-        "os": "111084",
-        "data_entrada": "21/05/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Fazer revisão elétrica - (Fazenda Pedra Verde)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "NELSON BUSATO DOS SANTOS NETO",
-        "frota": "22",
-        "modelo": "TRATOR VALTRA BH 180 4X4",
-        "os": "111050",
-        "data_entrada": "21/05/2025",
-        "previsao_saida": "---",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Sacar porca do bujão da roda dianteira espanada - (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
         "frota": "274",
         "modelo": "TRATOR VALTRA T250 CVT",
@@ -143,17 +132,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "MURILO J ONCK LEMES DA SILVA",
-        "frota": "285",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "111001",
-        "data_entrada": "20/05/2025",
-        "previsao_saida": "---",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Trocar junta do escapamento e parafusos de fixação - (Fazenda Bela Manhã)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "JOSIMAR BADIAS DE JESUS",
         "frota": "5659",
         "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -184,17 +162,6 @@
         "previsao_saida": "---",
         "prestador": "MURILO SILVA 09207298945",
         "servico": "Fazer solda nos terminais - (Fazenda São Pedro)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "DIEGO GOMES CAMBOI",
-        "frota": "267",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "110976",
-        "data_entrada": "20/05/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Troca buzina e luz baixa queimada - (Fazenda Santa Izabel)",
         "liberado_por": "Arthur"
     },
     {
@@ -250,17 +217,6 @@
         "previsao_saida": "---",
         "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
         "servico": "Fazer fibra na lateral - (Fazenda São Severino)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
-        "frota": "258",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "110903",
-        "data_entrada": "19/05/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Trocar cibie traseiro queimado - (Fazenda Estrela)",
         "liberado_por": "Arthur"
     },
     {
@@ -415,17 +371,6 @@
         "previsao_saida": "---",
         "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
         "servico": "Trator não marca temperatura no painel - (Fazenda Minuano)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
-        "frota": "10221",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "110527",
-        "data_entrada": "14/05/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Faróis quebrados e queimados e cibié queimado - (Fazenda Terra Branca)",
         "liberado_por": "Arthur"
     },
     {
@@ -745,17 +690,6 @@
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Instalar escapamento faltando pedaço - (Fazenda Casa Branca)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "ARTHUR SOUSA OLIVEIRA",
-        "frota": "63",
-        "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-        "os": "108654",
-        "data_entrada": "13/03/2025",
-        "previsao_saida": "13/03/2025",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Serviço de finalizar melhoria, montar alternador, ligar lanternas e fazer testes (Oficina)",
         "liberado_por": "Arthur"
     }
 ]

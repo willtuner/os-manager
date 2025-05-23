@@ -1,5 +1,49 @@
 [
     {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "5611",
+        "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
+        "os": "111207",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar e substituir pino da trincha danificado por quebra - (Fazenda São Paulo)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+        "frota": "5233",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "111198",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer solda em trinca na barra lateral do braço - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ADRIANO CLAUDIO FIRMINO",
+        "frota": "5128",
+        "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+        "os": "111196",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento de óleo na bomba - (Fazenda Nova Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
+        "frota": "5365",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "111163",
+        "data_entrada": "22/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "MARCIO JUNIO NUNES DE OLIVEIRA",
         "frota": "5677",
         "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
@@ -19,17 +63,6 @@
         "previsao_saida": "---",
         "prestador": "nan",
         "servico": "Fazer solda em trinca na barra - (Fazenda Bela Manhã)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "DANILO MULARI GONZAGA",
-        "frota": "5459",
-        "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-        "os": "111148",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Fazer solda no suporte da roda guia L/E - (Fazenda Estrela)",
         "liberado_por": "Mauricio"
     },
     {
@@ -110,17 +143,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "308",
-        "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-        "os": "111130",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu dianteiro L/D furado - (Fazenda São Paulo)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "MAURICIO JOSE BARRETO JUNIOR",
         "frota": "72",
         "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -165,17 +187,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "DANILO MULARI GONZAGA",
-        "frota": "91",
-        "modelo": "TRATOR JOHN DEERE 5403 4X4",
-        "os": "111033",
-        "data_entrada": "21/05/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Verificar fluxo de óleo contínuo no sistema hidráulico. Avaliar condições das válvulas e funcionamento da bomba hidráulica, identificando possíveis falhas de pressão, vazamento ou retorno inadequado. - (Fazenda Estrela)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "ALTIERES SOARES FERREIRA",
         "frota": "5604",
         "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -184,17 +195,6 @@
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Fazer solda em furos no ramal - (Fazenda Pedra Verde)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
-        "frota": "5726",
-        "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-        "os": "111031",
-        "data_entrada": "21/05/2025",
-        "previsao_saida": "---",
-        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Soldar ganchos nas laterais da barra para instalação de corrente de sustentação - (Fazenda São Pedro)",
         "liberado_por": "Mauricio"
     },
     {
@@ -272,17 +272,6 @@
         "previsao_saida": "---",
         "prestador": "nan",
         "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "JOAO VITOR DUBAY DA SILVA",
-        "frota": "5242",
-        "modelo": "GRADE ARADORA SUPERPESADA CONT",
-        "os": "110973",
-        "data_entrada": "20/05/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Inverter secção - (Fazenda Bela Manhã)",
         "liberado_por": "Mauricio"
     },
     {
