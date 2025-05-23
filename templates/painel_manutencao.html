@@ -95,6 +95,27 @@
         background-color: var(--laranja-suco);
         border-color: var(--laranja-suco);
     }
+    /* Estilos ajustados para a seção de finalização */
+    .finalize-section {
+        padding-top: 10px;
+    }
+    .finalize-section .row {
+        align-items: flex-end;
+    }
+    .finalize-section label {
+        margin-bottom: 5px;
+        font-weight: 500;
+        color: var(--azul-escuro);
+    }
+    .finalize-section .form-control-sm {
+        width: 100%;
+    }
+    .finalize-section .help-text {
+        font-size: 0.8rem;
+        color: var(--cinza-medio);
+        margin-top: 5px;
+        display: block;
+    }
 </style>
 {% endblock %}
 
@@ -259,27 +280,30 @@
                                 <i class="fas fa-tools icon-agro"></i>
                                 <span style="white-space: pre-wrap;">{{ os.servico }}</span>
                             </p>
-                            <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="POST" class="action-form" onsubmit="return validateForm(this)">
-                                <div class="row g-2 mb-3">
-                                    <div class="col-md-4">
-                                        <label class="form-label small">Data de Finalização</label>
-                                        <input type="text" class="form-control form-control-sm flatpickr-data" name="data_finalizacao" required>
+                            <div class="finalize-section">
+                                <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="POST" class="action-form" onsubmit="return validateForm(this)">
+                                    <div class="row g-2 mb-3">
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Data de Finalização</label>
+                                            <input type="text" class="form-control form-control-sm flatpickr-data" name="data_finalizacao" required>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label small">Hora de Finalização</label>
+                                            <input type="time" class="form-control form-control-sm" name="hora_finalizacao" required>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button type="submit" class="btn btn-agro btn-sm w-100" disabled>
+                                                <i class="fas fa-check-circle icon-agro"></i>Finalizar
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <label class="form-label small">Hora de Finalização</label>
-                                        <input type="time" class="form-control form-control-sm" name="hora_finalizacao" required>
+                                    <div class="mb-3">
+                                        <label class="form-label small">Observações</label>
+                                        <textarea class="form-control form-control-sm" name="observacoes" rows="3" placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
+                                        <small class="help-text">Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)</small>
                                     </div>
-                                    <div class="col-md-4 d-flex align-items-end">
-                                        <button type="submit" class="btn btn-agro btn-sm w-100" disabled>
-                                            <i class="fas fa-check-circle icon-agro"></i>Finalizar
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label small">Observações</label>
-                                    <textarea class="form-control form-control-sm" name="observacoes" rows="3" placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     {% endfor %}
