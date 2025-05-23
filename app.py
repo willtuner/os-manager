@@ -10,6 +10,7 @@ from reportlab.lib.pagesizes import A4
 from collections import Counter
 from sqlalchemy.sql import text
 from dateutil.parser import parse
+from werkzeug.utils import secure_filename
 
 # Configuração de logging para depuração
 logging.basicConfig(level=logging.DEBUG)
@@ -28,6 +29,12 @@ app.config.update(
     SQLALCHEMY_TRACK_MODIFICATIONS=False
 )
 db = SQLAlchemy(app)
+
+# --- Configuração para upload de fotos ---
+UPLOAD_FOLDER = os.path.join('static', 'uploads')
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
 # --- Fuso horário de São Paulo ---
 saopaulo_tz = pytz.timezone('America/Sao_Paulo')
@@ -60,6 +67,7 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
+    profile_picture = db.Column(db.String(256), nullable=True)  # Novo campo para caminho da foto
 
 class Finalizacao(db.Model):
     __tablename__ = 'finalizacoes'
@@ -92,6 +100,9 @@ os.makedirs(MENSAGENS_DIR, exist_ok=True)
 os.makedirs(MENSAGENS_PRESTADOR_DIR, exist_ok=True)
 os.makedirs(JSON_DIR, exist_ok=True)
 
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 def init_db():
     """Cria tabelas, importa users.json na tabela users e aplica migrações necessárias."""
     db.create_all()
@@ -109,8 +120,16 @@ def init_db():
             logger.info("Coluna user_type adicionada com sucesso")
         else:
             logger.debug("Coluna user_type já existe em login_events")
+
+        # Adicionar coluna profile_picture se não existir
+        columns = [col['name'] for col in inspector.get_columns('users')]
+        if 'profile_picture' not in columns:
+            logger.info("Adicionando coluna profile_picture à tabela users")
+            db.session.execute(text('ALTER TABLE users ADD COLUMN profile_picture VARCHAR(256)'))
+            db.session.commit()
+            logger.info("Coluna profile_picture adicionada com sucesso")
     except Exception as e:
-        logger.error(f"Erro ao verificar/adicionar coluna user_type: {e}")
+        logger.error(f"Erro ao verificar/adicionar colunas: {e}")
         db.session.rollback()
 
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
@@ -120,12 +139,15 @@ def init_db():
         for u, valor in js.items():
             if isinstance(valor, dict):
                 senha = valor.get("senha", "")
+                profile_picture = valor.get("profile_picture", None)
             else:
                 senha = valor
+                profile_picture = None
             db.session.add(User(
                 username=u.lower(),
                 password=senha,
-                is_admin=(u.lower() in admins)
+                is_admin=(u.lower() in admins),
+                profile_picture=profile_picture
             ))
         db.session.commit()
 
@@ -385,11 +407,55 @@ def painel():
         return redirect(url_for('login'))
     pend = carregar_os_gerente(session['gerente'])
     finalizadas = Finalizacao.query.filter_by(gerente=session['gerente']).order_by(Finalizacao.registrado_em.desc()).limit(100).all()
+    
+    # Carregar dados do usuário para obter a foto de perfil
+    user = User.query.filter_by(username=session['gerente']).first()
+    profile_picture = user.profile_picture if user else None
+    
     return render_template('painel.html',
                          os_pendentes=pend,
                          finalizadas=finalizadas,
                          gerente=session['gerente'],
+                         profile_picture=profile_picture,
                          now=saopaulo_tz.localize(datetime.now()))
+
+@app.route('/upload_profile_picture', methods=['POST'])
+def upload_profile_picture():
+    if 'gerente' not in session:
+        return redirect(url_for('login'))
+
+    username = session['gerente'].lower()
+    # Permitir upload apenas para Arthur e Mauricio
+    if username not in ['arthur', 'mauricio']:
+        flash('Apenas Arthur e Mauricio podem adicionar uma foto de perfil.', 'danger')
+        return redirect(url_for('painel'))
+
+    if 'profile_picture' not in request.files:
+        flash('Nenhuma foto selecionada.', 'danger')
+        return redirect(url_for('painel'))
+
+    file = request.files['profile_picture']
+    if file.filename == '':
+        flash('Nenhuma foto selecionada.', 'danger')
+        return redirect(url_for('painel'))
+
+    if file and allowed_file(file.filename):
+        filename = secure_filename(f"{username}_{datetime.now().strftime('%Y%m%d%H%M%S')}.{file.filename.rsplit('.', 1)[1].lower()}")
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(file_path)
+
+        # Atualizar o caminho da foto no banco de dados
+        user = User.query.filter_by(username=username).first()
+        if user:
+            user.profile_picture = f"uploads/{filename}"
+            db.session.commit()
+            flash('Foto de perfil atualizada com sucesso!', 'success')
+        else:
+            flash('Usuário não encontrado.', 'danger')
+    else:
+        flash('Formato de arquivo não permitido. Use PNG, JPG, JPEG ou GIF.', 'danger')
+
+    return redirect(url_for('painel'))
 
 @app.route('/painel_prestador')
 def painel_prestador():
