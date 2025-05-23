@@ -180,6 +180,7 @@ def carregar_prestadores():
         return prestadores
     except json.JSONDecodeError as e:
         logger.error(f"Erro ao decodificar {PRESTADORES_FILE}: {e}")
+        logger.error(f"Detalhes do erro: linha {e.lineno}, coluna {e.colno}, caractere {e.pos}")
         return []
     except Exception as e:
         logger.error(f"Erro ao carregar prestadores: {e}")
@@ -200,6 +201,7 @@ def carregar_manutencao():
         return manutencao
     except json.JSONDecodeError as e:
         logger.error(f"Erro ao decodificar {MANUTENCAO_FILE}: {e}")
+        logger.error(f"Detalhes do erro: linha {e.lineno}, coluna {e.colno}, caractere {e.pos}")
         return []
     except Exception as e:
         logger.error(f"Erro ao carregar manutencao: {e}")
@@ -316,6 +318,11 @@ def login():
 
         # Verificar usuários de manutenção (manutencao.json)
         manutencao_users = carregar_manutencao()
+        if not manutencao_users and os.path.exists(MANUTENCAO_FILE):
+            flash('Erro interno: Não foi possível carregar a lista de usuários de manutenção', 'danger')
+            logger.warning(f"Falha no login: {username} - Problema ao carregar manutencao.json")
+            return render_template('login.html')
+
         manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if manutencao:
             ev = LoginEvent(username=username, user_type='manutencao')
@@ -329,6 +336,11 @@ def login():
 
         # Verificar prestadores (prestadores.json)
         prestadores = carregar_prestadores()
+        if not prestadores and os.path.exists(PRESTADORES_FILE):
+            flash('Erro interno: Não foi possível carregar a lista de prestadores', 'danger')
+            logger.warning(f"Falha no login: {username} - Problema ao carregar prestadores.json")
+            return render_template('login.html')
+
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
             ev = LoginEvent(username=username, user_type=prestador.get('tipo', 'prestador'))
@@ -340,7 +352,7 @@ def login():
             logger.info(f"Login bem-sucedido para prestador: {username}")
             return redirect(url_for('painel_prestador'))
 
-        flash('Usuário ou senha inválidos. Gerentes: use nome.sobrenome (ex: mauricio.jose). Manutenção: use primeiro nome (ex: mauricio).', 'danger')
+        flash('Senha incorreta', 'danger')
         logger.warning(f"Falha no login: {username}")
     return render_template('login.html')
 
@@ -361,6 +373,11 @@ def painel_prestador():
     if 'prestador' not in session:
         return redirect(url_for('login'))
     prestadores = carregar_prestadores()
+    if not prestadores and os.path.exists(PRESTADORES_FILE):
+        flash('Erro interno: Não foi possível carregar a lista de prestadores', 'danger')
+        logger.error(f"Erro ao carregar prestadores para painel_prestador: {session['prestador']}")
+        return redirect(url_for('login'))
+    
     prestador = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
     if not prestador:
         flash('Prestador não encontrado', 'danger')
@@ -385,6 +402,11 @@ def painel_manutencao():
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
     manutencao_users = carregar_manutencao()
+    if not manutencao_users and os.path.exists(MANUTENCAO_FILE):
+        flash('Erro interno: Não foi possível carregar a lista de usuários de manutenção', 'danger')
+        logger.error(f"Erro ao carregar manutencao para painel_manutencao: {session['manutencao']}")
+        return redirect(url_for('login'))
+    
     manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == session['manutencao']), None)
     if not manutencao:
         flash('Usuário de manutenção não encontrado', 'danger')
@@ -470,6 +492,11 @@ def atribuir_prestador(os_numero):
         return redirect(url_for('login'))
     usuario = session['manutencao']
     manutencao_users = carregar_manutencao()
+    if not manutencao_users and os.path.exists(MANUTENCAO_FILE):
+        flash('Erro interno: Não foi possível carregar a lista de usuários de manutenção', 'danger')
+        logger.error(f"Erro ao carregar manutencao para atribuir_prestador: {usuario}")
+        return redirect(url_for('login'))
+    
     manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == usuario), None)
     if not manutencao:
         flash('Usuário de manutenção não encontrado', 'danger')
@@ -510,6 +537,11 @@ def adicionar_comentario(os_numero):
         return redirect(url_for('login'))
     usuario = session['manutencao']
     manutencao_users = carregar_manutencao()
+    if not manutencao_users and os.path.exists(MANUTENCAO_FILE):
+        flash('Erro interno: Não foi possível carregar a lista de usuários de manutenção', 'danger')
+        logger.error(f"Erro ao carregar manutencao para adicionar_comentario: {usuario}")
+        return redirect(url_for('login'))
+    
     manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == usuario), None)
     if not manutencao:
         flash('Usuário de manutenção não encontrado', 'danger')
