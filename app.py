@@ -421,23 +421,24 @@ def painel():
 
 @app.route('/upload_profile_picture', methods=['POST'])
 def upload_profile_picture():
-    if 'gerente' not in session:
+    responsavel = session.get('gerente') or session.get('manutencao')
+    if not responsavel:
         return redirect(url_for('login'))
 
-    username = session['gerente'].lower()
+    username = responsavel.lower()
     # Permitir upload apenas para Arthur e Mauricio
     if username not in ['arthur', 'mauricio']:
         flash('Apenas Arthur e Mauricio podem adicionar uma foto de perfil.', 'danger')
-        return redirect(url_for('painel'))
+        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
 
     if 'profile_picture' not in request.files:
         flash('Nenhuma foto selecionada.', 'danger')
-        return redirect(url_for('painel'))
+        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
 
     file = request.files['profile_picture']
     if file.filename == '':
         flash('Nenhuma foto selecionada.', 'danger')
-        return redirect(url_for('painel'))
+        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
 
     if file and allowed_file(file.filename):
         filename = secure_filename(f"{username}_{datetime.now().strftime('%Y%m%d%H%M%S')}.{file.filename.rsplit('.', 1)[1].lower()}")
@@ -455,7 +456,7 @@ def upload_profile_picture():
     else:
         flash('Formato de arquivo não permitido. Use PNG, JPG, JPEG ou GIF.', 'danger')
 
-    return redirect(url_for('painel'))
+    return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
 
 @app.route('/painel_prestador')
 def painel_prestador():
@@ -517,6 +518,10 @@ def painel_manutencao():
 
     finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
 
+    # Carregar dados do usuário para obter a foto de perfil
+    user = User.query.filter_by(username=session['manutencao']).first()
+    profile_picture = user.profile_picture if user else None
+
     return render_template('painel_manutencao.html', 
                          nome=manutencao['nome_exibicao'], 
                          os_list=os_list, 
@@ -526,7 +531,8 @@ def painel_manutencao():
                          finalizadas=finalizadas,
                          ordenar=ordenar,
                          prestadores=carregar_prestadores(),
-                         now=saopaulo_tz.localize(datetime.now()))
+                         now=saopaulo_tz.localize(datetime.now()),
+                         profile_picture=profile_picture)
 
 @app.route('/finalizar_os/<os_numero>', methods=['POST'])
 def finalizar_os(os_numero):
