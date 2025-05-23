@@ -1,11 +1,27 @@
 [
   {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110812",
-    "data_entrada": "19/05/2025",
-    "servico": "Verificar A/C não gela, apenas ventila - (Fazenda Estrela)\nLiberado Sr. Arthur\n\nAvaliação inicial: Verificada folga excessiva na correia de acionamento.\n\nCondição identificada: Espelho da embreagem com desgaste acentuado, provocando patinagem.\n\nAção corretiva provisória: Redução da arruela de regulagem para compensar o desgaste, mantendo o funcionamento temporário do sistema.\n\nObservação: Substituição definitiva do espelho da embreagem será realizada assim que a nova peça estiver disponível."
+    "frota": "65",
+    "cd_equipamento": "65",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111176",
+    "data_entrada": "22/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
+  },
+  {
+    "frota": "249",
+    "cd_equipamento": "249",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "111175",
+    "data_entrada": "22/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
+  },
+  {
+    "frota": "247",
+    "cd_equipamento": "247",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "111174",
+    "data_entrada": "22/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
   },
   {
     "frota": "130",

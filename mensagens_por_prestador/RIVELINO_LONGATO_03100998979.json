@@ -1,5 +1,29 @@
 [
   {
+    "frota": "44",
+    "cd_equipamento": "44",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "111195",
+    "data_entrada": "23/05/2025",
+    "servico": "Consertar pneu dianteiro direito.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5522",
+    "cd_equipamento": "5522",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "111193",
+    "data_entrada": "23/05/2025",
+    "servico": "Consertar pneu direito furado.\nFazenda Aparecida\nSolicitado Sr. Paulo\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5037",
+    "cd_equipamento": "5037",
+    "modelo": "TRITURADOR TRITUCAP 2.0 P TDF",
+    "os": "111194",
+    "data_entrada": "23/05/2025",
+    "servico": "Vazamento no bico L/E - (Fazenda Alvorada)\nLiberando Sr. Mauricio"
+  },
+  {
     "frota": "74",
     "cd_equipamento": "74",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -22,14 +46,6 @@
     "os": "111133",
     "data_entrada": "22/05/2025",
     "servico": "Pneu traseiro L/D furado - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "111130",
-    "data_entrada": "22/05/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "72",

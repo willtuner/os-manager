@@ -1,5 +1,21 @@
 [
   {
+    "frota": "223",
+    "cd_equipamento": "223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111217",
+    "data_entrada": "23/05/2025",
+    "servico": "Recuperar tampa da caixa de bateria\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
+  },
+  {
+    "frota": "262",
+    "cd_equipamento": "262",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111210",
+    "data_entrada": "23/05/2025",
+    "servico": "Troca dos paralamas e instalação das proteções \nFaz São Jose\nSolicitado Gilberto\nAutorizado Arthur"
+  },
+  {
     "frota": "5459",
     "cd_equipamento": "5459",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -22,14 +38,6 @@
     "os": "111032",
     "data_entrada": "21/05/2025",
     "servico": "Fazer solda em furos no ramal - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5352",
-    "cd_equipamento": "5352",
-    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
-    "os": "111023",
-    "data_entrada": "21/05/2025",
-    "servico": "Adaptar a bica do adubadora\nPecuária\nSolicitado Gabriel\nAutorizado Arthur"
   },
   {
     "frota": "100",
