@@ -96,7 +96,7 @@
 
         // Validação de formulários
         function validateForm(form) {
-            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+            const requiredFields = form.querySelectorAll('input[required]');
             for (let field of requiredFields) {
                 if (!field.value.trim()) {
                     alert(`Por favor, preencha o campo ${field.name}.`);
@@ -108,7 +108,7 @@
 
         // Habilitar botão de submit quando campos obrigatórios estiverem preenchidos
         document.querySelectorAll('.action-form').forEach(form => {
-            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+            const requiredFields = form.querySelectorAll('input[required]');
             const submitBtn = form.querySelector('button[type="submit"]');
 
             function checkInputs() {
@@ -120,6 +120,7 @@
             }
 
             requiredFields.forEach(field => field.addEventListener('input', checkInputs));
+            checkInputs(); // Inicializar estado do botão
         });
 
         // Filtragem de OS
@@ -201,18 +202,18 @@
                             <p class="card-text mb-1">
                                 <small class="text-muted dias-abertos">
                                     Aberta há {{ os.dias_abertos }} dia{{ 's' if os.dias_abertos != 1 else '' }}
-                                    {% if os.dias_abertos <= 2 %}🟢
-                                    {% elif os.dias_abertos <= 5 %}🟡
-                                    {% else %}🔴
+                                    {% if os.dias_abertos <= 2 %}✅
+                                    {% elif os.dias_abertos <= 5 %}⏰
+                                    {% else %}🚨
                                     {% endif %}
                                 </small>
                             </p>
-                            {% if os.modelo and os.modelo != 'Não informado' %}
+                            {% if os.modelo and os.modelo != 'Não informado' and os.modelo != 'Desconhecido' %}
                             <p class="card-text mb-1">
                                 <small class="text-muted">Modelo: {{ os.modelo }}</small>
                             </p>
                             {% endif %}
-                            {% if os.prestador %}
+                            {% if os.prestador and os.prestador != 'Prestador não definido' %}
                             <p class="card-text mb-1">
                                 <small class="text-muted">Prestador: <span class="prestador">{{ os.prestador|capitalize_name }}</span></small>
                             </p>
@@ -274,13 +275,13 @@
                             <p class="card-text mb-1">
                                 <small class="text-muted dias-abertos">
                                     Aberta há {{ os.dias_abertos }} dia{{ 's' if os.dias_abertos != 1 else '' }}
-                                    {% if os.dias_abertos <= 2 %}🟢
-                                    {% elif os.dias_abertos <= 5 %}🟡
-                                    {% else %}🔴
+                                    {% if os.dias_abertos <= 2 %}✅
+                                    {% elif os.dias_abertos <= 5 %}⏰
+                                    {% else %}🚨
                                     {% endif %}
                                 </small>
                             </p>
-                            {% if os.modelo and os.modelo != 'Não informado' %}
+                            {% if os.modelo and os.modelo != 'Não informado' and os.modelo != 'Desconhecido' %}
                             <p class="card-text mb-1">
                                 <small class="text-muted">Modelo: {{ os.modelo }}</small>
                             </p>
