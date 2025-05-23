@@ -93,27 +93,30 @@
 
         // Validação de formulários
         function validateForm(form) {
-            const data = form.querySelector('input[name="data_finalizacao"]');
-            const hora = form.querySelector('input[name="hora_finalizacao"]');
-            if (!data.value || !hora.value) {
-                alert('Por favor, preencha a data e hora de finalização.');
-                return false;
+            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
+            for (let field of requiredFields) {
+                if (!field.value.trim()) {
+                    alert(`Por favor, preencha o campo ${field.name}.`);
+                    return false;
+                }
             }
             return true;
         }
 
         // Habilitar botão de submit quando campos obrigatórios estiverem preenchidos
-        document.querySelectorAll('.finalizar-form').forEach(form => {
-            const data = form.querySelector('input[name="data_finalizacao"]');
-            const hora = form.querySelector('input[name="hora_finalizacao"]');
+        document.querySelectorAll('.action-form').forEach(form => {
+            const requiredFields = form.querySelectorAll('input[required], textarea[required]');
             const submitBtn = form.querySelector('button[type="submit"]');
 
             function checkInputs() {
-                submitBtn.disabled = !(data.value && hora.value);
+                let allFilled = true;
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) allFilled = false;
+                });
+                submitBtn.disabled = !allFilled;
             }
 
-            data.addEventListener('input', checkInputs);
-            hora.addEventListener('input', checkInputs);
+            requiredFields.forEach(field => field.addEventListener('input', checkInputs));
         });
 
         // Filtragem de OS
@@ -167,7 +170,7 @@
             <button class="nav-link active" id="pendentes-tab" data-bs-toggle="tab" data-bs-target="#pendentes" type="button" role="tab" aria-controls="pendentes" aria-selected="true">OS Pendentes ({{ total_os }})</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="sem-prestador-tab" data-bs-toggle="tab" data-bs-target="#sem-prestador" type="button" role="tab" aria-controls="sem-prestador" aria-selected="false">OS Sem Prestador</button>
+            <button class="nav-link" id="sem-prestador-tab" data-bs-toggle="tab" data-bs-target="#sem-prestador" type="button" role="tab" aria-controls="sem-prestador" aria-selected="false">OS Sem Prestador ({{ total_os_sem_prestador }})</button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="finalizadas-tab" data-bs-toggle="tab" data-bs-target="#finalizadas" type="button" role="tab" aria-controls="finalizadas" aria-selected="false">Histórico</button>
@@ -185,105 +188,32 @@
                     {% for os in os_list %}
                     <div class="card card-os mb-3">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h5 class="card-title mb-0">
-                                    <span class="badge badge-os">OS {{ os.os }}</span>
-                                    Frota {{ os.frota }}
-                                </h5>
-                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detalhesModal{{ os.os }}">
-                                    <i class="fas fa-eye icon-agro"></i>Detalhes
-                                </button>
-                            </div>
-                            <p class="card-text mb-2">
-                                <small class="text-muted">
-                                    Aberta em {{ os.data_entrada }} • Modelo {{ os.modelo or 'Não informado' }} •
-                                    Aberta há {{ os.dias_abertos }} dia{{ 's' if os.dias_abertos != 1 else '' }}
-                                    {% if os.prestador %} • Prestador: <span class="prestador">{{ os.prestador|capitalize_name }}</span>{% endif %}
-                                </small>
+                            <h5 class="card-title mb-2">
+                                <span class="badge badge-os">OS {{ os.os }}</span> Frota {{ os.frota }} OK
+                            </h5>
+                            <p class="card-text mb-1">
+                                <small class="text-muted">Abertura: {{ os.data_entrada }}</small>
                             </p>
+                            {% if os.modelo and os.modelo != 'Não informado' %}
+                            <p class="card-text mb-1">
+                                <small class="text-muted">Modelo: {{ os.modelo }}</small>
+                            </p>
+                            {% endif %}
+                            {% if os.prestador %}
+                            <p class="card-text mb-1">
+                                <small class="text-muted">Prestador: <span class="prestador">{{ os.prestador|capitalize_name }}</span></small>
+                            </p>
+                            {% endif %}
                             <p class="card-text mb-3">
                                 <i class="fas fa-tools icon-agro"></i>
                                 <span style="white-space: pre-wrap;">{{ os.servico }}</span>
                             </p>
                             <div class="row g-2">
                                 <div class="col-md-4 d-flex align-items-end">
-                                    <button type="button" class="btn btn-outline-secondary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#comentarModal{{ os.os }}">
-                                        <i class="fas fa-comment icon-agro"></i>Comentar
-                                    </button>
-                                </div>
-                                <div class="col-md-4 d-flex align-items-end">
                                     <button type="button" class="btn btn-agro btn-sm w-100" data-bs-toggle="modal" data-bs-target="#finalizarModal{{ os.os }}">
                                         <i class="fas fa-check-circle icon-agro"></i>Finalizar
                                     </button>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal Detalhes -->
-                    <div class="modal fade" id="detalhesModal{{ os.os }}" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Detalhes da OS {{ os.os }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Frota:</strong> {{ os.frota }}</p>
-                                    <p><strong>Modelo:</strong> {{ os.modelo or 'Não informado' }}</p>
-                                    <p><strong>Data de Entrada:</strong> {{ os.data_entrada }}</p>
-                                    <p><strong>Serviço:</strong> {{ os.servico }}</p>
-                                    {% if os.prestador %}
-                                        <p><strong>Prestador:</strong> {{ os.prestador|capitalize_name }}</p>
-                                    {% endif %}
-                                    {% if os.comentarios %}
-                                        <h6>Comentários:</h6>
-                                        <ul class="list-group">
-                                            {% for comentario in os.comentarios %}
-                                            <li class="list-group-item">
-                                                <strong>{{ comentario.autor|capitalize_name }}</strong> em {{ comentario.data }}:<br>
-                                                {{ comentario.texto }}
-                                            </li>
-                                            {% endfor %}
-                                        </ul>
-                                    {% endif %}
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal Comentar -->
-                    <div class="modal fade" id="comentarModal{{ os.os }}" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Adicionar Comentário – OS {{ os.os }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <form action="{{ url_for('adicionar_comentario', os_numero=os.os) }}" method="POST">
-                                    <div class="modal-body">
-                                        <div class="mb-3">
-                                            <label class="form-label">Comentário</label>
-                                            <textarea class="form-control" name="comentario" rows="4" placeholder="Descreva o progresso ou observações (ex.: vazamento identificado na válvula)" required></textarea>
-                                        </div>
-                                        {% if os.comentarios %}
-                                        <h6>Comentários Anteriores</h6>
-                                        <ul class="list-group">
-                                            {% for comentario in os.comentarios %}
-                                            <li class="list-group-item">
-                                                <strong>{{ comentario.autor|capitalize_name }}</strong> em {{ comentario.data }}:<br>
-                                                {{ comentario.texto }}
-                                            </li>
-                                            {% endfor %}
-                                        </ul>
-                                        {% endif %}
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="submit" class="btn btn-agro">Adicionar</button>
-                                    </div>
-                                </form>
                             </div>
                         </div>
                     </div>
@@ -295,7 +225,7 @@
                                     <h5 class="modal-title">Finalizar OS {{ os.os }}</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="POST" class="finalizar-form" onsubmit="return validateForm(this)">
+                                <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="POST" class="action-form" onsubmit="return validateForm(this)">
                                     <div class="modal-body">
                                         <div class="row g-2 mb-3">
                                             <div class="col-md-6">
@@ -341,21 +271,17 @@
                     {% for os in os_sem_prestador %}
                     <div class="card card-os mb-3">
                         <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h5 class="card-title mb-0">
-                                    <span class="badge badge-os">OS {{ os.os }}</span>
-                                    Frota {{ os.frota }}
-                                </h5>
-                                <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detalhesModalSem{{ os.os }}">
-                                    <i class="fas fa-eye icon-agro"></i>Detalhes
-                                </button>
-                            </div>
-                            <p class="card-text mb-2">
-                                <small class="text-muted">
-                                    Aberta em {{ os.data_entrada }} • Modelo {{ os.modelo or 'Não informado' }} •
-                                    Aberta há {{ os.dias_abertos }} dia{{ 's' if os.dias_abertos != 1 else '' }}
-                                </small>
+                            <h5 class="card-title mb-2">
+                                <span class="badge badge-os">OS {{ os.os }}</span> Frota {{ os.frota }} OK
+                            </h5>
+                            <p class="card-text mb-1">
+                                <small class="text-muted">Abertura: {{ os.data_entrada }}</small>
                             </p>
+                            {% if os.modelo and os.modelo != 'Não informado' %}
+                            <p class="card-text mb-1">
+                                <small class="text-muted">Modelo: {{ os.modelo }}</small>
+                            </p>
+                            {% endif %}
                             <p class="card-text mb-3">
                                 <i class="fas fa-tools icon-agro"></i>
                                 <span style="white-space: pre-wrap;">{{ os.servico }}</span>
@@ -369,37 +295,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Modal Detalhes -->
-                    <div class="modal fade" id="detalhesModalSem{{ os.os }}" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Detalhes da OS {{ os.os }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p><strong>Frota:</strong> {{ os.frota }}</p>
-                                    <p><strong>Modelo:</strong> {{ os.modelo or 'Não informado' }}</p>
-                                    <p><strong>Data de Entrada:</strong> {{ os.data_entrada }}</p>
-                                    <p><strong>Serviço:</strong> {{ os.servico }}</p>
-                                    {% if os.comentarios %}
-                                        <h6>Comentários:</h6>
-                                        <ul class="list-group">
-                                            {% for comentario in os.comentarios %}
-                                            <li class="list-group-item">
-                                                <strong>{{ comentario.autor|capitalize_name }}</strong> em {{ comentario.data }}:<br>
-                                                {{ comentario.texto }}
-                                            </li>
-                                            {% endfor %}
-                                        </ul>
-                                    {% endif %}
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- Modal Atribuir Prestador -->
                     <div class="modal fade" id="atribuirModal{{ os.os }}" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog">
@@ -408,21 +303,16 @@
                                     <h5 class="modal-title">Atribuir Prestador – OS {{ os.os }}</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <form action="{{ url_for('atribuir_prestador', os_numero=os.os) }}" method="POST">
+                                <form action="{{ url_for('atribuir_prestador', os_numero=os.os) }}" method="POST" class="action-form" onsubmit="return validateForm(this)">
                                     <div class="modal-body">
                                         <div class="mb-3">
-                                            <label class="form-label">Selecionar Prestador</label>
-                                            <select class="form-control" name="prestador" required>
-                                                <option value="" disabled selected>Escolha um prestador</option>
-                                                {% for prestador in prestadores %}
-                                                <option value="{{ prestador.nome_exibicao }}">{{ prestador.nome_exibicao }}</option>
-                                                {% endfor %}
-                                            </select>
+                                            <label class="form-label">Nome do Prestador</label>
+                                            <input type="text" class="form-control" name="prestador" placeholder="Digite o nome do prestador" required>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="submit" class="btn btn-agro">Atribuir</button>
+                                        <button type="submit" class="btn btn-agro" disabled>Atribuir</button>
                                     </div>
                                 </form>
                             </div>
@@ -452,10 +342,8 @@
                             <h5 class="card-title mb-2">
                                 <span class="badge badge-os">OS {{ os.os_numero }}</span>
                             </h5>
-                            <p class="card-text mb-2">
-                                <small class="text-muted">
-                                    Finalizada em {{ os.data_fin }} às {{ os.hora_fin }}
-                                </small>
+                            <p class="card-text mb-1">
+                                <small class="text-muted">Finalizada em {{ os.data_fin }} às {{ os.hora_fin }}</small>
                             </p>
                             <p class="card-text mb-3">
                                 <i class="fas fa-comment icon-agro"></i>
