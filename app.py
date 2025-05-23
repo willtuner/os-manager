@@ -44,9 +44,13 @@ app.jinja_env.filters['capitalize_name'] = capitalize_name
 # --- Helper para formatar datas no horário de São Paulo ---
 def format_datetime(dt):
     if dt:
-        if dt.tzinfo is not None:
-            return dt.astimezone(saopaulo_tz).strftime('%d/%m/%Y %H:%M:%S')
-        return saopaulo_tz.localize(dt).strftime('%d/%m/%Y %H:%M:%S')
+        # Se a data não tem fuso, localizá-la para São Paulo
+        if dt.tzinfo is None:
+            dt = saopaulo_tz.localize(dt)
+        # Se já tem fuso, convertê-la para São Paulo
+        else:
+            dt = dt.astimezone(saopaulo_tz)
+        return dt.strftime('%d/%m/%Y %H:%M:%S')
     return None
 
 # --- Models ---
@@ -224,7 +228,7 @@ def carregar_os_prestadores():
     prestadores = carregar_prestadores()
     os_por_prestador = {}
     for prestador in prestadores:
-        usuario = prestador.get('usuario', '').lower()
+        usuario = prest    prestador.get('usuario', '').lower()
         if prestador.get('tipo') == 'manutencao':
             continue
         arquivo_os = prestador.get('arquivo_os', '')
@@ -322,13 +326,15 @@ def login():
 
         user = User.query.filter_by(username=username).first()
         if user and user.password == senha:
-            ev = LoginEvent(username=username, user_type='gerente')
+            # Garantir que login_time está no fuso de São Paulo
+            login_time = saopaulo_tz.localize(datetime.now())
+            ev = LoginEvent(username=username, user_type='gerente', login_time=login_time)
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
             session['gerente'] = username
             session['is_admin'] = user.is_admin
-            logger.info(f"Login bem-sucedido para gerente: {username}")
+            logger.info(f"Login bem-sucedido para gerente: {username} às {format_datetime(login_time)}")
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
 
         # Verificar usuários de manutenção (manutencao.json)
@@ -340,13 +346,14 @@ def login():
 
         manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if manutencao:
-            ev = LoginEvent(username=username, user_type='manutencao')
+            login_time = saopaulo_tz.localize(datetime.now())
+            ev = LoginEvent(username=username, user_type='manutencao', login_time=login_time)
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
             session['manutencao'] = manutencao['usuario']
             session['manutencao_nome'] = manutencao.get('nome_exibicao', username.capitalize())
-            logger.info(f"Login bem-sucedido para usuário de manutenção: {username}")
+            logger.info(f"Login bem-sucedido para usuário de manutenção: {username} às {format_datetime(login_time)}")
             return redirect(url_for('painel_manutencao'))
 
         # Verificar prestadores (prestadores.json)
@@ -358,13 +365,14 @@ def login():
 
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
-            ev = LoginEvent(username=username, user_type=prestador.get('tipo', 'prestador'))
+            login_time = saopaulo_tz.localize(datetime.now())
+            ev = LoginEvent(username=username, user_type=prestador.get('tipo', 'prestador'), login_time=login_time)
             db.session.add(ev)
             db.session.commit()
             session['login_event_id'] = ev.id
             session['prestador'] = prestador['usuario']
             session['prestador_nome'] = prestador.get('nome_exibicao', username.capitalize())
-            logger.info(f"Login bem-sucedido para prestador: {username}")
+            logger.info(f"Login bem-sucedido para prestador: {username} às {format_datetime(login_time)}")
             return redirect(url_for('painel_prestador'))
 
         flash('Senha incorreta', 'danger')
@@ -612,8 +620,24 @@ def admin_panel():
     login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
 
     for event in login_events:
+        # Garantir que login_time e logout_time estão no fuso de São Paulo
+        if event.login_time.tzinfo is None:
+            event.login_time = saopaulo_tz.localize(event.login_time)
+        else:
+            event.login_time = event.login_time.astimezone(saopaulo_tz)
+
+        if event.logout_time:
+            if event.logout_time.tzinfo is None:
+                event.logout_time = saopaulo_tz.localize(event.logout_time)
+            else:
+                event.logout_time = event.logout_time.astimezone(saopaulo_tz)
+
         event.login_time_formatted = format_datetime(event.login_time)
-        event.logout_time_formatted = format_datetime(event.logout_time)
+        event.logout_time_formatted = format_datetime(event.logout_time) if event.logout_time else None
+        # Recalcular duration_secs para maior precisão
+        if event.logout_time and event.duration_secs:
+            duration = (event.logout_time - event.login_time).total_seconds()
+            event.duration_secs = int(max(0, duration))  # Garantir que não seja negativo
 
     users = User.query.order_by(User.username).all()
     gerentes = [u.username for u in users]
@@ -727,10 +751,20 @@ def logout():
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
         if ev:
-            ev.logout_time = datetime.now(saopaulo_tz)
+            # Garantir que logout_time está no fuso de São Paulo
+            logout_time = saopaulo_tz.localize(datetime.now())
+            ev.logout_time = logout_time
+
+            # Garantir que login_time está no fuso de São Paulo
             if ev.login_time.tzinfo is None:
                 ev.login_time = saopaulo_tz.localize(ev.login_time)
-            ev.duration_secs = int((ev.logout_time - ev.login_time).total_seconds())
+            else:
+                ev.login_time = ev.login_time.astimezone(saopaulo_tz)
+
+            # Calcular a duração
+            duration = (ev.logout_time - ev.login_time).total_seconds()
+            ev.duration_secs = int(max(0, duration))  # Garantir que não seja negativo
+            logger.info(f"Logout de {ev.username}: login às {format_datetime(ev.login_time)}, logout às {format_datetime(ev.logout_time)}, duração: {ev.duration_secs} segundos")
             db.session.commit()
     session.clear()
     flash('Desconectado', 'info')
