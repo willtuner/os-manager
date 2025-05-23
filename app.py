@@ -5,17 +5,8 @@ from datetime import datetime, timedelta
 import pytz
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
-import sys
-print("PYTHON EXE:", sys.executable)
-print("PYTHON PATH:", sys.path)
-
-try:
-    import fpdf2
-    print("fpdf2 IMPORTADO COM SUCESSO!")
-except Exception as e:
-    print("ERRO AO IMPORTAR fpdf2:", e)
-
-from fpdf2 import FPDF
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import A4
 from collections import Counter
 from sqlalchemy.sql import text
 from dateutil.parser import parse
@@ -677,7 +668,6 @@ def exportar_os_finalizadas():
         flash('Acesso negado','danger')
         return redirect(url_for('login'))
 
-    # Aplicar os mesmos filtros da rota admin
     periodo = request.args.get('periodo', 'todos')
     data_inicio = request.args.get('data_inicio')
     data_fim = request.args.get('data_fim')
@@ -714,31 +704,38 @@ def exportar_os_finalizadas():
         flash('Nenhuma OS finalizada para o período selecionado','warning')
         return redirect(url_for('admin_panel'))
 
-    pdf_path = os.path.join(BASE_DIR,'relatorio.pdf')
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font('Arial','B',12)
-    pdf.cell(0,10,f'Relatório de OS Finalizadas ({periodo.capitalize()})',ln=True,align='C')
-    pdf.ln(5)
-    cols, w = ['OS','Gerente','Data','Hora','Obs'], [20,40,30,25,75]
-    pdf.set_font('Arial','B',10)
-    for c,width in zip(cols,w):
-        pdf.cell(width,8,c,border=1)
-    pdf.ln()
-    pdf.set_font('Arial','',9)
+    pdf_path = os.path.join(BASE_DIR, 'relatorio.pdf')
+    c = canvas.Canvas(pdf_path, pagesize=A4)
+    width, height = A4
+
+    c.setFont("Helvetica-Bold", 14)
+    c.drawCentredString(width / 2, height - 50, f"Relatório de OS Finalizadas ({periodo.capitalize()})")
+    c.setFont("Helvetica-Bold", 10)
+
+    cols = ['OS', 'Gerente', 'Data', 'Hora', 'Obs']
+    x_list = [40, 100, 200, 260, 320]
+    y = height - 80
+    for idx, col in enumerate(cols):
+        c.drawString(x_list[idx], y, col)
+    y -= 20
+
+    c.setFont("Helvetica", 9)
     for r in allf:
-        pdf.cell(w[0],6,r.os_numero,border=1)
-        pdf.cell(w[1],6,r.gerente,border=1)
-        pdf.cell(w[2],6,r.data_fin,border=1)
-        pdf.cell(w[3],6,r.hora_fin,border=1)
-        pdf.cell(w[4],6,(r.observacoes or '')[:40],border=1)
-        pdf.ln()
-    pdf.output(pdf_path)
+        c.drawString(x_list[0], y, r.os_numero)
+        c.drawString(x_list[1], y, r.gerente)
+        c.drawString(x_list[2], y, r.data_fin)
+        c.drawString(x_list[3], y, r.hora_fin)
+        c.drawString(x_list[4], y, (r.observacoes or '')[:40])
+        y -= 16
+        if y < 40:
+            c.showPage()
+            y = height - 50
+
+    c.save()
     return send_file(pdf_path,
                    as_attachment=True,
                    download_name=f'relatorio_{saopaulo_tz.localize(datetime.now()):%Y%m%d}.pdf',
                    mimetype='application/pdf')
-
 @app.route('/logout')
 def logout():
     ev_id = session.pop('login_event_id', None)
@@ -761,3 +758,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
+
