@@ -5,6 +5,16 @@ from datetime import datetime, timedelta
 import pytz
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
+import sys
+print("PYTHON EXE:", sys.executable)
+print("PYTHON PATH:", sys.path)
+
+try:
+    import fpdf2
+    print("fpdf2 IMPORTADO COM SUCESSO!")
+except Exception as e:
+    print("ERRO AO IMPORTAR fpdf2:", e)
+
 from fpdf2 import FPDF
 from collections import Counter
 from sqlalchemy.sql import text
