@@ -97,10 +97,12 @@
     }
     /* Estilos ajustados para a seção de finalização */
     .finalize-section {
-        padding-top: 10px;
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
     .finalize-section .row {
-        align-items: flex-end;
+        align-items: center;
+        gap: 10px;
     }
     .finalize-section label {
         margin-bottom: 5px;
@@ -109,12 +111,36 @@
     }
     .finalize-section .form-control-sm {
         width: 100%;
+        box-sizing: border-box;
+    }
+    .finalize-section .btn-agro {
+        width: 100%;
+        padding: 6px;
     }
     .finalize-section .help-text {
         font-size: 0.8rem;
         color: var(--cinza-medio);
         margin-top: 5px;
         display: block;
+        line-height: 1.2;
+    }
+    .finalize-section textarea {
+        resize: vertical;
+        min-height: 60px;
+    }
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .finalize-section .row {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .finalize-section .col-md-4 {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .finalize-section .btn-agro {
+            width: 100%;
+        }
     }
 </style>
 {% endblock %}
@@ -131,6 +157,10 @@
                 firstDayOfWeek: 1,
                 weekdays: { shorthand: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'], longhand: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'] },
                 months: { shorthand: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], longhand: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'] }
+            },
+            onOpen: function(selectedDates, dateStr, instance) {
+                // Ajustar z-index para evitar sobreposição
+                instance.calendarContainer.style.zIndex = '1050';
             }
         });
 
@@ -292,7 +322,7 @@
                                             <input type="time" class="form-control form-control-sm" name="hora_finalizacao" required>
                                         </div>
                                         <div class="col-md-4">
-                                            <button type="submit" class="btn btn-agro btn-sm w-100" disabled>
+                                            <button type="submit" class="btn btn-agro btn-sm" disabled>
                                                 <i class="fas fa-check-circle icon-agro"></i>Finalizar
                                             </button>
                                         </div>
