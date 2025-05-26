@@ -245,14 +245,31 @@
 {% block content %}
 <div class="container">
     
-<!-- Cabeçalho com avatar à direita -->
 
+<!-- Cabeçalho com avatar à direita -->
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="h4 mb-0">
+        <i class="fas fa-tractor icon-agro"></i>Painel de Manutenção – {{ nome|capitalize_name }}
+    </h2>
+    {% if manutencao and manutencao.lower() in ['arthur', 'mauricio'] %}
+    <div class="profile-avatar text-end position-relative" style="width: 60px;">
+        <form action="{{ url_for('upload_profile_picture') }}" method="post" enctype="multipart/form-data">
+            <label for="profile_picture" class="d-block position-relative" style="cursor: pointer;">
+                {% if profile_picture %}
+                    <img src="{{ url_for('static', filename=profile_picture) }}" alt="Foto de Perfil" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;">
+                {% else %}
+                    <img src="{{ url_for('static', filename='uploads/default_profile.jpg') }}" alt="Foto de Perfil Padrão" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;">
+                {% endif %}
+                <div class="position-absolute top-0 end-0 bg-light rounded-circle" style="padding: 2px;">
+                    <i class="fas fa-pen text-muted" style="font-size: 0.75rem;"></i>
+                </div>
             </label>
             <input type="file" id="profile_picture" name="profile_picture" accept="image/png, image/jpeg, image/gif" style="display: none;" onchange="this.form.submit()">
         </form>
     </div>
     {% endif %}
 </div>
+
 
 <!-- Mensagens flash -->
 
