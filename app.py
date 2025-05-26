@@ -52,10 +52,8 @@ app.jinja_env.filters['capitalize_name'] = capitalize_name
 # --- Helper para formatar datas no horário de São Paulo ---
 def format_datetime(dt):
     if dt:
-        # Se a data não tem fuso, localizá-la para São Paulo
         if dt.tzinfo is None:
             dt = saopaulo_tz.localize(dt)
-        # Se já tem fuso, convertê-la para São Paulo
         else:
             dt = dt.astimezone(saopaulo_tz)
         return dt.strftime('%d/%m/%Y %H:%M:%S')
@@ -68,7 +66,7 @@ class User(db.Model):
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
-    profile_picture = db.Column(db.String(256), nullable=True)  # Novo campo para caminho da foto
+    profile_picture = db.Column(db.String(256), nullable=True)
 
 class Finalizacao(db.Model):
     __tablename__ = 'finalizacoes'
@@ -105,7 +103,6 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 def init_db():
-    """Cria tabelas, importa users.json na tabela users e aplica migrações necessárias."""
     db.create_all()
 
     try:
@@ -122,7 +119,6 @@ def init_db():
         else:
             logger.debug("Coluna user_type já existe em login_events")
 
-        # Adicionar coluna profile_picture se não existir
         columns = [col['name'] for col in inspector.get_columns('users')]
         if 'profile_picture' not in columns:
             logger.info("Adicionando coluna profile_picture à tabela users")
@@ -349,7 +345,6 @@ def login():
 
         user = User.query.filter_by(username=username).first()
         if user and user.password == senha:
-            # Garantir que login_time está no fuso de São Paulo
             login_time = saopaulo_tz.localize(datetime.now())
             ev = LoginEvent(username=username, user_type='gerente', login_time=login_time)
             db.session.add(ev)
@@ -360,7 +355,6 @@ def login():
             logger.info(f"Login bem-sucedido para gerente: {username} às {format_datetime(login_time)}")
             return redirect(url_for('admin_panel' if user.is_admin else 'painel'))
 
-        # Verificar usuários de manutenção (manutencao.json)
         manutencao_users = carregar_manutencao()
         if not manutencao_users and os.path.exists(MANUTENCAO_FILE):
             flash('Erro interno: Não foi possível carregar a lista de usuários de manutenção', 'danger')
@@ -379,7 +373,6 @@ def login():
             logger.info(f"Login bem-sucedido para usuário de manutenção: {username} às {format_datetime(login_time)}")
             return redirect(url_for('painel_manutencao'))
 
-        # Verificar prestadores (prestadores.json)
         prestadores = carregar_prestadores()
         if not prestadores and os.path.exists(PRESTADORES_FILE):
             flash('Erro interno: Não foi possível carregar a lista de prestadores', 'danger')
@@ -409,7 +402,6 @@ def painel():
     pend = carregar_os_gerente(session['gerente'])
     finalizadas = Finalizacao.query.filter_by(gerente=session['gerente']).order_by(Finalizacao.registrado_em.desc()).limit(100).all()
     
-    # Carregar dados do usuário para obter a foto de perfil
     user = User.query.filter_by(username=session['gerente']).first()
     profile_picture = user.profile_picture if user else None
     
@@ -427,7 +419,6 @@ def upload_profile_picture():
         return redirect(url_for('login'))
 
     username = responsavel.lower()
-    # Permitir upload apenas para Arthur e Mauricio
     if username not in ['arthur', 'mauricio']:
         flash('Apenas Arthur e Mauricio podem adicionar uma foto de perfil.', 'danger')
         return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
@@ -446,7 +437,6 @@ def upload_profile_picture():
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
 
-        # Redimensionar a imagem para 100x100
         try:
             img = Image.open(file_path)
             img = img.resize((100, 100), Image.Resampling.LANCZOS)
@@ -456,7 +446,6 @@ def upload_profile_picture():
             flash('Erro ao processar a imagem.', 'danger')
             return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
 
-        # Atualizar o caminho da foto no banco de dados
         user = User.query.filter_by(username=username).first()
         if user:
             user.profile_picture = f"uploads/{filename}"
@@ -518,7 +507,6 @@ def painel_manutencao():
     total_os = len(os_list)
     total_os_sem_prestador = len(os_sem_prestador)
 
-    # Ordenação
     ordenar = request.args.get('ordenar', 'data_desc')
     if ordenar == 'data_asc':
         os_list.sort(key=lambda x: datetime.strptime(x['data_entrada'], '%d/%m/%Y'))
@@ -529,7 +517,6 @@ def painel_manutencao():
 
     finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
 
-    # Carregar dados do usuário para obter a foto de perfil
     user = User.query.filter_by(username=session['manutencao']).first()
     profile_picture = user.profile_picture if user else None
 
@@ -554,11 +541,9 @@ def finalizar_os(os_numero):
         return redirect(url_for('login'))
 
     if request.method == 'GET':
-        # Carregar dados da OS para exibir na interface de finalização
         os_list = carregar_os_manutencao(session['manutencao']) if 'manutencao' in session else carregar_os_gerente(session['gerente'])
         os_data = next((os for os in os_list if os['os'] == os_numero), None)
 
-        # Carregar dados do usuário para obter a foto de perfil
         user = User.query.filter_by(username=session['manutencao'] if 'manutencao' in session else session['gerente']).first()
         profile_picture = user.profile_picture if user else None
 
@@ -580,15 +565,20 @@ def finalizar_os(os_numero):
         data_fin = request.form.get('data_finalizacao')
         hora_fin = request.form.get('hora_finalizacao')
         observacoes = request.form.get('observacoes', '')
+        # Ignorar evidência temporariamente
+        if 'evidencia' in request.files:
+            request.files['evidencia']  # Apenas para evitar erro, sem processamento
+
         if not data_fin or not hora_fin:
             flash('Data e hora de finalização são obrigatórias.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
-        
-        # Validar formato da data
+
+        # Converter data do formato YYYY-MM-DD para DD/MM/YYYY
         try:
-            datetime.strptime(data_fin, '%d/%m/%Y')
+            data_fin_obj = datetime.strptime(data_fin, '%Y-%m-%d')
+            data_fin = data_fin_obj.strftime('%d/%m/%Y')
         except ValueError:
-            flash('Formato de data inválido. Use DD/MM/AAAA.', 'danger')
+            flash('Formato de data inválido.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
         fz = Finalizacao(
@@ -599,6 +589,14 @@ def finalizar_os(os_numero):
             observacoes=observacoes
         )
         db.session.add(fz)
+        try:
+            db.session.commit()
+        except Exception as e:
+            db.session.rollback()
+            logger.error(f"Erro ao salvar no banco: {e}")
+            flash('Erro ao finalizar a OS. Verifique os logs.', 'danger')
+            return redirect(url_for('finalizar_os', os_numero=os_numero))
+
         if 'gerente' in session:
             gerente = session['gerente']
             base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
@@ -610,31 +608,35 @@ def finalizar_os(os_numero):
                         caminho = os.path.join(MENSAGENS_DIR, fn)
                         break
             if os.path.exists(caminho):
-                with open(caminho, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
-                with open(caminho, 'w', encoding='utf-8') as f:
-                    json.dump(data, f, ensure_ascii=False, indent=2)
-        if 'prestador' in session or 'manutencao' in session:
-            usuario = session.get('prestador') or session.get('manutencao')
-            if 'prestador' in session:
-                usuarios = carregar_prestadores()
-                diretorio = MENSAGENS_PRESTADOR_DIR
-            else:
-                usuarios = carregar_manutencao()
-                diretorio = JSON_DIR
-            usuario_data = next((p for p in usuarios if p.get('usuario', '').lower() == usuario), None)
-            if usuario_data:
-                caminho = os.path.join(diretorio, usuario_data['arquivo_os'])
-                if os.path.exists(caminho):
+                try:
                     with open(caminho, 'r', encoding='utf-8') as f:
                         data = json.load(f)
-                    data = [item for item in data if str(item.get('os') or item.get('OS','')) != os_numero]
+                    data = [item for item in data if str(item.get('os') or item.get('OS', '')) != os_numero]
                     with open(caminho, 'w', encoding='utf-8') as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
-        db.session.commit()
+                except Exception as e:
+                    logger.error(f"Erro ao atualizar {caminho}: {e}")
+                    flash('Erro ao atualizar o arquivo JSON.', 'danger')
+
+        if 'prestador' in session:
+            usuario = session['prestador']
+            prestadores = carregar_prestadores()
+            usuario_data = next((p for p in prestadores if p.get('usuario', '').lower() == usuario), None)
+            if usuario_data:
+                caminho = os.path.join(MENSAGENS_PRESTADOR_DIR, usuario_data['arquivo_os'])
+                if os.path.exists(caminho):
+                    try:
+                        with open(caminho, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                        data = [item for item in data if str(item.get('os') or item.get('OS', '')) != os_numero]
+                        with open(caminho, 'w', encoding='utf-8') as f:
+                            json.dump(data, f, ensure_ascii=False, indent=2)
+                    except Exception as e:
+                        logger.error(f"Erro ao atualizar {caminho}: {e}")
+                        flash('Erro ao atualizar o arquivo JSON.', 'danger')
+
         flash(f'OS {os_numero} finalizada com sucesso', 'success')
-        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel_prestador' if 'prestador' in session else 'painel'))
+        return redirect(url_for('painel_prestador' if 'prestador' in session else 'painel_manutencao' if 'manutencao' in session else 'painel'))
 
 @app.route('/atribuir_prestador/<os_numero>', methods=['POST'])
 def atribuir_prestador(os_numero):
@@ -664,7 +666,6 @@ def atribuir_prestador(os_numero):
         flash('OS não encontrada ou já possui prestador', 'danger')
         return redirect(url_for('painel_manutencao'))
 
-    # Atualizar o prestador no arquivo original
     caminho_origem = os.path.join(MENSAGENS_DIR, os_target['arquivo_origem'])
     try:
         with open(caminho_origem, 'r', encoding='utf-8') as f:
@@ -687,15 +688,12 @@ def admin_panel():
         flash('Acesso negado','danger')
         return redirect(url_for('login'))
 
-    # Parâmetros de filtro
     periodo = request.args.get('periodo', 'todos')
     data_inicio = request.args.get('data_inicio')
     data_fim = request.args.get('data_fim')
 
-    # Consulta base de finalizações
     query = Finalizacao.query.order_by(Finalizacao.registrado_em.desc())
 
-    # Aplicar filtros de período
     if periodo != 'todos' or data_inicio or data_fim:
         if data_inicio and data_fim:
             try:
@@ -721,15 +719,11 @@ def admin_panel():
                 fim = hoje.replace(month=12, day=31, hour=23, minute=59, second=59)
             query = query.filter(Finalizacao.registrado_em.between(inicio, fim))
 
-    # Calcular o total de manutenções concluídas (sem limite)
     total_os = query.count()
-
-    # Limitar apenas para exibição da tabela
     finalizadas = query.limit(100).all()
     login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
 
     for event in login_events:
-        # Garantir que login_time e logout_time estão no fuso de São Paulo
         if event.login_time.tzinfo is None:
             event.login_time = saopaulo_tz.localize(event.login_time)
         else:
@@ -743,10 +737,9 @@ def admin_panel():
 
         event.login_time_formatted = format_datetime(event.login_time)
         event.logout_time_formatted = format_datetime(event.logout_time) if event.logout_time else None
-        # Recalcular duration_secs para maior precisão
         if event.logout_time and event.duration_secs:
             duration = (event.logout_time - event.login_time).total_seconds()
-            event.duration_secs = int(max(0, duration))  # Garantir que não seja negativo
+            event.duration_secs = int(max(0, duration))
 
     users = User.query.order_by(User.username).all()
     gerentes = [u.username for u in users]
@@ -755,7 +748,6 @@ def admin_panel():
     ranking_os_abertas = sorted(abertas.items(), key=lambda x: x[1], reverse=True)
     ranking_os_prestadores = carregar_os_prestadores()
 
-    # Dados para gráficos
     chart_data = {
         'os_por_periodo': {},
         'os_por_gerente': Counter([f.gerente for f in finalizadas])
@@ -860,19 +852,15 @@ def logout():
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
         if ev:
-            # Garantir que logout_time está no fuso de São Paulo
             logout_time = saopaulo_tz.localize(datetime.now())
-            ev.logout_time = logout_time
-
-            # Garantir que login_time está no fuso de São Paulo
             if ev.login_time.tzinfo is None:
                 ev.login_time = saopaulo_tz.localize(ev.login_time)
             else:
                 ev.login_time = ev.login_time.astimezone(saopaulo_tz)
 
-            # Calcular a duração
+            ev.logout_time = logout_time
             duration = (ev.logout_time - ev.login_time).total_seconds()
-            ev.duration_secs = int(max(0, duration))  # Garantir que não seja negativo
+            ev.duration_secs = int(max(0, duration))
             logger.info(f"Logout de {ev.username}: login às {format_datetime(ev.login_time)}, logout às {format_datetime(ev.logout_time)}, duração: {ev.duration_secs} segundos")
             db.session.commit()
     session.clear()
