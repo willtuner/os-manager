@@ -317,5 +317,33 @@
       <i class="fas fa-sign-out-alt me-1"></i> Sair
     </a>
   </div>
+
+  <!-- NOVA SEÇÃO: Prestadores atribuídos manualmente -->
+  <hr class="my-5">
+  <h2 class="h5 mb-3">
+    <i class="fas fa-user-check me-2 text-success"></i> Prestadores atribuídos manualmente
+  </h2>
+
+  {% if atribuicoes_manuais %}
+    {% for prestador, info in atribuicoes_manuais.items() %}
+      <div class="card card-os mb-3">
+        <div class="card-header">
+          <strong>{{ prestador|capitalize_name }}</strong>
+          <span class="text-muted small">(atribuído por {{ info.atribuido_por | join(", ") | capitalize_name }})</span>
+        </div>
+        <div class="card-body">
+          {% for os in info.os %}
+            <p class="mb-1">
+              <span class="badge bg-secondary">OS {{ os.os }}</span>
+              Frota {{ os.frota }} – {{ os.servico }}
+            </p>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <div class="text-muted">Nenhum prestador foi atribuído manualmente ainda.</div>
+  {% endif %}
+
 </div>
 {% endblock %}
