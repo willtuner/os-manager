@@ -1,12 +1,133 @@
 [
     {
+        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+        "frota": "157",
+        "modelo": "TRATOR JOHN DEERE 5055E",
+        "os": "111276",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
+        "frota": "5405",
+        "modelo": "ROCADEIRA RC2 E 4500 TATU",
+        "os": "111269",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Trocar corrente de segurança - (Fazenda Minuano)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
+        "frota": "5496",
+        "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+        "os": "111268",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Trocar corrente de segurança - (Fazenda Minuano)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
+        "frota": "5414",
+        "modelo": "DIST. ADUBO DCA2 7500 S-0114",
+        "os": "111267",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Trocar corrente de segurança - (Fazenda Minuano)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
+        "frota": "5318",
+        "modelo": "ADUBADEIRA CALCARIO TATU",
+        "os": "111266",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Soldar suporte de corrente de segurança e corrente de segurança  - (Fazenda Minuano)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ALTIERES SOARES FERREIRA",
+        "frota": "5240",
+        "modelo": "MOTOR IRRIGA TURBOMAQ 125 GS",
+        "os": "111260",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+        "servico": "Verificar mola de trava do hidrorol - (Fazenda Pedra Verde)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5603",
+        "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+        "os": "111255",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
+        "servico": "Fazer fibra em trincas na torre - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5597",
+        "modelo": "PULVERIZADOR 2000 LT FMC",
+        "os": "111254",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
+        "servico": "Trinca na fibra do tanque e verificar rosca da boca do tanque - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
+        "frota": "5227",
+        "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
+        "os": "111235",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "5350",
+        "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+        "os": "111225",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Verificar vazamento de óleo no conjunto do rotor da roçadeira, avaliando possível falha em retentores ou vedação do sistema - (Fazenda NSA)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ARTHUR SOUSA OLIVEIRA",
+        "frota": "5418",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "111223",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar sistema de controle de pressão do tanque de pulverização, que não está permitindo regulagem adequada e apresenta falha no fechamento dos ramais - (Fazenda NSA)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
         "frota": "5611",
         "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
         "os": "111207",
         "data_entrada": "23/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
         "servico": "Verificar e substituir pino da trincha danificado por quebra - (Fazenda São Paulo)",
         "liberado_por": "Mauricio"
     },
@@ -17,7 +138,7 @@
         "os": "111198",
         "data_entrada": "23/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Fazer solda em trinca na barra lateral do braço - (Fazenda São Pedro)",
         "liberado_por": "Mauricio"
     },
@@ -39,7 +160,7 @@
         "os": "111163",
         "data_entrada": "22/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)",
         "liberado_por": "Mauricio"
     },
@@ -61,7 +182,7 @@
         "os": "111149",
         "data_entrada": "22/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
         "servico": "Fazer solda em trinca na barra - (Fazenda Bela Manhã)",
         "liberado_por": "Mauricio"
     },
@@ -72,7 +193,7 @@
         "os": "111147",
         "data_entrada": "22/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Verificar bomba com vazamento e ruído anormal - (Fazenda São Paulo)",
         "liberado_por": "Mauricio"
     },
@@ -94,7 +215,7 @@
         "os": "111143",
         "data_entrada": "22/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Vazamento na bomba - (Fazenda Casa Branca)",
         "liberado_por": "Mauricio"
     },
@@ -105,7 +226,7 @@
         "os": "111142",
         "data_entrada": "22/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Vazamento no regulador de pressão - (Fazenda Casa Branca)",
         "liberado_por": "Mauricio"
     },
@@ -138,7 +259,7 @@
         "os": "111132",
         "data_entrada": "22/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Vazamento no rotor - (Fazenda NSA)",
         "liberado_por": "Mauricio"
     },
@@ -160,7 +281,7 @@
         "os": "111064",
         "data_entrada": "21/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
         "servico": "Verificar bomba oscilando pressão, após fazer manutenção de vazamento na bomba - (Fazenda Bela Manhã)",
         "liberado_por": "Mauricio"
     },
@@ -182,7 +303,7 @@
         "os": "111061",
         "data_entrada": "21/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Realinhar tanque pegando na bomba - (Fazenda Bela Manhã)",
         "liberado_por": "Mauricio"
     },
@@ -215,19 +336,8 @@
         "os": "111028",
         "data_entrada": "21/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
         "servico": "Quebra da barra, fazer solda e reforço - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "JOSIMAR BADIAS DE JESUS",
-        "frota": "5421",
-        "modelo": "PULVERIZADOR GULIVER 4000",
-        "os": "111026",
-        "data_entrada": "21/05/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Realizar a troca do \"guarda-chuva\" da bomba de pulverização devido a danos ou desgaste - (Fazenda São Pedro)",
         "liberado_por": "Mauricio"
     },
     {
@@ -281,7 +391,7 @@
         "os": "110953",
         "data_entrada": "20/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
         "servico": "Fazer fibra na torre e trocar barra roscada - (Fazenda Estrela)",
         "liberado_por": "Mauricio"
     },
@@ -303,7 +413,7 @@
         "os": "110943",
         "data_entrada": "20/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Rolamento da roda L/? estralando - (Fazenda Santa Izabel)",
         "liberado_por": "Mauricio"
     },
@@ -314,7 +424,7 @@
         "os": "110940",
         "data_entrada": "20/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Substituir arrastador L/E - (Fazenda Estrela)",
         "liberado_por": "Mauricio"
     },
@@ -910,17 +1020,6 @@
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "JOAO VITOR DUBAY DA SILVA",
-        "frota": "5631",
-        "modelo": "DISTRIBUIDO FARTUS 15.0 GRANEL",
-        "os": "109242",
-        "data_entrada": "23/04/2025",
-        "previsao_saida": "25/04/2025",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Esteira quebrada - (Fazenda Estrela)",
         "liberado_por": "Mauricio"
     },
     {

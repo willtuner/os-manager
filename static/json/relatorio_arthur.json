@@ -1,12 +1,122 @@
 [
     {
+        "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
+        "frota": "224",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "111277",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+        "servico": "Vazamento no retentor da TDP - (Fazenda Terra Branca)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+        "frota": "10216",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "111275",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento de óleo no dreno da caixa seca -(Fazenda São Pedro)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ZYLTON FIGUEREDO SPIGUEL",
+        "frota": "5468",
+        "modelo": "MOTOBOMBA MWM MOD 6.12TCA",
+        "os": "111273",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Mangueira do retorno do radiador ressecada e furada - (Fazenda São Paulo)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
+        "frota": "308",
+        "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+        "os": "111271",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Soldar quebra da barra de suporte da grade de proteção traseira - (Fazenda São Paulo)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "301",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "111265",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar braços hidráulicos não sobem 100% da capacidade - (Fazenda NSA)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "DANILO MULARI GONZAGA",
+        "frota": "308",
+        "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+        "os": "111253",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Cibié traseiro não ascende - (Fazenda Estrela)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "5107",
+        "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+        "os": "111236",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "MURILO SILVA 09207298945",
+        "servico": "Solda em terminais do SPE queimado - (Fazenda SP)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "275",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "111222",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+        "servico": "Trocar caixa de filtro de ar quebrada - (Fazenda NSA)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "MAURICIO MARQUES MOURA",
+        "frota": "128",
+        "modelo": "GATOR JOHNN DEERE",
+        "os": "111220",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Verificar funcionamento do botão de acionamento da ventoinha, avaliando possível falha elétrica ou mau contato - (Fazenda São Paulo)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "226",
+        "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+        "os": "111218",
+        "data_entrada": "23/05/2025",
+        "previsao_saida": "---",
+        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+        "servico": "Substituir prisioneiros danificados da TDP (tomada de potência) - (Fazenda São Severino)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
         "frota": "135",
         "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
         "os": "111215",
         "data_entrada": "23/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Quebra da barra de direção necessário avaliação para substituição do componente. - (Fazenda Biscui)",
         "liberado_por": "Arthur"
     },
@@ -17,7 +127,7 @@
         "os": "111200",
         "data_entrada": "23/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Verificar superaquecimento do motor do trator - (Fazenda São Paulo)",
         "liberado_por": "Arthur"
     },
@@ -61,19 +171,8 @@
         "os": "111137",
         "data_entrada": "22/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
         "servico": "Borracha de vedação da porta solda - (Fazenda Alvorada)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
-        "frota": "215",
-        "modelo": "TRATOR JOHN DEERE 5070 E",
-        "os": "111133",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu traseiro L/D furado - (Fazenda NSA)",
         "liberado_por": "Arthur"
     },
     {
@@ -85,17 +184,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Avaliar nível do óleo do motor subindo e aparenta diferença na viscosidade - (Fazenda São Severino)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "315",
-        "modelo": "TRATOR NEW HOLANDTL5.80",
-        "os": "111129",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "PASCOAL SANCHES DIAS - ME",
-        "servico": "Fabricar capa de banco e tapete - (Fazenda São Paulo)",
         "liberado_por": "Arthur"
     },
     {
@@ -133,31 +221,9 @@
     },
     {
         "solicitante": "JOSIMAR BADIAS DE JESUS",
-        "frota": "5659",
-        "modelo": "PULVERIZADOR 4000 LT JACTO",
-        "os": "110982",
-        "data_entrada": "20/05/2025",
-        "previsao_saida": "---",
-        "prestador": "MURILO SILVA 09207298945",
-        "servico": "Fazer solda nos terminais - (Fazenda São Pedro)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "JOSIMAR BADIAS DE JESUS",
         "frota": "5421",
         "modelo": "PULVERIZADOR GULIVER 4000",
         "os": "110980",
-        "data_entrada": "20/05/2025",
-        "previsao_saida": "---",
-        "prestador": "MURILO SILVA 09207298945",
-        "servico": "Fazer solda nos terminais - (Fazenda São Pedro)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "JOSIMAR BADIAS DE JESUS",
-        "frota": "5403",
-        "modelo": "PULVERIZADOR GULIVER 4000",
-        "os": "110979",
         "data_entrada": "20/05/2025",
         "previsao_saida": "---",
         "prestador": "MURILO SILVA 09207298945",
@@ -195,17 +261,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Vazamento na direção - (Fazenda Santa Izabel)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "218",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "110949",
-        "data_entrada": "20/05/2025",
-        "previsao_saida": "---",
-        "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-        "servico": "Verificar luz de óleo do motor acessa no painel - (Fazenda São Paulo)",
         "liberado_por": "Arthur"
     },
     {
@@ -250,17 +305,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Trocar reparo dos pistões da direção - (Fazenda são Pedro)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "JOSIMAR BADIAS DE JESUS",
-        "frota": "257",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "110683",
-        "data_entrada": "16/05/2025",
-        "previsao_saida": "---",
-        "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-        "servico": "Vazamento na bomba injetora - (Fazenda São Pedro)",
         "liberado_por": "Arthur"
     },
     {
@@ -462,6 +506,17 @@
         "liberado_por": "Arthur"
     },
     {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "219",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "110220",
+        "data_entrada": "08/05/2025",
+        "previsao_saida": "09/05/2025",
+        "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
+        "servico": "Correia do motor rompida. Identificada presença de óleo misturado no reservatório de expansão e no radiador, indicando possível falha na junta do cabeçote ou trocador de calor - (Fazenda Casa Branca)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "ALTIERES SOARES FERREIRA",
         "frota": "119",
         "modelo": "TRATOR VALTRA A750F 4X4",
@@ -539,28 +594,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-        "frota": "221",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "109662",
-        "data_entrada": "29/04/2025",
-        "previsao_saida": "29/04/2025",
-        "prestador": "JOCAR LTDA",
-        "servico": "Verificar sistema de ar-condicionado, que apresenta funcionamento do ventilador, porém sem emissão de ar refrigerado - (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-        "frota": "289",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "109661",
-        "data_entrada": "29/04/2025",
-        "previsao_saida": "29/04/2025",
-        "prestador": "JOCAR LTDA",
-        "servico": "Verificar sistema de ar-condicionado, que apresenta funcionamento do ventilador, porém sem emissão de ar refrigerado, após fazer testes foi visto que tinha carga baixa de gás, que vazou na válvula de descarga, foi trocado o núcleo para parar de vazar, trocadores obstruídos, aberto teto para ter acesso a caixa evaporadora, feito lavagem após ficou tudo 100% - (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
         "frota": "86",
         "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -569,39 +602,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "217",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "109541",
-        "data_entrada": "28/04/2025",
-        "previsao_saida": "02/05/2025",
-        "prestador": "JOCAR LTDA",
-        "servico": "A/C só funciona o 4° estagio - (Fazenda Pedra Verde)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "GABRIEL AUGUSTO BASSO",
-        "frota": "109",
-        "modelo": "TRATOR MASSEY FERGUSON 290",
-        "os": "109124",
-        "data_entrada": "23/04/2025",
-        "previsao_saida": "23/04/2025",
-        "prestador": "CICERO MUNIZ DA SILVA",
-        "servico": "Realizar reparo no suporte do sistema de comando hidráulico - (Pecuaria)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "ARTHUR SOUSA OLIVEIRA",
-        "frota": "16",
-        "modelo": "TRATOR MASSEY FERGUSON 275/2",
-        "os": "107650",
-        "data_entrada": "11/04/2025",
-        "previsao_saida": "11/04/2025",
-        "prestador": "CICERO MUNIZ DA SILVA",
-        "servico": "Verificar e revisar embreagem.",
         "liberado_por": "Arthur"
     },
     {
@@ -624,61 +624,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Avaliar carenagens, trocar banco e avaliar braços do hidráulico tortos - (Fazenda São Severino)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
-        "frota": "133",
-        "modelo": "TRATOR NEW HOLLAND TL75E",
-        "os": "108247",
-        "data_entrada": "03/04/2025",
-        "previsao_saida": "03/04/2025",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Trocar cabo do acelerador de pé quebrado.",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "DIEGO GOMES CAMBOI",
-        "frota": "131",
-        "modelo": "TRATOR NEW HOLLAND TL75E",
-        "os": "107983",
-        "data_entrada": "02/04/2025",
-        "previsao_saida": "02/04/2025",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Corrigir vazamentos de óleo embaixo da bomba e filtro hidráulico, acertar vazamento na bomba alimentadora de combustível e avaliar comando hidráulico não responde ao acionar a alavanca.",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "WAGNER GALDINO DA SILVA",
-        "frota": "230",
-        "modelo": "TRATOR VALTRA A124L 4X4",
-        "os": "108032",
-        "data_entrada": "01/04/2025",
-        "previsao_saida": "02/04/2025",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Verificar trator está sem freio e óleo do reservatório contaminado.",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "ZYLTON FIGUEREDO SPIGUEL",
-        "frota": "138",
-        "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-        "os": "107806",
-        "data_entrada": "26/03/2025",
-        "previsao_saida": "26/03/2025",
-        "prestador": "CICERO MUNIZ DA SILVA",
-        "servico": "Verificar barulho anormal no sistema hidráulico.",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "DANILO MULARI GONZAGA",
-        "frota": "5568",
-        "modelo": "PODADEIRA GTM PLT-350",
-        "os": "107027",
-        "data_entrada": "14/03/2025",
-        "previsao_saida": "17/03/2025",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Verificar eletroventilador do sistema de arrefecimento não funciona - (Fazenda Estrela)",
         "liberado_por": "Arthur"
     },
     {
