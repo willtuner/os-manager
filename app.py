@@ -78,13 +78,14 @@ class Finalizacao(db.Model):
     observacoes = db.Column(db.Text)
     registrado_em = db.Column(db.DateTime, default=lambda: saopaulo_tz.localize(datetime.now()))
 
+# Updated: Added timezone=True for explicit timezone-aware storage
 class LoginEvent(db.Model):
     __tablename__ = 'login_events'
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), nullable=False)
     user_type = db.Column(db.String(20), nullable=False)
-    login_time = db.Column(db.DateTime, default=lambda: saopaulo_tz.localize(datetime.now()), nullable=False)
-    logout_time = db.Column(db.DateTime)
+    login_time = db.Column(db.DateTime(timezone=True), default=lambda: saopaulo_tz.localize(datetime.now()), nullable=False)
+    logout_time = db.Column(db.DateTime(timezone=True))
     duration_secs = db.Column(db.Integer)
 
 # --- Constantes de caminho e inicialização do JSON ---
@@ -346,6 +347,7 @@ def login():
         user = User.query.filter_by(username=username).first()
         if user and user.password == senha:
             login_time = saopaulo_tz.localize(datetime.now())
+            logger.debug(f"Setting login_time for {username}: {login_time}")  # Added: Debug logging
             ev = LoginEvent(username=username, user_type='gerente', login_time=login_time)
             db.session.add(ev)
             db.session.commit()
@@ -364,6 +366,7 @@ def login():
         manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if manutencao:
             login_time = saopaulo_tz.localize(datetime.now())
+            logger.debug(f"Setting login_time for {username}: {login_time}")  # Added: Debug logging
             ev = LoginEvent(username=username, user_type='manutencao', login_time=login_time)
             db.session.add(ev)
             db.session.commit()
@@ -382,6 +385,7 @@ def login():
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
             login_time = saopaulo_tz.localize(datetime.now())
+            logger.debug(f"Setting login_time for {username}: {login_time}")  # Added: Debug logging
             ev = LoginEvent(username=username, user_type=prestador.get('tipo', 'prestador'), login_time=login_time)
             db.session.add(ev)
             db.session.commit()
@@ -687,10 +691,11 @@ def atribuir_prestador(os_numero):
         flash('Erro ao atribuir prestador', 'danger')
     return redirect(url_for('painel_manutencao'))
 
+# Updated: Simplified timezone handling for login_events
 @app.route('/admin')
 def admin_panel():
     if not session.get('is_admin'):
-        flash('Acesso negado','danger')
+        flash('Acesso negado', 'danger')
         return redirect(url_for('login'))
 
     periodo = request.args.get('periodo', 'todos')
@@ -729,20 +734,12 @@ def admin_panel():
     login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
 
     for event in login_events:
-        if event.login_time.tzinfo is None:
-            event.login_time = saopaulo_tz.localize(event.login_time)
-        else:
-            event.login_time = event.login_time.astimezone(saopaulo_tz)
-
-        if event.logout_time:
-            if event.logout_time.tzinfo is None:
-                event.logout_time = saopaulo_tz.localize(event.logout_time)
-            else:
-                event.logout_time = event.logout_time.astimezone(saopaulo_tz)
-
+        # Ensure login_time is in São Paulo timezone
         event.login_time_formatted = format_datetime(event.login_time)
+        # Ensure logout_time is in São Paulo timezone, if it exists
         event.logout_time_formatted = format_datetime(event.logout_time) if event.logout_time else None
-        if event.logout_time and event.duration_secs:
+        # Recalculate duration if logout_time exists
+        if event.logout_time:
             duration = (event.logout_time - event.login_time).total_seconds()
             event.duration_secs = int(max(0, duration))
 
@@ -779,7 +776,7 @@ def admin_panel():
 @app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():
     if not session.get('is_admin'):
-        flash('Acesso negado','danger')
+        flash('Acesso negado', 'danger')
         return redirect(url_for('login'))
 
     periodo = request.args.get('periodo', 'todos')
@@ -815,7 +812,7 @@ def exportar_os_finalizadas():
 
     allf = query.all()
     if not allf:
-        flash('Nenhuma OS finalizada para o período selecionado','warning')
+        flash('Nenhuma OS finalizada para o período selecionado', 'warning')
         return redirect(url_for('admin_panel'))
 
     pdf_path = os.path.join(BASE_DIR, 'relatorio.pdf')
@@ -858,6 +855,7 @@ def logout():
         ev = LoginEvent.query.get(ev_id)
         if ev:
             logout_time = saopaulo_tz.localize(datetime.now())
+            logger.debug(f"Setting logout_time for {ev.username}: {logout_time}")  # Added: Debug logging
             if ev.login_time.tzinfo is None:
                 ev.login_time = saopaulo_tz.localize(ev.login_time)
             else:
