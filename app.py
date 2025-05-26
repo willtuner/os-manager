@@ -586,7 +586,7 @@ if not data_fin_obj:
     flash('Formato de data inválido.', 'danger')
     return redirect(url_for('finalizar_os', os_numero=os_numero))
 
-        fz = Finalizacao(
+fz = Finalizacao(
             os_numero=os_numero,
             gerente=responsavel,
             data_fin=data_fin,
