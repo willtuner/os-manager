@@ -1,5 +1,45 @@
 [
   {
+    "frota": "10217",
+    "cd_equipamento": "10217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111262",
+    "data_entrada": "24/05/2025",
+    "servico": "Troca instalação da sirene de ré\nFaz Casa Branca\nSolicitado João\nAutorizado Arthur"
+  },
+  {
+    "frota": "257",
+    "cd_equipamento": "257",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111261",
+    "data_entrada": "24/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz São Paulo\nSolicitado Giovane\nAutorizado Arthur"
+  },
+  {
+    "frota": "308",
+    "cd_equipamento": "308",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "111253",
+    "data_entrada": "23/05/2025",
+    "servico": "Cibié traseiro não ascende - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5699",
+    "cd_equipamento": "5699",
+    "modelo": "PULVERIZADOR 600 LT",
+    "os": "111247",
+    "data_entrada": "23/05/2025",
+    "servico": "Verificar sistema de acionamento do drench, que permanece em funcionamento contínuo, sem interrupção na aplicação do produto. - (Fazenda Santa Izabel)\nLiberado Sr.  Arthur"
+  },
+  {
+    "frota": "128",
+    "cd_equipamento": "128",
+    "modelo": "GATOR JOHNN DEERE",
+    "os": "111220",
+    "data_entrada": "23/05/2025",
+    "servico": "Verificar funcionamento do botão de acionamento da ventoinha, avaliando possível falha elétrica ou mau contato - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "157",
     "cd_equipamento": "157",
     "modelo": "TRATOR JOHN DEERE 5055E",
@@ -14,14 +54,6 @@
     "os": "110746",
     "data_entrada": "16/05/2025",
     "servico": "Revisar sistema eletrico\nFaz Nova Manha\nSolicitado Adriano/Zacarias\nAutorizado Arthur"
-  },
-  {
-    "frota": "285",
-    "cd_equipamento": "285",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110679",
-    "data_entrada": "16/05/2025",
-    "servico": "Cibié apaga após certo tempo de uso, possivelmente por superaquecimento. Verificar fiação, conexões e integridade do farol, suspeita de mau contato ou falha no soquete/lâmpada. - (Fazenda NSA)\nLiberado Sr. Arthuur"
   },
   {
     "frota": "10220",

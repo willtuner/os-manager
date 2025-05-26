@@ -1,11 +1,35 @@
 [
   {
+    "frota": "5240",
+    "cd_equipamento": "5240",
+    "modelo": "MOTOR IRRIGA TURBOMAQ 125 GS",
+    "os": "111260",
+    "data_entrada": "23/05/2025",
+    "servico": "Verificar mola de trava do hidrorol - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5611",
+    "cd_equipamento": "5611",
+    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
+    "os": "111207",
+    "data_entrada": "23/05/2025",
+    "servico": "Verificar e substituir pino da trincha danificado por quebra - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5571",
     "cd_equipamento": "5571",
     "modelo": "CARRETA TRANSBORDO GTM",
     "os": "111150",
     "data_entrada": "22/05/2025",
     "servico": "Fazer solda - (Fazenda Estrela)\nLiberado Sr. Valdomiro"
+  },
+  {
+    "frota": "5522",
+    "cd_equipamento": "5522",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "111149",
+    "data_entrada": "22/05/2025",
+    "servico": "Fazer solda em trinca na barra - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5205",

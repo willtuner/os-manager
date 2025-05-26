@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5227",
+    "cd_equipamento": "5227",
+    "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
+    "os": "111235",
+    "data_entrada": "23/05/2025",
+    "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5350",
+    "cd_equipamento": "5350",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "111225",
+    "data_entrada": "23/05/2025",
+    "servico": "Verificar vazamento de óleo no conjunto do rotor da roçadeira, avaliando possível falha em retentores ou vedação do sistema - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111163",
+    "data_entrada": "22/05/2025",
+    "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5677",
     "cd_equipamento": "5677",
     "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
@@ -8,12 +32,44 @@
     "servico": "Instalar palhetas distribuidoras nos discos de distribuição de adubo e protetores traseiros nas esteiras. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5492",
-    "cd_equipamento": "5492",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "111030",
-    "data_entrada": "21/05/2025",
-    "servico": "Verificar equipamento está pulverizando em apenas um dos lados (já verificado parte elétrica).\nFazenda Aparecida\nSolicitado Sr. Paulo\nLiberado Sr. Maurício"
+    "frota": "5722",
+    "cd_equipamento": "5722",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "111147",
+    "data_entrada": "22/05/2025",
+    "servico": "Verificar bomba com vazamento e ruído anormal - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111143",
+    "data_entrada": "22/05/2025",
+    "servico": "Vazamento na bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5748",
+    "cd_equipamento": "5748",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111142",
+    "data_entrada": "22/05/2025",
+    "servico": "Vazamento no regulador de pressão - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5730",
+    "cd_equipamento": "5730",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "111132",
+    "data_entrada": "22/05/2025",
+    "servico": "Vazamento no rotor - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5740",
+    "cd_equipamento": "5740",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "111128",
+    "data_entrada": "22/05/2025",
+    "servico": "Trocar jogo de fação, jogo de embreagem e tirar vazamento no retentor do multiplicador - (Fazenda Santa Izabel)\nLiberado Sr. Mauiricio"
   },
   {
     "frota": "5569",
@@ -22,6 +78,22 @@
     "os": "111020",
     "data_entrada": "21/05/2025",
     "servico": "Tirar jogo das rodas guias  - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5721",
+    "cd_equipamento": "5721",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "110943",
+    "data_entrada": "20/05/2025",
+    "servico": "Rolamento da roda L/? estralando - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "110940",
+    "data_entrada": "20/05/2025",
+    "servico": "Substituir arrastador L/E - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5722",

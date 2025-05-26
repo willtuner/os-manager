@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5405",
+    "cd_equipamento": "5405",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "111269",
+    "data_entrada": "26/05/2025",
+    "servico": "Trocar corrente de segurança - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5496",
+    "cd_equipamento": "5496",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "111268",
+    "data_entrada": "26/05/2025",
+    "servico": "Trocar corrente de segurança - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5414",
+    "cd_equipamento": "5414",
+    "modelo": "DIST. ADUBO DCA2 7500 S-0114",
+    "os": "111267",
+    "data_entrada": "26/05/2025",
+    "servico": "Trocar corrente de segurança - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5318",
+    "cd_equipamento": "5318",
+    "modelo": "ADUBADEIRA CALCARIO TATU",
+    "os": "111266",
+    "data_entrada": "26/05/2025",
+    "servico": "Soldar suporte de corrente de segurança e corrente de segurança  - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "223",
     "cd_equipamento": "223",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -16,6 +48,14 @@
     "servico": "Troca dos paralamas e instalação das proteções \nFaz São Jose\nSolicitado Gilberto\nAutorizado Arthur"
   },
   {
+    "frota": "5233",
+    "cd_equipamento": "5233",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111198",
+    "data_entrada": "23/05/2025",
+    "servico": "Fazer solda em trinca na barra lateral do braço - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5459",
     "cd_equipamento": "5459",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -30,6 +70,14 @@
     "os": "111118",
     "data_entrada": "21/05/2025",
     "servico": "Sacar parafuso do volante\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
+  },
+  {
+    "frota": "5603",
+    "cd_equipamento": "5603",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "111061",
+    "data_entrada": "21/05/2025",
+    "servico": "Realinhar tanque pegando na bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5604",

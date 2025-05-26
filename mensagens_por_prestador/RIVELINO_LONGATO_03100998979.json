@@ -1,5 +1,21 @@
 [
   {
+    "frota": "157",
+    "cd_equipamento": "157",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "111276",
+    "data_entrada": "26/05/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "211",
+    "cd_equipamento": "211",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "111228",
+    "data_entrada": "23/05/2025",
+    "servico": "Consertar pneu dianteiro esquerdo furado.\nFazenda São Paulo *(Oficina Agrícola - Viveiro)*\nLiberado Sr. Maurício"
+  },
+  {
     "frota": "44",
     "cd_equipamento": "44",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
@@ -38,14 +54,6 @@
     "os": "111134",
     "data_entrada": "22/05/2025",
     "servico": "Pneu dianteiro L/E furado - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "215",
-    "cd_equipamento": "215",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "111133",
-    "data_entrada": "22/05/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
     "frota": "72",

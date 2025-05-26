@@ -1,5 +1,45 @@
 [
   {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111277",
+    "data_entrada": "26/05/2025",
+    "servico": "Vazamento no retentor da TDP - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "275",
+    "cd_equipamento": "275",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111222",
+    "data_entrada": "23/05/2025",
+    "servico": "Trocar caixa de filtro de ar quebrada - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "226",
+    "cd_equipamento": "226",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "111218",
+    "data_entrada": "23/05/2025",
+    "servico": "Substituir prisioneiros danificados da TDP (tomada de potência) - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "135",
+    "cd_equipamento": "135",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "111215",
+    "data_entrada": "23/05/2025",
+    "servico": "Quebra da barra de direção necessário avaliação para substituição do componente. - (Fazenda Biscui)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "125",
+    "cd_equipamento": "125",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "111200",
+    "data_entrada": "23/05/2025",
+    "servico": "Verificar superaquecimento do motor do trator - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "254",
     "cd_equipamento": "254",
     "modelo": "TRATOR JOHN DEERE 5080E",
