@@ -1,5 +1,93 @@
 [
     {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "5747",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "111328",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Trocar correia quebrada e vazamento na bomba - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "5748",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "111327",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Trocar correia quebrada e vazamento na bomba - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5425",
+        "modelo": "PULVERIZADOR 2000 LT FMC",
+        "os": "111325",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Soldar suporte traseiro para transporte de cone para sinalização - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "5009",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "111306",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Verificar correias viradas e trincadas - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "5367",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "111304",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Trocar registros - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ALTIERES SOARES FERREIRA",
+        "frota": "5383",
+        "modelo": "CARRINHO MOTOR DE IRRIGACAO",
+        "os": "111287",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+        "servico": "Conectar mangueira do carrinho - (Fazenda Pedra Verde)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ZYLTON FIGUEREDO SPIGUEL",
+        "frota": "5779",
+        "modelo": "VALETADEIRA",
+        "os": "111282",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer solda em trinca no suporte da caixa de óleo - (Fazenda Pedra Verde)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5660",
+        "modelo": "PULVERIZADOR 4000 LT JACTO",
+        "os": "111281",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer solda na em quebra na torre - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
         "frota": "157",
         "modelo": "TRATOR JOHN DEERE 5055E",
@@ -8,50 +96,6 @@
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
         "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
-        "frota": "5405",
-        "modelo": "ROCADEIRA RC2 E 4500 TATU",
-        "os": "111269",
-        "data_entrada": "26/05/2025",
-        "previsao_saida": "---",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Trocar corrente de segurança - (Fazenda Minuano)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
-        "frota": "5496",
-        "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-        "os": "111268",
-        "data_entrada": "26/05/2025",
-        "previsao_saida": "---",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Trocar corrente de segurança - (Fazenda Minuano)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
-        "frota": "5414",
-        "modelo": "DIST. ADUBO DCA2 7500 S-0114",
-        "os": "111267",
-        "data_entrada": "26/05/2025",
-        "previsao_saida": "---",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Trocar corrente de segurança - (Fazenda Minuano)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
-        "frota": "5318",
-        "modelo": "ADUBADEIRA CALCARIO TATU",
-        "os": "111266",
-        "data_entrada": "26/05/2025",
-        "previsao_saida": "---",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Soldar suporte de corrente de segurança e corrente de segurança  - (Fazenda Minuano)",
         "liberado_por": "Mauricio"
     },
     {
@@ -220,17 +264,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
-        "frota": "5748",
-        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-        "os": "111142",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Vazamento no regulador de pressão - (Fazenda Casa Branca)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "ADRIANO CLAUDIO FIRMINO",
         "frota": "208",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -272,17 +305,6 @@
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
         "servico": "Verificar pneu dianteiro L/E com \"problema\" - (Industria)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "MURILO J ONCK LEMES DA SILVA",
-        "frota": "5522",
-        "modelo": "PUL.TURBO 4000 NATALI ALFA",
-        "os": "111064",
-        "data_entrada": "21/05/2025",
-        "previsao_saida": "---",
-        "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-        "servico": "Verificar bomba oscilando pressão, após fazer manutenção de vazamento na bomba - (Fazenda Bela Manhã)",
         "liberado_por": "Mauricio"
     },
     {

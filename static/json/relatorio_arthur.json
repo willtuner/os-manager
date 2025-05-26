@@ -1,5 +1,104 @@
 [
     {
+        "solicitante": "JOSIMAR BADIAS DE JESUS",
+        "frota": "159",
+        "modelo": "TRATOR JOHN DEERE 5055E",
+        "os": "111326",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer solda na tubagem do escapamento - (Fazenda São Pedro)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ARTHUR SOUSA OLIVEIRA",
+        "frota": "72",
+        "modelo": "TRATOR JOHN DEERE 5403 4X4",
+        "os": "111308",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Trator com ruído anormal ao dar partida \"raspando motor de arranque\"  - (Industria)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "74",
+        "modelo": "TRATOR JOHN DEERE 5403 4X4",
+        "os": "111296",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Trator apresentando sobrecarga no sistema elétrico, resultando em estouro da bateria. Necessário verificar o regulador de tensão, alternador, cabos de alimentação e possíveis curtos no circuito elétrico. - (Fazenda São Paulo)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "JOHN LENNON DA SILVA",
+        "frota": "67",
+        "modelo": "TRATOR JOHN DEERE 5403 4X4",
+        "os": "111293",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento de óleo no motor - (Fazenda Santa Luiza)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
+        "frota": "46",
+        "modelo": "TRATOR JOHN DEERE 5600 4X4",
+        "os": "111289",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Sistema de ventilação inoperante. Ventilador do sistema de resfriamento de óleo da podadeira e ventilador da cabine do operador não estão acionando. - (Fazenda Minuano)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ALTIERES SOARES FERREIRA",
+        "frota": "119",
+        "modelo": "TRATOR VALTRA A750F 4X4",
+        "os": "111288",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento de diesel - (Fazenda Pedra Verde)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ADRIANO CLAUDIO FIRMINO",
+        "frota": "17",
+        "modelo": "TRATOR MASSEY FERGUSON 275/2",
+        "os": "111285",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Trocar banco - (Fazenda Nova Manhã)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ADRIANO CLAUDIO FIRMINO",
+        "frota": "70",
+        "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+        "os": "111284",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "CICERO MUNIZ DA SILVA",
+        "servico": "Verificar vazamento de óleo em baixo do trator - (Fazenda Nova Manhã)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ADRIANO CLAUDIO FIRMINO",
+        "frota": "106",
+        "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+        "os": "111283",
+        "data_entrada": "26/05/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Sirene de ré, buzina e velocímetro não funcionam - (Fazenda Nova Manhã)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
         "frota": "224",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -72,7 +171,7 @@
         "os": "111236",
         "data_entrada": "23/05/2025",
         "previsao_saida": "---",
-        "prestador": "MURILO SILVA 09207298945",
+        "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
         "servico": "Solda em terminais do SPE queimado - (Fazenda SP)",
         "liberado_por": "Arthur"
     },
@@ -129,17 +228,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Verificar superaquecimento do motor do trator - (Fazenda São Paulo)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "JOSIMAR BADIAS DE JESUS",
-        "frota": "157",
-        "modelo": "TRATOR JOHN DEERE 5055E",
-        "os": "111197",
-        "data_entrada": "23/05/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Verificar trator não funciona ponteiro do RPM - (Fazenda São Pedro)",
         "liberado_por": "Arthur"
     },
     {
@@ -226,7 +314,7 @@
         "os": "110980",
         "data_entrada": "20/05/2025",
         "previsao_saida": "---",
-        "prestador": "MURILO SILVA 09207298945",
+        "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
         "servico": "Fazer solda nos terminais - (Fazenda São Pedro)",
         "liberado_por": "Arthur"
     },
@@ -451,17 +539,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
-        "frota": "248",
-        "modelo": "TRATOR JOHN DEERE 5080EN",
-        "os": "110506",
-        "data_entrada": "14/05/2025",
-        "previsao_saida": "---",
-        "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-        "servico": "Fechadura da porta com mau funcionamento, não está travando corretamente - (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
         "frota": "224",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -481,17 +558,6 @@
         "previsao_saida": "---",
         "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
         "servico": "Verificar código de erro no painel \"E-18\"  - (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "44",
-        "modelo": "TRATOR JOHN DEERE 6415 4X4",
-        "os": "110231",
-        "data_entrada": "08/05/2025",
-        "previsao_saida": "---",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Desamassar proteções (Fazenda SP)",
         "liberado_por": "Arthur"
     },
     {
@@ -616,7 +682,7 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "RAFAEL VENANCIO DA COSTA",
+        "solicitante": "ARTHUR SOUSA OLIVEIRA",
         "frota": "87",
         "modelo": "TRATOR JOHN DEERE 5403 4X4",
         "os": "108581",
