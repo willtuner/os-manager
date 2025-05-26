@@ -852,16 +852,6 @@ def logout():
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
         if ev:
-        logout_time = saopaulo_tz.localize(datetime.now())
-        if ev.login_time.tzinfo is None:
-            ev.login_time = saopaulo_tz.localize(ev.login_time)
-        else:
-            ev.login_time = ev.login_time.astimezone(saopaulo_tz)
-
-        ev.logout_time = logout_time
-        duration = (ev.logout_time - ev.login_time).total_seconds()
-        ev.duration_secs = int(max(0, duration))
-        logger.info(f"Logout de {ev.username}: login às {format_datetime(ev.login_time)}, logout às {format_datetime(ev.logout_time)}, duração: {ev.duration_secs} segundos")
             logout_time = saopaulo_tz.localize(datetime.now())
             if ev.login_time.tzinfo is None:
                 ev.login_time = saopaulo_tz.localize(ev.login_time)
@@ -873,9 +863,11 @@ def logout():
             ev.duration_secs = int(max(0, duration))
             logger.info(f"Logout de {ev.username}: login às {format_datetime(ev.login_time)}, logout às {format_datetime(ev.logout_time)}, duração: {ev.duration_secs} segundos")
             db.session.commit()
+
     session.clear()
     flash('Desconectado', 'info')
     return redirect(url_for('login'))
+
 
 with app.app_context():
     init_db()
