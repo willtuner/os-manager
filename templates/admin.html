@@ -562,7 +562,9 @@
             <td>{{ ev.user_type.capitalize() }}</td>
             <td>{{ ev.login_time_formatted }}</td>  <!-- CORREÇÃO AQUI -->
             <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
-            <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
+            <td>{% if ev.duration_secs is not none %}
+  {{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s
+{% else %}<span class="text-muted">—</span>{% endif %}</td>{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
           </tr>
           {% endfor %}
           {% if not login_events %}
