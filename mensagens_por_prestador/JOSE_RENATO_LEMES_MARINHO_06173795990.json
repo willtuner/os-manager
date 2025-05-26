@@ -1,35 +1,11 @@
 [
   {
-    "frota": "5405",
-    "cd_equipamento": "5405",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "111269",
+    "frota": "5425",
+    "cd_equipamento": "5425",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "111325",
     "data_entrada": "26/05/2025",
-    "servico": "Trocar corrente de segurança - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5496",
-    "cd_equipamento": "5496",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "111268",
-    "data_entrada": "26/05/2025",
-    "servico": "Trocar corrente de segurança - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5414",
-    "cd_equipamento": "5414",
-    "modelo": "DIST. ADUBO DCA2 7500 S-0114",
-    "os": "111267",
-    "data_entrada": "26/05/2025",
-    "servico": "Trocar corrente de segurança - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5318",
-    "cd_equipamento": "5318",
-    "modelo": "ADUBADEIRA CALCARIO TATU",
-    "os": "111266",
-    "data_entrada": "26/05/2025",
-    "servico": "Soldar suporte de corrente de segurança e corrente de segurança  - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+    "servico": "Soldar suporte traseiro para transporte de cone para sinalização - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "223",
@@ -224,14 +200,6 @@
     "servico": "Realizar a remoção de um gomo da esteira para ajuste do tensionamento - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "110231",
-    "data_entrada": "08/05/2025",
-    "servico": "Desamassar proteções (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5603",
     "cd_equipamento": "5603",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -254,14 +222,6 @@
     "os": "110077",
     "data_entrada": "06/05/2025",
     "servico": "Colocar limitador nas asas e tirar folga nas rodas - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5111",
-    "cd_equipamento": "5111",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "109972",
-    "data_entrada": "05/05/2025",
-    "servico": "Fazer chapa para a fixação de proteção do cardam - (Oficina)\nLiberado Sr. Rafael"
   },
   {
     "frota": "5117",

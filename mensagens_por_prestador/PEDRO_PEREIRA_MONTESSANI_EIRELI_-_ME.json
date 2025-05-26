@@ -1,5 +1,29 @@
 [
   {
+    "frota": "74",
+    "cd_equipamento": "74",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111296",
+    "data_entrada": "26/05/2025",
+    "servico": "Trator apresentando sobrecarga no sistema elétrico, resultando em estouro da bateria. Necessário verificar o regulador de tensão, alternador, cabos de alimentação e possíveis curtos no circuito elétrico. - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "46",
+    "cd_equipamento": "46",
+    "modelo": "TRATOR JOHN DEERE 5600 4X4",
+    "os": "111289",
+    "data_entrada": "26/05/2025",
+    "servico": "Sistema de ventilação inoperante. Ventilador do sistema de resfriamento de óleo da podadeira e ventilador da cabine do operador não estão acionando. - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "106",
+    "cd_equipamento": "106",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "111283",
+    "data_entrada": "26/05/2025",
+    "servico": "Sirene de ré, buzina e velocímetro não funcionam - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "10217",
     "cd_equipamento": "10217",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -38,14 +62,6 @@
     "os": "111220",
     "data_entrada": "23/05/2025",
     "servico": "Verificar funcionamento do botão de acionamento da ventoinha, avaliando possível falha elétrica ou mau contato - (Fazenda São Paulo)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "157",
-    "cd_equipamento": "157",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "111197",
-    "data_entrada": "23/05/2025",
-    "servico": "Verificar trator não funciona ponteiro do RPM - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "106",

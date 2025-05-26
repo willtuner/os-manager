@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5009",
+    "cd_equipamento": "5009",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111306",
+    "data_entrada": "26/05/2025",
+    "servico": "Verificar correias viradas e trincadas - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5367",
+    "cd_equipamento": "5367",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111304",
+    "data_entrada": "26/05/2025",
+    "servico": "Trocar registros - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5227",
     "cd_equipamento": "5227",
     "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
@@ -46,14 +62,6 @@
     "os": "111143",
     "data_entrada": "22/05/2025",
     "servico": "Vazamento na bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5748",
-    "cd_equipamento": "5748",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111142",
-    "data_entrada": "22/05/2025",
-    "servico": "Vazamento no regulador de pressão - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5730",

@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5383",
+    "cd_equipamento": "5383",
+    "modelo": "CARRINHO MOTOR DE IRRIGACAO",
+    "os": "111287",
+    "data_entrada": "26/05/2025",
+    "servico": "Conectar mangueira do carrinho - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5240",
     "cd_equipamento": "5240",
     "modelo": "MOTOR IRRIGA TURBOMAQ 125 GS",
@@ -14,14 +22,6 @@
     "os": "111207",
     "data_entrada": "23/05/2025",
     "servico": "Verificar e substituir pino da trincha danificado por quebra - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5571",
-    "cd_equipamento": "5571",
-    "modelo": "CARRETA TRANSBORDO GTM",
-    "os": "111150",
-    "data_entrada": "22/05/2025",
-    "servico": "Fazer solda - (Fazenda Estrela)\nLiberado Sr. Valdomiro"
   },
   {
     "frota": "5522",
