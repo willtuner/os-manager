@@ -1,6 +1,12 @@
 [
   {
-    "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "74",
+    "os": "111296",
+    "data": "26/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trator apresentando sobrecarga no sistema elétrico, resultando em estouro da bateria. Necessário verificar o regulador de tensão, alternador, cabos de alimentação e possíveis curtos no circuito elétrico. - (Fazenda São Paulo)"
+  },
+  {
     "frota": "257",
     "os": "111261",
     "data": "24/05/2025",
@@ -11,7 +17,7 @@
     "frota": "5107",
     "os": "111236",
     "data": "23/05/2025",
-    "prestador": "MURILO SILVA 09207298945",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
     "servico": "Solda em terminais do SPE queimado - (Fazenda SP)"
   },
   {
@@ -111,13 +117,6 @@
     "data": "08/05/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Avaliar vazamento de óleo no rotor e régua empenada - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "44",
-    "os": "110231",
-    "data": "08/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Desamassar proteções (Fazenda SP)"
   },
   {
     "frota": "218",
