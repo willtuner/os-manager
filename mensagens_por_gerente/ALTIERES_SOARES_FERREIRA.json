@@ -1,6 +1,27 @@
 [
   {
     "solicitado": "ALTIERES SOARES FERREIRA",
+    "frota": "5470",
+    "os": "111263",
+    "data": "24/05/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Revisa bomba de alimentação"
+  },
+  {
+    "frota": "5240",
+    "os": "111260",
+    "data": "23/05/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Verificar mola de trava do hidrorol - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "223",
+    "os": "111256",
+    "data": "23/05/2025",
+    "prestador": "DARCI CAPEL & CIA LTDA",
+    "servico": "substituir ponta estriada eixo pinhão da tração"
+  },
+  {
     "frota": "223",
     "os": "111217",
     "data": "23/05/2025",
