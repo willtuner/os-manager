@@ -573,13 +573,19 @@ def finalizar_os(os_numero):
             flash('Data e hora de finalização são obrigatórias.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
-        # Converter data do formato YYYY-MM-DD para DD/MM/YYYY
-        try:
-            data_fin_obj = datetime.strptime(data_fin, '%Y-%m-%d')
-            data_fin = data_fin_obj.strftime('%d/%m/%Y')
-        except ValueError:
-            flash('Formato de data inválido.', 'danger')
-            return redirect(url_for('finalizar_os', os_numero=os_numero))
+# Aceita data nos formatos YYYY-MM-DD ou DD/MM/YYYY
+for fmt in ('%Y-%m-%d', '%d/%m/%Y'):
+    try:
+        data_fin_obj = datetime.strptime(data_fin, fmt)
+        data_fin = data_fin_obj.strftime('%d/%m/%Y')
+        break
+    except ValueError:
+        data_fin_obj = None
+
+if not data_fin_obj:
+    flash('Formato de data inválido.', 'danger')
+    return redirect(url_for('finalizar_os', os_numero=os_numero))
+
 
         fz = Finalizacao(
             os_numero=os_numero,
