@@ -1,5 +1,71 @@
 [
     {
+        "solicitante": "JOHN LENNON DA SILVA",
+        "frota": "5217",
+        "modelo": "ROCADEIRA RC2 E 4500 TATU",
+        "os": "111383",
+        "data_entrada": "27/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Trocar rolamento da roda L/? - (Fazenda Santa Luiza)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "DANILO MULARI GONZAGA",
+        "frota": "5524",
+        "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+        "os": "111380",
+        "data_entrada": "27/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Substituir rolamento e mancal L/E - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "5418",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "111347",
+        "data_entrada": "27/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Rolamento do eixo da turbina quebrado - (Fazenda NSA)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "5367",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "111343",
+        "data_entrada": "27/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Trinca na solda feita na estrutura da torre - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "NELSON BUSATO DOS SANTOS NETO",
+        "frota": "5555",
+        "modelo": "TANQUE DE AGUA 7000 LT FACCHIN",
+        "os": "111338",
+        "data_entrada": "27/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Roda lado esquerdo (L/E) do tanque se desprendeu, aparentemente devido à falha ou soltura do rolamento. - (Fazenda Estrela 6)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "308",
+        "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+        "os": "111333",
+        "data_entrada": "27/05/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu dianteiro L/D furado - (Fazenda SP)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
         "frota": "5747",
         "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -51,18 +117,7 @@
         "data_entrada": "26/05/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Trocar registros - (Fazenda Estrela)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "5383",
-        "modelo": "CARRINHO MOTOR DE IRRIGACAO",
-        "os": "111287",
-        "data_entrada": "26/05/2025",
-        "previsao_saida": "---",
-        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Conectar mangueira do carrinho - (Fazenda Pedra Verde)",
+        "servico": "Trocar registros e caixa incorporadora - (Fazenda Estrela)",
         "liberado_por": "Mauricio"
     },
     {
@@ -74,39 +129,6 @@
         "previsao_saida": "---",
         "prestador": "nan",
         "servico": "Fazer solda em trinca no suporte da caixa de óleo - (Fazenda Pedra Verde)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
-        "frota": "5660",
-        "modelo": "PULVERIZADOR 4000 LT JACTO",
-        "os": "111281",
-        "data_entrada": "26/05/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Fazer solda na em quebra na torre - (Fazenda São Severino)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
-        "frota": "157",
-        "modelo": "TRATOR JOHN DEERE 5055E",
-        "os": "111276",
-        "data_entrada": "26/05/2025",
-        "previsao_saida": "---",
-        "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "5240",
-        "modelo": "MOTOR IRRIGA TURBOMAQ 125 GS",
-        "os": "111260",
-        "data_entrada": "23/05/2025",
-        "previsao_saida": "---",
-        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Verificar mola de trava do hidrorol - (Fazenda Pedra Verde)",
         "liberado_por": "Mauricio"
     },
     {
@@ -165,17 +187,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "5611",
-        "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-        "os": "111207",
-        "data_entrada": "23/05/2025",
-        "previsao_saida": "---",
-        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Verificar e substituir pino da trincha danificado por quebra - (Fazenda São Paulo)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
         "frota": "5233",
         "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -209,28 +220,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "MARCIO JUNIO NUNES DE OLIVEIRA",
-        "frota": "5677",
-        "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-        "os": "111155",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Instalar palhetas distribuidoras nos discos de distribuição de adubo e protetores traseiros nas esteiras. - (Fazenda São Severino)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "MURILO J ONCK LEMES DA SILVA",
-        "frota": "5522",
-        "modelo": "PUL.TURBO 4000 NATALI ALFA",
-        "os": "111149",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Fazer solda em trinca na barra - (Fazenda Bela Manhã)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
         "frota": "5722",
         "modelo": "TANQUE DE AGUA 2000 LT",
@@ -250,17 +239,6 @@
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
         "servico": "Pneu dianteiro furado L/? - (Fazenda Casa Branca)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
-        "frota": "5365",
-        "modelo": "PULVERIZADOR 4000 LT - NATALI",
-        "os": "111143",
-        "data_entrada": "22/05/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Vazamento na bomba - (Fazenda Casa Branca)",
         "liberado_por": "Mauricio"
     },
     {
@@ -429,17 +407,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "DIEGO GOMES CAMBOI",
-        "frota": "5721",
-        "modelo": "TANQUE DE AGUA 2000 LT",
-        "os": "110943",
-        "data_entrada": "20/05/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Rolamento da roda L/? estralando - (Fazenda Santa Izabel)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "DANILO MULARI GONZAGA",
         "frota": "5106",
         "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -448,17 +415,6 @@
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Substituir arrastador L/E - (Fazenda Estrela)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "5722",
-        "modelo": "TANQUE DE AGUA 2000 LT",
-        "os": "110819",
-        "data_entrada": "19/05/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Quebra da corrente de transmissão da bomba - (Fazenda SP)",
         "liberado_por": "Mauricio"
     },
     {
@@ -520,17 +476,6 @@
         "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
         "frota": "5693",
         "modelo": "PULVERIZADOR 2000 LT",
-        "os": "110803",
-        "data_entrada": "19/05/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Verificar vazamento na bomba - (Fazenda São Paulo)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "5693",
-        "modelo": "PULVERIZADOR 2000 LT",
         "os": "110802",
         "data_entrada": "19/05/2025",
         "previsao_saida": "---",
@@ -583,7 +528,7 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "DIEGO GOMES CAMBOI",
+        "solicitante": "ROMES ROSA SILVA",
         "frota": "5737",
         "modelo": "ROCADEIRA RC2 E 4500 TATU",
         "os": "110725",
@@ -613,17 +558,6 @@
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Fazer proteção na caixa de transporte - (Fazenda São Severino)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "MURILO J ONCK LEMES DA SILVA",
-        "frota": "5264",
-        "modelo": "PULVERIZADOR 2000 LT",
-        "os": "110661",
-        "data_entrada": "16/05/2025",
-        "previsao_saida": "---",
-        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Fazer solda no suporte do corote e verificar mola da barra - (Fazenda Bela Manhã)",
         "liberado_por": "Mauricio"
     },
     {
@@ -671,17 +605,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
-        "frota": "5366",
-        "modelo": "PULVERIZADOR 4000 LT - NATALI",
-        "os": "110601",
-        "data_entrada": "15/05/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Folga no eixo da roda L/D - (Fazenda Minuano)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "ADRIANO CLAUDIO FIRMINO",
         "frota": "5600",
         "modelo": "ATOMIZADOR NATALI 4000 LT",
@@ -726,17 +649,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "DANILO MULARI GONZAGA",
-        "frota": "5494",
-        "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-        "os": "110534",
-        "data_entrada": "14/05/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Substituir corrente das engrenagens do sistema de transmissão e trocar rolamento L/D  - (Fazenda Estrela)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
         "frota": "5261",
         "modelo": "PULVERIZADOR 2000 LT",
@@ -778,17 +690,6 @@
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "DIEGO GOMES CAMBOI",
-        "frota": "5290",
-        "modelo": "PULVERIZADOR 4000 LT - NATALI",
-        "os": "110440",
-        "data_entrada": "13/05/2025",
-        "previsao_saida": "---",
-        "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-        "servico": "Quebra da proteção das correias da bomba  - (Fazenda Santa Izabel)",
         "liberado_por": "Mauricio"
     },
     {
