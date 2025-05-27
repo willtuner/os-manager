@@ -546,16 +546,7 @@ def finalizar_os(os_numero):
 
     if request.method == 'GET':
         os_list = carregar_os_manutencao(session['manutencao']) if 'manutencao' in session else carregar_os_gerente(session['gerente'])
-        
-        hoje = saopaulo_tz.localize(datetime.now()).date()
-        for os in os_list:
-            try:
-                data_str = os.get("data_entrada") or os.get("data") or ""
-                data_abertura = datetime.strptime(data_str, "%d/%m/%Y").date()
-                os["dias_abertos"] = (hoje - data_abertura).days
-            except Exception:
-                os["dias_abertos"] = 0
-os_data = next((os for os in os_list if os['os'] == os_numero), None)
+        os_data = next((os for os in os_list if os['os'] == os_numero), None)
 
         user = User.query.filter_by(username=session['manutencao'] if 'manutencao' in session else session['gerente']).first()
         profile_picture = user.profile_picture if user else None
