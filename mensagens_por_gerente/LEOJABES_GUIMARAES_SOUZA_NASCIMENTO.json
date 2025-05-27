@@ -1,5 +1,20 @@
 [
   {
+    "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "5749",
+    "os": "111334",
+    "data": "27/05/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Avaliar modulo do SPE com mau funcionamento - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "308",
+    "os": "111333",
+    "data": "27/05/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda SP)"
+  },
+  {
     "frota": "74",
     "os": "111296",
     "data": "26/05/2025",
@@ -21,27 +36,6 @@
     "servico": "Solda em terminais do SPE queimado - (Fazenda SP)"
   },
   {
-    "frota": "135",
-    "os": "111215",
-    "data": "23/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Quebra da barra de direção necessário avaliação para substituição do componente. - (Fazenda Biscui)"
-  },
-  {
-    "frota": "5611",
-    "os": "111207",
-    "data": "23/05/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Verificar e substituir pino da trincha danificado por quebra - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "125",
-    "os": "111200",
-    "data": "23/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar superaquecimento do motor do trator - (Fazenda São Paulo)"
-  },
-  {
     "frota": "5722",
     "os": "111147",
     "data": "22/05/2025",
@@ -49,39 +43,11 @@
     "servico": "Verificar bomba com vazamento e ruído anormal - (Fazenda São Paulo)"
   },
   {
-    "frota": "5205",
-    "os": "111046",
-    "data": "21/05/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Desmontar conjunto de corte para possibilitar o transporte do Trator."
-  },
-  {
-    "frota": "216",
-    "os": "111038",
-    "data": "21/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar cabo do afogador (Fazenda SP)"
-  },
-  {
     "frota": "44",
     "os": "110834",
     "data": "19/05/2025",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Durante a operação com a podadeira acoplada ao trator, um galho foi lançado contra o para-brisa, resultando na quebra da parte inferior do vidro dianteiro - (Fazenda SP)"
-  },
-  {
-    "frota": "5722",
-    "os": "110819",
-    "data": "19/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Quebra da corrente de transmissão da bomba - (Fazenda SP)"
-  },
-  {
-    "frota": "5693",
-    "os": "110803",
-    "data": "19/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar vazamento na bomba - (Fazenda São Paulo)"
   },
   {
     "frota": "5693",

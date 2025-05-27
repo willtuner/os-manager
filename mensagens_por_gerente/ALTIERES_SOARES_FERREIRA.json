@@ -1,5 +1,6 @@
 [
   {
+    "solicitado": "ALTIERES SOARES FERREIRA",
     "frota": "119",
     "os": "111288",
     "data": "26/05/2025",
@@ -7,25 +8,11 @@
     "servico": "Vazamento de diesel - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "5383",
-    "os": "111287",
-    "data": "26/05/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Conectar mangueira do carrinho - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5470",
     "os": "111263",
     "data": "24/05/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Revisa bomba de alimentação"
-  },
-  {
-    "frota": "5240",
-    "os": "111260",
-    "data": "23/05/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Verificar mola de trava do hidrorol - (Fazenda Pedra Verde)"
   },
   {
     "frota": "223",
@@ -54,13 +41,6 @@
     "data": "21/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em furos no ramal - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "217",
-    "os": "111022",
-    "data": "21/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Realizar diagnóstico no sistema de embreagem para verificar desgaste ou falha funcional. Avaliar necessidade de troca do kit completo (disco, platô e rolamento). - (Fazenda Pedra Verde)"
   },
   {
     "frota": "5621",

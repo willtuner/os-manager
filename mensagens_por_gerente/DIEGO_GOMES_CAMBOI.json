@@ -1,40 +1,6 @@
 [
   {
-    "frota": "5699",
-    "os": "111247",
-    "data": "23/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sistema de acionamento do drench, que permanece em funcionamento contínuo, sem interrupção na aplicação do produto. - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "5740",
-    "os": "111128",
-    "data": "22/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar jogo de fação, jogo de embreagem e tirar vazamento no retentor do multiplicador - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "203",
-    "os": "110677",
-    "data": "20/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento na direção - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "5721",
-    "os": "110943",
-    "data": "20/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Rolamento da roda L/? estralando - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "5737",
-    "os": "110725",
-    "data": "16/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Vazamento no retentor do multiplicador  - (Fazenda São Pedro)"
-  },
-  {
+    "solicitado": "DIEGO GOMES CAMBOI",
     "frota": "5210",
     "os": "110604",
     "data": "15/05/2025",
@@ -54,20 +20,6 @@
     "data": "15/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar painel de controle da barra de herbicida quebrado - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "5290",
-    "os": "110440",
-    "data": "13/05/2025",
-    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Quebra da proteção das correias da bomba  - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "5210",
-    "os": "110213",
-    "data": "08/05/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Tampar as saídas desativadas do tanque na parte dianteira e traseira - (Fazenda Santa Izabel)"
   },
   {
     "frota": "5210",

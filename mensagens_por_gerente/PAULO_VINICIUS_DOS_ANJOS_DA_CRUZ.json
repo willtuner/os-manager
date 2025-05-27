@@ -1,5 +1,27 @@
 [
   {
+    "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+    "frota": "5367",
+    "os": "111343",
+    "data": "27/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trinca na solda feita na estrutura da torre - (Fazenda Estrela)"
+  },
+  {
+    "frota": "268",
+    "os": "111342",
+    "data": "27/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar lanterna dianteira quebrada - (Fazenda Estrela)"
+  },
+  {
+    "frota": "221",
+    "os": "111341",
+    "data": "27/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Chicote do cibié quebrado - (Fazenda Estrela)"
+  },
+  {
     "frota": "5747",
     "os": "111328",
     "data": "26/05/2025",
@@ -18,7 +40,7 @@
     "os": "111304",
     "data": "26/05/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar registros - (Fazenda Estrela)"
+    "servico": "Trocar registros e caixa incorporadora - (Fazenda Estrela)"
   },
   {
     "frota": "5061",

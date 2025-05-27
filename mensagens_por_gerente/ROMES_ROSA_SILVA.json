@@ -1,5 +1,6 @@
 [
   {
+    "solicitado": "ROMES ROSA SILVA",
     "frota": "5537",
     "os": "111159",
     "data": "22/05/2025",
@@ -33,6 +34,13 @@
     "data": "17/05/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Trocar os dois pneus dianteiros."
+  },
+  {
+    "frota": "5737",
+    "os": "110725",
+    "data": "16/05/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Vazamento no retentor do multiplicador  - (Fazenda São Pedro)"
   },
   {
     "frota": "100",
