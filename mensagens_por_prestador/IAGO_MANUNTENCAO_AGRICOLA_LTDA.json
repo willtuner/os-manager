@@ -13,7 +13,7 @@
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111304",
     "data_entrada": "26/05/2025",
-    "servico": "Trocar registros - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "servico": "Trocar registros e caixa incorporadora - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5227",
@@ -40,28 +40,12 @@
     "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5677",
-    "cd_equipamento": "5677",
-    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-    "os": "111155",
-    "data_entrada": "22/05/2025",
-    "servico": "Instalar palhetas distribuidoras nos discos de distribuição de adubo e protetores traseiros nas esteiras. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5722",
     "cd_equipamento": "5722",
     "modelo": "TANQUE DE AGUA 2000 LT",
     "os": "111147",
     "data_entrada": "22/05/2025",
     "servico": "Verificar bomba com vazamento e ruído anormal - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5365",
-    "cd_equipamento": "5365",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111143",
-    "data_entrada": "22/05/2025",
-    "servico": "Vazamento na bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5730",
@@ -72,14 +56,6 @@
     "servico": "Vazamento no rotor - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5740",
-    "cd_equipamento": "5740",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "111128",
-    "data_entrada": "22/05/2025",
-    "servico": "Trocar jogo de fação, jogo de embreagem e tirar vazamento no retentor do multiplicador - (Fazenda Santa Izabel)\nLiberado Sr. Mauiricio"
-  },
-  {
     "frota": "5569",
     "cd_equipamento": "5569",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
@@ -88,36 +64,12 @@
     "servico": "Tirar jogo das rodas guias  - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5721",
-    "cd_equipamento": "5721",
-    "modelo": "TANQUE DE AGUA 2000 LT",
-    "os": "110943",
-    "data_entrada": "20/05/2025",
-    "servico": "Rolamento da roda L/? estralando - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5106",
     "cd_equipamento": "5106",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "110940",
     "data_entrada": "20/05/2025",
     "servico": "Substituir arrastador L/E - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5722",
-    "cd_equipamento": "5722",
-    "modelo": "TANQUE DE AGUA 2000 LT",
-    "os": "110819",
-    "data_entrada": "19/05/2025",
-    "servico": "Quebra da corrente de transmissão da bomba - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5693",
-    "cd_equipamento": "5693",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "110803",
-    "data_entrada": "19/05/2025",
-    "servico": "Verificar vazamento na bomba - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5031",
@@ -134,22 +86,6 @@
     "os": "111104",
     "data_entrada": "15/05/2025",
     "servico": "Fazer instalação do rotor, intermediário e selo mecânico no motor elétrico reserva do equipamento.\nFazenda Severino\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5366",
-    "cd_equipamento": "5366",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "110601",
-    "data_entrada": "15/05/2025",
-    "servico": "Folga no eixo da roda L/D - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5494",
-    "cd_equipamento": "5494",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "110534",
-    "data_entrada": "14/05/2025",
-    "servico": "Substituir corrente das engrenagens do sistema de transmissão e trocar rolamento L/D  - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5657",
@@ -174,6 +110,14 @@
     "os": "109411",
     "data_entrada": "25/04/2025",
     "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "108202",
+    "data_entrada": "03/04/2025",
+    "servico": "Verificar bomba de pulverização com frequente vazamento de óleo no retentor do virabrequim.\nFazenda Estrela\nSolicitado Sr. Carlos\nLiberado Sr. Maurício"
   },
   {
     "frota": "5629",

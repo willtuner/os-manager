@@ -1,5 +1,29 @@
 [
   {
+    "frota": "225",
+    "cd_equipamento": "225",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "111382",
+    "data_entrada": "27/05/2025",
+    "servico": "Sirene de ré não funciona e adaptar faróis traseiros - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "268",
+    "cd_equipamento": "268",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111342",
+    "data_entrada": "27/05/2025",
+    "servico": "Trocar lanterna dianteira quebrada - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "221",
+    "cd_equipamento": "221",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111341",
+    "data_entrada": "27/05/2025",
+    "servico": "Chicote do cibié quebrado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "74",
     "cd_equipamento": "74",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -46,14 +70,6 @@
     "os": "111253",
     "data_entrada": "23/05/2025",
     "servico": "Cibié traseiro não ascende - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5699",
-    "cd_equipamento": "5699",
-    "modelo": "PULVERIZADOR 600 LT",
-    "os": "111247",
-    "data_entrada": "23/05/2025",
-    "servico": "Verificar sistema de acionamento do drench, que permanece em funcionamento contínuo, sem interrupção na aplicação do produto. - (Fazenda Santa Izabel)\nLiberado Sr.  Arthur"
   },
   {
     "frota": "128",
