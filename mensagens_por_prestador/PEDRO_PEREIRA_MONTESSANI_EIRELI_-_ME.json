@@ -1,5 +1,21 @@
 [
   {
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111417",
+    "data_entrada": "27/05/2025",
+    "servico": "- Trocar correia do alternador.\n- Trocar cibie traseiro lado direito queimado. (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "86",
+    "cd_equipamento": "86",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111416",
+    "data_entrada": "27/05/2025",
+    "servico": "Quebrou sensor de restrição (fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "225",
     "cd_equipamento": "225",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -22,6 +38,30 @@
     "os": "111341",
     "data_entrada": "27/05/2025",
     "servico": "Chicote do cibié quebrado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "109",
+    "cd_equipamento": "109",
+    "modelo": "TRATOR MASSEY FERGUSON 290",
+    "os": "111340",
+    "data_entrada": "27/05/2025",
+    "servico": "Verificar relógio horimetro não funciona - (Pecuaria)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "208",
+    "cd_equipamento": "208",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111422",
+    "data_entrada": "27/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
+  },
+  {
+    "frota": "72",
+    "cd_equipamento": "72",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111308",
+    "data_entrada": "26/05/2025",
+    "servico": "Trator com ruído anormal ao dar partida \"raspando motor de arranque\"  - (Industria)\nLiberado Sr. Arthur"
   },
   {
     "frota": "74",

@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5347",
+    "cd_equipamento": "5347",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "111409",
+    "data_entrada": "27/05/2025",
+    "servico": "Substituir rolamento lado direito. (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5524",
+    "cd_equipamento": "5524",
+    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+    "os": "111380",
+    "data_entrada": "27/05/2025",
+    "servico": "Substituir rolamento e mancal L/E - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111347",
+    "data_entrada": "27/05/2025",
+    "servico": "Rolamento do eixo da turbina quebrado - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5555",
+    "cd_equipamento": "5555",
+    "modelo": "TANQUE DE AGUA 7000 LT FACCHIN",
+    "os": "111338",
+    "data_entrada": "27/05/2025",
+    "servico": "Roda lado esquerdo (L/E) do tanque se desprendeu, aparentemente devido à falha ou soltura do rolamento. - (Fazenda Estrela 6) \nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5747",
+    "cd_equipamento": "5747",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111328",
+    "data_entrada": "26/05/2025",
+    "servico": "Trocar correia quebrada e vazamento na bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5748",
+    "cd_equipamento": "5748",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111327",
+    "data_entrada": "26/05/2025",
+    "servico": "Trocar correia quebrada e vazamento na bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5009",
     "cd_equipamento": "5009",
     "modelo": "ATOMIZADOR FMC 4000 LT",

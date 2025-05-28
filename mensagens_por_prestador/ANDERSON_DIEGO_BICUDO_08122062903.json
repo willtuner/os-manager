@@ -1,5 +1,37 @@
 [
   {
+    "frota": "116",
+    "cd_equipamento": "116",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "111445",
+    "data_entrada": "28/05/2025",
+    "servico": "Desmontar eixo de tração para trocar ponta do peão  - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "263",
+    "cd_equipamento": "263",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111414",
+    "data_entrada": "27/05/2025",
+    "servico": "Vazamento na junta (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "235",
+    "cd_equipamento": "235",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "111410",
+    "data_entrada": "27/05/2025",
+    "servico": "Vazamento no cano do diferencial (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "225",
+    "cd_equipamento": "225",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "111391",
+    "data_entrada": "27/05/2025",
+    "servico": "Vazamento na TDP - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "158",
     "cd_equipamento": "158",
     "modelo": "TRATOR JOHN DEERE 5055E",
@@ -8,12 +40,68 @@
     "servico": "Trocar bomba hidráulica - (Fazenda  SL1)\nLiberado Sr. Arthur"
   },
   {
+    "frota": "263",
+    "cd_equipamento": "263",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111363",
+    "data_entrada": "27/05/2025",
+    "servico": "Parafuso do cárter explanado - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111356",
+    "data_entrada": "27/05/2025",
+    "servico": "Verificar trator perdendo força e caindo rotação - (Fazenda Terra Branca) \nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "91",
+    "cd_equipamento": "91",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111344",
+    "data_entrada": "27/05/2025",
+    "servico": "Substituir engate rápido - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "192",
     "cd_equipamento": "192",
     "modelo": "TRATOR NEW HOLAND TL 5.80",
     "os": "111332",
     "data_entrada": "27/05/2025",
     "servico": "Avaliar hidráulico lento, trocar filtro e avaliar bomba do sistema hidráulico  -(Fazenda SL1)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "10216",
+    "cd_equipamento": "10216",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111275",
+    "data_entrada": "26/05/2025",
+    "servico": "Vazamento de óleo no dreno da caixa seca -(Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5468",
+    "cd_equipamento": "5468",
+    "modelo": "MOTOBOMBA MWM MOD 6.12TCA",
+    "os": "111273",
+    "data_entrada": "26/05/2025",
+    "servico": "Mangueira do retorno do radiador ressecada e furada - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "301",
+    "cd_equipamento": "301",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111265",
+    "data_entrada": "26/05/2025",
+    "servico": "Verificar braços hidráulicos não sobem 100% da capacidade - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "94",
+    "cd_equipamento": "94",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "111138",
+    "data_entrada": "22/05/2025",
+    "servico": "Folga nos terminais da direção L/E e L/D - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "228",
@@ -30,14 +118,6 @@
     "os": "110684",
     "data_entrada": "16/05/2025",
     "servico": "Trocar reparo dos pistões da direção - (Fazenda são Pedro)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "285",
-    "cd_equipamento": "285",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110680",
-    "data_entrada": "16/05/2025",
-    "servico": "Verificar acelerador de mão que não mantém rotação constante. Suspeita de folga, desgaste no mecanismo de fixação ou cabo com regulagem incorreta - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
     "frota": "98",

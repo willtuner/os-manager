@@ -1,11 +1,27 @@
 [
   {
-    "frota": "5425",
-    "cd_equipamento": "5425",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "111325",
+    "frota": "5619",
+    "cd_equipamento": "5619",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "111415",
+    "data_entrada": "27/05/2025",
+    "servico": "Instalar chapa nas bases de fixação dos rotores direito e esquerdo\nFazenda Casa Branca\nSolicitado Sr. João\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5367",
+    "cd_equipamento": "5367",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111343",
+    "data_entrada": "27/05/2025",
+    "servico": "Trinca na solda feita na estrutura da torre - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "159",
+    "cd_equipamento": "159",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "111326",
     "data_entrada": "26/05/2025",
-    "servico": "Soldar suporte traseiro para transporte de cone para sinalização - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+    "servico": "Fazer solda na tubagem do escapamento - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "223",
@@ -22,14 +38,6 @@
     "os": "111210",
     "data_entrada": "23/05/2025",
     "servico": "Troca dos paralamas e instalação das proteções \nFaz São Jose\nSolicitado Gilberto\nAutorizado Arthur"
-  },
-  {
-    "frota": "5233",
-    "cd_equipamento": "5233",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111198",
-    "data_entrada": "23/05/2025",
-    "servico": "Fazer solda em trinca na barra lateral do braço - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5459",
@@ -56,44 +64,12 @@
     "servico": "Realinhar tanque pegando na bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5604",
-    "cd_equipamento": "5604",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "111032",
-    "data_entrada": "21/05/2025",
-    "servico": "Fazer solda em furos no ramal - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "100",
-    "cd_equipamento": "100",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "110963",
-    "data_entrada": "20/05/2025",
-    "servico": "Sacar parafusos do suporte da barra de tração quebrados - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5623",
-    "cd_equipamento": "5623",
-    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
-    "os": "110806",
-    "data_entrada": "19/05/2025",
-    "servico": "Desentortar e solda eixo de suporte da roda guia - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5621",
     "cd_equipamento": "5621",
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
     "os": "110777",
     "data_entrada": "19/05/2025",
     "servico": "Fazer solda e reforço e vazamento de óleo no multiplicador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5228",
-    "cd_equipamento": "5228",
-    "modelo": "PAM 600-PA AGRICOLA P/TRATORES",
-    "os": "110776",
-    "data_entrada": "19/05/2025",
-    "servico": "Fazer solda em trincas e fazer reforço - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5078",
@@ -112,28 +88,12 @@
     "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5425",
-    "cd_equipamento": "5425",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "110674",
-    "data_entrada": "16/05/2025",
-    "servico": "Fazer proteção na caixa de transporte - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "10220",
     "cd_equipamento": "10220",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "110665",
     "data_entrada": "16/05/2025",
     "servico": "Instalar grade de proteção frontal - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "100",
-    "cd_equipamento": "100",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "110593",
-    "data_entrada": "15/05/2025",
-    "servico": "Fazer solda em trinca no escapamento - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5455",
@@ -150,14 +110,6 @@
     "os": "110561",
     "data_entrada": "15/05/2025",
     "servico": "Verificar desgaste no engate do cabeçário danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5291",
-    "cd_equipamento": "5291",
-    "modelo": "PAM 600-PA AGRICOLA P/TRATORES",
-    "os": "110552",
-    "data_entrada": "15/05/2025",
-    "servico": "Desamassar e soldar lamina da pá torta - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "10221",
@@ -190,14 +142,6 @@
     "os": "110741",
     "data_entrada": "12/05/2025",
     "servico": "Verificar rosca travada, engate da boca de lobo e fechar fundo - (Pecuaria)\nLiberado Sr. Zacarias"
-  },
-  {
-    "frota": "5631",
-    "cd_equipamento": "5631",
-    "modelo": "DISTRIBUIDO FARTUS 15.0 GRANEL",
-    "os": "110346",
-    "data_entrada": "12/05/2025",
-    "servico": "Realizar a remoção de um gomo da esteira para ajuste do tensionamento - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5603",
@@ -256,14 +200,6 @@
     "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5095",
-    "cd_equipamento": "5095",
-    "modelo": "BARRA APLICACAO DE HERBICIDA",
-    "os": "109536",
-    "data_entrada": "28/04/2025",
-    "servico": "Ajustar  ferros do suporte de proteção da lona anti deriva e trocar pino de articulação da barra direita - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5597",
     "cd_equipamento": "5597",
     "modelo": "PULVERIZADOR 2000 LT FMC",
@@ -310,6 +246,14 @@
     "os": "108043",
     "data_entrada": "02/04/2025",
     "servico": "Soldar ramal do lado esquerdo.\nFazenda Aparecida\nSolicitado Sr. Vitor\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "504",
+    "cd_equipamento": "504",
+    "modelo": "ONIBUS",
+    "os": "111421",
+    "data_entrada": "19/03/2025",
+    "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias"
   },
   {
     "frota": "10220",
