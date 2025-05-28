@@ -5,31 +5,149 @@
 {% block content %}
 <style>
     :root {
-        --azul-escuro: #2c3e50;
-        --verde-agro: #27ae60;
+        --cor-primaria: #2c3e50; /* Azul Escuro */
+        --cor-secundaria: #27ae60; /* Verde Agro */
+        --cor-fundo: #f4f7f6; /* Cinza claro suave */
+        --cor-texto: #34495e; /* Azul acinzentado para texto */
+        --borda-card: #e0e6ea; /* Borda mais clara para cards */
+        --sombra-card: rgba(0, 0, 0, 0.08); /* Sombra suave para cards */
     }
+
+    body {
+        background-color: var(--cor-fundo);
+        font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+
     .container {
-        margin-top: 0 !important;
-        padding: 10px;
+        margin-top: 20px !important; /* Ajuste para espaçamento superior */
+        padding: 25px;
+        background-color: #ffffff; /* Fundo branco para o conteúdo principal */
+        border-radius: 8px;
+        box-shadow: 0 4px 15px var(--sombra-card);
     }
+
+    h2.h4 {
+        color: var(--cor-primaria);
+        font-weight: 600;
+        margin-bottom: 25px;
+        border-bottom: 2px solid var(--cor-secundaria);
+        padding-bottom: 10px;
+        display: inline-block; /* Para o border-bottom se ajustar ao texto */
+    }
+
     .card-os {
-        border-color: var(--verde-agro);
-        transition: transform 0.2s;
+        border: 1px solid var(--borda-card);
+        border-left: 5px solid var(--cor-secundaria); /* Borda lateral de destaque */
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out; /* Transição mais suave */
+        box-shadow: 0 2px 10px var(--sombra-card);
+        margin-bottom: 20px;
     }
+
     .card-os:hover {
-        transform: translateY(-2px);
+        transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Sombra mais intensa no hover */
     }
+
+    .card-os .card-header {
+        background-color: var(--cor-secundaria);
+        color: white;
+        font-weight: 700;
+        border-bottom: none;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-os .card-header h5 {
+        margin-bottom: 0;
+        font-size: 1.15rem;
+    }
+
+    .card-os .card-body {
+        padding: 20px;
+        color: var(--cor-texto);
+    }
+
+    .card-os .card-body p {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+
+    .card-os .card-body strong {
+        color: var(--cor-primaria);
+    }
+
     .btn-success {
-        background-color: var(--verde-agro);
-        border-color: var(--verde-agro);
+        background-color: var(--cor-secundaria);
+        border-color: var(--cor-secundaria);
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
     }
+
     .btn-success:hover {
-        background-color: darken(var(--verde-agro), 10%);
+        background-color: darken(var(--cor-secundaria), 8%); /* Escurece um pouco no hover */
+        border-color: darken(var(--cor-secundaria), 8%);
+    }
+
+    .btn-outline-secondary {
+        color: var(--cor-primaria);
+        border-color: var(--cor-primaria);
+        transition: all 0.2s ease;
+    }
+
+    .btn-outline-secondary:hover {
+        background-color: var(--cor-primaria);
+        color: white;
+    }
+
+    .btn-outline-danger {
+        color: #e74c3c; /* Vermelho mais vibrante para sair */
+        border-color: #e74c3c;
+        transition: all 0.2s ease;
+    }
+
+    .btn-outline-danger:hover {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+    .alert {
+        margin-top: 20px;
+    }
+
+    .empty-state {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #fcfcfc;
+        border: 1px dashed var(--borda-card);
+        border-radius: 8px;
+        color: var(--cor-texto);
+    }
+
+    .empty-state h4 {
+        color: var(--cor-primaria);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        border-radius: 5px;
+        border: 1px solid var(--borda-card);
+    }
+
+    .form-label {
+        font-weight: 500;
+        color: var(--cor-primaria);
     }
 </style>
 
 <div class="container">
-    <!-- Mensagens flash -->
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
             {% for category, message in messages %}
@@ -43,109 +161,49 @@
 
     <div class="row mb-3">
         <div class="col">
-            <h2 class="h4 text-dark">
-                <i class="fas fa-tools text-success me-2"></i>Ordens de Serviço Atribuídas
-            </h2>
-            <p class="text-muted mb-0">Prestador: <strong>{{ nome }}</strong></p>
+            <h2 class="h4">Olá, {{ nome | capitalize_name }}!</h2>
+            <p class="text-muted">Aqui estão suas ordens de serviço pendentes.</p>
         </div>
     </div>
 
     {% if os_list %}
-        {% for item in os_list %}
-        <form action="{{ url_for('finalizar_os', os_numero=item.os) }}"
-              method="POST"
-              class="card card-os mb-3"
-              enctype="multipart/form-data"
-              onsubmit="return validateForm(this)">
-            <div class="card-body">
-                <h5 class="card-title mb-2">
-                    <span class="badge bg-secondary me-2">OS {{ item.os }}</span>
-                    Frota {{ item.frota }}
-                </h5>
-                <p class="card-text mb-2">
-                    <small class="text-muted">
-                        Aberta em {{ item.data_entrada }} &bull; Modelo {{ item.modelo }} &bull;
-                        Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
-                    </small>
-                </p>
-                <p class="card-text mb-3">
-                    <i class="fas fa-tools me-1 text-muted"></i>
-                    <span style="white-space: pre-wrap;">{{ item.servico }}</span>
-                </p>
-                <div class="row g-2 mb-2">
-                    <div class="col-md-4">
-                        <label class="form-label small">Data de Finalização</label>
-                        <input type="date" name="data_finalizacao"
-                               class="form-control form-control-sm"
-                               required
-                               max="{{ today_date }}">
+        <div class="row">
+            {% for os in os_list %}
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card card-os flex-fill">
+                    <div class="card-header">
+                        <h5 class="mb-0">OS #{{ os.os }}</h5>
+                        <span class="badge bg-light text-dark">{{ os.data }}</span>
                     </div>
-                    <div class="col-md-4">
-                        <label class="form-label small">Hora de Finalização</label>
-                        <input type="time" name="hora_finalizacao"
-                               class="form-control form-control-sm"
-                               required>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-end">
-                        <button type="submit"
-                                class="btn btn-success btn-sm w-100"
-                                id="submit-btn-{{ item.os }}"
-                                disabled>
-                            <i class="fas fa-check-circle me-1"></i>Finalizar
-                        </button>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <label class="form-label small">Observações</label>
-                    <textarea name="observacoes"
-                              class="form-control form-control-sm"
-                              rows="4"
-                              placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
-                </div>
-                <div class="mb-2">
-                    <label class="form-label small">Anexar Evidência (opcional)</label>
-                    <input type="file" name="evidencia"
-                           class="form-control form-control-sm"
-                           accept="image/*,.pdf">
-                </div>
-                <div class="text-end">
-                    <button type="button"
-                            class="btn btn-outline-primary btn-sm"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detalhesModal-{{ item.os }}">
-                        <i class="fas fa-eye me-1"></i>Ver Detalhes
-                    </button>
-                </div>
-            </div>
-        </form>
-
-        <!-- Modal de Detalhes -->
-        <div class="modal fade" id="detalhesModal-{{ item.os }}" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Detalhes da OS {{ item.os }}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><strong>Frota:</strong> {{ item.frota }}</p>
-                        <p><strong>Modelo:</strong> {{ item.modelo }}</p>
-                        <p><strong>Data de Entrada:</strong> {{ item.data_entrada }}</p>
-                        <p><strong>Serviço:</strong> {{ item.servico }}</p>
-                        {% if item.observacoes %}
-                            <p><strong>Observações Anteriores:</strong> {{ item.observacoes }}</p>
-                        {% endif %}
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <div class="card-body">
+                        <p><strong>Frota:</strong> {{ os.frota }}</p>
+                        <p><strong>Serviço:</strong> {{ os.servico }}</p>
+                        <p><strong>Observações:</strong> {{ os.observacao or 'N/A' }}</p>
+                        
+                        <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="post" onsubmit="return validateForm(this)">
+                            <div class="mb-3">
+                                <label for="data_finalizacao_{{ os.os }}" class="form-label">Data de Finalização</label>
+                                <input type="date" class="form-control" id="data_finalizacao_{{ os.os }}" name="data_finalizacao" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hora_finalizacao_{{ os.os }}" class="form-label">Hora de Finalização</label>
+                                <input type="time" class="form-control" id="hora_finalizacao_{{ os.os }}" name="hora_finalizacao" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="observacoes_{{ os.os }}" class="form-label">Observações</label>
+                                <textarea class="form-control" id="observacoes_{{ os.os }}" name="observacoes" rows="2"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100" disabled>
+                                <i class="fas fa-check-circle me-1"></i>Finalizar OS
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     {% else %}
-        <div class="text-center py-5 bg-white rounded shadow-sm">
-            <i class="fas fa-check-circle text-success fa-3x mb-3"></i>
+        <div class="empty-state">
             <h4 class="text-muted">Nenhuma OS pendente</h4>
             <p>Todas as ordens de serviço atribuídas estão em dia!</p>
         </div>
@@ -174,17 +232,19 @@
     }
 
     // Habilitar botão de submit quando campos obrigatórios estiverem preenchidos
-    document.querySelectorAll('.card-os').forEach(form => {
-        const data = form.querySelector('input[name="data_finalizacao"]');
-        const hora = form.querySelector('input[name="hora_finalizacao"]');
-        const submitBtn = form.querySelector('button[type="submit"]');
+    document.querySelectorAll('.card-os').forEach(card => {
+        const dataInput = card.querySelector('input[name="data_finalizacao"]');
+        const horaInput = card.querySelector('input[name="hora_finalizacao"]');
+        const submitBtn = card.querySelector('button[type="submit"]');
 
         function checkInputs() {
-            submitBtn.disabled = !(data.value && hora.value);
+            submitBtn.disabled = !(dataInput.value && horaInput.value);
         }
 
-        data.addEventListener('input', checkInputs);
-        hora.addEventListener('input', checkInputs);
+        dataInput.addEventListener('input', checkInputs);
+        horaInput.addEventListener('input', checkInputs);
+        // Chamar na inicialização para desabilitar se já estiverem vazios
+        checkInputs();
     });
 </script>
 {% endblock %}
