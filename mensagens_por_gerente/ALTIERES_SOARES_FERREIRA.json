@@ -1,10 +1,17 @@
 [
   {
     "solicitado": "ALTIERES SOARES FERREIRA",
+    "frota": "217",
+    "os": "111441",
+    "data": "28/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Quebra do cabo da embreagem, vazamento no cárter e cruzeta da tração danificada. Recomenda-se recolher o trator para substituição dos componentes.  - (Fazenda Pedra Verde)"
+  },
+  {
     "frota": "119",
     "os": "111288",
     "data": "26/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Vazamento de diesel - (Fazenda Pedra Verde)"
   },
   {
@@ -36,13 +43,6 @@
     "servico": "Sacar parafuso do volante"
   },
   {
-    "frota": "5604",
-    "os": "111032",
-    "data": "21/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em furos no ramal - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5621",
     "os": "110777",
     "data": "19/05/2025",
@@ -50,25 +50,11 @@
     "servico": "Fazer solda e reforço e vazamento de óleo no multiplicador - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "5228",
-    "os": "110776",
-    "data": "19/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trincas e fazer reforço - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5111",
     "os": "110578",
     "data": "15/05/2025",
     "prestador": "BAZANI MECANICA E AUTO PECAS",
     "servico": "Fazer pino para travar roda guia - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "69",
-    "os": "110558",
-    "data": "15/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Pedra Verde)"
   },
   {
     "frota": "119",

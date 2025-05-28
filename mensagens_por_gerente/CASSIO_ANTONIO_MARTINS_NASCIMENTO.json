@@ -2,17 +2,17 @@
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
     "frota": "225",
+    "os": "111391",
+    "data": "27/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Vazamento na TDP - (Fazenda São Severino)"
+  },
+  {
+    "frota": "225",
     "os": "111382",
     "data": "27/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Sirene de ré não funciona e adaptar faróis traseiros - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5425",
-    "os": "111325",
-    "data": "26/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar suporte traseiro para transporte de cone para sinalização - (Fazenda São Severino)"
   },
   {
     "frota": "5612",
@@ -20,13 +20,6 @@
     "data": "26/05/2025",
     "prestador": "TORNEARIA STEINHAUSER LTDA",
     "servico": "Recuperar chapas superior e inferior do engate do cabeçário estão com furo ovalizado."
-  },
-  {
-    "frota": "5660",
-    "os": "111252",
-    "data": "23/05/2025",
-    "prestador": "DARCI CAPEL & CIA LTDA",
-    "servico": "Recuperar desgaste no alojamento do rolamento nas pontas dianteira e traseira do eixo cardan de transmissão, fazer alinhamento do tubo do eixo cardan e substituir o rolamento e polia do mancal da turbina."
   },
   {
     "frota": "228",
@@ -48,13 +41,6 @@
     "data": "20/05/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra na lateral - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5425",
-    "os": "110674",
-    "data": "16/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção na caixa de transporte - (Fazenda São Severino)"
   },
   {
     "frota": "5599",

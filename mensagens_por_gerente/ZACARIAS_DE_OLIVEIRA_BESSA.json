@@ -8,25 +8,11 @@
     "servico": "Consertar pneu dianteiro esquerdo furado."
   },
   {
-    "frota": "5632",
-    "os": "111233",
-    "data": "23/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Fabricar proteção de partes moveis reforço na esteira - (Oficina)"
-  },
-  {
     "frota": "211",
     "os": "111228",
     "data": "23/05/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Consertar pneu dianteiro esquerdo furado."
-  },
-  {
-    "frota": "138",
-    "os": "110785",
-    "data": "19/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Trocar os dois pneus dianteiros (retirado para recapar)."
   },
   {
     "frota": "206",
@@ -48,5 +34,12 @@
     "data": "16/04/2025",
     "prestador": "Prestador não definido",
     "servico": "nan"
+  },
+  {
+    "frota": "504",
+    "os": "111421",
+    "data": "19/03/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral."
   }
 ]

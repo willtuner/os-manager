@@ -1,17 +1,38 @@
 [
   {
     "solicitado": "JOAO PAULO DE OLIVEIRA PORTEIRO",
+    "frota": "86",
+    "os": "111416",
+    "data": "27/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Quebrou sensor de restrição (fazenda Casa Branca)"
+  },
+  {
+    "frota": "5619",
+    "os": "111415",
+    "data": "27/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Instalar chapa nas bases de fixação dos rotores direito e esquerdo"
+  },
+  {
+    "frota": "263",
+    "os": "111414",
+    "data": "27/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Vazamento na junta (Fazenda Casa Branca)"
+  },
+  {
     "frota": "263",
     "os": "111363",
     "data": "27/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Parafuso do cárter explanado - (Fazenda Casa Branca)"
   },
   {
     "frota": "263",
     "os": "111358",
     "data": "27/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Borrachas de vedação da porta soltas - (Fazenda Casa Branca)"
   },
   {
@@ -27,13 +48,6 @@
     "data": "22/05/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "74",
-    "os": "111144",
-    "data": "22/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro furado L/? - (Fazenda Casa Branca)"
   },
   {
     "frota": "10220",
@@ -64,20 +78,6 @@
     "servico": "Verificar trator não desengata marcha - (Fazenda Casa Branca)"
   },
   {
-    "frota": "5261",
-    "os": "110530",
-    "data": "14/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/? furado - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5261",
-    "os": "110225",
-    "data": "08/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E furado - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "26",
     "os": "109874",
     "data": "02/05/2025",
@@ -90,13 +90,6 @@
     "data": "29/04/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5095",
-    "os": "109536",
-    "data": "28/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Ajustar  ferros do suporte de proteção da lona anti deriva e trocar pino de articulação da barra direita - (Fazenda Casa Branca)"
   },
   {
     "frota": "10220",

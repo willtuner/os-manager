@@ -1,31 +1,10 @@
 [
   {
     "solicitado": "MAURICIO JOSE BARRETO JUNIOR",
-    "frota": "72",
-    "os": "111070",
-    "data": "21/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Verificar pneu dianteiro L/E com \"problema\" - (Industria)"
-  },
-  {
     "frota": "5455",
     "os": "110563",
     "data": "15/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar rolamento das duas rodas danificado."
-  },
-  {
-    "frota": "84",
-    "os": "110518",
-    "data": "14/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Consertar pneu dianteiro esquerdo furado."
-  },
-  {
-    "frota": "228",
-    "os": "110156",
-    "data": "07/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Trocar pneus dianteiros desgastados (enviar para recapar)."
   }
 ]

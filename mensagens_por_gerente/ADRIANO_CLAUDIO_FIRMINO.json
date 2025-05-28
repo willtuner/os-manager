@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "235",
+    "os": "111410",
+    "data": "27/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Vazamento no cano do diferencial (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "208",
+    "os": "111422",
+    "data": "27/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sistema eletrico"
+  },
+  {
     "frota": "251",
     "os": "111290",
     "data": "26/05/2025",
@@ -11,7 +25,7 @@
     "frota": "17",
     "os": "111285",
     "data": "26/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Trocar banco - (Fazenda Nova Manhã)"
   },
   {
@@ -36,25 +50,11 @@
     "servico": "Vazamento de óleo na bomba - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "208",
-    "os": "111140",
-    "data": "22/05/2025",
-    "prestador": "NILSON DA SILVA 06145762969",
-    "servico": "Pneu traseiro L/D furado - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "94",
     "os": "111138",
     "data": "22/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Folga nos terminais da direção L/E e L/D - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "130",
-    "os": "110972",
-    "data": "20/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Avaliar trator fumaceando branco - (Fazenda Nova Manhã)"
   },
   {
     "frota": "251",
