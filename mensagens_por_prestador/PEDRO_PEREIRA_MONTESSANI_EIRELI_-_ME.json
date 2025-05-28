@@ -1,5 +1,69 @@
 [
   {
+    "frota": "29",
+    "cd_equipamento": "29",
+    "modelo": "TRATOR MASSEY FERGUSON 275/2",
+    "os": "111484",
+    "data_entrada": "28/05/2025",
+    "servico": "Revisar alternador - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "99",
+    "cd_equipamento": "99",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "111475",
+    "data_entrada": "28/05/2025",
+    "servico": "Trocar buzina\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
+  },
+  {
+    "frota": "220",
+    "cd_equipamento": "220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111461",
+    "data_entrada": "28/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
+  },
+  {
+    "frota": "299",
+    "cd_equipamento": "299",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111460",
+    "data_entrada": "28/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Pedra Verde\nSolicitado Cleber\nAutorizado Arthur"
+  },
+  {
+    "frota": "97",
+    "cd_equipamento": "97",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "111459",
+    "data_entrada": "28/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Pedra Verde\nSolicitado Cleber\nAutorizado Arthur"
+  },
+  {
+    "frota": "76",
+    "cd_equipamento": "76",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111458",
+    "data_entrada": "28/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Pedra Verde\nSolicitado Cleber\nAutorizado Arthur"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111456",
+    "data_entrada": "28/05/2025",
+    "servico": "Revisar chicote do cibie\nFaz Estrela\nSolicitado Carlos\nAutorizado Arthur"
+  },
+  {
+    "frota": "288",
+    "cd_equipamento": "288",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111455",
+    "data_entrada": "28/05/2025",
+    "servico": "Revisar chicote do cibie\nFaz Estrela\nSolicitado Carlos\nAutorizado Arthur"
+  },
+  {
     "frota": "298",
     "cd_equipamento": "298",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -102,14 +166,6 @@
     "os": "111261",
     "data_entrada": "24/05/2025",
     "servico": "Revisar sistema eletrico\nFaz São Paulo\nSolicitado Giovane\nAutorizado Arthur"
-  },
-  {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "111253",
-    "data_entrada": "23/05/2025",
-    "servico": "Cibié traseiro não ascende - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "128",

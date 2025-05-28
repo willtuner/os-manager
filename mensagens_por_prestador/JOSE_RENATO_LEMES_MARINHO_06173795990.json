@@ -1,5 +1,21 @@
 [
   {
+    "frota": "99",
+    "cd_equipamento": "99",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "111476",
+    "data_entrada": "28/05/2025",
+    "servico": "Trocar confeccionar e trocar teto\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
+  },
+  {
+    "frota": "5009",
+    "cd_equipamento": "5009",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111465",
+    "data_entrada": "28/05/2025",
+    "servico": "Adaptar proteção lateral do ramal\nFaz Estrela \nSolicitado Carlos\nAutorizado Mauricio"
+  },
+  {
     "frota": "5619",
     "cd_equipamento": "5619",
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
@@ -62,6 +78,14 @@
     "os": "111061",
     "data_entrada": "21/05/2025",
     "servico": "Realinhar tanque pegando na bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5125",
+    "cd_equipamento": "5125",
+    "modelo": "ATOMIZADOR JACTO 2000 LT",
+    "os": "111471",
+    "data_entrada": "20/05/2025",
+    "servico": "Fazer caixa para transporte de pessoas\nFazenda SL1 (Oficina)\nLiberado Sr. Zacarias"
   },
   {
     "frota": "5621",

@@ -1,11 +1,19 @@
 [
   {
+    "frota": "290",
+    "cd_equipamento": "290",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111454",
+    "data_entrada": "28/05/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5366",
     "cd_equipamento": "5366",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111446",
     "data_entrada": "28/05/2025",
-    "servico": "Pneu L/D furado - (Fazenda Minuano)\nLiberado Sr. Arthur"
+    "servico": "Pneu L/D furado - (Fazenda Minuano)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "247",
@@ -46,14 +54,6 @@
     "os": "111228",
     "data_entrada": "23/05/2025",
     "servico": "Consertar pneu dianteiro esquerdo furado.\nFazenda São Paulo *(Oficina Agrícola - Viveiro)*\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "111195",
-    "data_entrada": "23/05/2025",
-    "servico": "Consertar pneu dianteiro direito.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
   },
   {
     "frota": "5522",
