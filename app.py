@@ -561,7 +561,6 @@ def painel_manutencao():
                          now=saopaulo_tz.localize(datetime.now()),
                          profile_picture=profile_picture)
 
-# ---------- PATCH: ROTA FINALIZAR OS ATUALIZADA ----------
 @app.route('/finalizar_os/<os_numero>', methods=['GET', 'POST'])
 def finalizar_os(os_numero):
     responsavel = session.get('gerente') or session.get('prestador') or session.get('manutencao')
@@ -569,18 +568,46 @@ def finalizar_os(os_numero):
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
 
-    if request.method == 'GET':
-        os_list = carregar_os_manutencao(session['manutencao']) if 'manutencao' in session else carregar_os_gerente(session['gerente'])
-        os_data = next((os for os in os_list if os['os'] == os_numero), None)
+    # Determine which list to load based on the user type
+    if 'manutencao' in session:
+        all_relevant_os = carregar_os_manutencao(session['manutencao'])
+    elif 'gerente' in session:
+        all_relevant_os = carregar_os_gerente(session['gerente'])
+    elif 'prestador' in session:
+        # Assuming prestador also has a function to load their specific OS
+        # You'll need to implement carregar_os_do_prestador(session['prestador']) if it doesn't exist
+        # For now, let's assume it's part of the manutencao/gerente flow or needs to be added
+        prestadores = carregar_prestadores()
+        prestador_data = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
+        if prestador_data and 'arquivo_os' in prestador_data:
+            caminho = os.path.join(MENSAGENS_PRESTADOR_DIR, prestador_data['arquivo_os'])
+            if os.path.exists(caminho):
+                try:
+                    with open(caminho, 'r', encoding='utf-8') as f:
+                        all_relevant_os = json.load(f)
+                except json.JSONDecodeError as e:
+                    logger.error(f"Erro ao decodificar {caminho}: {e}")
+                    all_relevant_os = []
+            else:
+                all_relevant_os = []
+        else:
+            all_relevant_os = []
+    else:
+        all_relevant_os = []
 
-        user = User.query.filter_by(username=session['manutencao'] if 'manutencao' in session else session['gerente']).first()
+    # Find the specific OS that is being finalized
+    os_data_to_finalize = next((os for os in all_relevant_os if os['os'] == os_numero), None)
+    
+    if request.method == 'GET':
+        # Render the form, potentially pre-filling with OS data
+        user = User.query.filter_by(username=responsavel).first()
         profile_picture = user.profile_picture if user else None
 
-        return render_template('painel_manutencao.html',
-                             nome=session.get('manutencao_nome') or session.get('gerente'),
+        return render_template('painel_manutencao.html', # Or a specific finalization template
+                             nome=session.get('manutencao_nome') or session.get('gerente') or session.get('prestador_nome'),
                              manutencao=session.get('manutencao'),
-                             os_list=os_list,
-                             total_os=len(os_list),
+                             os_list=all_relevant_os,
+                             total_os=len(all_relevant_os),
                              os_sem_prestador=carregar_os_sem_prestador(),
                              total_os_sem_prestador=len(carregar_os_sem_prestador()),
                              finalizadas=Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all(),
@@ -588,37 +615,63 @@ def finalizar_os(os_numero):
                              prestadores=carregar_prestadores(),
                              now=saopaulo_tz.localize(datetime.now()),
                              profile_picture=profile_picture,
-                             os_numero=os_numero)
+                             os_numero_a_finalizar=os_numero, # Pass the OS number for JS to pick up
+                             os_data=os_data_to_finalize # Pass the OS data to the template
+                            )
 
     if request.method == 'POST':
-        data_fin = request.form.get('data_finalizacao')
+        data_fin_str = request.form.get('data_finalizacao')
         hora_fin = request.form.get('hora_finalizacao')
         observacoes = request.form.get('observacoes', '')
         # Ignorar evidência temporariamente
         if 'evidencia' in request.files:
             request.files['evidencia']  # Apenas para evitar erro, sem processamento
 
-        if not data_fin or not hora_fin:
+        if not data_fin_str or not hora_fin:
             flash('Data e hora de finalização são obrigatórias.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
+        data_abertura_str = None
+        # Try to get data_entrada from os_data_to_finalize (for manutencao/prestador)
+        if os_data_to_finalize and 'data_entrada' in os_data_to_finalize:
+            data_abertura_str = os_data_to_finalize['data_entrada']
+        # Try to get data from os_data_to_finalize (for gerente)
+        elif os_data_to_finalize and 'data' in os_data_to_finalize:
+            data_abertura_str = os_data_to_finalize['data']
+
+        data_abertura_obj = None
+        if data_abertura_str:
+            for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y"):
+                try:
+                    data_abertura_obj = datetime.strptime(data_abertura_str, fmt).date()
+                    break
+                except ValueError:
+                    continue
+
+        data_fin_obj = None
         # Aceita data nos formatos %Y-%m-%d ou %d/%m/%Y
         for fmt in ('%Y-%m-%d', '%d/%m/%Y'):
             try:
-                data_fin_obj = datetime.strptime(data_fin, fmt)
-                data_fin = data_fin_obj.strftime('%d/%m/%Y')
+                data_fin_obj = datetime.strptime(data_fin_str, fmt).date()
+                data_fin_formatted = data_fin_obj.strftime('%d/%m/%Y')
                 break
             except ValueError:
-                data_fin_obj = None
+                continue
 
         if not data_fin_obj:
-            flash('Formato de data inválido.', 'danger')
+            flash('Formato de data de finalização inválido.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
+
+        # --- Validação da data de finalização ---
+        if data_abertura_obj and data_fin_obj < data_abertura_obj:
+            flash(f'A data de finalização ({data_fin_formatted}) não pode ser anterior à data de abertura da OS ({data_abertura_obj.strftime("%d/%m/%Y")}).', 'danger')
+            return redirect(url_for('finalizar_os', os_numero=os_numero))
+        # --- Fim da validação ---
 
         fz = Finalizacao(
             os_numero=os_numero,
             gerente=responsavel,
-            data_fin=data_fin,
+            data_fin=data_fin_formatted, # Use the formatted date
             hora_fin=hora_fin,
             observacoes=observacoes
         )
