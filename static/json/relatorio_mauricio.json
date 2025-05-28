@@ -1,5 +1,38 @@
 [
     {
+        "solicitante": "JOSIMAR BADIAS DE JESUS",
+        "frota": "290",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "111454",
+        "data_entrada": "28/05/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "5211",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "111451",
+        "data_entrada": "28/05/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer solda em trinca - (Fazenda São Paulo)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
+        "frota": "5366",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "111446",
+        "data_entrada": "28/05/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/D furado - (Fazenda Minuano)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "NATALINO ANTONIO JUSTINO",
         "frota": "5035",
         "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -45,8 +78,8 @@
     },
     {
         "solicitante": "ZYLTON FIGUEREDO SPIGUEL",
-        "frota": "5759",
-        "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+        "frota": "5779",
+        "modelo": "VALETADEIRA",
         "os": "111436",
         "data_entrada": "28/05/2025",
         "previsao_saida": "---",
@@ -462,17 +495,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "ADRIANO CLAUDIO FIRMINO",
-        "frota": "5600",
-        "modelo": "ATOMIZADOR NATALI 4000 LT",
-        "os": "110804",
-        "data_entrada": "19/05/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Verificar bomba oscilando -  (Fazenda Nova Manhã)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
         "frota": "5693",
         "modelo": "PULVERIZADOR 2000 LT",
@@ -836,6 +858,17 @@
         "liberado_por": "Mauricio"
     },
     {
+        "solicitante": "DANILO MULARI GONZAGA",
+        "frota": "5543",
+        "modelo": "ROCADEIRA RC2 E 3100 S0516",
+        "os": "109818",
+        "data_entrada": "02/05/2025",
+        "previsao_saida": "02/05/2025",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Fazer solda na  proteção do cabeçalho - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "RENNAN ARCANJO CREPALDI",
         "frota": "5502",
         "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -855,6 +888,28 @@
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Realinhas asas do tanque - (Fazenda NSA)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "5063",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "109528",
+        "data_entrada": "01/05/2025",
+        "previsao_saida": "01/05/2025",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Fazer solda em trinca na base da estrutura - (Fazenda SP)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOAO VITOR DUBAY DA SILVA",
+        "frota": "5744",
+        "modelo": "SEMEADEIRA 13 LINHA",
+        "os": "109679",
+        "data_entrada": "30/04/2025",
+        "previsao_saida": "30/04/2025",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Fazer solda em trinca no suporte do incorporador de sementes da semeadeira - (Fazenda Estrela)",
         "liberado_por": "Mauricio"
     },
     {
@@ -891,12 +946,56 @@
         "liberado_por": "Mauricio"
     },
     {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "5749",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "109634",
+        "data_entrada": "29/04/2025",
+        "previsao_saida": "01/05/2025",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Realocar o ramal para posicionamento protegido, evitando exposição e risco de ruptura.  - (Fazenda SP)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5730",
+        "modelo": "ROCADEIRA RC2 E 4500 TATU",
+        "os": "109248",
+        "data_entrada": "29/04/2025",
+        "previsao_saida": "29/04/2025",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Fazer solda no suporte da proteção do rotor e acertar cardan travado - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5522",
+        "modelo": "PUL.TURBO 4000 NATALI ALFA",
+        "os": "109612",
+        "data_entrada": "29/04/2025",
+        "previsao_saida": "29/04/2025",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Realinhamento e retificação do suporte da alma, corrigindo a deformação causada por corda - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "RENNAN ARCANJO CREPALDI",
+        "frota": "5065",
+        "modelo": "ROCADEIRA RC2/ 3100 CL214",
+        "os": "109101",
+        "data_entrada": "28/04/2025",
+        "previsao_saida": "28/04/2025",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Quebra do suporte do patins L/E e L/D - (Fazenda NSA)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "DANILO MULARI GONZAGA",
         "frota": "5635",
         "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
         "os": "109554",
         "data_entrada": "28/04/2025",
-        "previsao_saida": "---",
+        "previsao_saida": "20/05/2025",
         "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
         "servico": "Alinhar pratos e bica - (Fazenda Estrela)",
         "liberado_por": "Mauricio"
@@ -921,6 +1020,17 @@
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
+        "frota": "5398",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "109448",
+        "data_entrada": "25/04/2025",
+        "previsao_saida": "29/04/2025",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Fazer proteção de bicos para o tanque de SPE - (Fazenda Terra Branca)",
         "liberado_por": "Mauricio"
     },
     {
