@@ -17,6 +17,30 @@ from PIL import Image
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
+# ----------- PATCH: Função para remover OS em todos os JSONs -----------
+def remover_os_de_todos_json(diretorio, os_numero):
+    removido_de = []
+    for arquivo in os.listdir(diretorio):
+        if arquivo.lower().endswith('.json'):
+            caminho = os.path.join(diretorio, arquivo)
+            try:
+                with open(caminho, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                original_len = len(data)
+                data = [item for item in data if str(item.get('os') or item.get('OS', '')) != os_numero]
+                if len(data) < original_len:
+                    with open(caminho, 'w', encoding='utf-8') as f:
+                        json.dump(data, f, ensure_ascii=False, indent=2)
+                    removido_de.append(arquivo)
+                    logger.info(f"OS {os_numero} removida do arquivo: {caminho}")
+            except Exception as e:
+                logger.error(f"Erro ao atualizar {caminho}: {e}")
+    if not removido_de:
+        logger.warning(f"OS {os_numero} não encontrada em nenhum arquivo JSON de {diretorio}")
+    else:
+        logger.info(f"OS {os_numero} removida dos arquivos: {removido_de}")
+    return removido_de
+
 # --- Configuração do app e banco ---
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
@@ -347,7 +371,7 @@ def login():
         user = User.query.filter_by(username=username).first()
         if user and user.password == senha:
             login_time = saopaulo_tz.localize(datetime.now())
-            logger.debug(f"Setting login_time for {username}: {login_time}")  # Added: Debug logging
+            logger.debug(f"Setting login_time for {username}: {login_time}")
             ev = LoginEvent(username=username, user_type='gerente', login_time=login_time)
             db.session.add(ev)
             db.session.commit()
@@ -366,7 +390,7 @@ def login():
         manutencao = next((p for p in manutencao_users if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if manutencao:
             login_time = saopaulo_tz.localize(datetime.now())
-            logger.debug(f"Setting login_time for {username}: {login_time}")  # Added: Debug logging
+            logger.debug(f"Setting login_time for {username}: {login_time}")
             ev = LoginEvent(username=username, user_type='manutencao', login_time=login_time)
             db.session.add(ev)
             db.session.commit()
@@ -385,7 +409,7 @@ def login():
         prestador = next((p for p in prestadores if p.get('usuario', '').lower() == username and p.get('senha', '') == senha), None)
         if prestador:
             login_time = saopaulo_tz.localize(datetime.now())
-            logger.debug(f"Setting login_time for {username}: {login_time}")  # Added: Debug logging
+            logger.debug(f"Setting login_time for {username}: {login_time}")
             ev = LoginEvent(username=username, user_type=prestador.get('tipo', 'prestador'), login_time=login_time)
             db.session.add(ev)
             db.session.commit()
@@ -537,6 +561,7 @@ def painel_manutencao():
                          now=saopaulo_tz.localize(datetime.now()),
                          profile_picture=profile_picture)
 
+# ---------- PATCH: ROTA FINALIZAR OS ATUALIZADA ----------
 @app.route('/finalizar_os/<os_numero>', methods=['GET', 'POST'])
 def finalizar_os(os_numero):
     responsavel = session.get('gerente') or session.get('prestador') or session.get('manutencao')
@@ -577,7 +602,7 @@ def finalizar_os(os_numero):
             flash('Data e hora de finalização são obrigatórias.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
-        # Aceita data nos formatos YYYY-MM-DD ou DD/MM/YYYY
+        # Aceita data nos formatos %Y-%m-%d ou %d/%m/%Y
         for fmt in ('%Y-%m-%d', '%d/%m/%Y'):
             try:
                 data_fin_obj = datetime.strptime(data_fin, fmt)
@@ -606,43 +631,27 @@ def finalizar_os(os_numero):
             flash('Erro ao finalizar a OS. Verifique os logs.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
+        # Remover OS de todos os arquivos JSON relevantes
         if 'gerente' in session:
-            gerente = session['gerente']
-            base = gerente.upper().replace('.', '_') + "_GONZAGA.json"
-            caminho = os.path.join(MENSAGENS_DIR, base)
-            if not os.path.exists(caminho):
-                prefixo = gerente.split('.')[0].upper()
-                for fn in os.listdir(MENSAGENS_DIR):
-                    if fn.upper().startswith(prefixo) and fn.lower().endswith(".json"):
-                        caminho = os.path.join(MENSAGENS_DIR, fn)
-                        break
-            if os.path.exists(caminho):
-                try:
-                    with open(caminho, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                    data = [item for item in data if str(item.get('os') or item.get('OS', '')) != os_numero]
-                    with open(caminho, 'w', encoding='utf-8') as f:
-                        json.dump(data, f, ensure_ascii=False, indent=2)
-                except Exception as e:
-                    logger.error(f"Erro ao atualizar {caminho}: {e}")
-                    flash('Erro ao atualizar o arquivo JSON.', 'danger')
+            removidos = remover_os_de_todos_json(MENSAGENS_DIR, os_numero)
+            if removidos:
+                flash(f'OS {os_numero} removida dos arquivos: {", ".join(removidos)}', 'success')
+            else:
+                flash(f'OS {os_numero} não foi encontrada nos arquivos JSON de gerente.', 'warning')
 
         if 'prestador' in session:
-            usuario = session['prestador']
-            prestadores = carregar_prestadores()
-            usuario_data = next((p for p in prestadores if p.get('usuario', '').lower() == usuario), None)
-            if usuario_data:
-                caminho = os.path.join(MENSAGENS_PRESTADOR_DIR, usuario_data['arquivo_os'])
-                if os.path.exists(caminho):
-                    try:
-                        with open(caminho, 'r', encoding='utf-8') as f:
-                            data = json.load(f)
-                        data = [item for item in data if str(item.get('os') or item.get('OS', '')) != os_numero]
-                        with open(caminho, 'w', encoding='utf-8') as f:
-                            json.dump(data, f, ensure_ascii=False, indent=2)
-                    except Exception as e:
-                        logger.error(f"Erro ao atualizar {caminho}: {e}")
-                        flash('Erro ao atualizar o arquivo JSON.', 'danger')
+            removidos = remover_os_de_todos_json(MENSAGENS_PRESTADOR_DIR, os_numero)
+            if removidos:
+                flash(f'OS {os_numero} removida dos arquivos: {", ".join(removidos)}', 'success')
+            else:
+                flash(f'OS {os_numero} não foi encontrada nos arquivos JSON de prestador.', 'warning')
+
+        if 'manutencao' in session:
+            removidos = remover_os_de_todos_json(JSON_DIR, os_numero)
+            if removidos:
+                flash(f'OS {os_numero} removida dos arquivos: {", ".join(removidos)}', 'success')
+            else:
+                flash(f'OS {os_numero} não foi encontrada nos arquivos JSON de manutenção.', 'warning')
 
         flash(f'OS {os_numero} finalizada com sucesso', 'success')
         return redirect(url_for('painel_prestador' if 'prestador' in session else 'painel_manutencao' if 'manutencao' in session else 'painel'))
@@ -855,7 +864,7 @@ def logout():
         ev = LoginEvent.query.get(ev_id)
         if ev:
             logout_time = saopaulo_tz.localize(datetime.now())
-            logger.debug(f"Setting logout_time for {ev.username}: {logout_time}")  # Added: Debug logging
+            logger.debug(f"Setting logout_time for {ev.username}: {logout_time}")
             if ev.login_time.tzinfo is None:
                 ev.login_time = saopaulo_tz.localize(ev.login_time)
             else:
