@@ -195,21 +195,26 @@ def carregar_os_gerente(gerente):
     hoje = saopaulo_tz.localize(datetime.now()).date()
     for item in dados:
         data_str = item.get("data") or item.get("Data") or ""
+        # Tentativa de parsing com múltiplos formatos
+        data_abertura = None
         for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y"):
             try:
                 data_abertura = datetime.strptime(data_str, fmt).date()
                 break
-            except Exception:
-                data_abertura = None
+            except ValueError:
+                continue
+        
         if data_abertura:
             dias_abertos = (hoje - data_abertura).days
         else:
-            dias_abertos = 0
+            dias_abertos = 0 # Valor padrão se a data não puder ser parseada
+            logger.warning(f"Não foi possível parsear a data '{data_str}' para a OS {item.get('os') or item.get('OS', '')}")
+
         resultado.append({
             "os": str(item.get("os") or item.get("OS", "")),
             "frota": str(item.get("frota") or item.get("Frota", "")),
             "data": data_str,
-            "dias": str(dias_abertos),
+            "dias_abertos": dias_abertos, # Garante que o campo existe
             "prestador": str(item.get("prestador") or item.get("Prestador", "Prestador não definido")),
             "servico": str(
                 item.get("servico")
@@ -337,12 +342,20 @@ def carregar_os_sem_prestador():
                     prestador = str(item.get('prestador') or item.get('Prestador', '')).lower()
                     if prestador in ('nan', '', 'none', 'não definido', 'prestador não definido'):
                         data_str = str(item.get('data') or item.get('Data', ''))
-                        try:
-                            data_entrada = datetime.strptime(data_str, '%d/%m/%Y').date()
+                        data_entrada = None
+                        for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y"):
+                            try:
+                                data_entrada = datetime.strptime(data_str, fmt).date()
+                                break
+                            except ValueError:
+                                continue
+                        
+                        if data_entrada:
                             dias_abertos = (hoje - data_entrada).days
-                        except Exception:
-                            data_entrada = hoje
-                            dias_abertos = 0
+                        else:
+                            dias_abertos = 0 # Valor padrão
+                            logger.warning(f"Não foi possível parsear a data '{data_str}' para a OS {item.get('os') or item.get('OS', '')} em {arquivo}")
+
                         os_sem_prestador.append({
                             'os': str(item.get('os') or item.get('OS', '')),
                             'frota': str(item.get('frota') or item.get('Frota', '')),
@@ -350,7 +363,7 @@ def carregar_os_sem_prestador():
                             'modelo': str(item.get('modelo') or item.get('Modelo', 'Desconhecido') or 'Desconhecido'),
                             'servico': str(item.get('servico') or item.get('Servico') or item.get('observacao') or item.get('Observacao', '')),
                             'arquivo_origem': arquivo,
-                            'dias_abertos': dias_abertos
+                            'dias_abertos': dias_abertos # Garante que o campo existe
                         })
             except Exception as e:
                 logger.error(f"Erro ao carregar {caminho}: {e}")
@@ -427,7 +440,7 @@ def login():
 def painel():
     if 'gerente' not in session:
         return redirect(url_for('login'))
-    pend = carregar_os_gerente(session['gerente'])
+    pend = carregar_os_gerente(session['gerente']) # Já carrega com dias_abertos
     finalizadas = Finalizacao.query.filter_by(gerente=session['gerente']).order_by(Finalizacao.registrado_em.desc()).limit(100).all()
     
     user = User.query.filter_by(username=session['gerente']).first()
@@ -501,17 +514,37 @@ def painel_prestador():
         flash('Prestador não encontrado', 'danger')
         logger.error(f"Prestador não encontrado na sessão: {session['prestador']}")
         return redirect(url_for('login'))
+    
     caminho = os.path.join(MENSAGENS_PRESTADOR_DIR, prestador['arquivo_os'])
+    os_list = []
     if not os.path.exists(caminho):
         logger.warning(f"Arquivo de OS não encontrado: {caminho}")
-        os_list = []
     else:
         try:
             with open(caminho, 'r', encoding='utf-8') as f:
                 os_list = json.load(f)
+            hoje = saopaulo_tz.localize(datetime.now()).date()
+            for item in os_list:
+                data_str = item.get('data') or item.get('Data', '')
+                data_abertura = None
+                for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y"):
+                    try:
+                        data_abertura = datetime.strptime(data_str, fmt).date()
+                        break
+                    except ValueError:
+                        continue
+                if data_abertura:
+                    item['dias_abertos'] = (hoje - data_abertura).days
+                else:
+                    item['dias_abertos'] = 0 # Garante que o campo existe
+                    logger.warning(f"Could not parse date '{data_str}' for OS {item.get('os') or item.get('OS', '')} in prestador's file.")
         except json.JSONDecodeError as e:
             logger.error(f"Erro ao decodificar {caminho}: {e}")
             os_list = []
+        except Exception as e:
+            logger.error(f"Erro ao carregar OS para {session['prestador']}: {e}")
+            os_list = []
+
     return render_template('painel_prestador.html', nome=prestador['nome_exibicao'], os_list=os_list)
 
 @app.route('/painel_manutencao')
@@ -530,8 +563,9 @@ def painel_manutencao():
         flash('Usuário de manutenção não encontrado', 'danger')
         logger.error(f"Usuário de manutenção não encontrado na sessão: {session['manutencao']}")
         return redirect(url_for('login'))
-    os_list = carregar_os_manutencao(session['manutencao'])
-    os_sem_prestador = carregar_os_sem_prestador()
+    
+    os_list = carregar_os_manutencao(session['manutencao']) # Já carrega com dias_abertos
+    os_sem_prestador = carregar_os_sem_prestador() # Já carrega com dias_abertos
     total_os = len(os_list)
     total_os_sem_prestador = len(os_sem_prestador)
 
@@ -568,15 +602,12 @@ def finalizar_os(os_numero):
         flash('Acesso negado. Faça login.', 'danger')
         return redirect(url_for('login'))
 
-    # Determine which list to load based on the user type
+    all_relevant_os = []
     if 'manutencao' in session:
         all_relevant_os = carregar_os_manutencao(session['manutencao'])
     elif 'gerente' in session:
         all_relevant_os = carregar_os_gerente(session['gerente'])
     elif 'prestador' in session:
-        # Assuming prestador also has a function to load their specific OS
-        # You'll need to implement carregar_os_do_prestador(session['prestador']) if it doesn't exist
-        # For now, let's assume it's part of the manutencao/gerente flow or needs to be added
         prestadores = carregar_prestadores()
         prestador_data = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
         if prestador_data and 'arquivo_os' in prestador_data:
@@ -584,26 +615,58 @@ def finalizar_os(os_numero):
             if os.path.exists(caminho):
                 try:
                     with open(caminho, 'r', encoding='utf-8') as f:
-                        all_relevant_os = json.load(f)
+                        os_list_raw = json.load(f)
+                    hoje = saopaulo_tz.localize(datetime.now()).date()
+                    for item in os_list_raw:
+                        data_str = item.get('data') or item.get('Data', '') # Prioriza 'data' ou 'Data'
+                        data_abertura = None
+                        for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y"): # Tentativa de parsing com múltiplos formatos
+                            try:
+                                data_abertura = datetime.strptime(data_str, fmt).date()
+                                break
+                            except ValueError:
+                                continue
+                        
+                        if data_abertura:
+                            item['dias_abertos'] = (hoje - data_abertura).days
+                        else:
+                            item['dias_abertos'] = 0 # Default se a data não puder ser parseada
+                            logger.warning(f"Could not parse date '{data_str}' for OS {item.get('os') or item.get('OS', '')} in prestador's file.")
+                        all_relevant_os.append(item) # Adiciona item já com dias_abertos
                 except json.JSONDecodeError as e:
                     logger.error(f"Erro ao decodificar {caminho}: {e}")
-                    all_relevant_os = []
-            else:
-                all_relevant_os = []
-        else:
-            all_relevant_os = []
-    else:
-        all_relevant_os = []
+                except Exception as e:
+                    logger.error(f"Erro ao carregar OS para {session['prestador']}: {e}")
 
-    # Find the specific OS that is being finalized
     os_data_to_finalize = next((os for os in all_relevant_os if os['os'] == os_numero), None)
-    
+
+    if os_data_to_finalize is None:
+        flash(f"OS {os_numero} não encontrada ou já finalizada.", 'danger')
+        return redirect(url_for('painel_prestador' if 'prestador' in session else 'painel_manutencao' if 'manutencao' in session else 'painel'))
+
+    # Garante que 'dias_abertos' está presente para os_data_to_finalize se não veio na carga inicial
+    if 'dias_abertos' not in os_data_to_finalize:
+        data_abertura_str = os_data_to_finalize.get('data_entrada') or os_data_to_finalize.get('data') or os_data_to_finalize.get('Data', '')
+        hoje = saopaulo_tz.localize(datetime.now()).date()
+        data_abertura_obj = None
+        for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y"):
+            try:
+                data_abertura_obj = datetime.strptime(data_abertura_str, fmt).date()
+                break
+            except ValueError:
+                continue
+        if data_abertura_obj:
+            os_data_to_finalize['dias_abertos'] = (hoje - data_abertura_obj).days
+        else:
+            os_data_to_finalize['dias_abertos'] = 0
+            logger.warning(f"Could not calculate dias_abertos for OS {os_numero} in finalizacao route. Date: {data_abertura_str}")
+
+
     if request.method == 'GET':
-        # Render the form, potentially pre-filling with OS data
         user = User.query.filter_by(username=responsavel).first()
         profile_picture = user.profile_picture if user else None
 
-        return render_template('painel_manutencao.html', # Or a specific finalization template
+        return render_template('painel_manutencao.html', # Ou um template específico para finalização se tiver
                              nome=session.get('manutencao_nome') or session.get('gerente') or session.get('prestador_nome'),
                              manutencao=session.get('manutencao'),
                              os_list=all_relevant_os,
@@ -615,8 +678,8 @@ def finalizar_os(os_numero):
                              prestadores=carregar_prestadores(),
                              now=saopaulo_tz.localize(datetime.now()),
                              profile_picture=profile_picture,
-                             os_numero_a_finalizar=os_numero, # Pass the OS number for JS to pick up
-                             os_data=os_data_to_finalize # Pass the OS data to the template
+                             os_numero_a_finalizar=os_numero,
+                             os_data=os_data_to_finalize # Passa os dados da OS, que agora garantidamente tem 'dias_abertos'
                             )
 
     if request.method == 'POST':
@@ -632,10 +695,10 @@ def finalizar_os(os_numero):
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
         data_abertura_str = None
-        # Try to get data_entrada from os_data_to_finalize (for manutencao/prestador)
+        # Tentar obter data_entrada para usuários de manutenção/prestador
         if os_data_to_finalize and 'data_entrada' in os_data_to_finalize:
             data_abertura_str = os_data_to_finalize['data_entrada']
-        # Try to get data from os_data_to_finalize (for gerente)
+        # Tentar obter data para gerentes
         elif os_data_to_finalize and 'data' in os_data_to_finalize:
             data_abertura_str = os_data_to_finalize['data']
 
