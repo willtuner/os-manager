@@ -1,6 +1,48 @@
 [
   {
     "solicitado": "EDER JOSE FERNANDES DE ALMEIDA",
+    "frota": "99",
+    "os": "111476",
+    "data": "28/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Trocar confeccionar e trocar teto"
+  },
+  {
+    "frota": "99",
+    "os": "111475",
+    "data": "28/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar buzina"
+  },
+  {
+    "frota": "10022",
+    "os": "111474",
+    "data": "28/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Acertar parafusos que segura jogo de facas e parafusos de fixação do rotor esquerdo"
+  },
+  {
+    "frota": "5402",
+    "os": "111473",
+    "data": "28/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar e regularizar folga no eixo da roda guia traseira esquerda."
+  },
+  {
+    "frota": "5623",
+    "os": "111472",
+    "data": "28/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Soldar e recuperar trincos na estrutura da rocadeira"
+  },
+  {
+    "frota": "220",
+    "os": "111461",
+    "data": "28/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sistema eletrico"
+  },
+  {
     "frota": "224",
     "os": "111356",
     "data": "27/05/2025",
