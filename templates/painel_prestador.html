@@ -160,7 +160,7 @@
                 
                 <hr class="form-section-divider">
 
-                <form action="{{ url_for('finalizar_os', os_numero=item.os) }}"
+                <form action="{{ url_for('finalizar_os', os_numero_str=item.os) }}"  {# <<< CORREÇÃO APLICADA AQUI #}
                       method="POST"
                       enctype="multipart/form-data"
                       class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
@@ -173,7 +173,7 @@
                             <input type="date" id="data_finalizacao_{{ item.os }}" name="data_finalizacao"
                                    class="form-control form-control-sm"
                                    required
-                                   max="{{ today_date }}"> {# today_date vem do backend #}
+                                   max="{{ today_date }}"> 
                             <div class="invalid-feedback">Campo obrigatório.</div>
                         </div>
                         <div class="col-md-6">
@@ -222,7 +222,7 @@
                         <hr>
                         <p><strong>Serviço Solicitado:</strong></p>
                         <p style="white-space: pre-wrap;">{{ item.servico | default('N/A') }}</p>
-                        {% if item.observacao or item.Observacao %} {# Checa ambos os casos de observação original #}
+                        {% if item.observacao or item.Observacao %} 
                             <hr>
                             <p><strong>Observações de Abertura:</strong></p>
                             <p style="white-space: pre-wrap;">{{ item.observacao or item.Observacao }}</p>
@@ -261,9 +261,6 @@
             event.preventDefault()
             event.stopPropagation()
           }
-          // A classe 'was-validated' será adicionada pelo Bootstrap automaticamente
-          // ou pode ser adicionada aqui se necessário após a validação customizada.
-          // form.classList.add('was-validated') 
         }, false)
       })
     })()
@@ -272,29 +269,23 @@
         const dataFinalizacaoInput = form.querySelector('input[name="data_finalizacao"]');
         const horaFinalizacaoInput = form.querySelector('input[name="hora_finalizacao"]');
         
-        // Adiciona 'was-validated' para mostrar feedback do Bootstrap imediatamente
         form.classList.add('was-validated');
 
         if (!dataFinalizacaoInput.value || !horaFinalizacaoInput.value) {
-            // A validação 'required' e a classe 'was-validated' já devem mostrar os erros.
-            // Focar no primeiro campo inválido se houver.
             if (!dataFinalizacaoInput.value) dataFinalizacaoInput.focus();
             else if (!horaFinalizacaoInput.value) horaFinalizacaoInput.focus();
             return false; 
         }
 
-        // Validação da data de finalização contra a data de abertura
         if (dataAberturaStr && dataAberturaStr !== 'Data não informada' && dataAberturaStr !== '' && dataAberturaStr !== 'N/A') {
             try {
                 const partsAbertura = dataAberturaStr.split('/');
-                // JavaScript Date meses são 0-indexados (Janeiro=0, Dezembro=11)
                 const dataAberturaObj = new Date(parseInt(partsAbertura[2], 10), parseInt(partsAbertura[1], 10) - 1, parseInt(partsAbertura[0], 10));
                 
-                const dataFinalizacaoValue = dataFinalizacaoInput.value; // Formato YYYY-MM-DD
+                const dataFinalizacaoValue = dataFinalizacaoInput.value; 
                 const partsFinalizacao = dataFinalizacaoValue.split('-');
                 const dataFinalizacaoObj = new Date(parseInt(partsFinalizacao[0], 10), parseInt(partsFinalizacao[1], 10) - 1, parseInt(partsFinalizacao[2], 10));
                 
-                // Normalizar para meia-noite para evitar problemas com horas na comparação de datas
                 dataAberturaObj.setHours(0,0,0,0);
                 dataFinalizacaoObj.setHours(0,0,0,0);
 
@@ -303,26 +294,23 @@
                           ') não pode ser anterior à data de abertura da OS (' + dataAberturaObj.toLocaleDateString('pt-BR') + ').');
                     dataFinalizacaoInput.focus();
                     dataFinalizacaoInput.classList.add('is-invalid'); 
-                    return false; // Impede submissão, spinner não foi ativado
+                    return false; 
                 } else {
                      dataFinalizacaoInput.classList.remove('is-invalid');
-                     // Não precisa adicionar 'is-valid' aqui, pois o 'was-validated' no form já cuida disso
-                     // se o campo estiver preenchido e passar na validação 'required'.
                 }
             } catch (e) {
                 console.error("Erro ao parsear datas para validação no JS: ", e, "Data de abertura recebida:", dataAberturaStr);
                 alert('Houve um problema ao validar internamente a data de abertura da OS ('+ dataAberturaStr +'). Verifique o formato esperado (DD/MM/YYYY) ou se a data é válida. A finalização não pode prosseguir no momento.');
-                return false; // Impede submissão e ativação do spinner se o parse da data de abertura falhar
+                return false; 
             }
         }
         
-        // Se todas as validações JS passaram e não houve 'return false' antes:
         const submitBtn = form.querySelector('button[type="submit"]');
         if (submitBtn) {
             submitBtn.disabled = true; 
-            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Confirmando...'; // Texto alterado
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Confirmando...';
         }
-        return true; // Permite o envio do formulário
+        return true; 
     }
 </script>
 {% endblock %}
