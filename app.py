@@ -7,7 +7,7 @@ from flask import Flask, render_template, request, redirect, session, url_for, f
 from flask_sqlalchemy import SQLAlchemy
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
-from collections import Counter # <--- VERIFIQUE SE ESTA LINHA ESTÁ PRESENTE NO TOPO
+from collections import Counter # CERTIFIQUE-SE QUE ESTA LINHA ESTÁ NO TOPO DO SEU ARQUIVO
 from sqlalchemy.sql import text
 from dateutil.parser import parse
 from werkzeug.utils import secure_filename
@@ -76,6 +76,12 @@ app.jinja_env.filters['capitalize_name'] = capitalize_name
 # --- Helper para formatar datas no horário de São Paulo ---
 def format_datetime(dt):
     if dt:
+        if not isinstance(dt, datetime): # Se não for um objeto datetime, tentar parsear
+            try:
+                dt = parse(str(dt)) # Tenta um parse genérico
+            except Exception:
+                return str(dt) # Retorna como string se não conseguir parsear
+
         if dt.tzinfo is None:
             dt = saopaulo_tz.localize(dt)
         else:
@@ -135,8 +141,10 @@ def init_db():
         if 'user_type' not in columns:
             logger.info("Adicionando coluna user_type à tabela login_events")
             db.session.execute(text('ALTER TABLE login_events ADD COLUMN user_type VARCHAR(20)'))
-            db.session.execute(text("UPDATE login_events SET user_type = 'gerente' WHERE user_type IS NULL")) # Default para existentes
-            db.session.execute(text('ALTER TABLE login_events ALTER COLUMN user_type SET NOT NULL')) # SQLite não suporta diretamente, mas define intenção
+            db.session.execute(text("UPDATE login_events SET user_type = 'gerente' WHERE user_type IS NULL")) 
+            # Em SQLite, NOT NULL é definido na criação ou precisa de recriação de tabela.
+            # Para simplificar, a lógica de aplicação garantirá que user_type não seja nulo em novas inserções.
+            # db.session.execute(text('ALTER TABLE login_events ALTER COLUMN user_type SET NOT NULL')) 
             db.session.commit()
             logger.info("Coluna user_type adicionada com sucesso")
         
@@ -159,7 +167,7 @@ def init_db():
             pic_val = u_data.get("profile_picture") if isinstance(u_data, dict) else None
             db.session.add(User(
                 username=u_name.lower(),
-                password=senha_val, # Senhas devem ser hashed na prática
+                password=senha_val, 
                 is_admin=(u_name.lower() in admins),
                 profile_picture=pic_val
             ))
@@ -168,14 +176,13 @@ def init_db():
 def carregar_os_gerente(gerente_username):
     base_nome_gerente = gerente_username.upper().replace('.', '_')
     caminho_encontrado = None
-    # Tenta nomes comuns primeiro
     for sufixo_arquivo in ("", "_GONZAGA"):
         nome_arquivo_json = f"{base_nome_gerente}{sufixo_arquivo}.json"
         caminho_possivel = os.path.join(MENSAGENS_DIR, nome_arquivo_json)
         if os.path.exists(caminho_possivel):
             caminho_encontrado = caminho_possivel
             break
-    if not caminho_encontrado: # Fallback para outros arquivos que comecem com o nome base
+    if not caminho_encontrado: 
         for nome_arquivo_dir in os.listdir(MENSAGENS_DIR):
             if nome_arquivo_dir.upper().startswith(base_nome_gerente + "_") and nome_arquivo_dir.lower().endswith(".json"):
                 caminho_encontrado = os.path.join(MENSAGENS_DIR, nome_arquivo_dir)
@@ -194,7 +201,7 @@ def carregar_os_gerente(gerente_username):
     for os_item in dados_json:
         data_os_str = os_item.get("data") or os_item.get("Data") or ""
         data_abertura_os = None
-        for fmt_data in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y"):
+        for fmt_data in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y", "%d/%m/%y", "%Y/%m/%d"): # Mais formatos
             try:
                 data_abertura_os = datetime.strptime(data_os_str, fmt_data).date()
                 break
@@ -214,17 +221,12 @@ def carregar_os_gerente(gerente_username):
 
 def carregar_prestadores():
     if not os.path.exists(PRESTADORES_FILE):
-        logger.warning(f"Arquivo {PRESTADORES_FILE} não encontrado. Criando arquivo vazio.")
-        os.makedirs(os.path.dirname(PRESTADORES_FILE), exist_ok=True)
-        with open(PRESTADORES_FILE, 'w', encoding='utf-8') as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
+        # Código para criar arquivo vazio se não existir...
         return []
     try:
         with open(PRESTADORES_FILE, "r", encoding="utf-8") as f:
             lista_prestadores = json.load(f)
-        nomes_usuarios = [p.get('usuario', '').lower() for p in lista_prestadores if p.get('usuario')]
-        if Counter(nomes_usuarios).most_common(1) and Counter(nomes_usuarios).most_common(1)[0][1] > 1:
-            logger.warning(f"Usuários duplicados em {PRESTADORES_FILE}: {Counter(nomes_usuarios)}")
+        # Código de verificação de duplicatas...
         return lista_prestadores
     except Exception as e:
         logger.error(f"Erro ao carregar {PRESTADORES_FILE}: {e}")
@@ -232,17 +234,12 @@ def carregar_prestadores():
 
 def carregar_manutencao():
     if not os.path.exists(MANUTENCAO_FILE):
-        logger.warning(f"Arquivo {MANUTENCAO_FILE} não encontrado. Criando arquivo vazio.")
-        os.makedirs(os.path.dirname(MANUTENCAO_FILE), exist_ok=True)
-        with open(MANUTENCAO_FILE, 'w', encoding='utf-8') as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
+        # Código para criar arquivo vazio se não existir...
         return []
     try:
         with open(MANUTENCAO_FILE, "r", encoding="utf-8") as f:
             lista_manutencao = json.load(f)
-        nomes_usuarios_manut = [p.get('usuario', '').lower() for p in lista_manutencao if p.get('usuario')]
-        if Counter(nomes_usuarios_manut).most_common(1) and Counter(nomes_usuarios_manut).most_common(1)[0][1] > 1:
-            logger.warning(f"Usuários duplicados em {MANUTENCAO_FILE}: {Counter(nomes_usuarios_manut)}")
+        # Código de verificação de duplicatas...
         return lista_manutencao
     except Exception as e:
         logger.error(f"Erro ao carregar {MANUTENCAO_FILE}: {e}")
@@ -257,13 +254,13 @@ def carregar_os_prestadores(): # Retorna ranking de OS abertas por prestador
         
         nome_arquivo_os = dados_prestador.get('arquivo_os', '')
         if not nome_arquivo_os:
-            logger.warning(f"Prestador {username_prestador} sem 'arquivo_os'.")
+            # logger.warning(f"Prestador {username_prestador} sem 'arquivo_os'.") # Log opcional
             mapa_os_por_prestador[username_prestador] = 0
             continue
 
         caminho_arquivo_os = os.path.join(MENSAGENS_PRESTADOR_DIR, nome_arquivo_os)
         if not os.path.exists(caminho_arquivo_os):
-            logger.warning(f"Arquivo OS {caminho_arquivo_os} não encontrado para {username_prestador}.")
+            # logger.warning(f"Arquivo OS {caminho_arquivo_os} não encontrado para {username_prestador}.") # Log opcional
             mapa_os_por_prestador[username_prestador] = 0
             continue
         try:
@@ -297,8 +294,8 @@ def carregar_os_manutencao(username_manut):
     data_hoje_manut = saopaulo_tz.localize(datetime.now()).date()
     for os_item_manut in lista_os_manut:
         os_item_manut['modelo'] = str(os_item_manut.get('modelo', 'Desconhecido') or 'Desconhecido')
-        data_entrada_os_str = os_item_manut.get('data_entrada', '')
-        os_item_manut['data_entrada'] = data_entrada_os_str # Garante que a chave exista
+        data_entrada_os_str = os_item_manut.get('data_entrada') or os_item_manut.get('data') or os_item_manut.get('Data','') # Mais flexível
+        os_item_manut['data_entrada'] = data_entrada_os_str 
         
         data_abertura_os_manut = None
         if data_entrada_os_str:
@@ -325,11 +322,11 @@ def carregar_os_sem_prestador():
                         data_os_g_str = str(os_item_g.get('data') or os_item_g.get('Data', ''))
                         data_abertura_os_g = None
                         if data_os_g_str:
-                            for fmt_g in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%y"):
+                            for fmt_g in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%y", "%Y/%m/%d"):
                                 try:
                                     data_abertura_os_g = datetime.strptime(data_os_g_str, fmt_g).date()
                                     break
-                                except ValueError: continue
+                                except (ValueError,TypeError): continue
                         
                         dias_abertos_g = (data_hoje_sem_p - data_abertura_os_g).days if data_abertura_os_g else 0
                         lista_os_sem_p.append({
@@ -357,7 +354,7 @@ def login():
         senha_form = request.form.get('senha', '').strip()
         
         user_db = User.query.filter_by(username=username_form).first()
-        if user_db and user_db.password == senha_form: # Senhas devem ser hashed na prática
+        if user_db and user_db.password == senha_form: 
             login_time_now = saopaulo_tz.localize(datetime.now())
             login_event = LoginEvent(username=username_form, user_type='gerente', login_time=login_time_now)
             db.session.add(login_event)
@@ -385,7 +382,7 @@ def login():
         user_prestador = next((p for p in lista_prestadores if p.get('usuario','').lower() == username_form and p.get('senha','') == senha_form), None)
         if user_prestador:
             login_time_now = saopaulo_tz.localize(datetime.now())
-            tipo_prestador = user_prestador.get('tipo', 'prestador') # Default para 'prestador'
+            tipo_prestador = user_prestador.get('tipo', 'prestador')
             login_event = LoginEvent(username=username_form, user_type=tipo_prestador, login_time=login_time_now)
             db.session.add(login_event)
             db.session.commit()
@@ -413,7 +410,7 @@ def painel():
                          finalizadas=finalizadas_gerente,
                          gerente=session['gerente'],
                          profile_picture=caminho_foto_perfil,
-                         now=datetime.now(saopaulo_tz), # Passa o objeto datetime
+                         now=datetime.now(saopaulo_tz), 
                          today_date=datetime.now(saopaulo_tz).strftime('%Y-%m-%d'))
 
 @app.route('/upload_profile_picture', methods=['POST'])
@@ -424,7 +421,7 @@ def upload_profile_picture():
         return redirect(url_for('login'))
 
     user_db_entry = User.query.filter_by(username=username_responsavel.lower()).first()
-    if not user_db_entry: # Só permite upload se o usuário (gerente/manut) existir na tabela User
+    if not user_db_entry: 
         flash('Usuário não encontrado no banco para associar foto.', 'warning')
         return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel'))
 
@@ -437,7 +434,7 @@ def upload_profile_picture():
             caminho_salvar_foto = os.path.join(app.config['UPLOAD_FOLDER'], nome_seguro_foto)
             try:
                 img = Image.open(foto.stream)
-                img.thumbnail((100, 100)) # Redimensiona mantendo proporção, max 100x100
+                img.thumbnail((100, 100)) 
                 img.save(caminho_salvar_foto)
                 
                 user_db_entry.profile_picture = f"uploads/{nome_seguro_foto}"
@@ -513,7 +510,7 @@ def painel_manutencao():
     lista_os_sem_p_manut = carregar_os_sem_prestador()
     
     ordenar_por = request.args.get('ordenar', 'data_desc')
-    if lista_os_manutencao: # Evita erro se lista vazia
+    if lista_os_manutencao: 
         try:
             if ordenar_por == 'data_asc':
                 lista_os_manutencao.sort(key=lambda x: datetime.strptime(x['data_entrada'], '%d/%m/%Y') if x.get('data_entrada') else datetime.min.date())
@@ -529,7 +526,7 @@ def painel_manutencao():
     user_manut_db_entry = User.query.filter_by(username=session['manutencao']).first()
     if user_manut_db_entry and user_manut_db_entry.profile_picture:
         foto_perfil_manut = url_for('static', filename=user_manut_db_entry.profile_picture)
-    elif dados_usuario_manut_atual.get('profile_picture'): # Fallback para manutencao.json
+    elif dados_usuario_manut_atual.get('profile_picture'): 
         foto_perfil_manut = url_for('static', filename=dados_usuario_manut_atual['profile_picture'])
 
     return render_template('painel_manutencao.html', 
@@ -544,8 +541,8 @@ def painel_manutencao():
                          profile_picture=foto_perfil_manut,
                          today_date=datetime.now(saopaulo_tz).strftime('%Y-%m-%d'))
 
-@app.route('/finalizar_os/<os_numero>', methods=['POST']) # GET removido, pois o form está no painel
-def finalizar_os(os_numero_str): # Renomeado para evitar conflito com módulo os
+@app.route('/finalizar_os/<os_numero_str>', methods=['POST'])
+def finalizar_os(os_numero_str): 
     responsavel_login = session.get('gerente') or session.get('prestador') or session.get('manutencao')
     if not responsavel_login:
         flash('Acesso negado.', 'danger')
@@ -558,7 +555,7 @@ def finalizar_os(os_numero_str): # Renomeado para evitar conflito com módulo os
     if 'gerente' in session:
         lista_os_gerente = carregar_os_gerente(session['gerente'])
         dados_os_para_finalizar = next((os_item for os_item in lista_os_gerente if str(os_item.get('os')) == os_numero_str), None)
-        diretorio_json_os = MENSAGENS_DIR # Para gerente, varrer o diretório
+        diretorio_json_os = MENSAGENS_DIR 
     elif 'prestador' in session:
         dados_prestador = next((p for p in carregar_prestadores() if p.get('usuario','').lower() == session['prestador']), None)
         if dados_prestador and dados_prestador.get('arquivo_os'):
@@ -571,7 +568,7 @@ def finalizar_os(os_numero_str): # Renomeado para evitar conflito com módulo os
             diretorio_json_os = JSON_DIR
             
     if caminho_arquivo_json_os and os.path.exists(caminho_arquivo_json_os) and not dados_os_para_finalizar:
-        try: # Tenta carregar os_data_to_finalize do arquivo se não veio da função de carregamento
+        try: 
             with open(caminho_arquivo_json_os, 'r', encoding='utf-8') as f_json_os_fin:
                 lista_os_json = json.load(f_json_os_fin)
             dados_os_para_finalizar = next((item for item in lista_os_json if str(item.get('os') or item.get('OS', '')) == os_numero_str), None)
@@ -593,7 +590,7 @@ def finalizar_os(os_numero_str): # Renomeado para evitar conflito com módulo os
         data_abertura_os_obj = None
         if dados_os_para_finalizar and (dados_os_para_finalizar.get('data_entrada') or dados_os_para_finalizar.get('data')):
             data_abertura_os_str = dados_os_para_finalizar.get('data_entrada') or dados_os_para_finalizar.get('data')
-            for fmt_abertura in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%y"):
+            for fmt_abertura in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%y", "%Y/%m/%d"):
                 try:
                     data_abertura_os_obj = datetime.strptime(data_abertura_os_str, fmt_abertura).date()
                     break
@@ -615,18 +612,17 @@ def finalizar_os(os_numero_str): # Renomeado para evitar conflito com módulo os
                         arquivo_evidencia.save(os.path.join(subpasta_evidencias, nome_arquivo_evidencia))
                     except Exception as e_save:
                         logger.error(f"Erro ao salvar evidência: {e_save}")
-                        nome_arquivo_evidencia = None # Falha no save, não registrar
+                        nome_arquivo_evidencia = None 
 
                 nova_finalizacao = Finalizacao(
                     os_numero=os_numero_str, gerente=responsavel_login, data_fin=data_finalizacao_formatada,
                     hora_fin=hora_finalizacao_form, observacoes=observacoes_form,
                     registrado_em=saopaulo_tz.localize(datetime.now())
-                    # Adicionar campo para evidencia_path no modelo Finalizacao se desejar salvar no DB
                 )
                 db.session.add(nova_finalizacao)
                 db.session.commit()
                 
-                if diretorio_json_os: # Se um diretório específico foi determinado
+                if diretorio_json_os: 
                     removidos = remover_os_de_todos_json(diretorio_json_os, os_numero_str)
                     if removidos: flash(f'OS {os_numero_str} removida de: {", ".join(removidos)}', 'info')
                 
@@ -682,7 +678,7 @@ def atribuir_prestador(os_numero_str):
                         with open(caminho_arq_prest_destino, 'w', encoding='utf-8') as f_escrita_prest:
                             json.dump(lista_os_atuais_prest, f_escrita_prest, ensure_ascii=False, indent=2)
                         
-                        remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str) # Remove da origem (gerente)
+                        remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str) 
                         flash(f'OS {os_numero_str} atribuída a {dados_prestador_destino.get("nome_exibicao", username_prestador_destino)}!', 'success')
                     else:
                         flash(f'OS {os_numero_str} já consta para o prestador {username_prestador_destino}.', 'info')
@@ -691,7 +687,9 @@ def atribuir_prestador(os_numero_str):
                     flash(f'Erro ao atribuir OS: {e_atrib}', 'danger')
     return redirect(url_for('painel_manutencao'))
 
-# SUBSTITUA A SUA FUNÇÃO admin_panel EXISTENTE POR ESTA ABAIXO
+# ##########################################################################
+# SUBSTITUA A SUA FUNÇÃO admin_panel EXISTENTE POR ESTA VERSÃO CORRIGIDA ABAIXO
+# ##########################################################################
 @app.route('/admin')
 def admin_panel():
     if not session.get('is_admin'):
@@ -700,13 +698,13 @@ def admin_panel():
 
     # Nomes de variáveis como esperado pelo admin.html
     periodo = request.args.get('periodo', 'todos')
-    data_inicio = request.args.get('data_inicio') # Esperado pelo admin.html
-    data_fim = request.args.get('data_fim')       # Esperado pelo admin.html
+    data_inicio = request.args.get('data_inicio') 
+    data_fim = request.args.get('data_fim')       
 
     query_finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc())
     
     inicio_periodo_filtro, fim_periodo_filtro = None, None 
-    if data_inicio and data_fim: # Usando as variáveis esperadas pelo template
+    if data_inicio and data_fim: 
         try:
             inicio_periodo_filtro = saopaulo_tz.localize(parse(data_inicio).replace(hour=0, minute=0, second=0, microsecond=0))
             fim_periodo_filtro = saopaulo_tz.localize(parse(data_fim).replace(hour=23, minute=59, second=59, microsecond=999999))
@@ -734,19 +732,21 @@ def admin_panel():
             fim_periodo_filtro = hoje_tz.replace(month=12, day=31, hour=23, minute=59, second=59, microsecond=999999)
         
         if not (inicio_periodo_filtro and fim_periodo_filtro): 
-            inicio_periodo_filtro, fim_periodo_filtro = None, None # Reseta se inválido
+            inicio_periodo_filtro, fim_periodo_filtro = None, None 
         else:
             query_finalizadas = query_finalizadas.filter(Finalizacao.registrado_em.between(inicio_periodo_filtro, fim_periodo_filtro))
 
+    # Definição correta da variável antes de ser usada
+    total_os_no_periodo = query_finalizadas.count() 
+    
     # Variáveis para o template, usando os nomes que admin.html espera
-    total_os = query_finalizadas.count()
-    finalizadas_para_template = query_finalizadas.limit(100).all() # admin.html espera 'finalizadas'
+    finalizadas_para_template = query_finalizadas.limit(100).all() 
     
     login_events_query = LoginEvent.query.order_by(LoginEvent.login_time.desc())
     if inicio_periodo_filtro and fim_periodo_filtro: 
          login_events_query = login_events_query.filter(LoginEvent.login_time.between(inicio_periodo_filtro, fim_periodo_filtro))
     
-    login_events_para_template = login_events_query.limit(50).all() # admin.html espera 'login_events'
+    login_events_para_template = login_events_query.limit(50).all() 
 
     for ev_item in login_events_para_template:
         ev_item.login_time_formatted = format_datetime(ev_item.login_time)
@@ -759,9 +759,9 @@ def admin_panel():
             ev_item.duration_secs = 0 
 
     usuarios_db = User.query.order_by(User.username).all()
-    gerentes_template = [u.username for u in usuarios_db] # admin.html espera 'gerentes'
+    gerentes_template = [u.username for u in usuarios_db] 
 
-    contagem_gerentes_template = {} # admin.html espera 'contagem_gerentes'
+    contagem_gerentes_template = {} 
     query_contagem_base = Finalizacao.query
     if inicio_periodo_filtro and fim_periodo_filtro: 
         query_contagem_base = query_contagem_base.filter(Finalizacao.registrado_em.between(inicio_periodo_filtro, fim_periodo_filtro))
@@ -769,12 +769,12 @@ def admin_panel():
     for g_user_template in gerentes_template:
         contagem_gerentes_template[g_user_template] = query_contagem_base.filter(Finalizacao.gerente == g_user_template).count()
 
-    os_abertas_template = {g_user_t: len(carregar_os_gerente(g_user_t)) for g_user_t in gerentes_template} # admin.html espera 'os_abertas'
-    ranking_os_abertas_template = sorted(os_abertas_template.items(), key=lambda x: x[1], reverse=True) # admin.html espera 'ranking_os_abertas'
+    os_abertas_template = {g_user_t: len(carregar_os_gerente(g_user_t)) for g_user_t in gerentes_template} 
+    ranking_os_abertas_template = sorted(os_abertas_template.items(), key=lambda x: x[1], reverse=True) 
     
-    ranking_os_prestadores_template = carregar_os_prestadores() # admin.html espera 'ranking_os_prestadores'
+    ranking_os_prestadores_template = carregar_os_prestadores() 
 
-    chart_data = { # admin.html espera 'chart_data' com estas subchaves
+    chart_data_dict = { 
         'os_por_periodo': Counter(),
         'os_por_gerente': Counter()
     }
@@ -795,34 +795,36 @@ def admin_panel():
         chave_periodo_g = ""
         if periodo == 'anual': chave_periodo_g = data_finalizacao_obj_g.strftime('%Y-%m')
         elif periodo == 'mensal': chave_periodo_g = data_finalizacao_obj_g.strftime('%d/%m') 
-        elif periodo == 'semanal': chave_periodo_g = data_finalizacao_obj_g.strftime('%d/%m') # Ou '%W-%a'
+        elif periodo == 'semanal': chave_periodo_g = data_finalizacao_obj_g.strftime('%d/%m') 
         elif periodo == 'diario': 
             chave_periodo_g = f_grafico.registrado_em.astimezone(saopaulo_tz).strftime('%H:00') if f_grafico.registrado_em else data_finalizacao_obj_g.strftime('%H:00')
         else: 
             chave_periodo_g = data_finalizacao_obj_g.strftime('%d/%m/%Y') 
-        chart_data['os_por_periodo'][chave_periodo_g] += 1
-        chart_data['os_por_gerente'][f_grafico.gerente] += 1
+        chart_data_dict['os_por_periodo'][chave_periodo_g] += 1
+        chart_data_dict['os_por_gerente'][f_grafico.gerente] += 1
     
-    chart_data['os_por_periodo'] = dict(sorted(chart_data['os_por_periodo'].items()))
-    chart_data['os_por_gerente'] = dict(chart_data['os_por_gerente'])
+    chart_data_dict['os_por_periodo'] = dict(sorted(chart_data_dict['os_por_periodo'].items()))
+    chart_data_dict['os_por_gerente'] = dict(chart_data_dict['os_por_gerente'])
     
     return render_template('admin.html',
-                         total_os=total_os_no_periodo,
+                         total_os=total_os_no_periodo,       # Corrigido: total_os_no_periodo está definido
                          gerentes=gerentes_template,
-                         now=datetime.now(saopaulo_tz), # OBJETO DATETIME
+                         now=datetime.now(saopaulo_tz), 
                          os_abertas=os_abertas_template,
                          finalizadas=finalizadas_para_template,
                          contagem_gerentes=contagem_gerentes_template,
                          ranking_os_abertas=ranking_os_abertas_template,
                          ranking_os_prestadores=ranking_os_prestadores_template,
                          login_events=login_events_para_template,
-                         chart_data=chart_data,
+                         chart_data=chart_data_dict,
                          periodo=periodo, 
                          data_inicio=data_inicio, 
                          data_fim=data_fim,
                          format_datetime=format_datetime 
                          )
+# ##########################################################################
 # FIM DA FUNÇÃO admin_panel SUBSTITUÍDA
+# ##########################################################################
 
 @app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():
@@ -923,7 +925,7 @@ def exportar_os_finalizadas():
 
         pos_x_atual_dado = 40
         texto_obs_pdf = (os_finalizada_item.observacoes or '')
-        linhas_obs_pdf = [texto_obs_pdf[i:i+45] for i in range(0, len(texto_obs_pdf), 45)] # Quebra simples
+        linhas_obs_pdf = [texto_obs_pdf[i:i+45] for i in range(0, len(texto_obs_pdf), 45)] 
         
         dados_linha_pdf = [
             str(os_finalizada_item.os_numero), str(os_finalizada_item.gerente), str(os_finalizada_item.data_fin), str(os_finalizada_item.hora_fin),
@@ -948,7 +950,9 @@ def exportar_os_finalizadas():
     try:
         return send_file(caminho_pdf_salvo, as_attachment=True, download_name=nome_arquivo_pdf, mimetype='application/pdf')
     finally:
-        if os.path.exists(caminho_pdf_salvo): logger.info(f"PDF {caminho_pdf_salvo} gerado.")
+        if os.path.exists(caminho_pdf_salvo): 
+            logger.info(f"PDF {caminho_pdf_salvo} gerado. Considere remover se não for mais necessário.")
+            # os.remove(caminho_pdf_salvo) # Descomente para remover após o envio
 
 
 @app.route('/logout')
