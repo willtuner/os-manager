@@ -29,20 +29,6 @@
     "servico": "Verificar correias viradas e trincadas - (Fazenda Estrela)"
   },
   {
-    "frota": "5022",
-    "os": "111317",
-    "data": "22/05/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Revisão do SPE (Fazenda Estrela)"
-  },
-  {
-    "frota": "5487",
-    "os": "111318",
-    "data": "22/05/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Revisão do SPE (Fazenda Estrela)"
-  },
-  {
     "frota": "5748",
     "os": "111315",
     "data": "22/05/2025",
@@ -62,6 +48,20 @@
     "data": "22/05/2025",
     "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
     "servico": "Revisar SPE (Fazenda Estrela)"
+  },
+  {
+    "frota": "5022",
+    "os": "111317",
+    "data": "22/05/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Revisão do SPE (Fazenda Estrela)"
+  },
+  {
+    "frota": "5487",
+    "os": "111318",
+    "data": "22/05/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Revisão do SPE (Fazenda Estrela)"
   },
   {
     "frota": "5487",

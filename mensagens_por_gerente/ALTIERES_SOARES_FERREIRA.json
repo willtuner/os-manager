@@ -1,6 +1,34 @@
 [
   {
     "solicitado": "ALTIERES SOARES FERREIRA",
+    "frota": "245",
+    "os": "111553",
+    "data": "29/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar sinalização. Faróis traseiros não ascendem - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5136",
+    "os": "111528",
+    "data": "29/05/2025",
+    "prestador": "AGROPULV MANUTENCAO DE EQUIPAMENTOS EIR",
+    "servico": "Trocar correias com desgaste e troca do suporte de fixação da polia quebrada - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "245",
+    "os": "111505",
+    "data": "29/05/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Verificar embreagem e freios não funcionam - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "152",
+    "os": "111485",
+    "data": "29/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sistema eletrico"
+  },
+  {
     "frota": "69",
     "os": "111477",
     "data": "28/05/2025",
@@ -11,7 +39,7 @@
     "frota": "5136",
     "os": "111464",
     "data": "28/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção das polias."
   },
   {
@@ -53,7 +81,7 @@
     "frota": "217",
     "os": "111441",
     "data": "28/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Quebra do cabo da embreagem, vazamento no cárter e cruzeta da tração danificada. Recomenda-se recolher o trator para substituição dos componentes.  - (Fazenda Pedra Verde)"
   },
   {
@@ -83,20 +111,6 @@
     "data": "23/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Recuperar tampa da caixa de bateria"
-  },
-  {
-    "frota": "217",
-    "os": "111118",
-    "data": "21/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Sacar parafuso do volante"
-  },
-  {
-    "frota": "5621",
-    "os": "110777",
-    "data": "19/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda e reforço e vazamento de óleo no multiplicador - (Fazenda Pedra Verde)"
   },
   {
     "frota": "5111",

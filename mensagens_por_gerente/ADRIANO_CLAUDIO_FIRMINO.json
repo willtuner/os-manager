@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "147",
+    "os": "111489",
+    "data": "29/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar possível vazamento de óleo lubrificante na região da turbina do motor - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5529",
+    "os": "111488",
+    "data": "29/05/2025",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
+    "servico": "Relatado vazamento no retentor do sistema de acionamento da bomba do pulverizador - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "235",
     "os": "111410",
     "data": "27/05/2025",
@@ -22,20 +36,6 @@
     "servico": "Revisar bomba de combustivel"
   },
   {
-    "frota": "17",
-    "os": "111285",
-    "data": "26/05/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Trocar banco - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "70",
-    "os": "111284",
-    "data": "26/05/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Verificar vazamento de óleo em baixo do trator - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "106",
     "os": "111283",
     "data": "26/05/2025",
@@ -46,7 +46,7 @@
     "frota": "5128",
     "os": "111196",
     "data": "23/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Vazamento de óleo na bomba - (Fazenda Nova Manhã)"
   },
   {
