@@ -7,7 +7,7 @@ from flask import Flask, render_template, request, redirect, session, url_for, f
 from flask_sqlalchemy import SQLAlchemy
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
-from collections import Counter # CERTIFIQUE-SE QUE ESTA LINHA ESTÁ NO TOPO DO SEU ARQUIVO
+from collections import Counter
 from sqlalchemy.sql import text
 from dateutil.parser import parse
 from werkzeug.utils import secure_filename
@@ -73,21 +73,27 @@ def capitalize_name(name):
     return '.'.join(capitalized_parts) if '.' in name else ' '.join(capitalized_parts)
 app.jinja_env.filters['capitalize_name'] = capitalize_name
 
-# --- Helper para formatar datas no horário de São Paulo ---
-def format_datetime(dt):
-    if dt:
-        if not isinstance(dt, datetime): # Se não for um objeto datetime, tentar parsear
-            try:
-                dt = parse(str(dt)) # Tenta um parse genérico
-            except Exception:
-                return str(dt) # Retorna como string se não conseguir parsear
+# --- Helper para formatar datas no horário de São Paulo (AJUSTADO) ---
+def format_datetime(dt_input):
+    if not dt_input:
+        return None
+    
+    dt_obj = None
+    if isinstance(dt_input, datetime):
+        dt_obj = dt_input
+    else:
+        try:
+            # Tenta parsear a string para um objeto datetime
+            dt_obj = parse(str(dt_input))
+        except Exception as e:
+            logger.warning(f"format_datetime: Não foi possível parsear '{dt_input}' para datetime. Erro: {e}")
+            return str(dt_input) # Retorna a string original se não puder parsear
 
-        if dt.tzinfo is None:
-            dt = saopaulo_tz.localize(dt)
-        else:
-            dt = dt.astimezone(saopaulo_tz)
-        return dt.strftime('%d/%m/%Y %H:%M:%S')
-    return None
+    if dt_obj.tzinfo is None:
+        dt_obj = saopaulo_tz.localize(dt_obj)
+    else:
+        dt_obj = dt_obj.astimezone(saopaulo_tz)
+    return dt_obj.strftime('%d/%m/%Y %H:%M:%S')
 
 # --- Models ---
 class User(db.Model):
@@ -102,7 +108,7 @@ class Finalizacao(db.Model):
     __tablename__ = 'finalizacoes'
     id = db.Column(db.Integer, primary_key=True)
     os_numero = db.Column(db.String(50), nullable=False)
-    gerente = db.Column(db.String(80), nullable=False) # Pode ser gerente, prestador ou manutenção quem finalizou
+    gerente = db.Column(db.String(80), nullable=False) 
     data_fin = db.Column(db.String(10), nullable=False)
     hora_fin = db.Column(db.String(5), nullable=False)
     observacoes = db.Column(db.Text)
@@ -137,42 +143,45 @@ def init_db():
     try:
         from sqlalchemy import inspect
         inspector = inspect(db.engine)
-        columns = [col['name'] for col in inspector.get_columns('login_events')]
-        if 'user_type' not in columns:
+        columns_login_events = [col['name'] for col in inspector.get_columns('login_events')]
+        if 'user_type' not in columns_login_events:
             logger.info("Adicionando coluna user_type à tabela login_events")
-            db.session.execute(text('ALTER TABLE login_events ADD COLUMN user_type VARCHAR(20)'))
-            db.session.execute(text("UPDATE login_events SET user_type = 'gerente' WHERE user_type IS NULL")) 
-            # Em SQLite, NOT NULL é definido na criação ou precisa de recriação de tabela.
-            # Para simplificar, a lógica de aplicação garantirá que user_type não seja nulo em novas inserções.
-            # db.session.execute(text('ALTER TABLE login_events ALTER COLUMN user_type SET NOT NULL')) 
-            db.session.commit()
+            with app.app_context(): # Garante contexto de aplicação para operações de BD
+                db.session.execute(text('ALTER TABLE login_events ADD COLUMN user_type VARCHAR(20) DEFAULT "gerente" NOT NULL'))
+                db.session.commit()
             logger.info("Coluna user_type adicionada com sucesso")
         
         columns_users = [col['name'] for col in inspector.get_columns('users')]
         if 'profile_picture' not in columns_users:
             logger.info("Adicionando coluna profile_picture à tabela users")
-            db.session.execute(text('ALTER TABLE users ADD COLUMN profile_picture VARCHAR(256)'))
-            db.session.commit()
+            with app.app_context():
+                db.session.execute(text('ALTER TABLE users ADD COLUMN profile_picture VARCHAR(256)'))
+                db.session.commit()
             logger.info("Coluna profile_picture adicionada com sucesso")
     except Exception as e:
         logger.error(f"Erro ao verificar/adicionar colunas: {e}")
-        db.session.rollback()
+        if app.app_context(): # Garante contexto para rollback
+            db.session.rollback()
+
 
     if User.query.count() == 0 and os.path.exists(USERS_FILE):
         with open(USERS_FILE, encoding='utf-8') as f:
             js_users = json.load(f)
         admins = {'wilson.santana'} 
-        for u_name, u_data in js_users.items():
-            senha_val = u_data.get("senha", "") if isinstance(u_data, dict) else u_data
-            pic_val = u_data.get("profile_picture") if isinstance(u_data, dict) else None
-            db.session.add(User(
-                username=u_name.lower(),
-                password=senha_val, 
-                is_admin=(u_name.lower() in admins),
-                profile_picture=pic_val
-            ))
-        db.session.commit()
+        with app.app_context(): # Garante contexto para operações de BD
+            for u_name, u_data in js_users.items():
+                senha_val = u_data.get("senha", "") if isinstance(u_data, dict) else u_data
+                pic_val = u_data.get("profile_picture") if isinstance(u_data, dict) else None
+                db.session.add(User(
+                    username=u_name.lower(),
+                    password=senha_val, 
+                    is_admin=(u_name.lower() in admins),
+                    profile_picture=pic_val
+                ))
+            db.session.commit()
 
+# ... (o restante das suas funções de carregamento de dados permanecem aqui,
+# certifique-se que elas estão robustas quanto ao parse de datas se necessário) ...
 def carregar_os_gerente(gerente_username):
     base_nome_gerente = gerente_username.upper().replace('.', '_')
     caminho_encontrado = None
@@ -201,7 +210,7 @@ def carregar_os_gerente(gerente_username):
     for os_item in dados_json:
         data_os_str = os_item.get("data") or os_item.get("Data") or ""
         data_abertura_os = None
-        for fmt_data in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y", "%d/%m/%y", "%Y/%m/%d"): # Mais formatos
+        for fmt_data in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y", "%d/%m/%y", "%Y/%m/%d"):
             try:
                 data_abertura_os = datetime.strptime(data_os_str, fmt_data).date()
                 break
@@ -294,7 +303,7 @@ def carregar_os_manutencao(username_manut):
     data_hoje_manut = saopaulo_tz.localize(datetime.now()).date()
     for os_item_manut in lista_os_manut:
         os_item_manut['modelo'] = str(os_item_manut.get('modelo', 'Desconhecido') or 'Desconhecido')
-        data_entrada_os_str = os_item_manut.get('data_entrada') or os_item_manut.get('data') or os_item_manut.get('Data','') # Mais flexível
+        data_entrada_os_str = os_item_manut.get('data_entrada') or os_item_manut.get('data') or os_item_manut.get('Data','') 
         os_item_manut['data_entrada'] = data_entrada_os_str 
         
         data_abertura_os_manut = None
@@ -394,7 +403,7 @@ def login():
 
         flash('Usuário ou senha incorreta.', 'danger')
         logger.warning(f"Falha no login para {username_form}: Credenciais inválidas.")
-    return render_template('login.html')
+    return render_template('login.html', now=datetime.now(saopaulo_tz)) # Passa 'now' para o base.html
 
 @app.route('/painel')
 def painel():
@@ -495,6 +504,7 @@ def painel_prestador():
     return render_template('painel_prestador.html',
         nome=dados_prestador_atual.get('nome_exibicao', session['prestador'].capitalize()),
         os_list=lista_os_do_prestador,
+        now=datetime.now(saopaulo_tz), # Passa 'now' para o base.html
         today_date=datetime.now(saopaulo_tz).strftime('%Y-%m-%d'))
 
 @app.route('/painel_manutencao')
@@ -539,6 +549,7 @@ def painel_manutencao():
                          ordenar_atual=ordenar_por, 
                          prestadores_disponiveis=carregar_prestadores(),
                          profile_picture=foto_perfil_manut,
+                         now=datetime.now(saopaulo_tz), # Passa 'now' para o base.html
                          today_date=datetime.now(saopaulo_tz).strftime('%Y-%m-%d'))
 
 @app.route('/finalizar_os/<os_numero_str>', methods=['POST'])
@@ -688,7 +699,7 @@ def atribuir_prestador(os_numero_str):
     return redirect(url_for('painel_manutencao'))
 
 # ##########################################################################
-# SUBSTITUA A SUA FUNÇÃO admin_panel EXISTENTE POR ESTA VERSÃO CORRIGIDA ABAIXO
+# FUNÇÃO admin_panel ATUALIZADA
 # ##########################################################################
 @app.route('/admin')
 def admin_panel():
@@ -696,7 +707,6 @@ def admin_panel():
         flash('Acesso negado', 'danger')
         return redirect(url_for('login'))
 
-    # Nomes de variáveis como esperado pelo admin.html
     periodo = request.args.get('periodo', 'todos')
     data_inicio = request.args.get('data_inicio') 
     data_fim = request.args.get('data_fim')       
@@ -735,20 +745,17 @@ def admin_panel():
             inicio_periodo_filtro, fim_periodo_filtro = None, None 
         else:
             query_finalizadas = query_finalizadas.filter(Finalizacao.registrado_em.between(inicio_periodo_filtro, fim_periodo_filtro))
-
-    # Definição correta da variável antes de ser usada
-    total_os_no_periodo = query_finalizadas.count() 
     
-    # Variáveis para o template, usando os nomes que admin.html espera
-    finalizadas_para_template = query_finalizadas.limit(100).all() 
+    total_os = query_finalizadas.count() # Nome esperado pelo template: total_os
+    finalizadas = query_finalizadas.limit(100).all() # Nome esperado: finalizadas
     
     login_events_query = LoginEvent.query.order_by(LoginEvent.login_time.desc())
     if inicio_periodo_filtro and fim_periodo_filtro: 
          login_events_query = login_events_query.filter(LoginEvent.login_time.between(inicio_periodo_filtro, fim_periodo_filtro))
     
-    login_events_para_template = login_events_query.limit(50).all() 
+    login_events = login_events_query.limit(50).all() # Nome esperado: login_events
 
-    for ev_item in login_events_para_template:
+    for ev_item in login_events:
         ev_item.login_time_formatted = format_datetime(ev_item.login_time)
         ev_item.logout_time_formatted = format_datetime(ev_item.logout_time) if ev_item.logout_time else None
         if ev_item.logout_time and ev_item.login_time:
@@ -759,22 +766,22 @@ def admin_panel():
             ev_item.duration_secs = 0 
 
     usuarios_db = User.query.order_by(User.username).all()
-    gerentes_template = [u.username for u in usuarios_db] 
+    gerentes = [u.username for u in usuarios_db] # Nome esperado: gerentes
 
-    contagem_gerentes_template = {} 
+    contagem_gerentes = {} # Nome esperado: contagem_gerentes
     query_contagem_base = Finalizacao.query
     if inicio_periodo_filtro and fim_periodo_filtro: 
         query_contagem_base = query_contagem_base.filter(Finalizacao.registrado_em.between(inicio_periodo_filtro, fim_periodo_filtro))
     
-    for g_user_template in gerentes_template:
-        contagem_gerentes_template[g_user_template] = query_contagem_base.filter(Finalizacao.gerente == g_user_template).count()
+    for g_user_template in gerentes:
+        contagem_gerentes[g_user_template] = query_contagem_base.filter(Finalizacao.gerente == g_user_template).count()
 
-    os_abertas_template = {g_user_t: len(carregar_os_gerente(g_user_t)) for g_user_t in gerentes_template} 
-    ranking_os_abertas_template = sorted(os_abertas_template.items(), key=lambda x: x[1], reverse=True) 
+    os_abertas = {g_user_t: len(carregar_os_gerente(g_user_t)) for g_user_t in gerentes} # Nome esperado: os_abertas
+    ranking_os_abertas = sorted(os_abertas.items(), key=lambda x: x[1], reverse=True) # Nome esperado: ranking_os_abertas
     
-    ranking_os_prestadores_template = carregar_os_prestadores() 
+    ranking_os_prestadores = carregar_os_prestadores() # Nome esperado: ranking_os_prestadores
 
-    chart_data_dict = { 
+    chart_data = { # Nome esperado: chart_data com estas subchaves
         'os_por_periodo': Counter(),
         'os_por_gerente': Counter()
     }
@@ -800,30 +807,30 @@ def admin_panel():
             chave_periodo_g = f_grafico.registrado_em.astimezone(saopaulo_tz).strftime('%H:00') if f_grafico.registrado_em else data_finalizacao_obj_g.strftime('%H:00')
         else: 
             chave_periodo_g = data_finalizacao_obj_g.strftime('%d/%m/%Y') 
-        chart_data_dict['os_por_periodo'][chave_periodo_g] += 1
-        chart_data_dict['os_por_gerente'][f_grafico.gerente] += 1
+        chart_data['os_por_periodo'][chave_periodo_g] += 1
+        chart_data['os_por_gerente'][f_grafico.gerente] += 1
     
-    chart_data_dict['os_por_periodo'] = dict(sorted(chart_data_dict['os_por_periodo'].items()))
-    chart_data_dict['os_por_gerente'] = dict(chart_data_dict['os_por_gerente'])
+    chart_data['os_por_periodo'] = dict(sorted(chart_data['os_por_periodo'].items()))
+    chart_data['os_por_gerente'] = dict(chart_data['os_por_gerente'])
     
     return render_template('admin.html',
-                         total_os=total_os_no_periodo,       # Corrigido: total_os_no_periodo está definido
-                         gerentes=gerentes_template,
+                         total_os=total_os, # Alinhado com o nome que o template espera
+                         gerentes=gerentes,
                          now=datetime.now(saopaulo_tz), 
-                         os_abertas=os_abertas_template,
-                         finalizadas=finalizadas_para_template,
-                         contagem_gerentes=contagem_gerentes_template,
-                         ranking_os_abertas=ranking_os_abertas_template,
-                         ranking_os_prestadores=ranking_os_prestadores_template,
-                         login_events=login_events_para_template,
-                         chart_data=chart_data_dict,
+                         os_abertas=os_abertas,
+                         finalizadas=finalizadas,
+                         contagem_gerentes=contagem_gerentes,
+                         ranking_os_abertas=ranking_os_abertas,
+                         ranking_os_prestadores=ranking_os_prestadores,
+                         login_events=login_events,
+                         chart_data=chart_data,
                          periodo=periodo, 
                          data_inicio=data_inicio, 
                          data_fim=data_fim,
                          format_datetime=format_datetime 
                          )
 # ##########################################################################
-# FIM DA FUNÇÃO admin_panel SUBSTITUÍDA
+# FIM DA FUNÇÃO admin_panel ATUALIZADA
 # ##########################################################################
 
 @app.route('/exportar_os_finalizadas')
@@ -951,8 +958,7 @@ def exportar_os_finalizadas():
         return send_file(caminho_pdf_salvo, as_attachment=True, download_name=nome_arquivo_pdf, mimetype='application/pdf')
     finally:
         if os.path.exists(caminho_pdf_salvo): 
-            logger.info(f"PDF {caminho_pdf_salvo} gerado. Considere remover se não for mais necessário.")
-            # os.remove(caminho_pdf_salvo) # Descomente para remover após o envio
+            logger.info(f"PDF {caminho_pdf_salvo} gerado.")
 
 
 @app.route('/logout')
