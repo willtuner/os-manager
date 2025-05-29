@@ -26,11 +26,12 @@
         border-radius: .5rem; /* Bordas mais suaves */
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        /* Removido hover para não interferir com os campos de formulário */
     }
-    .card-os:hover {
+    /* .card-os:hover { 
         transform: translateY(-3px);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    }
+    } */
     .card-body {
         padding: 1rem 1.25rem;
     }
@@ -67,7 +68,7 @@
     .text-muted {
         color: var(--texto-claro) !important;
     }
-    .modal-header {
+    .modal-header { /* Para o modal de detalhes */
         background-color: var(--verde-agro);
         color: white;
     }
@@ -77,6 +78,17 @@
     .empty-state-icon {
         font-size: 3.5rem;
         color: var(--verde-agro);
+    }
+    .form-section-divider {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        border-top: 1px solid var(--cinza-borda);
+    }
+    .finalization-header {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--verde-agro);
+        margin-bottom: 0.75rem;
     }
 </style>
 
@@ -107,48 +119,90 @@
 
     {% if os_list %}
         {% for item in os_list %}
-        <div class="card card-os mb-3"> {# Movido o form para dentro do modal implicitamente #}
+        <div class="card card-os mb-3">
             <div class="card-body">
-                <h5 class="card-title mb-2">
-                    <span class="badge bg-dark me-2">OS {{ item.os }}</span>
-                    Frota {{ item.frota | default('N/A') }}
-                </h5>
-                <p class="card-text mb-1">
-                    <small class="text-muted">
-                        Aberta em: {{ item.data_entrada if item.data_entrada else 'Data não informada' }}
-                        &bull; Modelo: {{ item.modelo | default('N/A') }}
-                    </small>
-                </p>
-                <p class="card-text mb-2">
-                     <small class="text-muted">
-                        Status: <span class="fw-bold
-                        {% if item.dias_abertos > 30 %}text-danger
-                        {% elif item.dias_abertos > 15 %}text-warning
-                        {% else %}text-primary
-                        {% endif %}">
-                        Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
-                        </span>
-                    </small>
-                </p>
-                <p class="card-text mb-3">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <h5 class="card-title mb-2">
+                            <span class="badge bg-dark me-2">OS {{ item.os }}</span>
+                            Frota {{ item.frota | default('N/A') }}
+                        </h5>
+                        <p class="card-text mb-1">
+                            <small class="text-muted">
+                                Aberta em: {{ item.data_entrada if item.data_entrada else 'Data não informada' }}
+                                &bull; Modelo: {{ item.modelo | default('N/A') }}
+                            </small>
+                        </p>
+                        <p class="card-text mb-2">
+                            <small class="text-muted">
+                                Status: <span class="fw-bold
+                                {% if item.dias_abertos > 30 %}text-danger
+                                {% elif item.dias_abertos > 15 %}text-warning
+                                {% else %}text-primary
+                                {% endif %}">
+                                Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
+                                </span>
+                            </small>
+                        </p>
+                    </div>
+                    <button type="button"
+                            class="btn btn-outline-primary btn-sm ms-2 flex-shrink-0"
+                            data-bs-toggle="modal"
+                            data-bs-target="#detalhesModal-{{ item.os }}">
+                        <i class="fas fa-eye me-1"></i>Detalhes
+                    </button>
+                </div>
+
+                <p class="card-text mt-1 mb-3">
                     <i class="fas fa-wrench me-1 text-muted"></i>
                     <span style="white-space: pre-wrap;">{{ item.servico | default('Serviço não especificado.') }}</span>
                 </p>
                 
-                <div class="d-flex justify-content-end gap-2">
-                    <button type="button"
-                            class="btn btn-outline-primary btn-sm"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detalhesModal-{{ item.os }}">
-                        <i class="fas fa-eye me-1"></i>Ver Detalhes
-                    </button>
-                    <button type="button"
-                            class="btn btn-success btn-sm"
-                            data-bs-toggle="modal"
-                            data-bs-target="#finalizarOsModal-{{ item.os }}">
-                        <i class="fas fa-check-circle me-1"></i>Finalizar OS
-                    </button>
-                </div>
+                <hr class="form-section-divider">
+
+                <form action="{{ url_for('finalizar_os', os_numero=item.os) }}"
+                      method="POST"
+                      enctype="multipart/form-data"
+                      class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
+                    
+                    <h6 class="finalization-header"><i class="fas fa-check-square me-1"></i>Finalizar esta OS:</h6>
+                    
+                    <div class="row g-2 mb-2">
+                        <div class="col-md-6">
+                            <label for="data_finalizacao_{{ item.os }}" class="form-label small">Data de Finalização <span class="text-danger">*</span></label>
+                            <input type="date" id="data_finalizacao_{{ item.os }}" name="data_finalizacao"
+                                   class="form-control form-control-sm"
+                                   required
+                                   max="{{ today_date }}"> {# today_date vem do backend #}
+                            <div class="invalid-feedback">Campo obrigatório.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="hora_finalizacao_{{ item.os }}" class="form-label small">Hora de Finalização <span class="text-danger">*</span></label>
+                            <input type="time" id="hora_finalizacao_{{ item.os }}" name="hora_finalizacao"
+                                   class="form-control form-control-sm"
+                                   required>
+                            <div class="invalid-feedback">Campo obrigatório.</div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="observacoes_final_{{ item.os }}" class="form-label small">Observações da Finalização</label>
+                        <textarea id="observacoes_final_{{ item.os }}" name="observacoes"
+                                  class="form-control form-control-sm"
+                                  rows="3"
+                                  placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
+                    </div>
+                     <div class="mb-3">
+                        <label for="evidencia_{{ item.os }}" class="form-label small">Anexar Evidência (Opcional: Imagem ou PDF)</label>
+                        <input type="file" id="evidencia_{{ item.os }}" name="evidencia"
+                               class="form-control form-control-sm"
+                               accept="image/*,.pdf">
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-success btn-sm" id="submit-btn-{{ item.os }}">
+                            <i class="fas fa-check-circle me-1"></i>Confirmar Finalização
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -180,62 +234,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="finalizarOsModal-{{ item.os }}" tabindex="-1" aria-labelledby="finalizarOsModalLabel-{{ item.os }}" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <form action="{{ url_for('finalizar_os', os_numero=item.os) }}"
-                          method="POST"
-                          enctype="multipart/form-data" {# Necessário para upload de arquivo #}
-                          class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="finalizarOsModalLabel-{{ item.os }}">Finalizar OS #{{ item.os }}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="small text-muted">OS: {{ item.os }} | Frota: {{ item.frota }} | Aberta em: {{ item.data_entrada if item.data_entrada else 'N/A' }}</p>
-                            <hr class="mt-1 mb-3">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label for="data_finalizacao_{{ item.os }}" class="form-label small">Data de Finalização <span class="text-danger">*</span></label>
-                                    <input type="date" id="data_finalizacao_{{ item.os }}" name="data_finalizacao"
-                                           class="form-control form-control-sm"
-                                           required
-                                           max="{{ today_date }}"> {# today_date vem do backend #}
-                                    <div class="invalid-feedback">Campo obrigatório.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="hora_finalizacao_{{ item.os }}" class="form-label small">Hora de Finalização <span class="text-danger">*</span></label>
-                                    <input type="time" id="hora_finalizacao_{{ item.os }}" name="hora_finalizacao"
-                                           class="form-control form-control-sm"
-                                           required>
-                                    <div class="invalid-feedback">Campo obrigatório.</div>
-                                </div>
-                            </div>
-                            <div class="mt-3">
-                                <label for="observacoes_final_{{ item.os }}" class="form-label small">Observações da Finalização</label>
-                                <textarea id="observacoes_final_{{ item.os }}" name="observacoes"
-                                          class="form-control form-control-sm"
-                                          rows="3"
-                                          placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
-                            </div>
-                             <div class="mt-3">
-                                <label for="evidencia_{{ item.os }}" class="form-label small">Anexar Evidência (Opcional: Imagem ou PDF)</label>
-                                <input type="file" id="evidencia_{{ item.os }}" name="evidencia"
-                                       class="form-control form-control-sm"
-                                       accept="image/*,.pdf">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-success btn-sm" id="submit-btn-{{ item.os }}">
-                                <i class="fas fa-check-circle me-1"></i>Confirmar Finalização
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
         {% endfor %}
     {% else %}
         <div class="text-center py-5 bg-light rounded shadow-sm mt-4">
@@ -263,7 +261,9 @@
             event.preventDefault()
             event.stopPropagation()
           }
-          form.classList.add('was-validated')
+          // A classe 'was-validated' será adicionada pelo Bootstrap automaticamente
+          // ou pode ser adicionada aqui se necessário após a validação customizada.
+          // form.classList.add('was-validated') 
         }, false)
       })
     })()
@@ -271,29 +271,30 @@
     function validateFinalizationForm(form, dataAberturaStr) {
         const dataFinalizacaoInput = form.querySelector('input[name="data_finalizacao"]');
         const horaFinalizacaoInput = form.querySelector('input[name="hora_finalizacao"]');
+        
+        // Adiciona 'was-validated' para mostrar feedback do Bootstrap imediatamente
+        form.classList.add('was-validated');
 
         if (!dataFinalizacaoInput.value || !horaFinalizacaoInput.value) {
-            // A validação do Bootstrap 'required' já deve cuidar disso visualmente.
-            // Este alerta é um fallback, mas pode ser redundante.
-            // alert('Por favor, preencha a data e hora de finalização.');
-            return false; // Impede o envio se os campos required não estiverem ok (segurança extra)
+            // A validação 'required' e a classe 'was-validated' já devem mostrar os erros.
+            // Focar no primeiro campo inválido se houver.
+            if (!dataFinalizacaoInput.value) dataFinalizacaoInput.focus();
+            else if (!horaFinalizacaoInput.value) horaFinalizacaoInput.focus();
+            return false; 
         }
 
         // Validação da data de finalização contra a data de abertura
-        if (dataAberturaStr && dataAberturaStr !== 'Data não informada' && dataAberturaStr !== '') {
-            // Formato da data de abertura no HTML: DD/MM/YYYY
-            // Formato do input date: YYYY-MM-DD
+        if (dataAberturaStr && dataAberturaStr !== 'Data não informada' && dataAberturaStr !== '' && dataAberturaStr !== 'N/A') {
             try {
                 const partsAbertura = dataAberturaStr.split('/');
-                // Criar objetos Date para comparação (cuidado com fuso horário, mas para datas apenas deve ser ok)
                 // JavaScript Date meses são 0-indexados (Janeiro=0, Dezembro=11)
                 const dataAberturaObj = new Date(parseInt(partsAbertura[2], 10), parseInt(partsAbertura[1], 10) - 1, parseInt(partsAbertura[0], 10));
                 
-                const dataFinalizacaoValue = dataFinalizacaoInput.value; // YYYY-MM-DD
+                const dataFinalizacaoValue = dataFinalizacaoInput.value; // Formato YYYY-MM-DD
                 const partsFinalizacao = dataFinalizacaoValue.split('-');
                 const dataFinalizacaoObj = new Date(parseInt(partsFinalizacao[0], 10), parseInt(partsFinalizacao[1], 10) - 1, parseInt(partsFinalizacao[2], 10));
                 
-                // Normalizar para meia-noite para evitar problemas com horas
+                // Normalizar para meia-noite para evitar problemas com horas na comparação de datas
                 dataAberturaObj.setHours(0,0,0,0);
                 dataFinalizacaoObj.setHours(0,0,0,0);
 
@@ -301,31 +302,27 @@
                     alert('A data de finalização (' + dataFinalizacaoObj.toLocaleDateString('pt-BR') + 
                           ') não pode ser anterior à data de abertura da OS (' + dataAberturaObj.toLocaleDateString('pt-BR') + ').');
                     dataFinalizacaoInput.focus();
-                    dataFinalizacaoInput.classList.add('is-invalid'); // Adiciona feedback visual de erro
-                    return false;
+                    dataFinalizacaoInput.classList.add('is-invalid'); 
+                    return false; // Impede submissão, spinner não foi ativado
                 } else {
                      dataFinalizacaoInput.classList.remove('is-invalid');
+                     // Não precisa adicionar 'is-valid' aqui, pois o 'was-validated' no form já cuida disso
+                     // se o campo estiver preenchido e passar na validação 'required'.
                 }
             } catch (e) {
-                console.error("Erro ao parsear datas para validação: ", e);
-                // Não bloquear submissão se houver erro no parse, mas logar.
+                console.error("Erro ao parsear datas para validação no JS: ", e, "Data de abertura recebida:", dataAberturaStr);
+                alert('Houve um problema ao validar internamente a data de abertura da OS ('+ dataAberturaStr +'). Verifique o formato esperado (DD/MM/YYYY) ou se a data é válida. A finalização não pode prosseguir no momento.');
+                return false; // Impede submissão e ativação do spinner se o parse da data de abertura falhar
             }
         }
         
-        // Habilitar botão de submit (se desabilitado antes) e talvez mostrar um spinner
+        // Se todas as validações JS passaram e não houve 'return false' antes:
         const submitBtn = form.querySelector('button[type="submit"]');
         if (submitBtn) {
-            submitBtn.disabled = true; // Desabilita para evitar duplo clique
-            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Finalizando...';
+            submitBtn.disabled = true; 
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Confirmando...'; // Texto alterado
         }
         return true; // Permite o envio do formulário
     }
-
-    // Habilitar/desabilitar botão de submit do modal de finalização
-    // Esta função foi simplificada, pois a validação mais complexa está em validateFinalizationForm
-    // e o Bootstrap já lida com :invalid para required.
-    // O botão de submit no modal de finalização não começa desabilitado.
-    // A lógica de desabilitar o botão foi movida para o início do onsubmit em `validateFinalizationForm`.
-
 </script>
 {% endblock %}
