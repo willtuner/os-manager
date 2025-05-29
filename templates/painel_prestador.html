@@ -54,8 +54,8 @@
         color: white;
         font-weight: 700;
         border-bottom: none;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+        border-top-left-radius: 7px; /* Ajuste para consistência com border-radius do card */
+        border-top-right-radius: 7px;/* Ajuste para consistência com border-radius do card */
         padding: 12px 20px;
         display: flex;
         justify-content: space-between;
@@ -66,6 +66,20 @@
         margin-bottom: 0;
         font-size: 1.15rem;
     }
+    .card-os .card-header .badge-container {
+        display: flex;
+        flex-direction: column; /* Empilha os badges verticalmente */
+        align-items: flex-end; /* Alinha os badges à direita */
+    }
+
+    .card-os .card-header .badge {
+        font-size: 0.75rem; /* Tamanho menor para os badges */
+        padding: 0.3em 0.6em;
+    }
+    .card-os .card-header .badge:not(:last-child) {
+        margin-bottom: 3px; /* Espaço entre os badges */
+    }
+
 
     .card-os .card-body {
         padding: 20px;
@@ -91,8 +105,8 @@
     }
 
     .btn-success:hover {
-        background-color: darken(var(--cor-secundaria), 8%); /* Escurece um pouco no hover */
-        border-color: darken(var(--cor-secundaria), 8%);
+        background-color: #229954; /* Um tom de verde um pouco mais escuro no hover */
+        border-color: #229954;
     }
 
     .btn-outline-secondary {
@@ -145,6 +159,14 @@
         font-weight: 500;
         color: var(--cor-primaria);
     }
+    /* Para o modal */
+    .modal-header {
+        background-color: var(--cor-secundaria);
+        color: white;
+    }
+    .modal-header .btn-close {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
 </style>
 
 <div class="container">
@@ -159,43 +181,87 @@
         {% endif %}
     {% endwith %}
 
-    <div class="row mb-3">
+    <div class="row mb-3 align-items-center">
         <div class="col">
             <h2 class="h4">Olá, {{ nome | capitalize_name }}!</h2>
-            <p class="text-muted">Aqui estão suas ordens de serviço pendentes.</p>
+            <p class="text-muted mb-0">Aqui estão suas ordens de serviço pendentes.</p>
+        </div>
+        <div class="col-auto">
+             <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
+                <i class="fas fa-sign-out-alt me-1"></i>Sair
+            </a>
         </div>
     </div>
 
+
     {% if os_list %}
         <div class="row">
-            {% for os in os_list %}
-            <div class="col-md-6 col-lg-4 d-flex">
+            {% for os_item in os_list %} {# Renomeado para os_item para evitar conflito com o 'os' global de 'os.path' #}
+            <div class="col-md-6 col-lg-4 d-flex mb-4">
                 <div class="card card-os flex-fill">
                     <div class="card-header">
-                        <h5 class="mb-0">OS #{{ os.os }}</h5>
-                        <span class="badge bg-light text-dark">{{ os.data }}</span>
+                        <h5 class="mb-0">OS #{{ os_item.os }}</h5>
+                        <div class="badge-container">
+                            <span class="badge bg-light text-dark">{{ os_item.data }}</span>
+                            <span class="badge
+                                {% if os_item.dias_abertos == 0 %}
+                                    bg-success-subtle text-success-emphasis
+                                {% elif os_item.dias_abertos <= 7 %}
+                                    bg-info-subtle text-info-emphasis
+                                {% elif os_item.dias_abertos <= 15 %}
+                                    bg-warning-subtle text-warning-emphasis
+                                {% else %}
+                                    bg-danger-subtle text-danger-emphasis
+                                {% endif %}
+                            ">
+                                Aberta há {{ os_item.dias_abertos }} dia{% if os_item.dias_abertos != 1 %}s{% endif %}
+                            </span>
+                        </div>
                     </div>
                     <div class="card-body">
-                        <p><strong>Frota:</strong> {{ os.frota }}</p>
-                        <p><strong>Serviço:</strong> {{ os.servico }}</p>
-                        <p><strong>Observações:</strong> {{ os.observacao or 'N/A' }}</p>
+                        <p><strong>Frota:</strong> {{ os_item.frota | default('N/A', true) }}</p>
+                        <p><strong>Serviço:</strong> {{ os_item.servico | default('N/A', true) }}</p>
+                        <p><strong>Observações (Abertura):</strong> {{ os_item.observacao or 'N/A' }}</p>
                         
-                        <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="post" onsubmit="return validateForm(this)">
-                            <div class="mb-3">
-                                <label for="data_finalizacao_{{ os.os }}" class="form-label">Data de Finalização</label>
-                                <input type="date" class="form-control" id="data_finalizacao_{{ os.os }}" name="data_finalizacao" required>
+                        <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#finalizarOsModal_{{ os_item.os }}">
+                            <i class="fas fa-check-circle me-1"></i>Finalizar OS
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="finalizarOsModal_{{ os_item.os }}" tabindex="-1" aria-labelledby="finalizarOsModalLabel_{{ os_item.os }}" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <form action="{{ url_for('finalizar_os', os_numero=os_item.os) }}" method="post" onsubmit="return validateFormModal(this)">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="finalizarOsModalLabel_{{ os_item.os }}">Finalizar OS #{{ os_item.os }}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="mb-3">
-                                <label for="hora_finalizacao_{{ os.os }}" class="form-label">Hora de Finalização</label>
-                                <input type="time" class="form-control" id="hora_finalizacao_{{ os.os }}" name="hora_finalizacao" required>
+                            <div class="modal-body">
+                                <p><strong>Frota:</strong> {{ os_item.frota | default('N/A', true) }}</p>
+                                <p><strong>Serviço:</strong> {{ os_item.servico | default('N/A', true) }}</p>
+                                <p><strong>Data Abertura:</strong> {{ os_item.data }}</p>
+                                <hr>
+                                <div class="mb-3">
+                                    <label for="data_finalizacao_{{ os_item.os }}" class="form-label">Data de Finalização <span class="text-danger">*</span></label>
+                                    <input type="date" class="form-control" id="data_finalizacao_{{ os_item.os }}" name="data_finalizacao" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="hora_finalizacao_{{ os_item.os }}" class="form-label">Hora de Finalização <span class="text-danger">*</span></label>
+                                    <input type="time" class="form-control" id="hora_finalizacao_{{ os_item.os }}" name="hora_finalizacao" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="observacoes_{{ os_item.os }}" class="form-label">Observações da Finalização</label>
+                                    <textarea class="form-control" id="observacoes_{{ os_item.os }}" name="observacoes" rows="3"></textarea>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="observacoes_{{ os.os }}" class="form-label">Observações</label>
-                                <textarea class="form-control" id="observacoes_{{ os.os }}" name="observacoes" rows="2"></textarea>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-success" id="submitBtn_{{ os_item.os }}" disabled>
+                                    <i class="fas fa-check-circle me-1"></i>Confirmar Finalização
+                                </button>
                             </div>
-                            <button type="submit" class="btn btn-success w-100" disabled>
-                                <i class="fas fa-check-circle me-1"></i>Finalizar OS
-                            </button>
                         </form>
                     </div>
                 </div>
@@ -204,47 +270,64 @@
         </div>
     {% else %}
         <div class="empty-state">
+            <i class="fas fa-clipboard-check fa-3x text-muted mb-3"></i>
             <h4 class="text-muted">Nenhuma OS pendente</h4>
             <p>Todas as ordens de serviço atribuídas estão em dia!</p>
         </div>
     {% endif %}
 
-    <div class="d-flex justify-content-between mt-4">
-        <a href="/" class="btn btn-outline-secondary">
-            <i class="fas fa-arrow-left me-1"></i>Voltar
-        </a>
-        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">
-            <i class="fas fa-sign-out-alt me-1"></i>Sair
-        </a>
+    <div class="mt-4 text-center">
+         <p class="text-muted small">Logado como: {{ session.get('prestador_nome', session.get('prestador')) }}</p>
     </div>
 </div>
 
 <script>
-    // Validação do formulário
-    function validateForm(form) {
+    // Validação do formulário no modal
+    function validateFormModal(form) {
         const data = form.querySelector('input[name="data_finalizacao"]');
         const hora = form.querySelector('input[name="hora_finalizacao"]');
         if (!data.value || !hora.value) {
-            alert('Por favor, preencha a data e hora de finalização.');
+            // Bootstrap 5 não tem mais alert() nativo estilizado,
+            // mas podemos adicionar feedback visual se necessário.
+            // Por ora, a validação HTML5 'required' e o botão desabilitado já ajudam.
+            // Se um alerta for realmente necessário, pode-se usar um toast do Bootstrap.
+            console.error('Data e hora de finalização são obrigatórias.');
             return false;
+        }
+        // Adicionar lógica para data de finalização não ser anterior à data de abertura
+        const dataAberturaStr = form.closest('.modal-content').querySelector('.modal-body p:nth-of-type(3)').textContent.split(': ')[1]; // "Data Abertura: DD/MM/YYYY"
+        
+        if (dataAberturaStr && dataAberturaStr !== 'N/A') {
+            // Converte DD/MM/YYYY para YYYY-MM-DD para comparação com o input date
+            const parts = dataAberturaStr.split('/');
+            const dataAberturaFormatted = `${parts[2]}-${parts[1]}-${parts[0]}`;
+            
+            if (data.value < dataAberturaFormatted) {
+                alert('A data de finalização não pode ser anterior à data de abertura da OS.');
+                data.focus();
+                return false;
+            }
         }
         return true;
     }
 
-    // Habilitar botão de submit quando campos obrigatórios estiverem preenchidos
-    document.querySelectorAll('.card-os').forEach(card => {
-        const dataInput = card.querySelector('input[name="data_finalizacao"]');
-        const horaInput = card.querySelector('input[name="hora_finalizacao"]');
-        const submitBtn = card.querySelector('button[type="submit"]');
+    // Habilitar botão de submit do modal quando campos obrigatórios estiverem preenchidos
+    document.querySelectorAll('.modal').forEach(modal => {
+        const dataInput = modal.querySelector('input[name="data_finalizacao"]');
+        const horaInput = modal.querySelector('input[name="hora_finalizacao"]');
+        const submitBtn = modal.querySelector('button[type="submit"]');
 
-        function checkInputs() {
-            submitBtn.disabled = !(dataInput.value && horaInput.value);
+        function checkModalInputs() {
+            if (dataInput && horaInput && submitBtn) {
+                submitBtn.disabled = !(dataInput.value && horaInput.value);
+            }
         }
 
-        dataInput.addEventListener('input', checkInputs);
-        horaInput.addEventListener('input', checkInputs);
+        if (dataInput) dataInput.addEventListener('input', checkModalInputs);
+        if (horaInput) horaInput.addEventListener('input', checkModalInputs);
+        
         // Chamar na inicialização para desabilitar se já estiverem vazios
-        checkInputs();
+        checkModalInputs();
     });
 </script>
 {% endblock %}
