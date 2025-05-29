@@ -114,11 +114,17 @@
     headers.forEach(header => {
       header.addEventListener('click', () => {
         const body = header.nextElementSibling;
-        body.classList.toggle('d-none');
+        body.classList.toggle('d-none'); // Adiciona/remove 'd-none' para mostrar/ocultar
         const icon = header.querySelector('.toggle-icon');
-        icon.classList.toggle('fa-chevron-down');
-        icon.classList.toggle('fa-chevron-up');
+        if (icon) { // Verifica se o ícone existe
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
       });
+      // Inicia com o corpo do card oculto, exceto talvez o primeiro ou se houver poucos
+      if (header.nextElementSibling) {
+         header.nextElementSibling.classList.add('d-none');
+      }
     });
 
     // Validação de formulários
@@ -129,23 +135,12 @@
           e.preventDefault();
           e.stopPropagation();
         } else {
-          // Mostrar toast de sucesso (simulado, já que o flash é tratado no servidor)
-          const toast = document.createElement('div');
-          toast.className = 'toast align-items-center text-white bg-success border-0';
-          toast.setAttribute('role', 'alert');
-          toast.setAttribute('aria-live', 'assertive');
-          toast.setAttribute('aria-atomic', 'true');
-          toast.innerHTML = `
-            <div class="d-flex">
-              <div class="toast-body">
-                OS finalizada com sucesso!
-              </div>
-              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-          `;
-          document.querySelector('.toast-container').appendChild(toast);
-          const bsToast = new bootstrap.Toast(toast);
-          bsToast.show();
+          // Opcional: Mostrar toast de sucesso simulado (o flash do servidor é o principal)
+          // const toastEl = document.getElementById('successToast'); // Crie um elemento toast no HTML se for usar
+          // if (toastEl) {
+          //   const toast = new bootstrap.Toast(toastEl);
+          //   toast.show();
+          // }
         }
         form.classList.add('was-validated');
       });
@@ -153,25 +148,27 @@
 
     // Filtro para tabela de histórico
     const filterInput = document.querySelector('#filter-os');
-    const tableRows = document.querySelectorAll('.table-modern tbody tr');
-    filterInput.addEventListener('input', () => {
-      const filter = filterInput.value.toLowerCase();
-      tableRows.forEach(row => {
-        const osNumber = row.cells[0].textContent.toLowerCase();
-        const observacoes = row.cells[3].textContent.toLowerCase();
-        row.style.display = (osNumber.includes(filter) || observacoes.includes(filter)) ? '' : 'none';
-      });
-    });
+    if (filterInput) { // Verifica se o input de filtro existe
+        const tableRows = document.querySelectorAll('.table-modern tbody tr');
+        filterInput.addEventListener('input', () => {
+          const filter = filterInput.value.toLowerCase();
+          tableRows.forEach(row => {
+            const osNumberCell = row.cells[0];
+            const observacoesCell = row.cells[3];
+            
+            const osNumber = osNumberCell ? osNumberCell.textContent.toLowerCase() : "";
+            const observacoes = observacoesCell ? observacoesCell.textContent.toLowerCase() : "";
+            
+            row.style.display = (osNumber.includes(filter) || observacoes.includes(filter)) ? '' : 'none';
+          });
+        });
+    }
   });
 </script>
 {% endblock %}
 
 {% block content %}
 <div class="container py-4">
-  <!-- Toast container -->
-  <div class="toast-container"></div>
-
-  <!-- Cabeçalho -->
   <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
       <h2 class="h4 mb-1">
@@ -179,14 +176,18 @@
       </h2>
       <p class="text-muted mb-0">Gerente: <strong>{{ gerente|capitalize_name }}</strong></p>
     </div>
-    {% if session.get('is_admin') %}
-    <a href="{{ url_for('admin_panel') }}" class="btn btn-prats btn-sm">
-      <i class="fas fa-cog me-1"></i> Painel Admin
-    </a>
-    {% endif %}
+    <div>
+        {% if profile_picture %}
+            <img src="{{ profile_picture }}" alt="Foto de Perfil" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
+        {% endif %}
+        {% if session.get('is_admin') %}
+        <a href="{{ url_for('admin_panel') }}" class="btn btn-prats btn-sm">
+          <i class="fas fa-cog me-1"></i> Painel Admin
+        </a>
+        {% endif %}
+    </div>
   </div>
 
-  <!-- OS Pendentes -->
   {% if os_pendentes %}
     {% for os in os_pendentes %}
     <div class="card card-os mb-3">
@@ -199,14 +200,14 @@
           <span class="badge-dias
             {% if os.dias|int > 30 %}bg-danger
             {% elif os.dias|int > 15 %}bg-warning text-dark
-            {% else %}bg-info{% endif %} me-2">
+            {% else %}bg-info text-dark{% endif %} me-2">
             {{ os.dias }} dia{{ 's' if os.dias|int != 1 else '' }}
           </span>
           <i class="fas fa-chevron-down toggle-icon"></i>
         </div>
       </div>
-      <div class="card-body">
-        <form action="{{ url_for('finalizar_os', os_numero=os.os) }}"
+      <div class="card-body d-none"> {# Inicia oculto #}
+        <form action="{{ url_for('finalizar_os', os_numero_str=os.os) }}"  {# <<< CORREÇÃO APLICADA AQUI #}
               method="POST"
               class="needs-validation"
               novalidate>
@@ -224,17 +225,18 @@
           </div>
           <div class="row g-2 mb-3">
             <div class="col-md-4">
-              <label for="data_finalizacao_{{ os.os }}" class="form-label small">Data de Finalização</label>
+              <label for="data_finalizacao_{{ os.os }}" class="form-label small">Data de Finalização <span class="text-danger">*</span></label>
               <input type="date" id="data_finalizacao_{{ os.os }}"
                      name="data_finalizacao"
                      class="form-control form-control-sm"
                      required
+                     max="{{ today_date }}" {# Passar today_date do backend #}
                      data-bs-toggle="tooltip"
                      title="Selecione a data de finalização da OS">
               <div class="invalid-feedback">Por favor, informe a data.</div>
             </div>
             <div class="col-md-4">
-              <label for="hora_finalizacao_{{ os.os }}" class="form-label small">Hora</label>
+              <label for="hora_finalizacao_{{ os.os }}" class="form-label small">Hora <span class="text-danger">*</span></label>
               <input type="time" id="hora_finalizacao_{{ os.os }}"
                      name="hora_finalizacao"
                      class="form-control form-control-sm"
@@ -269,7 +271,6 @@
     </div>
   {% endif %}
 
-  <!-- Histórico de OS Finalizadas -->
   <hr class="my-5">
   <h2 class="h5 mb-3">
     <i class="fas fa-history me-2 text-primary"></i> Histórico de OS Finalizadas (Últimas 100)
@@ -308,42 +309,5 @@
     </div>
   {% endif %}
 
-  <!-- Navegação -->
-  <div class="d-flex justify-content-between mt-4">
-    <a href="/" class="btn btn-outline-secondary btn-sm">
-      <i class="fas fa-arrow-left me-1"></i> Voltar
-    </a>
-    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
-      <i class="fas fa-sign-out-alt me-1"></i> Sair
-    </a>
   </div>
-
-  <!-- NOVA SEÇÃO: Prestadores atribuídos manualmente -->
-  <hr class="my-5">
-  <h2 class="h5 mb-3">
-    <i class="fas fa-user-check me-2 text-success"></i> Prestadores atribuídos manualmente
-  </h2>
-
-  {% if atribuicoes_manuais %}
-    {% for prestador, info in atribuicoes_manuais.items() %}
-      <div class="card card-os mb-3">
-        <div class="card-header">
-          <strong>{{ prestador|capitalize_name }}</strong>
-          <span class="text-muted small">(atribuído por {{ info.atribuido_por | join(", ") | capitalize_name }})</span>
-        </div>
-        <div class="card-body">
-          {% for os in info.os %}
-            <p class="mb-1">
-              <span class="badge bg-secondary">OS {{ os.os }}</span>
-              Frota {{ os.frota }} – {{ os.servico }}
-            </p>
-          {% endfor %}
-        </div>
-      </div>
-    {% endfor %}
-  {% else %}
-    <div class="text-muted">Nenhum prestador foi atribuído manualmente ainda.</div>
-  {% endif %}
-
-</div>
 {% endblock %}
