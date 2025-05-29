@@ -447,9 +447,11 @@ def upload_profile_picture():
         return redirect(url_for('login'))
 
     username = responsavel.lower()
-    if username not in ['arthur', 'mauricio']:
-        flash('Apenas Arthur e Mauricio podem adicionar uma foto de perfil.', 'danger')
-        return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
+    # Removida a restrição de 'arthur' e 'mauricio' para permitir que qualquer gerente ou manutencao logado adicione foto.
+    # Se quiser restringir, descomente e ajuste a lógica abaixo:
+    # if username not in ['arthur', 'mauricio']: 
+    #     flash('Apenas usuários autorizados podem adicionar uma foto de perfil.', 'danger')
+    #     return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
 
     if 'profile_picture' not in request.files:
         flash('Nenhuma foto selecionada.', 'danger')
@@ -475,16 +477,27 @@ def upload_profile_picture():
             return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
 
         user = User.query.filter_by(username=username).first()
-        if user:
+        if user: # Se for um gerente (usuário do BD)
             user.profile_picture = f"uploads/{filename}"
             db.session.commit()
             flash('Foto de perfil atualizada com sucesso!', 'success')
+        # Se for um usuário de manutenção (que não está na tabela User, mas em manutencao.json)
+        # a lógica de salvar a foto de perfil pode precisar ser diferente,
+        # por exemplo, atualizando o manutencao.json.
+        # Por ora, estamos apenas atualizando para usuários da tabela User.
+        elif 'manutencao' in session and session['manutencao'] == username:
+             # Aqui você poderia adicionar lógica para salvar o caminho da foto para usuários de manutenção
+             # Por exemplo, em uma coluna 'profile_picture' no manutencao.json ou em um novo arquivo/BD.
+             # Como não há essa estrutura, apenas piscamos uma mensagem genérica.
+             flash('Foto de perfil carregada. Atualização visual pode depender da configuração do usuário de manutenção.', 'info')
+
         else:
-            flash('Usuário não encontrado.', 'danger')
+            flash('Usuário não encontrado para associar a foto.', 'danger')
     else:
         flash('Formato de arquivo não permitido. Use PNG, JPG, JPEG ou GIF.', 'danger')
 
     return redirect(url_for('painel_manutencao' if 'manutencao' in session else 'painel' if 'gerente' in session else 'login'))
+
 
 @app.route('/painel_prestador')
 def painel_prestador():
@@ -512,28 +525,26 @@ def painel_prestador():
             # INÍCIO DA CORREÇÃO: Calcular dias_abertos para a lista de OS do prestador
             hoje = saopaulo_tz.localize(datetime.now()).date()
             for item in os_list:
-                data_str = item.get('data') or item.get('Data', '')  # Use 'data' ou 'Data'
-                try:
-                    parsed = False
-                    for fmt in ("%d/%m/%Y", "%Y-%m-%d"): # Tentar diferentes formatos de data
+                data_str = item.get('data') or item.get('Data', '')
+                dias_abertos = 0
+                if data_str:
+                    for fmt in ("%d/%m/%Y", "%Y-%m-%d"):
                         try:
                             data_abertura = datetime.strptime(data_str, fmt).date()
-                            parsed = True
+                            dias_abertos = (hoje - data_abertura).days
                             break
                         except ValueError:
                             continue
-                    if parsed:
-                        item['dias_abertos'] = (hoje - data_abertura).days
-                    else:
-                        item['dias_abertos'] = 0 # Padrão se a data não puder ser analisada
-                        logger.warning(f"Não foi possível analisar a data '{data_str}' para a OS {item.get('os') or item.get('OS', '')}")
-                except Exception as e:
-                    item['dias_abertos'] = 0
-                    logger.error(f"Erro ao calcular dias_abertos para a OS {item.get('os') or item.get('OS', '')}: {e}")
+                item['dias_abertos'] = dias_abertos
             # FIM DA CORREÇÃO
         except json.JSONDecodeError as e:
             logger.error(f"Erro ao decodificar {caminho}: {e}")
             os_list = []
+        except Exception as e: # Captura genérica para outros erros de carregamento/processamento
+            logger.error(f"Erro ao processar arquivo de OS {caminho} para {session['prestador']}: {e}")
+            os_list = []
+            flash(f"Erro ao carregar algumas OS. Verifique o arquivo {prestador['arquivo_os']}.", 'warning')
+
     return render_template('painel_prestador.html', nome=prestador['nome_exibicao'], os_list=os_list)
 
 @app.route('/painel_manutencao')
@@ -567,8 +578,18 @@ def painel_manutencao():
 
     finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all()
 
-    user = User.query.filter_by(username=session['manutencao']).first()
-    profile_picture = user.profile_picture if user else None
+    # Tenta carregar a foto de perfil para usuários de manutenção (se existir na tabela User)
+    # Idealmente, usuários de manutenção também teriam um registro em `User` ou um mecanismo similar
+    # para armazenar profile_picture se eles puderem fazer upload.
+    profile_picture = None
+    user_manutencao_db = User.query.filter_by(username=session['manutencao']).first()
+    if user_manutencao_db:
+        profile_picture = user_manutencao_db.profile_picture
+    # Se não houver user no DB, mas quisermos mostrar uma foto padrão ou de um arquivo JSON,
+    # a lógica seria adicionada aqui. Por exemplo:
+    # elif 'profile_picture' in manutencao: # Supondo que manutencao.json possa ter a chave
+    #     profile_picture = url_for('static', filename=manutencao['profile_picture'])
+
 
     return render_template('painel_manutencao.html', 
                          nome=manutencao['nome_exibicao'], 
@@ -591,93 +612,114 @@ def finalizar_os(os_numero):
         return redirect(url_for('login'))
 
     # Determine which list to load based on the user type
+    all_relevant_os = []
+    os_data_to_finalize = None
+
     if 'manutencao' in session:
         all_relevant_os = carregar_os_manutencao(session['manutencao'])
+        os_data_to_finalize = next((os_item for os_item in all_relevant_os if str(os_item.get('os') or os_item.get('OS', '')) == str(os_numero)), None)
     elif 'gerente' in session:
         all_relevant_os = carregar_os_gerente(session['gerente'])
+        os_data_to_finalize = next((os_item for os_item in all_relevant_os if str(os_item.get('os') or os_item.get('OS', '')) == str(os_numero)), None)
     elif 'prestador' in session:
-        prestadores = carregar_prestadores()
-        prestador_data = next((p for p in prestadores if p.get('usuario', '').lower() == session['prestador']), None)
+        prestadores_list = carregar_prestadores()
+        prestador_data = next((p for p in prestadores_list if p.get('usuario', '').lower() == session['prestador']), None)
         if prestador_data and 'arquivo_os' in prestador_data:
             caminho = os.path.join(MENSAGENS_PRESTADOR_DIR, prestador_data['arquivo_os'])
             if os.path.exists(caminho):
                 try:
                     with open(caminho, 'r', encoding='utf-8') as f:
-                        all_relevant_os = json.load(f)
+                        all_relevant_os_prestador = json.load(f)
                     # Calculate dias_abertos for prestador's OS list
                     hoje = saopaulo_tz.localize(datetime.now()).date()
-                    for item in all_relevant_os:
+                    for item in all_relevant_os_prestador:
                         data_str = item.get('data') or item.get('Data', '') # Use 'data' or 'Data'
-                        try:
-                            # Try parsing with multiple formats
-                            parsed = False
+                        item['os'] = str(item.get('os') or item.get('OS', '')) # Garantir que OS seja string
+                        dias_abertos = 0
+                        if data_str:
                             for fmt in ("%d/%m/%Y", "%Y-%m-%d"):
                                 try:
                                     data_abertura = datetime.strptime(data_str, fmt).date()
-                                    parsed = True
+                                    dias_abertos = (hoje - data_abertura).days
                                     break
                                 except ValueError:
                                     continue
-                            if parsed:
-                                item['dias_abertos'] = (hoje - data_abertura).days
-                            else:
-                                item['dias_abertos'] = 0 # Default if date cannot be parsed
-                                logger.warning(f"Could not parse date '{data_str}' for OS {item.get('os') or item.get('OS', '')}")
-                        except Exception as e:
-                            item['dias_abertos'] = 0
-                            logger.error(f"Error calculating dias_abertos for OS {item.get('os') or item.get('OS', '')}: {e}")
+                        item['dias_abertos'] = dias_abertos
+                    all_relevant_os = all_relevant_os_prestador # Atribui a lista processada
+                    os_data_to_finalize = next((os_item for os_item in all_relevant_os if str(os_item.get('os') or os_item.get('OS', '')) == str(os_numero)), None)
 
                 except json.JSONDecodeError as e:
                     logger.error(f"Erro ao decodificar {caminho}: {e}")
-                    all_relevant_os = []
+                except Exception as e:
+                    logger.error(f"Erro ao processar OS do prestador {caminho}: {e}")
             else:
-                all_relevant_os = []
+                 logger.warning(f"Arquivo OS do prestador não encontrado: {caminho}")
         else:
-            all_relevant_os = []
+            logger.warning(f"Dados do prestador ou arquivo OS não encontrado para {session.get('prestador')}")
 
-    # Find the specific OS that is being finalized
-    os_data_to_finalize = next((os for os in all_relevant_os if os['os'] == os_numero), None)
-    
+
     if request.method == 'GET':
         # Render the form, potentially pre-filling with OS data
-        user = User.query.filter_by(username=responsavel).first()
-        profile_picture = user.profile_picture if user else None
+        profile_picture_path = None
+        user_db_entry = User.query.filter_by(username=responsavel.lower()).first()
+        if user_db_entry and user_db_entry.profile_picture:
+            profile_picture_path = url_for('static', filename=user_db_entry.profile_picture)
+        # Se for usuário de manutenção e não tiver entrada em User, ou se a foto estiver em outro lugar:
+        elif 'manutencao' in session:
+            manutencao_users_list = carregar_manutencao()
+            manutencao_user_data = next((p for p in manutencao_users_list if p.get('usuario', '').lower() == responsavel.lower()), None)
+            if manutencao_user_data and manutencao_user_data.get('profile_picture'): # Supondo que manutencao.json pode ter
+                profile_picture_path = url_for('static', filename=manutencao_user_data['profile_picture'])
 
-        return render_template('painel_manutencao.html', # Or a specific finalization template
-                             nome=session.get('manutencao_nome') or session.get('gerente') or session.get('prestador_nome'),
-                             manutencao=session.get('manutencao'),
-                             os_list=all_relevant_os,
-                             total_os=len(all_relevant_os),
-                             os_sem_prestador=carregar_os_sem_prestador(),
-                             total_os_sem_prestador=len(carregar_os_sem_prestador()),
-                             finalizadas=Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all(),
-                             ordenar='data_desc',
-                             prestadores=carregar_prestadores(),
-                             now=saopaulo_tz.localize(datetime.now()),
-                             profile_picture=profile_picture,
-                             os_numero_a_finalizar=os_numero, # Pass the OS number for JS to pick up
-                             os_data=os_data_to_finalize # Pass the OS data to the template
-                            )
+
+        # Determina o template e contexto baseados no tipo de usuário
+        template_to_render = 'painel_manutencao.html' # Padrão
+        context = {
+            'nome': session.get('manutencao_nome') or session.get('gerente') or session.get('prestador_nome'),
+            'os_list': all_relevant_os, # Lista de OS do usuário
+            'os_numero_a_finalizar': os_numero,
+            'os_data': os_data_to_finalize, # Dados da OS específica a ser finalizada
+            'now': saopaulo_tz.localize(datetime.now()),
+            'profile_picture': profile_picture_path
+        }
+
+        if 'manutencao' in session:
+            context.update({
+                'manutencao': session['manutencao'],
+                'total_os': len(all_relevant_os),
+                'os_sem_prestador': carregar_os_sem_prestador(),
+                'total_os_sem_prestador': len(carregar_os_sem_prestador()),
+                'finalizadas': Finalizacao.query.order_by(Finalizacao.registrado_em.desc()).limit(100).all(),
+                'ordenar': 'data_desc', # ou o que for relevante
+                'prestadores': carregar_prestadores()
+            })
+        elif 'gerente' in session:
+            template_to_render = 'painel.html'
+            context.update({
+                'os_pendentes': all_relevant_os, # Para gerentes, as OS pendentes são 'all_relevant_os'
+                'finalizadas': Finalizacao.query.filter_by(gerente=session['gerente']).order_by(Finalizacao.registrado_em.desc()).limit(100).all(),
+                'gerente': session['gerente']
+            })
+        elif 'prestador' in session:
+            template_to_render = 'painel_prestador.html'
+            # 'os_list' já está no contexto para prestador
+            # 'nome' já está no contexto
+
+        return render_template(template_to_render, **context)
+
 
     if request.method == 'POST':
         data_fin_str = request.form.get('data_finalizacao')
         hora_fin = request.form.get('hora_finalizacao')
         observacoes = request.form.get('observacoes', '')
-        # Ignorar evidência temporariamente
-        if 'evidencia' in request.files:
-            request.files['evidencia']  # Apenas para evitar erro, sem processamento
 
         if not data_fin_str or not hora_fin:
             flash('Data e hora de finalização são obrigatórias.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
         data_abertura_str = None
-        # Try to get data_entrada from os_data_to_finalize (for manutencao/prestador)
-        if os_data_to_finalize and 'data_entrada' in os_data_to_finalize:
-            data_abertura_str = os_data_to_finalize['data_entrada']
-        # Try to get data from os_data_to_finalize (for gerente)
-        elif os_data_to_finalize and 'data' in os_data_to_finalize:
-            data_abertura_str = os_data_to_finalize['data']
+        if os_data_to_finalize:
+            data_abertura_str = os_data_to_finalize.get('data_entrada') or os_data_to_finalize.get('data')
 
         data_abertura_obj = None
         if data_abertura_str:
@@ -689,31 +731,30 @@ def finalizar_os(os_numero):
                     continue
 
         data_fin_obj = None
-        # Aceita data nos formatos %Y-%m-%d ou %d/%m/%Y
-        for fmt in ('%Y-%m-%d', '%d/%m/%Y'):
+        data_fin_formatted = ""
+        for fmt in ('%Y-%m-%d', '%d/%m/%Y'): # O input date HTML geralmente envia YYYY-MM-DD
             try:
                 data_fin_obj = datetime.strptime(data_fin_str, fmt).date()
-                data_fin_formatted = data_fin_obj.strftime('%d/%m/%Y')
+                data_fin_formatted = data_fin_obj.strftime('%d/%m/%Y') # Salvar sempre como DD/MM/YYYY
                 break
             except ValueError:
                 continue
 
         if not data_fin_obj:
-            flash('Formato de data de finalização inválido.', 'danger')
+            flash('Formato de data de finalização inválido. Use DD/MM/AAAA ou selecione no calendário.', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
-        # --- Validação da data de finalização ---
         if data_abertura_obj and data_fin_obj < data_abertura_obj:
             flash(f'A data de finalização ({data_fin_formatted}) não pode ser anterior à data de abertura da OS ({data_abertura_obj.strftime("%d/%m/%Y")}).', 'danger')
             return redirect(url_for('finalizar_os', os_numero=os_numero))
-        # --- Fim da validação ---
 
         fz = Finalizacao(
-            os_numero=os_numero,
+            os_numero=str(os_numero), # Garantir que seja string
             gerente=responsavel,
-            data_fin=data_fin_formatted, # Use the formatted date
+            data_fin=data_fin_formatted,
             hora_fin=hora_fin,
-            observacoes=observacoes
+            observacoes=observacoes,
+            registrado_em=saopaulo_tz.localize(datetime.now()) # Adicionar fuso horário ao registrar
         )
         db.session.add(fz)
         try:
@@ -725,29 +766,44 @@ def finalizar_os(os_numero):
             return redirect(url_for('finalizar_os', os_numero=os_numero))
 
         # Remover OS de todos os arquivos JSON relevantes
+        removidos_msg = []
         if 'gerente' in session:
-            removidos = remover_os_de_todos_json(MENSAGENS_DIR, os_numero)
-            if removidos:
-                flash(f'OS {os_numero} removida dos arquivos: {", ".join(removidos)}', 'success')
-            else:
-                flash(f'OS {os_numero} não foi encontrada nos arquivos JSON de gerente.', 'warning')
-
+            removidos = remover_os_de_todos_json(MENSAGENS_DIR, str(os_numero))
+            if removidos: removidos_msg.append(f'OS {os_numero} removida dos arquivos de gerente: {", ".join(removidos)}')
         if 'prestador' in session:
-            removidos = remover_os_de_todos_json(MENSAGENS_PRESTADOR_DIR, os_numero)
-            if removidos:
-                flash(f'OS {os_numero} removida dos arquivos: {", ".join(removidos)}', 'success')
-            else:
-                flash(f'OS {os_numero} não foi encontrada nos arquivos JSON de prestador.', 'warning')
-
+            removidos = remover_os_de_todos_json(MENSAGENS_PRESTADOR_DIR, str(os_numero))
+            if removidos: removidos_msg.append(f'OS {os_numero} removida dos arquivos de prestador: {", ".join(removidos)}')
         if 'manutencao' in session:
-            removidos = remover_os_de_todos_json(JSON_DIR, os_numero)
-            if removidos:
-                flash(f'OS {os_numero} removida dos arquivos: {", ".join(removidos)}', 'success')
-            else:
-                flash(f'OS {os_numero} não foi encontrada nos arquivos JSON de manutenção.', 'warning')
+            # Para manutenção, verificar se a OS estava em algum arquivo JSON específico de manutenção
+            manutencao_users_list = carregar_manutencao()
+            manutencao_user_data = next((p for p in manutencao_users_list if p.get('usuario', '').lower() == session['manutencao']), None)
+            if manutencao_user_data and manutencao_user_data.get('arquivo_os'):
+                # Assume que o arquivo_os está no JSON_DIR
+                arquivo_manutencao_especifico = os.path.join(JSON_DIR, manutencao_user_data['arquivo_os'])
+                if os.path.exists(arquivo_manutencao_especifico):
+                    removido_manutencao_especifico = remover_os_de_todos_json(os.path.dirname(arquivo_manutencao_especifico), str(os_numero)) # Passa o diretório
+                    if removido_manutencao_especifico: removidos_msg.append(f'OS {os_numero} removida do arquivo de manutenção: {os.path.basename(arquivo_manutencao_especifico)}')
+            # Também verificar no diretório JSON_DIR geral se necessário (se a OS puder estar lá sem ser específica do usuário)
+            # removidos_json_dir = remover_os_de_todos_json(JSON_DIR, str(os_numero))
+            # if removidos_json_dir: removidos_msg.append(f'OS {os_numero} removida de arquivos em static/json: {", ".join(removidos_json_dir)}')
 
-        flash(f'OS {os_numero} finalizada com sucesso', 'success')
-        return redirect(url_for('painel_prestador' if 'prestador' in session else 'painel_manutencao' if 'manutencao' in session else 'painel'))
+
+        if removidos_msg:
+            flash(". ".join(removidos_msg), 'info')
+        else:
+            flash(f'OS {os_numero} não encontrada em arquivos JSON para remoção ou já removida.', 'warning')
+
+        flash(f'OS {os_numero} finalizada e registrada com sucesso!', 'success')
+        
+        if 'prestador' in session:
+            return redirect(url_for('painel_prestador'))
+        elif 'manutencao' in session:
+            return redirect(url_for('painel_manutencao'))
+        elif 'gerente' in session:
+            return redirect(url_for('painel'))
+        else:
+            return redirect(url_for('login'))
+
 
 @app.route('/atribuir_prestador/<os_numero>', methods=['POST'])
 def atribuir_prestador(os_numero):
@@ -772,7 +828,7 @@ def atribuir_prestador(os_numero):
         return redirect(url_for('painel_manutencao'))
 
     os_sem_prestador = carregar_os_sem_prestador()
-    os_target = next((os for os in os_sem_prestador if os['os'] == os_numero), None)
+    os_target = next((os_item for os_item in os_sem_prestador if os_item['os'] == os_numero), None)
     if not os_target:
         flash('OS não encontrada ou já possui prestador', 'danger')
         return redirect(url_for('painel_manutencao'))
@@ -781,13 +837,21 @@ def atribuir_prestador(os_numero):
     try:
         with open(caminho_origem, 'r', encoding='utf-8') as f:
             dados = json.load(f)
+        
+        os_atualizada = False
         for item in dados:
             if str(item.get('os') or item.get('OS', '')) == os_numero:
                 item['prestador'] = prestador_nome
+                os_atualizada = True
                 break
-        with open(caminho_origem, 'w', encoding='utf-8') as f:
-            json.dump(dados, f, ensure_ascii=False, indent=2)
-        flash(f'Prestador {prestador_nome} atribuído à OS {os_numero} com sucesso', 'success')
+        
+        if os_atualizada:
+            with open(caminho_origem, 'w', encoding='utf-8') as f:
+                json.dump(dados, f, ensure_ascii=False, indent=2)
+            flash(f'Prestador {prestador_nome} atribuído à OS {os_numero} com sucesso', 'success')
+        else:
+            flash(f'OS {os_numero} não encontrada no arquivo de origem para atualização.', 'warning')
+
     except Exception as e:
         logger.error(f"Erro ao atualizar {caminho_origem}: {e}")
         flash('Erro ao atribuir prestador', 'danger')
@@ -801,79 +865,145 @@ def admin_panel():
         return redirect(url_for('login'))
 
     periodo = request.args.get('periodo', 'todos')
-    data_inicio = request.args.get('data_inicio')
-    data_fim = request.args.get('data_fim')
+    data_inicio_str = request.args.get('data_inicio')
+    data_fim_str = request.args.get('data_fim')
 
     query = Finalizacao.query.order_by(Finalizacao.registrado_em.desc())
+    
+    # Filtro de data para OS Finalizadas
+    # Garantir que a coluna `registrado_em` seja comparada como DateTime com timezone
+    if data_inicio_str and data_fim_str:
+        try:
+            inicio = saopaulo_tz.localize(parse(data_inicio_str).replace(hour=0, minute=0, second=0, microsecond=0))
+            fim = saopaulo_tz.localize(parse(data_fim_str).replace(hour=23, minute=59, second=59, microsecond=999999))
+            query = query.filter(Finalizacao.registrado_em.between(inicio, fim))
+        except ValueError:
+            flash('Datas inválidas para filtro de OS Finalizadas. Usando todas as OS.', 'warning')
+    elif periodo != 'todos':
+        hoje_tz = saopaulo_tz.localize(datetime.now())
+        if periodo == 'diario':
+            inicio = hoje_tz.replace(hour=0, minute=0, second=0, microsecond=0)
+            fim = hoje_tz.replace(hour=23, minute=59, second=59, microsecond=999999)
+        elif periodo == 'semanal':
+            inicio = (hoje_tz - timedelta(days=hoje_tz.weekday())).replace(hour=0, minute=0, second=0, microsecond=0)
+            fim = (inicio + timedelta(days=6)).replace(hour=23, minute=59, second=59, microsecond=999999)
+        elif periodo == 'mensal':
+            inicio = hoje_tz.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+            # Para fim do mês, ir para o próximo mês e subtrair um dia
+            next_month = inicio.replace(day=28) + timedelta(days=4) # Vai para o próximo mês
+            fim = (next_month - timedelta(days=next_month.day)).replace(hour=23, minute=59, second=59, microsecond=999999)
+        elif periodo == 'anual':
+            inicio = hoje_tz.replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0)
+            fim = hoje_tz.replace(month=12, day=31, hour=23, minute=59, second=59, microsecond=999999)
+        else: # Caso 'todos' ou inválido, não aplica filtro de período específico
+            inicio, fim = None, None
 
-    if periodo != 'todos' or data_inicio or data_fim:
-        if data_inicio and data_fim:
-            try:
-                inicio = saopaulo_tz.localize(parse(data_inicio).replace(hour=0, minute=0, second=0))
-                fim = saopaulo_tz.localize(parse(data_fim).replace(hour=23, minute=59, second=59))
-                query = query.filter(Finalizacao.registrado_em.between(inicio, fim))
-            except ValueError:
-                flash('Datas inválidas. Usando todas as OS.', 'warning')
-        elif periodo != 'todos':
-            hoje = saopaulo_tz.localize(datetime.now())
-            if periodo == 'diario':
-                inicio = hoje.replace(hour=0, minute=0, second=0)
-                fim = hoje.replace(hour=23, minute=59, second=59)
-            elif periodo == 'semanal':
-                inicio = hoje - timedelta(days=hoje.weekday())
-                inicio = inicio.replace(hour=0, minute=0, second=0)
-                fim = inicio + timedelta(days=6, hours=23, minutes=59, seconds=59)
-            elif periodo == 'mensal':
-                inicio = hoje.replace(day=1, hour=0, minute=0, second=0)
-                fim = (inicio + timedelta(days=31)).replace(day=1, hour=23, minute=59, second=59) - timedelta(seconds=1)
-            elif periodo == 'anual':
-                inicio = hoje.replace(month=1, day=1, hour=0, minute=0, second=0)
-                fim = hoje.replace(month=12, day=31, hour=23, minute=59, second=59)
+        if inicio and fim:
             query = query.filter(Finalizacao.registrado_em.between(inicio, fim))
 
+
     total_os = query.count()
-    finalizadas = query.limit(100).all()
-    login_events = LoginEvent.query.order_by(LoginEvent.login_time.desc()).limit(50).all()
+    finalizadas_list = query.limit(100).all() # Renomeado para evitar conflito com model
+    
+    # Filtro de data para Login Events
+    login_events_query = LoginEvent.query.order_by(LoginEvent.login_time.desc())
+    if data_inicio_str and data_fim_str:
+        try:
+            inicio_login = saopaulo_tz.localize(parse(data_inicio_str).replace(hour=0, minute=0, second=0, microsecond=0))
+            fim_login = saopaulo_tz.localize(parse(data_fim_str).replace(hour=23, minute=59, second=59, microsecond=999999))
+            login_events_query = login_events_query.filter(LoginEvent.login_time.between(inicio_login, fim_login))
+        except ValueError:
+            flash('Datas inválidas para filtro de Eventos de Login. Usando todos os eventos.', 'warning')
+    elif periodo != 'todos' and 'inicio' in locals() and 'fim' in locals() and inicio and fim: # reusa datas do filtro de OS se aplicável
+         login_events_query = login_events_query.filter(LoginEvent.login_time.between(inicio, fim))
+
+
+    login_events = login_events_query.limit(50).all()
+
 
     for event in login_events:
-        # Ensure login_time is in São Paulo timezone
         event.login_time_formatted = format_datetime(event.login_time)
-        # Ensure logout_time is in São Paulo timezone, if it exists
         event.logout_time_formatted = format_datetime(event.logout_time) if event.logout_time else None
-        # Recalculate duration if logout_time exists
-        if event.logout_time:
-            duration = (event.logout_time - event.login_time).total_seconds()
+        if event.logout_time and event.login_time:
+            # Certificar que ambos são timezone-aware e no mesmo timezone para subtração correta
+            login_t = event.login_time if event.login_time.tzinfo else saopaulo_tz.localize(event.login_time)
+            logout_t = event.logout_time if event.logout_time.tzinfo else saopaulo_tz.localize(event.logout_time)
+            login_t = login_t.astimezone(saopaulo_tz)
+            logout_t = logout_t.astimezone(saopaulo_tz)
+            duration = (logout_t - login_t).total_seconds()
             event.duration_secs = int(max(0, duration))
+        elif event.duration_secs is None : # Se não há logout_time, duração não pode ser calculada
+            event.duration_secs = 0
+
 
     users = User.query.order_by(User.username).all()
-    gerentes = [u.username for u in users]
-    contagem = {g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes}
-    abertas = {g: len(carregar_os_gerente(g)) for g in gerentes}
-    ranking_os_abertas = sorted(abertas.items(), key=lambda x: x[1], reverse=True)
-    ranking_os_prestadores = carregar_os_prestadores()
+    gerentes_db = [u.username for u in users] # gerentes do banco de dados
 
+    # Contagem de OS finalizadas por gerente (do BD)
+    contagem_finalizadas_gerentes_db = {}
+    if inicio and fim: # Se houver filtro de data, aplicar na contagem
+        contagem_finalizadas_gerentes_db = {
+            g: Finalizacao.query.filter(Finalizacao.gerente == g, Finalizacao.registrado_em.between(inicio, fim)).count()
+            for g in gerentes_db
+        }
+    else: # Sem filtro de data
+        contagem_finalizadas_gerentes_db = {
+            g: Finalizacao.query.filter_by(gerente=g).count() for g in gerentes_db
+        }
+    
+    # Contagem de OS abertas por gerente (dos arquivos JSON)
+    abertas_gerentes_json = {g: len(carregar_os_gerente(g)) for g in gerentes_db}
+    ranking_os_abertas_gerentes = sorted(abertas_gerentes_json.items(), key=lambda x: x[1], reverse=True)
+    
+    ranking_os_prestadores = carregar_os_prestadores() # Isso já carrega dos JSONs dos prestadores
+
+    # Dados para gráficos
     chart_data = {
-        'os_por_periodo': {},
-        'os_por_gerente': Counter([f.gerente for f in finalizadas])
+        'os_por_periodo': {}, # OS Finalizadas por período
+        'os_por_gerente': Counter(), # OS Finalizadas por gerente (do BD)
+        'os_abertas_por_gerente': Counter(abertas_gerentes_json) # OS Abertas por gerente (JSON)
     }
-    for f in finalizadas:
-        data = parse(f.data_fin).strftime('%Y-%m' if periodo == 'anual' else '%Y-%m-%d')
-        chart_data['os_por_periodo'][data] = chart_data['os_por_periodo'].get(data, 0) + 1
+    
+    # Processar OS finalizadas para gráfico de período e por gerente
+    for f in finalizadas_list: # Usar a lista já filtrada e limitada
+        # Para os_por_periodo, usar a data de finalização da OS
+        try:
+            data_finalizacao_obj = datetime.strptime(f.data_fin, "%d/%m/%Y")
+            if periodo == 'anual':
+                periodo_key = data_finalizacao_obj.strftime('%Y-%m')
+            elif periodo == 'mensal':
+                periodo_key = data_finalizacao_obj.strftime('%Y-%m-%d')
+            elif periodo == 'semanal':
+                periodo_key = data_finalizacao_obj.strftime('%Y-%U') # Ano-Semana
+            elif periodo == 'diario':
+                 periodo_key = data_finalizacao_obj.strftime('%Y-%m-%d')
+            else: # 'todos' ou default
+                periodo_key = data_finalizacao_obj.strftime('%Y-%m-%d') # Agrupar por dia se 'todos' for muito granular
+
+            chart_data['os_por_periodo'][periodo_key] = chart_data['os_por_periodo'].get(periodo_key, 0) + 1
+        except ValueError:
+            logger.warning(f"Data de finalização em formato inválido para OS {f.os_numero}: {f.data_fin}")
+
+        chart_data['os_por_gerente'][f.gerente] += 1
+
 
     return render_template('admin.html',
-                         finalizadas=finalizadas,
-                         total_os=total_os,
-                         gerentes=gerentes,
-                         contagem_gerentes=contagem,
-                         os_abertas=abertas,
-                         ranking_os_abertas=ranking_os_abertas,
+                         finalizadas=finalizadas_list,
+                         total_os=total_os, # Total de OS finalizadas no período
+                         gerentes_db=gerentes_db,
+                         contagem_finalizadas_gerentes=contagem_finalizadas_gerentes_db, # Finalizadas por gerente (BD)
+                         os_abertas_gerentes=abertas_gerentes_json, # Abertas por gerente (JSON)
+                         ranking_os_abertas_gerentes=ranking_os_abertas_gerentes,
                          ranking_os_prestadores=ranking_os_prestadores,
                          login_events=login_events,
                          now=saopaulo_tz.localize(datetime.now()),
                          chart_data=chart_data,
-                         periodo=periodo,
-                         data_inicio=data_inicio,
-                         data_fim=data_fim)
+                         periodo_selecionado=periodo, # Renomeado para clareza no template
+                         data_inicio_filtro=data_inicio_str, # Renomeado
+                         data_fim_filtro=data_fim_str, # Renomeado
+                         format_datetime=format_datetime # Passando a função para o template
+                         )
+
 
 @app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():
@@ -882,94 +1012,157 @@ def exportar_os_finalizadas():
         return redirect(url_for('login'))
 
     periodo = request.args.get('periodo', 'todos')
-    data_inicio = request.args.get('data_inicio')
-    data_fim = request.args.get('data_fim')
+    data_inicio_str = request.args.get('data_inicio')
+    data_fim_str = request.args.get('data_fim')
 
     query = Finalizacao.query.order_by(Finalizacao.registrado_em.desc())
 
-    if periodo != 'todos' or data_inicio or data_fim:
-        if data_inicio and data_fim:
-            try:
-                inicio = saopaulo_tz.localize(parse(data_inicio).replace(hour=0, minute=0, second=0))
-                fim = saopaulo_tz.localize(parse(data_fim).replace(hour=23, minute=59, second=59))
-                query = query.filter(Finalizacao.registrado_em.between(inicio, fim))
-            except ValueError:
-                flash('Datas inválidas. Exportando todas as OS.', 'warning')
-        elif periodo != 'todos':
-            hoje = saopaulo_tz.localize(datetime.now())
-            if periodo == 'diario':
-                inicio = hoje.replace(hour=0, minute=0, second=0)
-                fim = hoje.replace(hour=23, minute=59, second=59)
-            elif periodo == 'semanal':
-                inicio = hoje - timedelta(days=hoje.weekday())
-                inicio = inicio.replace(hour=0, minute=0, second=0)
-                fim = inicio + timedelta(days=6, hours=23, minutes=59, seconds=59)
-            elif periodo == 'mensal':
-                inicio = hoje.replace(day=1, hour=0, minute=0, second=0)
-                fim = (inicio + timedelta(days=31)).replace(day=1, hour=23, minute=59, second=59) - timedelta(seconds=1)
-            elif periodo == 'anual':
-                inicio = hoje.replace(month=1, day=1, hour=0, minute=0, second=0)
-                fim = hoje.replace(month=12, day=31, hour=23, minute=59, second=59)
+    # Reutilizar a lógica de filtro de data do admin_panel
+    inicio, fim = None, None # Inicializar para evitar UnboundLocalError
+    if data_inicio_str and data_fim_str:
+        try:
+            inicio = saopaulo_tz.localize(parse(data_inicio_str).replace(hour=0, minute=0, second=0, microsecond=0))
+            fim = saopaulo_tz.localize(parse(data_fim_str).replace(hour=23, minute=59, second=59, microsecond=999999))
             query = query.filter(Finalizacao.registrado_em.between(inicio, fim))
+        except ValueError:
+            flash('Datas inválidas. Exportando todas as OS.', 'warning')
+    elif periodo != 'todos':
+        hoje_tz = saopaulo_tz.localize(datetime.now())
+        if periodo == 'diario':
+            inicio = hoje_tz.replace(hour=0, minute=0, second=0, microsecond=0)
+            fim = hoje_tz.replace(hour=23, minute=59, second=59, microsecond=999999)
+        elif periodo == 'semanal':
+            inicio = (hoje_tz - timedelta(days=hoje_tz.weekday())).replace(hour=0, minute=0, second=0, microsecond=0)
+            fim = (inicio + timedelta(days=6)).replace(hour=23, minute=59, second=59, microsecond=999999)
+        elif periodo == 'mensal':
+            inicio = hoje_tz.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+            next_month = inicio.replace(day=28) + timedelta(days=4)
+            fim = (next_month - timedelta(days=next_month.day)).replace(hour=23, minute=59, second=59, microsecond=999999)
+        elif periodo == 'anual':
+            inicio = hoje_tz.replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0)
+            fim = hoje_tz.replace(month=12, day=31, hour=23, minute=59, second=59, microsecond=999999)
+        
+        if inicio and fim: # Aplicar filtro somente se inicio e fim foram definidos
+             query = query.filter(Finalizacao.registrado_em.between(inicio, fim))
 
-    allf = query.all()
-    if not allf:
+
+    all_finalizadas = query.all()
+    if not all_finalizadas:
         flash('Nenhuma OS finalizada para o período selecionado', 'warning')
-        return redirect(url_for('admin_panel'))
+        return redirect(url_for('admin_panel', periodo=periodo, data_inicio=data_inicio_str, data_fim=data_fim_str))
 
-    pdf_path = os.path.join(BASE_DIR, 'relatorio.pdf')
+    pdf_path = os.path.join(BASE_DIR, 'relatorio_os_finalizadas.pdf')
     c = canvas.Canvas(pdf_path, pagesize=A4)
     width, height = A4
 
     c.setFont("Helvetica-Bold", 14)
-    c.drawCentredString(width / 2, height - 50, f"Relatório de OS Finalizadas ({periodo.capitalize()})")
-    c.setFont("Helvetica-Bold", 10)
+    titulo_periodo = periodo.capitalize()
+    if data_inicio_str and data_fim_str:
+        titulo_periodo = f"{parse(data_inicio_str).strftime('%d/%m/%Y')} a {parse(data_fim_str).strftime('%d/%m/%Y')}"
+    elif inicio and fim: # Se foi um período como 'semanal', 'mensal'
+        titulo_periodo = f"{inicio.strftime('%d/%m/%Y')} a {fim.strftime('%d/%m/%Y')}"
 
-    cols = ['OS', 'Gerente', 'Data', 'Hora', 'Obs']
-    x_list = [40, 100, 200, 260, 320]
-    y = height - 80
-    for idx, col in enumerate(cols):
-        c.drawString(x_list[idx], y, col)
-    y -= 20
+    c.drawCentredString(width / 2, height - 50, f"Relatório de OS Finalizadas ({titulo_periodo})")
+    
+    y_pos = height - 80
+    c.setFont("Helvetica-Bold", 9)
+    
+    col_widths = {
+        'OS': 70, 'Gerente': 100, 'Data Fin.': 60, 'Hora Fin.': 50, 
+        'Observações': 180, 'Registrado Em': 100
+    }
+    current_x = 30
 
-    c.setFont("Helvetica", 9)
-    for r in allf:
-        c.drawString(x_list[0], y, r.os_numero)
-        c.drawString(x_list[1], y, r.gerente)
-        c.drawString(x_list[2], y, r.data_fin)
-        c.drawString(x_list[3], y, r.hora_fin)
-        c.drawString(x_list[4], y, (r.observacoes or '')[:40])
-        y -= 16
-        if y < 40:
+    # Cabeçalho
+    for col_name, col_width in col_widths.items():
+        c.drawString(current_x, y_pos, col_name)
+        current_x += col_width
+    y_pos -= 15
+    c.line(30, y_pos + 5, width - 30, y_pos + 5) # Linha abaixo do cabeçalho
+    y_pos -= 5
+
+
+    c.setFont("Helvetica", 8)
+    for r in all_finalizadas:
+        if y_pos < 40: # Nova página
             c.showPage()
-            y = height - 50
+            c.setFont("Helvetica-Bold", 14)
+            c.drawCentredString(width / 2, height - 50, f"Relatório de OS Finalizadas ({titulo_periodo}) (continuação)")
+            y_pos = height - 80
+            c.setFont("Helvetica-Bold", 9)
+            current_x_header = 30
+            for col_name_h, col_width_h in col_widths.items():
+                c.drawString(current_x_header, y_pos, col_name_h)
+                current_x_header += col_width_h
+            y_pos -= 15
+            c.line(30, y_pos + 5, width - 30, y_pos + 5)
+            y_pos -= 5
+            c.setFont("Helvetica", 8)
+
+        current_x = 30
+        
+        # Truncar observações longas
+        obs_text = (r.observacoes or '')
+        max_obs_chars = 45 # Ajustar conforme necessário para caber na coluna
+        if len(obs_text) > max_obs_chars:
+            obs_text = obs_text[:max_obs_chars-3] + "..."
+
+        registrado_em_fmt = format_datetime(r.registrado_em) if r.registrado_em else "N/A"
+
+        row_data = [
+            str(r.os_numero), str(r.gerente), str(r.data_fin), str(r.hora_fin),
+            obs_text, registrado_em_fmt
+        ]
+        
+        idx = 0
+        for col_name, col_width in col_widths.items():
+            c.drawString(current_x, y_pos, row_data[idx])
+            current_x += col_width
+            idx +=1
+            
+        y_pos -= 12 # Espaçamento entre linhas
 
     c.save()
     return send_file(pdf_path,
                    as_attachment=True,
-                   download_name=f'relatorio_{saopaulo_tz.localize(datetime.now()):%Y%m%d}.pdf',
+                   download_name=f'relatorio_os_{saopaulo_tz.localize(datetime.now()):%Y%m%d_%H%M}.pdf',
                    mimetype='application/pdf')
 
 @app.route('/logout')
 def logout():
     ev_id = session.pop('login_event_id', None)
+    username_logged_out = session.get('gerente') or session.get('prestador') or session.get('manutencao') # Pega antes de limpar
+    
     if ev_id:
         ev = LoginEvent.query.get(ev_id)
         if ev:
-            logout_time = saopaulo_tz.localize(datetime.now())
-            logger.debug(f"Setting logout_time for {ev.username}: {logout_time}")
-            if ev.login_time.tzinfo is None:
-                ev.login_time = saopaulo_tz.localize(ev.login_time)
+            logout_time = saopaulo_tz.localize(datetime.now()) # Logout no fuso de SP
+            
+            # Garantir que login_time seja timezone-aware e em SP para cálculo de duração
+            login_time_aware = ev.login_time
+            if login_time_aware.tzinfo is None:
+                login_time_aware = saopaulo_tz.localize(login_time_aware)
             else:
-                ev.login_time = ev.login_time.astimezone(saopaulo_tz)
-
+                login_time_aware = login_time_aware.astimezone(saopaulo_tz)
+            
             ev.logout_time = logout_time
-            duration = (ev.logout_time - ev.login_time).total_seconds()
+            duration = (logout_time - login_time_aware).total_seconds()
             ev.duration_secs = int(max(0, duration))
-            logger.info(f"Logout de {ev.username}: login às {format_datetime(ev.login_time)}, logout às {format_datetime(ev.logout_time)}, duração: {ev.duration_secs} segundos")
-            db.session.commit()
+            
+            logger.info(f"Logout de {ev.username}: login às {format_datetime(login_time_aware)}, "
+                        f"logout às {format_datetime(logout_time)}, duração: {ev.duration_secs} segundos")
+            try:
+                db.session.commit()
+            except Exception as e:
+                db.session.rollback()
+                logger.error(f"Erro ao commitar logout event para {ev.username}: {e}")
+        else:
+            logger.warning(f"Evento de login ID {ev_id} não encontrado para {username_logged_out} no logout.")
+    else:
+        logger.info(f"Logout de {username_logged_out} sem login_event_id na sessão.")
+
     session.clear()
-    flash('Desconectado', 'info')
+    flash(f'{username_logged_out if username_logged_out else "Usuário"} desconectado com sucesso.', 'info')
     return redirect(url_for('login'))
 
 with app.app_context():
