@@ -1,5 +1,77 @@
 [
   {
+    "frota": "245",
+    "cd_equipamento": "245",
+    "modelo": "TRATOR MASSEY FERGUSON 3307",
+    "os": "111553",
+    "data_entrada": "29/05/2025",
+    "servico": "Verificar sinalização. Faróis traseiros não ascendem - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5262",
+    "cd_equipamento": "5262",
+    "modelo": "MOTOCANA",
+    "os": "111545",
+    "data_entrada": "29/05/2025",
+    "servico": "Verificar equipamento sem partida - (Fazenda Estrela 6)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "120",
+    "cd_equipamento": "120",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "111533",
+    "data_entrada": "29/05/2025",
+    "servico": "Revisar sinalização - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "137",
+    "cd_equipamento": "137",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "111515",
+    "data_entrada": "29/05/2025",
+    "servico": "Trator sem partida - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "22",
+    "cd_equipamento": "22",
+    "modelo": "TRATOR VALTRA BH 180 4X4",
+    "os": "111514",
+    "data_entrada": "29/05/2025",
+    "servico": "Trator sem partida, motor de partida fumaceando - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "111513",
+    "data_entrada": "29/05/2025",
+    "servico": "Cibié dianteiro não ascendem - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "287",
+    "cd_equipamento": "287",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111512",
+    "data_entrada": "29/05/2025",
+    "servico": "Trocar correia do alternador quebrando - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "102",
+    "cd_equipamento": "102",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "111510",
+    "data_entrada": "29/05/2025",
+    "servico": "Verificar motor de arranque travado - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "152",
+    "cd_equipamento": "152",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "111485",
+    "data_entrada": "29/05/2025",
+    "servico": "Revisar sistema eletrico\nFaz Pedra Verde(Oficina)\nSolicitado Altieres\nAutorizado Arthur"
+  },
+  {
     "frota": "29",
     "cd_equipamento": "29",
     "modelo": "TRATOR MASSEY FERGUSON 275/2",
@@ -62,6 +134,22 @@
     "os": "111455",
     "data_entrada": "28/05/2025",
     "servico": "Revisar chicote do cibie\nFaz Estrela\nSolicitado Carlos\nAutorizado Arthur"
+  },
+  {
+    "frota": "5676",
+    "cd_equipamento": "5676",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "111433",
+    "data_entrada": "28/05/2025",
+    "servico": "Chave de acionamento não funciona - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5552",
+    "cd_equipamento": "5552",
+    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
+    "os": "111432",
+    "data_entrada": "28/05/2025",
+    "servico": "Chaves do comando eletrico invertidas - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "298",

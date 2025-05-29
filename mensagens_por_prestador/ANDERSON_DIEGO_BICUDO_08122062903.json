@@ -1,11 +1,19 @@
 [
   {
-    "frota": "303",
-    "cd_equipamento": "303",
+    "frota": "270",
+    "cd_equipamento": "270",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111481",
-    "data_entrada": "28/05/2025",
-    "servico": "Trocar cano de alimentacao do filtro\nFaz NSA\nSolicitado Rennan\nAutorizado Arthur"
+    "os": "111556",
+    "data_entrada": "29/05/2025",
+    "servico": "Verificar ruído anormal no rolamento da TDP - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "116",
+    "cd_equipamento": "116",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "111499",
+    "data_entrada": "29/05/2025",
+    "servico": "Remover vazamentos do motor - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "69",
@@ -16,12 +24,36 @@
     "servico": "Trocar mangueira da sucção da bomba\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Arthur"
   },
   {
+    "frota": "103",
+    "cd_equipamento": "103",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "111447",
+    "data_entrada": "28/05/2025",
+    "servico": "Vazamento no  retentor da roda dianteiro - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "116",
     "cd_equipamento": "116",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
     "os": "111445",
     "data_entrada": "28/05/2025",
     "servico": "Desmontar eixo de tração para trocar ponta do peão  - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "217",
+    "cd_equipamento": "217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111441",
+    "data_entrada": "28/05/2025",
+    "servico": "Quebra do cabo da embreagem, vazamento no cárter e cruzeta da tração danificada. Recomenda-se recolher o trator para substituição dos componentes.  - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111425",
+    "data_entrada": "28/05/2025",
+    "servico": "Revisar suporte da barra de tração, verificando folgas, trincas e condições de fixação e braço hidráulico não sobe  - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "263",
@@ -56,28 +88,12 @@
     "servico": "Trocar bomba hidráulica - (Fazenda  SL1)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111363",
-    "data_entrada": "27/05/2025",
-    "servico": "Parafuso do cárter explanado - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "224",
     "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "111356",
     "data_entrada": "27/05/2025",
     "servico": "Verificar trator perdendo força e caindo rotação - (Fazenda Terra Branca) \nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "91",
-    "cd_equipamento": "91",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "111344",
-    "data_entrada": "27/05/2025",
-    "servico": "Substituir engate rápido - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "192",
@@ -126,14 +142,6 @@
     "os": "111131",
     "data_entrada": "22/05/2025",
     "servico": "Avaliar nível do óleo do motor subindo e aparenta diferença na viscosidade - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "100",
-    "cd_equipamento": "100",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "110684",
-    "data_entrada": "16/05/2025",
-    "servico": "Trocar reparo dos pistões da direção - (Fazenda são Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "98",

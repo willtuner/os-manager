@@ -1,5 +1,85 @@
 [
   {
+    "frota": "5213",
+    "cd_equipamento": "5213",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "111555",
+    "data_entrada": "29/05/2025",
+    "servico": "Quebra da esteira da adubadeira - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5398",
+    "cd_equipamento": "5398",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111546",
+    "data_entrada": "29/05/2025",
+    "servico": "Verificar agitador de calda com folga no mancal - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "111532",
+    "data_entrada": "29/05/2025",
+    "servico": "Vazamento na bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5346",
+    "cd_equipamento": "5346",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "111504",
+    "data_entrada": "29/05/2025",
+    "servico": "Substituir parafuso do acoplamento - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5521",
+    "cd_equipamento": "5521",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "111495",
+    "data_entrada": "29/05/2025",
+    "servico": "Verificação do sistema de abertura do extensor da torre do tanque, que se encontra travado, impedindo o funcionamento adequado do mecanismo. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5749",
+    "cd_equipamento": "5749",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111494",
+    "data_entrada": "29/05/2025",
+    "servico": "Avaliar ruído anormal no equipamento - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "111491",
+    "data_entrada": "29/05/2025",
+    "servico": "Substituição das travas de fixação e da correia de acionamento da adubadeira - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5539",
+    "cd_equipamento": "5539",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "111478",
+    "data_entrada": "28/05/2025",
+    "servico": "Trocar eixo da roda guia e verificar embreagem\nFaz NSA\nSolicitado Rennan\nAutorizado Mauricio"
+  },
+  {
+    "frota": "10022",
+    "cd_equipamento": "10022",
+    "modelo": "IMPL.ROCADEIRA (EMPRESTADA)",
+    "os": "111474",
+    "data_entrada": "28/05/2025",
+    "servico": "Acertar parafusos que segura jogo de facas e parafusos de fixação do rotor esquerdo\nFaz Terra Branca\nSolicitado Eder\nAutorizado Mauricio"
+  },
+  {
+    "frota": "5626",
+    "cd_equipamento": "5626",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "111439",
+    "data_entrada": "28/05/2025",
+    "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5347",
     "cd_equipamento": "5347",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",

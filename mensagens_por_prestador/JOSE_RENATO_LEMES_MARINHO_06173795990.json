@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5657",
+    "cd_equipamento": "5657",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "111548",
+    "data_entrada": "29/05/2025",
+    "servico": "Fazer rosca no bocal da tampa do tanque - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5579",
+    "cd_equipamento": "5579",
+    "modelo": "TRITURADOR TFI-1600 GTM",
+    "os": "111502",
+    "data_entrada": "29/05/2025",
+    "servico": "Substituir facas de corte da trincha - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "116",
+    "cd_equipamento": "116",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "111498",
+    "data_entrada": "29/05/2025",
+    "servico": "Soldar escada e fazer proteção do eixo da TDP\n(Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "99",
     "cd_equipamento": "99",
     "modelo": "TRATOR JOHN DEERE 5065 4X4",
@@ -8,12 +32,68 @@
     "servico": "Trocar confeccionar e trocar teto\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
   },
   {
+    "frota": "5623",
+    "cd_equipamento": "5623",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "111472",
+    "data_entrada": "28/05/2025",
+    "servico": "Soldar e recuperar trincos na estrutura da rocadeira\nFaz Terra Branca\nSolicitado Eder\nAutorizado Mauricio"
+  },
+  {
     "frota": "5009",
     "cd_equipamento": "5009",
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111465",
     "data_entrada": "28/05/2025",
     "servico": "Adaptar proteção lateral do ramal\nFaz Estrela \nSolicitado Carlos\nAutorizado Mauricio"
+  },
+  {
+    "frota": "5136",
+    "cd_equipamento": "5136",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111464",
+    "data_entrada": "28/05/2025",
+    "servico": "Fazer proteção das polias.\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio"
+  },
+  {
+    "frota": "5105",
+    "cd_equipamento": "5105",
+    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
+    "os": "111457",
+    "data_entrada": "28/05/2025",
+    "servico": "Trocar trava eixo da grade\nFaz Estrela\nSolicitado João\nAutorizado Mauricio"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111451",
+    "data_entrada": "28/05/2025",
+    "servico": "Fazer solda em trinca - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111440",
+    "data_entrada": "28/05/2025",
+    "servico": "Fazer proteção de bicos - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5401",
+    "cd_equipamento": "5401",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "111434",
+    "data_entrada": "28/05/2025",
+    "servico": "Tirar folga do cabeçario do tanque - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5233",
+    "cd_equipamento": "5233",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111423",
+    "data_entrada": "28/05/2025",
+    "servico": "Realizar soldagem em múltiplas trincas na estrutura do tanque e corrigir vazamento no pistão. - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5619",
@@ -32,14 +112,6 @@
     "servico": "Trinca na solda feita na estrutura da torre - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "159",
-    "cd_equipamento": "159",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "111326",
-    "data_entrada": "26/05/2025",
-    "servico": "Fazer solda na tubagem do escapamento - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "223",
     "cd_equipamento": "223",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -48,28 +120,12 @@
     "servico": "Recuperar tampa da caixa de bateria\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
   },
   {
-    "frota": "262",
-    "cd_equipamento": "262",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111210",
-    "data_entrada": "23/05/2025",
-    "servico": "Troca dos paralamas e instalação das proteções \nFaz São Jose\nSolicitado Gilberto\nAutorizado Arthur"
-  },
-  {
     "frota": "5459",
     "cd_equipamento": "5459",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "111127",
     "data_entrada": "21/05/2025",
     "servico": "Substituir proteções anti-arremesso.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "217",
-    "cd_equipamento": "217",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111118",
-    "data_entrada": "21/05/2025",
-    "servico": "Sacar parafuso do volante\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
   },
   {
     "frota": "5603",
@@ -86,14 +142,6 @@
     "os": "111471",
     "data_entrada": "20/05/2025",
     "servico": "Fazer caixa para transporte de pessoas\nFazenda SL1 (Oficina)\nLiberado Sr. Zacarias"
-  },
-  {
-    "frota": "5621",
-    "cd_equipamento": "5621",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "110777",
-    "data_entrada": "19/05/2025",
-    "servico": "Fazer solda e reforço e vazamento de óleo no multiplicador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5078",

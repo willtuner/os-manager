@@ -32,22 +32,6 @@
     "servico": "Solda em terminais do SPE queimado - (Fazenda SP)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5022",
-    "cd_equipamento": "5022",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111317",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111318",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
     "frota": "5748",
     "cd_equipamento": "5748",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -70,6 +54,22 @@
     "os": "111321",
     "data_entrada": "22/05/2025",
     "servico": "Revisar SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "5022",
+    "cd_equipamento": "5022",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111317",
+    "data_entrada": "22/05/2025",
+    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111318",
+    "data_entrada": "22/05/2025",
+    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
   },
   {
     "frota": "5421",

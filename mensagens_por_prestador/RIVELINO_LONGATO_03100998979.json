@@ -1,5 +1,13 @@
 [
   {
+    "frota": "275",
+    "cd_equipamento": "275",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111493",
+    "data_entrada": "29/05/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda NSA)\nLiberado Sr. Maurício"
+  },
+  {
     "frota": "290",
     "cd_equipamento": "290",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -14,14 +22,6 @@
     "os": "111446",
     "data_entrada": "28/05/2025",
     "servico": "Pneu L/D furado - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "247",
-    "cd_equipamento": "247",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "111438",
-    "data_entrada": "28/05/2025",
-    "servico": "Pneu traseiro L/? furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5346",
