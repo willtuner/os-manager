@@ -24,36 +24,12 @@
     "servico": "Vazamento na bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5346",
-    "cd_equipamento": "5346",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "111504",
-    "data_entrada": "29/05/2025",
-    "servico": "Substituir parafuso do acoplamento - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5521",
     "cd_equipamento": "5521",
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "111495",
     "data_entrada": "29/05/2025",
     "servico": "Verificação do sistema de abertura do extensor da torre do tanque, que se encontra travado, impedindo o funcionamento adequado do mecanismo. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5749",
-    "cd_equipamento": "5749",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111494",
-    "data_entrada": "29/05/2025",
-    "servico": "Avaliar ruído anormal no equipamento - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5214",
-    "cd_equipamento": "5214",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "111491",
-    "data_entrada": "29/05/2025",
-    "servico": "Substituição das travas de fixação e da correia de acionamento da adubadeira - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5539",
@@ -80,68 +56,12 @@
     "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5347",
-    "cd_equipamento": "5347",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "111409",
-    "data_entrada": "27/05/2025",
-    "servico": "Substituir rolamento lado direito. (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5524",
     "cd_equipamento": "5524",
     "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
     "os": "111380",
     "data_entrada": "27/05/2025",
     "servico": "Substituir rolamento e mancal L/E - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5418",
-    "cd_equipamento": "5418",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111347",
-    "data_entrada": "27/05/2025",
-    "servico": "Rolamento do eixo da turbina quebrado - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5555",
-    "cd_equipamento": "5555",
-    "modelo": "TANQUE DE AGUA 7000 LT FACCHIN",
-    "os": "111338",
-    "data_entrada": "27/05/2025",
-    "servico": "Roda lado esquerdo (L/E) do tanque se desprendeu, aparentemente devido à falha ou soltura do rolamento. - (Fazenda Estrela 6) \nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5747",
-    "cd_equipamento": "5747",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111328",
-    "data_entrada": "26/05/2025",
-    "servico": "Trocar correia quebrada e vazamento na bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5748",
-    "cd_equipamento": "5748",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111327",
-    "data_entrada": "26/05/2025",
-    "servico": "Trocar correia quebrada e vazamento na bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5009",
-    "cd_equipamento": "5009",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111306",
-    "data_entrada": "26/05/2025",
-    "servico": "Verificar correias viradas e trincadas - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5367",
-    "cd_equipamento": "5367",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111304",
-    "data_entrada": "26/05/2025",
-    "servico": "Trocar registros e caixa incorporadora - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5227",
@@ -152,36 +72,12 @@
     "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5350",
-    "cd_equipamento": "5350",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "111225",
-    "data_entrada": "23/05/2025",
-    "servico": "Verificar vazamento de óleo no conjunto do rotor da roçadeira, avaliando possível falha em retentores ou vedação do sistema - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5365",
     "cd_equipamento": "5365",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111163",
     "data_entrada": "22/05/2025",
     "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5722",
-    "cd_equipamento": "5722",
-    "modelo": "TANQUE DE AGUA 2000 LT",
-    "os": "111147",
-    "data_entrada": "22/05/2025",
-    "servico": "Verificar bomba com vazamento e ruído anormal - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5730",
-    "cd_equipamento": "5730",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "111132",
-    "data_entrada": "22/05/2025",
-    "servico": "Vazamento no rotor - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5569",
@@ -224,28 +120,12 @@
     "servico": "Verificada ocorrência de vazamento na bomba e folga na polia do eixo, resultando em deslizamento. Recomendada desmontagem para inspeção, substituição de vedação e verificação da fixação da polia. - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110406",
-    "data_entrada": "12/05/2025",
-    "servico": "Correia da bomba pegando nas proteções - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5165",
     "cd_equipamento": "5165",
     "modelo": "ROCADEIRA TATU",
     "os": "109411",
     "data_entrada": "25/04/2025",
     "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "108202",
-    "data_entrada": "03/04/2025",
-    "servico": "Verificar bomba de pulverização com frequente vazamento de óleo no retentor do virabrequim.\nFazenda Estrela\nSolicitado Sr. Carlos\nLiberado Sr. Maurício"
   },
   {
     "frota": "5629",
