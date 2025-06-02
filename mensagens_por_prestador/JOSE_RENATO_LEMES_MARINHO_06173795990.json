@@ -1,11 +1,67 @@
 [
   {
-    "frota": "5579",
-    "cd_equipamento": "5579",
-    "modelo": "TRITURADOR TFI-1600 GTM",
-    "os": "111502",
-    "data_entrada": "29/05/2025",
-    "servico": "Substituir facas de corte da trincha - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "frota": "5199",
+    "cd_equipamento": "5199",
+    "modelo": "ADUBADEIRA CACAMBA TATU",
+    "os": "111820",
+    "data_entrada": "02/06/2025",
+    "servico": "Trinca no cabeçario da adubadeira - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5755",
+    "cd_equipamento": "5755",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "111770",
+    "data_entrada": "02/06/2025",
+    "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5204",
+    "cd_equipamento": "5204",
+    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
+    "os": "111726",
+    "data_entrada": "02/06/2025",
+    "servico": "Soldar trinca em roda - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111618",
+    "data_entrada": "30/05/2025",
+    "servico": "Fazer solda em trinca - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111602",
+    "data_entrada": "30/05/2025",
+    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5159",
+    "cd_equipamento": "5159",
+    "modelo": "ADUBADEIRA CACAMBA TATU",
+    "os": "111594",
+    "data_entrada": "30/05/2025",
+    "servico": "Fazer solda na proteção da calha de distribuição de adubo - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5495",
+    "cd_equipamento": "5495",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "111593",
+    "data_entrada": "30/05/2025",
+    "servico": "Substituição das aletas dos pratos do distribuidor de adubo devido a corrosão e soldar proteção de partes móveis (correias traseiras) - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5492",
+    "cd_equipamento": "5492",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "111569",
+    "data_entrada": "30/05/2025",
+    "servico": "Fazer solda no suporte de sustentação da asa L/E e soldar suporte para instalar cibié - (Fazenda NSA)\nLiberado Sr. Mauricio\nPendencia N° 4059"
   },
   {
     "frota": "116",
@@ -56,14 +112,6 @@
     "servico": "Trocar trava eixo da grade\nFaz Estrela\nSolicitado João\nAutorizado Mauricio"
   },
   {
-    "frota": "5211",
-    "cd_equipamento": "5211",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111451",
-    "data_entrada": "28/05/2025",
-    "servico": "Fazer solda em trinca - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5035",
     "cd_equipamento": "5035",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -96,12 +144,12 @@
     "servico": "Instalar chapa nas bases de fixação dos rotores direito e esquerdo\nFazenda Casa Branca\nSolicitado Sr. João\nLiberado Sr. Maurício"
   },
   {
-    "frota": "5367",
-    "cd_equipamento": "5367",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111343",
-    "data_entrada": "27/05/2025",
-    "servico": "Trinca na solda feita na estrutura da torre - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "frota": "66",
+    "cd_equipamento": "66",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111757",
+    "data_entrada": "23/05/2025",
+    "servico": "Confecção e instalação do teto, Pendencia 4122\nFaz São Paulo\nSolicitado Arthur"
   },
   {
     "frota": "223",
@@ -120,12 +168,12 @@
     "servico": "Substituir proteções anti-arremesso.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
   },
   {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "111061",
-    "data_entrada": "21/05/2025",
-    "servico": "Realinhar tanque pegando na bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+    "frota": "5451",
+    "cd_equipamento": "5451",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "110984",
+    "data_entrada": "20/05/2025",
+    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5125",
@@ -326,13 +374,5 @@
     "os": "106998",
     "data_entrada": "14/03/2025",
     "servico": "Instalar escapamento faltando pedaço - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5051",
-    "cd_equipamento": "5051",
-    "modelo": "TANQUE DE AGUA 6000 LT",
-    "os": "106712",
-    "data_entrada": "07/03/2025",
-    "servico": "Revisar fixação do tanque, soldar trincos, trocar os 2 registros, verificar folga no cabeçario e corrigir trincas no mesmo (Fazenda N. S. A.)\nLiberado Sr. Mauricio"
   }
 ]

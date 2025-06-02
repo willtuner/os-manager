@@ -1,11 +1,51 @@
 [
   {
+    "frota": "225",
+    "cd_equipamento": "225",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "111728",
+    "data_entrada": "02/06/2025",
+    "servico": "Vazamento de diesel na bomba injetora - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "246",
+    "cd_equipamento": "246",
+    "modelo": "TRATOR MASSEY FERGUSON 3308",
+    "os": "111698",
+    "data_entrada": "02/06/2025",
+    "servico": "Vazamento de óleo diesel na mangueira - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "221",
+    "cd_equipamento": "221",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111653",
+    "data_entrada": "02/06/2025",
+    "servico": "Verificar trator apresentando emissão contínua de fumaça branca pelo escapamento - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "111581",
+    "data_entrada": "30/05/2025",
+    "servico": "Avaliar excesso de fumaça no escape do trator, identificando possível queima de óleo, falha de injeção ou obstrução no sistema. - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "268",
     "cd_equipamento": "268",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "111490",
     "data_entrada": "29/05/2025",
     "servico": "Solicita-se a avaliação de possível vazamento de óleo diesel na região posterior do corpo da bomba injetora. - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "147",
+    "cd_equipamento": "147",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "111489",
+    "data_entrada": "29/05/2025",
+    "servico": "Verificar possível vazamento de óleo lubrificante na região da turbina do motor - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "251",

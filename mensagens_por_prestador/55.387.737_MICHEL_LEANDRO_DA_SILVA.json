@@ -1,19 +1,27 @@
 [
   {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "111685",
+    "data_entrada": "02/06/2025",
+    "servico": "Fazer fibra na torre quebrada - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "303",
+    "cd_equipamento": "303",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111622",
+    "data_entrada": "30/05/2025",
+    "servico": "Fazer fibra no para lamas trincado - (Fazenda NSA)\nLiberado Sr. Arthur\nPendencia N°4062"
+  },
+  {
     "frota": "5598",
     "cd_equipamento": "5598",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "111506",
     "data_entrada": "29/05/2025",
     "servico": "Fazer fibra na torre - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "111255",
-    "data_entrada": "23/05/2025",
-    "servico": "Fazer fibra em trincas na torre - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5597",

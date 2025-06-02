@@ -1,5 +1,29 @@
 [
   {
+    "frota": "260",
+    "cd_equipamento": "260",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111660",
+    "data_entrada": "02/06/2025",
+    "servico": "Avaliar cambio de marcha \"bambo\" e não engata - (Fazenda São Pedro)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "126",
+    "cd_equipamento": "126",
+    "modelo": "GATOR JOHNN DEERE",
+    "os": "111630",
+    "data_entrada": "31/05/2025",
+    "servico": "Troca de óleo completa - (Fazenda SP)\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "128",
+    "cd_equipamento": "128",
+    "modelo": "GATOR JOHNN DEERE",
+    "os": "111629",
+    "data_entrada": "31/05/2025",
+    "servico": "Troca de óleo completa - (Fazenda SP)\nLiberado Sr. Wilson"
+  },
+  {
     "frota": "288",
     "cd_equipamento": "288",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -8,36 +32,28 @@
     "servico": "Verificar vazamento de óleo na região inferior da coluna de direção (próximo ao volante). - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "303",
-    "cd_equipamento": "303",
+    "frota": "191",
+    "cd_equipamento": "191",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "111576",
+    "data_entrada": "30/05/2025",
+    "servico": "Verificar freio de mão e acelerador de mão quebrado - (Fazenda Minuano)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111571",
+    "os": "111575",
     "data_entrada": "30/05/2025",
-    "servico": "Mangueiras do hidráulico com vazamento e trocar engate rápido - (Fazenda NSA)\nLiberado Sr. Arthur\nPendencia N° 4357"
+    "servico": "Vazamento na mangueira do comando hidráulico - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5110",
-    "cd_equipamento": "5110",
-    "modelo": "SUBSOLADOR STARA",
-    "os": "111565",
-    "data_entrada": "30/05/2025",
-    "servico": "Pneu L/D furado - (Fazenda Estrela 6)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "215",
-    "cd_equipamento": "215",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "111564",
-    "data_entrada": "30/05/2025",
-    "servico": "Vazamento no retentor da TDP - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "270",
-    "cd_equipamento": "270",
+    "frota": "222",
+    "cd_equipamento": "222",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111556",
-    "data_entrada": "29/05/2025",
-    "servico": "Verificar ruído anormal no rolamento da TDP - (Fazenda São Paulo)\nLiberado Sr. Arthur"
+    "os": "111574",
+    "data_entrada": "30/05/2025",
+    "servico": "Verificar vazamento de óleo na região inferior da coluna de direção (próximo ao volante). - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "116",
@@ -62,14 +78,6 @@
     "os": "111447",
     "data_entrada": "28/05/2025",
     "servico": "Vazamento no  retentor da roda dianteiro - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "116",
-    "cd_equipamento": "116",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "111445",
-    "data_entrada": "28/05/2025",
-    "servico": "Desmontar eixo de tração para trocar ponta do peão  - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "217",
@@ -102,14 +110,6 @@
     "os": "111410",
     "data_entrada": "27/05/2025",
     "servico": "Vazamento no cano do diferencial (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "225",
-    "cd_equipamento": "225",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "111391",
-    "data_entrada": "27/05/2025",
-    "servico": "Vazamento na TDP - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "158",
@@ -160,22 +160,6 @@
     "servico": "Verificar braços hidráulicos não sobem 100% da capacidade - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "94",
-    "cd_equipamento": "94",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "111138",
-    "data_entrada": "22/05/2025",
-    "servico": "Folga nos terminais da direção L/E e L/D - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "228",
-    "cd_equipamento": "228",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "111131",
-    "data_entrada": "22/05/2025",
-    "servico": "Avaliar nível do óleo do motor subindo e aparenta diferença na viscosidade - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "98",
     "cd_equipamento": "98",
     "modelo": "TRATOR JOHN DEERE 5065 4X4",
@@ -190,14 +174,6 @@
     "os": "110515",
     "data_entrada": "14/05/2025",
     "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "235",
-    "cd_equipamento": "235",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "110508",
-    "data_entrada": "14/05/2025",
-    "servico": "Verificar vazamento no bloco do motor  - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "218",

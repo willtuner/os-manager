@@ -1,11 +1,51 @@
 [
   {
-    "frota": "5213",
-    "cd_equipamento": "5213",
+    "frota": "5603",
+    "cd_equipamento": "5603",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "111818",
+    "data_entrada": "02/06/2025",
+    "servico": "Verificar falha na abertura dos ramais  sistema não realiza acionamento. - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5569",
+    "cd_equipamento": "5569",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "111809",
+    "data_entrada": "02/06/2025",
+    "servico": "Trocar jogo de luva e cruzeta - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5613",
+    "cd_equipamento": "5613",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "111871",
+    "data_entrada": "02/06/2025",
+    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5658",
+    "cd_equipamento": "5658",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "111873",
+    "data_entrada": "02/06/2025",
+    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5214",
+    "cd_equipamento": "5214",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "111555",
-    "data_entrada": "29/05/2025",
-    "servico": "Quebra da esteira da adubadeira - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+    "os": "111644",
+    "data_entrada": "02/06/2025",
+    "servico": "Substituir rolamento da polia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5660",
+    "cd_equipamento": "5660",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "111613",
+    "data_entrada": "30/05/2025",
+    "servico": "Vazamento de óleo na bomba - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5398",
@@ -16,28 +56,12 @@
     "servico": "Verificar agitador de calda com folga no mancal - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5697",
-    "cd_equipamento": "5697",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "111532",
-    "data_entrada": "29/05/2025",
-    "servico": "Vazamento na bomba - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5521",
     "cd_equipamento": "5521",
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "111495",
     "data_entrada": "29/05/2025",
     "servico": "Verificação do sistema de abertura do extensor da torre do tanque, que se encontra travado, impedindo o funcionamento adequado do mecanismo. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5539",
-    "cd_equipamento": "5539",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "111478",
-    "data_entrada": "28/05/2025",
-    "servico": "Trocar eixo da roda guia e verificar embreagem\nFaz NSA\nSolicitado Rennan\nAutorizado Mauricio"
   },
   {
     "frota": "10022",
@@ -86,38 +110,6 @@
     "os": "111020",
     "data_entrada": "21/05/2025",
     "servico": "Tirar jogo das rodas guias  - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5106",
-    "cd_equipamento": "5106",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "110940",
-    "data_entrada": "20/05/2025",
-    "servico": "Substituir arrastador L/E - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5031",
-    "cd_equipamento": "5031",
-    "modelo": "RC2 E 2600 LSL TATU",
-    "os": "110626",
-    "data_entrada": "15/05/2025",
-    "servico": "Substituir facão e arrastador - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5599",
-    "cd_equipamento": "5599",
-    "modelo": "PREMIX PRIME 2T 2000",
-    "os": "111104",
-    "data_entrada": "15/05/2025",
-    "servico": "Fazer instalação do rotor, intermediário e selo mecânico no motor elétrico reserva do equipamento.\nFazenda Severino\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5657",
-    "cd_equipamento": "5657",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110493",
-    "data_entrada": "14/05/2025",
-    "servico": "Verificada ocorrência de vazamento na bomba e folga na polia do eixo, resultando em deslizamento. Recomendada desmontagem para inspeção, substituição de vedação e verificação da fixação da polia. - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5165",

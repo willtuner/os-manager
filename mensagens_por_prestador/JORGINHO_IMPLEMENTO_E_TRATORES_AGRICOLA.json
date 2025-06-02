@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5129",
+    "cd_equipamento": "5129",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "111724",
+    "data_entrada": "02/06/2025",
+    "servico": "Falha na conexão roscada na saída do tanque de pulverização, resultando em desacoplamento de componente. - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111654",
+    "data_entrada": "02/06/2025",
+    "servico": "Verificar vazamento de óleo no retentor do pistão esquerdo de abertura da asa e vazamento no pistão de levante da barra direita.\nFazenda Biscui Pecuária\nSolicitado Sr. Geovane\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5128",
+    "cd_equipamento": "5128",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "111561",
+    "data_entrada": "30/05/2025",
+    "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5529",
     "cd_equipamento": "5529",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",

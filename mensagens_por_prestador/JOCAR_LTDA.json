@@ -1,5 +1,29 @@
 [
   {
+    "frota": "299",
+    "cd_equipamento": "299",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111608",
+    "data_entrada": "30/05/2025",
+    "servico": "Verificar sistema de aquecimento da cabine do trator. Ar quente não está funcionando - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "223",
+    "cd_equipamento": "223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111607",
+    "data_entrada": "30/05/2025",
+    "servico": "Verificar sistema de aquecimento da cabine do trator. Ar quente não está funcionando - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "283",
+    "cd_equipamento": "283",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111606",
+    "data_entrada": "30/05/2025",
+    "servico": "Verificar sistema de aquecimento da cabine do trator. Ar quente não está funcionando - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "224",
     "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -24,26 +48,10 @@
     "servico": "Verificar A/C - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "65",
-    "cd_equipamento": "65",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "111176",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
-  },
-  {
     "frota": "249",
     "cd_equipamento": "249",
     "modelo": "TRATOR JOHN DEERE 5080EN",
     "os": "111175",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
-  },
-  {
-    "frota": "247",
-    "cd_equipamento": "247",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "111174",
     "data_entrada": "22/05/2025",
     "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
   },
