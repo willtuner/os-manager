@@ -1,10 +1,59 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "5204",
+    "os": "111727",
+    "data": "02/06/2025",
+    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
+    "servico": "Desmontar e montar roda para fazer solda - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5204",
+    "os": "111726",
+    "data": "02/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar trinca em roda - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5079",
+    "os": "111725",
+    "data": "02/06/2025",
+    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
+    "servico": "Pneu L/D furado - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5129",
+    "os": "111724",
+    "data": "02/06/2025",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
+    "servico": "Falha na conexão roscada na saída do tanque de pulverização, resultando em desacoplamento de componente. - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "92",
+    "os": "111722",
+    "data": "02/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sinalização - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5793",
+    "os": "111589",
+    "data": "30/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Reaperto, conferencia geral e  soldar corrente dos pinos - (Oficina)"
+  },
+  {
+    "frota": "5128",
+    "os": "111561",
+    "data": "30/05/2025",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
+    "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "147",
     "os": "111489",
     "data": "29/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Verificar possível vazamento de óleo lubrificante na região da turbina do motor - (Fazenda Nova Manhã)"
   },
   {
@@ -50,27 +99,6 @@
     "servico": "Vazamento de óleo na bomba - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "94",
-    "os": "111138",
-    "data": "22/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Folga nos terminais da direção L/E e L/D - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "251",
-    "os": "110805",
-    "data": "19/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Trocar cabo do acelerador - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "106",
-    "os": "111270",
-    "data": "19/05/2025",
-    "prestador": "ZAVAN MOTOS LTDA",
-    "servico": "Transportar frota da MG a fazenda"
-  },
-  {
     "frota": "142",
     "os": "110763",
     "data": "16/05/2025",
@@ -111,13 +139,6 @@
     "data": "15/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar desgaste no engate do cabeçário danificado."
-  },
-  {
-    "frota": "235",
-    "os": "110508",
-    "data": "14/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar vazamento no bloco do motor  - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5354",

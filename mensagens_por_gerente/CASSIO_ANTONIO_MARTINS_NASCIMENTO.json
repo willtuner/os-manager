@@ -1,18 +1,53 @@
 [
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
-    "frota": "5658",
-    "os": "111524",
-    "data": "29/05/2025",
+    "frota": "324",
+    "os": "111730",
+    "data": "02/06/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Revisão de 50 hrs - (Fazenda São Severino)"
+  },
+  {
+    "frota": "225",
+    "os": "111729",
+    "data": "02/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Verificar ramais não abrem - (Fazenda São Severino)"
+    "servico": "Verificar trator não engata marcha ré - (Fazenda São Severino)"
+  },
+  {
+    "frota": "225",
+    "os": "111728",
+    "data": "02/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Vazamento de diesel na bomba injetora - (Fazenda São Severino)"
   },
   {
     "frota": "5613",
-    "os": "111522",
-    "data": "29/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar ramais não abrem - (Fazenda São Severino)"
+    "os": "111871",
+    "data": "02/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica)."
+  },
+  {
+    "frota": "5658",
+    "os": "111873",
+    "data": "02/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica)."
+  },
+  {
+    "frota": "5660",
+    "os": "111613",
+    "data": "30/05/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento de óleo na bomba - (Fazenda São Severino)"
+  },
+  {
+    "frota": "318",
+    "os": "111580",
+    "data": "30/05/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Avaliar excesso de fumaça no escape do trator, identificando possível queima de óleo, falha de injeção ou obstrução no sistema. - (Fazenda São Severino)"
   },
   {
     "frota": "5521",
@@ -22,59 +57,10 @@
     "servico": "Verificação do sistema de abertura do extensor da torre do tanque, que se encontra travado, impedindo o funcionamento adequado do mecanismo. - (Fazenda São Severino)"
   },
   {
-    "frota": "29",
-    "os": "111484",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar alternador - (Fazenda São Severino)"
-  },
-  {
-    "frota": "225",
-    "os": "111391",
-    "data": "27/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento na TDP - (Fazenda São Severino)"
-  },
-  {
-    "frota": "225",
-    "os": "111382",
-    "data": "27/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Sirene de ré não funciona e adaptar faróis traseiros - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5612",
-    "os": "111336",
-    "data": "26/05/2025",
-    "prestador": "TORNEARIA STEINHAUSER LTDA",
-    "servico": "Recuperar chapas superior e inferior do engate do cabeçário estão com furo ovalizado."
-  },
-  {
-    "frota": "228",
-    "os": "111131",
-    "data": "22/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar nível do óleo do motor subindo e aparenta diferença na viscosidade - (Fazenda São Severino)"
-  },
-  {
-    "frota": "274",
-    "os": "111047",
-    "data": "21/05/2025",
-    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
-    "servico": "Vazamento na bomba d'água - (Fazenda Bela Manhã)"
-  },
-  {
     "frota": "226",
     "os": "110945",
     "data": "20/05/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra na lateral - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5599",
-    "os": "111104",
-    "data": "15/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Fazer instalação do rotor, intermediário e selo mecânico no motor elétrico reserva do equipamento."
   }
 ]

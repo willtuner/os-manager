@@ -1,6 +1,55 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "309",
+    "os": "111827",
+    "data": "02/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Executar substituição da trava do eixo - (Fazenda estrela)"
+  },
+  {
+    "frota": "5042",
+    "os": "111824",
+    "data": "02/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D furado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "91",
+    "os": "111821",
+    "data": "02/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar vazamento de óleo nos tuchos da válvula VCR - (Fazenda Estrela)"
+  },
+  {
+    "frota": "116",
+    "os": "111819",
+    "data": "02/06/2025",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
+    "servico": "Trocar do trinco da porta."
+  },
+  {
+    "frota": "206",
+    "os": "111646",
+    "data": "02/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar contaminação de óleo no radiador - (Fazenda Estrela)"
+  },
+  {
+    "frota": "10219",
+    "os": "111645",
+    "data": "02/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar trator com partida lenta - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5214",
+    "os": "111644",
+    "data": "02/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituir rolamento da polia - (Fazenda Estrela)"
+  },
+  {
     "frota": "137",
     "os": "111515",
     "data": "29/05/2025",
@@ -13,20 +62,6 @@
     "data": "29/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trator sem partida, motor de partida fumaceando - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5346",
-    "os": "111504",
-    "data": "29/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir parafuso do acoplamento - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5579",
-    "os": "111502",
-    "data": "29/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir facas de corte da trincha - (Fazenda Estrela)"
   },
   {
     "frota": "116",
@@ -50,34 +85,6 @@
     "servico": "Soldar escada e fazer proteção do eixo da TDP"
   },
   {
-    "frota": "5214",
-    "os": "111491",
-    "data": "29/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituição das travas de fixação e da correia de acionamento da adubadeira - (Fazenda Estrela)"
-  },
-  {
-    "frota": "116",
-    "os": "111445",
-    "data": "28/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Desmontar eixo de tração para trocar ponta do peão  - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5346",
-    "os": "111413",
-    "data": "27/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Substituir pneu lado direito. (Fazenda Estrela)"
-  },
-  {
-    "frota": "5347",
-    "os": "111409",
-    "data": "27/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir rolamento lado direito. (Fazenda Estrela)"
-  },
-  {
     "frota": "5524",
     "os": "111380",
     "data": "27/05/2025",
@@ -95,22 +102,8 @@
     "frota": "5451",
     "os": "110984",
     "data": "20/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5106",
-    "os": "110940",
-    "data": "20/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir arrastador L/E - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5031",
-    "os": "110626",
-    "data": "15/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir facão e arrastador - (Fazenda Estrela)"
   },
   {
     "frota": "5106",
