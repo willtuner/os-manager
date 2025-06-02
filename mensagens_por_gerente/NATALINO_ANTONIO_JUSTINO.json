@@ -1,13 +1,6 @@
 [
   {
     "solicitado": "NATALINO ANTONIO JUSTINO",
-    "frota": "5213",
-    "os": "111555",
-    "data": "29/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Quebra da esteira da adubadeira - (Fazenda Alvorada)"
-  },
-  {
     "frota": "5035",
     "os": "111440",
     "data": "28/05/2025",
@@ -29,29 +22,8 @@
     "servico": "Verificar A/C - (Fazenda Alvorada)"
   },
   {
-    "frota": "5037",
-    "os": "111194",
-    "data": "23/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Vazamento no bico L/E - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "65",
-    "os": "111176",
-    "data": "22/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
     "frota": "249",
     "os": "111175",
-    "data": "22/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "247",
-    "os": "111174",
     "data": "22/05/2025",
     "prestador": "JOCAR LTDA",
     "servico": "Revisar sistema eletrico"

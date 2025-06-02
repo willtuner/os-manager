@@ -1,11 +1,11 @@
 [
   {
     "solicitado": "PAULO EDSON ABREU VILELA JUNIOR",
-    "frota": "5418",
-    "os": "111347",
-    "data": "27/05/2025",
+    "frota": "5603",
+    "os": "111818",
+    "data": "02/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Rolamento do eixo da turbina quebrado - (Fazenda NSA)"
+    "servico": "Verificar falha na abertura dos ramais  sistema não realiza acionamento. - (Fazenda Bela Manhã)"
   },
   {
     "frota": "301",
@@ -13,27 +13,6 @@
     "data": "26/05/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar braços hidráulicos não sobem 100% da capacidade - (Fazenda NSA)"
-  },
-  {
-    "frota": "5350",
-    "os": "111225",
-    "data": "23/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar vazamento de óleo no conjunto do rotor da roçadeira, avaliando possível falha em retentores ou vedação do sistema - (Fazenda NSA)"
-  },
-  {
-    "frota": "5522",
-    "os": "111193",
-    "data": "23/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Consertar pneu direito furado."
-  },
-  {
-    "frota": "5730",
-    "os": "111132",
-    "data": "22/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento no rotor - (Fazenda NSA)"
   },
   {
     "frota": "5629",
@@ -48,12 +27,5 @@
     "data": "14/05/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Vazamento no regulador de pressão - (Fazenda NSA)"
-  },
-  {
-    "frota": "5660",
-    "os": "110406",
-    "data": "12/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Correia da bomba pegando nas proteções - (Fazenda São Severino)"
   }
 ]
