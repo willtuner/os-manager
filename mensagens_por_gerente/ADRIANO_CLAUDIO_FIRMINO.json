@@ -2,24 +2,10 @@
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
     "frota": "5204",
-    "os": "111727",
-    "data": "02/06/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Desmontar e montar roda para fazer solda - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5204",
     "os": "111726",
     "data": "02/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Soldar trinca em roda - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5079",
-    "os": "111725",
-    "data": "02/06/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu L/D furado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5129",
@@ -27,20 +13,6 @@
     "data": "02/06/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Falha na conexão roscada na saída do tanque de pulverização, resultando em desacoplamento de componente. - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "92",
-    "os": "111722",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sinalização - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5793",
-    "os": "111589",
-    "data": "30/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Reaperto, conferencia geral e  soldar corrente dos pinos - (Oficina)"
   },
   {
     "frota": "5128",
@@ -106,13 +78,6 @@
     "servico": "Trator não engata TDP - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "106",
-    "os": "110746",
-    "data": "16/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
     "frota": "5433",
     "os": "110712",
     "data": "16/05/2025",
@@ -153,13 +118,6 @@
     "data": "09/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Vazamento no pistão - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "251",
-    "os": "109795",
-    "data": "02/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar lanterna traseira"
   },
   {
     "frota": "5530",

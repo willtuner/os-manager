@@ -1,11 +1,18 @@
 [
   {
     "solicitado": "RENNAN ARCANJO CREPALDI",
-    "frota": "137",
-    "os": "111717",
-    "data": "02/06/2025",
+    "frota": "114",
+    "os": "111929",
+    "data": "03/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Derretendo tanque de combustível - (Fazenda NSA)"
+  },
+  {
+    "frota": "5058",
+    "os": "111920",
+    "data": "03/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator sem partida, motor gira mas não pega - (Fazenda NSA)"
+    "servico": "Verificar conectores do painel com mau contato - (Fazenda NSA)"
   },
   {
     "frota": "5502",
@@ -60,7 +67,7 @@
     "frota": "215",
     "os": "111570",
     "data": "30/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)"
   },
   {
@@ -71,24 +78,10 @@
     "servico": "Fazer solda no suporte de sustentação da asa L/E e soldar suporte para instalar cibié - (Fazenda NSA)"
   },
   {
-    "frota": "215",
-    "os": "111531",
-    "data": "29/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Fazer solda em trinca na escada - (Fazenda NSA)"
-  },
-  {
-    "frota": "5598",
-    "os": "111506",
-    "data": "29/05/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra na torre - (Fazenda NSA)"
-  },
-  {
     "frota": "5431",
     "os": "111479",
     "data": "28/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar esteira e fundo do espalhador"
   },
   {

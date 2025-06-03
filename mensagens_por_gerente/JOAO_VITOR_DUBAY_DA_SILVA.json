@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "JOAO VITOR DUBAY DA SILVA",
+    "frota": "118",
+    "os": "111900",
+    "data": "03/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar e corrigir vazamento de óleo no retentor da tomada de força (TDP)  e verificar vazamento no burirnho de freio - (Fazenda Minuano)"
+  },
+  {
     "frota": "81",
     "os": "111815",
     "data": "02/06/2025",
@@ -11,15 +18,8 @@
     "frota": "279",
     "os": "111797",
     "data": "02/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
     "servico": "Verificar falha no sistema de GPS - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5110",
-    "os": "111565",
-    "data": "30/05/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda Estrela 6)"
   },
   {
     "frota": "5262",
@@ -34,12 +34,5 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar trava eixo da grade"
-  },
-  {
-    "frota": "274",
-    "os": "111047",
-    "data": "21/05/2025",
-    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
-    "servico": "Vazamento na bomba d'água - (Fazenda Bela Manhã)"
   }
 ]
