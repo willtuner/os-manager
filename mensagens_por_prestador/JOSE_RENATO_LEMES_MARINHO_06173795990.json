@@ -1,11 +1,19 @@
 [
   {
-    "frota": "5199",
-    "cd_equipamento": "5199",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "111820",
-    "data_entrada": "02/06/2025",
-    "servico": "Trinca no cabeçario da adubadeira - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+    "frota": "5747",
+    "cd_equipamento": "5747",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111937",
+    "data_entrada": "03/06/2025",
+    "servico": "Soldar viga de suporte na estrutura do caixa de transporte de produtos - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5226",
+    "cd_equipamento": "5226",
+    "modelo": "CARRETINHA DUAS RODAS (CARRO)",
+    "os": "111912",
+    "data_entrada": "03/06/2025",
+    "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho.\nFazenda São Pedro (Oficina)\nSolicitado Sr. Romes\nLiberado Sr. Zacarias"
   },
   {
     "frota": "5755",
@@ -14,6 +22,14 @@
     "os": "111770",
     "data_entrada": "02/06/2025",
     "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "308",
+    "cd_equipamento": "308",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "111735",
+    "data_entrada": "02/06/2025",
+    "servico": "Fazer solda nas proteções do tanque de combustível - (Fazenda Pedra Verde) \nLiberado Sr. Arthur"
   },
   {
     "frota": "5204",
@@ -70,6 +86,14 @@
     "os": "111498",
     "data_entrada": "29/05/2025",
     "servico": "Soldar escada e fazer proteção do eixo da TDP\n(Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5431",
+    "cd_equipamento": "5431",
+    "modelo": "DIST. DE ADUBO DCA 7500 S-0114",
+    "os": "111479",
+    "data_entrada": "28/05/2025",
+    "servico": "Trocar esteira e fundo do espalhador\nFaz NSA\nSolicitado Rennan\nAutorizado Mauricio"
   },
   {
     "frota": "99",
@@ -142,6 +166,14 @@
     "os": "111415",
     "data_entrada": "27/05/2025",
     "servico": "Instalar chapa nas bases de fixação dos rotores direito e esquerdo\nFazenda Casa Branca\nSolicitado Sr. João\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5438",
+    "cd_equipamento": "5438",
+    "modelo": "BARRA APLICACAO DE HERBICIDA",
+    "os": "111292",
+    "data_entrada": "26/05/2025",
+    "servico": "Fazer solda em trinca na estrutura - (Fazenda Santa Luiza)\nLiberado Sr. Mauriico"
   },
   {
     "frota": "66",
@@ -270,22 +302,6 @@
     "os": "110097",
     "data_entrada": "06/05/2025",
     "servico": "Fazer proteção anti arremesso frente e atrás - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5210",
-    "cd_equipamento": "5210",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "110077",
-    "data_entrada": "06/05/2025",
-    "servico": "Colocar limitador nas asas e tirar folga nas rodas - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5117",
-    "cd_equipamento": "5117",
-    "modelo": "ROCADEIRA 3,0 TATU",
-    "os": "109961",
-    "data_entrada": "05/05/2025",
-    "servico": "Fazer solda e reforço em trincas - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5502",

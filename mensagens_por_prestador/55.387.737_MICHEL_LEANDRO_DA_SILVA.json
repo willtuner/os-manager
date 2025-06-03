@@ -1,5 +1,29 @@
 [
   {
+    "frota": "10229",
+    "cd_equipamento": "10229",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111908",
+    "data_entrada": "03/06/2025",
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4323"
+  },
+  {
+    "frota": "10223",
+    "cd_equipamento": "10223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111905",
+    "data_entrada": "03/06/2025",
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4386"
+  },
+  {
+    "frota": "10219",
+    "cd_equipamento": "10219",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111904",
+    "data_entrada": "03/06/2025",
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4387"
+  },
+  {
     "frota": "5197",
     "cd_equipamento": "5197",
     "modelo": "PULVERIZADOR 2000 LT JACTO",
@@ -14,21 +38,5 @@
     "os": "111622",
     "data_entrada": "30/05/2025",
     "servico": "Fazer fibra no para lamas trincado - (Fazenda NSA)\nLiberado Sr. Arthur\nPendencia N°4062"
-  },
-  {
-    "frota": "5598",
-    "cd_equipamento": "5598",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "111506",
-    "data_entrada": "29/05/2025",
-    "servico": "Fazer fibra na torre - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5597",
-    "cd_equipamento": "5597",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "111254",
-    "data_entrada": "23/05/2025",
-    "servico": "Trinca na fibra do tanque e verificar rosca da boca do tanque - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   }
 ]

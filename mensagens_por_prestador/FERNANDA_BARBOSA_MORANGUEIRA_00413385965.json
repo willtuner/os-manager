@@ -8,6 +8,14 @@
     "servico": "Trocar do trinco da porta.\nFaz Estrela(Oficina)\nSolicitado Arthur"
   },
   {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "111570",
+    "data_entrada": "30/05/2025",
+    "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "118",
     "cd_equipamento": "118",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
@@ -30,13 +38,5 @@
     "os": "111137",
     "data_entrada": "22/05/2025",
     "servico": "Borracha de vedação da porta solda - (Fazenda Alvorada)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "110834",
-    "data_entrada": "19/05/2025",
-    "servico": "Durante a operação com a podadeira acoplada ao trator, um galho foi lançado contra o para-brisa, resultando na quebra da parte inferior do vidro dianteiro - (Fazenda SP)\nLiberado Sr. Arthur"
   }
 ]

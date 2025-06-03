@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5747",
+    "cd_equipamento": "5747",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111915",
+    "data_entrada": "03/06/2025",
+    "servico": "Troca do cabo de 7m que liga M1 ao M2 - (Fazenda Estrela)\nLiberado Sr. Wilson"
+  },
+  {
     "frota": "5748",
     "cd_equipamento": "5748",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -8,36 +16,12 @@
     "servico": "Verificar chicote do SPE com mau contato - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111453",
-    "data_entrada": "28/05/2025",
-    "servico": "Soldar terminal - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "111452",
-    "data_entrada": "28/05/2025",
-    "servico": "Soldar terminal - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5749",
-    "cd_equipamento": "5749",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111334",
-    "data_entrada": "27/05/2025",
-    "servico": "Avaliar modulo do SPE com mau funcionamento - (Fazenda São Paulo)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5107",
-    "cd_equipamento": "5107",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "111236",
-    "data_entrada": "23/05/2025",
-    "servico": "Solda em terminais do SPE queimado - (Fazenda SP)\nLiberado Sr. Arthur"
+    "frota": "5699",
+    "cd_equipamento": "5699",
+    "modelo": "PULVERIZADOR 600 LT",
+    "os": "111612",
+    "data_entrada": "30/05/2025",
+    "servico": "Verificar drash desregulado, vazão errada - (Fazenda São Izabel)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5022",
@@ -78,13 +62,5 @@
     "os": "111316",
     "data_entrada": "22/05/2025",
     "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5421",
-    "cd_equipamento": "5421",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "110980",
-    "data_entrada": "20/05/2025",
-    "servico": "Fazer solda nos terminais - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   }
 ]

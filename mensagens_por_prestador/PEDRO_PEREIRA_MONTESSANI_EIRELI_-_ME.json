@@ -1,5 +1,37 @@
 [
   {
+    "frota": "136",
+    "cd_equipamento": "136",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "111971",
+    "data_entrada": "03/06/2025",
+    "servico": "Cibié traseiro e dianteiro queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5058",
+    "cd_equipamento": "5058",
+    "modelo": "PULVERIZADOR 600 LT FMC",
+    "os": "111920",
+    "data_entrada": "03/06/2025",
+    "servico": "Verificar conectores do painel com mau contato - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "102",
+    "cd_equipamento": "102",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "111896",
+    "data_entrada": "03/06/2025",
+    "servico": "Verificar relógio horimetro não funciona corretamente - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "189",
+    "cd_equipamento": "189",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "111892",
+    "data_entrada": "03/06/2025",
+    "servico": "Revisão elétrica - lanternas quebradas e faróis não ascendem - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "81",
     "cd_equipamento": "81",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -8,44 +40,12 @@
     "servico": "Avaliar motor de partida com falha intermitente e possível travamento no acionamento. - (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "92",
-    "cd_equipamento": "92",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "111722",
-    "data_entrada": "02/06/2025",
-    "servico": "Revisar sinalização - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "137",
-    "cd_equipamento": "137",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "111717",
-    "data_entrada": "02/06/2025",
-    "servico": "Verificar trator sem partida, motor gira mas não pega - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "116",
-    "cd_equipamento": "116",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "111666",
-    "data_entrada": "02/06/2025",
-    "servico": "Revisão elétrica - (Fazenda Estrela - Oficina)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "100",
     "cd_equipamento": "100",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
     "os": "111662",
     "data_entrada": "02/06/2025",
     "servico": "Avaliar trator sem partida - (Fazenda São Pedro)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5479",
-    "cd_equipamento": "5479",
-    "modelo": "PULVERIZADOR 600 LT JACTO",
-    "os": "111656",
-    "data_entrada": "02/06/2025",
-    "servico": "Revisar equipamento de drash - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   },
   {
     "frota": "268",
@@ -86,14 +86,6 @@
     "os": "111573",
     "data_entrada": "30/05/2025",
     "servico": "Farol dianteiro com mau contato - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "245",
-    "cd_equipamento": "245",
-    "modelo": "TRATOR MASSEY FERGUSON 3307",
-    "os": "111553",
-    "data_entrada": "29/05/2025",
-    "servico": "Verificar sinalização. Faróis traseiros não ascendem - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5262",
@@ -174,30 +166,6 @@
     "os": "111461",
     "data_entrada": "28/05/2025",
     "servico": "Revisar sistema eletrico\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
-  },
-  {
-    "frota": "299",
-    "cd_equipamento": "299",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111460",
-    "data_entrada": "28/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Pedra Verde\nSolicitado Cleber\nAutorizado Arthur"
-  },
-  {
-    "frota": "97",
-    "cd_equipamento": "97",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "111459",
-    "data_entrada": "28/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Pedra Verde\nSolicitado Cleber\nAutorizado Arthur"
-  },
-  {
-    "frota": "76",
-    "cd_equipamento": "76",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "111458",
-    "data_entrada": "28/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Pedra Verde\nSolicitado Cleber\nAutorizado Arthur"
   },
   {
     "frota": "258",
@@ -328,22 +296,6 @@
     "servico": "Revisar sistema eletrico\nFaz São Paulo\nSolicitado Giovane\nAutorizado Arthur"
   },
   {
-    "frota": "128",
-    "cd_equipamento": "128",
-    "modelo": "GATOR JOHNN DEERE",
-    "os": "111220",
-    "data_entrada": "23/05/2025",
-    "servico": "Verificar funcionamento do botão de acionamento da ventoinha, avaliando possível falha elétrica ou mau contato - (Fazenda São Paulo)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "106",
-    "cd_equipamento": "106",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "110746",
-    "data_entrada": "16/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Nova Manha\nSolicitado Adriano/Zacarias\nAutorizado Arthur"
-  },
-  {
     "frota": "10220",
     "cd_equipamento": "10220",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -406,14 +358,6 @@
     "os": "109805",
     "data_entrada": "02/05/2025",
     "servico": "Revisar sistema eletrico\n(Oficina)\nSolicitado Rennan\nAutorizado Arthur"
-  },
-  {
-    "frota": "251",
-    "cd_equipamento": "251",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109795",
-    "data_entrada": "02/05/2025",
-    "servico": "Instalar lanterna traseira\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
   },
   {
     "frota": "68",

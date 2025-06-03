@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5659",
+    "cd_equipamento": "5659",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "111941",
+    "data_entrada": "03/06/2025",
+    "servico": "Vazamento na bomba e solda/reaperto na estrutura da torre - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5421",
+    "cd_equipamento": "5421",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "111970",
+    "data_entrada": "03/06/2025",
+    "servico": "Trocar rolamento da turbina.\nFazenda São Pedro\nSolicitado Sr. Romes\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5403",
+    "cd_equipamento": "5403",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "111582",
+    "data_entrada": "30/05/2025",
+    "servico": "Trocar correias da polia - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5075",
+    "cd_equipamento": "5075",
+    "modelo": "TANQUE DE AGUA 6500",
+    "os": "111435",
+    "data_entrada": "28/05/2025",
+    "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5171",
+    "cd_equipamento": "5171",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "111431",
+    "data_entrada": "28/05/2025",
+    "servico": "Identificado vazamento no retentor da bomba necessário substituí-lo para restabelecer a vedação do sistema - (Fazenda São Pedro)\nPendencia N° 4361\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5737",
     "cd_equipamento": "5737",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",

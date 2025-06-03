@@ -1,11 +1,11 @@
 [
   {
-    "frota": "CPU",
-    "cd_equipamento": "CPU",
-    "modelo": "CARRETA GUINCHO - SCHULTER",
-    "os": "111312",
-    "data_entrada": "26/05/2025",
-    "servico": "Ajustar guincho e fazer assento para engatar dos bags (Fazenda São José)\nLiberado Sr. Gilberto"
+    "frota": "5601",
+    "cd_equipamento": "5601",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "111930",
+    "data_entrada": "02/06/2025",
+    "servico": "Trocar rolamento traseiro do eixo - (Fazenda São José)\nLiberado Sr. Gilberto"
   },
   {
     "frota": "210",
@@ -14,6 +14,14 @@
     "os": "111311",
     "data_entrada": "26/05/2025",
     "servico": "Trocar parafuso do U da conha (Fazenda São José)\nLiberado Sr. Gilberto"
+  },
+  {
+    "frota": "CPU",
+    "cd_equipamento": "CPU",
+    "modelo": "CARRETA GUINCHO - SCHULTER",
+    "os": "111312",
+    "data_entrada": "26/05/2025",
+    "servico": "Ajustar guincho e fazer assento para engatar dos bags (Fazenda São José)\nLiberado Sr. Gilberto"
   },
   {
     "frota": "5267",

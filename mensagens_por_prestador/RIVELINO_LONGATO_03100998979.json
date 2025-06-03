@@ -1,11 +1,19 @@
 [
   {
-    "frota": "5042",
-    "cd_equipamento": "5042",
-    "modelo": "CARRETA MADERA VERMELHA VARDAO",
-    "os": "111824",
-    "data_entrada": "02/06/2025",
-    "servico": "Pneu L/D furado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "frota": "5139",
+    "cd_equipamento": "5139",
+    "modelo": "TANQUE DE AGUA 4000 LT",
+    "os": "111922",
+    "data_entrada": "03/06/2025",
+    "servico": "Pneu L/D furado - (Fazenda  Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "319",
+    "cd_equipamento": "319",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "111899",
+    "data_entrada": "03/06/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "135",
@@ -38,14 +46,6 @@
     "os": "111661",
     "data_entrada": "02/06/2025",
     "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5110",
-    "cd_equipamento": "5110",
-    "modelo": "SUBSOLADOR STARA",
-    "os": "111565",
-    "data_entrada": "30/05/2025",
-    "servico": "Pneu L/D furado - (Fazenda Estrela 6)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5502",

@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111911",
+    "data_entrada": "03/06/2025",
+    "servico": "Fazer instalação do pistão esquerdo de abertura da asa e do pistão de levante da barra direita e colocar mangueiras hidráulica dos pistões.\nFazenda Biscui Sede\nSolicitado Sr. Geovane\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5759",
+    "cd_equipamento": "5759",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "111901",
+    "data_entrada": "03/06/2025",
+    "servico": "Verificar falha na abertura dos braços do pulverizador. Possível problema no sistema hidráulico, elétrico ou mecânico. Necessária inspeção do conjunto de acionamento. - (Fazenda Estrela 6)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5504",
+    "cd_equipamento": "5504",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "111895",
+    "data_entrada": "03/06/2025",
+    "servico": "Verificar e substituir ponta de eixo danificada no tanque de pulverização. Quebra identificada na extremidade traseira do eixo - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5603",
     "cd_equipamento": "5603",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -40,14 +64,6 @@
     "servico": "Substituir rolamento da polia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "111613",
-    "data_entrada": "30/05/2025",
-    "servico": "Vazamento de óleo na bomba - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5398",
     "cd_equipamento": "5398",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -62,14 +78,6 @@
     "os": "111495",
     "data_entrada": "29/05/2025",
     "servico": "Verificação do sistema de abertura do extensor da torre do tanque, que se encontra travado, impedindo o funcionamento adequado do mecanismo. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "10022",
-    "cd_equipamento": "10022",
-    "modelo": "IMPL.ROCADEIRA (EMPRESTADA)",
-    "os": "111474",
-    "data_entrada": "28/05/2025",
-    "servico": "Acertar parafusos que segura jogo de facas e parafusos de fixação do rotor esquerdo\nFaz Terra Branca\nSolicitado Eder\nAutorizado Mauricio"
   },
   {
     "frota": "5626",
@@ -102,22 +110,6 @@
     "os": "111163",
     "data_entrada": "22/05/2025",
     "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5569",
-    "cd_equipamento": "5569",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "111020",
-    "data_entrada": "21/05/2025",
-    "servico": "Tirar jogo das rodas guias  - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5165",
-    "cd_equipamento": "5165",
-    "modelo": "ROCADEIRA TATU",
-    "os": "109411",
-    "data_entrada": "25/04/2025",
-    "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5629",
