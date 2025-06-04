@@ -40,18 +40,18 @@
     "servico": "Trocar jogo de luva e cruzeta - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5613",
-    "cd_equipamento": "5613",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "111871",
-    "data_entrada": "02/06/2025",
-    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
-  },
-  {
     "frota": "5658",
     "cd_equipamento": "5658",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "111873",
+    "data_entrada": "02/06/2025",
+    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5613",
+    "cd_equipamento": "5613",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "111871",
     "data_entrada": "02/06/2025",
     "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
   },

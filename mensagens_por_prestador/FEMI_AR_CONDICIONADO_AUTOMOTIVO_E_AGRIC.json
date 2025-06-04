@@ -1,27 +1,19 @@
 [
   {
+    "frota": "5749",
+    "cd_equipamento": "5749",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "111991",
+    "data_entrada": "04/06/2025",
+    "servico": "Verificar modulo M2 do SPE não funciona - (Fazenda SP)\nLiberado. Sr Wilson"
+  },
+  {
     "frota": "5747",
     "cd_equipamento": "5747",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "111915",
     "data_entrada": "03/06/2025",
     "servico": "Troca do cabo de 7m que liga M1 ao M2 - (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5748",
-    "cd_equipamento": "5748",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111691",
-    "data_entrada": "02/06/2025",
-    "servico": "Verificar chicote do SPE com mau contato - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5699",
-    "cd_equipamento": "5699",
-    "modelo": "PULVERIZADOR 600 LT",
-    "os": "111612",
-    "data_entrada": "30/05/2025",
-    "servico": "Verificar drash desregulado, vazão errada - (Fazenda São Izabel)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5022",

@@ -1,11 +1,11 @@
 [
   {
-    "frota": "5747",
-    "cd_equipamento": "5747",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111937",
-    "data_entrada": "03/06/2025",
-    "servico": "Soldar viga de suporte na estrutura do caixa de transporte de produtos - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "frota": "5659",
+    "cd_equipamento": "5659",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "112019",
+    "data_entrada": "04/06/2025",
+    "servico": "Fazer solda e reaperto na estrutura da torre - (Fazenda São Pedro)\nLiberado Sr. Mauricio  \nSolicitado Sr. Josimar"
   },
   {
     "frota": "5226",
@@ -22,14 +22,6 @@
     "os": "111770",
     "data_entrada": "02/06/2025",
     "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "111735",
-    "data_entrada": "02/06/2025",
-    "servico": "Fazer solda nas proteções do tanque de combustível - (Fazenda Pedra Verde) \nLiberado Sr. Arthur"
   },
   {
     "frota": "5204",
@@ -54,14 +46,6 @@
     "os": "111602",
     "data_entrada": "30/05/2025",
     "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5159",
-    "cd_equipamento": "5159",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "111594",
-    "data_entrada": "30/05/2025",
-    "servico": "Fazer solda na proteção da calha de distribuição de adubo - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5495",
@@ -128,14 +112,6 @@
     "servico": "Fazer proteção das polias.\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio"
   },
   {
-    "frota": "5105",
-    "cd_equipamento": "5105",
-    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
-    "os": "111457",
-    "data_entrada": "28/05/2025",
-    "servico": "Trocar trava eixo da grade\nFaz Estrela\nSolicitado João\nAutorizado Mauricio"
-  },
-  {
     "frota": "5035",
     "cd_equipamento": "5035",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -197,7 +173,7 @@
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "111127",
     "data_entrada": "21/05/2025",
-    "servico": "Substituir proteções anti-arremesso.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
+    "servico": "Substituir proteções anti-arremesso danificada.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
   },
   {
     "frota": "5451",
@@ -280,14 +256,6 @@
     "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5352",
-    "cd_equipamento": "5352",
-    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
-    "os": "110741",
-    "data_entrada": "12/05/2025",
-    "servico": "Verificar rosca travada, engate da boca de lobo e fechar fundo - (Pecuaria)\nLiberado Sr. Zacarias"
-  },
-  {
     "frota": "5603",
     "cd_equipamento": "5603",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -366,14 +334,6 @@
     "os": "108048",
     "data_entrada": "02/04/2025",
     "servico": "Colocar chapas de ajuste de abertura das asas do lado direito e esquerdo e soldar chapa inferior da asa esquerda.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "108043",
-    "data_entrada": "02/04/2025",
-    "servico": "Soldar ramal do lado esquerdo.\nFazenda Aparecida\nSolicitado Sr. Vitor\nLiberado Sr. Maurício"
   },
   {
     "frota": "504",

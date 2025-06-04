@@ -1,5 +1,13 @@
 [
   {
+    "frota": "120",
+    "cd_equipamento": "120",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "112001",
+    "data_entrada": "04/06/2025",
+    "servico": "Braço hidráulico não mantem erguido - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "298",
     "cd_equipamento": "298",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -16,28 +24,12 @@
     "servico": "Vazamento nos tuchos do comando hidráulico - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111919",
-    "data_entrada": "03/06/2025",
-    "servico": "Trocar cano de diesel furado - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "258",
     "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "111917",
     "data_entrada": "03/06/2025",
     "servico": "Verificar embreagem não da mais regulagem, e grupo de marcha A,B e C escapando - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "118",
-    "cd_equipamento": "118",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "111900",
-    "data_entrada": "03/06/2025",
-    "servico": "Verificar e corrigir vazamento de óleo no retentor da tomada de força (TDP)  e verificar vazamento no burirnho de freio - (Fazenda Minuano)\nPendencia N° 4303\nLiberado Sr. Arthur"
   },
   {
     "frota": "222",
@@ -54,22 +46,6 @@
     "os": "111893",
     "data_entrada": "03/06/2025",
     "servico": "Verificar regulagem do freio de estacionamento - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "309",
-    "cd_equipamento": "309",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "111827",
-    "data_entrada": "02/06/2025",
-    "servico": "Executar substituição da trava do eixo - (Fazenda estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "225",
-    "cd_equipamento": "225",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "111729",
-    "data_entrada": "02/06/2025",
-    "servico": "Verificar trator não engata marcha ré - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "191",
