@@ -1,5 +1,13 @@
 [
   {
+    "frota": "225",
+    "cd_equipamento": "225",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112031",
+    "data_entrada": "04/06/2025",
+    "servico": "Quebra do cabo do acelerador, verificar se e de mão ou de pé - (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "120",
     "cd_equipamento": "120",
     "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
@@ -70,14 +78,6 @@
     "os": "111425",
     "data_entrada": "28/05/2025",
     "servico": "Revisar suporte da barra de tração, verificando folgas, trincas e condições de fixação e braço hidráulico não sobe  - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111414",
-    "data_entrada": "27/05/2025",
-    "servico": "Vazamento na junta (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "235",

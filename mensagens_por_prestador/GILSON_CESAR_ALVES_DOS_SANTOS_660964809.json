@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5101",
+    "cd_equipamento": "5101",
+    "modelo": "CARRETA TRANSBORDO IFLO",
+    "os": "112022",
+    "data_entrada": "04/06/2025",
+    "servico": "Trocar reparos do pistão de giro e do pistão de desarme - (Fazenda São Severino)\nSolicitado Sr. Izaias\nLiberado Sr. Izaias"
+  },
+  {
+    "frota": "5382",
+    "cd_equipamento": "5382",
+    "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
+    "os": "112020",
+    "data_entrada": "04/06/2025",
+    "servico": "Efetuar montagem da bomba no carrinha de irrigação  (Oficina)\nLiberado Sr. Rafael"
+  },
+  {
     "frota": "5438",
     "cd_equipamento": "5438",
     "modelo": "BARRA APLICACAO DE HERBICIDA",

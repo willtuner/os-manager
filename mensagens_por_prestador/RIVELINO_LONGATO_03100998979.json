@@ -1,19 +1,27 @@
 [
   {
+    "frota": "5226",
+    "cd_equipamento": "5226",
+    "modelo": "CARRETINHA DUAS RODAS (CARRO)",
+    "os": "112038",
+    "data_entrada": "04/06/2025",
+    "servico": "Consertar pneu esquerdo furado.\nFazenda São Pedro (Está na Oficina)\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "249",
+    "cd_equipamento": "249",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "112024",
+    "data_entrada": "04/06/2025",
+    "servico": "Pneu traseiro L/? furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "287",
     "cd_equipamento": "287",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "111995",
     "data_entrada": "04/06/2025",
     "servico": "Pneu dianteiro L/D entrou galho"
-  },
-  {
-    "frota": "5139",
-    "cd_equipamento": "5139",
-    "modelo": "TANQUE DE AGUA 4000 LT",
-    "os": "111922",
-    "data_entrada": "03/06/2025",
-    "servico": "Pneu L/D furado - (Fazenda  Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "319",

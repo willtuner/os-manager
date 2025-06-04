@@ -1,5 +1,21 @@
 [
   {
+    "frota": "272",
+    "cd_equipamento": "272",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112042",
+    "data_entrada": "04/06/2025",
+    "servico": "Avaliar bateria fervendo  - (Fazenda SL1)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "266",
+    "cd_equipamento": "266",
+    "modelo": "TRATOR JOHN DEERE 7230J",
+    "os": "112033",
+    "data_entrada": "04/06/2025",
+    "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "217",
     "cd_equipamento": "217",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -176,22 +192,6 @@
     "servico": "Revisar sistema eletrico\nFaz Pedra Verde(Oficina)\nSolicitado Altieres\nAutorizado Arthur"
   },
   {
-    "frota": "99",
-    "cd_equipamento": "99",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "111475",
-    "data_entrada": "28/05/2025",
-    "servico": "Trocar buzina\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
-  },
-  {
-    "frota": "220",
-    "cd_equipamento": "220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111461",
-    "data_entrada": "28/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
-  },
-  {
     "frota": "258",
     "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -224,14 +224,6 @@
     "servico": "- Trocar correia do alternador.\n- Trocar cibie traseiro lado direito queimado. (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "86",
-    "cd_equipamento": "86",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "111416",
-    "data_entrada": "27/05/2025",
-    "servico": "Quebrou sensor de restrição (fazenda Casa Branca)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "268",
     "cd_equipamento": "268",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -246,14 +238,6 @@
     "os": "111341",
     "data_entrada": "27/05/2025",
     "servico": "Chicote do cibié quebrado - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "109",
-    "cd_equipamento": "109",
-    "modelo": "TRATOR MASSEY FERGUSON 290",
-    "os": "111340",
-    "data_entrada": "27/05/2025",
-    "servico": "Verificar relógio horimetro não funciona - (Pecuaria)\nLiberado Sr. Arthur"
   },
   {
     "frota": "208",
@@ -310,14 +294,6 @@
     "os": "111261",
     "data_entrada": "24/05/2025",
     "servico": "Revisar sistema eletrico\nFaz São Paulo\nSolicitado Giovane\nAutorizado Arthur"
-  },
-  {
-    "frota": "10220",
-    "cd_equipamento": "10220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110668",
-    "data_entrada": "16/05/2025",
-    "servico": "Lanternas queimadas - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5725",

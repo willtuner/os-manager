@@ -1,35 +1,11 @@
 [
   {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111911",
-    "data_entrada": "03/06/2025",
-    "servico": "Fazer instalação do pistão esquerdo de abertura da asa e do pistão de levante da barra direita e colocar mangueiras hidráulica dos pistões.\nFazenda Biscui Sede\nSolicitado Sr. Geovane\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5759",
-    "cd_equipamento": "5759",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "111901",
-    "data_entrada": "03/06/2025",
-    "servico": "Verificar falha na abertura dos braços do pulverizador. Possível problema no sistema hidráulico, elétrico ou mecânico. Necessária inspeção do conjunto de acionamento. - (Fazenda Estrela 6)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "111895",
-    "data_entrada": "03/06/2025",
-    "servico": "Verificar e substituir ponta de eixo danificada no tanque de pulverização. Quebra identificada na extremidade traseira do eixo - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "111818",
-    "data_entrada": "02/06/2025",
-    "servico": "Verificar falha na abertura dos ramais  sistema não realiza acionamento. - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+    "frota": "5058",
+    "cd_equipamento": "5058",
+    "modelo": "PULVERIZADOR 600 LT FMC",
+    "os": "112028",
+    "data_entrada": "04/06/2025",
+    "servico": "Verificar equipamento não está saindo produto nas pistolas (já verificado parte elétrica).\nFazenda Aparecida\nLiberado Sr. Maurício"
   },
   {
     "frota": "5569",
@@ -56,14 +32,6 @@
     "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
   },
   {
-    "frota": "5214",
-    "cd_equipamento": "5214",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "111644",
-    "data_entrada": "02/06/2025",
-    "servico": "Substituir rolamento da polia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5398",
     "cd_equipamento": "5398",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -88,14 +56,6 @@
     "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5524",
-    "cd_equipamento": "5524",
-    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
-    "os": "111380",
-    "data_entrada": "27/05/2025",
-    "servico": "Substituir rolamento e mancal L/E - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5227",
     "cd_equipamento": "5227",
     "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
@@ -110,6 +70,14 @@
     "os": "111163",
     "data_entrada": "22/05/2025",
     "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5721",
+    "cd_equipamento": "5721",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "110943",
+    "data_entrada": "21/05/2025",
+    "servico": "Rolamento da roda L/? estralando, tirado folga do rolamento. - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5629",
