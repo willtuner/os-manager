@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "ROMES ROSA SILVA",
+    "frota": "5226",
+    "os": "112038",
+    "data": "04/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Consertar pneu esquerdo furado."
+  },
+  {
     "frota": "100",
     "os": "111996",
     "data": "04/06/2025",
@@ -48,13 +55,6 @@
     "data": "28/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5401",
-    "os": "111434",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Tirar folga do cabeçario do tanque - (Fazenda São Pedro)"
   },
   {
     "frota": "5676",
