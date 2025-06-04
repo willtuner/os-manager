@@ -1,6 +1,34 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "5494",
+    "os": "112017",
+    "data": "04/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Realizar substituição das engrenagens e corrente do sistema de transmissão - (Fazenda Estrela)"
+  },
+  {
+    "frota": "268",
+    "os": "112007",
+    "data": "04/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Porta do trator e vidro lateral traseiro quebrada após colisão com galho - (Fazenda Estrela)"
+  },
+  {
+    "frota": "22",
+    "os": "112005",
+    "data": "04/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trator não pega na partida, entrada de ar no sistema de alimentação de diesel - (Fazenda Estrela)"
+  },
+  {
+    "frota": "46",
+    "os": "112004",
+    "data": "04/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar relógio não funciona - (Fazenda Estrela)"
+  },
+  {
     "frota": "44",
     "os": "111964",
     "data": "03/06/2025",
@@ -29,13 +57,6 @@
     "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
   },
   {
-    "frota": "309",
-    "os": "111827",
-    "data": "02/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Executar substituição da trava do eixo - (Fazenda estrela)"
-  },
-  {
     "frota": "116",
     "os": "111819",
     "data": "02/06/2025",
@@ -57,20 +78,6 @@
     "servico": "Substituir rolamento da polia - (Fazenda Estrela)"
   },
   {
-    "frota": "137",
-    "os": "111515",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator sem partida - (Fazenda Estrela)"
-  },
-  {
-    "frota": "22",
-    "os": "111514",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator sem partida, motor de partida fumaceando - (Fazenda Estrela)"
-  },
-  {
     "frota": "116",
     "os": "111498",
     "data": "29/05/2025",
@@ -89,7 +96,7 @@
     "os": "111127",
     "data": "21/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir proteções anti-arremesso."
+    "servico": "Substituir proteções anti-arremesso danificada."
   },
   {
     "frota": "5451",

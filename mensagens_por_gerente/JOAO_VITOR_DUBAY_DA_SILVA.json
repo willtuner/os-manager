@@ -1,13 +1,6 @@
 [
   {
     "solicitado": "JOAO VITOR DUBAY DA SILVA",
-    "frota": "118",
-    "os": "111900",
-    "data": "03/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar e corrigir vazamento de óleo no retentor da tomada de força (TDP)  e verificar vazamento no burirnho de freio - (Fazenda Minuano)"
-  },
-  {
     "frota": "81",
     "os": "111815",
     "data": "02/06/2025",
@@ -27,12 +20,5 @@
     "data": "29/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar equipamento sem partida - (Fazenda Estrela 6)"
-  },
-  {
-    "frota": "5105",
-    "os": "111457",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar trava eixo da grade"
   }
 ]
