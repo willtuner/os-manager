@@ -1,11 +1,23 @@
 [
   {
+    "frota": "5522",
+    "cd_equipamento": "5522",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "112047",
+    "data_entrada": "05/06/2025",
+    "data": "05/06/2025",
+    "servico": "Substituir os dois pneus (novos).\nFazenda Aparecida\nLiberado Sr. Maurício",
+    "observacao": "nan"
+  },
+  {
     "frota": "5226",
     "cd_equipamento": "5226",
     "modelo": "CARRETINHA DUAS RODAS (CARRO)",
     "os": "112038",
     "data_entrada": "04/06/2025",
-    "servico": "Consertar pneu esquerdo furado.\nFazenda São Pedro (Está na Oficina)\nLiberado Sr. Maurício"
+    "data": "04/06/2025",
+    "servico": "Consertar pneu esquerdo furado.\nFazenda São Pedro (Está na Oficina)\nLiberado Sr. Maurício",
+    "observacao": "nan"
   },
   {
     "frota": "249",
@@ -13,7 +25,9 @@
     "modelo": "TRATOR JOHN DEERE 5080EN",
     "os": "112024",
     "data_entrada": "04/06/2025",
-    "servico": "Pneu traseiro L/? furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+    "data": "04/06/2025",
+    "servico": "Pneu traseiro L/? furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "287",
@@ -21,7 +35,9 @@
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "111995",
     "data_entrada": "04/06/2025",
-    "servico": "Pneu dianteiro L/D entrou galho"
+    "data": "04/06/2025",
+    "servico": "Pneu dianteiro L/D entrou galho",
+    "observacao": "nan"
   },
   {
     "frota": "319",
@@ -29,7 +45,9 @@
     "modelo": "TRATOR NEW HOLANDTL5.80",
     "os": "111899",
     "data_entrada": "03/06/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+    "data": "03/06/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "135",
@@ -37,7 +55,9 @@
     "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
     "os": "111773",
     "data_entrada": "02/06/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Biscui)\nLiberado Sr. Mauricio"
+    "data": "02/06/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Biscui)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5502",
@@ -45,7 +65,9 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "111713",
     "data_entrada": "02/06/2025",
-    "servico": "Pneu L/E furado - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "data": "02/06/2025",
+    "servico": "Pneu L/E furado - (Fazenda NSA)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5418",
@@ -53,7 +75,9 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "111707",
     "data_entrada": "02/06/2025",
-    "servico": "Pneu L/E furado - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "data": "02/06/2025",
+    "servico": "Pneu L/E furado - (Fazenda NSA)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "100",
@@ -61,7 +85,9 @@
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
     "os": "111661",
     "data_entrada": "02/06/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+    "data": "02/06/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5502",
@@ -69,6 +95,8 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "110502",
     "data_entrada": "14/05/2025",
-    "servico": "Vazamento no regulador de pressão - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "data": "14/05/2025",
+    "servico": "Vazamento no regulador de pressão - (Fazenda NSA)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   }
 ]

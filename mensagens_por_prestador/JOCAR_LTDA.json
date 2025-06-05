@@ -5,7 +5,9 @@
     "modelo": "PA CARREGADEIRA 924K",
     "os": "111890",
     "data_entrada": "02/06/2025",
-    "servico": "Verificar A/C não gela e não ventila - (Fazenda Estrela 6)\nLiberado Sr. Rafael"
+    "data": "02/06/2025",
+    "servico": "Verificar A/C não gela e não ventila - (Fazenda Estrela 6)\nLiberado Sr. Rafael",
+    "observacao": "nan"
   },
   {
     "frota": "130",
@@ -13,6 +15,8 @@
     "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
     "os": "107475",
     "data_entrada": "21/03/2025",
-    "servico": "Verificar ar condicionado, a informação é que está vazando gás.\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício"
+    "data": "21/03/2025",
+    "servico": "Verificar ar condicionado, a informação é que está vazando gás.\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício",
+    "observacao": "nan"
   }
 ]

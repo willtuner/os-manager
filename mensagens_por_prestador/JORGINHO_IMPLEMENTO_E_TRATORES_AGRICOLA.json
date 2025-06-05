@@ -5,7 +5,9 @@
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "111724",
     "data_entrada": "02/06/2025",
-    "servico": "Falha na conexão roscada na saída do tanque de pulverização, resultando em desacoplamento de componente. - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "data": "02/06/2025",
+    "servico": "Falha na conexão roscada na saída do tanque de pulverização, resultando em desacoplamento de componente. - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5128",
@@ -13,7 +15,9 @@
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "111561",
     "data_entrada": "30/05/2025",
-    "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "data": "30/05/2025",
+    "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5529",
@@ -21,7 +25,9 @@
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
     "os": "111488",
     "data_entrada": "29/05/2025",
-    "servico": "Relatado vazamento no retentor do sistema de acionamento da bomba do pulverizador - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "data": "29/05/2025",
+    "servico": "Relatado vazamento no retentor do sistema de acionamento da bomba do pulverizador - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5128",
@@ -29,6 +35,8 @@
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "111196",
     "data_entrada": "23/05/2025",
-    "servico": "Vazamento de óleo na bomba - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "data": "23/05/2025",
+    "servico": "Vazamento de óleo na bomba - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   }
 ]

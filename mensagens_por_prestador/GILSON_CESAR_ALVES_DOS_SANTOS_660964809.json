@@ -5,7 +5,9 @@
     "modelo": "CARRETA TRANSBORDO IFLO",
     "os": "112022",
     "data_entrada": "04/06/2025",
-    "servico": "Trocar reparos do pistão de giro e do pistão de desarme - (Fazenda São Severino)\nSolicitado Sr. Izaias\nLiberado Sr. Izaias"
+    "data": "04/06/2025",
+    "servico": "Trocar reparos do pistão de giro e do pistão de desarme - (Fazenda São Severino)\nSolicitado Sr. Izaias\nLiberado Sr. Izaias",
+    "observacao": "nan"
   },
   {
     "frota": "5382",
@@ -13,7 +15,9 @@
     "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
     "os": "112020",
     "data_entrada": "04/06/2025",
-    "servico": "Efetuar montagem da bomba no carrinha de irrigação  (Oficina)\nLiberado Sr. Rafael"
+    "data": "04/06/2025",
+    "servico": "Efetuar montagem da bomba no carrinha de irrigação  (Oficina)\nLiberado Sr. Rafael",
+    "observacao": "nan"
   },
   {
     "frota": "5438",
@@ -21,7 +25,9 @@
     "modelo": "BARRA APLICACAO DE HERBICIDA",
     "os": "111869",
     "data_entrada": "02/06/2025",
-    "servico": "Avaliar vazamento no sistema de vedação do pistão - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+    "data": "02/06/2025",
+    "servico": "Avaliar vazamento no sistema de vedação do pistão - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "135",
@@ -29,7 +35,9 @@
     "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
     "os": "111663",
     "data_entrada": "02/06/2025",
-    "servico": "Soldar escada quebrada e soldar suporte do capô  - (Fazenda Biscui)\nLiberado Sr. Wilson"
+    "data": "02/06/2025",
+    "servico": "Soldar escada quebrada e soldar suporte do capô  - (Fazenda Biscui)\nLiberado Sr. Wilson",
+    "observacao": "nan"
   },
   {
     "frota": "5779",
@@ -37,7 +45,9 @@
     "modelo": "VALETADEIRA",
     "os": "111436",
     "data_entrada": "28/05/2025",
-    "servico": "Realizar o preenchimento com saibro na canaleta de passagem da corrente da valetadeira - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+    "data": "28/05/2025",
+    "servico": "Realizar o preenchimento com saibro na canaleta de passagem da corrente da valetadeira - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5171",
@@ -45,7 +55,9 @@
     "modelo": "PULVERIZADOR 2000 LT JACTO",
     "os": "111430",
     "data_entrada": "27/05/2025",
-    "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+    "data": "27/05/2025",
+    "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5217",
@@ -53,15 +65,9 @@
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
     "os": "111383",
     "data_entrada": "27/05/2025",
-    "servico": "Trocar rolamento da roda L/? - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5779",
-    "cd_equipamento": "5779",
-    "modelo": "VALETADEIRA",
-    "os": "111282",
-    "data_entrada": "26/05/2025",
-    "servico": "Fazer solda em trinca no suporte da caixa de óleo - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+    "data": "27/05/2025",
+    "servico": "Trocar rolamento da roda L/? - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5618",
@@ -69,7 +75,9 @@
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
     "os": "110149",
     "data_entrada": "07/05/2025",
-    "servico": "Revisar estrutura - trinca por baixo e desgaste nos rolamentos da roda guia - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+    "data": "07/05/2025",
+    "servico": "Revisar estrutura - trinca por baixo e desgaste nos rolamentos da roda guia - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5147",
@@ -77,6 +85,8 @@
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "108806",
     "data_entrada": "15/04/2025",
-    "servico": "Reforma do equipamento - (Fazenda Alvorada)\nLiberado Sr. Rafael"
+    "data": "15/04/2025",
+    "servico": "Reforma do equipamento - (Fazenda Alvorada)\nLiberado Sr. Rafael",
+    "observacao": "nan"
   }
 ]

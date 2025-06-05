@@ -5,7 +5,9 @@
     "modelo": "PULVERIZADOR ALCITOWER 4000LT",
     "os": "112036",
     "data_entrada": "04/06/2025",
-    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias"
+    "data": "04/06/2025",
+    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias",
+    "observacao": "nan"
   },
   {
     "frota": "5705",
@@ -13,7 +15,9 @@
     "modelo": "PULVERIZADOR ALCITOWER 4000LT",
     "os": "112035",
     "data_entrada": "04/06/2025",
-    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias"
+    "data": "04/06/2025",
+    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias",
+    "observacao": "nan"
   },
   {
     "frota": "5416",
@@ -21,7 +25,9 @@
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
     "os": "110742",
     "data_entrada": "16/05/2025",
-    "servico": "Tirar vazamento do motor hidráulico - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+    "data": "16/05/2025",
+    "servico": "Tirar vazamento do motor hidráulico - (Fazenda Alvorada)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5205",
@@ -29,7 +35,9 @@
     "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
     "os": "110237",
     "data_entrada": "08/05/2025",
-    "servico": "Avaliar vazamento de óleo no rotor e régua empenada - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+    "data": "08/05/2025",
+    "servico": "Avaliar vazamento de óleo no rotor e régua empenada - (Fazenda São Paulo)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5530",
@@ -37,7 +45,9 @@
     "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
     "os": "109775",
     "data_entrada": "01/05/2025",
-    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
+    "data": "01/05/2025",
+    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício",
+    "observacao": "nan"
   },
   {
     "frota": "5205",
@@ -45,7 +55,9 @@
     "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
     "os": "109729",
     "data_entrada": "30/04/2025",
-    "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "data": "30/04/2025",
+    "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5666",
@@ -53,7 +65,9 @@
     "modelo": "PODADEIRA HIDRAUTEC HLD1",
     "os": "109154",
     "data_entrada": "22/04/2025",
-    "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+    "data": "22/04/2025",
+    "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5205",
@@ -61,6 +75,8 @@
     "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
     "os": "109026",
     "data_entrada": "17/04/2025",
-    "servico": "Verificar jogo no embuchamento - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "data": "17/04/2025",
+    "servico": "Verificar jogo no embuchamento - (Fazenda SP)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   }
 ]

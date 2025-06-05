@@ -5,7 +5,9 @@
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
     "os": "112037",
     "data_entrada": "04/06/2025",
-    "servico": "Redistribuir bicos do SPE - (Fazenda SP)\nLiberado Sr. Arthur"
+    "data": "04/06/2025",
+    "servico": "Redistribuir bicos do SPE - (Fazenda SP)\nLiberado Sr. Arthur",
+    "observacao": "nan"
   },
   {
     "frota": "5749",
@@ -13,7 +15,9 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "111991",
     "data_entrada": "04/06/2025",
-    "servico": "Verificar modulo M2 do SPE não funciona - (Fazenda SP)\nLiberado. Sr Wilson"
+    "data": "04/06/2025",
+    "servico": "Verificar modulo M2 do SPE não funciona - (Fazenda SP)\nLiberado. Sr Wilson",
+    "observacao": "nan"
   },
   {
     "frota": "5747",
@@ -21,7 +25,9 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "111915",
     "data_entrada": "03/06/2025",
-    "servico": "Troca do cabo de 7m que liga M1 ao M2 - (Fazenda Estrela)\nLiberado Sr. Wilson"
+    "data": "03/06/2025",
+    "servico": "Troca do cabo de 7m que liga M1 ao M2 - (Fazenda Estrela)\nLiberado Sr. Wilson",
+    "observacao": "nan"
   },
   {
     "frota": "5022",
@@ -29,7 +35,9 @@
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111317",
     "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
+    "data": "22/05/2025",
+    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson",
+    "observacao": "nan"
   },
   {
     "frota": "5487",
@@ -37,7 +45,9 @@
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111318",
     "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
+    "data": "22/05/2025",
+    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson",
+    "observacao": "nan"
   },
   {
     "frota": "5486",
@@ -45,7 +55,9 @@
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111321",
     "data_entrada": "22/05/2025",
-    "servico": "Revisar SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
+    "data": "22/05/2025",
+    "servico": "Revisar SPE (Fazenda Estrela)\nLiberado Sr. Wilson",
+    "observacao": "nan"
   },
   {
     "frota": "5748",
@@ -53,7 +65,9 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "111315",
     "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
+    "data": "22/05/2025",
+    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson",
+    "observacao": "nan"
   },
   {
     "frota": "5747",
@@ -61,6 +75,8 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "111316",
     "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
+    "data": "22/05/2025",
+    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson",
+    "observacao": "nan"
   }
 ]

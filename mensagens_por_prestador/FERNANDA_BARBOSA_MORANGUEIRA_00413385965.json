@@ -5,7 +5,9 @@
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
     "os": "111819",
     "data_entrada": "02/06/2025",
-    "servico": "Trocar do trinco da porta.\nFaz Estrela(Oficina)\nSolicitado Arthur"
+    "data": "02/06/2025",
+    "servico": "Trocar do trinco da porta.\nFaz Estrela(Oficina)\nSolicitado Arthur",
+    "observacao": "nan"
   },
   {
     "frota": "215",
@@ -13,7 +15,9 @@
     "modelo": "TRATOR JOHN DEERE 5070 E",
     "os": "111570",
     "data_entrada": "30/05/2025",
-    "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)\nLiberado Sr. Arthur"
+    "data": "30/05/2025",
+    "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)\nLiberado Sr. Arthur",
+    "observacao": "nan"
   },
   {
     "frota": "118",
@@ -21,7 +25,9 @@
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
     "os": "111466",
     "data_entrada": "28/05/2025",
-    "servico": "Verificar assento do operador e regulagem da porta\nFaz Minuano\nSolicitado Toninho\nAutorizado Arthur"
+    "data": "28/05/2025",
+    "servico": "Verificar assento do operador e regulagem da porta\nFaz Minuano\nSolicitado Toninho\nAutorizado Arthur",
+    "observacao": "nan"
   },
   {
     "frota": "263",
@@ -29,7 +35,9 @@
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "111358",
     "data_entrada": "27/05/2025",
-    "servico": "Borrachas de vedação da porta soltas - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+    "data": "27/05/2025",
+    "servico": "Borrachas de vedação da porta soltas - (Fazenda Casa Branca)\nLiberado Sr. Arthur",
+    "observacao": "nan"
   },
   {
     "frota": "247",
@@ -37,6 +45,8 @@
     "modelo": "TRATOR JOHN DEERE 5080EN",
     "os": "111137",
     "data_entrada": "22/05/2025",
-    "servico": "Borracha de vedação da porta solda - (Fazenda Alvorada)\nLiberado Sr. Arthur"
+    "data": "22/05/2025",
+    "servico": "Borracha de vedação da porta solda - (Fazenda Alvorada)\nLiberado Sr. Arthur",
+    "observacao": "nan"
   }
 ]

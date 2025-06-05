@@ -5,7 +5,9 @@
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
     "os": "112034",
     "data_entrada": "04/06/2025",
-    "servico": "Transporte fazenda Estrela ---> Fazenda Alvorada\nLiberado Sr. Rafael"
+    "data": "04/06/2025",
+    "servico": "Transporte fazenda Estrela ---> Fazenda Alvorada\nLiberado Sr. Rafael",
+    "observacao": "nan"
   },
   {
     "frota": "206",
@@ -13,6 +15,8 @@
     "modelo": "TRATOR VALTRA A990R 4X4",
     "os": "111758",
     "data_entrada": "02/06/2025",
-    "servico": "Recolher o trator 206 na fazenda Estrela e encaminha para MG Vedações\nSolicitado Arthur"
+    "data": "02/06/2025",
+    "servico": "Recolher o trator 206 na fazenda Estrela e encaminha para MG Vedações\nSolicitado Arthur",
+    "observacao": "nan"
   }
 ]

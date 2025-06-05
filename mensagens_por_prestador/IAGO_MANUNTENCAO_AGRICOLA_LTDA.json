@@ -1,11 +1,33 @@
 [
   {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112049",
+    "data_entrada": "05/06/2025",
+    "data": "05/06/2025",
+    "servico": "Constatado desgaste no pinhão da coroa, componente do sistema de transmissão da adubadeira, comprometendo seu funcionamento - (Fazenda SP)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
+  },
+  {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112048",
+    "data_entrada": "05/06/2025",
+    "data": "05/06/2025",
+    "servico": "Desgaste no pinhão da coroa do sistema de transmissão da adubadeira - (Fazenda SP)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
+  },
+  {
     "frota": "5058",
     "cd_equipamento": "5058",
     "modelo": "PULVERIZADOR 600 LT FMC",
     "os": "112028",
     "data_entrada": "04/06/2025",
-    "servico": "Verificar equipamento não está saindo produto nas pistolas (já verificado parte elétrica).\nFazenda Aparecida\nLiberado Sr. Maurício"
+    "data": "04/06/2025",
+    "servico": "Verificar equipamento não está saindo produto nas pistolas (já verificado parte elétrica).\nFazenda Aparecida\nLiberado Sr. Maurício",
+    "observacao": "nan"
   },
   {
     "frota": "5569",
@@ -13,7 +35,9 @@
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
     "os": "111809",
     "data_entrada": "02/06/2025",
-    "servico": "Trocar jogo de luva e cruzeta - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+    "data": "02/06/2025",
+    "servico": "Trocar jogo de luva e cruzeta - (Fazenda São Severino)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5658",
@@ -21,7 +45,9 @@
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "111873",
     "data_entrada": "02/06/2025",
-    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
+    "data": "02/06/2025",
+    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício",
+    "observacao": "nan"
   },
   {
     "frota": "5613",
@@ -29,7 +55,9 @@
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "111871",
     "data_entrada": "02/06/2025",
-    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
+    "data": "02/06/2025",
+    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício",
+    "observacao": "nan"
   },
   {
     "frota": "5398",
@@ -37,7 +65,9 @@
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111546",
     "data_entrada": "29/05/2025",
-    "servico": "Verificar agitador de calda com folga no mancal - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+    "data": "29/05/2025",
+    "servico": "Verificar agitador de calda com folga no mancal - (Fazenda Terra Branca)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5521",
@@ -45,7 +75,9 @@
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "111495",
     "data_entrada": "29/05/2025",
-    "servico": "Verificação do sistema de abertura do extensor da torre do tanque, que se encontra travado, impedindo o funcionamento adequado do mecanismo. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+    "data": "29/05/2025",
+    "servico": "Verificação do sistema de abertura do extensor da torre do tanque, que se encontra travado, impedindo o funcionamento adequado do mecanismo. - (Fazenda São Severino)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5626",
@@ -53,7 +85,9 @@
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
     "os": "111439",
     "data_entrada": "28/05/2025",
-    "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+    "data": "28/05/2025",
+    "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5227",
@@ -61,7 +95,9 @@
     "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
     "os": "111235",
     "data_entrada": "23/05/2025",
-    "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+    "data": "23/05/2025",
+    "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5365",
@@ -69,7 +105,9 @@
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111163",
     "data_entrada": "22/05/2025",
-    "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+    "data": "22/05/2025",
+    "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5721",
@@ -77,7 +115,9 @@
     "modelo": "TANQUE DE AGUA 2000 LT",
     "os": "110943",
     "data_entrada": "21/05/2025",
-    "servico": "Rolamento da roda L/? estralando, tirado folga do rolamento. - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+    "data": "21/05/2025",
+    "servico": "Rolamento da roda L/? estralando, tirado folga do rolamento. - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio",
+    "observacao": "nan"
   },
   {
     "frota": "5629",
@@ -85,6 +125,8 @@
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
     "os": "107660",
     "data_entrada": "24/03/2025",
-    "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
+    "data": "24/03/2025",
+    "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício",
+    "observacao": "NFE 65790 \n\nLANÇAMENTO AUTOMATIZADO."
   }
 ]
