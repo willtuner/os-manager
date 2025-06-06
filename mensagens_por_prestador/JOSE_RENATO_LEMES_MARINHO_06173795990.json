@@ -1,5 +1,53 @@
 [
   {
+    "frota": "43",
+    "cd_equipamento": "43",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "112138",
+    "data_entrada": "06/06/2025",
+    "servico": "Confeccionar teto - (Oficina OMC)\nLiberado Sr. Rafael"
+  },
+  {
+    "frota": "5671",
+    "cd_equipamento": "5671",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "112105",
+    "data_entrada": "06/06/2025",
+    "servico": "Quebra do batedor - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112094",
+    "data_entrada": "06/06/2025",
+    "servico": "Fazer solda e reforço nos degraus da escada de acesso ao trator - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "223",
+    "cd_equipamento": "223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112087",
+    "data_entrada": "06/06/2025",
+    "servico": "Fazer solda e reforço na escada - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "299",
+    "cd_equipamento": "299",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112086",
+    "data_entrada": "06/06/2025",
+    "servico": "Fazer solda em trinca no escapamento e gonzo da proteção dianteira gastos - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5730",
+    "cd_equipamento": "5730",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "112075",
+    "data_entrada": "05/06/2025",
+    "servico": "Instalar patins - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "307",
     "cd_equipamento": "307",
     "modelo": "PA CARREGADEIRA 924K",
@@ -8,12 +56,52 @@
     "servico": "Substituição do suporte e da unha da pá carregadeira - (Fazenda Nova Manhã)\nLiberado Sr. Rafael"
   },
   {
+    "frota": "5139",
+    "cd_equipamento": "5139",
+    "modelo": "TANQUE DE AGUA 4000 LT",
+    "os": "112058",
+    "data_entrada": "05/06/2025",
+    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5042",
+    "cd_equipamento": "5042",
+    "modelo": "CARRETA MADERA VERMELHA VARDAO",
+    "os": "112057",
+    "data_entrada": "05/06/2025",
+    "servico": "Verificar engate do cabeçário danificado  - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5500",
+    "cd_equipamento": "5500",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "112053",
+    "data_entrada": "05/06/2025",
+    "servico": "Fazer solda em roda guia e colocar proteção anti-arremesso - (Fazenda Minuano)\nLiberado Sr. Mauricio \nPendencia N° 4301"
+  },
+  {
+    "frota": "5192",
+    "cd_equipamento": "5192",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "112040",
+    "data_entrada": "04/06/2025",
+    "servico": "Verificar rolamento e mancal dianteiro do eixo de acoplamento do cardan danificado. - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5659",
     "cd_equipamento": "5659",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "112019",
     "data_entrada": "04/06/2025",
     "servico": "Fazer solda e reaperto na estrutura da torre - (Fazenda São Pedro)\nLiberado Sr. Mauricio  \nSolicitado Sr. Josimar"
+  },
+  {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "111996",
+    "data_entrada": "04/06/2025",
+    "servico": "Fazer solda no suporte da grade de proteção dianteira - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5226",

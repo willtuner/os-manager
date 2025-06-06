@@ -1,11 +1,51 @@
 [
   {
+    "frota": "5721",
+    "cd_equipamento": "5721",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "112166",
+    "data_entrada": "06/06/2025",
+    "servico": "Verificar luva de acoplamento do cardam no motor hidráulico - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5579",
+    "cd_equipamento": "5579",
+    "modelo": "TRITURADOR TFI-1600 GTM",
+    "os": "112142",
+    "data_entrada": "06/06/2025",
+    "servico": "Substituir suspiro do eixo - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5063",
+    "cd_equipamento": "5063",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "112108",
+    "data_entrada": "06/06/2025",
+    "servico": "Trocar correias quebradas, desamassar proteção de bicos e verificar filtros - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5718",
     "cd_equipamento": "5718",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "112095",
     "data_entrada": "06/06/2025",
     "servico": "Constatado desgaste na luva responsável pela conexão entre a polia motriz e a turbina, comprometendo a transmissão de movimento - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5600",
+    "cd_equipamento": "5600",
+    "modelo": "ATOMIZADOR NATALI 4000 LT",
+    "os": "112076",
+    "data_entrada": "05/06/2025",
+    "servico": "Mancal trincado e vazamento no retentor da bomba - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5492",
+    "cd_equipamento": "5492",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "112052",
+    "data_entrada": "05/06/2025",
+    "servico": "Vazamento no retentor da bomba - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5494",
@@ -22,6 +62,22 @@
     "os": "112048",
     "data_entrada": "05/06/2025",
     "servico": "Desgaste no pinhão da coroa do sistema de transmissão da adubadeira - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5599",
+    "cd_equipamento": "5599",
+    "modelo": "PREMIX PRIME 2T 2000",
+    "os": "112046",
+    "data_entrada": "05/06/2025",
+    "servico": "Vazamento no selo mecânico da bomba - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112017",
+    "data_entrada": "04/06/2025",
+    "servico": "Realizar substituição das engrenagens e corrente do sistema de transmissão - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5569",
@@ -86,6 +142,14 @@
     "os": "111163",
     "data_entrada": "22/05/2025",
     "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5721",
+    "cd_equipamento": "5721",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "110603",
+    "data_entrada": "15/05/2025",
+    "servico": "Vazamento nos pistões da bomba  HS-30 - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5629",

@@ -1,35 +1,11 @@
 [
   {
-    "frota": "290",
-    "cd_equipamento": "290",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112104",
-    "data_entrada": "06/06/2025",
-    "servico": "Cibié e lâmpada do farol queimado - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "310",
     "cd_equipamento": "310",
     "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
     "os": "112101",
     "data_entrada": "06/06/2025",
     "servico": "Lâmpada do farol traseiro queimado - (Pecuaria)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "10217",
-    "cd_equipamento": "10217",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112070",
-    "data_entrada": "05/06/2025",
-    "servico": "Trator não pega na partida, verificar cabo do alternador solto - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "148",
-    "cd_equipamento": "148",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "112067",
-    "data_entrada": "05/06/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
   },
   {
     "frota": "275",
@@ -80,6 +56,14 @@
     "servico": "Revisar sistema eletrico\nFaz Pedra Verde\nSolicitado Arthur"
   },
   {
+    "frota": "5609",
+    "cd_equipamento": "5609",
+    "modelo": "PULVERIZADOR PPEC 600LT CJP75",
+    "os": "112014",
+    "data_entrada": "04/06/2025",
+    "servico": "Sistema de acionamento das pistolas (tic-tac) não está operando - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "110",
     "cd_equipamento": "110",
     "modelo": "TRATOR MASSEY FERGUSON 275",
@@ -110,14 +94,6 @@
     "os": "112002",
     "data_entrada": "04/06/2025",
     "servico": "Verificar comando eletrico não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "29",
-    "cd_equipamento": "29",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "111997",
-    "data_entrada": "04/06/2025",
-    "servico": "Verificar alternador não está carregando bateria - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "136",
@@ -216,22 +192,6 @@
     "servico": "Trator com ruído anormal ao dar partida \"raspando motor de arranque\"  - (Industria)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "111289",
-    "data_entrada": "26/05/2025",
-    "servico": "Sistema de ventilação inoperante. Ventilador do sistema de resfriamento de óleo da podadeira e ventilador da cabine do operador não estão acionando. - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "106",
-    "cd_equipamento": "106",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "111283",
-    "data_entrada": "26/05/2025",
-    "servico": "Sirene de ré, buzina e velocímetro não funcionam - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "257",
     "cd_equipamento": "257",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -246,14 +206,6 @@
     "os": "110602",
     "data_entrada": "15/05/2025",
     "servico": "Trocar painel de controle da barra de herbicida quebrado - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5605",
-    "cd_equipamento": "5605",
-    "modelo": "PULVERIZADOR 600LT CIMAG",
-    "os": "110600",
-    "data_entrada": "15/05/2025",
-    "servico": "Verificar drash não abre um dos lados - (Fazenda Biscui)\nLiberado Sr. Arthur"
   },
   {
     "frota": "93",
