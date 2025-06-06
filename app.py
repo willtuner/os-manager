@@ -602,28 +602,28 @@ def finalizar_os(os_numero_str):
         dados_prestador = next((p for p in carregar_prestadores() if p.get('usuario','').lower() == session['prestador']), None)
         if dados_prestador and dados_prestador.get('arquivo_os'):
             caminho_arquivo_json_os = os.path.join(MENSAGENS_PRESTADOR_DIR, dados_prestador['arquivo_os'])
-            diretorio_json_os = MENSAGENS_PRESTADOR_DIR # Diretório para remover_os_de_todos_json
+            diretorio_json_os = MENSAGENS_PRESTADOR_DIR
     elif 'manutencao' in session:
         dados_manut = next((m for m in carregar_manutencao() if m.get('usuario','').lower() == session['manutencao']), None)
         if dados_manut and dados_manut.get('arquivo_os'):
             caminho_arquivo_json_os = os.path.join(JSON_DIR, dados_manut['arquivo_os'])
-            diretorio_json_os = JSON_DIR # Diretório para remover_os_de_todos_json
+            diretorio_json_os = JSON_DIR
             
-    # Se dados_os_para_finalizar não foi encontrado pelas funções de carregamento, tenta ler do arquivo específico
+    # Se dados_os_para_finalizar não foi encontrado, tenta ler do arquivo específico
     if caminho_arquivo_json_os and os.path.exists(caminho_arquivo_json_os) and not dados_os_para_finalizar:
         try: 
             with open(caminho_arquivo_json_os, 'r', encoding='utf-8') as f_json_os_fin:
                 lista_os_json = json.load(f_json_os_fin)
             dados_os_para_finalizar = next((item for item in lista_os_json if str(item.get('os') or item.get('OS', '')) == os_numero_str), None)
-            if dados_os_para_finalizar: # Garante que data_entrada ou data exista para validação
+            if dados_os_para_finalizar:
                 dados_os_para_finalizar['data_entrada'] = dados_os_para_finalizar.get('data_entrada') or dados_os_para_finalizar.get('data') or dados_os_para_finalizar.get('Data','')
-        except Exception as e_read: logger.error(f"Erro ao ler {caminho_arquivo_json_os} em finalizar_os: {e_read}")
+        except Exception as e_read: 
+            logger.error(f"Erro ao ler {caminho_arquivo_json_os} em finalizar_os: {e_read}")
 
-    if not dados_os_para_finalizar and ('prestador' in session or 'manutencao' in session): # Se for gerente, pode não ter os_data_to_finalize se o arquivo não for o "correto"
+    if not dados_os_para_finalizar and ('prestador' in session or 'manutencao' in session):
         flash(f'OS {os_numero_str} não encontrada nos arquivos do usuário para obter data de abertura. Finalização prossegue com cautela.', 'warning')
     elif not dados_os_para_finalizar and 'gerente' in session:
-         flash(f'OS {os_numero_str} não encontrada nos arquivos principais do gerente para obter data de abertura. Finalização prossegue.', 'info')
-
+        flash(f'OS {os_numero_str} não encontrada nos arquivos principais do gerente para obter data de abertura. Finalização prossegue.', 'info')
 
     data_finalizacao_form = request.form.get('data_finalizacao')
     hora_finalizacao_form = request.form.get('hora_finalizacao')
@@ -634,28 +634,31 @@ def finalizar_os(os_numero_str):
         flash('Data e hora de finalização são obrigatórias.', 'danger')
     else:
         data_abertura_os_obj = None
-        # Tenta obter data de abertura se dados_os_para_finalizar foi encontrado
         if dados_os_para_finalizar:
             data_abertura_os_str = dados_os_para_finalizar.get('data_entrada') or dados_os_para_finalizar.get('data')
             if data_abertura_os_str:
-                for fmt_abertura in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%y", "%Y/%m/%d"): # Formatos flexíveis
+                for fmt_abertura in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%y", "%Y/%m/%d"):
                     try:
                         data_abertura_os_obj = datetime.strptime(data_abertura_os_str, fmt_abertura).date()
                         break
-                    except (ValueError, TypeError): continue
+                    except (ValueError, TypeError): 
+                        continue
+        
         try:
-    # Tenta interpretar a data com múltiplos formatos
-    for fmt_data in ("%d/%m/%Y", "%Y-%m-%d"):
-        try:
-            data_finalizacao_obj = datetime.strptime(data_finalizacao_form, fmt_data).date()
-            break
-        except ValueError:
-            continue
-    else:
-        raise ValueError(f"Formato de data não reconhecido: {data_finalizacao_form}")
-    
-    data_finalizacao_formatada_db = data_finalizacao_obj.strftime('%d/%m/%Y')
-    ...
+            # Tentar parsear a data de finalização em múltiplos formatos
+            data_finalizacao_obj = None
+            for fmt_finalizacao in ("%Y-%m-%d", "%d/%m/%Y"):  # Prioriza YYYY-MM-DD (input HTML) e depois DD/MM/YYYY
+                try:
+                    data_finalizacao_obj = datetime.strptime(data_finalizacao_form, fmt_finalizacao).date()
+                    break
+                except (ValueError, TypeError):
+                    continue
+            
+            if not data_finalizacao_obj:
+                raise ValueError(f"Formato de data inválido: {data_finalizacao_form}")
+
+            # Formatar a data para o banco (DD/MM/YYYY)
+            data_finalizacao_formatada_db = data_finalizacao_obj.strftime('%d/%m/%Y')
 
             if data_abertura_os_obj and data_finalizacao_obj < data_abertura_os_obj:
                 flash(f'Data de finalização ({data_finalizacao_obj.strftime("%d/%m/%Y")}) não pode ser anterior à data de abertura ({data_abertura_os_obj.strftime("%d/%m/%Y")}).', 'danger')
@@ -672,8 +675,11 @@ def finalizar_os(os_numero_str):
                         nome_arquivo_evidencia = None 
 
                 nova_finalizacao = Finalizacao(
-                    os_numero=os_numero_str, gerente=responsavel_login, data_fin=data_finalizacao_formatada_db,
-                    hora_fin=hora_finalizacao_form, observacoes=observacoes_form,
+                    os_numero=os_numero_str, 
+                    gerente=responsavel_login, 
+                    data_fin=data_finalizacao_formatada_db,
+                    hora_fin=hora_finalizacao_form, 
+                    observacoes=observacoes_form,
                     registrado_em=saopaulo_tz.localize(datetime.now())
                 )
                 db.session.add(nova_finalizacao)
@@ -681,25 +687,29 @@ def finalizar_os(os_numero_str):
                 
                 if diretorio_json_os: 
                     removidos = remover_os_de_todos_json(diretorio_json_os, os_numero_str)
-                    if removidos: flash(f'OS {os_numero_str} removida de: {", ".join(removidos)}', 'info')
-                elif 'gerente' in session: # Caso especial para gerente se diretorio_json_os não foi setado
+                    if removidos: 
+                        flash(f'OS {os_numero_str} removida de: {", ".join(removidos)}', 'info')
+                elif 'gerente' in session:
                     removidos = remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str)
-                    if removidos: flash(f'OS {os_numero_str} removida de arquivos de gerente: {", ".join(removidos)}', 'info')
+                    if removidos: 
+                        flash(f'OS {os_numero_str} removida de arquivos de gerente: {", ".join(removidos)}', 'info')
 
-                
                 flash(f'OS {os_numero_str} finalizada e registrada!', 'success')
-        except ValueError as ve: # Erro específico de parse de data
+        except ValueError as ve:
             logger.error(f"Erro de formato de data ao finalizar OS {os_numero_str}: {ve}. Data recebida: {data_finalizacao_form}")
-            flash(f'Formato de data de finalização inválido. Recebido: "{data_finalizacao_form}". Esperado: DD/MM/YYYY.', 'danger')
+            flash(f'Formato de data de finalização inválido. Recebido: "{data_finalizacao_form}". Esperado: DD/MM/YYYY ou YYYY-MM-DD.', 'danger')
         except Exception as e_commit:
             db.session.rollback()
             logger.error(f"Erro DB ao finalizar OS {os_numero_str}: {e_commit}")
             flash('Erro ao registrar finalização. Verifique os logs.', 'danger')
 
     # Redirecionamento
-    if 'prestador' in session: return redirect(url_for('painel_prestador'))
-    if 'manutencao' in session: return redirect(url_for('painel_manutencao'))
-    if 'gerente' in session: return redirect(url_for('painel'))
+    if 'prestador' in session: 
+        return redirect(url_for('painel_prestador'))
+    if 'manutencao' in session: 
+        return redirect(url_for('painel_manutencao'))
+    if 'gerente' in session: 
+        return redirect(url_for('painel'))
     return redirect(url_for('login'))
 
 
