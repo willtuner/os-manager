@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "246",
+    "os": "112140",
+    "data": "06/06/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Direção dura - (Fazenda SP)"
+  },
+  {
     "frota": "257",
     "os": "112111",
     "data": "06/06/2025",
@@ -11,7 +18,7 @@
     "frota": "5063",
     "os": "112108",
     "data": "06/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Trocar correias quebradas, desamassar proteção de bicos e verificar filtros - (Fazenda SP)"
   },
   {
@@ -19,7 +26,7 @@
     "os": "112120",
     "data": "06/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Trocar os dois pneus (12.5/80-18)."
+    "servico": "Trocar os dois pneus (12.5/80-18 novos)."
   },
   {
     "frota": "219",
@@ -27,20 +34,6 @@
     "data": "06/06/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Revisar bomba e bico"
-  },
-  {
-    "frota": "219",
-    "os": "112071",
-    "data": "05/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Trator perdendo força - (Fazenda SP)"
-  },
-  {
-    "frota": "246",
-    "os": "112068",
-    "data": "05/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar TDP lenta e código de erro no painel (E-18) - (Fazenda SP)"
   },
   {
     "frota": "315",
@@ -88,7 +81,7 @@
     "frota": "74",
     "os": "111906",
     "data": "03/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)"
   },
   {
@@ -125,13 +118,6 @@
     "data": "19/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Verificar vazamento na bomba - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5605",
-    "os": "110600",
-    "data": "15/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar drash não abre um dos lados - (Fazenda Biscui)"
   },
   {
     "frota": "5205",
