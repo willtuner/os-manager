@@ -1,5 +1,6 @@
 [
   {
+    "solicitado": "JOAO VITOR DUBAY DA SILVA",
     "frota": "5014",
     "os": "112043",
     "data": "04/06/2025",
@@ -26,12 +27,5 @@
     "data": "02/06/2025",
     "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
     "servico": "Verificar falha no sistema de GPS - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5262",
-    "os": "111545",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar equipamento sem partida - (Fazenda Estrela 6)"
   }
 ]

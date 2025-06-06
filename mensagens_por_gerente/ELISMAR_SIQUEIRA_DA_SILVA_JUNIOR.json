@@ -1,5 +1,27 @@
 [
   {
+    "solicitado": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+    "frota": "5126",
+    "os": "112110",
+    "data": "06/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Adubadeira apresenta falha de funcionamento sob carga, não realizando o deslocamento adequado com peso. Solicita-se avaliação dos motores hidráulicos - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5745",
+    "os": "112109",
+    "data": "06/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Identificada quebra da esteira do sistema de distribuição, impossibilitando o funcionamento adequado do equipamento. Além disso, constatado amassamento na portinhola de controle de vazão - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5422",
+    "os": "112072",
+    "data": "05/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Avaliar vazamento na bomba KPL80 - (Fazenda São Pedro)"
+  },
+  {
     "frota": "5233",
     "os": "111938",
     "data": "03/06/2025",

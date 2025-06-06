@@ -1,5 +1,48 @@
 [
   {
+    "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "257",
+    "os": "112111",
+    "data": "06/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Relatado ruído anormal proveniente da tomada de potência (TDP) durante a operação. Foi realizada verificação no tanque de pulverização, não sendo identificadas irregularidades aparentes. - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5063",
+    "os": "112108",
+    "data": "06/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar correias quebradas, desamassar proteção de bicos e verificar filtros - (Fazenda SP)"
+  },
+  {
+    "frota": "5504",
+    "os": "112120",
+    "data": "06/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Trocar os dois pneus (12.5/80-18)."
+  },
+  {
+    "frota": "219",
+    "os": "112093",
+    "data": "06/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Revisar bomba e bico"
+  },
+  {
+    "frota": "219",
+    "os": "112071",
+    "data": "05/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trator perdendo força - (Fazenda SP)"
+  },
+  {
+    "frota": "246",
+    "os": "112068",
+    "data": "05/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar TDP lenta e código de erro no painel (E-18) - (Fazenda SP)"
+  },
+  {
     "frota": "315",
     "os": "112050",
     "data": "05/06/2025",
@@ -49,13 +92,6 @@
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)"
   },
   {
-    "frota": "135",
-    "os": "111773",
-    "data": "02/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Biscui)"
-  },
-  {
     "frota": "5755",
     "os": "111770",
     "data": "02/06/2025",
@@ -63,25 +99,11 @@
     "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)"
   },
   {
-    "frota": "135",
-    "os": "111663",
-    "data": "02/06/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Soldar escada quebrada e soldar suporte do capô  - (Fazenda Biscui)"
-  },
-  {
     "frota": "5211",
     "os": "111602",
     "data": "30/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "74",
-    "os": "111296",
-    "data": "26/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator apresentando sobrecarga no sistema elétrico, resultando em estouro da bateria. Necessário verificar o regulador de tensão, alternador, cabos de alimentação e possíveis curtos no circuito elétrico. - (Fazenda São Paulo)"
   },
   {
     "frota": "257",

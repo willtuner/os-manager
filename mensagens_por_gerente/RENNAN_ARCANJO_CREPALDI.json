@@ -1,5 +1,20 @@
 [
   {
+    "solicitado": "RENNAN ARCANJO CREPALDI",
+    "frota": "5730",
+    "os": "112075",
+    "data": "05/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Instalar patins - (Fazenda NSA)"
+  },
+  {
+    "frota": "275",
+    "os": "112061",
+    "data": "05/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar cibié queimado L/E - (Fazenda NSA)"
+  },
+  {
     "frota": "5492",
     "os": "112052",
     "data": "05/06/2025",
@@ -14,13 +29,6 @@
     "servico": "Substituir os dois pneus (novos)."
   },
   {
-    "frota": "5058",
-    "os": "112028",
-    "data": "04/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar equipamento não está saindo produto nas pistolas (já verificado parte elétrica)."
-  },
-  {
     "frota": "5662",
     "os": "112002",
     "data": "04/06/2025",
@@ -33,41 +41,6 @@
     "data": "03/06/2025",
     "prestador": "Prestador não definido",
     "servico": "Derretendo tanque de combustível - (Fazenda NSA)"
-  },
-  {
-    "frota": "5058",
-    "os": "111920",
-    "data": "03/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar conectores do painel com mau contato - (Fazenda NSA)"
-  },
-  {
-    "frota": "5502",
-    "os": "111713",
-    "data": "02/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E furado - (Fazenda NSA)"
-  },
-  {
-    "frota": "5418",
-    "os": "111707",
-    "data": "02/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E furado - (Fazenda NSA)"
-  },
-  {
-    "frota": "303",
-    "os": "111622",
-    "data": "30/05/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra no para lamas trincado - (Fazenda NSA)"
-  },
-  {
-    "frota": "215",
-    "os": "111573",
-    "data": "30/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Farol dianteiro com mau contato - (Fazenda NSA)"
   },
   {
     "frota": "5598",
@@ -96,20 +69,6 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar esteira e fundo do espalhador"
-  },
-  {
-    "frota": "5603",
-    "os": "110177",
-    "data": "07/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Melhorar o suporte do comando abre e fecha. chapa fina e fica vibrando, verificar chapa de fixação da torre solta, fixar caixa do SPE na torre e soldar trinca na base da bomba"
-  },
-  {
-    "frota": "10121",
-    "os": "109805",
-    "data": "02/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
   },
   {
     "frota": "5502",

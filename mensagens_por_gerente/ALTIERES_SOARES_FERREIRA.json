@@ -1,17 +1,25 @@
 [
   {
+    "solicitado": "ALTIERES SOARES FERREIRA",
+    "frota": "223",
+    "os": "112087",
+    "data": "06/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda e reforço na escada - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "299",
+    "os": "112086",
+    "data": "06/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda em trinca no escapamento e gonzo da proteção dianteira gastos - (Fazenda Pedra Verde)"
+  },
+  {
     "frota": "113",
     "os": "112039",
     "data": "04/06/2025",
     "prestador": "Prestador não definido",
     "servico": "Verificar trator esquentando - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "245",
-    "os": "111902",
-    "data": "03/06/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Verificar vazamento de óleo hidráulico no trator. Inspeção do sistema para identificar origem e realizar correção - (Fazenda Pedra Verde)"
   },
   {
     "frota": "245",
@@ -33,20 +41,6 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção das polias."
-  },
-  {
-    "frota": "217",
-    "os": "111441",
-    "data": "28/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Quebra do cabo da embreagem, vazamento no cárter e cruzeta da tração danificada. Recomenda-se recolher o trator para substituição dos componentes.  - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "223",
-    "os": "111217",
-    "data": "23/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Recuperar tampa da caixa de bateria"
   },
   {
     "frota": "152",

@@ -1,5 +1,20 @@
 [
   {
+    "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+    "frota": "5718",
+    "os": "112095",
+    "data": "06/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Constatado desgaste na luva responsável pela conexão entre a polia motriz e a turbina, comprometendo a transmissão de movimento - (Fazenda Estrela)"
+  },
+  {
+    "frota": "258",
+    "os": "112094",
+    "data": "06/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda e reforço nos degraus da escada de acesso ao trator - (Fazenda Estrela)"
+  },
+  {
     "frota": "110",
     "os": "112011",
     "data": "04/06/2025",
@@ -33,27 +48,6 @@
     "data": "03/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar embreagem não da mais regulagem, e grupo de marcha A,B e C escapando - (Fazenda Estrela)"
-  },
-  {
-    "frota": "268",
-    "os": "111648",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Lâmpada do cibié traseiro queimada - (Fazenda Estrela)"
-  },
-  {
-    "frota": "268",
-    "os": "111342",
-    "data": "27/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar lanterna dianteira quebrada - (Fazenda Estrela)"
-  },
-  {
-    "frota": "221",
-    "os": "111341",
-    "data": "27/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Chicote do cibié quebrado - (Fazenda Estrela)"
   },
   {
     "frota": "189",
