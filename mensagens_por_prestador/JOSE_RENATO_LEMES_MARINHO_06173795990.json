@@ -1,13 +1,19 @@
 [
   {
+    "frota": "307",
+    "cd_equipamento": "307",
+    "modelo": "PA CARREGADEIRA 924K",
+    "os": "112059",
+    "data_entrada": "05/06/2025",
+    "servico": "Substituição do suporte e da unha da pá carregadeira - (Fazenda Nova Manhã)\nLiberado Sr. Rafael"
+  },
+  {
     "frota": "5659",
     "cd_equipamento": "5659",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "112019",
     "data_entrada": "04/06/2025",
-    "data": "04/06/2025",
-    "servico": "Fazer solda e reaperto na estrutura da torre - (Fazenda São Pedro)\nLiberado Sr. Mauricio  \nSolicitado Sr. Josimar",
-    "observacao": "nan"
+    "servico": "Fazer solda e reaperto na estrutura da torre - (Fazenda São Pedro)\nLiberado Sr. Mauricio  \nSolicitado Sr. Josimar"
   },
   {
     "frota": "5226",
@@ -15,9 +21,7 @@
     "modelo": "CARRETINHA DUAS RODAS (CARRO)",
     "os": "111912",
     "data_entrada": "03/06/2025",
-    "data": "03/06/2025",
-    "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho.\nFazenda São Pedro (Oficina)\nSolicitado Sr. Romes\nLiberado Sr. Zacarias",
-    "observacao": "nan"
+    "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho.\nFazenda São Pedro (Oficina)\nSolicitado Sr. Romes\nLiberado Sr. Zacarias"
   },
   {
     "frota": "5755",
@@ -25,9 +29,7 @@
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
     "os": "111770",
     "data_entrada": "02/06/2025",
-    "data": "02/06/2025",
-    "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5204",
@@ -35,9 +37,7 @@
     "modelo": "CARRETINHA DE MADEIRA VERMELHA",
     "os": "111726",
     "data_entrada": "02/06/2025",
-    "data": "02/06/2025",
-    "servico": "Soldar trinca em roda - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Soldar trinca em roda - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5365",
@@ -45,9 +45,7 @@
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111618",
     "data_entrada": "30/05/2025",
-    "data": "30/05/2025",
-    "servico": "Fazer solda em trinca - (Fazenda Casa Branca)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Fazer solda em trinca - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5211",
@@ -55,9 +53,7 @@
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111602",
     "data_entrada": "30/05/2025",
-    "data": "30/05/2025",
-    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda São Paulo)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5495",
@@ -65,9 +61,7 @@
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
     "os": "111593",
     "data_entrada": "30/05/2025",
-    "data": "30/05/2025",
-    "servico": "Substituição das aletas dos pratos do distribuidor de adubo devido a corrosão e soldar proteção de partes móveis (correias traseiras) - (Fazenda Terra Branca)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Substituição das aletas dos pratos do distribuidor de adubo devido a corrosão e soldar proteção de partes móveis (correias traseiras) - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5492",
@@ -75,9 +69,7 @@
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "111569",
     "data_entrada": "30/05/2025",
-    "data": "30/05/2025",
-    "servico": "Fazer solda no suporte de sustentação da asa L/E e soldar suporte para instalar cibié - (Fazenda NSA)\nLiberado Sr. Mauricio\nPendencia N° 4059",
-    "observacao": "nan"
+    "servico": "Fazer solda no suporte de sustentação da asa L/E e soldar suporte para instalar cibié - (Fazenda NSA)\nLiberado Sr. Mauricio\nPendencia N° 4059"
   },
   {
     "frota": "116",
@@ -85,9 +77,7 @@
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
     "os": "111498",
     "data_entrada": "29/05/2025",
-    "data": "29/05/2025",
-    "servico": "Soldar escada e fazer proteção do eixo da TDP\n(Fazenda Estrela)\nLiberado Sr. Arthur",
-    "observacao": "nan"
+    "servico": "Soldar escada e fazer proteção do eixo da TDP\n(Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5431",
@@ -95,9 +85,7 @@
     "modelo": "DIST. DE ADUBO DCA 7500 S-0114",
     "os": "111479",
     "data_entrada": "28/05/2025",
-    "data": "28/05/2025",
-    "servico": "Trocar esteira e fundo do espalhador\nFaz NSA\nSolicitado Rennan\nAutorizado Mauricio",
-    "observacao": "nan"
+    "servico": "Trocar esteira e fundo do espalhador\nFaz NSA\nSolicitado Rennan\nAutorizado Mauricio"
   },
   {
     "frota": "99",
@@ -105,9 +93,7 @@
     "modelo": "TRATOR JOHN DEERE 5065 4X4",
     "os": "111476",
     "data_entrada": "28/05/2025",
-    "data": "28/05/2025",
-    "servico": "Trocar confeccionar e trocar teto\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur",
-    "observacao": "nan"
+    "servico": "Trocar confeccionar e trocar teto\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
   },
   {
     "frota": "5009",
@@ -115,9 +101,7 @@
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111465",
     "data_entrada": "28/05/2025",
-    "data": "28/05/2025",
-    "servico": "Adaptar proteção lateral do ramal\nFaz Estrela \nSolicitado Carlos\nAutorizado Mauricio",
-    "observacao": "nan"
+    "servico": "Adaptar proteção lateral do ramal\nFaz Estrela \nSolicitado Carlos\nAutorizado Mauricio"
   },
   {
     "frota": "5136",
@@ -125,9 +109,7 @@
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111464",
     "data_entrada": "28/05/2025",
-    "data": "28/05/2025",
-    "servico": "Fazer proteção das polias.\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio",
-    "observacao": "nan"
+    "servico": "Fazer proteção das polias.\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio"
   },
   {
     "frota": "5035",
@@ -135,9 +117,7 @@
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111440",
     "data_entrada": "28/05/2025",
-    "data": "28/05/2025",
-    "servico": "Fazer proteção de bicos - (Fazenda Alvorada)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Fazer proteção de bicos - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5233",
@@ -145,9 +125,7 @@
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111423",
     "data_entrada": "28/05/2025",
-    "data": "28/05/2025",
-    "servico": "Realizar soldagem em múltiplas trincas na estrutura do tanque e corrigir vazamento no pistão. - (Fazenda São Pedro)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Realizar soldagem em múltiplas trincas na estrutura do tanque e corrigir vazamento no pistão. - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5619",
@@ -155,9 +133,7 @@
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
     "os": "111415",
     "data_entrada": "27/05/2025",
-    "data": "27/05/2025",
-    "servico": "Instalar chapa nas bases de fixação dos rotores direito e esquerdo\nFazenda Casa Branca\nSolicitado Sr. João\nLiberado Sr. Maurício",
-    "observacao": "nan"
+    "servico": "Instalar chapa nas bases de fixação dos rotores direito e esquerdo\nFazenda Casa Branca\nSolicitado Sr. João\nLiberado Sr. Maurício"
   },
   {
     "frota": "5438",
@@ -165,9 +141,7 @@
     "modelo": "BARRA APLICACAO DE HERBICIDA",
     "os": "111292",
     "data_entrada": "26/05/2025",
-    "data": "26/05/2025",
-    "servico": "Fazer solda em trinca na estrutura - (Fazenda Santa Luiza)\nLiberado Sr. Mauriico",
-    "observacao": "nan"
+    "servico": "Fazer solda em trinca na estrutura - (Fazenda Santa Luiza)\nLiberado Sr. Mauriico"
   },
   {
     "frota": "66",
@@ -175,19 +149,7 @@
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "111757",
     "data_entrada": "23/05/2025",
-    "data": "23/05/2025",
-    "servico": "Confecção e instalação do teto, Pendencia 4122\nFaz São Paulo\nSolicitado Arthur",
-    "observacao": "NFE 19402 \nLANÇAMENTO AUTOMATIZADO."
-  },
-  {
-    "frota": "223",
-    "cd_equipamento": "223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111217",
-    "data_entrada": "23/05/2025",
-    "data": "23/05/2025",
-    "servico": "Recuperar tampa da caixa de bateria\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur",
-    "observacao": "nan"
+    "servico": "Confecção e instalação do teto, Pendencia 4122\nFaz São Paulo\nSolicitado Arthur"
   },
   {
     "frota": "5459",
@@ -195,9 +157,7 @@
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "111127",
     "data_entrada": "21/05/2025",
-    "data": "21/05/2025",
-    "servico": "Substituir proteções anti-arremesso danificada.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício",
-    "observacao": "nan"
+    "servico": "Substituir proteções anti-arremesso danificada.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
   },
   {
     "frota": "5451",
@@ -205,9 +165,7 @@
     "modelo": "PULVERIZADOR BARRAS TRICICLO",
     "os": "110984",
     "data_entrada": "20/05/2025",
-    "data": "20/05/2025",
-    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5125",
@@ -215,9 +173,7 @@
     "modelo": "ATOMIZADOR JACTO 2000 LT",
     "os": "111471",
     "data_entrada": "20/05/2025",
-    "data": "20/05/2025",
-    "servico": "Fazer caixa para transporte de pessoas\nFazenda SL1 (Oficina)\nLiberado Sr. Zacarias",
-    "observacao": "NFE 501"
+    "servico": "Fazer caixa para transporte de pessoas\nFazenda SL1 (Oficina)\nLiberado Sr. Zacarias"
   },
   {
     "frota": "5078",
@@ -225,9 +181,7 @@
     "modelo": "RC2 E 2600 LSL TATU",
     "os": "110736",
     "data_entrada": "16/05/2025",
-    "data": "16/05/2025",
-    "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã) \nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã) \nLiberado Sr. Mauricio"
   },
   {
     "frota": "5433",
@@ -235,9 +189,7 @@
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "110712",
     "data_entrada": "16/05/2025",
-    "data": "16/05/2025",
-    "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio",
-    "observacao": "NFE 1907 \nRequisições: 1907 | Cotações: 1483 | Observação do Produto: FROTA 5433 / O.S 110712 / FAZENDA NOVA MANHA, FROTA 5433 / O.S 110712 / FAZENDA NOVA MANHA, FROTA 5433 / O.S 110712 / FAZENDA NOVA MANHA, FROTA 5433 / O.S 110712 / FAZENDA NOVA MANHA\nLANÇAMENTO AUTOMATIZADO."
+    "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5455",
@@ -245,9 +197,7 @@
     "modelo": "CARRETA TRASNP LAR 510/154/030",
     "os": "110563",
     "data_entrada": "15/05/2025",
-    "data": "15/05/2025",
-    "servico": "Verificar rolamento das duas rodas danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício",
-    "observacao": "nan"
+    "servico": "Verificar rolamento das duas rodas danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
   },
   {
     "frota": "5204",
@@ -255,19 +205,7 @@
     "modelo": "CARRETINHA DE MADEIRA VERMELHA",
     "os": "110561",
     "data_entrada": "15/05/2025",
-    "data": "15/05/2025",
-    "servico": "Verificar desgaste no engate do cabeçário danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício",
-    "observacao": "NFE 1831 \nRequisições: 1831 | Cotações: 1425 | Observação do Produto: FROTA 5204 / O.S 110561 / FAZENDA NOVA MANHA, FROTA 5204 / O.S 110561 / FAZENDA NOVA MANHA\nLANÇAMENTO AUTOMATIZADO."
-  },
-  {
-    "frota": "10221",
-    "cd_equipamento": "10221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "110526",
-    "data_entrada": "14/05/2025",
-    "data": "14/05/2025",
-    "servico": "Fazer solda em escapamento danificado - (Fazenda Terra Branca)\nLiberado Sr. Arthur",
-    "observacao": "nan"
+    "servico": "Verificar desgaste no engate do cabeçário danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
   },
   {
     "frota": "189",
@@ -275,9 +213,7 @@
     "modelo": "TRATOR NEW HOLAND TL 5.80",
     "os": "110510",
     "data_entrada": "14/05/2025",
-    "data": "14/05/2025",
-    "servico": "Confeccionar e instalar proteções das lanternas do paralamas\nFaz Estrela\nSolicitado Vadinho\nAutorizado Arthur",
-    "observacao": "nan"
+    "servico": "Confeccionar e instalar proteções das lanternas do paralamas\nFaz Estrela\nSolicitado Vadinho\nAutorizado Arthur"
   },
   {
     "frota": "5354",
@@ -285,19 +221,7 @@
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "110473",
     "data_entrada": "13/05/2025",
-    "data": "13/05/2025",
-    "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
-  },
-  {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "110177",
-    "data_entrada": "07/05/2025",
-    "data": "07/05/2025",
-    "servico": "Melhorar o suporte do comando abre e fecha. chapa fina e fica vibrando, verificar chapa de fixação da torre solta, fixar caixa do SPE na torre e soldar trinca na base da bomba\nFazenda NSA\nSolicitado Sr. Murilo\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5106",
@@ -305,9 +229,7 @@
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "110097",
     "data_entrada": "06/05/2025",
-    "data": "06/05/2025",
-    "servico": "Fazer proteção anti arremesso frente e atrás - (Fazenda Estrela)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Fazer proteção anti arremesso frente e atrás - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5502",
@@ -315,9 +237,7 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "109804",
     "data_entrada": "02/05/2025",
-    "data": "02/05/2025",
-    "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5592",
@@ -325,9 +245,7 @@
     "modelo": "PULVERIZADOR 2000 LT JACTO",
     "os": "109803",
     "data_entrada": "02/05/2025",
-    "data": "02/05/2025",
-    "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5214",
@@ -335,9 +253,7 @@
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
     "os": "109707",
     "data_entrada": "30/04/2025",
-    "data": "30/04/2025",
-    "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5597",
@@ -345,9 +261,7 @@
     "modelo": "PULVERIZADOR 2000 LT FMC",
     "os": "109432",
     "data_entrada": "25/04/2025",
-    "data": "25/04/2025",
-    "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5712",
@@ -355,9 +269,7 @@
     "modelo": "TANQUE DE AGUA 6500",
     "os": "109102",
     "data_entrada": "17/04/2025",
-    "data": "17/04/2025",
-    "servico": "Refazer cabeçalho desalinhado - (Fazenda NSA)\nLiberado Sr. Mauricio",
-    "observacao": "nan"
+    "servico": "Refazer cabeçalho desalinhado - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "211",
@@ -365,9 +277,7 @@
     "modelo": "TRATOR JOHN DEERE 5070 E",
     "os": "109062",
     "data_entrada": "17/04/2025",
-    "data": "17/04/2025",
-    "servico": "Fabricar e instalar proteção para as lanternas traseiras - (Fazenda SP)\nLiberado Sr. Wilson",
-    "observacao": "nan"
+    "servico": "Fabricar e instalar proteção para as lanternas traseiras - (Fazenda SP)\nLiberado Sr. Wilson"
   },
   {
     "frota": "5592",
@@ -375,9 +285,7 @@
     "modelo": "PULVERIZADOR 2000 LT JACTO",
     "os": "108058",
     "data_entrada": "02/04/2025",
-    "data": "02/04/2025",
-    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício",
-    "observacao": "nan"
+    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
   },
   {
     "frota": "5502",
@@ -385,9 +293,7 @@
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "108048",
     "data_entrada": "02/04/2025",
-    "data": "02/04/2025",
-    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito e esquerdo e soldar chapa inferior da asa esquerda.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício",
-    "observacao": "nan"
+    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito e esquerdo e soldar chapa inferior da asa esquerda.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
   },
   {
     "frota": "504",
@@ -395,9 +301,7 @@
     "modelo": "ONIBUS",
     "os": "111421",
     "data_entrada": "19/03/2025",
-    "data": "19/03/2025",
-    "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias",
-    "observacao": "nan"
+    "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias"
   },
   {
     "frota": "10220",
@@ -405,8 +309,6 @@
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "106998",
     "data_entrada": "14/03/2025",
-    "data": "14/03/2025",
-    "servico": "Instalar escapamento faltando pedaço - (Fazenda Casa Branca)\nLiberado Sr. Arthur",
-    "observacao": "nan"
+    "servico": "Instalar escapamento faltando pedaço - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   }
 ]
