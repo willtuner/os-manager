@@ -643,11 +643,19 @@ def finalizar_os(os_numero_str):
                         data_abertura_os_obj = datetime.strptime(data_abertura_os_str, fmt_abertura).date()
                         break
                     except (ValueError, TypeError): continue
-        
         try:
-            # Flatpickr com dateFormat: 'd/m/Y' envia nesse formato
-            data_finalizacao_obj = datetime.strptime(data_finalizacao_form, '%d/%m/%Y').date()
-            data_finalizacao_formatada_db = data_finalizacao_obj.strftime('%d/%m/%Y')
+    # Tenta interpretar a data com múltiplos formatos
+    for fmt_data in ("%d/%m/%Y", "%Y-%m-%d"):
+        try:
+            data_finalizacao_obj = datetime.strptime(data_finalizacao_form, fmt_data).date()
+            break
+        except ValueError:
+            continue
+    else:
+        raise ValueError(f"Formato de data não reconhecido: {data_finalizacao_form}")
+    
+    data_finalizacao_formatada_db = data_finalizacao_obj.strftime('%d/%m/%Y')
+    ...
 
             if data_abertura_os_obj and data_finalizacao_obj < data_abertura_os_obj:
                 flash(f'Data de finalização ({data_finalizacao_obj.strftime("%d/%m/%Y")}) não pode ser anterior à data de abertura ({data_abertura_os_obj.strftime("%d/%m/%Y")}).', 'danger')
