@@ -16,14 +16,6 @@
     "servico": "Quebra do batedor - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "258",
-    "cd_equipamento": "258",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112094",
-    "data_entrada": "06/06/2025",
-    "servico": "Fazer solda e reforço nos degraus da escada de acesso ao trator - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "223",
     "cd_equipamento": "223",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -72,20 +64,20 @@
     "servico": "Verificar engate do cabeçário danificado  - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
+    "frota": "67",
+    "cd_equipamento": "67",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112190",
+    "data_entrada": "05/06/2025",
+    "servico": "Sacar parafusos do motor, recuperar lateral do trator\nFaz Santa Luiza\nAutorizado Arthur"
+  },
+  {
     "frota": "5500",
     "cd_equipamento": "5500",
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
     "os": "112053",
     "data_entrada": "05/06/2025",
     "servico": "Fazer solda em roda guia e colocar proteção anti-arremesso - (Fazenda Minuano)\nLiberado Sr. Mauricio \nPendencia N° 4301"
-  },
-  {
-    "frota": "5192",
-    "cd_equipamento": "5192",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "112040",
-    "data_entrada": "04/06/2025",
-    "servico": "Verificar rolamento e mancal dianteiro do eixo de acoplamento do cardan danificado. - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5659",
@@ -134,14 +126,6 @@
     "os": "111618",
     "data_entrada": "30/05/2025",
     "servico": "Fazer solda em trinca - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5211",
-    "cd_equipamento": "5211",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111602",
-    "data_entrada": "30/05/2025",
-    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5495",
@@ -240,14 +224,6 @@
     "servico": "Confecção e instalação do teto, Pendencia 4122\nFaz São Paulo\nSolicitado Arthur"
   },
   {
-    "frota": "5459",
-    "cd_equipamento": "5459",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "111127",
-    "data_entrada": "21/05/2025",
-    "servico": "Substituir proteções anti-arremesso danificada.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
-  },
-  {
     "frota": "5451",
     "cd_equipamento": "5451",
     "modelo": "PULVERIZADOR BARRAS TRICICLO",
@@ -310,14 +286,6 @@
     "os": "110473",
     "data_entrada": "13/05/2025",
     "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5106",
-    "cd_equipamento": "5106",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "110097",
-    "data_entrada": "06/05/2025",
-    "servico": "Fazer proteção anti arremesso frente e atrás - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5502",

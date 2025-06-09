@@ -1,5 +1,13 @@
 [
   {
+    "frota": "145",
+    "cd_equipamento": "145",
+    "modelo": "PA CARREGADEIRA 924K",
+    "os": "112182",
+    "data_entrada": "09/06/2025",
+    "servico": "Verificar maquina com baixa voltagem no sistema - (NSA)\nLiberado Sr. Rafael"
+  },
+  {
     "frota": "310",
     "cd_equipamento": "310",
     "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
@@ -46,14 +54,6 @@
     "os": "112033",
     "data_entrada": "04/06/2025",
     "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "217",
-    "cd_equipamento": "217",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112018",
-    "data_entrada": "04/06/2025",
-    "servico": "Revisar sistema eletrico\nFaz Pedra Verde\nSolicitado Arthur"
   },
   {
     "frota": "5609",
