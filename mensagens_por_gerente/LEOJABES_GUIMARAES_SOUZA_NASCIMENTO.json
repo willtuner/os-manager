@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "5755",
+    "os": "112183",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Troca do suporte dos fações quebrado - (Fazenda Biscui)"
+  },
+  {
+    "frota": "5107",
+    "os": "112180",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trinca no suporte da bomba - (Fazenda SP)"
+  },
+  {
     "frota": "246",
     "os": "112140",
     "data": "06/06/2025",
@@ -27,13 +41,6 @@
     "data": "06/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Trocar os dois pneus (12.5/80-18 novos)."
-  },
-  {
-    "frota": "219",
-    "os": "112093",
-    "data": "06/06/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisar bomba e bico"
   },
   {
     "frota": "315",
@@ -92,13 +99,6 @@
     "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)"
   },
   {
-    "frota": "5211",
-    "os": "111602",
-    "data": "30/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda São Paulo)"
-  },
-  {
     "frota": "257",
     "os": "111261",
     "data": "24/05/2025",
@@ -130,7 +130,7 @@
     "frota": "218",
     "os": "110228",
     "data": "08/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
     "servico": "Verificar vazamento no braço hidráulico, vazamento no cudo da roda dianteira L/? e vazamento nas conexões da mangueira do comando hidráulico - (Fazenda SP)"
   },
   {

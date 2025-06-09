@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+    "frota": "117",
+    "os": "112193",
+    "data": "09/06/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Revisar o sistema de ar condicionado do trator devido a odor de queimado, verificando possíveis falhas no motor do ventilador, fiação, resistência do sistema ou acúmulo de resíduos na unidade evaporadora - (Fazenda São Pedro)"
+  },
+  {
     "frota": "5126",
     "os": "112110",
     "data": "06/06/2025",
@@ -27,13 +34,6 @@
     "data": "03/06/2025",
     "prestador": "Prestador não definido",
     "servico": "Vazamento na bomba do tanque - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "10216",
-    "os": "111275",
-    "data": "26/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento de óleo no dreno da caixa seca -(Fazenda São Pedro)"
   },
   {
     "frota": "5552",
