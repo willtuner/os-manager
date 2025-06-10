@@ -1,18 +1,46 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-    "frota": "5755",
-    "os": "112183",
-    "data": "09/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Troca do suporte dos fações quebrado - (Fazenda Biscui)"
+    "frota": "10228",
+    "os": "112263",
+    "data": "10/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/E furado - (Fazenda SP)"
   },
   {
-    "frota": "5107",
-    "os": "112180",
-    "data": "09/06/2025",
+    "frota": "5494",
+    "os": "112252",
+    "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Trinca no suporte da bomba - (Fazenda SP)"
+    "servico": "Esteira quebrada - (Fazenda SP)"
+  },
+  {
+    "frota": "5749",
+    "os": "112250",
+    "data": "10/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Solda em terminal - (Fazenda SP)"
+  },
+  {
+    "frota": "5749",
+    "os": "112249",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Reajustar barra da torre torta pegando nos bicos do sistema de SPE - (Fazenda SP)"
+  },
+  {
+    "frota": "5504",
+    "os": "112248",
+    "data": "10/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Trocar conector duas vias do chicote - (Fazenda SP)"
+  },
+  {
+    "frota": "5350",
+    "os": "112246",
+    "data": "10/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Quebra do eixo do rotor e trocar parafusos do esqui - (Fazenda SP)"
   },
   {
     "frota": "246",
@@ -20,48 +48,6 @@
     "data": "06/06/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Direção dura - (Fazenda SP)"
-  },
-  {
-    "frota": "257",
-    "os": "112111",
-    "data": "06/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Relatado ruído anormal proveniente da tomada de potência (TDP) durante a operação. Foi realizada verificação no tanque de pulverização, não sendo identificadas irregularidades aparentes. - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5063",
-    "os": "112108",
-    "data": "06/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar correias quebradas, desamassar proteção de bicos e verificar filtros - (Fazenda SP)"
-  },
-  {
-    "frota": "5504",
-    "os": "112120",
-    "data": "06/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Trocar os dois pneus (12.5/80-18 novos)."
-  },
-  {
-    "frota": "315",
-    "os": "112050",
-    "data": "05/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Luz da lanterna de posição L/E queimada - (Fazenda SP)"
-  },
-  {
-    "frota": "5494",
-    "os": "112049",
-    "data": "05/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Constatado desgaste no pinhão da coroa, componente do sistema de transmissão da adubadeira, comprometendo seu funcionamento - (Fazenda SP)"
-  },
-  {
-    "frota": "5214",
-    "os": "112048",
-    "data": "05/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Desgaste no pinhão da coroa do sistema de transmissão da adubadeira - (Fazenda SP)"
   },
   {
     "frota": "216",
@@ -78,13 +64,6 @@
     "servico": "Redistribuir bicos do SPE - (Fazenda SP)"
   },
   {
-    "frota": "5749",
-    "os": "111991",
-    "data": "04/06/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Verificar modulo M2 do SPE não funciona - (Fazenda SP)"
-  },
-  {
     "frota": "74",
     "os": "111906",
     "data": "03/06/2025",
@@ -92,32 +71,11 @@
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)"
   },
   {
-    "frota": "5755",
-    "os": "111770",
-    "data": "02/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)"
-  },
-  {
-    "frota": "257",
-    "os": "111261",
-    "data": "24/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
     "frota": "66",
     "os": "111757",
     "data": "23/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Confecção e instalação do teto, Pendencia 4122"
-  },
-  {
-    "frota": "5693",
-    "os": "110802",
-    "data": "19/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento na bomba - (Fazenda São Paulo)"
   },
   {
     "frota": "5205",

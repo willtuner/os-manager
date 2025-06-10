@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "RENNAN ARCANJO CREPALDI",
+    "frota": "137",
+    "os": "112213",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar cabos do comando da VCR não funcionam - (Fazenda NSA)"
+  },
+  {
     "frota": "5730",
     "os": "112075",
     "data": "05/06/2025",
@@ -27,13 +34,6 @@
     "data": "04/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar comando eletrico não funciona - (Fazenda NSA)"
-  },
-  {
-    "frota": "114",
-    "os": "111929",
-    "data": "03/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Derretendo tanque de combustível - (Fazenda NSA)"
   },
   {
     "frota": "5598",

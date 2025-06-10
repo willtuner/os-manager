@@ -1,18 +1,25 @@
 [
   {
     "solicitado": "ANTONIO PAULO LARENTIS ALVES",
-    "frota": "26",
-    "os": "112187",
-    "data": "09/06/2025",
+    "frota": "300",
+    "os": "112277",
+    "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Cambio remontou marchar- (Fazenda Minuano)"
+    "servico": "Soldar suporte das lanternas de alerta traseira.  (Fazenda Minuano)"
   },
   {
-    "frota": "253",
-    "os": "112133",
-    "data": "06/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Mangueira do sistema de diesel furada - (Fazenda Minuano)"
+    "frota": "5766",
+    "os": "112251",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento nas canecas - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5500",
+    "os": "112238",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento no reparo do rotor - (Fazenda Minuano)"
   },
   {
     "frota": "5500",
@@ -27,13 +34,6 @@
     "data": "14/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trator não marca temperatura no painel - (Fazenda Minuano)"
-  },
-  {
-    "frota": "144",
-    "os": "110047",
-    "data": "06/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar lanternas do alerta quebrada - (Fazenda Minuano)"
   },
   {
     "frota": "5631",

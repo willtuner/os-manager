@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+    "frota": "157",
+    "os": "112276",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar botão de acionamento da barra (Fazenda Santo Antônio)"
+  },
+  {
+    "frota": "156",
+    "os": "112245",
+    "data": "10/06/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Trocar coifas e reparos do comando hidráulico - (Fazenda São Pedro)"
+  },
+  {
     "frota": "117",
     "os": "112193",
     "data": "09/06/2025",
@@ -11,14 +25,14 @@
     "frota": "5126",
     "os": "112110",
     "data": "06/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Adubadeira apresenta falha de funcionamento sob carga, não realizando o deslocamento adequado com peso. Solicita-se avaliação dos motores hidráulicos - (Fazenda São Pedro)"
   },
   {
     "frota": "5745",
     "os": "112109",
     "data": "06/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Identificada quebra da esteira do sistema de distribuição, impossibilitando o funcionamento adequado do equipamento. Além disso, constatado amassamento na portinhola de controle de vazão - (Fazenda São Pedro)"
   },
   {
