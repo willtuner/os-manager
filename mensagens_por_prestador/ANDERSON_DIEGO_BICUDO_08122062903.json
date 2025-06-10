@@ -1,11 +1,11 @@
 [
   {
-    "frota": "250",
-    "cd_equipamento": "250",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "112200",
-    "data_entrada": "09/06/2025",
-    "servico": "Vazamento na bomba d'água - (Fazenda Estrela)\nLiberado Sr. Arthur"
+    "frota": "65",
+    "cd_equipamento": "65",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112261",
+    "data_entrada": "10/06/2025",
+    "servico": "Revisar sistema hidraulico do trator\nFaz Alvorada\nSolicitado Arthur"
   },
   {
     "frota": "268",
@@ -22,46 +22,6 @@
     "os": "112174",
     "data_entrada": "06/06/2025",
     "servico": "Fazer limpeza no sistema de arrefecimento\nFaz Pedra Verde\nSolicitado Rafael"
-  },
-  {
-    "frota": "10220",
-    "cd_equipamento": "10220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112151",
-    "data_entrada": "06/06/2025",
-    "servico": "Avaliar possível superaquecimento na região traseira do trator, próximo aos braços hidráulicos, ocasionando derretimento parcial do tanque de combustível - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112133",
-    "data_entrada": "06/06/2025",
-    "servico": "Mangueira do sistema de diesel furada - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "257",
-    "cd_equipamento": "257",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112111",
-    "data_entrada": "06/06/2025",
-    "servico": "Relatado ruído anormal proveniente da tomada de potência (TDP) durante a operação. Foi realizada verificação no tanque de pulverização, não sendo identificadas irregularidades aparentes. - (Fazenda São Paulo)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "120",
-    "cd_equipamento": "120",
-    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
-    "os": "112001",
-    "data_entrada": "04/06/2025",
-    "servico": "Braço hidráulico não mantem erguido - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "114",
-    "cd_equipamento": "114",
-    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
-    "os": "111929",
-    "data_entrada": "03/06/2025",
-    "servico": "Derretendo tanque de combustível - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
     "frota": "258",

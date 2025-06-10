@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5783",
+    "cd_equipamento": "5783",
+    "modelo": "DESENROLADOR DE MANGUEIRA",
+    "os": "112225",
+    "data_entrada": "09/06/2025",
+    "servico": "Soldar suporte da barra de saída da mangueira esquerda - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5072",
+    "cd_equipamento": "5072",
+    "modelo": "GRADE NIVELADORA",
+    "os": "112214",
+    "data_entrada": "09/06/2025",
+    "servico": "Revisar secção dianteira não mantem aperto - (Fazenda Estrela VI)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5724",
+    "cd_equipamento": "5724",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "112185",
+    "data_entrada": "09/06/2025",
+    "servico": "Fazer caixa de proteção para o painel eletrônico - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "43",
     "cd_equipamento": "43",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
@@ -104,36 +128,12 @@
     "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho.\nFazenda São Pedro (Oficina)\nSolicitado Sr. Romes\nLiberado Sr. Zacarias"
   },
   {
-    "frota": "5755",
-    "cd_equipamento": "5755",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "111770",
-    "data_entrada": "02/06/2025",
-    "servico": "Fazer solda em suporte da proteção da embreagem - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5204",
-    "cd_equipamento": "5204",
-    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
-    "os": "111726",
-    "data_entrada": "02/06/2025",
-    "servico": "Soldar trinca em roda - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5365",
     "cd_equipamento": "5365",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111618",
     "data_entrada": "30/05/2025",
     "servico": "Fazer solda em trinca - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5495",
-    "cd_equipamento": "5495",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "111593",
-    "data_entrada": "30/05/2025",
-    "servico": "Substituição das aletas dos pratos do distribuidor de adubo devido a corrosão e soldar proteção de partes móveis (correias traseiras) - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5492",
@@ -168,28 +168,12 @@
     "servico": "Trocar confeccionar e trocar teto\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
   },
   {
-    "frota": "5009",
-    "cd_equipamento": "5009",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111465",
-    "data_entrada": "28/05/2025",
-    "servico": "Adaptar proteção lateral do ramal\nFaz Estrela \nSolicitado Carlos\nAutorizado Mauricio"
-  },
-  {
     "frota": "5136",
     "cd_equipamento": "5136",
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "111464",
     "data_entrada": "28/05/2025",
     "servico": "Fazer proteção das polias.\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio"
-  },
-  {
-    "frota": "5035",
-    "cd_equipamento": "5035",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111440",
-    "data_entrada": "28/05/2025",
-    "servico": "Fazer proteção de bicos - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5233",
@@ -358,13 +342,5 @@
     "os": "111421",
     "data_entrada": "19/03/2025",
     "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias"
-  },
-  {
-    "frota": "10220",
-    "cd_equipamento": "10220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "106998",
-    "data_entrada": "14/03/2025",
-    "servico": "Instalar escapamento faltando pedaço - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   }
 ]

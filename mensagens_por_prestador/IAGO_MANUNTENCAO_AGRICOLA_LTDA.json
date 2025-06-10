@@ -1,11 +1,11 @@
 [
   {
-    "frota": "5413",
-    "cd_equipamento": "5413",
-    "modelo": "ROCADEIRA RCA 3100 S-0214",
-    "os": "112175",
-    "data_entrada": "06/06/2025",
-    "servico": "Verificar vazamento de óleo na caixa de transmissão central da roçadeira - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+    "frota": "5350",
+    "cd_equipamento": "5350",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "112246",
+    "data_entrada": "10/06/2025",
+    "servico": "Quebra do eixo do rotor e trocar parafusos do esqui - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5721",
@@ -24,52 +24,12 @@
     "servico": "Substituir suspiro do eixo - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112108",
-    "data_entrada": "06/06/2025",
-    "servico": "Trocar correias quebradas, desamassar proteção de bicos e verificar filtros - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5718",
-    "cd_equipamento": "5718",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "112095",
-    "data_entrada": "06/06/2025",
-    "servico": "Constatado desgaste na luva responsável pela conexão entre a polia motriz e a turbina, comprometendo a transmissão de movimento - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5600",
-    "cd_equipamento": "5600",
-    "modelo": "ATOMIZADOR NATALI 4000 LT",
-    "os": "112076",
-    "data_entrada": "05/06/2025",
-    "servico": "Mancal trincado e vazamento no retentor da bomba - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5492",
     "cd_equipamento": "5492",
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "112052",
     "data_entrada": "05/06/2025",
     "servico": "Vazamento no retentor da bomba - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5494",
-    "cd_equipamento": "5494",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "112049",
-    "data_entrada": "05/06/2025",
-    "servico": "Constatado desgaste no pinhão da coroa, componente do sistema de transmissão da adubadeira, comprometendo seu funcionamento - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5214",
-    "cd_equipamento": "5214",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "112048",
-    "data_entrada": "05/06/2025",
-    "servico": "Desgaste no pinhão da coroa do sistema de transmissão da adubadeira - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5599",
@@ -80,54 +40,6 @@
     "servico": "Vazamento no selo mecânico da bomba - (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5494",
-    "cd_equipamento": "5494",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "112017",
-    "data_entrada": "04/06/2025",
-    "servico": "Realizar substituição das engrenagens e corrente do sistema de transmissão - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5569",
-    "cd_equipamento": "5569",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "111809",
-    "data_entrada": "02/06/2025",
-    "servico": "Trocar jogo de luva e cruzeta - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5658",
-    "cd_equipamento": "5658",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "111873",
-    "data_entrada": "02/06/2025",
-    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5613",
-    "cd_equipamento": "5613",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "111871",
-    "data_entrada": "02/06/2025",
-    "servico": "Verificar ramais não abrem em um dos lados (já verificado parte elétrica).\nFazenda São Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5398",
-    "cd_equipamento": "5398",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111546",
-    "data_entrada": "29/05/2025",
-    "servico": "Verificar agitador de calda com folga no mancal - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5521",
-    "cd_equipamento": "5521",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "111495",
-    "data_entrada": "29/05/2025",
-    "servico": "Verificação do sistema de abertura do extensor da torre do tanque, que se encontra travado, impedindo o funcionamento adequado do mecanismo. - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5626",
     "cd_equipamento": "5626",
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
@@ -136,28 +48,12 @@
     "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5227",
-    "cd_equipamento": "5227",
-    "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
-    "os": "111235",
-    "data_entrada": "23/05/2025",
-    "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5365",
     "cd_equipamento": "5365",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "111163",
     "data_entrada": "22/05/2025",
     "servico": "Vazamento no eixo da bomba - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5721",
-    "cd_equipamento": "5721",
-    "modelo": "TANQUE DE AGUA 2000 LT",
-    "os": "110603",
-    "data_entrada": "15/05/2025",
-    "servico": "Vazamento nos pistões da bomba  HS-30 - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5629",

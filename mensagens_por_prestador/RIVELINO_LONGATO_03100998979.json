@@ -1,19 +1,51 @@
 [
   {
+    "frota": "10228",
+    "cd_equipamento": "10228",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112263",
+    "data_entrada": "10/06/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112233",
+    "data_entrada": "09/06/2025",
+    "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "217",
+    "cd_equipamento": "217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112209",
+    "data_entrada": "09/06/2025",
+    "servico": "Avaliar pneu traseiro L/? com corte (18.4-30) - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5715",
+    "cd_equipamento": "5715",
+    "modelo": "TANQUE DE AGUA 6500",
+    "os": "112208",
+    "data_entrada": "09/06/2025",
+    "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "105",
+    "cd_equipamento": "105",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "112179",
+    "data_entrada": "09/06/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda SL1)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5523",
     "cd_equipamento": "5523",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
     "os": "112119",
     "data_entrada": "06/06/2025",
     "servico": "Verificar pneu direito danificado.\nFazenda Estrela\nSolicitado Sr. Rafael\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "112120",
-    "data_entrada": "06/06/2025",
-    "servico": "Trocar os dois pneus (12.5/80-18 novos).\nFazenda São Paulo\nLiberado Sr. Maurício"
   },
   {
     "frota": "5502",
