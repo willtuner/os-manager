@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+<<<<<<< HEAD
     "frota": "309",
     "os": "111827",
     "data": "02/06/2025",
@@ -69,13 +70,55 @@
     "data": "29/05/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Remover trincos no paralama"
+=======
+    "frota": "329",
+    "os": "112260",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)"
   },
   {
-    "frota": "116",
-    "os": "111499",
-    "data": "29/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Remover vazamentos do motor - (Fazenda Estrela)"
+    "frota": "5579",
+    "os": "112142",
+    "data": "06/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituir suspiro do eixo - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5042",
+    "os": "112057",
+    "data": "05/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Verificar engate do cabeçário danificado  - (Fazenda Estrela)"
+  },
+  {
+    "frota": "46",
+    "os": "112004",
+    "data": "04/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar relógio não funciona - (Fazenda Estrela)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+  },
+  {
+    "frota": "10229",
+    "os": "111908",
+    "data": "03/06/2025",
+    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
+  },
+  {
+    "frota": "10223",
+    "os": "111905",
+    "data": "03/06/2025",
+    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
+  },
+  {
+    "frota": "10219",
+    "os": "111904",
+    "data": "03/06/2025",
+    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
   },
   {
     "frota": "116",
@@ -85,6 +128,7 @@
     "servico": "Soldar escada e fazer proteção do eixo da TDP"
   },
   {
+<<<<<<< HEAD
     "frota": "5524",
     "os": "111380",
     "data": "27/05/2025",
@@ -109,8 +153,13 @@
     "frota": "5106",
     "os": "110097",
     "data": "06/05/2025",
+=======
+    "frota": "5451",
+    "os": "110984",
+    "data": "20/05/2025",
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção anti arremesso frente e atrás - (Fazenda Estrela)"
+    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
   },
   {
     "frota": "5214",

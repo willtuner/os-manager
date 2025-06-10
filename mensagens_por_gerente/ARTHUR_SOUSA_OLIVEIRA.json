@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "ARTHUR SOUSA OLIVEIRA",
+<<<<<<< HEAD
     "frota": "206",
     "os": "111758",
     "data": "02/06/2025",
@@ -13,13 +14,27 @@
     "data": "28/05/2025",
     "prestador": "TORNEARIA STEINHAUSER LTDA",
     "servico": "Tornear encosto da roda, para confeccionar arruela de calco"
+=======
+    "frota": "143",
+    "os": "112253",
+    "data": "10/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar relógio horimetro não marca corretamente - (Fazenda Bela Manhã)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
-    "frota": "72",
-    "os": "111308",
-    "data": "26/05/2025",
+    "frota": "84",
+    "os": "112247",
+    "data": "10/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator com ruído anormal ao dar partida \"raspando motor de arranque\"  - (Industria)"
+    "servico": "Verificar trator so pega no tranco - (Industria)"
+  },
+  {
+    "frota": "504",
+    "os": "112231",
+    "data": "09/06/2025",
+    "prestador": "RETIEL RETIFICA DE MOTORES LTDA",
+    "servico": "Revisar e instalar motor"
   },
   {
     "frota": "87",

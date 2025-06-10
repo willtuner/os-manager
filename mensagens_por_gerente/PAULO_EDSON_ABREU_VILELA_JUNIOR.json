@@ -1,20 +1,38 @@
 [
   {
     "solicitado": "PAULO EDSON ABREU VILELA JUNIOR",
+<<<<<<< HEAD
     "frota": "5603",
     "os": "111818",
     "data": "02/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar falha na abertura dos ramais  sistema não realiza acionamento. - (Fazenda Bela Manhã)"
+=======
+    "frota": "5355",
+    "os": "112254",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer fibra em trinca no tanque próximo a cinta - (Fazenda Bela Manhã)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
-    "frota": "301",
-    "os": "111265",
-    "data": "26/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar braços hidráulicos não sobem 100% da capacidade - (Fazenda NSA)"
+    "frota": "5724",
+    "os": "112185",
+    "data": "09/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer caixa de proteção para o painel eletrônico - (Fazenda Bela Manhã)"
   },
   {
+<<<<<<< HEAD
+=======
+    "frota": "5671",
+    "os": "112105",
+    "data": "06/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Quebra do batedor - (Fazenda Bela Manhã)"
+  },
+  {
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "5629",
     "os": "110998",
     "data": "20/05/2025",

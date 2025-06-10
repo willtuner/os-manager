@@ -116,7 +116,6 @@
         </a>
     </div>
 
-
     {% if os_list %}
         {% for item in os_list %}
         <div class="card card-os mb-3">
@@ -160,7 +159,7 @@
                 
                 <hr class="form-section-divider">
 
-                <form action="{{ url_for('finalizar_os', os_numero_str=item.os) }}"  {# <<< CORREÇÃO APLICADA AQUI #}
+                <form action="{{ url_for('finalizar_os', os_numero_str=item.os) }}"
                       method="POST"
                       enctype="multipart/form-data"
                       class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
@@ -261,6 +260,7 @@
             event.preventDefault()
             event.stopPropagation()
           }
+          form.classList.add('was-validated')
         }, false)
       })
     })()
@@ -279,38 +279,63 @@
 
         if (dataAberturaStr && dataAberturaStr !== 'Data não informada' && dataAberturaStr !== '' && dataAberturaStr !== 'N/A') {
             try {
-                const partsAbertura = dataAberturaStr.split('/');
-                const dataAberturaObj = new Date(parseInt(partsAbertura[2], 10), parseInt(partsAbertura[1], 10) - 1, parseInt(partsAbertura[0], 10));
+                // Suporta múltiplos formatos para data de abertura
+                let dataAberturaObj = null;
+                const formatosAbertura = ['%d/%m/%Y', '%Y-%m-%d', '%d-%m-%y', '%Y/%m/%d'];
+                for (let fmt of formatosAbertura) {
+                    try {
+                        const parts = fmt.replace(/%[dmyY]/g, '(\\d+)').replace(/\//g, '\\/');
+                        const regex = new RegExp(parts);
+                        if (regex.test(dataAberturaStr)) {
+                            dataAberturaObj = new Date(dataAberturaStr.replace(/(\d+)\/(\d+)\/(\d+)/, '$3-$2-$1'));
+                            break;
+                        }
+                    } catch (e) {
+                        continue;
+                    }
+                }
+
+                if (!dataAberturaObj || isNaN(dataAberturaObj)) {
+                    throw new Error('Data de abertura inválida');
+                }
+
+                // A data de finalização vem no formato YYYY-MM-DD
+                const dataFinalizacaoValue = dataFinalizacaoInput.value;
+                const dataFinalizacaoObj = new Date(dataFinalizacaoValue);
                 
-                const dataFinalizacaoValue = dataFinalizacaoInput.value; 
-                const partsFinalizacao = dataFinalizacaoValue.split('-');
-                const dataFinalizacaoObj = new Date(parseInt(partsFinalizacao[0], 10), parseInt(partsFinalizacao[1], 10) - 1, parseInt(partsFinalizacao[2], 10));
-                
-                dataAberturaObj.setHours(0,0,0,0);
-                dataFinalizacaoObj.setHours(0,0,0,0);
+                if (isNaN(dataFinalizacaoObj)) {
+                    alert('Data de finalização inválida.');
+                    dataFinalizacaoInput.focus();
+                    dataFinalizacaoInput.classList.add('is-invalid');
+                    return false;
+                }
+
+                // Normaliza as datas para comparação
+                dataAberturaObj.setHours(0, 0, 0, 0);
+                dataFinalizacaoObj.setHours(0, 0, 0, 0);
 
                 if (dataFinalizacaoObj < dataAberturaObj) {
                     alert('A data de finalização (' + dataFinalizacaoObj.toLocaleDateString('pt-BR') + 
                           ') não pode ser anterior à data de abertura da OS (' + dataAberturaObj.toLocaleDateString('pt-BR') + ').');
                     dataFinalizacaoInput.focus();
-                    dataFinalizacaoInput.classList.add('is-invalid'); 
-                    return false; 
+                    dataFinalizacaoInput.classList.add('is-invalid');
+                    return false;
                 } else {
-                     dataFinalizacaoInput.classList.remove('is-invalid');
+                    dataFinalizacaoInput.classList.remove('is-invalid');
                 }
             } catch (e) {
                 console.error("Erro ao parsear datas para validação no JS: ", e, "Data de abertura recebida:", dataAberturaStr);
-                alert('Houve um problema ao validar internamente a data de abertura da OS ('+ dataAberturaStr +'). Verifique o formato esperado (DD/MM/YYYY) ou se a data é válida. A finalização não pode prosseguir no momento.');
-                return false; 
+                alert('Houve um problema ao validar internamente a data de abertura da OS ('+ dataAberturaStr +'). Verifique o formato esperado (ex.: DD/MM/YYYY) ou se a data é válida.');
+                return false;
             }
         }
         
         const submitBtn = form.querySelector('button[type="submit"]');
         if (submitBtn) {
-            submitBtn.disabled = true; 
+            submitBtn.disabled = true;
             submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Confirmando...';
         }
-        return true; 
+        return true;
     }
 </script>
 {% endblock %}

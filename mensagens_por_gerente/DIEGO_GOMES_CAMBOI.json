@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "DIEGO GOMES CAMBOI",
+<<<<<<< HEAD
     "frota": "5699",
     "os": "111612",
     "data": "30/05/2025",
@@ -13,6 +14,41 @@
     "data": "30/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Verificar sistema de embreagem do trator devido a pedal com curso anormal (pedal 'mole'). - (Fazenda Santa Izabel)"
+=======
+    "frota": "203",
+    "os": "112267",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Sacar parafusos da ponteira quebrado - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "10220",
+    "os": "112265",
+    "data": "10/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar trator sem partida - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "5721",
+    "os": "112234",
+    "data": "09/06/2025",
+    "prestador": "DARCI CAPEL & CIA LTDA",
+    "servico": "Preencher eixo do motor hidráulico que toca a bomba."
+  },
+  {
+    "frota": "268",
+    "os": "112177",
+    "data": "07/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar o sistema hidraulico"
+  },
+  {
+    "frota": "5721",
+    "os": "112166",
+    "data": "06/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar luva de acoplamento do cardam no motor hidráulico - (Fazenda Santa Izabel)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "5210",
@@ -22,24 +58,10 @@
     "servico": "Fazer alongador do ramal - (Fazenda Santa Izabel)"
   },
   {
-    "frota": "5721",
-    "os": "110603",
-    "data": "15/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento nos pistões da bomba  HS-30 - (Fazenda Santa Izabel)"
-  },
-  {
     "frota": "5725",
     "os": "110602",
     "data": "15/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar painel de controle da barra de herbicida quebrado - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "5210",
-    "os": "110077",
-    "data": "06/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Colocar limitador nas asas e tirar folga nas rodas - (Fazenda Santa Izabel)"
   }
 ]

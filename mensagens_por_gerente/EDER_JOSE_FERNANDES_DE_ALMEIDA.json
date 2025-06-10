@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "EDER JOSE FERNANDES DE ALMEIDA",
+<<<<<<< HEAD
     "frota": "5495",
     "os": "111593",
     "data": "30/05/2025",
@@ -8,18 +9,27 @@
     "servico": "Substituição das aletas dos pratos do distribuidor de adubo devido a corrosão e soldar proteção de partes móveis (correias traseiras) - (Fazenda Terra Branca)"
   },
   {
+=======
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "224",
-    "os": "111547",
-    "data": "29/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar A/C não gela - (Fazenda Terra Branca)"
+    "os": "112233",
+    "data": "09/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)"
   },
   {
-    "frota": "5398",
-    "os": "111546",
-    "data": "29/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar agitador de calda com folga no mancal - (Fazenda Terra Branca)"
+    "frota": "286",
+    "os": "112232",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda em escapamento - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "5139",
+    "os": "112058",
+    "data": "05/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda Terra Branca)"
   },
   {
     "frota": "99",
@@ -27,6 +37,7 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar confeccionar e trocar teto"
+<<<<<<< HEAD
   },
   {
     "frota": "99",
@@ -83,5 +94,7 @@
     "data": "13/05/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Trator apresenta consumo de combustível acima do normal. Necessário realizar diagnóstico completo - (Fazenda Terra Branca)"
+=======
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   }
 ]

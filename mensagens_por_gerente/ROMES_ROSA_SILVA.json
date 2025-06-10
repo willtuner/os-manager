@@ -1,6 +1,37 @@
 [
   {
     "solicitado": "ROMES ROSA SILVA",
+<<<<<<< HEAD
+=======
+    "frota": "5715",
+    "os": "112208",
+    "data": "09/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "100",
+    "os": "111996",
+    "data": "04/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda no suporte da grade de proteção dianteira - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5226",
+    "os": "111912",
+    "data": "03/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho."
+  },
+  {
+    "frota": "5421",
+    "os": "111970",
+    "data": "03/06/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Trocar rolamento da turbina."
+  },
+  {
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "100",
     "os": "111662",
     "data": "02/06/2025",
@@ -8,6 +39,7 @@
     "servico": "Avaliar trator sem partida - (Fazenda São Pedro)"
   },
   {
+<<<<<<< HEAD
     "frota": "100",
     "os": "111661",
     "data": "02/06/2025",
@@ -15,38 +47,19 @@
     "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)"
   },
   {
+=======
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "5075",
     "os": "111435",
     "data": "28/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5401",
-    "os": "111434",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Tirar folga do cabeçario do tanque - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5676",
-    "os": "111433",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Chave de acionamento não funciona - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5552",
-    "os": "111432",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Chaves do comando eletrico invertidas - (Fazenda São Pedro)"
   },
   {
     "frota": "5171",
     "os": "111431",
     "data": "28/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Identificado vazamento no retentor da bomba necessário substituí-lo para restabelecer a vedação do sistema - (Fazenda São Pedro)"
   },
   {

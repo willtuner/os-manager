@@ -169,7 +169,7 @@
     .profile-avatar img:hover {
         transform: scale(1.1);
     }
-    </style>
+</style>
 {% endblock %}
 
 {% block extra_js %}
@@ -178,35 +178,51 @@
     document.addEventListener('DOMContentLoaded', () => {
         // Inicializar Flatpickr para campos de data
         flatpickr('.flatpickr-data', {
-            dateFormat: 'd/m/Y',
-            maxDate: 'today',
+            dateFormat: 'd/m/Y', // Alterado para DD/MM/YYYY para exibição e consistência
+            // maxDate: 'today', // O input date HTML já usa `max="{{ today_date }}"`
+            defaultDate: "today", // Preenche com a data de hoje
             locale: {
                 firstDayOfWeek: 1,
                 weekdays: { shorthand: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'], longhand: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'] },
                 months: { shorthand: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'], longhand: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'] }
             },
             onOpen: function(selectedDates, dateStr, instance) {
-                // Ajustar z-index para evitar sobreposição
-                instance.calendarContainer.style.zIndex = '1050';
+                instance.calendarContainer.style.zIndex = '1050'; // Para modais, se houver
             }
         });
 
-        // Validação de formulários
+        // Validação de formulários genérica (pode ser melhorada ou integrada com Bootstrap)
         function validateForm(form) {
-            const requiredFields = form.querySelectorAll('input[required]');
+            const requiredFields = form.querySelectorAll('input[required], textarea[required], select[required]');
             for (let field of requiredFields) {
                 if (!field.value.trim()) {
-                    alert(`Por favor, preencha o campo ${field.name}.`);
+                    alert(`Por favor, preencha o campo: ${field.previousElementSibling ? field.previousElementSibling.innerText : field.name}.`);
+                    field.focus();
                     return false;
                 }
+            }
+            // Adicionar validação de data de finalização vs abertura aqui se o form for de finalização
+            if (form.classList.contains('form-finalizar-os')) { // Adicione esta classe ao form de finalização
+                const dataFinalizacaoInput = form.querySelector('input[name="data_finalizacao"]');
+                // A data de abertura precisaria ser passada para esta função ou lida de um atributo data-* no form
+                // Exemplo: const dataAberturaStr = form.dataset.dataAbertura;
+                // E então a lógica de comparação de datas como nos outros templates.
+            }
+
+            const submitBtn = form.querySelector('button[type="submit"]');
+            if(submitBtn){
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processando...`;
             }
             return true;
         }
 
         // Habilitar botão de submit quando campos obrigatórios estiverem preenchidos
         document.querySelectorAll('.action-form').forEach(form => {
-            const requiredFields = form.querySelectorAll('input[required]');
+            const requiredFields = form.querySelectorAll('input[required], textarea[required], select[required]');
             const submitBtn = form.querySelector('button[type="submit"]');
+
+            if (!submitBtn) return; // Pula se não houver botão de submit
 
             function checkInputs() {
                 let allFilled = true;
@@ -217,26 +233,36 @@
             }
 
             requiredFields.forEach(field => field.addEventListener('input', checkInputs));
-            checkInputs(); // Inicializar estado do botão
+            checkInputs(); 
         });
 
         // Filtragem de OS
         document.querySelectorAll('.filter-os').forEach(input => {
             input.addEventListener('input', function() {
                 const filter = this.value.toLowerCase();
-                const cards = this.closest('.tab-pane').querySelectorAll('.card-os');
-                cards.forEach(card => {
-                    const os = card.querySelector('.badge-os').textContent.toLowerCase();
-                    const frota = card.querySelector('.card-title').textContent.toLowerCase();
-                    const servico = card.querySelector('.card-text span').textContent.toLowerCase();
-                    const prestador = card.querySelector('.prestador')?.textContent.toLowerCase() || '';
-                    const diasAbertos = card.querySelector('.dias-abertos')?.textContent.toLowerCase() || '';
-                    if (os.includes(filter) || frota.includes(filter) || servico.includes(filter) || prestador.includes(filter) || diasAbertos.includes(filter)) {
-                        card.style.display = '';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
+                const cardsContainer = this.closest('.tab-pane').querySelector('#osPendentesList, #osSemPrestadorList, #osFinalizadasList');
+                if (cardsContainer) {
+                    const cards = cardsContainer.querySelectorAll('.card-os');
+                    cards.forEach(card => {
+                        const osBadge = card.querySelector('.badge-os');
+                        const cardTitle = card.querySelector('.card-title');
+                        const cardTextServico = card.querySelector('.card-text span'); // Assumindo que o serviço está aqui
+                        const prestadorEl = card.querySelector('.prestador');
+                        const diasAbertosEl = card.querySelector('.dias-abertos');
+
+                        const os = osBadge ? osBadge.textContent.toLowerCase() : "";
+                        const frota = cardTitle ? cardTitle.textContent.toLowerCase() : "";
+                        const servico = cardTextServico ? cardTextServico.textContent.toLowerCase() : "";
+                        const prestador = prestadorEl ? prestadorEl.textContent.toLowerCase() : '';
+                        const diasAbertos = diasAbertosEl ? diasAbertosEl.textContent.toLowerCase() : '';
+                        
+                        if (os.includes(filter) || frota.includes(filter) || servico.includes(filter) || prestador.includes(filter) || diasAbertos.includes(filter)) {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                }
             });
         });
     });
@@ -246,31 +272,35 @@
 {% block content %}
 <div class="container">
     
-
-<!-- Cabeçalho com avatar à direita -->
-<div class="d-flex justify-content-between align-items-center mb-3">
-    
-    {% if manutencao and manutencao.lower() in ['arthur', 'mauricio'] %}
-    <div class="profile-avatar text-end position-relative" style="width: 60px;">
-        <form action="{{ url_for('upload_profile_picture') }}" method="post" enctype="multipart/form-data">
-            <label for="profile_picture" class="d-block position-relative" style="cursor: pointer;">
-                {% if profile_picture %}
-                    <img src="{{ url_for('static', filename=profile_picture) }}" alt="Foto de Perfil" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;">
-                {% else %}
-                    <img src="{{ url_for('static', filename='uploads/default_profile.jpg') }}" alt="Foto de Perfil Padrão" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;">
-                {% endif %}
-                <div class="position-absolute top-0 end-0 bg-light rounded-circle" style="padding: 2px;">
-                    <i class="fas fa-pen text-muted" style="font-size: 0.75rem;"></i>
+    <div class="d-flex justify-content-between align-items-center mb-3 mt-3">
+        <div class="d-flex align-items-center">
+            {% if manutencao and manutencao.lower() in ['arthur', 'mauricio'] and profile_picture %}
+                <div class="profile-avatar me-3">
+                    <img src="{{ url_for('static', filename=profile_picture) }}" alt="Foto de Perfil" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--verde-agro);">
                 </div>
-            </label>
-            <input type="file" id="profile_picture" name="profile_picture" accept="image/png, image/jpeg, image/gif" style="display: none;" onchange="this.form.submit()">
-        </form>
+            {% elif manutencao and manutencao.lower() in ['arthur', 'mauricio'] %}
+                <div class="profile-avatar me-3">
+                     <img src="{{ url_for('static', filename='uploads/default_profile.jpg') }}" alt="Foto de Perfil Padrão" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--cinza-medio);">
+                </div>
+            {% endif %}
+            <div>
+                <h2 class="h4 mb-0">
+                    <i class="fas fa-tractor icon-agro"></i>Painel de Manutenção – {{ nome|capitalize_name }}
+                </h2>
+                {% if manutencao and manutencao.lower() in ['arthur', 'mauricio'] %}
+                <form action="{{ url_for('upload_profile_picture') }}" method="post" enctype="multipart/form-data" class="mt-1">
+                    <input type="file" id="profile_picture_upload_btn" name="profile_picture" accept="image/png, image/jpeg, image/gif" style="display: none;" onchange="this.form.submit()">
+                    <label for="profile_picture_upload_btn" class="btn btn-outline-secondary btn-sm" style="cursor: pointer;">
+                        <i class="fas fa-camera"></i> Trocar Foto
+                    </label>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
+            <i class="fas fa-sign-out-alt me-1"></i>Desconectar
+        </a>
     </div>
-    {% endif %}
-</div>
-
-
-<!-- Mensagens flash -->
 
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
@@ -283,33 +313,22 @@
         {% endif %}
     {% endwith %}
 
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2 class="h4 mb-0">
-            <i class="fas fa-tractor icon-agro"></i>Painel de Manutenção – {{ nome|capitalize_name }}
-        </h2>
-        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
-            <i class="fas fa-sign-out-alt icon-agro"></i>Desconectar
-        </a>
-    </div>
-
-    <!-- Abas -->
     <ul class="nav nav-tabs mb-3" id="manutencaoTabs" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pendentes-tab" data-bs-toggle="tab" data-bs-target="#pendentes" type="button" role="tab" aria-controls="pendentes" aria-selected="true">OS Pendentes ({{ total_os }})</button>
+            <button class="nav-link active" id="pendentes-tab" data-bs-toggle="tab" data-bs-target="#pendentes" type="button" role="tab" aria-controls="pendentes" aria-selected="true">OS Próprias ({{ total_os }})</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="sem-prestador-tab" data-bs-toggle="tab" data-bs-target="#sem-prestador" type="button" role="tab" aria-controls="sem-prestador" aria-selected="false">OS Sem Prestador ({{ total_os_sem_prestador }})</button>
+            <button class="nav-link" id="sem-prestador-tab" data-bs-toggle="tab" data-bs-target="#sem-prestador" type="button" role="tab" aria-controls="sem-prestador" aria-selected="false">Atribuir OS ({{ total_os_sem_prestador }})</button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="finalizadas-tab" data-bs-toggle="tab" data-bs-target="#finalizadas" type="button" role="tab" aria-controls="finalizadas" aria-selected="false">Histórico</button>
+            <button class="nav-link" id="finalizadas-tab" data-bs-toggle="tab" data-bs-target="#finalizadas" type="button" role="tab" aria-controls="finalizadas" aria-selected="false">Histórico Geral</button>
         </li>
     </ul>
 
     <div class="tab-content" id="manutencaoTabContent">
-        <!-- OS Pendentes -->
         <div class="tab-pane fade show active" id="pendentes" role="tabpanel" aria-labelledby="pendentes-tab">
             <div class="filter-container">
-                <input type="text" class="form-control-sm filter-os" placeholder="Filtrar por OS, frota, serviço, prestador ou dias abertos...">
+                <input type="text" class="form-control-sm filter-os" placeholder="Filtrar OS próprias...">
             </div>
             <div id="osPendentesList">
                 {% if os_list %}
@@ -336,40 +355,32 @@
                                 <small class="text-muted">Modelo: {{ os.modelo }}</small>
                             </p>
                             {% endif %}
-                            {% if os.prestador and os.prestador != 'Prestador não definido' %}
-                            <p class="card-text mb-1">
-                                <small class="text-muted">Prestador: <span class="prestador">{{ os.prestador|capitalize_name }}</span></small>
-                            </p>
-                            {% endif %}
                             <p class="card-text mb-3">
                                 <i class="fas fa-tools icon-agro"></i>
                                 <span style="white-space: pre-wrap;">{{ os.servico }}</span>
                             </p>
                             <div class="finalize-section">
-                                <form action="{{ url_for('finalizar_os', os_numero=os.os) }}" method="POST" class="action-form" onsubmit="return validateForm(this)">
-                                    <div class="row g-2 mb-3">
+                                <form action="{{ url_for('finalizar_os', os_numero_str=os.os) }}" method="POST" class="action-form form-finalizar-os" onsubmit="return validateForm(this)" data-data-abertura="{{ os.data_entrada }}"> {# <<< CORREÇÃO APLICADA AQUI #}
+                                    <div class="row g-2 mb-2">
                                         <div class="col-md-4">
-                                            <label class="form-label small">Data de Finalização</label>
-                                            <input type="text" class="form-control form-control-sm flatpickr-data" name="data_finalizacao" required>
+                                            <label class="form-label small">Data de Finalização <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form-control-sm flatpickr-data" name="data_finalizacao" required placeholder="DD/MM/AAAA">
                                         </div>
-                                        <div class="col-md-4">
-                                            <label class="form-label small">Hora de Finalização</label>
+                                        <div class="col-md-3">
+                                            <label class="form-label small">Hora <span class="text-danger">*</span></label>
                                             <input type="time" class="form-control form-control-sm" name="hora_finalizacao" required>
                                         </div>
-                                        <div class="col-md-4">
-                                            <button type="submit" class="btn btn-agro btn-sm" disabled>
-                                                <i class="fas fa-check-circle icon-agro"></i>Finalizar
+                                        <div class="col-md-5">
+                                            <label class="form-label small d-block">&nbsp;</label> {# Espaço para alinhar botão #}
+                                            <button type="submit" class="btn btn-agro btn-sm w-100" disabled>
+                                                <i class="fas fa-check-circle me-1"></i>Finalizar OS
                                             </button>
                                         </div>
                                     </div>
-                                    
-    <div class="row g-2 mb-3">
-        <div class="col-md-12">
-            <label class="form-label small">Observações</label>
-            <textarea class="form-control form-control-sm" name="observacoes" rows="3" placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
-        </div>
-    </div>
-    
+                                    <div class="mt-2">
+                                        <label class="form-label small">Observações da Finalização</label>
+                                        <textarea class="form-control form-control-sm" name="observacoes" rows="2" placeholder="Detalhes da manutenção..."></textarea>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -378,74 +389,79 @@
                 {% else %}
                     <div class="text-center py-5 bg-white rounded shadow-sm">
                         <i class="fas fa-check-circle icon-agro fa-3x mb-3"></i>
-                        <h4 class="text-muted">Nenhuma OS pendente</h4>
-                        <p>Todas as ordens de serviço estão em dia!</p>
+                        <h4 class="text-muted">Nenhuma OS pendente atribuída a você</h4>
+                        <p>Todas as suas ordens de serviço estão em dia!</p>
                     </div>
                 {% endif %}
             </div>
         </div>
 
-        <!-- OS Sem Prestador -->
         <div class="tab-pane fade" id="sem-prestador" role="tabpanel" aria-labelledby="sem-prestador-tab">
             <div class="filter-container">
-                <input type="text" class="form-control-sm filter-os" placeholder="Filtrar por OS, frota, serviço ou dias abertos...">
+                <input type="text" class="form-control-sm filter-os" placeholder="Filtrar OS para atribuição...">
             </div>
             <div id="osSemPrestadorList">
                 {% if os_sem_prestador %}
-                    {% for os in os_sem_prestador %}
+                    {% for os_item_sp in os_sem_prestador %} {# Mudado para os_item_sp para evitar conflito de nome #}
                     <div class="card card-os animate-os mb-3">
                         <div class="card-body">
                             <h5 class="card-title mb-2">
-                                <span class="badge badge-os">OS {{ os.os }}</span> Frota {{ os.frota }}
+                                <span class="badge badge-os">OS {{ os_item_sp.os }}</span> Frota {{ os_item_sp.frota }}
                             </h5>
                             <p class="card-text mb-1">
-                                <small class="text-muted">Abertura: {{ os.data_entrada }}</small>
+                                <small class="text-muted">Abertura: {{ os_item_sp.data_entrada }}</small>
                             </p>
                             <p class="card-text mb-1">
                                 <small class="text-muted dias-abertos">
-                                    Aberta há {{ os.dias_abertos }} dia{{ 's' if os.dias_abertos != 1 else '' }}
-                                    {% if os.dias_abertos <= 2 %}✅
-                                    {% elif os.dias_abertos <= 5 %}⏰
+                                    Aberta há {{ os_item_sp.dias_abertos }} dia{{ 's' if os_item_sp.dias_abertos != 1 else '' }}
+                                    {% if os_item_sp.dias_abertos <= 2 %}✅
+                                    {% elif os_item_sp.dias_abertos <= 5 %}⏰
                                     {% else %}🚨
                                     {% endif %}
                                 </small>
                             </p>
-                            {% if os.modelo and os.modelo != 'Não informado' and os.modelo != 'Desconhecido' %}
+                            {% if os_item_sp.modelo and os_item_sp.modelo != 'Não informado' and os_item_sp.modelo != 'Desconhecido' %}
                             <p class="card-text mb-1">
-                                <small class="text-muted">Modelo: {{ os.modelo }}</small>
+                                <small class="text-muted">Modelo: {{ os_item_sp.modelo }}</small>
                             </p>
                             {% endif %}
+                             <p class="card-text mb-1">
+                                <small class="text-muted">Arquivo Origem: {{ os_item_sp.arquivo_origem }}</small>
+                            </p>
                             <p class="card-text mb-3">
                                 <i class="fas fa-tools icon-agro"></i>
-                                <span style="white-space: pre-wrap;">{{ os.servico }}</span>
+                                <span style="white-space: pre-wrap;">{{ os_item_sp.servico }}</span>
                             </p>
-                            <div class="row g-2">
-                                <div class="col-md-4 d-flex align-items-end">
-                                    <button type="button" class="btn btn-agro btn-sm w-100" data-bs-toggle="modal" data-bs-target="#atribuirModal{{ os.os }}">
-                                        <i class="fas fa-user-plus icon-agro"></i>Atribuir Prestador
-                                    </button>
-                                </div>
-                            </div>
+                            <button type="button" class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#atribuirModal-{{ os_item_sp.os }}">
+                                <i class="fas fa-user-plus me-1"></i>Atribuir a um Prestador
+                            </button>
                         </div>
                     </div>
-                    <!-- Modal Atribuir Prestador -->
-                    <div class="modal fade" id="atribuirModal{{ os.os }}" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog">
+                    <div class="modal fade" id="atribuirModal-{{ os_item_sp.os }}" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title">Atribuir Prestador – OS {{ os.os }}</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-header bg-primary text-white">
+                                    <h5 class="modal-title">Atribuir Prestador – OS {{ os_item_sp.os }}</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <form action="{{ url_for('atribuir_prestador', os_numero=os.os) }}" method="POST" class="action-form" onsubmit="return validateForm(this)">
+                                <form action="{{ url_for('atribuir_prestador', os_numero_str=os_item_sp.os) }}" method="POST" class="action-form" onsubmit="return validateForm(this)"> {# <<< CORREÇÃO APLICADA AQUI #}
                                     <div class="modal-body">
                                         <div class="mb-3">
-                                            <label class="form-label">Nome do Prestador</label>
-                                            <input type="text" class="form-control" name="prestador" placeholder="Digite o nome do prestador" required>
+                                            <label for="prestador_usuario_{{ os_item_sp.os }}" class="form-label">Selecionar Prestador <span class="text-danger">*</span></label>
+                                            <select class="form-select form-select-sm" id="prestador_usuario_{{ os_item_sp.os }}" name="prestador_usuario" required>
+                                                <option value="" selected disabled>Escolha um prestador...</option>
+                                                {% for p in prestadores_disponiveis %}
+                                                    {% if p.tipo != 'manutencao' %} {# Apenas prestadores, não outros de manutenção #}
+                                                    <option value="{{ p.usuario }}">{{ p.nome_exibicao|capitalize_name }} ({{ p.usuario }})</option>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </select>
+                                            <div class="invalid-feedback">Por favor, selecione um prestador.</div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="submit" class="btn btn-agro" disabled>Atribuir</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="submit" class="btn btn-agro btn-sm" disabled>Confirmar Atribuição</button>
                                     </div>
                                 </form>
                             </div>
@@ -456,40 +472,43 @@
                     <div class="text-center py-5 bg-white rounded shadow-sm">
                         <i class="fas fa-check-circle icon-agro fa-3x mb-3"></i>
                         <h4 class="text-muted">Nenhuma OS sem prestador</h4>
-                        <p>Todas as ordens de serviço têm prestadores atribuídos!</p>
+                        <p>Todas as ordens de serviço em aberto já têm prestadores designados.</p>
                     </div>
                 {% endif %}
             </div>
         </div>
 
-        <!-- Histórico de OS Finalizadas -->
         <div class="tab-pane fade" id="finalizadas" role="tabpanel" aria-labelledby="finalizadas-tab">
             <div class="filter-container">
-                <input type="text" class="form-control-sm filter-os" placeholder="Filtrar por OS ou observações...">
+                <input type="text" class="form-control-sm filter-os" placeholder="Filtrar histórico por OS, responsável ou observações...">
             </div>
             <div id="osFinalizadasList">
-                {% if finalizadas %}
-                    {% for os in finalizadas %}
+                {% if finalizadas %} {# Usa a variável 'finalizadas' passada pela rota #}
+                    {% for os_fin in finalizadas %} {# Mudado para os_fin para evitar conflito #}
                     <div class="card card-os animate-os mb-3">
                         <div class="card-body">
                             <h5 class="card-title mb-2">
-                                <span class="badge badge-os">OS {{ os.os_numero }}</span>
+                                <span class="badge bg-success text-white">OS {{ os_fin.os_numero }}</span>
+                                <small class="text-muted ms-2">Finalizada por: {{ os_fin.gerente|capitalize_name }}</small>
                             </h5>
                             <p class="card-text mb-1">
-                                <small class="text-muted">Finalizada em {{ os.data_fin }} às {{ os.hora_fin }}</small>
+                                <small class="text-muted">Finalizada em {{ os_fin.data_fin }} às {{ os_fin.hora_fin }}</small>
                             </p>
-                            <p class="card-text mb-3">
-                                <i class="fas fa-comment icon-agro"></i>
-                                <span style="white-space: pre-wrap;">{{ os.observacoes or 'Sem observações' }}</span>
+                             <p class="card-text mb-1">
+                                <small class="text-muted">Registrada em: {{ format_datetime(os_fin.registrado_em) if os_fin.registrado_em else 'N/A' }}</small>
+                            </p>
+                            <p class="card-text mb-0">
+                                <i class="fas fa-comment-dots icon-agro"></i>
+                                <span style="white-space: pre-wrap;">{{ os_fin.observacoes or 'Sem observações detalhadas.' }}</span>
                             </p>
                         </div>
                     </div>
                     {% endfor %}
                 {% else %}
                     <div class="text-center py-5 bg-white rounded shadow-sm">
-                        <i class="fas fa-check-circle icon-agro fa-3x mb-3"></i>
-                        <h4 class="text-muted">Nenhuma OS finalizada</h4>
-                        <p>Nenhuma ordem de serviço foi finalizada ainda.</p>
+                        <i class="fas fa-history icon-agro fa-3x mb-3"></i>
+                        <h4 class="text-muted">Nenhuma OS finalizada ainda</h4>
+                        <p>O histórico de OS finalizadas aparecerá aqui.</p>
                     </div>
                 {% endif %}
             </div>

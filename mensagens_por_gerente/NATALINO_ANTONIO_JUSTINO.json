@@ -1,11 +1,26 @@
 [
   {
     "solicitado": "NATALINO ANTONIO JUSTINO",
+<<<<<<< HEAD
     "frota": "5035",
     "os": "111440",
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção de bicos - (Fazenda Alvorada)"
+=======
+    "frota": "65",
+    "os": "112261",
+    "data": "10/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Revisar sistema hidraulico do trator"
+  },
+  {
+    "frota": "151",
+    "os": "112212",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar trator sem partida, não da sinal ao ligar a chave de ignição - (Fazenda Alvorada)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "5626",
@@ -13,6 +28,7 @@
     "data": "28/05/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)"
+<<<<<<< HEAD
   },
   {
     "frota": "249",
@@ -48,5 +64,7 @@
     "data": "15/04/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Reforma do equipamento - (Fazenda Alvorada)"
+=======
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   }
 ]

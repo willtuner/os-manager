@@ -1,11 +1,11 @@
 [
   {
-    "frota": "5779",
-    "cd_equipamento": "5779",
-    "modelo": "VALETADEIRA",
-    "os": "111436",
-    "data_entrada": "28/05/2025",
-    "servico": "Realizar o preenchimento com saibro na canaleta de passagem da corrente da valetadeira - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+    "frota": "5382",
+    "cd_equipamento": "5382",
+    "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
+    "os": "112020",
+    "data_entrada": "04/06/2025",
+    "servico": "Efetuar montagem da bomba no carrinha de irrigação  (Oficina)\nLiberado Sr. Rafael"
   },
   {
     "frota": "5171",
@@ -16,35 +16,11 @@
     "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5644",
-    "cd_equipamento": "5644",
-    "modelo": "TRANSBORDO MOD.TC-7000 GTM",
-    "os": "111390",
-    "data_entrada": "27/05/2025",
-    "servico": "Fazer solda em trinca na base do pistão - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5217",
     "cd_equipamento": "5217",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
     "os": "111383",
     "data_entrada": "27/05/2025",
     "servico": "Trocar rolamento da roda L/? - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5618",
-    "cd_equipamento": "5618",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "110149",
-    "data_entrada": "07/05/2025",
-    "servico": "Revisar estrutura - trinca por baixo e desgaste nos rolamentos da roda guia - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5147",
-    "cd_equipamento": "5147",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "108806",
-    "data_entrada": "15/04/2025",
-    "servico": "Reforma do equipamento - (Fazenda Alvorada)\nLiberado Sr. Rafael"
   }
 ]

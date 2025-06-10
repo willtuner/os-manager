@@ -1,10 +1,38 @@
 [
   {
     "solicitado": "JOSIMAR BADIAS DE JESUS",
+<<<<<<< HEAD
     "frota": "5403",
     "os": "111582",
     "data": "30/05/2025",
     "prestador": "Prestador não definido",
+=======
+    "frota": "5659",
+    "os": "112019",
+    "data": "04/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda e reaperto na estrutura da torre - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5739",
+    "os": "112006",
+    "data": "04/06/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Soldar suporte de fixação de proteção das partes móveis - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5659",
+    "os": "111941",
+    "data": "03/06/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Verificar e corrigir vazamento na bomba (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5403",
+    "os": "111582",
+    "data": "30/05/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "servico": "Trocar correias da polia - (Fazenda São Pedro)"
   },
   {
@@ -13,6 +41,7 @@
     "data": "29/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar correia do alternador quebrando - (Fazenda São Pedro)"
+<<<<<<< HEAD
   },
   {
     "frota": "298",
@@ -27,5 +56,7 @@
     "data": "20/05/2025",
     "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
     "servico": "Fazer solda nos terminais - (Fazenda São Pedro)"
+=======
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   }
 ]

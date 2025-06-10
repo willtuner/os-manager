@@ -1,75 +1,51 @@
 [
   {
-    "frota": "275",
-    "cd_equipamento": "275",
+    "frota": "10228",
+    "cd_equipamento": "10228",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111493",
-    "data_entrada": "29/05/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda NSA)\nLiberado Sr. Maurício"
+    "os": "112263",
+    "data_entrada": "10/06/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "290",
-    "cd_equipamento": "290",
+    "frota": "224",
+    "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111454",
-    "data_entrada": "28/05/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+    "os": "112233",
+    "data_entrada": "09/06/2025",
+    "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5366",
-    "cd_equipamento": "5366",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111446",
-    "data_entrada": "28/05/2025",
-    "servico": "Pneu L/D furado - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+    "frota": "217",
+    "cd_equipamento": "217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112209",
+    "data_entrada": "09/06/2025",
+    "servico": "Avaliar pneu traseiro L/? com corte (18.4-30) - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5346",
-    "cd_equipamento": "5346",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "111413",
-    "data_entrada": "27/05/2025",
-    "servico": "Substituir pneu lado direito. (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "frota": "5715",
+    "cd_equipamento": "5715",
+    "modelo": "TANQUE DE AGUA 6500",
+    "os": "112208",
+    "data_entrada": "09/06/2025",
+    "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "111333",
-    "data_entrada": "27/05/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "frota": "105",
+    "cd_equipamento": "105",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "112179",
+    "data_entrada": "09/06/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda SL1)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "16",
-    "cd_equipamento": "16",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "111295",
-    "data_entrada": "26/05/2025",
-    "servico": "Consertar pneu dianteiro esquerdo furado.\nViveiro de Mudas Paranavaí\nSolicitado Sr. Rogério\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "211",
-    "cd_equipamento": "211",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "111228",
-    "data_entrada": "23/05/2025",
-    "servico": "Consertar pneu dianteiro esquerdo furado.\nFazenda São Paulo *(Oficina Agrícola - Viveiro)*\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5522",
-    "cd_equipamento": "5522",
+    "frota": "5523",
+    "cd_equipamento": "5523",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "111193",
-    "data_entrada": "23/05/2025",
-    "servico": "Consertar pneu direito furado.\nFazenda Aparecida\nSolicitado Sr. Paulo\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5037",
-    "cd_equipamento": "5037",
-    "modelo": "TRITURADOR TRITUCAP 2.0 P TDF",
-    "os": "111194",
-    "data_entrada": "23/05/2025",
-    "servico": "Vazamento no bico L/E - (Fazenda Alvorada)\nLiberando Sr. Mauricio"
+    "os": "112119",
+    "data_entrada": "06/06/2025",
+    "servico": "Verificar pneu direito danificado.\nFazenda Estrela\nSolicitado Sr. Rafael\nLiberado Sr. Maurício"
   },
   {
     "frota": "5502",
@@ -78,5 +54,13 @@
     "os": "110502",
     "data_entrada": "14/05/2025",
     "servico": "Vazamento no regulador de pressão - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5184",
+    "cd_equipamento": "5184",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "108158",
+    "data_entrada": "02/04/2025",
+    "servico": "Verificar pneu direito apresentando rachos na lateral.\nFazenda SL1\nSolicitado Sr. Wagner\nLiberado Sr. Maurício"
   }
 ]

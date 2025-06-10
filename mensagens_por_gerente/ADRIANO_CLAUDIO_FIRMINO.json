@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+<<<<<<< HEAD
     "frota": "5204",
     "os": "111727",
     "data": "02/06/2025",
@@ -55,13 +56,62 @@
     "data": "29/05/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Verificar possível vazamento de óleo lubrificante na região da turbina do motor - (Fazenda Nova Manhã)"
+=======
+    "frota": "5600",
+    "os": "112269",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar sistema de transmissão de correias (Fazenda Nova Manhã)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "5529",
-    "os": "111488",
-    "data": "29/05/2025",
+    "os": "112239",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento no eixo da bomba - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5793",
+    "os": "112186",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Revisar roçadeira - (Viveiro)"
+  },
+  {
+    "frota": "130",
+    "os": "112176",
+    "data": "06/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Quebra do suporte do capô - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "27",
+    "os": "112106",
+    "data": "06/06/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Quebra do cabo do afogador, vazamento no retentor da TDP e vazamento no bloco do motor - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "314",
+    "os": "112026",
+    "data": "04/06/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Fazer revisão de 600 hrs e verificar trator fumaceando branco - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5609",
+    "os": "112014",
+    "data": "04/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Sistema de acionamento das pistolas (tic-tac) não está operando - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5128",
+    "os": "111561",
+    "data": "30/05/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Relatado vazamento no retentor do sistema de acionamento da bomba do pulverizador - (Fazenda Nova Manhã)"
+    "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "235",
@@ -78,20 +128,6 @@
     "servico": "Revisar sistema eletrico"
   },
   {
-    "frota": "251",
-    "os": "111290",
-    "data": "26/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisar bomba de combustivel"
-  },
-  {
-    "frota": "106",
-    "os": "111283",
-    "data": "26/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Sirene de ré, buzina e velocímetro não funcionam - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "5128",
     "os": "111196",
     "data": "23/05/2025",
@@ -106,25 +142,11 @@
     "servico": "Trator não engata TDP - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "106",
-    "os": "110746",
-    "data": "16/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
     "frota": "5433",
     "os": "110712",
     "data": "16/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5600",
-    "os": "110590",
-    "data": "15/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento na bomba, instalar coimando do abre e fecha - (Fazenda Nova Manhã)"
   },
   {
     "frota": "93",
@@ -153,13 +175,6 @@
     "data": "09/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Vazamento no pistão - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "251",
-    "os": "109795",
-    "data": "02/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar lanterna traseira"
   },
   {
     "frota": "5530",

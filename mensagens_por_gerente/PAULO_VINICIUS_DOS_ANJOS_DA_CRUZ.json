@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+<<<<<<< HEAD
     "frota": "5467",
     "os": "111822",
     "data": "02/06/2025",
@@ -46,22 +47,55 @@
     "frota": "268",
     "os": "111490",
     "data": "29/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Solicita-se a avaliação de possível vazamento de óleo diesel na região posterior do corpo da bomba injetora. - (Fazenda Estrela)"
+=======
+    "frota": "110",
+    "os": "112011",
+    "data": "04/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Relógio horimetro não funciona - (Fazenda Estrela)"
   },
   {
+    "frota": "125",
+    "os": "112010",
+    "data": "04/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Faróis dianteiros queimados - (Fazenda Estrela)"
+  },
+  {
+    "frota": "125",
+    "os": "112009",
+    "data": "04/06/2025",
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Avaliar vazamento de óleo de motor atrás da bomba injetora - (Fazenda Estrela)"
+  },
+  {
+<<<<<<< HEAD
     "frota": "268",
     "os": "111342",
     "data": "27/05/2025",
+=======
+    "frota": "136",
+    "os": "111971",
+    "data": "03/06/2025",
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar lanterna dianteira quebrada - (Fazenda Estrela)"
+    "servico": "Cibié traseiro e dianteiro queimado - (Fazenda Estrela)"
   },
   {
+<<<<<<< HEAD
     "frota": "221",
     "os": "111341",
     "data": "27/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Chicote do cibié quebrado - (Fazenda Estrela)"
+=======
+    "frota": "258",
+    "os": "111917",
+    "data": "03/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar embreagem não da mais regulagem, e grupo de marcha A,B e C escapando - (Fazenda Estrela)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "189",

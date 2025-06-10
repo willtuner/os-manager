@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "CARLOS HENRIQUE LEITE DONATO",
+<<<<<<< HEAD
     "frota": "5748",
     "os": "111691",
     "data": "02/06/2025",
@@ -20,20 +21,38 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Adaptar proteção lateral do ramal"
+=======
+    "frota": "258",
+    "os": "112192",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar trator escapando marcha - (Fazenda Casa Branca) - (Comboio)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "258",
-    "os": "111456",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar chicote do cibie"
+    "os": "112181",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar ruído anormal na embreagem - (Fazenda Estrela)"
   },
   {
     "frota": "288",
-    "os": "111455",
-    "data": "28/05/2025",
+    "os": "112051",
+    "data": "05/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+<<<<<<< HEAD
     "servico": "Revisar chicote do cibie"
+=======
+    "servico": "Cibié traseiro L/E queimado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5747",
+    "os": "111915",
+    "data": "03/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Troca do cabo de 7m que liga M1 ao M2 - (Fazenda Estrela)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "5022",

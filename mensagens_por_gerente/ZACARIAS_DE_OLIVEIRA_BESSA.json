@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "ZACARIAS DE OLIVEIRA BESSA",
+<<<<<<< HEAD
     "frota": "5798",
     "os": "111588",
     "data": "30/05/2025",
@@ -41,6 +42,20 @@
     "data": "30/05/2025",
     "prestador": "Prestador não definido",
     "servico": "Reaperto, conferencia geral e  soldar corrente dos pinos - (Oficina)"
+=======
+    "frota": "5801",
+    "os": "112206",
+    "data": "09/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Soldar corrente de trava do pino de engate."
+  },
+  {
+    "frota": "5125",
+    "os": "112056",
+    "data": "05/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Reforma - (Oficina)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "5125",
@@ -48,20 +63,6 @@
     "data": "20/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer caixa para transporte de pessoas"
-  },
-  {
-    "frota": "206",
-    "os": "110495",
-    "data": "14/05/2025",
-    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
-    "servico": "Alavanca não está acionando a tomada de força - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5697",
-    "os": "109900",
-    "data": "02/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Substituir bomba de pulverização sem pressão por outra reserva."
   },
   {
     "frota": "5353",

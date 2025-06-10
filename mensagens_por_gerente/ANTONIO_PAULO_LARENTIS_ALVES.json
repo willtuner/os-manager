@@ -1,25 +1,40 @@
 [
   {
     "solicitado": "ANTONIO PAULO LARENTIS ALVES",
-    "frota": "118",
-    "os": "111466",
-    "data": "28/05/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Verificar assento do operador e regulagem da porta"
+    "frota": "300",
+    "os": "112277",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Soldar suporte das lanternas de alerta traseira.  (Fazenda Minuano)"
   },
   {
-    "frota": "103",
-    "os": "111447",
-    "data": "28/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento no  retentor da roda dianteiro - (Fazenda Minuano)"
+    "frota": "5766",
+    "os": "112251",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento nas canecas - (Fazenda Minuano)"
   },
   {
+<<<<<<< HEAD
     "frota": "46",
     "os": "111289",
     "data": "26/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Sistema de ventilação inoperante. Ventilador do sistema de resfriamento de óleo da podadeira e ventilador da cabine do operador não estão acionando. - (Fazenda Minuano)"
+=======
+    "frota": "5500",
+    "os": "112238",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento no reparo do rotor - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5500",
+    "os": "112053",
+    "data": "05/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em roda guia e colocar proteção anti-arremesso - (Fazenda Minuano)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "46",
@@ -27,13 +42,6 @@
     "data": "14/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trator não marca temperatura no painel - (Fazenda Minuano)"
-  },
-  {
-    "frota": "144",
-    "os": "110047",
-    "data": "06/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar lanternas do alerta quebrada - (Fazenda Minuano)"
   },
   {
     "frota": "5631",

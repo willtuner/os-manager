@@ -1,11 +1,47 @@
 [
   {
     "solicitado": "RAFAEL VENANCIO DA COSTA",
+<<<<<<< HEAD
     "frota": "5777",
     "os": "111816",
     "data": "02/06/2025",
     "prestador": "Prestador não definido",
     "servico": "Trocar faquinha da trincha - (Fazenda Pedra Verde)"
+=======
+    "frota": "43",
+    "os": "112138",
+    "data": "06/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Confeccionar teto - (Oficina OMC)"
+  },
+  {
+    "frota": "5523",
+    "os": "112119",
+    "data": "06/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Verificar pneu direito danificado."
+  },
+  {
+    "frota": "307",
+    "os": "112059",
+    "data": "05/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Substituição do suporte e da unha da pá carregadeira - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "44",
+    "os": "112034",
+    "data": "04/06/2025",
+    "prestador": "ZAVAN MOTOS LTDA",
+    "servico": "Transporte fazenda Estrela"
+  },
+  {
+    "frota": "5382",
+    "os": "112020",
+    "data": "04/06/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Efetuar montagem da bomba no carrinha de irrigação  (Oficina)"
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
   },
   {
     "frota": "327",

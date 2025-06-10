@@ -1,51 +1,11 @@
 [
   {
-    "frota": "224",
-    "cd_equipamento": "224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111547",
-    "data_entrada": "29/05/2025",
-    "servico": "Verificar A/C não gela - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "246",
-    "cd_equipamento": "246",
-    "modelo": "TRATOR MASSEY FERGUSON 3308",
-    "os": "111496",
-    "data_entrada": "29/05/2025",
-    "servico": "Verificar A/C não funciona - (Fazenda São Paulo)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "249",
-    "cd_equipamento": "249",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "111437",
-    "data_entrada": "28/05/2025",
-    "servico": "Verificar A/C - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "65",
-    "cd_equipamento": "65",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "111176",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
-  },
-  {
-    "frota": "249",
-    "cd_equipamento": "249",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "111175",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
-  },
-  {
-    "frota": "247",
-    "cd_equipamento": "247",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "111174",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Alvorada\nSolicitado Natalino\nAutorizado Arthur"
+    "frota": "117",
+    "cd_equipamento": "117",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "112193",
+    "data_entrada": "09/06/2025",
+    "servico": "Revisar o sistema de ar condicionado do trator devido a odor de queimado, verificando possíveis falhas no motor do ventilador, fiação, resistência do sistema ou acúmulo de resíduos na unidade evaporadora - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "130",

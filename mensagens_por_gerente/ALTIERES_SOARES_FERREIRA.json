@@ -1,6 +1,7 @@
 [
   {
     "solicitado": "ALTIERES SOARES FERREIRA",
+<<<<<<< HEAD
     "frota": "308",
     "os": "111735",
     "data": "02/06/2025",
@@ -50,11 +51,41 @@
     "servico": "Verificar sinalização. Faróis traseiros não ascendem - (Fazenda Pedra Verde)"
   },
   {
+=======
+    "frota": "217",
+    "os": "112209",
+    "data": "09/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Avaliar pneu traseiro L/? com corte (18.4-30) - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "113",
+    "os": "112174",
+    "data": "06/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Fazer limpeza no sistema de arrefecimento"
+  },
+  {
+    "frota": "223",
+    "os": "112087",
+    "data": "06/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda e reforço na escada - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "299",
+    "os": "112086",
+    "data": "06/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trinca no escapamento e gonzo da proteção dianteira gastos - (Fazenda Pedra Verde)"
+  },
+  {
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "245",
-    "os": "111505",
-    "data": "29/05/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Verificar embreagem e freios não funcionam - (Fazenda Pedra Verde)"
+    "os": "111563",
+    "data": "30/05/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)"
   },
   {
     "frota": "152",
@@ -64,13 +95,6 @@
     "servico": "Revisar sistema eletrico"
   },
   {
-    "frota": "69",
-    "os": "111477",
-    "data": "28/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Soldar tubo do engate rapido"
-  },
-  {
     "frota": "5136",
     "os": "111464",
     "data": "28/05/2025",
@@ -78,6 +102,7 @@
     "servico": "Fazer proteção das polias."
   },
   {
+<<<<<<< HEAD
     "frota": "69",
     "os": "111463",
     "data": "28/05/2025",
@@ -162,6 +187,8 @@
     "servico": "Fazer solda e reforço em trincas - (Fazenda Pedra Verde)"
   },
   {
+=======
+>>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "152",
     "os": "109357",
     "data": "24/04/2025",

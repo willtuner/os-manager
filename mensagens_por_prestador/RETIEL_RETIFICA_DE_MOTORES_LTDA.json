@@ -1,10 +1,18 @@
 [
   {
-    "frota": "5382",
-    "cd_equipamento": "5382",
-    "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
-    "os": "100827",
-    "data_entrada": "25/11/2024",
-    "servico": "Motor esquentou e provavelmente queimou junta de cabeçote - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+    "frota": "504",
+    "cd_equipamento": "504",
+    "modelo": "ONIBUS",
+    "os": "112231",
+    "data_entrada": "09/06/2025",
+    "servico": "Revisar e instalar motor\nOficina\nAutorizado Arthur"
+  },
+  {
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "112044",
+    "data_entrada": "04/06/2025",
+    "servico": "Revisar motor - (Faz São Paulo)\nSolicitado Arthur/Rafael"
   }
 ]
