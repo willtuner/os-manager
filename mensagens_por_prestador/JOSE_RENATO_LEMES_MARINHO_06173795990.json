@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5061",
+    "cd_equipamento": "5061",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "112259",
+    "data_entrada": "10/06/2025",
+    "servico": "Verificar torre 'bamba'  - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5749",
+    "cd_equipamento": "5749",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "112249",
+    "data_entrada": "10/06/2025",
+    "servico": "Reajustar barra da torre torta pegando nos bicos do sistema de SPE - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5612",
+    "cd_equipamento": "5612",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "112241",
+    "data_entrada": "10/06/2025",
+    "servico": "Fazer solda na torre bamba - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5783",
     "cd_equipamento": "5783",
     "modelo": "DESENROLADOR DE MANGUEIRA",

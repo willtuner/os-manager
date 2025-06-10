@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5600",
+    "cd_equipamento": "5600",
+    "modelo": "ATOMIZADOR NATALI 4000 LT",
+    "os": "112269",
+    "data_entrada": "10/06/2025",
+    "servico": "Verificar sistema de transmissão de correias (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112252",
+    "data_entrada": "10/06/2025",
+    "servico": "Esteira quebrada - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5766",
+    "cd_equipamento": "5766",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "112251",
+    "data_entrada": "10/06/2025",
+    "servico": "Vazamento nas canecas - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5500",
+    "cd_equipamento": "5500",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "112238",
+    "data_entrada": "10/06/2025",
+    "servico": "Vazamento no reparo do rotor - (Fazenda Minuano)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5350",
     "cd_equipamento": "5350",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
