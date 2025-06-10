@@ -1,32 +1,16 @@
 [
   {
-    "solicitado": "WAGNER GALDINO DA SILVA",
-<<<<<<< HEAD
-    "frota": "320",
-    "os": "111610",
-    "data": "30/05/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 300 hrs (Fazenda SL1)"
-  },
-  {
-    "frota": "158",
-    "os": "111381",
-    "data": "27/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar bomba hidráulica - (Fazenda  SL1)"
-=======
     "frota": "105",
     "os": "112179",
     "data": "09/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/D furado - (Fazenda SL1)"
+    "servico": "Pneu traseiro L/D furado - (Fazenda SL1)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5184",
     "os": "108158",
     "data": "02/04/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Verificar pneu direito apresentando rachos na lateral."
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Verificar pneu direito apresentando rachos na lateral.\nFazenda SL1\nSolicitado Sr. Wagner\nLiberado Sr. Maurício"
   }
 ]

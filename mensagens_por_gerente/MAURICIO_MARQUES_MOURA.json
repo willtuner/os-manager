@@ -1,30 +1,16 @@
 [
   {
-    "solicitado": "MAURICIO MARQUES MOURA",
-<<<<<<< HEAD
-    "frota": "128",
-    "os": "111647",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Motor de arranque danificado, retirar do frota 127 que está na oficina e revisar o do 128 - (Fazenda SP)"
-  },
-  {
-    "frota": "128",
-    "os": "111220",
-    "data": "23/05/2025",
-=======
     "frota": "126",
     "os": "112237",
     "data": "10/06/2025",
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar equipamento com partida pesada - (Fazenda Minuano)"
+    "servico": "Verificar equipamento com partida pesada - (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
     "frota": "127",
     "os": "105932",
     "data": "20/02/2025",
     "prestador": "OMC AGRICOLA",
-    "servico": "Verificar aquecimento excessivo do motor, temperatura elevada."
+    "servico": "Verificar aquecimento excessivo do motor, temperatura elevada.\nFazenda São Paulo\nSolicitado Sr. Maurício Marques\nLiberado Sr. Maurício Barreto"
   }
 ]

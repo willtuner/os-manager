@@ -1,53 +1,44 @@
 [
   {
-    "solicitado": "ANTONIO PAULO LARENTIS ALVES",
     "frota": "300",
     "os": "112277",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Soldar suporte das lanternas de alerta traseira.  (Fazenda Minuano)"
+    "servico": "Soldar suporte das lanternas de alerta traseira.  (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5766",
     "os": "112251",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento nas canecas - (Fazenda Minuano)"
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento nas canecas - (Fazenda Minuano)\nLiberado Sr. Mauricio"
   },
   {
-<<<<<<< HEAD
-    "frota": "46",
-    "os": "111289",
-    "data": "26/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Sistema de ventilação inoperante. Ventilador do sistema de resfriamento de óleo da podadeira e ventilador da cabine do operador não estão acionando. - (Fazenda Minuano)"
-=======
     "frota": "5500",
     "os": "112238",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento no reparo do rotor - (Fazenda Minuano)"
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento no reparo do rotor - (Fazenda Minuano)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5500",
     "os": "112053",
     "data": "05/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em roda guia e colocar proteção anti-arremesso - (Fazenda Minuano)"
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Fazer solda em roda guia e colocar proteção anti-arremesso - (Fazenda Minuano)\nLiberado Sr. Mauricio \nPendencia N° 4301"
   },
   {
     "frota": "46",
     "os": "110544",
     "data": "14/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator não marca temperatura no painel - (Fazenda Minuano)"
+    "servico": "Trator não marca temperatura no painel - (Fazenda Minuano)\n- Já avaliado por eletricista e solicitado troca do painel \nLiberado Sr. Arthur"
   },
   {
     "frota": "5631",
     "os": "106948",
     "data": "12/03/2025",
     "prestador": "Prestador não definido",
-    "servico": "Instalar correntes de proteção - (Fazenda Minuano)"
+    "servico": "Instalar correntes de proteção - (Fazenda Minuano)\nLiberado Sr. Mauricio"
   }
 ]

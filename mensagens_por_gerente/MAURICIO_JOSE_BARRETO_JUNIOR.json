@@ -1,37 +1,16 @@
 [
   {
-    "solicitado": "MAURICIO JOSE BARRETO JUNIOR",
     "frota": "5345",
-<<<<<<< HEAD
-    "os": "111654",
-    "data": "02/06/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Verificar vazamento de óleo no retentor do pistão esquerdo de abertura da asa e vazamento no pistão de levante da barra direita."
-  },
-  {
-    "frota": "5345",
-=======
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "os": "111657",
     "data": "02/06/2025",
     "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
-    "servico": "Corrigir vazamento na mangueira hidráulica do pistão de levante da barra direita."
+    "servico": "Corrigir vazamento na mangueira hidráulica do pistão de levante da barra direita.\nFazenda Biscui Pecuária\nSolicitado Sr. Geovane\nLiberado Sr. Maurício"
   },
   {
-<<<<<<< HEAD
-    "frota": "5524",
-    "os": "111659",
-    "data": "30/05/2025",
-    "prestador": "DARCI CAPEL & CIA LTDA",
-    "servico": "Revisar cubo do eixo do disco de distribuição."
-  },
-  {
-=======
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "5455",
     "os": "110563",
     "data": "15/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar rolamento das duas rodas danificado."
+    "servico": "Verificar rolamento das duas rodas danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
   }
 ]

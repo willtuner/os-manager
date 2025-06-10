@@ -1,81 +1,58 @@
 [
   {
-    "solicitado": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
-<<<<<<< HEAD
-    "frota": "258",
-    "os": "111695",
-    "data": "02/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Trocar amortecedor do volante - (Fazenda Estrela)"
-  },
-  {
-    "frota": "260",
-    "os": "111660",
-    "data": "02/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar cambio de marcha \"bambo\" e não engata - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "10216",
-    "os": "111275",
-    "data": "26/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento de óleo no dreno da caixa seca -(Fazenda São Pedro)"
-=======
     "frota": "157",
     "os": "112276",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Trocar botão de acionamento da barra (Fazenda Santo Antônio)"
+    "servico": "Trocar botão de acionamento da barra (Fazenda Santo Antônio)\nLiberado Sr. Arthur"
   },
   {
     "frota": "156",
     "os": "112245",
     "data": "10/06/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Trocar coifas e reparos do comando hidráulico - (Fazenda São Pedro)"
+    "servico": "Trocar coifas e reparos do comando hidráulico - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "117",
     "os": "112193",
     "data": "09/06/2025",
     "prestador": "JOCAR LTDA",
-    "servico": "Revisar o sistema de ar condicionado do trator devido a odor de queimado, verificando possíveis falhas no motor do ventilador, fiação, resistência do sistema ou acúmulo de resíduos na unidade evaporadora - (Fazenda São Pedro)"
+    "servico": "Revisar o sistema de ar condicionado do trator devido a odor de queimado, verificando possíveis falhas no motor do ventilador, fiação, resistência do sistema ou acúmulo de resíduos na unidade evaporadora - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5126",
     "os": "112110",
     "data": "06/06/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Adubadeira apresenta falha de funcionamento sob carga, não realizando o deslocamento adequado com peso. Solicita-se avaliação dos motores hidráulicos - (Fazenda São Pedro)"
+    "servico": "Adubadeira apresenta falha de funcionamento sob carga, não realizando o deslocamento adequado com peso. Solicita-se avaliação dos motores hidráulicos - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5745",
     "os": "112109",
     "data": "06/06/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Identificada quebra da esteira do sistema de distribuição, impossibilitando o funcionamento adequado do equipamento. Além disso, constatado amassamento na portinhola de controle de vazão - (Fazenda São Pedro)"
+    "servico": "Identificada quebra da esteira do sistema de distribuição, impossibilitando o funcionamento adequado do equipamento. Além disso, constatado amassamento na portinhola de controle de vazão - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5422",
     "os": "112072",
     "data": "05/06/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Avaliar vazamento na bomba KPL80 - (Fazenda São Pedro)"
+    "servico": "Avaliar vazamento na bomba KPL80 - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5233",
     "os": "111938",
     "data": "03/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Vazamento na bomba do tanque - (Fazenda São Pedro)"
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Vazamento na bomba do tanque - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5552",
     "os": "111029",
     "data": "21/05/2025",
     "prestador": "Prestador não definido",
-    "servico": "Realizar a remoção de um gomo da esteira da adubadeira para ajuste do tensionamento e correto funcionamento do sistema de distribuição. Verificar alinhamento e tensão da esteira após o serviço - (Fazenda São Pedro)"
+    "servico": "Realizar a remoção de um gomo da esteira da adubadeira para ajuste do tensionamento e correto funcionamento do sistema de distribuição. Verificar alinhamento e tensão da esteira após o serviço - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

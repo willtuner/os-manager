@@ -1,46 +1,9 @@
 [
   {
-    "solicitado": "MARCIO JUNIO NUNES DE OLIVEIRA",
-<<<<<<< HEAD
-    "frota": "5569",
-    "os": "111809",
-    "data": "02/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar jogo de luva e cruzeta - (Fazenda São Severino)"
-  },
-  {
-    "frota": "228",
-    "os": "111216",
-    "data": "23/05/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Verificar tomada de força escapando"
-  },
-  {
-    "frota": "5569",
-    "os": "111020",
-    "data": "21/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Tirar jogo das rodas guias  - (Fazenda São Severino)"
-  },
-  {
-    "frota": "228",
-    "os": "110293",
-    "data": "09/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "5165",
-    "os": "109411",
-    "data": "25/04/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar parafusos de fixação do multiplicar - (Fazenda São Severino)"
-=======
     "frota": "5175",
     "os": "112275",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Reformar estrutura superior do tanque (Fazenda São Severino)"
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Reformar estrutura superior do tanque (Fazenda São Severino)\nLiberado Sr. Mauricio"
   }
 ]

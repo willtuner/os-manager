@@ -1,67 +1,51 @@
 [
   {
-    "solicitado": "DIEGO GOMES CAMBOI",
-<<<<<<< HEAD
-    "frota": "5699",
-    "os": "111612",
-    "data": "30/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar drash desregulado, vazão errada - (Fazenda São Izabel)"
-  },
-  {
-    "frota": "267",
-    "os": "111604",
-    "data": "30/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar sistema de embreagem do trator devido a pedal com curso anormal (pedal 'mole'). - (Fazenda Santa Izabel)"
-=======
     "frota": "203",
     "os": "112267",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Sacar parafusos da ponteira quebrado - (Fazenda Bela Manhã)"
+    "servico": "Sacar parafusos da ponteira quebrado - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10220",
     "os": "112265",
     "data": "10/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator sem partida - (Fazenda Bela Manhã)"
+    "servico": "Verificar trator sem partida - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5721",
     "os": "112234",
     "data": "09/06/2025",
     "prestador": "DARCI CAPEL & CIA LTDA",
-    "servico": "Preencher eixo do motor hidráulico que toca a bomba."
+    "servico": "Preencher eixo do motor hidráulico que toca a bomba.\nFazenda Santa Izabel\nLiberado Sr. Maurício"
   },
   {
     "frota": "268",
     "os": "112177",
     "data": "07/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar o sistema hidraulico"
+    "servico": "Verificar o sistema hidraulico\nFaz Santa Izabel\nSolicitado Arthur"
   },
   {
     "frota": "5721",
     "os": "112166",
     "data": "06/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar luva de acoplamento do cardam no motor hidráulico - (Fazenda Santa Izabel)"
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Verificar luva de acoplamento do cardam no motor hidráulico - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5210",
     "os": "110604",
     "data": "15/05/2025",
     "prestador": "Prestador não definido",
-    "servico": "Fazer alongador do ramal - (Fazenda Santa Izabel)"
+    "servico": "Fazer alongador do ramal - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5725",
     "os": "110602",
     "data": "15/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar painel de controle da barra de herbicida quebrado - (Fazenda Santa Izabel)"
+    "servico": "Trocar painel de controle da barra de herbicida quebrado - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
   }
 ]

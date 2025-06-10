@@ -1,171 +1,86 @@
 [
   {
-    "solicitado": "DANILO MULARI GONZAGA",
-<<<<<<< HEAD
-    "frota": "309",
-    "os": "111827",
-    "data": "02/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Executar substituição da trava do eixo - (Fazenda estrela)"
-  },
-  {
-    "frota": "5042",
-    "os": "111824",
-    "data": "02/06/2025",
+    "frota": "10223",
+    "os": "112286",
+    "data": "10/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda Estrela)"
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "91",
-    "os": "111821",
-    "data": "02/06/2025",
+    "frota": "5106",
+    "os": "112285",
+    "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento de óleo nos tuchos da válvula VCR - (Fazenda Estrela)"
+    "servico": "Fazer solda na proteção da roda guia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "116",
-    "os": "111819",
-    "data": "02/06/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Trocar do trinco da porta."
-  },
-  {
-    "frota": "206",
-    "os": "111646",
-    "data": "02/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar contaminação de óleo no radiador - (Fazenda Estrela)"
-  },
-  {
-    "frota": "10219",
-    "os": "111645",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator com partida lenta - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5214",
-    "os": "111644",
-    "data": "02/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir rolamento da polia - (Fazenda Estrela)"
-  },
-  {
-    "frota": "137",
-    "os": "111515",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator sem partida - (Fazenda Estrela)"
-  },
-  {
-    "frota": "22",
-    "os": "111514",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator sem partida, motor de partida fumaceando - (Fazenda Estrela)"
-  },
-  {
-    "frota": "116",
-    "os": "111500",
-    "data": "29/05/2025",
-    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Remover trincos no paralama"
-=======
     "frota": "329",
     "os": "112260",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)"
+    "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5579",
     "os": "112142",
     "data": "06/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir suspiro do eixo - (Fazenda Estrela)"
+    "servico": "Substituir suspiro do eixo - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5042",
     "os": "112057",
     "data": "05/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar engate do cabeçário danificado  - (Fazenda Estrela)"
+    "servico": "Verificar engate do cabeçário danificado  - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "46",
     "os": "112004",
     "data": "04/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar relógio não funciona - (Fazenda Estrela)"
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Verificar relógio não funciona - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10229",
     "os": "111908",
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4323"
   },
   {
     "frota": "10223",
     "os": "111905",
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4386"
   },
   {
     "frota": "10219",
     "os": "111904",
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4387"
   },
   {
     "frota": "116",
     "os": "111498",
     "data": "29/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar escada e fazer proteção do eixo da TDP"
-  },
-  {
-<<<<<<< HEAD
-    "frota": "5524",
-    "os": "111380",
-    "data": "27/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir rolamento e mancal L/E - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5459",
-    "os": "111127",
-    "data": "21/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir proteções anti-arremesso."
+    "servico": "Soldar escada e fazer proteção do eixo da TDP\n(Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5451",
     "os": "110984",
     "data": "20/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5106",
-    "os": "110097",
-    "data": "06/05/2025",
-=======
-    "frota": "5451",
-    "os": "110984",
-    "data": "20/05/2025",
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
+    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5214",
     "os": "109707",
     "data": "30/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)"
+    "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   }
 ]

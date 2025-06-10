@@ -1,60 +1,23 @@
 [
   {
-    "solicitado": "MURILO J ONCK LEMES DA SILVA",
-<<<<<<< HEAD
-    "frota": "321",
-    "os": "111803",
-    "data": "02/06/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Verificar vazamento de diesel - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "63",
-    "os": "111536",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sistema de partida de trator. Motor de arranque aciona normalmente, porém o motor não entra em funcionamento. Avaliar possíveis falhas no sistema de alimentação de combustível - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "102",
-    "os": "111510",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar motor de arranque travado - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5597",
-    "os": "111254",
-    "data": "23/05/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Trinca na fibra do tanque e verificar rosca da boca do tanque - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5597",
-    "os": "111063",
-    "data": "21/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Vazamento de óleo na bomba - (Fazenda Bela Manhã)"
-=======
     "frota": "102",
     "os": "112273",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento de óleo no motor (Fazenda Bela Manhã)"
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Verificar vazamento de óleo no motor (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5078",
     "os": "110736",
     "data": "16/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã)"
+    "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã) \nLiberado Sr. Mauricio"
   },
   {
     "frota": "5597",
     "os": "109432",
     "data": "25/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)"
+    "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   }
 ]

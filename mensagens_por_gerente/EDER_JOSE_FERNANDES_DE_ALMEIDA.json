@@ -1,100 +1,30 @@
 [
   {
-    "solicitado": "EDER JOSE FERNANDES DE ALMEIDA",
-<<<<<<< HEAD
-    "frota": "5495",
-    "os": "111593",
-    "data": "30/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituição das aletas dos pratos do distribuidor de adubo devido a corrosão e soldar proteção de partes móveis (correias traseiras) - (Fazenda Terra Branca)"
-  },
-  {
-=======
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "224",
     "os": "112233",
     "data": "09/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)"
+    "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "286",
     "os": "112232",
     "data": "09/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Fazer solda em escapamento - (Fazenda Terra Branca)"
+    "servico": "Fazer solda em escapamento - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5139",
     "os": "112058",
     "data": "05/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda Terra Branca)"
+    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "99",
     "os": "111476",
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar confeccionar e trocar teto"
-<<<<<<< HEAD
-  },
-  {
-    "frota": "99",
-    "os": "111475",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar buzina"
-  },
-  {
-    "frota": "10022",
-    "os": "111474",
-    "data": "28/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Acertar parafusos que segura jogo de facas e parafusos de fixação do rotor esquerdo"
-  },
-  {
-    "frota": "5623",
-    "os": "111472",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar e recuperar trincos na estrutura da rocadeira"
-  },
-  {
-    "frota": "220",
-    "os": "111461",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "224",
-    "os": "111356",
-    "data": "27/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar trator perdendo força e caindo rotação - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5227",
-    "os": "111235",
-    "data": "23/05/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "10221",
-    "os": "110526",
-    "data": "14/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em escapamento danificado - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "224",
-    "os": "110439",
-    "data": "13/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Trator apresenta consumo de combustível acima do normal. Necessário realizar diagnóstico completo - (Fazenda Terra Branca)"
-=======
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Trocar confeccionar e trocar teto\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
   }
 ]

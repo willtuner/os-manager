@@ -1,205 +1,65 @@
 [
   {
-    "solicitado": "ALTIERES SOARES FERREIRA",
-<<<<<<< HEAD
-    "frota": "308",
-    "os": "111735",
-    "data": "02/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Fazer solda nas proteções do tanque de combustível - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5479",
-    "os": "111656",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar equipamento de drash - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "299",
-    "os": "111608",
-    "data": "30/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar sistema de aquecimento da cabine do trator. Ar quente não está funcionando - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "223",
-    "os": "111607",
-    "data": "30/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar sistema de aquecimento da cabine do trator. Ar quente não está funcionando - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "283",
-    "os": "111606",
-    "data": "30/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar sistema de aquecimento da cabine do trator. Ar quente não está funcionando - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "245",
-    "os": "111563",
-    "data": "30/05/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "245",
-    "os": "111553",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sinalização. Faróis traseiros não ascendem - (Fazenda Pedra Verde)"
-  },
-  {
-=======
     "frota": "217",
     "os": "112209",
     "data": "09/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Avaliar pneu traseiro L/? com corte (18.4-30) - (Fazenda Pedra Verde)"
+    "servico": "Avaliar pneu traseiro L/? com corte (18.4-30) - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "113",
     "os": "112174",
     "data": "06/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Fazer limpeza no sistema de arrefecimento"
+    "servico": "Fazer limpeza no sistema de arrefecimento\nFaz Pedra Verde\nSolicitado Rafael"
   },
   {
     "frota": "223",
     "os": "112087",
     "data": "06/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda e reforço na escada - (Fazenda Pedra Verde)"
+    "servico": "Fazer solda e reforço na escada - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   },
   {
     "frota": "299",
     "os": "112086",
     "data": "06/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca no escapamento e gonzo da proteção dianteira gastos - (Fazenda Pedra Verde)"
+    "servico": "Fazer solda em trinca no escapamento e gonzo da proteção dianteira gastos - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   },
   {
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "245",
     "os": "111563",
     "data": "30/05/2025",
     "prestador": "Prestador não definido",
-    "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)"
+    "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   },
   {
     "frota": "152",
     "os": "111485",
     "data": "29/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
+    "servico": "Revisar sistema eletrico\nFaz Pedra Verde(Oficina)\nSolicitado Altieres\nAutorizado Arthur"
   },
   {
     "frota": "5136",
     "os": "111464",
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção das polias."
+    "servico": "Fazer proteção das polias.\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio"
   },
   {
-<<<<<<< HEAD
-    "frota": "69",
-    "os": "111463",
-    "data": "28/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar mangueira da sucção da bomba"
-  },
-  {
-    "frota": "299",
-    "os": "111460",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "97",
-    "os": "111459",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "76",
-    "os": "111458",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "217",
-    "os": "111441",
-    "data": "28/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Quebra do cabo da embreagem, vazamento no cárter e cruzeta da tração danificada. Recomenda-se recolher o trator para substituição dos componentes.  - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "119",
-    "os": "111288",
-    "data": "26/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento de diesel - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5470",
-    "os": "111263",
-    "data": "24/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisa bomba de alimentação"
-  },
-  {
-    "frota": "223",
-    "os": "111256",
-    "data": "23/05/2025",
-    "prestador": "DARCI CAPEL & CIA LTDA",
-    "servico": "substituir ponta estriada eixo pinhão da tração"
-  },
-  {
-    "frota": "223",
-    "os": "111217",
-    "data": "23/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Recuperar tampa da caixa de bateria"
-  },
-  {
-    "frota": "5111",
-    "os": "110578",
-    "data": "15/05/2025",
-    "prestador": "BAZANI MECANICA E AUTO PECAS",
-    "servico": "Fazer pino para travar roda guia - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "119",
-    "os": "110150",
-    "data": "07/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento na bomba hidráulica"
-  },
-  {
-    "frota": "5117",
-    "os": "109961",
-    "data": "05/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda e reforço em trincas - (Fazenda Pedra Verde)"
-  },
-  {
-=======
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "152",
     "os": "109357",
     "data": "24/04/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Remover vazamentos"
+    "servico": "Remover vazamentos\nFaz Pedra Verde\nSolicitado Altieres\nAutorizado Arthur"
   },
   {
     "frota": "5666",
     "os": "109154",
     "data": "22/04/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)"
+    "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   }
 ]

@@ -1,53 +1,37 @@
 [
   {
-    "solicitado": "ARTHUR SOUSA OLIVEIRA",
-<<<<<<< HEAD
-    "frota": "206",
-    "os": "111758",
-    "data": "02/06/2025",
-    "prestador": "ZAVAN MOTOS LTDA",
-    "servico": "Recolher o trator 206 na fazenda Estrela e encaminha para MG Vedações"
-  },
-  {
-    "frota": "504",
-    "os": "111483",
-    "data": "28/05/2025",
-    "prestador": "TORNEARIA STEINHAUSER LTDA",
-    "servico": "Tornear encosto da roda, para confeccionar arruela de calco"
-=======
     "frota": "143",
     "os": "112253",
     "data": "10/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar relógio horimetro não marca corretamente - (Fazenda Bela Manhã)"
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Verificar relógio horimetro não marca corretamente - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "84",
     "os": "112247",
     "data": "10/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator so pega no tranco - (Industria)"
+    "servico": "Verificar trator so pega no tranco - (Industria)\nLiberado Sr. Arthur"
   },
   {
     "frota": "504",
     "os": "112231",
     "data": "09/06/2025",
     "prestador": "RETIEL RETIFICA DE MOTORES LTDA",
-    "servico": "Revisar e instalar motor"
+    "servico": "Revisar e instalar motor\nOficina\nAutorizado Arthur"
   },
   {
     "frota": "87",
     "os": "108582",
     "data": "10/04/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Avaliar vazamento na bomba injetora - (Fazenda São Severino)"
+    "servico": "Avaliar vazamento na bomba injetora - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "87",
     "os": "108581",
     "data": "10/04/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar carenagens, trocar banco e avaliar braços do hidráulico tortos - (Fazenda São Severino)"
+    "servico": "Avaliar carenagens, trocar banco e avaliar braços do hidráulico tortos - (Fazenda São Severino)\nLiberado Sr. Arthur"
   }
 ]

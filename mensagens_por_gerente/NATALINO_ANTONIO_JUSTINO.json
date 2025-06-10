@@ -1,70 +1,23 @@
 [
   {
-    "solicitado": "NATALINO ANTONIO JUSTINO",
-<<<<<<< HEAD
-    "frota": "5035",
-    "os": "111440",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção de bicos - (Fazenda Alvorada)"
-=======
     "frota": "65",
     "os": "112261",
     "data": "10/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Revisar sistema hidraulico do trator"
+    "servico": "Revisar sistema hidraulico do trator\nFaz Alvorada\nSolicitado Arthur"
   },
   {
     "frota": "151",
     "os": "112212",
     "data": "09/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Verificar trator sem partida, não da sinal ao ligar a chave de ignição - (Fazenda Alvorada)"
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Verificar trator sem partida, não da sinal ao ligar a chave de ignição - (Fazenda Alvorada)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5626",
     "os": "111439",
     "data": "28/05/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)"
-<<<<<<< HEAD
-  },
-  {
-    "frota": "249",
-    "os": "111437",
-    "data": "28/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar A/C - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "249",
-    "os": "111175",
-    "data": "22/05/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "247",
-    "os": "111137",
-    "data": "22/05/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Borracha de vedação da porta solda - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "5416",
-    "os": "110742",
-    "data": "16/05/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Tirar vazamento do motor hidráulico - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "5147",
-    "os": "108806",
-    "data": "15/04/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Reforma do equipamento - (Fazenda Alvorada)"
-=======
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
+    "servico": "Identificado vazamento na parte inferior do retentor do lado direito da roçadeira. Necessário substituir o componente e realizar soldagens corretivas na estrutura. - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   }
 ]

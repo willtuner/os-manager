@@ -1,107 +1,100 @@
 [
   {
-    "solicitado": "ROMES ROSA SILVA",
-<<<<<<< HEAD
-=======
+    "frota": "252",
+    "os": "112283",
+    "data": "10/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar terminais da direção - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5715",
     "os": "112208",
     "data": "09/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)"
+    "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "100",
     "os": "111996",
     "data": "04/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda no suporte da grade de proteção dianteira - (Fazenda São Pedro)"
+    "servico": "Fazer solda no suporte da grade de proteção dianteira - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5226",
     "os": "111912",
     "data": "03/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho."
+    "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho.\nFazenda São Pedro (Oficina)\nSolicitado Sr. Romes\nLiberado Sr. Zacarias"
   },
   {
     "frota": "5421",
     "os": "111970",
     "data": "03/06/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar rolamento da turbina."
+    "servico": "Trocar rolamento da turbina.\nFazenda São Pedro\nSolicitado Sr. Romes\nLiberado Sr. Maurício"
   },
   {
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "100",
     "os": "111662",
     "data": "02/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar trator sem partida - (Fazenda São Pedro)"
+    "servico": "Avaliar trator sem partida - (Fazenda São Pedro)\nLiberado Sr. Wilson"
   },
   {
-<<<<<<< HEAD
-    "frota": "100",
-    "os": "111661",
-    "data": "02/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)"
-  },
-  {
-=======
->>>>>>> 31e8dbc0fbb9b05b4b5ed16a3a913f0d4a100fbf
     "frota": "5075",
     "os": "111435",
     "data": "28/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)"
+    "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5171",
     "os": "111431",
     "data": "28/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Identificado vazamento no retentor da bomba necessário substituí-lo para restabelecer a vedação do sistema - (Fazenda São Pedro)"
+    "servico": "Identificado vazamento no retentor da bomba necessário substituí-lo para restabelecer a vedação do sistema - (Fazenda São Pedro)\nPendencia N° 4361\nLiberado Sr. Mauricio"
   },
   {
     "frota": "198",
     "os": "111425",
     "data": "28/05/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Revisar suporte da barra de tração, verificando folgas, trincas e condições de fixação e braço hidráulico não sobe  - (Fazenda São Pedro)"
+    "servico": "Revisar suporte da barra de tração, verificando folgas, trincas e condições de fixação e braço hidráulico não sobe  - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5760",
     "os": "111424",
     "data": "28/05/2025",
     "prestador": "Prestador não definido",
-    "servico": "Verificar possível contaminação do óleo lubrificante por produto químico proveniente da bomba de aplicação. - (Fazenda São Pedro)"
+    "servico": "Verificar possível contaminação do óleo lubrificante por produto químico proveniente da bomba de aplicação. - (Fazenda São Pedro)\nPendencia N° 4360 \nLiberado Sr. Mauricio"
   },
   {
     "frota": "5233",
     "os": "111423",
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar soldagem em múltiplas trincas na estrutura do tanque e corrigir vazamento no pistão. - (Fazenda São Pedro)"
+    "servico": "Realizar soldagem em múltiplas trincas na estrutura do tanque e corrigir vazamento no pistão. - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5171",
     "os": "111430",
     "data": "27/05/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)"
+    "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5737",
     "os": "110725",
     "data": "16/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Vazamento no retentor do multiplicador  - (Fazenda São Pedro)"
+    "servico": "Vazamento no retentor do multiplicador  - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5188",
     "os": "109725",
     "data": "30/04/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Substituir polia do agitador da turbina-hélice, que se encontra quebrada, comprometendo o funcionamento do sistema de agitação da calda. Verificar o estado geral do mecanismo e demais componentes associados - (Fazenda São Pedro)"
+    "servico": "Substituir polia do agitador da turbina-hélice, que se encontra quebrada, comprometendo o funcionamento do sistema de agitação da calda. Verificar o estado geral do mecanismo e demais componentes associados - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]
