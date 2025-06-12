@@ -1,19 +1,59 @@
 [
   {
+    "frota": "66",
+    "cd_equipamento": "66",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112423",
+    "data_entrada": "12/06/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112372",
+    "data_entrada": "12/06/2025",
+    "servico": "Cibié traseiro quebrado  e farol dianteiro queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "247",
+    "cd_equipamento": "247",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "112371",
+    "data_entrada": "12/06/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5346",
+    "cd_equipamento": "5346",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112341",
+    "data_entrada": "11/06/2025",
+    "servico": "Pneu traseiro L/E - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5110",
+    "cd_equipamento": "5110",
+    "modelo": "SUBSOLADOR STARA",
+    "os": "112329",
+    "data_entrada": "11/06/2025",
+    "servico": "Pneu L/E furado - (Fazenda Estrela VI)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5676",
+    "cd_equipamento": "5676",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "112306",
+    "data_entrada": "11/06/2025",
+    "servico": "Pneu L/D furado - (Fazenda Biscui)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "10223",
     "cd_equipamento": "10223",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "112286",
     "data_entrada": "10/06/2025",
     "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "10228",
-    "cd_equipamento": "10228",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112263",
-    "data_entrada": "10/06/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "224",

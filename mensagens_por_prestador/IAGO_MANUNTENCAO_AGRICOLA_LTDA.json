@@ -1,5 +1,61 @@
 [
   {
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "112301",
+    "data_entrada": "11/06/2025",
+    "servico": "Substituir patins da roçadeira e substituir rolamentos das rodas guias dianteira e traseira - (Fazenda Estrela)\nPendencias 4410 e  4405\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5398",
+    "cd_equipamento": "5398",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "112300",
+    "data_entrada": "11/06/2025",
+    "servico": "Vazamento na bomba, verificar comando hidráulico não fecham- (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5399",
+    "cd_equipamento": "5399",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "112299",
+    "data_entrada": "11/06/2025",
+    "servico": "Vazamento na bomba, verificar comando hidráulico não fecham e trocar mangueira do lavador curta - (Fazenda Terra Branca)\nPendencia N° 4364"
+  },
+  {
+    "frota": "5009",
+    "cd_equipamento": "5009",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "112294",
+    "data_entrada": "11/06/2025",
+    "servico": "Ajustar esticador da correia - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5755",
+    "cd_equipamento": "5755",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "112288",
+    "data_entrada": "10/06/2025",
+    "servico": "Reajustar parafusos que seguram proteção anti-arremesso - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5522",
+    "cd_equipamento": "5522",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "112281",
+    "data_entrada": "10/06/2025",
+    "servico": "Verificar equipamento com alta pressão estourando as mangueiras - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5613",
+    "cd_equipamento": "5613",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "112271",
+    "data_entrada": "10/06/2025",
+    "servico": "Verificar e corrigir vazamento de óleo na bomba de pulverização (Fazenda São Severino)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5600",
     "cd_equipamento": "5600",
     "modelo": "ATOMIZADOR NATALI 4000 LT",
@@ -30,14 +86,6 @@
     "os": "112238",
     "data_entrada": "10/06/2025",
     "servico": "Vazamento no reparo do rotor - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5350",
-    "cd_equipamento": "5350",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "112246",
-    "data_entrada": "10/06/2025",
-    "servico": "Quebra do eixo do rotor e trocar parafusos do esqui - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5721",

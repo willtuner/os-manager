@@ -1,5 +1,61 @@
 [
   {
+    "frota": "225",
+    "cd_equipamento": "225",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112356",
+    "data_entrada": "11/06/2025",
+    "servico": "Verifica embreagem do trator\nFaz São Severino\nAutorizado Arthur"
+  },
+  {
+    "frota": "221",
+    "cd_equipamento": "221",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112334",
+    "data_entrada": "11/06/2025",
+    "servico": "Trocar barra de direção dos dois lados - (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "252",
+    "cd_equipamento": "252",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112304",
+    "data_entrada": "11/06/2025",
+    "servico": "Trocar reparo da bomba do hidráulico - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112303",
+    "data_entrada": "11/06/2025",
+    "servico": "Vazamento no bujão do cárter - (Fazenda São Pedro)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "135",
+    "cd_equipamento": "135",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "112297",
+    "data_entrada": "11/06/2025",
+    "servico": "Trocar reservatório de óleo hidraulico\nFaz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "107",
+    "cd_equipamento": "107",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "112295",
+    "data_entrada": "11/06/2025",
+    "servico": "Efetuar limpeza no sistema de arrefecimento e combustivel\nFaz Nova Manha\nAutorizado Arthur"
+  },
+  {
+    "frota": "208",
+    "cd_equipamento": "208",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112293",
+    "data_entrada": "11/06/2025",
+    "servico": "Verificar embreagem não quer engatar TDP - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "65",
     "cd_equipamento": "65",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
