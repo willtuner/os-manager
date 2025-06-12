@@ -1,30 +1,73 @@
 [
   {
+    "solicitado": "EDER JOSE FERNANDES DE ALMEIDA",
+    "frota": "10222",
+    "os": "112413",
+    "data": "12/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar cibié e revisar luzes de posição - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "10222",
+    "os": "112412",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda no suporta da grade de proteção - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "220",
+    "os": "112340",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda no rabicho - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "5398",
+    "os": "112300",
+    "data": "11/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento na bomba, verificar comando hidráulico não fecham- (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "5399",
+    "os": "112299",
+    "data": "11/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento na bomba, verificar comando hidráulico não fecham e trocar mangueira do lavador curta - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "5662",
+    "os": "112298",
+    "data": "11/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Verificar dobradiças da tampa quebrada - (Fazenda Terra Branca)"
+  },
+  {
     "frota": "224",
     "os": "112233",
     "data": "09/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+    "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)"
   },
   {
     "frota": "286",
     "os": "112232",
     "data": "09/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Fazer solda em escapamento - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
+    "servico": "Fazer solda em escapamento - (Fazenda Terra Branca)"
   },
   {
     "frota": "5139",
     "os": "112058",
     "data": "05/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda Terra Branca)"
   },
   {
     "frota": "99",
     "os": "111476",
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar confeccionar e trocar teto\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
+    "servico": "Trocar confeccionar e trocar teto"
   }
 ]

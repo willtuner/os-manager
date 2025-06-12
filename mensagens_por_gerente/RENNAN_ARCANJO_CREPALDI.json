@@ -1,121 +1,150 @@
 [
   {
+    "solicitado": "RENNAN ARCANJO CREPALDI",
+    "frota": "88",
+    "os": "112411",
+    "data": "12/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar farol dianteiro com a lente quebrada - (Fazenda NSA)"
+  },
+  {
+    "frota": "88",
+    "os": "112410",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento no retentor da TDP - (Fazenda NSA)"
+  },
+  {
+    "frota": "5673",
+    "os": "112409",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Realinhar barrinha - (Fazenda NSA)"
+  },
+  {
+    "frota": "5673",
+    "os": "112408",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento no comando da barrinha - (Fazenda NSA)"
+  },
+  {
+    "frota": "5688",
+    "os": "112407",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Instalar correte de água e caixa misturadora - (Fazenda NSA)"
+  },
+  {
+    "frota": "275",
+    "os": "112406",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Troca do engate rápido - (Fazenda NSA)"
+  },
+  {
     "frota": "5058",
     "os": "112282",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina\nLiberado Zacarias/Mauricio"
+    "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
   },
   {
     "frota": "5522",
     "os": "112281",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar equipamento com alta pressão estourando as mangueiras - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "137",
-    "os": "112213",
-    "data": "09/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Trocar cabos do comando da VCR não funcionam - (Fazenda NSA)\nLiberado Sr. Arthur"
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar equipamento com alta pressão estourando as mangueiras - (Fazenda NSA)"
   },
   {
     "frota": "5730",
     "os": "112075",
     "data": "05/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar patins - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "servico": "Instalar patins - (Fazenda NSA)"
   },
   {
     "frota": "275",
     "os": "112061",
     "data": "05/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar cibié queimado L/E - (Fazenda NSA)\nLiberado Sr. Arthur"
+    "servico": "Trocar cibié queimado L/E - (Fazenda NSA)"
   },
   {
     "frota": "5492",
     "os": "112052",
     "data": "05/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento no retentor da bomba - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5662",
-    "os": "112002",
-    "data": "04/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar comando eletrico não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
+    "servico": "Vazamento no retentor da bomba - (Fazenda NSA)"
   },
   {
     "frota": "5598",
     "os": "111572",
     "data": "30/05/2025",
     "prestador": "Prestador não definido",
-    "servico": "Vazamento no pistão de acionamento dos bicos - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "servico": "Vazamento no pistão de acionamento dos bicos - (Fazenda NSA)"
   },
   {
     "frota": "215",
     "os": "111570",
     "data": "30/05/2025",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)\nLiberado Sr. Arthur"
+    "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)"
   },
   {
     "frota": "5492",
     "os": "111569",
     "data": "30/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda no suporte de sustentação da asa L/E e soldar suporte para instalar cibié - (Fazenda NSA)\nLiberado Sr. Mauricio\nPendencia N° 4059"
+    "servico": "Fazer solda no suporte de sustentação da asa L/E e soldar suporte para instalar cibié - (Fazenda NSA)"
   },
   {
     "frota": "5431",
     "os": "111479",
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar esteira e fundo do espalhador\nFaz NSA\nSolicitado Rennan\nAutorizado Mauricio"
+    "servico": "Trocar esteira e fundo do espalhador"
   },
   {
     "frota": "5502",
     "os": "109804",
     "data": "02/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "servico": "Realinhas asas do tanque - (Fazenda NSA)"
   },
   {
     "frota": "5592",
     "os": "109803",
     "data": "02/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "servico": "Realinhas asas do tanque - (Fazenda NSA)"
   },
   {
     "frota": "5712",
     "os": "109102",
     "data": "17/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Refazer cabeçalho desalinhado - (Fazenda NSA)\nLiberado Sr. Mauricio"
+    "servico": "Refazer cabeçalho desalinhado - (Fazenda NSA)"
   },
   {
     "frota": "5592",
     "os": "108058",
     "data": "02/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
+    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito."
   },
   {
     "frota": "5502",
     "os": "108048",
     "data": "02/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito e esquerdo e soldar chapa inferior da asa esquerda.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
+    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito e esquerdo e soldar chapa inferior da asa esquerda."
   },
   {
     "frota": "5629",
     "os": "107660",
     "data": "24/03/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
+    "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito."
   }
 ]

@@ -1,128 +1,164 @@
 [
   {
+    "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "66",
+    "os": "112423",
+    "data": "12/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/D furado - (Fazenda SP)"
+  },
+  {
+    "frota": "125",
+    "os": "112316",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trator não pega na partida e luz acessa no painel - (Fazenda SP)"
+  },
+  {
+    "frota": "5722",
+    "os": "112315",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar comando sem pressão - (Fazenda SP)"
+  },
+  {
+    "frota": "5063",
+    "os": "112310",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Sacar e trocar bico graxeiro quebrado - (Fazenda SP)"
+  },
+  {
+    "frota": "5501",
+    "os": "112309",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Soldar proteção de partes moveis - (Fazenda SP)"
+  },
+  {
+    "frota": "5676",
+    "os": "112306",
+    "data": "11/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D furado - (Fazenda Biscui)"
+  },
+  {
+    "frota": "135",
+    "os": "112297",
+    "data": "11/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar reservatório de óleo hidraulico"
+  },
+  {
     "frota": "5755",
     "os": "112288",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Reajustar parafusos que seguram proteção anti-arremesso - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "10228",
-    "os": "112263",
-    "data": "10/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/E furado - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Reajustar parafusos que seguram proteção anti-arremesso - (Fazenda SP)"
   },
   {
     "frota": "5494",
     "os": "112252",
     "data": "10/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Esteira quebrada - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "servico": "Esteira quebrada - (Fazenda SP)"
   },
   {
     "frota": "5749",
     "os": "112250",
     "data": "10/06/2025",
     "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Solda em terminal - (Fazenda SP)\nLiberado Sr. Arthur"
+    "servico": "Solda em terminal - (Fazenda SP)"
   },
   {
     "frota": "5749",
     "os": "112249",
     "data": "10/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Reajustar barra da torre torta pegando nos bicos do sistema de SPE - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "servico": "Reajustar barra da torre torta pegando nos bicos do sistema de SPE - (Fazenda SP)"
   },
   {
     "frota": "5504",
     "os": "112248",
     "data": "10/06/2025",
     "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Trocar conector duas vias do chicote - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5350",
-    "os": "112246",
-    "data": "10/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Quebra do eixo do rotor e trocar parafusos do esqui - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "servico": "Trocar conector duas vias do chicote - (Fazenda SP)"
   },
   {
     "frota": "246",
     "os": "112140",
     "data": "06/06/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Direção dura - (Fazenda SP)\nLiberado Sr. Arthur"
+    "servico": "Direção dura - (Fazenda SP)"
   },
   {
     "frota": "216",
     "os": "112044",
     "data": "04/06/2025",
     "prestador": "RETIEL RETIFICA DE MOTORES LTDA",
-    "servico": "Revisar motor - (Faz São Paulo)\nSolicitado Arthur/Rafael"
+    "servico": "Revisar motor - (Faz São Paulo)"
   },
   {
     "frota": "5504",
     "os": "112037",
     "data": "04/06/2025",
     "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Redistribuir bicos do SPE - (Fazenda SP)\nLiberado Sr. Arthur"
+    "servico": "Redistribuir bicos do SPE - (Fazenda SP)"
   },
   {
     "frota": "74",
     "os": "111906",
     "data": "03/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
+    "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)"
   },
   {
     "frota": "66",
     "os": "111757",
     "data": "23/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Confecção e instalação do teto, Pendencia 4122\nFaz São Paulo\nSolicitado Arthur"
+    "servico": "Confecção e instalação do teto, Pendencia 4122"
   },
   {
     "frota": "5205",
     "os": "110237",
     "data": "08/05/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Avaliar vazamento de óleo no rotor e régua empenada - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+    "servico": "Avaliar vazamento de óleo no rotor e régua empenada - (Fazenda São Paulo)"
   },
   {
     "frota": "218",
     "os": "110228",
     "data": "08/05/2025",
     "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Verificar vazamento no braço hidráulico, vazamento no cudo da roda dianteira L/? e vazamento nas conexões da mangueira do comando hidráulico - (Fazenda SP)\nLiberado Sr. Arthur\nPendencias 4308, 4309 e 4310"
+    "servico": "Verificar vazamento no braço hidráulico, vazamento no cudo da roda dianteira L/? e vazamento nas conexões da mangueira do comando hidráulico - (Fazenda SP)"
   },
   {
     "frota": "5205",
     "os": "109729",
     "data": "30/04/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)"
   },
   {
     "frota": "211",
     "os": "109062",
     "data": "17/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fabricar e instalar proteção para as lanternas traseiras - (Fazenda SP)\nLiberado Sr. Wilson"
+    "servico": "Fabricar e instalar proteção para as lanternas traseiras - (Fazenda SP)"
   },
   {
     "frota": "211",
     "os": "109027",
     "data": "17/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar lampadas traseiras - (Fazenda SP)\nLiberado Sr. Wilson\nPendencia N° 4243"
+    "servico": "Instalar lampadas traseiras - (Fazenda SP)"
   },
   {
     "frota": "5205",
     "os": "109026",
     "data": "17/04/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar jogo no embuchamento - (Fazenda SP)\nLiberado Sr. Mauricio"
+    "servico": "Verificar jogo no embuchamento - (Fazenda SP)"
   }
 ]

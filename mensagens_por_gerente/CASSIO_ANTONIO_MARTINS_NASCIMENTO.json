@@ -1,44 +1,59 @@
 [
   {
+    "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
+    "frota": "5599",
+    "os": "112421",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Quebra de componente acoplado à bomba. Necessário identificar a peça danificada, avaliar causa da falha e realizar substituição - (Fazenda São Severino)"
+  },
+  {
+    "frota": "231",
+    "os": "112419",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento no parafuso da TDP - (Fazenda São Severino)"
+  },
+  {
+    "frota": "231",
+    "os": "112418",
+    "data": "12/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Farol baixo do lado esquerdo/direito (ou ambos) não acende - (Fazenda São Severino)"
+  },
+  {
+    "frota": "318",
+    "os": "112417",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Avaliar ruído anormal na TDP - (Fazenda São Severino)"
+  },
+  {
     "frota": "5613",
     "os": "112271",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar e corrigir vazamento de óleo na bomba de pulverização (Fazenda São Severino)\nLiberado Sr. Mauricio"
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar e corrigir vazamento de óleo na bomba de pulverização (Fazenda São Severino)"
   },
   {
     "frota": "318",
     "os": "112243",
     "data": "10/06/2025",
     "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 900 hrs - (Fazenda São Severino)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5612",
-    "os": "112241",
-    "data": "10/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda na torre bamba - (Fazenda São Severino)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "234",
-    "os": "112240",
-    "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Suporte do amortecedor da porta quebrado - (Fazenda São Severino)\nLiberado Sr. Arthur"
+    "servico": "Revisão de 900 hrs - (Fazenda São Severino)"
   },
   {
     "frota": "5599",
     "os": "112046",
     "data": "05/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento no selo mecânico da bomba - (Fazenda São Severino)\nLiberado Sr. Mauricio"
+    "servico": "Vazamento no selo mecânico da bomba - (Fazenda São Severino)"
   },
   {
     "frota": "226",
     "os": "110945",
     "data": "20/05/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Fazer fibra na lateral - (Fazenda São Severino)\nLiberado Sr. Arthur"
+    "servico": "Fazer fibra na lateral - (Fazenda São Severino)"
   }
 ]

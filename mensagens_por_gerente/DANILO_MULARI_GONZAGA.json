@@ -1,86 +1,101 @@
 [
   {
+    "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "5106",
+    "os": "112404",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer solda na lateral L/D - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5543",
+    "os": "112402",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituição do retentor do lado esquerdo, devido a indícios de vazamento - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5459",
+    "os": "112400",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituição dos rolamentos das rodas guias, ambos os lados, devido a desgaste - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5106",
+    "os": "112301",
+    "data": "11/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituir patins da roçadeira e substituir rolamentos das rodas guias dianteira e traseira - (Fazenda Estrela)"
+  },
+  {
     "frota": "10223",
     "os": "112286",
     "data": "10/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5106",
-    "os": "112285",
-    "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Fazer solda na proteção da roda guia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)"
   },
   {
     "frota": "329",
     "os": "112260",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)\nLiberado Sr. Arthur"
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)"
   },
   {
     "frota": "5579",
     "os": "112142",
     "data": "06/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir suspiro do eixo - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5042",
-    "os": "112057",
-    "data": "05/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar engate do cabeçário danificado  - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "servico": "Substituir suspiro do eixo - (Fazenda Estrela)"
   },
   {
     "frota": "46",
     "os": "112004",
     "data": "04/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar relógio não funciona - (Fazenda Estrela)\nLiberado Sr. Arthur"
+    "servico": "Verificar relógio não funciona - (Fazenda Estrela)"
   },
   {
     "frota": "10229",
     "os": "111908",
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4323"
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
   },
   {
     "frota": "10223",
     "os": "111905",
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4386"
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
   },
   {
     "frota": "10219",
     "os": "111904",
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4387"
+    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
   },
   {
     "frota": "116",
     "os": "111498",
     "data": "29/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar escada e fazer proteção do eixo da TDP\n(Fazenda Estrela)\nLiberado Sr. Arthur"
+    "servico": "Soldar escada e fazer proteção do eixo da TDP"
   },
   {
     "frota": "5451",
     "os": "110984",
     "data": "20/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
   },
   {
     "frota": "5214",
     "os": "109707",
     "data": "30/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+    "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)"
   }
 ]

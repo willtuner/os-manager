@@ -1,143 +1,193 @@
 [
   {
+    "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "142",
+    "os": "112359",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Volante quebrado - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "251",
+    "os": "112358",
+    "data": "11/06/2025",
+    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
+    "servico": "Pneu dianteiro L/? furado - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5530",
+    "os": "112357",
+    "data": "11/06/2025",
+    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
+    "servico": "Pneu L/D furado - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5129",
+    "os": "112351",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento na bomba - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "314",
+    "os": "112350",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar parafusos de fixação da TDP - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5600",
+    "os": "112385",
+    "data": "11/06/2025",
+    "prestador": "DARCI CAPEL & CIA LTDA",
+    "servico": "Recuperar alojamento dos dois rolamentos do eixo cardan de transmissão principal."
+  },
+  {
+    "frota": "107",
+    "os": "112295",
+    "data": "11/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Efetuar limpeza no sistema de arrefecimento e combustivel"
+  },
+  {
+    "frota": "208",
+    "os": "112293",
+    "data": "11/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar embreagem não quer engatar TDP - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "5600",
     "os": "112269",
     "data": "10/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar sistema de transmissão de correias (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Verificar sistema de transmissão de correias (Fazenda Nova Manhã)"
   },
   {
     "frota": "5529",
     "os": "112239",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Vazamento no eixo da bomba - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Vazamento no eixo da bomba - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5793",
     "os": "112186",
     "data": "09/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Revisar roçadeira - (Viveiro)\nAutorizado Mauricio"
+    "servico": "Revisar roçadeira - (Viveiro)"
   },
   {
     "frota": "130",
     "os": "112176",
     "data": "06/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Quebra do suporte do capô - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+    "servico": "Quebra do suporte do capô - (Fazenda Nova Manhã)"
   },
   {
     "frota": "27",
     "os": "112106",
     "data": "06/06/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Quebra do cabo do afogador, vazamento no retentor da TDP e vazamento no bloco do motor - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+    "servico": "Quebra do cabo do afogador, vazamento no retentor da TDP e vazamento no bloco do motor - (Fazenda Nova Manhã)"
   },
   {
     "frota": "314",
     "os": "112026",
     "data": "04/06/2025",
     "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Fazer revisão de 600 hrs e verificar trator fumaceando branco - (Fazenda Nova Manhã)\nLiberado Sr. Wilson"
+    "servico": "Fazer revisão de 600 hrs e verificar trator fumaceando branco - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5609",
     "os": "112014",
     "data": "04/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Sistema de acionamento das pistolas (tic-tac) não está operando - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+    "servico": "Sistema de acionamento das pistolas (tic-tac) não está operando - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5128",
     "os": "111561",
     "data": "30/05/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "235",
     "os": "111410",
     "data": "27/05/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento no cano do diferencial (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+    "servico": "Vazamento no cano do diferencial (Fazenda Nova Manhã)"
   },
   {
     "frota": "208",
     "os": "111422",
     "data": "27/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
+    "servico": "Revisar sistema eletrico"
   },
   {
     "frota": "5128",
     "os": "111196",
     "data": "23/05/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Vazamento de óleo na bomba - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Vazamento de óleo na bomba - (Fazenda Nova Manhã)"
   },
   {
     "frota": "142",
     "os": "110763",
     "data": "16/05/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Trator não engata TDP - (Fazenda Nova Manhã)\nLiberado Sr. Arthur\nVerificar garantia (MECANICO CICERO)"
+    "servico": "Trator não engata TDP - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5433",
     "os": "110712",
     "data": "16/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)"
   },
   {
     "frota": "93",
     "os": "110574",
     "data": "15/05/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sinalização, cibiés não ascendem - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+    "servico": "Revisar sinalização, cibiés não ascendem - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5204",
     "os": "110561",
     "data": "15/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar desgaste no engate do cabeçário danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
+    "servico": "Verificar desgaste no engate do cabeçário danificado."
   },
   {
     "frota": "5354",
     "os": "110473",
     "data": "13/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5129",
     "os": "110312",
     "data": "09/05/2025",
     "prestador": "Prestador não definido",
-    "servico": "Vazamento no pistão - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Vazamento no pistão - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5530",
     "os": "109775",
     "data": "01/05/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "95",
-    "os": "108270",
-    "data": "04/04/2025",
-    "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
-    "servico": "Revisar motor \nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
+    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo."
   },
   {
     "frota": "130",
     "os": "107475",
     "data": "21/03/2025",
     "prestador": "JOCAR LTDA",
-    "servico": "Verificar ar condicionado, a informação é que está vazando gás.\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício"
+    "servico": "Verificar ar condicionado, a informação é que está vazando gás."
   },
   {
     "frota": "95",

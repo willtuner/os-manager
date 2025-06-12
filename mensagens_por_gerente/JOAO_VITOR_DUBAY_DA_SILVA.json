@@ -1,37 +1,52 @@
 [
   {
+    "solicitado": "JOAO VITOR DUBAY DA SILVA",
+    "frota": "5110",
+    "os": "112329",
+    "data": "11/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E furado - (Fazenda Estrela VI)"
+  },
+  {
+    "frota": "274",
+    "os": "112328",
+    "data": "11/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié dianteiro e traseiro queimado - (Fazenda Estrela VI)"
+  },
+  {
+    "frota": "5665",
+    "os": "112327",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Cortar gomo da esteira - (Fazenda Estrela VI)"
+  },
+  {
     "frota": "5072",
     "os": "112214",
     "data": "09/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Revisar secção dianteira não mantem aperto - (Fazenda Estrela VI)\nLiberado Sr. Mauricio"
+    "servico": "Revisar secção dianteira não mantem aperto - (Fazenda Estrela VI)"
   },
   {
     "frota": "5014",
     "os": "112043",
     "data": "04/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Instalar mangueira de distribuição de produto e do misturador, reconectar cabos da bateira - (Oficina)\nMecânico interno: João Calixto"
+    "servico": "Instalar mangueira de distribuição de produto e do misturador, reconectar cabos da bateira - (Oficina)"
   },
   {
     "frota": "266",
     "os": "112033",
     "data": "04/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)\nLiberado Sr. Arthur"
+    "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)"
   },
   {
     "frota": "81",
     "os": "111815",
     "data": "02/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar motor de partida com falha intermitente e possível travamento no acionamento. - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "279",
-    "os": "111797",
-    "data": "02/06/2025",
-    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
-    "servico": "Verificar falha no sistema de GPS - (Fazenda Estrela)\nLiberado Sr. Arthur"
+    "servico": "Avaliar motor de partida com falha intermitente e possível travamento no acionamento. - (Fazenda Minuano)"
   }
 ]

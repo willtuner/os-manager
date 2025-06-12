@@ -1,30 +1,24 @@
 [
   {
-    "frota": "262",
-    "os": "112178",
-    "data": "09/06/2025",
-    "prestador": "CARLOS HENRIQUE DE OLIVEIRA 09476981911",
-    "servico": "Troca da bomba d'água e reparo do radiador - (Fazenda São Jose)\nLiberado Sr. Gilberto"
-  },
-  {
+    "solicitado": "GILBERTO CORDEIRO",
     "frota": "5267",
     "os": "112171",
     "data": "05/06/2025",
     "prestador": "BORRACHARIA DO SHESHEO - CELINO F DAS N",
-    "servico": "Pneu lado direito furado (Fazenda São José)\nLiberado Sr. Gilberto"
+    "servico": "Pneu lado direito furado (Fazenda São José)"
   },
   {
     "frota": "5055",
     "os": "111998",
     "data": "04/06/2025",
     "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Solda na estrutura e troca de correias - (Fazenda São Jose)\nLiberado Sr. Gilberto"
+    "servico": "Solda na estrutura e troca de correias - (Fazenda São Jose)"
   },
   {
     "frota": "5601",
     "os": "111930",
     "data": "02/06/2025",
     "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Trocar rolamento traseiro do eixo - (Fazenda São José)\nLiberado Sr. Gilberto"
+    "servico": "Trocar rolamento traseiro do eixo - (Fazenda São José)"
   }
 ]

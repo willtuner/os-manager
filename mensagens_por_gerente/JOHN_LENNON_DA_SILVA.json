@@ -1,65 +1,101 @@
 [
   {
+    "solicitado": "JOHN LENNON DA SILVA",
+    "frota": "112",
+    "os": "112405",
+    "data": "12/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Vazamento nas mangueiras do comando hidráulico - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "5723",
+    "os": "112349",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Revisar a bomba e correias - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "5705",
+    "os": "112348",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Revisar a bomba e correias - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "209",
+    "os": "112347",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Troca da cruzeta da tração dianteira quebrada L/? - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "67",
+    "os": "112292",
+    "data": "10/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Revisar bomba e bico"
+  },
+  {
     "frota": "317",
     "os": "112274",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Farol da capota não está funcionando (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Farol da capota não está funcionando (Fazenda Santa Luiza)"
   },
   {
     "frota": "67",
     "os": "112190",
     "data": "05/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Sacar parafusos do motor, recuperar lateral do trator\nFaz Santa Luiza\nAutorizado Arthur"
+    "servico": "Sacar parafusos do motor, recuperar lateral do trator"
   },
   {
     "frota": "5723",
     "os": "112036",
     "data": "04/06/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias"
+    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)"
   },
   {
     "frota": "5705",
     "os": "112035",
     "data": "04/06/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias"
+    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)"
   },
   {
     "frota": "5217",
     "os": "111383",
     "data": "27/05/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Trocar rolamento da roda L/? - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+    "servico": "Trocar rolamento da roda L/? - (Fazenda Santa Luiza)"
   },
   {
     "frota": "67",
     "os": "111293",
     "data": "26/05/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento de óleo no motor - (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
+    "servico": "Vazamento de óleo no motor - (Fazenda Santa Luiza)"
   },
   {
     "frota": "5438",
     "os": "111292",
     "data": "26/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na estrutura - (Fazenda Santa Luiza)\nLiberado Sr. Mauriico"
+    "servico": "Fazer solda em trinca na estrutura - (Fazenda Santa Luiza)"
   },
   {
     "frota": "5217",
     "os": "110180",
     "data": "07/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+    "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas - (Fazenda Santa Luiza)"
   },
   {
     "frota": "5741",
     "os": "110179",
     "data": "07/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Retirar folga dos cubos e sacar parafuso do cubo - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
+    "servico": "Retirar folga dos cubos e sacar parafuso do cubo - (Fazenda Santa Luiza)"
   }
 ]

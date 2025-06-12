@@ -1,23 +1,38 @@
 [
   {
+    "solicitado": "MURILO J ONCK LEMES DA SILVA",
+    "frota": "10224",
+    "os": "112353",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Chapa do assoalho torta após colisão com implemento ocasionando a falta de curso do pedal de freio - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "301",
+    "os": "112317",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Cano de alimentação da bomba do hidráulico trincada - (Fazenda Bela Manhã)"
+  },
+  {
     "frota": "102",
     "os": "112273",
     "data": "10/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento de óleo no motor (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Verificar vazamento de óleo no motor (Fazenda Bela Manhã)"
   },
   {
     "frota": "5078",
     "os": "110736",
     "data": "16/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã) \nLiberado Sr. Mauricio"
+    "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã)"
   },
   {
     "frota": "5597",
     "os": "109432",
     "data": "25/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+    "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)"
   }
 ]

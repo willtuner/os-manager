@@ -1,16 +1,31 @@
 [
   {
+    "solicitado": "GABRIEL AUGUSTO BASSO",
+    "frota": "68",
+    "os": "112354",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Quebra do suporte de fixação do cibié (teto) - (Pecuaria)"
+  },
+  {
+    "frota": "5545",
+    "os": "112342",
+    "data": "11/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Pneu dianteiro furado - (Pecuaria)"
+  },
+  {
     "frota": "310",
     "os": "112101",
     "data": "06/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Lâmpada do farol traseiro queimado - (Pecuaria)\nLiberado Sr. Arthur"
+    "servico": "Lâmpada do farol traseiro queimado - (Pecuaria)"
   },
   {
     "frota": "5351",
     "os": "106930",
     "data": "12/03/2025",
     "prestador": "Prestador não definido",
-    "servico": "Revisão completa - \nJoão Calixto"
+    "servico": "Revisão completa -"
   }
 ]
