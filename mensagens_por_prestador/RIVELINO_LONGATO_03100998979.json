@@ -1,19 +1,27 @@
 [
   {
+    "frota": "10224",
+    "cd_equipamento": "10224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112479",
+    "data_entrada": "12/06/2025",
+    "servico": "Pneu traseiro L/D arrancou bico - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "301",
+    "cd_equipamento": "301",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112433",
+    "data_entrada": "12/06/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "66",
     "cd_equipamento": "66",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "112423",
     "data_entrada": "12/06/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112372",
-    "data_entrada": "12/06/2025",
-    "servico": "Cibié traseiro quebrado  e farol dianteiro queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
+    "servico": "Pneu traseiro L/D furado - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "247",
@@ -24,12 +32,12 @@
     "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5346",
-    "cd_equipamento": "5346",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "112341",
+    "frota": "5545",
+    "cd_equipamento": "5545",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "112342",
     "data_entrada": "11/06/2025",
-    "servico": "Pneu traseiro L/E - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+    "servico": "Pneu dianteiro furado - (Pecuaria)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5110",
@@ -46,22 +54,6 @@
     "os": "112306",
     "data_entrada": "11/06/2025",
     "servico": "Pneu L/D furado - (Fazenda Biscui)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "10223",
-    "cd_equipamento": "10223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112286",
-    "data_entrada": "10/06/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "224",
-    "cd_equipamento": "224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112233",
-    "data_entrada": "09/06/2025",
-    "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "217",
@@ -94,14 +86,6 @@
     "os": "112119",
     "data_entrada": "06/06/2025",
     "servico": "Verificar pneu direito danificado.\nFazenda Estrela\nSolicitado Sr. Rafael\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5502",
-    "cd_equipamento": "5502",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "110502",
-    "data_entrada": "14/05/2025",
-    "servico": "Vazamento no regulador de pressão - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5184",

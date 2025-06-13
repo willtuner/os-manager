@@ -1,19 +1,59 @@
 [
   {
+    "frota": "5110",
+    "cd_equipamento": "5110",
+    "modelo": "SUBSOLADOR STARA",
+    "os": "112539",
+    "data_entrada": "13/06/2025",
+    "servico": "Verificar rodas com \"jogo\" - (Fazenda Estrela VI)\nSolicitado Sr. João Vitor \nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5403",
+    "cd_equipamento": "5403",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "112505",
+    "data_entrada": "13/06/2025",
+    "servico": "Quebra do suporte traseiro de transporte de agro defensivos - (Fazenda São Pedro)\nLiberado Sr. Mauricio \nSolicitado Sr. Josimar"
+  },
+  {
+    "frota": "5673",
+    "cd_equipamento": "5673",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "112409",
+    "data_entrada": "12/06/2025",
+    "servico": "Realinhar barrinha - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "112404",
+    "data_entrada": "12/06/2025",
+    "servico": "Fazer solda na lateral L/D - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "10224",
+    "cd_equipamento": "10224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112353",
+    "data_entrada": "11/06/2025",
+    "servico": "Chapa do assoalho torta após colisão com implemento ocasionando a falta de curso do pedal de freio - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5665",
+    "cd_equipamento": "5665",
+    "modelo": "DISTRIBUIDOR SUPREMA 12.0",
+    "os": "112327",
+    "data_entrada": "11/06/2025",
+    "servico": "Cortar gomo da esteira - (Fazenda Estrela VI)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5662",
     "cd_equipamento": "5662",
     "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
     "os": "112298",
     "data_entrada": "11/06/2025",
     "servico": "Verificar dobradiças da tampa quebrada - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "300",
-    "cd_equipamento": "300",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112277",
-    "data_entrada": "10/06/2025",
-    "servico": "Soldar suporte das lanternas de alerta traseira.  (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5175",
@@ -62,6 +102,14 @@
     "os": "112214",
     "data_entrada": "09/06/2025",
     "servico": "Revisar secção dianteira não mantem aperto - (Fazenda Estrela VI)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "10217",
+    "cd_equipamento": "10217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112211",
+    "data_entrada": "09/06/2025",
+    "servico": "Fazer solda em trinca no escapamento - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5724",
@@ -134,14 +182,6 @@
     "os": "112190",
     "data_entrada": "05/06/2025",
     "servico": "Sacar parafusos do motor, recuperar lateral do trator\nFaz Santa Luiza\nAutorizado Arthur"
-  },
-  {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "112019",
-    "data_entrada": "04/06/2025",
-    "servico": "Fazer solda e reaperto na estrutura da torre - (Fazenda São Pedro)\nLiberado Sr. Mauricio  \nSolicitado Sr. Josimar"
   },
   {
     "frota": "100",

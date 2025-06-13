@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5603",
+    "cd_equipamento": "5603",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "112502",
+    "data_entrada": "13/06/2025",
+    "servico": "Soldar fios do SPE rompidos - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5749",
     "cd_equipamento": "5749",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -22,53 +30,5 @@
     "os": "112037",
     "data_entrada": "04/06/2025",
     "servico": "Redistribuir bicos do SPE - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5747",
-    "cd_equipamento": "5747",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111915",
-    "data_entrada": "03/06/2025",
-    "servico": "Troca do cabo de 7m que liga M1 ao M2 - (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5022",
-    "cd_equipamento": "5022",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111317",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111318",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5486",
-    "cd_equipamento": "5486",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "111321",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisar SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5748",
-    "cd_equipamento": "5748",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111315",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5747",
-    "cd_equipamento": "5747",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111316",
-    "data_entrada": "22/05/2025",
-    "servico": "Revisão do SPE (Fazenda Estrela)\nLiberado Sr. Wilson"
   }
 ]

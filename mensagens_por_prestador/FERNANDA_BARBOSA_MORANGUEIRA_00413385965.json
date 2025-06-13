@@ -1,18 +1,18 @@
 [
   {
+    "frota": "324",
+    "cd_equipamento": "324",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "112503",
+    "data_entrada": "13/06/2025",
+    "servico": "Trocar borracha das portas - (Faz São Paulo)\nAutorizado Arthur"
+  },
+  {
     "frota": "215",
     "cd_equipamento": "215",
     "modelo": "TRATOR JOHN DEERE 5070 E",
     "os": "111570",
     "data_entrada": "30/05/2025",
     "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111358",
-    "data_entrada": "27/05/2025",
-    "servico": "Borrachas de vedação da porta soltas - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "frota": "130",
+    "cd_equipamento": "130",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "112176",
+    "data_entrada": "06/06/2025",
+    "servico": "Quebra do suporte do capô - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "10229",
     "cd_equipamento": "10229",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -14,13 +22,5 @@
     "os": "111905",
     "data_entrada": "03/06/2025",
     "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4386"
-  },
-  {
-    "frota": "10219",
-    "cd_equipamento": "10219",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111904",
-    "data_entrada": "03/06/2025",
-    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)\nLiberado Sr. Arthur \nPendencia N° 4387"
   }
 ]
