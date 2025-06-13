@@ -1,39 +1,32 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
+    "frota": "323",
+    "os": "112435",
+    "data": "12/06/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Revisão de 300 hrs - (Fazenda Estrela)"
+  },
+  {
     "frota": "5106",
     "os": "112404",
     "data": "12/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda na lateral L/D - (Fazenda Estrela)"
   },
   {
     "frota": "5543",
     "os": "112402",
     "data": "12/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Substituição do retentor do lado esquerdo, devido a indícios de vazamento - (Fazenda Estrela)"
   },
   {
     "frota": "5459",
     "os": "112400",
     "data": "12/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Substituição dos rolamentos das rodas guias, ambos os lados, devido a desgaste - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5106",
-    "os": "112301",
-    "data": "11/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir patins da roçadeira e substituir rolamentos das rodas guias dianteira e traseira - (Fazenda Estrela)"
-  },
-  {
-    "frota": "10223",
-    "os": "112286",
-    "data": "10/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)"
+    "servico": "Substituição dos rolamentos das rodas guias, ambos os lados, devido a desgaste - (Fazenda Estrela)"
   },
   {
     "frota": "329",
@@ -41,13 +34,6 @@
     "data": "10/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5579",
-    "os": "112142",
-    "data": "06/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir suspiro do eixo - (Fazenda Estrela)"
   },
   {
     "frota": "46",
@@ -66,13 +52,6 @@
   {
     "frota": "10223",
     "os": "111905",
-    "data": "03/06/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
-  },
-  {
-    "frota": "10219",
-    "os": "111904",
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
     "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"

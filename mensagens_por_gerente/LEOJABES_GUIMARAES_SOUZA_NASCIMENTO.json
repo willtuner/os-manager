@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "332",
+    "os": "112508",
+    "data": "13/06/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Verificar vazamento no retentor do cubo da roda dianteira e fazer revisão de 50 hrs  - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "324",
+    "os": "112503",
+    "data": "13/06/2025",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
+    "servico": "Trocar borracha das portas - (Faz São Paulo)"
+  },
+  {
     "frota": "66",
     "os": "112423",
     "data": "12/06/2025",
@@ -11,29 +25,15 @@
     "frota": "125",
     "os": "112316",
     "data": "11/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trator não pega na partida e luz acessa no painel - (Fazenda SP)"
-  },
-  {
-    "frota": "5722",
-    "os": "112315",
-    "data": "11/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Verificar comando sem pressão - (Fazenda SP)"
   },
   {
     "frota": "5063",
     "os": "112310",
     "data": "11/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Sacar e trocar bico graxeiro quebrado - (Fazenda SP)"
-  },
-  {
-    "frota": "5501",
-    "os": "112309",
-    "data": "11/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Soldar proteção de partes moveis - (Fazenda SP)"
   },
   {
     "frota": "5676",
@@ -48,13 +48,6 @@
     "data": "11/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Trocar reservatório de óleo hidraulico"
-  },
-  {
-    "frota": "5755",
-    "os": "112288",
-    "data": "10/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Reajustar parafusos que seguram proteção anti-arremesso - (Fazenda SP)"
   },
   {
     "frota": "5494",
@@ -124,7 +117,7 @@
     "os": "110237",
     "data": "08/05/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Avaliar vazamento de óleo no rotor e régua empenada - (Fazenda São Paulo)"
+    "servico": "Avaliar vazamento de óleo no rotor, verificar régua e facão empenado. regularizar parafusos de fixação da faquinha quebrado e instalar conjunto de corte no trator - (Fazenda São Paulo)"
   },
   {
     "frota": "218",
@@ -132,13 +125,6 @@
     "data": "08/05/2025",
     "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
     "servico": "Verificar vazamento no braço hidráulico, vazamento no cudo da roda dianteira L/? e vazamento nas conexões da mangueira do comando hidráulico - (Fazenda SP)"
-  },
-  {
-    "frota": "5205",
-    "os": "109729",
-    "data": "30/04/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Quebra do parafuso que fixa as faquinhas - (Fazenda SP)"
   },
   {
     "frota": "211",
@@ -153,12 +139,5 @@
     "data": "17/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar lampadas traseiras - (Fazenda SP)"
-  },
-  {
-    "frota": "5205",
-    "os": "109026",
-    "data": "17/04/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar jogo no embuchamento - (Fazenda SP)"
   }
 ]

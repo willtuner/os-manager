@@ -1,11 +1,18 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
-    "frota": "142",
-    "os": "112359",
-    "data": "11/06/2025",
+    "frota": "147",
+    "os": "112547",
+    "data": "13/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Volante quebrado - (Fazenda Nova Manhã)"
+    "servico": "Verificar A/C não funciona  - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "147",
+    "os": "112546",
+    "data": "13/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar sensor de óleo de motor - (Fazenda Nova Manhã)"
   },
   {
     "frota": "251",
@@ -32,7 +39,7 @@
     "frota": "314",
     "os": "112350",
     "data": "11/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Trocar parafusos de fixação da TDP - (Fazenda Nova Manhã)"
   },
   {
@@ -41,20 +48,6 @@
     "data": "11/06/2025",
     "prestador": "DARCI CAPEL & CIA LTDA",
     "servico": "Recuperar alojamento dos dois rolamentos do eixo cardan de transmissão principal."
-  },
-  {
-    "frota": "107",
-    "os": "112295",
-    "data": "11/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Efetuar limpeza no sistema de arrefecimento e combustivel"
-  },
-  {
-    "frota": "208",
-    "os": "112293",
-    "data": "11/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar embreagem não quer engatar TDP - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5600",
@@ -67,7 +60,7 @@
     "frota": "5529",
     "os": "112239",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Vazamento no eixo da bomba - (Fazenda Nova Manhã)"
   },
   {
@@ -81,7 +74,7 @@
     "frota": "130",
     "os": "112176",
     "data": "06/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
     "servico": "Quebra do suporte do capô - (Fazenda Nova Manhã)"
   },
   {
@@ -90,13 +83,6 @@
     "data": "06/06/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Quebra do cabo do afogador, vazamento no retentor da TDP e vazamento no bloco do motor - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "314",
-    "os": "112026",
-    "data": "04/06/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Fazer revisão de 600 hrs e verificar trator fumaceando branco - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5609",

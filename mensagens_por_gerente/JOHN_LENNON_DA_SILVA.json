@@ -1,31 +1,31 @@
 [
   {
     "solicitado": "JOHN LENNON DA SILVA",
+    "frota": "5438",
+    "os": "112525",
+    "data": "13/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Instalar cibié - (Fazenda Santa Izabel)"
+  },
+  {
+    "frota": "10220",
+    "os": "112462",
+    "data": "12/06/2025",
+    "prestador": "AGROPULV MANUTENCAO DE EQUIPAMENTOS EIR",
+    "servico": "Soldar tanque de combustivel - (Faz Santa Luiza)"
+  },
+  {
     "frota": "112",
     "os": "112405",
     "data": "12/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento nas mangueiras do comando hidráulico - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "5723",
-    "os": "112349",
-    "data": "11/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Revisar a bomba e correias - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "5705",
-    "os": "112348",
-    "data": "11/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Revisar a bomba e correias - (Fazenda Santa Luiza)"
   },
   {
     "frota": "209",
     "os": "112347",
     "data": "11/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Troca da cruzeta da tração dianteira quebrada L/? - (Fazenda Santa Luiza)"
   },
   {
@@ -34,6 +34,13 @@
     "data": "10/06/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Revisar bomba e bico"
+  },
+  {
+    "frota": "67",
+    "os": "112498",
+    "data": "10/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sistema eletrico - (Faz Santa Luiza)"
   },
   {
     "frota": "317",
