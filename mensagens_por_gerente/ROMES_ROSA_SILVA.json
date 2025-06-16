@@ -1,32 +1,32 @@
 [
   {
     "solicitado": "ROMES ROSA SILVA",
+    "frota": "157",
+    "os": "112630",
+    "data": "16/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituir terminais da direção devido a desgaste ou folga nos componentes. - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "117",
+    "os": "112627",
+    "data": "16/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar vazamento de óleo na TDP - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "133",
+    "os": "112590",
+    "data": "16/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trocar cabo do acelerador de pé quebrado - (Fazenda São Pedro)"
+  },
+  {
     "frota": "5102",
     "os": "112540",
     "data": "13/06/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Troca de reparo do pistão, haste e êmbolo  - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "10226",
-    "os": "112535",
-    "data": "13/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Lanternas traseiras queimadas - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "252",
-    "os": "112532",
-    "data": "13/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Regular embreagem - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5233",
-    "os": "112519",
-    "data": "13/06/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar e corrigir vazamentos nos pistões das barras de pulverização."
   },
   {
     "frota": "10120",
@@ -50,20 +50,6 @@
     "servico": "Verificar origem de vazamento de óleo na região inferior do trator, nas proximidades da carcaça da caixa seca - (Fazenda São Pedro)"
   },
   {
-    "frota": "252",
-    "os": "112305",
-    "data": "11/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar iluminação oscilando - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "298",
-    "os": "112303",
-    "data": "11/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento no bujão do cárter - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5715",
     "os": "112208",
     "data": "09/06/2025",
@@ -85,13 +71,6 @@
     "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho."
   },
   {
-    "frota": "5421",
-    "os": "111970",
-    "data": "03/06/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar rolamento da turbina."
-  },
-  {
     "frota": "100",
     "os": "111662",
     "data": "02/06/2025",
@@ -106,25 +85,11 @@
     "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)"
   },
   {
-    "frota": "5171",
-    "os": "111431",
-    "data": "28/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Identificado vazamento no retentor da bomba necessário substituí-lo para restabelecer a vedação do sistema - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5760",
     "os": "111424",
     "data": "28/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Verificar possível contaminação do óleo lubrificante por produto químico proveniente da bomba de aplicação. - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5233",
-    "os": "111423",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar soldagem em múltiplas trincas na estrutura do tanque e corrigir vazamento no pistão. - (Fazenda São Pedro)"
   },
   {
     "frota": "5171",

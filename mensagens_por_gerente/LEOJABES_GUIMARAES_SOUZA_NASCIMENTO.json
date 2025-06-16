@@ -1,6 +1,27 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "46",
+    "os": "112632",
+    "data": "16/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar relógio horimetro não funciona - (Fazenda SP)"
+  },
+  {
+    "frota": "46",
+    "os": "112619",
+    "data": "16/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Avaliar marcha encavalada - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5350",
+    "os": "112574",
+    "data": "16/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trinca no cabeçario e verificar folga nas rodas guia - (Fazenda São Paulo)"
+  },
+  {
     "frota": "332",
     "os": "112508",
     "data": "13/06/2025",
@@ -13,34 +34,6 @@
     "data": "13/06/2025",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Trocar borracha das portas - (Faz São Paulo)"
-  },
-  {
-    "frota": "66",
-    "os": "112423",
-    "data": "12/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/D furado - (Fazenda SP)"
-  },
-  {
-    "frota": "125",
-    "os": "112316",
-    "data": "11/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator não pega na partida e luz acessa no painel - (Fazenda SP)"
-  },
-  {
-    "frota": "5063",
-    "os": "112310",
-    "data": "11/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Sacar e trocar bico graxeiro quebrado - (Fazenda SP)"
-  },
-  {
-    "frota": "5676",
-    "os": "112306",
-    "data": "11/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda Biscui)"
   },
   {
     "frota": "135",
@@ -57,27 +50,6 @@
     "servico": "Esteira quebrada - (Fazenda SP)"
   },
   {
-    "frota": "5749",
-    "os": "112250",
-    "data": "10/06/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Solda em terminal - (Fazenda SP)"
-  },
-  {
-    "frota": "5749",
-    "os": "112249",
-    "data": "10/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Reajustar barra da torre torta pegando nos bicos do sistema de SPE - (Fazenda SP)"
-  },
-  {
-    "frota": "5504",
-    "os": "112248",
-    "data": "10/06/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Trocar conector duas vias do chicote - (Fazenda SP)"
-  },
-  {
     "frota": "246",
     "os": "112140",
     "data": "06/06/2025",
@@ -92,13 +64,6 @@
     "servico": "Revisar motor - (Faz São Paulo)"
   },
   {
-    "frota": "5504",
-    "os": "112037",
-    "data": "04/06/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Redistribuir bicos do SPE - (Fazenda SP)"
-  },
-  {
     "frota": "74",
     "os": "111906",
     "data": "03/06/2025",
@@ -111,13 +76,6 @@
     "data": "23/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Confecção e instalação do teto, Pendencia 4122"
-  },
-  {
-    "frota": "5205",
-    "os": "110237",
-    "data": "08/05/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Avaliar vazamento de óleo no rotor, verificar régua e facão empenado. regularizar parafusos de fixação da faquinha quebrado e instalar conjunto de corte no trator - (Fazenda São Paulo)"
   },
   {
     "frota": "218",

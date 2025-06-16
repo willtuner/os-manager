@@ -1,18 +1,11 @@
 [
   {
     "solicitado": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-    "frota": "5430",
-    "os": "112531",
-    "data": "13/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Instalar filtro - (Fazenda Estrela)"
-  },
-  {
-    "frota": "268",
-    "os": "112483",
-    "data": "12/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar lâmpada do cibié traseiro - (Fazenda Estrela)"
+    "frota": "221",
+    "os": "112583",
+    "data": "16/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Avaliar vazamento de óleo diesel embaixo do tanque de combustível - (Fazenda Estrela)"
   },
   {
     "frota": "325",
@@ -29,20 +22,6 @@
     "servico": "Identificado vazamento de óleo na junta do bloco do motor - (Fazenda Estrela)"
   },
   {
-    "frota": "10223",
-    "os": "112424",
-    "data": "12/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Troca dos cibiés dianteiro e traseiro queimados, luzes do alerta queimadas e verificar chicote da boia de combustível - (Fazenda Estrela)"
-  },
-  {
-    "frota": "221",
-    "os": "112336",
-    "data": "11/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Sensor de restrição não funciona e lanterna dianteira queimada - (Fazenda Estrela)"
-  },
-  {
     "frota": "5367",
     "os": "112335",
     "data": "11/06/2025",
@@ -57,45 +36,10 @@
     "servico": "Vazamento de óleo no comando hidráulico - (Fazenda Estrela)"
   },
   {
-    "frota": "136",
-    "os": "112332",
-    "data": "11/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sinalização - (Fazenda Estrela)"
-  },
-  {
-    "frota": "110",
-    "os": "112011",
-    "data": "04/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Relógio horimetro não funciona - (Fazenda Estrela)"
-  },
-  {
-    "frota": "136",
-    "os": "111971",
-    "data": "03/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié traseiro e dianteiro queimado - (Fazenda Estrela)"
-  },
-  {
-    "frota": "258",
-    "os": "111917",
-    "data": "03/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar embreagem não da mais regulagem, e grupo de marcha A,B e C escapando - (Fazenda Estrela)"
-  },
-  {
     "frota": "189",
     "os": "110510",
     "data": "14/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Confeccionar e instalar proteções das lanternas do paralamas"
-  },
-  {
-    "frota": "5491",
-    "os": "109153",
-    "data": "22/04/2025",
-    "prestador": "FM MANUTENÇÃO",
-    "servico": "Adaptar ramal para adequar quantidade de bico - (Fazenda Estrela)"
   }
 ]

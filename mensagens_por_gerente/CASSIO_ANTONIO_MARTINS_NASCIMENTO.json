@@ -2,10 +2,31 @@
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
     "frota": "226",
-    "os": "112522",
-    "data": "13/06/2025",
+    "os": "112625",
+    "data": "16/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar vazamento de óleo no conjunto do comando hidráulico. - (Fazenda São Severino)"
+  },
+  {
+    "frota": "234",
+    "os": "112616",
+    "data": "16/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar ponteiro de RPM oscilando no painel - (Fazenda São Severino)"
+    "servico": "Verificar trator não pega na partida - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5658",
+    "os": "112607",
+    "data": "16/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em ramal com furo - (Fazenda São Severino)"
+  },
+  {
+    "frota": "80",
+    "os": "112557",
+    "data": "14/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Consertar pneus dianteiro e traseiro do lado direito furado."
   },
   {
     "frota": "229",
@@ -13,47 +34,5 @@
     "data": "13/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Avaliar pneu dianteiro L/D com \"folga\" - (Fazenda São Severino)"
-  },
-  {
-    "frota": "231",
-    "os": "112520",
-    "data": "13/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Quebra do suporte do cabo do acelerador - (Fazenda São Severino)"
-  },
-  {
-    "frota": "226",
-    "os": "112518",
-    "data": "13/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator sem partida - (Fazenda São Severino)"
-  },
-  {
-    "frota": "231",
-    "os": "112419",
-    "data": "12/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento no parafuso da TDP - (Fazenda São Severino)"
-  },
-  {
-    "frota": "231",
-    "os": "112418",
-    "data": "12/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Farol baixo do lado esquerdo/direito (ou ambos) não acende - (Fazenda São Severino)"
-  },
-  {
-    "frota": "318",
-    "os": "112417",
-    "data": "12/06/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Avaliar ruído anormal na TDP - (Fazenda São Severino)"
-  },
-  {
-    "frota": "318",
-    "os": "112243",
-    "data": "10/06/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 900 hrs - (Fazenda São Severino)"
   }
 ]
