@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5658",
+    "cd_equipamento": "5658",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "112607",
+    "data_entrada": "16/06/2025",
+    "servico": "Fazer solda em ramal com furo - (Fazenda São Severino)\nSolicitado Sr. Cassio\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5598",
+    "cd_equipamento": "5598",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "112577",
+    "data_entrada": "16/06/2025",
+    "servico": "Parafusos de fixação do eixo soltos - (Fazenda NSA)\nSolicitado Sr. Rennan\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5350",
+    "cd_equipamento": "5350",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "112574",
+    "data_entrada": "16/06/2025",
+    "servico": "Fazer solda em trinca no cabeçario e verificar folga nas rodas guia - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nLiberado Sr. Mauricio\nPendencias N° 4336 e 4335"
+  },
+  {
     "frota": "5110",
     "cd_equipamento": "5110",
     "modelo": "SUBSOLADOR STARA",
@@ -40,22 +64,6 @@
     "servico": "Chapa do assoalho torta após colisão com implemento ocasionando a falta de curso do pedal de freio - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5665",
-    "cd_equipamento": "5665",
-    "modelo": "DISTRIBUIDOR SUPREMA 12.0",
-    "os": "112327",
-    "data_entrada": "11/06/2025",
-    "servico": "Cortar gomo da esteira - (Fazenda Estrela VI)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5662",
-    "cd_equipamento": "5662",
-    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-    "os": "112298",
-    "data_entrada": "11/06/2025",
-    "servico": "Verificar dobradiças da tampa quebrada - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5175",
     "cd_equipamento": "5175",
     "modelo": "TANQUE DE AGUA 4000 LT",
@@ -78,22 +86,6 @@
     "os": "112259",
     "data_entrada": "10/06/2025",
     "servico": "Verificar torre 'bamba'  - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5749",
-    "cd_equipamento": "5749",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "112249",
-    "data_entrada": "10/06/2025",
-    "servico": "Reajustar barra da torre torta pegando nos bicos do sistema de SPE - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5783",
-    "cd_equipamento": "5783",
-    "modelo": "DESENROLADOR DE MANGUEIRA",
-    "os": "112225",
-    "data_entrada": "09/06/2025",
-    "servico": "Soldar suporte da barra de saída da mangueira esquerda - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5072",
@@ -168,14 +160,6 @@
     "servico": "Substituição do suporte e da unha da pá carregadeira - (Fazenda Nova Manhã)\nLiberado Sr. Rafael"
   },
   {
-    "frota": "5139",
-    "cd_equipamento": "5139",
-    "modelo": "TANQUE DE AGUA 4000 LT",
-    "os": "112058",
-    "data_entrada": "05/06/2025",
-    "servico": "Fazer solda em trinca na estrutura do chassi - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "67",
     "cd_equipamento": "67",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -246,14 +230,6 @@
     "os": "111464",
     "data_entrada": "28/05/2025",
     "servico": "Fazer proteção das polias.\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio"
-  },
-  {
-    "frota": "5233",
-    "cd_equipamento": "5233",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111423",
-    "data_entrada": "28/05/2025",
-    "servico": "Realizar soldagem em múltiplas trincas na estrutura do tanque e corrigir vazamento no pistão. - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5619",
@@ -374,14 +350,6 @@
     "os": "109432",
     "data_entrada": "25/04/2025",
     "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5712",
-    "cd_equipamento": "5712",
-    "modelo": "TANQUE DE AGUA 6500",
-    "os": "109102",
-    "data_entrada": "17/04/2025",
-    "servico": "Refazer cabeçalho desalinhado - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "211",

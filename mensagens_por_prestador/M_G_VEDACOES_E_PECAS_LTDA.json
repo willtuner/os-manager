@@ -1,11 +1,11 @@
 [
   {
-    "frota": "5233",
-    "cd_equipamento": "5233",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "112519",
+    "frota": "5467",
+    "cd_equipamento": "5467",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "112552",
     "data_entrada": "13/06/2025",
-    "servico": "Verificar e corrigir vazamentos nos pistões das barras de pulverização.\nFazenda São Pedro\nSolicitado Sr. Romes\nLiberado Sr. Maurício"
+    "servico": "Substituir reparo cabeça navalha - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio\nPS. Não possui peças na fazenda"
   },
   {
     "frota": "5673",
@@ -14,14 +14,6 @@
     "os": "112408",
     "data_entrada": "12/06/2025",
     "servico": "Vazamento no comando da barrinha - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5568",
-    "cd_equipamento": "5568",
-    "modelo": "PODADEIRA GTM PLT-350",
-    "os": "112403",
-    "data_entrada": "11/06/2025",
-    "servico": "Realizar remoção do implemento do trator.\nCorporativo Podadeira\nSolicitado e liberado Sr. Zacarias"
   },
   {
     "frota": "5723",
@@ -40,14 +32,6 @@
     "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias"
   },
   {
-    "frota": "5205",
-    "cd_equipamento": "5205",
-    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
-    "os": "110237",
-    "data_entrada": "08/05/2025",
-    "servico": "Avaliar vazamento de óleo no rotor, verificar régua e facão empenado. regularizar parafusos de fixação da faquinha quebrado e instalar conjunto de corte no trator - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5530",
     "cd_equipamento": "5530",
     "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
@@ -62,5 +46,13 @@
     "os": "109154",
     "data_entrada": "22/04/2025",
     "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5482",
+    "cd_equipamento": "5482",
+    "modelo": "PODADEIRA HID.GLOBAL 3500",
+    "os": "109136",
+    "data_entrada": "21/04/2025",
+    "servico": "Revisar podadeira - \nLiberado Sr. Rafael"
   }
 ]

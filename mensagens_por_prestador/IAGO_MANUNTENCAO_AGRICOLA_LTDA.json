@@ -1,27 +1,59 @@
 [
   {
-    "frota": "5542",
-    "cd_equipamento": "5542",
-    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
-    "os": "112537",
-    "data_entrada": "13/06/2025",
-    "servico": "Reduzir tamanho da esteira da adubadeira. Pegando nos pés de laranja - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nLiberado Sr. Mauricio"
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "112600",
+    "data_entrada": "16/06/2025",
+    "servico": "Verificar ausência do braço do pistão do sistema de abre e fecha, e danificações na conexão da caixa incorporadora (quebrada/explanada), comprometendo o funcionamento do conjunto - (Fazenda Casa Branca)\nSolicitado Sr. Rafael\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5430",
-    "cd_equipamento": "5430",
-    "modelo": "PULVERIZADOR 600 LT FMC",
-    "os": "112531",
-    "data_entrada": "13/06/2025",
-    "servico": "Instalar filtro - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nLiberado Sr. Mauricio"
+    "frota": "5275",
+    "cd_equipamento": "5275",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "112597",
+    "data_entrada": "16/06/2025",
+    "servico": "Verificar presença de folga excessiva (jogo) nas duas rodas - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5290",
-    "cd_equipamento": "5290",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "112431",
-    "data_entrada": "12/06/2025",
-    "servico": "Vazamento na graxeta - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+    "frota": "5031",
+    "cd_equipamento": "5031",
+    "modelo": "RC2 E 2600 LSL TATU",
+    "os": "112591",
+    "data_entrada": "16/06/2025",
+    "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5129",
+    "cd_equipamento": "5129",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "112585",
+    "data_entrada": "16/06/2025",
+    "servico": "Verificar presença de folga excessiva (jogo) na roda direita do tanque, possivelmente relacionada a rolamentos ou componentes de fixação - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5066",
+    "cd_equipamento": "5066",
+    "modelo": "ADUBADEIRA CACAMBA TATU",
+    "os": "112581",
+    "data_entrada": "16/06/2025",
+    "servico": "Verificar falha no sistema de fechamento lateral da adubadeira - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Maurio"
+  },
+  {
+    "frota": "5459",
+    "cd_equipamento": "5459",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "112580",
+    "data_entrada": "16/06/2025",
+    "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5543",
+    "cd_equipamento": "5543",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "112578",
+    "data_entrada": "16/06/2025",
+    "servico": "Substituir luva e eixo cardam - (Fazenda Estrela)\nLiberado Sr. Mauricio\nSolicitado Sr. Danilo"
   },
   {
     "frota": "5688",
@@ -32,44 +64,12 @@
     "servico": "Instalar correte de água e caixa misturadora - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5543",
-    "cd_equipamento": "5543",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "112402",
-    "data_entrada": "12/06/2025",
-    "servico": "Substituição do retentor do lado esquerdo, devido a indícios de vazamento - (Fazenda Estrela)\nLiberado Sr. Mauricio \nPendencia N° ??"
-  },
-  {
-    "frota": "5459",
-    "cd_equipamento": "5459",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "112400",
-    "data_entrada": "12/06/2025",
-    "servico": "Substituição dos rolamentos das rodas guias, ambos os lados, devido a desgaste - (Fazenda Estrela)\nPendencia N° ??"
-  },
-  {
     "frota": "5367",
     "cd_equipamento": "5367",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "112335",
     "data_entrada": "11/06/2025",
     "servico": "Vazamento de óleo na bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5767",
-    "cd_equipamento": "5767",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "112326",
-    "data_entrada": "11/06/2025",
-    "servico": "Vazamento nas canecas da bomba - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112310",
-    "data_entrada": "11/06/2025",
-    "servico": "Sacar e trocar bico graxeiro quebrado - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5600",

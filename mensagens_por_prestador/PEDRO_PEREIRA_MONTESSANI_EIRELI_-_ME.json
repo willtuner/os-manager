@@ -1,19 +1,67 @@
 [
   {
-    "frota": "147",
-    "cd_equipamento": "147",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "112546",
-    "data_entrada": "13/06/2025",
-    "servico": "Trocar sensor de óleo de motor - (Fazenda Nova Manhã)\nLiberado Sr. Arthur \nSolicitado Sr. Adriano"
+    "frota": "46",
+    "cd_equipamento": "46",
+    "modelo": "TRATOR JOHN DEERE 5600 4X4",
+    "os": "112632",
+    "data_entrada": "16/06/2025",
+    "servico": "Verificar relógio horimetro não funciona - (Fazenda SP)\nSolicitado Sr. Vitor ADM SP\nLiberado Sr. Arthur"
   },
   {
-    "frota": "10226",
-    "cd_equipamento": "10226",
+    "frota": "267",
+    "cd_equipamento": "267",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112535",
-    "data_entrada": "13/06/2025",
-    "servico": "Lanternas traseiras queimadas - (Fazenda São Pedro)\nSolicitado Sr. Romes\nLiberado Sr. Arthur"
+    "os": "112628",
+    "data_entrada": "16/06/2025",
+    "servico": "Diagnosticar falha elétrica no trator, com queima frequente de fusíveis, possivelmente causada por curto-circuito ou sobrecarga no sistema - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "22",
+    "cd_equipamento": "22",
+    "modelo": "TRATOR VALTRA BH 180 4X4",
+    "os": "112621",
+    "data_entrada": "16/06/2025",
+    "servico": "Trator não pega na partida, gira mas não pega - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112616",
+    "data_entrada": "16/06/2025",
+    "servico": "Verificar trator não pega na partida - (Fazenda São Severino)\nSolicitado Sr. Cassio \nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "112589",
+    "data_entrada": "16/06/2025",
+    "servico": "Farol dianteiro L/E queimado - (Fazenda NSA)\nSolicitado Sr. Vitor subgerente\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "303",
+    "cd_equipamento": "303",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112588",
+    "data_entrada": "16/06/2025",
+    "servico": "Cibié dianteiro L/E queimado - (Fazenda NSA)\nSolicitado Sr. Vitor subgerente\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "143",
+    "cd_equipamento": "143",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "112582",
+    "data_entrada": "16/06/2025",
+    "servico": "Verificar alternador, bateria não esta sendo carregada corretamente - (Fazenda NSA)\nSolicitado Sr. Rennan\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "134",
+    "cd_equipamento": "134",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "112572",
+    "data_entrada": "16/06/2025",
+    "servico": "Revisar sinalização - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5438",
@@ -24,68 +72,12 @@
     "servico": "Instalar cibié - (Fazenda Santa Izabel)\nSolicitado Sr. John\nLiberado Sr. Arthur"
   },
   {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "112523",
-    "data_entrada": "13/06/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "226",
-    "cd_equipamento": "226",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "112522",
-    "data_entrada": "13/06/2025",
-    "servico": "Avaliar ponteiro de RPM oscilando no painel - (Fazenda São Severino)\nSolicitado Sr. Cassio\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "226",
-    "cd_equipamento": "226",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "112518",
-    "data_entrada": "13/06/2025",
-    "servico": "Verificar trator sem partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "264",
-    "cd_equipamento": "264",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112506",
-    "data_entrada": "13/06/2025",
-    "servico": "Verificar sensor de restrição de ar não funciona - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "10221",
     "cd_equipamento": "10221",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "112504",
     "data_entrada": "13/06/2025",
     "servico": "Verificar trator sem partida - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "268",
-    "cd_equipamento": "268",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112483",
-    "data_entrada": "12/06/2025",
-    "servico": "Trocar lâmpada do cibié traseiro - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "194",
-    "cd_equipamento": "194",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "112463",
-    "data_entrada": "12/06/2025",
-    "servico": "Verificar trator não carrega a bateria - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "102",
-    "cd_equipamento": "102",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "112441",
-    "data_entrada": "12/06/2025",
-    "servico": "Trator sem partida - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10120",
@@ -96,36 +88,12 @@
     "servico": "Revisão elétrica - (Oficina)"
   },
   {
-    "frota": "254",
-    "cd_equipamento": "254",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112427",
-    "data_entrada": "12/06/2025",
-    "servico": "Trator apresentando descarga da bateria mesmo em operação. Recomendada inspeção no alternador - (Fazenda Minuano)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "10223",
-    "cd_equipamento": "10223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112424",
-    "data_entrada": "12/06/2025",
-    "servico": "Troca dos cibiés dianteiro e traseiro queimados, luzes do alerta queimadas e verificar chicote da boia de combustível - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5382",
     "cd_equipamento": "5382",
     "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
     "os": "112420",
     "data_entrada": "12/06/2025",
     "servico": "Revisar sistema eletrico - (OFICINA)\nAutorizado Rafael"
-  },
-  {
-    "frota": "231",
-    "cd_equipamento": "231",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "112418",
-    "data_entrada": "12/06/2025",
-    "servico": "Farol baixo do lado esquerdo/direito (ou ambos) não acende - (Fazenda São Severino)\nLiberado Sr. Arthur"
   },
   {
     "frota": "10222",
@@ -144,36 +112,12 @@
     "servico": "Trocar farol dianteiro com a lente quebrada - (Fazenda NSA)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "250",
-    "cd_equipamento": "250",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "112374",
-    "data_entrada": "12/06/2025",
-    "servico": "Cibié traseiro fosco e sem foco - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "222",
     "cd_equipamento": "222",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "112373",
     "data_entrada": "12/06/2025",
     "servico": "Faróis dianteiros queimados - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112372",
-    "data_entrada": "12/06/2025",
-    "servico": "Cibié traseiro quebrado  e farol dianteiro queimado - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "192",
-    "cd_equipamento": "192",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "112370",
-    "data_entrada": "12/06/2025",
-    "servico": "Verificar motor de partida apresentando dificuldade no acionamento, com sinais de travamento ou esforço excessivo durante a partida - (Fazenda Estrela)\nLiberado Sr. Arthur\nPendencia N° 4429"
   },
   {
     "frota": "192",
@@ -200,30 +144,6 @@
     "servico": "Revisar sinalização - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "274",
-    "cd_equipamento": "274",
-    "modelo": "TRATOR VALTRA T250 CVT",
-    "os": "112328",
-    "data_entrada": "11/06/2025",
-    "servico": "Cibié dianteiro e traseiro queimado - (Fazenda Estrela VI)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "125",
-    "cd_equipamento": "125",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "112316",
-    "data_entrada": "11/06/2025",
-    "servico": "Trator não pega na partida e luz acessa no painel - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "252",
-    "cd_equipamento": "252",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112305",
-    "data_entrada": "11/06/2025",
-    "servico": "Verificar iluminação oscilando - (Fazenda São Pedro)\nLiberado Sr. Arthur\nPendencia N° 4402"
-  },
-  {
     "frota": "67",
     "cd_equipamento": "67",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -240,44 +160,12 @@
     "servico": "Trocar botão de acionamento da barra (Fazenda Santo Antônio)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "317",
-    "cd_equipamento": "317",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "112274",
-    "data_entrada": "10/06/2025",
-    "servico": "Farol da capota não está funcionando (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "10220",
-    "cd_equipamento": "10220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112265",
-    "data_entrada": "10/06/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "143",
     "cd_equipamento": "143",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
     "os": "112253",
     "data_entrada": "10/06/2025",
     "servico": "Verificar relógio horimetro não marca corretamente - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "84",
-    "cd_equipamento": "84",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "112247",
-    "data_entrada": "10/06/2025",
-    "servico": "Verificar trator so pega no tranco - (Industria)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "126",
-    "cd_equipamento": "126",
-    "modelo": "GATOR JOHNN DEERE",
-    "os": "112237",
-    "data_entrada": "10/06/2025",
-    "servico": "Verificar equipamento com partida pesada - (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
     "frota": "224",
@@ -328,14 +216,6 @@
     "servico": "Sistema de acionamento das pistolas (tic-tac) não está operando - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "110",
-    "cd_equipamento": "110",
-    "modelo": "TRATOR MASSEY FERGUSON 275",
-    "os": "112011",
-    "data_entrada": "04/06/2025",
-    "servico": "Relógio horimetro não funciona - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "46",
     "cd_equipamento": "46",
     "modelo": "TRATOR JOHN DEERE 5600 4X4",
@@ -384,28 +264,12 @@
     "servico": "Revisar sistema eletrico\nFaz Pedra Verde(Oficina)\nSolicitado Altieres\nAutorizado Arthur"
   },
   {
-    "frota": "208",
-    "cd_equipamento": "208",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111422",
-    "data_entrada": "27/05/2025",
-    "servico": "Revisar sistema eletrico\nFaz Nova Manha\nSolicitado Adriano\nAutorizado Arthur"
-  },
-  {
     "frota": "5725",
     "cd_equipamento": "5725",
     "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
     "os": "110602",
     "data_entrada": "15/05/2025",
     "servico": "Trocar painel de controle da barra de herbicida quebrado - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "93",
-    "cd_equipamento": "93",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110574",
-    "data_entrada": "15/05/2025",
-    "servico": "Revisar sinalização, cibiés não ascendem - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "46",

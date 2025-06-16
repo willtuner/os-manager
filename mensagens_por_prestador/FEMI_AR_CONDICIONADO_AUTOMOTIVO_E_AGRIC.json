@@ -1,34 +1,10 @@
 [
   {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "112502",
-    "data_entrada": "13/06/2025",
-    "servico": "Soldar fios do SPE rompidos - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5749",
-    "cd_equipamento": "5749",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "112250",
-    "data_entrada": "10/06/2025",
-    "servico": "Solda em terminal - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "112248",
-    "data_entrada": "10/06/2025",
-    "servico": "Trocar conector duas vias do chicote - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "112037",
-    "data_entrada": "04/06/2025",
-    "servico": "Redistribuir bicos do SPE - (Fazenda SP)\nLiberado Sr. Arthur"
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "112598",
+    "data_entrada": "16/06/2025",
+    "servico": "Soldar fios rompidos no terminal do SPE  - (Fazenda Casa Branca\nSolicitado Sr. Rafael \nLiberado Sr. Rafael"
   }
 ]

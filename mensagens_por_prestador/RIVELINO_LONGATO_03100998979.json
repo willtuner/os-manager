@@ -1,11 +1,27 @@
 [
   {
-    "frota": "10224",
-    "cd_equipamento": "10224",
+    "frota": "290",
+    "cd_equipamento": "290",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112479",
-    "data_entrada": "12/06/2025",
-    "servico": "Pneu traseiro L/D arrancou bico - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+    "os": "112592",
+    "data_entrada": "16/06/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5427",
+    "cd_equipamento": "5427",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "112576",
+    "data_entrada": "16/06/2025",
+    "servico": "Consertar pneu L/? furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "80",
+    "cd_equipamento": "80",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112557",
+    "data_entrada": "14/06/2025",
+    "servico": "Consertar pneus dianteiro e traseiro do lado direito furado.\nFazenda Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
   },
   {
     "frota": "301",
@@ -14,38 +30,6 @@
     "os": "112433",
     "data_entrada": "12/06/2025",
     "servico": "Pneu traseiro L/D furado - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "66",
-    "cd_equipamento": "66",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "112423",
-    "data_entrada": "12/06/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "247",
-    "cd_equipamento": "247",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "112371",
-    "data_entrada": "12/06/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5545",
-    "cd_equipamento": "5545",
-    "modelo": "PULVERIZADOR BARRAS TRICICLO",
-    "os": "112342",
-    "data_entrada": "11/06/2025",
-    "servico": "Pneu dianteiro furado - (Pecuaria)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5110",
-    "cd_equipamento": "5110",
-    "modelo": "SUBSOLADOR STARA",
-    "os": "112329",
-    "data_entrada": "11/06/2025",
-    "servico": "Pneu L/E furado - (Fazenda Estrela VI)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5676",

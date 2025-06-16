@@ -1,5 +1,13 @@
 [
   {
+    "frota": "142",
+    "cd_equipamento": "142",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "112586",
+    "data_entrada": "16/06/2025",
+    "servico": "Verificar travamento no sistema de freio do trator - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "26",
     "cd_equipamento": "26",
     "modelo": "TRATOR MASSEY FERGUSON 275/2",
@@ -14,21 +22,5 @@
     "os": "112140",
     "data_entrada": "06/06/2025",
     "servico": "Direção dura - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "27",
-    "cd_equipamento": "27",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "112106",
-    "data_entrada": "06/06/2025",
-    "servico": "Quebra do cabo do afogador, vazamento no retentor da TDP e vazamento no bloco do motor - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "142",
-    "cd_equipamento": "142",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "110763",
-    "data_entrada": "16/05/2025",
-    "servico": "Trator não engata TDP - (Fazenda Nova Manhã)\nLiberado Sr. Arthur\nVerificar garantia (MECANICO CICERO)"
   }
 ]
