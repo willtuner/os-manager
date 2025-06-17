@@ -1,17 +1,24 @@
 [
   {
     "solicitado": "IZAIAS FRANCISCO DA SILVA",
-    "frota": "196",
-    "os": "112624",
-    "data": "16/06/2025",
+    "frota": "132",
+    "os": "112674",
+    "data": "17/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar falha no acionamento da tração do trator (sistema não engata). - (Fazenda Casa Branca)"
+    "servico": "Avaliar bomba hidráulica, trator sem força no hidráulico - (Fazenda Minuano)"
+  },
+  {
+    "frota": "189",
+    "os": "112661",
+    "data": "17/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Severino)"
   },
   {
     "frota": "192",
     "os": "112573",
     "data": "16/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Avaliar trator sem freio, vazamento de fruído de freio - (Fazenda Terra Branca)"
   },
   {
@@ -20,13 +27,6 @@
     "data": "16/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sinalização - (Fazenda São Severino)"
-  },
-  {
-    "frota": "189",
-    "os": "112571",
-    "data": "16/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Quebra do acelerador de pé - (Fazenda SP)"
   },
   {
     "frota": "5326",

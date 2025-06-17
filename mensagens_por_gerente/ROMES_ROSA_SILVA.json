@@ -1,24 +1,38 @@
 [
   {
     "solicitado": "ROMES ROSA SILVA",
-    "frota": "157",
-    "os": "112630",
-    "data": "16/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Substituir terminais da direção devido a desgaste ou folga nos componentes. - (Fazenda São Pedro)"
+    "frota": "5644",
+    "os": "112670",
+    "data": "17/06/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Trocar mangueira de hidráulico estouradas - (Fazenda São Pedro"
   },
   {
-    "frota": "117",
-    "os": "112627",
-    "data": "16/06/2025",
+    "frota": "5134",
+    "os": "112669",
+    "data": "17/06/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Trocar mangueira de hidráulico estouradas - (Fazenda São Pedro"
+  },
+  {
+    "frota": "157",
+    "os": "112662",
+    "data": "17/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar motor de partida - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5126",
+    "os": "112656",
+    "data": "17/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Verificar vazamento de óleo na TDP - (Fazenda São Pedro)"
+    "servico": "Trocar olhal do distribuidor - Faz São Pedro"
   },
   {
     "frota": "133",
     "os": "112590",
     "data": "16/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Trocar cabo do acelerador de pé quebrado - (Fazenda São Pedro)"
   },
   {
@@ -83,13 +97,6 @@
     "data": "28/05/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5760",
-    "os": "111424",
-    "data": "28/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar possível contaminação do óleo lubrificante por produto químico proveniente da bomba de aplicação. - (Fazenda São Pedro)"
   },
   {
     "frota": "5171",

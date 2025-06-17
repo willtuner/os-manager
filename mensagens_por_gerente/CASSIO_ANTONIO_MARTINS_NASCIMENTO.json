@@ -1,32 +1,25 @@
 [
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
+    "frota": "227",
+    "os": "112652",
+    "data": "17/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar mangueira de pressão da bomba de direção - Faz São Severino"
+  },
+  {
+    "frota": "5614",
+    "os": "112651",
+    "data": "17/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar proteção do carda - Faz São Severino"
+  },
+  {
     "frota": "226",
     "os": "112625",
     "data": "16/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar vazamento de óleo no conjunto do comando hidráulico. - (Fazenda São Severino)"
-  },
-  {
-    "frota": "234",
-    "os": "112616",
-    "data": "16/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator não pega na partida - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5658",
-    "os": "112607",
-    "data": "16/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em ramal com furo - (Fazenda São Severino)"
-  },
-  {
-    "frota": "80",
-    "os": "112557",
-    "data": "14/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Consertar pneus dianteiro e traseiro do lado direito furado."
   },
   {
     "frota": "229",
