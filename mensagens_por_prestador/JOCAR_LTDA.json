@@ -1,34 +1,18 @@
 [
   {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112516",
+    "frota": "245",
+    "cd_equipamento": "245",
+    "modelo": "TRATOR MASSEY FERGUSON 3307",
+    "os": "112658",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar A/C não está funcionando - Faz Pedra Verde\nAutorizado Arthur"
+  },
+  {
+    "frota": "147",
+    "cd_equipamento": "147",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "112547",
     "data_entrada": "13/06/2025",
-    "servico": "Verificar e reparar vazamento de fluido refrigerante no condensador do sistema de ar-condicionado - (Fazenda Santa Izabel)\nSolicitado Sr. Diego\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "267",
-    "cd_equipamento": "267",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112514",
-    "data_entrada": "13/06/2025",
-    "servico": "Verificar e reparar vazamento de fluido refrigerante no condensador do sistema de ar-condicionado - (Fazenda Santa Izabel)\nSolicitado Sr. Diego\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "117",
-    "cd_equipamento": "117",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "112193",
-    "data_entrada": "09/06/2025",
-    "servico": "Revisar o sistema de ar condicionado do trator devido a odor de queimado, verificando possíveis falhas no motor do ventilador, fiação, resistência do sistema ou acúmulo de resíduos na unidade evaporadora - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "130",
-    "cd_equipamento": "130",
-    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
-    "os": "107475",
-    "data_entrada": "21/03/2025",
-    "servico": "Verificar ar condicionado, a informação é que está vazando gás.\nSolicitado Sr. Sílvio\nLiberado Sr. Maurício"
+    "servico": "Verificar A/C não funciona  - (Fazenda Nova Manhã)\nLiberado Sr. Arthur \nSolicitado Sr. Adriano"
   }
 ]

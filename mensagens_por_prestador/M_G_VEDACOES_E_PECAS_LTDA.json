@@ -1,11 +1,11 @@
 [
   {
-    "frota": "5467",
-    "cd_equipamento": "5467",
-    "modelo": "CONJUNTO PODADOR WWD",
-    "os": "112552",
-    "data_entrada": "13/06/2025",
-    "servico": "Substituir reparo cabeça navalha - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio\nPS. Não possui peças na fazenda"
+    "frota": "5667",
+    "cd_equipamento": "5667",
+    "modelo": "PODADEIRA HIDRAUTEC HLD1",
+    "os": "112653",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar relógio de pressão do óleo hidráulico quebrado.\nFazenda São Paulo\nSolicitado Sr. Leojabes\nLiberado Sr. Maurício"
   },
   {
     "frota": "5673",
@@ -14,30 +14,6 @@
     "os": "112408",
     "data_entrada": "12/06/2025",
     "servico": "Vazamento no comando da barrinha - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5723",
-    "cd_equipamento": "5723",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "112036",
-    "data_entrada": "04/06/2025",
-    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias"
-  },
-  {
-    "frota": "5705",
-    "cd_equipamento": "5705",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "112035",
-    "data_entrada": "04/06/2025",
-    "servico": "Montar regulador de pressão manual - (Fazenda Santa Luiza)\nLiberado Sr. Zacarias"
-  },
-  {
-    "frota": "5530",
-    "cd_equipamento": "5530",
-    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
-    "os": "109775",
-    "data_entrada": "01/05/2025",
-    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
   },
   {
     "frota": "5666",

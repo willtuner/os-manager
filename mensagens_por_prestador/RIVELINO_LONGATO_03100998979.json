@@ -1,35 +1,27 @@
 [
   {
-    "frota": "290",
-    "cd_equipamento": "290",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112592",
-    "data_entrada": "16/06/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nLiberado Sr. Mauricio"
+    "frota": "5759",
+    "cd_equipamento": "5759",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "112676",
+    "data_entrada": "17/06/2025",
+    "servico": "Pneu L/D com corte lateral - (Fazenda Estrela)\nSolicitado Sr. Nelson\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5427",
-    "cd_equipamento": "5427",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "112576",
-    "data_entrada": "16/06/2025",
-    "servico": "Consertar pneu L/? furado - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+    "frota": "189",
+    "cd_equipamento": "189",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "112661",
+    "data_entrada": "17/06/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Severino)\nSolicitado Sr. Izaias\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "80",
-    "cd_equipamento": "80",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "112557",
-    "data_entrada": "14/06/2025",
-    "servico": "Consertar pneus dianteiro e traseiro do lado direito furado.\nFazenda Severino\nSolicitado Sr. Cássio\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "301",
-    "cd_equipamento": "301",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112433",
-    "data_entrada": "12/06/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
+    "frota": "5137",
+    "cd_equipamento": "5137",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "112638",
+    "data_entrada": "17/06/2025",
+    "servico": "Consertar pneu\nFaz Sta Izabel\nAutorizado Mauricio"
   },
   {
     "frota": "5715",
@@ -38,13 +30,5 @@
     "os": "112208",
     "data_entrada": "09/06/2025",
     "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5523",
-    "cd_equipamento": "5523",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "112119",
-    "data_entrada": "06/06/2025",
-    "servico": "Verificar pneu direito danificado.\nFazenda Estrela\nSolicitado Sr. Rafael\nLiberado Sr. Maurício"
   }
 ]

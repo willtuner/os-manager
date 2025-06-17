@@ -1,19 +1,19 @@
 [
   {
+    "frota": "5614",
+    "cd_equipamento": "5614",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "112651",
+    "data_entrada": "17/06/2025",
+    "servico": "Soldar proteção do carda - Faz São Severino\nAutorizado Mauricio"
+  },
+  {
     "frota": "5290",
     "cd_equipamento": "5290",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "112629",
     "data_entrada": "16/06/2025",
     "servico": "Refazer rosca para colocar bico graxeiro - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5658",
-    "cd_equipamento": "5658",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "112607",
-    "data_entrada": "16/06/2025",
-    "servico": "Fazer solda em ramal com furo - (Fazenda São Severino)\nSolicitado Sr. Cassio\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5598",
@@ -128,36 +128,12 @@
     "servico": "Quebra do batedor - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "223",
-    "cd_equipamento": "223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112087",
-    "data_entrada": "06/06/2025",
-    "servico": "Fazer solda e reforço na escada - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "299",
-    "cd_equipamento": "299",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112086",
-    "data_entrada": "06/06/2025",
-    "servico": "Fazer solda em trinca no escapamento e gonzo da proteção dianteira gastos - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5730",
     "cd_equipamento": "5730",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
     "os": "112075",
     "data_entrada": "05/06/2025",
     "servico": "Instalar patins - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "307",
-    "cd_equipamento": "307",
-    "modelo": "PA CARREGADEIRA 924K",
-    "os": "112059",
-    "data_entrada": "05/06/2025",
-    "servico": "Substituição do suporte e da unha da pá carregadeira - (Fazenda Nova Manhã)\nLiberado Sr. Rafael"
   },
   {
     "frota": "67",
@@ -214,14 +190,6 @@
     "os": "111479",
     "data_entrada": "28/05/2025",
     "servico": "Trocar esteira e fundo do espalhador\nFaz NSA\nSolicitado Rennan\nAutorizado Mauricio"
-  },
-  {
-    "frota": "99",
-    "cd_equipamento": "99",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "111476",
-    "data_entrada": "28/05/2025",
-    "servico": "Trocar confeccionar e trocar teto\nFaz Terra Branca\nSolicitado Eder\nAutorizado Arthur"
   },
   {
     "frota": "5136",

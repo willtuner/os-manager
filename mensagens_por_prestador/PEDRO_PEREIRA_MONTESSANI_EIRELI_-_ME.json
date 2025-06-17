@@ -1,5 +1,61 @@
 [
   {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112677",
+    "data_entrada": "17/06/2025",
+    "servico": "Revisar sistema eletrico - Oficina\nAutorizado Arthur"
+  },
+  {
+    "frota": "157",
+    "cd_equipamento": "157",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "112662",
+    "data_entrada": "17/06/2025",
+    "servico": "Revisar motor de partida - (Fazenda São Pedro)\nSolicitado Sr. Romes\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "85",
+    "cd_equipamento": "85",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112654",
+    "data_entrada": "17/06/2025",
+    "servico": "Verifica iluminação do trator - Faz Nova Manha\nAutorizado Arthur"
+  },
+  {
+    "frota": "222",
+    "cd_equipamento": "222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112650",
+    "data_entrada": "17/06/2025",
+    "servico": "Trocar farol dianteiro e revisar instalação - Faz Estrela\nAutorizado Arthur"
+  },
+  {
+    "frota": "5430",
+    "cd_equipamento": "5430",
+    "modelo": "PULVERIZADOR 600 LT FMC",
+    "os": "112648",
+    "data_entrada": "17/06/2025",
+    "servico": "Consertar instalação do chicote - Faz Estrela\nAutorizado Arthur"
+  },
+  {
+    "frota": "219",
+    "cd_equipamento": "219",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112647",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar cibies traseiro e instalar proteções laterais - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "257",
+    "cd_equipamento": "257",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112646",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar iluminação - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
     "frota": "46",
     "cd_equipamento": "46",
     "modelo": "TRATOR JOHN DEERE 5600 4X4",
@@ -14,22 +70,6 @@
     "os": "112628",
     "data_entrada": "16/06/2025",
     "servico": "Diagnosticar falha elétrica no trator, com queima frequente de fusíveis, possivelmente causada por curto-circuito ou sobrecarga no sistema - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "22",
-    "cd_equipamento": "22",
-    "modelo": "TRATOR VALTRA BH 180 4X4",
-    "os": "112621",
-    "data_entrada": "16/06/2025",
-    "servico": "Trator não pega na partida, gira mas não pega - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "234",
-    "cd_equipamento": "234",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "112616",
-    "data_entrada": "16/06/2025",
-    "servico": "Verificar trator não pega na partida - (Fazenda São Severino)\nSolicitado Sr. Cassio \nLiberado Sr. Arthur"
   },
   {
     "frota": "215",
@@ -142,14 +182,6 @@
     "os": "112033",
     "data_entrada": "04/06/2025",
     "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5609",
-    "cd_equipamento": "5609",
-    "modelo": "PULVERIZADOR PPEC 600LT CJP75",
-    "os": "112014",
-    "data_entrada": "04/06/2025",
-    "servico": "Sistema de acionamento das pistolas (tic-tac) não está operando - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "46",

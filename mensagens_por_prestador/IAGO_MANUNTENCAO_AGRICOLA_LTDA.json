@@ -1,11 +1,19 @@
 [
   {
-    "frota": "5487",
-    "cd_equipamento": "5487",
+    "frota": "5063",
+    "cd_equipamento": "5063",
     "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112600",
-    "data_entrada": "16/06/2025",
-    "servico": "Verificar ausência do braço do pistão do sistema de abre e fecha, e danificações na conexão da caixa incorporadora (quebrada/explanada), comprometendo o funcionamento do conjunto - (Fazenda Casa Branca)\nSolicitado Sr. Rafael\nLiberado Sr. Mauricio"
+    "os": "112645",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar o cardan - Faz São Paulo\nAutorizado Mauricio"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "112642",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar vazamento de oleo na bomba de pistão - Faz Bela Manha\nAutorizado Mauricio"
   },
   {
     "frota": "5275",
@@ -30,14 +38,6 @@
     "os": "112585",
     "data_entrada": "16/06/2025",
     "servico": "Verificar presença de folga excessiva (jogo) na roda direita do tanque, possivelmente relacionada a rolamentos ou componentes de fixação - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5066",
-    "cd_equipamento": "5066",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "112581",
-    "data_entrada": "16/06/2025",
-    "servico": "Verificar falha no sistema de fechamento lateral da adubadeira - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Maurio"
   },
   {
     "frota": "5459",

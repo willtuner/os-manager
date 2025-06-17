@@ -1,5 +1,13 @@
 [
   {
+    "frota": "109",
+    "cd_equipamento": "109",
+    "modelo": "TRATOR MASSEY FERGUSON 290",
+    "os": "112640",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar vazamento na caixa seca - (Pecuária)\nAutorizado Arthur"
+  },
+  {
     "frota": "142",
     "cd_equipamento": "142",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
@@ -22,5 +30,13 @@
     "os": "112140",
     "data_entrada": "06/06/2025",
     "servico": "Direção dura - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "245",
+    "cd_equipamento": "245",
+    "modelo": "TRATOR MASSEY FERGUSON 3307",
+    "os": "111563",
+    "data_entrada": "30/05/2025",
+    "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
   }
 ]
