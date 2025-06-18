@@ -1,5 +1,13 @@
 [
   {
+    "frota": "329",
+    "cd_equipamento": "329",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "112704",
+    "data_entrada": "18/06/2025",
+    "servico": "Revisão de 50 hrs - (Fazenda Estrela)\nLiberado Sr. Wilson/Arthur \nAvaliar falha no sistema de tração, que permanece acionado de forma ininterrupta."
+  },
+  {
     "frota": "319",
     "cd_equipamento": "319",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -14,21 +22,5 @@
     "os": "112508",
     "data_entrada": "13/06/2025",
     "servico": "Verificar vazamento no retentor do cubo da roda dianteira e fazer revisão de 50 hrs  - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "321",
-    "cd_equipamento": "321",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "112198",
-    "data_entrada": "09/06/2025",
-    "servico": "Revisão de 600 hrs - (Fazenda Bela Manhã)\nLiberado Sr. Wilson\n- Filtro de diesel\n- Filtro sedimentador\n- Filtro de motor\n- Filtro de ar interno e externo\n- Filtro de Hidráulico\n- Óleo de motor (15w40) 9L \n- Óleo do eixo dianteiro e ponteiras (10w30) 1,5 1,5 7L\n- Filtro de carvão ativado (Troca pelo operador)"
-  },
-  {
-    "frota": "319",
-    "cd_equipamento": "319",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "112197",
-    "data_entrada": "09/06/2025",
-    "servico": "Revisão de 600 hrs - (Fazenda Bela Manhã)\nLiberado Sr. Wilson\n- Filtro de diesel\n- Filtro sedimentador\n- Filtro de motor\n- Filtro de ar interno e externo\n- Filtro de Hidráulico\n- Óleo de motor (15w40) 9L \n- Óleo do eixo dianteiro e ponteiras (10w30) 1,5 1,5 7L\n- Filtro de carvão ativado (Troca pelo operador)"
   }
 ]

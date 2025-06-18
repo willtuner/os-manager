@@ -1,5 +1,37 @@
 [
   {
+    "frota": "208",
+    "cd_equipamento": "208",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112758",
+    "data_entrada": "18/06/2025",
+    "servico": "Trocar filtro sedimentador - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "217",
+    "cd_equipamento": "217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112750",
+    "data_entrada": "18/06/2025",
+    "servico": "Trocar tuchos do comando - Faz Pedra Verde\nAutorizado Arthur"
+  },
+  {
+    "frota": "89",
+    "cd_equipamento": "89",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112712",
+    "data_entrada": "18/06/2025",
+    "servico": "Identificada quebra do terminal de direção, comprometendo a articulação do sistema; capô não fecha corretamente, necessitando ajuste ou reparo; e presença de vazamento de óleo na junta, indicando possível falha de vedação - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nLiberado Sr. Arthur \nPendencias: 4368 e 4273"
+  },
+  {
+    "frota": "191",
+    "cd_equipamento": "191",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "112702",
+    "data_entrada": "18/06/2025",
+    "servico": "Cabo do acelerador de mão quebrado - (Fazenda Minuano)\nSolicitado Sr. Izaias\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "132",
     "cd_equipamento": "132",
     "modelo": "TRATOR NEW HOLLAND TL75E",

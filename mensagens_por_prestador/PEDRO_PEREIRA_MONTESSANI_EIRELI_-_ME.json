@@ -1,11 +1,27 @@
 [
   {
+    "frota": "1",
+    "cd_equipamento": "1",
+    "modelo": "TRATOR MASSEY FERGUSON 65 X",
+    "os": "112746",
+    "data_entrada": "18/06/2025",
+    "servico": "Verificar alternador\n(Fazenda Alvorada)\nSolicitado  Sr. Natalino\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "218",
     "cd_equipamento": "218",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "112677",
     "data_entrada": "17/06/2025",
     "servico": "Revisar sistema eletrico - Oficina\nAutorizado Arthur"
+  },
+  {
+    "frota": "65",
+    "cd_equipamento": "65",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112751",
+    "data_entrada": "17/06/2025",
+    "servico": "Revisar sistema eletrico - Faz Alvorada (Oficina)\nAutorizado Arthur"
   },
   {
     "frota": "157",

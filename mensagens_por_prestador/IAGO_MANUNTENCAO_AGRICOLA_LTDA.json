@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5489",
+    "cd_equipamento": "5489",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "112719",
+    "data_entrada": "18/06/2025",
+    "servico": "Substituir a ponta inferior do suporte de corte, danificada durante operação - (Fazenda São Severino)\nSolicitado Sr. Marcio\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5752",
+    "cd_equipamento": "5752",
+    "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
+    "os": "112718",
+    "data_entrada": "18/06/2025",
+    "servico": "Verificar falha no sistema de desligamento das esteiras, que permanecem acionadas continuamente - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5479",
+    "cd_equipamento": "5479",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "112717",
+    "data_entrada": "18/06/2025",
+    "servico": "Instalar mangueiras do sistema de drash - (Fazenda Biscui)\nSolicitado Sr. Geovane\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5348",
+    "cd_equipamento": "5348",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112711",
+    "data_entrada": "18/06/2025",
+    "servico": "Executar substituição das engrenagens do sistema de transmissão da adubadeira, visando restabelecer o funcionamento adequado após identificação de desgaste ou danos nos componentes. - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "112698",
+    "data_entrada": "17/06/2025",
+    "servico": "Instalar parafusos e agulhas na estrutura de fibra próxima à turbina, após realização de manutenção no componente - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5063",
     "cd_equipamento": "5063",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -78,14 +118,6 @@
     "os": "112269",
     "data_entrada": "10/06/2025",
     "servico": "Verificar sistema de transmissão de correias (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5494",
-    "cd_equipamento": "5494",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "112252",
-    "data_entrada": "10/06/2025",
-    "servico": "Esteira quebrada - (Fazenda SP)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5629",

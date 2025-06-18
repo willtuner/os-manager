@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5479",
+    "cd_equipamento": "5479",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "112714",
+    "data_entrada": "18/06/2025",
+    "servico": "Realizar solda e reforço na gaiola, danificada por colisão com pé de laranja durante manobra inadequada - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5360",
+    "cd_equipamento": "5360",
+    "modelo": "GRADE NIVELADORA",
+    "os": "112713",
+    "data_entrada": "18/06/2025",
+    "servico": "Quebra da ponta de eixo - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5354",
+    "cd_equipamento": "5354",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "112703",
+    "data_entrada": "18/06/2025",
+    "servico": "Soldar roda guia e desamassar proteção da mesma - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5614",
     "cd_equipamento": "5614",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -128,14 +152,6 @@
     "servico": "Quebra do batedor - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5730",
-    "cd_equipamento": "5730",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "112075",
-    "data_entrada": "05/06/2025",
-    "servico": "Instalar patins - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "67",
     "cd_equipamento": "67",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -166,14 +182,6 @@
     "os": "111618",
     "data_entrada": "30/05/2025",
     "servico": "Fazer solda em trinca - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5492",
-    "cd_equipamento": "5492",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "111569",
-    "data_entrada": "30/05/2025",
-    "servico": "Fazer solda no suporte de sustentação da asa L/E e soldar suporte para instalar cibié - (Fazenda NSA)\nLiberado Sr. Mauricio\nPendencia N° 4059"
   },
   {
     "frota": "116",
@@ -254,14 +262,6 @@
     "os": "110712",
     "data_entrada": "16/05/2025",
     "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5455",
-    "cd_equipamento": "5455",
-    "modelo": "CARRETA TRASNP LAR 510/154/030",
-    "os": "110563",
-    "data_entrada": "15/05/2025",
-    "servico": "Verificar rolamento das duas rodas danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
   },
   {
     "frota": "5204",
