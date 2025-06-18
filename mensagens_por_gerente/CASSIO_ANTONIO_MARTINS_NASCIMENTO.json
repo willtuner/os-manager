@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
+    "frota": "225",
+    "os": "112724",
+    "data": "18/06/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar sistema do A/C não funciona - (Fazenda São Severino)"
+  },
+  {
+    "frota": "75",
+    "os": "112715",
+    "data": "18/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Quebra da bomba manual de diesel do filtro - (Fazenda São Severino)"
+  },
+  {
     "frota": "227",
     "os": "112652",
     "data": "17/06/2025",

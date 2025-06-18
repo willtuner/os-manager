@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "RENNAN ARCANJO CREPALDI",
+    "frota": "88",
+    "os": "112710",
+    "data": "18/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/D furado - (Fazenda NSA)"
+  },
+  {
     "frota": "215",
     "os": "112589",
     "data": "16/06/2025",
@@ -27,6 +34,14 @@
     "data": "16/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Parafusos de fixação do eixo soltos - (Fazenda NSA)"
+  },
+  {
+    "frota": "5492",
+    "os": "112722",
+    "data": "16/06/2025",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
+    "servico": "- Recuperar fibra do tanque aonde vai a cinta para fixar; Refazer sistema abre e fecha das abas da torre L/D e L/E.",
+    "liberado": "Rafael Venâncio."
   },
   {
     "frota": "5673",
@@ -57,13 +72,6 @@
     "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
   },
   {
-    "frota": "5730",
-    "os": "112075",
-    "data": "05/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar patins - (Fazenda NSA)"
-  },
-  {
     "frota": "5598",
     "os": "111572",
     "data": "30/05/2025",
@@ -76,13 +84,6 @@
     "data": "30/05/2025",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)"
-  },
-  {
-    "frota": "5492",
-    "os": "111569",
-    "data": "30/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda no suporte de sustentação da asa L/E e soldar suporte para instalar cibié - (Fazenda NSA)"
   },
   {
     "frota": "5431",
