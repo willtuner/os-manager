@@ -1,32 +1,53 @@
 [
   {
     "solicitado": "RENNAN ARCANJO CREPALDI",
-    "frota": "88",
-    "os": "112710",
-    "data": "18/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/D furado - (Fazenda NSA)"
-  },
-  {
-    "frota": "215",
-    "os": "112589",
-    "data": "16/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Farol dianteiro L/E queimado - (Fazenda NSA)"
-  },
-  {
     "frota": "303",
-    "os": "112588",
-    "data": "16/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié dianteiro L/E queimado - (Fazenda NSA)"
+    "os": "112936",
+    "data": "20/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Mangueira de diesel da bomba injetora furada - (Fazenda NSA)"
   },
   {
-    "frota": "143",
-    "os": "112582",
-    "data": "16/06/2025",
+    "frota": "5730",
+    "os": "112926",
+    "data": "20/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento de óleo no eixo do rotor L/E - (Fazenda NSA)"
+  },
+  {
+    "frota": "10121",
+    "os": "112897",
+    "data": "20/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Adequação para devolução - Faz NSA"
+  },
+  {
+    "frota": "5730",
+    "os": "112895",
+    "data": "20/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar rolamentos das rodas guias - (Fazenda NSA)"
+  },
+  {
+    "frota": "5418",
+    "os": "112893",
+    "data": "20/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar e realinhar asa L/E - (Fazenda NSA)"
+  },
+  {
+    "frota": "88",
+    "os": "112865",
+    "data": "19/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar vazamento de óleo no cárter, identificando possível falha na vedação ou trinca no componente - (Fazenda NSA)"
+  },
+  {
+    "frota": "88",
+    "os": "112864",
+    "data": "19/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar alternador, bateria não esta sendo carregada corretamente - (Fazenda NSA)"
+    "servico": "Verificar luz indicadora da bateria acesa no painel do trator, possível falha no sistema de carga - (Fazenda NSA)"
   },
   {
     "frota": "5598",
@@ -79,46 +100,11 @@
     "servico": "Vazamento no pistão de acionamento dos bicos - (Fazenda NSA)"
   },
   {
-    "frota": "215",
-    "os": "111570",
-    "data": "30/05/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Trocar trava da janela traseira quebrada - (Fazenda NSA)"
-  },
-  {
     "frota": "5431",
     "os": "111479",
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar esteira e fundo do espalhador"
-  },
-  {
-    "frota": "5502",
-    "os": "109804",
-    "data": "02/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realinhas asas do tanque - (Fazenda NSA)"
-  },
-  {
-    "frota": "5592",
-    "os": "109803",
-    "data": "02/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realinhas asas do tanque - (Fazenda NSA)"
-  },
-  {
-    "frota": "5592",
-    "os": "108058",
-    "data": "02/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito."
-  },
-  {
-    "frota": "5502",
-    "os": "108048",
-    "data": "02/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito e esquerdo e soldar chapa inferior da asa esquerda."
   },
   {
     "frota": "5629",

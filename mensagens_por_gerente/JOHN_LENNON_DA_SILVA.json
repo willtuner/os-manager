@@ -1,6 +1,13 @@
 [
   {
     "solicitado": "JOHN LENNON DA SILVA",
+    "frota": "209",
+    "os": "112918",
+    "data": "20/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Troca do cabo do afogador quebrado e trocar amortecedor da porta - (Fazenda Santa Luiza)"
+  },
+  {
     "frota": "5438",
     "os": "112525",
     "data": "13/06/2025",
@@ -20,13 +27,6 @@
     "data": "12/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento nas mangueiras do comando hidráulico - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "67",
-    "os": "112292",
-    "data": "10/06/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisar bomba e bico"
   },
   {
     "frota": "67",

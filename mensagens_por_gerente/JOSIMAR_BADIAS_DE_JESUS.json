@@ -2,16 +2,23 @@
   {
     "solicitado": "JOSIMAR BADIAS DE JESUS",
     "frota": "276",
+    "os": "112915",
+    "data": "20/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Conector do farol dianteiro derretido - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "264",
+    "os": "112912",
+    "data": "20/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié dianteiros queimados - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "276",
     "os": "112603",
     "data": "16/06/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Avaliar vazamento de óleo diesel na bomba injetora - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5403",
-    "os": "111582",
-    "data": "30/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar correias da polia e trocar o rolamento do eixo da hélice- (Fazenda São Pedro)"
   }
 ]

@@ -1,11 +1,25 @@
 [
   {
     "solicitado": "DANILO MULARI GONZAGA",
-    "frota": "22",
-    "os": "112720",
-    "data": "18/06/2025",
+    "frota": "46",
+    "os": "112940",
+    "data": "20/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Remover parafuso do bujão do cárter danificado para substituição - (Fazenda Estrela)"
+    "servico": "Verificar radiador baixando nível do liquido de arrefecimento - (Fazenda Estrela)"
+  },
+  {
+    "frota": "136",
+    "os": "112863",
+    "data": "19/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Realizar substituição do bujão explanado da planetária L/E - (Fazenda Estrela)"
+  },
+  {
+    "frota": "268",
+    "os": "112760",
+    "data": "19/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar seta dianteira lado direto - Faz Estrela"
   },
   {
     "frota": "22",
@@ -25,7 +39,7 @@
     "frota": "5524",
     "os": "112593",
     "data": "16/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)"
   },
   {

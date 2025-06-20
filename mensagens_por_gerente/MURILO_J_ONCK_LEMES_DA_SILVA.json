@@ -1,6 +1,27 @@
 [
   {
     "solicitado": "MURILO J ONCK LEMES DA SILVA",
+    "frota": "102",
+    "os": "112914",
+    "data": "20/06/2025",
+    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
+    "servico": "Verificar vazamento no cabeçote e na tampa da TDP- Faz Bela Manha"
+  },
+  {
+    "frota": "102",
+    "os": "112913",
+    "data": "20/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar chicote eletrico - Faz Bela Manha"
+  },
+  {
+    "frota": "5697",
+    "os": "112861",
+    "data": "19/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Avaliar funcionamento do sistema de drash, que não está acionando corretamente a vazão no lado direito L/D - (Fazenda Bela Manhã)"
+  },
+  {
     "frota": "285",
     "os": "112696",
     "data": "17/06/2025",

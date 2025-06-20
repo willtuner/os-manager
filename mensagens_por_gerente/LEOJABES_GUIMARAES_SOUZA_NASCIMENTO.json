@@ -1,6 +1,41 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "5803",
+    "os": "112860",
+    "data": "19/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Instalar kit SPE 34 bicos - (Fazenda SP)"
+  },
+  {
+    "frota": "5803",
+    "os": "112859",
+    "data": "19/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Realizar readequação dos ramais para compatibilização com a instalação do sistema SPE - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "257",
+    "os": "112866",
+    "data": "19/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar embreagem - Faz São Paulo"
+  },
+  {
+    "frota": "5479",
+    "os": "112816",
+    "data": "19/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Verificar bomba de pulverização que está solta, avaliar uma forma de fixar a mesma"
+  },
+  {
+    "frota": "5345",
+    "os": "112764",
+    "data": "19/06/2025",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
+    "servico": "Vazamento de óleo no pistão da barra - (Fazenda Biscui)"
+  },
+  {
     "frota": "5479",
     "os": "112717",
     "data": "18/06/2025",
@@ -36,13 +71,6 @@
     "servico": "Verificar relógio de pressão do óleo hidráulico quebrado."
   },
   {
-    "frota": "219",
-    "os": "112647",
-    "data": "17/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar cibies traseiro e instalar proteções laterais - Faz São Paulo"
-  },
-  {
     "frota": "257",
     "os": "112646",
     "data": "17/06/2025",
@@ -55,13 +83,6 @@
     "data": "17/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar o cardan - Faz São Paulo"
-  },
-  {
-    "frota": "270",
-    "os": "112644",
-    "data": "17/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar vazamento de diesel - Faz São Paulo"
   },
   {
     "frota": "46",
@@ -83,20 +104,6 @@
     "data": "13/06/2025",
     "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Verificar vazamento no retentor do cubo da roda dianteira e fazer revisão de 50 hrs  - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "324",
-    "os": "112503",
-    "data": "13/06/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Trocar borracha das portas - (Faz São Paulo)"
-  },
-  {
-    "frota": "135",
-    "os": "112297",
-    "data": "11/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar reservatório de óleo hidraulico"
   },
   {
     "frota": "246",
@@ -125,13 +132,6 @@
     "data": "23/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Confecção e instalação do teto, Pendencia 4122"
-  },
-  {
-    "frota": "218",
-    "os": "110228",
-    "data": "08/05/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Verificar vazamento no braço hidráulico, vazamento no cudo da roda dianteira L/? e vazamento nas conexões da mangueira do comando hidráulico - (Fazenda SP)"
   },
   {
     "frota": "211",

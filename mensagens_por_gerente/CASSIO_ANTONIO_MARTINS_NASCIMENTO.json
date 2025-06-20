@@ -1,6 +1,20 @@
 [
   {
     "solicitado": "CASSIO ANTONIO MARTINS NASCIMENTO",
+    "frota": "234",
+    "os": "112858",
+    "data": "19/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar rigidez na direção e alteração na coloração do óleo hidráulico (aspecto esbranquiçado), indicando possível contaminação por água - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5613",
+    "os": "112770",
+    "data": "19/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Folga na ponta de eixo do cardam do tanque - (Fazenda São Severino)"
+  },
+  {
     "frota": "225",
     "os": "112724",
     "data": "18/06/2025",
@@ -8,32 +22,11 @@
     "servico": "Verificar sistema do A/C não funciona - (Fazenda São Severino)"
   },
   {
-    "frota": "75",
-    "os": "112715",
-    "data": "18/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Quebra da bomba manual de diesel do filtro - (Fazenda São Severino)"
-  },
-  {
-    "frota": "227",
-    "os": "112652",
-    "data": "17/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar mangueira de pressão da bomba de direção - Faz São Severino"
-  },
-  {
     "frota": "5614",
     "os": "112651",
     "data": "17/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Soldar proteção do carda - Faz São Severino"
-  },
-  {
-    "frota": "226",
-    "os": "112625",
-    "data": "16/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar vazamento de óleo no conjunto do comando hidráulico. - (Fazenda São Severino)"
   },
   {
     "frota": "229",

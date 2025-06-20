@@ -1,11 +1,18 @@
 [
   {
     "solicitado": "ROMES ROSA SILVA",
-    "frota": "252",
-    "os": "112726",
-    "data": "18/06/2025",
-    "prestador": "Prestador não definido",
-    "servico": "Substituir mangueira da turbina - (Fazenda São Pedro)"
+    "frota": "5739",
+    "os": "112904",
+    "data": "20/06/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Trocar parafusos do suporte do fação, trocar arrastadores e fações, trocar embreagens, molas luvas, cruzetas, soldar trincas, retentores dos pistões dos dois lados  - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5233",
+    "os": "112902",
+    "data": "20/06/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Fazer solda no ramal - (Fazenda São Pedro)"
   },
   {
     "frota": "5404",
@@ -29,25 +36,11 @@
     "servico": "Trocar mangueira de hidráulico estouradas - (Fazenda São Pedro"
   },
   {
-    "frota": "157",
-    "os": "112662",
-    "data": "17/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar motor de partida - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5126",
     "os": "112656",
     "data": "17/06/2025",
     "prestador": "Prestador não definido",
     "servico": "Trocar olhal do distribuidor - Faz São Pedro"
-  },
-  {
-    "frota": "133",
-    "os": "112590",
-    "data": "16/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar cabo do acelerador de pé quebrado - (Fazenda São Pedro)"
   },
   {
     "frota": "5102",
@@ -69,13 +62,6 @@
     "data": "12/06/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Fazer solda nas proteções anti-arremesso e trocar jogo de martelos - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "290",
-    "os": "112365",
-    "data": "12/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar origem de vazamento de óleo na região inferior do trator, nas proximidades da carcaça da caixa seca - (Fazenda São Pedro)"
   },
   {
     "frota": "5715",

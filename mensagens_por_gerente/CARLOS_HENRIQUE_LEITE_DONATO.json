@@ -1,31 +1,45 @@
 [
   {
     "solicitado": "CARLOS HENRIQUE LEITE DONATO",
-    "frota": "288",
-    "os": "112729",
-    "data": "18/06/2025",
+    "frota": "258",
+    "os": "112919",
+    "data": "20/06/2025",
     "prestador": "Prestador não definido",
-    "servico": "Avaliar volante \"bobo\", verificar vazamento de óleo na bomba do sistema hidráulico e substituir travas de fixação da caixa de ar, que se encontram quebradas. - (Fazenda Estrela)"
+    "servico": "Vazamento de óleo diesel na bomba - (Fazenda Estrela)"
   },
   {
-    "frota": "222",
-    "os": "112650",
-    "data": "17/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar farol dianteiro e revisar instalação - Faz Estrela"
+    "frota": "288",
+    "os": "112910",
+    "data": "20/06/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar condensador vazando - Faz Estrela"
+  },
+  {
+    "frota": "269",
+    "os": "112908",
+    "data": "20/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Remover vazamento na bomba de combustivel - Faz Estrela"
   },
   {
     "frota": "258",
-    "os": "112649",
-    "data": "17/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar mangueira de combustivel, verificar coxim da cabine e vazamento na tampa da transmissão- Faz Estrela"
+    "os": "112906",
+    "data": "20/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Soldar escada - Faz Estrela"
   },
   {
-    "frota": "222",
-    "os": "112373",
-    "data": "12/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Faróis dianteiros queimados - (Fazenda Estrela)"
+    "frota": "248",
+    "os": "112871",
+    "data": "19/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Substituir bujão de drenagem da planetária do L/D - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5747",
+    "os": "112867",
+    "data": "19/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E furado - (Fazenda Estrela)"
   }
 ]
