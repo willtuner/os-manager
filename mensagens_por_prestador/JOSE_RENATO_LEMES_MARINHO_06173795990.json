@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "112893",
+    "data_entrada": "20/06/2025",
+    "servico": "Soldar e realinhar asa L/E - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsável Sr. Wilson"
+  },
+  {
+    "frota": "5744",
+    "cd_equipamento": "5744",
+    "modelo": "SEMEADEIRA 13 LINHA",
+    "os": "112887",
+    "data_entrada": "20/06/2025",
+    "servico": "Soldar suporte da corrente de incorporação quebrado - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "5803",
+    "cd_equipamento": "5803",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "112859",
+    "data_entrada": "19/06/2025",
+    "servico": "Realizar readequação dos ramais para compatibilização com a instalação do sistema SPE - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5479",
+    "cd_equipamento": "5479",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "112816",
+    "data_entrada": "19/06/2025",
+    "servico": "Verificar bomba de pulverização que está solta, avaliar uma forma de fixar a mesma \nFazenda Biscui Sede\nSolicitado Sr. Geovane\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5191",
+    "cd_equipamento": "5191",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "112759",
+    "data_entrada": "18/06/2025",
+    "servico": "Fazer proteção de partes móveis (Correia da turbina) e instalar escada na torra  (Avaliar necessidade) - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5600",
+    "cd_equipamento": "5600",
+    "modelo": "ATOMIZADOR NATALI 4000 LT",
+    "os": "112762",
+    "data_entrada": "18/06/2025",
+    "servico": "Instalar proteções na correia da bomba de pulverização e no cardan e mudar posição do comando que está em cima da bomba trazendo para a lateral.\nFazenda Nova Manhã \nSolicitado Sr. Adriano\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5479",
     "cd_equipamento": "5479",
     "modelo": "PULVERIZADOR 600 LT JACTO",
@@ -38,6 +86,14 @@
     "os": "112629",
     "data_entrada": "16/06/2025",
     "servico": "Refazer rosca para colocar bico graxeiro - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5524",
+    "cd_equipamento": "5524",
+    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+    "os": "112593",
+    "data_entrada": "16/06/2025",
+    "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5598",
@@ -288,22 +344,6 @@
     "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5502",
-    "cd_equipamento": "5502",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "109804",
-    "data_entrada": "02/05/2025",
-    "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5592",
-    "cd_equipamento": "5592",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "109803",
-    "data_entrada": "02/05/2025",
-    "servico": "Realinhas asas do tanque - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5214",
     "cd_equipamento": "5214",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
@@ -326,22 +366,6 @@
     "os": "109062",
     "data_entrada": "17/04/2025",
     "servico": "Fabricar e instalar proteção para as lanternas traseiras - (Fazenda SP)\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5592",
-    "cd_equipamento": "5592",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "108058",
-    "data_entrada": "02/04/2025",
-    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5502",
-    "cd_equipamento": "5502",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "108048",
-    "data_entrada": "02/04/2025",
-    "servico": "Colocar chapas de ajuste de abertura das asas do lado direito e esquerdo e soldar chapa inferior da asa esquerda.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Maurício"
   },
   {
     "frota": "504",

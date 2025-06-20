@@ -1,5 +1,61 @@
 [
   {
+    "frota": "5730",
+    "cd_equipamento": "5730",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "112926",
+    "data_entrada": "20/06/2025",
+    "servico": "Vazamento de óleo no eixo do rotor L/E - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Wilson"
+  },
+  {
+    "frota": "5623",
+    "cd_equipamento": "5623",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "112925",
+    "data_entrada": "20/06/2025",
+    "servico": "Trocar rolamento da roda guia - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Wilson"
+  },
+  {
+    "frota": "5414",
+    "cd_equipamento": "5414",
+    "modelo": "DIST. ADUBO DCA2 7500 S-0114",
+    "os": "112917",
+    "data_entrada": "20/06/2025",
+    "servico": "Quebra da esteira - (Fazenda Minuano)\nSolicitado Sr. Antônio \nResponsavel Sr. Wilson"
+  },
+  {
+    "frota": "5740",
+    "cd_equipamento": "5740",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "112911",
+    "data_entrada": "20/06/2025",
+    "servico": "Remover vazamento do rotor das facas - Faz Izabel\nAutorizado Mauricio"
+  },
+  {
+    "frota": "5730",
+    "cd_equipamento": "5730",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "112895",
+    "data_entrada": "20/06/2025",
+    "servico": "Trocar rolamentos das rodas guias - (Fazenda NSA)\nSolicitado Sr. Rennan \nLiberado Sr. Wilson"
+  },
+  {
+    "frota": "5366",
+    "cd_equipamento": "5366",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "112851",
+    "data_entrada": "19/06/2025",
+    "servico": "Verificar bomba oscilando pressão - (Fazenda Minuano)\nSolicitado Sr. Antônio Paulo\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5504",
+    "cd_equipamento": "5504",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "112814",
+    "data_entrada": "19/06/2025",
+    "servico": "Retirar ramais de pulverização nos dos dois lados  da torre e fazer limpeza interna e externa. Após realizar montagem dos ramais novamente.\nFazenda São Paulo\nSolicitado Sr. Rafael\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5489",
     "cd_equipamento": "5489",
     "modelo": "CONJUNTO PODADOR WWD",

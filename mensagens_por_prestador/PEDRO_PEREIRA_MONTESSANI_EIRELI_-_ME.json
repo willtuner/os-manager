@@ -1,5 +1,101 @@
 [
   {
+    "frota": "191",
+    "cd_equipamento": "191",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "112921",
+    "data_entrada": "20/06/2025",
+    "servico": "Verificar sistema eletrico, luz da bateria acendendo, painel de instrumentos apaga e negando partida - (Fazenda Minuano)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "276",
+    "cd_equipamento": "276",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112915",
+    "data_entrada": "20/06/2025",
+    "servico": "Conector do farol dianteiro derretido - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "102",
+    "cd_equipamento": "102",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "112913",
+    "data_entrada": "20/06/2025",
+    "servico": "Revisar chicote eletrico - Faz Bela Manha\nAutorizado Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112912",
+    "data_entrada": "20/06/2025",
+    "servico": "Cibié dianteiros queimados - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5661",
+    "cd_equipamento": "5661",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "112900",
+    "data_entrada": "20/06/2025",
+    "servico": "Verificar instalação do chicote de abertura das barras - Faz Pedra Verde\nAutorizado Arthur"
+  },
+  {
+    "frota": "119",
+    "cd_equipamento": "119",
+    "modelo": "TRATOR VALTRA A750F 4X4",
+    "os": "112899",
+    "data_entrada": "20/06/2025",
+    "servico": "Verificar o sensor de temperatura - Faz Pedra Verde\nAutorizado Arthur"
+  },
+  {
+    "frota": "88",
+    "cd_equipamento": "88",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112864",
+    "data_entrada": "19/06/2025",
+    "servico": "Verificar luz indicadora da bateria acesa no painel do trator, possível falha no sistema de carga - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "79",
+    "cd_equipamento": "79",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112862",
+    "data_entrada": "19/06/2025",
+    "servico": "Verificar falha no sistema de sinalização, com faróis e luzes auxiliares inoperantes - (Fazenda Terra Branca)\nSolicitado Sr. João Victor - Subgerente\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "5491",
+    "cd_equipamento": "5491",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "112857",
+    "data_entrada": "19/06/2025",
+    "servico": "Verificar falha no acionamento elétrico dos ramais, sistema não responde ao comando - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112849",
+    "data_entrada": "19/06/2025",
+    "servico": "Chicote do cibié traseiro quebrado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "90",
+    "cd_equipamento": "90",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112765",
+    "data_entrada": "19/06/2025",
+    "servico": "Verificar cibié traseiros queimados e instalar cibié quebrado no equipamento de poda - (Fazenda Casa Branca)\nSolicitado Sr. João\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "268",
+    "cd_equipamento": "268",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112760",
+    "data_entrada": "19/06/2025",
+    "servico": "Trocar seta dianteira lado direto - Faz Estrela\nAutorizado Arthur"
+  },
+  {
     "frota": "1",
     "cd_equipamento": "1",
     "modelo": "TRATOR MASSEY FERGUSON 65 X",
@@ -16,54 +112,6 @@
     "servico": "Revisar sistema eletrico - Oficina\nAutorizado Arthur"
   },
   {
-    "frota": "65",
-    "cd_equipamento": "65",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "112751",
-    "data_entrada": "17/06/2025",
-    "servico": "Revisar sistema eletrico - Faz Alvorada (Oficina)\nAutorizado Arthur"
-  },
-  {
-    "frota": "157",
-    "cd_equipamento": "157",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "112662",
-    "data_entrada": "17/06/2025",
-    "servico": "Revisar motor de partida - (Fazenda São Pedro)\nSolicitado Sr. Romes\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "85",
-    "cd_equipamento": "85",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "112654",
-    "data_entrada": "17/06/2025",
-    "servico": "Verifica iluminação do trator - Faz Nova Manha\nAutorizado Arthur"
-  },
-  {
-    "frota": "222",
-    "cd_equipamento": "222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112650",
-    "data_entrada": "17/06/2025",
-    "servico": "Trocar farol dianteiro e revisar instalação - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "5430",
-    "cd_equipamento": "5430",
-    "modelo": "PULVERIZADOR 600 LT FMC",
-    "os": "112648",
-    "data_entrada": "17/06/2025",
-    "servico": "Consertar instalação do chicote - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "219",
-    "cd_equipamento": "219",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112647",
-    "data_entrada": "17/06/2025",
-    "servico": "Verificar cibies traseiro e instalar proteções laterais - Faz São Paulo\nAutorizado Arthur"
-  },
-  {
     "frota": "257",
     "cd_equipamento": "257",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -78,38 +126,6 @@
     "os": "112632",
     "data_entrada": "16/06/2025",
     "servico": "Verificar relógio horimetro não funciona - (Fazenda SP)\nSolicitado Sr. Vitor ADM SP\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "267",
-    "cd_equipamento": "267",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112628",
-    "data_entrada": "16/06/2025",
-    "servico": "Diagnosticar falha elétrica no trator, com queima frequente de fusíveis, possivelmente causada por curto-circuito ou sobrecarga no sistema - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "215",
-    "cd_equipamento": "215",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "112589",
-    "data_entrada": "16/06/2025",
-    "servico": "Farol dianteiro L/E queimado - (Fazenda NSA)\nSolicitado Sr. Vitor subgerente\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "303",
-    "cd_equipamento": "303",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112588",
-    "data_entrada": "16/06/2025",
-    "servico": "Cibié dianteiro L/E queimado - (Fazenda NSA)\nSolicitado Sr. Vitor subgerente\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "143",
-    "cd_equipamento": "143",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "112582",
-    "data_entrada": "16/06/2025",
-    "servico": "Verificar alternador, bateria não esta sendo carregada corretamente - (Fazenda NSA)\nSolicitado Sr. Rennan\nLiberado Sr. Arthur"
   },
   {
     "frota": "134",
@@ -152,22 +168,6 @@
     "servico": "Trocar cibié e revisar luzes de posição - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "222",
-    "cd_equipamento": "222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112373",
-    "data_entrada": "12/06/2025",
-    "servico": "Faróis dianteiros queimados - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "68",
-    "cd_equipamento": "68",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "112354",
-    "data_entrada": "11/06/2025",
-    "servico": "Quebra do suporte de fixação do cibié (teto) - (Pecuaria)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "67",
     "cd_equipamento": "67",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -182,14 +182,6 @@
     "os": "112233",
     "data_entrada": "09/06/2025",
     "servico": "Cibié traseiros queimados - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "310",
-    "cd_equipamento": "310",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "112101",
-    "data_entrada": "06/06/2025",
-    "servico": "Lâmpada do farol traseiro queimado - (Pecuaria)\nLiberado Sr. Arthur"
   },
   {
     "frota": "266",
