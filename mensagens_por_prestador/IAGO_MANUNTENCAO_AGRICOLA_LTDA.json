@@ -16,22 +16,6 @@
     "servico": "Trocar rolamento da roda guia - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Wilson"
   },
   {
-    "frota": "5414",
-    "cd_equipamento": "5414",
-    "modelo": "DIST. ADUBO DCA2 7500 S-0114",
-    "os": "112917",
-    "data_entrada": "20/06/2025",
-    "servico": "Quebra da esteira - (Fazenda Minuano)\nSolicitado Sr. Antônio \nResponsavel Sr. Wilson"
-  },
-  {
-    "frota": "5740",
-    "cd_equipamento": "5740",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "112911",
-    "data_entrada": "20/06/2025",
-    "servico": "Remover vazamento do rotor das facas - Faz Izabel\nAutorizado Mauricio"
-  },
-  {
     "frota": "5730",
     "cd_equipamento": "5730",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
@@ -40,116 +24,12 @@
     "servico": "Trocar rolamentos das rodas guias - (Fazenda NSA)\nSolicitado Sr. Rennan \nLiberado Sr. Wilson"
   },
   {
-    "frota": "5366",
-    "cd_equipamento": "5366",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "112851",
-    "data_entrada": "19/06/2025",
-    "servico": "Verificar bomba oscilando pressão - (Fazenda Minuano)\nSolicitado Sr. Antônio Paulo\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "112814",
-    "data_entrada": "19/06/2025",
-    "servico": "Retirar ramais de pulverização nos dos dois lados  da torre e fazer limpeza interna e externa. Após realizar montagem dos ramais novamente.\nFazenda São Paulo\nSolicitado Sr. Rafael\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5489",
-    "cd_equipamento": "5489",
-    "modelo": "CONJUNTO PODADOR WWD",
-    "os": "112719",
-    "data_entrada": "18/06/2025",
-    "servico": "Substituir a ponta inferior do suporte de corte, danificada durante operação - (Fazenda São Severino)\nSolicitado Sr. Marcio\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5752",
-    "cd_equipamento": "5752",
-    "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
-    "os": "112718",
-    "data_entrada": "18/06/2025",
-    "servico": "Verificar falha no sistema de desligamento das esteiras, que permanecem acionadas continuamente - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5479",
-    "cd_equipamento": "5479",
-    "modelo": "PULVERIZADOR 600 LT JACTO",
-    "os": "112717",
-    "data_entrada": "18/06/2025",
-    "servico": "Instalar mangueiras do sistema de drash - (Fazenda Biscui)\nSolicitado Sr. Geovane\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5348",
-    "cd_equipamento": "5348",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "112711",
-    "data_entrada": "18/06/2025",
-    "servico": "Executar substituição das engrenagens do sistema de transmissão da adubadeira, visando restabelecer o funcionamento adequado após identificação de desgaste ou danos nos componentes. - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112698",
-    "data_entrada": "17/06/2025",
-    "servico": "Instalar parafusos e agulhas na estrutura de fibra próxima à turbina, após realização de manutenção no componente - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112645",
-    "data_entrada": "17/06/2025",
-    "servico": "Verificar o cardan - Faz São Paulo\nAutorizado Mauricio"
-  },
-  {
-    "frota": "5697",
-    "cd_equipamento": "5697",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "112642",
-    "data_entrada": "17/06/2025",
-    "servico": "Verificar vazamento de oleo na bomba de pistão - Faz Bela Manha\nAutorizado Mauricio"
-  },
-  {
-    "frota": "5275",
-    "cd_equipamento": "5275",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112597",
-    "data_entrada": "16/06/2025",
-    "servico": "Verificar presença de folga excessiva (jogo) nas duas rodas - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5031",
     "cd_equipamento": "5031",
     "modelo": "RC2 E 2600 LSL TATU",
     "os": "112591",
     "data_entrada": "16/06/2025",
     "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5129",
-    "cd_equipamento": "5129",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "112585",
-    "data_entrada": "16/06/2025",
-    "servico": "Verificar presença de folga excessiva (jogo) na roda direita do tanque, possivelmente relacionada a rolamentos ou componentes de fixação - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5459",
-    "cd_equipamento": "5459",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "112580",
-    "data_entrada": "16/06/2025",
-    "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5543",
-    "cd_equipamento": "5543",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "112578",
-    "data_entrada": "16/06/2025",
-    "servico": "Substituir luva e eixo cardam - (Fazenda Estrela)\nLiberado Sr. Mauricio\nSolicitado Sr. Danilo"
   },
   {
     "frota": "5688",
@@ -166,14 +46,6 @@
     "os": "112335",
     "data_entrada": "11/06/2025",
     "servico": "Vazamento de óleo na bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5600",
-    "cd_equipamento": "5600",
-    "modelo": "ATOMIZADOR NATALI 4000 LT",
-    "os": "112269",
-    "data_entrada": "10/06/2025",
-    "servico": "Verificar sistema de transmissão de correias (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5629",

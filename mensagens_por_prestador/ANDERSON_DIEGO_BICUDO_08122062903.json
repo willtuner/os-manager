@@ -1,11 +1,27 @@
 [
   {
-    "frota": "191",
-    "cd_equipamento": "191",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "112920",
-    "data_entrada": "20/06/2025",
-    "servico": "Avaliar sistema de transmissão, que apresenta dificuldade ou impossibilidade de engate das marchas - (Fazenda Minuano)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+    "frota": "260",
+    "cd_equipamento": "260",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112979",
+    "data_entrada": "23/06/2025",
+    "servico": "Verificar trava do câmbio desprendida, comprometendo o engate das marchas - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur \nVerificar pendencias N° 4342 e 4334"
+  },
+  {
+    "frota": "203",
+    "cd_equipamento": "203",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "112964",
+    "data_entrada": "23/06/2025",
+    "servico": "Verificar vazamento de óleo na direção - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112954",
+    "data_entrada": "21/06/2025",
+    "servico": "Verificar barulho a normal na TDP - Faz São Severino\nAutorizado Arthur"
   },
   {
     "frota": "209",
@@ -14,14 +30,6 @@
     "os": "112918",
     "data_entrada": "20/06/2025",
     "servico": "Troca do cabo do afogador quebrado e trocar amortecedor da porta - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "248",
-    "cd_equipamento": "248",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "112871",
-    "data_entrada": "19/06/2025",
-    "servico": "Substituir bujão de drenagem da planetária do L/D - (Fazenda Estrela)\nSolicitado Sr. Carlos - comboio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "88",
@@ -40,14 +48,6 @@
     "servico": "Avaliar rigidez na direção e alteração na coloração do óleo hidráulico (aspecto esbranquiçado), indicando possível contaminação por água - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "224",
-    "cd_equipamento": "224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112848",
-    "data_entrada": "19/06/2025",
-    "servico": "Avaliar ruído anormal na TDP - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsável Sr. Arthur"
-  },
-  {
     "frota": "257",
     "cd_equipamento": "257",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -56,36 +56,12 @@
     "servico": "Trocar embreagem - Faz São Paulo\nAutorizado Arthur"
   },
   {
-    "frota": "208",
-    "cd_equipamento": "208",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112758",
-    "data_entrada": "18/06/2025",
-    "servico": "Trocar filtro sedimentador - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Arthur"
-  },
-  {
     "frota": "191",
     "cd_equipamento": "191",
     "modelo": "TRATOR NEW HOLAND TL 5.80",
     "os": "112702",
     "data_entrada": "18/06/2025",
     "servico": "Cabo do acelerador de mão quebrado - (Fazenda Minuano)\nSolicitado Sr. Izaias\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "132",
-    "cd_equipamento": "132",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "112674",
-    "data_entrada": "17/06/2025",
-    "servico": "Avaliar bomba hidráulica, trator sem força no hidráulico - (Fazenda Minuano)\nSolicitado Sr. Izaias\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "94",
-    "cd_equipamento": "94",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "112655",
-    "data_entrada": "17/06/2025",
-    "servico": "Trocar retentor da TDP - Faz Nova Manha\nAutorizado Arthur"
   },
   {
     "frota": "10223",
@@ -142,14 +118,6 @@
     "os": "111906",
     "data_entrada": "03/06/2025",
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "191",
-    "cd_equipamento": "191",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "111576",
-    "data_entrada": "30/05/2025",
-    "servico": "Verificar freio de mão e acelerador de mão quebrado - (Fazenda Minuano)\nLiberado Sr. Arthur"
   },
   {
     "frota": "67",
