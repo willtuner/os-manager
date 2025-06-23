@@ -1,18 +1,46 @@
 [
   {
     "solicitado": "ADRIANO CLAUDIO FIRMINO",
+    "frota": "5005",
+    "os": "112984",
+    "data": "23/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Fazer fibra em trinca no tanque - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "33",
+    "os": "112983",
+    "data": "23/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Substituir pivô da direção, que se encontra fixado de forma inadequada com solda - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "94",
+    "os": "112982",
+    "data": "23/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar  painel de instrumentos e buzina não funcionam  - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "130",
+    "os": "112971",
+    "data": "23/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar trator jogando óleo pelo filtro de ar - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "70",
+    "os": "112970",
+    "data": "23/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Trator com marchas encavaladas - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "5191",
     "os": "112759",
     "data": "18/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção de partes móveis (Correia da turbina) e instalar escada na torra  (Avaliar necessidade) - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "208",
-    "os": "112758",
-    "data": "18/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar filtro sedimentador - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5600",
@@ -29,20 +57,6 @@
     "servico": "Soldar roda guia e desamassar proteção da mesma - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "94",
-    "os": "112655",
-    "data": "17/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar retentor da TDP - Faz Nova Manha"
-  },
-  {
-    "frota": "5275",
-    "os": "112597",
-    "data": "16/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar presença de folga excessiva (jogo) nas duas rodas - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "142",
     "os": "112586",
     "data": "16/06/2025",
@@ -50,25 +64,11 @@
     "servico": "Verificar travamento no sistema de freio do trator - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "5129",
-    "os": "112585",
-    "data": "16/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar presença de folga excessiva (jogo) na roda direita do tanque, possivelmente relacionada a rolamentos ou componentes de fixação - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "147",
     "os": "112547",
     "data": "13/06/2025",
     "prestador": "JOCAR LTDA",
     "servico": "Verificar A/C não funciona  - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5600",
-    "os": "112269",
-    "data": "10/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar sistema de transmissão de correias (Fazenda Nova Manhã)"
   },
   {
     "frota": "5529",
@@ -90,6 +90,13 @@
     "data": "06/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
     "servico": "Quebra do suporte do capô - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5128",
+    "os": "112977",
+    "data": "03/06/2025",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
+    "servico": "Reforma geral - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5128",

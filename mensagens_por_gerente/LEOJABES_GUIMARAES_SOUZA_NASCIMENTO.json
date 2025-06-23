@@ -1,6 +1,34 @@
 [
   {
     "solicitado": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+    "frota": "219",
+    "os": "112976",
+    "data": "23/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar seta dianteira quebrada - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "10228",
+    "os": "112975",
+    "data": "23/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Verificar banco não da regulagem - (Fazenda SP)"
+  },
+  {
+    "frota": "5063",
+    "os": "112974",
+    "data": "23/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Verificar sistema de SPE não funciona - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5804",
+    "os": "112955",
+    "data": "21/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Realizar readequação dos ramais para compatibilização com a instalação do sistema SPE - (Fazenda São Paulo)"
+  },
+  {
     "frota": "5803",
     "os": "112860",
     "data": "19/06/2025",
@@ -36,13 +64,6 @@
     "servico": "Vazamento de óleo no pistão da barra - (Fazenda Biscui)"
   },
   {
-    "frota": "5479",
-    "os": "112717",
-    "data": "18/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Instalar mangueiras do sistema de drash - (Fazenda Biscui)"
-  },
-  {
     "frota": "218",
     "os": "112677",
     "data": "17/06/2025",
@@ -76,13 +97,6 @@
     "data": "17/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar iluminação - Faz São Paulo"
-  },
-  {
-    "frota": "5063",
-    "os": "112645",
-    "data": "17/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar o cardan - Faz São Paulo"
   },
   {
     "frota": "46",

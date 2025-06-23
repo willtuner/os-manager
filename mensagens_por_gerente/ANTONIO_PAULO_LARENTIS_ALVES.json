@@ -1,11 +1,25 @@
 [
   {
     "solicitado": "ANTONIO PAULO LARENTIS ALVES",
-    "frota": "5414",
-    "os": "112917",
-    "data": "20/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Quebra da esteira - (Fazenda Minuano)"
+    "frota": "144",
+    "os": "112987",
+    "data": "23/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Minuano)"
+  },
+  {
+    "frota": "26",
+    "os": "112969",
+    "data": "23/06/2025",
+    "prestador": "Prestador não definido",
+    "servico": "Confeccionar escada de acesso ao trator - (Fazenda Minuano)"
+  },
+  {
+    "frota": "253",
+    "os": "112968",
+    "data": "23/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié dianteiro e cibié traseiro L/D queimado - (Fazenda Minuano)"
   },
   {
     "frota": "253",
@@ -13,13 +27,6 @@
     "data": "19/06/2025",
     "prestador": "Prestador não definido",
     "servico": "Verificar vazamento de óleo no bloco do motor, identificando possível trinca ou falha na vedação - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5366",
-    "os": "112851",
-    "data": "19/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar bomba oscilando pressão - (Fazenda Minuano)"
   },
   {
     "frota": "26",
