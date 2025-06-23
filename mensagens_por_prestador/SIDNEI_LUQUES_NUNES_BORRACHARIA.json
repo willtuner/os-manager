@@ -1,10 +1,18 @@
 [
   {
-    "frota": "27",
-    "cd_equipamento": "27",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "112584",
-    "data_entrada": "16/06/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nLiberado Sr. Mauricio"
+    "frota": "208",
+    "cd_equipamento": "208",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "111384",
+    "data_entrada": "27/05/2025",
+    "servico": "Consertar pneu furado\nFazenda Nova Manhã\nLiberado Sr. Adriano"
+  },
+  {
+    "frota": "1141",
+    "cd_equipamento": "1141",
+    "modelo": "MOTO HONDA NXR 160 BROS",
+    "os": "111632",
+    "data_entrada": "21/05/2025",
+    "servico": "SERVIÇO DE MANUTENÇÃO"
   }
 ]

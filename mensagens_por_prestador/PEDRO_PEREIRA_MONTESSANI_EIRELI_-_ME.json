@@ -1,5 +1,37 @@
 [
   {
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113027",
+    "data_entrada": "23/06/2025",
+    "servico": "Trocar sensor de pressão de óleo - Faz  São Pedro\nAutorizado Arthur"
+  },
+  {
+    "frota": "252",
+    "cd_equipamento": "252",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113012",
+    "data_entrada": "23/06/2025",
+    "servico": "Verificar sensor de pressão de oleo - Faz São Pedro\nAutorizado Arthur"
+  },
+  {
+    "frota": "5599",
+    "cd_equipamento": "5599",
+    "modelo": "PREMIX PRIME 2T 2000",
+    "os": "113006",
+    "data_entrada": "23/06/2025",
+    "servico": "Verificar gerador não pega na partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "143",
+    "cd_equipamento": "143",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "113005",
+    "data_entrada": "23/06/2025",
+    "servico": "Fazer revisão no sistema eletrico da iluminação - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "94",
     "cd_equipamento": "94",
     "modelo": "TRATOR JOHN DEERE 5065 4X4",
@@ -286,5 +318,45 @@
     "os": "106664",
     "data_entrada": "06/03/2025",
     "servico": "Revisão elétrica (Oficina)\n(solicitante William)"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "107877",
+    "data_entrada": "27/02/2025",
+    "servico": "Identificar cibie com base quebrada, trocar cibie traseiro direito e consertar (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "10229",
+    "cd_equipamento": "10229",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "107874",
+    "data_entrada": "27/02/2025",
+    "servico": "Serviço de verificar sinalização, trocar cibie dianteiro esquerdo queimado e trocar suporte do cibie traseiro, trocar e fixar chicote dos cibies. (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "10223",
+    "cd_equipamento": "10223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "107873",
+    "data_entrada": "27/02/2025",
+    "servico": "Serviço de verificar sinalização, trocar cibie traseiro esquerdo quebrado, e fazer testes no sistema de combustível, boia de combustível quebrado.  (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "10219",
+    "cd_equipamento": "10219",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "107872",
+    "data_entrada": "27/02/2025",
+    "servico": "Serviço de verificar sinalização cibie traseiro queimado (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "222",
+    "cd_equipamento": "222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "107869",
+    "data_entrada": "27/02/2025",
+    "servico": "Verificar sinalização, consertar chicotes dos cibies, fixar as proteções dos chicotes, trocar lanterna dianteira esquerda de seta que estava quebrado (Fazenda Estrela)\nLiberado Sr. Arthur"
   }
 ]

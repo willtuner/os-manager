@@ -1,5 +1,13 @@
 [
   {
+    "frota": "70",
+    "cd_equipamento": "70",
+    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+    "os": "113036",
+    "data_entrada": "23/06/2025",
+    "servico": "Revisar trambulador - Faz Nova Manha\nAutorizado Arthur"
+  },
+  {
     "frota": "109",
     "cd_equipamento": "109",
     "modelo": "TRATOR MASSEY FERGUSON 290",
@@ -38,5 +46,21 @@
     "os": "111563",
     "data_entrada": "30/05/2025",
     "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "17",
+    "cd_equipamento": "17",
+    "modelo": "TRATOR MASSEY FERGUSON 275/2",
+    "os": "111285",
+    "data_entrada": "26/05/2025",
+    "servico": "Substituição do Assento do Operador\nBanco do trator substituído devido a desgaste e comprometimento da ergonomia e segurança operacional.\nCorreção de Vazamento no Cano de Retorno do Copo Sedimentador Eliminado vazamento no retorno do sistema de filtragem, com reaperto e/ou substituição do componente afetado. Correção de Vazamento no Flexível do Retentor TraseiroIdentificado e corrigido vazamento no flexível conectado à região do retentor traseiro, garantindo estanqueidade do sistema.- (Fazenda Nova Manhã)\nLiberado Sr. Arthur\nPendencia N° 4121"
+  },
+  {
+    "frota": "137",
+    "cd_equipamento": "137",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "107680",
+    "data_entrada": "25/03/2025",
+    "servico": "Verificar embreagem de pé, está na última regulagem, para sair do lugar tem que tirar o pé muito alto.\nFazenda Aparecida\nSolicitado Sr. Rennan\nLiberado Sr. Arthur"
   }
 ]

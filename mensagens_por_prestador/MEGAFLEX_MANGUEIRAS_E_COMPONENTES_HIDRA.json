@@ -1,10 +1,18 @@
 [
   {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111657",
-    "data_entrada": "02/06/2025",
-    "servico": "Corrigir vazamento na mangueira hidráulica do pistão de levante da barra direita.\nFazenda Biscui Pecuária\nSolicitado Sr. Geovane\nLiberado Sr. Maurício"
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112755",
+    "data_entrada": "18/06/2025",
+    "servico": "Confeccionar mangueira do hidráulico - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari"
+  },
+  {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "110577",
+    "data_entrada": "14/05/2025",
+    "servico": "Confeccionar mangueira"
   }
 ]

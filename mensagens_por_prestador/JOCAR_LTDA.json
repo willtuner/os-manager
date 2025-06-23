@@ -1,5 +1,13 @@
 [
   {
+    "frota": "117",
+    "cd_equipamento": "117",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "113001",
+    "data_entrada": "23/06/2025",
+    "servico": "Avaliar sistema de climatização do trator, com falha nos estágios de ventilação do ar-condicionado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "288",
     "cd_equipamento": "288",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -40,11 +48,19 @@
     "servico": "Verificar A/C não está funcionando - Faz Pedra Verde\nAutorizado Arthur"
   },
   {
-    "frota": "147",
-    "cd_equipamento": "147",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "112547",
-    "data_entrada": "13/06/2025",
-    "servico": "Verificar A/C não funciona  - (Fazenda Nova Manhã)\nLiberado Sr. Arthur \nSolicitado Sr. Adriano"
+    "frota": "260",
+    "cd_equipamento": "260",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109796",
+    "data_entrada": "02/05/2025",
+    "servico": "Avaliar funcionamento do A/C, equipamento não está gelando de maneira desejada - (Fazenda São Pedro)\nLiberado Sr. Arthur\n- Feito teste foi visto que tinha carga baixa de gás, que vazou na válvula de sucção, foi trocado o núcleo para vazar, foi visto que os trocadores de calor estavam obstruído, foi lavado o mesmo, foi aberto o teto para ter acesso a caixa evaporadora, feito limpeza em tudo após isso ficou 100%."
+  },
+  {
+    "frota": "299",
+    "cd_equipamento": "299",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "109932",
+    "data_entrada": "30/04/2025",
+    "servico": "Condensador do ar condicionado furado - (Fazenda Pedra Verde)\nLiberado Sr. Arthur\n- Foi relatado que o condensador estava furado, foi levado outro para fazer a substituição, foi visto que os trocadores de calor já estavam obstruído, foi lavado o mesmo, após isso trocado condensador e filtro secador para melhorar funcionamento."
   }
 ]
