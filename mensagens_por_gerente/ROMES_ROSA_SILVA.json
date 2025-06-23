@@ -1,6 +1,26 @@
 [
   {
-    "solicitado": "ROMES ROSA SILVA",
+    "frota": "298",
+    "os": "113027",
+    "data": "23/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar sensor de pressão de óleo - Faz  São Pedro"
+  },
+  {
+    "frota": "252",
+    "os": "113012",
+    "data": "23/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar sensor de pressão de oleo - Faz São Pedro"
+  },
+  {
+    "frota": "117",
+    "os": "113001",
+    "data": "23/06/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Avaliar sistema de climatização do trator, com falha nos estágios de ventilação do ar-condicionado - (Fazenda São Pedro)"
+  },
+  {
     "frota": "260",
     "os": "112979",
     "data": "23/06/2025",
@@ -11,7 +31,7 @@
     "frota": "5615",
     "os": "112978",
     "data": "23/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Vazamento de óleo na bomba - (Fazenda São Pedro)"
   },
   {
@@ -60,7 +80,7 @@
     "frota": "5126",
     "os": "112656",
     "data": "17/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Trocar olhal do distribuidor - Faz São Pedro"
   },
   {
@@ -125,6 +145,13 @@
     "data": "27/05/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "100",
+    "os": "111482",
+    "data": "22/05/2025",
+    "prestador": "TORNEARIA STEINHAUSER LTDA",
+    "servico": "Confeccionar buchas para tampa de fixacao da mesa de tracao"
   },
   {
     "frota": "5737",

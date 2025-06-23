@@ -1,6 +1,5 @@
 [
   {
-    "solicitado": "PAULO EDSON ABREU VILELA JUNIOR",
     "frota": "5724",
     "os": "112185",
     "data": "09/06/2025",
@@ -18,7 +17,7 @@
     "frota": "5629",
     "os": "110998",
     "data": "20/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Colocar barra de ferro que sustenta correntes anti-arremesso  - (Fazenda NSA)"
   }
 ]

@@ -1,10 +1,9 @@
 [
   {
-    "solicitado": "CARLOS HENRIQUE LEITE DONATO",
     "frota": "258",
     "os": "112919",
     "data": "20/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Vazamento de óleo diesel na bomba - (Fazenda Estrela)"
   },
   {
@@ -25,7 +24,7 @@
     "frota": "258",
     "os": "112906",
     "data": "20/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Soldar escada - Faz Estrela"
   },
   {

@@ -1,6 +1,5 @@
 [
   {
-    "solicitado": "ZYLTON FIGUEREDO SPIGUEL",
     "frota": "313",
     "os": "112709",
     "data": "18/06/2025",
@@ -20,5 +19,19 @@
     "data": "13/06/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Verificar vazamento de óleo e realizar preenchimento com saibro na canaleta de passagem da corrente  - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5784",
+    "os": "110768",
+    "data": "16/05/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Fazer solda - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5784",
+    "os": "110430",
+    "data": "13/05/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Parafuso quebrou dentro da porca no braço responsável pela regulagem da distância do plantio. - (Fazenda Renascer)"
   }
 ]

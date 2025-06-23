@@ -1,6 +1,19 @@
 [
   {
-    "solicitado": "JOAO VITOR DUBAY DA SILVA",
+    "frota": "5110",
+    "os": "113018",
+    "data": "23/06/2025",
+    "prestador": "nan",
+    "servico": "Realizar solda nos dois suportes que fixam o rolete do subsolador. - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "266",
+    "os": "113003",
+    "data": "23/06/2025",
+    "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
+    "servico": "Avaliar vazamento de óleo no munhão dianteiro do trator - (Fazenda São Pedro)"
+  },
+  {
     "frota": "274",
     "os": "112937",
     "data": "20/06/2025",
@@ -18,7 +31,7 @@
     "frota": "5490",
     "os": "112721",
     "data": "18/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Verificada ausência de 6 bicas de distribuição de sementes e de 1 conjunto de disco dosador - (Fazenda Bela Manhã)"
   },
   {
@@ -48,5 +61,12 @@
     "data": "04/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)"
+  },
+  {
+    "frota": "279",
+    "os": "109975",
+    "data": "05/05/2025",
+    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
+    "servico": "Trocar sensor de temperatura do óleo hidráulico - (Fazenda Estrela)"
   }
 ]

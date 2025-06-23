@@ -1,6 +1,5 @@
 [
   {
-    "solicitado": "RENNAN ARCANJO CREPALDI",
     "frota": "303",
     "os": "112967",
     "data": "23/06/2025",
@@ -11,7 +10,7 @@
     "frota": "303",
     "os": "112936",
     "data": "20/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Mangueira de diesel da bomba injetora furada - (Fazenda NSA)"
   },
   {
@@ -25,7 +24,7 @@
     "frota": "10121",
     "os": "112897",
     "data": "20/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Adequação para devolução - Faz NSA"
   },
   {
@@ -68,8 +67,7 @@
     "os": "112722",
     "data": "16/06/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "- Recuperar fibra do tanque aonde vai a cinta para fixar; Refazer sistema abre e fecha das abas da torre L/D e L/E.",
-    "liberado": "Rafael Venâncio."
+    "servico": "- Recuperar fibra do tanque aonde vai a cinta para fixar; Refazer sistema abre e fecha das abas da torre L/D e L/E."
   },
   {
     "frota": "5673",
@@ -96,14 +94,14 @@
     "frota": "5058",
     "os": "112282",
     "data": "10/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
   },
   {
     "frota": "5598",
     "os": "111572",
     "data": "30/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Vazamento no pistão de acionamento dos bicos - (Fazenda NSA)"
   },
   {
@@ -112,6 +110,13 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar esteira e fundo do espalhador"
+  },
+  {
+    "frota": "137",
+    "os": "107680",
+    "data": "25/03/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Verificar embreagem de pé, está na última regulagem, para sair do lugar tem que tirar o pé muito alto."
   },
   {
     "frota": "5629",

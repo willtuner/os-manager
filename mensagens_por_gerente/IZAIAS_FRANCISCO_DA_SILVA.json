@@ -1,6 +1,5 @@
 [
   {
-    "solicitado": "IZAIAS FRANCISCO DA SILVA",
     "frota": "191",
     "os": "112921",
     "data": "20/06/2025",
@@ -9,24 +8,10 @@
   },
   {
     "frota": "191",
-    "os": "112920",
-    "data": "20/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar sistema de transmissão, que apresenta dificuldade ou impossibilidade de engate das marchas - (Fazenda Minuano)"
-  },
-  {
-    "frota": "191",
     "os": "112702",
     "data": "18/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Cabo do acelerador de mão quebrado - (Fazenda Minuano)"
-  },
-  {
-    "frota": "132",
-    "os": "112674",
-    "data": "17/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar bomba hidráulica, trator sem força no hidráulico - (Fazenda Minuano)"
   },
   {
     "frota": "192",
@@ -41,12 +26,5 @@
     "data": "16/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sinalização - (Fazenda São Severino)"
-  },
-  {
-    "frota": "191",
-    "os": "111576",
-    "data": "30/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar freio de mão e acelerador de mão quebrado - (Fazenda Minuano)"
   }
 ]

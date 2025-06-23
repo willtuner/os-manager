@@ -1,6 +1,5 @@
 [
   {
-    "solicitado": "DIEGO GOMES CAMBOI",
     "frota": "203",
     "os": "112964",
     "data": "23/06/2025",
@@ -25,7 +24,7 @@
     "frota": "5210",
     "os": "110604",
     "data": "15/05/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Fazer alongador do ramal - (Fazenda Santa Izabel)"
   },
   {

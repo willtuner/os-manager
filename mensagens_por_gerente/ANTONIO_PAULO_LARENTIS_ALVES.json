@@ -1,6 +1,19 @@
 [
   {
-    "solicitado": "ANTONIO PAULO LARENTIS ALVES",
+    "frota": "144",
+    "os": "113020",
+    "data": "23/06/2025",
+    "prestador": "nan",
+    "servico": "Reparar suporte da alavanca do comando hidráulico - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5533",
+    "os": "113007",
+    "data": "23/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D furado - (Fazenda Minuano)"
+  },
+  {
     "frota": "144",
     "os": "112987",
     "data": "23/06/2025",
@@ -11,7 +24,7 @@
     "frota": "26",
     "os": "112969",
     "data": "23/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Confeccionar escada de acesso ao trator - (Fazenda Minuano)"
   },
   {
@@ -25,7 +38,7 @@
     "frota": "253",
     "os": "112873",
     "data": "19/06/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Verificar vazamento de óleo no bloco do motor, identificando possível trinca ou falha na vedação - (Fazenda Minuano)"
   },
   {
@@ -36,10 +49,17 @@
     "servico": "Trator com sistema de marchas remontado - (Fazenda Minuano)"
   },
   {
+    "frota": "253",
+    "os": "106955",
+    "data": "13/03/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar mola do banco quebrada - (Fazenda Minuano)"
+  },
+  {
     "frota": "5631",
     "os": "106948",
     "data": "12/03/2025",
-    "prestador": "Prestador não definido",
+    "prestador": "nan",
     "servico": "Instalar correntes de proteção - (Fazenda Minuano)"
   }
 ]
