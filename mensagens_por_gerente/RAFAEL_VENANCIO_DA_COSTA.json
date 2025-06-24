@@ -7,13 +7,6 @@
     "servico": "Remover vazamento na tampa de valvula - MG Vedações"
   },
   {
-    "frota": "113",
-    "os": "112981",
-    "data": "23/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E traseiro com bico quebrado (18.4-30) - (MG Vedações)"
-  },
-  {
     "frota": "5345",
     "os": "112952",
     "data": "20/06/2025",
@@ -22,17 +15,17 @@
   },
   {
     "frota": "259",
-    "os": "112855",
-    "data": "19/06/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Soldar trincas nas castanhas de fixação do aro na roda traseira direita."
-  },
-  {
-    "frota": "259",
     "os": "112853",
     "data": "19/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Desmontar e montar os dois pneus traseiros para realizar serviço de solda na \"castanha\" de fixação do aro no centro da roda."
+  },
+  {
+    "frota": "259",
+    "os": "112855",
+    "data": "19/06/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Soldar trincas nas castanhas de fixação do aro na roda traseira direita."
   },
   {
     "frota": "5382",

@@ -7,13 +7,6 @@
     "servico": "Avaliar sistema de climatização do trator, com falha nos estágios de ventilação do ar-condicionado - (Fazenda São Pedro)"
   },
   {
-    "frota": "260",
-    "os": "112979",
-    "data": "23/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar trava do câmbio desprendida, comprometendo o engate das marchas - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5615",
     "os": "112978",
     "data": "23/06/2025",
@@ -26,13 +19,6 @@
     "data": "23/06/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Corrigir vazamento de óleo nos pistões hidráulico."
-  },
-  {
-    "frota": "5739",
-    "os": "112904",
-    "data": "20/06/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar parafusos do suporte do fação, trocar arrastadores e fações, trocar embreagens, molas luvas, cruzetas, soldar trincas, retentores dos pistões dos dois lados  - (Fazenda São Pedro)"
   },
   {
     "frota": "5233",
@@ -117,6 +103,13 @@
     "data": "27/05/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5737",
+    "os": "110592",
+    "data": "15/05/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Fazer solda e colocar parafusos de fixação das proteção das partes moveis - (Fazenda São Pedro)"
   },
   {
     "frota": "5188",

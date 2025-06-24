@@ -7,13 +7,6 @@
     "servico": "Mangueira de óleo hidráulico estourada - (Fazenda Casa Branca)"
   },
   {
-    "frota": "90",
-    "os": "113068",
-    "data": "24/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar trator perdendo forças - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "5542",
     "os": "113050",
     "data": "23/06/2025",
@@ -26,13 +19,6 @@
     "data": "19/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar cibié traseiros queimados e instalar cibié quebrado no equipamento de poda - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5778",
-    "os": "112725",
-    "data": "18/06/2025",
-    "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
-    "servico": "Vazamento de óleo no motor hidráulico da esteira lateral - (Fazenda Casa Branca)"
   },
   {
     "frota": "5061",
@@ -75,5 +61,12 @@
     "data": "29/04/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "10220",
+    "os": "106998",
+    "data": "14/03/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Instalar escapamento faltando pedaço."
   }
 ]

@@ -1,5 +1,12 @@
 [
   {
+    "frota": "72",
+    "os": "113090",
+    "data": "24/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu furado - (Industria)"
+  },
+  {
     "frota": "332",
     "os": "113065",
     "data": "24/06/2025",
@@ -40,13 +47,6 @@
     "data": "23/06/2025",
     "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
     "servico": "Verificar sistema de SPE não funciona - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "257",
-    "os": "112866",
-    "data": "19/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar embreagem - Faz São Paulo"
   },
   {
     "frota": "5479",
