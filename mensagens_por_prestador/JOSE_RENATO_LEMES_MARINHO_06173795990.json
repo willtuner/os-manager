@@ -32,28 +32,12 @@
     "servico": "Endireitar barra lateral esquerda - Faz Estrela\nAutorizado Mauricio"
   },
   {
-    "frota": "258",
-    "cd_equipamento": "258",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112906",
-    "data_entrada": "20/06/2025",
-    "servico": "Soldar escada - Faz Estrela\nAutorizado Arthur"
-  },
-  {
     "frota": "5418",
     "cd_equipamento": "5418",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "112893",
     "data_entrada": "20/06/2025",
     "servico": "Soldar e realinhar asa L/E - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsável Sr. Wilson"
-  },
-  {
-    "frota": "5744",
-    "cd_equipamento": "5744",
-    "modelo": "SEMEADEIRA 13 LINHA",
-    "os": "112887",
-    "data_entrada": "20/06/2025",
-    "servico": "Soldar suporte da corrente de incorporação quebrado - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nLiberado Sr. Wilson"
   },
   {
     "frota": "5479",
@@ -240,6 +224,14 @@
     "servico": "Fazer solda no suporte da grade de proteção dianteira - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
+    "frota": "5105",
+    "cd_equipamento": "5105",
+    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
+    "os": "111457",
+    "data_entrada": "03/06/2025",
+    "servico": "Trocar trava eixo da grade\nFaz Estrela\nSolicitado João\nAutorizado Mauricio\n-  Desmontado sessao dianteira da grade, soldado suporte para transporte das mangueiras"
+  },
+  {
     "frota": "5226",
     "cd_equipamento": "5226",
     "modelo": "CARRETINHA DUAS RODAS (CARRO)",
@@ -352,22 +344,6 @@
     "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5214",
-    "cd_equipamento": "5214",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "109707",
-    "data_entrada": "30/04/2025",
-    "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5597",
-    "cd_equipamento": "5597",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "109432",
-    "data_entrada": "25/04/2025",
-    "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "211",
     "cd_equipamento": "211",
     "modelo": "TRATOR JOHN DEERE 5070 E",
@@ -382,5 +358,13 @@
     "os": "111421",
     "data_entrada": "19/03/2025",
     "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias"
+  },
+  {
+    "frota": "10220",
+    "cd_equipamento": "10220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "106998",
+    "data_entrada": "14/03/2025",
+    "servico": "Instalar escapamento faltando pedaço.\n- Feito solda em trincas. - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   }
 ]

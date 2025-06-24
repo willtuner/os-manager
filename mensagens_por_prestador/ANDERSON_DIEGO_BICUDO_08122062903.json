@@ -1,13 +1,5 @@
 [
   {
-    "frota": "90",
-    "cd_equipamento": "90",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113068",
-    "data_entrada": "24/06/2025",
-    "servico": "Verificar trator perdendo forças - (Fazenda Casa Branca)\nP.S revisão de 400hrs vencida, requisição feita dia 18/06 quarta feira, aguardando envio pelo almoxarife. \nSolicitado Sr. João Paulo (Gerente)\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "106",
     "cd_equipamento": "106",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
@@ -30,38 +22,6 @@
     "os": "113017",
     "data_entrada": "23/06/2025",
     "servico": "Quebra do eixo da TDP - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "113014",
-    "data_entrada": "23/06/2025",
-    "servico": "Revisão de 400 hrs - (Fazenda Estrela)\nResponsavel Sr. Wilson\n- Filtro de diesel \n- Filtro sedimentador\n- Filtro de óleo de motor\n- Óleo de motor (9L 15w40)\n- Oleo das planetárias L/E e L/D (1,5   1,5 L de 10w30)"
-  },
-  {
-    "frota": "310",
-    "cd_equipamento": "310",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "112999",
-    "data_entrada": "23/06/2025",
-    "servico": "Revisão de 400 hrs - (Pecuaria)\n- Filtro de diesel \n- Filtro sedimentador\n- Filtro de óleo de motor\n- Óleo de motor (9L 15w40)\n- Oleo das planetárias L/E e L/D (1,5   1,5 L de 10w30)"
-  },
-  {
-    "frota": "260",
-    "cd_equipamento": "260",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112979",
-    "data_entrada": "23/06/2025",
-    "servico": "Verificar trava do câmbio desprendida, comprometendo o engate das marchas - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur \nVerificar pendencias N° 4342 e 4334"
-  },
-  {
-    "frota": "203",
-    "cd_equipamento": "203",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "112964",
-    "data_entrada": "23/06/2025",
-    "servico": "Verificar vazamento de óleo na direção - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsável Sr. Arthur"
   },
   {
     "frota": "233",
@@ -118,14 +78,6 @@
     "os": "112856",
     "data_entrada": "19/06/2025",
     "servico": "Executar limpeza completa do tanque de combustível, em razão do acúmulo de impurezas detectadas no decantador, a fim de evitar obstruções no sistema de alimentação. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "257",
-    "cd_equipamento": "257",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112866",
-    "data_entrada": "19/06/2025",
-    "servico": "Trocar embreagem - Faz São Paulo\nAutorizado Arthur"
   },
   {
     "frota": "10223",

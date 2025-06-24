@@ -1,35 +1,19 @@
 [
   {
+    "frota": "72",
+    "cd_equipamento": "72",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113090",
+    "data_entrada": "24/06/2025",
+    "servico": "Pneu furado - (Industria)\nSolicitado Sr. Geovane  (Industria)\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5418",
     "cd_equipamento": "5418",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "113055",
     "data_entrada": "24/06/2025",
     "servico": "Pneu L/E estourado - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5533",
-    "cd_equipamento": "5533",
-    "modelo": "CARRETA AGRICOLA COM PNEUS",
-    "os": "113007",
-    "data_entrada": "23/06/2025",
-    "servico": "Pneu L/D furado - (Fazenda Minuano)\nSolicitado Sr. Danilo (ADM)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "144",
-    "cd_equipamento": "144",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "112987",
-    "data_entrada": "23/06/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda Minuano)\nSolicitado Sr. Danilo (ADM)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "113",
-    "cd_equipamento": "113",
-    "modelo": "TRATOR JOHN DEERE 5603 4X4",
-    "os": "112981",
-    "data_entrada": "23/06/2025",
-    "servico": "Pneu L/E traseiro com bico quebrado (18.4-30) - (MG Vedações)\nSolicitado Sr. Rafael \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "44",
@@ -40,44 +24,12 @@
     "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsável Sr. Mauricio"
   },
   {
-    "frota": "5747",
-    "cd_equipamento": "5747",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "112867",
-    "data_entrada": "19/06/2025",
-    "servico": "Pneu L/E furado - (Fazenda Estrela)\nSolicitado Sr. Carlos - comboio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5139",
-    "cd_equipamento": "5139",
-    "modelo": "TANQUE DE AGUA 4000 LT",
-    "os": "112850",
-    "data_entrada": "19/06/2025",
-    "servico": "Pneu L/D furado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsável Sr. Mauricio"
-  },
-  {
     "frota": "259",
     "cd_equipamento": "259",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "112853",
     "data_entrada": "19/06/2025",
     "servico": "Desmontar e montar os dois pneus traseiros para realizar serviço de solda na \"castanha\" de fixação do aro no centro da roda.\nFazenda Aparecida\nSolicitado Sr. Rafael\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "313",
-    "cd_equipamento": "313",
-    "modelo": "NEW HOLLAND TT.75",
-    "os": "112709",
-    "data_entrada": "18/06/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5759",
-    "cd_equipamento": "5759",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "112676",
-    "data_entrada": "17/06/2025",
-    "servico": "Pneu L/D com corte lateral - (Fazenda Estrela)\nSolicitado Sr. Nelson\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5715",
