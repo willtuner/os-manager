@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5479",
+    "cd_equipamento": "5479",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "113059",
+    "data_entrada": "24/06/2025",
+    "servico": "Revisar bomba, misturando água no óleo - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5615",
+    "cd_equipamento": "5615",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "112978",
+    "data_entrada": "23/06/2025",
+    "servico": "Vazamento de óleo na bomba - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5739",
     "cd_equipamento": "5739",
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
@@ -32,20 +48,20 @@
     "servico": "Fazer solda nas proteções anti-arremesso e trocar jogo de martelos - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
+    "frota": "5233",
+    "cd_equipamento": "5233",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "111938",
+    "data_entrada": "03/06/2025",
+    "servico": "Vazamento na bomba do tanque - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
     "frota": "5075",
     "cd_equipamento": "5075",
     "modelo": "TANQUE DE AGUA 6500",
     "os": "111435",
     "data_entrada": "28/05/2025",
     "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5737",
-    "cd_equipamento": "5737",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "110725",
-    "data_entrada": "16/05/2025",
-    "servico": "Vazamento no retentor do multiplicador  - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5741",

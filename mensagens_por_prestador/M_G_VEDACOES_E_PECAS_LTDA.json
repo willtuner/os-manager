@@ -1,5 +1,13 @@
 [
   {
+    "frota": "144",
+    "cd_equipamento": "144",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "113020",
+    "data_entrada": "23/06/2025",
+    "servico": "Reparar suporte da alavanca do comando hidráulico - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5404",
     "cd_equipamento": "5404",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
@@ -16,35 +24,11 @@
     "servico": "Confeccionar pistão da barra reforçada (Fazenda ?)\nLiberado Sr. Rafael"
   },
   {
-    "frota": "5667",
-    "cd_equipamento": "5667",
-    "modelo": "PODADEIRA HIDRAUTEC HLD1",
-    "os": "112653",
-    "data_entrada": "17/06/2025",
-    "servico": "Verificar relógio de pressão do óleo hidráulico quebrado.\nFazenda São Paulo\nSolicitado Sr. Leojabes\nLiberado Sr. Maurício"
-  },
-  {
     "frota": "5673",
     "cd_equipamento": "5673",
     "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
     "os": "112408",
     "data_entrada": "12/06/2025",
     "servico": "Vazamento no comando da barrinha - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5666",
-    "cd_equipamento": "5666",
-    "modelo": "PODADEIRA HIDRAUTEC HLD1",
-    "os": "109154",
-    "data_entrada": "22/04/2025",
-    "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5482",
-    "cd_equipamento": "5482",
-    "modelo": "PODADEIRA HID.GLOBAL 3500",
-    "os": "109136",
-    "data_entrada": "21/04/2025",
-    "servico": "Revisar podadeira - \nLiberado Sr. Rafael"
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "113055",
+    "data_entrada": "24/06/2025",
+    "servico": "Pneu L/E estourado - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5533",
     "cd_equipamento": "5533",
     "modelo": "CARRETA AGRICOLA COM PNEUS",
@@ -78,13 +86,5 @@
     "os": "112208",
     "data_entrada": "09/06/2025",
     "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5645",
-    "cd_equipamento": "5645",
-    "modelo": "TRANSBORDO MOD.TC-7000 GTM",
-    "os": "108350",
-    "data_entrada": "05/04/2025",
-    "servico": "Consertar pneu traseiro esquerdo furado.\nFazenda São Paulo\nLiberado Sr. Maurício"
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5117",
+    "cd_equipamento": "5117",
+    "modelo": "ROCADEIRA 3,0 TATU",
+    "os": "113062",
+    "data_entrada": "24/06/2025",
+    "servico": "Colocar reforço na estrutura - (Fazenda Pedra Verde)\nSolicitado Sr. Gilson\nResponsavel Sr. Rafael"
+  },
+  {
     "frota": "259",
     "cd_equipamento": "259",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -62,61 +70,5 @@
     "os": "111383",
     "data_entrada": "27/05/2025",
     "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas, trocar rolamento da roda L/? - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5709",
-    "cd_equipamento": "5709",
-    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-    "os": "110801",
-    "data_entrada": "19/05/2025",
-    "servico": "Inspecionar os pistões do equipamento que apresentam ausência de movimento - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5784",
-    "cd_equipamento": "5784",
-    "modelo": "DESENROLADOR DE MANGUEIRA",
-    "os": "110768",
-    "data_entrada": "16/05/2025",
-    "servico": "Fazer solda - (Fazenda Minuano)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110546",
-    "data_entrada": "14/05/2025",
-    "servico": "Ramal furado dos dois lados e soldar trincas na base - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5673",
-    "cd_equipamento": "5673",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "110514",
-    "data_entrada": "14/05/2025",
-    "servico": "Vazamento no sistema hidráulico - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5205",
-    "cd_equipamento": "5205",
-    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
-    "os": "110512",
-    "data_entrada": "14/05/2025",
-    "servico": "Vazamento no pistão - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5784",
-    "cd_equipamento": "5784",
-    "modelo": "DESENROLADOR DE MANGUEIRA",
-    "os": "110430",
-    "data_entrada": "13/05/2025",
-    "servico": "Parafuso quebrou dentro da porca no braço responsável pela regulagem da distância do plantio. - (Fazenda Renascer)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "110458",
-    "data_entrada": "10/05/2025",
-    "servico": "Ramal furado, causado por atrito entre o ramal e chapa de fixação - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

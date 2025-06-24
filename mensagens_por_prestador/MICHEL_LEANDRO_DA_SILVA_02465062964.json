@@ -1,10 +1,18 @@
 [
   {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112599",
-    "data_entrada": "16/06/2025",
-    "servico": "Realizar reparo com fibra na estrutura da torre, nas proximidades da hélice - (Fazenda Casa Branca)\nSolicitado Sr. Rafael \nLiberado Sr. Mauricio"
+    "frota": "5479",
+    "cd_equipamento": "5479",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "113058",
+    "data_entrada": "24/06/2025",
+    "servico": "Fazer serviço de fibra no tanque - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5005",
+    "cd_equipamento": "5005",
+    "modelo": "PULVERIZADOR 2000 LT MARTHGNIA",
+    "os": "112984",
+    "data_entrada": "23/06/2025",
+    "servico": "Fazer fibra em trinca no tanque - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
   }
 ]

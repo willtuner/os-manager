@@ -1,11 +1,43 @@
 [
   {
-    "frota": "5804",
-    "cd_equipamento": "5804",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "112955",
+    "frota": "5005",
+    "cd_equipamento": "5005",
+    "modelo": "PULVERIZADOR 2000 LT MARTHGNIA",
+    "os": "113081",
+    "data_entrada": "24/06/2025",
+    "servico": "Quebra do cabeçalho do tanque - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5401",
+    "cd_equipamento": "5401",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "113066",
+    "data_entrada": "24/06/2025",
+    "servico": "Realinhas estrutura do braço, amassado após colisão - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "26",
+    "cd_equipamento": "26",
+    "modelo": "TRATOR MASSEY FERGUSON 275/2",
+    "os": "112969",
+    "data_entrada": "23/06/2025",
+    "servico": "Confeccionar escada de acesso ao trator - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "5759",
+    "cd_equipamento": "5759",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "112957",
     "data_entrada": "21/06/2025",
-    "servico": "Realizar readequação dos ramais para compatibilização com a instalação do sistema SPE - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsável Sr. Mauricio"
+    "servico": "Endireitar barra lateral esquerda - Faz Estrela\nAutorizado Mauricio"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112906",
+    "data_entrada": "20/06/2025",
+    "servico": "Soldar escada - Faz Estrela\nAutorizado Arthur"
   },
   {
     "frota": "5418",
@@ -22,14 +54,6 @@
     "os": "112887",
     "data_entrada": "20/06/2025",
     "servico": "Soldar suporte da corrente de incorporação quebrado - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nLiberado Sr. Wilson"
-  },
-  {
-    "frota": "5803",
-    "cd_equipamento": "5803",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "112859",
-    "data_entrada": "19/06/2025",
-    "servico": "Realizar readequação dos ramais para compatibilização com a instalação do sistema SPE - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsável Sr. Mauricio"
   },
   {
     "frota": "5479",
@@ -72,14 +96,6 @@
     "servico": "Quebra da ponta de eixo - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5354",
-    "cd_equipamento": "5354",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "112703",
-    "data_entrada": "18/06/2025",
-    "servico": "Soldar roda guia e desamassar proteção da mesma - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5614",
     "cd_equipamento": "5614",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -110,14 +126,6 @@
     "os": "112577",
     "data_entrada": "16/06/2025",
     "servico": "Parafusos de fixação do eixo soltos - (Fazenda NSA)\nSolicitado Sr. Rennan\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5350",
-    "cd_equipamento": "5350",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "112574",
-    "data_entrada": "16/06/2025",
-    "servico": "Fazer solda em trinca no cabeçario e verificar folga nas rodas guia - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nLiberado Sr. Mauricio\nPendencias N° 4336 e 4335"
   },
   {
     "frota": "5110",
@@ -318,14 +326,6 @@
     "os": "110736",
     "data_entrada": "16/05/2025",
     "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã) \nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5433",
-    "cd_equipamento": "5433",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "110712",
-    "data_entrada": "16/05/2025",
-    "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5204",

@@ -16,27 +16,27 @@
     "servico": "Revisão de 50 hrs - (Fazenda Bela Manhã)\n- Troca do filtro de diesel\n- Troca do filtro sedimentador\n- Troca do filtro de óleo hidráulico"
   },
   {
+    "frota": "325",
+    "cd_equipamento": "325",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "112985",
+    "data_entrada": "23/06/2025",
+    "servico": "Conferir trator com luz da bateria acesa no painel, indicando possível falha no sistema de carga. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "319",
+    "cd_equipamento": "319",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "112966",
+    "data_entrada": "23/06/2025",
+    "servico": "Verificar trator sem partida - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsável Sr. Arthur"
+  },
+  {
     "frota": "332",
     "cd_equipamento": "332",
     "modelo": "TRATOR NEW HOLANDTL5.80",
     "os": "112508",
     "data_entrada": "13/06/2025",
     "servico": "Verificar vazamento no retentor do cubo da roda dianteira e fazer revisão de 50 hrs  - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "322",
-    "cd_equipamento": "322",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "110423",
-    "data_entrada": "12/05/2025",
-    "servico": "Revisão de 300 hrs - (Fazenda SL1)\nLiberado Sr. Wilson\n- E tirado vazamento da bomba injetora"
-  },
-  {
-    "frota": "316",
-    "cd_equipamento": "316",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "110421",
-    "data_entrada": "12/05/2025",
-    "servico": "Revisão de 300 hrs - (Fazenda São José)\nLiberado Sr. Wilson"
   }
 ]
