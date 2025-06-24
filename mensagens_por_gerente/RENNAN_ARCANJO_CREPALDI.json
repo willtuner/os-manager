@@ -1,17 +1,17 @@
 [
   {
+    "frota": "5418",
+    "os": "113055",
+    "data": "24/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E estourado - (Fazenda NSA)"
+  },
+  {
     "frota": "303",
     "os": "112967",
     "data": "23/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Luz do óleo acendendo verificar sensor - Faz Aparecida"
-  },
-  {
-    "frota": "303",
-    "os": "112936",
-    "data": "20/06/2025",
-    "prestador": "nan",
-    "servico": "Mangueira de diesel da bomba injetora furada - (Fazenda NSA)"
   },
   {
     "frota": "5730",
@@ -47,13 +47,6 @@
     "data": "19/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Avaliar vazamento de óleo no cárter, identificando possível falha na vedação ou trinca no componente - (Fazenda NSA)"
-  },
-  {
-    "frota": "88",
-    "os": "112864",
-    "data": "19/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar luz indicadora da bateria acesa no painel do trator, possível falha no sistema de carga - (Fazenda NSA)"
   },
   {
     "frota": "5598",
@@ -110,13 +103,6 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar esteira e fundo do espalhador"
-  },
-  {
-    "frota": "137",
-    "os": "107680",
-    "data": "25/03/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Verificar embreagem de pé, está na última regulagem, para sair do lugar tem que tirar o pé muito alto."
   },
   {
     "frota": "5629",

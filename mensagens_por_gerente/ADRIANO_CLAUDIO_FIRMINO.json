@@ -1,10 +1,31 @@
 [
   {
-    "frota": "70",
-    "os": "113036",
+    "frota": "5005",
+    "os": "113081",
+    "data": "24/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Quebra do cabeçalho do tanque - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "142",
+    "os": "113077",
+    "data": "24/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar motor de partida, trator sem partida - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "142",
+    "os": "113076",
+    "data": "24/06/2025",
+    "prestador": "nan",
+    "servico": "Avaliar trator sem freio - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "106",
+    "os": "113052",
     "data": "23/06/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Revisar trambulador - Faz Nova Manha"
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar terminal lado direito e esquerdo (Fazenda Nova Manhã)"
   },
   {
     "frota": "5637",
@@ -17,21 +38,21 @@
     "frota": "5129",
     "os": "113002",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Verificar sistema de transmissão do pulverizador, correia apresentando salto de dentes e desgaste excessivo - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5005",
     "os": "112984",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra em trinca no tanque - (Fazenda Nova Manhã)"
   },
   {
     "frota": "33",
     "os": "112983",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Substituir pivô da direção, que se encontra fixado de forma inadequada com solda - (Fazenda Nova Manhã)"
   },
   {
@@ -42,18 +63,18 @@
     "servico": "Verificar  painel de instrumentos e buzina não funcionam  - (Fazenda Nova Manhã)"
   },
   {
+    "frota": "95",
+    "os": "113060",
+    "data": "23/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sistema eletrico - Faz Nova Manha"
+  },
+  {
     "frota": "130",
     "os": "112971",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Verificar trator jogando óleo pelo filtro de ar - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "70",
-    "os": "112970",
-    "data": "23/06/2025",
-    "prestador": "nan",
-    "servico": "Trator com marchas encavaladas - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5191",
@@ -68,13 +89,6 @@
     "data": "18/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar proteções na correia da bomba de pulverização e no cardan e mudar posição do comando que está em cima da bomba trazendo para a lateral."
-  },
-  {
-    "frota": "5354",
-    "os": "112703",
-    "data": "18/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar roda guia e desamassar proteção da mesma - (Fazenda Nova Manhã)"
   },
   {
     "frota": "142",
@@ -105,13 +119,6 @@
     "servico": "Quebra do suporte do capô - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "251",
-    "os": "112013",
-    "data": "04/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento de água e óleo na região da junta da válvula termostática necessário diagnóstico e reparo. - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "5128",
     "os": "112977",
     "data": "03/06/2025",
@@ -124,34 +131,6 @@
     "data": "30/05/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "208",
-    "os": "111384",
-    "data": "27/05/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Consertar pneu furado"
-  },
-  {
-    "frota": "17",
-    "os": "111285",
-    "data": "26/05/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Substituição do Assento do Operador"
-  },
-  {
-    "frota": "1141",
-    "os": "111632",
-    "data": "21/05/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "SERVIÇO DE MANUTENÇÃO"
-  },
-  {
-    "frota": "5433",
-    "os": "110712",
-    "data": "16/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar suporte que segura as facas - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5204",
@@ -173,13 +152,6 @@
     "data": "09/05/2025",
     "prestador": "nan",
     "servico": "Vazamento no pistão - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "208",
-    "os": "110201",
-    "data": "06/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisar bomba de combustível"
   },
   {
     "frota": "95",

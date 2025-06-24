@@ -1,9 +1,16 @@
 [
   {
+    "frota": "5401",
+    "os": "113066",
+    "data": "24/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Realinhas estrutura do braço, amassado após colisão - (Fazenda São Pedro)"
+  },
+  {
     "frota": "144",
     "os": "113020",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Reparar suporte da alavanca do comando hidráulico - (Fazenda Minuano)"
   },
   {
@@ -24,21 +31,14 @@
     "frota": "26",
     "os": "112969",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Confeccionar escada de acesso ao trator - (Fazenda Minuano)"
-  },
-  {
-    "frota": "253",
-    "os": "112968",
-    "data": "23/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié dianteiro e cibié traseiro L/D queimado - (Fazenda Minuano)"
   },
   {
     "frota": "253",
     "os": "112873",
     "data": "19/06/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar vazamento de óleo no bloco do motor, identificando possível trinca ou falha na vedação - (Fazenda Minuano)"
   },
   {
@@ -47,13 +47,6 @@
     "data": "12/06/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Trator com sistema de marchas remontado - (Fazenda Minuano)"
-  },
-  {
-    "frota": "253",
-    "os": "106955",
-    "data": "13/03/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar mola do banco quebrada - (Fazenda Minuano)"
   },
   {
     "frota": "5631",

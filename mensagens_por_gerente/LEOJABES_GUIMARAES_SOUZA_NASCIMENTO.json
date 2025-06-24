@@ -1,5 +1,19 @@
 [
   {
+    "frota": "332",
+    "os": "113065",
+    "data": "24/06/2025",
+    "prestador": "nan",
+    "servico": "Fazer proteção para as lanternas - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "332",
+    "os": "113064",
+    "data": "24/06/2025",
+    "prestador": "nan",
+    "servico": "Trocar lanterna traseira quebrada - (Fazenda SP)"
+  },
+  {
     "frota": "5107",
     "os": "113019",
     "data": "23/06/2025",
@@ -17,7 +31,7 @@
     "frota": "10228",
     "os": "112975",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Verificar banco não da regulagem - (Fazenda SP)"
   },
   {
@@ -26,27 +40,6 @@
     "data": "23/06/2025",
     "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
     "servico": "Verificar sistema de SPE não funciona - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5804",
-    "os": "112955",
-    "data": "21/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar readequação dos ramais para compatibilização com a instalação do sistema SPE - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5803",
-    "os": "112860",
-    "data": "19/06/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Instalar kit SPE 34 bicos - (Fazenda SP)"
-  },
-  {
-    "frota": "5803",
-    "os": "112859",
-    "data": "19/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar readequação dos ramais para compatibilização com a instalação do sistema SPE - (Fazenda São Paulo)"
   },
   {
     "frota": "257",
@@ -84,13 +77,6 @@
     "servico": "Soldar fios do terminal do SPE  quebrado - (Fazenda São Paulo)"
   },
   {
-    "frota": "5667",
-    "os": "112653",
-    "data": "17/06/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar relógio de pressão do óleo hidráulico quebrado."
-  },
-  {
     "frota": "257",
     "os": "112646",
     "data": "17/06/2025",
@@ -103,13 +89,6 @@
     "data": "16/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar relógio horimetro não funciona - (Fazenda SP)"
-  },
-  {
-    "frota": "5350",
-    "os": "112574",
-    "data": "16/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca no cabeçario e verificar folga nas rodas guia - (Fazenda São Paulo)"
   },
   {
     "frota": "332",
@@ -147,13 +126,6 @@
     "servico": "Confecção e instalação do teto, Pendencia 4122"
   },
   {
-    "frota": "5709",
-    "os": "110801",
-    "data": "19/05/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Inspecionar os pistões do equipamento que apresentam ausência de movimento - (Fazenda SP)"
-  },
-  {
     "frota": "211",
     "os": "109062",
     "data": "17/04/2025",
@@ -166,12 +138,5 @@
     "data": "17/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar lampadas traseiras - (Fazenda SP)"
-  },
-  {
-    "frota": "5645",
-    "os": "108350",
-    "data": "05/04/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Consertar pneu traseiro esquerdo furado."
   }
 ]

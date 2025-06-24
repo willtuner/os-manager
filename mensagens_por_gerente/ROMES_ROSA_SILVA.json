@@ -1,19 +1,5 @@
 [
   {
-    "frota": "298",
-    "os": "113027",
-    "data": "23/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar sensor de pressão de óleo - Faz  São Pedro"
-  },
-  {
-    "frota": "252",
-    "os": "113012",
-    "data": "23/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sensor de pressão de oleo - Faz São Pedro"
-  },
-  {
     "frota": "117",
     "os": "113001",
     "data": "23/06/2025",
@@ -31,7 +17,7 @@
     "frota": "5615",
     "os": "112978",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Vazamento de óleo na bomba - (Fazenda São Pedro)"
   },
   {
@@ -56,13 +42,6 @@
     "servico": "Fazer solda no ramal - (Fazenda São Pedro)"
   },
   {
-    "frota": "5404",
-    "os": "112708",
-    "data": "18/06/2025",
-    "prestador": "M S BORRACHARIA - MARCELO SOUZA SOBRINHO",
-    "servico": "Fazer solda em trincas na estrutura e vazamento no reparo do pistão - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5644",
     "os": "112670",
     "data": "17/06/2025",
@@ -75,13 +54,6 @@
     "data": "17/06/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Trocar mangueira de hidráulico estouradas - (Fazenda São Pedro"
-  },
-  {
-    "frota": "5126",
-    "os": "112656",
-    "data": "17/06/2025",
-    "prestador": "nan",
-    "servico": "Trocar olhal do distribuidor - Faz São Pedro"
   },
   {
     "frota": "5102",
@@ -119,18 +91,18 @@
     "servico": "Fazer solda no suporte da grade de proteção dianteira - (Fazenda São Pedro)"
   },
   {
+    "frota": "5233",
+    "os": "111938",
+    "data": "03/06/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Vazamento na bomba do tanque - (Fazenda São Pedro)"
+  },
+  {
     "frota": "5226",
     "os": "111912",
     "data": "03/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho."
-  },
-  {
-    "frota": "100",
-    "os": "111662",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar trator sem partida - (Fazenda São Pedro)"
   },
   {
     "frota": "5075",
@@ -145,20 +117,6 @@
     "data": "27/05/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "100",
-    "os": "111482",
-    "data": "22/05/2025",
-    "prestador": "TORNEARIA STEINHAUSER LTDA",
-    "servico": "Confeccionar buchas para tampa de fixacao da mesa de tracao"
-  },
-  {
-    "frota": "5737",
-    "os": "110725",
-    "data": "16/05/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Vazamento no retentor do multiplicador  - (Fazenda São Pedro)"
   },
   {
     "frota": "5188",

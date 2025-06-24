@@ -1,9 +1,23 @@
 [
   {
+    "frota": "5336",
+    "os": "113088",
+    "data": "24/06/2025",
+    "prestador": "nan",
+    "servico": "Fazer fibra em trinca no tanque - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "5065",
+    "os": "113070",
+    "data": "24/06/2025",
+    "prestador": "nan",
+    "servico": "Sacar parafusos dos fações empenados e substituir - (Fazenda Bela Manhã)"
+  },
+  {
     "frota": "143",
     "os": "113021",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Avaliar alavanca da TDP que desengata sozinha após tentativa de acionamento - (Fazenda Bela Manhã)"
   },
   {
@@ -31,22 +45,8 @@
     "frota": "319",
     "os": "112966",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Verificar trator sem partida - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5671",
-    "os": "112965",
-    "data": "23/06/2025",
-    "prestador": "nan",
-    "servico": "Substituir amortecedor quebrado - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "102",
-    "os": "112914",
-    "data": "20/06/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Verificar vazamento no cabeçote e na tampa da TDP- Faz Bela Manha"
   },
   {
     "frota": "102",
@@ -59,15 +59,8 @@
     "frota": "5697",
     "os": "112861",
     "data": "19/06/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Avaliar funcionamento do sistema de drash, que não está acionando corretamente a vazão no lado direito L/D - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "285",
-    "os": "112696",
-    "data": "17/06/2025",
-    "prestador": "nan",
-    "servico": "Verificar vazamento no meio do trator - (Fazenda Bela Manhã)"
   },
   {
     "frota": "10224",

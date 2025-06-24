@@ -1,31 +1,31 @@
 [
   {
+    "frota": "5117",
+    "os": "113062",
+    "data": "24/06/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Colocar reforço na estrutura - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5479",
+    "os": "113059",
+    "data": "24/06/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Revisar bomba, misturando água no óleo - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5479",
+    "os": "113058",
+    "data": "24/06/2025",
+    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
+    "servico": "Fazer serviço de fibra no tanque - (Fazenda Pedra Verde)"
+  },
+  {
     "frota": "119",
     "os": "113017",
     "data": "23/06/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Quebra do eixo da TDP - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "283",
-    "os": "112901",
-    "data": "20/06/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Trocar miolo da chave da porta - Faz Pedra Verde"
-  },
-  {
-    "frota": "5661",
-    "os": "112900",
-    "data": "20/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar instalação do chicote de abertura das barras - Faz Pedra Verde"
-  },
-  {
-    "frota": "119",
-    "os": "112899",
-    "data": "20/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar o sensor de temperatura - Faz Pedra Verde"
   },
   {
     "frota": "217",
@@ -56,13 +56,6 @@
     "servico": "Afiar jogo de 2 discos da podadeira - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "5113",
-    "os": "112088",
-    "data": "04/06/2025",
-    "prestador": "BAZANI MECANICA E AUTO PECAS",
-    "servico": "Emendar mangueira - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "245",
     "os": "111563",
     "data": "30/05/2025",
@@ -70,87 +63,10 @@
     "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "152",
-    "os": "111485",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
     "frota": "5136",
     "os": "111464",
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção das polias."
-  },
-  {
-    "frota": "69",
-    "os": "111463",
-    "data": "28/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar mangueira da sucção da bomba"
-  },
-  {
-    "frota": "5117",
-    "os": "111278",
-    "data": "24/05/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Peças para manutenção interna"
-  },
-  {
-    "frota": "5621",
-    "os": "111279",
-    "data": "24/05/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Peças para manutenção interna"
-  },
-  {
-    "frota": "5470",
-    "os": "111280",
-    "data": "23/05/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Peças para manutenção interna"
-  },
-  {
-    "frota": "5111",
-    "os": "110578",
-    "data": "15/05/2025",
-    "prestador": "BAZANI MECANICA E AUTO PECAS",
-    "servico": "Fazer pino para travar roda guia - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5136",
-    "os": "110328",
-    "data": "09/05/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Fazer um medidor de pressão (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "299",
-    "os": "109932",
-    "data": "30/04/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Condensador do ar condicionado furado - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5666",
-    "os": "109154",
-    "data": "22/04/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar maquina \"balançando\" demais, e troca do retentor e ventilador - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5133",
-    "os": "110282",
-    "data": "16/04/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Montar cardan (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5661",
-    "os": "110279",
-    "data": "15/04/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Montagem do cardan (Fazenda Pedra Verde)"
   }
 ]

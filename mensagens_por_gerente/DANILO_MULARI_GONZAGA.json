@@ -1,17 +1,24 @@
 [
   {
-    "frota": "46",
-    "os": "112940",
-    "data": "20/06/2025",
+    "frota": "10223",
+    "os": "113085",
+    "data": "24/06/2025",
     "prestador": "nan",
-    "servico": "Verificar radiador baixando nível do liquido de arrefecimento - (Fazenda Estrela)"
+    "servico": "Verificar falha no sistema de partida, trator desligou durante a operação e não liga novamente. - (Fazenda Estrela)"
   },
   {
-    "frota": "136",
-    "os": "112863",
-    "data": "19/06/2025",
-    "prestador": "nan",
-    "servico": "Realizar substituição do bujão explanado da planetária L/E - (Fazenda Estrela)"
+    "frota": "28",
+    "os": "113051",
+    "data": "23/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar alternador (Fazenda Estrela)"
+  },
+  {
+    "frota": "5459",
+    "os": "113063",
+    "data": "23/06/2025",
+    "prestador": "DARCI CAPEL & CIA LTDA",
+    "servico": "Fazer embuchamento completo da roda e fabricar agulha de fixação do garfo."
   },
   {
     "frota": "268",
@@ -19,20 +26,6 @@
     "data": "19/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar seta dianteira lado direto - Faz Estrela"
-  },
-  {
-    "frota": "5494",
-    "os": "112755",
-    "data": "18/06/2025",
-    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
-    "servico": "Confeccionar mangueira do hidráulico - (Fazenda Estrela)"
-  },
-  {
-    "frota": "22",
-    "os": "112705",
-    "data": "18/06/2025",
-    "prestador": "nan",
-    "servico": "Verificar falha no funcionamento do motor devido a possível entrada de ar no sistema de alimentação de combustível  - (Fazenda Estrela)"
   },
   {
     "frota": "5524",
@@ -70,13 +63,6 @@
     "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)"
   },
   {
-    "frota": "46",
-    "os": "112004",
-    "data": "04/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar relógio não funciona - (Fazenda Estrela)"
-  },
-  {
     "frota": "10229",
     "os": "111908",
     "data": "03/06/2025",
@@ -105,24 +91,10 @@
     "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
   },
   {
-    "frota": "5494",
-    "os": "110577",
-    "data": "14/05/2025",
-    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
-    "servico": "Confeccionar mangueira"
-  },
-  {
     "frota": "5214",
     "os": "109707",
     "data": "30/04/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Substituir chapa do distribuidor - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5635",
-    "os": "109554",
-    "data": "28/04/2025",
-    "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
-    "servico": "Revisar equipamento, alinhar pratos e bica - (Fazenda Estrela)"
   }
 ]
