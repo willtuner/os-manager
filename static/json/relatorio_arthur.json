@@ -209,17 +209,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "117",
-        "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-        "os": "113001",
-        "data_entrada": "23/06/2025",
-        "previsao_saida": "---",
-        "prestador": "JOCAR LTDA",
-        "servico": "Avaliar sistema de climatização do trator, com falha nos estágios de ventilação do ar-condicionado - (Fazenda São Pedro)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "ADRIANO CLAUDIO FIRMINO",
         "frota": "33",
         "modelo": "TRATOR MASSEY FERGUSON 275/2",
@@ -613,17 +602,6 @@
         "previsao_saida": "---",
         "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
         "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "100",
-        "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-        "os": "111996",
-        "data_entrada": "04/06/2025",
-        "previsao_saida": "---",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Fazer solda no suporte da grade de proteção dianteira - (Fazenda São Pedro)",
         "liberado_por": "Arthur"
     },
     {

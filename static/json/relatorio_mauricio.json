@@ -517,17 +517,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "5233",
-        "modelo": "PULVERIZADOR 4000 LT - NATALI",
-        "os": "111938",
-        "data_entrada": "03/06/2025",
-        "previsao_saida": "---",
-        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Vazamento na bomba do tanque - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
         "frota": "5365",
         "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -591,17 +580,6 @@
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
         "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas, trocar rolamento da roda L/? - (Fazenda Santa Luiza)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
-        "frota": "5552",
-        "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-        "os": "111029",
-        "data_entrada": "21/05/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Realizar a remoção de um gomo da esteira da adubadeira para ajuste do tensionamento e correto funcionamento do sistema de distribuição. Verificar alinhamento e tensão da esteira após o serviço - (Fazenda São Pedro)",
         "liberado_por": "Mauricio"
     },
     {
