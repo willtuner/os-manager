@@ -216,28 +216,12 @@
     "servico": "Sacar parafusos do motor, recuperar lateral do trator\nFaz Santa Luiza\nAutorizado Arthur"
   },
   {
-    "frota": "100",
-    "cd_equipamento": "100",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "111996",
-    "data_entrada": "04/06/2025",
-    "servico": "Fazer solda no suporte da grade de proteção dianteira - (Fazenda São Pedro)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5105",
     "cd_equipamento": "5105",
     "modelo": "GRADE ARADORA C.CONTROLE BALDA",
     "os": "111457",
     "data_entrada": "03/06/2025",
     "servico": "Trocar trava eixo da grade\nFaz Estrela\nSolicitado João\nAutorizado Mauricio\n-  Desmontado sessao dianteira da grade, soldado suporte para transporte das mangueiras"
-  },
-  {
-    "frota": "5226",
-    "cd_equipamento": "5226",
-    "modelo": "CARRETINHA DUAS RODAS (CARRO)",
-    "os": "111912",
-    "data_entrada": "03/06/2025",
-    "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho.\nFazenda São Pedro (Oficina)\nSolicitado Sr. Romes\nLiberado Sr. Zacarias"
   },
   {
     "frota": "5365",
