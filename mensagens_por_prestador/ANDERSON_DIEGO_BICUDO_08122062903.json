@@ -1,5 +1,13 @@
 [
   {
+    "frota": "159",
+    "cd_equipamento": "159",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "113196",
+    "data_entrada": "25/06/2025",
+    "servico": "Verificar folga no eixo - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "132",
     "cd_equipamento": "132",
     "modelo": "TRATOR NEW HOLLAND TL75E",
@@ -72,14 +80,6 @@
     "servico": "Verificar vazamento de óleo no bloco do motor, identificando possível trinca ou falha na vedação - (Fazenda Minuano)\nSolicitado Sr. Antônio  Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "88",
-    "cd_equipamento": "88",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "112865",
-    "data_entrada": "19/06/2025",
-    "servico": "Avaliar vazamento de óleo no cárter, identificando possível falha na vedação ou trinca no componente - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsável Sr. Arthur"
-  },
-  {
     "frota": "221",
     "cd_equipamento": "221",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -94,14 +94,6 @@
     "os": "112579",
     "data_entrada": "16/06/2025",
     "servico": "Verificar ruído no conjunto da embreagem - (Fazenda Estrela)\nLiberado Sr. Arthur\nSolicitado Sr. Danilo"
-  },
-  {
-    "frota": "192",
-    "cd_equipamento": "192",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "112573",
-    "data_entrada": "16/06/2025",
-    "servico": "Avaliar trator sem freio, vazamento de fruído de freio - (Fazenda Terra Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "229",
@@ -166,14 +158,6 @@
     "os": "110515",
     "data_entrada": "14/05/2025",
     "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "86",
-    "cd_equipamento": "86",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "109646",
-    "data_entrada": "29/04/2025",
-    "servico": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
     "frota": "95",

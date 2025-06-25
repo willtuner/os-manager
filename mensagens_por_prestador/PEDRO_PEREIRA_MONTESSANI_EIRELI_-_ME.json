@@ -1,5 +1,101 @@
 [
   {
+    "frota": "5662",
+    "cd_equipamento": "5662",
+    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
+    "os": "113221",
+    "data_entrada": "25/06/2025",
+    "servico": "Revisar chicote e conectores elétricos danificados - (Fazenda Terra Branca)\nSolicitado Sr. João Vitor (Subgerente)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5798",
+    "cd_equipamento": "5798",
+    "modelo": "PULVERIZADOR 600 LT",
+    "os": "113206",
+    "data_entrada": "25/06/2025",
+    "servico": "Instalar equipamento de drash - (Oficina)\nLiberado Sr. Zacarias"
+  },
+  {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "113214",
+    "data_entrada": "25/06/2025",
+    "servico": "Verificar sensor da TDP - Faz Terra Branca\nAutorizado Arthur"
+  },
+  {
+    "frota": "128",
+    "cd_equipamento": "128",
+    "modelo": "GATOR JOHNN DEERE",
+    "os": "113166",
+    "data_entrada": "25/06/2025",
+    "servico": "Verificar solenoide - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "5674",
+    "cd_equipamento": "5674",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "113158",
+    "data_entrada": "25/06/2025",
+    "servico": "Botão de acionamento enroscando - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "102",
+    "cd_equipamento": "102",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "113150",
+    "data_entrada": "25/06/2025",
+    "servico": "Verificar relógio horimetro não funciona - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "137",
+    "cd_equipamento": "137",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "113148",
+    "data_entrada": "25/06/2025",
+    "servico": "Avaliar sistema de partida do trator, que se encontra inoperante  - (Fazenda Estrela)\nSolicitado Sr. Danilo (Gerente)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5705",
+    "cd_equipamento": "5705",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "113145",
+    "data_entrada": "25/06/2025",
+    "servico": "Verificar a instalação elétrica do farol auxiliar, que não está acionando corretamente - (Fazenda Santa Izabel)\nSolicitado Sr. John \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5723",
+    "cd_equipamento": "5723",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "113144",
+    "data_entrada": "25/06/2025",
+    "servico": "Verificar a instalação elétrica do farol auxiliar, que não está acionando corretamente - (Fazenda Santa Izabel)\nSolicitado Sr. John \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "112",
+    "cd_equipamento": "112",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "113143",
+    "data_entrada": "25/06/2025",
+    "servico": "Sirene de ré não funciona - (Fazenda Santa Luiza)\nSolicitado Sr. John \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10227",
+    "cd_equipamento": "10227",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113142",
+    "data_entrada": "25/06/2025",
+    "servico": "Verificar falha no farol dianteiro devido a defeito no terminal de conexão elétrica - (Fazenda Santa Luiza)\nSolicitado Sr. John \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "317",
+    "cd_equipamento": "317",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "113141",
+    "data_entrada": "25/06/2025",
+    "servico": "Faróis auxiliares dianteiros de teto não ascendem - (Fazenda Santa Luiza)\nSolicitado Sr. John\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "142",
     "cd_equipamento": "142",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",

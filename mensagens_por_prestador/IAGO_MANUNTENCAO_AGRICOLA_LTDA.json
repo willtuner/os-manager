@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5614",
+    "cd_equipamento": "5614",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "113135",
+    "data_entrada": "25/06/2025",
+    "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5660",
     "cd_equipamento": "5660",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -46,14 +54,6 @@
     "os": "112335",
     "data_entrada": "11/06/2025",
     "servico": "Vazamento de óleo na bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5418",
-    "cd_equipamento": "5418",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "111347",
-    "data_entrada": "29/05/2025",
-    "servico": "Rolamento do eixo da turbina quebrado, trocado rolamento traseira, e trocado mancal. - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5629",

@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5060",
+    "cd_equipamento": "5060",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "113153",
+    "data_entrada": "25/06/2025",
+    "servico": "Fazer reforço no suporte dos braços - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5755",
+    "cd_equipamento": "5755",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "113151",
+    "data_entrada": "25/06/2025",
+    "servico": "Soldar trinca no cabeçario e desamassar proteção da roda guia - (Fazenda Biscui)\nSolicitado Sr. Giovane\nResponsavel Sr. Mauricio \nPendencia N ° 4217"
+  },
+  {
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "113147",
+    "data_entrada": "25/06/2025",
+    "servico": "Executar solda na estrutura e substituir parafuso danificado do cabeçalho. - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5804",
+    "cd_equipamento": "5804",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "113131",
+    "data_entrada": "25/06/2025",
+    "servico": "Readequar as proteções dos bicos do sistema de pulverização eletrostática (SPE), que estão colidindo com galhos e sofrendo quebras durante a operação - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5005",
     "cd_equipamento": "5005",
     "modelo": "PULVERIZADOR 2000 LT MARTHGNIA",
@@ -104,14 +136,6 @@
     "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "5598",
-    "cd_equipamento": "5598",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "112577",
-    "data_entrada": "16/06/2025",
-    "servico": "Parafusos de fixação do eixo soltos - (Fazenda NSA)\nSolicitado Sr. Rennan\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5110",
     "cd_equipamento": "5110",
     "modelo": "SUBSOLADOR STARA",
@@ -126,14 +150,6 @@
     "os": "112409",
     "data_entrada": "12/06/2025",
     "servico": "Realinhar barrinha - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5106",
-    "cd_equipamento": "5106",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "112404",
-    "data_entrada": "12/06/2025",
-    "servico": "Fazer solda na lateral L/D - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "10224",
@@ -166,14 +182,6 @@
     "os": "112259",
     "data_entrada": "10/06/2025",
     "servico": "Verificar torre 'bamba'  - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5072",
-    "cd_equipamento": "5072",
-    "modelo": "GRADE NIVELADORA",
-    "os": "112214",
-    "data_entrada": "09/06/2025",
-    "servico": "Revisar secção dianteira não mantem aperto - (Fazenda Estrela VI)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "10217",
@@ -326,6 +334,14 @@
     "os": "110473",
     "data_entrada": "13/05/2025",
     "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5543",
+    "cd_equipamento": "5543",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "110285",
+    "data_entrada": "09/05/2025",
+    "servico": "Substituir parafuso do suporte da roda guia - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "211",
