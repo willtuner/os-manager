@@ -1,5 +1,96 @@
 [
   {
+    "frota": "270",
+    "os": "113445",
+    "data": "27/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar correia do alternador - Faz São Paulo"
+  },
+  {
+    "frota": "135",
+    "os": "113429",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Trocar sirene de ré (Fazenda SP)"
+  },
+  {
+    "frota": "5479",
+    "os": "113405",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Verificar painel de controle do sistema de drash, que permanece acionado continuamente (disparado direto), mesmo sem comando. - (Fazenda Biscui)"
+  },
+  {
+    "frota": "257",
+    "os": "113403",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Verificar quebra espontânea do vidro do para-brisa, sem impacto aparente - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "218",
+    "os": "113402",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Avaliar alavanca de câmbio com falha de engate no grupo C, escapando durante a operação, e perda de força no trator. - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5804",
+    "os": "113401",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Verificar sistema de fechamento dos ramais, com falha de acionamento em um dos lados. - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5063",
+    "os": "113290",
+    "data": "26/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar tampa do tanque e colocar parafusos de fixação do tanque de agua potável"
+  },
+  {
+    "frota": "5345",
+    "os": "113247",
+    "data": "26/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituir os dois pistões da barra que estão com vazamento por outros novos fabricados na MG."
+  },
+  {
+    "frota": "5211",
+    "os": "113132",
+    "data": "25/06/2025",
+    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
+    "servico": "Avaliar e reparar dano por quebra na fibra localizada no ladrão do tanque - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5804",
+    "os": "113131",
+    "data": "25/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Readequar as proteções dos bicos do sistema de pulverização eletrostática (SPE), que estão colidindo com galhos e sofrendo quebras durante a operação - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5804",
+    "os": "113130",
+    "data": "25/06/2025",
+    "prestador": "nan",
+    "servico": "Verificar vazamento na conexão da mangueira responsável pela saída do produto - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "219",
+    "os": "113129",
+    "data": "25/06/2025",
+    "prestador": "nan",
+    "servico": "Avaliar e reparar a tubulação do escapamento, que se soltou durante a operação e foi danificada pelo próprio trator ao passar sobre a peça - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "219",
+    "os": "113128",
+    "data": "25/06/2025",
+    "prestador": "nan",
+    "servico": "Avaliar vazamento de óleo no meio do trator - (Fazenda São Paulo)"
+  },
+  {
     "frota": "72",
     "os": "113090",
     "data": "24/06/2025",
@@ -47,13 +138,6 @@
     "data": "23/06/2025",
     "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
     "servico": "Verificar sistema de SPE não funciona - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5479",
-    "os": "112816",
-    "data": "19/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar bomba de pulverização que está solta, avaliar uma forma de fixar a mesma"
   },
   {
     "frota": "5345",

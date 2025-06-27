@@ -1,5 +1,12 @@
 [
   {
+    "frota": "5672",
+    "os": "113444",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Acertar as conexões e as mangueiras que veio sem (Fazenda Pedra Verde)"
+  },
+  {
     "frota": "5117",
     "os": "113062",
     "data": "24/06/2025",
@@ -26,13 +33,6 @@
     "data": "23/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Quebra do eixo da TDP - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "217",
-    "os": "112898",
-    "data": "20/06/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Trocar teto e vedação - Faz Pedra Verde"
   },
   {
     "frota": "5136",

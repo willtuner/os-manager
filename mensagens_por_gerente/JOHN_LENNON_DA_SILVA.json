@@ -1,5 +1,47 @@
 [
   {
+    "frota": "198",
+    "os": "113431",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Verificar bomba hidráulica (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "5705",
+    "os": "113145",
+    "data": "25/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar a instalação elétrica do farol auxiliar, que não está acionando corretamente - (Fazenda Santa Izabel)"
+  },
+  {
+    "frota": "5723",
+    "os": "113144",
+    "data": "25/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar a instalação elétrica do farol auxiliar, que não está acionando corretamente - (Fazenda Santa Izabel)"
+  },
+  {
+    "frota": "112",
+    "os": "113143",
+    "data": "25/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Sirene de ré não funciona - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "10227",
+    "os": "113142",
+    "data": "25/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar falha no farol dianteiro devido a defeito no terminal de conexão elétrica - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "317",
+    "os": "113141",
+    "data": "25/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Faróis auxiliares dianteiros de teto não ascendem - (Fazenda Santa Luiza)"
+  },
+  {
     "frota": "5618",
     "os": "113095",
     "data": "24/06/2025",
@@ -75,5 +117,12 @@
     "data": "26/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em trinca na estrutura - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "10227",
+    "os": "110308",
+    "data": "12/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar problema na caixa C, que está escapando marcha durante o uso e  ruído identificado na embreagem durante a saída - (Fazenda Santa Luiza)"
   }
 ]

@@ -1,10 +1,31 @@
 [
   {
-    "frota": "288",
-    "os": "113124",
-    "data": "24/06/2025",
+    "frota": "250",
+    "os": "113426",
+    "data": "27/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Vazamento na bomba de diesel (Fazenda Estrela)"
+  },
+  {
+    "frota": "269",
+    "os": "113355",
+    "data": "26/06/2025",
     "prestador": "nan",
-    "servico": "Fazer solda na escada de acesso ao trator"
+    "servico": "Trator sem iluminação nenhuma - (Fazenda Estrela)"
+  },
+  {
+    "frota": "222",
+    "os": "113284",
+    "data": "26/06/2025",
+    "prestador": "nan",
+    "servico": "Vazamento no retentor da TDP - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "250",
+    "os": "113152",
+    "data": "25/06/2025",
+    "prestador": "nan",
+    "servico": "- Proteção do cardã quebrada requer substituição ou reparo para garantir segurança operacional."
   },
   {
     "frota": "222",
@@ -26,13 +47,6 @@
     "data": "24/06/2025",
     "prestador": "nan",
     "servico": "Verificar bomba do limpador do para-brisa (responsável por lançar água no vidro), que está inoperante.(Faz. Estrela)"
-  },
-  {
-    "frota": "258",
-    "os": "112919",
-    "data": "20/06/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento de óleo diesel na bomba - (Fazenda Estrela)"
   },
   {
     "frota": "269",

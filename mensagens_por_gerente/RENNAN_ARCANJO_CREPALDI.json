@@ -28,20 +28,6 @@
     "servico": "Soldar e realinhar asa L/E - (Fazenda NSA)"
   },
   {
-    "frota": "88",
-    "os": "112865",
-    "data": "19/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar vazamento de óleo no cárter, identificando possível falha na vedação ou trinca no componente - (Fazenda NSA)"
-  },
-  {
-    "frota": "5598",
-    "os": "112577",
-    "data": "16/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Parafusos de fixação do eixo soltos - (Fazenda NSA)"
-  },
-  {
     "frota": "5492",
     "os": "112722",
     "data": "16/06/2025",
@@ -82,19 +68,5 @@
     "data": "30/05/2025",
     "prestador": "nan",
     "servico": "Vazamento no pistão de acionamento dos bicos - (Fazenda NSA)"
-  },
-  {
-    "frota": "5431",
-    "os": "111479",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar esteira e fundo do espalhador"
-  },
-  {
-    "frota": "5629",
-    "os": "107660",
-    "data": "24/03/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar e corrigir vazamento no retentor do eixo dos facões do lado direito."
   }
 ]

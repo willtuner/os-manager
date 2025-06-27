@@ -1,5 +1,68 @@
 [
   {
+    "frota": "268",
+    "os": "113441",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Soldar escada (Fazenda Estrela)"
+  },
+  {
+    "frota": "10223",
+    "os": "113439",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Soldar escada (Fazenda Estrela)"
+  },
+  {
+    "frota": "5671",
+    "os": "113435",
+    "data": "27/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda no batedor (Fazenda Estrela)"
+  },
+  {
+    "frota": "5459",
+    "os": "113276",
+    "data": "26/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Solda no suporte do esqui e substituir a cremalheira e o parafuso danificados - (Fazenda Estrela)"
+  },
+  {
+    "frota": "25",
+    "os": "113264",
+    "data": "26/06/2025",
+    "prestador": "nan",
+    "servico": "Vazamento de óleo diesel no cabeçote do filtro - (Fazenda Estrela)"
+  },
+  {
+    "frota": "28",
+    "os": "113155",
+    "data": "25/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Verificar o funcionamento da bomba de combustivel - Faz Estrela"
+  },
+  {
+    "frota": "137",
+    "os": "113148",
+    "data": "25/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Avaliar sistema de partida do trator, que se encontra inoperante  - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5106",
+    "os": "113147",
+    "data": "25/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Executar solda na estrutura e substituir parafuso danificado do cabeçalho. - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5759",
+    "os": "113169",
+    "data": "25/06/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Consertar pistão da barra danificado."
+  },
+  {
     "frota": "10223",
     "os": "113085",
     "data": "24/06/2025",
@@ -12,13 +75,6 @@
     "data": "23/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar alternador (Fazenda Estrela)"
-  },
-  {
-    "frota": "5459",
-    "os": "113063",
-    "data": "23/06/2025",
-    "prestador": "DARCI CAPEL & CIA LTDA",
-    "servico": "Fazer embuchamento completo da roda e fabricar agulha de fixação do garfo."
   },
   {
     "frota": "268",
@@ -47,13 +103,6 @@
     "data": "16/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar ruído no conjunto da embreagem - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5106",
-    "os": "112404",
-    "data": "12/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda na lateral L/D - (Fazenda Estrela)"
   },
   {
     "frota": "329",
@@ -89,5 +138,12 @@
     "data": "20/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5543",
+    "os": "110285",
+    "data": "09/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Substituir parafuso do suporte da roda guia - (Fazenda Estrela)"
   }
 ]

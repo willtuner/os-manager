@@ -1,31 +1,38 @@
 [
   {
-    "frota": "5660",
-    "os": "113109",
-    "data": "24/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar jogo na hélice do pulverizador. - (Fazenda São Severino)"
+    "frota": "5599",
+    "os": "113332",
+    "data": "26/06/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Verificada quebra do suporte (corrimão) que sustenta o gerador; necessário confeccionar novo suporte metálico. Identificado também início de trinca no lado oposto, exigindo reforço ou substituição preventiva do corrimão para garantir a estabilidade da estrutura. - (Fazenda São Severino)"
   },
   {
-    "frota": "75",
-    "os": "113054",
-    "data": "24/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar alternado não está carregando a bateria - (Fazenda São Severino)"
+    "frota": "234",
+    "os": "113289",
+    "data": "26/06/2025",
+    "prestador": "nan",
+    "servico": "Suporte do amortecedor da porta quebrado - (Fazenda São Severino)"
   },
   {
-    "frota": "233",
-    "os": "112954",
-    "data": "21/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar barulho a normal na TDP - Faz São Severino"
+    "frota": "234",
+    "os": "113138",
+    "data": "25/06/2025",
+    "prestador": "nan",
+    "servico": "Avaliar sistema de partida: motor gira com lentidão e não dá partida - (Fazenda São Severino)"
+  },
+  {
+    "frota": "229",
+    "os": "113137",
+    "data": "25/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/D furado - (Fazenda São Severino)"
   },
   {
     "frota": "5614",
-    "os": "112770",
-    "data": "19/06/2025",
-    "prestador": "nan",
-    "servico": "Folga na ponta de eixo do cardam do tanque - (Fazenda São Severino)"
+    "os": "113135",
+    "data": "25/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)"
   },
   {
     "frota": "5614",
@@ -33,12 +40,5 @@
     "data": "17/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Soldar proteção do carda - Faz São Severino"
-  },
-  {
-    "frota": "229",
-    "os": "112521",
-    "data": "13/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar pneu dianteiro L/D com \"folga\" - (Fazenda São Severino)"
   }
 ]

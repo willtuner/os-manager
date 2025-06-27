@@ -1,5 +1,33 @@
 [
   {
+    "frota": "5793",
+    "os": "113400",
+    "data": "27/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trinca - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "130",
+    "os": "113397",
+    "data": "27/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Luzes traseiras de posição não desligam e cibiés traseiros não ascendem - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "208",
+    "os": "113396",
+    "data": "27/06/2025",
+    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Nova  Manhã)"
+  },
+  {
+    "frota": "5191",
+    "os": "113394",
+    "data": "27/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Rolamento da polia traseiro estourado - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "5005",
     "os": "113081",
     "data": "24/06/2025",
@@ -35,13 +63,6 @@
     "servico": "Afiar jogo de discos da podadeira (2 serras)."
   },
   {
-    "frota": "5129",
-    "os": "113002",
-    "data": "23/06/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Verificar sistema de transmissão do pulverizador, correia apresentando salto de dentes e desgaste excessivo - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "5005",
     "os": "112984",
     "data": "23/06/2025",
@@ -68,13 +89,6 @@
     "data": "23/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sistema eletrico - Faz Nova Manha"
-  },
-  {
-    "frota": "130",
-    "os": "112971",
-    "data": "23/06/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Verificar trator jogando óleo pelo filtro de ar - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5191",
@@ -105,6 +119,13 @@
     "servico": "Vazamento no eixo da bomba - (Fazenda Nova Manhã)"
   },
   {
+    "frota": "208",
+    "os": "112452",
+    "data": "10/06/2025",
+    "prestador": "54.194.331 RODRIGO FERNANDES NEVES",
+    "servico": "Usinar volante da embreagem e regula plato"
+  },
+  {
     "frota": "5793",
     "os": "112186",
     "data": "09/06/2025",
@@ -119,6 +140,13 @@
     "servico": "Quebra do suporte do capô - (Fazenda Nova Manhã)"
   },
   {
+    "frota": "27",
+    "os": "112106",
+    "data": "06/06/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Quebra do cabo do afogador, vazamento no retentor da TDP e vazamento no bloco do motor - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "5128",
     "os": "112977",
     "data": "03/06/2025",
@@ -131,6 +159,13 @@
     "data": "30/05/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "142",
+    "os": "110763",
+    "data": "16/05/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Trator não engata TDP - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5204",
@@ -152,6 +187,13 @@
     "data": "09/05/2025",
     "prestador": "nan",
     "servico": "Vazamento no pistão - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "235",
+    "os": "108462",
+    "data": "09/04/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Quebra do parafuso da TDP - (Fazenda Nova Manhã)"
   },
   {
     "frota": "95",

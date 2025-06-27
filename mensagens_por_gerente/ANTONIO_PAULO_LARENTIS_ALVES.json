@@ -1,17 +1,38 @@
 [
   {
+    "frota": "5006",
+    "os": "113406",
+    "data": "27/06/2025",
+    "prestador": "nan",
+    "servico": "Verificar falha no acionamento dos ramais do jatão, que não estão operando corretamente. - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5479",
+    "os": "113246",
+    "data": "26/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento na bomba do tanque de pulverização e verificar folga nas cruzetas e trocar capa de cardam"
+  },
+  {
+    "frota": "255",
+    "os": "113164",
+    "data": "25/06/2025",
+    "prestador": "nan",
+    "servico": "Vazamento no burrinho do freio  - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5674",
+    "os": "113158",
+    "data": "25/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Botão de acionamento enroscando - (Fazenda Minuano)"
+  },
+  {
     "frota": "5401",
     "os": "113066",
     "data": "24/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Realinhas estrutura do braço, amassado após colisão - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "144",
-    "os": "113020",
-    "data": "23/06/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Reparar suporte da alavanca do comando hidráulico - (Fazenda Minuano)"
   },
   {
     "frota": "26",
