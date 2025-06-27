@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5671",
+    "cd_equipamento": "5671",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "113435",
+    "data_entrada": "27/06/2025",
+    "servico": "Fazer solda no batedor (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5233",
+    "cd_equipamento": "5233",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113428",
+    "data_entrada": "27/06/2025",
+    "servico": "Refazer rosca do ramal (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5793",
+    "cd_equipamento": "5793",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "113400",
+    "data_entrada": "27/06/2025",
+    "servico": "Fazer solda em trinca - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5784",
+    "cd_equipamento": "5784",
+    "modelo": "DESENROLADOR DE MANGUEIRA",
+    "os": "113377",
+    "data_entrada": "26/06/2025",
+    "servico": "Sacar porca e colocar outra - (Fazenda Minuano)\nSolicitado Sr. Vinicius (Irrigação)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5459",
+    "cd_equipamento": "5459",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "113276",
+    "data_entrada": "26/06/2025",
+    "servico": "Solda no suporte do esqui e substituir a cremalheira e o parafuso danificados - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio\nPendencia N° 4467"
+  },
+  {
+    "frota": "5352",
+    "cd_equipamento": "5352",
+    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
+    "os": "113269",
+    "data_entrada": "26/06/2025",
+    "servico": "Quebra do parafusos que segura o açoalho e parafusos do suporte da bica - (Pecuaria)\nSolicitado Sr. Bruno\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5060",
     "cd_equipamento": "5060",
     "modelo": "PULVERIZADOR 2000 LT FMC",
@@ -8,20 +56,12 @@
     "servico": "Fazer reforço no suporte dos braços - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5755",
-    "cd_equipamento": "5755",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "113151",
-    "data_entrada": "25/06/2025",
-    "servico": "Soldar trinca no cabeçario e desamassar proteção da roda guia - (Fazenda Biscui)\nSolicitado Sr. Giovane\nResponsavel Sr. Mauricio \nPendencia N ° 4217"
-  },
-  {
     "frota": "5106",
     "cd_equipamento": "5106",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
     "os": "113147",
     "data_entrada": "25/06/2025",
-    "servico": "Executar solda na estrutura e substituir parafuso danificado do cabeçalho. - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+    "servico": "Executar solda na estrutura e substituir parafuso danificado do cabeçalho. - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio\n\nPendência 4468"
   },
   {
     "frota": "5804",
@@ -70,14 +110,6 @@
     "os": "112893",
     "data_entrada": "20/06/2025",
     "servico": "Soldar e realinhar asa L/E - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsável Sr. Wilson"
-  },
-  {
-    "frota": "5479",
-    "cd_equipamento": "5479",
-    "modelo": "PULVERIZADOR 600 LT JACTO",
-    "os": "112816",
-    "data_entrada": "19/06/2025",
-    "servico": "Verificar bomba de pulverização que está solta, avaliar uma forma de fixar a mesma \nFazenda Biscui Sede\nSolicitado Sr. Geovane\nResponsável Sr. Mauricio"
   },
   {
     "frota": "5191",
@@ -248,14 +280,6 @@
     "servico": "Soldar escada e fazer proteção do eixo da TDP\n(Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5431",
-    "cd_equipamento": "5431",
-    "modelo": "DIST. DE ADUBO DCA 7500 S-0114",
-    "os": "111479",
-    "data_entrada": "28/05/2025",
-    "servico": "Trocar esteira e fundo do espalhador\nFaz NSA\nSolicitado Rennan\nAutorizado Mauricio"
-  },
-  {
     "frota": "5136",
     "cd_equipamento": "5136",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -294,14 +318,6 @@
     "os": "110984",
     "data_entrada": "20/05/2025",
     "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5125",
-    "cd_equipamento": "5125",
-    "modelo": "ATOMIZADOR JACTO 2000 LT",
-    "os": "111471",
-    "data_entrada": "20/05/2025",
-    "servico": "Fazer caixa para transporte de pessoas\nFazenda SL1 (Oficina)\nLiberado Sr. Zacarias"
   },
   {
     "frota": "5078",

@@ -1,13 +1,5 @@
 [
   {
-    "frota": "5129",
-    "cd_equipamento": "5129",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "113002",
-    "data_entrada": "23/06/2025",
-    "servico": "Verificar sistema de transmissão do pulverizador, correia apresentando salto de dentes e desgaste excessivo - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5345",
     "cd_equipamento": "5345",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -46,5 +38,13 @@
     "os": "111561",
     "data_entrada": "30/05/2025",
     "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "107723",
+    "data_entrada": "25/03/2025",
+    "servico": "- Revisão geral.\n(Fazenda Bela Manhã)\n- Liberado Sr: Rafael Venâncio."
   }
 ]

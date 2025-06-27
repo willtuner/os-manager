@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5482",
+    "cd_equipamento": "5482",
+    "modelo": "PODADEIRA HID.GLOBAL 3500",
+    "os": "113292",
+    "data_entrada": "26/06/2025",
+    "servico": "Vazamento no radiador de óleo e verificar vazamento no motor hidráulico - (Fazenda Estrela)\nSolicitado Sr. Rafael \nResponsavel Sr. Rafael"
+  },
+  {
+    "frota": "5259",
+    "cd_equipamento": "5259",
+    "modelo": "PODADEIRA HID.GLOBAL 3500",
+    "os": "113273",
+    "data_entrada": "26/06/2025",
+    "servico": "Quebra do eixo do sistema de transmissão - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5542",
     "cd_equipamento": "5542",
     "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
@@ -14,22 +30,6 @@
     "os": "113169",
     "data_entrada": "25/06/2025",
     "servico": "Consertar pistão da barra danificado.\nFazenda Estrela\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "144",
-    "cd_equipamento": "144",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "113020",
-    "data_entrada": "23/06/2025",
-    "servico": "Reparar suporte da alavanca do comando hidráulico - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "112952",
-    "data_entrada": "20/06/2025",
-    "servico": "Confeccionar pistão da barra reforçada (Fazenda ?)\nLiberado Sr. Rafael"
   },
   {
     "frota": "5673",

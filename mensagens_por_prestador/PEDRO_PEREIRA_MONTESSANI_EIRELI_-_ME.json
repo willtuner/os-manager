@@ -1,5 +1,45 @@
 [
   {
+    "frota": "270",
+    "cd_equipamento": "270",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113445",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar correia do alternador - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "138",
+    "cd_equipamento": "138",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "113420",
+    "data_entrada": "27/06/2025",
+    "servico": "Verificar sensor de diesel - Faz Minuano\nAutorizado Arthur"
+  },
+  {
+    "frota": "276",
+    "cd_equipamento": "276",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113399",
+    "data_entrada": "27/06/2025",
+    "servico": "Correia do alternador quebrada necessário avaliação e substituição-(Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "130",
+    "cd_equipamento": "130",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "113397",
+    "data_entrada": "27/06/2025",
+    "servico": "Luzes traseiras de posição não desligam e cibiés traseiros não ascendem - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "131",
+    "cd_equipamento": "131",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "113392",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar correia do alternador - Faz Casa Branca\nAutorizado Arthur"
+  },
+  {
     "frota": "5662",
     "cd_equipamento": "5662",
     "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
@@ -102,14 +142,6 @@
     "os": "113077",
     "data_entrada": "24/06/2025",
     "servico": "Revisar motor de partida, trator sem partida - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "75",
-    "cd_equipamento": "75",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113054",
-    "data_entrada": "24/06/2025",
-    "servico": "Verificar alternado não está carregando a bateria - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "28",

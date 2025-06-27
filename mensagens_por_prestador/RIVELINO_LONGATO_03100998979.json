@@ -1,5 +1,29 @@
 [
   {
+    "frota": "65",
+    "cd_equipamento": "65",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113409",
+    "data_entrada": "27/06/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5523",
+    "cd_equipamento": "5523",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "113254",
+    "data_entrada": "26/06/2025",
+    "servico": "Pneu L/D furado - (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "220",
+    "cd_equipamento": "220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113245",
+    "data_entrada": "26/06/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "159",
     "cd_equipamento": "159",
     "modelo": "TRATOR JOHN DEERE 5055E",

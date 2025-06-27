@@ -1,5 +1,13 @@
 [
   {
+    "frota": "250",
+    "cd_equipamento": "250",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "113426",
+    "data_entrada": "27/06/2025",
+    "servico": "Vazamento na bomba de diesel (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "28",
     "cd_equipamento": "28",
     "modelo": "TRATOR MASSEY FERGUSON 275/2",
@@ -8,35 +16,11 @@
     "servico": "Verificar o funcionamento da bomba de combustivel - Faz Estrela\nAutorizado Arthur"
   },
   {
-    "frota": "130",
-    "cd_equipamento": "130",
-    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
-    "os": "112971",
-    "data_entrada": "23/06/2025",
-    "servico": "Verificar trator jogando óleo pelo filtro de ar - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "258",
-    "cd_equipamento": "258",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112919",
-    "data_entrada": "20/06/2025",
-    "servico": "Vazamento de óleo diesel na bomba - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "269",
     "cd_equipamento": "269",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "112908",
     "data_entrada": "20/06/2025",
     "servico": "Remover vazamento na bomba de combustivel - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "276",
-    "cd_equipamento": "276",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112603",
-    "data_entrada": "16/06/2025",
-    "servico": "Avaliar vazamento de óleo diesel na bomba injetora - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nLiberado Sr. Arthur"
   }
 ]

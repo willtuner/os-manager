@@ -1,5 +1,53 @@
 [
   {
+    "frota": "10120",
+    "cd_equipamento": "10120",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113407",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar cabo do afogador quebrado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "195",
+    "cd_equipamento": "195",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113393",
+    "data_entrada": "27/06/2025",
+    "servico": "Instalar Kit de redução - Oficina\nAutorizado Arhur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113391",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar correia do alternardo - Faz São Pedro\nAutorizado Arthur"
+  },
+  {
+    "frota": "10220",
+    "cd_equipamento": "10220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113390",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar cabo do afogador - Faz São Pedro\nAutorizado Arthur"
+  },
+  {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113311",
+    "data_entrada": "26/06/2025",
+    "servico": "Trocar embreagem - Faz Terra Branca (Oficina)\nAutorizado Arthur"
+  },
+  {
+    "frota": "196",
+    "cd_equipamento": "196",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113302",
+    "data_entrada": "26/06/2025",
+    "servico": "Revisar eixo dianteiro, trocar ponta do pinhão e luva do cardan, embuchamento da balança - Oficina\nAutorizado Arthur"
+  },
+  {
     "frota": "159",
     "cd_equipamento": "159",
     "modelo": "TRATOR JOHN DEERE 5055E",
@@ -38,14 +86,6 @@
     "os": "113017",
     "data_entrada": "23/06/2025",
     "servico": "Quebra do eixo da TDP - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "112954",
-    "data_entrada": "21/06/2025",
-    "servico": "Verificar barulho a normal na TDP - Faz São Severino\nAutorizado Arthur"
   },
   {
     "frota": "64",
@@ -94,14 +134,6 @@
     "os": "112579",
     "data_entrada": "16/06/2025",
     "servico": "Verificar ruído no conjunto da embreagem - (Fazenda Estrela)\nLiberado Sr. Arthur\nSolicitado Sr. Danilo"
-  },
-  {
-    "frota": "229",
-    "cd_equipamento": "229",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "112521",
-    "data_entrada": "13/06/2025",
-    "servico": "Avaliar pneu dianteiro L/D com \"folga\" - (Fazenda São Severino)\nSolicitado Sr. Cassio\nLiberado Sr. Arthur"
   },
   {
     "frota": "10223",
@@ -158,6 +190,22 @@
     "os": "110515",
     "data_entrada": "14/05/2025",
     "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "10227",
+    "cd_equipamento": "10227",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "110308",
+    "data_entrada": "12/05/2025",
+    "servico": "Verificar problema na caixa C, que está escapando marcha durante o uso e  ruído identificado na embreagem durante a saída - (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "235",
+    "cd_equipamento": "235",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "108462",
+    "data_entrada": "09/04/2025",
+    "servico": "Quebra do parafuso da TDP - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "95",
