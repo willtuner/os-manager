@@ -1,13 +1,5 @@
 [
   {
-    "frota": "5403",
-    "cd_equipamento": "5403",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "113340",
-    "data_entrada": "26/06/2025",
-    "servico": "Substituir parafusos de fixação do eixo da roda, que se encontram espanados e troca do reparo do guarda chuva - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5404",
     "cd_equipamento": "5404",
     "modelo": "ROCADEIRA RC2 E 4500 TATU",
@@ -22,22 +14,6 @@
     "os": "113271",
     "data_entrada": "26/06/2025",
     "servico": "Revisar equipamento, bomba e conexões - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5421",
-    "cd_equipamento": "5421",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "113263",
-    "data_entrada": "26/06/2025",
-    "servico": "Trocar parafusos de fixação do eixo da roda espanados - (Fazenda São Pedro)\nSolicitado Sr. Josimar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5737",
-    "cd_equipamento": "5737",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "113139",
-    "data_entrada": "25/06/2025",
-    "servico": "Trocar suporte do fação quebrado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5479",
@@ -56,35 +32,11 @@
     "servico": "Vazamento de óleo na bomba - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5136",
-    "cd_equipamento": "5136",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112716",
-    "data_entrada": "18/06/2025",
-    "servico": "Instalar bico de engraxamento no mancal danificado - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5611",
     "cd_equipamento": "5611",
     "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
     "os": "112366",
     "data_entrada": "12/06/2025",
     "servico": "Fazer solda nas proteções anti-arremesso e trocar jogo de martelos - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5075",
-    "cd_equipamento": "5075",
-    "modelo": "TANQUE DE AGUA 6500",
-    "os": "111435",
-    "data_entrada": "28/05/2025",
-    "servico": "Refazer eixo da bomba com  desgaste - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5188",
-    "cd_equipamento": "5188",
-    "modelo": "PULVERIZADOR 600 LT MONTANA",
-    "os": "109725",
-    "data_entrada": "30/04/2025",
-    "servico": "Substituir polia do agitador da turbina-hélice, que se encontra quebrada, comprometendo o funcionamento do sistema de agitação da calda. Verificar o estado geral do mecanismo e demais componentes associados - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

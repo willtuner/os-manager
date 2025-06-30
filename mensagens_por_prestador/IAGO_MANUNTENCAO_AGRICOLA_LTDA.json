@@ -1,19 +1,35 @@
 [
   {
+    "frota": "5014",
+    "cd_equipamento": "5014",
+    "modelo": "PULVERIZADOR COLUMBIA 2000 LT",
+    "os": "113540",
+    "data_entrada": "30/06/2025",
+    "servico": "Cabo de acionamento do comando não funciona - (Fazenda NSA)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "79",
+    "cd_equipamento": "79",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113521",
+    "data_entrada": "30/06/2025",
+    "servico": "Trocar borrachas antideriva da barra de herbicida - (Fazenda Terra Branca)\nSolicitado Sr. João Subgerente\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "113506",
+    "data_entrada": "30/06/2025",
+    "servico": "Substituir esteira - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5191",
     "cd_equipamento": "5191",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "113394",
     "data_entrada": "27/06/2025",
     "servico": "Rolamento da polia traseiro estourado - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "113247",
-    "data_entrada": "26/06/2025",
-    "servico": "Substituir os dois pistões da barra que estão com vazamento por outros novos fabricados na MG.\nTrocado pistão \nColocar no lugar, trocado os repele da mangueira\nFazenda Biscui Sede\nSolicitado Sr. Rafael\nResponsável Sr. Maurício"
   },
   {
     "frota": "5614",
@@ -38,5 +54,13 @@
     "os": "112407",
     "data_entrada": "12/06/2025",
     "servico": "Instalar correte de água e caixa misturadora - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5061",
+    "cd_equipamento": "5061",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "112259",
+    "data_entrada": "10/06/2025",
+    "servico": "Verificar torre 'bamba'  - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   }
 ]

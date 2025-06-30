@@ -1,5 +1,45 @@
 [
   {
+    "frota": "91",
+    "cd_equipamento": "91",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113543",
+    "data_entrada": "30/06/2025",
+    "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
+  },
+  {
+    "frota": "5347",
+    "cd_equipamento": "5347",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "113519",
+    "data_entrada": "30/06/2025",
+    "servico": "Desamassar prato - (Fazenda São Paulo)\nSolicitado Sr. Geovane \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5758",
+    "cd_equipamento": "5758",
+    "modelo": "TANQUE 1850 LT COMBOIO",
+    "os": "113510",
+    "data_entrada": "30/06/2025",
+    "servico": "Fazer solda em tanque de diesel furado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauriico"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113498",
+    "data_entrada": "30/06/2025",
+    "servico": "Fazer solda em trincas na estrutura do chassi - (Fazenda Biscui)\nSolicitado Sr. Geovane \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "113494",
+    "data_entrada": "30/06/2025",
+    "servico": "Quebra do esticador da correia - (Fazenda São Paulo)\nSolicitado Sr. Leojabes \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5290",
     "cd_equipamento": "5290",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -54,14 +94,6 @@
     "os": "113400",
     "data_entrada": "27/06/2025",
     "servico": "Fazer solda em trinca - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5784",
-    "cd_equipamento": "5784",
-    "modelo": "DESENROLADOR DE MANGUEIRA",
-    "os": "113377",
-    "data_entrada": "26/06/2025",
-    "servico": "Sacar porca e colocar outra - (Fazenda Minuano)\nSolicitado Sr. Vinicius (Irrigação)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "68",
@@ -240,14 +272,6 @@
     "servico": "Realinhar barrinha - (Fazenda NSA)\nLiberado Sr. Mauricio"
   },
   {
-    "frota": "10224",
-    "cd_equipamento": "10224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112353",
-    "data_entrada": "11/06/2025",
-    "servico": "Chapa do assoalho torta após colisão com implemento ocasionando a falta de curso do pedal de freio - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
-  },
-  {
     "frota": "5175",
     "cd_equipamento": "5175",
     "modelo": "TANQUE DE AGUA 4000 LT",
@@ -264,14 +288,6 @@
     "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5061",
-    "cd_equipamento": "5061",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112259",
-    "data_entrada": "10/06/2025",
-    "servico": "Verificar torre 'bamba'  - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "10217",
     "cd_equipamento": "10217",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -280,28 +296,12 @@
     "servico": "Fazer solda em trinca no escapamento - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5724",
-    "cd_equipamento": "5724",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "112185",
-    "data_entrada": "09/06/2025",
-    "servico": "Fazer caixa de proteção para o painel eletrônico - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "43",
     "cd_equipamento": "43",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
     "os": "112138",
     "data_entrada": "06/06/2025",
     "servico": "Confeccionar teto - (Oficina OMC)\nLiberado Sr. Rafael"
-  },
-  {
-    "frota": "5671",
-    "cd_equipamento": "5671",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "112105",
-    "data_entrada": "06/06/2025",
-    "servico": "Quebra do batedor - (Fazenda Bela Manhã)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "67",

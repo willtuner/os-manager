@@ -1,13 +1,5 @@
 [
   {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "112764",
-    "data_entrada": "19/06/2025",
-    "servico": "Vazamento de óleo no pistão da barra - (Fazenda Biscui)\nSolicitado Sr. Geovane\nResponsável Sr. Mauricio"
-  },
-  {
     "frota": "5492",
     "cd_equipamento": "5492",
     "modelo": "PULVERIZADOR GULIVER 4000",
@@ -38,6 +30,14 @@
     "os": "111561",
     "data_entrada": "30/05/2025",
     "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5188",
+    "cd_equipamento": "5188",
+    "modelo": "PULVERIZADOR 600 LT MONTANA",
+    "os": "109725",
+    "data_entrada": "30/04/2025",
+    "servico": "Substituir polia do agitador da turbina-hélice, que se encontra quebrada, comprometendo o funcionamento do sistema de agitação da calda. Verificar o estado geral do mecanismo e demais componentes associados - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5345",

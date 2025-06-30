@@ -1,19 +1,43 @@
 [
   {
-    "frota": "270",
-    "cd_equipamento": "270",
+    "frota": "224",
+    "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113445",
-    "data_entrada": "27/06/2025",
-    "servico": "Trocar correia do alternador - Faz São Paulo\nAutorizado Arthur"
+    "os": "113523",
+    "data_entrada": "30/06/2025",
+    "servico": "Cibié queimado e luz do farol acesa no painel interruptamente - (Fazenda Terra Branca)\nSolicitado Sr. João (Subgerente)\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "135",
-    "cd_equipamento": "135",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "113429",
-    "data_entrada": "27/06/2025",
-    "servico": "Trocar sirene de ré (Fazenda SP)\nLiberado Sr. Arthur"
+    "frota": "77",
+    "cd_equipamento": "77",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113504",
+    "data_entrada": "30/06/2025",
+    "servico": "Verificar trator sem partida - (Fazenda Santa Luiza)\nSolicitado Sr. John \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "263",
+    "cd_equipamento": "263",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113501",
+    "data_entrada": "30/06/2025",
+    "servico": "Avaliar trator sem partida - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "44",
+    "cd_equipamento": "44",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "113487",
+    "data_entrada": "30/06/2025",
+    "servico": "Verificar faróis queimados - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "221",
+    "cd_equipamento": "221",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113468",
+    "data_entrada": "30/06/2025",
+    "servico": "Cibiés de teto apresentando queima contínua das lâmpadas  necessário verificar instalação elétrica, tensão e possíveis curtos - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
   },
   {
     "frota": "138",
@@ -30,14 +54,6 @@
     "os": "113406",
     "data_entrada": "27/06/2025",
     "servico": "Verificar falha no acionamento dos ramais do jatão, que não estão operando corretamente. - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5479",
-    "cd_equipamento": "5479",
-    "modelo": "PULVERIZADOR 600 LT JACTO",
-    "os": "113405",
-    "data_entrada": "27/06/2025",
-    "servico": "Verificar painel de controle do sistema de drash, que permanece acionado continuamente (disparado direto), mesmo sem comando. - (Fazenda Biscui)\nSolicitado Sr. Giovane \nResponsavel Sr. Arthur"
   },
   {
     "frota": "276",
@@ -118,14 +134,6 @@
     "os": "113158",
     "data_entrada": "25/06/2025",
     "servico": "Botão de acionamento enroscando - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "102",
-    "cd_equipamento": "102",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "113150",
-    "data_entrada": "25/06/2025",
-    "servico": "Verificar relógio horimetro não funciona - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "137",
@@ -248,14 +256,6 @@
     "servico": "Trocar seta dianteira quebrada - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "112973",
-    "data_entrada": "23/06/2025",
-    "servico": "Verificar trator com a partida ruim - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsável Sr. Mauricio"
-  },
-  {
     "frota": "95",
     "cd_equipamento": "95",
     "modelo": "TRATOR JOHN DEERE 5065 4X4",
@@ -280,14 +280,6 @@
     "servico": "Revisar chicote eletrico - Faz Bela Manha\nAutorizado Arthur"
   },
   {
-    "frota": "5697",
-    "cd_equipamento": "5697",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "112861",
-    "data_entrada": "19/06/2025",
-    "servico": "Avaliar funcionamento do sistema de drash, que não está acionando corretamente a vazão no lado direito L/D - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsável Sr. Arthur"
-  },
-  {
     "frota": "5491",
     "cd_equipamento": "5491",
     "modelo": "PULVERIZADOR GULIVER 4000",
@@ -310,30 +302,6 @@
     "os": "112760",
     "data_entrada": "19/06/2025",
     "servico": "Trocar seta dianteira lado direto - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "218",
-    "cd_equipamento": "218",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112677",
-    "data_entrada": "17/06/2025",
-    "servico": "Revisar sistema eletrico - Oficina\nAutorizado Arthur"
-  },
-  {
-    "frota": "257",
-    "cd_equipamento": "257",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112646",
-    "data_entrada": "17/06/2025",
-    "servico": "Verificar iluminação - Faz São Paulo\nAutorizado Arthur"
-  },
-  {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "112632",
-    "data_entrada": "16/06/2025",
-    "servico": "Verificar relógio horimetro não funciona - (Fazenda SP)\nSolicitado Sr. Vitor ADM SP\nLiberado Sr. Arthur"
   },
   {
     "frota": "134",

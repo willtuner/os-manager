@@ -1,8 +1,16 @@
 [
   {
-    "frota": "5418",
-    "cd_equipamento": "5418",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "frota": "5626",
+    "cd_equipamento": "5626",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "113459",
+    "data_entrada": "28/06/2025",
+    "servico": "Recuperar eixo e embuchar eixo da roda guia - Faz Alvorada\nAutorizado Mauricio"
+  },
+  {
+    "frota": "5148",
+    "cd_equipamento": "5148",
+    "modelo": "CARRETA BAG C/ GUINCHO",
     "os": "113414",
     "data_entrada": "27/06/2025",
     "servico": "Troca da redução da corrente e troca das mangueiras do guincho - (Fazenda Casa Branca)\nSolicitado Sr. Gilson\nAutorizado Sr. Valdomiro - Vadin"
@@ -22,14 +30,6 @@
     "os": "113294",
     "data_entrada": "26/06/2025",
     "servico": "Conserto do varão da embreagem - (Fazenda São Paulo)\nSolicitado Sr. Izaias \nResponsavel Sr. Izaias"
-  },
-  {
-    "frota": "5522",
-    "cd_equipamento": "5522",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "113250",
-    "data_entrada": "26/06/2025",
-    "servico": "Quebra do suporte do pistão e quebra do suporte do ramal e bico anti-gotejo - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5571",
