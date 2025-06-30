@@ -1,45 +1,10 @@
 [
   {
-    "frota": "149",
-    "os": "113252",
-    "data": "26/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar e reparar o sistema de câmbio. Alavanca de marchas foi arrancada, comprometendo totalmente o acionamento da transmissão. - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5522",
-    "os": "113250",
-    "data": "26/06/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Quebra do suporte do pistão e quebra do suporte do ramal e bico anti-gotejo - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "102",
-    "os": "113150",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar relógio horimetro não funciona - (Fazenda Bela Manhã)"
-  },
-  {
     "frota": "5336",
     "os": "113088",
     "data": "24/06/2025",
     "prestador": "nan",
     "servico": "Fazer fibra em trinca no tanque - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5065",
-    "os": "113070",
-    "data": "24/06/2025",
-    "prestador": "nan",
-    "servico": "Sacar parafusos dos fações empenados e substituir"
-  },
-  {
-    "frota": "143",
-    "os": "113021",
-    "data": "23/06/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Avaliar alavanca da TDP que desengata sozinha após tentativa de acionamento - (Fazenda Bela Manhã)"
   },
   {
     "frota": "143",
@@ -49,27 +14,6 @@
     "servico": "Fazer revisão no sistema eletrico da iluminação - (Fazenda Bela Manhã)"
   },
   {
-    "frota": "319",
-    "os": "112998",
-    "data": "23/06/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 600 hrs - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "330",
-    "os": "112996",
-    "data": "23/06/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 50 hrs - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "319",
-    "os": "112966",
-    "data": "23/06/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Verificar trator sem partida - (Fazenda Bela Manhã)"
-  },
-  {
     "frota": "102",
     "os": "112913",
     "data": "20/06/2025",
@@ -77,31 +21,10 @@
     "servico": "Revisar chicote eletrico - Faz Bela Manha"
   },
   {
-    "frota": "5697",
-    "os": "112861",
-    "data": "19/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar funcionamento do sistema de drash, que não está acionando corretamente a vazão no lado direito L/D - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "10224",
-    "os": "112353",
-    "data": "11/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Chapa do assoalho torta após colisão com implemento ocasionando a falta de curso do pedal de freio - (Fazenda Bela Manhã)"
-  },
-  {
     "frota": "5078",
     "os": "110736",
     "data": "16/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "143",
-    "os": "109876",
-    "data": "02/05/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Verificar freios não funcionam - (Fazenda Bela Manhã)"
   }
 ]

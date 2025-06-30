@@ -1,31 +1,38 @@
 [
   {
-    "frota": "270",
-    "os": "113445",
-    "data": "27/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar correia do alternador - Faz São Paulo"
+    "frota": "5347",
+    "os": "113519",
+    "data": "30/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desamassar prato - (Fazenda São Paulo)"
   },
   {
-    "frota": "135",
-    "os": "113429",
-    "data": "27/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar sirene de ré (Fazenda SP)"
+    "frota": "5504",
+    "os": "113503",
+    "data": "30/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Trocar modulo do SPE - Faz São Paulo"
   },
   {
-    "frota": "5479",
-    "os": "113405",
-    "data": "27/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar painel de controle do sistema de drash, que permanece acionado continuamente (disparado direto), mesmo sem comando. - (Fazenda Biscui)"
+    "frota": "5345",
+    "os": "113498",
+    "data": "30/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trincas na estrutura do chassi - (Fazenda Biscui)"
   },
   {
-    "frota": "257",
-    "os": "113403",
-    "data": "27/06/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Verificar quebra espontânea do vidro do para-brisa, sem impacto aparente - (Fazenda São Paulo)"
+    "frota": "5211",
+    "os": "113494",
+    "data": "30/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Quebra do esticador da correia - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "219",
+    "os": "113493",
+    "data": "30/06/2025",
+    "prestador": "nan",
+    "servico": "Verificar sistema eletrico do alerta não funciona - (Fazenda São Paulo)"
   },
   {
     "frota": "218",
@@ -36,38 +43,10 @@
   },
   {
     "frota": "5804",
-    "os": "113401",
-    "data": "27/06/2025",
-    "prestador": "nan",
-    "servico": "Verificar sistema de fechamento dos ramais, com falha de acionamento em um dos lados. - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5345",
-    "os": "113247",
-    "data": "26/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir os dois pistões da barra que estão com vazamento por outros novos fabricados na MG."
-  },
-  {
-    "frota": "5211",
-    "os": "113132",
-    "data": "25/06/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Avaliar e reparar dano por quebra na fibra localizada no ladrão do tanque - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5804",
     "os": "113131",
     "data": "25/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Readequar as proteções dos bicos do sistema de pulverização eletrostática (SPE), que estão colidindo com galhos e sofrendo quebras durante a operação - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5804",
-    "os": "113130",
-    "data": "25/06/2025",
-    "prestador": "nan",
-    "servico": "Verificar vazamento na conexão da mangueira responsável pela saída do produto - (Fazenda São Paulo)"
   },
   {
     "frota": "219",
@@ -75,20 +54,6 @@
     "data": "25/06/2025",
     "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
     "servico": "Avaliar e reparar a tubulação do escapamento, que se soltou durante a operação e foi danificada pelo próprio trator ao passar sobre a peça - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "219",
-    "os": "113128",
-    "data": "25/06/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Avaliar vazamento de óleo no meio do trator - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "72",
-    "os": "113090",
-    "data": "24/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu furado - (Industria)"
   },
   {
     "frota": "332",
@@ -105,74 +70,11 @@
     "servico": "Trocar lanterna traseira quebrada - (Fazenda SP)"
   },
   {
-    "frota": "5107",
-    "os": "113019",
-    "data": "23/06/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Soldar fios do terminal do SPE  quebrado - (Fazenda São Paulo)"
-  },
-  {
     "frota": "219",
     "os": "112976",
     "data": "23/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar seta dianteira quebrada - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "10228",
-    "os": "112975",
-    "data": "23/06/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Verificar banco não da regulagem - (Fazenda SP)"
-  },
-  {
-    "frota": "5063",
-    "os": "112974",
-    "data": "23/06/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Verificar sistema de SPE não funciona - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5345",
-    "os": "112764",
-    "data": "19/06/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Vazamento de óleo no pistão da barra - (Fazenda Biscui)"
-  },
-  {
-    "frota": "218",
-    "os": "112677",
-    "data": "17/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico - Oficina"
-  },
-  {
-    "frota": "5063",
-    "os": "112659",
-    "data": "17/06/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Soldar fios do terminal do SPE  quebrado - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "257",
-    "os": "112646",
-    "data": "17/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar iluminação - Faz São Paulo"
-  },
-  {
-    "frota": "46",
-    "os": "112632",
-    "data": "16/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar relógio horimetro não funciona - (Fazenda SP)"
-  },
-  {
-    "frota": "332",
-    "os": "112508",
-    "data": "13/06/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Verificar vazamento no retentor do cubo da roda dianteira e fazer revisão de 50 hrs  - (Fazenda São Paulo)"
   },
   {
     "frota": "246",
