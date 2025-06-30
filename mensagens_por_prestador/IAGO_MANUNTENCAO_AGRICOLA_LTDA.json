@@ -1,51 +1,11 @@
 [
   {
-    "frota": "5261",
-    "cd_equipamento": "5261",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "113447",
-    "data_entrada": "27/06/2025",
-    "servico": "Vazamento no pistão (Fazenda Casa branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5107",
-    "cd_equipamento": "5107",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "113446",
-    "data_entrada": "27/06/2025",
-    "servico": "Instalar reservatório de agua, e conexão caixa corporadora (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "113395",
-    "data_entrada": "27/06/2025",
-    "servico": "Fazer a troca dos ramais de pulverização direito e esquerdo.\nFazenda São Paulo\nSolicitado Sr. Rafael\nResponsável Sr. Maurício"
-  },
-  {
     "frota": "5191",
     "cd_equipamento": "5191",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "113394",
     "data_entrada": "27/06/2025",
     "servico": "Rolamento da polia traseiro estourado - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113290",
-    "data_entrada": "26/06/2025",
-    "servico": "Trocar tampa do tanque e colocar parafusos de fixação do tanque de agua potável\nFazendo troca da tampa do tanque e colocando parafusos de fixação do corote de água potável\nJuntar dentro do tanque para colocar o parafuso de corte - (Fazenda SP)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5662",
-    "cd_equipamento": "5662",
-    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-    "os": "113288",
-    "data_entrada": "26/06/2025",
-    "servico": "Tirar gomo da corrente frouxa e mancal do eixo da esteira quebrado\nCortado os esterno para fazer o estruturamento, trocado manual, trocado rolamento  - (Fazenda Terra Branca)\nSolicitado Sr. João  Vitor (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5345",
@@ -56,28 +16,12 @@
     "servico": "Substituir os dois pistões da barra que estão com vazamento por outros novos fabricados na MG.\nTrocado pistão \nColocar no lugar, trocado os repele da mangueira\nFazenda Biscui Sede\nSolicitado Sr. Rafael\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5479",
-    "cd_equipamento": "5479",
-    "modelo": "PULVERIZADOR 600 LT JACTO",
-    "os": "113246",
-    "data_entrada": "26/06/2025",
-    "servico": "Vazamento na bomba do tanque de pulverização e verificar folga nas cruzetas e trocar capa de cardam\nFazendo troca do retentor do virabrequim, reapertando parafusos da bomba - (Fazenda Minuano)\nSolicitado Sr. Antônio \nResponsavel Sr. Mauricio\nPendencias N° 4040 e 3968"
-  },
-  {
     "frota": "5614",
     "cd_equipamento": "5614",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "113135",
     "data_entrada": "25/06/2025",
     "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5623",
-    "cd_equipamento": "5623",
-    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
-    "os": "112925",
-    "data_entrada": "20/06/2025",
-    "servico": "Trocar rolamento da roda guia - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Wilson"
   },
   {
     "frota": "5031",
@@ -94,13 +38,5 @@
     "os": "112407",
     "data_entrada": "12/06/2025",
     "servico": "Instalar correte de água e caixa misturadora - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5367",
-    "cd_equipamento": "5367",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "112335",
-    "data_entrada": "11/06/2025",
-    "servico": "Vazamento de óleo na bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   }
 ]

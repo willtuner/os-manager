@@ -8,12 +8,36 @@
     "servico": "Trocar correia do alternador - Faz São Paulo\nAutorizado Arthur"
   },
   {
+    "frota": "135",
+    "cd_equipamento": "135",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "113429",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar sirene de ré (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "138",
     "cd_equipamento": "138",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
     "os": "113420",
     "data_entrada": "27/06/2025",
     "servico": "Verificar sensor de diesel - Faz Minuano\nAutorizado Arthur"
+  },
+  {
+    "frota": "5006",
+    "cd_equipamento": "5006",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "113406",
+    "data_entrada": "27/06/2025",
+    "servico": "Verificar falha no acionamento dos ramais do jatão, que não estão operando corretamente. - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5479",
+    "cd_equipamento": "5479",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "113405",
+    "data_entrada": "27/06/2025",
+    "servico": "Verificar painel de controle do sistema de drash, que permanece acionado continuamente (disparado direto), mesmo sem comando. - (Fazenda Biscui)\nSolicitado Sr. Giovane \nResponsavel Sr. Arthur"
   },
   {
     "frota": "276",
@@ -38,6 +62,22 @@
     "os": "113392",
     "data_entrada": "27/06/2025",
     "servico": "Trocar correia do alternador - Faz Casa Branca\nAutorizado Arthur"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113355",
+    "data_entrada": "26/06/2025",
+    "servico": "Trator sem iluminação nenhuma - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "68",
+    "cd_equipamento": "68",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113297",
+    "data_entrada": "26/06/2025",
+    "servico": "Suporte do cibié quebrado - (Pecuaria)\nSolicitado Sr. Bruno\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5662",
@@ -136,20 +176,52 @@
     "servico": "Faróis auxiliares dianteiros de teto não ascendem - (Fazenda Santa Luiza)\nSolicitado Sr. John\nResponsavel Sr. Mauricio"
   },
   {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "113138",
+    "data_entrada": "25/06/2025",
+    "servico": "Avaliar sistema de partida: motor gira com lentidão e não dá partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "222",
+    "cd_equipamento": "222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113123",
+    "data_entrada": "24/06/2025",
+    "servico": "Avaliar falha no sistema de limpeza do para-brisa: limpador e bomba de limpador não estão funcionando - (Fazenda Estrela)\nSolicitado Sr. Carlos (COMBOIO)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113119",
+    "data_entrada": "24/06/2025",
+    "servico": "Verificar bomba do limpador do para-brisa (responsável por lançar água no vidro), que está inoperante.(Faz. Estrela)\nSolicitado Sr. Carlos (COMBOIO)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "288",
+    "cd_equipamento": "288",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113118",
+    "data_entrada": "24/06/2025",
+    "servico": "Verificar bomba do limpador do para-brisa (responsável por lançar água no vidro), que está inoperante.(Faz. Estrela)\nSolicitado Sr. Carlos (COMBOIO)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "5482",
+    "cd_equipamento": "5482",
+    "modelo": "PODADEIRA HID.GLOBAL 3500",
+    "os": "113087",
+    "data_entrada": "24/06/2025",
+    "servico": "Fazer instalação do eletroventilador do sistema de arrefecimento da podadeira - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "142",
     "cd_equipamento": "142",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
     "os": "113077",
     "data_entrada": "24/06/2025",
     "servico": "Revisar motor de partida, trator sem partida - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "28",
-    "cd_equipamento": "28",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "113051",
-    "data_entrada": "23/06/2025",
-    "servico": "Verificar alternador (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "143",

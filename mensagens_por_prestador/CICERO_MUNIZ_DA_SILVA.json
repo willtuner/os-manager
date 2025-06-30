@@ -1,5 +1,21 @@
 [
   {
+    "frota": "245",
+    "cd_equipamento": "245",
+    "modelo": "TRATOR MASSEY FERGUSON 3307",
+    "os": "113450",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar braço do hidraulico - Faz Estrela \nAutorizado Arthur"
+  },
+  {
+    "frota": "142",
+    "cd_equipamento": "142",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "113076",
+    "data_entrada": "24/06/2025",
+    "servico": "Avaliar trator sem freio - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "143",
     "cd_equipamento": "143",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
@@ -62,6 +78,14 @@
     "os": "110763",
     "data_entrada": "16/05/2025",
     "servico": "Trator não engata TDP - (Fazenda Nova Manhã)\nLiberado Sr. Arthur\nVerificar garantia (MECANICO CICERO)"
+  },
+  {
+    "frota": "143",
+    "cd_equipamento": "143",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "109876",
+    "data_entrada": "02/05/2025",
+    "servico": "Verificar freios não funcionam - (Fazenda Bela Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "122",

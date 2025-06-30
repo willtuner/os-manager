@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5290",
+    "cd_equipamento": "5290",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113463",
+    "data_entrada": "30/06/2025",
+    "servico": "Desentortar barra estruturado de um dos quebra vento da barra direita e soldar suporte de fixação do pistão de abertura da barra esquerda.\nFazenda Santa Izabel\nSolicitado Sr. Diego Camboi\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "89",
+    "cd_equipamento": "89",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113449",
+    "data_entrada": "27/06/2025",
+    "servico": "Soldar ponteira da herbicida lado direito (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "323",
+    "cd_equipamento": "323",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "113442",
+    "data_entrada": "27/06/2025",
+    "servico": "Soldar escada (Fazenda Estrela)\nLiberado Sr. Arthur"
+  },
+  {
     "frota": "5671",
     "cd_equipamento": "5671",
     "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
@@ -16,6 +40,14 @@
     "servico": "Refazer rosca do ramal (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   },
   {
+    "frota": "323",
+    "cd_equipamento": "323",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "113412",
+    "data_entrada": "27/06/2025",
+    "servico": "soldar gonzo na grade proteção - (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5793",
     "cd_equipamento": "5793",
     "modelo": "ROCADEIRA RC2 E 3100 S0516",
@@ -30,6 +62,22 @@
     "os": "113377",
     "data_entrada": "26/06/2025",
     "servico": "Sacar porca e colocar outra - (Fazenda Minuano)\nSolicitado Sr. Vinicius (Irrigação)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "68",
+    "cd_equipamento": "68",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113298",
+    "data_entrada": "26/06/2025",
+    "servico": "Quebra dos pinos do rabicho - (Pecuaria)\nSolicitado Sr. Bruno\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "113289",
+    "data_entrada": "26/06/2025",
+    "servico": "Suporte do amortecedor da porta quebrado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5459",
@@ -86,6 +134,14 @@
     "os": "113066",
     "data_entrada": "24/06/2025",
     "servico": "Realinhas estrutura do braço, amassado após colisão - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "332",
+    "cd_equipamento": "332",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "113065",
+    "data_entrada": "24/06/2025",
+    "servico": "Fazer proteção para as lanternas - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "26",
