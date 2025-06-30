@@ -1,5 +1,12 @@
 [
   {
+    "frota": "10219",
+    "os": "113462",
+    "data": "30/06/2025",
+    "prestador": "nan",
+    "servico": "Recuperar lanternas e proteções laterais - Faz Estrela"
+  },
+  {
     "frota": "268",
     "os": "113441",
     "data": "27/06/2025",
@@ -31,7 +38,7 @@
     "frota": "25",
     "os": "113264",
     "data": "26/06/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Vazamento de óleo diesel no cabeçote do filtro - (Fazenda Estrela)"
   },
   {
@@ -61,20 +68,6 @@
     "data": "25/06/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Consertar pistão da barra danificado."
-  },
-  {
-    "frota": "10223",
-    "os": "113085",
-    "data": "24/06/2025",
-    "prestador": "nan",
-    "servico": "Verificar falha no sistema de partida, trator desligou durante a operação e não liga novamente. - (Fazenda Estrela)"
-  },
-  {
-    "frota": "28",
-    "os": "113051",
-    "data": "23/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar alternador (Fazenda Estrela)"
   },
   {
     "frota": "268",

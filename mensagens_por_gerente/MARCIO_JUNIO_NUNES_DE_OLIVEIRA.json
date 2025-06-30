@@ -1,9 +1,16 @@
 [
   {
+    "frota": "225",
+    "os": "113461",
+    "data": "28/06/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Revisão no sistema de ar condicionado - Faz São Severino"
+  },
+  {
     "frota": "231",
     "os": "113171",
     "data": "25/06/2025",
-    "prestador": "nan",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Vazamento de óleo nos comandos - (Fazenda São Severino)"
   },
   {
@@ -19,13 +26,6 @@
     "data": "23/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Revisar freio - Faz São Severino"
-  },
-  {
-    "frota": "64",
-    "os": "113016",
-    "data": "23/06/2025",
-    "prestador": "MORYAMA MORYAMA KAWANAMI LTDA",
-    "servico": "Recuperar silencioso - Faz São Severino"
   },
   {
     "frota": "64",
