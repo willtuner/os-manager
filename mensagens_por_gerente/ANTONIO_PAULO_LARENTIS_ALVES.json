@@ -1,9 +1,16 @@
 [
   {
+    "frota": "5767",
+    "os": "113559",
+    "data": "01/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituir rolamento da entrada da bomba, localizado na região de acoplamento com o eixo cardã, devido a falha (rolamento estourado). - (Fazenda Minuano)"
+  },
+  {
     "frota": "118",
     "os": "113496",
     "data": "30/06/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Marcado de combustível não está marcando - (Fazenda Minuano)"
   },
   {
@@ -42,11 +49,11 @@
     "servico": "Realinhas estrutura do braço, amassado após colisão - (Fazenda São Pedro)"
   },
   {
-    "frota": "26",
-    "os": "112969",
+    "frota": "5405",
+    "os": "113626",
     "data": "23/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Confeccionar escada de acesso ao trator - (Fazenda Minuano)"
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Modificar roçadeira do sistema convencional para ecológica, corrigir folgas no embuchamento das rodas guia traseira, acertar engate do cabeçalho danificado e corrigir trincas na estrutura."
   },
   {
     "frota": "253",

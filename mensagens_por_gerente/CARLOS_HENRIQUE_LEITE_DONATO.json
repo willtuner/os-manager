@@ -1,5 +1,19 @@
 [
   {
+    "frota": "136",
+    "os": "113603",
+    "data": "01/07/2025",
+    "prestador": "nan",
+    "servico": "Vazamento de óleo no cubo da roda dianteira - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5486",
+    "os": "113549",
+    "data": "01/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar e substituir retentor da polia da bomba, que apresenta vazamento de óleo - (Fazenda Estrela)"
+  },
+  {
     "frota": "250",
     "os": "113426",
     "data": "27/06/2025",
@@ -12,13 +26,6 @@
     "data": "26/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trator sem iluminação nenhuma - (Fazenda Estrela)"
-  },
-  {
-    "frota": "250",
-    "os": "113152",
-    "data": "25/06/2025",
-    "prestador": "nan",
-    "servico": "- Proteção do cardã quebrada requer substituição ou reparo para garantir segurança operacional."
   },
   {
     "frota": "222",
@@ -40,12 +47,5 @@
     "data": "24/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar bomba do limpador do para-brisa (responsável por lançar água no vidro), que está inoperante.(Faz. Estrela)"
-  },
-  {
-    "frota": "269",
-    "os": "112908",
-    "data": "20/06/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Remover vazamento na bomba de combustivel - Faz Estrela"
   }
 ]

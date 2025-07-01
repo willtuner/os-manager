@@ -1,5 +1,12 @@
 [
   {
+    "frota": "5106",
+    "os": "113562",
+    "data": "01/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituir arrastador do lado direito e o suporte da roda guia, ambos danificados - (Fazenda Estrela)"
+  },
+  {
     "frota": "91",
     "os": "113543",
     "data": "30/06/2025",
@@ -17,7 +24,7 @@
     "frota": "46",
     "os": "113505",
     "data": "30/06/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Avaliar trator perdendo força - (Fazenda Estrela)"
   },
   {
@@ -33,55 +40,6 @@
     "data": "30/06/2025",
     "prestador": "nan",
     "servico": "Recuperar lanternas e proteções laterais - Faz Estrela"
-  },
-  {
-    "frota": "268",
-    "os": "113441",
-    "data": "27/06/2025",
-    "prestador": "nan",
-    "servico": "Soldar escada (Fazenda Estrela)"
-  },
-  {
-    "frota": "10223",
-    "os": "113439",
-    "data": "27/06/2025",
-    "prestador": "nan",
-    "servico": "Soldar escada (Fazenda Estrela)"
-  },
-  {
-    "frota": "5671",
-    "os": "113435",
-    "data": "27/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda no batedor (Fazenda Estrela)"
-  },
-  {
-    "frota": "5459",
-    "os": "113276",
-    "data": "26/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Solda no suporte do esqui e substituir a cremalheira e o parafuso danificados - (Fazenda Estrela)"
-  },
-  {
-    "frota": "28",
-    "os": "113155",
-    "data": "25/06/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Verificar o funcionamento da bomba de combustivel - Faz Estrela"
-  },
-  {
-    "frota": "137",
-    "os": "113148",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar sistema de partida do trator, que se encontra inoperante  - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5106",
-    "os": "113147",
-    "data": "25/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Executar solda na estrutura e substituir parafuso danificado do cabeçalho. - (Fazenda Estrela)"
   },
   {
     "frota": "268",
@@ -131,26 +89,5 @@
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
     "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
-  },
-  {
-    "frota": "116",
-    "os": "111498",
-    "data": "29/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar escada e fazer proteção do eixo da TDP"
-  },
-  {
-    "frota": "5451",
-    "os": "110984",
-    "data": "20/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar chapas da barra da direção. Feito soldas mas não suporta e quebra novamente - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5543",
-    "os": "110285",
-    "data": "09/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir parafuso do suporte da roda guia - (Fazenda Estrela)"
   }
 ]

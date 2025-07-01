@@ -1,17 +1,17 @@
 [
   {
+    "frota": "5599",
+    "os": "113577",
+    "data": "01/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar motor elétrico que gira, mas não realiza a partida efetiva. - (Fazenda São Severino)"
+  },
+  {
     "frota": "234",
     "os": "113481",
     "data": "30/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar vazamento no sistema de freio localizado na parte inferior da cabine - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5084",
-    "os": "113479",
-    "data": "30/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E furado - (Fazenda São Severino)"
   },
   {
     "frota": "5599",
@@ -22,24 +22,10 @@
   },
   {
     "frota": "234",
-    "os": "113289",
-    "data": "26/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Suporte do amortecedor da porta quebrado - (Fazenda São Severino)"
-  },
-  {
-    "frota": "234",
     "os": "113138",
     "data": "25/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Avaliar sistema de partida: motor gira com lentidão e não dá partida - (Fazenda São Severino)"
-  },
-  {
-    "frota": "229",
-    "os": "113137",
-    "data": "25/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/D furado - (Fazenda São Severino)"
   },
   {
     "frota": "5614",
@@ -47,12 +33,5 @@
     "data": "25/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5614",
-    "os": "112651",
-    "data": "17/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar proteção do carda - Faz São Severino"
   }
 ]

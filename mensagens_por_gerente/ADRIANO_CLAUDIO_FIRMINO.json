@@ -1,30 +1,44 @@
 [
   {
+    "frota": "93",
+    "os": "113618",
+    "data": "01/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Vazamento na bomba de diesel - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "208",
+    "os": "113604",
+    "data": "01/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar engates rápido - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "92",
+    "os": "113587",
+    "data": "01/07/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Montar a podadeira dupla traseira - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "10218",
     "os": "113518",
     "data": "30/06/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Trocar bombinha manual da bomba injetora componente com defeito. - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "27",
-    "os": "113517",
-    "data": "30/06/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "70",
     "os": "113476",
     "data": "30/06/2025",
-    "prestador": "nan",
+    "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Substituir engates rápidos hidráulicos e verificar vazamento no sistema da TDP (tomada de potência) - (Fazenda Nova Manhã)"
   },
   {
     "frota": "147",
     "os": "113474",
     "data": "30/06/2025",
-    "prestador": "nan",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Realizar ajuste e vedação dos vidros devido a folgas, evitando vibrações e risco de trinca ou quebra. - (Fazenda Nova Manhã)"
   },
   {
@@ -33,27 +47,6 @@
     "data": "30/06/2025",
     "prestador": "nan",
     "servico": "Trava do capô quebrada - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5793",
-    "os": "113400",
-    "data": "27/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "130",
-    "os": "113397",
-    "data": "27/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Luzes traseiras de posição não desligam e cibiés traseiros não ascendem - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "208",
-    "os": "113396",
-    "data": "27/06/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Nova  Manhã)"
   },
   {
     "frota": "5191",
@@ -84,39 +77,11 @@
     "servico": "Avaliar trator sem freio - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "106",
-    "os": "113052",
-    "data": "23/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar terminal lado direito e esquerdo (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "5637",
     "os": "113024",
     "data": "23/06/2025",
     "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
     "servico": "Afiar jogo de discos da podadeira (2 serras)."
-  },
-  {
-    "frota": "5005",
-    "os": "112984",
-    "data": "23/06/2025",
-    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Fazer fibra em trinca no tanque - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "94",
-    "os": "112982",
-    "data": "23/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar  painel de instrumentos e buzina não funcionam  - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "95",
-    "os": "113060",
-    "data": "23/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico - Faz Nova Manha"
   },
   {
     "frota": "5191",
@@ -182,18 +147,18 @@
     "servico": "Verificar desgaste no engate do cabeçário danificado."
   },
   {
-    "frota": "5354",
-    "os": "110473",
-    "data": "13/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar proteção dos patins - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "5129",
     "os": "110312",
     "data": "09/05/2025",
     "prestador": "nan",
     "servico": "Vazamento no pistão - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5530",
+    "os": "109775",
+    "data": "01/05/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo."
   },
   {
     "frota": "235",

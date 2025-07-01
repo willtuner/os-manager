@@ -1,61 +1,5 @@
 [
   {
-    "frota": "77",
-    "os": "113504",
-    "data": "30/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator sem partida - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "198",
-    "os": "113431",
-    "data": "27/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar bomba hidráulica (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "5705",
-    "os": "113145",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar a instalação elétrica do farol auxiliar, que não está acionando corretamente - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "5723",
-    "os": "113144",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar a instalação elétrica do farol auxiliar, que não está acionando corretamente - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "112",
-    "os": "113143",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Sirene de ré não funciona - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "10227",
-    "os": "113142",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar falha no farol dianteiro devido a defeito no terminal de conexão elétrica - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "317",
-    "os": "113141",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Faróis auxiliares dianteiros de teto não ascendem - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "5438",
-    "os": "112525",
-    "data": "13/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar cibié - (Fazenda Santa Izabel)"
-  },
-  {
     "frota": "67",
     "os": "112498",
     "data": "10/06/2025",
@@ -70,13 +14,6 @@
     "servico": "Sacar parafusos do motor, recuperar lateral do trator"
   },
   {
-    "frota": "5217",
-    "os": "111383",
-    "data": "27/05/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas, trocar rolamento da roda L/? - (Fazenda Santa Luiza)"
-  },
-  {
     "frota": "67",
     "os": "111293",
     "data": "26/05/2025",
@@ -89,12 +26,5 @@
     "data": "26/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em trinca na estrutura - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "10227",
-    "os": "110308",
-    "data": "12/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar problema na caixa C, que está escapando marcha durante o uso e  ruído identificado na embreagem durante a saída - (Fazenda Santa Luiza)"
   }
 ]

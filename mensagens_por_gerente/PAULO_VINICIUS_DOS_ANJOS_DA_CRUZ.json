@@ -1,10 +1,52 @@
 [
   {
-    "frota": "258",
-    "os": "113525",
-    "data": "30/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento nos tuchos do comando hidráulico - (Fazenda Estrela)"
+    "frota": "149",
+    "os": "113623",
+    "data": "01/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar vazamento de óleo do motor na região próxima à bomba de injeção de diesel, identificando a origem e executando os reparos necessários. - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5367",
+    "os": "113598",
+    "data": "01/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Parafuso de estabilidade da torre do tanque com folga recorrente - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5690",
+    "os": "113563",
+    "data": "01/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Substituir tela da grade de carregar produtos - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5061",
+    "os": "113560",
+    "data": "01/07/2025",
+    "prestador": "DARCI CAPEL & CIA LTDA",
+    "servico": "Fazer preenchimento do alojamento do cubo e eixo da helice da turbina."
+  },
+  {
+    "frota": "1005",
+    "os": "113554",
+    "data": "01/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Faróis dianteiros queimados - (Fazenda Estrela)"
+  },
+  {
+    "frota": "268",
+    "os": "113553",
+    "data": "01/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié traseiro com queima frequente de lâmpadas necessário diagnóstico do circuito elétrico - (Fazenda Estrela)"
+  },
+  {
+    "frota": "221",
+    "os": "113552",
+    "data": "01/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié traseiro com queima frequente de lâmpadas necessário diagnóstico do circuito elétrico - (Fazenda Estrela)"
   },
   {
     "frota": "5671",
@@ -17,7 +59,7 @@
     "frota": "110",
     "os": "113508",
     "data": "30/06/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar falha no marcador de combustível, que não está indicando corretamente o nível no painel. - (Fazenda Estrela)"
   },
   {
@@ -26,13 +68,6 @@
     "data": "30/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Cibiés de teto apresentando queima contínua das lâmpadas  necessário verificar instalação elétrica, tensão e possíveis curtos - (Fazenda Estrela)"
-  },
-  {
-    "frota": "89",
-    "os": "113449",
-    "data": "27/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar ponteira da herbicida lado direito (Fazenda Estrela)"
   },
   {
     "frota": "323",
@@ -56,25 +91,11 @@
     "servico": "Pneu L/D furado - (Fazenda Estrela)"
   },
   {
-    "frota": "268",
-    "os": "112909",
-    "data": "20/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Executar limpeza completa do tanque de combustível, em razão do acúmulo de impurezas detectadas no decantador - (Fazenda Estrela)"
-  },
-  {
     "frota": "5491",
     "os": "112857",
     "data": "19/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar falha no acionamento elétrico dos ramais, sistema não responde ao comando - (Fazenda Estrela)"
-  },
-  {
-    "frota": "221",
-    "os": "112856",
-    "data": "19/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Executar limpeza completa do tanque de combustível, em razão do acúmulo de impurezas detectadas no decantador, a fim de evitar obstruções no sistema de alimentação. - (Fazenda Estrela)"
   },
   {
     "frota": "10223",
