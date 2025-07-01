@@ -1,5 +1,13 @@
 [
   {
+    "frota": "92",
+    "cd_equipamento": "92",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "113587",
+    "data_entrada": "01/07/2025",
+    "servico": "Montar a podadeira dupla traseira - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5559",
     "cd_equipamento": "5559",
     "modelo": "PODADEIRA HIDRAUTEC HLC6",
@@ -40,11 +48,27 @@
     "servico": "Vazamento no radiador de óleo e verificar vazamento no motor hidráulico - (Fazenda Estrela)\nSolicitado Sr. Rafael \nResponsavel Sr. Rafael"
   },
   {
+    "frota": "5405",
+    "cd_equipamento": "5405",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "113626",
+    "data_entrada": "23/06/2025",
+    "servico": "Modificar roçadeira do sistema convencional para ecológica, corrigir folgas no embuchamento das rodas guia traseira, acertar engate do cabeçalho danificado e corrigir trincas na estrutura.\nFazenda Minuano (Oficina MG)\nSolicitado Sr. Antônio\nResponsável Sr. Rafael"
+  },
+  {
     "frota": "5673",
     "cd_equipamento": "5673",
     "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
     "os": "112408",
     "data_entrada": "12/06/2025",
     "servico": "Vazamento no comando da barrinha - (Fazenda NSA)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5530",
+    "cd_equipamento": "5530",
+    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+    "os": "109775",
+    "data_entrada": "01/05/2025",
+    "servico": "Verificar e corrigir vazamento no motor hidráulico na traseira do lado esquerdo.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nLiberado Sr. Maurício"
   }
 ]

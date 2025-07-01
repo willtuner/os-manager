@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113605",
+    "data_entrada": "01/07/2025",
+    "servico": "Trocar jogo de válvulas da bomba - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "113562",
+    "data_entrada": "01/07/2025",
+    "servico": "Substituir arrastador do lado direito e o suporte da roda guia, ambos danificados - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5767",
+    "cd_equipamento": "5767",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "113559",
+    "data_entrada": "01/07/2025",
+    "servico": "Substituir rolamento da entrada da bomba, localizado na região de acoplamento com o eixo cardã, devido a falha (rolamento estourado). - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5486",
+    "cd_equipamento": "5486",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "113549",
+    "data_entrada": "01/07/2025",
+    "servico": "Verificar e substituir retentor da polia da bomba, que apresenta vazamento de óleo - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5014",
     "cd_equipamento": "5014",
     "modelo": "PULVERIZADOR COLUMBIA 2000 LT",

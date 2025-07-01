@@ -1,11 +1,19 @@
 [
   {
-    "frota": "245",
-    "cd_equipamento": "245",
-    "modelo": "TRATOR MASSEY FERGUSON 3307",
-    "os": "113450",
-    "data_entrada": "27/06/2025",
-    "servico": "Trocar braço do hidraulico - Faz Estrela \nAutorizado Arthur"
+    "frota": "70",
+    "cd_equipamento": "70",
+    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+    "os": "113476",
+    "data_entrada": "30/06/2025",
+    "servico": "Substituir engates rápidos hidráulicos e verificar vazamento no sistema da TDP (tomada de potência) - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "109",
+    "cd_equipamento": "109",
+    "modelo": "TRATOR MASSEY FERGUSON 290",
+    "os": "113470",
+    "data_entrada": "30/06/2025",
+    "servico": "Avaliar trator com perda de potência em funcionamento. - (Pecuária)\nSolicitado Sr. Bruno Franco\nResponsavel Sr. Arthur"
   },
   {
     "frota": "142",
@@ -14,14 +22,6 @@
     "os": "113076",
     "data_entrada": "24/06/2025",
     "servico": "Avaliar trator sem freio - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "246",
-    "cd_equipamento": "246",
-    "modelo": "TRATOR MASSEY FERGUSON 3308",
-    "os": "112140",
-    "data_entrada": "06/06/2025",
-    "servico": "Direção dura - (Fazenda SP)\nLiberado Sr. Arthur"
   },
   {
     "frota": "27",
@@ -38,13 +38,5 @@
     "os": "111563",
     "data_entrada": "30/05/2025",
     "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "122",
-    "cd_equipamento": "122",
-    "modelo": "TRATOR MASSEY FERGUSON 4283FK",
-    "os": "109692",
-    "data_entrada": "29/04/2025",
-    "servico": "Vazamento no ladrão da bomba d'água - (Fazenda SL1)\nLiberado Sr. Arthur"
   }
 ]

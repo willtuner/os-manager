@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5774",
+    "cd_equipamento": "5774",
+    "modelo": "VALETADEIRA RTX 250",
+    "os": "113624",
+    "data_entrada": "01/07/2025",
+    "servico": "Substituir elo danificado da corrente, garantindo a integridade e o funcionamento adequado do sistema. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5626",
     "cd_equipamento": "5626",
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
@@ -78,13 +86,5 @@
     "os": "111430",
     "data_entrada": "27/05/2025",
     "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5217",
-    "cd_equipamento": "5217",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "111383",
-    "data_entrada": "27/05/2025",
-    "servico": "Fazer embuchamento do eixo traseiro, soldar suporte da trava e soldar trincas, trocar rolamento da roda L/? - (Fazenda Santa Luiza)\nLiberado Sr. Mauricio"
   }
 ]

@@ -1,26 +1,18 @@
 [
   {
+    "frota": "10218",
+    "cd_equipamento": "10218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113518",
+    "data_entrada": "30/06/2025",
+    "servico": "Trocar bombinha manual da bomba injetora componente com defeito. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "250",
     "cd_equipamento": "250",
     "modelo": "TRATOR JOHN DEERE 5080EN",
     "os": "113426",
     "data_entrada": "27/06/2025",
     "servico": "Vazamento na bomba de diesel (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "28",
-    "cd_equipamento": "28",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "113155",
-    "data_entrada": "25/06/2025",
-    "servico": "Verificar o funcionamento da bomba de combustivel - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112908",
-    "data_entrada": "20/06/2025",
-    "servico": "Remover vazamento na bomba de combustivel - Faz Estrela\nAutorizado Arthur"
   }
 ]
