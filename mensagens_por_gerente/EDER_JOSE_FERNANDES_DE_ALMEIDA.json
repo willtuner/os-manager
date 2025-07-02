@@ -1,6 +1,27 @@
 [
   {
     "frota": "224",
+    "os": "113655",
+    "data": "02/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Faróis dianteiros queimados - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "286",
+    "os": "113654",
+    "data": "02/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Substituir lâmpada queimada do farol de milha traseiro - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "83",
+    "os": "113653",
+    "data": "02/07/2025",
+    "prestador": "nan",
+    "servico": "Cibiés dianteiros e traseiros não acendem necessário diagnóstico elétrico do sistema de iluminação - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "224",
     "os": "113611",
     "data": "01/07/2025",
     "prestador": "nan",

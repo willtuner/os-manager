@@ -1,5 +1,26 @@
 [
   {
+    "frota": "5229",
+    "os": "113679",
+    "data": "02/07/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Verificar barra de corte danificada - (Fazenda NSA)"
+  },
+  {
+    "frota": "5502",
+    "os": "113644",
+    "data": "02/07/2025",
+    "prestador": "nan",
+    "servico": "Troca de terminal danificado - (Fazenda NSA)"
+  },
+  {
+    "frota": "5418",
+    "os": "113643",
+    "data": "02/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Reconstruir a caixa de transporte de produtos fixada na traseira do tanque - (Fazenda NSA)"
+  },
+  {
     "frota": "5778",
     "os": "113581",
     "data": "01/07/2025",
@@ -12,20 +33,6 @@
     "data": "30/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em tanque de diesel furado - (Fazenda NSA)"
-  },
-  {
-    "frota": "5418",
-    "os": "113055",
-    "data": "24/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E estourado - (Fazenda NSA)"
-  },
-  {
-    "frota": "303",
-    "os": "112967",
-    "data": "23/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Luz do óleo acendendo verificar sensor - Faz Aparecida"
   },
   {
     "frota": "5492",
@@ -42,31 +49,10 @@
     "servico": "Realinhar barrinha - (Fazenda NSA)"
   },
   {
-    "frota": "5673",
-    "os": "112408",
-    "data": "12/06/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Vazamento no comando da barrinha - (Fazenda NSA)"
-  },
-  {
-    "frota": "5688",
-    "os": "112407",
-    "data": "12/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Instalar correte de água e caixa misturadora - (Fazenda NSA)"
-  },
-  {
     "frota": "5058",
     "os": "112282",
     "data": "10/06/2025",
     "prestador": "nan",
     "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
-  },
-  {
-    "frota": "5598",
-    "os": "111572",
-    "data": "30/05/2025",
-    "prestador": "nan",
-    "servico": "Vazamento no pistão de acionamento dos bicos - (Fazenda NSA)"
   }
 ]
