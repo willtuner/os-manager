@@ -1,11 +1,27 @@
 [
   {
-    "frota": "93",
-    "cd_equipamento": "93",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "113618",
-    "data_entrada": "01/07/2025",
-    "servico": "Vazamento na bomba de diesel - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+    "frota": "82",
+    "cd_equipamento": "82",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113661",
+    "data_entrada": "02/07/2025",
+    "servico": "Avaliar funcionamento da embreagem, embreagem da TDP e embreagem de pé - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "113660",
+    "data_entrada": "02/07/2025",
+    "servico": "Avaliar trator com funcionamento parcial da embreagem e dos freios, que não estão operando com 100% de eficiência - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "113641",
+    "data_entrada": "02/07/2025",
+    "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "192",

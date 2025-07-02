@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5748",
+    "cd_equipamento": "5748",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "113675",
+    "data_entrada": "02/07/2025",
+    "servico": "Fazer solda em chapa de fixação das barra de proteção dos bicos - (Fazenda Estrela)\nSolicitado Sr. Paulo  Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "113657",
+    "data_entrada": "02/07/2025",
+    "servico": "Executar serviço de solda na base das hastes do alma, devido a quebra estrutural. Segundo relato do gerente, a avaria foi causada pela queda de um poste sobre a máquina. - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Maurício"
+  },
+  {
+    "frota": "5121",
+    "cd_equipamento": "5121",
+    "modelo": "PODADEIRA DUPLA LATERAL IFLO",
+    "os": "113648",
+    "data_entrada": "02/07/2025",
+    "servico": "Executar solda no suporte da lança, devido a trinca ou ruptura na estrutura - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "113643",
+    "data_entrada": "02/07/2025",
+    "servico": "Reconstruir a caixa de transporte de produtos fixada na traseira do tanque - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5367",
     "cd_equipamento": "5367",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",

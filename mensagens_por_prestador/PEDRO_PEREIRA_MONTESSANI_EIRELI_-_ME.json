@@ -1,5 +1,37 @@
 [
   {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113655",
+    "data_entrada": "02/07/2025",
+    "servico": "Faróis dianteiros queimados - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113654",
+    "data_entrada": "02/07/2025",
+    "servico": "Substituir lâmpada queimada do farol de milha traseiro - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "189",
+    "cd_equipamento": "189",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "113639",
+    "data_entrada": "02/07/2025",
+    "servico": "Verificar trator sem partida e revisar sinalização - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "302",
+    "cd_equipamento": "302",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113629",
+    "data_entrada": "02/07/2025",
+    "servico": "Instalar cibié no teto do trator para compensar a limitação da iluminação dos faróis dianteiros, causada pela instalação do equipamento espalhador de boro. - (Fazenda  Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Artthur"
+  },
+  {
     "frota": "1005",
     "cd_equipamento": "1005",
     "modelo": "CAMINHAO MERCEDES B. AXOR 2831",
@@ -48,14 +80,6 @@
     "servico": "Verificar falha no marcador de combustível, que não está indicando corretamente o nível no painel. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113501",
-    "data_entrada": "30/06/2025",
-    "servico": "Avaliar trator sem partida - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "118",
     "cd_equipamento": "118",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
@@ -78,22 +102,6 @@
     "os": "113491",
     "data_entrada": "30/06/2025",
     "servico": "Cibié traseiro queimado - (Fazenda Alvorada)\nResponsável Sr. Arthur\nSolicitado Sr. Natalino"
-  },
-  {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "113487",
-    "data_entrada": "30/06/2025",
-    "servico": "Verificar faróis queimados - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "221",
-    "cd_equipamento": "221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113468",
-    "data_entrada": "30/06/2025",
-    "servico": "Cibiés de teto apresentando queima contínua das lâmpadas  necessário verificar instalação elétrica, tensão e possíveis curtos - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
   },
   {
     "frota": "138",
@@ -126,14 +134,6 @@
     "os": "113392",
     "data_entrada": "27/06/2025",
     "servico": "Trocar correia do alternador - Faz Casa Branca\nAutorizado Arthur"
-  },
-  {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113355",
-    "data_entrada": "26/06/2025",
-    "servico": "Trator sem iluminação nenhuma - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
   },
   {
     "frota": "68",
@@ -176,44 +176,12 @@
     "servico": "Verificar solenoide - Faz São Paulo\nAutorizado Arthur"
   },
   {
-    "frota": "5674",
-    "cd_equipamento": "5674",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "113158",
-    "data_entrada": "25/06/2025",
-    "servico": "Botão de acionamento enroscando - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "234",
     "cd_equipamento": "234",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
     "os": "113138",
     "data_entrada": "25/06/2025",
     "servico": "Avaliar sistema de partida: motor gira com lentidão e não dá partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "222",
-    "cd_equipamento": "222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113123",
-    "data_entrada": "24/06/2025",
-    "servico": "Avaliar falha no sistema de limpeza do para-brisa: limpador e bomba de limpador não estão funcionando - (Fazenda Estrela)\nSolicitado Sr. Carlos (COMBOIO)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "258",
-    "cd_equipamento": "258",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113119",
-    "data_entrada": "24/06/2025",
-    "servico": "Verificar bomba do limpador do para-brisa (responsável por lançar água no vidro), que está inoperante.(Faz. Estrela)\nSolicitado Sr. Carlos (COMBOIO)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "288",
-    "cd_equipamento": "288",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113118",
-    "data_entrada": "24/06/2025",
-    "servico": "Verificar bomba do limpador do para-brisa (responsável por lançar água no vidro), que está inoperante.(Faz. Estrela)\nSolicitado Sr. Carlos (COMBOIO)\nLiberado Sr. Arthur"
   },
   {
     "frota": "5482",
@@ -254,14 +222,6 @@
     "os": "112976",
     "data_entrada": "23/06/2025",
     "servico": "Trocar seta dianteira quebrada - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "303",
-    "cd_equipamento": "303",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112967",
-    "data_entrada": "23/06/2025",
-    "servico": "Luz do óleo acendendo verificar sensor - Faz Aparecida\nAutorizado Arthur"
   },
   {
     "frota": "102",

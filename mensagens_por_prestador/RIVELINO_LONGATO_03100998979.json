@@ -1,5 +1,37 @@
 [
   {
+    "frota": "81",
+    "cd_equipamento": "81",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113677",
+    "data_entrada": "02/07/2025",
+    "servico": "Pneu L/E dianteiro furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5347",
+    "cd_equipamento": "5347",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "113652",
+    "data_entrada": "02/07/2025",
+    "servico": "Pneu L/E furado traseiro - (Fazenda SP)\nSolicitado Sr. Giovane \nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5523",
+    "cd_equipamento": "5523",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "113638",
+    "data_entrada": "02/07/2025",
+    "servico": "Pneu L/E furado - (Fazenda Estrela)\nResponsavel Sr. Mauricio \nSolicitado Sr. Paulo Vinícius"
+  },
+  {
+    "frota": "10216",
+    "cd_equipamento": "10216",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113637",
+    "data_entrada": "02/07/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5014",
     "cd_equipamento": "5014",
     "modelo": "PULVERIZADOR COLUMBIA 2000 LT",
@@ -22,22 +54,6 @@
     "os": "113580",
     "data_entrada": "01/07/2025",
     "servico": "Pneu dianteiro L/E furado - (Fazenda Santa Luiza)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "86",
-    "cd_equipamento": "86",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113566",
-    "data_entrada": "01/07/2025",
-    "servico": "Consertar pneu traseiro esquerdo furado.\nFazenda Casa Branca\nSolicitado Sr. João\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "265",
-    "cd_equipamento": "265",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113551",
-    "data_entrada": "01/07/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. João \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5571",
@@ -94,14 +110,6 @@
     "os": "113140",
     "data_entrada": "25/06/2025",
     "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5418",
-    "cd_equipamento": "5418",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "113055",
-    "data_entrada": "24/06/2025",
-    "servico": "Pneu L/E estourado - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "44",

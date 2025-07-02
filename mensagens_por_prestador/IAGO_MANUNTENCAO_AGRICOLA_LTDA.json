@@ -1,13 +1,5 @@
 [
   {
-    "frota": "5365",
-    "cd_equipamento": "5365",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "113605",
-    "data_entrada": "01/07/2025",
-    "servico": "Trocar jogo de válvulas da bomba - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5106",
     "cd_equipamento": "5106",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -78,21 +70,5 @@
     "os": "112591",
     "data_entrada": "16/06/2025",
     "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5688",
-    "cd_equipamento": "5688",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "112407",
-    "data_entrada": "12/06/2025",
-    "servico": "Instalar correte de água e caixa misturadora - (Fazenda NSA)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5061",
-    "cd_equipamento": "5061",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112259",
-    "data_entrada": "10/06/2025",
-    "servico": "Verificar torre 'bamba'  - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   }
 ]
