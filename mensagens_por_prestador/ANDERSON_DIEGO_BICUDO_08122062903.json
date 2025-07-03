@@ -1,21 +1,5 @@
 [
   {
-    "frota": "82",
-    "cd_equipamento": "82",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113661",
-    "data_entrada": "02/07/2025",
-    "servico": "Avaliar funcionamento da embreagem, embreagem da TDP e embreagem de pé - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "100",
-    "cd_equipamento": "100",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "113660",
-    "data_entrada": "02/07/2025",
-    "servico": "Avaliar trator com funcionamento parcial da embreagem e dos freios, que não estão operando com 100% de eficiência - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "227",
     "cd_equipamento": "227",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -30,30 +14,6 @@
     "os": "113610",
     "data_entrada": "01/07/2025",
     "servico": "Trocar cano do freio - Faz Terra Branca\nAutorizado Arthur"
-  },
-  {
-    "frota": "208",
-    "cd_equipamento": "208",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113604",
-    "data_entrada": "01/07/2025",
-    "servico": "Trocar engates rápido - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "113505",
-    "data_entrada": "30/06/2025",
-    "servico": "Avaliar trator perdendo força - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Arthur\nP.S Troca de 400 hrs vencida, possível causa da perca de potencia por filtros obnstruidos"
-  },
-  {
-    "frota": "234",
-    "cd_equipamento": "234",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "113481",
-    "data_entrada": "30/06/2025",
-    "servico": "Verificar vazamento no sistema de freio localizado na parte inferior da cabine - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "10120",
@@ -120,28 +80,20 @@
     "servico": "Quebra do eixo da TDP - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112954",
+    "data_entrada": "21/06/2025",
+    "servico": "Verificar barulho a normal na TDP - Faz São Severino\nAutorizado Arthur"
+  },
+  {
     "frota": "253",
     "cd_equipamento": "253",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "112873",
     "data_entrada": "19/06/2025",
     "servico": "Verificar vazamento de óleo no bloco do motor, identificando possível trinca ou falha na vedação - (Fazenda Minuano)\nSolicitado Sr. Antônio  Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10223",
-    "cd_equipamento": "10223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112579",
-    "data_entrada": "16/06/2025",
-    "servico": "Verificar ruído no conjunto da embreagem - (Fazenda Estrela)\nLiberado Sr. Arthur\nSolicitado Sr. Danilo"
-  },
-  {
-    "frota": "10223",
-    "cd_equipamento": "10223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112426",
-    "data_entrada": "12/06/2025",
-    "servico": "Identificado vazamento de óleo na junta do bloco do motor - (Fazenda Estrela)\nLiberado Sr. Arthur"
   },
   {
     "frota": "264",

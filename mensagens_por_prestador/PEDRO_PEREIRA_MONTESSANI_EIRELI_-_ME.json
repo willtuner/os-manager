@@ -1,5 +1,69 @@
 [
   {
+    "frota": "86",
+    "cd_equipamento": "86",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113743",
+    "data_entrada": "03/07/2025",
+    "servico": "Verificar sensor de restrição não funciona - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5671",
+    "cd_equipamento": "5671",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "113729",
+    "data_entrada": "03/07/2025",
+    "servico": "Botão de acionamento da barra está enroscando, dificultando o acionamento - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "149",
+    "cd_equipamento": "149",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "113709",
+    "data_entrada": "03/07/2025",
+    "servico": "Cibiés traseiros queimados - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10223",
+    "cd_equipamento": "10223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113699",
+    "data_entrada": "03/07/2025",
+    "servico": "Normalizar a instalação pra devolução - Oficina\nAutorizado Arthur"
+  },
+  {
+    "frota": "288",
+    "cd_equipamento": "288",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113698",
+    "data_entrada": "03/07/2025",
+    "servico": "Verificar queima frequente das lâmpadas dos faróis de serviço dianteiros. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "263",
+    "cd_equipamento": "263",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113697",
+    "data_entrada": "03/07/2025",
+    "servico": "Verificar alternador e sistema elétrico, trator sem partida.- (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "318",
+    "cd_equipamento": "318",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "113696",
+    "data_entrada": "03/07/2025",
+    "servico": "Verificar falha no funcionamento da buzina - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5609",
+    "cd_equipamento": "5609",
+    "modelo": "PULVERIZADOR PPEC 600LT CJP75",
+    "os": "113695",
+    "data_entrada": "03/07/2025",
+    "servico": "Verificar sistema do drash, não está enviando carga para a válvula solenoide. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "224",
     "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",

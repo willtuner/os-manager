@@ -1,5 +1,21 @@
 [
   {
+    "frota": "89",
+    "cd_equipamento": "89",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113693",
+    "data_entrada": "03/07/2025",
+    "servico": "Pneu dianteiro  L/E furado - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5155",
+    "cd_equipamento": "5155",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "113684",
+    "data_entrada": "03/07/2025",
+    "servico": "Pneu L/D estourado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "81",
     "cd_equipamento": "81",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -72,14 +88,6 @@
     "servico": "Consertar pneu dianteiro esquerdo danificado.\nFazenda Renascer\nSolicitado Sr. Antônio\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5155",
-    "cd_equipamento": "5155",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113458",
-    "data_entrada": "28/06/2025",
-    "servico": "Pneu furado direito - Faz Alvorada\nAutorizado Mauricio"
-  },
-  {
     "frota": "65",
     "cd_equipamento": "65",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -118,14 +126,6 @@
     "os": "112972",
     "data_entrada": "23/06/2025",
     "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "259",
-    "cd_equipamento": "259",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112853",
-    "data_entrada": "19/06/2025",
-    "servico": "Desmontar e montar os dois pneus traseiros para realizar serviço de solda na \"castanha\" de fixação do aro no centro da roda.\nFazenda Aparecida\nSolicitado Sr. Rafael\nResponsável Sr. Maurício"
   },
   {
     "frota": "5715",
