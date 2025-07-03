@@ -1,5 +1,26 @@
 [
   {
+    "frota": "5214",
+    "os": "113712",
+    "data": "03/07/2025",
+    "prestador": "nan",
+    "servico": "Revisar motor hidráulico da esteira, que não está acionando o sistema. - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5494",
+    "os": "113710",
+    "data": "03/07/2025",
+    "prestador": "nan",
+    "servico": "Substituir rolamento do eixo do multiplicador, devido a desgaste - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5044",
+    "os": "113690",
+    "data": "03/07/2025",
+    "prestador": "nan",
+    "servico": "Substituir eixo da cabeça do guincho, devido a desgaste ou quebra, garantindo o pleno funcionamento do sistema de elevação. - (Fazenda Estrela)"
+  },
+  {
     "frota": "5121",
     "os": "113651",
     "data": "02/07/2025",
@@ -49,13 +70,6 @@
     "servico": "Substituir esteira - (Fazenda Estrela)"
   },
   {
-    "frota": "46",
-    "os": "113505",
-    "data": "30/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar trator perdendo força - (Fazenda Estrela)"
-  },
-  {
     "frota": "5121",
     "os": "113492",
     "data": "30/06/2025",
@@ -89,13 +103,6 @@
     "data": "16/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)"
-  },
-  {
-    "frota": "10223",
-    "os": "112579",
-    "data": "16/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar ruído no conjunto da embreagem - (Fazenda Estrela)"
   },
   {
     "frota": "329",
