@@ -1,5 +1,12 @@
 [
   {
+    "frota": "268",
+    "os": "113769",
+    "data": "04/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Radiador furado - (Fazenda Estrela)"
+  },
+  {
     "frota": "5671",
     "os": "113729",
     "data": "03/07/2025",
@@ -52,7 +59,7 @@
     "frota": "149",
     "os": "113623",
     "data": "01/07/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Verificar vazamento de óleo do motor na região próxima à bomba de injeção de diesel, identificando a origem e executando os reparos necessários. - (Fazenda Estrela)"
   },
   {
@@ -124,13 +131,6 @@
     "data": "27/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "soldar gonzo na grade proteção - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5523",
-    "os": "113254",
-    "data": "26/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda Estrela)"
   },
   {
     "frota": "5491",

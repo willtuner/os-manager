@@ -3,21 +3,21 @@
     "frota": "5214",
     "os": "113712",
     "data": "03/07/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Revisar motor hidráulico da esteira, que não está acionando o sistema. - (Fazenda Estrela)"
   },
   {
     "frota": "5494",
     "os": "113710",
     "data": "03/07/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Substituir rolamento do eixo do multiplicador, devido a desgaste - (Fazenda Estrela)"
   },
   {
     "frota": "5044",
     "os": "113690",
     "data": "03/07/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Substituir eixo da cabeça do guincho, devido a desgaste ou quebra, garantindo o pleno funcionamento do sistema de elevação. - (Fazenda Estrela)"
   },
   {
@@ -124,5 +124,12 @@
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
     "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5494",
+    "os": "110534",
+    "data": "16/05/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituir corrente das engrenagens do sistema de transmissão e trocar rolamento L/D  - (Fazenda Estrela)"
   }
 ]

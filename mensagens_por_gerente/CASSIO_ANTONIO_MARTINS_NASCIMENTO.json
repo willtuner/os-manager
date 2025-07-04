@@ -1,6 +1,41 @@
 [
   {
     "frota": "318",
+    "os": "113781",
+    "data": "04/07/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Revisão de 1200 hrs - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5599",
+    "os": "113758",
+    "data": "04/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar gerador sem partida - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5048",
+    "os": "113757",
+    "data": "04/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trinca no suporte das correias - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5677",
+    "os": "113750",
+    "data": "04/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Consertar pneu furado (câmara de ar danificada)."
+  },
+  {
+    "frota": "75",
+    "os": "113749",
+    "data": "04/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Trocar pneu dianteiro esquerdo danificado."
+  },
+  {
+    "frota": "318",
     "os": "113696",
     "data": "03/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
@@ -10,7 +45,7 @@
     "frota": "5521",
     "os": "113678",
     "data": "02/07/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em trinca no chassi - (Fazenda São Severino)"
   },
   {
@@ -19,6 +54,13 @@
     "data": "02/07/2025",
     "prestador": "nan",
     "servico": "Trocar cabo de acionamento do SPE - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5599",
+    "os": "113776",
+    "data": "02/07/2025",
+    "prestador": "AGROMAQ PECAS E SERVICOS LTDA",
+    "servico": "Verificar motor estacionário travando, pesando a partida e ruim para pegar."
   },
   {
     "frota": "227",
