@@ -1,5 +1,21 @@
 [
   {
+    "frota": "10227",
+    "cd_equipamento": "10227",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113774",
+    "data_entrada": "04/07/2025",
+    "servico": "Trator não dá partida. Motor de arranque apresentou fumaça na primeira tentativa e deixou de funcionar - (Fazenda Santa Luiza)\nSolicitado Sr. John\nArthur/Wilson - (Arthur está em treinamento)"
+  },
+  {
+    "frota": "5599",
+    "cd_equipamento": "5599",
+    "modelo": "PREMIX PRIME 2T 2000",
+    "os": "113758",
+    "data_entrada": "04/07/2025",
+    "servico": "Verificar gerador sem partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "86",
     "cd_equipamento": "86",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",

@@ -1,5 +1,45 @@
 [
   {
+    "frota": "209",
+    "cd_equipamento": "209",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113775",
+    "data_entrada": "04/07/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "193",
+    "cd_equipamento": "193",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "113754",
+    "data_entrada": "04/07/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Estrela)\nSolicitado Sr. Izaias \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "113752",
+    "data_entrada": "04/07/2025",
+    "servico": "Pneu L/D furado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5677",
+    "cd_equipamento": "5677",
+    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
+    "os": "113750",
+    "data_entrada": "04/07/2025",
+    "servico": "Consertar pneu furado (câmara de ar danificada).\nFazenda Severino \nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "75",
+    "cd_equipamento": "75",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113749",
+    "data_entrada": "04/07/2025",
+    "servico": "Trocar pneu dianteiro esquerdo danificado.\nFazenda Severino\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "89",
     "cd_equipamento": "89",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -78,54 +118,6 @@
     "os": "113495",
     "data_entrada": "30/06/2025",
     "servico": "Pneu L/D furado - (Fazenda Santa Luiza)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5006",
-    "cd_equipamento": "5006",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "113465",
-    "data_entrada": "30/06/2025",
-    "servico": "Consertar pneu dianteiro esquerdo danificado.\nFazenda Renascer\nSolicitado Sr. Antônio\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "65",
-    "cd_equipamento": "65",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113409",
-    "data_entrada": "27/06/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5523",
-    "cd_equipamento": "5523",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "113254",
-    "data_entrada": "26/06/2025",
-    "servico": "Pneu L/D furado - (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "220",
-    "cd_equipamento": "220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113245",
-    "data_entrada": "26/06/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "159",
-    "cd_equipamento": "159",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "113140",
-    "data_entrada": "25/06/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "44",
-    "cd_equipamento": "44",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "112972",
-    "data_entrada": "23/06/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsável Sr. Mauricio"
   },
   {
     "frota": "5715",

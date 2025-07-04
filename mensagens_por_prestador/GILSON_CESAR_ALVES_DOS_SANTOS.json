@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5014",
+    "cd_equipamento": "5014",
+    "modelo": "PULVERIZADOR COLUMBIA 2000 LT",
+    "os": "113751",
+    "data_entrada": "04/07/2025",
+    "servico": "Fazer solda em trinca no chassi - (Fazenda NSA)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5676",
     "cd_equipamento": "5676",
     "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
@@ -22,13 +30,5 @@
     "os": "113567",
     "data_entrada": "01/07/2025",
     "servico": "Trocar reparo da bica - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5088",
-    "cd_equipamento": "5088",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "112657",
-    "data_entrada": "17/06/2025",
-    "servico": "Recuperar proteção dos bicos SPE - Faz Alvorada\nAutorizado Mauricio"
   }
 ]

@@ -1,5 +1,45 @@
 [
   {
+    "frota": "304",
+    "cd_equipamento": "304",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113795",
+    "data_entrada": "04/07/2025",
+    "servico": "Trocar alavanca seletora de marcha - Faz Alvorada\nAutorizado Arthur"
+  },
+  {
+    "frota": "192",
+    "cd_equipamento": "192",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "113792",
+    "data_entrada": "04/07/2025",
+    "servico": "Verificar trator com sistema hidráulico lento, demora para responder aos comandos.\nFazenda Estrela\nSolicitado Sr. Izaias\nLiberado Sr. Maurício / Arthur"
+  },
+  {
+    "frota": "268",
+    "cd_equipamento": "268",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113769",
+    "data_entrada": "04/07/2025",
+    "servico": "Radiador furado - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsável Sr. Arthur/Wilson - (Arthur está em treinamento)"
+  },
+  {
+    "frota": "44",
+    "cd_equipamento": "44",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "113756",
+    "data_entrada": "04/07/2025",
+    "servico": "Fazer troca de óleo de 400 hrs - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Wilson"
+  },
+  {
+    "frota": "155",
+    "cd_equipamento": "155",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "113746",
+    "data_entrada": "03/07/2025",
+    "servico": "Verificar trator com a temperatura elevada - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "227",
     "cd_equipamento": "227",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",

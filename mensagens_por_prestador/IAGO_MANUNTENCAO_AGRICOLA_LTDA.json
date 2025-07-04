@@ -1,11 +1,59 @@
 [
   {
+    "frota": "5336",
+    "cd_equipamento": "5336",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "113786",
+    "data_entrada": "04/07/2025",
+    "servico": "Quebra do cardam - (Fazenda Estrela)\nSolicitado Sr. Nelson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5398",
+    "cd_equipamento": "5398",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113745",
+    "data_entrada": "03/07/2025",
+    "servico": "Trocar reparos da bomba - (Fazenda Terra Branca)\nSolicitado Sr. Eder \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "113712",
+    "data_entrada": "03/07/2025",
+    "servico": "Revisar motor hidráulico da esteira, que não está acionando o sistema. - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "113710",
+    "data_entrada": "03/07/2025",
+    "servico": "Substituir rolamento do eixo do multiplicador, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5355",
+    "cd_equipamento": "5355",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "113707",
+    "data_entrada": "03/07/2025",
+    "servico": "Verificar vazamento de óleo na bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5657",
     "cd_equipamento": "5657",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "113705",
     "data_entrada": "03/07/2025",
     "servico": "Efetuar troca da correia da turbina - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "113632",
+    "data_entrada": "02/07/2025",
+    "servico": "Verificar vazamento de óleo na bomba -  (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio \nP.S  Feito manutenção recente. Na OS 112642 Hiago Manutenções"
   },
   {
     "frota": "5106",
@@ -78,5 +126,21 @@
     "os": "112591",
     "data_entrada": "16/06/2025",
     "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5722",
+    "cd_equipamento": "5722",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "111147",
+    "data_entrada": "24/05/2025",
+    "servico": "Verificar bomba com vazamento e ruído anormal, troca do retentor do pistão, troca de óleo da bomba. - (Fazenda São Paulo)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "110534",
+    "data_entrada": "16/05/2025",
+    "servico": "Substituir corrente das engrenagens do sistema de transmissão e trocar rolamento L/D  - (Fazenda Estrela)\nLiberado Sr. Mauricio"
   }
 ]
