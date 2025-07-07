@@ -7,13 +7,6 @@
     "servico": "Instalar dranch - Oficina"
   },
   {
-    "frota": "5442",
-    "os": "113464",
-    "data": "30/06/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Instalação da podadeira no trator 165 - Oficina"
-  },
-  {
     "frota": "5798",
     "os": "113206",
     "data": "25/06/2025",
@@ -33,6 +26,34 @@
     "data": "24/06/2025",
     "prestador": "nan",
     "servico": "Instalar roçadeira frontal  (Fazenda Alvorada) - (Oficina)"
+  },
+  {
+    "frota": "233",
+    "os": "113238",
+    "data": "23/06/2025",
+    "prestador": "ZAVAN MOTOS LTDA",
+    "servico": "Transportar Trator da Fazenda Severino para a Oficina Agrícola."
+  },
+  {
+    "frota": "165",
+    "os": "113237",
+    "data": "23/06/2025",
+    "prestador": "ZAVAN MOTOS LTDA",
+    "servico": "Transportar Trator da Oficina Agrícola para a Fazenda Terra Branca."
+  },
+  {
+    "frota": "165",
+    "os": "113347",
+    "data": "21/06/2025",
+    "prestador": "ZAVAN MOTOS LTDA",
+    "servico": "Transportar Trator da MG Vedações para a Oficina Agrícola (Viveiro)."
+  },
+  {
+    "frota": "5067",
+    "os": "112757",
+    "data": "18/06/2025",
+    "prestador": "ZAVAN MOTOS LTDA",
+    "servico": "Serviço de transporte do equipamento da MG Vedações (Sumaré) para a Oficina Agrícola (Viveiro)."
   },
   {
     "frota": "5672",

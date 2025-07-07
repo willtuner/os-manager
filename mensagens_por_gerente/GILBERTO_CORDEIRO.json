@@ -21,11 +21,32 @@
     "servico": "Trocar Rolamento do eixo da parte da frente e conserto da fibra - (Fazenda São José)"
   },
   {
+    "frota": "262",
+    "os": "113386",
+    "data": "20/06/2025",
+    "prestador": "SOARES DE MELO E CIA LTDA",
+    "servico": "Para instalação dos Paralamas (Fazenda São José|)"
+  },
+  {
+    "frota": "5055",
+    "os": "113385",
+    "data": "20/06/2025",
+    "prestador": "SOARES DE MELO E CIA LTDA",
+    "servico": "Correias  para Trincha (Fazenda São José)"
+  },
+  {
     "frota": "5267",
     "os": "112934",
     "data": "20/06/2025",
     "prestador": "BMC MANUTENCAO AGRICOLA LTDA.",
     "servico": "Prensa de mangueira hidráulica e niple do agitador (Fazenda São José)"
+  },
+  {
+    "frota": "5624",
+    "os": "113384",
+    "data": "20/06/2025",
+    "prestador": "SOARES DE MELO E CIA LTDA",
+    "servico": "Parafusos e porcas para adubadeira (Fazenda São José)"
   },
   {
     "frota": "5364",
@@ -35,11 +56,11 @@
     "servico": "Fazer embuchamento do suporte da concha (Fazenda São José)"
   },
   {
-    "frota": "5667",
-    "os": "113387",
-    "data": "18/06/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Montar cardan (Fazenda São José)"
+    "frota": "5212",
+    "os": "113383",
+    "data": "20/06/2025",
+    "prestador": "SOARES DE MELO E CIA LTDA",
+    "servico": "Registro para tanque (Fazenda São José)"
   },
   {
     "frota": "262",
@@ -47,33 +68,5 @@
     "data": "17/06/2025",
     "prestador": "CARLOS HENRIQUE DE OLIVEIRA 09476981911",
     "servico": "Troca da embreagem (Fazenda São José)"
-  },
-  {
-    "frota": "5055",
-    "os": "111998",
-    "data": "04/06/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Solda na estrutura e troca de correias - (Fazenda São Jose)"
-  },
-  {
-    "frota": "5601",
-    "os": "111930",
-    "data": "02/06/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Trocar rolamento traseiro do eixo - (Fazenda São José)"
-  },
-  {
-    "frota": "5805",
-    "os": "113782",
-    "data": "01/06/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "- Consertar pé da frente e parafusos."
-  },
-  {
-    "frota": "210",
-    "os": "111311",
-    "data": "26/05/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Trocar parafuso do U da conha (Fazenda São José)"
   }
 ]

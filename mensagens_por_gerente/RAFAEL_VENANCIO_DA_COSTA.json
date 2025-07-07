@@ -1,5 +1,12 @@
 [
   {
+    "frota": "145",
+    "os": "113853",
+    "data": "07/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Avaliar  sistema elétrico do abastecimento (pontos positivos e negativos)."
+  },
+  {
     "frota": "5413",
     "os": "113564",
     "data": "01/07/2025",
@@ -40,12 +47,5 @@
     "data": "21/04/2025",
     "prestador": "nan",
     "servico": "Troca de pinos e buchas da balança, terminais e revisão dos cubos dianteiros."
-  },
-  {
-    "frota": "5345",
-    "os": "107723",
-    "data": "25/03/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "- Revisão geral."
   }
 ]

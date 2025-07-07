@@ -1,5 +1,12 @@
 [
   {
+    "frota": "5345",
+    "os": "113870",
+    "data": "07/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda na abraçadeira de fixação do corote de água - (Fazenda São Paulo)"
+  },
+  {
     "frota": "5604",
     "os": "113713",
     "data": "03/07/2025",
@@ -70,6 +77,27 @@
     "servico": "Afiar jogo de 2 discos da podadeira - (Fazenda Pedra Verde)"
   },
   {
+    "frota": "194",
+    "os": "112544",
+    "data": "13/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar trator sem freio"
+  },
+  {
+    "frota": "5436",
+    "os": "112122",
+    "data": "30/05/2025",
+    "prestador": "MORENA - MAQUINAS E FERRAGENS",
+    "servico": "Peças para manutenção interna -"
+  },
+  {
+    "frota": "5622",
+    "os": "112121",
+    "data": "30/05/2025",
+    "prestador": "MORENA - MAQUINAS E FERRAGENS",
+    "servico": "Peça para manutenção interna"
+  },
+  {
     "frota": "245",
     "os": "111563",
     "data": "30/05/2025",
@@ -82,12 +110,5 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção das polias."
-  },
-  {
-    "frota": "5621",
-    "os": "111835",
-    "data": "19/05/2025",
-    "prestador": "nan",
-    "servico": "nan"
   }
 ]

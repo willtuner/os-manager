@@ -28,13 +28,6 @@
     "servico": "Realizar revisão completa no equipamento, devido à quebra de mancais e discos. - (Fazenda Bela Manhã)"
   },
   {
-    "frota": "5014",
-    "os": "113540",
-    "data": "30/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Cabo de acionamento do comando não funciona - (Fazenda NSA)"
-  },
-  {
     "frota": "5110",
     "os": "113018",
     "data": "23/06/2025",
@@ -70,17 +63,17 @@
     "servico": "Verificar rodas com \"jogo\" - (Fazenda Estrela VI)"
   },
   {
+    "frota": "5014",
+    "os": "112043",
+    "data": "04/06/2025",
+    "prestador": "nan",
+    "servico": "Instalar mangueira de distribuição de produto e do misturador, reconectar cabos da bateira - (Oficina)"
+  },
+  {
     "frota": "266",
     "os": "112033",
     "data": "04/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)"
-  },
-  {
-    "frota": "5105",
-    "os": "111457",
-    "data": "03/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar trava eixo da grade"
   }
 ]

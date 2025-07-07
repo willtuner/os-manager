@@ -1,24 +1,31 @@
 [
   {
+    "frota": "5612",
+    "os": "113855",
+    "data": "07/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar correias e avaliar rolamento da turbina roncando - (Fazenda São Severino)"
+  },
+  {
+    "frota": "234",
+    "os": "113846",
+    "data": "07/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliação e identificação de possível vazamento de água na parte frontal do trator - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5660",
+    "os": "113842",
+    "data": "07/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar correias do agitador de calda - (Fazenda São Severino)"
+  },
+  {
     "frota": "318",
     "os": "113781",
     "data": "04/07/2025",
     "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Revisão de 1200 hrs - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5599",
-    "os": "113758",
-    "data": "04/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar gerador sem partida - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5048",
-    "os": "113757",
-    "data": "04/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca no suporte das correias - (Fazenda São Severino)"
   },
   {
     "frota": "5677",
@@ -28,32 +35,11 @@
     "servico": "Consertar pneu furado (câmara de ar danificada)."
   },
   {
-    "frota": "75",
-    "os": "113749",
-    "data": "04/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Trocar pneu dianteiro esquerdo danificado."
-  },
-  {
     "frota": "318",
     "os": "113696",
     "data": "03/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar falha no funcionamento da buzina - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5521",
-    "os": "113678",
-    "data": "02/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca no chassi - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5612",
-    "os": "113642",
-    "data": "02/07/2025",
-    "prestador": "nan",
-    "servico": "Trocar cabo de acionamento do SPE - (Fazenda São Severino)"
   },
   {
     "frota": "5599",
@@ -77,31 +63,10 @@
     "servico": "Verificar motor elétrico que gira, mas não realiza a partida efetiva. - (Fazenda São Severino)"
   },
   {
-    "frota": "5599",
-    "os": "113332",
-    "data": "26/06/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Verificada quebra do suporte (corrimão) que sustenta o gerador; necessário confeccionar novo suporte metálico. Identificado também início de trinca no lado oposto, exigindo reforço ou substituição preventiva do corrimão para garantir a estabilidade da estrutura. - (Fazenda São Severino)"
-  },
-  {
-    "frota": "234",
-    "os": "113138",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar sistema de partida: motor gira com lentidão e não dá partida - (Fazenda São Severino)"
-  },
-  {
     "frota": "5614",
     "os": "113135",
     "data": "25/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)"
-  },
-  {
-    "frota": "233",
-    "os": "112954",
-    "data": "21/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar barulho a normal na TDP - Faz São Severino"
   }
 ]
