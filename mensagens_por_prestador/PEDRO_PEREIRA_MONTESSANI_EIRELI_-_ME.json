@@ -1,19 +1,67 @@
 [
   {
+    "frota": "133",
+    "cd_equipamento": "133",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "113869",
+    "data_entrada": "07/07/2025",
+    "servico": "Verificar trator sem partida - (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "145",
+    "cd_equipamento": "145",
+    "modelo": "PA CARREGADEIRA 924K",
+    "os": "113853",
+    "data_entrada": "07/07/2025",
+    "servico": "Avaliar  sistema elétrico do abastecimento (pontos positivos e negativos).\nAjustar ponto de entalhado do limpador de para-brisa. - (Oficina)\nSolicitado Sr. Rafael \nResponsavel Sr. Rafael"
+  },
+  {
+    "frota": "63",
+    "cd_equipamento": "63",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "113852",
+    "data_entrada": "07/07/2025",
+    "servico": "Verificar trator sem partida - (Fazenda Estrela)\nSolicitado Sr. Sebastião\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5361",
+    "cd_equipamento": "5361",
+    "modelo": "ADUBADORA E SEMEADORA MS60",
+    "os": "113835",
+    "data_entrada": "07/07/2025",
+    "servico": "Substituir disco espalhador e kit de reparo do eixo - (Fazenda Estrela)\nSolicitado Sr. Danilo  Mulari\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10217",
+    "cd_equipamento": "10217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113834",
+    "data_entrada": "07/07/2025",
+    "servico": "Trator não aciona partida pela chave de ignição. Motor de partida funciona apenas com acionamento direto no arranque. - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "248",
+    "cd_equipamento": "248",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "113833",
+    "data_entrada": "07/07/2025",
+    "servico": "Revisar sinalização: Farol sem foco e cibiés do teto queimados - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113832",
+    "data_entrada": "07/07/2025",
+    "servico": "Cibié  L/E queimado e sirene de ré não funciona (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "10227",
     "cd_equipamento": "10227",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "113774",
     "data_entrada": "04/07/2025",
     "servico": "Trator não dá partida. Motor de arranque apresentou fumaça na primeira tentativa e deixou de funcionar - (Fazenda Santa Luiza)\nSolicitado Sr. John\nArthur/Wilson - (Arthur está em treinamento)"
-  },
-  {
-    "frota": "5599",
-    "cd_equipamento": "5599",
-    "modelo": "PREMIX PRIME 2T 2000",
-    "os": "113758",
-    "data_entrada": "04/07/2025",
-    "servico": "Verificar gerador sem partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "86",
@@ -46,14 +94,6 @@
     "os": "113699",
     "data_entrada": "03/07/2025",
     "servico": "Normalizar a instalação pra devolução - Oficina\nAutorizado Arthur"
-  },
-  {
-    "frota": "288",
-    "cd_equipamento": "288",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113698",
-    "data_entrada": "03/07/2025",
-    "servico": "Verificar queima frequente das lâmpadas dos faróis de serviço dianteiros. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
   },
   {
     "frota": "263",
@@ -118,22 +158,6 @@
     "os": "113554",
     "data_entrada": "01/07/2025",
     "servico": "Faróis dianteiros queimados - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "268",
-    "cd_equipamento": "268",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113553",
-    "data_entrada": "01/07/2025",
-    "servico": "Cibié traseiro com queima frequente de lâmpadas necessário diagnóstico do circuito elétrico - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "221",
-    "cd_equipamento": "221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113552",
-    "data_entrada": "01/07/2025",
-    "servico": "Cibié traseiro com queima frequente de lâmpadas necessário diagnóstico do circuito elétrico - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius \nResponsavel Sr. Arthur"
   },
   {
     "frota": "224",
@@ -256,14 +280,6 @@
     "servico": "Verificar solenoide - Faz São Paulo\nAutorizado Arthur"
   },
   {
-    "frota": "234",
-    "cd_equipamento": "234",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "113138",
-    "data_entrada": "25/06/2025",
-    "servico": "Avaliar sistema de partida: motor gira com lentidão e não dá partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5482",
     "cd_equipamento": "5482",
     "modelo": "PODADEIRA HID.GLOBAL 3500",
@@ -326,14 +342,6 @@
     "os": "112765",
     "data_entrada": "19/06/2025",
     "servico": "Verificar cibié traseiros queimados e instalar cibié quebrado no equipamento de poda - (Fazenda Casa Branca)\nSolicitado Sr. João\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "268",
-    "cd_equipamento": "268",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112760",
-    "data_entrada": "19/06/2025",
-    "servico": "Trocar seta dianteira lado direto - Faz Estrela\nAutorizado Arthur"
   },
   {
     "frota": "134",

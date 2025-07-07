@@ -1,5 +1,13 @@
 [
   {
+    "frota": "144",
+    "cd_equipamento": "144",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "113837",
+    "data_entrada": "07/07/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "209",
     "cd_equipamento": "209",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -32,22 +40,6 @@
     "servico": "Consertar pneu furado (câmara de ar danificada).\nFazenda Severino \nResponsável Sr. Maurício"
   },
   {
-    "frota": "75",
-    "cd_equipamento": "75",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113749",
-    "data_entrada": "04/07/2025",
-    "servico": "Trocar pneu dianteiro esquerdo danificado.\nFazenda Severino\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "89",
-    "cd_equipamento": "89",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113693",
-    "data_entrada": "03/07/2025",
-    "servico": "Pneu dianteiro  L/E furado - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5155",
     "cd_equipamento": "5155",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -70,14 +62,6 @@
     "os": "113652",
     "data_entrada": "02/07/2025",
     "servico": "Pneu L/E furado traseiro - (Fazenda SP)\nSolicitado Sr. Giovane \nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5523",
-    "cd_equipamento": "5523",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "113638",
-    "data_entrada": "02/07/2025",
-    "servico": "Pneu L/E furado - (Fazenda Estrela)\nResponsavel Sr. Mauricio \nSolicitado Sr. Paulo Vinícius"
   },
   {
     "frota": "10216",

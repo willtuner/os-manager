@@ -1,11 +1,27 @@
 [
   {
-    "frota": "5048",
-    "cd_equipamento": "5048",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113757",
-    "data_entrada": "04/07/2025",
-    "servico": "Fazer solda em trinca no suporte das correias - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113870",
+    "data_entrada": "07/07/2025",
+    "servico": "Fazer solda na abraçadeira de fixação do corote de água - (Fazenda São Paulo)\nSolicitado Sr. Geovane\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5748",
+    "cd_equipamento": "5748",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "113865",
+    "data_entrada": "07/07/2025",
+    "servico": "Estrutura traseira de proteção do tanque (para-choque/defletor) amassada devido a impacto em outro equipamento. Necessário desamassar ou substituir, conforme avaliação. - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5347",
+    "cd_equipamento": "5347",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "113850",
+    "data_entrada": "07/07/2025",
+    "servico": "Quebra da proteção das correias, quebra dos pinos de fixação - (Fazenda São Paulo)\nSolicitado Sr Geovane\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5421",
@@ -40,22 +56,6 @@
     "servico": "Substituir eixo da cabeça do guincho, devido a desgaste ou quebra, garantindo o pleno funcionamento do sistema de elevação. - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5521",
-    "cd_equipamento": "5521",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "113678",
-    "data_entrada": "02/07/2025",
-    "servico": "Fazer solda em trinca no chassi - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5748",
-    "cd_equipamento": "5748",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "113675",
-    "data_entrada": "02/07/2025",
-    "servico": "Fazer solda em chapa de fixação das barra de proteção dos bicos - (Fazenda Estrela)\nSolicitado Sr. Paulo  Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5760",
     "cd_equipamento": "5760",
     "modelo": "PULVERIZADOR 4000 SMART DUPLO",
@@ -64,28 +64,12 @@
     "servico": "Executar serviço de solda na base das hastes do alma, devido a quebra estrutural. Segundo relato do gerente, a avaria foi causada pela queda de um poste sobre a máquina. - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Maurício"
   },
   {
-    "frota": "5121",
-    "cd_equipamento": "5121",
-    "modelo": "PODADEIRA DUPLA LATERAL IFLO",
-    "os": "113648",
-    "data_entrada": "02/07/2025",
-    "servico": "Executar solda no suporte da lança, devido a trinca ou ruptura na estrutura - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5418",
     "cd_equipamento": "5418",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "113643",
     "data_entrada": "02/07/2025",
     "servico": "Reconstruir a caixa de transporte de produtos fixada na traseira do tanque - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5367",
-    "cd_equipamento": "5367",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "113598",
-    "data_entrada": "01/07/2025",
-    "servico": "Parafuso de estabilidade da torre do tanque com folga recorrente - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5690",
@@ -280,14 +264,6 @@
     "servico": "Sacar parafusos do motor, recuperar lateral do trator\nFaz Santa Luiza\nAutorizado Arthur"
   },
   {
-    "frota": "5105",
-    "cd_equipamento": "5105",
-    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
-    "os": "111457",
-    "data_entrada": "03/06/2025",
-    "servico": "Trocar trava eixo da grade\nFaz Estrela\nSolicitado João\nAutorizado Mauricio\n-  Desmontado sessao dianteira da grade, soldado suporte para transporte das mangueiras"
-  },
-  {
     "frota": "5136",
     "cd_equipamento": "5136",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -350,13 +326,5 @@
     "os": "111421",
     "data_entrada": "19/03/2025",
     "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias"
-  },
-  {
-    "frota": "10220",
-    "cd_equipamento": "10220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "106998",
-    "data_entrada": "14/03/2025",
-    "servico": "Instalar escapamento faltando pedaço.\n- Feito solda em trincas. - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
   }
 ]

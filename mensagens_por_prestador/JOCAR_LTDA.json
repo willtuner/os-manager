@@ -1,10 +1,18 @@
 [
   {
-    "frota": "215",
-    "cd_equipamento": "215",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "113811",
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113860",
+    "data_entrada": "07/07/2025",
+    "servico": "Verificar A/C não gela - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "245",
+    "cd_equipamento": "245",
+    "modelo": "TRATOR MASSEY FERGUSON 3307",
+    "os": "113829",
     "data_entrada": "04/07/2025",
-    "servico": "Verificar A/C não gela - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Arthur"
+    "servico": "Verificar A/C não gela - (Fazenda Estrela)\nResponsavel Sr. Arthur"
   }
 ]

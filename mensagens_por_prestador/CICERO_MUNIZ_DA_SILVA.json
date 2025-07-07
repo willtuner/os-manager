@@ -1,5 +1,13 @@
 [
   {
+    "frota": "26",
+    "cd_equipamento": "26",
+    "modelo": "TRATOR MASSEY FERGUSON 275/2",
+    "os": "113838",
+    "data_entrada": "07/07/2025",
+    "servico": "Trator apresentou marcha encavalada, impossibilitando o engate e o deslocamento. - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "70",
     "cd_equipamento": "70",
     "modelo": "TRATOR MASSEY FERGUSON 4275/4",
@@ -22,14 +30,6 @@
     "os": "113076",
     "data_entrada": "24/06/2025",
     "servico": "Avaliar trator sem freio - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "27",
-    "cd_equipamento": "27",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "112106",
-    "data_entrada": "06/06/2025",
-    "servico": "Quebra do cabo do afogador, vazamento no retentor da TDP e vazamento no bloco do motor - (Fazenda Nova Manhã)\nLiberado Sr. Arthur"
   },
   {
     "frota": "245",

@@ -8,28 +8,12 @@
     "servico": "Substituir elo danificado da corrente, garantindo a integridade e o funcionamento adequado do sistema. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5626",
-    "cd_equipamento": "5626",
-    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
-    "os": "113459",
-    "data_entrada": "28/06/2025",
-    "servico": "Recuperar eixo e embuchar eixo da roda guia - Faz Alvorada\nAutorizado Mauricio"
-  },
-  {
     "frota": "5148",
     "cd_equipamento": "5148",
     "modelo": "CARRETA BAG C/ GUINCHO",
     "os": "113414",
     "data_entrada": "27/06/2025",
     "servico": "Troca da redução da corrente e troca das mangueiras do guincho - (Fazenda Casa Branca)\nSolicitado Sr. Gilson\nAutorizado Sr. Valdomiro - Vadin"
-  },
-  {
-    "frota": "5599",
-    "cd_equipamento": "5599",
-    "modelo": "PREMIX PRIME 2T 2000",
-    "os": "113332",
-    "data_entrada": "26/06/2025",
-    "servico": "Verificada quebra do suporte (corrimão) que sustenta o gerador; necessário confeccionar novo suporte metálico. Identificado também início de trinca no lado oposto, exigindo reforço ou substituição preventiva do corrimão para garantir a estabilidade da estrutura. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5571",
@@ -54,13 +38,5 @@
     "os": "111430",
     "data_entrada": "27/05/2025",
     "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5709",
-    "cd_equipamento": "5709",
-    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-    "os": "110801",
-    "data_entrada": "19/05/2025",
-    "servico": "Inspecionar os pistões do equipamento que apresentam ausência de movimento - (Fazenda SP)\nLiberado Sr. Mauricio"
   }
 ]

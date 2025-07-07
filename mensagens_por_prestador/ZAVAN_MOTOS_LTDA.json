@@ -1,10 +1,42 @@
 [
   {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "113238",
+    "data_entrada": "23/06/2025",
+    "servico": "Transportar Trator da Fazenda Severino para a Oficina Agrícola.\nLiberado Sr. Zacarias"
+  },
+  {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "113237",
+    "data_entrada": "23/06/2025",
+    "servico": "Transportar Trator da Oficina Agrícola para a Fazenda Terra Branca.\nLiberado Sr. Zacarias"
+  },
+  {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "113347",
+    "data_entrada": "21/06/2025",
+    "servico": "Transportar Trator da MG Vedações para a Oficina Agrícola (Viveiro).\nSolicitado e liberado Sr. Zacarias"
+  },
+  {
     "frota": "5067",
     "cd_equipamento": "5067",
     "modelo": "ADUBADEIRA CACAMBA TATU",
     "os": "112757",
     "data_entrada": "18/06/2025",
     "servico": "Serviço de transporte do equipamento da MG Vedações (Sumaré) para a Oficina Agrícola (Viveiro).\nSolicitado e liberado Sr. Zacarias."
+  },
+  {
+    "frota": "87",
+    "cd_equipamento": "87",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112852",
+    "data_entrada": "18/06/2025",
+    "servico": "Levar do viveiro para fazenda - Faz São Severino\nAutorizado Arthur"
   }
 ]
