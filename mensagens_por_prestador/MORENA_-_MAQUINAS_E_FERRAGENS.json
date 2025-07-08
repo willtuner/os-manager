@@ -14,5 +14,29 @@
     "os": "112121",
     "data_entrada": "30/05/2025",
     "servico": "Peça para manutenção interna"
+  },
+  {
+    "frota": "5390",
+    "cd_equipamento": "5390",
+    "modelo": "MOTOSERRA",
+    "os": "111711",
+    "data_entrada": "28/05/2025",
+    "servico": "Verificar mola da embreagem e tampa do óleo.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5678",
+    "cd_equipamento": "5678",
+    "modelo": "ROCADEIRA COSTAL FS 221 STIHL",
+    "os": "111704",
+    "data_entrada": "28/05/2025",
+    "servico": "Verificar cano danificado.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5780",
+    "cd_equipamento": "5780",
+    "modelo": "ROCADEIRA COSTAL FS 221 STIHL",
+    "os": "111793",
+    "data_entrada": "28/05/2025",
+    "servico": "Verificar equipamento não pega na partida.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
   }
 ]

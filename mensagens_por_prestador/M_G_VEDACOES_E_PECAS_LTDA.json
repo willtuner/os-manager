@@ -1,27 +1,27 @@
 [
   {
+    "frota": "5067",
+    "cd_equipamento": "5067",
+    "modelo": "ADUBADEIRA CACAMBA TATU",
+    "os": "113933",
+    "data_entrada": "08/07/2025",
+    "servico": "Mancal trincado (Pecuária)\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5559",
+    "cd_equipamento": "5559",
+    "modelo": "PODADEIRA HIDRAUTEC HLC6",
+    "os": "113891",
+    "data_entrada": "07/07/2025",
+    "servico": "Quebra da corrente do sistema de transmissão e parafusos que seguram o rotor - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5489",
     "cd_equipamento": "5489",
     "modelo": "CONJUNTO PODADOR WWD",
     "os": "113722",
     "data_entrada": "03/07/2025",
     "servico": "Substituir parafuso de fixação das réguas ao rotor do conjunto podador WWD, devido à quebra do componente, comprometendo a fixação e o funcionamento do sistema de corte - (Fazenda São Severino)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5758",
-    "cd_equipamento": "5758",
-    "modelo": "TANQUE 1850 LT COMBOIO",
-    "os": "113702",
-    "data_entrada": "03/07/2025",
-    "servico": "Fazer solda tanque de diesel, furado na parte inferior traseira e na frente\nFazenda Aparecida\nSolicitado Sr. Rennan\nResponsavel Sr. Maurício"
-  },
-  {
-    "frota": "79",
-    "cd_equipamento": "79",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113691",
-    "data_entrada": "03/07/2025",
-    "servico": "Verificar vazamento de óleo no comando hidráulico das barras de herbicida - (Fazenda Terra Branca)\nSolicitado Sr. João Victor (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5229",
@@ -32,14 +32,6 @@
     "servico": "Verificar barra de corte danificada - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "113673",
-    "data_entrada": "02/07/2025",
-    "servico": "Quebra do suporte do pistão - (Fazenda Biscui)\nSolicitado Sr. Giovane\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5667",
     "cd_equipamento": "5667",
     "modelo": "PODADEIRA HIDRAUTEC HLD1",
@@ -48,9 +40,9 @@
     "servico": "Avaliar e corrigir vazamento de óleo na saída da caixa de comando. - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "92",
-    "cd_equipamento": "92",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "frota": "5610",
+    "cd_equipamento": "5610",
+    "modelo": "PODADEIRA HIDRAUTEC HLC 4",
     "os": "113587",
     "data_entrada": "01/07/2025",
     "servico": "Montar a podadeira dupla traseira - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Mauricio"

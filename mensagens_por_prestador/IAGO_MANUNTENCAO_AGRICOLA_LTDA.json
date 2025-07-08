@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5451",
+    "cd_equipamento": "5451",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "113965",
+    "data_entrada": "08/07/2025",
+    "servico": "Revisar relação - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5504",
+    "cd_equipamento": "5504",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "113906",
+    "data_entrada": "08/07/2025",
+    "servico": "Substituição dos registros do sistema do tanque de pulverização - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5600",
+    "cd_equipamento": "5600",
+    "modelo": "ATOMIZADOR NATALI 4000 LT",
+    "os": "113896",
+    "data_entrada": "08/07/2025",
+    "servico": "Verificar vazamento no retentor da bomba, avaliar motivo do desalinhamento ou salto da correia e acertar parafuso de ajuste da correia da turbina - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5459",
     "cd_equipamento": "5459",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -56,14 +80,6 @@
     "servico": "Quebra do cardam - (Fazenda Estrela)\nSolicitado Sr. Nelson\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5398",
-    "cd_equipamento": "5398",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "113745",
-    "data_entrada": "03/07/2025",
-    "servico": "Trocar reparos da bomba - (Fazenda Terra Branca)\nSolicitado Sr. Eder \nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5214",
     "cd_equipamento": "5214",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
@@ -86,14 +102,6 @@
     "os": "113707",
     "data_entrada": "03/07/2025",
     "servico": "Verificar vazamento de óleo na bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5657",
-    "cd_equipamento": "5657",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "113705",
-    "data_entrada": "03/07/2025",
-    "servico": "Efetuar troca da correia da turbina - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5697",
@@ -120,11 +128,27 @@
     "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "10022",
-    "cd_equipamento": "10022",
-    "modelo": "IMPL.ROCADEIRA (EMPRESTADA)",
-    "os": "111474",
-    "data_entrada": "29/05/2025",
-    "servico": "Acertar parafusos que segura jogo de facas e parafusos de fixação do rotor esquerdo\nFaz Terra Branca\nSolicitado Eder\nAutorizado Mauricio\n- Desmontado multiplicador para pedido de pecas. substituído parafusos e porcas, adaptado e instalado chapas, montado prato com fações e porca no eixo do multiplicador"
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112049",
+    "data_entrada": "05/06/2025",
+    "servico": "Constatado desgaste no pinhão da coroa, componente do sistema de transmissão da adubadeira, comprometendo seu funcionamento - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "112048",
+    "data_entrada": "05/06/2025",
+    "servico": "Desgaste no pinhão da coroa do sistema de transmissão da adubadeira - (Fazenda SP)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5227",
+    "cd_equipamento": "5227",
+    "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
+    "os": "111235",
+    "data_entrada": "23/05/2025",
+    "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   }
 ]

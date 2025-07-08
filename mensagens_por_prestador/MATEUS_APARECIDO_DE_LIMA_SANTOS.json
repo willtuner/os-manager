@@ -3,6 +3,38 @@
     "frota": "5035",
     "cd_equipamento": "5035",
     "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "113966",
+    "data_entrada": "08/07/2025",
+    "servico": "Verificar polia da ponta traseira do eixo cardan apresenta folga, acertar conexão inferior da caixa incorporadora e e verificar cintas de fixação do tanque.\nFazenda Alvorada\nSolicitado Sr. Natalino\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "113924",
+    "data_entrada": "08/07/2025",
+    "servico": "Vazamento no cilindro do pistão torno  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "113923",
+    "data_entrada": "08/07/2025",
+    "servico": "Fazer soldas e fazer reforços no suporte dos ramais e trocar abraçadeiras dos mesmo - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5126",
+    "cd_equipamento": "5126",
+    "modelo": "ADUBADEIRA KAMAQ 1500 KG",
+    "os": "113901",
+    "data_entrada": "08/07/2025",
+    "servico": "Verificar rolamento dos pratos e quebra do pino elástico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "113682",
     "data_entrada": "03/07/2025",
     "servico": "Verificar quebra da ponta de eixo da roda - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
@@ -54,5 +86,13 @@
     "os": "112366",
     "data_entrada": "12/06/2025",
     "servico": "Fazer solda nas proteções anti-arremesso e trocar jogo de martelos - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5421",
+    "cd_equipamento": "5421",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "111970",
+    "data_entrada": "03/06/2025",
+    "servico": "Trocar rolamento da turbina.\nFazenda São Pedro\nSolicitado Sr. Romes\nLiberado Sr. Maurício"
   }
 ]

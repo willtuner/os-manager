@@ -1,5 +1,69 @@
 [
   {
+    "frota": "122",
+    "cd_equipamento": "122",
+    "modelo": "TRATOR MASSEY FERGUSON 4283FK",
+    "os": "113913",
+    "data_entrada": "08/07/2025",
+    "servico": "Verificar alternador não está carregando - (Fazenda SL1)\nResponsavel Sr. Arthur\nSolicitado Sr. Wagner"
+  },
+  {
+    "frota": "159",
+    "cd_equipamento": "159",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "113909",
+    "data_entrada": "08/07/2025",
+    "servico": "Luz de freio acessas initerruptamente - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113908",
+    "data_entrada": "08/07/2025",
+    "servico": "Lâmpada do farol dianteiro queimado - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "285",
+    "cd_equipamento": "285",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113907",
+    "data_entrada": "08/07/2025",
+    "servico": "Farol dianteiro queimado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "98",
+    "cd_equipamento": "98",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "113905",
+    "data_entrada": "08/07/2025",
+    "servico": "Revisar sistema eletrico do trator - Faz Casa Branca\nAutorizado Arthur"
+  },
+  {
+    "frota": "10226",
+    "cd_equipamento": "10226",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113904",
+    "data_entrada": "08/07/2025",
+    "servico": "Revisar sinalização - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur\nPendencia N° 4425"
+  },
+  {
+    "frota": "287",
+    "cd_equipamento": "287",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113903",
+    "data_entrada": "08/07/2025",
+    "servico": "Verificar sirene de ré não funciona - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "104",
+    "cd_equipamento": "104",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "113892",
+    "data_entrada": "07/07/2025",
+    "servico": "Diagnosticar trator sem partida - (Tornearia Steinhauser)\nSolicitado Sr. Arthur \nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "133",
     "cd_equipamento": "133",
     "modelo": "TRATOR NEW HOLLAND TL75E",
@@ -16,28 +80,12 @@
     "servico": "Avaliar  sistema elétrico do abastecimento (pontos positivos e negativos).\nAjustar ponto de entalhado do limpador de para-brisa. - (Oficina)\nSolicitado Sr. Rafael \nResponsavel Sr. Rafael"
   },
   {
-    "frota": "63",
-    "cd_equipamento": "63",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "113852",
-    "data_entrada": "07/07/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Estrela)\nSolicitado Sr. Sebastião\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5361",
     "cd_equipamento": "5361",
     "modelo": "ADUBADORA E SEMEADORA MS60",
     "os": "113835",
     "data_entrada": "07/07/2025",
     "servico": "Substituir disco espalhador e kit de reparo do eixo - (Fazenda Estrela)\nSolicitado Sr. Danilo  Mulari\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10217",
-    "cd_equipamento": "10217",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113834",
-    "data_entrada": "07/07/2025",
-    "servico": "Trator não aciona partida pela chave de ignição. Motor de partida funciona apenas com acionamento direto no arranque. - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
   },
   {
     "frota": "248",
@@ -64,14 +112,6 @@
     "servico": "Trator não dá partida. Motor de arranque apresentou fumaça na primeira tentativa e deixou de funcionar - (Fazenda Santa Luiza)\nSolicitado Sr. John\nArthur/Wilson - (Arthur está em treinamento)"
   },
   {
-    "frota": "86",
-    "cd_equipamento": "86",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113743",
-    "data_entrada": "03/07/2025",
-    "servico": "Verificar sensor de restrição não funciona - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro \nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5671",
     "cd_equipamento": "5671",
     "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
@@ -86,22 +126,6 @@
     "os": "113709",
     "data_entrada": "03/07/2025",
     "servico": "Cibiés traseiros queimados - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10223",
-    "cd_equipamento": "10223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113699",
-    "data_entrada": "03/07/2025",
-    "servico": "Normalizar a instalação pra devolução - Oficina\nAutorizado Arthur"
-  },
-  {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113697",
-    "data_entrada": "03/07/2025",
-    "servico": "Verificar alternador e sistema elétrico, trator sem partida.- (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
   },
   {
     "frota": "318",
@@ -120,22 +144,6 @@
     "servico": "Verificar sistema do drash, não está enviando carga para a válvula solenoide. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "224",
-    "cd_equipamento": "224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113655",
-    "data_entrada": "02/07/2025",
-    "servico": "Faróis dianteiros queimados - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "286",
-    "cd_equipamento": "286",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113654",
-    "data_entrada": "02/07/2025",
-    "servico": "Substituir lâmpada queimada do farol de milha traseiro - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "189",
     "cd_equipamento": "189",
     "modelo": "TRATOR NEW HOLAND TL 5.80",
@@ -144,28 +152,12 @@
     "servico": "Verificar trator sem partida e revisar sinalização - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "302",
-    "cd_equipamento": "302",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113629",
-    "data_entrada": "02/07/2025",
-    "servico": "Instalar cibié no teto do trator para compensar a limitação da iluminação dos faróis dianteiros, causada pela instalação do equipamento espalhador de boro. - (Fazenda  Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Artthur"
-  },
-  {
     "frota": "1005",
     "cd_equipamento": "1005",
     "modelo": "CAMINHAO MERCEDES B. AXOR 2831",
     "os": "113554",
     "data_entrada": "01/07/2025",
     "servico": "Faróis dianteiros queimados - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "224",
-    "cd_equipamento": "224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113523",
-    "data_entrada": "30/06/2025",
-    "servico": "Cibié queimado e luz do farol acesa no painel interruptamente - (Fazenda Terra Branca)\nSolicitado Sr. João (Subgerente)\nResponsavel Sr. Arthur"
   },
   {
     "frota": "265",
@@ -184,6 +176,14 @@
     "servico": "Verificar falha no marcador de combustível, que não está indicando corretamente o nível no painel. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "67",
+    "cd_equipamento": "67",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113926",
+    "data_entrada": "30/06/2025",
+    "servico": "Revisar sistema eletrico - Faz Santa Luiza\nAutorizado Arthur"
+  },
+  {
     "frota": "118",
     "cd_equipamento": "118",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
@@ -200,44 +200,12 @@
     "servico": "Verificar sistema eletrico do alerta não funciona - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "121",
-    "cd_equipamento": "121",
-    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
-    "os": "113491",
-    "data_entrada": "30/06/2025",
-    "servico": "Cibié traseiro queimado - (Fazenda Alvorada)\nResponsável Sr. Arthur\nSolicitado Sr. Natalino"
-  },
-  {
-    "frota": "138",
-    "cd_equipamento": "138",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "113420",
-    "data_entrada": "27/06/2025",
-    "servico": "Verificar sensor de diesel - Faz Minuano\nAutorizado Arthur"
-  },
-  {
-    "frota": "5006",
-    "cd_equipamento": "5006",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "113406",
-    "data_entrada": "27/06/2025",
-    "servico": "Verificar falha no acionamento dos ramais do jatão, que não estão operando corretamente. - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "276",
     "cd_equipamento": "276",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "113399",
     "data_entrada": "27/06/2025",
     "servico": "Correia do alternador quebrada necessário avaliação e substituição-(Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "131",
-    "cd_equipamento": "131",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "113392",
-    "data_entrada": "27/06/2025",
-    "servico": "Trocar correia do alternador - Faz Casa Branca\nAutorizado Arthur"
   },
   {
     "frota": "68",
@@ -254,38 +222,6 @@
     "os": "113221",
     "data_entrada": "25/06/2025",
     "servico": "Revisar chicote e conectores elétricos danificados - (Fazenda Terra Branca)\nSolicitado Sr. João Vitor (Subgerente)\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5798",
-    "cd_equipamento": "5798",
-    "modelo": "PULVERIZADOR 600 LT",
-    "os": "113206",
-    "data_entrada": "25/06/2025",
-    "servico": "Instalar equipamento de drash - (Oficina)\nLiberado Sr. Zacarias"
-  },
-  {
-    "frota": "165",
-    "cd_equipamento": "165",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "113214",
-    "data_entrada": "25/06/2025",
-    "servico": "Verificar sensor da TDP - Faz Terra Branca\nAutorizado Arthur"
-  },
-  {
-    "frota": "128",
-    "cd_equipamento": "128",
-    "modelo": "GATOR JOHNN DEERE",
-    "os": "113166",
-    "data_entrada": "25/06/2025",
-    "servico": "Verificar solenoide - Faz São Paulo\nAutorizado Arthur"
-  },
-  {
-    "frota": "5482",
-    "cd_equipamento": "5482",
-    "modelo": "PODADEIRA HID.GLOBAL 3500",
-    "os": "113087",
-    "data_entrada": "24/06/2025",
-    "servico": "Fazer instalação do eletroventilador do sistema de arrefecimento da podadeira - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
   },
   {
     "frota": "142",
@@ -328,36 +264,12 @@
     "servico": "Revisar chicote eletrico - Faz Bela Manha\nAutorizado Arthur"
   },
   {
-    "frota": "5491",
-    "cd_equipamento": "5491",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "112857",
-    "data_entrada": "19/06/2025",
-    "servico": "Verificar falha no acionamento elétrico dos ramais, sistema não responde ao comando - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "90",
-    "cd_equipamento": "90",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "112765",
-    "data_entrada": "19/06/2025",
-    "servico": "Verificar cibié traseiros queimados e instalar cibié quebrado no equipamento de poda - (Fazenda Casa Branca)\nSolicitado Sr. João\nResponsável Sr. Arthur"
-  },
-  {
     "frota": "134",
     "cd_equipamento": "134",
     "modelo": "TRATOR NEW HOLLAND TL75E",
     "os": "112572",
     "data_entrada": "16/06/2025",
     "servico": "Revisar sinalização - (Fazenda São Severino)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "5382",
-    "cd_equipamento": "5382",
-    "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
-    "os": "112420",
-    "data_entrada": "12/06/2025",
-    "servico": "Revisar sistema eletrico - (OFICINA)\nAutorizado Rafael"
   },
   {
     "frota": "67",
@@ -382,6 +294,14 @@
     "os": "110602",
     "data_entrada": "15/05/2025",
     "servico": "Trocar painel de controle da barra de herbicida quebrado - (Fazenda Santa Izabel)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "44",
+    "cd_equipamento": "44",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "110450",
+    "data_entrada": "13/05/2025",
+    "servico": "Sensor de temperatura quebrou após impacto com galho. Necessária substituição do sensor danificado - (Fazenda São Paulo)\nLiberado Sr. Wilson"
   },
   {
     "frota": "211",

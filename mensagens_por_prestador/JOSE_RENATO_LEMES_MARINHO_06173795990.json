@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5547",
+    "cd_equipamento": "5547",
+    "modelo": "ARADO AIVECA S-0593",
+    "os": "113945",
+    "data_entrada": "08/07/2025",
+    "servico": "Realizar solda para reparo de trinca localizada no pé da torre do terceiro ponto do equipamento - (Fazenda Úrsula) \nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5105",
+    "cd_equipamento": "5105",
+    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
+    "os": "113941",
+    "data_entrada": "08/07/2025",
+    "servico": "Suporte do pistão trincado - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5345",
     "cd_equipamento": "5345",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -14,14 +30,6 @@
     "os": "113865",
     "data_entrada": "07/07/2025",
     "servico": "Estrutura traseira de proteção do tanque (para-choque/defletor) amassada devido a impacto em outro equipamento. Necessário desamassar ou substituir, conforme avaliação. - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5347",
-    "cd_equipamento": "5347",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "113850",
-    "data_entrada": "07/07/2025",
-    "servico": "Quebra da proteção das correias, quebra dos pinos de fixação - (Fazenda São Paulo)\nSolicitado Sr Geovane\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5421",
@@ -40,14 +48,6 @@
     "servico": "Fazer solda no suporte da escada e grade traseira para transporte de produtos - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5699",
-    "cd_equipamento": "5699",
-    "modelo": "PULVERIZADOR 600 LT",
-    "os": "113703",
-    "data_entrada": "03/07/2025",
-    "servico": "Verificar chassi do equipamento, identificado com diversas trincas necessário avaliar para realização de soldas corretivas. - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Maurício"
-  },
-  {
     "frota": "5044",
     "cd_equipamento": "5044",
     "modelo": "GUINCHO HIDRAULICO REFORCADO",
@@ -56,44 +56,12 @@
     "servico": "Substituir eixo da cabeça do guincho, devido a desgaste ou quebra, garantindo o pleno funcionamento do sistema de elevação. - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5760",
-    "cd_equipamento": "5760",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "113657",
-    "data_entrada": "02/07/2025",
-    "servico": "Executar serviço de solda na base das hastes do alma, devido a quebra estrutural. Segundo relato do gerente, a avaria foi causada pela queda de um poste sobre a máquina. - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Maurício"
-  },
-  {
-    "frota": "5418",
-    "cd_equipamento": "5418",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "113643",
-    "data_entrada": "02/07/2025",
-    "servico": "Reconstruir a caixa de transporte de produtos fixada na traseira do tanque - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5690",
-    "cd_equipamento": "5690",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "113563",
-    "data_entrada": "01/07/2025",
-    "servico": "Substituir tela da grade de carregar produtos - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Maurico"
-  },
-  {
     "frota": "5099",
     "cd_equipamento": "5099",
     "modelo": "GRADE NIVELADORA DE CONTROLE",
     "os": "113561",
     "data_entrada": "01/07/2025",
     "servico": "Realizar revisão completa no equipamento, devido à quebra de mancais e discos. - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5413",
-    "cd_equipamento": "5413",
-    "modelo": "ROCADEIRA RCA 3100 S-0214",
-    "os": "113556",
-    "data_entrada": "01/07/2025",
-    "servico": "Executar solda de reforço com chapa na roda guia, que apresentou abertura na estrutura e colocar proteção anti arremesso  - (Fazenda São Severino)\nSolicitado Sr. Marcio\nResponsavel Sr. Maurício \nPendencia N° 4299"
   },
   {
     "frota": "91",
@@ -192,14 +160,6 @@
     "servico": "Instalar proteções na correia da bomba de pulverização e no cardan e mudar posição do comando que está em cima da bomba trazendo para a lateral.\nFazenda Nova Manhã \nSolicitado Sr. Adriano\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5360",
-    "cd_equipamento": "5360",
-    "modelo": "GRADE NIVELADORA",
-    "os": "112713",
-    "data_entrada": "18/06/2025",
-    "servico": "Quebra da ponta de eixo - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nLiberado Sr. Mauricio"
-  },
-  {
     "frota": "5290",
     "cd_equipamento": "5290",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -262,6 +222,14 @@
     "os": "112190",
     "data_entrada": "05/06/2025",
     "servico": "Sacar parafusos do motor, recuperar lateral do trator\nFaz Santa Luiza\nAutorizado Arthur"
+  },
+  {
+    "frota": "5579",
+    "cd_equipamento": "5579",
+    "modelo": "TRITURADOR TFI-1600 GTM",
+    "os": "111502",
+    "data_entrada": "03/06/2025",
+    "servico": "Substituir facas de corte da trincha - (Fazenda Estrela)\nLiberado Sr. Mauricio\n- Feito troca do jogo completo das facas de corte"
   },
   {
     "frota": "5136",
