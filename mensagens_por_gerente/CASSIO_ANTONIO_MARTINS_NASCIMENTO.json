@@ -49,13 +49,6 @@
     "servico": "Verificar motor estacionário travando, pesando a partida e ruim para pegar."
   },
   {
-    "frota": "227",
-    "os": "113641",
-    "data": "02/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)"
-  },
-  {
     "frota": "5599",
     "os": "113577",
     "data": "01/07/2025",
@@ -68,5 +61,12 @@
     "data": "25/06/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)"
+  },
+  {
+    "frota": "225",
+    "os": "111728",
+    "data": "02/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Vazamento de diesel na bomba injetora - (Fazenda São Severino)"
   }
 ]

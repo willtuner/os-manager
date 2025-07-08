@@ -1,5 +1,12 @@
 [
   {
+    "frota": "296",
+    "os": "113949",
+    "data": "08/07/2025",
+    "prestador": "nan",
+    "servico": "Vazamento de diesel no eixo da bomba injetora - (Fazenda São José)"
+  },
+  {
     "frota": "316",
     "os": "113759",
     "data": "04/07/2025",
@@ -21,20 +28,6 @@
     "servico": "Trocar Rolamento do eixo da parte da frente e conserto da fibra - (Fazenda São José)"
   },
   {
-    "frota": "262",
-    "os": "113386",
-    "data": "20/06/2025",
-    "prestador": "SOARES DE MELO E CIA LTDA",
-    "servico": "Para instalação dos Paralamas (Fazenda São José|)"
-  },
-  {
-    "frota": "5055",
-    "os": "113385",
-    "data": "20/06/2025",
-    "prestador": "SOARES DE MELO E CIA LTDA",
-    "servico": "Correias  para Trincha (Fazenda São José)"
-  },
-  {
     "frota": "5267",
     "os": "112934",
     "data": "20/06/2025",
@@ -42,25 +35,11 @@
     "servico": "Prensa de mangueira hidráulica e niple do agitador (Fazenda São José)"
   },
   {
-    "frota": "5624",
-    "os": "113384",
-    "data": "20/06/2025",
-    "prestador": "SOARES DE MELO E CIA LTDA",
-    "servico": "Parafusos e porcas para adubadeira (Fazenda São José)"
-  },
-  {
     "frota": "5364",
     "os": "112933",
     "data": "20/06/2025",
     "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
     "servico": "Fazer embuchamento do suporte da concha (Fazenda São José)"
-  },
-  {
-    "frota": "5212",
-    "os": "113383",
-    "data": "20/06/2025",
-    "prestador": "SOARES DE MELO E CIA LTDA",
-    "servico": "Registro para tanque (Fazenda São José)"
   },
   {
     "frota": "262",

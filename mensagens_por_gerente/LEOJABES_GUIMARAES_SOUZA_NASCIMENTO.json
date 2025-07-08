@@ -1,10 +1,17 @@
 [
   {
-    "frota": "5347",
-    "os": "113850",
-    "data": "07/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra da proteção das correias, quebra dos pinos de fixação - (Fazenda São Paulo)"
+    "frota": "5504",
+    "os": "113906",
+    "data": "08/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituição dos registros do sistema do tanque de pulverização - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5542",
+    "os": "113898",
+    "data": "08/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D dianteiro furado - (Fazenda São Paulo)"
   },
   {
     "frota": "5211",
@@ -12,13 +19,6 @@
     "data": "07/07/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Trocar correias e vazamento nos pistões - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "219",
-    "os": "113847",
-    "data": "07/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Substituição da bomba manual da bomba injetora devido a falha no funcionamento. - (Fazenda São Paulo)"
   },
   {
     "frota": "5804",
@@ -49,20 +49,6 @@
     "servico": "Vazamento de óleo nos engate rápido - (Fazenda São Paulo)"
   },
   {
-    "frota": "257",
-    "os": "113732",
-    "data": "03/07/2025",
-    "prestador": "nan",
-    "servico": "TDP não gira - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5345",
-    "os": "113673",
-    "data": "02/07/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Quebra do suporte do pistão - (Fazenda Biscui)"
-  },
-  {
     "frota": "5347",
     "os": "113652",
     "data": "02/07/2025",
@@ -82,13 +68,6 @@
     "data": "30/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar sistema eletrico do alerta não funciona - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "218",
-    "os": "113402",
-    "data": "27/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar alavanca de câmbio com falha de engate no grupo C, escapando durante a operação, e perda de força no trator. - (Fazenda São Paulo)"
   },
   {
     "frota": "5804",
@@ -126,6 +105,20 @@
     "servico": "Trocar seta dianteira quebrada - (Fazenda São Paulo)"
   },
   {
+    "frota": "5494",
+    "os": "112049",
+    "data": "05/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Constatado desgaste no pinhão da coroa, componente do sistema de transmissão da adubadeira, comprometendo seu funcionamento - (Fazenda SP)"
+  },
+  {
+    "frota": "5214",
+    "os": "112048",
+    "data": "05/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Desgaste no pinhão da coroa do sistema de transmissão da adubadeira - (Fazenda SP)"
+  },
+  {
     "frota": "216",
     "os": "112044",
     "data": "04/06/2025",
@@ -140,11 +133,32 @@
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)"
   },
   {
+    "frota": "5749",
+    "os": "111600",
+    "data": "30/05/2025",
+    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
+    "servico": "Prensar mangueiras - (Fazenda SP)"
+  },
+  {
+    "frota": "216",
+    "os": "111581",
+    "data": "30/05/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Avaliar excesso de fumaça no escape do trator, identificando possível queima de óleo, falha de injeção ou obstrução no sistema. - (Fazenda São Paulo)"
+  },
+  {
     "frota": "66",
     "os": "111757",
     "data": "23/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Confecção e instalação do teto, Pendencia 4122"
+  },
+  {
+    "frota": "44",
+    "os": "110450",
+    "data": "13/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Sensor de temperatura quebrou após impacto com galho. Necessária substituição do sensor danificado - (Fazenda São Paulo)"
   },
   {
     "frota": "211",
@@ -159,5 +173,12 @@
     "data": "17/04/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar lampadas traseiras - (Fazenda SP)"
+  },
+  {
+    "frota": "244",
+    "os": "108349",
+    "data": "07/04/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Trator não engata grupo de  marchas A - (Fazenda SP)"
   }
 ]

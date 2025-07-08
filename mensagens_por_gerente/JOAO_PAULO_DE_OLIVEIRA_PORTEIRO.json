@@ -1,10 +1,17 @@
 [
   {
-    "frota": "10217",
-    "os": "113834",
-    "data": "07/07/2025",
+    "frota": "98",
+    "os": "113905",
+    "data": "08/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator não aciona partida pela chave de ignição. Motor de partida funciona apenas com acionamento direto no arranque. - (Fazenda Casa Branca)"
+    "servico": "Revisar sistema eletrico do trator - Faz Casa Branca"
+  },
+  {
+    "frota": "5559",
+    "os": "113891",
+    "data": "07/07/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Quebra da corrente do sistema de transmissão e parafusos que seguram o rotor - (Fazenda Casa Branca)"
   },
   {
     "frota": "125",
@@ -14,34 +21,6 @@
     "servico": "Verificar vazamento de óleo na turbina e na mangueira que sai na parte superior do motor. - (Fazenda Casa Branca)"
   },
   {
-    "frota": "86",
-    "os": "113743",
-    "data": "03/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sensor de restrição não funciona - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "263",
-    "os": "113697",
-    "data": "03/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar alternador e sistema elétrico, trator sem partida.- (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "86",
-    "os": "113669",
-    "data": "02/07/2025",
-    "prestador": "nan",
-    "servico": "Quebra do parafuso da alavanca da TDP - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5542",
-    "os": "113630",
-    "data": "02/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar quebra do rolamento do eixo do distribuidor de adubo e parafuso do rolete solto, comprometendo o funcionamento do sistema de distribuição. - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "265",
     "os": "113516",
     "data": "30/06/2025",
@@ -49,11 +28,11 @@
     "servico": "Instalar proteção das lanternas L/?? - (Fazenda Casa Branca)"
   },
   {
-    "frota": "90",
-    "os": "112765",
-    "data": "19/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar cibié traseiros queimados e instalar cibié quebrado no equipamento de poda - (Fazenda Casa Branca)"
+    "frota": "74",
+    "os": "110628",
+    "data": "15/05/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Vazamento na bomba de combustível - (Fazenda Casa Branca)"
   },
   {
     "frota": "98",

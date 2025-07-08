@@ -1,5 +1,47 @@
 [
   {
+    "frota": "5760",
+    "os": "113924",
+    "data": "08/07/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Vazamento no cilindro do pistão torno  - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5760",
+    "os": "113923",
+    "data": "08/07/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Fazer soldas e fazer reforços no suporte dos ramais e trocar abraçadeiras dos mesmo - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "10226",
+    "os": "113904",
+    "data": "08/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sinalização - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "287",
+    "os": "113903",
+    "data": "08/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar sirene de ré não funciona - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "287",
+    "os": "113902",
+    "data": "08/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar vazamento de óleo no meio do trator - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5126",
+    "os": "113901",
+    "data": "08/07/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Verificar rolamento dos pratos e quebra do pino elástico - (Fazenda São Pedro)"
+  },
+  {
     "frota": "287",
     "os": "113787",
     "data": "04/07/2025",
@@ -14,25 +56,11 @@
     "servico": "Fazer solda em trinca no chassi - (Fazenda São Pedro)"
   },
   {
-    "frota": "5795",
-    "os": "113723",
-    "data": "03/07/2025",
-    "prestador": "nan",
-    "servico": "Sacar parafuso do rotor espanado - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5739",
     "os": "113659",
     "data": "02/07/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Verificar folga no eixo da roda guia  - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5760",
-    "os": "113657",
-    "data": "02/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Executar serviço de solda na base das hastes do alma, devido a quebra estrutural. Segundo relato do gerente, a avaria foi causada pela queda de um poste sobre a máquina. - (Fazenda São Pedro)"
   },
   {
     "frota": "5676",
@@ -89,6 +117,13 @@
     "data": "09/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5421",
+    "os": "111970",
+    "data": "03/06/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Trocar rolamento da turbina."
   },
   {
     "frota": "5171",

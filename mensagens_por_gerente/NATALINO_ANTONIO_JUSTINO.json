@@ -1,17 +1,17 @@
 [
   {
-    "frota": "304",
-    "os": "113795",
-    "data": "04/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar alavanca seletora de marcha - Faz Alvorada"
+    "frota": "5035",
+    "os": "113966",
+    "data": "08/07/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Verificar polia da ponta traseira do eixo cardan apresenta folga, acertar conexão inferior da caixa incorporadora e e verificar cintas de fixação do tanque."
   },
   {
-    "frota": "44",
-    "os": "113756",
-    "data": "04/07/2025",
+    "frota": "65",
+    "os": "113925",
+    "data": "08/07/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Fazer troca de óleo de 400 hrs - (Fazenda Alvorada)"
+    "servico": "Troca da boia de combustível e sensor da TDP - (Fazenda Alvorada)"
   },
   {
     "frota": "5035",
@@ -35,13 +35,6 @@
     "servico": "Verificar quebra da ponta de eixo da roda - (Fazenda Alvorada)"
   },
   {
-    "frota": "121",
-    "os": "113656",
-    "data": "02/07/2025",
-    "prestador": "nan",
-    "servico": "Executar extração de parafuso quebrado no suporte do rabicho, que compromete a fixação adequada do conjunto - (Fazenda Alvorada)"
-  },
-  {
     "frota": "65",
     "os": "113557",
     "data": "01/07/2025",
@@ -56,13 +49,6 @@
     "servico": "Trocar reparo da bica - (Fazenda Alvorada)"
   },
   {
-    "frota": "121",
-    "os": "113491",
-    "data": "30/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié traseiro queimado - (Fazenda Alvorada)"
-  },
-  {
     "frota": "5035",
     "os": "113271",
     "data": "26/06/2025",
@@ -75,5 +61,12 @@
     "data": "18/06/2025",
     "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
     "servico": "Afiar jogo de 4 discos da podadeira - (Fazenda Alvorada)"
+  },
+  {
+    "frota": "121",
+    "os": "111449",
+    "data": "28/05/2025",
+    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
+    "servico": "Prensar mangueira - (Fazenda Alvorada)"
   }
 ]

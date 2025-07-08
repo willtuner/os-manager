@@ -14,13 +14,6 @@
     "servico": "Revisão - (Oficina)"
   },
   {
-    "frota": "5382",
-    "os": "112420",
-    "data": "12/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico - (OFICINA)"
-  },
-  {
     "frota": "5045",
     "os": "112338",
     "data": "11/06/2025",
@@ -40,6 +33,13 @@
     "data": "04/06/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Efetuar montagem da bomba no carrinha de irrigação  (Oficina)"
+  },
+  {
+    "frota": "305",
+    "os": "111212",
+    "data": "16/05/2025",
+    "prestador": "CATERPILLAR  - PARANA EQUIPAMENTOS S.A.",
+    "servico": "PMP de 2000 hrs -"
   },
   {
     "frota": "43",

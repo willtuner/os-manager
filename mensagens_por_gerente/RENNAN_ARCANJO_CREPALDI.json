@@ -7,13 +7,6 @@
     "servico": "Quebra do cabo do acelerador de mão - (Fazenda NSA)"
   },
   {
-    "frota": "5758",
-    "os": "113702",
-    "data": "03/07/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Fazer solda tanque de diesel, furado na parte inferior traseira e na frente"
-  },
-  {
     "frota": "5229",
     "os": "113679",
     "data": "02/07/2025",
@@ -26,13 +19,6 @@
     "data": "02/07/2025",
     "prestador": "nan",
     "servico": "Troca de terminal danificado - (Fazenda NSA)"
-  },
-  {
-    "frota": "5418",
-    "os": "113643",
-    "data": "02/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Reconstruir a caixa de transporte de produtos fixada na traseira do tanque - (Fazenda NSA)"
   },
   {
     "frota": "5778",
@@ -68,5 +54,12 @@
     "data": "10/06/2025",
     "prestador": "nan",
     "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
+  },
+  {
+    "frota": "303",
+    "os": "111481",
+    "data": "28/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar cano de alimentação do filtro, retirado vazamento de compressão do silencioso e regulagem da TDP - (Fazenda São Severino)"
   }
 ]
