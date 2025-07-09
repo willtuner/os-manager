@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5186",
+    "cd_equipamento": "5186",
+    "modelo": "ADUBADEIRA DCA DC 2500",
+    "os": "113967",
+    "data_entrada": "08/07/2025",
+    "servico": "Realizar mudança do sistema convencional de cardan para sistema de acionamento hidráulico.\nFazenda SL1 (Oficina Jorginho)\nSolicitado Sr. Wagner\nResponsável Sr. Maurício / Rafael"
+  },
+  {
     "frota": "5492",
     "cd_equipamento": "5492",
     "modelo": "PULVERIZADOR GULIVER 4000",
@@ -14,14 +22,6 @@
     "os": "112977",
     "data_entrada": "03/06/2025",
     "servico": "Reforma geral - (Fazenda Nova Manhã)\nResponsável Sr. Rafael"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "111654",
-    "data_entrada": "02/06/2025",
-    "servico": "Verificar vazamento de óleo no retentor do pistão esquerdo de abertura da asa e vazamento no pistão de levante da barra direita.\nFazenda Biscui Sede\nSolicitado Sr. Geovane\nLiberado Sr. Maurício"
   },
   {
     "frota": "5128",

@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5522",
+    "cd_equipamento": "5522",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "114035",
+    "data_entrada": "09/07/2025",
+    "servico": "Substituir os dois pistões das barras de pulverização.\nFazenda Bela Manhã\nSolicitado Sr. Murilo\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5657",
+    "cd_equipamento": "5657",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "114000",
+    "data_entrada": "09/07/2025",
+    "servico": "Realizar o realinhamento do ramal que ficou torto após queda em depressão no solo - (Fazenda Terra Branca)\nSolicitado Sr. Eder \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5399",
+    "cd_equipamento": "5399",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113999",
+    "data_entrada": "09/07/2025",
+    "servico": "Quebra do rolamento do eixo da bomba - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5613",
+    "cd_equipamento": "5613",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "113979",
+    "data_entrada": "08/07/2025",
+    "servico": "Esticar correia da torre (Fazenda São Severino)\nSolicitante Sr. Cassio\nResponsável Sr. Mauricio"
+  },
+  {
     "frota": "5451",
     "cd_equipamento": "5451",
     "modelo": "PULVERIZADOR BARRAS TRICICLO",
@@ -126,29 +158,5 @@
     "os": "113135",
     "data_entrada": "25/06/2025",
     "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5494",
-    "cd_equipamento": "5494",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "112049",
-    "data_entrada": "05/06/2025",
-    "servico": "Constatado desgaste no pinhão da coroa, componente do sistema de transmissão da adubadeira, comprometendo seu funcionamento - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5214",
-    "cd_equipamento": "5214",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "112048",
-    "data_entrada": "05/06/2025",
-    "servico": "Desgaste no pinhão da coroa do sistema de transmissão da adubadeira - (Fazenda SP)\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5227",
-    "cd_equipamento": "5227",
-    "modelo": "ROCADEIRA BALDAN DE 4 FACAS",
-    "os": "111235",
-    "data_entrada": "23/05/2025",
-    "servico": "Vazamento do eixo que desce para os fações - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   }
 ]

@@ -1,35 +1,59 @@
 [
   {
-    "frota": "5547",
-    "cd_equipamento": "5547",
-    "modelo": "ARADO AIVECA S-0593",
-    "os": "113945",
-    "data_entrada": "08/07/2025",
-    "servico": "Realizar solda para reparo de trinca localizada no pé da torre do terceiro ponto do equipamento - (Fazenda Úrsula) \nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5105",
-    "cd_equipamento": "5105",
-    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
-    "os": "113941",
-    "data_entrada": "08/07/2025",
-    "servico": "Suporte do pistão trincado - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
+    "frota": "5365",
+    "cd_equipamento": "5365",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "113870",
-    "data_entrada": "07/07/2025",
-    "servico": "Fazer solda na abraçadeira de fixação do corote de água - (Fazenda São Paulo)\nSolicitado Sr. Geovane\nResponsavel Sr. Mauricio"
+    "os": "114028",
+    "data_entrada": "09/07/2025",
+    "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Casa Branca)\nSolicitado Sr. João Porteira \nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5748",
-    "cd_equipamento": "5748",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "113865",
-    "data_entrada": "07/07/2025",
-    "servico": "Estrutura traseira de proteção do tanque (para-choque/defletor) amassada devido a impacto em outro equipamento. Necessário desamassar ou substituir, conforme avaliação. - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+    "frota": "5067",
+    "cd_equipamento": "5067",
+    "modelo": "ADUBADEIRA CACAMBA TATU",
+    "os": "114027",
+    "data_entrada": "09/07/2025",
+    "servico": "Fabricar vedação do mancal dianteiro da esteira - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5724",
+    "cd_equipamento": "5724",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "114017",
+    "data_entrada": "09/07/2025",
+    "servico": "Instalar esticador e batedor e realinha barrinha - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5058",
+    "cd_equipamento": "5058",
+    "modelo": "PULVERIZADOR 600 LT FMC",
+    "os": "114013",
+    "data_entrada": "09/07/2025",
+    "servico": "Fabricar gaiola para transporte de pessoas, conforme especificações de segurança.\nRealizar alongamento do braço para acomodação de mangueira.\nSubstituir parafuso do comando.\nVerificar e corrigir vazamento no bujão de óleo. - (Fazenda São Severino)\nSolicitado Sr. Carlos Mariano\nResponsavel Sr. Carlos Mariano"
+  },
+  {
+    "frota": "5557",
+    "cd_equipamento": "5557",
+    "modelo": "ROCADEIRA KAMAQ",
+    "os": "113997",
+    "data_entrada": "09/07/2025",
+    "servico": "Trinca na estrutura da torre - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5009",
+    "cd_equipamento": "5009",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "113988",
+    "data_entrada": "09/07/2025",
+    "servico": "Fazer solda em trinca no chassi - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5072",
+    "cd_equipamento": "5072",
+    "modelo": "GRADE NIVELADORA",
+    "os": "113915",
+    "data_entrada": "08/07/2025",
+    "servico": "Revisar mancal afastado e instalar bico graxeiro da secção dianteira L/D - (Fazenda Estrela 6)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5421",
@@ -222,14 +246,6 @@
     "os": "112190",
     "data_entrada": "05/06/2025",
     "servico": "Sacar parafusos do motor, recuperar lateral do trator\nFaz Santa Luiza\nAutorizado Arthur"
-  },
-  {
-    "frota": "5579",
-    "cd_equipamento": "5579",
-    "modelo": "TRITURADOR TFI-1600 GTM",
-    "os": "111502",
-    "data_entrada": "03/06/2025",
-    "servico": "Substituir facas de corte da trincha - (Fazenda Estrela)\nLiberado Sr. Mauricio\n- Feito troca do jogo completo das facas de corte"
   },
   {
     "frota": "5136",

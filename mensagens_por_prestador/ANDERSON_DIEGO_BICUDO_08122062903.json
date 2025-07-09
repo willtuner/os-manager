@@ -1,11 +1,19 @@
 [
   {
-    "frota": "65",
-    "cd_equipamento": "65",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113925",
-    "data_entrada": "08/07/2025",
-    "servico": "Troca da boia de combustível e sensor da TDP - (Fazenda Alvorada)\nSolicitado Sr. Natalino \nResponsavel Sr. Arthur"
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114032",
+    "data_entrada": "09/07/2025",
+    "servico": "Avaliar alavanca de marcha \"bamba\" - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114020",
+    "data_entrada": "09/07/2025",
+    "servico": "Vazamento de diesel no filtro sedimentador de combustível - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "250",
@@ -32,12 +40,12 @@
     "servico": "Avaliação e identificação de possível vazamento de água na parte frontal do trator - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "113505",
-    "data_entrada": "30/06/2025",
-    "servico": "Avaliar trator perdendo força - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Arthur\nP.S Troca de 400 hrs vencida, possível causa da perca de potencia por filtros obnstruidos"
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "113641",
+    "data_entrada": "02/07/2025",
+    "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "224",
@@ -80,6 +88,14 @@
     "servico": "Avaliar embreagem - Faz Santa Luiza\nAutorizado Arthur"
   },
   {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112954",
+    "data_entrada": "21/06/2025",
+    "servico": "Verificar barulho a normal na TDP - Faz São Severino\nAutorizado Arthur"
+  },
+  {
     "frota": "74",
     "cd_equipamento": "74",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -88,36 +104,12 @@
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "116",
-    "cd_equipamento": "116",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "111499",
-    "data_entrada": "02/06/2025",
-    "servico": "Remover vazamentos do motor, desmontado lateral do implemento aberto o trator no meio para tirar vazamento da tampa traseira do motor. - (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "303",
-    "cd_equipamento": "303",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111481",
-    "data_entrada": "28/05/2025",
-    "servico": "Trocar cano de alimentação do filtro, retirado vazamento de compressão do silencioso e regulagem da TDP - (Fazenda São Severino)\nFaz NSA\nSolicitado Rennan\nAutorizado Arthur\n- Troca da mangueira de diesel, regulagem da embreagem da TDP, retirado vazamento de compressão do silencioso para o escapamento"
-  },
-  {
     "frota": "67",
     "cd_equipamento": "67",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "111293",
     "data_entrada": "26/05/2025",
     "servico": "Vazamento de óleo no motor - (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "275",
-    "cd_equipamento": "275",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "111199",
-    "data_entrada": "23/05/2025",
-    "servico": "Trocar mangueira de diesel - (Fazenda NSA)\nLiberado Sr. Rafael"
   },
   {
     "frota": "98",
@@ -134,13 +126,5 @@
     "os": "110515",
     "data_entrada": "14/05/2025",
     "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "223",
-    "cd_equipamento": "223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "109529",
-    "data_entrada": "28/04/2025",
-    "servico": "Identificar e avaliar vazamento no meio do trator - (Fazenda Pedra Verde)\nLiberado Sr. Arthur\n- Trocado todos rolamentos da embalagem e disco da TDP trocado retentor do vira brekin e eixo\n- Retirado vazamento da tampa frontal e do map, trator trocado retentor do vira brekin dianteiro tampa\n- Retirado vazamento tampa traseira\n- Retirado eixo para fazer a fura do cardan e feito eixo do pião\n- Trocado todas mangueiras do diesel \n- Trocado todos reparos da bomba dágua(juntas) e reparas\n- Trocado reparo do pistão"
   }
 ]
