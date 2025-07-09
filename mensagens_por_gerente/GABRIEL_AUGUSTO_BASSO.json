@@ -1,6 +1,20 @@
 [
   {
     "frota": "5067",
+    "os": "114027",
+    "data": "09/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fabricar vedação do mancal dianteiro da esteira - (Pecuaria)"
+  },
+  {
+    "frota": "68",
+    "os": "114021",
+    "data": "09/07/2025",
+    "prestador": "nan",
+    "servico": "Trocar sinta de fixação do tanque combustível - (Pecuaria)"
+  },
+  {
+    "frota": "5067",
     "os": "113933",
     "data": "08/07/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
@@ -19,20 +33,6 @@
     "data": "08/07/2025",
     "prestador": "nan",
     "servico": "Verificar perda de parafusos de uma das rodas, que ocasionou a parada do equipamento. Realizar inspeção completa, providenciar substituição dos parafusos e checagem geral para garantir segurança na operação - (Pecuaria)"
-  },
-  {
-    "frota": "109",
-    "os": "113470",
-    "data": "30/06/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Avaliar trator com perda de potência em funcionamento. - (Pecuária)"
-  },
-  {
-    "frota": "68",
-    "os": "113297",
-    "data": "26/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Suporte do cibié quebrado - (Pecuaria)"
   },
   {
     "frota": "5351",

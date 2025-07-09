@@ -1,5 +1,12 @@
 [
   {
+    "frota": "165",
+    "os": "113994",
+    "data": "09/07/2025",
+    "prestador": "nan",
+    "servico": "Instalar sistema eletrico do motor do para-brisa - (Fazenda Estrela)"
+  },
+  {
     "frota": "5361",
     "os": "113835",
     "data": "07/07/2025",
@@ -42,25 +49,11 @@
     "servico": "Avaliar e corrigir vazamento de óleo na saída da caixa de comando. - (Fazenda Estrela)"
   },
   {
-    "frota": "46",
-    "os": "113649",
-    "data": "02/07/2025",
-    "prestador": "nan",
-    "servico": "Avaliar e corrigir vazamento de óleo no cubo da roda (lado esquerdo). - (Fazenda Estrela)"
-  },
-  {
     "frota": "91",
     "os": "113543",
     "data": "30/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar proteções do trator - Faz Estrela"
-  },
-  {
-    "frota": "46",
-    "os": "113505",
-    "data": "30/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar trator perdendo força - (Fazenda Estrela)"
   },
   {
     "frota": "10219",
@@ -84,52 +77,10 @@
     "servico": "Fazer proteções dos para-lamas - (Fazenda Estrela)"
   },
   {
-    "frota": "5042",
-    "os": "112242",
-    "data": "06/06/2025",
-    "prestador": "TORNEARIA STEINHAUSER LTDA",
-    "servico": "Recuperar engate do cabeçário."
-  },
-  {
     "frota": "10229",
     "os": "111908",
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
     "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5579",
-    "os": "111502",
-    "data": "03/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir facas de corte da trincha - (Fazenda Estrela)"
-  },
-  {
-    "frota": "116",
-    "os": "111499",
-    "data": "02/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Remover vazamentos do motor, desmontado lateral do implemento aberto o trator no meio para tirar vazamento da tampa traseira do motor. - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5390",
-    "os": "111711",
-    "data": "28/05/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Verificar mola da embreagem e tampa do óleo."
-  },
-  {
-    "frota": "5678",
-    "os": "111704",
-    "data": "28/05/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Verificar cano danificado."
-  },
-  {
-    "frota": "5780",
-    "os": "111793",
-    "data": "28/05/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Verificar equipamento não pega na partida."
   }
 ]

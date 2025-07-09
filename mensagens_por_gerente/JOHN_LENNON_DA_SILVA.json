@@ -1,5 +1,19 @@
 [
   {
+    "frota": "5723",
+    "os": "113992",
+    "data": "09/07/2025",
+    "prestador": "nan",
+    "servico": "Retirar um pneu de cada lado do eixo traseiro, considerando que o conjunto está em configuração de rodado duplo (pneus geminados). - (Fazenda Santa Izabel)"
+  },
+  {
+    "frota": "5705",
+    "os": "113991",
+    "data": "09/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Retirar um pneu de cada lado do eixo traseiro, considerando que o conjunto está em configuração de rodado duplo (pneus geminados). - (Fazenda Santa Izabel)"
+  },
+  {
     "frota": "209",
     "os": "113775",
     "data": "04/07/2025",
@@ -7,32 +21,11 @@
     "servico": "Pneu traseiro L/E furado - (Fazenda Santa Luiza)"
   },
   {
-    "frota": "10227",
-    "os": "113774",
-    "data": "04/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator não dá partida. Motor de arranque apresentou fumaça na primeira tentativa e deixou de funcionar - (Fazenda Santa Luiza)"
-  },
-  {
     "frota": "198",
     "os": "113663",
     "data": "02/07/2025",
     "prestador": "nan",
     "servico": "Folga no rolamento da bomba de água - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "67",
-    "os": "113926",
-    "data": "30/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico - Faz Santa Luiza"
-  },
-  {
-    "frota": "67",
-    "os": "112498",
-    "data": "10/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico - (Faz Santa Luiza)"
   },
   {
     "frota": "67",

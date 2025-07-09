@@ -1,5 +1,26 @@
 [
   {
+    "frota": "222",
+    "os": "114012",
+    "data": "09/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar vazamento na bomba de óleo hidráulico e nos tuchos do comando hidráulico - (Fazenda Estrela)"
+  },
+  {
+    "frota": "222",
+    "os": "114011",
+    "data": "09/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié dianteiro queimado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "222",
+    "os": "114010",
+    "data": "09/07/2025",
+    "prestador": "nan",
+    "servico": "Vazamento no condensador do A/C - (Fazenda Estrela)"
+  },
+  {
     "frota": "5451",
     "os": "113965",
     "data": "08/07/2025",
@@ -21,27 +42,6 @@
     "servico": "Fazer fibra na base turbina - (Fazenda Estrela)"
   },
   {
-    "frota": "5748",
-    "os": "113865",
-    "data": "07/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Estrutura traseira de proteção do tanque (para-choque/defletor) amassada devido a impacto em outro equipamento. Necessário desamassar ou substituir, conforme avaliação. - (Fazenda Estrela)"
-  },
-  {
-    "frota": "248",
-    "os": "113833",
-    "data": "07/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sinalização: Farol sem foco e cibiés do teto queimados - (Fazenda Estrela)"
-  },
-  {
-    "frota": "269",
-    "os": "113832",
-    "data": "07/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié  L/E queimado e sirene de ré não funciona (Fazenda Estrela)"
-  },
-  {
     "frota": "5486",
     "os": "113813",
     "data": "04/07/2025",
@@ -61,12 +61,5 @@
     "data": "04/07/2025",
     "prestador": "nan",
     "servico": "Verificar agulhas da torre, substituir as que estão quebradas  - (Fazenda Estrela)"
-  },
-  {
-    "frota": "136",
-    "os": "113603",
-    "data": "01/07/2025",
-    "prestador": "nan",
-    "servico": "Vazamento de óleo no cubo da roda dianteira - (Fazenda Estrela)"
   }
 ]

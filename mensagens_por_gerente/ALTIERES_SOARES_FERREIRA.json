@@ -1,10 +1,17 @@
 [
   {
-    "frota": "5345",
-    "os": "113870",
-    "data": "07/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda na abraçadeira de fixação do corote de água - (Fazenda São Paulo)"
+    "frota": "113",
+    "os": "114029",
+    "data": "09/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar alternador, trator sem partida - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "97",
+    "os": "113972",
+    "data": "08/07/2025",
+    "prestador": "nan",
+    "servico": "Vazamento no orbitrol da direção - (Fazenda Pedra Verde)"
   },
   {
     "frota": "5604",
@@ -63,27 +70,6 @@
     "servico": "Fazer serviço de fibra no tanque - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "5666",
-    "os": "112707",
-    "data": "18/06/2025",
-    "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
-    "servico": "Afiar jogo de 2 discos da podadeira - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5436",
-    "os": "112122",
-    "data": "30/05/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Peças para manutenção interna -"
-  },
-  {
-    "frota": "5622",
-    "os": "112121",
-    "data": "30/05/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Peça para manutenção interna"
-  },
-  {
     "frota": "245",
     "os": "111563",
     "data": "30/05/2025",
@@ -96,19 +82,5 @@
     "data": "28/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer proteção das polias."
-  },
-  {
-    "frota": "119",
-    "os": "111288",
-    "data": "26/05/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento de diesel - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "223",
-    "os": "109529",
-    "data": "28/04/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Identificar e avaliar vazamento no meio do trator - (Fazenda Pedra Verde)"
   }
 ]

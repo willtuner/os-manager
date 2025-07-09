@@ -1,5 +1,19 @@
 [
   {
+    "frota": "5058",
+    "os": "114013",
+    "data": "09/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fabricar gaiola para transporte de pessoas, conforme especificações de segurança."
+  },
+  {
+    "frota": "5613",
+    "os": "113979",
+    "data": "08/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Esticar correia da torre (Fazenda São Severino)"
+  },
+  {
     "frota": "5612",
     "os": "113855",
     "data": "07/07/2025",
@@ -42,18 +56,11 @@
     "servico": "Verificar falha no funcionamento da buzina - (Fazenda São Severino)"
   },
   {
-    "frota": "5599",
-    "os": "113776",
+    "frota": "227",
+    "os": "113641",
     "data": "02/07/2025",
-    "prestador": "AGROMAQ PECAS E SERVICOS LTDA",
-    "servico": "Verificar motor estacionário travando, pesando a partida e ruim para pegar."
-  },
-  {
-    "frota": "5599",
-    "os": "113577",
-    "data": "01/07/2025",
-    "prestador": "AGNALDO MANOEL DE OLIVEIRA PECAS",
-    "servico": "Verificar motor elétrico que gira, mas não realiza a partida efetiva. - (Fazenda São Severino)"
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)"
   },
   {
     "frota": "5614",
@@ -63,10 +70,10 @@
     "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)"
   },
   {
-    "frota": "225",
-    "os": "111728",
-    "data": "02/06/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento de diesel na bomba injetora - (Fazenda São Severino)"
+    "frota": "233",
+    "os": "112954",
+    "data": "21/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar barulho a normal na TDP - Faz São Severino"
   }
 ]
