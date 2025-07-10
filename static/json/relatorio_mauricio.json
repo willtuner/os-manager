@@ -1,5 +1,27 @@
 [
     {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "5107",
+        "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+        "os": "114051",
+        "data_entrada": "10/07/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Rolamento da turbina roncando - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "27",
+        "modelo": "TRATOR MASSEY FERGUSON 275/2",
+        "os": "114040",
+        "data_entrada": "10/07/2025",
+        "previsao_saida": "---",
+        "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
+        "servico": "Pneu dianteiro L/E furado - (Fazenda Nova Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
         "frota": "5365",
         "modelo": "PULVERIZADOR 4000 LT - NATALI",
