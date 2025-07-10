@@ -1,42 +1,18 @@
 [
   {
-    "frota": "5436",
-    "cd_equipamento": "5436",
-    "modelo": "MOTOSERRA",
-    "os": "112122",
-    "data_entrada": "30/05/2025",
-    "servico": "Peças para manutenção interna -"
-  },
-  {
-    "frota": "5622",
-    "cd_equipamento": "5622",
-    "modelo": "MOTOSSERRA MS382",
-    "os": "112121",
-    "data_entrada": "30/05/2025",
-    "servico": "Peça para manutenção interna"
+    "frota": "5417",
+    "cd_equipamento": "5417",
+    "modelo": "ROCADEIRA COSTAL FS 161 STIHL",
+    "os": "114038",
+    "data_entrada": "09/07/2025",
+    "servico": "Verificar equipamento só fica na lenta, não firma, sem rotação, com perca de força e não segura aceleração.\nFazenda Nova Manhã\nSolicitado Sr. Paulo\nResponsável Sr. Maurício\nNúmero de série: 366738760"
   },
   {
     "frota": "5390",
     "cd_equipamento": "5390",
     "modelo": "MOTOSERRA",
-    "os": "111711",
-    "data_entrada": "28/05/2025",
-    "servico": "Verificar mola da embreagem e tampa do óleo.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5678",
-    "cd_equipamento": "5678",
-    "modelo": "ROCADEIRA COSTAL FS 221 STIHL",
-    "os": "111704",
-    "data_entrada": "28/05/2025",
-    "servico": "Verificar cano danificado.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5780",
-    "cd_equipamento": "5780",
-    "modelo": "ROCADEIRA COSTAL FS 221 STIHL",
-    "os": "111793",
-    "data_entrada": "28/05/2025",
-    "servico": "Verificar equipamento não pega na partida.\nFazenda Estrela\nSolicitado Sr. Danilo\nLiberado Sr. Maurício"
+    "os": "114036",
+    "data_entrada": "05/07/2025",
+    "servico": "Verificar partida do equipamento, acertar sabre e corrente.\nFazenda Estrela\nSolicitado Sr. Danilo\nResponsável Sr. Maurício\nNúmero de Série: 369725280"
   }
 ]

@@ -1,11 +1,19 @@
 [
   {
-    "frota": "5697",
-    "cd_equipamento": "5697",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "114030",
-    "data_entrada": "09/07/2025",
-    "servico": "Botão de acionamento da pistola quebrado e fio da mesma curto - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+    "frota": "271",
+    "cd_equipamento": "271",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114050",
+    "data_entrada": "10/07/2025",
+    "servico": "Farol superior (localizado na capota) não está funcionando. Ao realizar a inspeção, foi identificado fio derretido no terminal do conector bico do farol. - (Fazenda  Santa Luiza)\nSolicitado Sr. John \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "211",
+    "cd_equipamento": "211",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "114044",
+    "data_entrada": "10/07/2025",
+    "servico": "Verificar faróis e pisca alerta não ascende - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "113",
@@ -32,44 +40,12 @@
     "servico": "Cibié dianteiro queimado - (Fazenda Estrela)\nSolicitado Sr. Carlos\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "268",
-    "cd_equipamento": "268",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114003",
-    "data_entrada": "09/07/2025",
-    "servico": "Cibié traseiro queimador e sem a lente - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "221",
-    "cd_equipamento": "221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114002",
-    "data_entrada": "09/07/2025",
-    "servico": "Revisar sinalização, cibié e faróis queimados e com mau contato - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "132",
     "cd_equipamento": "132",
     "modelo": "TRATOR NEW HOLLAND TL75E",
     "os": "113998",
     "data_entrada": "09/07/2025",
     "servico": "Revisar sistema eletrico - Oficina\nAutorizado Arthur"
-  },
-  {
-    "frota": "254",
-    "cd_equipamento": "254",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113982",
-    "data_entrada": "08/07/2025",
-    "servico": "Trocar cibie originais dianteiro, por cibies de lede (Fazenda Minuano)\nSolicitante Sr. Antônio\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113981",
-    "data_entrada": "08/07/2025",
-    "servico": "Verificar dos faróis dianteiro (Fazenda Minuano)\nSolicitante Sr. Antônio\nResponsável Sr. Arthur"
   },
   {
     "frota": "122",
@@ -80,28 +56,12 @@
     "servico": "Verificar alternador não está carregando - (Fazenda SL1)\nResponsavel Sr. Arthur\nSolicitado Sr. Wagner"
   },
   {
-    "frota": "285",
-    "cd_equipamento": "285",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113907",
-    "data_entrada": "08/07/2025",
-    "servico": "Farol dianteiro queimado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "98",
     "cd_equipamento": "98",
     "modelo": "TRATOR JOHN DEERE 5065 4X4",
     "os": "113905",
     "data_entrada": "08/07/2025",
     "servico": "Revisar sistema eletrico do trator - Faz Casa Branca\nAutorizado Arthur"
-  },
-  {
-    "frota": "133",
-    "cd_equipamento": "133",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "113869",
-    "data_entrada": "07/07/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "145",
@@ -120,36 +80,12 @@
     "servico": "Substituir disco espalhador e kit de reparo do eixo - (Fazenda Estrela)\nSolicitado Sr. Danilo  Mulari\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5671",
-    "cd_equipamento": "5671",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "113729",
-    "data_entrada": "03/07/2025",
-    "servico": "Botão de acionamento da barra está enroscando, dificultando o acionamento - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "149",
-    "cd_equipamento": "149",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "113709",
-    "data_entrada": "03/07/2025",
-    "servico": "Cibiés traseiros queimados - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "318",
     "cd_equipamento": "318",
     "modelo": "TRATOR NEW HOLANDTL5.80",
     "os": "113696",
     "data_entrada": "03/07/2025",
     "servico": "Verificar falha no funcionamento da buzina - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "1005",
-    "cd_equipamento": "1005",
-    "modelo": "CAMINHAO MERCEDES B. AXOR 2831",
-    "os": "113554",
-    "data_entrada": "01/07/2025",
-    "servico": "Faróis dianteiros queimados - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Arthur"
   },
   {
     "frota": "265",
