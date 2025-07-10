@@ -1,5 +1,12 @@
 [
   {
+    "frota": "221",
+    "os": "114047",
+    "data": "10/07/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Identificado vazamento de gás refrigerante na mangueira do compressor de ar. - (Fazenda Estrela)"
+  },
+  {
     "frota": "5367",
     "os": "114006",
     "data": "09/07/2025",
@@ -21,20 +28,6 @@
     "servico": "Avaliar trator sem freio, vazamento na mangueira do cilindro de freio - (Fazenda Estrela)"
   },
   {
-    "frota": "268",
-    "os": "114003",
-    "data": "09/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié traseiro queimador e sem a lente - (Fazenda Estrela)"
-  },
-  {
-    "frota": "221",
-    "os": "114002",
-    "data": "09/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sinalização, cibié e faróis queimados e com mau contato - (Fazenda Estrela)"
-  },
-  {
     "frota": "329",
     "os": "114001",
     "data": "09/07/2025",
@@ -49,32 +42,11 @@
     "servico": "Trocar jogo de embreagens e cardam - (Fazenda Estrela)"
   },
   {
-    "frota": "5671",
-    "os": "113729",
-    "data": "03/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Botão de acionamento da barra está enroscando, dificultando o acionamento - (Fazenda Estrela)"
-  },
-  {
-    "frota": "149",
-    "os": "113709",
-    "data": "03/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibiés traseiros queimados - (Fazenda Estrela)"
-  },
-  {
     "frota": "5061",
     "os": "113560",
     "data": "01/07/2025",
     "prestador": "DARCI CAPEL & CIA LTDA",
     "servico": "Fazer preenchimento do alojamento do cubo e eixo da helice da turbina."
-  },
-  {
-    "frota": "1005",
-    "os": "113554",
-    "data": "01/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Faróis dianteiros queimados - (Fazenda Estrela)"
   },
   {
     "frota": "323",
