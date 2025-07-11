@@ -1,5 +1,29 @@
 [
   {
+    "frota": "81",
+    "cd_equipamento": "81",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "114176",
+    "data_entrada": "11/07/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)\nSolicitado Sr. Danilo (ADM)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "259",
+    "cd_equipamento": "259",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114145",
+    "data_entrada": "11/07/2025",
+    "servico": "Pneu L/D dianteiro furado - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114139",
+    "data_entrada": "11/07/2025",
+    "servico": "Pneu L/D deslocado - (Fazenda Alvorada)\n275/80R 22.5\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5705",
     "cd_equipamento": "5705",
     "modelo": "PULVERIZADOR ALCITOWER 4000LT",
@@ -30,6 +54,14 @@
     "os": "113900",
     "data_entrada": "08/07/2025",
     "servico": "Calibrar pneu L/D traseiro e verificar calibragem dos demais pneus - (Pecuaria)\nSolicitado Sr. Bruno\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5352",
+    "cd_equipamento": "5352",
+    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
+    "os": "113899",
+    "data_entrada": "08/07/2025",
+    "servico": "Verificar perda de parafusos de uma das rodas, que ocasionou a parada do equipamento. Realizar inspeção completa, providenciar substituição dos parafusos e checagem geral para garantir segurança na operação - (Pecuaria)\nSolicitado Sr. Bruno \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5542",

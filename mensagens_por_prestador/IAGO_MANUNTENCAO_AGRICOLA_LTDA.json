@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "114131",
+    "data_entrada": "11/07/2025",
+    "servico": "Trocar correia do agitador de calda - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5599",
+    "cd_equipamento": "5599",
+    "modelo": "PREMIX PRIME 2T 2000",
+    "os": "114105",
+    "data_entrada": "10/07/2025",
+    "servico": "Rosca do premix estragada. (Fazenda São Severino)\nSolicitante Sr. Cassio\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5749",
+    "cd_equipamento": "5749",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "114094",
+    "data_entrada": "10/07/2025",
+    "servico": "Vazamento nas canecas (Fazenda Minuano)\nSolicitante Sr. Antônio\nResponsável Sr. Mauricio"
+  },
+  {
     "frota": "5107",
     "cd_equipamento": "5107",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -32,14 +56,6 @@
     "servico": "Quebra do rolamento do eixo da bomba - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5613",
-    "cd_equipamento": "5613",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "113979",
-    "data_entrada": "08/07/2025",
-    "servico": "Esticar correia da torre (Fazenda São Severino)\nSolicitante Sr. Cassio\nResponsável Sr. Mauricio"
-  },
-  {
     "frota": "5451",
     "cd_equipamento": "5451",
     "modelo": "PULVERIZADOR BARRAS TRICICLO",
@@ -64,70 +80,6 @@
     "servico": "Verificar vazamento no retentor da bomba, avaliar motivo do desalinhamento ou salto da correia e acertar parafuso de ajuste da correia da turbina - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5459",
-    "cd_equipamento": "5459",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "113859",
-    "data_entrada": "07/07/2025",
-    "servico": "Trocar jogo de embreagens e cardam - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5612",
-    "cd_equipamento": "5612",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "113855",
-    "data_entrada": "07/07/2025",
-    "servico": "Trocar correias e avaliar rolamento da turbina roncando - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5211",
-    "cd_equipamento": "5211",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113848",
-    "data_entrada": "07/07/2025",
-    "servico": "Trocar correias e vazamento nos pistões - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "113842",
-    "data_entrada": "07/07/2025",
-    "servico": "Trocar correias do agitador de calda - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5129",
-    "cd_equipamento": "5129",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "113841",
-    "data_entrada": "07/07/2025",
-    "servico": "Trocar correias (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5486",
-    "cd_equipamento": "5486",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113813",
-    "data_entrada": "04/07/2025",
-    "servico": "Verificar rolamento traseiro do eixo cardan de transmissão danificado e corrigir vazamento de produto no guarda-chuva da bomba.\nFazenda Estrela\nSolicitado Sr. Carlos\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5336",
-    "cd_equipamento": "5336",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "113786",
-    "data_entrada": "04/07/2025",
-    "servico": "Quebra do cardam - (Fazenda Estrela)\nSolicitado Sr. Nelson\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5214",
-    "cd_equipamento": "5214",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "113712",
-    "data_entrada": "03/07/2025",
-    "servico": "Revisar motor hidráulico da esteira, que não está acionando o sistema. - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5494",
     "cd_equipamento": "5494",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
@@ -136,35 +88,11 @@
     "servico": "Substituir rolamento do eixo do multiplicador, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5355",
-    "cd_equipamento": "5355",
-    "modelo": "ATOMIZADOR JACTO 4000 LT",
-    "os": "113707",
-    "data_entrada": "03/07/2025",
-    "servico": "Verificar vazamento de óleo na bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5697",
     "cd_equipamento": "5697",
     "modelo": "PULVERIZADOR 2000 LT",
     "os": "113632",
     "data_entrada": "02/07/2025",
     "servico": "Verificar vazamento de óleo na bomba -  (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio \nP.S  Feito manutenção recente. Na OS 112642 Hiago Manutenções"
-  },
-  {
-    "frota": "5191",
-    "cd_equipamento": "5191",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "113394",
-    "data_entrada": "27/06/2025",
-    "servico": "Rolamento da polia traseiro estourado - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5614",
-    "cd_equipamento": "5614",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "113135",
-    "data_entrada": "25/06/2025",
-    "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "114075",
+    "data_entrada": "10/07/2025",
+    "servico": "Corrigir vazamento de óleo no pistão de abertura da barra direita e acertar haste torta.\nFazenda São Pedro\nSolicitado Sr. Romes\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5637",
     "cd_equipamento": "5637",
     "modelo": "PODADEIRA HIDRAUTEC HLC 4",
@@ -16,20 +24,20 @@
     "servico": "Mancal trincado (Pecuária)\nLiberado Sr. Maurício"
   },
   {
+    "frota": "5314",
+    "cd_equipamento": "5314",
+    "modelo": "PODADOR FRONTAL/LATERAL",
+    "os": "114071",
+    "data_entrada": "08/07/2025",
+    "servico": "Corrigir vazamento no pistão de levante.\nFazenda São José\nSolicitado Sr. Gilberto\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5559",
     "cd_equipamento": "5559",
     "modelo": "PODADEIRA HIDRAUTEC HLC6",
     "os": "113891",
     "data_entrada": "07/07/2025",
     "servico": "Quebra da corrente do sistema de transmissão e parafusos que seguram o rotor - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5522",
-    "cd_equipamento": "5522",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "113773",
-    "data_entrada": "04/07/2025",
-    "servico": "Vazamento nos pistões de abertura da asa - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5489",

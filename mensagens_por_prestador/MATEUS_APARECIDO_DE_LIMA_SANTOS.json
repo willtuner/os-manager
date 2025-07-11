@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5403",
+    "cd_equipamento": "5403",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "114121",
+    "data_entrada": "10/07/2025",
+    "servico": "Vazamento nas canecas (Fazenda São Pedro)\nSolicitante Sr. Romes\nResponsável Sr. Mauricio"
+  },
+  {
     "frota": "5035",
     "cd_equipamento": "5035",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -14,14 +22,6 @@
     "os": "113924",
     "data_entrada": "08/07/2025",
     "servico": "Vazamento no cilindro do pistão torno  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5760",
-    "cd_equipamento": "5760",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "113923",
-    "data_entrada": "08/07/2025",
-    "servico": "Fazer soldas e fazer reforços no suporte dos ramais e trocar abraçadeiras dos mesmo - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5126",

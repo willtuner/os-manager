@@ -1,13 +1,5 @@
 [
   {
-    "frota": "120",
-    "cd_equipamento": "120",
-    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
-    "os": "114052",
-    "data_entrada": "10/07/2025",
-    "servico": "Verificar A/C não gela e nem ventila - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "221",
     "cd_equipamento": "221",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -16,19 +8,27 @@
     "servico": "Identificado vazamento de gás refrigerante na mangueira do compressor de ar. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "130",
-    "cd_equipamento": "130",
-    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
-    "os": "113894",
-    "data_entrada": "08/07/2025",
-    "servico": "Verificar A/C não gela - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "245",
     "cd_equipamento": "245",
     "modelo": "TRATOR MASSEY FERGUSON 3307",
     "os": "113829",
     "data_entrada": "04/07/2025",
     "servico": "Verificar A/C não gela - (Fazenda Estrela)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "225",
+    "cd_equipamento": "225",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "113461",
+    "data_entrada": "28/06/2025",
+    "servico": "Revisão no sistema de ar condicionado - Faz São Severino\nAutorizado Arthur"
+  },
+  {
+    "frota": "147",
+    "cd_equipamento": "147",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "112547",
+    "data_entrada": "13/06/2025",
+    "servico": "Verificar A/C não funciona  - (Fazenda Nova Manhã)\nLiberado Sr. Arthur \nSolicitado Sr. Adriano"
   }
 ]

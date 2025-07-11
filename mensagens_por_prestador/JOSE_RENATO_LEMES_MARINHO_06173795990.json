@@ -1,11 +1,51 @@
 [
   {
-    "frota": "5365",
-    "cd_equipamento": "5365",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "114028",
-    "data_entrada": "09/07/2025",
-    "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Casa Branca)\nSolicitado Sr. João Porteira \nResponsavel Sr. Mauricio"
+    "frota": "5785",
+    "cd_equipamento": "5785",
+    "modelo": "GUINCHO AGRICOL TATU GATG 2000",
+    "os": "114166",
+    "data_entrada": "11/07/2025",
+    "servico": "Trocar ganho do guincho - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5261",
+    "cd_equipamento": "5261",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "114157",
+    "data_entrada": "11/07/2025",
+    "servico": "Soldar trinca no chassi - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5792",
+    "cd_equipamento": "5792",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "114156",
+    "data_entrada": "11/07/2025",
+    "servico": "Realizar solda na proteção das partes móveis. O ponto de fixação foi danificado devido ao impacto com facão durante a operação. - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauiricio"
+  },
+  {
+    "frota": "5718",
+    "cd_equipamento": "5718",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "114143",
+    "data_entrada": "11/07/2025",
+    "servico": "Asa L/D torta - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5105",
+    "cd_equipamento": "5105",
+    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
+    "os": "114119",
+    "data_entrada": "10/07/2025",
+    "servico": "Verificar rolamentos das duas rodas da grade. (Fazenda Úrsula)\nSolicitante Sr. João Dubay\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5100",
+    "cd_equipamento": "5100",
+    "modelo": "GUINCHO HIDRAULICO",
+    "os": "114102",
+    "data_entrada": "10/07/2025",
+    "servico": "Soldar argola do bg, e soldar trincas no chassi (Fazenda Casa Branca)\nSolicitante Sr. João \nResponsável Sr. Mauricio"
   },
   {
     "frota": "5067",
@@ -46,14 +86,6 @@
     "os": "113988",
     "data_entrada": "09/07/2025",
     "servico": "Fazer solda em trinca no chassi - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5072",
-    "cd_equipamento": "5072",
-    "modelo": "GRADE NIVELADORA",
-    "os": "113915",
-    "data_entrada": "08/07/2025",
-    "servico": "Revisar mancal afastado e instalar bico graxeiro da secção dianteira L/D - (Fazenda Estrela 6)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5421",
@@ -256,14 +288,6 @@
     "servico": "Fazer proteção das polias.\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio"
   },
   {
-    "frota": "5438",
-    "cd_equipamento": "5438",
-    "modelo": "BARRA APLICACAO DE HERBICIDA",
-    "os": "111292",
-    "data_entrada": "26/05/2025",
-    "servico": "Fazer solda em trinca na estrutura - (Fazenda Santa Luiza)\nLiberado Sr. Mauriico"
-  },
-  {
     "frota": "66",
     "cd_equipamento": "66",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -278,14 +302,6 @@
     "os": "110736",
     "data_entrada": "16/05/2025",
     "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã) \nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5204",
-    "cd_equipamento": "5204",
-    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
-    "os": "110561",
-    "data_entrada": "15/05/2025",
-    "servico": "Verificar desgaste no engate do cabeçário danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
   },
   {
     "frota": "189",

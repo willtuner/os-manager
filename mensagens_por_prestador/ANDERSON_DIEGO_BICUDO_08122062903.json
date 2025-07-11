@@ -1,5 +1,29 @@
 [
   {
+    "frota": "67",
+    "cd_equipamento": "67",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "114150",
+    "data_entrada": "11/07/2025",
+    "servico": "Vazamento de óleo no cudo da roda L/E - (Fazenda Santa Luiza)\nSolicitado Sr. John\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "132",
+    "cd_equipamento": "132",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "114144",
+    "data_entrada": "11/07/2025",
+    "servico": "Verificar possível falha ou desgaste na bomba hidráulica, que pode estar ocasionando baixa vazão e consequente lentidão no guincho. Avaliar também filtros e demais componentes do circuito hidráulico - (Fazenda Santa Luiza)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10218",
+    "cd_equipamento": "10218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114134",
+    "data_entrada": "11/07/2025",
+    "servico": "Cabo do afogador quebrado - (Fazenda Nova Manhã) \nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "156",
     "cd_equipamento": "156",
     "modelo": "TRATOR JOHN DEERE 5055E",
@@ -86,14 +110,6 @@
     "os": "111906",
     "data_entrada": "03/06/2025",
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "98",
-    "cd_equipamento": "98",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110570",
-    "data_entrada": "15/05/2025",
-    "servico": "Verificar trator não desengata marcha - (Fazenda Casa Branca)\nLiberado Sr. Arthur\nPendencias 4313,  4612 e 4311\nCaixa de filtro e tampa do reservatório"
   },
   {
     "frota": "96",
