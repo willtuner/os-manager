@@ -1,17 +1,31 @@
 [
   {
+    "frota": "109",
+    "os": "114149",
+    "data": "11/07/2025",
+    "prestador": "nan",
+    "servico": "Avaliar e identificar vazamento de óleo no meio do trator - (Pecuária)"
+  },
+  {
+    "frota": "68",
+    "os": "114133",
+    "data": "11/07/2025",
+    "prestador": "nan",
+    "servico": "Tanque de combustível furado - (Pecuaria)"
+  },
+  {
+    "frota": "5067",
+    "os": "114118",
+    "data": "10/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Realizar troca do pé de apoio (Fazenda Pecuária)"
+  },
+  {
     "frota": "5067",
     "os": "114027",
     "data": "09/07/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fabricar vedação do mancal dianteiro da esteira - (Pecuaria)"
-  },
-  {
-    "frota": "68",
-    "os": "114021",
-    "data": "09/07/2025",
-    "prestador": "nan",
-    "servico": "Trocar sinta de fixação do tanque combustível - (Pecuaria)"
   },
   {
     "frota": "5067",
@@ -31,7 +45,7 @@
     "frota": "5352",
     "os": "113899",
     "data": "08/07/2025",
-    "prestador": "nan",
+    "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Verificar perda de parafusos de uma das rodas, que ocasionou a parada do equipamento. Realizar inspeção completa, providenciar substituição dos parafusos e checagem geral para garantir segurança na operação - (Pecuaria)"
   },
   {

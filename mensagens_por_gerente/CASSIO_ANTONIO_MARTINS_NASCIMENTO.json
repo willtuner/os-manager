@@ -1,38 +1,24 @@
 [
   {
+    "frota": "80",
+    "os": "114106",
+    "data": "10/07/2025",
+    "prestador": "nan",
+    "servico": "Fixar terceiro ponto (Fazenda São Severino)"
+  },
+  {
+    "frota": "5599",
+    "os": "114105",
+    "data": "10/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Rosca do premix estragada. (Fazenda São Severino)"
+  },
+  {
     "frota": "5058",
     "os": "114013",
     "data": "09/07/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fabricar gaiola para transporte de pessoas, conforme especificações de segurança."
-  },
-  {
-    "frota": "5613",
-    "os": "113979",
-    "data": "08/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Esticar correia da torre (Fazenda São Severino)"
-  },
-  {
-    "frota": "5612",
-    "os": "113855",
-    "data": "07/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar correias e avaliar rolamento da turbina roncando - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5660",
-    "os": "113842",
-    "data": "07/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar correias do agitador de calda - (Fazenda São Severino)"
-  },
-  {
-    "frota": "318",
-    "os": "113781",
-    "data": "04/07/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 1200 hrs - (Fazenda São Severino)"
   },
   {
     "frota": "5677",
@@ -54,13 +40,6 @@
     "data": "02/07/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5614",
-    "os": "113135",
-    "data": "25/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado. - (Fazenda São Severino)"
   },
   {
     "frota": "233",
