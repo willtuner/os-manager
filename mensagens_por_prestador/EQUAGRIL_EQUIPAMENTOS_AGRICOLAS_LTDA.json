@@ -1,5 +1,29 @@
 [
   {
+    "frota": "330",
+    "cd_equipamento": "330",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "114309",
+    "data_entrada": "15/07/2025",
+    "servico": "Trator engata as marchas, porém não se movimenta, indicando possível quebra ou falha no reversor - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "319",
+    "cd_equipamento": "319",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "114210",
+    "data_entrada": "14/07/2025",
+    "servico": "Revisão de 900 hrs (Fazenda NSA- Bela Manhã)\nSolicitado Sr. Wilson\nResponsavel Sr. Wilson"
+  },
+  {
+    "frota": "321",
+    "cd_equipamento": "321",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "114209",
+    "data_entrada": "14/07/2025",
+    "servico": "Revisão de 900 hrs (Fazenda NSA)\nSolicitado Sr. Wilson\nResponsavel Sr. Wilson"
+  },
+  {
     "frota": "316",
     "cd_equipamento": "316",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -16,12 +40,28 @@
     "servico": "Fazer revisão de 900 hrs e verificar faróis de teto não funcionam - (Fazenda Santa Luiza)\nResponsavel Sr. Arthur/Wilson"
   },
   {
+    "frota": "331",
+    "cd_equipamento": "331",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "113864",
+    "data_entrada": "07/07/2025",
+    "servico": "Quebra do cabo do acelerador de mão - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "316",
     "cd_equipamento": "316",
     "modelo": "TRATOR NEW HOLANDTL5.80",
     "os": "113759",
     "data_entrada": "04/07/2025",
     "servico": "Revisão de 900 hrs - (Fazenda São José)\nSolicitado Sr. Gilberto\nResponsavel Sr. Wilson\nP.S não foi feito a troca de 600 hrs, fazenda não notificou o departamento de manutenção"
+  },
+  {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "113641",
+    "data_entrada": "02/07/2025",
+    "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "322",

@@ -1,11 +1,11 @@
 [
   {
-    "frota": "220",
-    "cd_equipamento": "220",
+    "frota": "197",
+    "cd_equipamento": "197",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114161",
+    "os": "114152",
     "data_entrada": "11/07/2025",
-    "servico": "Revisar bomba e bico - Faz Terra Branca\nAutorizado Arthur"
+    "servico": "Vazamento de óleo na bomba injetora - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
     "frota": "159",
@@ -16,19 +16,11 @@
     "servico": "Verificar vazamento de óleo na bomba injetora - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "156",
-    "cd_equipamento": "156",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "114113",
-    "data_entrada": "10/07/2025",
-    "servico": "Vazamento na bomba injetora (Fazenda São Pedro)\nSolicitante Sr. Romes\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "143",
-    "cd_equipamento": "143",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "113824",
-    "data_entrada": "05/07/2025",
-    "servico": "Verificar trator não pega, aparente entrada de ar no sistema e código de erro no painel, bateria está fraca também.\nFazenda Bela Manhã\nSolicitado Sr. Murilo\nResponsável Sr. Arthur"
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114019",
+    "data_entrada": "09/07/2025",
+    "servico": "Vazamento de óleo diesel na bomba injetora - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
   }
 ]

@@ -1,5 +1,29 @@
 [
   {
+    "frota": "504",
+    "cd_equipamento": "504",
+    "modelo": "ONIBUS",
+    "os": "114227",
+    "data_entrada": "14/07/2025",
+    "servico": "Recuperar lateral do onibus - Oficina\nAutorizado Arthur"
+  },
+  {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "114226",
+    "data_entrada": "14/07/2025",
+    "servico": "Recuperar lateral do inferior da esquerda - Faz São Severino(Oficina)\nAutorizado Arthur"
+  },
+  {
+    "frota": "220",
+    "cd_equipamento": "220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114199",
+    "data_entrada": "14/07/2025",
+    "servico": "Recuperar capo - Oficina\nAutorizado Arthur"
+  },
+  {
     "frota": "5748",
     "cd_equipamento": "5748",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",

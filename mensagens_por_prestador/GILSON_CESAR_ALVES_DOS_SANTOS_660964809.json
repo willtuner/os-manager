@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5564",
+    "cd_equipamento": "5564",
+    "modelo": "BARRA APLICACAO DE HERBICIDA",
+    "os": "114412",
+    "data_entrada": "15/07/2025",
+    "servico": "Pino da barra de articulação lado direito quebrado.(Fazenda Alvorada)\nSolicitante Sr. Natalino\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5674",
+    "cd_equipamento": "5674",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "114322",
+    "data_entrada": "15/07/2025",
+    "servico": "Remover roda guia da barra de herbicida - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5063",
+    "cd_equipamento": "5063",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114308",
+    "data_entrada": "15/07/2025",
+    "servico": "Verificação de folga no eixo da bomba (conexão com eixo cardan) - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5094",
+    "cd_equipamento": "5094",
+    "modelo": "STARA ARPLAN 3000",
+    "os": "114258",
+    "data_entrada": "14/07/2025",
+    "servico": "Vazamento no pistão L/E da lamina - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5725",
+    "cd_equipamento": "5725",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "114240",
+    "data_entrada": "14/07/2025",
+    "servico": "Instalar chapa para regulagem dos bicos TK e realinhar barra - (Fazenda Santa Izabel)\nSolicitado Sr. Diego \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5784",
+    "cd_equipamento": "5784",
+    "modelo": "DESENROLADOR DE MANGUEIRA",
+    "os": "114180",
+    "data_entrada": "11/07/2025",
+    "servico": "Reforçar suporte inferior trincado e substituir as tábuas laterais danificadas do desenrolador de mangueira de gotejo. - (Fazenda Minuano)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5709",
     "cd_equipamento": "5709",
     "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
@@ -22,22 +70,6 @@
     "os": "114117",
     "data_entrada": "10/07/2025",
     "servico": "Soldar câmera de compressão (Fazenda São Paulo)\nSolicitante Sr. Leojabes \nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5571",
-    "cd_equipamento": "5571",
-    "modelo": "CARRETA TRANSBORDO GTM",
-    "os": "113156",
-    "data_entrada": "25/06/2025",
-    "servico": "Reformar equipamento - (Fazenda Estrela) - (Corporativo)\nSolicitado Sr. Valdomiro\nResponsavel Sr. Valdomiro"
-  },
-  {
-    "frota": "5382",
-    "cd_equipamento": "5382",
-    "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
-    "os": "112020",
-    "data_entrada": "04/06/2025",
-    "servico": "Efetuar montagem da bomba no carrinha de irrigação  (Oficina)\nLiberado Sr. Rafael"
   },
   {
     "frota": "5171",

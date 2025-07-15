@@ -1,5 +1,53 @@
 [
   {
+    "frota": "5529",
+    "cd_equipamento": "5529",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "114332",
+    "data_entrada": "15/07/2025",
+    "servico": "Vazamento na graxeta e vazamento no comando - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5534",
+    "cd_equipamento": "5534",
+    "modelo": "CARRETA AGRICOLA COM PNEUS",
+    "os": "114328",
+    "data_entrada": "15/07/2025",
+    "servico": "Rolamentos das rodas rodas quebrados - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5068",
+    "cd_equipamento": "5068",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "114305",
+    "data_entrada": "15/07/2025",
+    "servico": "Vazamento de óleo nas canecas da bomba - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5022",
+    "cd_equipamento": "5022",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114267",
+    "data_entrada": "15/07/2025",
+    "servico": "Substituir correia do conjunto de acionamento.\nVerificar e substituir rolamento do eixo, que apresenta ruído (roncando). - (Fazenda Estrela)\nSolicitado Sr Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5261",
+    "cd_equipamento": "5261",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "114250",
+    "data_entrada": "14/07/2025",
+    "servico": "Verificar Vazamento de óleo na bomba - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5713",
+    "cd_equipamento": "5713",
+    "modelo": "TANQUE DE AGUA 6000 LT",
+    "os": "114243",
+    "data_entrada": "14/07/2025",
+    "servico": "Avaliar o motivo da falha no funcionamento da bomba de sucção da churumeira. - (Industria)\nSolicitado Sr. Jeovane \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5365",
     "cd_equipamento": "5365",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -38,22 +86,6 @@
     "os": "114035",
     "data_entrada": "09/07/2025",
     "servico": "Substituir os dois pistões das barras de pulverização.\nFazenda Bela Manhã\nSolicitado Sr. Murilo\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5657",
-    "cd_equipamento": "5657",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "114000",
-    "data_entrada": "09/07/2025",
-    "servico": "Realizar o realinhamento do ramal que ficou torto após queda em depressão no solo - (Fazenda Terra Branca)\nSolicitado Sr. Eder \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5399",
-    "cd_equipamento": "5399",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "113999",
-    "data_entrada": "09/07/2025",
-    "servico": "Quebra do rolamento do eixo da bomba - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5451",

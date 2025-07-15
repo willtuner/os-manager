@@ -6,5 +6,53 @@
     "os": "114178",
     "data_entrada": "11/07/2025",
     "servico": "Reforma de banco, acento e encosto - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Altieres"
+  },
+  {
+    "frota": "119",
+    "cd_equipamento": "119",
+    "modelo": "TRATOR VALTRA A750F 4X4",
+    "os": "113436",
+    "data_entrada": "26/06/2025",
+    "servico": "Serviço de soldar rabicho (Fazenda Pedra Verde)\nLiberado Sr. Altieres"
+  },
+  {
+    "frota": "5661",
+    "cd_equipamento": "5661",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "113437",
+    "data_entrada": "25/06/2025",
+    "servico": "Sacar parafuso quebrado do comando (Fazenda Pedra Verde)\nLiberado Sr. Altieres"
+  },
+  {
+    "frota": "5363",
+    "cd_equipamento": "5363",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "112633",
+    "data_entrada": "12/06/2025",
+    "servico": "Troca de cruzeta (Fazenda Pedra Verde)\nLiberado Sr. Altieres"
+  },
+  {
+    "frota": "5133",
+    "cd_equipamento": "5133",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "112634",
+    "data_entrada": "12/06/2025",
+    "servico": "Montagem do cardan (Fazenda Pedra Verde)\nLiberado Sr. Altieres"
+  },
+  {
+    "frota": "5136",
+    "cd_equipamento": "5136",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "111462",
+    "data_entrada": "28/05/2025",
+    "servico": "Usinar eixo do cabeçalho\nFaz Pedra Verde\nSolicitado Altieres \nAutorizado Mauricio"
+  },
+  {
+    "frota": "5133",
+    "cd_equipamento": "5133",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "110327",
+    "data_entrada": "09/05/2025",
+    "servico": "Fazer 1 medidor de pressão e cortar pé de apoio para adequar  (Fazenda Pedra Verde)\nLiberado Sr. Altieres"
   }
 ]

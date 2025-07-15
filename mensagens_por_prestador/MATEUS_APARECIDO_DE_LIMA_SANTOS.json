@@ -1,5 +1,21 @@
 [
   {
+    "frota": "283",
+    "cd_equipamento": "283",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114393",
+    "data_entrada": "15/07/2025",
+    "servico": "Trocar terminal de direção (Fazenda Pedra Verde)\nSolicitante Sr. Altieres\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "5661",
+    "cd_equipamento": "5661",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "114237",
+    "data_entrada": "14/07/2025",
+    "servico": "Identificado rolamento com desgaste excessivo, apresentando risco iminente de quebra. - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5403",
     "cd_equipamento": "5403",
     "modelo": "PULVERIZADOR GULIVER 4000",
@@ -8,76 +24,12 @@
     "servico": "Vazamento nas canecas (Fazenda São Pedro)\nSolicitante Sr. Romes\nResponsável Sr. Mauricio"
   },
   {
-    "frota": "5035",
-    "cd_equipamento": "5035",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113966",
-    "data_entrada": "08/07/2025",
-    "servico": "Verificar polia da ponta traseira do eixo cardan apresenta folga, acertar conexão inferior da caixa incorporadora e e verificar cintas de fixação do tanque.\nFazenda Alvorada\nSolicitado Sr. Natalino\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5760",
-    "cd_equipamento": "5760",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "113924",
-    "data_entrada": "08/07/2025",
-    "servico": "Vazamento no cilindro do pistão torno  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5126",
     "cd_equipamento": "5126",
     "modelo": "ADUBADEIRA KAMAQ 1500 KG",
     "os": "113901",
     "data_entrada": "08/07/2025",
     "servico": "Verificar rolamento dos pratos e quebra do pino elástico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5035",
-    "cd_equipamento": "5035",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113682",
-    "data_entrada": "03/07/2025",
-    "servico": "Verificar quebra da ponta de eixo da roda - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5739",
-    "cd_equipamento": "5739",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "113659",
-    "data_entrada": "02/07/2025",
-    "servico": "Verificar folga no eixo da roda guia  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5404",
-    "cd_equipamento": "5404",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "113300",
-    "data_entrada": "26/06/2025",
-    "servico": "Trocar retentor do rotor L/E - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5035",
-    "cd_equipamento": "5035",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113271",
-    "data_entrada": "26/06/2025",
-    "servico": "Revisar equipamento, bomba e conexões - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5479",
-    "cd_equipamento": "5479",
-    "modelo": "PULVERIZADOR 600 LT JACTO",
-    "os": "113059",
-    "data_entrada": "24/06/2025",
-    "servico": "Revisar bomba, misturando água no óleo - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5615",
-    "cd_equipamento": "5615",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "112978",
-    "data_entrada": "23/06/2025",
-    "servico": "Vazamento de óleo na bomba - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5611",

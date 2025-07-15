@@ -1,11 +1,19 @@
 [
   {
-    "frota": "92",
-    "cd_equipamento": "92",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "114108",
+    "frota": "268",
+    "cd_equipamento": "268",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114230",
+    "data_entrada": "14/07/2025",
+    "servico": "Substituir vidro da cabine lado direito (L/D) devido à quebra. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "309",
+    "cd_equipamento": "309",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "114100",
     "data_entrada": "10/07/2025",
-    "servico": "Reforma do assento do operador - MG Vedações\nAutorizado Arthur"
+    "servico": "Trocar para-brisa trincado (Fazenda Estrela)\nSolicitante Sr. Paulo\nResponsável Sr. Arthur"
   },
   {
     "frota": "223",
@@ -14,13 +22,5 @@
     "os": "113550",
     "data_entrada": "01/07/2025",
     "servico": "Verificar vedações da cabine, pois há entrada de produto químico no interior, indicando falha no sistema de isolamento. - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "147",
-    "cd_equipamento": "147",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "113474",
-    "data_entrada": "30/06/2025",
-    "servico": "Realizar ajuste e vedação dos vidros devido a folgas, evitando vibrações e risco de trinca ou quebra. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
   }
 ]
