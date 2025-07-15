@@ -1,5 +1,26 @@
 [
   {
+    "frota": "330",
+    "os": "114309",
+    "data": "15/07/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Trator engata as marchas, porém não se movimenta, indicando possível quebra ou falha no reversor - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "5603",
+    "os": "114266",
+    "data": "15/07/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Reinstalar o SPE - Faz Bela Manha"
+  },
+  {
+    "frota": "5712",
+    "os": "114246",
+    "data": "14/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Instalar corrente de segurança - (Fazenda Bela Manhã)"
+  },
+  {
     "frota": "5785",
     "os": "114166",
     "data": "11/07/2025",
@@ -14,32 +35,11 @@
     "servico": "Substituir os dois pistões das barras de pulverização."
   },
   {
-    "frota": "5355",
-    "os": "113958",
-    "data": "08/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda Santa Izabel)"
-  },
-  {
     "frota": "5712",
     "os": "113897",
     "data": "07/07/2025",
     "prestador": "nan",
     "servico": "Confeccionar cardan de acionamento do implemento."
-  },
-  {
-    "frota": "143",
-    "os": "113824",
-    "data": "05/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Verificar trator não pega, aparente entrada de ar no sistema e código de erro no painel, bateria está fraca também."
-  },
-  {
-    "frota": "5697",
-    "os": "113752",
-    "data": "04/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda Bela Manhã)"
   },
   {
     "frota": "5355",
@@ -59,7 +59,7 @@
     "frota": "143",
     "os": "113570",
     "data": "01/07/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trator não dá partida e exibe 'erro no sensor' no painel necessário diagnóstico eletrônico do sistema. - (Fazenda Bela Manhã)"
   },
   {
@@ -71,10 +71,24 @@
   },
   {
     "frota": "143",
+    "os": "113021",
+    "data": "23/06/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Avaliar alavanca da TDP que desengata sozinha após tentativa de acionamento - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "143",
     "os": "113005",
     "data": "23/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Fazer revisão no sistema eletrico da iluminação - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "5603",
+    "os": "112432",
+    "data": "12/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar proteção das correias"
   },
   {
     "frota": "5078",
@@ -82,5 +96,12 @@
     "data": "16/05/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Colocar proteção anti-arremesso e fazer solda em trinca - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "5336",
+    "os": "109432",
+    "data": "25/04/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Aumentar cesto de transporte de pessoas e instalar corote de água - (Fazenda Bela Manhã)"
   }
 ]

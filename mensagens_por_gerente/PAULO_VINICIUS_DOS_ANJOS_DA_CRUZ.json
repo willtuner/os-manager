@@ -1,9 +1,51 @@
 [
   {
+    "frota": "5748",
+    "os": "114312",
+    "data": "15/07/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Fazer solda nos terminais do SPE - (Fazenda Estrela)"
+  },
+  {
+    "frota": "165",
+    "os": "114307",
+    "data": "15/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5068",
+    "os": "114305",
+    "data": "15/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento de óleo nas canecas da bomba - (Fazenda Estrela)"
+  },
+  {
+    "frota": "165",
+    "os": "114252",
+    "data": "14/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar trator não tem força para levantar lança da podadeira - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5061",
+    "os": "114239",
+    "data": "14/07/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Reinstalar kit SPE retirado para fazer reforma da torre - (Fazenda Estrela)"
+  },
+  {
+    "frota": "268",
+    "os": "114230",
+    "data": "14/07/2025",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
+    "servico": "Substituir vidro da cabine lado direito (L/D) devido à quebra. - (Fazenda Estrela)"
+  },
+  {
     "frota": "197",
     "os": "114152",
     "data": "11/07/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Vazamento de óleo na bomba injetora - (Fazenda Estrela)"
   },
   {
@@ -24,14 +66,14 @@
     "frota": "309",
     "os": "114100",
     "data": "10/07/2025",
-    "prestador": "nan",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Trocar para-brisa trincado (Fazenda Estrela)"
   },
   {
     "frota": "10219",
     "os": "114092",
     "data": "10/07/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar sensor de temperatura que parou de funcionar. (Fazenda Estrela)"
   },
   {
@@ -43,30 +85,16 @@
   },
   {
     "frota": "5367",
-    "os": "114006",
-    "data": "09/07/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS",
-    "servico": "Fazer solda em trincas na estrutura - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5367",
     "os": "114005",
     "data": "09/07/2025",
     "prestador": "nan",
     "servico": "Inspecionar e reparar vazamento de óleo na bomba hidráulica responsável pelo sistema de abertura e fechamento da pistopleira. - (Fazenda Estrela)"
   },
   {
-    "frota": "221",
-    "os": "114004",
-    "data": "09/07/2025",
-    "prestador": "nan",
-    "servico": "Avaliar trator sem freio, vazamento na mangueira do cilindro de freio - (Fazenda Estrela)"
-  },
-  {
     "frota": "329",
     "os": "114001",
     "data": "09/07/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Quebra da fixação das lanternas dianteiras - (Fazenda Estrela)"
   },
   {
@@ -82,6 +110,27 @@
     "data": "27/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "soldar gonzo na grade proteção - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5523",
+    "os": "113254",
+    "data": "26/06/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D furado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5491",
+    "os": "112857",
+    "data": "19/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar falha no acionamento elétrico dos ramais, sistema não responde ao comando - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5367",
+    "os": "112330",
+    "data": "11/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda no protetor de bicos"
   },
   {
     "frota": "189",

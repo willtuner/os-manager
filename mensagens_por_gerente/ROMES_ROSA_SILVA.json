@@ -1,10 +1,17 @@
 [
   {
-    "frota": "5792",
-    "os": "114156",
-    "data": "11/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar solda na proteção das partes móveis. O ponto de fixação foi danificado devido ao impacto com facão durante a operação. - (Fazenda São Pedro)"
+    "frota": "195",
+    "os": "114414",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Vazamento no eixo da bomba injetora (Fazenda São Pedro)"
+  },
+  {
+    "frota": "195",
+    "os": "114255",
+    "data": "14/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trocar cibie da capota e desinstalar cibié do para-lamas - (Fazenda São Pedro)"
   },
   {
     "frota": "156",
@@ -35,46 +42,11 @@
     "servico": "Vazamento nas canecas (Fazenda São Pedro)"
   },
   {
-    "frota": "156",
-    "os": "114113",
-    "data": "10/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento na bomba injetora (Fazenda São Pedro)"
-  },
-  {
     "frota": "276",
     "os": "114111",
     "data": "10/07/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento no carter. (Fazenda São Pedro)"
-  },
-  {
-    "frota": "156",
-    "os": "114049",
-    "data": "10/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar reparo do cilindro da direção - Faz Pedra Verde"
-  },
-  {
-    "frota": "5760",
-    "os": "114075",
-    "data": "10/07/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Corrigir vazamento de óleo no pistão de abertura da barra direita e acertar haste torta."
-  },
-  {
-    "frota": "5760",
-    "os": "113924",
-    "data": "08/07/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Vazamento no cilindro do pistão torno  - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "287",
-    "os": "113902",
-    "data": "08/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar vazamento de óleo no meio do trator - (Fazenda São Pedro)"
   },
   {
     "frota": "5126",
@@ -91,53 +63,11 @@
     "servico": "Fazer solda em trinca no chassi - (Fazenda São Pedro)"
   },
   {
-    "frota": "5739",
-    "os": "113659",
-    "data": "02/07/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar folga no eixo da roda guia  - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5676",
-    "os": "113602",
-    "data": "01/07/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS",
-    "servico": "Vazamento nos pistões da barra e nas válvulas do comando  - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5726",
-    "os": "113601",
-    "data": "01/07/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS",
-    "servico": "Vazamento de óleo nas válvulas do comando - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5415",
     "os": "113558",
     "data": "01/07/2025",
     "prestador": "DOUTORMAQ PECAS E SERVICOS LTDA",
     "servico": "Constatado travamento do conjunto motriz da motosserra (fusão do motor), com comprometimento total dos componentes internos - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5404",
-    "os": "113300",
-    "data": "26/06/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Trocar retentor do rotor L/E - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5060",
-    "os": "113153",
-    "data": "25/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer reforço no suporte dos braços - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5615",
-    "os": "112978",
-    "data": "23/06/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Vazamento de óleo na bomba - (Fazenda São Pedro)"
   },
   {
     "frota": "5611",
@@ -152,6 +82,20 @@
     "data": "09/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5226",
+    "os": "111912",
+    "data": "03/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desentortar cabeçário e fazer reforço, corrigir partes podres na lataria, instalar a tampa traseira, fixar a placa e pé de apoio, corrigir estrutura e acertar engate do rabicho."
+  },
+  {
+    "frota": "5233",
+    "os": "111423",
+    "data": "28/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Realizar soldagem em múltiplas trincas na estrutura do tanque e corrigir vazamento no pistão."
   },
   {
     "frota": "5171",

@@ -1,31 +1,45 @@
 [
   {
+    "frota": "138",
+    "os": "114443",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar sensor de diesel (Fazenda Minuano)"
+  },
+  {
+    "frota": "5534",
+    "os": "114328",
+    "data": "15/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Rolamentos das rodas rodas quebrados - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5674",
+    "os": "114322",
+    "data": "15/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Remover roda guia da barra de herbicida - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5500",
+    "os": "114313",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Revisar equipamento - (Oficina/Minuano)"
+  },
+  {
+    "frota": "155",
+    "os": "114194",
+    "data": "14/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Trocar os pneus dianteiro - Faz Minuano"
+  },
+  {
     "frota": "81",
     "os": "114176",
     "data": "11/07/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)"
-  },
-  {
-    "frota": "118",
-    "os": "114130",
-    "data": "11/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar bomba elétrica de combustível, e trocar filtro de linha - (Fazenda Minuano)"
-  },
-  {
-    "frota": "118",
-    "os": "114120",
-    "data": "10/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar alternado - Faz Minuano"
-  },
-  {
-    "frota": "24",
-    "os": "114096",
-    "data": "10/07/2025",
-    "prestador": "nan",
-    "servico": "Vazamento na tampa da transmissão (Fazenda Minuano)"
   },
   {
     "frota": "5749",
@@ -45,29 +59,8 @@
     "frota": "26",
     "os": "114023",
     "data": "09/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar arranque enroscando - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5736",
-    "os": "114022",
-    "data": "09/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar motor eletrico não aciona - (Fazenda Minuano)"
-  },
-  {
-    "frota": "253",
-    "os": "113970",
-    "data": "08/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/D - (Fazenda Minuano)"
-  },
-  {
-    "frota": "144",
-    "os": "113837",
-    "data": "07/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Minuano)"
+    "servico": "Verificar arranque enroscando - (Fazenda Minuano)"
   },
   {
     "frota": "254",
@@ -75,20 +68,6 @@
     "data": "03/07/2025",
     "prestador": "nan",
     "servico": "Verificar vazamento de diesel na base da bomba injetora - (Fazenda Minuano)"
-  },
-  {
-    "frota": "81",
-    "os": "113677",
-    "data": "02/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E dianteiro furado - (Fazenda Minuano)"
-  },
-  {
-    "frota": "255",
-    "os": "113164",
-    "data": "25/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento no burrinho do freio  - (Fazenda Minuano)"
   },
   {
     "frota": "5401",
@@ -103,5 +82,19 @@
     "data": "23/06/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Modificar roçadeira do sistema convencional para ecológica, corrigir folgas no embuchamento das rodas guia traseira, acertar engate do cabeçalho danificado e corrigir trincas na estrutura."
+  },
+  {
+    "frota": "26",
+    "os": "112429",
+    "data": "12/06/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Trator com sistema de marchas remontado - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5500",
+    "os": "112053",
+    "data": "05/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em roda guia e colocar proteção anti-arremesso"
   }
 ]

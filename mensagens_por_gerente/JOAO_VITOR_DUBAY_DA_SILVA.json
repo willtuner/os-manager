@@ -1,5 +1,40 @@
 [
   {
+    "frota": "5262",
+    "os": "114350",
+    "data": "15/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar equipamento sem partida - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5094",
+    "os": "114258",
+    "data": "14/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Vazamento no pistão L/E da lamina - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "230",
+    "os": "114248",
+    "data": "14/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar falha no funcionamento do botão responsável pelo acionamento do fluxo de óleo. - (Fazenda Estrela)"
+  },
+  {
+    "frota": "279",
+    "os": "114241",
+    "data": "14/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Substituir cibié traseiro devido à queima da lâmpada - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "5178",
+    "os": "114198",
+    "data": "14/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Quebra do  disco da secção traseira - (Fazenda Estrela 6)"
+  },
+  {
     "frota": "5105",
     "os": "114119",
     "data": "10/07/2025",
@@ -17,29 +52,8 @@
     "frota": "274",
     "os": "113914",
     "data": "08/07/2025",
-    "prestador": "nan",
+    "prestador": "JOCAR LTDA",
     "servico": "Verificar rotação do trator caindo ai ligar sistema de A/C - (Fazenda Estrela 6)"
-  },
-  {
-    "frota": "5014",
-    "os": "113751",
-    "data": "04/07/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS",
-    "servico": "Fazer solda em trinca no chassi - (Fazenda NSA)"
-  },
-  {
-    "frota": "5014",
-    "os": "113606",
-    "data": "01/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Trocar pneu L/D 9.5-24 danificado - (Fazenda NSA)"
-  },
-  {
-    "frota": "279",
-    "os": "113599",
-    "data": "01/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu Dianteiro L/E (Fazenda Nova (Vo Gabi )"
   },
   {
     "frota": "5099",
@@ -56,6 +70,13 @@
     "servico": "Avaliar vazamento de óleo no munhão dianteiro do trator - (Fazenda São Pedro)"
   },
   {
+    "frota": "5744",
+    "os": "112887",
+    "data": "20/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar suporte da corrente de incorporação quebrado - (Fazenda Bela Manhã)"
+  },
+  {
     "frota": "5490",
     "os": "112721",
     "data": "18/06/2025",
@@ -68,6 +89,20 @@
     "data": "13/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar rodas com \"jogo\" - (Fazenda Estrela VI)"
+  },
+  {
+    "frota": "5665",
+    "os": "112327",
+    "data": "11/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Cortar gomo da esteira"
+  },
+  {
+    "frota": "5072",
+    "os": "112214",
+    "data": "09/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Revisar secção dianteira não mantem aperto"
   },
   {
     "frota": "266",

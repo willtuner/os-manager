@@ -1,5 +1,40 @@
 [
   {
+    "frota": "274",
+    "os": "114242",
+    "data": "14/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Substituir cibié traseiro devido à queima da lâmpada - (Fazenda Estrela 6)"
+  },
+  {
+    "frota": "63",
+    "os": "114235",
+    "data": "14/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Curto nos fios do motor de partida - (Fazenda NSA)"
+  },
+  {
+    "frota": "5629",
+    "os": "114234",
+    "data": "14/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Substituir a barra roscada do estirante da roçadeira devido a desgaste - (Fazenda NSA)"
+  },
+  {
+    "frota": "5778",
+    "os": "114233",
+    "data": "14/07/2025",
+    "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
+    "servico": "Verificar motivo da soltura frequente das chavetas do motor hidráulico dos pratos - (Fazenda NSA)"
+  },
+  {
+    "frota": "5522",
+    "os": "114222",
+    "data": "14/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D furado - (Fazenda NSA)"
+  },
+  {
     "frota": "259",
     "os": "114145",
     "data": "11/07/2025",
@@ -45,7 +80,7 @@
     "frota": "331",
     "os": "113864",
     "data": "07/07/2025",
-    "prestador": "nan",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Quebra do cabo do acelerador de mão - (Fazenda NSA)"
   },
   {
@@ -77,17 +112,38 @@
     "servico": "- Recuperar fibra do tanque aonde vai a cinta para fixar; Refazer sistema abre e fecha das abas da torre L/D e L/E."
   },
   {
-    "frota": "5673",
-    "os": "112409",
-    "data": "12/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realinhar barrinha - (Fazenda NSA)"
-  },
-  {
     "frota": "5058",
     "os": "112282",
     "data": "10/06/2025",
     "prestador": "nan",
     "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
+  },
+  {
+    "frota": "5730",
+    "os": "112075",
+    "data": "05/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Instalar patins"
+  },
+  {
+    "frota": "5662",
+    "os": "112003",
+    "data": "04/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em suporte da proteção lateral"
+  },
+  {
+    "frota": "5431",
+    "os": "111479",
+    "data": "28/05/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Trocar esteira e fundo do espalhador"
+  },
+  {
+    "frota": "5712",
+    "os": "109102",
+    "data": "17/04/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Refazer cabeçalho desalinhado"
   }
 ]

@@ -1,5 +1,12 @@
 [
   {
+    "frota": "235",
+    "os": "114413",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar mangueira do ar condicionado que soltou (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "70",
     "os": "114122",
     "data": "10/07/2025",
@@ -7,158 +14,11 @@
     "servico": "Vazamento na junta do motor (Fazenda Nova Manhã)"
   },
   {
-    "frota": "92",
-    "os": "114108",
-    "data": "10/07/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Reforma do assento do operador - MG Vedações"
-  },
-  {
-    "frota": "5417",
-    "os": "114038",
-    "data": "09/07/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Verificar equipamento só fica na lenta, não firma, sem rotação, com perca de força e não segura aceleração."
-  },
-  {
-    "frota": "85",
-    "os": "113912",
-    "data": "08/07/2025",
-    "prestador": "nan",
-    "servico": "Trocar banco danificado - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "85",
     "os": "113911",
     "data": "08/07/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer fibra no teto do trator - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "85",
-    "os": "113910",
-    "data": "08/07/2025",
-    "prestador": "nan",
-    "servico": "Freio estacionário não funciona - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "106",
-    "os": "113845",
-    "data": "07/07/2025",
-    "prestador": "DARCI CAPEL & CIA LTDA",
-    "servico": "Fazer embuchamento do bujão caixa de transferência - Faz Nova Manha"
-  },
-  {
-    "frota": "70",
-    "os": "113843",
-    "data": "07/07/2025",
-    "prestador": "nan",
-    "servico": "Avaliar vazamento nos bicos da bomba injetora de combustível - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "10218",
-    "os": "113840",
-    "data": "07/07/2025",
-    "prestador": "nan",
-    "servico": "Trocar capa de proteção do eixo cardam - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "92",
-    "os": "113633",
-    "data": "02/07/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5610",
-    "os": "113587",
-    "data": "01/07/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Montar a podadeira dupla traseira - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "70",
-    "os": "113476",
-    "data": "30/06/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Substituir engates rápidos hidráulicos e verificar vazamento no sistema da TDP (tomada de potência) - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "147",
-    "os": "113474",
-    "data": "30/06/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Realizar ajuste e vedação dos vidros devido a folgas, evitando vibrações e risco de trinca ou quebra. - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "70",
-    "os": "113473",
-    "data": "30/06/2025",
-    "prestador": "nan",
-    "servico": "Trava do capô quebrada - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5005",
-    "os": "113081",
-    "data": "24/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra do cabeçalho do tanque - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "142",
-    "os": "113077",
-    "data": "24/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar motor de partida, trator sem partida - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "142",
-    "os": "113076",
-    "data": "24/06/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Avaliar trator sem freio - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5637",
-    "os": "113024",
-    "data": "23/06/2025",
-    "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
-    "servico": "Afiar jogo de discos da podadeira (2 serras)."
-  },
-  {
-    "frota": "5191",
-    "os": "112759",
-    "data": "18/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção de partes móveis (Correia da turbina) e instalar escada na torra  (Avaliar necessidade) - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5600",
-    "os": "112762",
-    "data": "18/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar proteções na correia da bomba de pulverização e no cardan e mudar posição do comando que está em cima da bomba trazendo para a lateral."
-  },
-  {
-    "frota": "147",
-    "os": "112547",
-    "data": "13/06/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar A/C não funciona  - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5128",
-    "os": "112977",
-    "data": "03/06/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Reforma geral - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5128",
-    "os": "111561",
-    "data": "30/05/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Rolamento do eixo dianteiro que liga na bomba estourado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5129",

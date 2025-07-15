@@ -1,5 +1,40 @@
 [
   {
+    "frota": "120",
+    "os": "114419",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Vazamento nos bicos do motor (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "91",
+    "os": "114286",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Parafusos de fixação do lastro quebraram, ocasionando o desprendimento dos pesos da roda. - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5261",
+    "os": "114250",
+    "data": "14/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar Vazamento de óleo na bomba - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5346",
+    "os": "114249",
+    "data": "14/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desentortar paletas dos pratos de distribuição de adubo e fazer proteção para a correia de transmissão - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5365",
+    "os": "114245",
+    "data": "14/07/2025",
+    "prestador": "nan",
+    "servico": "Fazer fibra na torre após pegar na bica de abastecimento - (Fazenda Casa Branca)"
+  },
+  {
     "frota": "5261",
     "os": "114157",
     "data": "11/07/2025",
@@ -28,17 +63,10 @@
     "servico": "Revisar sistema eletrico do trator - Faz Casa Branca"
   },
   {
-    "frota": "5559",
-    "os": "113891",
-    "data": "07/07/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Quebra da corrente do sistema de transmissão e parafusos que seguram o rotor - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "125",
     "os": "113747",
     "data": "04/07/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar vazamento de óleo na turbina e na mangueira que sai na parte superior do motor. - (Fazenda Casa Branca)"
   },
   {
@@ -47,5 +75,12 @@
     "data": "30/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar proteção das lanternas L/?? - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5487",
+    "os": "112598",
+    "data": "16/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Soldar fios rompidos no terminal do SPE  - (Fazenda Casa Branca"
   }
 ]

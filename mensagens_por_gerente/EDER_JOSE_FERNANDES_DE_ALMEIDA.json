@@ -1,52 +1,31 @@
 [
   {
-    "frota": "220",
-    "os": "114161",
-    "data": "11/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisar bomba e bico - Faz Terra Branca"
+    "frota": "83",
+    "os": "114264",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Revisar sistema de iluminação, não ascende os cibié de teto - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "10221",
+    "os": "114254",
+    "data": "14/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar parte elétrica dos faróis (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "10222",
+    "os": "114253",
+    "data": "14/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sinalização, não ascende nada - (Fazenda Terra Branca)"
   },
   {
     "frota": "224",
-    "os": "114104",
-    "data": "10/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar embreagem (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "286",
-    "os": "114103",
-    "data": "10/07/2025",
-    "prestador": "nan",
-    "servico": "Vazamento no retentor da TDP (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "79",
-    "os": "114031",
-    "data": "09/07/2025",
-    "prestador": "nan",
-    "servico": "Sacar parafuso da bomba injetora - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5657",
-    "os": "114000",
-    "data": "09/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Realizar o realinhamento do ramal que ficou torto após queda em depressão no solo - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5399",
-    "os": "113999",
-    "data": "09/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Quebra do rolamento do eixo da bomba - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5557",
-    "os": "113997",
-    "data": "09/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trinca na estrutura da torre - (Fazenda Terra Branca)"
+    "os": "114232",
+    "data": "14/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Faróis não ascendem - (Fazenda Terra Branca)"
   },
   {
     "frota": "5398",
@@ -66,7 +45,7 @@
     "frota": "83",
     "os": "113653",
     "data": "02/07/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Cibiés dianteiros e traseiros não acendem necessário diagnóstico elétrico do sistema de iluminação - (Fazenda Terra Branca)"
   },
   {
@@ -77,24 +56,17 @@
     "servico": "Trator apresentando fumaça intensa e contínua pelo suspiro do motor, acompanhada de vazamento de óleo pelo mesmo ponto - (Fazenda Terra Branca)"
   },
   {
-    "frota": "224",
-    "os": "113311",
-    "data": "26/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar embreagem - Faz Terra Branca (Oficina)"
+    "frota": "5001",
+    "os": "112097",
+    "data": "05/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar estirante da mola da barrinha de herbicida."
   },
   {
-    "frota": "286",
-    "os": "113293",
-    "data": "26/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar vazamento na junta do cárter - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5662",
-    "os": "113221",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar chicote e conectores elétricos danificados - (Fazenda Terra Branca)"
+    "frota": "5139",
+    "os": "112058",
+    "data": "05/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trinca na estrutura do chassi"
   }
 ]

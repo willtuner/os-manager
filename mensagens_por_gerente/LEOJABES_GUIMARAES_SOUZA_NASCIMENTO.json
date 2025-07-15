@@ -1,5 +1,33 @@
 [
   {
+    "frota": "5063",
+    "os": "114308",
+    "data": "15/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Verificação de folga no eixo da bomba (conexão com eixo cardan) - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5063",
+    "os": "114229",
+    "data": "14/07/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Realizar solda em terminal danificado e verificar funcionamento do sistema. Luz do módulo acesa, porém não está chegando carga nos terminais do SPE. - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "226",
+    "os": "114219",
+    "data": "14/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5804",
+    "os": "114218",
+    "data": "14/07/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Soldar terminais do ramal do SPE - (Fazenda São Paulo)"
+  },
+  {
     "frota": "5804",
     "os": "114164",
     "data": "11/07/2025",
@@ -42,32 +70,11 @@
     "servico": "Substituição dos registros do sistema do tanque de pulverização - (Fazenda São Paulo)"
   },
   {
-    "frota": "5542",
-    "os": "113898",
-    "data": "08/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda São Paulo)"
-  },
-  {
     "frota": "257",
     "os": "113826",
     "data": "07/07/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Troca da correia do alternador - (Fazenda SP)"
-  },
-  {
-    "frota": "5347",
-    "os": "113652",
-    "data": "02/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E furado traseiro - (Fazenda SP)"
-  },
-  {
-    "frota": "5804",
-    "os": "113596",
-    "data": "01/07/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Soldar terminais de SPE - (Fazenda São Paulo)"
   },
   {
     "frota": "5804",
@@ -98,6 +105,83 @@
     "servico": "Trocar lanterna traseira quebrada - (Fazenda SP)"
   },
   {
+    "frota": "5107",
+    "os": "113019",
+    "data": "23/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Soldar fios do terminal do SPE  quebrado - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5063",
+    "os": "113022",
+    "data": "23/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Troca do cabo de alimentação do SPE - Faz São Paulo"
+  },
+  {
+    "frota": "5107",
+    "os": "112660",
+    "data": "17/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Soldar fios do terminal do SPE  quebrado - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5063",
+    "os": "112659",
+    "data": "17/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Soldar fios do terminal do SPE  quebrado - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5350",
+    "os": "112574",
+    "data": "16/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em trinca no cabeçario e verificar folga nas rodas guia"
+  },
+  {
+    "frota": "5501",
+    "os": "112309",
+    "data": "11/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar proteção de partes moveis"
+  },
+  {
+    "frota": "5107",
+    "os": "112458",
+    "data": "11/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Solda em terminal - (Fazenda SP)"
+  },
+  {
+    "frota": "5063",
+    "os": "112459",
+    "data": "11/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Solda em terminal - (Fazenda SP)"
+  },
+  {
+    "frota": "5494",
+    "os": "112252",
+    "data": "10/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Esteira quebrada - (Fazenda SP)"
+  },
+  {
+    "frota": "5749",
+    "os": "112249",
+    "data": "10/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Reajustar barra da torre torta pegando nos bicos do sistema de SPE"
+  },
+  {
+    "frota": "5107",
+    "os": "112180",
+    "data": "09/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Trinca no suporte da bomba"
+  },
+  {
     "frota": "216",
     "os": "112044",
     "data": "04/06/2025",
@@ -105,11 +189,25 @@
     "servico": "Revisar motor - (Faz São Paulo)"
   },
   {
+    "frota": "5749",
+    "os": "111991",
+    "data": "04/06/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Verificar modulo M2 do SPE não funciona - (Fazenda SP)"
+  },
+  {
     "frota": "74",
     "os": "111906",
     "data": "03/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)"
+  },
+  {
+    "frota": "5755",
+    "os": "111770",
+    "data": "02/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em suporte da proteção da embreagem"
   },
   {
     "frota": "66",

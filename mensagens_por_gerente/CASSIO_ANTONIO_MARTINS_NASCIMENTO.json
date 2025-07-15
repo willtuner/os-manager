@@ -1,9 +1,44 @@
 [
   {
+    "frota": "143",
+    "os": "114416",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Consertar horimetro travado. (Fazenda São Severino)"
+  },
+  {
+    "frota": "5660",
+    "os": "114318",
+    "data": "15/07/2025",
+    "prestador": "nan",
+    "servico": "Abertura dos ramais não funciona - (Fazenda São Severino)"
+  },
+  {
+    "frota": "234",
+    "os": "114278",
+    "data": "15/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Luz alta e baixa do farol não funciona - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5614",
+    "os": "114275",
+    "data": "15/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Chapas de fixação do ramal na torre estão quebradas, comprometendo a sustentação do conjunto - (Fazenda São Severino)"
+  },
+  {
+    "frota": "226",
+    "os": "114236",
+    "data": "14/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar o estado do cabo da embreagem de acionamento por pedal, devido à embreagem estar dura. - (Fazenda São Severino)"
+  },
+  {
     "frota": "80",
     "os": "114106",
     "data": "10/07/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fixar terceiro ponto (Fazenda São Severino)"
   },
   {
@@ -21,13 +56,6 @@
     "servico": "Fabricar gaiola para transporte de pessoas, conforme especificações de segurança."
   },
   {
-    "frota": "5677",
-    "os": "113750",
-    "data": "04/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Consertar pneu furado (câmara de ar danificada)."
-  },
-  {
     "frota": "318",
     "os": "113696",
     "data": "03/07/2025",
@@ -38,7 +66,7 @@
     "frota": "227",
     "os": "113641",
     "data": "02/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)"
   },
   {
@@ -47,5 +75,19 @@
     "data": "21/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar barulho a normal na TDP - Faz São Severino"
+  },
+  {
+    "frota": "5658",
+    "os": "112607",
+    "data": "16/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em ramal com furo"
+  },
+  {
+    "frota": "5612",
+    "os": "112241",
+    "data": "10/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda na torre bamba"
   }
 ]
