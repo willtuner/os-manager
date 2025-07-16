@@ -1,3 +1,26 @@
+
+class FrotaLeve(db.Model):
+    __tablename__ = 'frota_leve'
+    id = db.Column(db.Integer, primary_key=True)
+    placa = db.Column(db.String(20))
+    veiculo = db.Column(db.String(50))
+    motorista = db.Column(db.String(50))
+    oficina = db.Column(db.String(50))
+    servico = db.Column(db.Text)
+    situacao = db.Column(db.String(20))
+    entrada = db.Column(db.String(20))
+    saida = db.Column(db.String(20))
+    valor_mo = db.Column(db.String(20))
+    valor_pecas = db.Column(db.String(20))
+    aprovado_por = db.Column(db.String(50))
+    cotacao1 = db.Column(db.Text)
+    cotacao2 = db.Column(db.Text)
+    cotacao3 = db.Column(db.Text)
+    fechado_com = db.Column(db.Text)
+    obs = db.Column(db.Text)
+    hora_fim = db.Column(db.String(10))
+
+
 import os
 import json
 import logging
@@ -1066,19 +1089,22 @@ with app.app_context():
 # === ROTAS FROTA LEVE ===
 FROTA_LEVE_FILE = os.path.join(BASE_DIR, 'frota_leve.json')
 
+
 @app.route('/frota-leve')
 def frota_leve():
     if not session.get('is_admin'):
         return redirect('/login')
 
     filtro = request.args.get('filtro')
-    with open(FROTA_LEVE_FILE, encoding='utf-8') as f:
-        dados = json.load(f)
+    query = FrotaLeve.query
 
-    if filtro:
-        dados = [d for d in dados if d.get('situacao', '').lower() == filtro.lower()]
+    if filtro and filtro.lower() != "todos":
+        query = query.filter(FrotaLeve.situacao.ilike(f'%{filtro}%'))
 
+    dados = query.all()
     return render_template('frota_leve.html', dados=dados, usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador'))
+ or session.get('manutencao') or session.get('prestador'))
+
 
 @app.route('/frota-leve/novo', methods=['GET', 'POST'])
 def nova_manutencao_frota_leve():
@@ -1086,34 +1112,30 @@ def nova_manutencao_frota_leve():
         return redirect('/login')
 
     if request.method == 'POST':
-        nova_os = {
-            "placa": request.form['placa'],
-            "veiculo": request.form['veiculo'],
-            "motorista": request.form['motorista'],
-            "oficina": request.form['oficina'],
-            "servico": request.form['servico'],
-            "situacao": request.form['situacao'],
-            "entrada": request.form['entrada'],
-            "saida": request.form['saida'],
-            "valor_mo": request.form['valor_mo'],
-            "valor_pecas": request.form['valor_pecas'],
-            "aprovado_por": request.form['aprovado_por'],
-            "cotacao1": request.form.get('cotacao1', ''),
-            "cotacao2": request.form.get('cotacao2', ''),
-            "cotacao3": request.form.get('cotacao3', ''),
-            "fechado_com": request.form.get('fechado_com', ''),
-            "obs": request.form['obs']
-        }
-
-        with open(FROTA_LEVE_FILE, 'r', encoding='utf-8') as f:
-            dados = json.load(f)
-        dados.append(nova_os)
-        with open(FROTA_LEVE_FILE, 'w', encoding='utf-8') as f:
-            json.dump(dados, f, ensure_ascii=False, indent=4)
-
+        nova_os = FrotaLeve(
+            placa=request.form['placa'],
+            veiculo=request.form['veiculo'],
+            motorista=request.form['motorista'],
+            oficina=request.form['oficina'],
+            servico=request.form['servico'],
+            situacao=request.form['situacao'],
+            entrada=request.form['entrada'],
+            saida=request.form['saida'],
+            valor_mo=request.form['valor_mo'],
+            valor_pecas=request.form['valor_pecas'],
+            aprovado_por=request.form['aprovado_por'],
+            cotacao1=request.form.get('cotacao1', ''),
+            cotacao2=request.form.get('cotacao2', ''),
+            cotacao3=request.form.get('cotacao3', ''),
+            fechado_com=request.form.get('fechado_com', ''),
+            obs=request.form['obs']
+        )
+        db.session.add(nova_os)
+        db.session.commit()
         return redirect('/frota-leve')
 
     return render_template('nova_manutencao_frota.html', usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador'))
+ or session.get('manutencao') or session.get('prestador'))
 
 
 
