@@ -1,42 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Frota Leve - Manutenções</title>
+    <title>📋 Controle de Manutenções - Frota Leve</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f6f9;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        .btn {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .filter a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #2e8b57;
+        }
+    </style>
 </head>
 <body>
-    <h1>Controle de Manutenções - Frota Leve</h1>
-    <p>Usuário logado: {{ usuario }}</p>
+<div class="container">
+    <h1 style='color: #2e8b57;'>📋 Controle de Manutenções - Frota Leve</h1>
+    <p>👤 Usuário logado: {{ usuario }}</p>
+    <p><a href="/" style="text-decoration: none;">🔙 Voltar ao painel</a></p>
 
-    <p><a href="/">← Voltar ao painel</a></p>
+    <p><a href="/frota-leve/novo" class="btn">➕ Nova Manutenção</a></p>
 
-    <p>
-        <a href="/frota-leve/novo"><button>Nova Manutenção</button></a>
-    </p>
-
-    <p>Filtrar por situação:
+    <div class="filter">
+        <strong>🔎 Filtrar por situação:</strong>
         <a href="/frota-leve">Todos</a> |
-        <a href="/frota-leve?filtro=Agendar">Agendar</a> |
-        <a href="/frota-leve?filtro=Em andamento">Em andamento</a> |
-        <a href="/frota-leve?filtro=Finalizado">Finalizado</a>
-    </p>
+        <a href="/frota-leve?filtro=Agendar">🗓️ Agendar</a> |
+        <a href="/frota-leve?filtro=Em andamento">🔧 Em andamento</a> |
+        <a href="/frota-leve?filtro=Finalizado">✅ Finalizado</a>
+    </div>
 
-    <table border="1" cellpadding="5" cellspacing="0">
+    <table>
         <thead>
             <tr>
-                <th>Placa</th>
-                <th>Veículo</th>
-                <th>Motorista</th>
-                <th>Oficina</th>
-                <th>Serviço</th>
-                <th>Situação</th>
-                <th>Entrada</th>
-                <th>Saída</th>
-                <th>Valor M.O</th>
-                <th>Valor Peças</th>
-                <th>Aprovado por</th>
-                <th>Observações</th>
+                <th>🚘 Placa</th>
+                <th>🚗 Veículo</th>
+                <th>👨‍🔧 Motorista</th>
+                <th>🏭 Oficina</th>
+                <th>🛠️ Serviço</th>
+                <th>📌 Situação</th>
+                <th>📅 Entrada</th>
+                <th>📅 Saída</th>
+                <th>💰 M.O</th>
+                <th>🔩 Peças</th>
+                <th>🙋 Aprovado por</th>
+                <th>📝 Observações</th>
             </tr>
         </thead>
         <tbody>
@@ -56,9 +98,10 @@
                 <td>{{ item['obs'] }}</td>
             </tr>
             {% else %}
-            <tr><td colspan="12">Nenhuma manutenção cadastrada ainda.</td></tr>
+            <tr><td colspan="12" style="text-align: center;">😕 Nenhuma manutenção cadastrada ainda.</td></tr>
             {% endfor %}
         </tbody>
     </table>
+</div>
 </body>
 </html>
