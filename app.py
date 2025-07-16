@@ -1,4 +1,3 @@
-
 class FrotaLeve(db.Model):
     __tablename__ = 'frota_leve'
     id = db.Column(db.Integer, primary_key=True)
@@ -1165,3 +1164,21 @@ if __name__ == '__main__':
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
 
+@app.route('/frota-leve')
+def frota_leve():
+    if not session.get('is_admin'):
+        return redirect('/login')
+
+    filtro = request.args.get('filtro')
+    query = FrotaLeve.query
+
+    if filtro and filtro.lower() != "todos":
+        query = query.filter(FrotaLeve.situacao.ilike(f'%{filtro}%'))
+
+    dados = query.all()
+
+    return render_template(
+        'frota_leve.html',
+        dados=dados,
+        usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador')
+    )
