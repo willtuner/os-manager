@@ -1061,6 +1061,58 @@ def logout():
 with app.app_context():
     init_db()
 
+
+
+# === ROTAS FROTA LEVE ===
+FROTA_LEVE_FILE = os.path.join(BASE_DIR, 'frota_leve.json')
+
+@app.route('/frota-leve')
+def frota_leve():
+    if not session.get('is_admin'):
+        return redirect('/login')
+
+    filtro = request.args.get('filtro')
+    with open(FROTA_LEVE_FILE, encoding='utf-8') as f:
+        dados = json.load(f)
+
+    if filtro:
+        dados = [d for d in dados if d.get('situacao', '').lower() == filtro.lower()]
+
+    return render_template('frota_leve.html', dados=dados, usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador'))
+
+@app.route('/frota-leve/novo', methods=['GET', 'POST'])
+def nova_manutencao_frota_leve():
+    if not session.get('is_admin'):
+        return redirect('/login')
+
+    if request.method == 'POST':
+        nova_os = {
+            "placa": request.form['placa'],
+            "veiculo": request.form['veiculo'],
+            "motorista": request.form['motorista'],
+            "oficina": request.form['oficina'],
+            "servico": request.form['servico'],
+            "situacao": request.form['situacao'],
+            "entrada": request.form['entrada'],
+            "saida": request.form['saida'],
+            "valor_mo": request.form['valor_mo'],
+            "valor_pecas": request.form['valor_pecas'],
+            "aprovado_por": request.form['aprovado_por'],
+            "obs": request.form['obs']
+        }
+
+        with open(FROTA_LEVE_FILE, 'r', encoding='utf-8') as f:
+            dados = json.load(f)
+        dados.append(nova_os)
+        with open(FROTA_LEVE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(dados, f, ensure_ascii=False, indent=4)
+
+        return redirect('/frota-leve')
+
+    return render_template('nova_manutencao_frota.html', usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador'))
+
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
