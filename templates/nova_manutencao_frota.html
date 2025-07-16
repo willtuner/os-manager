@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Frota Leve - Manutenções</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Controle de Manutenções - Frota Leve</h1>
+    <p>Usuário logado: {{ usuario }}</p>
+
+    <p><a href="/">← Voltar ao painel</a></p>
+
+    <p>
+        <a href="/frota-leve/novo"><button>Nova Manutenção</button></a>
+    </p>
+
+    <p>Filtrar por situação:
+        <a href="/frota-leve">Todos</a> |
+        <a href="/frota-leve?filtro=Agendar">Agendar</a> |
+        <a href="/frota-leve?filtro=Em andamento">Em andamento</a> |
+        <a href="/frota-leve?filtro=Finalizado">Finalizado</a>
+    </p>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Veículo</th>
+                <th>Motorista</th>
+                <th>Oficina</th>
+                <th>Serviço</th>
+                <th>Situação</th>
+                <th>Entrada</th>
+                <th>Saída</th>
+                <th>Valor M.O</th>
+                <th>Valor Peças</th>
+                <th>Aprovado por</th>
+                <th>Observações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in dados %}
+            <tr>
+                <td>{{ item['placa'] }}</td>
+                <td>{{ item['veiculo'] }}</td>
+                <td>{{ item['motorista'] }}</td>
+                <td>{{ item['oficina'] }}</td>
+                <td>{{ item['servico'] }}</td>
+                <td>{{ item['situacao'] }}</td>
+                <td>{{ item['entrada'] }}</td>
+                <td>{{ item['saida'] }}</td>
+                <td>{{ item['valor_mo'] }}</td>
+                <td>{{ item['valor_pecas'] }}</td>
+                <td>{{ item['aprovado_por'] }}</td>
+                <td>{{ item['obs'] }}</td>
+            </tr>
+            {% else %}
+            <tr><td colspan="12">Nenhuma manutenção cadastrada ainda.</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
