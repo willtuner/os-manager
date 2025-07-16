@@ -1,36 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Nova Manutenção - Frota Leve</title>
+    <title>🛠️ Nova Manutenção - Frota Leve 🚗</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
-    <h1>Nova Manutenção - Frota Leve</h1>
-    <p>Usuário logado: {{ usuario }}</p>
-    <a href="/frota-leve">← Voltar para lista</a>
+<body style="font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; padding: 20px;">
+    <div style="max-width: 700px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
+
+    <h1 style='color: #2e8b57;'>🛠️ Nova Manutenção – Frota Leve 🚗</h1>
+    <p>👤 Usuário logado: {{ usuario }}</p>
+    <a href="/frota-leve" style='display: inline-block; margin-bottom: 20px; text-decoration: none; color: #007bff;'>🔙 Voltar para lista</a>
 
     <form method="POST" style="margin-top: 20px;">
-        <label>Placa: <input type="text" name="placa" required></label><br><br>
-        <label>Veículo: <input type="text" name="veiculo" required></label><br><br>
-        <label>Motorista: <input type="text" name="motorista"></label><br><br>
-        <label>Oficina: <input type="text" name="oficina"></label><br><br>
-        <label>Serviço: <input type="text" name="servico" required></label><br><br>
-        <label>Situação:
+        <label>🚘 Placa: <input type="text" name="placa" required></label><br><br>
+        <label>🚗 Veículo: <input type="text" name="veiculo" required></label><br><br>
+        <label>👨‍🔧 Motorista: <input type="text" name="motorista"></label><br><br>
+        <label>🏭 Oficina: <input type="text" name="oficina"></label><br><br>
+        <label>🛠️ Serviço: <input type="text" name="servico" required></label><br><br>
+        <label>📌 Situação:
             <select name="situacao">
-                <option value="Agendar">Agendar</option>
-                <option value="Em andamento">Em andamento</option>
-                <option value="Finalizado">Finalizado</option>
+                <option value="Agendar">🗓️ Agendar</option>
+                <option value="Em andamento">🔧 Em andamento</option>
+                <option value="Finalizado">✅ Finalizado</option>
             </select>
         </label><br><br>
-        <label>Data Entrada: <input type="date" name="entrada"></label><br><br>
-        <label>Data Saída: <input type="date" name="saida"></label><br><br>
-        <label>Valor M.O: <input type="text" name="valor_mo"></label><br><br>
-        <label>Valor Peças: <input type="text" name="valor_pecas"></label><br><br>
-        <label>Aprovado por: <input type="text" name="aprovado_por"></label><br><br>
-        <label>Observações: <textarea name="obs"></textarea></label><br><br>
+        <label>📅 Data Entrada: <input type="date" name="entrada"></label><br><br>
+        <label>📅 Data Saída: <input type="date" name="saida"></label><br><br>
+        <label>💰 Valor M.O: <input type="text" name="valor_mo"></label><br><br>
+        <label>🔩 Valor Peças: <input type="text" name="valor_pecas"></label><br><br>
+        <label>🙋 Aprovado por: <input type="text" name="aprovado_por"></label><br><br>
+        <label>📝 Observações: <textarea name="obs"></textarea></label><br><br>
 
-        <button type="submit">Salvar Manutenção</button>
+        <button type="submit" style='background-color: #2e8b57; color: white; border: none; padding: 10px 20px; border-radius: 5px;'>💾 Salvar Manutenção</button>
     </form>
+    </div>
 </body>
 </html>
