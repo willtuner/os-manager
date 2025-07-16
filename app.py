@@ -1158,3 +1158,51 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
+
+
+
+@app.route('/frota-leve/editar/<int:id>', methods=['GET', 'POST'])
+def editar_manutencao_frota_leve(id):
+    if not session.get('is_admin'):
+        return redirect('/login')
+
+    manutencao = FrotaLeve.query.get_or_404(id)
+
+    if request.method == 'POST':
+        manutencao.placa = request.form['placa']
+        manutencao.veiculo = request.form['veiculo']
+        manutencao.motorista = request.form['motorista']
+        manutencao.oficina = request.form['oficina']
+        manutencao.servico = request.form['servico']
+        manutencao.situacao = request.form['situacao']
+        manutencao.entrada = request.form['entrada']
+        manutencao.saida = request.form['saida']
+        manutencao.valor_mo = request.form['valor_mo']
+        manutencao.valor_pecas = request.form['valor_pecas']
+        manutencao.aprovado_por = request.form['aprovado_por']
+        manutencao.cotacao1 = request.form.get('cotacao1', '')
+        manutencao.cotacao2 = request.form.get('cotacao2', '')
+        manutencao.cotacao3 = request.form.get('cotacao3', '')
+        manutencao.fechado_com = request.form.get('fechado_com', '')
+        manutencao.obs = request.form['obs']
+
+        db.session.commit()
+        flash('Manutenção atualizada com sucesso!', 'success')
+        return redirect(url_for('frota_leve'))
+
+    return render_template('nova_manutencao_frota.html', manutencao=manutencao)
+
+
+
+
+
+@app.route("/frota-leve/apagar/<int:id>", methods=["POST"])
+def apagar_manutencao_frota_leve(id):
+    if not session.get("is_admin"):
+        return redirect("/login")
+
+    manutencao = FrotaLeve.query.get_or_404(id)
+    db.session.delete(manutencao)
+    db.session.commit()
+    flash("Manutenção apagada com sucesso!", "success")
+    return redirect(url_for("frota_leve"))
