@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,40 +6,36 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body style="font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; padding: 20px;">
-    <div style="max-width: 700px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
-
-    <h1 style='color: #2e8b57;'>🛠️ Nova Manutenção – Frota Leve 🚗</h1>
+    <div style="max-width: 700px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.    <h1 style=\'color: #2e8b57;\'>🛠️ {% if manutencao %}Editar{% else %}Nova{% endif %} Manutenção – Frota Leve 🚗</h1>
     <p>👤 Usuário logado: {{ usuario }}</p>
-    <a href="/frota-leve" style='display: inline-block; margin-bottom: 20px; text-decoration: none; color: #007bff;'>🔙 Voltar para lista</a>
+    <a href=\"/frota-leve\" style=\'display: inline-block; margin-bottom: 20px; text-decoration: none; color: #007bff;\'>🔙 Voltar para lista</a>
 
-    <form method="POST" style="margin-top: 20px;">
-        <label>🚘 Placa: <input type="text" name="placa" required></label><br><br>
-        <label>🚗 Veículo: <input type="text" name="veiculo" required></label><br><br>
-        <label>👨‍🔧 Motorista: <input type="text" name="motorista"></label><br><br>
-        <label>🏭 Oficina: <input type="text" name="oficina"></label><br><br>
-        <label>🛠️ Serviço: <input type="text" name="servico" required></label><br><br>
+    <form method=\"POST\" style=\"margin-top: 20px;\        <label>🚘 Placa: <input type="text" name="placa" value="{{ manutencao.placa if manutencao else '' }}" required></label><br><br>
+        <label>🚗 Veículo: <input type="text" name="veiculo" value="{{ manutencao.veiculo if manutencao else '' }}" required></label><br><br>
+        <label>👨‍🔧 Motorista: <input type="text" name="motorista" value="{{ manutencao.motorista if manutencao else '' }}"></label><br><br>
+        <label>🏭 Oficina: <input type="text" name="oficina" value="{{ manutencao.oficina if manutencao else '' }}"></label><br><br>
+        <label>🛠️ Serviço: <input type="text" name="servico" value="{{ manutencao.servico if manutencao else '' }}" required></label><br><br>
         <label>📌 Situação:
             <select name="situacao">
-                <option value="Agendar">🗓️ Agendar</option>
-                <option value="Em andamento">🔧 Em andamento</option>
-                <option value="Finalizado">✅ Finalizado</option>
+                <option value="Agendar" {% if manutencao and manutencao.situacao == 'Agendar' %}selected{% endif %}>🗓️ Agendar</option>
+                <option value="Em andamento" {% if manutencao and manutencao.situacao == 'Em andamento' %}selected{% endif %}>🔧 Em andamento</option>
+                <option value="Finalizado" {% if manutencao and manutencao.situacao == 'Finalizado' %}selected{% endif %}>✅ Finalizado</option>
             </select>
         </label><br><br>
-        <label>📅 Data Entrada: <input type="date" name="entrada"></label><br><br>
-        <label>📅 Data Saída: <input type="date" name="saida"></label><br><br>
-        <label>💰 Valor M.O: <input type="text" name="valor_mo"></label><br><br>
-        <label>🔩 Valor Peças: <input type="text" name="valor_pecas"></label><br><br>
-        <label>🙋 Aprovado por: <input type="text" name="aprovado_por"></label><br><br>
+        <label>📅 Data Entrada: <input type="date" name="entrada" value="{{ manutencao.entrada if manutencao else '' }}"></label><br><br>
+        <label>📅 Data Saída: <input type="date" name="saida" value="{{ manutencao.saida if manutencao else '' }}"></label><br><br>
+        <label>💰 Valor M.O: <input type="text" name="valor_mo" value="{{ manutencao.valor_mo if manutencao else '' }}"></label><br><br>
+        <label>🔩 Valor Peças: <input type="text" name="valor_pecas" value="{{ manutencao.valor_pecas if manutencao else '' }}"></label><br><br>
+        <label>🙋 Aprovado por: <input type="text" name="aprovado_por" value="{{ manutencao.aprovado_por if manutencao else '' }}"></label><br><br>
 
-        <label>🔍 Cotação 1: <input type="text" name="cotacao1" placeholder="Fornecedor - R$ valor"></label><br><br>
-        <label>🔍 Cotação 2: <input type="text" name="cotacao2" placeholder="Fornecedor - R$ valor"></label><br><br>
-        <label>🔍 Cotação 3: <input type="text" name="cotacao3" placeholder="Fornecedor - R$ valor"></label><br><br>
-        <label>✅ Fechado com: <input type="text" name="fechado_com" placeholder="Fornecedor escolhido"></label><br><br>
+        <label>🔍 Cotação 1: <input type="text" name="cotacao1" placeholder="Fornecedor - R$ valor" value="{{ manutencao.cotacao1 if manutencao else '' }}"></label><br><br>
+        <label>🔍 Cotação 2: <input type="text" name="cotacao2" placeholder="Fornecedor - R$ valor" value="{{ manutencao.cotacao2 if manutencao else '' }}"></label><br><br>
+        <label>🔍 Cotação 3: <input type="text" name="cotacao3" placeholder="Fornecedor - R$ valor" value="{{ manutencao.cotacao3 if manutencao else '' }}"></label><br><br>
+        <label>✅ Fechado com: <input type="text" name="fechado_com" placeholder="Fornecedor escolhido" value="{{ manutencao.fechado_com if manutencao else '' }}"></label><br><br>
 
-        <label>📝 Observações: <textarea name="obs"></textarea></label><br><br>
+        <label>📝 Observações: <textarea name="obs">{{ manutencao.obs if manutencao else '' }}</textarea></label><br><br>
 
-        <button type="submit" style='background-color: #2e8b57; color: white; border: none; padding: 10px 20px; border-radius: 5px;'>💾 Salvar Manutenção</button>
-    </form>
+        <button type="submit" style=\'background-color: #2e8b57; color: white; border: none; padding: 10px 20px; border-radius: 5px;\'>💾 {% if manutencao %}Atualizar{% else %}Salvar{% endif %} Manutenção</button>   </form>
     </div>
 </body>
 </html>
