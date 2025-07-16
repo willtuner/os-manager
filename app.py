@@ -1098,6 +1098,10 @@ def nova_manutencao_frota_leve():
             "valor_mo": request.form['valor_mo'],
             "valor_pecas": request.form['valor_pecas'],
             "aprovado_por": request.form['aprovado_por'],
+            "cotacao1": request.form.get('cotacao1', ''),
+            "cotacao2": request.form.get('cotacao2', ''),
+            "cotacao3": request.form.get('cotacao3', ''),
+            "fechado_com": request.form.get('fechado_com', ''),
             "obs": request.form['obs']
         }
 
