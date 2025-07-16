@@ -1101,10 +1101,12 @@ def frota_leve():
     if filtro and filtro.lower() != "todos":
         query = query.filter(FrotaLeve.situacao.ilike(f'%{filtro}%'))
 
-    dados = query.all()
-    return render_template('frota_leve.html', dados=dados, usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador'))
- or session.get('manutencao') or session.get('prestador'))
-
+dados = query.all()
+return render_template(
+    'frota_leve.html',
+    dados=dados,
+    usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador')
+)
 
 @app.route('/frota-leve/novo', methods=['GET', 'POST'])
 def nova_manutencao_frota_leve():
