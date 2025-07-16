@@ -1113,6 +1113,27 @@ def nova_manutencao_frota_leve():
 
 
 
+
+@app.route('/frota-leve/finalizar/<int:index>', methods=['POST'])
+def finalizar_manutencao_frota_leve(index):
+    if not session.get('is_admin'):
+        return redirect('/login')
+
+    with open(FROTA_LEVE_FILE, 'r', encoding='utf-8') as f:
+        dados = json.load(f)
+
+    if 0 <= index < len(dados):
+        dados[index]['situacao'] = 'Finalizado'
+        dados[index]['saida'] = request.form['data_fim']
+        dados[index]['hora_fim'] = request.form['hora_fim']
+        dados[index]['obs'] += '\nFinalização: ' + request.form.get('obs_fim', '')
+
+        with open(FROTA_LEVE_FILE, 'w', encoding='utf-8') as f:
+            json.dump(dados, f, ensure_ascii=False, indent=4)
+
+    return redirect('/frota-leve')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
