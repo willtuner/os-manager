@@ -1136,12 +1136,11 @@ def nova_manutencao_frota_leve():
         db.session.commit()
         return redirect('/frota-leve')
 
-    return render_template('nova_manutencao_frota.html', usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador'))
- or session.get('manutencao') or session.get('prestador'))
-
-
-
-
+return render_template(
+    'frota_leve.html',
+    dados=dados,
+    usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador')
+)
 @app.route('/frota-leve/finalizar/<int:index>', methods=['POST'])
 def finalizar_manutencao_frota_leve(index):
     if not session.get('is_admin'):
