@@ -1132,7 +1132,7 @@ def nova_manutencao_frota_leve():
         db.session.commit()
         return redirect('/frota-leve')
 
-    return render_template('nova_manutencao_frota_leve.html')  
+    return render_template('nova_manutencao_frota.html')  
 
 @app.route('/frota-leve/finalizar/<int:index>', methods=['POST'])
 def finalizar_manutencao_frota_leve(index):
