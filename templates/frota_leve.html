@@ -27,7 +27,7 @@
             font-size: 18px;
             color: #2e8b57;
         }
-        .card .linha {
+        .linha {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -52,7 +52,48 @@
         .Agendar { background-color: #ffc107; }
         .Em\ andamento { background-color: #17a2b8; }
         .Finalizado { background-color: #28a745; }
+
+        .finalizar-btn {
+            margin-top: 15px;
+        }
+
+        .finalizar-form {
+            display: none;
+            margin-top: 15px;
+            background: #f8f8f8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .finalizar-form input, .finalizar-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+        }
+
+        .finalizar-form button {
+            background: #2e8b57;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+        }
+
+        .btn-toggle {
+            background: #2e8b57;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
     </style>
+    <script>
+        function toggleForm(id) {
+            const form = document.getElementById("form-" + id);
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -80,6 +121,21 @@
             <div class="linha" style="margin-top: 10px;">
                 <div class="campo" style="flex: 1 1 100%;"><strong>📝 Observações:</strong> {{ item['obs'] }}</div>
             </div>
+
+            {% if item['situacao'] != 'Finalizado' %}
+            <div class="finalizar-btn">
+                <button class="btn-toggle" onclick="toggleForm('{{ loop.index }}')">✅ Finalizar</button>
+            </div>
+
+            <form method="POST" action="/frota-leve/finalizar/{{ loop.index0 }}" class="finalizar-form" id="form-{{ loop.index }}">
+                <label>📅 Data de Finalização: <input type="date" name="data_fim" required></label>
+                <label>⏰ Hora: <input type="time" name="hora_fim" required></label>
+                <label>📝 Observações finais:
+                    <textarea name="obs_fim" placeholder="Descreva o que foi feito..."></textarea>
+                </label>
+                <button type="submit">💾 Salvar e Finalizar</button>
+            </form>
+            {% endif %}
         </div>
         {% else %}
         <p style="text-align:center; margin-top: 40px;">😕 Nenhuma manutenção cadastrada ainda.</p>
