@@ -121,6 +121,13 @@
             <div class="linha" style="margin-top: 10px;">
                 <div class="campo" style="flex: 1 1 100%;"><strong>📝 Observações:</strong> {{ item['obs'] }}</div>
             </div>
+            <div class="linha" style="margin-top: 10px;">
+                <div class="campo"><strong>📦 Cotação 1:</strong> {{ item['cotacao1'] }}</div>
+                <div class="campo"><strong>📦 Cotação 2:</strong> {{ item['cotacao2'] }}</div>
+                <div class="campo"><strong>📦 Cotação 3:</strong> {{ item['cotacao3'] }}</div>
+                <div class="campo"><strong>✅ Fechado com:</strong> {{ item['fechado_com'] }}</div>
+            </div>
+
 
             {% if item['situacao'] != 'Finalizado' %}
             <div class="finalizar-btn">
