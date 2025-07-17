@@ -430,15 +430,12 @@
                   <td>{{ os.data_fin }}</td>
                   <td>{{ os.hora_fin }}</td>
                   <td>{{ os.observacoes or '-' }}</td>
-                  <td>
-                    <form action="{{ url_for('update_pimns_status', os_id=os.id) }}" method="POST" class="d-flex align-items-center">
-                      <select name="status_pimns" class="form-select form-select-sm me-2" onchange="this.form.submit()">
-                        <option value="Pendente" {% if os.status_pimns == 'Pendente' %}selected{% endif %}>Pendente</option>
-                        <option value="Processado" {% if os.status_pimns == 'Processado' %}selected{% endif %}>Processado</option>
-                        <option value="Erro" {% if os.status_pimns == 'Erro' %}selected{% endif %}>Erro</option>
-                      </select>
-                    </form>
-                  </td>
+<td>
+    <form action="{{ url_for('update_pimns_status', os_id=os.id) }}" method="POST" class="d-flex align-items-center">
+        <input type="checkbox" name="status_pimns" {% if os.status_pimns %}checked{% endif %} onchange="this.form.submit()">
+        <span class="ms-2">{{ 'Marcado' if os.status_pimns else 'Desmarcado' }}</span>
+    </form>
+</td>
                 </tr>
                 {% endfor %}
                 {% if not finalizadas %}
@@ -452,37 +449,62 @@
 
       <!-- Ranking de OS Pendentes (Supervisores) -->
       <div class="card-modern mb-4">
-        <div class="card-header ranking-gerentes d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Supervisores)</h4>
-          {% if ranking_os_abertas|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="gerente-ranking-row">
+    <div class="card-header historico-os d-flex justify-content-between align-items-center">
+        <h4 class="mb-0"><i class="fas fa-tools icon-agro"></i>Histórico de Manutenções</h4>
+        {% if finalizadas|length > 3 %}
+        <button class="btn btn-sm btn-toggle" data-target="finalizada-row">
             <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
+        </button>
+        {% endif %}
+    </div>
+    <div class="card-body">
+        <div class="filter-container">
+            <div class="btn-group">
+                <button class="btn period-btn {% if periodo == 'todos' %}active{% endif %}" data-periodo="todos">Todas</button>
+                <button class="btn period-btn {% if periodo == 'diario' %}active{% endif %}" data-periodo="diario">Diário</button>
+                <button class="btn period-btn {% if periodo == 'semanal' %}active{% endif %}" data-periodo="semanal">Semanal</button>
+                <button class="btn period-btn {% if periodo == 'mensal' %}active{% endif %}" data-periodo="mensal">Mensal</button>
+                <button class="btn period-btn {% if periodo == 'anual' %}active{% endif %}" data-periodo="anual">Anual</button>
+            </div>
+            <input type="text" id="date-range" class="flatpickr-input form-control" placeholder="Intervalo de datas" value="{% if data_inicio and data_fim %}{{ data_inicio }} to {{ data_fim }}{% endif %}">
+            <input type="text" id="filter-os" class="form-control form-control-sm" placeholder="Filtrar por OS, supervisor ou observações...">
         </div>
-        <div class="card-body">
-          <div class="table-responsive">
+        <div class="table-responsive">
             <table class="table table-modern table-sm">
-              <thead>
-                <tr><th>Posição</th><th>Supervisor</th><th>OS Pendentes</th></tr>
-              </thead>
-              <tbody>
-                {% for gerente, count in ranking_os_abertas %}
-                <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
-                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
-                  <td>{{ gerente|capitalize_name }}</td>
-                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-                </tr>
-                {% endfor %}
-                {% if not ranking_os_abertas %}
-                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-                {% endif %}
-              </tbody>
+                <thead>
+                    <tr>
+                        <th>OS</th>
+                        <th>Supervisor</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Observações</th>
+                        <th>Status PIMNS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for os in finalizadas %}
+                    <tr class="{% if loop.index > 3 %}finalizada-row hidden-row{% endif %}">
+                        <td>{{ os.os_numero }}</td>
+                        <td>{{ os.gerente|capitalize_name }}</td>
+                        <td>{{ os.data_fin }}</td>
+                        <td>{{ os.hora_fin }}</td>
+                        <td>{{ os.observacoes or '-' }}</td>
+                        <td>
+                            <form action="{{ url_for('update_pimns_status', os_id=os.id) }}" method="POST" class="d-flex align-items-center">
+                                <input type="checkbox" name="status_pimns" {% if os.status_pimns %}checked{% endif %} onchange="this.form.submit()">
+                                <span class="ms-2">{{ 'Marcado' if os.status_pimns else 'Desmarcado' }}</span>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    {% if not finalizadas %}
+                    <tr><td colspan="5" class="text-center py-3">Nenhuma manutenção concluída</td></tr>
+                    {% endif %}
+                </tbody>
             </table>
-          </div>
         </div>
-      </div>
-
+    </div>
+</div>
       <!-- Ranking de OS Pendentes (Prestadores) -->
       <div class="card-modern mb-4">
         <div class="card-header ranking-prestadores d-flex justify-content-between align-items-center">
