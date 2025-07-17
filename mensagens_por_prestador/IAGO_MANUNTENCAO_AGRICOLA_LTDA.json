@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5725",
+    "cd_equipamento": "5725",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "114614",
+    "data_entrada": "16/07/2025",
+    "servico": "Trocar pião da bomba roçado - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5336",
+    "cd_equipamento": "5336",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "114541",
+    "data_entrada": "16/07/2025",
+    "servico": "Vazamento de produto na junta da bomba  - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "114523",
+    "data_entrada": "16/07/2025",
+    "servico": "Verificar implemento escapou o cabeçalho, comprometendo o engate e funcionamento adequado - (Fazenda Casa Branca)\nSolicitado Sr.  João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5660",
+    "cd_equipamento": "5660",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "114518",
+    "data_entrada": "16/07/2025",
+    "servico": "Trocar a correia traseira da bomba.\nVerificar o rolamento da polia, avaliando folga ou ruídos anormais, com substituição se necessário - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr.  Mauricio"
+  },
+  {
+    "frota": "5749",
+    "cd_equipamento": "5749",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "114514",
+    "data_entrada": "16/07/2025",
+    "servico": "Verificar possível entrada de ar no sistema do pulverizador, que pode estar comprometendo o funcionamento adequado. - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5529",
     "cd_equipamento": "5529",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",

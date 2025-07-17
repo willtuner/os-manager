@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5314",
+    "cd_equipamento": "5314",
+    "modelo": "PODADOR FRONTAL/LATERAL",
+    "os": "114515",
+    "data_entrada": "16/07/2025",
+    "servico": "Verificar pistão de elevação da HLC3, que está abaixando sozinho. Possível falha em vedação ou válvula de retenção - (Fazenda São José)\nSolicitado Sr. Luiz (ADM)\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5259",
     "cd_equipamento": "5259",
     "modelo": "PODADEIRA HID.GLOBAL 3500",
@@ -8,28 +16,12 @@
     "servico": "Vazamento no comando da podadeira - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5637",
-    "cd_equipamento": "5637",
-    "modelo": "PODADEIRA HIDRAUTEC HLC 4",
-    "os": "113995",
-    "data_entrada": "09/07/2025",
-    "servico": "Substituir o manômetro (relógio de pressão) danificado da podadeira o qual foi quebrado durante operação ao atingir galhos. Além da substituição, confeccionar e instalar um suporte de proteção para evitar danos futuros no local - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo \nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5067",
     "cd_equipamento": "5067",
     "modelo": "ADUBADEIRA CACAMBA TATU",
     "os": "113933",
     "data_entrada": "08/07/2025",
     "servico": "Mancal trincado (Pecuária)\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5229",
-    "cd_equipamento": "5229",
-    "modelo": "PODADEIRA HIDRAUTEC HLC 3",
-    "os": "113679",
-    "data_entrada": "02/07/2025",
-    "servico": "Verificar barra de corte danificada - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5667",

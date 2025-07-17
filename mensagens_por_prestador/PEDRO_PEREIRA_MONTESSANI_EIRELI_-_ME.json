@@ -1,5 +1,45 @@
 [
   {
+    "frota": "10121",
+    "cd_equipamento": "10121",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114676",
+    "data_entrada": "17/07/2025",
+    "servico": "Verificar trator isolando partida - (Fazenda São Severino)\nSolicitado Sr. Marcio \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10217",
+    "cd_equipamento": "10217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114675",
+    "data_entrada": "17/07/2025",
+    "servico": "Verificar relogio horimetro (Digital) não funciona - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "263",
+    "cd_equipamento": "263",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114672",
+    "data_entrada": "17/07/2025",
+    "servico": "Trocar cibié dianteiro e traseiro queimado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5699",
+    "cd_equipamento": "5699",
+    "modelo": "PULVERIZADOR 600 LT",
+    "os": "114535",
+    "data_entrada": "16/07/2025",
+    "servico": "Verificar equipamento de dransh, que não está acionando - (Fazenda Santa Izabel\nSolicitado Sr. Diego Camboi \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "268",
+    "cd_equipamento": "268",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114531",
+    "data_entrada": "16/07/2025",
+    "servico": "Cibié do teto queimado L/D - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5262",
     "cd_equipamento": "5262",
     "modelo": "MOTOCANA",
@@ -86,14 +126,6 @@
     "os": "114225",
     "data_entrada": "14/07/2025",
     "servico": "Identificado vazamento de óleo na região do cebolão do motor. Observação: o sensor foi trocado recentemente. - (Fazenda Santa Luiza)\nSolicitado Sr. John\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "114270",
-    "data_entrada": "14/07/2025",
-    "servico": "Revisar sistema eletrico - Faz São Severino(Oficina)\nAutorizado Arthur"
   },
   {
     "frota": "147",
@@ -278,14 +310,6 @@
     "os": "113005",
     "data_entrada": "23/06/2025",
     "servico": "Fazer revisão no sistema eletrico da iluminação - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5491",
-    "cd_equipamento": "5491",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "112857",
-    "data_entrada": "19/06/2025",
-    "servico": "Verificar falha no acionamento elétrico dos ramais, sistema não responde ao comando - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsável Sr. Arthur"
   },
   {
     "frota": "266",

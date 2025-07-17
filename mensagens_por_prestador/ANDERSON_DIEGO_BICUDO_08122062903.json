@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5262",
+    "cd_equipamento": "5262",
+    "modelo": "MOTOCANA",
+    "os": "114590",
+    "data_entrada": "16/07/2025",
+    "servico": "Remover vazamentos no sistema de combustivel e trocar correia do alternador - Faz Ursula\nAutorizado Arthur"
+  },
+  {
+    "frota": "10229",
+    "cd_equipamento": "10229",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114566",
+    "data_entrada": "16/07/2025",
+    "servico": "Vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "309",
+    "cd_equipamento": "309",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "114528",
+    "data_entrada": "16/07/2025",
+    "servico": "Realizar ajuste nas rodas conforme espaçamento necessário para a operação agrícola - (Fazenda Estrela)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114519",
+    "data_entrada": "16/07/2025",
+    "servico": "Fazer embreagem - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "222",
+    "cd_equipamento": "222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114517",
+    "data_entrada": "16/07/2025",
+    "servico": "Verificar roda dianteira esquerda. Acúmulo de graxa com terra no cubo. Suspeita de retentor danificado ou entrada de sujeira.- (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "235",
     "cd_equipamento": "235",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -32,36 +72,12 @@
     "servico": "Vazamento de óleo no cudo da roda L/E - (Fazenda Santa Luiza)\nSolicitado Sr. John\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "132",
-    "cd_equipamento": "132",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "114144",
-    "data_entrada": "11/07/2025",
-    "servico": "Verificar possível falha ou desgaste na bomba hidráulica, que pode estar ocasionando baixa vazão e consequente lentidão no guincho. Avaliar também filtros e demais componentes do circuito hidráulico - (Fazenda Santa Luiza)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "276",
     "cd_equipamento": "276",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "114111",
     "data_entrada": "10/07/2025",
     "servico": "Vazamento no carter. (Fazenda São Pedro)\nSolicitante Sr. Romes \nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "264",
-    "cd_equipamento": "264",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114020",
-    "data_entrada": "09/07/2025",
-    "servico": "Vazamento de diesel no filtro sedimentador de combustível - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "125",
-    "cd_equipamento": "125",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "113747",
-    "data_entrada": "04/07/2025",
-    "servico": "Verificar vazamento de óleo na turbina e na mangueira que sai na parte superior do motor. - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
   },
   {
     "frota": "189",
@@ -72,20 +88,20 @@
     "servico": "Verificar freio de estacionamento não funciona - (Fazenda São Severino)\nSolicitado Sr. Izaias \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "196",
-    "cd_equipamento": "196",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113302",
-    "data_entrada": "26/06/2025",
-    "servico": "Revisar eixo dianteiro, trocar ponta do pinhão e luva do cardan, embuchamento da balança - Oficina\nAutorizado Arthur"
+    "frota": "231",
+    "cd_equipamento": "231",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112520",
+    "data_entrada": "13/06/2025",
+    "servico": "Quebra do suporte do cabo do acelerador\nTroca da chapa do suporte da bomba injetora\nDesmontado a TDP e trocado os anéis do eixo de acionamento - (Fazenda São Severino)\nSolicitado Sr. Cassio\nLiberado Sr. Arthur"
   },
   {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "112954",
-    "data_entrada": "21/06/2025",
-    "servico": "Verificar barulho a normal na TDP - Faz São Severino\nAutorizado Arthur"
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112192",
+    "data_entrada": "09/06/2025",
+    "servico": "Verificar trator escapando marcha\nTrocado retentor da caixa seca\nTrocado embalagem e rolamentos do carrinho, trocado mangueira do bloco do comando hidráulico\nRetirado alavanca do tomada de força\nTrocado mangueiras e conexões do freio - (Fazenda Casa Branca) - (Comboio)\nLiberado Sr. Arthur"
   },
   {
     "frota": "74",

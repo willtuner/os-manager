@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5184",
+    "cd_equipamento": "5184",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114671",
+    "data_entrada": "17/07/2025",
+    "servico": "Pneu L/D furado - (Fazenda SL1)\nSolicitado Sr. Wagner\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "248",
+    "cd_equipamento": "248",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "114669",
+    "data_entrada": "17/07/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Estrela)\nSolicitado Sr. Carlos\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5523",
+    "cd_equipamento": "5523",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "114532",
+    "data_entrada": "16/07/2025",
+    "servico": "Pneu L/E furado - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "92",
+    "cd_equipamento": "92",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "114516",
+    "data_entrada": "16/07/2025",
+    "servico": "Substituir os dois pneus dianteiro com desgaste.\nFazenda Nova Manhã (Oficina MG)\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "198",
     "cd_equipamento": "198",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -30,14 +62,6 @@
     "os": "114310",
     "data_entrada": "15/07/2025",
     "servico": "Consertar pneu traseiro esquerdo furado.\nFazenda Santa Luiza\nSolicitado Sr. John Lennon\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5571",
-    "cd_equipamento": "5571",
-    "modelo": "CARRETA TRANSBORDO GTM",
-    "os": "114260",
-    "data_entrada": "15/07/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5522",
