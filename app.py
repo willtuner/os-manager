@@ -164,7 +164,7 @@ def remover_os_de_todos_json(diretorio, os_numero):
     return removido_de
 
 def init_db():
-    with app.app_context(): # Garante contexto de aplicação para operações de BD
+    with app.app_context():  # Garante contexto de aplicação para operações de BD
         db.create_all()
         try:
             from sqlalchemy import inspect
@@ -186,9 +186,20 @@ def init_db():
             columns_finalizacoes = [col['name'] for col in inspector.get_columns('finalizacoes')]
             if 'status_pimns' not in columns_finalizacoes:
                 logger.info("Adicionando coluna status_pimns à tabela finalizacoes")
-                db.session.execute(text('ALTER TABLE finalizacoes ADD COLUMN status_pimns VARCHAR(50) DEFAULT "Pendente" NOT NULL'))
+                db.session.execute(text('ALTER TABLE finalizacoes ADD COLUMN status_pimns BOOLEAN DEFAULT FALSE NOT NULL'))
                 db.session.commit()
                 logger.info("Coluna status_pimns adicionada com sucesso")
+            else:
+                # Verifica o tipo da coluna existente e converte se for VARCHAR
+                column_info = next((col for col in inspector.get_columns('finalizacoes') if col['name'] == 'status_pimns'), None)
+                if column_info and column_info['type'].__class__.__name__ == 'VARCHAR':
+                    logger.info("Convertendo coluna status_pimns de VARCHAR para BOOLEAN")
+                    db.session.execute(text('ALTER TABLE finalizacoes ADD COLUMN temp_status_pimns BOOLEAN DEFAULT FALSE NOT NULL'))
+                    db.session.execute(text('UPDATE finalizacoes SET temp_status_pimns = CASE WHEN status_pimns = \'Pendente\' THEN FALSE ELSE TRUE END'))
+                    db.session.execute(text('ALTER TABLE finalizacoes DROP COLUMN status_pimns'))
+                    db.session.execute(text('ALTER TABLE finalizacoes RENAME COLUMN temp_status_pimns TO status_pimns'))
+                    db.session.commit()
+                    logger.info("Coluna status_pimns convertida com sucesso")
         except Exception as e:
             logger.error(f"Erro ao verificar/adicionar colunas: {e}")
             db.session.rollback()
@@ -1218,7 +1229,6 @@ def apagar_manutencao_frota_leve(id):
 
 
 
-
 @app.route("/update_pimns_status/<int:os_id>", methods=["POST"])
 def update_pimns_status(os_id):
     if not session.get("is_admin"):
@@ -1226,13 +1236,10 @@ def update_pimns_status(os_id):
         return redirect(url_for("login"))
 
     finalizacao = Finalizacao.query.get_or_404(os_id)
-    novo_status = request.form.get("status_pimns")
+    novo_status = request.form.get("status_pimns") == "on"  # Checkbox envia "on" se marcado, caso contrário None
 
-    if novo_status in ["Pendente", "Processado", "Erro"]:
-        finalizacao.status_pimns = novo_status
-        db.session.commit()
-        flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {novo_status}.", "success")
-    else:
-        flash("Status PIMNS inválido.", "danger")
+    finalizacao.status_pimns = novo_status
+    db.session.commit()
+    flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {'Marcado' if novo_status else 'Desmarcado'}.", "success")
 
     return redirect(url_for("admin_panel"))
