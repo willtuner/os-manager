@@ -77,7 +77,6 @@
     border-radius: 8px 8px 0 0;
     font-weight: 500;
   }
-  .card-header.ranking-gerentes { background: var(--ciano); }
   .card-header.ranking-prestadores { background: var(--azul); }
   .card-header.historico-os { background: var(--cinza-escuro); }
   .card-header.historico-logins { background: var(--cinza-medio); }
@@ -430,12 +429,12 @@
                   <td>{{ os.data_fin }}</td>
                   <td>{{ os.hora_fin }}</td>
                   <td>{{ os.observacoes or '-' }}</td>
-<td>
-    <form action="{{ url_for('update_pimns_status', os_id=os.id) }}" method="POST" class="d-flex align-items-center">
-        <input type="checkbox" name="status_pimns" {% if os.status_pimns %}checked{% endif %} onchange="this.form.submit()">
-        <span class="ms-2">{{ 'Marcado' if os.status_pimns else 'Desmarcado' }}</span>
-    </form>
-</td>
+                  <td>
+                      <form action="{{ url_for('update_pimns_status', os_id=os.id) }}" method="POST" class="d-flex align-items-center">
+                          <input type="checkbox" name="status_pimns" {% if os.status_pimns %}checked{% endif %} onchange="this.form.submit()">
+                          <span class="ms-2">{{ 'Marcado' if os.status_pimns else 'Desmarcado' }}</span>
+                      </form>
+                  </td>
                 </tr>
                 {% endfor %}
                 {% if not finalizadas %}
@@ -447,64 +446,6 @@
         </div>
       </div>
 
-      <!-- Ranking de OS Pendentes (Supervisores) -->
-      <div class="card-modern mb-4">
-    <div class="card-header historico-os d-flex justify-content-between align-items-center">
-        <h4 class="mb-0"><i class="fas fa-tools icon-agro"></i>Histórico de Manutenções</h4>
-        {% if finalizadas|length > 3 %}
-        <button class="btn btn-sm btn-toggle" data-target="finalizada-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-        </button>
-        {% endif %}
-    </div>
-    <div class="card-body">
-        <div class="filter-container">
-            <div class="btn-group">
-                <button class="btn period-btn {% if periodo == 'todos' %}active{% endif %}" data-periodo="todos">Todas</button>
-                <button class="btn period-btn {% if periodo == 'diario' %}active{% endif %}" data-periodo="diario">Diário</button>
-                <button class="btn period-btn {% if periodo == 'semanal' %}active{% endif %}" data-periodo="semanal">Semanal</button>
-                <button class="btn period-btn {% if periodo == 'mensal' %}active{% endif %}" data-periodo="mensal">Mensal</button>
-                <button class="btn period-btn {% if periodo == 'anual' %}active{% endif %}" data-periodo="anual">Anual</button>
-            </div>
-            <input type="text" id="date-range" class="flatpickr-input form-control" placeholder="Intervalo de datas" value="{% if data_inicio and data_fim %}{{ data_inicio }} to {{ data_fim }}{% endif %}">
-            <input type="text" id="filter-os" class="form-control form-control-sm" placeholder="Filtrar por OS, supervisor ou observações...">
-        </div>
-        <div class="table-responsive">
-            <table class="table table-modern table-sm">
-                <thead>
-                    <tr>
-                        <th>OS</th>
-                        <th>Supervisor</th>
-                        <th>Data</th>
-                        <th>Hora</th>
-                        <th>Observações</th>
-                        <th>Status PIMNS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for os in finalizadas %}
-                    <tr class="{% if loop.index > 3 %}finalizada-row hidden-row{% endif %}">
-                        <td>{{ os.os_numero }}</td>
-                        <td>{{ os.gerente|capitalize_name }}</td>
-                        <td>{{ os.data_fin }}</td>
-                        <td>{{ os.hora_fin }}</td>
-                        <td>{{ os.observacoes or '-' }}</td>
-                        <td>
-                            <form action="{{ url_for('update_pimns_status', os_id=os.id) }}" method="POST" class="d-flex align-items-center">
-                                <input type="checkbox" name="status_pimns" {% if os.status_pimns %}checked{% endif %} onchange="this.form.submit()">
-                                <span class="ms-2">{{ 'Marcado' if os.status_pimns else 'Desmarcado' }}</span>
-                            </form>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                    {% if not finalizadas %}
-                    <tr><td colspan="5" class="text-center py-3">Nenhuma manutenção concluída</td></tr>
-                    {% endif %}
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
       <!-- Ranking de OS Pendentes (Prestadores) -->
       <div class="card-modern mb-4">
         <div class="card-header ranking-prestadores d-flex justify-content-between align-items-center">
@@ -538,42 +479,42 @@
         </div>
       </div>
 
-
-
       <!-- Histórico de Logins -->
-<div class="card-modern">
-  <div class="card-header historico-logins d-flex justify-content-between align-items-center">
-    <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de Acesso (Últimos 50)</h4>
-    {% if login_events|length > 3 %}
-    <button class="btn btn-sm btn-toggle" data-target="login-row">
-      <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-    </button>
-    {% endif %}
-  </div>
-  <div class="card-body">
-    <div class="table-responsive">
-      <table class="table table-modern table-sm">
-        <thead>
-          <tr><th>Usuário</th><th>Tipo</th><th>Login</th><th>Logout</th><th>Duração</th></tr>
-        </thead>
-        <tbody>
-          {% for ev in login_events %}
-          <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
-            <td>{{ ev.username|capitalize_name }}</td>
-            <td>{{ ev.user_type.capitalize() }}</td>
-            <td>{{ ev.login_time_formatted }}</td>  <!-- CORREÇÃO AQUI -->
-            <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
-            <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
-          </tr>
-          {% endfor %}
-          {% if not login_events %}
-          <tr><td colspan="5" class="text-center py-3">Nenhum evento de acesso</td></tr>
+      <div class="card-modern">
+        <div class="card-header historico-logins d-flex justify-content-between align-items-center">
+          <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de Acesso (Últimos 50)</h4>
+          {% if login_events|length > 3 %}
+          <button class="btn btn-sm btn-toggle" data-target="login-row">
+            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+          </button>
           {% endif %}
-        </tbody>
-      </table>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-modern table-sm">
+              <thead>
+                <tr><th>Usuário</th><th>Tipo</th><th>Login</th><th>Logout</th><th>Duração</th></tr>
+              </thead>
+              <tbody>
+                {% for ev in login_events %}
+                <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
+                  <td>{{ ev.username|capitalize_name }}</td>
+                  <td>{{ ev.user_type.capitalize() }}</td>
+                  <td>{{ ev.login_time_formatted }}</td>
+                  <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
+                  <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
+                </tr>
+                {% endfor %}
+                {% if not login_events %}
+                <tr><td colspan="5" class="text-center py-3">Nenhum evento de acesso</td></tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+
     <!-- Aba: Análises Gráficas -->
     <div class="tab-pane fade" id="graficos" role="tabpanel" aria-labelledby="graficos-tab">
       <div class="row">
