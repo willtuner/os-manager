@@ -1,5 +1,40 @@
 [
   {
+    "frota": "325",
+    "os": "114580",
+    "data": "16/07/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Revisão de 600 hrs - (Fazenda Estrela)"
+  },
+  {
+    "frota": "323",
+    "os": "114579",
+    "data": "16/07/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Revisão de 600 hrs - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5523",
+    "os": "114532",
+    "data": "16/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E furado - (Fazenda Estrela)"
+  },
+  {
+    "frota": "268",
+    "os": "114531",
+    "data": "16/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié do teto queimado L/D - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5736",
+    "os": "114530",
+    "data": "16/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar quebra das pás dos pratos espalhadores de adubo - (Fazenda Estrela)"
+  },
+  {
     "frota": "5748",
     "os": "114312",
     "data": "15/07/2025",
@@ -24,7 +59,7 @@
     "frota": "165",
     "os": "114252",
     "data": "14/07/2025",
-    "prestador": "nan",
+    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
     "servico": "Verificar trator não tem força para levantar lança da podadeira - (Fazenda Estrela)"
   },
   {
@@ -119,18 +154,11 @@
     "servico": "Pneu L/D furado - (Fazenda Estrela)"
   },
   {
-    "frota": "5491",
-    "os": "112857",
-    "data": "19/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar falha no acionamento elétrico dos ramais, sistema não responde ao comando - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5367",
-    "os": "112330",
-    "data": "11/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda no protetor de bicos"
+    "frota": "125",
+    "os": "112009",
+    "data": "04/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Avaliar vazamento de óleo de motor atrás da bomba injetora - (Fazenda Estrela)"
   },
   {
     "frota": "189",

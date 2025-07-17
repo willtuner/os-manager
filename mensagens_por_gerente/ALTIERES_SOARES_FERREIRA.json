@@ -1,5 +1,12 @@
 [
   {
+    "frota": "217",
+    "os": "114668",
+    "data": "17/07/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "A/C  fusíveis queimados:"
+  },
+  {
     "frota": "69",
     "os": "114437",
     "data": "15/07/2025",
@@ -33,13 +40,6 @@
     "data": "14/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar alternador e farol dianteiro não ascende - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5661",
-    "os": "114237",
-    "data": "14/07/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Identificado rolamento com desgaste excessivo, apresentando risco iminente de quebra. - (Fazenda Pedra Verde)"
   },
   {
     "frota": "69",
@@ -98,39 +98,11 @@
     "servico": "Acertar as conexões e as mangueiras que veio sem (Fazenda Pedra Verde)"
   },
   {
-    "frota": "119",
-    "os": "113436",
-    "data": "26/06/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Serviço de soldar rabicho (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5661",
-    "os": "113437",
-    "data": "25/06/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Sacar parafuso quebrado do comando (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5479",
     "os": "113058",
     "data": "24/06/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer serviço de fibra no tanque - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5363",
-    "os": "112633",
-    "data": "12/06/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Troca de cruzeta (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5133",
-    "os": "112634",
-    "data": "12/06/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Montagem do cardan (Fazenda Pedra Verde)"
   },
   {
     "frota": "5133",
@@ -145,26 +117,5 @@
     "data": "30/05/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "69",
-    "os": "111477",
-    "data": "28/05/2025",
-    "prestador": "nan",
-    "servico": "Soldar tubo do engate rapido"
-  },
-  {
-    "frota": "5136",
-    "os": "111462",
-    "data": "28/05/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Usinar eixo do cabeçalho"
-  },
-  {
-    "frota": "5133",
-    "os": "110327",
-    "data": "09/05/2025",
-    "prestador": "AUTO MECANICA BAZANI",
-    "servico": "Fazer 1 medidor de pressão e cortar pé de apoio para adequar  (Fazenda Pedra Verde)"
   }
 ]

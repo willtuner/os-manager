@@ -1,19 +1,5 @@
 [
   {
-    "frota": "5571",
-    "os": "114260",
-    "data": "15/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/E furado - (Fazenda São Severino)"
-  },
-  {
-    "frota": "132",
-    "os": "114144",
-    "data": "11/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar possível falha ou desgaste na bomba hidráulica, que pode estar ocasionando baixa vazão e consequente lentidão no guincho. Avaliar também filtros e demais componentes do circuito hidráulico - (Fazenda Santa Luiza)"
-  },
-  {
     "frota": "189",
     "os": "113640",
     "data": "02/07/2025",
@@ -26,12 +12,5 @@
     "data": "30/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu L/D furado - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "196",
-    "os": "113302",
-    "data": "26/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Revisar eixo dianteiro, trocar ponta do pinhão e luva do cardan, embuchamento da balança - Oficina"
   }
 ]

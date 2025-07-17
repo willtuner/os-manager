@@ -77,10 +77,17 @@
     "servico": "Verificar falha no conta-giros, que se encontra inoperante. Painel apresenta sinais de impacto e quebra, podendo ter danificado internamente o sistema de medição do motor. - (Fazenda Alvorada)"
   },
   {
-    "frota": "5035",
-    "os": "111440",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção de bicos"
+    "frota": "247",
+    "os": "112346",
+    "data": "11/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Vazamento na bomba injetora - (Fazenda Alvorada)"
+  },
+  {
+    "frota": "65",
+    "os": "112345",
+    "data": "11/06/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Vazamento na bomba injetora - (Fazenda Alvorada)"
   }
 ]

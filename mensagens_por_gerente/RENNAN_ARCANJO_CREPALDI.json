@@ -1,5 +1,12 @@
 [
   {
+    "frota": "5229",
+    "os": "114603",
+    "data": "16/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar barra de corte danificada - (Fazenda NSA)"
+  },
+  {
     "frota": "274",
     "os": "114242",
     "data": "14/07/2025",
@@ -84,13 +91,6 @@
     "servico": "Quebra do cabo do acelerador de mão - (Fazenda NSA)"
   },
   {
-    "frota": "5229",
-    "os": "113679",
-    "data": "02/07/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar barra de corte danificada - (Fazenda NSA)"
-  },
-  {
     "frota": "5778",
     "os": "113581",
     "data": "01/07/2025",
@@ -117,33 +117,5 @@
     "data": "10/06/2025",
     "prestador": "nan",
     "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
-  },
-  {
-    "frota": "5730",
-    "os": "112075",
-    "data": "05/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar patins"
-  },
-  {
-    "frota": "5662",
-    "os": "112003",
-    "data": "04/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em suporte da proteção lateral"
-  },
-  {
-    "frota": "5431",
-    "os": "111479",
-    "data": "28/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar esteira e fundo do espalhador"
-  },
-  {
-    "frota": "5712",
-    "os": "109102",
-    "data": "17/04/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Refazer cabeçalho desalinhado"
   }
 ]

@@ -1,6 +1,13 @@
 [
   {
     "frota": "5067",
+    "os": "114670",
+    "data": "17/07/2025",
+    "prestador": "nan",
+    "servico": "Rosca sem fim empaçocando, destravar e trocar motor da rosca - (Pecuaria)"
+  },
+  {
+    "frota": "5067",
     "os": "114311",
     "data": "15/07/2025",
     "prestador": "nan",
@@ -26,13 +33,6 @@
     "data": "08/07/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Mancal trincado (Pecuária)"
-  },
-  {
-    "frota": "109",
-    "os": "112640",
-    "data": "17/06/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Verificar vazamento na caixa seca - (Pecuária)"
   },
   {
     "frota": "5351",
