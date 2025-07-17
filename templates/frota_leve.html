@@ -90,27 +90,27 @@
             <a href="?filtro=Finalizado">✅ Finalizado</a>
         </div>
 
-        {% for item in dados %}
+        {% for item in manutencoes %}
         <div class="card">
             <div class="card-header" onclick="toggleDetails({{ loop.index }})">
-                <h2>🚘 {{ item['placa'] }} — {{ item['veiculo'] }} | 👨‍🔧 {{ item['motorista'] }} | 📌 Situação: <span class="status {{ item['situacao']|replace(' ', '\ ') }}">{{ item['situacao'] }}</span> | 🛠️ {{ item['servico'] }}</h2>
+                <h2>🚘 {{ item.placa }} — {{ item.veiculo }} | 👨‍🔧 {{ item.motorista }} | 📌 Situação: <span class="status {{ item.situacao|replace(' ', '\ ') }}">{{ item.situacao }}</span> | 🛠️ {{ item.servico }}</h2>
             </div>
             <div class="card-body" id="body-{{ loop.index }}">
-                <div class="campo"><strong>Oficina:</strong> {{ item['oficina'] }}</div>
-                <div class="campo"><strong>Entrada:</strong> {{ item['entrada'] }}</div>
-                <div class="campo"><strong>Saída:</strong> {{ item['saida'] }}</div>
-                <div class="campo"><strong>Valor M.O:</strong> {{ item['valor_mo'] }}</div>
-                <div class="campo"><strong>Peças:</strong> {{ item['valor_pecas'] }}</div>
-                <div class="campo"><strong>Aprovado por:</strong> {{ item['aprovado_por'] }}</div>
-                <div class="campo"><strong>📦 Cotação 1:</strong> {{ item['cotacao1'] }}</div>
-                <div class="campo"><strong>📦 Cotação 2:</strong> {{ item['cotacao2'] }}</div>
-                <div class="campo"><strong>📦 Cotação 3:</strong> {{ item['cotacao3'] }}</div>
-                <div class="campo"><strong>✅ Fechado com:</strong> {{ item['fechado_com'] }}</div>
-                <div class="campo"><strong>📝 Observações:</strong> {{ item["obs"] }}</div>
+                <div class="campo"><strong>Oficina:</strong> {{ item.oficina }}</div>
+                <div class="campo"><strong>Entrada:</strong> {{ item.entrada }}</div>
+                <div class="campo"><strong>Saída:</strong> {{ item.saida }}</div>
+                <div class="campo"><strong>Valor M.O:</strong> {{ item.valor_mo }}</div>
+                <div class="campo"><strong>Peças:</strong> {{ item.valor_pecas }}</div>
+                <div class="campo"><strong>Aprovado por:</strong> {{ item.aprovado_por }}</div>
+                <div class="campo"><strong>📦 Cotação 1:</strong> {{ item.cotacao1 }}</div>
+                <div class="campo"><strong>📦 Cotação 2:</strong> {{ item.cotacao2 }}</div>
+                <div class="campo"><strong>📦 Cotação 3:</strong> {{ item.cotacao3 }}</div>
+                <div class="campo"><strong>✅ Fechado com:</strong> {{ item.fechado_com }}</div>
+                <div class="campo"><strong>📝 Observações:</strong> {{ item.obs }}</div>
                 <div class="campo">
-                    <a href="{{ url_for("editar_manutencao_frota_leve", id=item.id) }}" style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">✏️ Editar</a>
-                    <form action="{{ url_for("apagar_manutencao_frota_leve", id=item.id) }}" method="post" style="display: inline;">
-                        <button type="submit" onclick="return confirm("Tem certeza que deseja apagar esta manutenção?");" style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 5px; border: none; cursor: pointer;">🗑️ Apagar</button>
+                    <a href="{{ url_for('editar_manutencao_frota_leve', id=item.id) }}" style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">✏️ Editar</a>
+                    <form action="{{ url_for('apagar_manutencao_frota_leve', id=item.id) }}" method="post" style="display: inline;">
+                        <button type="submit" onclick="return confirm('Tem certeza que deseja apagar esta manutenção?');" style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 5px; border: none; cursor: pointer;">🗑️ Apagar</button>
                     </form>
                 </div>
             </div>
