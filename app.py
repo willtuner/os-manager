@@ -64,10 +64,10 @@ saopaulo_tz = pytz.timezone('America/Sao_Paulo')
 def capitalize_name(name):
     if not name:
         return name
-    parts = name.replace('.', ' ').split()
+    parts = name.replace(".", " ").split()
     capitalized_parts = [part.capitalize() for part in parts]
-    return '.'.join(capitalized_parts) if '.' in name else ' '.join(capitalized_parts)
-app.jinja_env.filters['capitalize_name'] = capitalize_name
+    return " ".join(capitalized_parts)
+app.jinja_env.filters["capitalize_name"] = capitalize_name
 
 # --- Helper para formatar datas no horário de São Paulo (AJUSTADO) ---
 def format_datetime(dt_input):
@@ -846,8 +846,8 @@ def admin_panel():
     login_events = login_events_query.limit(50).all()
 
     for ev_item in login_events:
-        ev_item.login_time_formatted = format_datetime(ev_item.login_time)
-        ev_item.logout_time_formatted = format_datetime(ev_item.logout_time) if ev_item.logout_time else None
+        ev_item.login_time_formatted = format_datetime(ev_item.login_time.astimezone(saopaulo_tz) if ev_item.login_time.tzinfo else saopaulo_tz.localize(ev_item.login_time))
+        ev_item.logout_time_formatted = format_datetime(ev_item.logout_time.astimezone(saopaulo_tz) if ev_item.logout_time and ev_item.logout_time.tzinfo else (saopaulo_tz.localize(ev_item.logout_time) if ev_item.logout_time else None))
         if ev_item.logout_time and ev_item.login_time:
             login_t_calc = ev_item.login_time.astimezone(saopaulo_tz) if ev_item.login_time.tzinfo else saopaulo_tz.localize(ev_item.login_time)
             logout_t_calc = ev_item.logout_time.astimezone(saopaulo_tz) if ev_item.logout_time.tzinfo else saopaulo_tz.localize(ev_item.logout_time)
