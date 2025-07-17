@@ -2,8 +2,8 @@ import os
 import json
 import logging
 from datetime import datetime, timedelta
-import pytz
-from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
+
+
 from flask_sqlalchemy import SQLAlchemy
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
@@ -11,12 +11,15 @@ from collections import Counter
 from sqlalchemy.sql import text
 from dateutil.parser import parse
 from werkzeug.utils import secure_filename
-from PIL import Image
+
 
 # Configuração de logging para depuração
-logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-
+logger.setLevel(logging.DEBUG)
+handler = logging.StreamHandler()
+formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+handler.setFormatter(formatter)
+logger.addHandler(handler)
 # --- Configuração do app e banco ---
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24).hex())
@@ -1236,7 +1239,7 @@ def update_pimns_status(os_id):
 
     finalizacao.status_pimns = novo_status
     db.session.commit()
-    flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {'Marcado' if novo_status else 'Desmarcado'}.", "success")
+    flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {"Marcado" if novo_status else "Desmarcado"}.", "success")
 
 
     return redirect(url_for("admin_panel"))
