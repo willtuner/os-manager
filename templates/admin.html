@@ -77,6 +77,7 @@
     border-radius: 8px 8px 0 0;
     font-weight: 500;
   }
+  .card-header.ranking-gerentes { background: var(--ciano); }
   .card-header.ranking-prestadores { background: var(--azul); }
   .card-header.historico-os { background: var(--cinza-escuro); }
   .card-header.historico-logins { background: var(--cinza-medio); }
@@ -439,6 +440,39 @@
                 {% endfor %}
                 {% if not finalizadas %}
                 <tr><td colspan="5" class="text-center py-3">Nenhuma manutenção concluída</td></tr>
+                {% endif %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ranking de OS Pendentes (Supervisores) -->
+      <div class="card-modern mb-4">
+        <div class="card-header ranking-gerentes d-flex justify-content-between align-items-center">
+          <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Supervisores)</h4>
+          {% if ranking_os_abertas|length > 3 %}
+          <button class="btn btn-sm btn-toggle" data-target="gerente-ranking-row">
+            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+          </button>
+          {% endif %}
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-modern table-sm">
+              <thead>
+                <tr><th>Posição</th><th>Supervisor</th><th>OS Pendentes</th></tr>
+              </thead>
+              <tbody>
+                {% for gerente, count in ranking_os_abertas %}
+                <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
+                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+                  <td>{{ gerente|capitalize_name }}</td>
+                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+                </tr>
+                {% endfor %}
+                {% if not ranking_os_abertas %}
+                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
                 {% endif %}
               </tbody>
             </table>
