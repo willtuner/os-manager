@@ -10,7 +10,7 @@
     <p>👤 Usuário logado: {{ usuario }}</p>
     <a href=\"/frota-leve\" style=\'display: inline-block; margin-bottom: 20px; text-decoration: none; color: #007bff;\'>🔙 Voltar para lista</a>
 
-    <form method=\"POST\" style=\"margin-top: 20px;\        <label>🚘 Placa: <input type="text" name="placa" value="{{ manutencao.placa if manutencao else '' }}" required></label><br><br>
+    <form method="POST" action="{{ url_for("editar_manutencao_frota_leve", id=manutencao.id) if manutencao else url_for("nova_manutencao_frota_leve") }}" style="margin-top: 20px;">        <label>🚘 Placa: <input type="text" name="placa" value="{{ manutencao.placa if manutencao else '' }}" required></label><br><br>
         <label>🚗 Veículo: <input type="text" name="veiculo" value="{{ manutencao.veiculo if manutencao else '' }}" required></label><br><br>
         <label>👨‍🔧 Motorista: <input type="text" name="motorista" value="{{ manutencao.motorista if manutencao else '' }}"></label><br><br>
         <label>🏭 Oficina: <input type="text" name="oficina" value="{{ manutencao.oficina if manutencao else '' }}"></label><br><br>
