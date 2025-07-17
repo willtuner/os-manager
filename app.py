@@ -113,7 +113,7 @@ class Finalizacao(db.Model):
     hora_fin = db.Column(db.String(5), nullable=False)
     observacoes = db.Column(db.Text)
     registrado_em = db.Column(db.DateTime, default=lambda: saopaulo_tz.localize(datetime.now()))
-    status_pimns = db.Column(db.String(50), default='Pendente', nullable=False)
+    status_pimns = db.Column(db.Boolean, default=False, nullable=False) # Caixa marcavel
 
 class LoginEvent(db.Model):
     __tablename__ = 'login_events'
