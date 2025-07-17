@@ -1,12 +1,221 @@
 [
     {
+        "solicitante": "JOHN LENNON DA SILVA",
+        "frota": "5723",
+        "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+        "os": "114680",
+        "data_entrada": "17/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOHN LENNON DA SILVA",
+        "frota": "5705",
+        "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+        "os": "114679",
+        "data_entrada": "17/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5660",
+        "modelo": "PULVERIZADOR 4000 LT JACTO",
+        "os": "114677",
+        "data_entrada": "17/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer solda em trinca na chapa da torre - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "WAGNER GALDINO DA SILVA",
+        "frota": "5184",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "114671",
+        "data_entrada": "17/07/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/D furado - (Fazenda SL1)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "GABRIEL AUGUSTO BASSO",
+        "frota": "5067",
+        "modelo": "ADUBADEIRA CACAMBA TATU",
+        "os": "114670",
+        "data_entrada": "17/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Rosca sem fim empaçocando, destravar e trocar motor da rosca - (Pecuaria)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "248",
+        "modelo": "TRATOR JOHN DEERE 5080EN",
+        "os": "114669",
+        "data_entrada": "17/07/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu traseiro L/E furado - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "5670",
+        "modelo": "PULVERIZADOR 600 LT",
+        "os": "114666",
+        "data_entrada": "17/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer solda - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "70",
+        "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+        "os": "114665",
+        "data_entrada": "17/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento na TDP - (Fazenda Nova Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5697",
+        "modelo": "PULVERIZADOR 2000 LT",
+        "os": "114636",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer fibra no tanque de drench - (Faz. Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "DIEGO GOMES CAMBOI",
+        "frota": "5725",
+        "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+        "os": "114614",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Trocar pião da bomba roçado - (Fazenda Santa Izabel)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ZYLTON FIGUEREDO SPIGUEL",
+        "frota": "5779",
+        "modelo": "VALETADEIRA",
+        "os": "114610",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Reformar corrente da valetadeira - (Fazenda Pedra Verde)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "RENNAN ARCANJO CREPALDI",
+        "frota": "5229",
+        "modelo": "PODADEIRA HIDRAUTEC HLC 3",
+        "os": "114603",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar barra de corte danificada - (Fazenda NSA)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5336",
+        "modelo": "PULVERIZADOR 2000 LT FMC",
+        "os": "114542",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Fabricar/instalar pé de apoio - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5336",
+        "modelo": "PULVERIZADOR 2000 LT FMC",
+        "os": "114541",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Vazamento de produto na junta da bomba  - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "5523",
+        "modelo": "PUL.TURBO 4000 NATALI ALFA",
+        "os": "114532",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/E furado - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
+        "frota": "5365",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "114523",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Verificar implemento escapou o cabeçalho, comprometendo o engate e funcionamento adequado - (Fazenda Casa Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5660",
+        "modelo": "PULVERIZADOR 4000 LT JACTO",
+        "os": "114518",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Trocar a correia traseira da bomba.",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "GILBERTO CORDEIRO",
+        "frota": "5314",
+        "modelo": "PODADOR FRONTAL/LATERAL",
+        "os": "114515",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "M G VEDACOES E PECAS LTDA",
+        "servico": "Verificar pistão de elevação da HLC3, que está abaixando sozinho. Possível falha em vedação ou válvula de retenção - (Fazenda São José)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ANTONIO PAULO LARENTIS ALVES",
+        "frota": "5749",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "114514",
+        "data_entrada": "16/07/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Verificar possível entrada de ar no sistema do pulverizador, que pode estar comprometendo o funcionamento adequado. - (Fazenda Minuano)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "DIEGO GOMES CAMBOI",
         "frota": "5753",
         "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
         "os": "114453",
         "data_entrada": "15/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
         "servico": "Desentortar rosca da calcalhadeira (Fazenda Santa Izabel)",
         "liberado_por": "Mauricio"
     },
@@ -198,17 +407,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "IZAIAS FRANCISCO DA SILVA",
-        "frota": "5571",
-        "modelo": "CARRETA TRANSBORDO GTM",
-        "os": "114260",
-        "data_entrada": "15/07/2025",
-        "previsao_saida": "---",
-        "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu traseiro L/E furado - (Fazenda São Severino)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "JOAO VITOR DUBAY DA SILVA",
         "frota": "5094",
         "modelo": "STARA ARPLAN 3000",
@@ -283,17 +481,6 @@
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
         "servico": "Instalar chapa para regulagem dos bicos TK e realinhar barra - (Fazenda Santa Izabel)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "5661",
-        "modelo": "PULVERIZADOR 4000 LT JACTO",
-        "os": "114237",
-        "data_entrada": "14/07/2025",
-        "previsao_saida": "---",
-        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Identificado rolamento com desgaste excessivo, apresentando risco iminente de quebra. - (Fazenda Pedra Verde)",
         "liberado_por": "Mauricio"
     },
     {
@@ -649,17 +836,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
-        "frota": "5637",
-        "modelo": "PODADEIRA HIDRAUTEC HLC 4",
-        "os": "113995",
-        "data_entrada": "09/07/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Substituir o manômetro (relógio de pressão) danificado da podadeira o qual foi quebrado durante operação ao atingir galhos. Além da substituição, confeccionar e instalar um suporte de proteção para evitar danos futuros no local - (Fazenda Nova Manhã)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "RENNAN ARCANJO CREPALDI",
         "frota": "5502",
         "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -822,17 +998,6 @@
         "previsao_saida": "---",
         "prestador": "nan",
         "servico": "Verificar vazamento de diesel na base da bomba injetora - (Fazenda Minuano)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "RENNAN ARCANJO CREPALDI",
-        "frota": "5229",
-        "modelo": "PODADEIRA HIDRAUTEC HLC 3",
-        "os": "113679",
-        "data_entrada": "02/07/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Verificar barra de corte danificada - (Fazenda NSA)",
         "liberado_por": "Mauricio"
     },
     {
