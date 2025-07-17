@@ -113,6 +113,7 @@ class Finalizacao(db.Model):
     hora_fin = db.Column(db.String(5), nullable=False)
     observacoes = db.Column(db.Text)
     registrado_em = db.Column(db.DateTime, default=lambda: saopaulo_tz.localize(datetime.now()))
+    status_pimns = db.Column(db.String(50), default=\'Pendente\', nullable=False)
 
 class LoginEvent(db.Model):
     __tablename__ = 'login_events'
@@ -181,6 +182,13 @@ def init_db():
                 db.session.execute(text('ALTER TABLE users ADD COLUMN profile_picture VARCHAR(256)'))
                 db.session.commit()
                 logger.info("Coluna profile_picture adicionada com sucesso")
+            
+            columns_finalizacoes = [col['name'] for col in inspector.get_columns('finalizacoes')]
+            if 'status_pimns' not in columns_finalizacoes:
+                logger.info("Adicionando coluna status_pimns à tabela finalizacoes")
+                db.session.execute(text('ALTER TABLE finalizacoes ADD COLUMN status_pimns VARCHAR(50) DEFAULT "Pendente" NOT NULL'))
+                db.session.commit()
+                logger.info("Coluna status_pimns adicionada com sucesso")
         except Exception as e:
             logger.error(f"Erro ao verificar/adicionar colunas: {e}")
             db.session.rollback()
@@ -1206,3 +1214,25 @@ def apagar_manutencao_frota_leve(id):
     db.session.commit()
     flash("Manutenção apagada com sucesso!", "success")
     return redirect(url_for("frota_leve"))
+
+
+
+
+
+@app.route("/update_pimns_status/<int:os_id>", methods=["POST"])
+def update_pimns_status(os_id):
+    if not session.get("is_admin"):
+        flash("Acesso negado.", "danger")
+        return redirect(url_for("login"))
+
+    finalizacao = Finalizacao.query.get_or_404(os_id)
+    novo_status = request.form.get("status_pimns")
+
+    if novo_status in ["Pendente", "Processado", "Erro"]:
+        finalizacao.status_pimns = novo_status
+        db.session.commit()
+        flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {novo_status}.", "success")
+    else:
+        flash("Status PIMNS inválido.", "danger")
+
+    return redirect(url_for("admin_panel"))
