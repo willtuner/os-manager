@@ -1236,7 +1236,8 @@ def update_pimns_status(os_id):
 
     finalizacao.status_pimns = novo_status
     db.session.commit()
-flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {"Marcado" if novo_status else "Desmarcado"}.", "success")
+flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {'Marcado' if novo_status else 'Desmarcado'}.", "success")
+
 
     return redirect(url_for("admin_panel"))
 
