@@ -1100,8 +1100,6 @@ def logout():
 with app.app_context():
     init_db()
 
-
-
 # === ROTAS FROTA LEVE ===
 FROTA_LEVE_FILE = os.path.join(BASE_DIR, 'frota_leve.json')
 
@@ -1110,18 +1108,30 @@ def frota_leve():
     if not session.get('is_admin'):
         return redirect('/login')
 
-    filtro = request.args.get('filtro')
+    filtro = request.args.get('filtro', 'todos')
+    search_query = request.args.get('search', '')
+
     query = FrotaLeve.query
 
-    if filtro and filtro.lower() != "todos":
-        query = query.filter(FrotaLeve.situacao.ilike(f'%{filtro}%'))
+    if filtro != 'todos':
+        query = query.filter_by(situacao=filtro)
 
-    dados = query.all()
-    return render_template(
-        'frota_leve.html',
-        dados=dados,
-        usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador')
-    )
+    if search_query:
+        query = query.filter(
+            (FrotaLeve.placa.ilike(f'%{search_query}%')) |
+            (FrotaLeve.veiculo.ilike(f'%{search_query}%')) |
+            (FrotaLeve.motorista.ilike(f'%{search_query}%')) |
+            (FrotaLeve.oficina.ilike(f'%{search_query}%')) |
+            (FrotaLeve.servico.ilike(f'%{search_query}%'))
+        )
+
+    manutencoes = query.order_by(FrotaLeve.id.desc()).all()
+
+    return render_template('frota_leve.html',
+                           manutencoes=manutencoes,
+                           filtro_atual=filtro,
+                           search_query=search_query,
+                           usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador'))
 
 @app.route('/frota-leve/novo', methods=['GET', 'POST'])
 def nova_manutencao_frota_leve():
@@ -1129,7 +1139,7 @@ def nova_manutencao_frota_leve():
         return redirect('/login')
 
     if request.method == 'POST':
-        nova_os = FrotaLeve(
+        nova_manutencao = FrotaLeve(
             placa=request.form['placa'],
             veiculo=request.form['veiculo'],
             motorista=request.form['motorista'],
@@ -1147,38 +1157,12 @@ def nova_manutencao_frota_leve():
             fechado_com=request.form.get('fechado_com', ''),
             obs=request.form['obs']
         )
-        db.session.add(nova_os)
+        db.session.add(nova_manutencao)
         db.session.commit()
-        return redirect('/frota-leve')
+        flash('Manutenção adicionada com sucesso!', 'success')
+        return redirect(url_for('frota_leve'))
 
-    return render_template('nova_manutencao_frota.html')  
-
-@app.route('/frota-leve/finalizar/<int:index>', methods=['POST'])
-def finalizar_manutencao_frota_leve(index):
-    if not session.get('is_admin'):
-        return redirect('/login')
-
-    with open(FROTA_LEVE_FILE, 'r', encoding='utf-8') as f:
-        dados = json.load(f)
-
-    if 0 <= index < len(dados):
-        dados[index]['situacao'] = 'Finalizado'
-        dados[index]['saida'] = request.form['data_fim']
-        dados[index]['hora_fim'] = request.form['hora_fim']
-        dados[index]['obs'] += '\nFinalização: ' + request.form.get('obs_fim', '')
-
-        with open(FROTA_LEVE_FILE, 'w', encoding='utf-8') as f:
-            json.dump(dados, f, ensure_ascii=False, indent=4)
-
-    return redirect('/frota-leve')
-
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0',
-           port=int(os.environ.get('PORT', 10000)),
-           debug=True)
-
-
+    return render_template('nova_manutencao_frota.html')
 
 @app.route('/frota-leve/editar/<int:id>', methods=['GET', 'POST'])
 def editar_manutencao_frota_leve(id):
@@ -1211,10 +1195,6 @@ def editar_manutencao_frota_leve(id):
 
     return render_template('nova_manutencao_frota.html', manutencao=manutencao)
 
-
-
-
-
 @app.route("/frota-leve/apagar/<int:id>", methods=["POST"])
 def apagar_manutencao_frota_leve(id):
     if not session.get("is_admin"):
@@ -1226,8 +1206,24 @@ def apagar_manutencao_frota_leve(id):
     flash("Manutenção apagada com sucesso!", "success")
     return redirect(url_for("frota_leve"))
 
+@app.route("/frota-leve/finalizar/<int:index>", methods=["POST"])
+def finalizar_manutencao_frota_leve(index):
+    if not session.get("is_admin"):
+        return redirect("/login")
 
+    with open(FROTA_LEVE_FILE, "r", encoding="utf-8") as f:
+        dados = json.load(f)
 
+    if 0 <= index < len(dados):
+        dados[index]["situacao"] = "Finalizado"
+        dados[index]["saida"] = request.form["data_fim"]
+        dados[index]["hora_fim"] = request.form["hora_fim"]
+        dados[index]["obs"] += "\nFinalização: " + request.form.get("obs_fim", "")
+
+        with open(FROTA_LEVE_FILE, "w", encoding="utf-8") as f:
+            json.dump(dados, f, ensure_ascii=False, indent=4)
+
+    return redirect("/frota-leve")
 
 @app.route("/update_pimns_status/<int:os_id>", methods=["POST"])
 def update_pimns_status(os_id):
@@ -1240,6 +1236,11 @@ def update_pimns_status(os_id):
 
     finalizacao.status_pimns = novo_status
     db.session.commit()
-    flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {'Marcado' if novo_status else 'Desmarcado'}.", "success")
+    flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {"Marcado" if novo_status else "Desmarcado"}.", "success")
 
     return redirect(url_for("admin_panel"))
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',
+           port=int(os.environ.get('PORT', 10000)),
+           debug=True)
