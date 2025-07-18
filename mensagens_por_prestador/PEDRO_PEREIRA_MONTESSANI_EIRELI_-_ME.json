@@ -1,5 +1,37 @@
 [
   {
+    "frota": "90",
+    "cd_equipamento": "90",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "114732",
+    "data_entrada": "18/07/2025",
+    "servico": "Verificar cibié do teto L/E não ascende, e cibié da podadeira queimado - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "231",
+    "cd_equipamento": "231",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "114730",
+    "data_entrada": "18/07/2025",
+    "servico": "Verificar falha no sistema de sinalização não acende nenhuma luz. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5757",
+    "cd_equipamento": "5757",
+    "modelo": "SOPRADOR BG 56",
+    "os": "114696",
+    "data_entrada": "17/07/2025",
+    "servico": "Revisão parte elétrica (Fazenda São José)\nSolicitado Sr. Carlos\nResponsavel Sr. Carlos"
+  },
+  {
+    "frota": "5759",
+    "cd_equipamento": "5759",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "114684",
+    "data_entrada": "17/07/2025",
+    "servico": "Verificar cabo de acionamento da barra, que se conecta ao painel de controle.\nSistema só funciona quando se movimenta o conector, indicando mau contato ou falha na fiação/conector.\nNecessária inspeção do chicote, limpeza ou substituição do conector danificado. - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "10121",
     "cd_equipamento": "10121",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -216,22 +248,6 @@
     "servico": "Quebra da fixação das lanternas dianteiras - (Fazenda Estrela)\nSolicitado Sr. Paulo \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "132",
-    "cd_equipamento": "132",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "113998",
-    "data_entrada": "09/07/2025",
-    "servico": "Revisar sistema eletrico - Oficina\nAutorizado Arthur"
-  },
-  {
-    "frota": "98",
-    "cd_equipamento": "98",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "113905",
-    "data_entrada": "08/07/2025",
-    "servico": "Revisar sistema eletrico do trator - Faz Casa Branca\nAutorizado Arthur"
-  },
-  {
     "frota": "145",
     "cd_equipamento": "145",
     "modelo": "PA CARREGADEIRA 924K",
@@ -270,22 +286,6 @@
     "os": "113653",
     "data_entrada": "02/07/2025",
     "servico": "Cibiés dianteiros e traseiros não acendem necessário diagnóstico elétrico do sistema de iluminação - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "143",
-    "cd_equipamento": "143",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "113570",
-    "data_entrada": "01/07/2025",
-    "servico": "Trator não dá partida e exibe 'erro no sensor' no painel necessário diagnóstico eletrônico do sistema. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "65",
-    "cd_equipamento": "65",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113557",
-    "data_entrada": "01/07/2025",
-    "servico": "Verificar falha no conta-giros, que se encontra inoperante. Painel apresenta sinais de impacto e quebra, podendo ter danificado internamente o sistema de medição do motor. - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
   },
   {
     "frota": "265",

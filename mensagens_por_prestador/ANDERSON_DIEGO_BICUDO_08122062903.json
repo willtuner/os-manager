@@ -1,43 +1,51 @@
 [
   {
-    "frota": "5262",
-    "cd_equipamento": "5262",
-    "modelo": "MOTOCANA",
-    "os": "114590",
-    "data_entrada": "16/07/2025",
-    "servico": "Remover vazamentos no sistema de combustivel e trocar correia do alternador - Faz Ursula\nAutorizado Arthur"
-  },
-  {
-    "frota": "10229",
-    "cd_equipamento": "10229",
+    "frota": "10224",
+    "cd_equipamento": "10224",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114566",
-    "data_entrada": "16/07/2025",
-    "servico": "Vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+    "os": "114785",
+    "data_entrada": "18/07/2025",
+    "servico": "Trocar reparo da bomba dagua - Faz Bela Manha\nAutorizado Arthur"
   },
   {
-    "frota": "309",
-    "cd_equipamento": "309",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "114528",
-    "data_entrada": "16/07/2025",
-    "servico": "Realizar ajuste nas rodas conforme espaçamento necessário para a operação agrícola - (Fazenda Estrela)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "264",
-    "cd_equipamento": "264",
+    "frota": "198",
+    "cd_equipamento": "198",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114519",
-    "data_entrada": "16/07/2025",
-    "servico": "Fazer embreagem - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+    "os": "114743",
+    "data_entrada": "18/07/2025",
+    "servico": "Verificar baralho de engrenagens no cambio - Faz Terra Branca\nAutorizado Arthur"
   },
   {
-    "frota": "222",
-    "cd_equipamento": "222",
+    "frota": "5481",
+    "cd_equipamento": "5481",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "114739",
+    "data_entrada": "18/07/2025",
+    "servico": "Desmontagem e instalação das facas da podadeira - Faz Casa Branca\nAutorizado Arthur"
+  },
+  {
+    "frota": "255",
+    "cd_equipamento": "255",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114517",
-    "data_entrada": "16/07/2025",
-    "servico": "Verificar roda dianteira esquerda. Acúmulo de graxa com terra no cubo. Suspeita de retentor danificado ou entrada de sujeira.- (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
+    "os": "114738",
+    "data_entrada": "18/07/2025",
+    "servico": "Vazamento no reparo do comando - (Fazenda Minuano)\nSolicitado Sr. Antônio \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "114726",
+    "data_entrada": "17/07/2025",
+    "servico": "Trocar entalhado do pião - (Fazenda São Paulo - Oficina)\nSolicitado Sr. Diego Mecânico DMA\nResponsavel Sr. Carlos Aparecido Mariano"
+  },
+  {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "114723",
+    "data_entrada": "17/07/2025",
+    "servico": "Avaliar ruído na TDP - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "235",
@@ -48,36 +56,12 @@
     "servico": "TDP acionando sozinha - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "284",
-    "cd_equipamento": "284",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114292",
-    "data_entrada": "15/07/2025",
-    "servico": "Amortecedor do volante vazando óleo e miolo da chave da porta danificado - (SL1)\nSolicitado Sr. Wagner\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "226",
     "cd_equipamento": "226",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
     "os": "114236",
     "data_entrada": "14/07/2025",
     "servico": "Verificar o estado do cabo da embreagem de acionamento por pedal, devido à embreagem estar dura. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "67",
-    "cd_equipamento": "67",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "114150",
-    "data_entrada": "11/07/2025",
-    "servico": "Vazamento de óleo no cudo da roda L/E - (Fazenda Santa Luiza)\nSolicitado Sr. John\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "276",
-    "cd_equipamento": "276",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114111",
-    "data_entrada": "10/07/2025",
-    "servico": "Vazamento no carter. (Fazenda São Pedro)\nSolicitante Sr. Romes \nResponsável Sr. Arthur"
   },
   {
     "frota": "189",
@@ -88,20 +72,252 @@
     "servico": "Verificar freio de estacionamento não funciona - (Fazenda São Severino)\nSolicitado Sr. Izaias \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "231",
-    "cd_equipamento": "231",
+    "frota": "191",
+    "cd_equipamento": "191",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "113480",
+    "data_entrada": "30/06/2025",
+    "servico": "Verificar o funcionamento da bomba hidráulica, conferido pressão e trocado filtro.  - Faz São Paulo \nAutorizado Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113149",
+    "data_entrada": "27/06/2025",
+    "servico": "Avaliar e corrigir vazamento nas conexões da mangueira do filtro de diesel. - (Fazenda São Pedro)\nSolicitado Sr. Josimar Badias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10220",
+    "cd_equipamento": "10220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113390",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar cabo do afogador - Faz São Pedro\nAutorizado Arthur"
+  },
+  {
+    "frota": "276",
+    "cd_equipamento": "276",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113391",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar correia do alternardo - Faz São Pedro\nAutorizado Arthur"
+  },
+  {
+    "frota": "310",
+    "cd_equipamento": "310",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "113154",
+    "data_entrada": "26/06/2025",
+    "servico": "Avaliar vazamento nos comandos hidráulicos - (Pecuaria)\nSolicitado Sr. Bruno \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "195",
+    "cd_equipamento": "195",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113393",
+    "data_entrada": "26/06/2025",
+    "servico": "Instalar Kit de redução - Oficina\n- Arrumado banco e instalado cinto de segurança, colocado sapatilha do guia. \n- Trocado filtro de sedimentação.\nAutorizado Arthur"
+  },
+  {
+    "frota": "149",
+    "cd_equipamento": "149",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "113252",
+    "data_entrada": "26/06/2025",
+    "servico": "Verificar e reparar o sistema de câmbio. Alavanca de marchas foi arrancada, comprometendo totalmente o acionamento da transmissão. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10222",
+    "cd_equipamento": "10222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113086",
+    "data_entrada": "25/06/2025",
+    "servico": "Vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "192",
+    "cd_equipamento": "192",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "113741",
+    "data_entrada": "25/06/2025",
+    "servico": "Trocado reparo do cilindro de freio, troca mangueiras do cilindro de freio (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "229",
+    "cd_equipamento": "229",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "112520",
-    "data_entrada": "13/06/2025",
-    "servico": "Quebra do suporte do cabo do acelerador\nTroca da chapa do suporte da bomba injetora\nDesmontado a TDP e trocado os anéis do eixo de acionamento - (Fazenda São Severino)\nSolicitado Sr. Cassio\nLiberado Sr. Arthur"
+    "os": "112521",
+    "data_entrada": "24/06/2025",
+    "servico": "Avaliar pneu dianteiro L/D com \"folga\" - (Fazenda São Severino)\nSolicitado Sr. Cassio\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "260",
+    "cd_equipamento": "260",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112979",
+    "data_entrada": "24/06/2025",
+    "servico": "Verificar trava do câmbio desprendida, comprometendo o engate das marchas - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur \nVerificar pendencias N° 4342 e 4334"
+  },
+  {
+    "frota": "308",
+    "cd_equipamento": "308",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "113014",
+    "data_entrada": "24/06/2025",
+    "servico": "Revisão de 400 hrs - (Fazenda Estrela)\nResponsavel Sr. Wilson\n- Filtro de diesel \n- Filtro sedimentador\n- Filtro de óleo de motor\n- Óleo de motor (9L 15w40)\n- Oleo das planetárias L/E e L/D (1,5   1,5 L de 10w30)"
+  },
+  {
+    "frota": "310",
+    "cd_equipamento": "310",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "112999",
+    "data_entrada": "24/06/2025",
+    "servico": "Revisão de 400 hrs - (Pecuaria)\n- Filtro de diesel \n- Filtro sedimentador\n- Filtro de óleo de motor\n- Óleo de motor (9L 15w40)\n- Oleo das planetárias L/E e L/D (1,5   1,5 L de 10w30)"
+  },
+  {
+    "frota": "86",
+    "cd_equipamento": "86",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "109646",
+    "data_entrada": "24/06/2025",
+    "servico": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "88",
+    "cd_equipamento": "88",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112865",
+    "data_entrada": "24/06/2025",
+    "servico": "Avaliar vazamento de óleo no cárter, identificando possível falha na vedação ou trinca no componente - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "113048",
+    "data_entrada": "23/06/2025",
+    "servico": "Revisar freio - Faz São Severino\nAutorizado Arthur"
+  },
+  {
+    "frota": "64",
+    "cd_equipamento": "64",
+    "modelo": "TRATOR JOHN DEERE 5603 4X4",
+    "os": "112953",
+    "data_entrada": "23/06/2025",
+    "servico": "Silencioso quebrado (Fazenda São Severino)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "203",
+    "cd_equipamento": "203",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "112964",
+    "data_entrada": "23/06/2025",
+    "servico": "Verificar vazamento de óleo na direção - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "46",
+    "cd_equipamento": "46",
+    "modelo": "TRATOR JOHN DEERE 5600 4X4",
+    "os": "112940",
+    "data_entrada": "23/06/2025",
+    "servico": "Verificar radiador baixando nível do liquido de arrefecimento - (Fazenda Estrela)\nSolicitado Sr.  Danilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "257",
+    "cd_equipamento": "257",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112866",
+    "data_entrada": "20/06/2025",
+    "servico": "Trocar embreagem, trocar retentor, tirado cárter e trocado junta, trocado óleo completo e filtros. - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "112",
+    "cd_equipamento": "112",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "112405",
+    "data_entrada": "19/06/2025",
+    "servico": "Vazamento nas mangueiras do comando hidráulico - (Fazenda Santa Luiza)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "252",
+    "cd_equipamento": "252",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112726",
+    "data_entrada": "18/06/2025",
+    "servico": "Substituir mangueira da turbina\nTroca da mangueira de retorno de óleo da turbina - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "89",
+    "cd_equipamento": "89",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112712",
+    "data_entrada": "18/06/2025",
+    "servico": "Identificada quebra do terminal de direção, comprometendo a articulação do sistema; capô não fecha corretamente, necessitando ajuste ou reparo; e presença de vazamento de óleo na junta, indicando possível falha de vedação \nQuebra do terminal de direção, buscado terminal novo\nMangueira da direção estourada, levado para prensar - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nLiberado Sr. Arthur \nPendencias: 4368 e 4273"
+  },
+  {
+    "frota": "285",
+    "cd_equipamento": "285",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112696",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar vazamento no meio do trator \nVazamento atrás do motor, desmontado trator no meio retirado trator e volante \nTroca da junta do carter \nTroca da mangueira da turbina, troca de 400 horas \nDesmontado intercule para lavar - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112652",
+    "data_entrada": "17/06/2025",
+    "servico": "Trocar mangueira de pressão da bomba de direção\nTirado mangueira da frota 228\nColocado na frota 227 e levado mangueira para prensar \n- Faz São Severino\nAutorizado Arthur"
+  },
+  {
+    "frota": "270",
+    "cd_equipamento": "270",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112644",
+    "data_entrada": "17/06/2025",
+    "servico": "Verificar vazamento de diesel \nTrocado mangueira de Diesel\nMandado prensar nova mangueira no Alvaro \n- Faz São Paulo\nAutorizado Arthur"
   },
   {
     "frota": "258",
     "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "112192",
-    "data_entrada": "09/06/2025",
-    "servico": "Verificar trator escapando marcha\nTrocado retentor da caixa seca\nTrocado embalagem e rolamentos do carrinho, trocado mangueira do bloco do comando hidráulico\nRetirado alavanca do tomada de força\nTrocado mangueiras e conexões do freio - (Fazenda Casa Branca) - (Comboio)\nLiberado Sr. Arthur"
+    "os": "112649",
+    "data_entrada": "17/06/2025",
+    "servico": "Trocar mangueira de combustivel, verificar coxim da cabine e vazamento na tampa da transmissão\nCano do combustível furado, retirado e feito troca por mangueira - Faz Estrela\nAutorizado Arthur"
+  },
+  {
+    "frota": "273",
+    "cd_equipamento": "273",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112512",
+    "data_entrada": "13/06/2025",
+    "servico": "Cano de diesel furado \nTroca do cano de diesel- (Fazenda Santa Izabel)\nSolicitado Sr. Diego\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "79",
+    "cd_equipamento": "79",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112511",
+    "data_entrada": "13/06/2025",
+    "servico": "Cano de diesel furado - (Fazenda Terra Branco) \nSolicitado Sr. Eder\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "91",
+    "cd_equipamento": "91",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112500",
+    "data_entrada": "13/06/2025",
+    "servico": "Trocar cano do hidráulico por mangueira\nRetirado cano da bomba hidráulico e levado na Megaflex para fazer mangueira - (Faz Estrela)\nAutorizado Arthur"
+  },
+  {
+    "frota": "195",
+    "cd_equipamento": "195",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "112352",
+    "data_entrada": "11/06/2025",
+    "servico": "Cano do diesel estourado\nTroca do cano de Diesel - (Fazenda São Pedro)\nLiberado Sr. Arthur"
   },
   {
     "frota": "74",
@@ -112,12 +328,12 @@
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
   },
   {
-    "frota": "5262",
-    "cd_equipamento": "5262",
-    "modelo": "MOTOCANA",
-    "os": "110773",
-    "data_entrada": "21/05/2025",
-    "servico": "Fazer troca de óleo completa - (Fazenda Estrela)\nLiberado Sr. Wilson\n- Feito troca de óleo completa\n- Troca do copo sedmentador e retira do ar do sistema"
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113611",
+    "data_entrada": "01/06/2025",
+    "servico": "Verificar vazamento de óleo hidráulico na parte inferior do trator, identificar ponto exato da falha para correção - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
   },
   {
     "frota": "96",

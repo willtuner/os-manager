@@ -1,5 +1,13 @@
 [
   {
+    "frota": "330",
+    "cd_equipamento": "330",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "114731",
+    "data_entrada": "18/07/2025",
+    "servico": "Falha no inversor ,não engata as marchas corretamente e a tração não aciona de forma adequada. Fazer revisão de 300 hrs.\nObs: Problema semelhante já verificado anteriormente em 15/07 na OS nº 114309. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "329",
     "cd_equipamento": "329",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -46,14 +54,6 @@
     "os": "114537",
     "data_entrada": "16/07/2025",
     "servico": "Revisão de 300 hrs - (Fazenda São Paulo)\n- Filtro de diesel\n- Filtro Sedimentador de diesel\n- Filtro de hidráulico\n- Filtro de motor\n-  Óleo de motor"
-  },
-  {
-    "frota": "330",
-    "cd_equipamento": "330",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "114309",
-    "data_entrada": "15/07/2025",
-    "servico": "Trator engata as marchas, porém não se movimenta, indicando possível quebra ou falha no reversor - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "319",
@@ -112,11 +112,27 @@
     "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "331",
+    "cd_equipamento": "331",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "114720",
+    "data_entrada": "29/06/2025",
+    "servico": "REVISÃO DE 50 HORAS (Fazenda Bela Manhã)\nSolicitante Sr. Arthur\nResponsável Sr. Rafael"
+  },
+  {
     "frota": "322",
     "cd_equipamento": "322",
     "modelo": "TRATOR NEW HOLANDTL5.80",
     "os": "113423",
     "data_entrada": "27/06/2025",
     "servico": "Verificar funcionamento e fazer revisão de 600hrs - Faz SL1\nAutorizado Arthur"
+  },
+  {
+    "frota": "330",
+    "cd_equipamento": "330",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "114719",
+    "data_entrada": "26/06/2025",
+    "servico": "REVISÃO DE 50 HORAS (Fazenda Bela Manhã)\nSolicitante Sr. Arthur\nResponsável Sr. Rafael"
   }
 ]

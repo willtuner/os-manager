@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5068",
+    "cd_equipamento": "5068",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "114754",
+    "data_entrada": "18/07/2025",
+    "servico": "Vazamento de óleo nas canecas da bomba (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5275",
+    "cd_equipamento": "5275",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114733",
+    "data_entrada": "18/07/2025",
+    "servico": "Trocar correias da polia - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Mauricio \nP.S Não possui as correias na fazenda, necessário levar"
+  },
+  {
     "frota": "5725",
     "cd_equipamento": "5725",
     "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
@@ -16,68 +32,12 @@
     "servico": "Vazamento de produto na junta da bomba  - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5365",
-    "cd_equipamento": "5365",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "114523",
-    "data_entrada": "16/07/2025",
-    "servico": "Verificar implemento escapou o cabeçalho, comprometendo o engate e funcionamento adequado - (Fazenda Casa Branca)\nSolicitado Sr.  João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "114518",
-    "data_entrada": "16/07/2025",
-    "servico": "Trocar a correia traseira da bomba.\nVerificar o rolamento da polia, avaliando folga ou ruídos anormais, com substituição se necessário - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr.  Mauricio"
-  },
-  {
-    "frota": "5749",
-    "cd_equipamento": "5749",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "114514",
-    "data_entrada": "16/07/2025",
-    "servico": "Verificar possível entrada de ar no sistema do pulverizador, que pode estar comprometendo o funcionamento adequado. - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5529",
-    "cd_equipamento": "5529",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "114332",
-    "data_entrada": "15/07/2025",
-    "servico": "Vazamento na graxeta e vazamento no comando - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5534",
     "cd_equipamento": "5534",
     "modelo": "CARRETA AGRICOLA COM PNEUS",
     "os": "114328",
-    "data_entrada": "15/07/2025",
-    "servico": "Rolamentos das rodas rodas quebrados - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5068",
-    "cd_equipamento": "5068",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "114305",
-    "data_entrada": "15/07/2025",
-    "servico": "Vazamento de óleo nas canecas da bomba - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5022",
-    "cd_equipamento": "5022",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "114267",
-    "data_entrada": "15/07/2025",
-    "servico": "Substituir correia do conjunto de acionamento.\nVerificar e substituir rolamento do eixo, que apresenta ruído (roncando). - (Fazenda Estrela)\nSolicitado Sr Carlos (Comboio)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5261",
-    "cd_equipamento": "5261",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "114250",
-    "data_entrada": "14/07/2025",
-    "servico": "Verificar Vazamento de óleo na bomba - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio"
+    "data_entrada": "16/07/2025",
+    "servico": "Rolamentos das rodas rodas quebrados \nTrocado rolamento dos cubo de roda - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5713",
@@ -88,14 +48,6 @@
     "servico": "Avaliar o motivo da falha no funcionamento da bomba de sucção da churumeira. - (Industria)\nSolicitado Sr. Jeovane \nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5365",
-    "cd_equipamento": "5365",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "114131",
-    "data_entrada": "11/07/2025",
-    "servico": "Trocar correia do agitador de calda - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5599",
     "cd_equipamento": "5599",
     "modelo": "PREMIX PRIME 2T 2000",
@@ -104,52 +56,12 @@
     "servico": "Rosca do premix estragada. (Fazenda São Severino)\nSolicitante Sr. Cassio\nResponsável Sr. Mauricio"
   },
   {
-    "frota": "5749",
-    "cd_equipamento": "5749",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "114094",
-    "data_entrada": "10/07/2025",
-    "servico": "Vazamento nas canecas (Fazenda Minuano)\nSolicitante Sr. Antônio\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5107",
-    "cd_equipamento": "5107",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "114051",
-    "data_entrada": "10/07/2025",
-    "servico": "Rolamento da turbina roncando - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5522",
     "cd_equipamento": "5522",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
     "os": "114035",
     "data_entrada": "09/07/2025",
     "servico": "Substituir os dois pistões das barras de pulverização.\nFazenda Bela Manhã\nSolicitado Sr. Murilo\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5451",
-    "cd_equipamento": "5451",
-    "modelo": "PULVERIZADOR BARRAS TRICICLO",
-    "os": "113965",
-    "data_entrada": "08/07/2025",
-    "servico": "Revisar relação - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "113906",
-    "data_entrada": "08/07/2025",
-    "servico": "Substituição dos registros do sistema do tanque de pulverização - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5600",
-    "cd_equipamento": "5600",
-    "modelo": "ATOMIZADOR NATALI 4000 LT",
-    "os": "113896",
-    "data_entrada": "08/07/2025",
-    "servico": "Verificar vazamento no retentor da bomba, avaliar motivo do desalinhamento ou salto da correia e acertar parafuso de ajuste da correia da turbina - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5494",

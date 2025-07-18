@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5713",
+    "cd_equipamento": "5713",
+    "modelo": "TANQUE DE AGUA 6000 LT",
+    "os": "114727",
+    "data_entrada": "16/07/2025",
+    "servico": "Verificar bomba de sucção da chorumeira não está sugando.\nFazenda Biscui Pecuária\nSolicitado Sr. Jeovane\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5607",
     "cd_equipamento": "5607",
     "modelo": "PULVERIZADOR 2000 LT",
@@ -22,6 +30,14 @@
     "os": "112722",
     "data_entrada": "16/06/2025",
     "servico": "- Recuperar fibra do tanque aonde vai a cinta para fixar; Refazer sistema abre e fecha das abas da torre L/D e L/E.\n\nFazenda Nossa Senhora Aparecida\nLiberado Sr: Rafael Venâncio."
+  },
+  {
+    "frota": "5128",
+    "cd_equipamento": "5128",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "112977",
+    "data_entrada": "03/06/2025",
+    "servico": "Reforma geral - (Fazenda Nova Manhã)\nResponsável Sr. Rafael"
   },
   {
     "frota": "5188",
