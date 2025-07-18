@@ -1,5 +1,26 @@
 [
   {
+    "frota": "5421",
+    "os": "114764",
+    "data": "18/07/2025",
+    "prestador": "nan",
+    "servico": "Consertar rabicho quebrado (Fazenda São Pedro)"
+  },
+  {
+    "frota": "276",
+    "os": "114742",
+    "data": "18/07/2025",
+    "prestador": "nan",
+    "servico": "Vazamento na mangueira de óleo da bomba hidráulica - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5403",
+    "os": "114741",
+    "data": "18/07/2025",
+    "prestador": "M S BORRACHARIA - MARCELO SOUZA SOBRINHO",
+    "servico": "Foi identificada a quebra do eixo (árvore) do tanque, componente responsável por ligar a bomba à polia da hélice. - (Fazenda São Pedro)"
+  },
+  {
     "frota": "264",
     "os": "114401",
     "data": "15/07/2025",
@@ -14,17 +35,17 @@
     "servico": "Pneu traseiro L/D furado - (Fazenda São Pedro)"
   },
   {
-    "frota": "276",
-    "os": "114228",
-    "data": "14/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Suportes de fixação da tampa da caixa da bateria estão desgastados, comprometendo a fixação adequada. Necessário realizar solda - (Fazenda São Pedro)"
-  },
-  {
     "frota": "264",
     "os": "114019",
     "data": "09/07/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Vazamento de óleo diesel na bomba injetora - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "264",
+    "os": "113149",
+    "data": "27/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar e corrigir vazamento nas conexões da mangueira do filtro de diesel. - (Fazenda São Pedro)"
   }
 ]

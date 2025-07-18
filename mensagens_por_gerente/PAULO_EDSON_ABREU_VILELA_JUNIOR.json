@@ -1,5 +1,26 @@
 [
   {
+    "frota": "5012",
+    "os": "114780",
+    "data": "18/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda na estrutura L/D e L/E próximo do eixo, e na parte da frente. (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "10218",
+    "os": "114735",
+    "data": "18/07/2025",
+    "prestador": "nan",
+    "servico": "Durante a operação, foi identificado vazamento de combustível devido a possível derretimento ou perfuração do tanque, localizado próximo ao comando hidráulico. - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5637",
+    "os": "114740",
+    "data": "17/07/2025",
+    "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
+    "servico": "Afiar jogo de discos da podadeira (2 serras)."
+  },
+  {
     "frota": "27",
     "os": "114681",
     "data": "17/07/2025",
@@ -7,38 +28,10 @@
     "servico": "Verificar vazamento de diesel na válvula de corte (torneirinha) localizada na linha entre o tanque e o sistema de alimentação. - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "70",
-    "os": "114665",
-    "data": "17/07/2025",
-    "prestador": "nan",
-    "servico": "Vazamento na TDP - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "106",
     "os": "114664",
     "data": "16/07/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Confeccionar proteção do farol de teto - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5273",
-    "os": "114335",
-    "data": "15/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trincas - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5202",
-    "os": "114302",
-    "data": "15/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Rolamento da roda L/E quebrado - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5012",
-    "os": "114223",
-    "data": "14/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na estrutura - (Fazenda Nova Manhã)"
   }
 ]

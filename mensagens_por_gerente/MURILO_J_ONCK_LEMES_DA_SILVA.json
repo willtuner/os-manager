@@ -1,9 +1,37 @@
 [
   {
+    "frota": "10224",
+    "os": "114785",
+    "data": "18/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar reparo da bomba dagua - Faz Bela Manha"
+  },
+  {
+    "frota": "10224",
+    "os": "114756",
+    "data": "18/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar trator sem partida (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "5697",
+    "os": "114755",
+    "data": "18/07/2025",
+    "prestador": "nan",
+    "servico": "Troca do botão de acionamento do Drench (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "330",
+    "os": "114731",
+    "data": "18/07/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Falha no inversor ,não engata as marchas corretamente e a tração não aciona de forma adequada. Fazer revisão de 300 hrs."
+  },
+  {
     "frota": "5697",
     "os": "114636",
     "data": "16/07/2025",
-    "prestador": "nan",
+    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra no tanque de drench - (Faz. Bela Manhã)"
   },
   {
@@ -15,24 +43,10 @@
   },
   {
     "frota": "5336",
-    "os": "114542",
-    "data": "16/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fabricar/instalar pé de apoio - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5336",
     "os": "114541",
     "data": "16/07/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Vazamento de produto na junta da bomba  - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "330",
-    "os": "114309",
-    "data": "15/07/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Trator engata as marchas, porém não se movimenta, indicando possível quebra ou falha no reversor - (Fazenda Bela Manhã)"
   },
   {
     "frota": "5603",
@@ -84,11 +98,11 @@
     "servico": "Verificar vazamento de óleo na bomba -  (Fazenda Bela Manhã)"
   },
   {
-    "frota": "143",
-    "os": "113570",
-    "data": "01/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator não dá partida e exibe 'erro no sensor' no painel necessário diagnóstico eletrônico do sistema. - (Fazenda Bela Manhã)"
+    "frota": "149",
+    "os": "113252",
+    "data": "26/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar e reparar o sistema de câmbio. Alavanca de marchas foi arrancada, comprometendo totalmente o acionamento da transmissão. - (Fazenda Bela Manhã)"
   },
   {
     "frota": "5336",
@@ -103,6 +117,13 @@
     "data": "23/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Fazer revisão no sistema eletrico da iluminação - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "285",
+    "os": "112696",
+    "data": "17/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar vazamento no meio do trator"
   },
   {
     "frota": "5078",

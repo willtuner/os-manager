@@ -1,5 +1,12 @@
 [
   {
+    "frota": "215",
+    "os": "114773",
+    "data": "18/07/2025",
+    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+    "servico": "Instalar chicotes do SPE - (Fazenda NSA)"
+  },
+  {
     "frota": "5229",
     "os": "114603",
     "data": "16/07/2025",
@@ -63,13 +70,6 @@
     "servico": "Instalar esticador e batedor e realinha barrinha - (Fazenda NSA)"
   },
   {
-    "frota": "5502",
-    "os": "113989",
-    "data": "09/07/2025",
-    "prestador": "nan",
-    "servico": "Troca das correias e rolamento da  turbina - (Fazenda NSA)"
-  },
-  {
     "frota": "5009",
     "os": "113988",
     "data": "09/07/2025",
@@ -103,6 +103,13 @@
     "data": "30/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em tanque de diesel furado - (Fazenda NSA)"
+  },
+  {
+    "frota": "88",
+    "os": "112865",
+    "data": "24/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar vazamento de óleo no cárter, identificando possível falha na vedação ou trinca no componente - (Fazenda NSA)"
   },
   {
     "frota": "5492",

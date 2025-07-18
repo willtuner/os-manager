@@ -1,17 +1,10 @@
 [
   {
-    "frota": "5262",
-    "os": "114590",
-    "data": "16/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Remover vazamentos no sistema de combustivel e trocar correia do alternador - Faz Ursula"
-  },
-  {
-    "frota": "309",
-    "os": "114528",
-    "data": "16/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Realizar ajuste nas rodas conforme espaçamento necessário para a operação agrícola - (Fazenda Estrela)"
+    "frota": "5082",
+    "os": "114699",
+    "data": "17/07/2025",
+    "prestador": "TORNEARIA STEINHAUSER LTDA",
+    "servico": "Fabricar pino com rosca e porca para fixação da haste do sulcador, conforme modelo original. - (Fazenda Úrsula)"
   },
   {
     "frota": "5262",
@@ -26,13 +19,6 @@
     "data": "14/07/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Vazamento no pistão L/E da lamina - (Fazenda Úrsula)"
-  },
-  {
-    "frota": "230",
-    "os": "114248",
-    "data": "14/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar falha no funcionamento do botão responsável pelo acionamento do fluxo de óleo. - (Fazenda Estrela)"
   },
   {
     "frota": "279",
@@ -70,13 +56,6 @@
     "servico": "Verificar rotação do trator caindo ai ligar sistema de A/C - (Fazenda Estrela 6)"
   },
   {
-    "frota": "5099",
-    "os": "113561",
-    "data": "01/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar revisão completa no equipamento, devido à quebra de mancais e discos. - (Fazenda Bela Manhã)"
-  },
-  {
     "frota": "266",
     "os": "113003",
     "data": "23/06/2025",
@@ -96,6 +75,13 @@
     "data": "13/06/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar rodas com \"jogo\" - (Fazenda Estrela VI)"
+  },
+  {
+    "frota": "327",
+    "os": "112542",
+    "data": "13/06/2025",
+    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
+    "servico": "Presar bico da engraxadeira - (Corporativo)"
   },
   {
     "frota": "266",

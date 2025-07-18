@@ -1,38 +1,17 @@
 [
   {
+    "frota": "5022",
+    "os": "114693",
+    "data": "17/07/2025",
+    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
+    "servico": "Trinca na fibra embaixo da cinta de fixação do tanque - (Fazenda Estrela)"
+  },
+  {
     "frota": "248",
     "os": "114669",
     "data": "17/07/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu traseiro L/E furado - (Fazenda Estrela)"
-  },
-  {
-    "frota": "222",
-    "os": "114517",
-    "data": "16/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar roda dianteira esquerda. Acúmulo de graxa com terra no cubo. Suspeita de retentor danificado ou entrada de sujeira.- (Fazenda Estrela)"
-  },
-  {
-    "frota": "5022",
-    "os": "114267",
-    "data": "15/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir correia do conjunto de acionamento."
-  },
-  {
-    "frota": "5107",
-    "os": "114051",
-    "data": "10/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Rolamento da turbina roncando - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5451",
-    "os": "113965",
-    "data": "08/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Revisar relação - (Fazenda Estrela)"
   },
   {
     "frota": "5748",
@@ -43,9 +22,9 @@
   },
   {
     "frota": "258",
-    "os": "112192",
-    "data": "09/06/2025",
+    "os": "112649",
+    "data": "17/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar trator escapando marcha"
+    "servico": "Trocar mangueira de combustivel, verificar coxim da cabine e vazamento na tampa da transmissão"
   }
 ]

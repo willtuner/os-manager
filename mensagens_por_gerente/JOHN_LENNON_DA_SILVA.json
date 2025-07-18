@@ -3,14 +3,14 @@
     "frota": "5723",
     "os": "114680",
     "data": "17/07/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)"
   },
   {
     "frota": "5705",
     "os": "114679",
     "data": "17/07/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)"
   },
   {
@@ -77,13 +77,6 @@
     "servico": "Pneu dianteiro L/? furado - (Fazenda Santa Luiza)"
   },
   {
-    "frota": "67",
-    "os": "114150",
-    "data": "11/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento de óleo no cudo da roda L/E - (Fazenda Santa Luiza)"
-  },
-  {
     "frota": "271",
     "os": "114125",
     "data": "10/07/2025",
@@ -112,17 +105,10 @@
     "servico": "Retirar um pneu de cada lado do eixo traseiro, considerando que o conjunto está em configuração de rodado duplo (pneus geminados). - (Fazenda Santa Izabel)"
   },
   {
-    "frota": "67",
-    "os": "112292",
-    "data": "10/06/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisar bomba e bico"
-  },
-  {
-    "frota": "67",
-    "os": "112190",
-    "data": "05/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Sacar parafusos do motor, recuperar lateral do trator"
+    "frota": "112",
+    "os": "112405",
+    "data": "19/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Vazamento nas mangueiras do comando hidráulico - (Fazenda Santa Luiza)"
   }
 ]

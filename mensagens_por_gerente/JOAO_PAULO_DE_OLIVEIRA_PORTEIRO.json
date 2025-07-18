@@ -1,5 +1,26 @@
 [
   {
+    "frota": "263",
+    "os": "114751",
+    "data": "18/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro lado esquerdo furado (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5481",
+    "os": "114739",
+    "data": "18/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Desmontagem e instalação das facas da podadeira - Faz Casa Branca"
+  },
+  {
+    "frota": "90",
+    "os": "114732",
+    "data": "18/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar cibié do teto L/E não ascende, e cibié da podadeira queimado - (Fazenda Casa Branca)"
+  },
+  {
     "frota": "10217",
     "os": "114675",
     "data": "17/07/2025",
@@ -28,20 +49,6 @@
     "servico": "Revisão de 300 hrs - (Fazenda Casa Branca)"
   },
   {
-    "frota": "10229",
-    "os": "114566",
-    "data": "16/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5365",
-    "os": "114523",
-    "data": "16/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar implemento escapou o cabeçalho, comprometendo o engate e funcionamento adequado - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "120",
     "os": "114419",
     "data": "15/07/2025",
@@ -54,20 +61,6 @@
     "data": "15/07/2025",
     "prestador": "nan",
     "servico": "Parafusos de fixação do lastro quebraram, ocasionando o desprendimento dos pesos da roda. - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5261",
-    "os": "114250",
-    "data": "14/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar Vazamento de óleo na bomba - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5346",
-    "os": "114249",
-    "data": "14/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Desentortar paletas dos pratos de distribuição de adubo e fazer proteção para a correia de transmissão - (Fazenda Casa Branca)"
   },
   {
     "frota": "5365",
@@ -84,31 +77,24 @@
     "servico": "Soldar trinca no chassi - (Fazenda Casa Branca)"
   },
   {
-    "frota": "5365",
-    "os": "114131",
-    "data": "11/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar correia do agitador de calda - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5100",
-    "os": "114102",
-    "data": "10/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar argola do bg, e soldar trincas no chassi (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "98",
-    "os": "113905",
-    "data": "08/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico do trator - Faz Casa Branca"
-  },
-  {
     "frota": "265",
     "os": "113516",
     "data": "30/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar proteção das lanternas L/?? - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "192",
+    "os": "113741",
+    "data": "25/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocado reparo do cilindro de freio, troca mangueiras do cilindro de freio (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "86",
+    "os": "109646",
+    "data": "24/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Folga excessiva nos terminais de direção, comprometendo a precisão do sistema de esterçamento - (Fazenda Casa Branca)"
   }
 ]
