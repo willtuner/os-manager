@@ -50,7 +50,6 @@ class FrotaLeve(db.Model):
     fechado_com = db.Column(db.Text)
     obs = db.Column(db.Text)
     hora_fim = db.Column(db.String(10))
-    email_enviado = db.Column(db.Boolean, default=False)
 
 # --- Configuração para upload de fotos ---
 UPLOAD_FOLDER = os.path.join('static', 'uploads')
@@ -1225,17 +1224,6 @@ def finalizar_manutencao_frota_leve(index):
             json.dump(dados, f, ensure_ascii=False, indent=4)
 
     return redirect("/frota-leve")
-
-@app.route("/frota-leve/marcar-email/<int:id>", methods=["POST"])
-def marcar_email_enviado(id):
-    if not session.get("is_admin"):
-        return redirect("/login")
-
-    manut = FrotaLeve.query.get_or_404(id)
-    manut.email_enviado = True
-    db.session.commit()
-    flash(f"E-mail marcado como enviado para: {manut.placa}", "info")
-    return redirect(url_for("frota_leve"))
 
 @app.route("/update_pimns_status/<int:os_id>", methods=["POST"])
 def update_pimns_status(os_id):
