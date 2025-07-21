@@ -1,24 +1,80 @@
 [
   {
+    "frota": "5047",
+    "os": "114921",
+    "data": "21/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D furado - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "219",
+    "os": "114870",
+    "data": "21/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Sistema de sinalização apresenta falha: setas permanecem acesas continuamente - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "270",
+    "os": "114869",
+    "data": "21/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar seta L/E ligada direto - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "332",
+    "os": "114807",
+    "data": "19/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cibié traseiro queimado - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5504",
+    "os": "114806",
+    "data": "19/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar quebra do niple de saída do cabeçote da bomba, responsável pela condução até o batedor e a caixa misturadora. - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5803",
+    "os": "114802",
+    "data": "19/07/2025",
+    "prestador": "nan",
+    "servico": "Vazamento de produto no regulador de pressão - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5630",
+    "os": "114797",
+    "data": "19/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Verificar fações da roçadeira pegando nas proteção anti-arremesso - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "324",
+    "os": "114794",
+    "data": "19/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar sinalização, nenhuma das lampadas ascendem - (Fazenda São Paulo)"
+  },
+  {
     "frota": "5667",
     "os": "114781",
     "data": "18/07/2025",
-    "prestador": "nan",
+    "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Vazamento no bloco do comando hidráulico (Fazenda São Paulo)"
   },
   {
     "frota": "10228",
     "os": "114687",
     "data": "17/07/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Substituir cano de diesel da bomba injetora, que apresentou furo e vazamento de combustível - (Fazenda São Paulo)"
   },
   {
-    "frota": "315",
-    "os": "114539",
-    "data": "16/07/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 900 hrs - (Fazenda Biscui)"
+    "frota": "270",
+    "os": "114786",
+    "data": "17/07/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Verificar trator falhando - Faz São Paulo"
   },
   {
     "frota": "332",
@@ -26,62 +82,6 @@
     "data": "16/07/2025",
     "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Revisão de 300 hrs - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "324",
-    "os": "114537",
-    "data": "16/07/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 300 hrs - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "270",
-    "os": "114533",
-    "data": "16/07/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Avaliar trator perdendo força - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5803",
-    "os": "114522",
-    "data": "16/07/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Soldar fios do terminal do SPE - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "257",
-    "os": "114512",
-    "data": "16/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisar bomba de combustivel - Faz São Paulo"
-  },
-  {
-    "frota": "5063",
-    "os": "114308",
-    "data": "15/07/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Verificação de folga no eixo da bomba (conexão com eixo cardan) - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5063",
-    "os": "114229",
-    "data": "14/07/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Realizar solda em terminal danificado e verificar funcionamento do sistema. Luz do módulo acesa, porém não está chegando carga nos terminais do SPE. - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "226",
-    "os": "114219",
-    "data": "14/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5804",
-    "os": "114218",
-    "data": "14/07/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Soldar terminais do ramal do SPE - (Fazenda São Paulo)"
   },
   {
     "frota": "5804",
@@ -105,18 +105,11 @@
     "servico": "Soldar fio do terminal do SPE (Fazenda São Paulo)"
   },
   {
-    "frota": "211",
-    "os": "114044",
-    "data": "10/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar faróis e pisca alerta não ascende - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "257",
-    "os": "113826",
+    "frota": "5211",
+    "os": "113848",
     "data": "07/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Troca da correia do alternador - (Fazenda SP)"
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar correias e vazamento nos pistões"
   },
   {
     "frota": "5804",
@@ -147,25 +140,25 @@
     "servico": "Trocar lanterna traseira quebrada - (Fazenda SP)"
   },
   {
-    "frota": "257",
-    "os": "112866",
-    "data": "20/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar embreagem, trocar retentor, tirado cárter e trocado junta, trocado óleo completo e filtros. - Faz São Paulo"
-  },
-  {
-    "frota": "270",
-    "os": "112644",
+    "frota": "218",
+    "os": "112677",
     "data": "17/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar vazamento de diesel"
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sistema eletrico - Oficina"
   },
   {
-    "frota": "216",
-    "os": "112044",
-    "data": "04/06/2025",
-    "prestador": "RETIEL RETIFICA DE MOTORES LTDA",
-    "servico": "Revisar motor - (Faz São Paulo)"
+    "frota": "5755",
+    "os": "112183",
+    "data": "09/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Troca do suporte dos fações quebrado - (Fazenda Biscui)"
+  },
+  {
+    "frota": "246",
+    "os": "112140",
+    "data": "06/06/2025",
+    "prestador": "CICERO MUNIZ DA SILVA",
+    "servico": "Direção dura - (Fazenda SP) / (Oficina)"
   },
   {
     "frota": "74",
@@ -173,6 +166,27 @@
     "data": "03/06/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)"
+  },
+  {
+    "frota": "297",
+    "os": "111658",
+    "data": "02/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trator sem partida - (Fazenda SP)"
+  },
+  {
+    "frota": "216",
+    "os": "113582",
+    "data": "29/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Serviço de verificar limpador de para brisa solto, não estava fazendo o curso correto, reapertar palheta e testar (Fazenda SP)"
+  },
+  {
+    "frota": "74",
+    "os": "111296",
+    "data": "26/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Trator apresentando sobrecarga no sistema elétrico, resultando em estouro da bateria. Necessário verificar o regulador de tensão, alternador, cabos de alimentação e possíveis curtos no circuito elétrico. - (Fazenda São Paulo)"
   },
   {
     "frota": "66",

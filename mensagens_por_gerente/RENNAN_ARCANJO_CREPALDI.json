@@ -1,10 +1,38 @@
 [
   {
+    "frota": "5270",
+    "os": "114919",
+    "data": "21/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E furado - (Fazenda NSA)"
+  },
+  {
     "frota": "215",
-    "os": "114773",
-    "data": "18/07/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Instalar chicotes do SPE - (Fazenda NSA)"
+    "os": "114900",
+    "data": "21/07/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Sistema de ar-condicionado liga e ventila normalmente, porém o ar insuflado permanece quente. - (Fazenda NSA)"
+  },
+  {
+    "frota": "5724",
+    "os": "114871",
+    "data": "21/07/2025",
+    "prestador": "nan",
+    "servico": "Acionamento do TK não desliga na caixa de comando. Necessário substituir a válvula solenoide do sistema de acionamento do TK. Verificar funcionamento após troca. - (Fazenda NSA)"
+  },
+  {
+    "frota": "5598",
+    "os": "114865",
+    "data": "21/07/2025",
+    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
+    "servico": "Fazer fibra na torre - (Fazenda NSA)"
+  },
+  {
+    "frota": "5778",
+    "os": "114864",
+    "data": "21/07/2025",
+    "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
+    "servico": "Quebra do mancal da esteira L/D - (Fazenda NSA)"
   },
   {
     "frota": "5229",
@@ -12,13 +40,6 @@
     "data": "16/07/2025",
     "prestador": "nan",
     "servico": "Verificar barra de corte danificada - (Fazenda NSA)"
-  },
-  {
-    "frota": "274",
-    "os": "114242",
-    "data": "14/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Substituir cibié traseiro devido à queima da lâmpada - (Fazenda Estrela 6)"
   },
   {
     "frota": "63",
@@ -35,27 +56,6 @@
     "servico": "Substituir a barra roscada do estirante da roçadeira devido a desgaste - (Fazenda NSA)"
   },
   {
-    "frota": "5778",
-    "os": "114233",
-    "data": "14/07/2025",
-    "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
-    "servico": "Verificar motivo da soltura frequente das chavetas do motor hidráulico dos pratos - (Fazenda NSA)"
-  },
-  {
-    "frota": "5522",
-    "os": "114222",
-    "data": "14/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda NSA)"
-  },
-  {
-    "frota": "259",
-    "os": "114145",
-    "data": "11/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda NSA)"
-  },
-  {
     "frota": "5718",
     "os": "114143",
     "data": "11/07/2025",
@@ -68,20 +68,6 @@
     "data": "09/07/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar esticador e batedor e realinha barrinha - (Fazenda NSA)"
-  },
-  {
-    "frota": "5009",
-    "os": "113988",
-    "data": "09/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca no chassi - (Fazenda NSA)"
-  },
-  {
-    "frota": "5009",
-    "os": "113987",
-    "data": "09/07/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra em trincas na estrutura da torre - (Fazenda NSA)"
   },
   {
     "frota": "331",
@@ -98,25 +84,11 @@
     "servico": "Verificar quebra da esteira da adubadeira, comprometendo o transporte e a distribuição do insumo. - (Fazenda NSA)"
   },
   {
-    "frota": "5758",
-    "os": "113510",
-    "data": "30/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em tanque de diesel furado - (Fazenda NSA)"
-  },
-  {
-    "frota": "88",
-    "os": "112865",
-    "data": "24/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Avaliar vazamento de óleo no cárter, identificando possível falha na vedação ou trinca no componente - (Fazenda NSA)"
-  },
-  {
-    "frota": "5492",
-    "os": "112722",
-    "data": "16/06/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "- Recuperar fibra do tanque aonde vai a cinta para fixar; Refazer sistema abre e fecha das abas da torre L/D e L/E."
+    "frota": "137",
+    "os": "111717",
+    "data": "25/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar trator sem partida, motor gira mas não pega - (Fazenda NSA)"
   },
   {
     "frota": "5058",
@@ -124,5 +96,26 @@
     "data": "10/06/2025",
     "prestador": "nan",
     "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
+  },
+  {
+    "frota": "5697",
+    "os": "113583",
+    "data": "30/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Serviços de isolar chicote e fixar os quatros cabos com abraçadeira nas mangueiras (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "215",
+    "os": "111573",
+    "data": "30/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Farol dianteiro com mau contato - (Fazenda NSA)"
+  },
+  {
+    "frota": "5697",
+    "os": "113576",
+    "data": "29/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar chicote quebrado na emenda, consertar e testar, fazer testes novamente no chicote e identificar chicote quebrado (Fazenda Bela Manhã)"
   }
 ]

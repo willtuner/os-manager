@@ -1,10 +1,10 @@
 [
   {
-    "frota": "255",
-    "os": "114738",
-    "data": "18/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento no reparo do comando - (Fazenda Minuano)"
+    "frota": "144",
+    "os": "114876",
+    "data": "21/07/2025",
+    "prestador": "nan",
+    "servico": "Quebra do cabo do acelerador de mão - (Fazenda Minuano)"
   },
   {
     "frota": "5534",
@@ -17,22 +17,8 @@
     "frota": "138",
     "os": "114443",
     "data": "15/07/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Verificar sensor de diesel (Fazenda Minuano)"
-  },
-  {
-    "frota": "5674",
-    "os": "114322",
-    "data": "15/07/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Remover roda guia da barra de herbicida - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5500",
-    "os": "114313",
-    "data": "15/07/2025",
-    "prestador": "nan",
-    "servico": "Revisar equipamento - (Oficina/Minuano)"
   },
   {
     "frota": "155",
@@ -52,15 +38,8 @@
     "frota": "118",
     "os": "114093",
     "data": "10/07/2025",
-    "prestador": "nan",
+    "prestador": "JOCAR LTDA",
     "servico": "Consertar ar condicionado quebrado. (Fazenda Minuano)"
-  },
-  {
-    "frota": "26",
-    "os": "114023",
-    "data": "09/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar arranque enroscando - (Fazenda Minuano)"
   },
   {
     "frota": "254",
@@ -68,6 +47,13 @@
     "data": "03/07/2025",
     "prestador": "nan",
     "servico": "Verificar vazamento de diesel na base da bomba injetora - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5767",
+    "os": "113559",
+    "data": "01/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Substituir rolamento da entrada da bomba, localizado na região de acoplamento com o eixo cardã, devido a falha (rolamento estourado)."
   },
   {
     "frota": "5401",

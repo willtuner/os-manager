@@ -1,5 +1,47 @@
 [
   {
+    "frota": "5482",
+    "os": "114917",
+    "data": "21/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Eletroventilador do sistema de resfriamento de óleo parou de funcionar. - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5361",
+    "os": "114914",
+    "data": "21/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Efetuar troca do kit de reparo do eixo de transmissão - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5736",
+    "os": "114913",
+    "data": "21/07/2025",
+    "prestador": "nan",
+    "servico": "Trocar regulador de vazão - (Fazenda Estrela)"
+  },
+  {
+    "frota": "110",
+    "os": "114912",
+    "data": "21/07/2025",
+    "prestador": "nan",
+    "servico": "Avaliar diversos vazamentos de óleo no equipamento - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5106",
+    "os": "114862",
+    "data": "21/07/2025",
+    "prestador": "nan",
+    "servico": "Fazer solda em trinca no suporte da roda guia - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5543",
+    "os": "114787",
+    "data": "19/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Verificar quebra do cabeçalho da roçadeira. Avaliar possibilidade de recuperação por solda ou necessidade de substituição - (Fazenda Estrela)"
+  },
+  {
     "frota": "5068",
     "os": "114754",
     "data": "18/07/2025",
@@ -45,7 +87,7 @@
     "frota": "5736",
     "os": "114530",
     "data": "16/07/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar quebra das pás dos pratos espalhadores de adubo - (Fazenda Estrela)"
   },
   {
@@ -140,6 +182,13 @@
     "servico": "Quebra da fixação das lanternas dianteiras - (Fazenda Estrela)"
   },
   {
+    "frota": "5459",
+    "os": "113859",
+    "data": "07/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar jogo de embreagens e cardam - (Fazenda Estrela)"
+  },
+  {
     "frota": "323",
     "os": "113442",
     "data": "27/06/2025",
@@ -154,6 +203,13 @@
     "servico": "soldar gonzo na grade proteção - (Fazenda Estrela)"
   },
   {
+    "frota": "5367",
+    "os": "112335",
+    "data": "27/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Vazamento de óleo na bomba"
+  },
+  {
     "frota": "5523",
     "os": "113254",
     "data": "26/06/2025",
@@ -161,17 +217,24 @@
     "servico": "Pneu L/D furado - (Fazenda Estrela)"
   },
   {
-    "frota": "308",
-    "os": "113014",
-    "data": "24/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Revisão de 400 hrs - (Fazenda Estrela)"
+    "frota": "116",
+    "os": "111666",
+    "data": "02/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisão elétrica - (Fazenda Estrela - Oficina)"
   },
   {
-    "frota": "89",
-    "os": "112712",
-    "data": "18/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Identificada quebra do terminal de direção, comprometendo a articulação do sistema; capô não fecha corretamente, necessitando ajuste ou reparo; e presença de vazamento de óleo na junta, indicando possível falha de vedação"
+    "frota": "268",
+    "os": "111648",
+    "data": "02/06/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Lâmpada do cibié traseiro queimada - (Fazenda Estrela)"
+  },
+  {
+    "frota": "221",
+    "os": "111341",
+    "data": "26/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Chicote do cibié quebrado - (Fazenda Estrela)"
   }
 ]

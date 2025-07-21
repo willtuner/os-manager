@@ -7,18 +7,18 @@
     "servico": "Fabricar pino com rosca e porca para fixação da haste do sulcador, conforme modelo original. - (Fazenda Úrsula)"
   },
   {
-    "frota": "5262",
-    "os": "114350",
-    "data": "15/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar equipamento sem partida - (Fazenda Estrela)"
-  },
-  {
     "frota": "5094",
     "os": "114258",
     "data": "14/07/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Vazamento no pistão L/E da lamina - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "274",
+    "os": "114242",
+    "data": "14/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Substituir cibié traseiro devido à queima da lâmpada - (Fazenda Estrela 6)"
   },
   {
     "frota": "279",
@@ -77,17 +77,17 @@
     "servico": "Verificar rodas com \"jogo\" - (Fazenda Estrela VI)"
   },
   {
-    "frota": "327",
-    "os": "112542",
-    "data": "13/06/2025",
-    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
-    "servico": "Presar bico da engraxadeira - (Corporativo)"
-  },
-  {
     "frota": "266",
     "os": "112033",
     "data": "04/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar alerta não funciona - (Fazenda Estrela VI)"
+  },
+  {
+    "frota": "5262",
+    "os": "111545",
+    "data": "29/05/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar equipamento sem partida - (Fazenda Estrela 6)"
   }
 ]

@@ -10,29 +10,8 @@
     "frota": "83",
     "os": "114264",
     "data": "15/07/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sistema de iluminação, não ascende os cibié de teto - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "10221",
-    "os": "114254",
-    "data": "14/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar parte elétrica dos faróis (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "10222",
-    "os": "114253",
-    "data": "14/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sinalização, não ascende nada - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "224",
-    "os": "114232",
-    "data": "14/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Faróis não ascendem - (Fazenda Terra Branca)"
   },
   {
     "frota": "5398",
@@ -49,11 +28,18 @@
     "servico": "Confeccionar ramal para distribuição dos bicos do SPE - (Fazenda Terra Branca)"
   },
   {
-    "frota": "83",
-    "os": "113653",
-    "data": "02/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibiés dianteiros e traseiros não acendem necessário diagnóstico elétrico do sistema de iluminação - (Fazenda Terra Branca)"
+    "frota": "5398",
+    "os": "113745",
+    "data": "04/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar reparos da bomba - (Fazenda Terra Branca)"
+  },
+  {
+    "frota": "5657",
+    "os": "113705",
+    "data": "04/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Efetuar troca da correia da turbina - (Fazenda Terra Branca)"
   },
   {
     "frota": "220",
@@ -63,24 +49,10 @@
     "servico": "Trator apresentando fumaça intensa e contínua pelo suspiro do motor, acompanhada de vazamento de óleo pelo mesmo ponto - (Fazenda Terra Branca)"
   },
   {
-    "frota": "10222",
-    "os": "113086",
-    "data": "25/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "79",
-    "os": "112511",
-    "data": "13/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Cano de diesel furado - (Fazenda Terra Branco)"
-  },
-  {
-    "frota": "224",
-    "os": "113611",
-    "data": "01/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar vazamento de óleo hidráulico na parte inferior do trator, identificar ponto exato da falha para correção - (Fazenda Terra Branca)"
+    "frota": "5623",
+    "os": "112925",
+    "data": "27/06/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar rolamento da roda guia - (Fazenda Terra Branca)"
   }
 ]
