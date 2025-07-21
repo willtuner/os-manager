@@ -50,6 +50,7 @@ class FrotaLeve(db.Model):
     fechado_com = db.Column(db.Text)
     obs = db.Column(db.Text)
     hora_fim = db.Column(db.String(10))
+    email_fiscal_enviado = db.Column(db.Boolean, default=False)
 
 # --- Configuração para upload de fotos ---
 UPLOAD_FOLDER = os.path.join('static', 'uploads')
@@ -113,7 +114,7 @@ class Finalizacao(db.Model):
     hora_fin = db.Column(db.String(5), nullable=False)
     observacoes = db.Column(db.Text)
     registrado_em = db.Column(db.DateTime, default=lambda: saopaulo_tz.localize(datetime.now()))
-    status_pimns = db.Column(db.Boolean, default=False, nullable=False) # Caixa marcavel
+    status_pimns = db.Column(db.Boolean, default=False, nullable=False)
 
 class LoginEvent(db.Model):
     __tablename__ = 'login_events'
@@ -200,6 +201,13 @@ def init_db():
                     db.session.execute(text('ALTER TABLE finalizacoes RENAME COLUMN temp_status_pimns TO status_pimns'))
                     db.session.commit()
                     logger.info("Coluna status_pimns convertida com sucesso")
+            
+            columns_frota_leve = [col['name'] for col in inspector.get_columns('frota_leve')]
+            if 'email_fiscal_enviado' not in columns_frota_leve:
+                logger.info("Adicionando coluna email_fiscal_enviado à tabela frota_leve")
+                db.session.execute(text('ALTER TABLE frota_leve ADD COLUMN email_fiscal_enviado BOOLEAN DEFAULT FALSE'))
+                db.session.commit()
+                logger.info("Coluna email_fiscal_enviado adicionada com sucesso")
         except Exception as e:
             logger.error(f"Erro ao verificar/adicionar colunas: {e}")
             db.session.rollback()
@@ -504,7 +512,7 @@ def upload_profile_picture():
                 logger.error(f"Erro ao processar/salvar foto: {e}")
                 flash('Erro ao processar a foto.', 'danger')
         else:
-            flash(f'Formato de arquivo não permitido. Use: {", ".join(ALLOWED_EXTENSIONS)}.', 'danger')
+            flash(f'Formato de arquivo não permitido. Use: {", ".join(ALLOWED_EXTENSIONS)}., 'danger')
 
     # Determina para qual painel redirecionar com base na sessão
     redirect_target = 'login'
@@ -1155,7 +1163,8 @@ def nova_manutencao_frota_leve():
             cotacao2=request.form.get('cotacao2', ''),
             cotacao3=request.form.get('cotacao3', ''),
             fechado_com=request.form.get('fechado_com', ''),
-            obs=request.form['obs']
+            obs=request.form['obs'],
+            email_fiscal_enviado=False
         )
         db.session.add(nova_manutencao)
         db.session.commit()
@@ -1188,6 +1197,7 @@ def editar_manutencao_frota_leve(id):
         manutencao.cotacao3 = request.form.get('cotacao3', '')
         manutencao.fechado_com = request.form.get('fechado_com', '')
         manutencao.obs = request.form['obs']
+        manutencao.email_fiscal_enviado = bool(request.form.get('email_fiscal_enviado', False))
 
         db.session.commit()
         flash('Manutenção atualizada com sucesso!', 'success')
@@ -1225,6 +1235,18 @@ def finalizar_manutencao_frota_leve(index):
 
     return redirect("/frota-leve")
 
+@app.route("/frota-leve/marcar-email/<int:id>", methods=["POST"])
+def marcar_email_fiscal(id):
+    if not session.get("is_admin"):
+        flash("Acesso negado.", "danger")
+        return redirect(url_for("login"))
+
+    manutencao = FrotaLeve.query.get_or_404(id)
+    manutencao.email_fiscal_enviado = True
+    db.session.commit()
+    flash(f"Email fiscal da manutenção {manutencao.placa} marcado como enviado.", "success")
+    return redirect(url_for("frota_leve"))
+
 @app.route("/update_pimns_status/<int:os_id>", methods=["POST"])
 def update_pimns_status(os_id):
     if not session.get("is_admin"):
@@ -1237,7 +1259,6 @@ def update_pimns_status(os_id):
     finalizacao.status_pimns = novo_status
     db.session.commit()
     flash(f"Status PIMNS da OS {finalizacao.os_numero} atualizado para {'Marcado' if novo_status else 'Desmarcado'}.", "success")
-
 
     return redirect(url_for("admin_panel"))
 
