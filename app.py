@@ -512,7 +512,7 @@ def upload_profile_picture():
                 logger.error(f"Erro ao processar/salvar foto: {e}")
                 flash('Erro ao processar a foto.', 'danger')
         else:
-            flash(f'Formato de arquivo não permitido. Use: {", ".join(ALLOWED_EXTENSIONS)}., 'danger')
+            flash(f'Formato de arquivo não permitido. Use: {", ".join(ALLOWED_EXTENSIONS)}.', "danger")
 
     # Determina para qual painel redirecionar com base na sessão
     redirect_target = 'login'
