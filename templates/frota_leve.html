@@ -108,6 +108,15 @@
                 <div class="campo"><strong>✅ Fechado com:</strong> {{ item.fechado_com }}</div>
                 <div class="campo"><strong>📝 Observações:</strong> {{ item.obs }}</div>
                 <div class="campo">
+                    <strong>📧 Email Fiscal:</strong>
+                    {% if item.email_fiscal_enviado %}
+                        ✅ Enviado
+                    {% else %}
+                        ❌ Não Enviado
+                        <button onclick="marcarEnviado({{ item.id }})" style="background: #28a745; color: white; padding: 5px 10px; border-radius: 5px; border: none; cursor: pointer;">Marcar como Enviado</button>
+                    {% endif %}
+                </div>
+                <div class="campo">
                     <a href="{{ url_for('editar_manutencao_frota_leve', id=item.id) }}" style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">✏️ Editar</a>
                     <form action="{{ url_for('apagar_manutencao_frota_leve', id=item.id) }}" method="post" style="display: inline;">
                         <button type="submit" onclick="return confirm('Tem certeza que deseja apagar esta manutenção?');" style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 5px; border: none; cursor: pointer;">🗑️ Apagar</button>
@@ -119,6 +128,19 @@
         <p style="text-align:center; margin-top: 40px;">😕 Nenhuma manutenção cadastrada ainda.</p>
         {% endfor %}
     </div>
+    <script>
+        function toggleDetails(index) {
+            const body = document.getElementById("body-" + index);
+            body.style.display = body.style.display === "block" ? "none" : "block";
+        }
+        
+        function marcarEnviado(id) {
+            fetch(`/frota-leve/marcar-email/${id}`, { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) location.reload();
+                });
+        }
+    </script>
 </body>
 </html>
-
