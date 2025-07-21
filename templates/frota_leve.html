@@ -65,6 +65,10 @@
         .Agendar { background-color: #ffc107; }
         .Em\ andamento { background-color: #17a2b8; }
         .Finalizado { background-color: #28a745; }
+        .form-filtros input[type="date"] {
+            margin-right: 10px;
+            padding: 5px;
+        }
     </style>
     <script>
         function toggleDetails(index) {
@@ -74,50 +78,75 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <h1>📋 Frota Leve - Manutenções</h1>
-        <p>👤 Usuário logado: {{ usuario }}</p>
-        <div class="top-bar">
-            <a href="/">🔙 Voltar ao painel</a>
-            <a href="/frota-leve/novo" style="background: #2e8b57; padding: 6px 12px; color: white; border-radius: 5px;">➕ Nova Manutenção</a>
-        </div>
+<div class="container">
+    <h1>📋 Frota Leve - Manutenções</h1>
+    <p>👤 Usuário logado: {{ usuario }}</p>
 
-        <div class="top-bar">
-            <span>🔎 Filtrar por situação:</span>
-            <a href="?filtro=Todos">Todos</a>
-            <a href="?filtro=Agendar">🗓️ Agendar</a>
-            <a href="?filtro=Em andamento">🔧 Em andamento</a>
-            <a href="?filtro=Finalizado">✅ Finalizado</a>
-        </div>
-
-        {% for item in manutencoes %}
-        <div class="card">
-            <div class="card-header" onclick="toggleDetails({{ loop.index }})">
-                <h2>🚘 {{ item.placa }} — {{ item.veiculo }} | 👨‍🔧 {{ item.motorista }} | 📌 Situação: <span class="status {{ item.situacao|replace(' ', '\ ') }}">{{ item.situacao }}</span> | 🛠️ {{ item.servico }}</h2>
-            </div>
-            <div class="card-body" id="body-{{ loop.index }}">
-                <div class="campo"><strong>Oficina:</strong> {{ item.oficina }}</div>
-                <div class="campo"><strong>Entrada:</strong> {{ item.entrada }}</div>
-                <div class="campo"><strong>Saída:</strong> {{ item.saida }}</div>
-                <div class="campo"><strong>Valor M.O:</strong> {{ item.valor_mo }}</div>
-                <div class="campo"><strong>Peças:</strong> {{ item.valor_pecas }}</div>
-                <div class="campo"><strong>Aprovado por:</strong> {{ item.aprovado_por }}</div>
-                <div class="campo"><strong>📦 Cotação 1:</strong> {{ item.cotacao1 }}</div>
-                <div class="campo"><strong>📦 Cotação 2:</strong> {{ item.cotacao2 }}</div>
-                <div class="campo"><strong>📦 Cotação 3:</strong> {{ item.cotacao3 }}</div>
-                <div class="campo"><strong>✅ Fechado com:</strong> {{ item.fechado_com }}</div>
-                <div class="campo"><strong>📝 Observações:</strong> {{ item.obs }}</div>
-                <div class="campo">
-                    <a href="{{ url_for('editar_manutencao_frota_leve', id=item.id) }}" style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">✏️ Editar</a>
-                    <form action="{{ url_for('apagar_manutencao_frota_leve', id=item.id) }}" method="post" style="display: inline;">
-                        <button type="submit" onclick="return confirm('Tem certeza que deseja apagar esta manutenção?');" style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 5px; border: none; cursor: pointer;">🗑️ Apagar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        {% else %}
-        <p style="text-align:center; margin-top: 40px;">😕 Nenhuma manutenção cadastrada ainda.</p>
-        {% endfor %}
+    <div class="top-bar">
+        <a href="/">🔙 Voltar ao painel</a>
+        <a href="/frota-leve/novo" style="background: #2e8b57; padding: 6px 12px; color: white; border-radius: 5px;">➕ Nova Manutenção</a>
     </div>
+
+    <!-- 🔎 Filtros -->
+    <form method="get" class="form-filtros" style="margin-bottom: 20px;">
+        <label>📆 Filtrar por entrada:</label>
+        <input type="date" name="data_inicio" value="{{ request.args.get('data_inicio', '') }}">
+        <input type="date" name="data_fim" value="{{ request.args.get('data_fim', '') }}">
+        <input type="submit" value="Filtrar" style="padding: 5px 10px; background-color: #2e8b57; color: white; border: none; border-radius: 5px;">
+    </form>
+
+    <div class="top-bar">
+        <span>🎯 Filtrar por situação:</span>
+        <a href="?filtro=Todos">Todos</a>
+        <a href="?filtro=Agendar">🗓️ Agendar</a>
+        <a href="?filtro=Em andamento">🔧 Em andamento</a>
+        <a href="?filtro=Finalizado">✅ Finalizado</a>
+    </div>
+
+    {% for item in manutencoes %}
+    <div class="card">
+        <div class="card-header" onclick="toggleDetails({{ loop.index }})">
+            <h2>🚘 {{ item.placa }} — {{ item.veiculo }} | 👨‍🔧 {{ item.motorista }} | 📌 Situação: 
+                <span class="status {{ item.situacao|replace(' ', '\ ') }}">{{ item.situacao }}</span> | 🛠️ {{ item.servico }}
+            </h2>
+        </div>
+        <div class="card-body" id="body-{{ loop.index }}">
+            <div class="campo"><strong>Oficina:</strong> {{ item.oficina }}</div>
+            <div class="campo"><strong>Entrada:</strong> {{ item.entrada }}</div>
+            <div class="campo"><strong>Saída:</strong> {{ item.saida }}</div>
+            <div class="campo"><strong>Valor M.O:</strong> {{ item.valor_mo }}</div>
+            <div class="campo"><strong>Peças:</strong> {{ item.valor_pecas }}</div>
+            <div class="campo"><strong>Aprovado por:</strong> {{ item.aprovado_por }}</div>
+            <div class="campo"><strong>📦 Cotação 1:</strong> {{ item.cotacao1 }}</div>
+            <div class="campo"><strong>📦 Cotação 2:</strong> {{ item.cotacao2 }}</div>
+            <div class="campo"><strong>📦 Cotação 3:</strong> {{ item.cotacao3 }}</div>
+            <div class="campo"><strong>✅ Fechado com:</strong> {{ item.fechado_com }}</div>
+            <div class="campo"><strong>📝 Observações:</strong> {{ item.obs }}</div>
+
+            <div class="campo">
+                <a href="{{ url_for('editar_manutencao_frota_leve', id=item.id) }}" 
+                   style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">✏️ Editar</a>
+
+                <form action="{{ url_for('apagar_manutencao_frota_leve', id=item.id) }}" method="post" style="display: inline;">
+                    <button type="submit" onclick="return confirm('Tem certeza que deseja apagar esta manutenção?');"
+                            style="background: #dc3545; color: white; padding: 5px 10px; border-radius: 5px; border: none;">🗑️ Apagar</button>
+                </form>
+
+                <form action="{{ url_for('marcar_email_enviado', id=item.id) }}" method="post" style="display: inline;">
+                    {% if item.email_enviado %}
+                        <button class="btn btn-sm" disabled 
+                                style="background-color: #28a745; color: white; padding: 5px 10px; border-radius: 5px;">✔ E-mail enviado</button>
+                    {% else %}
+                        <button class="btn btn-sm" 
+                                style="background-color: #ffc107; color: black; padding: 5px 10px; border-radius: 5px;">✉️ Marcar como enviado</button>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <p style="text-align:center; margin-top: 40px;">😕 Nenhuma manutenção cadastrada ainda.</p>
+    {% endfor %}
+</div>
 </body>
 </html>
