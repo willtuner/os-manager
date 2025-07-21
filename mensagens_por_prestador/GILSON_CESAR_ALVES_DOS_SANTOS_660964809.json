@@ -3,6 +3,46 @@
     "frota": "5148",
     "cd_equipamento": "5148",
     "modelo": "CARRETA BAG C/ GUINCHO",
+    "os": "114915",
+    "data_entrada": "21/07/2025",
+    "servico": "Troca do reparo do pistão - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
+  },
+  {
+    "frota": "5779",
+    "cd_equipamento": "5779",
+    "modelo": "VALETADEIRA",
+    "os": "114861",
+    "data_entrada": "21/07/2025",
+    "servico": "Efetuar troca do retentor - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5088",
+    "cd_equipamento": "5088",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114811",
+    "data_entrada": "19/07/2025",
+    "servico": "Fazer solda no suporte das proteções de bico - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5630",
+    "cd_equipamento": "5630",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "114797",
+    "data_entrada": "19/07/2025",
+    "servico": "Verificar fações da roçadeira pegando nas proteção anti-arremesso - (Fazenda São Paulo)\nSolicitado Sr. Giovane\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5421",
+    "cd_equipamento": "5421",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "114764",
+    "data_entrada": "18/07/2025",
+    "servico": "Consertar rabicho quebrado (Fazenda São Pedro)\nSolicitante Sr. Josimar \nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5148",
+    "cd_equipamento": "5148",
+    "modelo": "CARRETA BAG C/ GUINCHO",
     "os": "114728",
     "data_entrada": "17/07/2025",
     "servico": "Trocar reparos dos pistões do giro - (Fazenda São Paulo)\nSolicitado Sr. Gilson\nResponsavel Sr. Izaias"
@@ -16,28 +56,12 @@
     "servico": "Desentortar rosca da calcalhadeira (Fazenda Santa Izabel)\nSolicitante Sr. Diego \nResponsável Sr. Mauricio"
   },
   {
-    "frota": "5564",
-    "cd_equipamento": "5564",
-    "modelo": "BARRA APLICACAO DE HERBICIDA",
-    "os": "114412",
+    "frota": "65",
+    "cd_equipamento": "65",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "114271",
     "data_entrada": "15/07/2025",
-    "servico": "Pino da barra de articulação lado direito quebrado.(Fazenda Alvorada)\nSolicitante Sr. Natalino\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5674",
-    "cd_equipamento": "5674",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "114322",
-    "data_entrada": "15/07/2025",
-    "servico": "Remover roda guia da barra de herbicida - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "114308",
-    "data_entrada": "15/07/2025",
-    "servico": "Verificação de folga no eixo da bomba (conexão com eixo cardan) - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
+    "servico": "Quebra do varão d TDP - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5094",
@@ -46,38 +70,6 @@
     "os": "114258",
     "data_entrada": "14/07/2025",
     "servico": "Vazamento no pistão L/E da lamina - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5725",
-    "cd_equipamento": "5725",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "114240",
-    "data_entrada": "14/07/2025",
-    "servico": "Instalar chapa para regulagem dos bicos TK e realinhar barra - (Fazenda Santa Izabel)\nSolicitado Sr. Diego \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5784",
-    "cd_equipamento": "5784",
-    "modelo": "DESENROLADOR DE MANGUEIRA",
-    "os": "114180",
-    "data_entrada": "11/07/2025",
-    "servico": "Reforçar suporte inferior trincado e substituir as tábuas laterais danificadas do desenrolador de mangueira de gotejo. - (Fazenda Minuano)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5709",
-    "cd_equipamento": "5709",
-    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-    "os": "114147",
-    "data_entrada": "11/07/2025",
-    "servico": "Quebra do pino do engate do braço hidráulico - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5067",
-    "cd_equipamento": "5067",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "114118",
-    "data_entrada": "10/07/2025",
-    "servico": "Realizar troca do pé de apoio (Fazenda Pecuária)\nSolicitante Sr. Gabriel\nResponsável Sr. Mauricio"
   },
   {
     "frota": "5048",

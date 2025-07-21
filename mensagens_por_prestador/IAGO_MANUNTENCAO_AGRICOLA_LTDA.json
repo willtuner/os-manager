@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5612",
+    "cd_equipamento": "5612",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "114916",
+    "data_entrada": "21/07/2025",
+    "servico": "Lados dos ramais não desligam - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5504",
+    "cd_equipamento": "5504",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "114806",
+    "data_entrada": "19/07/2025",
+    "servico": "Verificar quebra do niple de saída do cabeçote da bomba, responsável pela condução até o batedor e a caixa misturadora. - (Fazenda São Paulo)\nSolicitado Sr. Geovane \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5068",
     "cd_equipamento": "5068",
     "modelo": "PULVERIZADOR 2000 LT FMC",
@@ -64,6 +80,102 @@
     "servico": "Substituir os dois pistões das barras de pulverização.\nFazenda Bela Manhã\nSolicitado Sr. Murilo\nResponsável Sr. Maurício"
   },
   {
+    "frota": "5614",
+    "cd_equipamento": "5614",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "113135",
+    "data_entrada": "07/07/2025",
+    "servico": "Verificar vazamento de óleo na bomba do pulverizador, identificando possível falha em vedação ou componente danificado.\nTroca das buchas dos pistões, troca dos retentores do pistão - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5660",
+    "cd_equipamento": "5660",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "113842",
+    "data_entrada": "07/07/2025",
+    "servico": "Trocar correias do agitador de calda - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "113848",
+    "data_entrada": "07/07/2025",
+    "servico": "Trocar correias e vazamento nos pistões\nFeito troca das correias da polia da bomba, trocado os 2 pisões do abre e fecha do comando - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5486",
+    "cd_equipamento": "5486",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114179",
+    "data_entrada": "07/07/2025",
+    "servico": "Troca das buchas dos pistões, das juntas grafitadas, trocas dos aneis - (Faz. Estrela)\nLiberado Sr. Maurício"
+  },
+  {
+    "frota": "5459",
+    "cd_equipamento": "5459",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "113859",
+    "data_entrada": "07/07/2025",
+    "servico": "Trocar jogo de embreagens e cardam - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5486",
+    "cd_equipamento": "5486",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "113813",
+    "data_entrada": "07/07/2025",
+    "servico": "Verificar rolamento traseiro do eixo cardan de transmissão danificado e corrigir vazamento de produto no guarda-chuva da bomba.\nFazenda Estrela\nSolicitado Sr. Carlos\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5355",
+    "cd_equipamento": "5355",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "113707",
+    "data_entrada": "07/07/2025",
+    "servico": "Verificar vazamento de óleo na bomba\nTroca dos retentores dos pistões, das buchas dos pistões, das juntas, do anel hosing, dos rapadores dos pistões, da junta da tampa da carcaça da bomba e dos parafusos da tampa da bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "113712",
+    "data_entrada": "05/07/2025",
+    "servico": "Revisar motor hidráulico da esteira, que não está acionando o sistema. - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5336",
+    "cd_equipamento": "5336",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "113786",
+    "data_entrada": "05/07/2025",
+    "servico": "Quebra do cardam - (Fazenda Estrela)\nSolicitado Sr. Nelson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5398",
+    "cd_equipamento": "5398",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113745",
+    "data_entrada": "04/07/2025",
+    "servico": "Trocar reparos da bomba - (Fazenda Terra Branca)\nSolicitado Sr. Eder \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5290",
+    "cd_equipamento": "5290",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113725",
+    "data_entrada": "04/07/2025",
+    "servico": "Trocar hélice do agitador de calda e correia - (Fazenda Santa Izabel)\nSolicitado Sr. Diego\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5657",
+    "cd_equipamento": "5657",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "113705",
+    "data_entrada": "04/07/2025",
+    "servico": "Efetuar troca da correia da turbina - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5494",
     "cd_equipamento": "5494",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
@@ -72,11 +184,91 @@
     "servico": "Substituir rolamento do eixo do multiplicador, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
   },
   {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "113506",
+    "data_entrada": "02/07/2025",
+    "servico": "Substituir esteira - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5697",
     "cd_equipamento": "5697",
     "modelo": "PULVERIZADOR 2000 LT",
     "os": "113632",
     "data_entrada": "02/07/2025",
     "servico": "Verificar vazamento de óleo na bomba -  (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio \nP.S  Feito manutenção recente. Na OS 112642 Hiago Manutenções"
+  },
+  {
+    "frota": "5486",
+    "cd_equipamento": "5486",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "113549",
+    "data_entrada": "01/07/2025",
+    "servico": "Verificar e substituir retentor da polia da bomba, que apresenta vazamento de óleo\nFeito troca do retentor do virabrequim - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5031",
+    "cd_equipamento": "5031",
+    "modelo": "RC2 E 2600 LSL TATU",
+    "os": "112591",
+    "data_entrada": "01/07/2025",
+    "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "113562",
+    "data_entrada": "01/07/2025",
+    "servico": "Substituir arrastador do lado direito e o suporte da roda guia, ambos danificados - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5767",
+    "cd_equipamento": "5767",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "113559",
+    "data_entrada": "01/07/2025",
+    "servico": "Substituir rolamento da entrada da bomba, localizado na região de acoplamento com o eixo cardã, devido a falha (rolamento estourado).\nTrocado rolamentos do eixo da parte da frente, trocado os ramal bipartido flagrado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5107",
+    "cd_equipamento": "5107",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "113446",
+    "data_entrada": "28/06/2025",
+    "servico": "Instalar reservatório de agua, e conexão caixa incorporadora\nTroca do eixo do agitador, troca dos parafusos do corote de água  (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5261",
+    "cd_equipamento": "5261",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "113447",
+    "data_entrada": "28/06/2025",
+    "servico": "Vazamento no pistão\nTroca dos retentores do pistão (Fazenda Casa branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5367",
+    "cd_equipamento": "5367",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "112335",
+    "data_entrada": "27/06/2025",
+    "servico": "Vazamento de óleo na bomba\nTroca do retentor do virabrequim da bomba - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5623",
+    "cd_equipamento": "5623",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "112925",
+    "data_entrada": "27/06/2025",
+    "servico": "Trocar rolamento da roda guia - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Wilson"
+  },
+  {
+    "frota": "5755",
+    "cd_equipamento": "5755",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "112183",
+    "data_entrada": "09/06/2025",
+    "servico": "Troca do suporte dos fações quebrado - (Fazenda Biscui)\nLiberado Sr. Mauricio"
   }
 ]

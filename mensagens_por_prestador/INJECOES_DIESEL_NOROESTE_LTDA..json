@@ -1,5 +1,13 @@
 [
   {
+    "frota": "10228",
+    "cd_equipamento": "10228",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114687",
+    "data_entrada": "17/07/2025",
+    "servico": "Substituir cano de diesel da bomba injetora, que apresentou furo e vazamento de combustível - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "27",
     "cd_equipamento": "27",
     "modelo": "TRATOR MASSEY FERGUSON 275/2",
@@ -8,12 +16,36 @@
     "servico": "Verificar vazamento de diesel na válvula de corte (torneirinha) localizada na linha entre o tanque e o sistema de alimentação. - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "257",
-    "cd_equipamento": "257",
+    "frota": "270",
+    "cd_equipamento": "270",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114512",
-    "data_entrada": "16/07/2025",
-    "servico": "Revisar bomba de combustivel - Faz São Paulo\nAutorizado Arthur"
+    "os": "114786",
+    "data_entrada": "17/07/2025",
+    "servico": "Verificar trator falhando - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "138",
+    "cd_equipamento": "138",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "114443",
+    "data_entrada": "15/07/2025",
+    "servico": "Verificar sensor de diesel (Fazenda Minuano)\nSolicitante Sr. Zylton\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "195",
+    "cd_equipamento": "195",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114414",
+    "data_entrada": "15/07/2025",
+    "servico": "Vazamento no eixo da bomba injetora (Fazenda São Pedro)\nSolicitante Sr. Romes\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114401",
+    "data_entrada": "15/07/2025",
+    "servico": "Consertar bomba injetora (Fazenda São Pedro)\nSolicitante Sr. Josimar\nResponsável Sr. Arthur"
   },
   {
     "frota": "197",

@@ -1,11 +1,35 @@
 [
   {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "114900",
+    "data_entrada": "21/07/2025",
+    "servico": "Sistema de ar-condicionado liga e ventila normalmente, porém o ar insuflado permanece quente. - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "217",
     "cd_equipamento": "217",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "114668",
     "data_entrada": "17/07/2025",
     "servico": "A/C  fusíveis queimados:\nVerificar fusíveis do eletroventilador do ar-condicionado. Suspeita de queima. Testar e substituir se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "235",
+    "cd_equipamento": "235",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "114413",
+    "data_entrada": "15/07/2025",
+    "servico": "Verificar mangueira do ar condicionado que soltou (Fazenda Nova Manhã)\nSolicitante Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "118",
+    "cd_equipamento": "118",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "114093",
+    "data_entrada": "10/07/2025",
+    "servico": "Consertar ar condicionado quebrado. (Fazenda Minuano)\nSolicitante Sr. Antônio\nResponsável Sr. Arthur"
   },
   {
     "frota": "221",

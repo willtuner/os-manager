@@ -1,19 +1,35 @@
 [
   {
+    "frota": "5047",
+    "cd_equipamento": "5047",
+    "modelo": "TANQUE DE AGUA 5000 LT",
+    "os": "114921",
+    "data_entrada": "21/07/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5270",
+    "cd_equipamento": "5270",
+    "modelo": "PULVERIZADOR FACCHINI 6000 LT",
+    "os": "114919",
+    "data_entrada": "21/07/2025",
+    "servico": "Pneu L/E furado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5222",
+    "cd_equipamento": "5222",
+    "modelo": "TANQUE DE AGUA 6500L R16 VERM.",
+    "os": "114788",
+    "data_entrada": "19/07/2025",
+    "servico": "Pneu L/E dianteiro furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5326",
     "cd_equipamento": "5326",
     "modelo": "CARRETA SCHULTER 12 BEGUES",
     "os": "114769",
     "data_entrada": "18/07/2025",
     "servico": "Pneu dianteiro lado esquerdo furado (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114751",
-    "data_entrada": "18/07/2025",
-    "servico": "Pneu dianteiro lado esquerdo furado (Fazenda Casa Branca)\nSolicitante Sr. João \nResponsável Sr. Mauricio"
   },
   {
     "frota": "5128",
@@ -88,22 +104,6 @@
     "servico": "Consertar pneu traseiro esquerdo furado.\nFazenda Santa Luiza\nSolicitado Sr. John Lennon\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5522",
-    "cd_equipamento": "5522",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "114222",
-    "data_entrada": "14/07/2025",
-    "servico": "Pneu L/D furado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "226",
-    "cd_equipamento": "226",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "114219",
-    "data_entrada": "14/07/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Severino)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "209",
     "cd_equipamento": "209",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -134,14 +134,6 @@
     "os": "114176",
     "data_entrada": "11/07/2025",
     "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)\nSolicitado Sr. Danilo (ADM)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "259",
-    "cd_equipamento": "259",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114145",
-    "data_entrada": "11/07/2025",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5035",

@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5777",
+    "cd_equipamento": "5777",
+    "modelo": "TRITURADOR TFI-1600 GTM",
+    "os": "114898",
+    "data_entrada": "21/07/2025",
+    "servico": "Efetuar troca das facas da trincha - (Fazenda Alvorada)\nSolicitado Sr. Francisco (Operador)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "114792",
+    "data_entrada": "19/07/2025",
+    "servico": "Fabricar proteção de bico - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5543",
+    "cd_equipamento": "5543",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "114787",
+    "data_entrada": "19/07/2025",
+    "servico": "Verificar quebra do cabeçalho da roçadeira. Avaliar possibilidade de recuperação por solda ou necessidade de substituição - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5012",
     "cd_equipamento": "5012",
     "modelo": "ADUBADEIRA CACAMBA TATU",
@@ -22,6 +46,14 @@
     "os": "114698",
     "data_entrada": "17/07/2025",
     "servico": "Quebra da barra de direção - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "109",
+    "cd_equipamento": "109",
+    "modelo": "TRATOR MASSEY FERGUSON 290",
+    "os": "114697",
+    "data_entrada": "17/07/2025",
+    "servico": "Fazer solda em trinca no suporte das mangueiras do hidráulico - (Pecuaria)\nSolicitado Sr. Bruno Franco (ADM)\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5723",
@@ -176,14 +208,6 @@
     "servico": "Fabricar gaiola para transporte de pessoas, conforme especificações de segurança.\nRealizar alongamento do braço para acomodação de mangueira.\nSubstituir parafuso do comando.\nVerificar e corrigir vazamento no bujão de óleo. - (Fazenda São Severino)\nSolicitado Sr. Carlos Mariano\nResponsavel Sr. Carlos Mariano"
   },
   {
-    "frota": "5009",
-    "cd_equipamento": "5009",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "113988",
-    "data_entrada": "09/07/2025",
-    "servico": "Fazer solda em trinca no chassi - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "85",
     "cd_equipamento": "85",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -214,14 +238,6 @@
     "os": "113543",
     "data_entrada": "30/06/2025",
     "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "5758",
-    "cd_equipamento": "5758",
-    "modelo": "TANQUE 1850 LT COMBOIO",
-    "os": "113510",
-    "data_entrada": "30/06/2025",
-    "servico": "Fazer solda em tanque de diesel furado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauriico"
   },
   {
     "frota": "5455",

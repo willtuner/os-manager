@@ -1,19 +1,43 @@
 [
   {
+    "frota": "5403",
+    "cd_equipamento": "5403",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "114932",
+    "data_entrada": "21/07/2025",
+    "servico": "Vazamento de óleo no retentor do guarda chuva. (Fazenda São Pedro)\nSolicitante Sr. Josimar\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5421",
+    "cd_equipamento": "5421",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "114873",
+    "data_entrada": "21/07/2025",
+    "servico": "Instalar pistões do comando para abrir e fechar os ramais de pulverização e fazer solda em trinca no chassi.\nFazenda São Pedro\nSolicitado Sr. Romes\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "114866",
+    "data_entrada": "21/07/2025",
+    "servico": "Fazer solda em trinca no chassi - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114872",
+    "data_entrada": "21/07/2025",
+    "servico": "Verificar barulho anormal no regulador/bomba e corrigir vazamento de produto na bomba.\nFazenda Alvorada\nSolicitado Sr. Natalino\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5760",
     "cd_equipamento": "5760",
     "modelo": "PULVERIZADOR 4000 SMART DUPLO",
     "os": "114666",
     "data_entrada": "17/07/2025",
     "servico": "Fazer solda - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "283",
-    "cd_equipamento": "283",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114393",
-    "data_entrada": "15/07/2025",
-    "servico": "Trocar terminal de direção (Fazenda Pedra Verde)\nSolicitante Sr. Altieres\nResponsável Sr. Arthur"
   },
   {
     "frota": "5403",

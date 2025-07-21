@@ -1,13 +1,5 @@
 [
   {
-    "frota": "215",
-    "cd_equipamento": "215",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "114773",
-    "data_entrada": "18/07/2025",
-    "servico": "Instalar chicotes do SPE - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "271",
     "cd_equipamento": "271",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -22,14 +14,6 @@
     "os": "114574",
     "data_entrada": "16/07/2025",
     "servico": "Trocar porta fusíveis do sistema de SPE - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5803",
-    "cd_equipamento": "5803",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "114522",
-    "data_entrada": "16/07/2025",
-    "servico": "Soldar fios do terminal do SPE - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5748",
@@ -54,22 +38,6 @@
     "os": "114239",
     "data_entrada": "14/07/2025",
     "servico": "Reinstalar kit SPE retirado para fazer reforma da torre - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "114229",
-    "data_entrada": "14/07/2025",
-    "servico": "Realizar solda em terminal danificado e verificar funcionamento do sistema. Luz do módulo acesa, porém não está chegando carga nos terminais do SPE. - (Fazenda São Paulo)\nSolicitado Sr. Geovane\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5804",
-    "cd_equipamento": "5804",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "114218",
-    "data_entrada": "14/07/2025",
-    "servico": "Soldar terminais do ramal do SPE - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5529",
