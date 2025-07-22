@@ -1,27 +1,11 @@
 [
   {
-    "frota": "330",
-    "cd_equipamento": "330",
+    "frota": "331",
+    "cd_equipamento": "331",
     "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "114731",
-    "data_entrada": "18/07/2025",
-    "servico": "Falha no inversor ,não engata as marchas corretamente e a tração não aciona de forma adequada. Fazer revisão de 300 hrs.\nObs: Problema semelhante já verificado anteriormente em 15/07 na OS nº 114309. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "325",
-    "cd_equipamento": "325",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "114580",
-    "data_entrada": "16/07/2025",
-    "servico": "Revisão de 600 hrs - (Fazenda Estrela)\nSolicitado Sr. Wilson"
-  },
-  {
-    "frota": "323",
-    "cd_equipamento": "323",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "114579",
-    "data_entrada": "16/07/2025",
-    "servico": "Revisão de 600 hrs - (Fazenda Estrela)\nSolicitado Sr. Wilson\nResponsavel Sr. Wilson"
+    "os": "115064",
+    "data_entrada": "22/07/2025",
+    "servico": "Vazamento no retentor do eixo da TDP - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
   },
   {
     "frota": "332",

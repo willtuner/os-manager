@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5774",
+    "cd_equipamento": "5774",
+    "modelo": "VALETADEIRA RTX 250",
+    "os": "114993",
+    "data_entrada": "22/07/2025",
+    "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5148",
     "cd_equipamento": "5148",
     "modelo": "CARRETA BAG C/ GUINCHO",
@@ -56,28 +64,12 @@
     "servico": "Desentortar rosca da calcalhadeira (Fazenda Santa Izabel)\nSolicitante Sr. Diego \nResponsável Sr. Mauricio"
   },
   {
-    "frota": "65",
-    "cd_equipamento": "65",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "114271",
-    "data_entrada": "15/07/2025",
-    "servico": "Quebra do varão d TDP - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5094",
     "cd_equipamento": "5094",
     "modelo": "STARA ARPLAN 3000",
     "os": "114258",
     "data_entrada": "14/07/2025",
     "servico": "Vazamento no pistão L/E da lamina - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5048",
-    "cd_equipamento": "5048",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "114117",
-    "data_entrada": "10/07/2025",
-    "servico": "Soldar câmera de compressão (Fazenda São Paulo)\nSolicitante Sr. Leojabes \nResponsável Sr. Mauricio"
   },
   {
     "frota": "5102",

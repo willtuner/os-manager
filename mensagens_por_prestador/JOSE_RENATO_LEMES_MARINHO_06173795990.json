@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5061",
+    "cd_equipamento": "5061",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "115065",
+    "data_entrada": "22/07/2025",
+    "servico": "Fabricar caixa de transporte de produtos - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "115063",
+    "data_entrada": "22/07/2025",
+    "servico": "Fazer proteção dos bicos de SPE - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio \nS"
+  },
+  {
+    "frota": "5403",
+    "cd_equipamento": "5403",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "115016",
+    "data_entrada": "22/07/2025",
+    "servico": "Readequar o suporte da caixa de transporte de produtos, que está quebrando com recorrência. Solicita-se também o aumento da capacidade da caixa, com instalação de modelo maior e reforçado. Substituir chapa inferior das asas direita e esquerda que estão com folga nas roldanas - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5777",
     "cd_equipamento": "5777",
     "modelo": "TRITURADOR TFI-1600 GTM",
@@ -16,36 +40,12 @@
     "servico": "Fabricar proteção de bico - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5543",
-    "cd_equipamento": "5543",
-    "modelo": "ROCADEIRA RC2 E 3100 S0516",
-    "os": "114787",
-    "data_entrada": "19/07/2025",
-    "servico": "Verificar quebra do cabeçalho da roçadeira. Avaliar possibilidade de recuperação por solda ou necessidade de substituição - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5012",
     "cd_equipamento": "5012",
     "modelo": "ADUBADEIRA CACAMBA TATU",
     "os": "114780",
     "data_entrada": "18/07/2025",
     "servico": "Fazer solda na estrutura L/D e L/E próximo do eixo, e na parte da frente. (Fazenda Nova Manhã)\nSolicitante Sr. Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5759",
-    "cd_equipamento": "5759",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "114737",
-    "data_entrada": "18/07/2025",
-    "servico": "Quebra da barra de pulverização durante a operação no campo, após colisão com pé de laranja. - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5451",
-    "cd_equipamento": "5451",
-    "modelo": "PULVERIZADOR BARRAS TRICICLO",
-    "os": "114698",
-    "data_entrada": "17/07/2025",
-    "servico": "Quebra da barra de direção - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "109",
@@ -94,14 +94,6 @@
     "os": "114334",
     "data_entrada": "15/07/2025",
     "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5712",
-    "cd_equipamento": "5712",
-    "modelo": "TANQUE DE AGUA 6500",
-    "os": "114246",
-    "data_entrada": "14/07/2025",
-    "servico": "Instalar corrente de segurança - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5629",
@@ -216,6 +208,14 @@
     "servico": "Fazer fibra no teto do trator - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Junior \nResponsavel Sr. Arthur"
   },
   {
+    "frota": "5060",
+    "cd_equipamento": "5060",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "113153",
+    "data_entrada": "03/07/2025",
+    "servico": "Fazer reforço no suporte dos braços - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsável Sr. Mauricio"
+  },
+  {
     "frota": "5355",
     "cd_equipamento": "5355",
     "modelo": "ATOMIZADOR JACTO 4000 LT",
@@ -248,22 +248,6 @@
     "servico": "Verificar rolamento das duas rodas danificado.\nFazenda Nova Manhã\nLiberado Sr. Maurício"
   },
   {
-    "frota": "323",
-    "cd_equipamento": "323",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "113442",
-    "data_entrada": "27/06/2025",
-    "servico": "Soldar escada (Fazenda Estrela)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "323",
-    "cd_equipamento": "323",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "113412",
-    "data_entrada": "27/06/2025",
-    "servico": "soldar gonzo na grade proteção - (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5804",
     "cd_equipamento": "5804",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -286,6 +270,14 @@
     "os": "113065",
     "data_entrada": "24/06/2025",
     "servico": "Fazer proteção para as lanternas - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5804",
+    "cd_equipamento": "5804",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "112955",
+    "data_entrada": "20/06/2025",
+    "servico": "Realizar readequação dos ramais para compatibilização com a instalação do sistema SPE - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsável Sr. Mauricio"
   },
   {
     "frota": "5290",

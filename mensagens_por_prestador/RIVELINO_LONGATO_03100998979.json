@@ -1,11 +1,67 @@
 [
   {
-    "frota": "5047",
-    "cd_equipamento": "5047",
-    "modelo": "TANQUE DE AGUA 5000 LT",
-    "os": "114921",
-    "data_entrada": "21/07/2025",
-    "servico": "Pneu L/D furado - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Mauricio"
+    "frota": "5677",
+    "cd_equipamento": "5677",
+    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
+    "os": "115066",
+    "data_entrada": "22/07/2025",
+    "servico": "Pneu L/E furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5555",
+    "cd_equipamento": "5555",
+    "modelo": "TANQUE DE AGUA 7000 LT FACCHIN",
+    "os": "115046",
+    "data_entrada": "22/07/2025",
+    "servico": "Pneu L/? furado - (Fazenda Estrela 6 )\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5148",
+    "cd_equipamento": "5148",
+    "modelo": "CARRETA BAG C/ GUINCHO",
+    "os": "115045",
+    "data_entrada": "22/07/2025",
+    "servico": "Pneu L/D traseiro furado - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5408",
+    "cd_equipamento": "5408",
+    "modelo": "PULVERIZADOR SPRAYE HS30 600LT",
+    "os": "115043",
+    "data_entrada": "22/07/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "115042",
+    "data_entrada": "22/07/2025",
+    "servico": "Pneu L/D estourado (275/80R22.5) - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5582",
+    "cd_equipamento": "5582",
+    "modelo": "JOHN DEERE X126 LWN (CORTADOR)",
+    "os": "115041",
+    "data_entrada": "22/07/2025",
+    "servico": "Pneu dianteiro L/D furado - (Indústria)\nSolicitado Sr. Jeovane\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "259",
+    "cd_equipamento": "259",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114991",
+    "data_entrada": "22/07/2025",
+    "servico": "Pneu L/E traseiro furado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "223",
+    "cd_equipamento": "223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114989",
+    "data_entrada": "22/07/2025",
+    "servico": "Pneu dianteiro lado esquerdo furando com frequência e apresentando deslocamento. Necessário substituir (12.4-24) - Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5270",
@@ -62,14 +118,6 @@
     "os": "114532",
     "data_entrada": "16/07/2025",
     "servico": "Pneu L/E furado - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "92",
-    "cd_equipamento": "92",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "114516",
-    "data_entrada": "16/07/2025",
-    "servico": "Substituir os dois pneus dianteiro com desgaste.\nFazenda Nova Manhã (Oficina MG)\nResponsável Sr. Maurício"
   },
   {
     "frota": "198",
@@ -166,13 +214,5 @@
     "os": "113254",
     "data_entrada": "26/06/2025",
     "servico": "Pneu L/D furado - (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5715",
-    "cd_equipamento": "5715",
-    "modelo": "TANQUE DE AGUA 6500",
-    "os": "112208",
-    "data_entrada": "09/06/2025",
-    "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]
