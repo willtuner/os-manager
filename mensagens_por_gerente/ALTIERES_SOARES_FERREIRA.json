@@ -1,5 +1,19 @@
 [
   {
+    "frota": "217",
+    "os": "115048",
+    "data": "22/07/2025",
+    "prestador": "nan",
+    "servico": "Quebra do cabo do acelerador de pé - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "223",
+    "os": "114989",
+    "data": "22/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro lado esquerdo furando com frequência e apresentando deslocamento. Necessário substituir (12.4-24) - Fazenda Pedra Verde)"
+  },
+  {
     "frota": "299",
     "os": "114888",
     "data": "21/07/2025",
@@ -12,27 +26,6 @@
     "data": "21/07/2025",
     "prestador": "AUTO MECANICA BAZANI",
     "servico": "Trocar reparos do pistão - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "217",
-    "os": "114668",
-    "data": "17/07/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "A/C  fusíveis queimados:"
-  },
-  {
-    "frota": "283",
-    "os": "114393",
-    "data": "15/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar terminal de direção (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "217",
-    "os": "114314",
-    "data": "15/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificação de vazamento de óleo na parte frontal do trator - (Fazenda Pedra Verde)"
   },
   {
     "frota": "119",
@@ -105,13 +98,6 @@
     "servico": "Fazer serviço de fibra no tanque - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "5479",
-    "os": "111656",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar equipamento de drash - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5133",
     "os": "112089",
     "data": "02/06/2025",
@@ -124,33 +110,5 @@
     "data": "30/05/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "245",
-    "os": "111553",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sinalização. Faróis traseiros não ascendem - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "299",
-    "os": "111460",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "97",
-    "os": "111459",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
-  },
-  {
-    "frota": "76",
-    "os": "111458",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sistema eletrico"
   }
 ]

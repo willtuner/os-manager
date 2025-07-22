@@ -1,17 +1,31 @@
 [
   {
+    "frota": "5408",
+    "os": "115043",
+    "data": "22/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/D furado - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "5126",
+    "os": "114974",
+    "data": "21/07/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Vazamento na válvula - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "252",
+    "os": "114972",
+    "data": "21/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar fios na caixa de fusíveis superaquecendo - (Fazenda São Pedro)"
+  },
+  {
     "frota": "195",
     "os": "114950",
     "data": "21/07/2025",
     "prestador": "nan",
     "servico": "Alavanca de marchas \"bambo\" - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "156",
-    "os": "114897",
-    "data": "21/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento na conexão da mangueira da turbina - (Fazenda São Pedro)"
   },
   {
     "frota": "264",
@@ -63,25 +77,11 @@
     "servico": "Fazer solda - (Fazenda São Pedro)"
   },
   {
-    "frota": "195",
-    "os": "114414",
-    "data": "15/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento no eixo da bomba injetora (Fazenda São Pedro)"
-  },
-  {
     "frota": "156",
     "os": "114154",
     "data": "11/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisão de sistema eletrico da sinalização - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "159",
-    "os": "114137",
-    "data": "11/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Verificar vazamento de óleo na bomba injetora - (Fazenda São Pedro)"
   },
   {
     "frota": "5403",
@@ -98,6 +98,13 @@
     "servico": "Verificar rolamento dos pratos e quebra do pino elástico - (Fazenda São Pedro)"
   },
   {
+    "frota": "5060",
+    "os": "113153",
+    "data": "03/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer reforço no suporte dos braços - (Fazenda São Pedro)"
+  },
+  {
     "frota": "5102",
     "os": "112540",
     "data": "13/06/2025",
@@ -110,41 +117,6 @@
     "data": "12/06/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Fazer solda nas proteções anti-arremesso e trocar jogo de martelos - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5715",
-    "os": "112208",
-    "data": "09/06/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Executar reforço estrutural no cabeçalho do tanque, visando aumentar a resistência mecânica e prevenir trincas ou deformações decorrentes de esforços operacionais, trocar mangueira e registro - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "159",
-    "os": "113575",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sistema elétrico, trocar sensor da ré e testar (Fazenda São Pedro)"
-  },
-  {
-    "frota": "276",
-    "os": "113694",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar lampada do farol e verificar o sistema eletrico - Faz São Pedro"
-  },
-  {
-    "frota": "5676",
-    "os": "111433",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Chave de acionamento não funciona - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5552",
-    "os": "111432",
-    "data": "28/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Chaves do comando eletrico invertidas - (Fazenda São Pedro)"
   },
   {
     "frota": "5171",

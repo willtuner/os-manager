@@ -1,19 +1,5 @@
 [
   {
-    "frota": "5214",
-    "os": "113712",
-    "data": "05/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Revisar motor hidráulico da esteira, que não está acionando o sistema. - (Fazenda Estrela)"
-  },
-  {
-    "frota": "245",
-    "os": "113829",
-    "data": "04/07/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar A/C não gela - (Fazenda Estrela)"
-  },
-  {
     "frota": "5494",
     "os": "113710",
     "data": "03/07/2025",
@@ -33,27 +19,6 @@
     "data": "02/07/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Avaliar e corrigir vazamento de óleo na saída da caixa de comando. - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5214",
-    "os": "113506",
-    "data": "02/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir esteira - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5031",
-    "os": "112591",
-    "data": "01/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Realizar embuchamento no eixo da roda guia do lado direito, devido a folga ou desgaste nos componentes - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5106",
-    "os": "113562",
-    "data": "01/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir arrastador do lado direito e o suporte da roda guia, ambos danificados - (Fazenda Estrela)"
   },
   {
     "frota": "91",
@@ -89,12 +54,5 @@
     "data": "03/06/2025",
     "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
     "servico": "Fazer fibra em trinca no capô - (Fazenda Estrela)"
-  },
-  {
-    "frota": "10219",
-    "os": "111645",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator com partida lenta - (Fazenda Estrela)"
   }
 ]

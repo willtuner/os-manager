@@ -1,24 +1,59 @@
 [
   {
+    "frota": "5259",
+    "os": "115058",
+    "data": "22/07/2025",
+    "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
+    "servico": "Afiar discos - (Fazenda Estrela)"
+  },
+  {
     "frota": "5482",
-    "os": "114917",
-    "data": "21/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Eletroventilador do sistema de resfriamento de óleo parou de funcionar. - (Fazenda Estrela)"
+    "os": "115057",
+    "data": "22/07/2025",
+    "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
+    "servico": "Afiar discos - (Fazenda Estrela)"
   },
   {
-    "frota": "5361",
-    "os": "114914",
-    "data": "21/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Efetuar troca do kit de reparo do eixo de transmissão - (Fazenda Estrela)"
+    "frota": "5728",
+    "os": "115056",
+    "data": "22/07/2025",
+    "prestador": "MORENA - MAQUINAS E FERRAGENS",
+    "servico": "Verificar motor não liga e conjunto do cabeçote de corte com suporte da lâmina e tampa de proteção foi perdido durante a operação - (Fazenda Estrela)"
   },
   {
-    "frota": "5736",
-    "os": "114913",
-    "data": "21/07/2025",
+    "frota": "5703",
+    "os": "115055",
+    "data": "22/07/2025",
+    "prestador": "MORENA - MAQUINAS E FERRAGENS",
+    "servico": "Verificar sistema de acionamento das facas. Ao ligar o motor, a transmissão de movimento não está sendo levada até as facas. - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5768",
+    "os": "115054",
+    "data": "22/07/2025",
+    "prestador": "MORENA - MAQUINAS E FERRAGENS",
+    "servico": "Verificar roçadeira perdendo força - (Fazenda Estrela)"
+  },
+  {
+    "frota": "10229",
+    "os": "115053",
+    "data": "22/07/2025",
     "prestador": "nan",
-    "servico": "Trocar regulador de vazão - (Fazenda Estrela)"
+    "servico": "Verificar vazamento de óleo nos tuchos - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5061",
+    "os": "114995",
+    "data": "22/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar sistema de sucção da caixa incorporadora não funciona - (Fazenda Estrela)"
+  },
+  {
+    "frota": "268",
+    "os": "114994",
+    "data": "22/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Troca da sinaleira dianteira L/D (RE217551)  com a lente quebrada e cibié queimado - (Fazenda Estrela)"
   },
   {
     "frota": "110",
@@ -28,46 +63,11 @@
     "servico": "Avaliar diversos vazamentos de óleo no equipamento - (Fazenda Estrela)"
   },
   {
-    "frota": "5106",
-    "os": "114862",
-    "data": "21/07/2025",
-    "prestador": "nan",
-    "servico": "Fazer solda em trinca no suporte da roda guia - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5543",
-    "os": "114787",
-    "data": "19/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar quebra do cabeçalho da roçadeira. Avaliar possibilidade de recuperação por solda ou necessidade de substituição - (Fazenda Estrela)"
-  },
-  {
     "frota": "5068",
     "os": "114754",
     "data": "18/07/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Vazamento de óleo nas canecas da bomba (Fazenda Estrela)"
-  },
-  {
-    "frota": "5451",
-    "os": "114698",
-    "data": "17/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra da barra de direção - (Fazenda Estrela)"
-  },
-  {
-    "frota": "325",
-    "os": "114580",
-    "data": "16/07/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 600 hrs - (Fazenda Estrela)"
-  },
-  {
-    "frota": "323",
-    "os": "114579",
-    "data": "16/07/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 600 hrs - (Fazenda Estrela)"
   },
   {
     "frota": "5523",
@@ -105,13 +105,6 @@
     "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)"
   },
   {
-    "frota": "165",
-    "os": "114252",
-    "data": "14/07/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Verificar trator não tem força para levantar lança da podadeira - (Fazenda Estrela)"
-  },
-  {
     "frota": "5061",
     "os": "114239",
     "data": "14/07/2025",
@@ -124,13 +117,6 @@
     "data": "14/07/2025",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Substituir vidro da cabine lado direito (L/D) devido à quebra. - (Fazenda Estrela)"
-  },
-  {
-    "frota": "197",
-    "os": "114152",
-    "data": "11/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento de óleo na bomba injetora - (Fazenda Estrela)"
   },
   {
     "frota": "165",
@@ -161,13 +147,6 @@
     "servico": "Verificar sensor de temperatura que parou de funcionar. (Fazenda Estrela)"
   },
   {
-    "frota": "221",
-    "os": "114047",
-    "data": "10/07/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Identificado vazamento de gás refrigerante na mangueira do compressor de ar. - (Fazenda Estrela)"
-  },
-  {
     "frota": "5367",
     "os": "114005",
     "data": "09/07/2025",
@@ -182,59 +161,10 @@
     "servico": "Quebra da fixação das lanternas dianteiras - (Fazenda Estrela)"
   },
   {
-    "frota": "5459",
-    "os": "113859",
-    "data": "07/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar jogo de embreagens e cardam - (Fazenda Estrela)"
-  },
-  {
-    "frota": "323",
-    "os": "113442",
-    "data": "27/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar escada (Fazenda Estrela)"
-  },
-  {
-    "frota": "323",
-    "os": "113412",
-    "data": "27/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "soldar gonzo na grade proteção - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5367",
-    "os": "112335",
-    "data": "27/06/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento de óleo na bomba"
-  },
-  {
     "frota": "5523",
     "os": "113254",
     "data": "26/06/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Pneu L/D furado - (Fazenda Estrela)"
-  },
-  {
-    "frota": "116",
-    "os": "111666",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisão elétrica - (Fazenda Estrela - Oficina)"
-  },
-  {
-    "frota": "268",
-    "os": "111648",
-    "data": "02/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Lâmpada do cibié traseiro queimada - (Fazenda Estrela)"
-  },
-  {
-    "frota": "221",
-    "os": "111341",
-    "data": "26/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Chicote do cibié quebrado - (Fazenda Estrela)"
   }
 ]

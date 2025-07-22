@@ -1,5 +1,12 @@
 [
   {
+    "frota": "255",
+    "os": "114988",
+    "data": "22/07/2025",
+    "prestador": "nan",
+    "servico": "Avaliar embreagem da TDP dura - (Fazenda Minuano)"
+  },
+  {
     "frota": "144",
     "os": "114876",
     "data": "21/07/2025",
@@ -12,13 +19,6 @@
     "data": "16/07/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Rolamentos das rodas rodas quebrados"
-  },
-  {
-    "frota": "138",
-    "os": "114443",
-    "data": "15/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Verificar sensor de diesel (Fazenda Minuano)"
   },
   {
     "frota": "155",
@@ -35,25 +35,11 @@
     "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)"
   },
   {
-    "frota": "118",
-    "os": "114093",
-    "data": "10/07/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Consertar ar condicionado quebrado. (Fazenda Minuano)"
-  },
-  {
     "frota": "254",
     "os": "113685",
     "data": "03/07/2025",
     "prestador": "nan",
     "servico": "Verificar vazamento de diesel na base da bomba injetora - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5767",
-    "os": "113559",
-    "data": "01/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir rolamento da entrada da bomba, localizado na região de acoplamento com o eixo cardã, devido a falha (rolamento estourado)."
   },
   {
     "frota": "5401",

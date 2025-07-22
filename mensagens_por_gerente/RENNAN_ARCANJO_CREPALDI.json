@@ -1,5 +1,26 @@
 [
   {
+    "frota": "331",
+    "os": "115064",
+    "data": "22/07/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Vazamento no retentor do eixo da TDP - (Fazenda NSA)"
+  },
+  {
+    "frota": "259",
+    "os": "114991",
+    "data": "22/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E traseiro furado - (Fazenda NSA)"
+  },
+  {
+    "frota": "5502",
+    "os": "114990",
+    "data": "22/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar rolamento da turbina estourado - (Fazenda NSA)"
+  },
+  {
     "frota": "5270",
     "os": "114919",
     "data": "21/07/2025",
@@ -42,13 +63,6 @@
     "servico": "Verificar barra de corte danificada - (Fazenda NSA)"
   },
   {
-    "frota": "63",
-    "os": "114235",
-    "data": "14/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Curto nos fios do motor de partida - (Fazenda NSA)"
-  },
-  {
     "frota": "5629",
     "os": "114234",
     "data": "14/07/2025",
@@ -84,38 +98,10 @@
     "servico": "Verificar quebra da esteira da adubadeira, comprometendo o transporte e a distribuição do insumo. - (Fazenda NSA)"
   },
   {
-    "frota": "137",
-    "os": "111717",
-    "data": "25/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator sem partida, motor gira mas não pega - (Fazenda NSA)"
-  },
-  {
     "frota": "5058",
     "os": "112282",
     "data": "10/06/2025",
     "prestador": "nan",
     "servico": "Revisão geral - (Fazenda NSA) - Recolher para Oficina"
-  },
-  {
-    "frota": "5697",
-    "os": "113583",
-    "data": "30/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Serviços de isolar chicote e fixar os quatros cabos com abraçadeira nas mangueiras (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "215",
-    "os": "111573",
-    "data": "30/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Farol dianteiro com mau contato - (Fazenda NSA)"
-  },
-  {
-    "frota": "5697",
-    "os": "113576",
-    "data": "29/05/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar chicote quebrado na emenda, consertar e testar, fazer testes novamente no chicote e identificar chicote quebrado (Fazenda Bela Manhã)"
   }
 ]
