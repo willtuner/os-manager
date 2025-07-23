@@ -1,19 +1,59 @@
 [
   {
-    "frota": "10224",
-    "cd_equipamento": "10224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114985",
-    "data_entrada": "21/07/2025",
-    "servico": "Verificar bomba de óleo hidráulico (Direção pesada)  e vazamento no retentor da TDP - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Artrhur"
+    "frota": "75",
+    "cd_equipamento": "75",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "115072",
+    "data_entrada": "22/07/2025",
+    "servico": "Verificar vazamento de óleo embaixo do volante  (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "264",
-    "cd_equipamento": "264",
+    "frota": "263",
+    "cd_equipamento": "263",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114874",
+    "os": "115051",
+    "data_entrada": "22/07/2025",
+    "servico": "Verificar alavanca de acionamento dos ramal L/D não funcionam - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "217",
+    "cd_equipamento": "217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115048",
+    "data_entrada": "22/07/2025",
+    "servico": "Quebra do cabo do acelerador de pé - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "211",
+    "cd_equipamento": "211",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "115036",
+    "data_entrada": "22/07/2025",
+    "servico": "Verificar vazamento de óleo na junta da parte dianteira do trator. Necessário identificar o ponto exato do vazamento e avaliar necessidade de substituição de juntas ou vedação. - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "195",
+    "cd_equipamento": "195",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114950",
     "data_entrada": "21/07/2025",
-    "servico": "Verificar vazamento no MAP\nVerificar terminais da direção com folga\nTrinca no silencioso do escapamento\nTroca da correia do motor e A/C, revisar caixa de tração, fazer diagnostico sistema hidráulico. - (Fazenda São Pedro/Oficina)\nSolicitado Sr. Emerson (Mecânico DMA)\nResponsável Sr. Carlos Aparecido ( Gerente Oficina)"
+    "servico": "Alavanca de marchas \"bambo\" - (Fazenda São Pedro)\nE trocar amortecedor do capô (Pendência 4377) \nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "194",
+    "cd_equipamento": "194",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "114902",
+    "data_entrada": "21/07/2025",
+    "servico": "Avaliar vazamento de diesel no cano da bomba injetora - (Fazenda Alvorada)\nSolicitado Sr. Izaias \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "299",
+    "cd_equipamento": "299",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114888",
+    "data_entrada": "21/07/2025",
+    "servico": "Verificar embreagem da TDP que já não da mais regulagem - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Arthur"
   },
   {
     "frota": "198",
@@ -86,6 +126,14 @@
     "os": "114236",
     "data_entrada": "14/07/2025",
     "servico": "Verificar o estado do cabo da embreagem de acionamento por pedal, devido à embreagem estar dura. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "93",
+    "cd_equipamento": "93",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "114224",
+    "data_entrada": "14/07/2025",
+    "servico": "Verificar tração  - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "189",

@@ -1,5 +1,29 @@
 [
   {
+    "frota": "136",
+    "cd_equipamento": "136",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "115084",
+    "data_entrada": "22/07/2025",
+    "servico": "Vazamento no cubo da roda traseira (Fazenda Casa Branca)\nSolicitante Sr. João\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "109",
+    "cd_equipamento": "109",
+    "modelo": "TRATOR MASSEY FERGUSON 290",
+    "os": "114922",
+    "data_entrada": "21/07/2025",
+    "servico": "Braços hidráulicos não descem - (Pecuaria)\nSolicitado Sr. Bruna Franco (ADM)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "144",
+    "cd_equipamento": "144",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "114876",
+    "data_entrada": "21/07/2025",
+    "servico": "Quebra do cabo do acelerador de mão - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "245",
     "cd_equipamento": "245",
     "modelo": "TRATOR MASSEY FERGUSON 3307",
@@ -14,6 +38,14 @@
     "os": "114484",
     "data_entrada": "15/07/2025",
     "servico": "Remover cornetas e rodas para liberação da carcaça visando recuperação de rosca danificada.\nRevisar o sistema de freio, pois os pedais estão moles.\nVerificar falha na marcha lenta  trator não mantém rotação estável.\nInspecionar e substituir, se necessário, os terminais da manga de eixo, que apresentam danos. - (MG Vedações)\nSolicitado Sr. Rafael\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "142",
+    "cd_equipamento": "142",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "113076",
+    "data_entrada": "24/06/2025",
+    "servico": "Avaliar trator sem freio - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "246",

@@ -1,5 +1,13 @@
 [
   {
+    "frota": "10120",
+    "cd_equipamento": "10120",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115111",
+    "data_entrada": "23/07/2025",
+    "servico": "Revisar sinalização, buzina e alertas não funcionam - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "10220",
     "cd_equipamento": "10220",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -88,22 +96,6 @@
     "servico": "Revisão parte elétrica (Fazenda São José)\nSolicitado Sr. Carlos\nResponsavel Sr. Carlos"
   },
   {
-    "frota": "5759",
-    "cd_equipamento": "5759",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "114684",
-    "data_entrada": "17/07/2025",
-    "servico": "Verificar cabo de acionamento da barra, que se conecta ao painel de controle.\nSistema só funciona quando se movimenta o conector, indicando mau contato ou falha na fiação/conector.\nNecessária inspeção do chicote, limpeza ou substituição do conector danificado. - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "91",
-    "cd_equipamento": "91",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "114674",
-    "data_entrada": "17/07/2025",
-    "servico": "Farol L/E queimado, e cibié de teto queimado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5699",
     "cd_equipamento": "5699",
     "modelo": "PULVERIZADOR 600 LT",
@@ -136,6 +128,14 @@
     "servico": "Abertura dos ramais não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "72",
+    "cd_equipamento": "72",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "114317",
+    "data_entrada": "15/07/2025",
+    "servico": "Verificar trator sem partida - (Industria)\nSolicitado Sr. Geovane (Mestre de Obra)\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "83",
     "cd_equipamento": "83",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -160,28 +160,12 @@
     "servico": "Substituir cibié traseiro devido à queima da lâmpada - (Fazenda Estrela 6)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "10227",
-    "cd_equipamento": "10227",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114225",
-    "data_entrada": "14/07/2025",
-    "servico": "Identificado vazamento de óleo na região do cebolão do motor. Observação: o sensor foi trocado recentemente. - (Fazenda Santa Luiza)\nSolicitado Sr. John\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "147",
     "cd_equipamento": "147",
     "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
     "os": "114202",
     "data_entrada": "14/07/2025",
     "servico": "Revisar alternador - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "156",
-    "cd_equipamento": "156",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "114154",
-    "data_entrada": "11/07/2025",
-    "servico": "Revisão de sistema eletrico da sinalização - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "230",
