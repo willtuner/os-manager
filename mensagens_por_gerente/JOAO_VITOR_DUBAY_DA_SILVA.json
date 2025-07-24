@@ -1,5 +1,12 @@
 [
   {
+    "frota": "5082",
+    "os": "115251",
+    "data": "24/07/2025",
+    "prestador": "nan",
+    "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)"
+  },
+  {
     "frota": "266",
     "os": "115175",
     "data": "23/07/2025",
@@ -26,13 +33,6 @@
     "data": "22/07/2025",
     "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
     "servico": "Verificar joystick não  funciona - (Fazenda Úrsula)"
-  },
-  {
-    "frota": "5082",
-    "os": "114699",
-    "data": "17/07/2025",
-    "prestador": "TORNEARIA STEINHAUSER LTDA",
-    "servico": "Fabricar pino com rosca e porca para fixação da haste do sulcador, conforme modelo original. - (Fazenda Úrsula)"
   },
   {
     "frota": "274",

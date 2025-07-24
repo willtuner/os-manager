@@ -1,5 +1,12 @@
 [
   {
+    "frota": "75",
+    "os": "115290",
+    "data": "24/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/E vazando no bico - (Fazenda São Severino)"
+  },
+  {
     "frota": "5488",
     "os": "115074",
     "data": "22/07/2025",
@@ -7,46 +14,11 @@
     "servico": "Vazamento de óleo na caixa de navalhas - (Fazenda São Severino)"
   },
   {
-    "frota": "75",
-    "os": "115072",
-    "data": "22/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar vazamento de óleo embaixo do volante  (Fazenda São Severino)"
-  },
-  {
-    "frota": "87",
-    "os": "115071",
-    "data": "22/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento de diesel na bomba injetora - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5612",
-    "os": "115047",
-    "data": "22/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar chicote eletrico completo - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5521",
-    "os": "114935",
-    "data": "21/07/2025",
-    "prestador": "nan",
-    "servico": "Comandos dos desligamentos dos ramais não funcionam. (Fazenda São Severino)"
-  },
-  {
     "frota": "234",
     "os": "114723",
     "data": "17/07/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Avaliar ruído na TDP - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5660",
-    "os": "114318",
-    "data": "15/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Abertura dos ramais não funciona - (Fazenda São Severino)"
   },
   {
     "frota": "226",

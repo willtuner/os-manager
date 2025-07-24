@@ -1,5 +1,19 @@
 [
   {
+    "frota": "5430",
+    "os": "115193",
+    "data": "24/07/2025",
+    "prestador": "nan",
+    "servico": "Revisar e trocar barra do sistema do drench - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5361",
+    "os": "115179",
+    "data": "24/07/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar motor de abertura do sistema - (Fazenda Estrela)"
+  },
+  {
     "frota": "5259",
     "os": "115058",
     "data": "22/07/2025",
@@ -38,7 +52,7 @@
     "frota": "10229",
     "os": "115053",
     "data": "22/07/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar vazamento de óleo nos tuchos - (Fazenda Estrela)"
   },
   {
@@ -56,13 +70,6 @@
     "servico": "Troca da sinaleira dianteira L/D (RE217551)  com a lente quebrada e cibié queimado - (Fazenda Estrela)"
   },
   {
-    "frota": "110",
-    "os": "114912",
-    "data": "21/07/2025",
-    "prestador": "MASON EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Avaliar diversos vazamentos de óleo no equipamento - (Fazenda Estrela)"
-  },
-  {
     "frota": "5068",
     "os": "114754",
     "data": "18/07/2025",
@@ -75,13 +82,6 @@
     "data": "16/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Cibié do teto queimado L/D - (Fazenda Estrela)"
-  },
-  {
-    "frota": "165",
-    "os": "114307",
-    "data": "15/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Estrela)"
   },
   {
     "frota": "309",

@@ -1,17 +1,17 @@
 [
   {
+    "frota": "24",
+    "os": "115192",
+    "data": "24/07/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Cano de diesel furado - (Fazenda Minuano)"
+  },
+  {
     "frota": "80",
     "os": "115150",
     "data": "23/07/2025",
     "prestador": "nan",
     "servico": "Vazamento de óleo no pistão da concha do trator  - (Fazenda São Severino)"
-  },
-  {
-    "frota": "255",
-    "os": "114988",
-    "data": "22/07/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Avaliar embreagem da TDP dura - (Fazenda Minuano)"
   },
   {
     "frota": "144",
@@ -26,20 +26,6 @@
     "data": "14/07/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Trocar os pneus dianteiro - Faz Minuano"
-  },
-  {
-    "frota": "81",
-    "os": "114176",
-    "data": "11/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)"
-  },
-  {
-    "frota": "254",
-    "os": "113685",
-    "data": "03/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar vazamento de diesel na base da bomba injetora - (Fazenda Minuano)"
   },
   {
     "frota": "5401",
