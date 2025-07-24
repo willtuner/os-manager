@@ -1,5 +1,13 @@
 [
   {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "115188",
+    "data_entrada": "24/07/2025",
+    "servico": "Fazer fibra nos para-lamas - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5598",
     "cd_equipamento": "5598",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -54,13 +62,5 @@
     "os": "113866",
     "data_entrada": "07/07/2025",
     "servico": "Fazer fibra na base turbina - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5479",
-    "cd_equipamento": "5479",
-    "modelo": "PULVERIZADOR 600 LT JACTO",
-    "os": "113058",
-    "data_entrada": "24/06/2025",
-    "servico": "Fazer serviço de fibra no tanque - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
   }
 ]

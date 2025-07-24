@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5721",
+    "cd_equipamento": "5721",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "115181",
+    "data_entrada": "24/07/2025",
+    "servico": "Coroa do pinhão da bomba com desgaste por atrito (roçada). Necessário substituir - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "224",
     "cd_equipamento": "224",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -32,28 +40,12 @@
     "servico": "Vazamento na válvula - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5314",
-    "cd_equipamento": "5314",
-    "modelo": "PODADOR FRONTAL/LATERAL",
-    "os": "114515",
-    "data_entrada": "16/07/2025",
-    "servico": "Verificar pistão de elevação da HLC3, que está abaixando sozinho. Possível falha em vedação ou válvula de retenção - (Fazenda São José)\nSolicitado Sr. Luiz (ADM)\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5067",
     "cd_equipamento": "5067",
     "modelo": "ADUBADEIRA CACAMBA TATU",
     "os": "113933",
     "data_entrada": "08/07/2025",
     "servico": "Mancal trincado (Pecuária)\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5667",
-    "cd_equipamento": "5667",
-    "modelo": "PODADEIRA HIDRAUTEC HLD1",
-    "os": "113650",
-    "data_entrada": "02/07/2025",
-    "servico": "Avaliar e corrigir vazamento de óleo na saída da caixa de comando. - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5405",

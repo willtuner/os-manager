@@ -1,5 +1,45 @@
 [
   {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115273",
+    "data_entrada": "24/07/2025",
+    "servico": "Cibié traseiro L/E com fios rompidos - (Fazenda Estrela)\nSolicitado Sr. Carlos (Camboi)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5814",
+    "cd_equipamento": "5814",
+    "modelo": "ADUBADORA E SEMEADORA MS400",
+    "os": "115234",
+    "data_entrada": "24/07/2025",
+    "servico": "Fio de alimentação do motor eletrico rompido  - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "203",
+    "cd_equipamento": "203",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "115230",
+    "data_entrada": "24/07/2025",
+    "servico": "Verificar sirene de ré e buzina não funcionam - (Fazenda Bela Manhã)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "67",
+    "cd_equipamento": "67",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "115184",
+    "data_entrada": "24/07/2025",
+    "servico": "Trator sem partida, mesmo com bateria nova.\nAo girar a chave, apenas um estalo é emitido, como se estivesse sem carga. - (Fazenda Santa Luiza)\nSolicitado Sr. John Lennon\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5361",
+    "cd_equipamento": "5361",
+    "modelo": "ADUBADORA E SEMEADORA MS60",
+    "os": "115179",
+    "data_entrada": "24/07/2025",
+    "servico": "Verificar motor de abertura do sistema - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "10120",
     "cd_equipamento": "10120",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -8,20 +48,20 @@
     "servico": "Revisar sinalização, buzina e alertas não funcionam - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "10217",
+    "cd_equipamento": "10217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115050",
+    "data_entrada": "22/07/2025",
+    "servico": "Sinalização não funciona  - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "10220",
     "cd_equipamento": "10220",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "115049",
     "data_entrada": "22/07/2025",
     "servico": "Verificar faróis queimados e cibié de teto não ascendem - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5612",
-    "cd_equipamento": "5612",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "115047",
-    "data_entrada": "22/07/2025",
-    "servico": "Revisar chicote eletrico completo - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "268",
@@ -120,14 +160,6 @@
     "servico": "Trator morreu, e só gira e não pega. (Fazenda Alvorada)\nSolicitante Sr. Natalino\nResponsável Sr. Arthur"
   },
   {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "114318",
-    "data_entrada": "15/07/2025",
-    "servico": "Abertura dos ramais não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "72",
     "cd_equipamento": "72",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -142,14 +174,6 @@
     "os": "114264",
     "data_entrada": "15/07/2025",
     "servico": "Revisar sistema de iluminação, não ascende os cibié de teto - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "119",
-    "cd_equipamento": "119",
-    "modelo": "TRATOR VALTRA A750F 4X4",
-    "os": "114244",
-    "data_entrada": "14/07/2025",
-    "servico": "Verificar alternador e farol dianteiro não ascende - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
     "frota": "274",

@@ -1,11 +1,43 @@
 [
   {
-    "frota": "75",
-    "cd_equipamento": "75",
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115195",
+    "data_entrada": "24/07/2025",
+    "servico": "Avaliar alta vibração na TDP - (Fazenda São Pedro)\nSolicitado Sr. Rommes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "46",
+    "cd_equipamento": "46",
+    "modelo": "TRATOR JOHN DEERE 5600 4X4",
+    "os": "115191",
+    "data_entrada": "24/07/2025",
+    "servico": "Mangueira do radiador estourada - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "67",
+    "cd_equipamento": "67",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "115072",
+    "os": "115183",
+    "data_entrada": "24/07/2025",
+    "servico": "- Verificar o acionamento da tomada de força, com dificuldade para acoplar o cardã.\n- Equipamento também apresenta cheiro forte de óleo queimado e leve saída de fumaça pelo suspiro. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "265",
+    "cd_equipamento": "265",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115163",
+    "data_entrada": "23/07/2025",
+    "servico": "Vazamento de óleo no retentor do cubo da roda dianteira L/E - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10229",
+    "cd_equipamento": "10229",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115053",
     "data_entrada": "22/07/2025",
-    "servico": "Verificar vazamento de óleo embaixo do volante  (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
+    "servico": "Verificar vazamento de óleo nos tuchos - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
     "frota": "263",
@@ -16,12 +48,12 @@
     "servico": "Verificar alavanca de acionamento dos ramal L/D não funcionam - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "217",
-    "cd_equipamento": "217",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115048",
+    "frota": "94",
+    "cd_equipamento": "94",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "115040",
     "data_entrada": "22/07/2025",
-    "servico": "Quebra do cabo do acelerador de pé - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Arthur"
+    "servico": "Vazamento de óleo nos tuchos e embaixo dos braços hidráulicos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "211",
@@ -48,28 +80,12 @@
     "servico": "Avaliar vazamento de diesel no cano da bomba injetora - (Fazenda Alvorada)\nSolicitado Sr. Izaias \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "299",
-    "cd_equipamento": "299",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114888",
-    "data_entrada": "21/07/2025",
-    "servico": "Verificar embreagem da TDP que já não da mais regulagem - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "198",
     "cd_equipamento": "198",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "114743",
     "data_entrada": "18/07/2025",
     "servico": "Verificar baralho de engrenagens no cambio - Faz Terra Branca\nAutorizado Arthur"
-  },
-  {
-    "frota": "10218",
-    "cd_equipamento": "10218",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114735",
-    "data_entrada": "18/07/2025",
-    "servico": "Durante a operação, foi identificado vazamento de combustível devido a possível derretimento ou perfuração do tanque, localizado próximo ao comando hidráulico. - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson \nResponsar Sr. Arthur"
   },
   {
     "frota": "130",
@@ -128,12 +144,12 @@
     "servico": "Verificar o estado do cabo da embreagem de acionamento por pedal, devido à embreagem estar dura. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "93",
-    "cd_equipamento": "93",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "114224",
-    "data_entrada": "14/07/2025",
-    "servico": "Verificar tração  - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+    "frota": "5382",
+    "cd_equipamento": "5382",
+    "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
+    "os": "112020",
+    "data_entrada": "11/07/2025",
+    "servico": "Efetuar montagem da bomba no carrinha de irrigação  (Oficina)\nLiberado Sr. Rafael"
   },
   {
     "frota": "189",
