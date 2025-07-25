@@ -1,9 +1,37 @@
 [
   {
+    "frota": "274",
+    "os": "115349",
+    "data": "25/07/2025",
+    "prestador": "nan",
+    "servico": "Trocar bateria (Fazenda Úrsula)"
+  },
+  {
+    "frota": "309",
+    "os": "115337",
+    "data": "25/07/2025",
+    "prestador": "nan",
+    "servico": "Desamassar chapa de proteção parte de baixo do trator - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5579",
+    "os": "115336",
+    "data": "25/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Trocar jogo de facas - (Fazenda Estrela)"
+  },
+  {
+    "frota": "145",
+    "os": "115335",
+    "data": "25/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Terra Branca)"
+  },
+  {
     "frota": "5082",
     "os": "115251",
     "data": "24/07/2025",
-    "prestador": "nan",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)"
   },
   {
@@ -19,13 +47,6 @@
     "data": "22/07/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar brecha na estrutura lateral da plantadeira, que está ocasionando vazamento de sementes durante a operação. - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5071",
-    "os": "115070",
-    "data": "22/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar pé de apoio do equipamento, visando garantir estabilidade durante o repouso e evitar danos por queda ou contato com o solo - (Fazenda Úrsula)"
   },
   {
     "frota": "274",
@@ -47,13 +68,6 @@
     "data": "14/07/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Quebra do  disco da secção traseira - (Fazenda Estrela 6)"
-  },
-  {
-    "frota": "5105",
-    "os": "114119",
-    "data": "10/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar rolamentos das duas rodas da grade. (Fazenda Úrsula)"
   },
   {
     "frota": "204",
@@ -82,12 +96,5 @@
     "data": "18/06/2025",
     "prestador": "nan",
     "servico": "Verificada ausência de 6 bicas de distribuição de sementes e de 1 conjunto de disco dosador - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5110",
-    "os": "112539",
-    "data": "13/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar rodas com \"jogo\" - (Fazenda Estrela VI)"
   }
 ]
