@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5352",
+    "cd_equipamento": "5352",
+    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
+    "os": "115343",
+    "data_entrada": "25/07/2025",
+    "servico": "Fazer solda em trincas no chassi - (Pecuaria)\nSolicitado Sr. Bruno (ADM)\nResponsavel Sr.  Mauricio"
+  },
+  {
+    "frota": "5579",
+    "cd_equipamento": "5579",
+    "modelo": "TRITURADOR TFI-1600 GTM",
+    "os": "115336",
+    "data_entrada": "25/07/2025",
+    "servico": "Trocar jogo de facas - (Fazenda Estrela)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5001",
+    "cd_equipamento": "5001",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "115285",
+    "data_entrada": "24/07/2025",
+    "servico": "Fazer solda em trincas na barrinha - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5778",
     "cd_equipamento": "5778",
     "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
@@ -22,14 +46,6 @@
     "os": "115081",
     "data_entrada": "22/07/2025",
     "servico": "Verificar brecha na estrutura lateral da plantadeira, que está ocasionando vazamento de sementes durante a operação. - (Fazenda Estrela)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5071",
-    "cd_equipamento": "5071",
-    "modelo": "GRADE NIVELADORA",
-    "os": "115070",
-    "data_entrada": "22/07/2025",
-    "servico": "Instalar pé de apoio do equipamento, visando garantir estabilidade durante o repouso e evitar danos por queda ou contato com o solo - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5061",
@@ -104,14 +120,6 @@
     "servico": "Asa L/D torta - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5105",
-    "cd_equipamento": "5105",
-    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
-    "os": "114119",
-    "data_entrada": "10/07/2025",
-    "servico": "Verificar rolamentos das duas rodas da grade. (Fazenda Úrsula)\nSolicitante Sr. João Dubay\nResponsável Sr. Mauricio"
-  },
-  {
     "frota": "223",
     "cd_equipamento": "223",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -133,7 +141,7 @@
     "modelo": "ADUBADEIRA CACAMBA TATU",
     "os": "114027",
     "data_entrada": "09/07/2025",
-    "servico": "Fabricar vedação do mancal dianteiro da esteira - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
+    "servico": "Fabricar vedação do mancal dianteiro da esteira - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5724",
@@ -176,14 +184,6 @@
     "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
   },
   {
-    "frota": "5401",
-    "cd_equipamento": "5401",
-    "modelo": "ATOMIZADOR JACTO 4000 LT",
-    "os": "113066",
-    "data_entrada": "24/06/2025",
-    "servico": "Realinhas estrutura do braço, amassado após colisão - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "332",
     "cd_equipamento": "332",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -206,22 +206,6 @@
     "os": "112593",
     "data_entrada": "16/06/2025",
     "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5110",
-    "cd_equipamento": "5110",
-    "modelo": "SUBSOLADOR STARA",
-    "os": "112539",
-    "data_entrada": "13/06/2025",
-    "servico": "Verificar rodas com \"jogo\" - (Fazenda Estrela VI)\nSolicitado Sr. João Vitor \nLiberado Sr. Mauricio"
-  },
-  {
-    "frota": "5175",
-    "cd_equipamento": "5175",
-    "modelo": "TANQUE DE AGUA 4000 LT",
-    "os": "112275",
-    "data_entrada": "10/06/2025",
-    "servico": "Reformar estrutura superior do tanque (Fazenda São Severino)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "43",

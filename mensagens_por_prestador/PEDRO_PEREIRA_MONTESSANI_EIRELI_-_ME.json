@@ -1,5 +1,13 @@
 [
   {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "115352",
+    "data_entrada": "25/07/2025",
+    "servico": "Revisar sistema eletrico - Faz São Severino\nAutorizado Arthur"
+  },
+  {
     "frota": "258",
     "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -72,22 +80,6 @@
     "servico": "Troca da sinaleira dianteira L/D (RE217551)  com a lente quebrada e cibié queimado - (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "109",
-    "cd_equipamento": "109",
-    "modelo": "TRATOR MASSEY FERGUSON 290",
-    "os": "114956",
-    "data_entrada": "21/07/2025",
-    "servico": "Instalar chicote para conectar balança do vagão - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "68",
-    "cd_equipamento": "68",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "114955",
-    "data_entrada": "21/07/2025",
-    "servico": "Instalar chicote para conectar balança do vagão - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "22",
     "cd_equipamento": "22",
     "modelo": "TRATOR VALTRA BH 180 4X4",
@@ -152,14 +144,6 @@
     "servico": "Cibié do teto queimado L/D - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "65",
-    "cd_equipamento": "65",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "114447",
-    "data_entrada": "15/07/2025",
-    "servico": "Trator morreu, e só gira e não pega. (Fazenda Alvorada)\nSolicitante Sr. Natalino\nResponsável Sr. Arthur"
-  },
-  {
     "frota": "72",
     "cd_equipamento": "72",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -222,14 +206,6 @@
     "os": "113064",
     "data_entrada": "24/06/2025",
     "servico": "Trocar lanterna traseira quebrada - (Fazenda SP)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "211",
-    "cd_equipamento": "211",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "109027",
-    "data_entrada": "17/04/2025",
-    "servico": "Instalar lampadas traseiras - (Fazenda SP)\nLiberado Sr. Wilson\nPendencia N° 4243"
   },
   {
     "frota": "127",

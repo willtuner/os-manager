@@ -1,43 +1,43 @@
 [
   {
+    "frota": "5168",
+    "cd_equipamento": "5168",
+    "modelo": "CARRETA AGRICOLA 5000 KG 4 ROD",
+    "os": "115348",
+    "data_entrada": "25/07/2025",
+    "servico": "Trocar cabeçalho  (Pecuária)\nSolicitado Sr. Bruno Franco\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5754",
+    "cd_equipamento": "5754",
+    "modelo": "MISTURADORA ROTORMIX RX 200T",
+    "os": "115344",
+    "data_entrada": "25/07/2025",
+    "servico": "Vazamento de óleo nas mangueiras do engate - (Pecuaria)\nSolicitado Sr. Bruno (ADM)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5779",
+    "cd_equipamento": "5779",
+    "modelo": "VALETADEIRA",
+    "os": "115322",
+    "data_entrada": "25/07/2025",
+    "servico": "Retentor do eixo do cardã estourado - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5082",
+    "cd_equipamento": "5082",
+    "modelo": "SULCADOR P/ PLANTIO LARANJA",
+    "os": "115251",
+    "data_entrada": "24/07/2025",
+    "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)\nSolicitado Sr. João\nResponsável Sr. Mauricio"
+  },
+  {
     "frota": "5774",
     "cd_equipamento": "5774",
     "modelo": "VALETADEIRA RTX 250",
     "os": "114993",
     "data_entrada": "22/07/2025",
     "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5148",
-    "cd_equipamento": "5148",
-    "modelo": "CARRETA BAG C/ GUINCHO",
-    "os": "114915",
-    "data_entrada": "21/07/2025",
-    "servico": "Troca do reparo do pistão - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
-  },
-  {
-    "frota": "5779",
-    "cd_equipamento": "5779",
-    "modelo": "VALETADEIRA",
-    "os": "114861",
-    "data_entrada": "21/07/2025",
-    "servico": "Efetuar troca do retentor - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5630",
-    "cd_equipamento": "5630",
-    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
-    "os": "114797",
-    "data_entrada": "19/07/2025",
-    "servico": "Verificar fações da roçadeira pegando nas proteção anti-arremesso - (Fazenda São Paulo)\nSolicitado Sr. Giovane\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5148",
-    "cd_equipamento": "5148",
-    "modelo": "CARRETA BAG C/ GUINCHO",
-    "os": "114728",
-    "data_entrada": "17/07/2025",
-    "servico": "Trocar reparos dos pistões do giro - (Fazenda São Paulo)\nSolicitado Sr. Gilson\nResponsavel Sr. Izaias"
   },
   {
     "frota": "5171",

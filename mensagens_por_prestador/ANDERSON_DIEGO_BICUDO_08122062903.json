@@ -8,22 +8,6 @@
     "servico": "Avaliar alta vibração na TDP - (Fazenda São Pedro)\nSolicitado Sr. Rommes\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "115191",
-    "data_entrada": "24/07/2025",
-    "servico": "Mangueira do radiador estourada - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "67",
-    "cd_equipamento": "67",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "115183",
-    "data_entrada": "24/07/2025",
-    "servico": "- Verificar o acionamento da tomada de força, com dificuldade para acoplar o cardã.\n- Equipamento também apresenta cheiro forte de óleo queimado e leve saída de fumaça pelo suspiro. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "265",
     "cd_equipamento": "265",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -144,6 +128,14 @@
     "servico": "Verificar o estado do cabo da embreagem de acionamento por pedal, devido à embreagem estar dura. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "255",
+    "cd_equipamento": "255",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113164",
+    "data_entrada": "14/07/2025",
+    "servico": "Vazamento no burrinho do freio, vazamento no cilindro de freio.  - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel  Sr. Arthur"
+  },
+  {
     "frota": "5382",
     "cd_equipamento": "5382",
     "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
@@ -158,6 +150,30 @@
     "os": "113640",
     "data_entrada": "02/07/2025",
     "servico": "Verificar freio de estacionamento não funciona - (Fazenda São Severino)\nSolicitado Sr. Izaias \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "195",
+    "cd_equipamento": "195",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113393",
+    "data_entrada": "26/06/2025",
+    "servico": "Instalar Kit de redução - Oficina\n- Arrumado banco e instalado cinto de segurança, colocado sapatilha do guia. \n- Trocado filtro de sedimentação.\nAutorizado Arthur"
+  },
+  {
+    "frota": "224",
+    "cd_equipamento": "224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113311",
+    "data_entrada": "26/06/2025",
+    "servico": "Trocar embreagem - Faz Terra Branca (Oficina)\nAutorizado Arthur"
+  },
+  {
+    "frota": "65",
+    "cd_equipamento": "65",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112261",
+    "data_entrada": "10/06/2025",
+    "servico": "Revisar sistema hidráulico do trator\nTirado válvula, levado para John-Deer\nBuscou outra válvula para testar e levante voltou a funcionar, buscado banco novo no viveiro\nFaz Alvorada\nSolicitado Arthur"
   },
   {
     "frota": "74",
