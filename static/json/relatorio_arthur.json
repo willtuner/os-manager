@@ -1,5 +1,49 @@
 [
     {
+        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+        "frota": "208",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "115363",
+        "data_entrada": "26/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vidro da porta quebrado - (Fazenda São Pedro)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "231",
+        "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+        "os": "115360",
+        "data_entrada": "26/07/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Verificar RPM oscilando - (Fazenda São Severino)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "189",
+        "modelo": "TRATOR NEW HOLAND TL 5.80",
+        "os": "115358",
+        "data_entrada": "26/07/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar equipamento sem partida - (Fazenda São Severino)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
+        "frota": "46",
+        "modelo": "TRATOR JOHN DEERE 5600 4X4",
+        "os": "115356",
+        "data_entrada": "26/07/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Verificar trator sem partida - (Fazenda São Paulo)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "JOAO VITOR DUBAY DA SILVA",
         "frota": "274",
         "modelo": "TRATOR VALTRA T250 CVT",
