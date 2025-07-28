@@ -1,24 +1,45 @@
 [
   {
+    "frota": "279",
+    "os": "115416",
+    "data": "28/07/2025",
+    "prestador": "nan",
+    "servico": "Avaliação técnica para identificação e correção de ruído no conjunto do alternador e sistemas adjacentes (correias, rolamentos, polias, tensionadores, etc.) - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "274",
+    "os": "115408",
+    "data": "28/07/2025",
+    "prestador": "nan",
+    "servico": "Parafusos que seguram os lastros da roda faltando - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "5052",
+    "os": "115393",
+    "data": "28/07/2025",
+    "prestador": "JHONY ANDERSON DE CASTRO LAFAYETE 02369",
+    "servico": "Recuperar pino e engate do cabeçario  - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "5082",
+    "os": "115386",
+    "data": "28/07/2025",
+    "prestador": "JHONY ANDERSON DE CASTRO LAFAYETE 02369",
+    "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)"
+  },
+  {
     "frota": "274",
     "os": "115349",
     "data": "25/07/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar bateria (Fazenda Úrsula)"
   },
   {
     "frota": "309",
     "os": "115337",
     "data": "25/07/2025",
-    "prestador": "nan",
-    "servico": "Desamassar chapa de proteção parte de baixo do trator - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5579",
-    "os": "115336",
-    "data": "25/07/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Trocar jogo de facas - (Fazenda Estrela)"
+    "servico": "Desamassar chapa de proteção parte de baixo do trator - (Fazenda Estrela)"
   },
   {
     "frota": "145",
@@ -42,13 +63,6 @@
     "servico": "Revisão completa - (Corporativo preparo)"
   },
   {
-    "frota": "5744",
-    "os": "115081",
-    "data": "22/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Verificar brecha na estrutura lateral da plantadeira, que está ocasionando vazamento de sementes durante a operação. - (Fazenda Estrela)"
-  },
-  {
     "frota": "274",
     "os": "114999",
     "data": "22/07/2025",
@@ -61,13 +75,6 @@
     "data": "14/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Substituir cibié traseiro devido à queima da lâmpada - (Fazenda Estrela 6)"
-  },
-  {
-    "frota": "5178",
-    "os": "114198",
-    "data": "14/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra do  disco da secção traseira - (Fazenda Estrela 6)"
   },
   {
     "frota": "204",

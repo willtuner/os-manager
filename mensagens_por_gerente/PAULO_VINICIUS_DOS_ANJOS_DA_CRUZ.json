@@ -1,16 +1,16 @@
 [
   {
-    "frota": "5582",
-    "os": "115347",
-    "data": "25/07/2025",
+    "frota": "221",
+    "os": "115380",
+    "data": "28/07/2025",
     "prestador": "nan",
-    "servico": "Eletroventilador não refrigera, e fusível derreteu (Fazenda Estrela)"
+    "servico": "Fabricar suporte dos cibié dianteiros - (Fazenda Estrela)"
   },
   {
     "frota": "22",
     "os": "115324",
     "data": "25/07/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Vazamento de diesel nas conexões no cano da bomba - (Fazenda Estrela)"
   },
   {
@@ -28,46 +28,11 @@
     "servico": "Vazamento de óleo identificado na região central do trator, entre a caixa seca e o motor. - (Fazenda Estrela)"
   },
   {
-    "frota": "5430",
-    "os": "115193",
-    "data": "24/07/2025",
-    "prestador": "nan",
-    "servico": "Revisar e trocar barra do sistema do drench - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5361",
-    "os": "115179",
-    "data": "24/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar motor de abertura do sistema - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5259",
-    "os": "115058",
-    "data": "22/07/2025",
-    "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
-    "servico": "Afiar discos - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5482",
-    "os": "115057",
-    "data": "22/07/2025",
-    "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
-    "servico": "Afiar discos - (Fazenda Estrela)"
-  },
-  {
     "frota": "5728",
     "os": "115056",
     "data": "22/07/2025",
     "prestador": "MORENA - MAQUINAS E FERRAGENS",
     "servico": "Verificar motor não liga e conjunto do cabeçote de corte com suporte da lâmina e tampa de proteção foi perdido durante a operação - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5703",
-    "os": "115055",
-    "data": "22/07/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Verificar sistema de acionamento das facas. Ao ligar o motor, a transmissão de movimento não está sendo levada até as facas. - (Fazenda Estrela)"
   },
   {
     "frota": "5768",
