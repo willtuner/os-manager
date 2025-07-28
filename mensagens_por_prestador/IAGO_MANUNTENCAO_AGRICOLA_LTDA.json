@@ -1,19 +1,19 @@
 [
   {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "115321",
-    "data_entrada": "25/07/2025",
-    "servico": "Trocar correias quebradas - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+    "frota": "5081",
+    "cd_equipamento": "5081",
+    "modelo": "ADUBADEIRA DCA DC 2500",
+    "os": "115397",
+    "data_entrada": "28/07/2025",
+    "servico": "Trocar rolamento da polia que estica a esteira e fazer solda no estivador quebrado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5522",
-    "cd_equipamento": "5522",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "115186",
-    "data_entrada": "24/07/2025",
-    "servico": "Verificar vazamento na bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+    "frota": "5752",
+    "cd_equipamento": "5752",
+    "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
+    "os": "115395",
+    "data_entrada": "28/07/2025",
+    "servico": "Verificar esteiras continuam rodando mesmo acionando o sistema de travamento.\nFazenda Santa Izabel\nSolicitado Sr. Diego\nResponsável Sr. Maurício"
   },
   {
     "frota": "5693",
@@ -22,14 +22,6 @@
     "os": "115178",
     "data_entrada": "24/07/2025",
     "servico": "Verificar vazamento de produto na bomba - (Fazenda São Paulo)\nSolicitado Sr. Giovane\nResponsavel Sr. Mauricio\nP.S: Vazamento recorrente, duas OS para o equipamento recentemente."
-  },
-  {
-    "frota": "5355",
-    "cd_equipamento": "5355",
-    "modelo": "ATOMIZADOR JACTO 4000 LT",
-    "os": "115155",
-    "data_entrada": "23/07/2025",
-    "servico": "Revisar válvulas da bomba e trocar registros da caixa incorporadora e verificar vazamento nos filtros da torre dos dois lados - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo / Márcio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5523",
@@ -110,13 +102,5 @@
     "os": "113710",
     "data_entrada": "03/07/2025",
     "servico": "Substituir rolamento do eixo do multiplicador, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5697",
-    "cd_equipamento": "5697",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "113632",
-    "data_entrada": "02/07/2025",
-    "servico": "Verificar vazamento de óleo na bomba -  (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio \nP.S  Feito manutenção recente. Na OS 112642 Hiago Manutenções"
   }
 ]
