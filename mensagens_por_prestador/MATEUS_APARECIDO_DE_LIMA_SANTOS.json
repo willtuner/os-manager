@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5783",
+    "cd_equipamento": "5783",
+    "modelo": "DESENROLADOR DE MANGUEIRA",
+    "os": "115466",
+    "data_entrada": "29/07/2025",
+    "servico": "Fazer solda no esparramador de mangueira - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "115464",
+    "data_entrada": "29/07/2025",
+    "servico": "Fazer solda no suporte do ramais L/D - (Fazenda São Pedro)\nSolicitado Sr. Romes \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5659",
+    "cd_equipamento": "5659",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "115410",
+    "data_entrada": "28/07/2025",
+    "servico": "Colocar agulhas de fixação  perdidas e confeccionar chapas de fixação dos ramais quebrada - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5705",
+    "cd_equipamento": "5705",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "115392",
+    "data_entrada": "28/07/2025",
+    "servico": "Trocar filtro principal - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5626",
     "cd_equipamento": "5626",
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
@@ -30,5 +62,13 @@
     "os": "115152",
     "data_entrada": "23/07/2025",
     "servico": "Verificar rolamento e eixo da turbina, ruído anormal - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5611",
+    "cd_equipamento": "5611",
+    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
+    "os": "112366",
+    "data_entrada": "12/06/2025",
+    "servico": "Fazer solda nas proteções anti-arremesso e trocar jogo de martelos - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

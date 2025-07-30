@@ -22,5 +22,77 @@
     "os": "115036",
     "data_entrada": "22/07/2025",
     "servico": "Verificar vazamento de óleo na junta da parte dianteira do trator. Necessário identificar o ponto exato do vazamento e avaliar necessidade de substituição de juntas ou vedação. - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114743",
+    "data_entrada": "18/07/2025",
+    "servico": "Verificar baralho de engrenagens no cambio - Faz Terra Branca\nAutorizado Arthur"
+  },
+  {
+    "frota": "130",
+    "cd_equipamento": "130",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "114734",
+    "data_entrada": "18/07/2025",
+    "servico": "Vazamento de óleo nos tuchos do comando hidráulico, vazamento de óleo de motor na tampa do cárter - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "114726",
+    "data_entrada": "17/07/2025",
+    "servico": "Trocar entalhado do pião - (Fazenda São Paulo - Oficina)\nSolicitado Sr. Diego Mecânico DMA\nResponsavel Sr. Carlos Aparecido Mariano"
+  },
+  {
+    "frota": "193",
+    "cd_equipamento": "193",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "114691",
+    "data_entrada": "17/07/2025",
+    "servico": "Trocar banco - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "289",
+    "cd_equipamento": "289",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114527",
+    "data_entrada": "16/07/2025",
+    "servico": "Avaliar vazamento de óleo na parte frontal do trator - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "235",
+    "cd_equipamento": "235",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "114330",
+    "data_entrada": "15/07/2025",
+    "servico": "TDP acionando sozinha - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "65",
+    "cd_equipamento": "65",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "112261",
+    "data_entrada": "10/06/2025",
+    "servico": "Revisar sistema hidráulico do trator\nTirado válvula, levado para John-Deer\nBuscou outra válvula para testar e levante voltou a funcionar, buscado banco novo no viveiro\nFaz Alvorada\nSolicitado Arthur"
+  },
+  {
+    "frota": "74",
+    "cd_equipamento": "74",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111906",
+    "data_entrada": "03/06/2025",
+    "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "96",
+    "cd_equipamento": "96",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "110515",
+    "data_entrada": "14/05/2025",
+    "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
   }
 ]

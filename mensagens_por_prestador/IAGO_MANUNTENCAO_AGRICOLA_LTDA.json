@@ -1,11 +1,27 @@
 [
   {
-    "frota": "5081",
-    "cd_equipamento": "5081",
-    "modelo": "ADUBADEIRA DCA DC 2500",
-    "os": "115397",
-    "data_entrada": "28/07/2025",
-    "servico": "Trocar rolamento da polia que estica a esteira e fazer solda no estivador quebrado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "115491",
+    "data_entrada": "29/07/2025",
+    "servico": "Revisar regulador de pressão e cano quebrado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5486",
+    "cd_equipamento": "5486",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "115455",
+    "data_entrada": "29/07/2025",
+    "servico": "Trocar reparos do comando e vazamento no retentor  do eixo  da bomba - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5543",
+    "cd_equipamento": "5543",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "115447",
+    "data_entrada": "29/07/2025",
+    "servico": "Substituir jogo de fação e arrastador da roçadeira - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5752",
@@ -16,91 +32,11 @@
     "servico": "Verificar esteiras continuam rodando mesmo acionando o sistema de travamento.\nFazenda Santa Izabel\nSolicitado Sr. Diego\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5693",
-    "cd_equipamento": "5693",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "115178",
-    "data_entrada": "24/07/2025",
-    "servico": "Verificar vazamento de produto na bomba - (Fazenda São Paulo)\nSolicitado Sr. Giovane\nResponsavel Sr. Mauricio\nP.S: Vazamento recorrente, duas OS para o equipamento recentemente."
-  },
-  {
-    "frota": "5523",
-    "cd_equipamento": "5523",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "115093",
-    "data_entrada": "22/07/2025",
-    "servico": "Trocar rolamento estourado (Fazenda Casa Branca)\nSolicitante Sr. João\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5804",
-    "cd_equipamento": "5804",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "115076",
-    "data_entrada": "22/07/2025",
-    "servico": "Fazer fibra, e instalar um ladrão no registro (Fazenda São Paulo)\nSolicitado Sr. Giovane\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5061",
-    "cd_equipamento": "5061",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "114995",
-    "data_entrada": "22/07/2025",
-    "servico": "Verificar sistema de sucção da caixa incorporadora não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5600",
-    "cd_equipamento": "5600",
-    "modelo": "ATOMIZADOR NATALI 4000 LT",
-    "os": "114973",
-    "data_entrada": "21/07/2025",
-    "servico": "Trocar eixo cardan de transmissão está quebrado a ponta traseira e trocar correia da turbina.\nFazenda Nova Manhã\nSolicitado Sr. Elismar\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5068",
-    "cd_equipamento": "5068",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "114754",
-    "data_entrada": "18/07/2025",
-    "servico": "Vazamento de óleo nas canecas da bomba (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5275",
-    "cd_equipamento": "5275",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "114733",
-    "data_entrada": "18/07/2025",
-    "servico": "Trocar correias da polia - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Mauricio \nP.S Não possui as correias na fazenda, necessário levar"
-  },
-  {
-    "frota": "5725",
-    "cd_equipamento": "5725",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "114614",
-    "data_entrada": "16/07/2025",
-    "servico": "Trocar pião da bomba roçado - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5713",
-    "cd_equipamento": "5713",
-    "modelo": "TANQUE DE AGUA 6000 LT",
-    "os": "114243",
-    "data_entrada": "14/07/2025",
-    "servico": "Avaliar o motivo da falha no funcionamento da bomba de sucção da churumeira. - (Industria)\nSolicitado Sr. Jeovane \nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5599",
     "cd_equipamento": "5599",
     "modelo": "PREMIX PRIME 2T 2000",
     "os": "114105",
     "data_entrada": "10/07/2025",
     "servico": "Rosca do premix estragada. (Fazenda São Severino)\nSolicitante Sr. Cassio\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5494",
-    "cd_equipamento": "5494",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "113710",
-    "data_entrada": "03/07/2025",
-    "servico": "Substituir rolamento do eixo do multiplicador, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
   }
 ]

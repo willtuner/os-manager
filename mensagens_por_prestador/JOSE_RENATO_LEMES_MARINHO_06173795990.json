@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5261",
+    "cd_equipamento": "5261",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "115487",
+    "data_entrada": "29/07/2025",
+    "servico": "Fabricar proteção de partes moveis - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5451",
+    "cd_equipamento": "5451",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "115468",
+    "data_entrada": "29/07/2025",
+    "servico": "Quebra da barra de direção  - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5063",
+    "cd_equipamento": "5063",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "115387",
+    "data_entrada": "28/07/2025",
+    "servico": "Fazer solda em trinca no suporta da caixa de transporte de produtos - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "90",
     "cd_equipamento": "90",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -30,5 +54,117 @@
     "os": "115016",
     "data_entrada": "22/07/2025",
     "servico": "Readequar o suporte da caixa de transporte de produtos, que está quebrando com recorrência. Solicita-se também o aumento da capacidade da caixa, com instalação de modelo maior e reforçado. Substituir chapa inferior das asas direita e esquerda que estão com folga nas roldanas - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5723",
+    "cd_equipamento": "5723",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "114680",
+    "data_entrada": "17/07/2025",
+    "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5705",
+    "cd_equipamento": "5705",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "114679",
+    "data_entrada": "17/07/2025",
+    "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5529",
+    "cd_equipamento": "5529",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "114334",
+    "data_entrada": "15/07/2025",
+    "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5718",
+    "cd_equipamento": "5718",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "114143",
+    "data_entrada": "11/07/2025",
+    "servico": "Asa L/D torta - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "223",
+    "cd_equipamento": "223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114043",
+    "data_entrada": "10/07/2025",
+    "servico": "Realizar a confecção e instalação de proteção lateral nos para-lamas do trator, com o objetivo de reforçar a estrutura e evitar danos ou quebras durante o uso - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "217",
+    "cd_equipamento": "217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114042",
+    "data_entrada": "10/07/2025",
+    "servico": "Adequar e reforçar as proteções laterais dos para-lamas do trator, com o objetivo de evitar futuras quebras e danos nas peças durante a operação - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "85",
+    "cd_equipamento": "85",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113911",
+    "data_entrada": "08/07/2025",
+    "servico": "Fazer fibra no teto do trator - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Junior \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5355",
+    "cd_equipamento": "5355",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "113708",
+    "data_entrada": "03/07/2025",
+    "servico": "Fazer solda no suporte da escada e grade traseira para transporte de produtos - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5044",
+    "cd_equipamento": "5044",
+    "modelo": "GUINCHO HIDRAULICO REFORCADO",
+    "os": "113690",
+    "data_entrada": "03/07/2025",
+    "servico": "Substituir eixo da cabeça do guincho, devido a desgaste ou quebra, garantindo o pleno funcionamento do sistema de elevação. - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "91",
+    "cd_equipamento": "91",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113543",
+    "data_entrada": "30/06/2025",
+    "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
+  },
+  {
+    "frota": "5524",
+    "cd_equipamento": "5524",
+    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+    "os": "112593",
+    "data_entrada": "16/06/2025",
+    "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "43",
+    "cd_equipamento": "43",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "112138",
+    "data_entrada": "06/06/2025",
+    "servico": "Confeccionar teto - (Oficina OMC)\nLiberado Sr. Rafael"
+  },
+  {
+    "frota": "66",
+    "cd_equipamento": "66",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111757",
+    "data_entrada": "23/05/2025",
+    "servico": "Confecção e instalação do teto, Pendencia 4122\nFaz São Paulo\nSolicitado Arthur"
+  },
+  {
+    "frota": "504",
+    "cd_equipamento": "504",
+    "modelo": "ONIBUS",
+    "os": "111421",
+    "data_entrada": "19/03/2025",
+    "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias"
   }
 ]

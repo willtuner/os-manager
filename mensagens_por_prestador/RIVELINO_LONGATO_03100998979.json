@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5747",
+    "cd_equipamento": "5747",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "115456",
+    "data_entrada": "29/07/2025",
+    "servico": "Pneu L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "103",
+    "cd_equipamento": "103",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "115435",
+    "data_entrada": "29/07/2025",
+    "servico": "Pneu dianteiro L/D traseiro furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5504",
+    "cd_equipamento": "5504",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "115404",
+    "data_entrada": "28/07/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "228",
+    "cd_equipamento": "228",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "115394",
+    "data_entrada": "28/07/2025",
+    "servico": "Pneu L/D dianteiro furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "290",
     "cd_equipamento": "290",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -46,5 +78,21 @@
     "os": "115041",
     "data_entrada": "22/07/2025",
     "servico": "Pneu dianteiro L/D furado - (Indústria)\nSolicitado Sr. Jeovane\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5326",
+    "cd_equipamento": "5326",
+    "modelo": "CARRETA SCHULTER 12 BEGUES",
+    "os": "114769",
+    "data_entrada": "18/07/2025",
+    "servico": "Pneu dianteiro lado esquerdo furado (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "155",
+    "cd_equipamento": "155",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "114194",
+    "data_entrada": "14/07/2025",
+    "servico": "Trocar os pneus dianteiro - Faz Minuano\nAutorizado Mauricio"
   }
 ]
