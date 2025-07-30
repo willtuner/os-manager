@@ -1,61 +1,5 @@
 [
   {
-    "frota": "257",
-    "os": "115406",
-    "data": "28/07/2025",
-    "prestador": "nan",
-    "servico": "Luz de alerta queimada - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "257",
-    "os": "115405",
-    "data": "28/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar vazamento de óleo nos engate rápido - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5504",
-    "os": "115404",
-    "data": "28/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5667",
-    "os": "115403",
-    "data": "28/07/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Vazamento nas mangueiras de óleo hidráulico - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "72",
-    "os": "115390",
-    "data": "28/07/2025",
-    "prestador": "nan",
-    "servico": "Verificar falha no sistema de direção. Ao girar o volante, as rodas não acompanham o movimento - (Industria)"
-  },
-  {
-    "frota": "5063",
-    "os": "115387",
-    "data": "28/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca no suporta da caixa de transporte de produtos - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "270",
-    "os": "115385",
-    "data": "28/07/2025",
-    "prestador": "nan",
-    "servico": "Avaliar vazamento de óleo diesel na bomba de diesel - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "270",
-    "os": "115384",
-    "data": "28/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié traseiro com fios rompidos e lanterna dianteira de teto L/D quebrada - (Fazenda São Paulo)"
-  },
-  {
     "frota": "46",
     "os": "115356",
     "data": "26/07/2025",
@@ -63,25 +7,11 @@
     "servico": "Verificar trator sem partida - (Fazenda São Paulo)"
   },
   {
-    "frota": "5693",
-    "os": "115178",
-    "data": "24/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar vazamento de produto na bomba - (Fazenda São Paulo)"
-  },
-  {
     "frota": "90",
     "os": "115129",
     "data": "23/07/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Verificar teto do trator danificado - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5804",
-    "os": "115076",
-    "data": "22/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Fazer fibra, e instalar um ladrão no registro (Fazenda São Paulo)"
   },
   {
     "frota": "211",
@@ -96,61 +26,5 @@
     "data": "22/07/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Verificar e corrigir vazamento de óleo na caixa de facas traseira, barra de corte traseira quebrada e vazamento no pistão de levante da podadeira dianteira - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "332",
-    "os": "114807",
-    "data": "19/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Cibié traseiro queimado - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "332",
-    "os": "114538",
-    "data": "16/07/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 300 hrs - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "219",
-    "os": "113129",
-    "data": "25/06/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Avaliar e reparar a tubulação do escapamento, que se soltou durante a operação e foi danificada pelo próprio trator ao passar sobre a peça - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "332",
-    "os": "113064",
-    "data": "24/06/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar lanterna traseira quebrada - (Fazenda SP)"
-  },
-  {
-    "frota": "246",
-    "os": "112140",
-    "data": "06/06/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Direção dura - (Fazenda SP) / (Oficina)"
-  },
-  {
-    "frota": "216",
-    "os": "112044",
-    "data": "04/06/2025",
-    "prestador": "RETIEL RETIFICA DE MOTORES LTDA",
-    "servico": "Revisar motor - (Faz São Paulo)"
-  },
-  {
-    "frota": "74",
-    "os": "111906",
-    "data": "03/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)"
-  },
-  {
-    "frota": "66",
-    "os": "111757",
-    "data": "23/05/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Confecção e instalação do teto, Pendencia 4122"
   }
 ]
