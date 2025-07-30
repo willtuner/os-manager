@@ -1,13 +1,5 @@
 [
   {
-    "frota": "5667",
-    "cd_equipamento": "5667",
-    "modelo": "PODADEIRA HIDRAUTEC HLD1",
-    "os": "115403",
-    "data_entrada": "28/07/2025",
-    "servico": "Vazamento nas mangueiras de óleo hidráulico - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5721",
     "cd_equipamento": "5721",
     "modelo": "TANQUE DE AGUA 2000 LT",
@@ -46,21 +38,5 @@
     "os": "114974",
     "data_entrada": "21/07/2025",
     "servico": "Vazamento na válvula - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5067",
-    "cd_equipamento": "5067",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "113933",
-    "data_entrada": "08/07/2025",
-    "servico": "Mancal trincado (Pecuária)\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5405",
-    "cd_equipamento": "5405",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "113626",
-    "data_entrada": "23/06/2025",
-    "servico": "Modificar roçadeira do sistema convencional para ecológica, corrigir folgas no embuchamento das rodas guia traseira, acertar engate do cabeçalho danificado e corrigir trincas na estrutura.\nFazenda Minuano (Oficina MG)\nSolicitado Sr. Antônio\nResponsável Sr. Rafael"
   }
 ]

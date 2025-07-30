@@ -1,21 +1,5 @@
 [
   {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "115404",
-    "data_entrada": "28/07/2025",
-    "servico": "Pneu L/D furado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "228",
-    "cd_equipamento": "228",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "115394",
-    "data_entrada": "28/07/2025",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "290",
     "cd_equipamento": "290",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -48,70 +32,6 @@
     "servico": "Pneu L/D soltando a parede lateral [400/60-15.5]  - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "68",
-    "cd_equipamento": "68",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "115308",
-    "data_entrada": "25/07/2025",
-    "servico": "Pneu dianteiro L/? furado - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115306",
-    "data_entrada": "25/07/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "75",
-    "cd_equipamento": "75",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "115290",
-    "data_entrada": "24/07/2025",
-    "servico": "Pneu traseiro L/E vazando no bico - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5361",
-    "cd_equipamento": "5361",
-    "modelo": "ADUBADORA E SEMEADORA MS60",
-    "os": "115287",
-    "data_entrada": "24/07/2025",
-    "servico": "Pneu dianteiro L/E Furado - (Fazenda NSA)\nSolicitado Sr. Vitor\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "78",
-    "cd_equipamento": "78",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "115189",
-    "data_entrada": "24/07/2025",
-    "servico": "Pneu furado  - (Fazenda Casa Branca)\nLado ??\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "222",
-    "cd_equipamento": "222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115185",
-    "data_entrada": "24/07/2025",
-    "servico": "Vazamento no bico do pneu traseiro L/D - (Fazenda Casa Branca)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5383",
-    "cd_equipamento": "5383",
-    "modelo": "CARRINHO MOTOR DE IRRIGACAO",
-    "os": "115180",
-    "data_entrada": "24/07/2025",
-    "servico": "Pneu L/E furado - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5221",
-    "cd_equipamento": "5221",
-    "modelo": "TANQUE DE AGUA 6500L R16 VERM.",
-    "os": "115171",
-    "data_entrada": "23/07/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "198",
     "cd_equipamento": "198",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -126,29 +46,5 @@
     "os": "115041",
     "data_entrada": "22/07/2025",
     "servico": "Pneu dianteiro L/D furado - (Indústria)\nSolicitado Sr. Jeovane\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5270",
-    "cd_equipamento": "5270",
-    "modelo": "PULVERIZADOR FACCHINI 6000 LT",
-    "os": "114919",
-    "data_entrada": "21/07/2025",
-    "servico": "Pneu L/E furado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5326",
-    "cd_equipamento": "5326",
-    "modelo": "CARRETA SCHULTER 12 BEGUES",
-    "os": "114769",
-    "data_entrada": "18/07/2025",
-    "servico": "Pneu dianteiro lado esquerdo furado (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "155",
-    "cd_equipamento": "155",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "114194",
-    "data_entrada": "14/07/2025",
-    "servico": "Trocar os pneus dianteiro - Faz Minuano\nAutorizado Mauricio"
   }
 ]

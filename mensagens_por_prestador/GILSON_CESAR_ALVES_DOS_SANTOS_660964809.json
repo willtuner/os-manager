@@ -1,13 +1,5 @@
 [
   {
-    "frota": "5225",
-    "cd_equipamento": "5225",
-    "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
-    "os": "115379",
-    "data_entrada": "28/07/2025",
-    "servico": "Realizar regulagem do guia responsável pelo enrolamento da mangueira do carretel do sistema HidroRoll, garantindo alinhamento adequado durante o recolhimento. - (Fazenda São Paulo)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5418",
     "cd_equipamento": "5418",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -32,14 +24,6 @@
     "servico": "Trocar cabeçalho  (Pecuária)\nSolicitado Sr. Bruno Franco\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5779",
-    "cd_equipamento": "5779",
-    "modelo": "VALETADEIRA",
-    "os": "115322",
-    "data_entrada": "25/07/2025",
-    "servico": "Retentor do eixo do cardã estourado - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5082",
     "cd_equipamento": "5082",
     "modelo": "SULCADOR P/ PLANTIO LARANJA",
@@ -54,13 +38,5 @@
     "os": "114993",
     "data_entrada": "22/07/2025",
     "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5171",
-    "cd_equipamento": "5171",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "111430",
-    "data_entrada": "27/05/2025",
-    "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

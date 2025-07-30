@@ -1,21 +1,5 @@
 [
   {
-    "frota": "5705",
-    "cd_equipamento": "5705",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "115392",
-    "data_entrada": "28/07/2025",
-    "servico": "Trocar filtro principal - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5233",
-    "cd_equipamento": "5233",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "115357",
-    "data_entrada": "26/07/2025",
-    "servico": "Fazer solda em trincas e trocar reparos do pistão com vazamento - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5626",
     "cd_equipamento": "5626",
     "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
@@ -40,35 +24,11 @@
     "servico": "Revisar bomba, vazamento de óleo e misturando óleo ao produto - (Fazenda São Pedro)\nSolicitado Sr. Romes\nRepsonsavel Sr. Mauricio"
   },
   {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "115313",
-    "data_entrada": "25/07/2025",
-    "servico": "Quebra do rolamento da polia do eixo da turbina e quebra da correia - (Fazenda São Pedro)\nSolicitado Sr. Josimar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5421",
-    "cd_equipamento": "5421",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "115312",
-    "data_entrada": "25/07/2025",
-    "servico": "Fazer solda em trinca na estrutura - (Fazenda São Pedro)\nSolicitado Sr. Josimar \nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5403",
     "cd_equipamento": "5403",
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "115152",
     "data_entrada": "23/07/2025",
     "servico": "Verificar rolamento e eixo da turbina, ruído anormal - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5611",
-    "cd_equipamento": "5611",
-    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-    "os": "112366",
-    "data_entrada": "12/06/2025",
-    "servico": "Fazer solda nas proteções anti-arremesso e trocar jogo de martelos - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

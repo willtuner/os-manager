@@ -1,45 +1,5 @@
 [
   {
-    "frota": "144",
-    "cd_equipamento": "144",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "115412",
-    "data_entrada": "28/07/2025",
-    "servico": "Verificar sirene de ré não funciona - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "27",
-    "cd_equipamento": "27",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "115402",
-    "data_entrada": "28/07/2025",
-    "servico": "Verificar trator sem partida (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5736",
-    "cd_equipamento": "5736",
-    "modelo": "ADUBADORA E SEMEADORA MS100",
-    "os": "115396",
-    "data_entrada": "28/07/2025",
-    "servico": "Avaliar motor eletrico não liga - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "271",
-    "cd_equipamento": "271",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115391",
-    "data_entrada": "28/07/2025",
-    "servico": "Sensor de restrição de ar não está funcionando corretamente. Suspeita de defeito no conector. Foi realizado teste direto, e o sinal de restrição acendeu no painel, confirmando que o sensor está operante. - (Fazenda Santa Luiza)\nSolicitado Sr. John Lennon\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "270",
-    "cd_equipamento": "270",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115384",
-    "data_entrada": "28/07/2025",
-    "servico": "Cibié traseiro com fios rompidos e lanterna dianteira de teto L/D quebrada - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "231",
     "cd_equipamento": "231",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -112,22 +72,6 @@
     "servico": "Verificar sirene de ré e buzina não funcionam - (Fazenda Bela Manhã)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "67",
-    "cd_equipamento": "67",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "115184",
-    "data_entrada": "24/07/2025",
-    "servico": "Trator sem partida, mesmo com bateria nova.\nAo girar a chave, apenas um estalo é emitido, como se estivesse sem carga. - (Fazenda Santa Luiza)\nSolicitado Sr. John Lennon\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10120",
-    "cd_equipamento": "10120",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115111",
-    "data_entrada": "23/07/2025",
-    "servico": "Revisar sinalização, buzina e alertas não funcionam - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "10217",
     "cd_equipamento": "10217",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -136,155 +80,11 @@
     "servico": "Sinalização não funciona  - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "10220",
-    "cd_equipamento": "10220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115049",
-    "data_entrada": "22/07/2025",
-    "servico": "Verificar faróis queimados e cibié de teto não ascendem - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "268",
-    "cd_equipamento": "268",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114994",
-    "data_entrada": "22/07/2025",
-    "servico": "Troca da sinaleira dianteira L/D (RE217551)  com a lente quebrada e cibié queimado - (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "22",
     "cd_equipamento": "22",
     "modelo": "TRATOR VALTRA BH 180 4X4",
     "os": "114911",
     "data_entrada": "21/07/2025",
     "servico": "Verificar trator sem partida - (Fazenda Estrela)\nSolicitado Sr. ANTONIO VINICIO\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "332",
-    "cd_equipamento": "332",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "114807",
-    "data_entrada": "19/07/2025",
-    "servico": "Cibié traseiro queimado - (Fazenda São Paulo)\nSolicitado Sr. Geovane \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "132",
-    "cd_equipamento": "132",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "114768",
-    "data_entrada": "18/07/2025",
-    "servico": "Trator sem partida (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "109",
-    "cd_equipamento": "109",
-    "modelo": "TRATOR MASSEY FERGUSON 290",
-    "os": "114753",
-    "data_entrada": "18/07/2025",
-    "servico": "Trocar lanterna dianteira lado esquerdo quebrado (Pecuária)\nSolicitado Sr. Gabriel\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "90",
-    "cd_equipamento": "90",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "114732",
-    "data_entrada": "18/07/2025",
-    "servico": "Verificar cibié do teto L/E não ascende, e cibié da podadeira queimado - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5757",
-    "cd_equipamento": "5757",
-    "modelo": "SOPRADOR BG 56",
-    "os": "114696",
-    "data_entrada": "17/07/2025",
-    "servico": "Revisão parte elétrica (Fazenda São José)\nSolicitado Sr. Carlos\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "5699",
-    "cd_equipamento": "5699",
-    "modelo": "PULVERIZADOR 600 LT",
-    "os": "114535",
-    "data_entrada": "16/07/2025",
-    "servico": "Verificar equipamento de dransh, que não está acionando - (Fazenda Santa Izabel\nSolicitado Sr. Diego Camboi \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "268",
-    "cd_equipamento": "268",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114531",
-    "data_entrada": "16/07/2025",
-    "servico": "Cibié do teto queimado L/D - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "72",
-    "cd_equipamento": "72",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "114317",
-    "data_entrada": "15/07/2025",
-    "servico": "Verificar trator sem partida - (Industria)\nSolicitado Sr. Geovane (Mestre de Obra)\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "83",
-    "cd_equipamento": "83",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "114264",
-    "data_entrada": "15/07/2025",
-    "servico": "Revisar sistema de iluminação, não ascende os cibié de teto - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "274",
-    "cd_equipamento": "274",
-    "modelo": "TRATOR VALTRA T250 CVT",
-    "os": "114242",
-    "data_entrada": "14/07/2025",
-    "servico": "Substituir cibié traseiro devido à queima da lâmpada - (Fazenda Estrela 6)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "147",
-    "cd_equipamento": "147",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "114202",
-    "data_entrada": "14/07/2025",
-    "servico": "Revisar alternador - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "230",
-    "cd_equipamento": "230",
-    "modelo": "TRATOR VALTRA A124L 4X4",
-    "os": "114136",
-    "data_entrada": "11/07/2025",
-    "servico": "Verificar alternador não carrega a bateria - (Fazenda Estrela 6)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "329",
-    "cd_equipamento": "329",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "114001",
-    "data_entrada": "09/07/2025",
-    "servico": "Quebra da fixação das lanternas dianteiras - (Fazenda Estrela)\nSolicitado Sr. Paulo \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "265",
-    "cd_equipamento": "265",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113516",
-    "data_entrada": "30/06/2025",
-    "servico": "Instalar proteção das lanternas L/?? - (Fazenda Casa Branca)\nSolicitado Sr. João\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "332",
-    "cd_equipamento": "332",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "113064",
-    "data_entrada": "24/06/2025",
-    "servico": "Trocar lanterna traseira quebrada - (Fazenda SP)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "127",
-    "cd_equipamento": "127",
-    "modelo": "GATOR JOHNN DEERE",
-    "os": "106664",
-    "data_entrada": "06/03/2025",
-    "servico": "Revisão elétrica (Oficina)\n(solicitante William)"
   }
 ]
