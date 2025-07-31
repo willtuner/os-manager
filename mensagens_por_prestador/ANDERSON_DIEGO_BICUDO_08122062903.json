@@ -1,11 +1,51 @@
 [
   {
-    "frota": "263",
-    "cd_equipamento": "263",
+    "frota": "132",
+    "cd_equipamento": "132",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "115446",
+    "data_entrada": "29/07/2025",
+    "servico": "Verificar equipamento perdendo força no hidráulico - (Fazenda Casa Branca)\nP.S já trocado filtro de hidráulico \nSolicitado Sr. Valdomiro\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "191",
+    "cd_equipamento": "191",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "115444",
+    "data_entrada": "29/07/2025",
+    "servico": "Vazamento de óleo nos engate rápido e ruído anormal na roda traseira - (Fazenda Terra Branca)\nSolicitado Sr. Valdomiro \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "303",
+    "cd_equipamento": "303",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115051",
-    "data_entrada": "22/07/2025",
-    "servico": "Verificar alavanca de acionamento dos ramal L/D não funcionam - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+    "os": "115423",
+    "data_entrada": "28/07/2025",
+    "servico": "Cano do retorno da bomba injetora furado - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "228",
+    "cd_equipamento": "228",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "115413",
+    "data_entrada": "28/07/2025",
+    "servico": "Vazamento na mangueira do radiador - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "274",
+    "cd_equipamento": "274",
+    "modelo": "TRATOR VALTRA T250 CVT",
+    "os": "115408",
+    "data_entrada": "28/07/2025",
+    "servico": "Parafusos que seguram os lastros da roda faltando - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "72",
+    "cd_equipamento": "72",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "115390",
+    "data_entrada": "28/07/2025",
+    "servico": "Verificar falha no sistema de direção. Ao girar o volante, as rodas não acompanham o movimento - (Industria) \nResponsavel Sr. Arthur"
   },
   {
     "frota": "94",
@@ -14,14 +54,6 @@
     "os": "115040",
     "data_entrada": "22/07/2025",
     "servico": "Vazamento de óleo nos tuchos e embaixo dos braços hidráulicos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "211",
-    "cd_equipamento": "211",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "115036",
-    "data_entrada": "22/07/2025",
-    "servico": "Verificar vazamento de óleo na junta da parte dianteira do trator. Necessário identificar o ponto exato do vazamento e avaliar necessidade de substituição de juntas ou vedação. - (Fazenda São Paulo)\nSolicitado Sr. Leojabes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "198",
@@ -48,14 +80,6 @@
     "servico": "Trocar entalhado do pião - (Fazenda São Paulo - Oficina)\nSolicitado Sr. Diego Mecânico DMA\nResponsavel Sr. Carlos Aparecido Mariano"
   },
   {
-    "frota": "193",
-    "cd_equipamento": "193",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "114691",
-    "data_entrada": "17/07/2025",
-    "servico": "Trocar banco - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "289",
     "cd_equipamento": "289",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -72,6 +96,46 @@
     "servico": "TDP acionando sozinha - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
   },
   {
+    "frota": "222",
+    "cd_equipamento": "222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114012",
+    "data_entrada": "08/07/2025",
+    "servico": "Verificar vazamento na bomba de óleo hidráulico e nos tuchos do comando hidráulico - (Fazenda Estrela)\nSolicitado Sr. Carlos\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "192",
+    "cd_equipamento": "192",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "113610",
+    "data_entrada": "01/07/2025",
+    "servico": "Trocar cano do freio\nRetirado válvula de bloqueio p/ troca dos reparos e montado novamente\nRetirado cano de freio e levado p/ fazer mangueira na megaflex\nRetirado ar do sistema - Faz Terra Branca\nAutorizado Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113472",
+    "data_entrada": "30/06/2025",
+    "servico": "\"Mangueira de retorno da bomba injetora estourada, necessário substituir\nFeito troca da mangueira de retorno de combustível - (Fazenda Santa Luiza)\nSolicitado Sr. Izaias \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "132",
+    "cd_equipamento": "132",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "113125",
+    "data_entrada": "25/06/2025",
+    "servico": "Avaliar embreagem\nDesmontado caixa seca, trocado eixo primário e rolamentos.\n- Banco com defeito desmontado, feito troca.\n- Alavanca de marcha gasta feito troca/coifas.\n- Troca de mangueiras do freio.\n- Troca do reservatório de óleo de freio.\n- Troca do cabo do freio de mão .\n- Troca das mangueiras de direção da bomba.\n- Desmontado tampa da TDP.\n- Trocado tampa de óleo hidráulico. - Faz Santa Luiza\nAutorizado Arthur"
+  },
+  {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "112954",
+    "data_entrada": "21/06/2025",
+    "servico": "Verificar barulho a normal na TDP, trocar kit de embreagem e rolamentos, revisado reversor, trocado selos da capa seca, limpeza nos tanque de diesel, troca do reservatório do cilindro de freio, troca das mangueiras da sucção. trocar dos engates rápidos, revisar valvula da tração, soldar abraçadeira de fixação do acelerador, trocar capa do cardan, revisar alavanca de acionamento da TDP, trocado eixo, luva e o batente de acionamento da TDP   - Faz São Severino\nAutorizado Arthur"
+  },
+  {
     "frota": "65",
     "cd_equipamento": "65",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -86,6 +150,14 @@
     "os": "111906",
     "data_entrada": "03/06/2025",
     "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "98",
+    "cd_equipamento": "98",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "110570",
+    "data_entrada": "15/05/2025",
+    "servico": "Verificar trator não desengata marcha, revisar cambio, revisar parker, trocar vedação do comando, trocar reparo do cilindro de direção, trocar mangueiras do comando, recuperar haste do acelerador, trocar grades do capô - (Fazenda Casa Branca)\nLiberado Sr. Arthur\nPendencias 4313,  4612 e 4311\nCaixa de filtro e tampa do reservatório"
   },
   {
     "frota": "96",

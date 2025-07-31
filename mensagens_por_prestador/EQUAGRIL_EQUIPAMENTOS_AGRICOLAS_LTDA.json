@@ -1,18 +1,18 @@
 [
   {
+    "frota": "341",
+    "cd_equipamento": "341",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "115518",
+    "data_entrada": "30/07/2025",
+    "servico": "Vazamento na tampa do reservatório de fluido de freio - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "332",
     "cd_equipamento": "332",
     "modelo": "TRATOR NEW HOLANDTL5.80",
     "os": "114538",
     "data_entrada": "16/07/2025",
     "servico": "Revisão de 300 hrs - (Fazenda São Paulo)\n- Filtro de diesel\n- Filtro Sedimentador de diesel\n- Filtro de hidráulico\n- Filtro de motor\n-  Óleo de motor"
-  },
-  {
-    "frota": "227",
-    "cd_equipamento": "227",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "113641",
-    "data_entrada": "02/07/2025",
-    "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   }
 ]

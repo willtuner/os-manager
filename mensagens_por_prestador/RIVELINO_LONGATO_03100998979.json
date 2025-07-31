@@ -1,11 +1,27 @@
 [
   {
+    "frota": "5298",
+    "cd_equipamento": "5298",
+    "modelo": "CARRETA TRANSBORDO SCHULTER",
+    "os": "115583",
+    "data_entrada": "31/07/2025",
+    "servico": "Pneu furado L/? - (Fazenda São Severino) - (Parado)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "115580",
+    "data_entrada": "31/07/2025",
+    "servico": "Pneu traseiro L/D furado (Fazenda são Severino) - (Parado)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5747",
     "cd_equipamento": "5747",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "115456",
-    "data_entrada": "29/07/2025",
-    "servico": "Pneu L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+    "os": "115539",
+    "data_entrada": "30/07/2025",
+    "servico": "Pneu L/E estourado - (Fazenda Estrela) - (Parado)\nPneu de avião\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "103",
@@ -14,54 +30,6 @@
     "os": "115435",
     "data_entrada": "29/07/2025",
     "servico": "Pneu dianteiro L/D traseiro furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "115404",
-    "data_entrada": "28/07/2025",
-    "servico": "Pneu L/D furado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "228",
-    "cd_equipamento": "228",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "115394",
-    "data_entrada": "28/07/2025",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "290",
-    "cd_equipamento": "290",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115362",
-    "data_entrada": "26/07/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5399",
-    "cd_equipamento": "5399",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "115361",
-    "data_entrada": "26/07/2025",
-    "servico": "Verificar pneu L/E vazando pelo bico - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "145",
-    "cd_equipamento": "145",
-    "modelo": "PA CARREGADEIRA 924K",
-    "os": "115335",
-    "data_entrada": "25/07/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Terra Branca)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5383",
-    "cd_equipamento": "5383",
-    "modelo": "CARRINHO MOTOR DE IRRIGACAO",
-    "os": "115325",
-    "data_entrada": "25/07/2025",
-    "servico": "Pneu L/D soltando a parede lateral [400/60-15.5]  - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "198",

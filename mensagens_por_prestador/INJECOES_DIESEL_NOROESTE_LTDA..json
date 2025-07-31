@@ -1,8 +1,24 @@
 [
   {
+    "frota": "5470",
+    "cd_equipamento": "5470",
+    "modelo": "MOTOBOMBA MWM MOD 6.12TCA",
+    "os": "115513",
+    "data_entrada": "30/07/2025",
+    "servico": "Motor não mantem rotação - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur \nP.S Já trocado filtro de diesel"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115457",
+    "data_entrada": "29/07/2025",
+    "servico": "Vazamento de óleo diesel na bomba - (Fazenda Estrela)\nSolicitado Sr. Carlos (comboio)\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5484",
     "cd_equipamento": "5484",
-    "modelo": "GERADOR 5500 (AMARELO)",
+    "modelo": "GERADOR DE ENERGIA",
     "os": "115342",
     "data_entrada": "25/07/2025",
     "servico": "Equipamento não dá partida. Durante a verificação, foi identificado filtro de diesel sujo - (Fazenda Minuano)\nSolicitado Sr. Antônio Paulo\nResponsavel Sr.  Rafael"

@@ -1,10 +1,18 @@
 [
   {
-    "frota": "10217",
-    "cd_equipamento": "10217",
+    "frota": "218",
+    "cd_equipamento": "218",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115327",
-    "data_entrada": "25/07/2025",
-    "servico": "Perda dos parafusos do suporte do braço hidráulico lado direito (L/D) (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+    "os": "115470",
+    "data_entrada": "29/07/2025",
+    "servico": "Quebra do cabo do acelerador de pé e de mão - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "257",
+    "cd_equipamento": "257",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115405",
+    "data_entrada": "28/07/2025",
+    "servico": "Verificar vazamento de óleo nos engate rápido - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   }
 ]

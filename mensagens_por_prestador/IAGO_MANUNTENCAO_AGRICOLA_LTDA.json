@@ -1,11 +1,43 @@
 [
   {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "115491",
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "115571",
+    "data_entrada": "31/07/2025",
+    "servico": "Substituir rolamento da roda guia L/E - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5367",
+    "cd_equipamento": "5367",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "115541",
+    "data_entrada": "30/07/2025",
+    "servico": "Troca das correias - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5521",
+    "cd_equipamento": "5521",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "115525",
+    "data_entrada": "30/07/2025",
+    "servico": "Esticador da correia do agitador quebrado - (Fazenda  São Severino)\nSolicitado Sr. Cassio\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5502",
+    "cd_equipamento": "5502",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "115494",
     "data_entrada": "29/07/2025",
-    "servico": "Revisar regulador de pressão e cano quebrado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+    "servico": "Quebra da luva da cruzeta, folga no rolamento, vazamento na válvula solenoide - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Maruricio"
+  },
+  {
+    "frota": "5081",
+    "cd_equipamento": "5081",
+    "modelo": "ADUBADEIRA DCA DC 2500",
+    "os": "115493",
+    "data_entrada": "29/07/2025",
+    "servico": "Realizar corte de um gomo da esteira, pois o sistema de esticamento atingiu o limite e não há mais possibilidade de ajuste de tensão. - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5486",
@@ -38,5 +70,21 @@
     "os": "114105",
     "data_entrada": "10/07/2025",
     "servico": "Rosca do premix estragada. (Fazenda São Severino)\nSolicitante Sr. Cassio\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5398",
+    "cd_equipamento": "5398",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113963",
+    "data_entrada": "08/07/2025",
+    "servico": "Confeccionar e instalar ramal para distribuição dos bicos do SPE - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5399",
+    "cd_equipamento": "5399",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "113962",
+    "data_entrada": "08/07/2025",
+    "servico": "Confeccionar e instalar ramal para distribuição dos bicos do SPE - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
   }
 ]

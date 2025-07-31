@@ -1,11 +1,27 @@
 [
   {
-    "frota": "5225",
-    "cd_equipamento": "5225",
-    "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
-    "os": "115379",
-    "data_entrada": "28/07/2025",
-    "servico": "Realizar regulagem do guia responsável pelo enrolamento da mangueira do carretel do sistema HidroRoll, garantindo alinhamento adequado durante o recolhimento. - (Fazenda São Paulo)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+    "frota": "5383",
+    "cd_equipamento": "5383",
+    "modelo": "CARRINHO MOTOR DE IRRIGACAO",
+    "os": "115568",
+    "data_entrada": "31/07/2025",
+    "servico": "Trocar rolamento do esticador - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Mauricio"
+  },
+  {
+    "frota": "131",
+    "cd_equipamento": "131",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "115532",
+    "data_entrada": "30/07/2025",
+    "servico": "Colocar pino de fixação do rabicho - (Fazenda Estrela)\nSolicitado Sr. Izaias \nResponsavel Sr. Izaias"
+  },
+  {
+    "frota": "5571",
+    "cd_equipamento": "5571",
+    "modelo": "CARRETA TRANSBORDO GTM",
+    "os": "115527",
+    "data_entrada": "30/07/2025",
+    "servico": "Quebra do guincho - (Fazenda Estrela)\nSolicitado Sr. Valdomiro \nResponsavel Sr. Valdomiro"
   },
   {
     "frota": "5418",
@@ -46,6 +62,30 @@
     "os": "114993",
     "data_entrada": "22/07/2025",
     "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5094",
+    "cd_equipamento": "5094",
+    "modelo": "STARA ARPLAN 3000",
+    "os": "114258",
+    "data_entrada": "14/07/2025",
+    "servico": "Vazamento no pistão L/E da lamina\nRetirada do pistão lado esquerdo da lamina para troca de reparos - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5148",
+    "cd_equipamento": "5148",
+    "modelo": "CARRETA BAG C/ GUINCHO",
+    "os": "113414",
+    "data_entrada": "27/06/2025",
+    "servico": "Troca da redução da corrente e troca das mangueiras do guincho - (Fazenda Casa Branca)\nSolicitado Sr. Gilson\nAutorizado Sr. Valdomiro - Vadin"
+  },
+  {
+    "frota": "5571",
+    "cd_equipamento": "5571",
+    "modelo": "CARRETA TRANSBORDO GTM",
+    "os": "113156",
+    "data_entrada": "25/06/2025",
+    "servico": "Reformar equipamento - (Fazenda Estrela) - (Corporativo)\nSolicitado Sr. Valdomiro\nResponsavel Sr. Valdomiro"
   },
   {
     "frota": "5171",
