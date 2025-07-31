@@ -1,12 +1,5 @@
 [
   {
-    "frota": "5487",
-    "os": "115491",
-    "data": "29/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Revisar regulador de pressão e cano quebrado - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "86",
     "os": "115490",
     "data": "29/07/2025",
@@ -14,39 +7,11 @@
     "servico": "Verificar relogio horimetro não funciona - (Fazenda Casa Branca)"
   },
   {
-    "frota": "5261",
-    "os": "115487",
-    "data": "29/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fabricar proteção de partes moveis - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "288",
-    "os": "115449",
-    "data": "29/07/2025",
-    "prestador": "nan",
-    "servico": "Identificado vazamento de óleo na região frontal do motor, com escorrimento visível abaixo da bomba de combustível e nas proximidades do radiador - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "136",
     "os": "115084",
     "data": "22/07/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Vazamento no cubo da roda traseira (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5197",
-    "os": "115063",
-    "data": "22/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer proteção dos bicos de SPE - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "263",
-    "os": "115051",
-    "data": "22/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar alavanca de acionamento dos ramal L/D não funcionam - (Fazenda Casa Branca)"
   },
   {
     "frota": "10217",
@@ -70,13 +35,6 @@
     "servico": "Realizar serviço de fibra na capota do trator, recuperando danos estruturais e garantindo proteção adequada ao operador. - (Fazenda  Casa Branca)"
   },
   {
-    "frota": "90",
-    "os": "114732",
-    "data": "18/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar cibié do teto L/E não ascende, e cibié da podadeira queimado - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "5365",
     "os": "114245",
     "data": "14/07/2025",
@@ -89,5 +47,12 @@
     "data": "30/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar proteção das lanternas L/?? - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "98",
+    "os": "110570",
+    "data": "15/05/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar trator não desengata marcha, revisar cambio, revisar parker, trocar vedação do comando, trocar reparo do cilindro de direção, trocar mangueiras do comando, recuperar haste do acelerador, trocar grades do capô - (Fazenda Casa Branca)"
   }
 ]

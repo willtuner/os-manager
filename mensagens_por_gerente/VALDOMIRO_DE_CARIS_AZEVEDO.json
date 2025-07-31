@@ -1,16 +1,23 @@
 [
   {
+    "frota": "5571",
+    "os": "115527",
+    "data": "30/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Quebra do guincho - (Fazenda Estrela)"
+  },
+  {
     "frota": "132",
     "os": "115446",
     "data": "29/07/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar equipamento perdendo força no hidráulico - (Fazenda Casa Branca)"
   },
   {
     "frota": "191",
     "os": "115444",
     "data": "29/07/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento de óleo nos engate rápido e ruído anormal na roda traseira - (Fazenda Terra Branca)"
   },
   {
@@ -19,5 +26,33 @@
     "data": "18/07/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar baralho de engrenagens no cambio - Faz Terra Branca"
+  },
+  {
+    "frota": "192",
+    "os": "113610",
+    "data": "01/07/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar cano do freio"
+  },
+  {
+    "frota": "5148",
+    "os": "113414",
+    "data": "27/06/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Troca da redução da corrente e troca das mangueiras do guincho - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5571",
+    "os": "113156",
+    "data": "25/06/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Reformar equipamento - (Fazenda Estrela) - (Corporativo)"
+  },
+  {
+    "frota": "132",
+    "os": "113125",
+    "data": "25/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Avaliar embreagem"
   }
 ]

@@ -1,17 +1,66 @@
 [
   {
-    "frota": "228",
-    "os": "115413",
-    "data": "28/07/2025",
+    "frota": "5482",
+    "os": "115591",
+    "data": "31/07/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Quebra da corrente do rotor (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "5298",
+    "os": "115583",
+    "data": "31/07/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu furado L/? - (Fazenda São Severino) - (Parado)"
+  },
+  {
+    "frota": "234",
+    "os": "115578",
+    "data": "31/07/2025",
     "prestador": "nan",
-    "servico": "Vazamento na mangueira do radiador - (Fazenda São Severino)"
+    "servico": "Rompimento da conexão do eixo cardan responsável por transmitir a tração às rodas dianteiras - (Fazenda São Severino)"
+  },
+  {
+    "frota": "226",
+    "os": "115557",
+    "data": "30/07/2025",
+    "prestador": "nan",
+    "servico": "Verificar vazamento de óleo e eixo cardam da tração dianteira escapando - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5613",
+    "os": "115534",
+    "data": "30/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer solda em furo do ramal - (Fazenda São Severino)"
   },
   {
     "frota": "228",
-    "os": "115394",
+    "os": "115533",
+    "data": "30/07/2025",
+    "prestador": "nan",
+    "servico": "Avaliar vazamento de óleo nos canos do hidráulico - (Fazenda São Severino)"
+  },
+  {
+    "frota": "226",
+    "os": "115526",
+    "data": "30/07/2025",
+    "prestador": "nan",
+    "servico": "Teto da cabine do trator danificado, com estrutura comprometida (podre) e presença de furos, permitindo a entrada de sujeira e impurezas oriundas da pulverização. - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5521",
+    "os": "115525",
+    "data": "30/07/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Esticador da correia do agitador quebrado - (Fazenda  São Severino)"
+  },
+  {
+    "frota": "228",
+    "os": "115413",
     "data": "28/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda São Severino)"
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Vazamento na mangueira do radiador - (Fazenda São Severino)"
   },
   {
     "frota": "231",
@@ -35,10 +84,10 @@
     "servico": "Rosca do premix estragada. (Fazenda São Severino)"
   },
   {
-    "frota": "227",
-    "os": "113641",
-    "data": "02/07/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Verificar falha no acionamento da TDP (tomada de potência) do trator, que não está engatando ou respondendo ao comando. - (Fazenda São Severino)"
+    "frota": "233",
+    "os": "112954",
+    "data": "21/06/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Verificar barulho a normal na TDP, trocar kit de embreagem e rolamentos, revisado reversor, trocado selos da capa seca, limpeza nos tanque de diesel, troca do reservatório do cilindro de freio, troca das mangueiras da sucção. trocar dos engates rápidos, revisar valvula da tração, soldar abraçadeira de fixação do acelerador, trocar capa do cardan, revisar alavanca de acionamento da TDP, trocado eixo, luva e o batente de acionamento da TDP   - Faz São Severino"
   }
 ]
