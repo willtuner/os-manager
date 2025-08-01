@@ -1,12 +1,100 @@
 [
     {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5425",
+        "modelo": "PULVERIZADOR 2000 LT FMC",
+        "os": "115697",
+        "data_entrada": "01/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Quebra do rolamento da roda L/E - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+        "frota": "5600",
+        "modelo": "ATOMIZADOR NATALI 4000 LT",
+        "os": "115681",
+        "data_entrada": "01/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Instalar pistões do comando hidráulico - (Fazenda Nova Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
+        "frota": "5288",
+        "modelo": "PULVERIZADOR 4000 LT JACTO",
+        "os": "115676",
+        "data_entrada": "01/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Revisar bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "5126",
+        "modelo": "ADUBADEIRA KAMAQ 1500 KG",
+        "os": "115673",
+        "data_entrada": "01/08/2025",
+        "previsao_saida": "---",
+        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+        "servico": "Remover e desempenar caracol e comportas esta com o sistema de regulagem danificado  - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "5458",
+        "modelo": "MOTOR PIPA",
+        "os": "115671",
+        "data_entrada": "01/08/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Efetuar troca dos registros danificados - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "5747",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "115641",
+        "data_entrada": "01/08/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Soldar chapa de fixação das agulhas da torre - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOSIMAR BADIAS DE JESUS",
+        "frota": "195",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "115635",
+        "data_entrada": "01/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu traseiro L/E furado - (Fazenda São Pedro) - (Parado)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5366",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "115630",
+        "data_entrada": "01/08/2025",
+        "previsao_saida": "---",
+        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+        "servico": "Rompimento das correias responsáveis por transmitir a rotação do eixo até a turbina, através do conjunto de polias e instalar correia do misturador da bomba - (Fazenda Minuano) - (Parado)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "RENNAN ARCANJO CREPALDI",
         "frota": "5081",
         "modelo": "ADUBADEIRA DCA DC 2500",
         "os": "115612",
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Consertar esteira da adubadeira quebrada (Fazenda N. S. A.)",
         "liberado_por": "Mauricio"
     },
@@ -220,17 +308,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "RENNAN ARCANJO CREPALDI",
-        "frota": "5081",
-        "modelo": "ADUBADEIRA DCA DC 2500",
-        "os": "115493",
-        "data_entrada": "29/07/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Realizar corte de um gomo da esteira, pois o sistema de esticamento atingiu o limite e não há mais possibilidade de ajuste de tensão. - (Fazenda NSA)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "ANTONIO PAULO LARENTIS ALVES",
         "frota": "5766",
         "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -385,17 +462,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "RENNAN ARCANJO CREPALDI",
-        "frota": "5631",
-        "modelo": "DISTRIBUIDO FARTUS 15.0 GRANEL",
-        "os": "115383",
-        "data_entrada": "28/07/2025",
-        "previsao_saida": "---",
-        "prestador": "JHONY ANDERSON DE CASTRO LAFAYETE 02369",
-        "servico": "Fazer bucha do engate  (Fazenda NSA)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "NATALINO ANTONIO JUSTINO",
         "frota": "5259",
         "modelo": "PODADEIRA HID.GLOBAL 3500",
@@ -407,35 +473,13 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "RENNAN ARCANJO CREPALDI",
-        "frota": "5418",
-        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-        "os": "115355",
-        "data_entrada": "26/07/2025",
-        "previsao_saida": "---",
-        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Fabricar pino do pé de apoio do equipamento e bucha do cabeçalho. - (Fazenda NSA)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "RENNAN ARCANJO CREPALDI",
-        "frota": "5631",
-        "modelo": "DISTRIBUIDO FARTUS 15.0 GRANEL",
-        "os": "115354",
-        "data_entrada": "26/07/2025",
-        "previsao_saida": "---",
-        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Quebra do suporte de fixação do pé de apoio da máquina - (Fazenda NSA)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "WAGNER GALDINO DA SILVA",
         "frota": "5287",
         "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
         "os": "115353",
         "data_entrada": "26/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
         "servico": "Desentortar pé de apoio do equipamento, danificado por falha operacional. Segundo relato, o operador tentou movimentar o equipamento sem levantar o pé de apoio. - (Fazenda SL1)",
         "liberado_por": "Mauricio"
     },
