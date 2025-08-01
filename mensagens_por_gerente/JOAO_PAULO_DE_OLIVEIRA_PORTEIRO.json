@@ -1,5 +1,12 @@
 [
   {
+    "frota": "98",
+    "os": "115640",
+    "data": "01/08/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Inchaço na bateria do equipamento, o que pode indicar falha no sistema de carga (sobrecarga), defeito interno da bateria ou problemas no alternador/regulador de voltagem. - (Fazenda Casa Branca)"
+  },
+  {
     "frota": "86",
     "os": "115490",
     "data": "29/07/2025",
@@ -47,12 +54,5 @@
     "data": "30/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar proteção das lanternas L/?? - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "98",
-    "os": "110570",
-    "data": "15/05/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar trator não desengata marcha, revisar cambio, revisar parker, trocar vedação do comando, trocar reparo do cilindro de direção, trocar mangueiras do comando, recuperar haste do acelerador, trocar grades do capô - (Fazenda Casa Branca)"
   }
 ]

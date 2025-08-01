@@ -1,5 +1,19 @@
 [
   {
+    "frota": "5425",
+    "os": "115697",
+    "data": "01/08/2025",
+    "prestador": "nan",
+    "servico": "Quebra do rolamento da roda L/E - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5366",
+    "os": "115630",
+    "data": "01/08/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Rompimento das correias responsáveis por transmitir a rotação do eixo até a turbina, através do conjunto de polias e instalar correia do misturador da bomba - (Fazenda Minuano) - (Parado)"
+  },
+  {
     "frota": "5482",
     "os": "115591",
     "data": "31/07/2025",
@@ -17,14 +31,14 @@
     "frota": "234",
     "os": "115578",
     "data": "31/07/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Rompimento da conexão do eixo cardan responsável por transmitir a tração às rodas dianteiras - (Fazenda São Severino)"
   },
   {
     "frota": "226",
     "os": "115557",
     "data": "30/07/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar vazamento de óleo e eixo cardam da tração dianteira escapando - (Fazenda São Severino)"
   },
   {
@@ -38,7 +52,7 @@
     "frota": "228",
     "os": "115533",
     "data": "30/07/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Avaliar vazamento de óleo nos canos do hidráulico - (Fazenda São Severino)"
   },
   {
@@ -56,20 +70,6 @@
     "servico": "Esticador da correia do agitador quebrado - (Fazenda  São Severino)"
   },
   {
-    "frota": "228",
-    "os": "115413",
-    "data": "28/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Vazamento na mangueira do radiador - (Fazenda São Severino)"
-  },
-  {
-    "frota": "231",
-    "os": "115360",
-    "data": "26/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar RPM oscilando - (Fazenda São Severino)"
-  },
-  {
     "frota": "5488",
     "os": "115074",
     "data": "22/07/2025",
@@ -82,12 +82,5 @@
     "data": "10/07/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Rosca do premix estragada. (Fazenda São Severino)"
-  },
-  {
-    "frota": "233",
-    "os": "112954",
-    "data": "21/06/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar barulho a normal na TDP, trocar kit de embreagem e rolamentos, revisado reversor, trocado selos da capa seca, limpeza nos tanque de diesel, troca do reservatório do cilindro de freio, troca das mangueiras da sucção. trocar dos engates rápidos, revisar valvula da tração, soldar abraçadeira de fixação do acelerador, trocar capa do cardan, revisar alavanca de acionamento da TDP, trocado eixo, luva e o batente de acionamento da TDP   - Faz São Severino"
   }
 ]

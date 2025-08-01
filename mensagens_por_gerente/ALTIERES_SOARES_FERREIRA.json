@@ -14,13 +14,6 @@
     "servico": "Vazamento no sensor de pressão do óleo do motor - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "5470",
-    "os": "115513",
-    "data": "30/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Motor não mantem rotação - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "223",
     "os": "115462",
     "data": "29/07/2025",
@@ -52,14 +45,7 @@
     "frota": "217",
     "os": "113687",
     "data": "03/07/2025",
-    "prestador": "nan",
+    "prestador": "TAPECARIA PARANA LTDA",
     "servico": "Fabricar tapete para o assoalho do trator - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "245",
-    "os": "111563",
-    "data": "30/05/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Trator sem o pistão do capô, suporte quebrado - (Fazenda Pedra Verde)"
   }
 ]
