@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5458",
+    "cd_equipamento": "5458",
+    "modelo": "MOTOR PIPA",
+    "os": "115671",
+    "data_entrada": "01/08/2025",
+    "servico": "Efetuar troca dos registros danificados - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5106",
     "cd_equipamento": "5106",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -22,22 +30,6 @@
     "os": "115525",
     "data_entrada": "30/07/2025",
     "servico": "Esticador da correia do agitador quebrado - (Fazenda  São Severino)\nSolicitado Sr. Cassio\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5502",
-    "cd_equipamento": "5502",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "115494",
-    "data_entrada": "29/07/2025",
-    "servico": "Quebra da luva da cruzeta, folga no rolamento, vazamento na válvula solenoide - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Maruricio"
-  },
-  {
-    "frota": "5081",
-    "cd_equipamento": "5081",
-    "modelo": "ADUBADEIRA DCA DC 2500",
-    "os": "115493",
-    "data_entrada": "29/07/2025",
-    "servico": "Realizar corte de um gomo da esteira, pois o sistema de esticamento atingiu o limite e não há mais possibilidade de ajuste de tensão. - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5486",

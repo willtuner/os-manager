@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5747",
+    "cd_equipamento": "5747",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "115641",
+    "data_entrada": "01/08/2025",
+    "servico": "Soldar chapa de fixação das agulhas da torre - (Fazenda Estrela)\nSolicitado Sr. Carlos\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5081",
+    "cd_equipamento": "5081",
+    "modelo": "ADUBADEIRA DCA DC 2500",
+    "os": "115612",
+    "data_entrada": "31/07/2025",
+    "servico": "Consertar esteira da adubadeira quebrada (Fazenda N. S. A.)\nSolicitado Sr. Rennan)\nResponsável Sr. Mauricio"
+  },
+  {
     "frota": "5613",
     "cd_equipamento": "5613",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -118,6 +134,14 @@
     "os": "112593",
     "data_entrada": "16/06/2025",
     "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5045",
+    "cd_equipamento": "5045",
+    "modelo": "ADUBADERA CACAMBA TATU DC 5500",
+    "os": "112338",
+    "data_entrada": "11/06/2025",
+    "servico": "Revisão geral - (Oficina)\n- Verificar ajuste das 4 rodas, trocar parte da chapa do assoalho, parte traseira recuperar tones dos pratos, fixar pintar e fazer montagem, montar redutor, correias montar as duas esteiras, recuperar lixar e pintar.\nLiberado Sr. Rafael"
   },
   {
     "frota": "43",
