@@ -1,11 +1,27 @@
 [
   {
-    "frota": "5383",
-    "cd_equipamento": "5383",
-    "modelo": "CARRINHO MOTOR DE IRRIGACAO",
-    "os": "115568",
-    "data_entrada": "31/07/2025",
-    "servico": "Trocar rolamento do esticador - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Mauricio"
+    "frota": "5504",
+    "cd_equipamento": "5504",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "115912",
+    "data_entrada": "04/08/2025",
+    "servico": "Verificação e correção de folga no olhal de engate do implemento - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5722",
+    "cd_equipamento": "5722",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "115905",
+    "data_entrada": "04/08/2025",
+    "servico": "Fazer solda no pino de fixação dianteira - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "230",
+    "cd_equipamento": "230",
+    "modelo": "TRATOR VALTRA A124L 4X4",
+    "os": "115675",
+    "data_entrada": "01/08/2025",
+    "servico": "Sacar parafuso do rabicho quebrado e soldar argola para fixar corrente de segurança - (Fazenda Úrsula) \nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
   },
   {
     "frota": "131",
@@ -14,14 +30,6 @@
     "os": "115532",
     "data_entrada": "30/07/2025",
     "servico": "Colocar pino de fixação do rabicho - (Fazenda Estrela)\nSolicitado Sr. Izaias \nResponsavel Sr. Izaias"
-  },
-  {
-    "frota": "5571",
-    "cd_equipamento": "5571",
-    "modelo": "CARRETA TRANSBORDO GTM",
-    "os": "115527",
-    "data_entrada": "30/07/2025",
-    "servico": "Quebra do guincho - (Fazenda Estrela)\nSolicitado Sr. Valdomiro \nResponsavel Sr. Valdomiro"
   },
   {
     "frota": "5287",

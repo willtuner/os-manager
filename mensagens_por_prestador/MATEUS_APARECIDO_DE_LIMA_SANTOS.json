@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5403",
+    "cd_equipamento": "5403",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "115925",
+    "data_entrada": "04/08/2025",
+    "servico": "Quebra do rolamento do eixo da bomba dianteiro - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5088",
+    "cd_equipamento": "5088",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "115838",
+    "data_entrada": "04/08/2025",
+    "servico": "Quebra do rolamento da roda do lado direito, ocasionando o desprendimento da roda durante a operação - (Fazenda Alvorada) - (Parado)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5126",
     "cd_equipamento": "5126",
     "modelo": "ADUBADEIRA KAMAQ 1500 KG",
@@ -62,5 +78,13 @@
     "os": "115152",
     "data_entrada": "23/07/2025",
     "servico": "Verificar rolamento e eixo da turbina, ruído anormal - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "114872",
+    "data_entrada": "21/07/2025",
+    "servico": "Verificar barulho anormal no regulador/bomba e corrigir vazamento de produto na bomba.\nFazenda Alvorada\nSolicitado Sr. Natalino\nResponsável Sr. Maurício"
   }
 ]

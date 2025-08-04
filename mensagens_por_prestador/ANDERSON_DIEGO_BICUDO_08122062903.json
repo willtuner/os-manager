@@ -1,27 +1,35 @@
 [
   {
-    "frota": "209",
-    "cd_equipamento": "209",
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "115906",
+    "data_entrada": "04/08/2025",
+    "servico": "Realizar a retirada dos para-lamas e das proteções para possibilitar o reparo, e posteriormente efetuar a montagem dos para-lamas. Remover o cardan, instalar os pinos necessários e realizar a montagem completa. Trocar os engates rápidos e, por fim, montar o rabicho do trator. - (Fazenda SP/Oficina) \nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "221",
+    "cd_equipamento": "221",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115594",
-    "data_entrada": "31/07/2025",
-    "servico": "Verificar bomba de direção, verificar embreagem (Fazenda Santa Luiza)\nSolicitado Sr. John\nResponsavel Sr. Arthur"
+    "os": "115851",
+    "data_entrada": "04/08/2025",
+    "servico": "Remover vazamento dos cilindros de freio - Faz Estrela \nAutorizado Arthur"
   },
   {
-    "frota": "234",
-    "cd_equipamento": "234",
+    "frota": "233",
+    "cd_equipamento": "233",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "115578",
-    "data_entrada": "31/07/2025",
-    "servico": "Rompimento da conexão do eixo cardan responsável por transmitir a tração às rodas dianteiras - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
+    "os": "115850",
+    "data_entrada": "04/08/2025",
+    "servico": "Avaliar trator sem embreagem - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "226",
-    "cd_equipamento": "226",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "115557",
-    "data_entrada": "30/07/2025",
-    "servico": "Verificar vazamento de óleo e eixo cardam da tração dianteira escapando - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+    "frota": "80",
+    "cd_equipamento": "80",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "115845",
+    "data_entrada": "04/08/2025",
+    "servico": "Trocar parafuso e remover vazamentos do sistema de sensibilidade - Faz São Severino\nAutorizado Arthur"
   },
   {
     "frota": "228",
@@ -32,28 +40,20 @@
     "servico": "Avaliar vazamento de óleo nos canos do hidráulico - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
   },
   {
+    "frota": "119",
+    "cd_equipamento": "119",
+    "modelo": "TRATOR VALTRA A750F 4X4",
+    "os": "115524",
+    "data_entrada": "30/07/2025",
+    "servico": "Vazamento no sensor de pressão do óleo do motor - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Artrhur"
+  },
+  {
     "frota": "72",
     "cd_equipamento": "72",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "115390",
     "data_entrada": "28/07/2025",
     "servico": "Verificar falha no sistema de direção. Ao girar o volante, as rodas não acompanham o movimento - (Industria) \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "198",
-    "cd_equipamento": "198",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114743",
-    "data_entrada": "18/07/2025",
-    "servico": "Verificar baralho de engrenagens no cambio - Faz Terra Branca\nAutorizado Arthur"
-  },
-  {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "114726",
-    "data_entrada": "17/07/2025",
-    "servico": "Trocar entalhado do pião - (Fazenda São Paulo - Oficina)\nSolicitado Sr. Diego Mecânico DMA\nResponsavel Sr. Carlos Aparecido Mariano"
   },
   {
     "frota": "289",
