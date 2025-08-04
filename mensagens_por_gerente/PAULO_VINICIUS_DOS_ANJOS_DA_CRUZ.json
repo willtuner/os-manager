@@ -1,58 +1,79 @@
 [
   {
+    "frota": "288",
+    "os": "115911",
+    "data": "04/08/2025",
+    "prestador": NaN,
+    "servico": "Vazamento de óleo na polia do motor - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "222",
+    "os": "115878",
+    "data": "04/08/2025",
+    "prestador": NaN,
+    "servico": "Identificado vazamento de líquido de arrefecimento na região próxima à bomba injetora e vazamento de óleo no eixo do braço hidráulico - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "222",
+    "os": "115874",
+    "data": "04/08/2025",
+    "prestador": NaN,
+    "servico": "Sensor de restrição de ar do motor permanece inoperante mesmo após a substituição por novo componente. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "250",
+    "os": "115867",
+    "data": "04/08/2025",
+    "prestador": NaN,
+    "servico": "Vazamento de óleo de motor, e tensor da correia do motor com folga - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "250",
+    "os": "115864",
+    "data": "04/08/2025",
+    "prestador": NaN,
+    "servico": "Trocar borrachas de vedação da porta e banco danificado -  (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "221",
     "os": "115639",
     "data": "01/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar fusíveis dos cibie da cabine queimando - (Fazenda Estrela)"
+    "servico": "Verificar fusíveis dos cibie da cabine queimando - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
     "frota": "1005",
     "os": "115638",
     "data": "01/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar botão de acionamento do Cibié traseiro com mau contato - (Fazenda Estrela)"
+    "servico": "Verificar botão de acionamento do Cibié traseiro com mau contato - (Fazenda Estrela) \nFrota 1005 (AXD-5245)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5786",
     "os": "115592",
     "data": "31/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar parte elétrica do drash com problemas (Fazenda Estrela)"
+    "servico": "Revisar parte elétrica do drash com problemas (Fazenda Estrela)\nSolicitado Sr. Vinicius\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5367",
     "os": "115541",
     "data": "30/07/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Troca das correias - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5728",
-    "os": "115056",
-    "data": "22/07/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Verificar motor não liga e conjunto do cabeçote de corte com suporte da lâmina e tampa de proteção foi perdido durante a operação - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5768",
-    "os": "115054",
-    "data": "22/07/2025",
-    "prestador": "MORENA - MAQUINAS E FERRAGENS",
-    "servico": "Verificar roçadeira perdendo força - (Fazenda Estrela)"
+    "servico": "Troca das correias - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "309",
     "os": "114100",
     "data": "10/07/2025",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Trocar para-brisa trincado (Fazenda Estrela)"
+    "servico": "Trocar para-brisa trincado (Fazenda Estrela)\nSolicitante Sr. Paulo\nResponsável Sr. Arthur"
   },
   {
     "frota": "329",
     "os": "114001",
     "data": "09/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Quebra da fixação das lanternas dianteiras - (Fazenda Estrela)"
+    "servico": "Quebra da fixação das lanternas dianteiras - (Fazenda Estrela)\nSolicitado Sr. Paulo \nResponsavel Sr. Arthur"
   }
 ]

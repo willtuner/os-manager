@@ -1,79 +1,100 @@
 [
   {
-    "frota": "198",
-    "os": "115595",
-    "data": "31/07/2025",
-    "prestador": "nan",
-    "servico": "Trocar banco (Coorporativo)"
+    "frota": "02",
+    "os": "115933",
+    "data": "04/08/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar motor de partida danificado - (Viveiro)\nSolicitado Sr. Carlos Aparecido"
   },
   {
-    "frota": "198",
-    "os": "115168",
-    "data": "23/07/2025",
-    "prestador": "nan",
-    "servico": "*Consertar banco do motorista"
+    "frota": "216",
+    "os": "115910",
+    "data": "04/08/2025",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
+    "servico": "Trocar borrachas de vedação da porta - (Fazenda SP/Oficina)\nResponsavel Sr. Carlos Aparecido"
   },
   {
-    "frota": "198",
-    "os": "115177",
-    "data": "23/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Consertar pneu dianteiro esquerdo furado."
+    "frota": "216",
+    "os": "115909",
+    "data": "04/08/2025",
+    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
+    "servico": "Recuperar para-lamas traseiros - (Fazenda SP/Oficina)\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "216",
+    "os": "115908",
+    "data": "04/08/2025",
+    "prestador": NaN,
+    "servico": "Consertar escada trator \nConsertar suporte bateria \nPintar rodas\nAlinhar proteção para-lamas - (Fazenda SP/Oficina)\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "216",
+    "os": "115906",
+    "data": "04/08/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Realizar a retirada dos para-lamas e das proteções para possibilitar o reparo, e posteriormente efetuar a montagem dos para-lamas. Remover o cardan, instalar os pinos necessários e realizar a montagem completa. Trocar os engates rápidos e, por fim, montar o rabicho do trator. - (Fazenda SP/Oficina) \nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "216",
+    "os": "115848",
+    "data": "04/08/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Revisar sistema eletrico - (Fazenda SP/Oficina)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "5706",
+    "os": "115844",
+    "data": "04/08/2025",
+    "prestador": "F C DA SILVA LTDA",
+    "servico": "Revisar equipamento - (Corporativo/Oficina)\nSolicitado Sr. Carlos Aparecido"
   },
   {
     "frota": "5177",
     "os": "115114",
     "data": "23/07/2025",
-    "prestador": "nan",
-    "servico": "Instalar proteção do motor - (Corporativo)"
+    "prestador": NaN,
+    "servico": "Instalar proteção do motor - (Corporativo)\nSolicitado Sr. Carlos Aparecido"
   },
   {
     "frota": "5382",
     "os": "114983",
     "data": "21/07/2025",
-    "prestador": "nan",
-    "servico": "Colocar proteção de segurança (Coorporativo)"
+    "prestador": NaN,
+    "servico": "Colocar proteção de segurança (Coorporativo)\nSolicitado Sr. Carlos\nResponsável Sr. Carlos"
   },
   {
     "frota": "262",
     "os": "114757",
     "data": "18/07/2025",
     "prestador": "OMC AGRICOLA",
-    "servico": "Terceira marcha e grupo  C escapando:"
+    "servico": "Terceira marcha e grupo  C escapando:\nNecessário abrir o câmbio para manutenção, com remoção da cabine.\nVerificar sistema de direção travando em baixa rotação;\nVerificar e conferir pressão dos bicos injetores da bomba de injetora\nCorrigir vazamento na placa de sincronismo do motor\nVerificar demais vazamentos identificados.\nTroca de óleos e filtros\nÓleo do motor, câmbio/transmissão;\nFiltros de ar (interno e externo);\nEixos dianteiro e plantaria;\nFiltro de carvão ativado;\nFiltro de diesel.\nOutros serviços:\nTrocar carcaça do filtro de ar\nLavar radiador e intercooler\nRealizar lubrificação completa do equipamento\nAvaliar vazamento da mangueira hidráulica  SJ34091 (Oficina Prats)\nSolicitante Sr. Carlos\nResponsável Sr. Carlos"
   },
   {
     "frota": "5078",
     "os": "114750",
     "data": "18/07/2025",
-    "prestador": "nan",
-    "servico": "Corrigir trincas na estrutura avaliar redutor verificar suporte de rodas trocar sistema de proteção anti arremesso colocar concorrente instalar cardan e verificar rolamento e folga de rodas (Oficina)"
+    "prestador": NaN,
+    "servico": "Corrigir trincas na estrutura avaliar redutor verificar suporte de rodas trocar sistema de proteção anti arremesso colocar concorrente instalar cardan e verificar rolamento e folga de rodas (Oficina)\nSolicitante Sr. Carlos\nResponsável Sr. Carlos"
   },
   {
     "frota": "5528",
     "os": "114749",
     "data": "18/07/2025",
-    "prestador": "nan",
-    "servico": "Trocar aparelho de aplicação colocar no sistema gatech trocar suporte de plástico por suporte de ferro e fazer verificação no sistema estrutural e testar equipamento (Oficina)"
-  },
-  {
-    "frota": "216",
-    "os": "114726",
-    "data": "17/07/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar entalhado do pião - (Fazenda São Paulo - Oficina)"
+    "prestador": NaN,
+    "servico": "Trocar aparelho de aplicação colocar no sistema gatech trocar suporte de plástico por suporte de ferro e fazer verificação no sistema estrutural e testar equipamento (Oficina)\nSolicitante Sr. Carlos \nResponsável Sr. Carlos"
   },
   {
     "frota": "5757",
     "os": "114696",
     "data": "17/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisão parte elétrica (Fazenda São José)"
+    "servico": "Revisão parte elétrica (Fazenda São José)\nSolicitado Sr. Carlos\nResponsavel Sr. Carlos"
   },
   {
     "frota": "5153",
     "os": "114247",
     "data": "14/07/2025",
-    "prestador": "nan",
-    "servico": "Revisar equipamento - (Oficina/Viveiro)"
+    "prestador": NaN,
+    "servico": "Revisar equipamento - (Oficina/Viveiro)\nSolicitado Sr. Carlos \nResponsavel Sr. Carlos"
   }
 ]
