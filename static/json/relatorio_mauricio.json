@@ -1,13 +1,79 @@
 [
     {
+        "solicitante": "JOSIMAR BADIAS DE JESUS",
+        "frota": "5403",
+        "modelo": "PULVERIZADOR GULIVER 4000",
+        "os": "115925",
+        "data_entrada": "04/08/2025",
+        "previsao_saida": "---",
+        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+        "servico": "Quebra do rolamento do eixo da bomba dianteiro - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "5504",
+        "modelo": "PUL.TURBO 4000 NATALI ALFA",
+        "os": "115912",
+        "data_entrada": "04/08/2025",
+        "previsao_saida": "---",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+        "servico": "Verificação e correção de folga no olhal de engate do implemento - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "WAGNER GALDINO DA SILVA",
+        "frota": "5184",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "115907",
+        "data_entrada": "04/08/2025",
+        "previsao_saida": "---",
+        "prestador": "A MANOEL DA SILVA PNEUS ME",
+        "servico": "Pneu L/E furado - (Fazenda SL1)\nSolicitado Sr. Wagner\nResponsavel Sr. Mauricio",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "5722",
+        "modelo": "TANQUE DE AGUA 2000 LT",
+        "os": "115905",
+        "data_entrada": "04/08/2025",
+        "previsao_saida": "---",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+        "servico": "Fazer solda no pino de fixação dianteira - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "NATALINO ANTONIO JUSTINO",
+        "frota": "5088",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "115838",
+        "data_entrada": "04/08/2025",
+        "previsao_saida": "---",
+        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+        "servico": "Quebra do rolamento da roda do lado direito, ocasionando o desprendimento da roda durante a operação - (Fazenda Alvorada) - (Parado)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5451",
+        "modelo": "PULVERIZADOR BARRAS TRICICLO",
+        "os": "115837",
+        "data_entrada": "04/08/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Revisar embuchamento com folga - (Fazenda Alvorada)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
         "frota": "5425",
         "modelo": "PULVERIZADOR 2000 LT FMC",
         "os": "115697",
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Quebra do rolamento da roda L/E - (Fazenda São Severino)",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Quebra do rolamento da roda L/E - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -17,8 +83,8 @@
         "os": "115681",
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Instalar pistões do comando hidráulico - (Fazenda Nova Manhã)",
+        "prestador": NaN,
+        "servico": "Instalar pistões do comando hidráulico - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -28,8 +94,8 @@
         "os": "115676",
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Revisar bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)",
+        "prestador": NaN,
+        "servico": "Revisar bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -40,7 +106,7 @@
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Remover e desempenar caracol e comportas esta com o sistema de regulagem danificado  - (Fazenda São Pedro)",
+        "servico": "Remover e desempenar caracol e comportas esta com o sistema de regulagem danificado  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -51,7 +117,7 @@
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Efetuar troca dos registros danificados - (Fazenda Estrela)",
+        "servico": "Efetuar troca dos registros danificados - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -62,7 +128,7 @@
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Soldar chapa de fixação das agulhas da torre - (Fazenda Estrela)",
+        "servico": "Soldar chapa de fixação das agulhas da torre - (Fazenda Estrela)\nSolicitado Sr. Carlos\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -73,7 +139,7 @@
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu traseiro L/E furado - (Fazenda São Pedro) - (Parado)",
+        "servico": "Pneu traseiro L/E furado - (Fazenda São Pedro) - (Parado)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -84,18 +150,7 @@
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Rompimento das correias responsáveis por transmitir a rotação do eixo até a turbina, através do conjunto de polias e instalar correia do misturador da bomba - (Fazenda Minuano) - (Parado)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "RENNAN ARCANJO CREPALDI",
-        "frota": "5081",
-        "modelo": "ADUBADEIRA DCA DC 2500",
-        "os": "115612",
-        "data_entrada": "31/07/2025",
-        "previsao_saida": "---",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Consertar esteira da adubadeira quebrada (Fazenda N. S. A.)",
+        "servico": "Rompimento das correias responsáveis por transmitir a rotação do eixo até a turbina, através do conjunto de polias e instalar correia do misturador da bomba - (Fazenda Minuano) - (Parado)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -106,7 +161,7 @@
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
         "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Quebra da corrente do rotor (Fazenda Casa Branca)",
+        "servico": "Quebra da corrente do rotor (Fazenda Casa Branca)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -117,7 +172,7 @@
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Realinhar estrutura que está desalinhada e soldar trincas na parte traseira do tanque. (Fazenda São Pedro)",
+        "servico": "Realinhar estrutura que está desalinhada e soldar trincas na parte traseira do tanque. (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -127,8 +182,8 @@
         "os": "115588",
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Soldar trinca na base dos parafusos de fixação do multiplicador (Fazenda São Pedro)",
+        "prestador": NaN,
+        "servico": "Soldar trinca na base dos parafusos de fixação do multiplicador (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -139,7 +194,7 @@
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu furado L/? - (Fazenda São Severino) - (Parado)",
+        "servico": "Pneu furado L/? - (Fazenda São Severino) - (Parado)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -150,7 +205,7 @@
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu traseiro L/D furado (Fazenda são Severino) - (Parado)",
+        "servico": "Pneu traseiro L/D furado (Fazenda são Severino) - (Parado)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -161,7 +216,7 @@
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
         "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-        "servico": "Vazamento de produto na fibra - (Fazenda Bela Manhã)",
+        "servico": "Vazamento de produto na fibra - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -172,7 +227,7 @@
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Substituir rolamento da roda guia L/E - (Fazenda Estrela)",
+        "servico": "Substituir rolamento da roda guia L/E - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -182,19 +237,8 @@
         "os": "115569",
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Substituir retentor e rolamento dos multiplicadores - (Fazenda Estrela)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "5383",
-        "modelo": "CARRINHO MOTOR DE IRRIGACAO",
-        "os": "115568",
-        "data_entrada": "31/07/2025",
-        "previsao_saida": "---",
-        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Trocar rolamento do esticador - (Fazenda Pedra Verde)",
+        "prestador": NaN,
+        "servico": "Substituir retentor e rolamento dos multiplicadores - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -205,7 +249,7 @@
         "data_entrada": "31/07/2025",
         "previsao_saida": "---",
         "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Verificar vazamento no motor hidráulico - (Fazenda São Pedro)",
+        "servico": "Verificar vazamento no motor hidráulico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -215,8 +259,8 @@
         "os": "115556",
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Verificar um dos lados não aciona - (Fazenda Biscui)",
+        "prestador": NaN,
+        "servico": "Verificar um dos lados não aciona - (Fazenda Biscui)\nSolicitado Sr. Geovane\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -227,7 +271,7 @@
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
         "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Vazamento de óleo no pistão - (Fazenda Nova Manhã)",
+        "servico": "Vazamento de óleo no pistão - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -238,7 +282,7 @@
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Troca das correias - (Fazenda Estrela)",
+        "servico": "Troca das correias - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -249,7 +293,7 @@
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu L/E estourado - (Fazenda Estrela) - (Parado)",
+        "servico": "Pneu L/E estourado - (Fazenda Estrela) - (Parado)\nPneu de avião\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -260,7 +304,7 @@
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Fazer solda em furo do ramal - (Fazenda São Severino)",
+        "servico": "Fazer solda em furo do ramal - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -271,7 +315,7 @@
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Quebra do engate do rabicho - (Fazenda Bela Manhã)",
+        "servico": "Quebra do engate do rabicho - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -281,8 +325,8 @@
         "os": "115530",
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Verificar bomba, sem sucção - (Fazenda Estrela)",
+        "prestador": NaN,
+        "servico": "Verificar bomba, sem sucção - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio) - (Parado)\nResponsavel Sr. Mauricio \nCaminhão (AXD-5245)",
         "liberado_por": "Mauricio"
     },
     {
@@ -293,7 +337,7 @@
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Esticador da correia do agitador quebrado - (Fazenda  São Severino)",
+        "servico": "Esticador da correia do agitador quebrado - (Fazenda  São Severino)\nSolicitado Sr. Cassio\nResponsável Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -304,7 +348,7 @@
         "data_entrada": "30/07/2025",
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Avaliar quebra das correias da turbina com quebra recorrente - (Fazenda Pedra Verde)",
+        "servico": "Avaliar quebra das correias da turbina com quebra recorrente - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -314,8 +358,8 @@
         "os": "115492",
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Perda do pino de fixação da polia da hélice, ocasionando o desprendimento da mesma.- (Fazenda Minuano)",
+        "prestador": NaN,
+        "servico": "Perda do pino de fixação da polia da hélice, ocasionando o desprendimento da mesma.- (Fazenda Minuano)\nSolicitado Sr. Antonio\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -326,7 +370,7 @@
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
         "prestador": "JHONY ANDERSON DE CASTRO LAFAYETE 02369",
-        "servico": "Fazer bucha do engate da carreta. (Pecuária)",
+        "servico": "Fazer bucha do engate da carreta. (Pecuária)\nSolicitado Sr. Gabriel\nResponsável Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -336,8 +380,8 @@
         "os": "115472",
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Verificar cabeçalho da roçadeira desalinha - (Fazenda Estrela)",
+        "prestador": NaN,
+        "servico": "Verificar cabeçalho da roçadeira desalinha - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -348,7 +392,7 @@
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
         "prestador": "JHONY ANDERSON DE CASTRO LAFAYETE 02369",
-        "servico": "Fazer furacão na carcaça do diferencial e refazer rosca.",
+        "servico": "Fazer furacão na carcaça do diferencial e refazer rosca.\nQuebra do suporte de fixação do rotor - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -359,7 +403,7 @@
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS",
-        "servico": "Vazamento no comando - (Fazenda São Pedro)",
+        "servico": "Vazamento no comando - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -370,7 +414,7 @@
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
         "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Verificar aumento da velocidade da estrela, está muito alta - (Fazenda Estrela)",
+        "servico": "Verificar aumento da velocidade da estrela, está muito alta - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavl Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -381,7 +425,7 @@
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Trocar reparos do comando e vazamento no retentor  do eixo  da bomba - (Fazenda Estrela)",
+        "servico": "Trocar reparos do comando e vazamento no retentor  do eixo  da bomba - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -392,7 +436,7 @@
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Substituir jogo de fação e arrastador da roçadeira - (Fazenda Estrela)",
+        "servico": "Substituir jogo de fação e arrastador da roçadeira - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -403,7 +447,7 @@
         "data_entrada": "29/07/2025",
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu dianteiro L/D traseiro furado - (Fazenda Minuano)",
+        "servico": "Pneu dianteiro L/D traseiro furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -414,29 +458,7 @@
         "data_entrada": "28/07/2025",
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Colocar agulhas de fixação  perdidas e confeccionar chapas de fixação dos ramais quebrada - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "JOSIMAR BADIAS DE JESUS",
-        "frota": "5403",
-        "modelo": "PULVERIZADOR GULIVER 4000",
-        "os": "115409",
-        "data_entrada": "28/07/2025",
-        "previsao_saida": "---",
-        "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-        "servico": "Fazer fibra nas  hélices (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "5667",
-        "modelo": "PODADEIRA HIDRAUTEC HLD1",
-        "os": "115403",
-        "data_entrada": "28/07/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Vazamento nas mangueiras de óleo hidráulico - (Fazenda São Paulo)",
+        "servico": "Colocar agulhas de fixação  perdidas e confeccionar chapas de fixação dos ramais quebrada - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -447,7 +469,7 @@
         "data_entrada": "28/07/2025",
         "previsao_saida": "---",
         "prestador": "JHONY ANDERSON DE CASTRO LAFAYETE 02369",
-        "servico": "Recuperar pino e engate do cabeçario  - (Fazenda Úrsula)",
+        "servico": "Recuperar pino e engate do cabeçario  - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -458,7 +480,7 @@
         "data_entrada": "28/07/2025",
         "previsao_saida": "---",
         "prestador": "JHONY ANDERSON DE CASTRO LAFAYETE 02369",
-        "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)",
+        "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)\nSolicitado Sr. João\nResponsável Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -469,7 +491,7 @@
         "data_entrada": "26/07/2025",
         "previsao_saida": "---",
         "prestador": "11.268.880 ROSALINA QUINTINO SUETT",
-        "servico": "Afiar jogo de serra (4 discos) - (Fazenda Alvorada)",
+        "servico": "Afiar jogo de serra (4 discos) - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -480,7 +502,7 @@
         "data_entrada": "26/07/2025",
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Desentortar pé de apoio do equipamento, danificado por falha operacional. Segundo relato, o operador tentou movimentar o equipamento sem levantar o pé de apoio. - (Fazenda SL1)",
+        "servico": "Desentortar pé de apoio do equipamento, danificado por falha operacional. Segundo relato, o operador tentou movimentar o equipamento sem levantar o pé de apoio. - (Fazenda SL1)\nSolicitado Sr. Wagner\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -491,7 +513,7 @@
         "data_entrada": "25/07/2025",
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Trocar cabeçalho  (Pecuária)",
+        "servico": "Trocar cabeçalho  (Pecuária)\nSolicitado Sr. Bruno Franco\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -502,7 +524,7 @@
         "data_entrada": "25/07/2025",
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Vazamento de óleo no retentor do rotor principal - (Fazenda Alvorada)",
+        "servico": "Vazamento de óleo no retentor do rotor principal - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -513,7 +535,7 @@
         "data_entrada": "25/07/2025",
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Quebra do suporte de fixação do rotor - (Fazenda Alvorada)",
+        "servico": "Quebra do suporte de fixação do rotor - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -524,7 +546,7 @@
         "data_entrada": "24/07/2025",
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)",
+        "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)\nSolicitado Sr. João\nResponsável Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -535,7 +557,7 @@
         "data_entrada": "24/07/2025",
         "previsao_saida": "---",
         "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Coroa do pinhão da bomba com desgaste por atrito (roçada). Necessário substituir - (Fazenda Santa Izabel)",
+        "servico": "Coroa do pinhão da bomba com desgaste por atrito (roçada). Necessário substituir - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -546,7 +568,7 @@
         "data_entrada": "23/07/2025",
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Verificar rolamento e eixo da turbina, ruído anormal - (Fazenda São Pedro)",
+        "servico": "Verificar rolamento e eixo da turbina, ruído anormal - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -556,8 +578,8 @@
         "os": "115150",
         "data_entrada": "23/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Vazamento de óleo no pistão da concha do trator  - (Fazenda São Severino)",
+        "prestador": NaN,
+        "servico": "Vazamento de óleo no pistão da concha do trator  - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -568,7 +590,7 @@
         "data_entrada": "22/07/2025",
         "previsao_saida": "---",
         "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Vazamento de óleo na caixa de navalhas - (Fazenda São Severino)",
+        "servico": "Vazamento de óleo na caixa de navalhas - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -579,29 +601,7 @@
         "data_entrada": "22/07/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Fabricar caixa de transporte de produtos - (Fazenda Estrela)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-        "frota": "5728",
-        "modelo": "ROCADEIRA COSTAL FS 221 STIHL",
-        "os": "115056",
-        "data_entrada": "22/07/2025",
-        "previsao_saida": "---",
-        "prestador": "MORENA - MAQUINAS E FERRAGENS",
-        "servico": "Verificar motor não liga e conjunto do cabeçote de corte com suporte da lâmina e tampa de proteção foi perdido durante a operação - (Fazenda Estrela)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-        "frota": "5768",
-        "modelo": "ROCADEIRA COSTAL FS 221 STIHL",
-        "os": "115054",
-        "data_entrada": "22/07/2025",
-        "previsao_saida": "---",
-        "prestador": "MORENA - MAQUINAS E FERRAGENS",
-        "servico": "Verificar roçadeira perdendo força - (Fazenda Estrela)",
+        "servico": "Fabricar caixa de transporte de produtos - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -612,18 +612,7 @@
         "data_entrada": "22/07/2025",
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu dianteiro L/D furado - (Indústria)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "LEOJABES GUIMARAES SOUZA NASCIMENTO",
-        "frota": "5205",
-        "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
-        "os": "115022",
-        "data_entrada": "22/07/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Verificar e corrigir vazamento de óleo na caixa de facas traseira, barra de corte traseira quebrada e vazamento no pistão de levante da podadeira dianteira - (Fazenda São Paulo)",
+        "servico": "Pneu dianteiro L/E furado - (Indústria)\nSolicitado Sr. Jeovane\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -634,7 +623,7 @@
         "data_entrada": "22/07/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Readequar o suporte da caixa de transporte de produtos, que está quebrando com recorrência. Solicita-se também o aumento da capacidade da caixa, com instalação de modelo maior e reforçado. Substituir chapa inferior das asas direita e esquerda que estão com folga nas roldanas - (Fazenda São Pedro)",
+        "servico": "Readequar o suporte da caixa de transporte de produtos, que está quebrando com recorrência. Solicita-se também o aumento da capacidade da caixa, com instalação de modelo maior e reforçado. Substituir chapa inferior das asas direita e esquerda que estão com folga nas roldanas - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -645,7 +634,7 @@
         "data_entrada": "22/07/2025",
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)",
+        "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -656,7 +645,7 @@
         "data_entrada": "18/07/2025",
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
-        "servico": "Pneu dianteiro lado esquerdo furado (Fazenda Estrela)",
+        "servico": "Pneu dianteiro lado esquerdo furado (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsável Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -667,7 +656,7 @@
         "data_entrada": "17/07/2025",
         "previsao_saida": "---",
         "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-        "servico": "Trinca na fibra embaixo da cinta de fixação do tanque - (Fazenda Estrela)",
+        "servico": "Trinca na fibra embaixo da cinta de fixação do tanque - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -678,7 +667,7 @@
         "data_entrada": "17/07/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)",
+        "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -689,7 +678,7 @@
         "data_entrada": "17/07/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)",
+        "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -699,8 +688,8 @@
         "os": "114610",
         "data_entrada": "16/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Reformar corrente da valetadeira - (Fazenda Pedra Verde)",
+        "prestador": NaN,
+        "servico": "Reformar corrente da valetadeira - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -711,7 +700,7 @@
         "data_entrada": "15/07/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Nova Manhã)",
+        "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -721,8 +710,8 @@
         "os": "114245",
         "data_entrada": "14/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Fazer fibra na torre após pegar na bica de abastecimento - (Fazenda Casa Branca)",
+        "prestador": NaN,
+        "servico": "Fazer fibra na torre após pegar na bica de abastecimento - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -732,8 +721,8 @@
         "os": "114212",
         "data_entrada": "14/07/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Refazer ramais - (Fazenda Nova Manhã)",
+        "prestador": NaN,
+        "servico": "Refazer ramais - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -744,7 +733,7 @@
         "data_entrada": "14/07/2025",
         "previsao_saida": "---",
         "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-        "servico": "Refazer ramais - (Fazenda Nova Manhã)",
+        "servico": "Refazer ramais - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -755,7 +744,7 @@
         "data_entrada": "11/07/2025",
         "previsao_saida": "---",
         "prestador": "MORENA - MAQUINAS E FERRAGENS",
-        "servico": "Fazer revisão - (Fazenda Alvorada)",
+        "servico": "Fazer revisão - (Fazenda Alvorada)\nSolicitado Sr. Natalino \nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -766,7 +755,7 @@
         "data_entrada": "11/07/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Asa L/D torta - (Fazenda NSA)",
+        "servico": "Asa L/D torta - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -777,7 +766,7 @@
         "data_entrada": "10/07/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Rosca do premix estragada. (Fazenda São Severino)",
+        "servico": "Rosca do premix estragada. (Fazenda São Severino)\nSolicitante Sr. Cassio\nResponsável Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -788,7 +777,7 @@
         "data_entrada": "08/07/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Confeccionar e instalar ramal para distribuição dos bicos do SPE - (Fazenda Terra Branca)",
+        "servico": "Confeccionar e instalar ramal para distribuição dos bicos do SPE - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -799,7 +788,7 @@
         "data_entrada": "08/07/2025",
         "previsao_saida": "---",
         "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Confeccionar e instalar ramal para distribuição dos bicos do SPE - (Fazenda Terra Branca)",
+        "servico": "Confeccionar e instalar ramal para distribuição dos bicos do SPE - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -810,7 +799,7 @@
         "data_entrada": "07/07/2025",
         "previsao_saida": "---",
         "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-        "servico": "Fazer fibra na base turbina - (Fazenda Estrela)",
+        "servico": "Fazer fibra na base turbina - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -820,8 +809,8 @@
         "os": "113088",
         "data_entrada": "24/06/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Fazer fibra em trinca no tanque - (Fazenda Bela Manhã)",
+        "prestador": NaN,
+        "servico": "Fazer fibra em trinca no tanque - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -831,8 +820,8 @@
         "os": "112721",
         "data_entrada": "18/06/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Verificada ausência de 6 bicas de distribuição de sementes e de 1 conjunto de disco dosador - (Fazenda Bela Manhã)",
+        "prestador": NaN,
+        "servico": "Verificada ausência de 6 bicas de distribuição de sementes e de 1 conjunto de disco dosador - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nResponsável Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -843,7 +832,7 @@
         "data_entrada": "16/06/2025",
         "previsao_saida": "---",
         "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)",
+        "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -854,7 +843,7 @@
         "data_entrada": "27/05/2025",
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-        "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)",
+        "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio",
         "liberado_por": "Mauricio"
     },
     {
@@ -864,19 +853,8 @@
         "os": "110312",
         "data_entrada": "09/05/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Vazamento no pistão - (Fazenda Nova Manhã)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "5188",
-        "modelo": "PULVERIZADOR 600 LT MONTANA",
-        "os": "109725",
-        "data_entrada": "30/04/2025",
-        "previsao_saida": "---",
-        "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-        "servico": "Substituir polia do agitador da turbina-hélice, que se encontra quebrada, comprometendo o funcionamento do sistema de agitação da calda. Verificar o estado geral do mecanismo e demais componentes associados - (Fazenda São Pedro)",
+        "prestador": NaN,
+        "servico": "Vazamento no pistão - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio",
         "liberado_por": "Mauricio"
     }
 ]
