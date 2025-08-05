@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5747",
+    "cd_equipamento": "5747",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "115641",
+    "data_entrada": "01/08/2025",
+    "servico": "Soldar chapa de fixação das agulhas da torre - (Fazenda Estrela)\nSolicitado Sr. Carlos\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5613",
     "cd_equipamento": "5613",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -102,5 +110,45 @@
     "os": "113708",
     "data_entrada": "03/07/2025",
     "servico": "Fazer solda no suporte da escada e grade traseira para transporte de produtos - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "91",
+    "cd_equipamento": "91",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "113543",
+    "data_entrada": "30/06/2025",
+    "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
+  },
+  {
+    "frota": "5045",
+    "cd_equipamento": "5045",
+    "modelo": "ADUBADERA CACAMBA TATU DC 5500",
+    "os": "112338",
+    "data_entrada": "11/06/2025",
+    "servico": "Revisão geral - (Oficina)\n- Verificar ajuste das 4 rodas, trocar parte da chapa do assoalho, parte traseira recuperar tones dos pratos, fixar pintar e fazer montagem, montar redutor, correias montar as duas esteiras, recuperar lixar e pintar.\nLiberado Sr. Rafael"
+  },
+  {
+    "frota": "43",
+    "cd_equipamento": "43",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "112138",
+    "data_entrada": "06/06/2025",
+    "servico": "Confeccionar teto - (Oficina OMC)\nLiberado Sr. Rafael"
+  },
+  {
+    "frota": "5128",
+    "cd_equipamento": "5128",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "108401",
+    "data_entrada": "09/04/2025",
+    "servico": "Sistema SPE em contato com a proteção dos bicos. Necessário realinhar e ajustar a posição do conjunto para evitar interferências mecânicas e garantir o funcionamento adequado da pulverização - (Fazenda Nova Manhã)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "504",
+    "cd_equipamento": "504",
+    "modelo": "ONIBUS",
+    "os": "111421",
+    "data_entrada": "19/03/2025",
+    "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias"
   }
 ]

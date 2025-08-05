@@ -1,5 +1,61 @@
 [
   {
+    "frota": "5646",
+    "cd_equipamento": "5646",
+    "modelo": "TRANSBORDO MOD.TC-7000 GTM",
+    "os": "116146",
+    "data_entrada": "05/08/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Pedro)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "116120",
+    "data_entrada": "05/08/2025",
+    "servico": "Pneu L/D furado  - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116078",
+    "data_entrada": "05/08/2025",
+    "servico": "Pneu L/E deslocado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "10216",
+    "cd_equipamento": "10216",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116024",
+    "data_entrada": "05/08/2025",
+    "servico": "Pneu dianteiro L/D - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "195",
+    "cd_equipamento": "195",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115635",
+    "data_entrada": "01/08/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda São Pedro) - (Parado)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5298",
+    "cd_equipamento": "5298",
+    "modelo": "CARRETA TRANSBORDO SCHULTER",
+    "os": "115583",
+    "data_entrada": "31/07/2025",
+    "servico": "Pneu furado L/? - (Fazenda São Severino) - (Parado)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5494",
+    "cd_equipamento": "5494",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "115580",
+    "data_entrada": "31/07/2025",
+    "servico": "Pneu traseiro L/D furado (Fazenda são Severino) - (Parado)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5747",
     "cd_equipamento": "5747",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",

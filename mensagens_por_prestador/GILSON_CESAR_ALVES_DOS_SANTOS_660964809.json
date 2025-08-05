@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5027",
+    "cd_equipamento": "5027",
+    "modelo": "CARRETA SCHULTER 12 BEGUES",
+    "os": "116081",
+    "data_entrada": "05/08/2025",
+    "servico": "Vazamento de óleo hidráulico na mangueira - (Fazenda ?)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
+  },
+  {
+    "frota": "5504",
+    "cd_equipamento": "5504",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "115912",
+    "data_entrada": "04/08/2025",
+    "servico": "Verificação e correção de folga no olhal de engate do implemento - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5722",
+    "cd_equipamento": "5722",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "115905",
+    "data_entrada": "04/08/2025",
+    "servico": "Fazer solda no pino de fixação dianteira - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5287",
     "cd_equipamento": "5287",
     "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
@@ -22,5 +46,13 @@
     "os": "114993",
     "data_entrada": "22/07/2025",
     "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5171",
+    "cd_equipamento": "5171",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "111430",
+    "data_entrada": "27/05/2025",
+    "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

@@ -1,5 +1,61 @@
 [
   {
+    "frota": "253",
+    "cd_equipamento": "253",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116142",
+    "data_entrada": "05/08/2025",
+    "servico": "Trocar cabo da embreagem - Faz Minuano\nAutorizado Arthur"
+  },
+  {
+    "frota": "133",
+    "cd_equipamento": "133",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "115922",
+    "data_entrada": "04/08/2025",
+    "servico": "Quebra do cabo do acelerador do pé e de mão (Fazenda Casa Branca)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "219",
+    "cd_equipamento": "219",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115913",
+    "data_entrada": "04/08/2025",
+    "servico": "Quebra da tubagem do escapamento - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "288",
+    "cd_equipamento": "288",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115911",
+    "data_entrada": "04/08/2025",
+    "servico": "Vazamento de óleo na polia do motor - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "115906",
+    "data_entrada": "04/08/2025",
+    "servico": "Realizar a retirada dos para-lamas e das proteções para possibilitar o reparo, e posteriormente efetuar a montagem dos para-lamas. Remover o cardan, instalar os pinos necessários e realizar a montagem completa. Trocar os engates rápidos e, por fim, montar o rabicho do trator. - (Fazenda SP/Oficina) \nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "222",
+    "cd_equipamento": "222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115878",
+    "data_entrada": "04/08/2025",
+    "servico": "Identificado vazamento de líquido de arrefecimento na região próxima à bomba injetora e vazamento de óleo no eixo do braço hidráulico - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "222",
+    "cd_equipamento": "222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "115672",
+    "data_entrada": "01/08/2025",
+    "servico": "Verificar vazamento de aditivo - (Fazenda Estrela) \nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "228",
     "cd_equipamento": "228",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -30,5 +86,21 @@
     "os": "114527",
     "data_entrada": "16/07/2025",
     "servico": "Avaliar vazamento de óleo na parte frontal do trator - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "74",
+    "cd_equipamento": "74",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "111906",
+    "data_entrada": "03/06/2025",
+    "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
+  },
+  {
+    "frota": "96",
+    "cd_equipamento": "96",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "110515",
+    "data_entrada": "14/05/2025",
+    "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
   }
 ]
