@@ -1,86 +1,16 @@
 [
   {
-    "frota": "221",
-    "os": "115851",
-    "data": "04/08/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Remover vazamento dos cilindros de freio - Faz Estrela \nAutorizado Arthur"
-  },
-  {
-    "frota": "329",
-    "os": "115669",
-    "data": "01/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Fabricar e instalar proteções nos faróis laterais - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "5106",
-    "os": "115571",
-    "data": "31/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir rolamento da roda guia L/E - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5459",
-    "os": "115569",
-    "data": "31/07/2025",
-    "prestador": NaN,
-    "servico": "Substituir retentor e rolamento dos multiplicadores - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "10229",
-    "os": "115515",
-    "data": "30/07/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Quebra do suporte do banco - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5543",
     "os": "115472",
     "data": "29/07/2025",
-    "prestador": NaN,
-    "servico": "Verificar cabeçalho da roçadeira desalinha - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5482",
-    "os": "115463",
-    "data": "29/07/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Verificar aumento da velocidade da estrela, está muito alta - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavl Sr. Mauricio"
+    "prestador": "nan",
+    "servico": "Verificar cabeçalho da roçadeira desalinha - (Fazenda Estrela)"
   },
   {
     "frota": "329",
     "os": "115448",
     "data": "29/07/2025",
-    "prestador": NaN,
-    "servico": "Quebra do espelho retrovisor - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5543",
-    "os": "115447",
-    "data": "29/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir jogo de fação e arrastador da roçadeira - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "91",
-    "os": "113543",
-    "data": "30/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "10219",
-    "os": "113462",
-    "data": "30/06/2025",
-    "prestador": NaN,
-    "servico": "Recuperar lanternas e proteções laterais - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "5524",
-    "os": "112593",
-    "data": "16/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir chapas dos pratos/discos do sistema distribuidor, devido a desgaste - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Mauricio"
+    "prestador": "nan",
+    "servico": "Quebra do espelho retrovisor - (Fazenda Estrela)"
   }
 ]

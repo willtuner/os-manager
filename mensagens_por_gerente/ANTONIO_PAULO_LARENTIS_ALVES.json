@@ -1,58 +1,51 @@
 [
   {
-    "frota": "279",
-    "os": "115853",
-    "data": "04/08/2025",
-    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
-    "servico": "Revisão de 400 hrs  - (Preparo de solo)"
-  },
-  {
     "frota": "24",
     "os": "115516",
     "data": "30/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator sem partida - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+    "servico": "Verificar trator sem partida - (Fazenda Minuano)"
   },
   {
     "frota": "5766",
     "os": "115492",
     "data": "29/07/2025",
-    "prestador": NaN,
-    "servico": "Perda do pino de fixação da polia da hélice, ocasionando o desprendimento da mesma.- (Fazenda Minuano)\nSolicitado Sr. Antonio\nResponsavel Sr. Mauricio"
+    "prestador": "nan",
+    "servico": "Perda do pino de fixação da polia da hélice, ocasionando o desprendimento da mesma.- (Fazenda Minuano)"
   },
   {
     "frota": "103",
     "os": "115435",
     "data": "29/07/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D traseiro furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
+    "servico": "Pneu dianteiro L/D traseiro furado - (Fazenda Minuano)"
   },
   {
     "frota": "26",
     "os": "115407",
     "data": "28/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar trator sem partida - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+    "servico": "Avaliar trator sem partida - (Fazenda Minuano)"
   },
   {
     "frota": "5484",
     "os": "115342",
     "data": "25/07/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Equipamento não dá partida. Durante a verificação, foi identificado filtro de diesel sujo - (Fazenda Minuano)\nSolicitado Sr. Antônio Paulo\nResponsavel Sr.  Rafael"
+    "servico": "Equipamento não dá partida. Durante a verificação, foi identificado filtro de diesel sujo - (Fazenda Minuano)"
   },
   {
     "frota": "80",
     "os": "115150",
     "data": "23/07/2025",
-    "prestador": NaN,
-    "servico": "Vazamento de óleo no pistão da concha do trator  - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio"
+    "prestador": "nan",
+    "servico": "Vazamento de óleo no pistão da concha do trator  - (Fazenda São Severino)"
   },
   {
     "frota": "155",
     "os": "114194",
     "data": "14/07/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Trocar os pneus dianteiro - Faz Minuano\nAutorizado Mauricio"
+    "servico": "Trocar os pneus dianteiro - Faz Minuano"
   }
 ]
