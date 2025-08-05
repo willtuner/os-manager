@@ -1,37 +1,5 @@
 [
   {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "115912",
-    "data_entrada": "04/08/2025",
-    "servico": "Verificação e correção de folga no olhal de engate do implemento - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5722",
-    "cd_equipamento": "5722",
-    "modelo": "TANQUE DE AGUA 2000 LT",
-    "os": "115905",
-    "data_entrada": "04/08/2025",
-    "servico": "Fazer solda no pino de fixação dianteira - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "230",
-    "cd_equipamento": "230",
-    "modelo": "TRATOR VALTRA A124L 4X4",
-    "os": "115675",
-    "data_entrada": "01/08/2025",
-    "servico": "Sacar parafuso do rabicho quebrado e soldar argola para fixar corrente de segurança - (Fazenda Úrsula) \nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "131",
-    "cd_equipamento": "131",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "115532",
-    "data_entrada": "30/07/2025",
-    "servico": "Colocar pino de fixação do rabicho - (Fazenda Estrela)\nSolicitado Sr. Izaias \nResponsavel Sr. Izaias"
-  },
-  {
     "frota": "5287",
     "cd_equipamento": "5287",
     "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
@@ -48,27 +16,11 @@
     "servico": "Trocar cabeçalho  (Pecuária)\nSolicitado Sr. Bruno Franco\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5082",
-    "cd_equipamento": "5082",
-    "modelo": "SULCADOR P/ PLANTIO LARANJA",
-    "os": "115251",
-    "data_entrada": "24/07/2025",
-    "servico": "Fazer embuchamento do Sulcador (Fazenda Úrsula)\nSolicitado Sr. João\nResponsável Sr. Mauricio"
-  },
-  {
     "frota": "5774",
     "cd_equipamento": "5774",
     "modelo": "VALETADEIRA RTX 250",
     "os": "114993",
     "data_entrada": "22/07/2025",
     "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5171",
-    "cd_equipamento": "5171",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "111430",
-    "data_entrada": "27/05/2025",
-    "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

@@ -1,37 +1,5 @@
 [
   {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "115906",
-    "data_entrada": "04/08/2025",
-    "servico": "Realizar a retirada dos para-lamas e das proteções para possibilitar o reparo, e posteriormente efetuar a montagem dos para-lamas. Remover o cardan, instalar os pinos necessários e realizar a montagem completa. Trocar os engates rápidos e, por fim, montar o rabicho do trator. - (Fazenda SP/Oficina) \nSolicitado Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "221",
-    "cd_equipamento": "221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115851",
-    "data_entrada": "04/08/2025",
-    "servico": "Remover vazamento dos cilindros de freio - Faz Estrela \nAutorizado Arthur"
-  },
-  {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "115850",
-    "data_entrada": "04/08/2025",
-    "servico": "Avaliar trator sem embreagem - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "80",
-    "cd_equipamento": "80",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "115845",
-    "data_entrada": "04/08/2025",
-    "servico": "Trocar parafuso e remover vazamentos do sistema de sensibilidade - Faz São Severino\nAutorizado Arthur"
-  },
-  {
     "frota": "228",
     "cd_equipamento": "228",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -62,21 +30,5 @@
     "os": "114527",
     "data_entrada": "16/07/2025",
     "servico": "Avaliar vazamento de óleo na parte frontal do trator - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "74",
-    "cd_equipamento": "74",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "111906",
-    "data_entrada": "03/06/2025",
-    "servico": "Quebra do suporte do 3° ponto - (Fazenda SP)\nLiberado Sr. Arthur"
-  },
-  {
-    "frota": "96",
-    "cd_equipamento": "96",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "110515",
-    "data_entrada": "14/05/2025",
-    "servico": "Verificar freio estacionário não funciona - (Fazenda NSA)\nLiberado Sr. Arthur"
   }
 ]
