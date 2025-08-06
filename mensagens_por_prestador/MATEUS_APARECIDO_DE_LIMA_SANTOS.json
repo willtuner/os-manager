@@ -1,19 +1,35 @@
 [
   {
+    "frota": "5604",
+    "cd_equipamento": "5604",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "116227",
+    "data_entrada": "06/08/2025",
+    "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada.\nFazenda Pedra Verde\nSolicitado Sr. Cléber\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5136",
+    "cd_equipamento": "5136",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116226",
+    "data_entrada": "06/08/2025",
+    "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada.\nFazenda Pedra Verde\nSolicitado Sr. Cléber\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5133",
+    "cd_equipamento": "5133",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "116225",
+    "data_entrada": "06/08/2025",
+    "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada.\nFazenda Pedra Verde\nSolicitado Sr. Cléber\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5659",
     "cd_equipamento": "5659",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "116157",
     "data_entrada": "06/08/2025",
     "servico": "Verificar ramal do lado esquerdo não está fechando.\nFazenda São Pedro\nSolicitado Sr. Arthur\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5133",
-    "cd_equipamento": "5133",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "116043",
-    "data_entrada": "05/08/2025",
-    "servico": "Trocar jogo de reparos da bomba - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5126",
@@ -30,6 +46,14 @@
     "os": "115517",
     "data_entrada": "30/07/2025",
     "servico": "Avaliar quebra das correias da turbina com quebra recorrente - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5705",
+    "cd_equipamento": "5705",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "115392",
+    "data_entrada": "29/07/2025",
+    "servico": "Trocar filtro principal, trocas das mangueiras. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5659",

@@ -1,5 +1,85 @@
 [
   {
+    "frota": "89",
+    "cd_equipamento": "89",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116219",
+    "data_entrada": "06/08/2025",
+    "servico": "Quebra do pivô da roda dianteira L/D - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "79",
+    "cd_equipamento": "79",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116192",
+    "data_entrada": "06/08/2025",
+    "servico": "Vazamento no comando hidráulico - (Fazenda Terra Branca)\nSolicitado Sr. João Victor (Subgerente)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "254",
+    "cd_equipamento": "254",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116184",
+    "data_entrada": "06/08/2025",
+    "servico": "Cano da bomba d'água furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10220",
+    "cd_equipamento": "10220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116183",
+    "data_entrada": "06/08/2025",
+    "servico": "Sacar bujão do cárter - (Fazenda Casa Branca) \nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "90",
+    "cd_equipamento": "90",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116181",
+    "data_entrada": "06/08/2025",
+    "servico": "Aumentar/adequar tubagem do escapamento. Jogando fumaça no operador - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116179",
+    "data_entrada": "06/08/2025",
+    "servico": "Sacar bujão do cárter - (Fazenda São Paulo)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "102",
+    "cd_equipamento": "102",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "116148",
+    "data_entrada": "05/08/2025",
+    "servico": "Radiador furado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "191",
+    "cd_equipamento": "191",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "116099",
+    "data_entrada": "05/08/2025",
+    "servico": "Varão da embreagem quebrado - (Fazenda São Pedro)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "119",
+    "cd_equipamento": "119",
+    "modelo": "TRATOR VALTRA A750F 4X4",
+    "os": "116069",
+    "data_entrada": "05/08/2025",
+    "servico": "Verificar sistema de embreagem não aciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "156",
+    "cd_equipamento": "156",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "116025",
+    "data_entrada": "05/08/2025",
+    "servico": "Vazamento no retentor da caixa seca e da tração e trocar capa de proteção do eixo cardam - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "216",
     "cd_equipamento": "216",
     "modelo": "TRATOR JOHN DEERE 5070 E",
@@ -14,6 +94,14 @@
     "os": "115878",
     "data_entrada": "04/08/2025",
     "servico": "Identificado vazamento de líquido de arrefecimento na região próxima à bomba injetora e vazamento de óleo no eixo do braço hidráulico - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "250",
+    "cd_equipamento": "250",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "115867",
+    "data_entrada": "04/08/2025",
+    "servico": "Vazamento de óleo de motor, e tensor da correia do motor com folga - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Arthur"
   },
   {
     "frota": "222",

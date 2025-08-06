@@ -1,5 +1,13 @@
 [
   {
+    "frota": "223",
+    "cd_equipamento": "223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116221",
+    "data_entrada": "06/08/2025",
+    "servico": "Revisar sinalização - Cibié, piscar alerta e sirene de ré inoperantes - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "245",
     "cd_equipamento": "245",
     "modelo": "TRATOR MASSEY FERGUSON 3307",
@@ -16,6 +24,22 @@
     "servico": "Instalar cibié traseiro no teto para facilitar operação noturna - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "110",
+    "cd_equipamento": "110",
+    "modelo": "TRATOR MASSEY FERGUSON 275",
+    "os": "116174",
+    "data_entrada": "06/08/2025",
+    "servico": "Trocar correia do alternador danificada - (Fazenda Estrela)\nSolicitado Antônio Vinício\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "74",
+    "cd_equipamento": "74",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116141",
+    "data_entrada": "05/08/2025",
+    "servico": "Quebra da correia do alternador - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "126",
     "cd_equipamento": "126",
     "modelo": "GATOR JOHNN DEERE",
@@ -30,6 +54,14 @@
     "os": "116105",
     "data_entrada": "05/08/2025",
     "servico": "Chicote do cibié L/D rompido - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "70",
+    "cd_equipamento": "70",
+    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+    "os": "116048",
+    "data_entrada": "05/08/2025",
+    "servico": "Relogio horimetro apagado, verificar possível substituição do painel - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "10228",
@@ -72,36 +104,12 @@
     "servico": "Chicote do cibié traseiro L/E rompido - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5058",
-    "cd_equipamento": "5058",
-    "modelo": "PULVERIZADOR 600 LT FMC",
-    "os": "115892",
-    "data_entrada": "04/08/2025",
-    "servico": "Plug do chicote que vai no painel quebrado - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "228",
     "cd_equipamento": "228",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
     "os": "115886",
     "data_entrada": "04/08/2025",
     "servico": "Verificar luz da bateria permanece acesa no painel de instrumentos durante o funcionamento. Suspeita de falha no alternador. - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "222",
-    "cd_equipamento": "222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115874",
-    "data_entrada": "04/08/2025",
-    "servico": "Sensor de restrição de ar do motor permanece inoperante mesmo após a substituição por novo componente. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "94",
-    "cd_equipamento": "94",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "115849",
-    "data_entrada": "04/08/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
   },
   {
     "frota": "216",
@@ -166,14 +174,6 @@
     "os": "115592",
     "data_entrada": "31/07/2025",
     "servico": "Revisar parte elétrica do drash com problemas (Fazenda Estrela)\nSolicitado Sr. Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "235",
-    "cd_equipamento": "235",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "115586",
-    "data_entrada": "31/07/2025",
-    "servico": "Equipamento sem partida - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
   },
   {
     "frota": "24",

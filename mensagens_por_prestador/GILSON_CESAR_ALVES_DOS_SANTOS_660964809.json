@@ -1,13 +1,5 @@
 [
   {
-    "frota": "5027",
-    "cd_equipamento": "5027",
-    "modelo": "CARRETA SCHULTER 12 BEGUES",
-    "os": "116081",
-    "data_entrada": "05/08/2025",
-    "servico": "Vazamento de óleo hidráulico na mangueira - (Fazenda ?)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
-  },
-  {
     "frota": "5504",
     "cd_equipamento": "5504",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
@@ -24,14 +16,6 @@
     "servico": "Fazer solda no pino de fixação dianteira - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5287",
-    "cd_equipamento": "5287",
-    "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
-    "os": "115353",
-    "data_entrada": "26/07/2025",
-    "servico": "Desentortar pé de apoio do equipamento, danificado por falha operacional. Segundo relato, o operador tentou movimentar o equipamento sem levantar o pé de apoio. - (Fazenda SL1)\nSolicitado Sr. Wagner\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5168",
     "cd_equipamento": "5168",
     "modelo": "CARRETA AGRICOLA 5000 KG 4 ROD",
@@ -46,6 +30,30 @@
     "os": "114993",
     "data_entrada": "22/07/2025",
     "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5148",
+    "cd_equipamento": "5148",
+    "modelo": "CARRETA BAG C/ GUINCHO",
+    "os": "114915",
+    "data_entrada": "21/07/2025",
+    "servico": "Troca do reparo do pistão - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
+  },
+  {
+    "frota": "5421",
+    "cd_equipamento": "5421",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "114764",
+    "data_entrada": "18/07/2025",
+    "servico": "Consertar rabicho quebrado\nTroca do eixo do rabicho do tanque (Fazenda São Pedro)\nSolicitante Sr. Josimar \nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5709",
+    "cd_equipamento": "5709",
+    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
+    "os": "114147",
+    "data_entrada": "11/07/2025",
+    "servico": "Quebra do pino do engate do braço hidráulico\nTroca do pino de apoio do hidráulico da trincha - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5171",

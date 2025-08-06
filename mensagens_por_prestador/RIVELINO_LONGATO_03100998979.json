@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5298",
+    "cd_equipamento": "5298",
+    "modelo": "CARRETA TRANSBORDO SCHULTER",
+    "os": "116218",
+    "data_entrada": "06/08/2025",
+    "servico": "Pneu L/? estourado - (Fazenda São Severino) | Parado|\nSolicitado Sr.  Valdomiro\nResponsável Sr. Arthur"
+  },
+  {
     "frota": "10120",
     "cd_equipamento": "10120",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -62,46 +70,6 @@
     "os": "116024",
     "data_entrada": "05/08/2025",
     "servico": "Pneu dianteiro L/D - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "195",
-    "cd_equipamento": "195",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115635",
-    "data_entrada": "01/08/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda São Pedro) - (Parado)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5298",
-    "cd_equipamento": "5298",
-    "modelo": "CARRETA TRANSBORDO SCHULTER",
-    "os": "115583",
-    "data_entrada": "31/07/2025",
-    "servico": "Pneu furado L/? - (Fazenda São Severino) - (Parado)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5494",
-    "cd_equipamento": "5494",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "115580",
-    "data_entrada": "31/07/2025",
-    "servico": "Pneu traseiro L/D furado (Fazenda são Severino) - (Parado)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5747",
-    "cd_equipamento": "5747",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "115539",
-    "data_entrada": "30/07/2025",
-    "servico": "Pneu L/E estourado - (Fazenda Estrela) - (Parado)\nPneu de avião\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "103",
-    "cd_equipamento": "103",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "115435",
-    "data_entrada": "29/07/2025",
-    "servico": "Pneu dianteiro L/D traseiro furado - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5582",

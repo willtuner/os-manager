@@ -1,11 +1,27 @@
 [
   {
+    "frota": "247",
+    "cd_equipamento": "247",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "116222",
+    "data_entrada": "06/08/2025",
+    "servico": "Verificar A/C não gela - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "251",
     "cd_equipamento": "251",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "116169",
     "data_entrada": "06/08/2025",
     "servico": "Condensador de vapor - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "116166",
+    "data_entrada": "06/08/2025",
+    "servico": "Verificar A/C não gela - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "147",
