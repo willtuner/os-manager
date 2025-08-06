@@ -1,5 +1,37 @@
 [
   {
+    "frota": "10120",
+    "cd_equipamento": "10120",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116187",
+    "data_entrada": "06/08/2025",
+    "servico": "Pneu traseiro L/D e pneu dianteiro L/E furado - (Fazenda São Pedro) - |Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116182",
+    "data_entrada": "06/08/2025",
+    "servico": "Pneu L/E furado (Fazenda SP) - |Parado|\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5425",
+    "cd_equipamento": "5425",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "116167",
+    "data_entrada": "06/08/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5747",
+    "cd_equipamento": "5747",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "116156",
+    "data_entrada": "06/08/2025",
+    "servico": "Pneu L/E furado - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5646",
     "cd_equipamento": "5646",
     "modelo": "TRANSBORDO MOD.TC-7000 GTM",

@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5346",
+    "cd_equipamento": "5346",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "116155",
+    "data_entrada": "06/08/2025",
+    "servico": "Substituir aletas dos discos de distribuição.\nFazenda Aparecida\nSolicitado Sr. João Porteiro\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5747",
     "cd_equipamento": "5747",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
@@ -102,6 +110,14 @@
     "os": "113911",
     "data_entrada": "08/07/2025",
     "servico": "Fazer fibra no teto do trator - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Junior \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5621",
+    "cd_equipamento": "5621",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "110777",
+    "data_entrada": "03/07/2025",
+    "servico": "Fazer solda na estrutura e reforço e vazamento de óleo no multiplicador, alinhado proteção anti arremesso dianteiro, substituído retentor do multiplicador- (Fazenda Pedra Verde)\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5355",
