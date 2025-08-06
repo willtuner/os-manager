@@ -3,7 +3,7 @@
     "frota": "165",
     "os": "116195",
     "data": "06/08/2025",
-    "prestador": "nan",
+    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
     "servico": "Avaliar trator superaquecendo - (Fazenda São Severino) - |Parado|"
   },
   {
@@ -17,7 +17,7 @@
     "frota": "233",
     "os": "116166",
     "data": "06/08/2025",
-    "prestador": "nan",
+    "prestador": "JOCAR LTDA",
     "servico": "Verificar A/C não gela - (Fazenda São Severino)"
   },
   {
@@ -31,7 +31,7 @@
     "frota": "74",
     "os": "116141",
     "data": "05/08/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Quebra da correia do alternador - (Fazenda São Severino)"
   },
   {
@@ -47,13 +47,6 @@
     "data": "05/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar trator sem partida - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5058",
-    "os": "115892",
-    "data": "04/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Plug do chicote que vai no painel quebrado - (Fazenda São Severino)"
   },
   {
     "frota": "228",
@@ -75,20 +68,6 @@
     "data": "31/07/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Quebra da corrente do rotor (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5298",
-    "os": "115583",
-    "data": "31/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu furado L/? - (Fazenda São Severino) - (Parado)"
-  },
-  {
-    "frota": "5613",
-    "os": "115534",
-    "data": "30/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em furo do ramal - (Fazenda São Severino)"
   },
   {
     "frota": "228",
@@ -124,5 +103,12 @@
     "data": "10/07/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Rosca do premix estragada. (Fazenda São Severino)"
+  },
+  {
+    "frota": "5599",
+    "os": "113776",
+    "data": "02/07/2025",
+    "prestador": "AGROMAQ PECAS E SERVICOS LTDA",
+    "servico": "Verificar motor estacionário travando, pesando a partida e ruim para pegar."
   }
 ]

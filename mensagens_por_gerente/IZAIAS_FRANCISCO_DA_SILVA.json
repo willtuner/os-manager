@@ -17,15 +17,8 @@
     "frota": "191",
     "os": "116099",
     "data": "05/08/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Varão da embreagem quebrado - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5027",
-    "os": "116081",
-    "data": "05/08/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Vazamento de óleo hidráulico na mangueira - (Fazenda ?)"
   },
   {
     "frota": "5571",
@@ -42,6 +35,13 @@
     "servico": "Revisar sinalização - (Fazenda São Severino)"
   },
   {
+    "frota": "5148",
+    "os": "114915",
+    "data": "21/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Troca do reparo do pistão - (Fazenda São Paulo)"
+  },
+  {
     "frota": "5326",
     "os": "114769",
     "data": "18/07/2025",
@@ -54,5 +54,26 @@
     "data": "18/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trator sem partida (Fazenda Estrela)"
+  },
+  {
+    "frota": "196",
+    "os": "115704",
+    "data": "18/07/2025",
+    "prestador": "54.194.331 RODRIGO FERNANDES NEVES",
+    "servico": "Usinar volante da embreagem e regula platô - Oficina"
+  },
+  {
+    "frota": "132",
+    "os": "115431",
+    "data": "15/07/2025",
+    "prestador": "54.194.331 RODRIGO FERNANDES NEVES",
+    "servico": "Recuperar alavanca de acionamento da embreagem, soldar e furar - Oficina"
+  },
+  {
+    "frota": "191",
+    "os": "115429",
+    "data": "11/07/2025",
+    "prestador": "54.194.331 RODRIGO FERNANDES NEVES",
+    "servico": "Soldar suporte de acionamento da embreagem - Faz Pedro"
   }
 ]

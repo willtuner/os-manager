@@ -1,5 +1,12 @@
 [
   {
+    "frota": "247",
+    "os": "116222",
+    "data": "06/08/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar A/C não gela - (Fazenda Alvorada)"
+  },
+  {
     "frota": "5087",
     "os": "116201",
     "data": "06/08/2025",
@@ -68,6 +75,13 @@
     "data": "15/07/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Remover cornetas e rodas para liberação da carcaça visando recuperação de rosca danificada."
+  },
+  {
+    "frota": "5709",
+    "os": "114147",
+    "data": "11/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Quebra do pino do engate do braço hidráulico"
   },
   {
     "frota": "5426",

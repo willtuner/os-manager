@@ -7,13 +7,6 @@
     "servico": "Revisão de 50 horas (Fazenda São José)"
   },
   {
-    "frota": "316",
-    "os": "115505",
-    "data": "29/07/2025",
-    "prestador": "nan",
-    "servico": "Revisão de 1200 horas (Fazenda São José)"
-  },
-  {
     "frota": "5212",
     "os": "115498",
     "data": "29/07/2025",
@@ -33,6 +26,27 @@
     "data": "14/07/2025",
     "prestador": "CARLOS HENRIQUE DE OLIVEIRA 09476981911",
     "servico": "Solda na mangueira de óleo da turbina - (Fazenda São José)"
+  },
+  {
+    "frota": "210",
+    "os": "115174",
+    "data": "07/07/2025",
+    "prestador": "BORRACHARIA DO SHESHEO - CELINO F DAS N",
+    "servico": "Serviços de BORRACHARIA - (Faz. São José)"
+  },
+  {
+    "frota": "5636",
+    "os": "115173",
+    "data": "01/07/2025",
+    "prestador": "BORRACHARIA DO SHESHEO - CELINO F DAS N",
+    "servico": "Serviços de BORRACHARIA - (Faz. São José)"
+  },
+  {
+    "frota": "5224",
+    "os": "115167",
+    "data": "01/07/2025",
+    "prestador": "BORRACHARIA DO SHESHEO - CELINO F DAS N",
+    "servico": "Serviços de BORRACHARIA - (Faz. São José)"
   },
   {
     "frota": "5636",
@@ -63,10 +77,10 @@
     "servico": "Fazer embuchamento do suporte da concha (Fazenda São José)"
   },
   {
-    "frota": "262",
-    "os": "112679",
-    "data": "17/06/2025",
-    "prestador": "CARLOS HENRIQUE DE OLIVEIRA 09476981911",
-    "servico": "Troca da embreagem (Fazenda São José)"
+    "frota": "5267",
+    "os": "112171",
+    "data": "05/06/2025",
+    "prestador": "BORRACHARIA DO SHESHEO - CELINO F DAS N",
+    "servico": "Pneu lado direito furado (Fazenda São José)"
   }
 ]
