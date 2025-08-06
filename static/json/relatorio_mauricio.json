@@ -1,5 +1,104 @@
 [
     {
+        "solicitante": "NATALINO ANTONIO JUSTINO",
+        "frota": "5087",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "116201",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Quebra da mesa de suporte da bomba - (Fazenda Alvorada) - |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "10120",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "116187",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu traseiro L/D e pneu dianteiro L/E furado - (Fazenda São Pedro) - |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "5211",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "116182",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/E furado (Fazenda SP) - |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "5061",
+        "modelo": "ATOMIZADOR FMC 4000 LT",
+        "os": "116176",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento nas canecas da bomba, efetuar troca dos reparos - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5425",
+        "modelo": "PULVERIZADOR 2000 LT FMC",
+        "os": "116167",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/D furado - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "234",
+        "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+        "os": "116165",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar pedal do acelerador de pé enroscando - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5522",
+        "modelo": "PUL.TURBO 4000 NATALI ALFA",
+        "os": "116163",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento de óleo no pistão da barra - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "5748",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "116158",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Soldar chapa de fixação das agulhas da torre - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CARLOS HENRIQUE LEITE DONATO",
+        "frota": "5747",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "116156",
+        "data_entrada": "06/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/E furado - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "MURILO J ONCK LEMES DA SILVA",
         "frota": "5597",
         "modelo": "PULVERIZADOR 2000 LT FMC",
