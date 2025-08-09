@@ -1,10 +1,31 @@
 [
   {
-    "frota": "5604",
-    "os": "116227",
-    "data": "06/08/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada."
+    "frota": "5136",
+    "os": "116293",
+    "data": "07/08/2025",
+    "prestador": "AUTO MECANICA BAZANI",
+    "servico": "Solda no ramal - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5672",
+    "os": "116279",
+    "data": "07/08/2025",
+    "prestador": "AUTO MECANICA BAZANI",
+    "servico": "Fazer embuchamento da barra - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "113",
+    "os": "116265",
+    "data": "07/08/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Cruzeta do eixo dianteiro estourada - (Fazenda Pedra Verde) |Parado|"
+  },
+  {
+    "frota": "100",
+    "os": "116264",
+    "data": "07/08/2025",
+    "prestador": "nan",
+    "servico": "Verificar ruído anormal no câmbio - (Fazenda Pedra Verde/Oficina)"
   },
   {
     "frota": "5136",
@@ -14,18 +35,18 @@
     "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada."
   },
   {
+    "frota": "5604",
+    "os": "116227",
+    "data": "06/08/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada, e arrumar reparo na bomba."
+  },
+  {
     "frota": "5133",
     "os": "116225",
     "data": "06/08/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada."
-  },
-  {
-    "frota": "223",
-    "os": "116221",
-    "data": "06/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar sinalização - Cibié, piscar alerta e sirene de ré inoperantes - (Fazenda Pedra Verde)"
   },
   {
     "frota": "119",
@@ -40,27 +61,6 @@
     "data": "30/07/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento no sensor de pressão do óleo do motor - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "223",
-    "os": "115462",
-    "data": "29/07/2025",
-    "prestador": "BAZANI MECANICA E AUTO PECAS",
-    "servico": "Trocar reparos do pistão - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "283",
-    "os": "115388",
-    "data": "28/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator sem partida - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "299",
-    "os": "115708",
-    "data": "22/07/2025",
-    "prestador": "54.194.331 RODRIGO FERNANDES NEVES",
-    "servico": "Usinar volante e regular platô - Faz Pedra Verde"
   },
   {
     "frota": "223",
