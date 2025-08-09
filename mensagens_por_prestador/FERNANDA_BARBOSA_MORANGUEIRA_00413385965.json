@@ -1,5 +1,13 @@
 [
   {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "116342",
+    "data_entrada": "08/08/2025",
+    "servico": "Remover e reformar banco do operador - (Fazenda Pedra Verde/Oficina)\nSolicitado Sr. Carlos\nResponsavel Sr. Carlos"
+  },
+  {
     "frota": "216",
     "cd_equipamento": "216",
     "modelo": "TRATOR JOHN DEERE 5070 E",
@@ -22,13 +30,5 @@
     "os": "114100",
     "data_entrada": "10/07/2025",
     "servico": "Trocar para-brisa trincado (Fazenda Estrela)\nSolicitante Sr. Paulo\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "70",
-    "cd_equipamento": "70",
-    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
-    "os": "113473",
-    "data_entrada": "30/06/2025",
-    "servico": "Trava do capô quebrada - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo \nResponsavel Sr. Arthur"
   }
 ]

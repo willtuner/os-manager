@@ -1,5 +1,61 @@
 [
   {
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116391",
+    "data_entrada": "09/08/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116389",
+    "data_entrada": "08/08/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5247",
+    "cd_equipamento": "5247",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "116341",
+    "data_entrada": "08/08/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda São Severino)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5572",
+    "cd_equipamento": "5572",
+    "modelo": "CARRETA TRANSBORDO GTM",
+    "os": "116331",
+    "data_entrada": "08/08/2025",
+    "servico": "Pneu L/E furado - (Fazenda São Severino) |Parado|\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "279",
+    "cd_equipamento": "279",
+    "modelo": "TRATOR VALTRA T250 CVT",
+    "os": "116312",
+    "data_entrada": "07/08/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Úrsula) |Parado|\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5248",
+    "cd_equipamento": "5248",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "116304",
+    "data_entrada": "07/08/2025",
+    "servico": "Pneu L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "271",
+    "cd_equipamento": "271",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116261",
+    "data_entrada": "07/08/2025",
+    "servico": "Pneu furado dianteiro L/E - (Fazenda Santa Luiza) |Parado|\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5298",
     "cd_equipamento": "5298",
     "modelo": "CARRETA TRANSBORDO SCHULTER",
@@ -22,14 +78,6 @@
     "os": "116182",
     "data_entrada": "06/08/2025",
     "servico": "Pneu L/E furado (Fazenda SP) - |Parado|\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5425",
-    "cd_equipamento": "5425",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "116167",
-    "data_entrada": "06/08/2025",
-    "servico": "Pneu L/D furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5747",

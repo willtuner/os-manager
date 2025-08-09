@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5779",
+    "cd_equipamento": "5779",
+    "modelo": "VALETADEIRA",
+    "os": "116277",
+    "data_entrada": "07/08/2025",
+    "servico": "Reinstalar corrente e fazer preenchimento com saibro na canaleta de passagem da corrente - (Fazenda Estrela) |Parado|\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5784",
+    "cd_equipamento": "5784",
+    "modelo": "DESENROLADOR DE MANGUEIRA",
+    "os": "116273",
+    "data_entrada": "07/08/2025",
+    "servico": "Reduzir o encaixe dos suportes dos rolos de mangueira no desenrolador, adequando ao diâmetro atual das mangueiras - (Fazenda Minuano)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5783",
+    "cd_equipamento": "5783",
+    "modelo": "DESENROLADOR DE MANGUEIRA",
+    "os": "116272",
+    "data_entrada": "07/08/2025",
+    "servico": "Reduzir o encaixe dos suportes dos rolos de mangueira no desenrolador, adequando ao diâmetro atual das mangueiras - (Fazenda Minuano)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5504",
     "cd_equipamento": "5504",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
@@ -38,22 +62,6 @@
     "os": "114915",
     "data_entrada": "21/07/2025",
     "servico": "Troca do reparo do pistão - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
-  },
-  {
-    "frota": "5421",
-    "cd_equipamento": "5421",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "114764",
-    "data_entrada": "18/07/2025",
-    "servico": "Consertar rabicho quebrado\nTroca do eixo do rabicho do tanque (Fazenda São Pedro)\nSolicitante Sr. Josimar \nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5709",
-    "cd_equipamento": "5709",
-    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-    "os": "114147",
-    "data_entrada": "11/07/2025",
-    "servico": "Quebra do pino do engate do braço hidráulico\nTroca do pino de apoio do hidráulico da trincha - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5171",

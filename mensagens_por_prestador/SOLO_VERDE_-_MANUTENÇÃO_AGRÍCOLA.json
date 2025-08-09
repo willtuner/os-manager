@@ -1,18 +1,34 @@
 [
   {
-    "frota": "218",
-    "cd_equipamento": "218",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115470",
-    "data_entrada": "29/07/2025",
-    "servico": "Quebra do cabo do acelerador de pé e de mão - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsável Sr. Arthur"
+    "frota": "103",
+    "cd_equipamento": "103",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "116397",
+    "data_entrada": "09/08/2025",
+    "servico": "Vazamento de óleo na junta do cárter, coifas da direção danificadas - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "257",
-    "cd_equipamento": "257",
+    "frota": "22",
+    "cd_equipamento": "22",
+    "modelo": "TRATOR VALTRA BH 180 4X4",
+    "os": "116284",
+    "data_entrada": "07/08/2025",
+    "servico": "Arrumar cubo dianteiro lado direito dianteiro. (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "115405",
-    "data_entrada": "28/07/2025",
-    "servico": "Verificar vazamento de óleo nos engate rápido - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+    "os": "116278",
+    "data_entrada": "07/08/2025",
+    "servico": "Vazamento de óleo na junta da tampa do hidráulico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "289",
+    "cd_equipamento": "289",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116256",
+    "data_entrada": "07/08/2025",
+    "servico": "Trocar filtro decantador danificado - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
   }
 ]
