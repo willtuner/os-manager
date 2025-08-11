@@ -758,14 +758,13 @@ def finalizar_os(os_numero_str):
                 db.session.add(nova_finalizacao)
                 db.session.commit()
                 
-                if diretorio_json_os: 
-                    removidos = remover_os_de_todos_json(diretorio_json_os, os_numero_str)
-                    if removidos: 
-                        flash(f'OS {os_numero_str} removida de: {", ".join(removidos)}', 'info')
-                elif 'gerente' in session:
-                    removidos = remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str)
-                    if removidos: 
-                        flash(f'OS {os_numero_str} removida de arquivos de gerente: {", ".join(removidos)}', 'info')
+                # Garante que a OS seja removida de todos os diretórios relevantes
+                removidos_gerente = remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str)
+                removidos_prestador = remover_os_de_todos_json(MENSAGENS_PRESTADOR_DIR, os_numero_str)
+
+                removidos_todos = list(set(removidos_gerente + removidos_prestador))
+                if removidos_todos:
+                    flash(f'OS {os_numero_str} removida de: {", ".join(removidos_todos)}', 'info')
 
                 flash(f'OS {os_numero_str} finalizada e registrada!', 'success')
         except ValueError as ve:
