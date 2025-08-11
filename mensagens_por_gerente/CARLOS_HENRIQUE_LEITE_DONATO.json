@@ -1,26 +1,5 @@
 [
   {
-    "frota": "250",
-    "os": "116386",
-    "data": "08/08/2025",
-    "prestador": "nan",
-    "servico": "Retentor da TDP danificado - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5061",
-    "os": "116176",
-    "data": "06/08/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento nas canecas da bomba, efetuar troca dos reparos - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5748",
-    "os": "116158",
-    "data": "06/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar chapa de fixação das agulhas da torre - (Fazenda Estrela)"
-  },
-  {
     "frota": "5747",
     "os": "116156",
     "data": "06/08/2025",
@@ -32,14 +11,7 @@
     "os": "115672",
     "data": "01/08/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar vazamento de aditivo - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5458",
-    "os": "115671",
-    "data": "01/08/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Efetuar troca dos registros danificados - (Fazenda Estrela)"
+    "servico": "Remover vazamento dos cilindros de freio - Faz Estrela"
   },
   {
     "frota": "5458",
@@ -61,13 +33,6 @@
     "data": "29/07/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Vazamento de óleo diesel na bomba - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5486",
-    "os": "115455",
-    "data": "29/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar reparos do comando e vazamento no retentor  do eixo  da bomba - (Fazenda Estrela)"
   },
   {
     "frota": "5061",
