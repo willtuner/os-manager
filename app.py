@@ -212,20 +212,46 @@ def init_db():
             logger.error(f"Erro ao verificar/adicionar colunas: {e}")
             db.session.rollback()
 
-        if User.query.count() == 0 and os.path.exists(USERS_FILE):
-            with open(USERS_FILE, encoding='utf-8') as f:
-                js_users = json.load(f)
-            admins = {'wilson.santana'} 
-            for u_name, u_data in js_users.items():
-                senha_val = u_data.get("senha", "") if isinstance(u_data, dict) else u_data
-                pic_val = u_data.get("profile_picture") if isinstance(u_data, dict) else None
-                db.session.add(User(
-                    username=u_name.lower(),
-                    password=senha_val, 
-                    is_admin=(u_name.lower() in admins),
-                    profile_picture=pic_val
-                ))
-            db.session.commit()
+        # Sincronização de usuários do JSON para o Banco de Dados
+        if os.path.exists(USERS_FILE):
+            try:
+                with open(USERS_FILE, encoding='utf-8') as f:
+                    js_users = json.load(f)
+
+                db_users = {user.username: user for user in User.query.all()}
+                admins = {'wilson.santana'}
+
+                for u_name, u_data in js_users.items():
+                    username_lower = u_name.lower()
+                    senha_val = u_data.get("senha", "") if isinstance(u_data, dict) else u_data
+                    pic_val = u_data.get("profile_picture") if isinstance(u_data, dict) else None
+                    is_admin_val = username_lower in admins
+
+                    if username_lower in db_users:
+                        # Usuário existe, verificar se precisa de atualização
+                        user_in_db = db_users[username_lower]
+                        if user_in_db.password != senha_val or user_in_db.is_admin != is_admin_val or user_in_db.profile_picture != pic_val:
+                            user_in_db.password = senha_val
+                            user_in_db.is_admin = is_admin_val
+                            user_in_db.profile_picture = pic_val
+                            logger.info(f"Usuário '{username_lower}' atualizado no banco de dados.")
+                    else:
+                        # Novo usuário, adicionar ao banco de dados
+                        new_user = User(
+                            username=username_lower,
+                            password=senha_val,
+                            is_admin=is_admin_val,
+                            profile_picture=pic_val
+                        )
+                        db.session.add(new_user)
+                        logger.info(f"Novo usuário '{username_lower}' adicionado ao banco de dados.")
+
+                db.session.commit()
+                logger.info("Sincronização de usuários do users.json para o banco de dados concluída.")
+
+            except Exception as e:
+                logger.error(f"Erro ao sincronizar usuários do JSON: {e}")
+                db.session.rollback()
 
 # ... (Suas funções de carregamento de dados como carregar_os_gerente, carregar_prestadores, etc.)
 def carregar_os_gerente(gerente_username):
