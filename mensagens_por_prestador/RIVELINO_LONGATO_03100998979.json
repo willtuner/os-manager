@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5148",
+    "cd_equipamento": "5148",
+    "modelo": "CARRETA BAG C/ GUINCHO",
+    "os": "116433",
+    "data_entrada": "11/08/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro) |Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "10228",
+    "cd_equipamento": "10228",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116426",
+    "data_entrada": "11/08/2025",
+    "servico": "Substituir pneu traseiro devido a corte profundo na banda de rodagem, expondo as lonas e comprometendo a segurança operacional. - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio\nPendencia N° 4028"
+  },
+  {
+    "frota": "5451",
+    "cd_equipamento": "5451",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "116421",
+    "data_entrada": "11/08/2025",
+    "servico": "Pneu L/D traseiro furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "10226",
+    "cd_equipamento": "10226",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116418",
+    "data_entrada": "11/08/2025",
+    "servico": "Pneu L/D dianteiro furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "286",
     "cd_equipamento": "286",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -46,14 +78,6 @@
     "os": "116304",
     "data_entrada": "07/08/2025",
     "servico": "Pneu L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "271",
-    "cd_equipamento": "271",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116261",
-    "data_entrada": "07/08/2025",
-    "servico": "Pneu furado dianteiro L/E - (Fazenda Santa Luiza) |Parado|\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5298",
