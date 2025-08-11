@@ -1143,11 +1143,18 @@ def frota_leve():
 
     filtro = request.args.get('filtro', 'todos')
     search_query = request.args.get('search', '')
+    data_inicio = request.args.get('data_inicio', '')
+    data_fim = request.args.get('data_fim', '')
 
     query = FrotaLeve.query
 
     if filtro != 'todos':
         query = query.filter_by(situacao=filtro)
+
+    if data_inicio:
+        query = query.filter(FrotaLeve.entrada >= data_inicio)
+    if data_fim:
+        query = query.filter(FrotaLeve.entrada <= data_fim)
 
     if search_query:
         query = query.filter(
@@ -1164,6 +1171,8 @@ def frota_leve():
                            manutencoes=manutencoes,
                            filtro_atual=filtro,
                            search_query=search_query,
+                           data_inicio=data_inicio,
+                           data_fim=data_fim,
                            usuario=session.get('gerente') or session.get('manutencao') or session.get('prestador'))
 
 @app.route('/frota-leve/novo', methods=['GET', 'POST'])

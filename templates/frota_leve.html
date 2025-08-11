@@ -82,13 +82,19 @@
             <a href="/frota-leve/novo" style="background: #2e8b57; padding: 6px 12px; color: white; border-radius: 5px;">➕ Nova Manutenção</a>
         </div>
 
-        <div class="top-bar">
-            <span>🔎 Filtrar por situação:</span>
-            <a href="?filtro=Todos">Todos</a>
-            <a href="?filtro=Agendar">🗓️ Agendar</a>
-            <a href="?filtro=Em andamento">🔧 Em andamento</a>
-            <a href="?filtro=Finalizado">✅ Finalizado</a>
-        </div>
+        <form method="get" class="top-bar">
+            <span>🔎 Filtrar por:</span>
+            <select name="filtro">
+                <option value="todos" {% if filtro_atual == 'todos' %}selected{% endif %}>Todos as Situações</option>
+                <option value="Agendar" {% if filtro_atual == 'Agendar' %}selected{% endif %}>🗓️ Agendar</option>
+                <option value="Em andamento" {% if filtro_atual == 'Em andamento' %}selected{% endif %}>🔧 Em andamento</option>
+                <option value="Finalizado" {% if filtro_atual == 'Finalizado' %}selected{% endif %}>✅ Finalizado</option>
+            </select>
+            <input type="date" name="data_inicio" value="{{ data_inicio }}">
+            <input type="date" name="data_fim" value="{{ data_fim }}">
+            <input type="text" name="search" placeholder="Buscar..." value="{{ search_query }}">
+            <button type="submit">Filtrar</button>
+        </form>
 
         {% for item in manutencoes %}
         <div class="card">
