@@ -1,12 +1,5 @@
 [
   {
-    "frota": "5528",
-    "os": "116476",
-    "data": "11/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Instalar aparelho de dransh - (Oficina)"
-  },
-  {
     "frota": "100",
     "os": "116342",
     "data": "08/08/2025",
@@ -21,27 +14,6 @@
     "servico": "Lavar radiador"
   },
   {
-    "frota": "245",
-    "os": "116396",
-    "data": "08/08/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar mangueira do hidráulico - (Oficina)"
-  },
-  {
-    "frota": "216",
-    "os": "115910",
-    "data": "04/08/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Trocar borrachas de vedação da porta - (Fazenda SP/Oficina)"
-  },
-  {
-    "frota": "216",
-    "os": "115909",
-    "data": "04/08/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Recuperar para-lamas traseiros - (Fazenda SP/Oficina)"
-  },
-  {
     "frota": "216",
     "os": "115908",
     "data": "04/08/2025",
@@ -50,24 +22,10 @@
   },
   {
     "frota": "216",
-    "os": "115906",
-    "data": "04/08/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Realizar a retirada dos para-lamas e das proteções para possibilitar o reparo, e posteriormente efetuar a montagem dos para-lamas. Remover o cardan, instalar os pinos necessários e realizar a montagem completa. Trocar os engates rápidos e, por fim, montar o rabicho do trator. - (Fazenda SP/Oficina)"
-  },
-  {
-    "frota": "216",
     "os": "115848",
     "data": "04/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sistema eletrico - (Fazenda SP/Oficina)"
-  },
-  {
-    "frota": "5706",
-    "os": "115844",
-    "data": "04/08/2025",
-    "prestador": "F C DA SILVA LTDA",
-    "servico": "Revisar equipamento - (Corporativo/Oficina)"
   },
   {
     "frota": "5177",
@@ -96,12 +54,5 @@
     "data": "18/07/2025",
     "prestador": "nan",
     "servico": "Corrigir trincas na estrutura avaliar redutor verificar suporte de rodas trocar sistema de proteção anti arremesso colocar concorrente instalar cardan e verificar rolamento e folga de rodas (Oficina)"
-  },
-  {
-    "frota": "5757",
-    "os": "114696",
-    "data": "17/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisão parte elétrica (Fazenda São José)"
   }
 ]
