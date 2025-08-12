@@ -1,12 +1,5 @@
 [
   {
-    "frota": "5504",
-    "os": "116504",
-    "data": "12/08/2025",
-    "prestador": "JHONY ANDERSON DE CASTRO LAFAYETE 02369",
-    "servico": "Gabaritar e usinar pino e bucha do engate do cabeçário."
-  },
-  {
     "frota": "5816",
     "os": "116494",
     "data": "12/08/2025",
@@ -29,13 +22,6 @@
   },
   {
     "frota": "10228",
-    "os": "116439",
-    "data": "11/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trator sem partida, verificar alternador - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "10228",
     "os": "116426",
     "data": "11/08/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
@@ -45,21 +31,14 @@
     "frota": "5063",
     "os": "116409",
     "data": "11/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Vazamento de óleo na bomba - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5350",
-    "os": "116394",
-    "data": "09/08/2025",
-    "prestador": "nan",
-    "servico": "Fazer solda em trinca no cabeçario - (Fazenda São Paulo)"
   },
   {
     "frota": "5630",
     "os": "116393",
     "data": "09/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Vazamento no rotor principal - (Fazenda São Paulo)"
   },
   {
@@ -70,32 +49,11 @@
     "servico": "Avaliar trator perdendo força - (Fazenda São Paulo)"
   },
   {
-    "frota": "5804",
-    "os": "116379",
-    "data": "08/08/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Soldar fios do terminal do SPE - (Fazenda São Paulo)"
-  },
-  {
     "frota": "342",
     "os": "116346",
     "data": "08/08/2025",
     "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Revisão de 300 hrs - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5294",
-    "os": "116336",
-    "data": "08/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar motor eletrico não funciona - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "219",
-    "os": "116290",
-    "data": "07/08/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar ar condicionado que gela (Fazenda São Paulo)"
   },
   {
     "frota": "218",
@@ -112,13 +70,6 @@
     "servico": "Trocar registro de vazão da caixa incorporadora quebrado  - (Fazenda São Paulo)"
   },
   {
-    "frota": "5211",
-    "os": "116182",
-    "data": "06/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E furado (Fazenda SP) - |Parado|"
-  },
-  {
     "frota": "90",
     "os": "116181",
     "data": "06/08/2025",
@@ -131,13 +82,6 @@
     "data": "04/08/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Verificação e correção de folga no olhal de engate do implemento - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5722",
-    "os": "115905",
-    "data": "04/08/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Fazer solda no pino de fixação dianteira - (Fazenda SP)"
   },
   {
     "frota": "5803",

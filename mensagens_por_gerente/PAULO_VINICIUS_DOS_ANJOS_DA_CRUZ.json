@@ -7,13 +7,6 @@
     "servico": "Verificar sistema de ar-condicionado. Equipamento liga, mas não realiza refrigeração. - (Fazenda Estrela)"
   },
   {
-    "frota": "250",
-    "os": "116496",
-    "data": "12/08/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Verificar sistema de ar-condicionado. Equipamento liga, mas não realiza refrigeração. - (Fazenda Estrela)"
-  },
-  {
     "frota": "149",
     "os": "116400",
     "data": "09/08/2025",
@@ -31,7 +24,7 @@
     "frota": "5367",
     "os": "116334",
     "data": "08/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar e reparar conexão na saída do comando hidráulico, onde se conecta a mangueira de retorno. A rosca do conector  está espanada, impedindo a vedação adequada. - (Fazenda Estrela)"
   },
   {
@@ -61,27 +54,6 @@
     "data": "04/08/2025",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Trocar borrachas de vedação da porta e banco danificado -  (Fazenda Estrela)"
-  },
-  {
-    "frota": "221",
-    "os": "115639",
-    "data": "01/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar fusíveis dos cibie da cabine queimando - (Fazenda Estrela)"
-  },
-  {
-    "frota": "1005",
-    "os": "115638",
-    "data": "01/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar botão de acionamento do Cibié traseiro com mau contato - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5786",
-    "os": "115592",
-    "data": "31/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar parte elétrica do drash com problemas (Fazenda Estrela)"
   },
   {
     "frota": "309",

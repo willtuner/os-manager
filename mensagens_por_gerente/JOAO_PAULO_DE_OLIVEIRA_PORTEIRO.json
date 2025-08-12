@@ -1,17 +1,17 @@
 [
   {
+    "frota": "263",
+    "os": "116528",
+    "data": "12/08/2025",
+    "prestador": "nan",
+    "servico": "Reinstalar proteção dianteira do trator - (Fazenda Casa Branca)"
+  },
+  {
     "frota": "5777",
     "os": "116446",
     "data": "11/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Trocar correias da trincha - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "269",
-    "os": "116389",
-    "data": "08/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Casa Branca)"
   },
   {
     "frota": "308",
@@ -21,32 +21,11 @@
     "servico": "Trocar lanterna - Faz Casa Branca"
   },
   {
-    "frota": "5248",
-    "os": "116304",
-    "data": "07/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E furado - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "265",
     "os": "116232",
     "data": "06/08/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Vazamento de óleo próximo a bomba injetora - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "265",
-    "os": "115980",
-    "data": "04/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Chicote do cibié traseiro L/E rompido - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "98",
-    "os": "115640",
-    "data": "01/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Inchaço na bateria do equipamento, o que pode indicar falha no sistema de carga (sobrecarga), defeito interno da bateria ou problemas no alternador/regulador de voltagem. - (Fazenda Casa Branca)"
   },
   {
     "frota": "86",
@@ -61,13 +40,6 @@
     "data": "22/07/2025",
     "prestador": "CICERO MUNIZ DA SILVA",
     "servico": "Vazamento no cubo da roda traseira (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "10217",
-    "os": "115050",
-    "data": "22/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Sinalização não funciona  - (Fazenda Casa Branca)"
   },
   {
     "frota": "10217",
