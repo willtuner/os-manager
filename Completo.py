@@ -213,32 +213,4 @@ salvar_bloco_txt_json(sem_prev, "relatorio_sem_previsao.txt", "relatorio_sem_pre
 print("\n🎉 Tudo finalizado com sucesso!")
 
 
-# ========================= ETAPA 7 - AUTOMAÇÃO GIT =========================
-import subprocess
-
-def run_git_command(command):
-    """Executa um comando Git e imprime o resultado."""
-    try:
-        # Usar uma lista de argumentos é mais seguro que shell=True
-        result = subprocess.run(command, check=True, text=True, capture_output=True)
-        print(f"✅ Comando executado com sucesso: {' '.join(command)}")
-        print(result.stdout)
-    except subprocess.CalledProcessError as e:
-        print(f"❌ Erro ao executar comando: {' '.join(command)}")
-        print(e.stderr)
-        exit()
-    except FileNotFoundError:
-        print("❌ Erro: O comando 'git' não foi encontrado. Certifique-se de que o Git está instalado e no PATH do sistema.")
-        exit()
-
-print("\n🤖 Iniciando automação do Git...")
-
-# 1. Adicionar todos os arquivos novos e modificados
-run_git_command(["git", "add", "."])
-
-# 2. Fazer o commit das alterações
-commit_message = "Atualização automática das Ordens de Serviço"
-run_git_command(["git", "commit", "-m", commit_message])
-
-# 3. Enviar as alterações para o repositório remoto
-run_git_command(["git", "push", "--set-upstream", "origin", "master"])
+print("\n🎉 Processo de automação Git concluído!")

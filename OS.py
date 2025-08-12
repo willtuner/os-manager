@@ -1,6 +1,7 @@
 import os
 import time
 import json
+import pyautogui
 import pandas as pd
 from datetime import datetime, timedelta
 from selenium import webdriver
@@ -9,34 +10,22 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+import subprocess
 
-# ========================= ETAPA 1 - DOWNLOAD AUTOMÁTICO =========================
+# ========================= ETAPA 1 - DOWNLOAD (Versão Original do Usuário) =========================
 print("\n🚀 Iniciando extração automática do relatório PIMNS...")
 
-# --- Configurações ---
+CHROMEDRIVER_PATH = "chromedriver.exe"
 usuario = "WILSONS"
 senha = "@prats456"
-# Usar um caminho relativo para a pasta de downloads para portabilidade
-download_dir = os.path.join(os.getcwd(), "downloads")
-os.makedirs(download_dir, exist_ok=True)
+pasta = r"C:\Users\wilsonsantana\Downloads"
 
-
-# --- Configuração do WebDriver para download automático ---
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
-options.add_argument("--headless") # Executar em modo headless para automação
-options.add_experimental_option("prefs", {
-  "download.default_directory": download_dir,
-  "download.prompt_for_download": False,
-  "download.directory_upgrade": True,
-  "safebrowsing.enabled": True
-})
-
-# A biblioteca selenium agora gerencia o chromedriver automaticamente
-driver = webdriver.Chrome(options=options)
+service = Service(CHROMEDRIVER_PATH)
+driver = webdriver.Chrome(service=service, options=options)
 
 try:
-    # --- Login ---
     driver.get("http://10.1.1.51:8080/pimsmc/login.jsp")
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "USER"))).send_keys(usuario)
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "SENHA"))).send_keys(senha)
@@ -44,167 +33,196 @@ try:
     WebDriverWait(driver, 10).until(EC.url_contains("manterFavoritos"))
     print("✅ Login realizado com sucesso.")
 
-    # --- Navegação e preenchimento do formulário ---
     driver.get("http://10.1.1.51:8080/pimsmc/manterIndicadores.do?method=showViewConsulta&objectName=VisoesIndicadores.VisoesConsultaIndicadores")
     campo_codigo = WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.ID, "CODIGO_INDICADOR")))
     campo_codigo.clear()
     campo_codigo.send_keys("OFC.STSOS")
     ActionChains(driver).move_to_element_with_offset(driver.find_element(By.TAG_NAME, "body"), 0, 0).click().perform()
-    time.sleep(3) # Pequena pausa para garantir que a ação de clique foi processada
+    time.sleep(3)
 
     driver.find_element(By.ID, "VALOR_0").send_keys("01/01/2025")
     driver.find_element(By.ID, "VALOR_1").send_keys((datetime.today() + timedelta(days=1)).strftime("%d/%m/%Y"))
     driver.find_element(By.ID, "CODIGO_VALOR_2").clear()
     WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'Aplicar')]"))).click()
-    print("✅ Formulário preenchido e aplicado.")
-    time.sleep(10) # Espera para a grade de dados carregar
+    time.sleep(10)
 
-    # --- Download ---
-    # Contar arquivos no diretório antes do download
-    files_before = os.listdir(download_dir)
-    
     WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//span[contains(text(), 'Exportar para Excel')]"))).click()
-    print("⏳ Aguardando o download do relatório...")
-
-    # Esperar pelo novo arquivo aparecer no diretório de forma robusta
-    timeout = 30
-    start_time = time.time()
-    new_file_path = None
-    while time.time() - start_time < timeout:
-        current_files = os.listdir(download_dir)
-        new_files = [f for f in current_files if f not in files_before]
-        xlsx_files = [f for f in new_files if f.endswith('.xlsx') and not f.endswith('.crdownload')]
-        
-        if xlsx_files:
-            new_file_path = os.path.join(download_dir, xlsx_files[0])
-            print(f"✅ Relatório baixado com sucesso: {new_file_path}")
-            break
-        time.sleep(1)
-    
-    if not new_file_path:
-        raise FileNotFoundError("O download do relatório demorou muito ou falhou.")
-
+    time.sleep(15)
+    pyautogui.click(1186, 103)
+    time.sleep(10)
+    pyautogui.moveTo(1269, 62); pyautogui.click()
+    time.sleep(1)
+    pyautogui.moveTo(1189, 106); pyautogui.click()
+    driver.quit()
+    print("✅ Relatório baixado com sucesso!")
 except Exception as e:
     print(f"❌ Erro na Etapa 1: {e}")
     driver.quit()
     exit()
-finally:
-    driver.quit()
-
 
 # ========================= ETAPA 2 - LEITURA =========================
 print("\n📊 Lendo relatório...")
 
 try:
-    arquivos = [os.path.join(download_dir, f) for f in os.listdir(download_dir) if f.startswith("Export_Consulta_Indicador_") and f.endswith(".xlsx")]
-    if not arquivos:
-        raise FileNotFoundError("Nenhum arquivo de relatório encontrado no diretório de downloads.")
-    
+    arquivos = [os.path.join(pasta, f) for f in os.listdir(pasta) if f.startswith("Export_Consulta_Indicador_") and f.endswith(".xlsx")]
     excel_path = max(arquivos, key=os.path.getctime)
-    print(f"Lendo o arquivo: {excel_path}")
-    
     df = pd.read_excel(excel_path, header=9)
     df = df[df["CD_UNI_ADM"].isin([4, 5])]
     df["STATUS"] = df["STATUS"].astype(str).str.strip().str.upper()
     df_abertas = df[(df["STATUS"] == "ABERTO") & df["FUNCIONAR_SOL"].notnull()]
     df_abertas["DT_ENTRADA"] = pd.to_datetime(df_abertas["DT_ENTRADA"], errors="coerce", dayfirst=True)
     df_abertas = df_abertas[df_abertas["DT_ENTRADA"].notnull()]
-    
-    # Salvar uma cópia filtrada para depuração
-    df_abertas.to_csv(os.path.join(download_dir, "relatorio_filtrado.csv"), index=False)
+    df_abertas.to_csv(os.path.join(pasta, "relatorio_filtrado.csv"), index=False)
     print("✅ Leitura e filtragem do relatório concluídas.")
-
 except Exception as e:
     print(f"❌ Erro na Etapa 2: {e}")
     exit()
 
-# Definir a pasta base para salvar os arquivos gerados
-output_base_dir = os.getcwd()
-
-# ========================= ETAPA 3 & 4 - JSON por gerente =========================
-print("\n🧾 Gerando JSON por gerente...")
-pasta_json_gerente = os.path.join(output_base_dir, "mensagens_por_gerente")
-os.makedirs(pasta_json_gerente, exist_ok=True)
-
+# ========================= ETAPA 3 - TXT por gerente =========================
+print("🧾 Gerando .txt por gerente...")
+pasta_txt = os.path.join(pasta, "mensagens_por_gerente")
+os.makedirs(pasta_txt, exist_ok=True)
 for solicitante, grupo in df_abertas.groupby("FUNCIONAR_SOL"):
-    ordens = []
+    mensagens = []
     for _, row in grupo.iterrows():
-        ordem = {
-            "frota": str(row.get("CD_EQT", "")),
-            "os": str(row.get("NO_SERVICO", "")),
-            "data": row["DT_ENTRADA"].strftime("%d/%m/%Y") if pd.notnull(row["DT_ENTRADA"]) else "",
-            "prestador": str(row.get("PREST_SERVICO", "Não definido")),
-            "servico": str(row.get("SERVICO", ""))
-        }
-        ordens.append(ordem)
-    
-    nome_json = solicitante.upper().replace(" ", "_") + ".json"
-    with open(os.path.join(pasta_json_gerente, nome_json), "w", encoding="utf-8") as fjson:
-        json.dump(ordens, fjson, ensure_ascii=False, indent=2)
+        data = row["DT_ENTRADA"].strftime("%d/%m/%Y") if pd.notnull(row["DT_ENTRADA"]) else ""
+        msg = f"Frota: {row['CD_EQT']}\nO.S: {row['NO_SERVICO']}\nData de entrada: {data}\nPrestador: {row['PREST_SERVICO']}\nServiço: {row['SERVICO']}\n"
+        mensagens.append(msg)
+    with open(os.path.join(pasta_txt, f"{solicitante}.txt"), "w", encoding="utf-8") as f:
+        f.write(f"Solicitante: {solicitante}\n\n" + "\n---\n".join(mensagens))
 
-print("✅ JSON por gerente gerado.")
+# ========================= ETAPA 4 - JSON por gerente =========================
+print("📥 Convertendo .txt para .json...")
+pasta_json = os.path.join(pasta_txt, "convertidos_json")
+os.makedirs(pasta_json, exist_ok=True)
+def processar_arquivo_txt(nome_arquivo):
+    caminho_txt = os.path.join(pasta_txt, nome_arquivo)
+    with open(caminho_txt, "r", encoding="utf-8") as f:
+        conteudo = f.read()
+    blocos = [b.strip() for b in conteudo.split("---") if b.strip() and "Frota" in b]
+    ordens = []
+    for bloco in blocos:
+        ordem = {}
+        for linha in bloco.split("\n"):
+            if ":" in linha:
+                chave, valor = linha.split(":", 1)
+                chave = chave.strip().lower()
+                valor = valor.strip()
+                if chave == "frota": ordem["frota"] = valor
+                elif chave in ("o.s", "os"): ordem["os"] = valor
+                elif chave.startswith("data"): ordem["data"] = valor
+                elif chave == "prestador": ordem["prestador"] = valor
+                elif chave in ("serviço", "servico"): ordem["servico"] = valor
+        ordens.append(ordem)
+    return ordens
+for arquivo in os.listdir(pasta_txt):
+    if arquivo.lower().endswith(".txt"):
+        nome_json = os.path.splitext(arquivo)[0].upper().replace(" ", "_") + ".json"
+        dados = processar_arquivo_txt(arquivo)
+        with open(os.path.join(pasta_json, nome_json), "w", encoding="utf-8") as fjson:
+            json.dump(dados, fjson, ensure_ascii=False, indent=2)
 
 # ========================= ETAPA 5 - JSON por prestador =========================
-print("\n📦 Gerando JSON por prestador...")
-pasta_prestador = os.path.join(output_base_dir, "mensagens_por_prestador")
+print("📦 Gerando JSON por prestador...")
+pasta_prestador = os.path.join(pasta, "mensagens_por_prestador")
 os.makedirs(pasta_prestador, exist_ok=True)
-
-df_com_prestador = df_abertas[df_abertas["PREST_SERVICO"].notnull()].copy()
-
-for prestador, grupo in df_com_prestador.groupby("PREST_SERVICO"):
+for prestador, grupo in df_abertas[df_abertas["PREST_SERVICO"].notnull()].groupby("PREST_SERVICO"):
     registros = []
     for _, row in grupo.iterrows():
         registros.append({
-            "frota": str(row.get("CD_EQT", "")),
-            "cd_equipamento": str(row.get("CD_EQT", "")),
-            "modelo": str(row.get("MODELO", "")),
-            "os": str(row.get("NO_SERVICO", "")),
+            "frota": str(row["CD_EQT"]),
+            "cd_equipamento": str(row["CD_EQT"]),
+            "modelo": row.get("MODELO", ""),
+            "os": str(row["NO_SERVICO"]),
             "data_entrada": row["DT_ENTRADA"].strftime("%d/%m/%Y") if pd.notnull(row["DT_ENTRADA"]) else "",
-            "servico": str(row.get("SERVICO", ""))
+            "servico": row["SERVICO"]
         })
-    
-    # Limpeza do nome do arquivo para garantir que seja válido
-    nome_arquivo_prestador = "".join(c for c in prestador if c.isalnum() or c in (' ', '_')).rstrip()
-    nome_arquivo = f"{nome_arquivo_prestador.upper().replace(' ', '_')}.json"
-    
+    nome_arquivo = f"{prestador.upper().replace(' ', '_')}.json"
     with open(os.path.join(pasta_prestador, nome_arquivo), "w", encoding="utf-8") as f:
         json.dump(registros, f, indent=2, ensure_ascii=False)
-
-print("✅ JSON por prestador gerado.")
         
-# ========================= ETAPA 6 - Separação por responsável (Arthur / Mauricio) =========================
-print("\n🔍 Gerando JSON para Arthur e Mauricio...")
+# ========================= ETAPA 6 - Separação por prestador responsável na descrição do serviço =========================
+print("🔍 Separando por responsável (Arthur / Mauricio) com base na descrição do serviço...")
+mauricio, arthur, outros, sem_prev = [], [], [], []
+for _, row in df_abertas.iterrows():
+    if row["STATUS"] != "ABERTO": continue
+    if pd.notnull(row["DT_SAI_PREV"]) or pd.notnull(row.get("DT_SAIDA", None)): continue
+    data_entrada = row["DT_ENTRADA"].strftime("%d/%m/%Y") if pd.notnull(row["DT_ENTRADA"]) else "---"
+    previsao_saida = "---"
+    servico = str(row["SERVICO"]).upper()
+    msg = (
+        f"Solicitante: {row['FUNCIONAR_SOL']}\n"
+        f"Frota: {row['CD_EQT']}\n"
+        f"Modelo: {row['MODELO']}\n"
+        f"O.S: {row['NO_SERVICO']}\n"
+        f"Data de entrada: {data_entrada}\n"
+        f"Previsão de saída: {previsao_saida}\n"
+        f"Prestador: {row['PREST_SERVICO']}\n"
+        f"Serviço: {row['SERVICO']}\n"
+    )
+    if "ARTHUR" in servico and "SR" in servico: arthur.append(msg)
+    elif "MAURICIO" in servico and "SR" in servico: mauricio.append(msg)
+    elif "PREVISÃO DE SAÍDA: ---" in msg.upper(): sem_prev.append(msg)
+    else: outros.append(msg)
 
-# Preparar dados
-df_abertas['SERVICO_UPPER'] = df_abertas['SERVICO'].astype(str).str.upper()
-df_abertas['FUNCIONAR_SOL_UPPER'] = df_abertas['FUNCIONAR_SOL'].astype(str).str.upper()
-
-# Filtrar para Arthur e Mauricio
-df_arthur = df_abertas[df_abertas['SERVICO_UPPER'].str.contains("ARTHUR")]
-df_mauricio = df_abertas[df_abertas['SERVICO_UPPER'].str.contains("MAURICIO")]
-
-def gerar_json_responsavel(df_responsavel, nome_arquivo, liberador):
-    registros = []
-    for _, row in df_responsavel.iterrows():
-        registros.append({
-            "solicitante": str(row.get("FUNCIONAR_SOL", "")),
-            "frota": str(row.get("CD_EQT", "")),
-            "modelo": str(row.get("MODELO", "")),
-            "os": str(row.get("NO_SERVICO", "")),
-            "data_entrada": row["DT_ENTRADA"].strftime("%d/%m/%Y") if pd.notnull(row["DT_ENTRADA"]) else "",
-            "previsao_saida": "---",
-            "prestador": str(row.get("PREST_SERVICO", "Não definido")),
-            "servico": str(row.get("SERVICO", "")),
-            "liberado_por": liberador
-        })
-    
-    path_json = os.path.join(output_base_dir, "static/json", nome_arquivo)
-    os.makedirs(os.path.dirname(path_json), exist_ok=True)
+def salvar_bloco_txt_json(lista, nome_arquivo_txt, nome_arquivo_json, liberador=None):
+    path_txt = os.path.join(pasta, nome_arquivo_txt)
+    path_json = os.path.join(pasta, nome_arquivo_json)
+    with open(path_txt, "w", encoding="utf-8") as f:
+        f.write("\n\n" + ("\n" + "-"*50 + "\n\n").join(lista))
+    print(f"📄 {nome_arquivo_txt} salvo.")
+    dados = []
+    for bloco in lista:
+        linhas = bloco.strip().split("\n")
+        if len(linhas) < 8: continue
+        item = {
+            "solicitante": linhas[0].split(":", 1)[1].strip(),
+            "frota": linhas[1].split(":", 1)[1].strip(),
+            "modelo": linhas[2].split(":", 1)[1].strip(),
+            "os": linhas[3].split(":", 1)[1].strip(),
+            "data_entrada": linhas[4].split(":", 1)[1].strip(),
+            "previsao_saida": linhas[5].split(":", 1)[1].strip(),
+            "prestador": linhas[6].split(":", 1)[1].strip(),
+            "servico": linhas[7].split(":", 1)[1].strip(),
+            "liberado_por": liberador if liberador else "Desconhecido"
+        }
+        dados.append(item)
     with open(path_json, "w", encoding="utf-8") as f:
-        json.dump(registros, f, ensure_ascii=False, indent=4)
-    print(f"📁 {nome_arquivo} salvo.")
+        json.dump(dados, f, ensure_ascii=False, indent=4)
+    print(f"📁 {nome_arquivo_json} salvo.")
 
-gerar_json_responsavel(df_mauricio, "relatorio_mauricio.json", "Mauricio")
-gerar_json_responsavel(df_arthur, "relatorio_arthur.json", "Arthur")
+salvar_bloco_txt_json(mauricio, "relatorio_mauricio.txt", "relatorio_mauricio.json", "Mauricio")
+salvar_bloco_txt_json(arthur, "relatorio_arthur.txt", "relatorio_arthur.json", "Arthur")
+salvar_bloco_txt_json(outros, "relatorio_outros.txt", "relatorio_outros.json", "Outros")
+salvar_bloco_txt_json(sem_prev, "relatorio_sem_previsao.txt", "relatorio_sem_previsao.json", "Sem previsão")
 
-print("\n🎉 Tudo finalizado com sucesso!")
+print("\n🎉 Processo de extração finalizado com sucesso!")
+
+# ========================= ETAPA 7 - AUTOMAÇÃO GIT =========================
+def run_git_command(command):
+    """Executa um comando Git e imprime o resultado."""
+    try:
+        result = subprocess.run(command, check=True, text=True, capture_output=True)
+        print(f"✅ Comando executado com sucesso: {' '.join(command)}")
+        print(result.stdout)
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Erro ao executar comando: {' '.join(command)}")
+        print(e.stderr)
+        exit()
+    except FileNotFoundError:
+        print("❌ Erro: O comando 'git' não foi encontrado. Certifique-se de que o Git está instalado e no PATH do sistema.")
+        exit()
+
+print("\n🤖 Iniciando automação do Git...")
+
+# 1. Adicionar todos os arquivos novos e modificados
+run_git_command(["git", "add", "."])
+
+# 2. Fazer o commit das alterações
+commit_message = f"Atualização automática das OS - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+run_git_command(["git", "commit", "-m", commit_message])
+
+# 3. Enviar as alterações para o repositório remoto
+run_git_command(["git", "push"])
+
+print("\n🎉 Processo de automação Git concluído!")
