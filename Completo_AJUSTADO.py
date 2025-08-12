@@ -165,18 +165,4 @@ salvar_json(sem_prev, "relatorio_sem_previsao.json", "Sem previsão")
 
 print("\n🎉 Tudo finalizado com sucesso!")
 
-# ========================= ETAPA FINAL - Envio ao Git =========================
-import subprocess
 
-print("\n📤 Enviando atualizações para o Git...")
-
-repo_path = r"C:\Users\wilsonsantana\Documents\repos\os-manager"
-os.chdir(repo_path)
-
-try:
-    subprocess.run(["git", "add", "."], check=True)
-    subprocess.run(["git", "commit", "-m", f"Atualização automática {datetime.now().strftime('%d/%m/%Y %H:%M')}"], check=True)
-    subprocess.run(["git", "push"], check=True)
-    print("✅ Atualizações enviadas ao Git com sucesso!")
-except subprocess.CalledProcessError as e:
-    print("❌ Erro ao fazer push para o Git:", e)
