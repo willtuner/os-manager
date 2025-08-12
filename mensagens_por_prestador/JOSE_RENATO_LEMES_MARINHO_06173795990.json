@@ -1,11 +1,35 @@
 [
   {
+    "frota": "5105",
+    "cd_equipamento": "5105",
+    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
+    "os": "116505",
+    "data_entrada": "12/08/2025",
+    "servico": "Cortar parafuso com maçarico e repor novo na seção traseira lado esquerdo. - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5110",
+    "cd_equipamento": "5110",
+    "modelo": "SUBSOLADOR STARA",
+    "os": "116501",
+    "data_entrada": "12/08/2025",
+    "servico": "Realizar solda em trinca identificada e confeccionar chapa de reforço para a área danificada. - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5425",
     "cd_equipamento": "5425",
     "modelo": "PULVERIZADOR 2000 LT FMC",
     "os": "116489",
     "data_entrada": "12/08/2025",
     "servico": "Fazer soldas em trincas na estrutura da barra de aplicação (serviço na barrinha sem frota)\nFazenda São Severino\nSolicitado Sr. Cássio\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5658",
+    "cd_equipamento": "5658",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "116447",
+    "data_entrada": "11/08/2025",
+    "servico": "Fazer solda em ramal furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5797",
@@ -24,12 +48,36 @@
     "servico": "Fazer solda no rabicho - (Pecuaria)\nSolicitado Sr. Bruno Franco\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5401",
-    "cd_equipamento": "5401",
-    "modelo": "ATOMIZADOR JACTO 4000 LT",
-    "os": "116257",
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116408",
+    "data_entrada": "11/08/2025",
+    "servico": "Aumentar cesto traseiro para transporte de produto e instalar mais uma saída de vazão no ramal - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio\nAutorizado fazer Sr. Rafael gerente de manutenção.\n*Lançar custo como investimento.*"
+  },
+  {
+    "frota": "5247",
+    "cd_equipamento": "5247",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "116402",
+    "data_entrada": "09/08/2025",
+    "servico": "Quebra da paleta da esteira da adubadeira - (Fazenda São Severino)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5798",
+    "cd_equipamento": "5798",
+    "modelo": "PULVERIZADOR 600 LT",
+    "os": "116345",
+    "data_entrada": "08/08/2025",
+    "servico": "Fabricar suporte para transporte de caixa - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5072",
+    "cd_equipamento": "5072",
+    "modelo": "GRADE NIVELADORA",
+    "os": "116288",
     "data_entrada": "07/08/2025",
-    "servico": "Soldar suporte de travamento das barras quebrado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+    "servico": "Seção traseira L/D, trocar mancal travado (Fazenda Úrsula)\nSolicitado Sr. João\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5492",

@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5489",
+    "cd_equipamento": "5489",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "116492",
+    "data_entrada": "12/08/2025",
+    "servico": "Vazamento de óleo na caixa de facas - (Fazenda São Severino)\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5721",
+    "cd_equipamento": "5721",
+    "modelo": "TANQUE DE AGUA 2000 LT",
+    "os": "116429",
+    "data_entrada": "11/08/2025",
+    "servico": "Instalar suporte com niple para desengatar tanque com mais facilidade - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "121",
     "cd_equipamento": "121",
     "modelo": "TRATOR MASSEY FERGUSON 4275/4",
@@ -8,20 +24,20 @@
     "servico": "Recuperar roscas da corneta e o rabicho - Faz Alvorada\nAutorizado Arthur"
   },
   {
+    "frota": "5726",
+    "cd_equipamento": "5726",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "116320",
+    "data_entrada": "08/08/2025",
+    "servico": "Vazamento nas válvulas do comando - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "91",
     "cd_equipamento": "91",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "116289",
     "data_entrada": "07/08/2025",
     "servico": "Substituir alavanca do registro de fluxo de óleo (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5482",
-    "cd_equipamento": "5482",
-    "modelo": "PODADEIRA HID.GLOBAL 3500",
-    "os": "115591",
-    "data_entrada": "31/07/2025",
-    "servico": "Quebra da corrente do rotor (Fazenda Casa Branca)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5745",
@@ -46,6 +62,14 @@
     "os": "115181",
     "data_entrada": "24/07/2025",
     "servico": "Coroa do pinhão da bomba com desgaste por atrito (roçada). Necessário substituir - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "80",
+    "cd_equipamento": "80",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "115150",
+    "data_entrada": "23/07/2025",
+    "servico": "Vazamento de óleo no pistão da concha do trator  - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5067",

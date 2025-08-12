@@ -1,5 +1,85 @@
 [
   {
+    "frota": "5777",
+    "cd_equipamento": "5777",
+    "modelo": "TRITURADOR TFI-1600 GTM",
+    "os": "116446",
+    "data_entrada": "11/08/2025",
+    "servico": "Trocar correias da trincha - (Fazenda Casa Branca)\nSolicitado Sr. Francisco (Operador)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5597",
+    "cd_equipamento": "5597",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "116436",
+    "data_entrada": "11/08/2025",
+    "servico": "Quebra do eixo da bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5063",
+    "cd_equipamento": "5063",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116409",
+    "data_entrada": "11/08/2025",
+    "servico": "Vazamento de óleo na bomba - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116407",
+    "data_entrada": "11/08/2025",
+    "servico": "Vazamento na bomba, trocar registro de saída da caixa incorporadora e pistão da barra abrindo sozinho - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5630",
+    "cd_equipamento": "5630",
+    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
+    "os": "116393",
+    "data_entrada": "09/08/2025",
+    "servico": "Vazamento no rotor principal - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5210",
+    "cd_equipamento": "5210",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116343",
+    "data_entrada": "08/08/2025",
+    "servico": "Verificar equipamento sem pressão - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsvel Sr. Mauricio"
+  },
+  {
+    "frota": "5367",
+    "cd_equipamento": "5367",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116334",
+    "data_entrada": "08/08/2025",
+    "servico": "Verificar e reparar conexão na saída do comando hidráulico, onde se conecta a mangueira de retorno. A rosca do conector  está espanada, impedindo a vedação adequada. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5492",
+    "cd_equipamento": "5492",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "116324",
+    "data_entrada": "08/08/2025",
+    "servico": "Trocar regulador de vazão danificado - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5614",
+    "cd_equipamento": "5614",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "116322",
+    "data_entrada": "08/08/2025",
+    "servico": "Trocar válvula solenoide danificada - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5612",
+    "cd_equipamento": "5612",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "116321",
+    "data_entrada": "08/08/2025",
+    "servico": "Trocar válvula solenoide danificada - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5657",
     "cd_equipamento": "5657",
     "modelo": "PULVERIZADOR 4000 LT JACTO",

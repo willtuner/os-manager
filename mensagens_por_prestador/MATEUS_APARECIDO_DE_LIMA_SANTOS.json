@@ -1,11 +1,19 @@
 [
   {
-    "frota": "5604",
-    "cd_equipamento": "5604",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "116227",
-    "data_entrada": "06/08/2025",
-    "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada, e arrumar reparo na bomba.\nFazenda Pedra Verde\nSolicitado Sr. Cléber\nResponsável Sr. Maurício"
+    "frota": "5363",
+    "cd_equipamento": "5363",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "116500",
+    "data_entrada": "12/08/2025",
+    "servico": "Quebra das alavancas de acionamento - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5488",
+    "cd_equipamento": "5488",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "116440",
+    "data_entrada": "11/08/2025",
+    "servico": "Vazamento de óleo na caixa de facas - (Fazenda São Severino)\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5136",
@@ -32,14 +40,6 @@
     "servico": "Verificar ramal do lado esquerdo não está fechando.\nFazenda São Pedro\nSolicitado Sr. Arthur\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5126",
-    "cd_equipamento": "5126",
-    "modelo": "ADUBADEIRA KAMAQ 1500 KG",
-    "os": "115673",
-    "data_entrada": "01/08/2025",
-    "servico": "Remover e desempenar caracol e comportas esta com o sistema de regulagem danificado  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5136",
     "cd_equipamento": "5136",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -62,14 +62,6 @@
     "os": "115339",
     "data_entrada": "25/07/2025",
     "servico": "Vazamento de óleo no retentor do rotor principal - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5709",
-    "cd_equipamento": "5709",
-    "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-    "os": "115338",
-    "data_entrada": "25/07/2025",
-    "servico": "Quebra do suporte de fixação do rotor - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5403",
