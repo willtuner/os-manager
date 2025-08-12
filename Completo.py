@@ -241,4 +241,4 @@ commit_message = "Atualização automática das Ordens de Serviço"
 run_git_command(["git", "commit", "-m", commit_message])
 
 # 3. Enviar as alterações para o repositório remoto
-run_git_command(["git", "push"])
+run_git_command(["git", "push", "--set-upstream", "origin", "master"])
