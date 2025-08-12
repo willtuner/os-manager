@@ -1,11 +1,67 @@
 [
   {
-    "frota": "5528",
-    "cd_equipamento": "5528",
-    "modelo": "PULV.FMCOPLING JB 80/600 A",
-    "os": "116476",
+    "frota": "126",
+    "cd_equipamento": "126",
+    "modelo": "GATOR JOHNN DEERE",
+    "os": "116509",
+    "data_entrada": "12/08/2025",
+    "servico": "Verificar o funcionamento do equipamento não esta desligando na chave - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "5759",
+    "cd_equipamento": "5759",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "116508",
+    "data_entrada": "12/08/2025",
+    "servico": "Trocar cabo de controle, fazer proteção e melhorar fixação - Faz Estrela \nAutorizado Arthur"
+  },
+  {
+    "frota": "5361",
+    "cd_equipamento": "5361",
+    "modelo": "ADUBADORA E SEMEADORA MS60",
+    "os": "116507",
+    "data_entrada": "12/08/2025",
+    "servico": "Chicote da maquina de boro rompido - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "118",
+    "cd_equipamento": "118",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "116502",
+    "data_entrada": "12/08/2025",
+    "servico": "Cibié traseiro não ascendem - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5816",
+    "cd_equipamento": "5816",
+    "modelo": "ADUBADORA E SEMEADORA MS400",
+    "os": "116494",
+    "data_entrada": "12/08/2025",
+    "servico": "Disco espalhador de adubo danificado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResonsavel Sr. Arthur"
+  },
+  {
+    "frota": "208",
+    "cd_equipamento": "208",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116493",
+    "data_entrada": "12/08/2025",
+    "servico": "Verificar faróis auxiliares não ascendem - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "253",
+    "cd_equipamento": "253",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116484",
     "data_entrada": "11/08/2025",
-    "servico": "Instalar aparelho de dransh - (Oficina)\nSolicitado Sr. Pedro Pereira\nResponsavel Sr. Carlos"
+    "servico": "Verificar faróis não ascendem - (Fazenda Minuano)\nSolicitado Sr. Antônio \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5736",
+    "cd_equipamento": "5736",
+    "modelo": "ADUBADORA E SEMEADORA MS100",
+    "os": "116473",
+    "data_entrada": "11/08/2025",
+    "servico": "Motor de abertura da comporta de adubo não funciona - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "125",
@@ -40,20 +96,28 @@
     "servico": "Trator sem partida, verificar alternador - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsvel Sr. Arthur"
   },
   {
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116423",
+    "data_entrada": "11/08/2025",
+    "servico": "Verificar alternador - (Fazenda Terra Branca)\nSolicitado Sr. João Victor\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "116419",
+    "data_entrada": "11/08/2025",
+    "servico": "Verificar um dos lados do ramal não fecha - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5677",
     "cd_equipamento": "5677",
     "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
     "os": "116415",
     "data_entrada": "11/08/2025",
     "servico": "Revisar chicote eletrico após curto eletrico - (Fazenda São Severino)\nSolicitado Sr. Diego/Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "317",
-    "cd_equipamento": "317",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "116412",
-    "data_entrada": "11/08/2025",
-    "servico": "Verificar e corrigir instalação dos cibeis que estão provocando a queima do rele. - Faz Santa Luiza\nAutorizado Arthur"
   },
   {
     "frota": "144",
@@ -302,14 +366,6 @@
     "os": "114768",
     "data_entrada": "18/07/2025",
     "servico": "Trator sem partida (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsável Sr. Arthur"
-  },
-  {
-    "frota": "5757",
-    "cd_equipamento": "5757",
-    "modelo": "SOPRADOR BG 56",
-    "os": "114696",
-    "data_entrada": "17/07/2025",
-    "servico": "Revisão parte elétrica (Fazenda São José)\nSolicitado Sr. Carlos\nResponsavel Sr. Carlos"
   },
   {
     "frota": "274",

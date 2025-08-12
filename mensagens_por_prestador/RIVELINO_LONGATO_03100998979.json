@@ -1,5 +1,13 @@
 [
   {
+    "frota": "10222",
+    "cd_equipamento": "10222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116498",
+    "data_entrada": "12/08/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda Terra Branca) |Parado|\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5148",
     "cd_equipamento": "5148",
     "modelo": "CARRETA BAG C/ GUINCHO",
@@ -45,7 +53,7 @@
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "116389",
     "data_entrada": "08/08/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5247",
@@ -85,7 +93,7 @@
     "modelo": "CARRETA TRANSBORDO SCHULTER",
     "os": "116218",
     "data_entrada": "06/08/2025",
-    "servico": "Pneu L/? estourado - (Fazenda São Severino) | Parado|\nSolicitado Sr.  Valdomiro\nResponsável Sr. Arthur"
+    "servico": "Pneu L/? estourado - (Fazenda São Severino) | Parado|\nSolicitado Sr.  Valdomiro\nResponsável Sr. Mauricio"
   },
   {
     "frota": "10120",
@@ -166,5 +174,21 @@
     "os": "114194",
     "data_entrada": "14/07/2025",
     "servico": "Trocar os pneus dianteiro - Faz Minuano\nAutorizado Mauricio"
+  },
+  {
+    "frota": "265",
+    "cd_equipamento": "265",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113551",
+    "data_entrada": "01/07/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. João \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "255",
+    "cd_equipamento": "255",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113555",
+    "data_entrada": "01/07/2025",
+    "servico": "Pneu dianteiro L/D furado  - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsável Sr. Mauricio"
   }
 ]

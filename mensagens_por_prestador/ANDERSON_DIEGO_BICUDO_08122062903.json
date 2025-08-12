@@ -1,5 +1,61 @@
 [
   {
+    "frota": "287",
+    "cd_equipamento": "287",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116506",
+    "data_entrada": "12/08/2025",
+    "servico": "Vazamento de óleo na junta dianteira  e vazamento de diesel na conexão do filtro - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "116491",
+    "data_entrada": "12/08/2025",
+    "servico": "Verificar vazamento de óleo sob a cabine, com origem ainda indeterminada. - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "229",
+    "cd_equipamento": "229",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "116452",
+    "data_entrada": "11/08/2025",
+    "servico": "Vazamento de óleo no cano de hidráulico - (Fazenda São Severino)\nSolicitado Sr. Marcio Junio\nResposnavel Sr. Arthur"
+  },
+  {
+    "frota": "297",
+    "cd_equipamento": "297",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116413",
+    "data_entrada": "11/08/2025",
+    "servico": "Quebra do olhal do varão da embreagem - (Fazenda Santa Izabel) |Parado)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116404",
+    "data_entrada": "09/08/2025",
+    "servico": "Aferir pressão da bomba hidráulica - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "149",
+    "cd_equipamento": "149",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "116400",
+    "data_entrada": "09/08/2025",
+    "servico": "Vazamento no radiador - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "131",
+    "cd_equipamento": "131",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "116399",
+    "data_entrada": "09/08/2025",
+    "servico": "Verificar pedal da embreagem \"solto\" - (Fazenda São Severino)\nSolicitado Sr. Izaias \nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5229",
     "cd_equipamento": "5229",
     "modelo": "PODADEIRA HIDRAUTEC HLC 3",
@@ -8,28 +64,28 @@
     "servico": "Vazamento de óleo no motor hidráulico - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116385",
+    "data_entrada": "08/08/2025",
+    "servico": "Rolamento da TDP quebrado - (Fazenda Casa Branca)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "276",
+    "cd_equipamento": "276",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116344",
+    "data_entrada": "08/08/2025",
+    "servico": "Verificar vazamento de óleo no retentor do virabrequim  - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "220",
     "cd_equipamento": "220",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "116327",
     "data_entrada": "08/08/2025",
     "servico": "Lavar radiador\nRevisar caixa de tração\nTrocar engate rápido\nTirar para-lamas\nMangueira de freio ressecada\nCoifas axial rasgadas\nMangueira do intercooler furada\nDesmontar alavanca e conferir folgas - (Oficina)\nSolicitado Sr. Diego (DMA)\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "245",
-    "cd_equipamento": "245",
-    "modelo": "TRATOR MASSEY FERGUSON 3307",
-    "os": "116396",
-    "data_entrada": "08/08/2025",
-    "servico": "Trocar mangueira do hidráulico - (Oficina)\nSolicitado Sr. Carlos\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "194",
-    "cd_equipamento": "194",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "116295",
-    "data_entrada": "07/08/2025",
-    "servico": "Verificar varão da embreagem - Faz Alvorada\nAutorizado Arthur"
   },
   {
     "frota": "132",
@@ -86,14 +142,6 @@
     "os": "116069",
     "data_entrada": "05/08/2025",
     "servico": "Verificar sistema de embreagem não aciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "115906",
-    "data_entrada": "04/08/2025",
-    "servico": "Realizar a retirada dos para-lamas e das proteções para possibilitar o reparo, e posteriormente efetuar a montagem dos para-lamas. Remover o cardan, instalar os pinos necessários e realizar a montagem completa. Trocar os engates rápidos e, por fim, montar o rabicho do trator. - (Fazenda SP/Oficina) \nSolicitado Sr. Carlos Aparecido"
   },
   {
     "frota": "222",
