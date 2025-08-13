@@ -689,7 +689,8 @@ def painel_manutencao():
                          prestadores_disponiveis=carregar_prestadores(),
                          profile_picture=foto_perfil_manut,
                          now=datetime.now(saopaulo_tz), 
-                         today_date=datetime.now(saopaulo_tz).strftime('%Y-%m-%d'))
+                         today_date=datetime.now(saopaulo_tz).strftime('%Y-%m-%d'),
+                         manutencao=session.get('manutencao'))
 
 @app.route('/finalizar_os/<os_numero_str>', methods=['POST'])
 def finalizar_os(os_numero_str): 
