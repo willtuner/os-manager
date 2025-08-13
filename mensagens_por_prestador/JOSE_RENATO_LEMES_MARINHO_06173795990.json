@@ -1,5 +1,37 @@
 [
   {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "116558",
+    "data_entrada": "13/08/2025",
+    "servico": "Soldar degrau da escada quebrado - (Fazenda Casa Branca)\nSolicitado Sr João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "255",
+    "cd_equipamento": "255",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116542",
+    "data_entrada": "13/08/2025",
+    "servico": "Fazer solda em tubagem do escapamento - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5107",
+    "cd_equipamento": "5107",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "116537",
+    "data_entrada": "13/08/2025",
+    "servico": "Cortar parafuso que segura a bomba que não da mais aperto - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5352",
+    "cd_equipamento": "5352",
+    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
+    "os": "116536",
+    "data_entrada": "13/08/2025",
+    "servico": "Quebra do sistema de travamento do vagão - (Pecuaria)\nSolicitado Sr. Gabriel \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5105",
     "cd_equipamento": "5105",
     "modelo": "GRADE ARADORA C.CONTROLE BALDA",

@@ -109,7 +109,15 @@
     "modelo": "PULVERIZADOR BARRAS TRICICLO",
     "os": "115837",
     "data_entrada": "04/08/2025",
-    "servico": "Revisar embuchamento com folga - (Fazenda Alvorada)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+    "servico": "Revisar embuchamento com folga - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5529",
+    "cd_equipamento": "5529",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "114211",
+    "data_entrada": "14/07/2025",
+    "servico": "Refazer ramais - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5599",
@@ -125,6 +133,6 @@
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "113963",
     "data_entrada": "08/07/2025",
-    "servico": "Trocar os ramais para distribuição dos bicos do SPE - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+    "servico": "Confeccionar os ramais para distribuição dos bicos do SPE - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
   }
 ]

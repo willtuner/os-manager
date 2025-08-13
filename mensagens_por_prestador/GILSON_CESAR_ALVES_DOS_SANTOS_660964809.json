@@ -8,36 +8,12 @@
     "servico": "Quebra dos dentes do eixo do giro  - (Fazenda Alvorada)}\nSolicitado Sr Gilson (Mecânico)"
   },
   {
-    "frota": "5298",
-    "cd_equipamento": "5298",
-    "modelo": "CARRETA TRANSBORDO SCHULTER",
-    "os": "116499",
-    "data_entrada": "12/08/2025",
-    "servico": "Trocar reparo do pistão do desarme - (Fazenda São Severino)\nSolicitado Sr. Gilson (Mecânico)"
-  },
-  {
     "frota": "5752",
     "cd_equipamento": "5752",
     "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
     "os": "116471",
     "data_entrada": "11/08/2025",
     "servico": "Sacar parafusos de fixação dos pratos, e mudar sistema de fixação e trocar correias - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5646",
-    "cd_equipamento": "5646",
-    "modelo": "TRANSBORDO MOD.TC-7000 GTM",
-    "os": "116410",
-    "data_entrada": "11/08/2025",
-    "servico": "Vazamento no pistão - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "115912",
-    "data_entrada": "04/08/2025",
-    "servico": "Verificação e correção de folga no olhal de engate do implemento - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5774",
@@ -54,13 +30,5 @@
     "os": "114915",
     "data_entrada": "21/07/2025",
     "servico": "Troca do reparo do pistão - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
-  },
-  {
-    "frota": "5171",
-    "cd_equipamento": "5171",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "111430",
-    "data_entrada": "27/05/2025",
-    "servico": "Soldar suporte para transportar cone - (Fazenda São Pedro)\nLiberado Sr. Mauricio"
   }
 ]

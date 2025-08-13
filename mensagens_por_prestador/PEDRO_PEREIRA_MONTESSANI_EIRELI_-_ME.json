@@ -1,11 +1,83 @@
 [
   {
-    "frota": "126",
-    "cd_equipamento": "126",
-    "modelo": "GATOR JOHNN DEERE",
-    "os": "116509",
+    "frota": "110",
+    "cd_equipamento": "110",
+    "modelo": "TRATOR MASSEY FERGUSON 275",
+    "os": "116575",
+    "data_entrada": "13/08/2025",
+    "servico": "Relógio horimetro  não funciona e luz do alternador acessa no painel  - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinicio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5736",
+    "cd_equipamento": "5736",
+    "modelo": "ADUBADORA E SEMEADORA MS100",
+    "os": "116562",
+    "data_entrada": "13/08/2025",
+    "servico": "Quebra do sistema de abertura da comporta do dosador - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5482",
+    "cd_equipamento": "5482",
+    "modelo": "PODADEIRA HID.GLOBAL 3500",
+    "os": "116557",
+    "data_entrada": "13/08/2025",
+    "servico": "Quebra do chicote do eletroventilador- (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "43",
+    "cd_equipamento": "43",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "116555",
+    "data_entrada": "13/08/2025",
+    "servico": "Revisão do sistema eletrico do trator - Oficina OMC\nAutorizado Arthur"
+  },
+  {
+    "frota": "304",
+    "cd_equipamento": "304",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116549",
+    "data_entrada": "13/08/2025",
+    "servico": "Verificar iluminação não ascende nada - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5612",
+    "cd_equipamento": "5612",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "116547",
+    "data_entrada": "13/08/2025",
+    "servico": "Revisar sistema eletrico - Faz São Severino\nAutorizado Arthur"
+  },
+  {
+    "frota": "5658",
+    "cd_equipamento": "5658",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "116546",
+    "data_entrada": "13/08/2025",
+    "servico": "Revisar sistema eletrico - Faz São Severino\nAutorizado Arthur"
+  },
+  {
+    "frota": "17",
+    "cd_equipamento": "17",
+    "modelo": "TRATOR MASSEY FERGUSON 275/2",
+    "os": "116545",
+    "data_entrada": "13/08/2025",
+    "servico": "Verificar trator sem partida, suspeita de falha no motor de partida. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5294",
+    "cd_equipamento": "5294",
+    "modelo": "ADUBADORA E SEMEADORA MS100",
+    "os": "116531",
+    "data_entrada": "13/08/2025",
+    "servico": "Disco espalhador não aciona, verificar motor - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5657",
+    "cd_equipamento": "5657",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "116514",
     "data_entrada": "12/08/2025",
-    "servico": "Verificar o funcionamento do equipamento não esta desligando na chave - Faz São Paulo\nAutorizado Arthur"
+    "servico": "Substituir chicote da lança do aplicador - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo \nResponsavel Sr. Arthur"
   },
   {
     "frota": "5816",
