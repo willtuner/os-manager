@@ -255,19 +255,36 @@ def init_db():
 
 # ... (Suas funções de carregamento de dados como carregar_os_gerente, carregar_prestadores, etc.)
 def carregar_os_gerente(gerente_username):
-    base_nome_gerente = gerente_username.upper().replace('.', '_')
     caminho_encontrado = None
-    for sufixo_arquivo in ("", "_GONZAGA"):
-        nome_arquivo_json = f"{base_nome_gerente}{sufixo_arquivo}.json"
-        caminho_possivel = os.path.join(MENSAGENS_DIR, nome_arquivo_json)
-        if os.path.exists(caminho_possivel):
-            caminho_encontrado = caminho_possivel
-            break
-    if not caminho_encontrado: 
-        for nome_arquivo_dir in os.listdir(MENSAGENS_DIR):
-            if nome_arquivo_dir.upper().startswith(base_nome_gerente + "_") and nome_arquivo_dir.lower().endswith(".json"):
-                caminho_encontrado = os.path.join(MENSAGENS_DIR, nome_arquivo_dir)
+
+    # Nova lógica: Tenta encontrar o arquivo de OS mapeado no users.json primeiro
+    try:
+        with open(USERS_FILE, 'r', encoding='utf-8') as f:
+            users_data = json.load(f)
+
+        user_info = users_data.get(gerente_username)
+        if user_info and user_info.get('arquivo_os'):
+            caminho_possivel = os.path.join(MENSAGENS_DIR, user_info['arquivo_os'])
+            if os.path.exists(caminho_possivel):
+                caminho_encontrado = caminho_possivel
+    except Exception as e:
+        logger.error(f"Erro ao ler users.json para mapeamento de OS: {e}")
+
+    # Lógica original (fallback) se nenhum arquivo mapeado for encontrado
+    if not caminho_encontrado:
+        base_nome_gerente = gerente_username.upper().replace('.', '_')
+        for sufixo_arquivo in ("", "_GONZAGA"):
+            nome_arquivo_json = f"{base_nome_gerente}{sufixo_arquivo}.json"
+            caminho_possivel = os.path.join(MENSAGENS_DIR, nome_arquivo_json)
+            if os.path.exists(caminho_possivel):
+                caminho_encontrado = caminho_possivel
                 break
+        if not caminho_encontrado:
+            for nome_arquivo_dir in os.listdir(MENSAGENS_DIR):
+                if nome_arquivo_dir.upper().startswith(base_nome_gerente + "_") and nome_arquivo_dir.lower().endswith(".json"):
+                    caminho_encontrado = os.path.join(MENSAGENS_DIR, nome_arquivo_dir)
+                    break
+
     if not caminho_encontrado: return []
     
     try:
