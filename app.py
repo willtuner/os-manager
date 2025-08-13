@@ -435,32 +435,32 @@ def carregar_os_sem_prestador(username_manut=None):
     for nome_arquivo_json_gerente in arquivos_a_processar:
         caminho_arq_gerente = os.path.join(MENSAGENS_DIR, nome_arquivo_json_gerente)
         try:
-                with open(caminho_arq_gerente, 'r', encoding='utf-8') as f_gerente:
-                    dados_os_gerente = json.load(f_gerente)
-                for os_item_g in dados_os_gerente:
-                    nome_prestador = str(os_item_g.get('prestador') or os_item_g.get('Prestador', '')).lower().strip()
-                    if nome_prestador in ('nan', '', 'none', 'não definido', 'prestador não definido'):
-                        data_os_g_str = str(os_item_g.get('data') or os_item_g.get('Data', ''))
-                        data_abertura_os_g = None
-                        if data_os_g_str:
-                            for fmt_g in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%y", "%Y/%m/%d"):
-                                try:
-                                    data_abertura_os_g = datetime.strptime(data_os_g_str, fmt_g).date()
-                                    break
-                                except (ValueError,TypeError): continue
-                        
-                        dias_abertos_g = (data_hoje_sem_p - data_abertura_os_g).days if data_abertura_os_g else 0
-                        lista_os_sem_p.append({
-                            'os': str(os_item_g.get('os') or os_item_g.get('OS', '')),
-                            'frota': str(os_item_g.get('frota') or os_item_g.get('Frota', '')),
-                            'data_entrada': data_os_g_str, 
-                            'modelo': str(os_item_g.get('modelo') or os_item_g.get('Modelo', 'Desconhecido') or 'Desconhecido'),
-                            'servico': str(os_item_g.get('servico') or os_item_g.get('Servico') or os_item_g.get('observacao') or os_item_g.get('Observacao', '')),
-                            'arquivo_origem': nome_arquivo_json_gerente,
-                            'dias_abertos': dias_abertos_g
-                        })
-            except Exception as e:
-                logger.error(f"Erro ao carregar OS sem prestador de {caminho_arq_gerente}: {e}")
+            with open(caminho_arq_gerente, 'r', encoding='utf-8') as f_gerente:
+                dados_os_gerente = json.load(f_gerente)
+            for os_item_g in dados_os_gerente:
+                nome_prestador = str(os_item_g.get('prestador') or os_item_g.get('Prestador', '')).lower().strip()
+                if nome_prestador in ('nan', '', 'none', 'não definido', 'prestador não definido'):
+                    data_os_g_str = str(os_item_g.get('data') or os_item_g.get('Data', ''))
+                    data_abertura_os_g = None
+                    if data_os_g_str:
+                        for fmt_g in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%y", "%Y/%m/%d"):
+                            try:
+                                data_abertura_os_g = datetime.strptime(data_os_g_str, fmt_g).date()
+                                break
+                            except (ValueError,TypeError): continue
+
+                    dias_abertos_g = (data_hoje_sem_p - data_abertura_os_g).days if data_abertura_os_g else 0
+                    lista_os_sem_p.append({
+                        'os': str(os_item_g.get('os') or os_item_g.get('OS', '')),
+                        'frota': str(os_item_g.get('frota') or os_item_g.get('Frota', '')),
+                        'data_entrada': data_os_g_str,
+                        'modelo': str(os_item_g.get('modelo') or os_item_g.get('Modelo', 'Desconhecido') or 'Desconhecido'),
+                        'servico': str(os_item_g.get('servico') or os_item_g.get('Servico') or os_item_g.get('observacao') or os_item_g.get('Observacao', '')),
+                        'arquivo_origem': nome_arquivo_json_gerente,
+                        'dias_abertos': dias_abertos_g
+                    })
+        except Exception as e:
+            logger.error(f"Erro ao carregar OS sem prestador de {caminho_arq_gerente}: {e}")
     return lista_os_sem_p
 
 # --- Rotas ---
@@ -743,6 +743,14 @@ def finalizar_os(os_numero_str):
     if not data_finalizacao_form or not hora_finalizacao_form:
         flash('Data e hora de finalização são obrigatórias.', 'danger')
     else:
+        # Adiciona verificação crítica para garantir que a OS foi encontrada antes de prosseguir.
+        if not dados_os_para_finalizar:
+            flash(f'Erro Crítico: A OS {os_numero_str} não foi encontrada nos seus registros. A finalização foi cancelada.', 'danger')
+            if 'prestador' in session: return redirect(url_for('painel_prestador'))
+            if 'manutencao' in session: return redirect(url_for('painel_manutencao'))
+            if 'gerente' in session: return redirect(url_for('painel'))
+            return redirect(url_for('login'))
+
         data_abertura_os_obj = None
         if dados_os_para_finalizar:
             data_abertura_os_str = dados_os_para_finalizar.get('data_entrada') or dados_os_para_finalizar.get('data')
