@@ -396,6 +396,26 @@ def carregar_os_manutencao(username_manut):
         os_item_manut['dias_abertos'] = (data_hoje_manut - data_abertura_os_manut).days if data_abertura_os_manut else 0
     return lista_os_manut
 
+def carregar_todas_os_pendentes():
+    lista_os_pendentes = []
+    # Itera sobre os arquivos de prestadores e gerentes
+    for diretorio in [MENSAGENS_PRESTADOR_DIR, MENSAGENS_DIR]:
+        for nome_arquivo in os.listdir(diretorio):
+            if nome_arquivo.lower().endswith('.json'):
+                caminho_arquivo = os.path.join(diretorio, nome_arquivo)
+                try:
+                    with open(caminho_arquivo, 'r', encoding='utf-8') as f:
+                        lista_os = json.load(f)
+
+                    for os_item in lista_os:
+                        if os_item.get('status') == 'Pendente':
+                            # Adiciona informação do arquivo de origem para referência
+                            os_item['arquivo_origem'] = nome_arquivo
+                            lista_os_pendentes.append(os_item)
+                except Exception as e:
+                    logger.error(f"Erro ao ler arquivo de OS pendente {caminho_arquivo}: {e}")
+    return lista_os_pendentes
+
 def carregar_os_sem_prestador():
     lista_os_sem_p = []
     data_hoje_sem_p = saopaulo_tz.localize(datetime.now()).date()
@@ -494,9 +514,13 @@ def painel():
     user_atual = User.query.filter_by(username=session['gerente']).first()
     caminho_foto_perfil = url_for('static', filename=user_atual.profile_picture) if user_atual and user_atual.profile_picture else None
     
+    # Carrega todas as OS com status 'Pendente'
+    todas_os_pendentes = carregar_todas_os_pendentes()
+
     return render_template('painel.html',
                          os_pendentes=os_pendentes_gerente,
                          finalizadas=finalizadas_gerente,
+                         todas_os_pendentes=todas_os_pendentes,  # Passa a lista para o template
                          gerente=session['gerente'],
                          profile_picture=caminho_foto_perfil,
                          now=datetime.now(saopaulo_tz), 
@@ -785,6 +809,56 @@ def finalizar_os(os_numero_str):
     return redirect(url_for('login'))
 
 
+@app.route('/marcar_pendente/<os_numero>', methods=['POST'])
+def marcar_pendente(os_numero):
+    if 'prestador' not in session:
+        flash('Acesso negado. Apenas prestadores podem marcar OS como pendente.', 'danger')
+        return redirect(url_for('login'))
+
+    prestador_username = session['prestador']
+    motivo = request.form.get('motivo', 'Motivo não especificado.')
+
+    # Encontrar o arquivo JSON do prestador
+    dados_prestador = next((p for p in carregar_prestadores() if p.get('usuario', '').lower() == prestador_username), None)
+    if not dados_prestador or not dados_prestador.get('arquivo_os'):
+        flash('Não foi possível encontrar o arquivo de OS para este prestador.', 'danger')
+        return redirect(url_for('painel_prestador'))
+
+    caminho_arquivo_os = os.path.join(MENSAGENS_PRESTADOR_DIR, dados_prestador['arquivo_os'])
+
+    if not os.path.exists(caminho_arquivo_os):
+        flash(f'Arquivo de OS não encontrado: {dados_prestador["arquivo_os"]}', 'danger')
+        return redirect(url_for('painel_prestador'))
+
+    try:
+        with open(caminho_arquivo_os, 'r+', encoding='utf-8') as f:
+            lista_os = json.load(f)
+
+            os_encontrada = False
+            for os_item in lista_os:
+                if str(os_item.get('os') or os_item.get('OS', '')) == os_numero:
+                    os_item['status'] = 'Pendente'
+                    os_item['status_motivo'] = motivo
+                    os_item['status_data'] = datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')
+                    os_item['status_definido_por'] = session.get('prestador_nome', prestador_username)
+                    os_encontrada = True
+                    break
+
+            if os_encontrada:
+                f.seek(0)
+                json.dump(lista_os, f, ensure_ascii=False, indent=2)
+                f.truncate()
+                flash(f'OS {os_numero} marcada como pendente.', 'success')
+            else:
+                flash(f'OS {os_numero} não encontrada na sua lista.', 'warning')
+
+    except Exception as e:
+        logger.error(f"Erro ao marcar OS {os_numero} como pendente para {prestador_username}: {e}")
+        flash('Ocorreu um erro ao atualizar a OS.', 'danger')
+
+    return redirect(url_for('painel_prestador'))
+
+
 @app.route('/atribuir_prestador/<os_numero_str>', methods=['POST'])
 def atribuir_prestador(os_numero_str):
     if 'manutencao' not in session:
@@ -843,7 +917,8 @@ def admin_panel():
 
     periodo = request.args.get('periodo', 'todos')
     data_inicio = request.args.get('data_inicio') 
-    data_fim = request.args.get('data_fim')       
+    data_fim = request.args.get('data_fim')
+    filtro_status = request.args.get('filtro_status', 'todos')
 
     query_finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc())
     
@@ -947,6 +1022,15 @@ def admin_panel():
     chart_data['os_por_periodo'] = dict(sorted(chart_data['os_por_periodo'].items()))
     chart_data['os_por_gerente'] = dict(chart_data['os_por_gerente'])
     
+    # Carrega as OS pendentes
+    os_pendentes_todas = carregar_todas_os_pendentes()
+
+    # Filtra as OS em aberto se o filtro de status for 'pendente'
+    if filtro_status == 'pendente':
+        # Se o filtro for pendente, mostramos apenas as pendentes nas listas de abertas
+        ranking_os_abertas = [] # Limpa a lista geral de abertas
+        ranking_os_prestadores = [] # Limpa a lista geral de abertas
+
     return render_template('admin.html',
                          total_os=total_os,
                          gerentes=gerentes,
@@ -960,8 +1044,9 @@ def admin_panel():
                          chart_data=chart_data,
                          periodo=periodo, 
                          data_inicio=data_inicio, 
-                         data_fim=data_fim
-                         # format_datetime=format_datetime # Removido pois está no context_processor
+                         data_fim=data_fim,
+                         os_pendentes_todas=os_pendentes_todas,
+                         filtro_status=filtro_status
                          )
 # ##########################################################################
 # FIM DA FUNÇÃO admin_panel ATUALIZADA

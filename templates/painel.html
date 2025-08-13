@@ -271,6 +271,38 @@
     </div>
   {% endif %}
 
+  <!-- Seção de OS Pendentes (para todos) -->
+  {% if todas_os_pendentes %}
+  <hr class="my-5">
+  <h2 class="h5 mb-3 text-warning">
+      <i class="fas fa-pause-circle me-2"></i> OS Pendentes (Aguardando Ação)
+  </h2>
+  <div class="table-responsive">
+      <table class="table table-modern table-sm table-hover">
+          <thead class="table-light">
+              <tr>
+                  <th>OS</th>
+                  <th>Frota</th>
+                  <th>Prestador</th>
+                  <th>Motivo da Pendência</th>
+                  <th>Data Status</th>
+              </tr>
+          </thead>
+          <tbody>
+              {% for p in todas_os_pendentes %}
+              <tr>
+                  <td><span class="badge bg-secondary">{{ p.os }}</span></td>
+                  <td>{{ p.frota }}</td>
+                  <td>{{ p.status_definido_por | default('N/A') }}</td>
+                  <td>{{ p.status_motivo | default('N/A') }}</td>
+                  <td>{{ p.status_data | default('N/A') }}</td>
+              </tr>
+              {% endfor %}
+          </tbody>
+      </table>
+  </div>
+  {% endif %}
+
   <hr class="my-5">
   <h2 class="h5 mb-3">
     <i class="fas fa-history me-2 text-primary"></i> Histórico de OS Finalizadas (Últimas 100)
