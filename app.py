@@ -416,13 +416,25 @@ def carregar_todas_os_pendentes():
                     logger.error(f"Erro ao ler arquivo de OS pendente {caminho_arquivo}: {e}")
     return lista_os_pendentes
 
-def carregar_os_sem_prestador():
+def carregar_os_sem_prestador(username_manut=None):
     lista_os_sem_p = []
     data_hoje_sem_p = saopaulo_tz.localize(datetime.now()).date()
-    for nome_arquivo_json_gerente in os.listdir(MENSAGENS_DIR):
-        if nome_arquivo_json_gerente.lower().endswith('.json'):
-            caminho_arq_gerente = os.path.join(MENSAGENS_DIR, nome_arquivo_json_gerente)
-            try:
+
+    todos_arquivos = os.listdir(MENSAGENS_DIR)
+    arquivos_a_processar = []
+
+    if username_manut:
+        # Filtra os arquivos para processar apenas aqueles que contêm o nome do usuário de manutenção
+        for nome_arquivo in todos_arquivos:
+            if username_manut.lower() in nome_arquivo.lower() and nome_arquivo.lower().endswith('.json'):
+                arquivos_a_processar.append(nome_arquivo)
+    else:
+        # Comportamento original: processa todos os arquivos JSON
+        arquivos_a_processar = [f for f in todos_arquivos if f.lower().endswith('.json')]
+
+    for nome_arquivo_json_gerente in arquivos_a_processar:
+        caminho_arq_gerente = os.path.join(MENSAGENS_DIR, nome_arquivo_json_gerente)
+        try:
                 with open(caminho_arq_gerente, 'r', encoding='utf-8') as f_gerente:
                     dados_os_gerente = json.load(f_gerente)
                 for os_item_g in dados_os_gerente:
@@ -631,7 +643,7 @@ def painel_manutencao():
         return redirect(url_for('login'))
 
     lista_os_manutencao = carregar_os_manutencao(session['manutencao'])
-    lista_os_sem_p_manut = carregar_os_sem_prestador()
+    lista_os_sem_p_manut = carregar_os_sem_prestador(session['manutencao'])
     
     ordenar_por = request.args.get('ordenar', 'data_desc')
     if lista_os_manutencao: 
