@@ -33,17 +33,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
-        "frota": "251",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "116516",
-        "data_entrada": "12/08/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Trocar correia do alternador - (Fazenda Nova Manhã)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "MURILO J ONCK LEMES DA SILVA",
         "frota": "5657",
         "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -52,17 +41,6 @@
         "previsao_saida": "---",
         "prestador": "nan",
         "servico": "Substituir chicote da lança do aplicador - (Fazenda Bela Manhã)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "DANILO MULARI GONZAGA",
-        "frota": "5361",
-        "modelo": "ADUBADORA E SEMEADORA MS60",
-        "os": "116507",
-        "data_entrada": "12/08/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Chicote da maquina de boro rompido - (Fazenda Estrela)",
         "liberado_por": "Arthur"
     },
     {
@@ -165,17 +143,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "MARCIO JUNIO NUNES DE OLIVEIRA",
-        "frota": "229",
-        "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-        "os": "116452",
-        "data_entrada": "11/08/2025",
-        "previsao_saida": "---",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Vazamento de óleo no cano de hidráulico - (Fazenda São Severino)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "ANTONIO PAULO LARENTIS ALVES",
         "frota": "26",
         "modelo": "TRATOR MASSEY FERGUSON 275/2",
@@ -220,17 +187,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
-        "frota": "5677",
-        "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-        "os": "116415",
-        "data_entrada": "11/08/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Revisar chicote eletrico após curto eletrico - (Fazenda São Severino)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "DIEGO GOMES CAMBOI",
         "frota": "297",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -243,17 +199,6 @@
     },
     {
         "solicitante": "IZAIAS FRANCISCO DA SILVA",
-        "frota": "144",
-        "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-        "os": "116405",
-        "data_entrada": "11/08/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Verificar luz da bateria acessa no painel - (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "IZAIAS FRANCISCO DA SILVA",
         "frota": "198",
         "modelo": "TRATOR JOHN DEERE 5080E",
         "os": "116404",
@@ -261,17 +206,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Aferir pressão da bomba hidráulica - (Fazenda São Severino)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "DIEGO GOMES CAMBOI",
-        "frota": "302",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "116401",
-        "data_entrada": "09/08/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Refazer chicote elétrico devido a curto-circuito que ocasionou derretimento dos fios. - (Fazenda Santa Izabel)",
         "liberado_por": "Arthur"
     },
     {
@@ -338,17 +272,6 @@
         "previsao_saida": "---",
         "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
         "servico": "\"Verificar cibiés de teto que não acendem. Operador já verificou conectores, fusíveis e demais componentes básicos. - (Fazenda São Severino)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "IZAIAS FRANCISCO DA SILVA",
-        "frota": "134",
-        "modelo": "TRATOR NEW HOLLAND TL75E",
-        "os": "116319",
-        "data_entrada": "08/08/2025",
-        "previsao_saida": "---",
-        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-        "servico": "Revisar sinalização - (Fazenda Estrela)",
         "liberado_por": "Arthur"
     },
     {
