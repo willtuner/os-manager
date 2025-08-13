@@ -1,35 +1,11 @@
 [
   {
-    "frota": "251",
-    "cd_equipamento": "251",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116516",
-    "data_entrada": "12/08/2025",
-    "servico": "Trocar correia do alternador - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "126",
     "cd_equipamento": "126",
     "modelo": "GATOR JOHNN DEERE",
     "os": "116509",
     "data_entrada": "12/08/2025",
     "servico": "Verificar o funcionamento do equipamento não esta desligando na chave - Faz São Paulo\nAutorizado Arthur"
-  },
-  {
-    "frota": "5759",
-    "cd_equipamento": "5759",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "116508",
-    "data_entrada": "12/08/2025",
-    "servico": "Trocar cabo de controle, fazer proteção e melhorar fixação - Faz Estrela \nAutorizado Arthur"
-  },
-  {
-    "frota": "5361",
-    "cd_equipamento": "5361",
-    "modelo": "ADUBADORA E SEMEADORA MS60",
-    "os": "116507",
-    "data_entrada": "12/08/2025",
-    "servico": "Chicote da maquina de boro rompido - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5816",
@@ -80,30 +56,6 @@
     "servico": "Verificar alternador - (Fazenda Terra Branca)\nSolicitado Sr. João Victor\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5677",
-    "cd_equipamento": "5677",
-    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-    "os": "116415",
-    "data_entrada": "11/08/2025",
-    "servico": "Revisar chicote eletrico após curto eletrico - (Fazenda São Severino)\nSolicitado Sr. Diego/Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "144",
-    "cd_equipamento": "144",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "116405",
-    "data_entrada": "11/08/2025",
-    "servico": "Verificar luz da bateria acessa no painel - (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "302",
-    "cd_equipamento": "302",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116401",
-    "data_entrada": "09/08/2025",
-    "servico": "Refazer chicote elétrico devido a curto-circuito que ocasionou derretimento dos fios. - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "308",
     "cd_equipamento": "308",
     "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
@@ -118,14 +70,6 @@
     "os": "116337",
     "data_entrada": "08/08/2025",
     "servico": "\"Verificar cibiés de teto que não acendem. Operador já verificou conectores, fusíveis e demais componentes básicos. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "134",
-    "cd_equipamento": "134",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "116319",
-    "data_entrada": "08/08/2025",
-    "servico": "Revisar sinalização - (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "74",
