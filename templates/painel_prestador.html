@@ -157,14 +157,29 @@
                     <span style="white-space: pre-wrap;">{{ item.servico | default('Serviço não especificado.') }}</span>
                 </p>
                 
+                {% if item.status == 'Pendente' %}
+                <div class="alert alert-warning p-2" role="alert">
+                    <h6 class="alert-heading h6 mb-1"><i class="fas fa-pause-circle me-1"></i>OS Pendente</h6>
+                    <p class="mb-1 small"><strong>Motivo:</strong> {{ item.status_motivo }}</p>
+                    <p class="small text-muted mb-0">
+                        Definido por: {{ item.status_definido_por }} em {{ item.status_data }}
+                    </p>
+                </div>
+                {% endif %}
+
                 <hr class="form-section-divider">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h6 class="finalization-header mb-0"><i class="fas fa-check-square me-1"></i>Finalizar esta OS:</h6>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#pendenteModal-{{ item.os }}">
+                        <i class="fas fa-pause-circle me-1"></i>Marcar Pendente
+                    </button>
+                </div>
 
                 <form action="{{ url_for('finalizar_os', os_numero_str=item.os) }}"
                       method="POST"
                       enctype="multipart/form-data"
-                      class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
-                    
-                    <h6 class="finalization-header"><i class="fas fa-check-square me-1"></i>Finalizar esta OS:</h6>
+                      class="needs-validation mt-3" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
                     
                     <div class="row g-2 mb-2">
                         <div class="col-md-6">
@@ -230,6 +245,32 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Marcar como Pendente -->
+        <div class="modal fade" id="pendenteModal-{{ item.os }}" tabindex="-1" aria-labelledby="pendenteModalLabel-{{ item.os }}" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form action="{{ url_for('marcar_pendente', os_numero=item.os) }}" method="POST" class="needs-validation" novalidate>
+                        <div class="modal-header bg-warning text-dark">
+                            <h5 class="modal-title" id="pendenteModalLabel-{{ item.os }}"><i class="fas fa-pause-circle me-2"></i>Marcar OS {{ item.os }} como Pendente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>A OS ficará com o status "Pendente" e será destacada para o gerente e administrador.</p>
+                            <div class="mb-3">
+                                <label for="motivo_{{ item.os }}" class="form-label"><strong>Motivo da Pendência <span class="text-danger">*</span></strong></label>
+                                <textarea class="form-control" id="motivo_{{ item.os }}" name="motivo" rows="4" placeholder="Ex: Aguardando chegada de peças, Necessário aprovação do cliente, etc." required></textarea>
+                                <div class="invalid-feedback">Por favor, informe o motivo da pendência.</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-warning text-dark"><i class="fas fa-save me-1"></i>Salvar Pendência</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
