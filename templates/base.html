@@ -137,7 +137,7 @@
                 {% if session.get('gerente') or session.get('prestador') or session.get('manutencao') %}
                     <div class="text-end">
                         <span class="me-3">
-                            Olá,
+                            {{ random_greeting }}
                             <strong>
                                 {% if session.get('gerente') %}
                                     {{ session.get('gerente')|capitalize_name }}
