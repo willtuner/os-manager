@@ -982,7 +982,6 @@ def admin_panel():
     periodo = request.args.get('periodo', 'todos')
     data_inicio = request.args.get('data_inicio') 
     data_fim = request.args.get('data_fim')
-    filtro_status = request.args.get('filtro_status', 'todos')
 
     query_finalizadas = Finalizacao.query.order_by(Finalizacao.registrado_em.desc())
     
@@ -1089,12 +1088,6 @@ def admin_panel():
     # Carrega as OS pendentes
     os_pendentes_todas = carregar_todas_os_pendentes()
 
-    # Filtra as OS em aberto se o filtro de status for 'pendente'
-    if filtro_status == 'pendente':
-        # Se o filtro for pendente, mostramos apenas as pendentes nas listas de abertas
-        ranking_os_abertas = [] # Limpa a lista geral de abertas
-        ranking_os_prestadores = [] # Limpa a lista geral de abertas
-
     return render_template('admin.html',
                          total_os=total_os,
                          gerentes=gerentes,
@@ -1109,8 +1102,7 @@ def admin_panel():
                          periodo=periodo, 
                          data_inicio=data_inicio, 
                          data_fim=data_fim,
-                         os_pendentes_todas=os_pendentes_todas,
-                         filtro_status=filtro_status
+                         os_pendentes_todas=os_pendentes_todas
                          )
 # ##########################################################################
 # FIM DA FUNÇÃO admin_panel ATUALIZADA
