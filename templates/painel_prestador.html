@@ -104,6 +104,28 @@
         {% endif %}
     {% endwith %}
 
+    {# --- Bloco de Saudação Dinâmica --- #}
+    {% set os_count = os_list|length %}
+    {% if os_count == 0 %}
+      {% set alert_class = 'alert-success' %}
+      {% set message = 'Você não tem nenhuma OS pendente no momento. ✅' %}
+    {% elif os_count <= 5 %}
+      {% set alert_class = 'alert-info' %}
+      {% set message = 'Você tem ' ~ os_count ~ ' OS aberta' ~ ('s' if os_count > 1 else '') ~ '. 👍' %}
+    {% elif os_count <= 15 %}
+      {% set alert_class = 'alert-warning' %}
+      {% set message = 'Você tem ' ~ os_count ~ ' OS abertas. Fique atento! ⚠️' %}
+    {% else %}
+      {% set alert_class = 'alert-danger' %}
+      {% set message = 'Você tem ' ~ os_count ~ ' OS abertas. Priorize as mais antigas! 🚨' %}
+    {% endif %}
+
+    <div class="alert {{ alert_class }} p-3 my-3" role="alert">
+      <h5 class="alert-heading mb-0">Olá, {{ nome|capitalize_name }}!</h5>
+      <p class="mb-0">{{ message }}</p>
+    </div>
+    {# --- Fim do Bloco de Saudação --- #}
+
     <div class="d-flex justify-content-between align-items-center my-3">
         <div>
             <h2 class="h4 text-dark mb-0">
