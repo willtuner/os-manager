@@ -2,6 +2,8 @@
 
 {% block title %}Painel de OS – {{ nome }}{% endblock %}
 
+{% block page_title %}OS Atribuídas{% endblock %}
+
 {% block content %}
 <style>
     :root {
@@ -135,17 +137,6 @@
 </style>
 
 <div class="container">
-    {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="alert alert-{{ category }} alert-dismissible fade show mt-3" role="alert">
-                    {{ message }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-
     {# --- Bloco de Saudação com Mascote --- #}
     {% set os_count = os_list|length %}
     {% if os_count == 0 %}
@@ -170,18 +161,6 @@
         </div>
     </div>
     {# --- Fim do Bloco de Saudação com Mascote --- #}
-
-    <div class="d-flex justify-content-between align-items-center my-3">
-        <div>
-            <h2 class="h4 text-dark mb-0">
-                <i class="fas fa-tools text-success me-2"></i>Ordens de Serviço Atribuídas
-            </h2>
-            <p class="text-muted small mb-0">Prestador: <strong>{{ nome | capitalize_name }}</strong></p>
-        </div>
-        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
-            <i class="fas fa-sign-out-alt me-1"></i>Sair
-        </a>
-    </div>
 
     {% if os_list %}
         {% for item in os_list %}

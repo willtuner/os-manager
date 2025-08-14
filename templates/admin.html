@@ -2,6 +2,18 @@
 
 {% block title %}Painel Admin – Suco Prats Agro{% endblock %}
 
+{% block page_title %}Painel de Manutenção Agrícola{% endblock %}
+
+{% block header_actions %}
+  <a href="{{ url_for('exportar_os_finalizadas', periodo=periodo, data_inicio=data_inicio, data_fim=data_fim) }}" class="btn btn-agro btn-sm">
+    <i class="fas fa-file-export me-1"></i>Exportar Relatório
+  </a>
+  <a href="{{ url_for('frota_leve') }}" class="btn btn-info btn-sm ms-2">
+    <i class="fas fa-car-side me-1"></i>Frota Leve
+  </a>
+{% endblock %}
+
+
 {% block extra_css %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <style>
@@ -335,23 +347,6 @@
 
 {% block content %}
 <div class="container">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2 class="h4 mb-0"><i class="fas fa-tractor icon-agro"></i>Painel de Manutenção Agrícola</h2>
-    <div class="d-flex align-items-center">
-      {% if admin_user and admin_user.profile_picture %}
-        <img src="{{ url_for('static', filename=admin_user.profile_picture) }}" alt="Foto de Perfil" class="rounded-circle me-3" style="width: 40px; height: 40px; object-fit: cover;">
-      {% else %}
-        <i class="fas fa-user-circle fa-2x text-muted me-3"></i>
-      {% endif %}
-      <a href="{{ url_for('exportar_os_finalizadas', periodo=periodo, data_inicio=data_inicio, data_fim=data_fim) }}" class="btn btn-agro btn-sm me-2">
-        <i class="fas fa-file-export icon-agro"></i>Exportar Relatório
-      </a>
-      <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
-        <i class="fas fa-sign-out-alt icon-agro"></i>Desconectar
-      </a>
-    </div>
-  </div>
-
   {# --- Bloco de Saudação com Mascote --- #}
   {% set os_count = os_abertas.values()|sum %}
   {% if os_count == 0 %}
