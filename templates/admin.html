@@ -293,10 +293,17 @@
       });
     });
 
-    // Gráfico de OS por período
-    const ctxPeriodo = document.getElementById('osPorPeriodo').getContext('2d');
-    new Chart(ctxPeriodo, {
-      type: 'bar',
+    // Lógica para inicializar gráficos apenas quando a aba se torna visível
+    const chartsTab = document.querySelector('#charts-tab');
+    let chartsInitialized = false;
+
+    const initializeCharts = () => {
+        if (chartsInitialized) return;
+
+        // Gráfico de OS por período
+        const ctxPeriodo = document.getElementById('osPorPeriodo').getContext('2d');
+        new Chart(ctxPeriodo, {
+        type: 'bar',
       data: {
         labels: Object.keys({{ chart_data.os_por_periodo|tojson }}),
         datasets: [{
@@ -331,6 +338,16 @@
         responsive: true,
         plugins: { legend: { position: 'right' } }
       }
+    });
+        chartsInitialized = true;
+    };
+
+    if (chartsTab.classList.contains('active')) {
+        initializeCharts();
+    }
+
+    chartsTab.addEventListener('shown.bs.tab', event => {
+        initializeCharts();
     });
 
     // Filtro da tabela
@@ -413,6 +430,11 @@
       <button class="nav-link active" id="geral-tab" data-bs-toggle="tab" data-bs-target="#geral" type="button" role="tab" aria-controls="geral" aria-selected="true">
         <i class="fas fa-cogs icon-agro"></i>Visão Geral
       </button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pending-tab" data-bs-toggle="tab" data-bs-target="#pending" type="button" role="tab" aria-controls="pending" aria-selected="false">
+          <i class="fas fa-exclamation-circle me-1"></i>Pendências e Rankings
+        </button>
     </li>
     <li class="nav-item" role="presentation">
       <a href="{{ url_for('frota_leve') }}" class="nav-link">
@@ -516,107 +538,101 @@
         </div>
       </div>
 
-      <!-- Ranking de OS Pendentes (Supervisores) -->
-      <div class="card-modern mb-4">
-        <div class="card-header ranking-gerentes d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Supervisores)</h4>
-          {% if ranking_os_abertas|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="gerente-ranking-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-modern table-sm">
-              <thead>
-                <tr><th>Posição</th><th>Supervisor</th><th>OS Pendentes</th></tr>
-              </thead>
-              <tbody>
-                {% for gerente, count in ranking_os_abertas %}
-                <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
-                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
-                  <td>{{ gerente|capitalize_name }}</td>
-                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-                </tr>
-                {% endfor %}
-                {% if not ranking_os_abertas %}
-                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-                {% endif %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <!-- Ranking de OS Pendentes (Prestadores) -->
-      <div class="card-modern mb-4">
-        <div class="card-header ranking-prestadores d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Prestadores)</h4>
-          {% if ranking_os_prestadores|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="prestador-ranking-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-modern table-sm">
-              <thead>
-                <tr><th>Posição</th><th>Prestador</th><th>OS Pendentes</th></tr>
-              </thead>
-              <tbody>
-                {% for prestador, count in ranking_os_prestadores %}
-                <tr class="{% if loop.index > 3 %}prestador-ranking-row hidden-row{% endif %}">
-                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
-                  <td>{{ prestador|capitalize_name }}</td>
-                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-                </tr>
-                {% endfor %}
-                {% if not ranking_os_prestadores %}
-                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-                {% endif %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <!-- Histórico de Logins -->
-      <div class="card-modern">
-        <div class="card-header historico-logins d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de Acesso (Últimos 50)</h4>
-          {% if login_events|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="login-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-modern table-sm">
-              <thead>
-                <tr><th>Usuário</th><th>Tipo</th><th>Login</th><th>Logout</th><th>Duração</th></tr>
-              </thead>
-              <tbody>
-                {% for ev in login_events %}
-                <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
-                  <td>{{ ev.username|capitalize_name }}</td>
-                  <td>{{ ev.user_type.capitalize() }}</td>
-                  <td>{{ ev.login_time_formatted }}</td>
-                  <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
-                  <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
-                </tr>
-                {% endfor %}
-                {% if not login_events %}
-                <tr><td colspan="5" class="text-center py-3">Nenhum evento de acesso</td></tr>
-                {% endif %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
     </div>
+
+    <!-- Aba: Pendências e Rankings -->
+    <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+        <!-- Tabela de OS Pendentes -->
+        {% if os_pendentes_todas %}
+        <div class="card-modern mb-4">
+          <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="fas fa-pause-circle icon-agro"></i>Manutenções Pendentes Atualmente</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-modern table-sm table-hover">
+                <thead>
+                  <tr><th>OS</th><th>Frota</th><th>Prestador</th><th>Motivo da Pendência</th><th>Data Status</th></tr>
+                </thead>
+                <tbody>
+                  {% for p in os_pendentes_todas %}
+                  <tr>
+                    <td><span class="badge bg-secondary">{{ p.os }}</span></td>
+                    <td>{{ p.frota }}</td>
+                    <td>{{ p.status_definido_por | default('N/A') }}</td>
+                    <td>{{ p.status_motivo | default('N/A') }}</td>
+                    <td>{{ p.status_data | default('N/A') }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="alert alert-success text-center">
+          <i class="fas fa-check-circle fa-2x mb-2"></i>
+          <h4 class="alert-heading">Tudo em ordem!</h4>
+          <p>Nenhuma ordem de serviço marcada como pendente no momento.</p>
+        </div>
+        {% endif %}
+
+        <!-- Ranking de OS Em Aberto (Supervisores) -->
+        <div class="card-modern mb-4">
+          <div class="card-header ranking-gerentes d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking OS Em Aberto (Supervisores)</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-modern table-sm">
+                <thead>
+                  <tr><th>Posição</th><th>Supervisor</th><th>OS Abertas</th></tr>
+                </thead>
+                <tbody>
+                  {% for gerente, count in ranking_os_abertas %}
+                  <tr>
+                    <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+                    <td>{{ gerente|capitalize_name }}</td>
+                    <td>{{ count }} aberta{{ 's' if count != 1 else '' }}</td>
+                  </tr>
+                  {% endfor %}
+                  {% if not ranking_os_abertas %}
+                  <tr><td colspan="3" class="text-center py-3">Nenhuma OS em aberto</td></tr>
+                  {% endif %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ranking de OS Em Aberto (Prestadores) -->
+        <div class="card-modern mb-4">
+          <div class="card-header ranking-prestadores d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking OS Em Aberto (Prestadores)</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-modern table-sm">
+                <thead>
+                  <tr><th>Posição</th><th>Prestador</th><th>OS Abertas</th></tr>
+                </thead>
+                <tbody>
+                  {% for prestador, count in ranking_os_prestadores %}
+                  <tr>
+                    <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+                    <td>{{ prestador|capitalize_name }}</td>
+                    <td>{{ count }} aberta{{ 's' if count != 1 else '' }}</td>
+                  </tr>
+                  {% endfor %}
+                  {% if not ranking_os_prestadores %}
+                  <tr><td colspan="3" class="text-center py-3">Nenhuma OS em aberto</td></tr>
+                  {% endif %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Aba: Análises Gráficas -->
     <div class="tab-pane fade" id="graficos" role="tabpanel" aria-labelledby="graficos-tab">
