@@ -1088,7 +1088,11 @@ def admin_panel():
     # Carrega as OS pendentes
     os_pendentes_todas = carregar_todas_os_pendentes()
 
+    # Carrega dados do usuário admin para a foto de perfil
+    admin_user = User.query.filter_by(username=session['gerente']).first()
+
     return render_template('admin.html',
+                         admin_user=admin_user,
                          total_os=total_os,
                          gerentes=gerentes,
                          now=datetime.now(saopaulo_tz), 
