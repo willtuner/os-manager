@@ -542,13 +542,21 @@ def painel():
     user_atual = User.query.filter_by(username=session['gerente']).first()
     caminho_foto_perfil = url_for('static', filename=user_atual.profile_picture) if user_atual and user_atual.profile_picture else None
     
-    # Carrega todas as OS com status 'Pendente'
+    # Unifica as listas de OS pendentes com a lista principal do gerente
     todas_os_pendentes = carregar_todas_os_pendentes()
+    mapa_pendentes = {str(p.get('os') or p.get('OS', '')): p for p in todas_os_pendentes}
+
+    for os in os_pendentes_gerente:
+        os_num = str(os.get('os') or os.get('OS', ''))
+        if os_num in mapa_pendentes:
+            os['status'] = 'Pendente'
+            os['status_motivo'] = mapa_pendentes[os_num].get('status_motivo', '')
+            os['status_definido_por'] = mapa_pendentes[os_num].get('status_definido_por', '')
+            os['status_data'] = mapa_pendentes[os_num].get('status_data', '')
 
     return render_template('painel.html',
                          os_pendentes=os_pendentes_gerente,
                          finalizadas=finalizadas_gerente,
-                         todas_os_pendentes=todas_os_pendentes,  # Passa a lista para o template
                          gerente=session['gerente'],
                          profile_picture=caminho_foto_perfil,
                          now=datetime.now(saopaulo_tz), 
