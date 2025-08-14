@@ -401,7 +401,7 @@
   <div class="mascot-container">
     <div class="mascot-icon">🚜</div>
     <div class="speech-bubble {{ bubble_class }}">
-      <h5 class="fw-bold mb-1">{{ random_greeting }} Admin!</h5>
+      <h5 class="fw-bold mb-1">{{ random_greeting }} {{ session.get('gerente')|capitalize_name }}!</h5>
       <p class="mb-0">{{ message }}</p>
     </div>
   </div>
@@ -418,6 +418,11 @@
       <a href="{{ url_for('frota_leve') }}" class="nav-link">
         <i class="fas fa-car-side icon-agro"></i>Frota Leve
       </a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="charts-tab" data-bs-toggle="tab" data-bs-target="#charts" type="button" role="tab" aria-controls="charts" aria-selected="false">
+        <i class="fas fa-chart-pie me-1"></i>Análises
+      </button>
     </li>
   </ul>
 
@@ -642,6 +647,37 @@
         </div>
       </div>
     </div>
+
+    <!-- Aba: Análises Gráficas -->
+    <div class="tab-pane fade" id="charts" role="tabpanel" aria-labelledby="charts-tab">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="card-modern">
+            <div class="card-header">
+              <h4 class="mb-0"><i class="fas fa-chart-bar me-2"></i>Manutenções por Período</h4>
+            </div>
+            <div class="card-body">
+              <div class="chart-container">
+                <canvas id="osPorPeriodo"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="card-modern">
+            <div class="card-header">
+              <h4 class="mb-0"><i class="fas fa-chart-pie me-2"></i>Manutenções por Supervisor</h4>
+            </div>
+            <div class="card-body">
+              <div class="chart-container">
+                <canvas id="osPorGerente"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 {% endblock %}
