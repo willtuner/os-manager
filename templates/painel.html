@@ -265,30 +265,47 @@
           Frota {{ os.frota }}
         </h5>
         <div>
+          {% if os.status == 'Pendente' %}
+            <span class="badge bg-warning text-dark me-2">PENDENTE</span>
+          {% endif %}
           <span class="badge-dias
-            {% if os.dias|int > 30 %}bg-danger
-            {% elif os.dias|int > 15 %}bg-warning text-dark
-            {% else %}bg-info text-dark{% endif %} me-2">
+            {% if os.dias|int > 15 %}bg-danger
+            {% elif os.dias|int > 5 %}bg-warning text-dark
+            {% else %}bg-success{% endif %} me-2">
             {{ os.dias }} dia{{ 's' if os.dias|int != 1 else '' }}
+            {% if os.dias|int > 15 %}🚨
+            {% elif os.dias|int > 5 %}⚠️
+            {% else %}✅
+            {% endif %}
           </span>
         </div>
       </div>
       <div class="card-body">
         <div class="mb-3">
-            <small class="text-muted d-block mb-1">
-              <i class="far fa-calendar-alt me-1"></i> Aberta em: {{ os.data }}
-            </small>
-            <small class="text-muted d-block mb-2">
-              <i class="fas fa-user-hard-hat me-1"></i>
-              Prestador: {{ os.prestador if os.prestador != "Prestador não definido" else "Não definido" }}
-            </small>
+            <p class="mb-1">
+              <i class="fas fa-user-hard-hat me-1 text-muted"></i>
+              <strong>Prestador:</strong> {{ os.prestador if os.prestador != "Prestador não definido" else "Não definido" }}
+            </p>
+            <p class="mb-2">
+                <i class="far fa-calendar-alt me-1 text-muted"></i>
+                <strong>Aberta em:</strong> {{ os.data }}
+            </p>
             <p class="card-text mb-0">
               <i class="fas fa-tools me-1 text-muted"></i> {{ os.servico }}
             </p>
         </div>
 
+        {% if os.status == 'Pendente' %}
+        <div class="alert alert-warning p-2 mb-3" role="alert">
+            <p class="mb-1 small"><strong>Motivo da Pendência:</strong> {{ os.status_motivo }}</p>
+            <p class="small text-muted mb-0">
+                Definido por: {{ os.status_definido_por }} em {{ os.status_data }}
+            </p>
+        </div>
+        {% endif %}
+
         <button class="btn btn-prats btn-sm w-100 btn-toggle-form">
-            <i class="fas fa-chevron-down me-1"></i> Resolver OS
+            <i class="fas fa-chevron-down me-1"></i> Fechar OS
         </button>
 
         <div class="collapse-form d-none mt-3">
@@ -303,9 +320,7 @@
                          name="data_finalizacao"
                          class="form-control form-control-sm"
                          required
-                         max="{{ today_date }}"
-                         data-bs-toggle="tooltip"
-                         title="Selecione a data de finalização da OS">
+                         max="{{ today_date }}">
                   <div class="invalid-feedback">Por favor, informe a data.</div>
                 </div>
                 <div class="col-md-4">
@@ -313,14 +328,12 @@
                   <input type="time" id="hora_finalizacao_{{ os.os }}"
                          name="hora_finalizacao"
                          class="form-control form-control-sm"
-                         required
-                         data-bs-toggle="tooltip"
-                         title="Selecione a hora de finalização">
+                         required>
                   <div class="invalid-feedback">Por favor, informe a hora.</div>
                 </div>
                 <div class="col-md-4 d-flex align-items-end">
                   <button type="submit" class="btn btn-success btn-sm w-100">
-                    <i class="fas fa-check-circle me-1"></i> Finalizar
+                    <i class="fas fa-check-circle me-1"></i> Confirmar
                   </button>
                 </div>
               </div>
@@ -340,41 +353,9 @@
   {% else %}
     <div class="text-center py-5 bg-white rounded shadow-sm">
       <i class="fas fa-check-circle text-success fa-3x mb-3"></i>
-      <h4 class="text-muted">Nenhuma OS Pendente</h4>
-      <p>Todas as ordens de serviço estão em dia!</p>
+      <h4 class="text-muted">Nenhuma OS em aberto</h4>
+      <p>Todas as suas ordens de serviço estão em dia!</p>
     </div>
-  {% endif %}
-
-  <!-- Seção de OS Pendentes (para todos) -->
-  {% if todas_os_pendentes %}
-  <hr class="my-5">
-  <h2 class="h5 mb-3 text-warning">
-      <i class="fas fa-pause-circle me-2"></i> OS Pendentes (Aguardando Ação)
-  </h2>
-  <div class="table-responsive">
-      <table class="table table-modern table-sm table-hover">
-          <thead class="table-light">
-              <tr>
-                  <th>OS</th>
-                  <th>Frota</th>
-                  <th>Prestador</th>
-                  <th>Motivo da Pendência</th>
-                  <th>Data Status</th>
-              </tr>
-          </thead>
-          <tbody>
-              {% for p in todas_os_pendentes %}
-              <tr>
-                  <td><span class="badge bg-secondary">{{ p.os }}</span></td>
-                  <td>{{ p.frota }}</td>
-                  <td>{{ p.status_definido_por | default('N/A') }}</td>
-                  <td>{{ p.status_motivo | default('N/A') }}</td>
-                  <td>{{ p.status_data | default('N/A') }}</td>
-              </tr>
-              {% endfor %}
-          </tbody>
-      </table>
-  </div>
   {% endif %}
 
   <hr class="my-5">
