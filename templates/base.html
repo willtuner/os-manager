@@ -137,7 +137,9 @@
                 {% if session.get('gerente') or session.get('prestador') or session.get('manutencao') %}
                     <div class="text-end">
                         <span class="me-3">
-                            {{ random_greeting }}
+                            {% if request.endpoint not in ['painel', 'painel_prestador', 'admin_panel'] %}
+                                {{ random_greeting }}
+                            {% endif %}
                             <strong>
                                 {% if session.get('gerente') %}
                                     {{ session.get('gerente')|capitalize_name }}
