@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5572",
+    "cd_equipamento": "5572",
+    "modelo": "CARRETA TRANSBORDO GTM",
+    "os": "116591",
+    "data_entrada": "14/08/2025",
+    "servico": "Vazamento de óleo no pistão do guincho - (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5779",
+    "cd_equipamento": "5779",
+    "modelo": "VALETADEIRA",
+    "os": "116565",
+    "data_entrada": "13/08/2025",
+    "servico": "Quebra do gomo da corrente - (Fazenda SL1) |Parado|\nSolicitado Sr. Wagner\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5181",
+    "cd_equipamento": "5181",
+    "modelo": "CARRETINHA DE FERRO",
+    "os": "116556",
+    "data_entrada": "13/08/2025",
+    "servico": "Executar modificação estrutural na carretinha, aumentando largura e altura da estrutura para adequação ao transporte de tubos do sistema de irrigação - (Fazenda SL1)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio\nAutorizado Sr. Rafael/Izabela (Gestores do departamento)"
+  },
+  {
     "frota": "5645",
     "cd_equipamento": "5645",
     "modelo": "TRANSBORDO MOD.TC-7000 GTM",

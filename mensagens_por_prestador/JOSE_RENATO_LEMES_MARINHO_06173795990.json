@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5264",
+    "cd_equipamento": "5264",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "116615",
+    "data_entrada": "14/08/2025",
+    "servico": "Fabricar suporte para transporte de cones de sinalização, fabricar caixa de transporte de produtos, ajustar o pé de apoio e fabricar suporte para as mangueiras - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "116596",
+    "data_entrada": "14/08/2025",
+    "servico": "Fabricar proteção das lanternas traseiras - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "116588",
+    "data_entrada": "14/08/2025",
+    "servico": "Consertar para-lamas - (SP/Oficina)\nSolicitado Sr. Carlos"
+  },
+  {
     "frota": "165",
     "cd_equipamento": "165",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
@@ -8,76 +32,12 @@
     "servico": "Soldar degrau da escada quebrado - (Fazenda Casa Branca)\nSolicitado Sr João Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "255",
-    "cd_equipamento": "255",
+    "frota": "263",
+    "cd_equipamento": "263",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116542",
-    "data_entrada": "13/08/2025",
-    "servico": "Fazer solda em tubagem do escapamento - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5107",
-    "cd_equipamento": "5107",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "116537",
-    "data_entrada": "13/08/2025",
-    "servico": "Cortar parafuso que segura a bomba que não da mais aperto - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5352",
-    "cd_equipamento": "5352",
-    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
-    "os": "116536",
-    "data_entrada": "13/08/2025",
-    "servico": "Quebra do sistema de travamento do vagão - (Pecuaria)\nSolicitado Sr. Gabriel \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5105",
-    "cd_equipamento": "5105",
-    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
-    "os": "116505",
+    "os": "116528",
     "data_entrada": "12/08/2025",
-    "servico": "Cortar parafuso com maçarico e repor novo na seção traseira lado esquerdo. - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5110",
-    "cd_equipamento": "5110",
-    "modelo": "SUBSOLADOR STARA",
-    "os": "116501",
-    "data_entrada": "12/08/2025",
-    "servico": "Realizar solda em trinca identificada e confeccionar chapa de reforço para a área danificada. - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5425",
-    "cd_equipamento": "5425",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "116489",
-    "data_entrada": "12/08/2025",
-    "servico": "Fazer soldas em trincas na estrutura da barra de aplicação (serviço na barrinha sem frota)\nFazenda São Severino\nSolicitado Sr. Cássio\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5658",
-    "cd_equipamento": "5658",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "116447",
-    "data_entrada": "11/08/2025",
-    "servico": "Fazer solda em ramal furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5797",
-    "cd_equipamento": "5797",
-    "modelo": "PULVERIZADOR 600 LT",
-    "os": "116441",
-    "data_entrada": "11/08/2025",
-    "servico": "Fazer solda no ramal - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "68",
-    "cd_equipamento": "68",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "116432",
-    "data_entrada": "11/08/2025",
-    "servico": "Fazer solda no rabicho - (Pecuaria)\nSolicitado Sr. Bruno Franco\nResponsavel Sr. Arthur"
+    "servico": "Reinstalar proteção dianteira do trator - (Fazenda Casa Branca)\nSolicitado Sr. João  Paulo\nResponsavel Sr. Artrhur"
   },
   {
     "frota": "5345",
@@ -86,30 +46,6 @@
     "os": "116408",
     "data_entrada": "11/08/2025",
     "servico": "Aumentar cesto traseiro para transporte de produto e instalar mais uma saída de vazão no ramal - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio\nAutorizado fazer Sr. Rafael gerente de manutenção.\n*Lançar custo como investimento.*"
-  },
-  {
-    "frota": "5247",
-    "cd_equipamento": "5247",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "116402",
-    "data_entrada": "09/08/2025",
-    "servico": "Quebra da paleta da esteira da adubadeira - (Fazenda São Severino)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5798",
-    "cd_equipamento": "5798",
-    "modelo": "PULVERIZADOR 600 LT",
-    "os": "116345",
-    "data_entrada": "08/08/2025",
-    "servico": "Fabricar suporte para transporte de caixa - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5072",
-    "cd_equipamento": "5072",
-    "modelo": "GRADE NIVELADORA",
-    "os": "116288",
-    "data_entrada": "07/08/2025",
-    "servico": "Seção traseira L/D, trocar mancal travado (Fazenda Úrsula)\nSolicitado Sr. João\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5492",
@@ -136,30 +72,6 @@
     "servico": "Fabricar caixa de transporte de produtos - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5403",
-    "cd_equipamento": "5403",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "115016",
-    "data_entrada": "22/07/2025",
-    "servico": "Readequar o suporte da caixa de transporte de produtos, que está quebrando com recorrência. Solicita-se também o aumento da capacidade da caixa, com instalação de modelo maior e reforçado. Substituir chapa inferior das asas direita e esquerda que estão com folga nas roldanas - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5723",
-    "cd_equipamento": "5723",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "114680",
-    "data_entrada": "17/07/2025",
-    "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5705",
-    "cd_equipamento": "5705",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "114679",
-    "data_entrada": "17/07/2025",
-    "servico": "Fazer suporte para carregar caixa de produtos - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5529",
     "cd_equipamento": "5529",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
@@ -174,30 +86,6 @@
     "os": "114143",
     "data_entrada": "11/07/2025",
     "servico": "Asa L/D torta - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "223",
-    "cd_equipamento": "223",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114043",
-    "data_entrada": "10/07/2025",
-    "servico": "Realizar a confecção e instalação de proteção lateral nos para-lamas do trator, com o objetivo de reforçar a estrutura e evitar danos ou quebras durante o uso - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "217",
-    "cd_equipamento": "217",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114042",
-    "data_entrada": "10/07/2025",
-    "servico": "Adequar e reforçar as proteções laterais dos para-lamas do trator, com o objetivo de evitar futuras quebras e danos nas peças durante a operação - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5355",
-    "cd_equipamento": "5355",
-    "modelo": "ATOMIZADOR JACTO 4000 LT",
-    "os": "113708",
-    "data_entrada": "03/07/2025",
-    "servico": "Fazer solda no suporte da escada e grade traseira para transporte de produtos - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "91",

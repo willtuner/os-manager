@@ -1,5 +1,21 @@
 [
   {
+    "frota": "130",
+    "cd_equipamento": "130",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "116593",
+    "data_entrada": "14/08/2025",
+    "servico": "Avaliar vazamento de óleo no motor e no sistema de transmissão. - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "85",
+    "cd_equipamento": "85",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116589",
+    "data_entrada": "14/08/2025",
+    "servico": "Vazamento de água na bomba d'água - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "25",
     "cd_equipamento": "25",
     "modelo": "TRATOR VALTRA BF 75 4X4",
@@ -8,27 +24,11 @@
     "servico": "Verificar trator sem embreagem - (Fazenda Minuano) |Parado|\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "85",
-    "cd_equipamento": "85",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "116435",
-    "data_entrada": "11/08/2025",
-    "servico": "Radiador furado - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "22",
     "cd_equipamento": "22",
     "modelo": "TRATOR VALTRA BH 180 4X4",
     "os": "116284",
     "data_entrada": "07/08/2025",
     "servico": "Arrumar cubo dianteiro lado direito dianteiro. (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "264",
-    "cd_equipamento": "264",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116278",
-    "data_entrada": "07/08/2025",
-    "servico": "Vazamento de óleo na junta da tampa do hidráulico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   }
 ]

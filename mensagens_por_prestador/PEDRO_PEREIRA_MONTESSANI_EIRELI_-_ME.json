@@ -1,5 +1,69 @@
 [
   {
+    "frota": "70",
+    "cd_equipamento": "70",
+    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+    "os": "116619",
+    "data_entrada": "14/08/2025",
+    "servico": "Verificar sirene de ré não funciona - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "116597",
+    "data_entrada": "14/08/2025",
+    "servico": "Revisar sistema de iluminação; nenhuma luz acende. - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5705",
+    "cd_equipamento": "5705",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "116594",
+    "data_entrada": "14/08/2025",
+    "servico": "Avaria no comando eletrônico de abertura e fechamento dos bicos; após emissão de fumaça, equipamento parou de funcionar. - (Fazenda Santa Luiza) |Parado|\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "91",
+    "cd_equipamento": "91",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116592",
+    "data_entrada": "14/08/2025",
+    "servico": "Relogio horimetro parou de funcionar - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "27",
+    "cd_equipamento": "27",
+    "modelo": "TRATOR MASSEY FERGUSON 275/2",
+    "os": "116590",
+    "data_entrada": "14/08/2025",
+    "servico": "Trator sem partida, verificar motor de partida - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "126",
+    "cd_equipamento": "126",
+    "modelo": "GATOR JOHNN DEERE",
+    "os": "116587",
+    "data_entrada": "14/08/2025",
+    "servico": "Revisar alternador - (Fazenda São Paulo) |Parado|\nSolicitado Sr. Mauricio (Inspeção)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "96",
+    "cd_equipamento": "96",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "116586",
+    "data_entrada": "14/08/2025",
+    "servico": "Verificar alternador com ruído anormal - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "329",
+    "cd_equipamento": "329",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "116583",
+    "data_entrada": "14/08/2025",
+    "servico": "Instalar cibié no teto parte traseira  e verificar trator dando partida ligado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "110",
     "cd_equipamento": "110",
     "modelo": "TRATOR MASSEY FERGUSON 275",
@@ -174,14 +238,6 @@
     "os": "116019",
     "data_entrada": "05/08/2025",
     "servico": "Verificar trator sem partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "115848",
-    "data_entrada": "04/08/2025",
-    "servico": "Revisar sistema eletrico - (Fazenda SP/Oficina)\nSolicitado Sr. Carlos Aparecido"
   },
   {
     "frota": "329",

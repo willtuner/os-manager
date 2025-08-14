@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5646",
+    "cd_equipamento": "5646",
+    "modelo": "TRANSBORDO MOD.TC-7000 GTM",
+    "os": "116629",
+    "data_entrada": "14/08/2025",
+    "servico": "Pneu L/? furado - (Fazenda São Severino) |Parado|\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5247",
+    "cd_equipamento": "5247",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "116614",
+    "data_entrada": "14/08/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda São Severino) |Parado|\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "148",
+    "cd_equipamento": "148",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "116585",
+    "data_entrada": "14/08/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Santa Izabel) |Parado|\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5632",
     "cd_equipamento": "5632",
     "modelo": "DISTRIBUIDO FARTUS 15.0 GRANEL",
@@ -24,22 +48,6 @@
     "servico": "Pneu traseiro L/E furado - (Fazenda São Severino) | Parado|\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "10222",
-    "cd_equipamento": "10222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116498",
-    "data_entrada": "12/08/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda Terra Branca) |Parado|\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5148",
-    "cd_equipamento": "5148",
-    "modelo": "CARRETA BAG C/ GUINCHO",
-    "os": "116433",
-    "data_entrada": "11/08/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro) |Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "10228",
     "cd_equipamento": "10228",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -54,14 +62,6 @@
     "os": "116421",
     "data_entrada": "11/08/2025",
     "servico": "Pneu L/D traseiro furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "10226",
-    "cd_equipamento": "10226",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116418",
-    "data_entrada": "11/08/2025",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5582",
