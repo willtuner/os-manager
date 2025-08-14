@@ -90,6 +90,48 @@
         color: var(--verde-agro);
         margin-bottom: 0.75rem;
     }
+
+    /* Estilos para o mascote */
+    .mascot-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 1.5rem;
+    }
+    .mascot-icon {
+        font-size: 3rem;
+        animation: bounce 2s infinite;
+    }
+    .speech-bubble {
+        position: relative;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        flex-grow: 1;
+    }
+    .speech-bubble::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    .speech-bubble.bubble-success { background-color: #28a745; }
+    .speech-bubble.bubble-success::before { border-right: 10px solid #28a745; }
+    .speech-bubble.bubble-info { background-color: #17a2b8; }
+    .speech-bubble.bubble-info::before { border-right: 10px solid #17a2b8; }
+    .speech-bubble.bubble-warning { background-color: #ffc107; color: #212529; }
+    .speech-bubble.bubble-warning::before { border-right: 10px solid #ffc107; }
+    .speech-bubble.bubble-danger { background-color: #dc3545; }
+    .speech-bubble.bubble-danger::before { border-right: 10px solid #dc3545; }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-10px);}
+        60% {transform: translateY(-5px);}
+    }
 </style>
 
 <div class="container">
@@ -104,27 +146,30 @@
         {% endif %}
     {% endwith %}
 
-    {# --- Bloco de Saudação Dinâmica --- #}
+    {# --- Bloco de Saudação com Mascote --- #}
     {% set os_count = os_list|length %}
     {% if os_count == 0 %}
-      {% set alert_class = 'alert-success' %}
+      {% set bubble_class = 'bubble-success' %}
       {% set message = 'Você não tem nenhuma OS pendente no momento. ✅' %}
     {% elif os_count <= 5 %}
-      {% set alert_class = 'alert-info' %}
+      {% set bubble_class = 'bubble-info' %}
       {% set message = 'Você tem ' ~ os_count ~ ' OS aberta' ~ ('s' if os_count > 1 else '') ~ '. 👍' %}
     {% elif os_count <= 15 %}
-      {% set alert_class = 'alert-warning' %}
+      {% set bubble_class = 'bubble-warning' %}
       {% set message = 'Você tem ' ~ os_count ~ ' OS abertas. Fique atento! ⚠️' %}
     {% else %}
-      {% set alert_class = 'alert-danger' %}
+      {% set bubble_class = 'bubble-danger' %}
       {% set message = 'Você tem ' ~ os_count ~ ' OS abertas. Priorize as mais antigas! 🚨' %}
     {% endif %}
 
-    <div class="alert {{ alert_class }} p-3 my-3" role="alert">
-      <h5 class="alert-heading mb-0">Olá, {{ nome|capitalize_name }}!</h5>
-      <p class="mb-0">{{ message }}</p>
+    <div class="mascot-container">
+        <div class="mascot-icon">🚜</div>
+        <div class="speech-bubble {{ bubble_class }}">
+          <h5 class="fw-bold mb-1">Olá, {{ nome|capitalize_name }}!</h5>
+          <p class="mb-0">{{ message }}</p>
+        </div>
     </div>
-    {# --- Fim do Bloco de Saudação --- #}
+    {# --- Fim do Bloco de Saudação com Mascote --- #}
 
     <div class="d-flex justify-content-between align-items-center my-3">
         <div>
