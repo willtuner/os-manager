@@ -19,7 +19,6 @@
     color: white;
     border-radius: 12px 12px 0 0;
     padding: 15px;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,22 +150,23 @@
 {% block extra_js %}
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Toggle para expandir/recolher cards
-    const headers = document.querySelectorAll('.card-header');
-    headers.forEach(header => {
-      header.addEventListener('click', () => {
-        const body = header.nextElementSibling;
-        body.classList.toggle('d-none'); // Adiciona/remove 'd-none' para mostrar/ocultar
-        const icon = header.querySelector('.toggle-icon');
-        if (icon) { // Verifica se o ícone existe
-            icon.classList.toggle('fa-chevron-down');
-            icon.classList.toggle('fa-chevron-up');
-        }
-      });
-      // Inicia com o corpo do card oculto, exceto talvez o primeiro ou se houver poucos
-      if (header.nextElementSibling) {
-         header.nextElementSibling.classList.add('d-none');
-      }
+    // Novo Toggle para formulário de finalização
+    document.querySelectorAll('.btn-toggle-form').forEach(button => {
+        button.addEventListener('click', () => {
+            const cardBody = button.closest('.card-body');
+            const formWrapper = cardBody.querySelector('.collapse-form');
+            const icon = button.querySelector('i');
+
+            formWrapper.classList.toggle('d-none');
+
+            if (formWrapper.classList.contains('d-none')) {
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        });
     });
 
     // Validação de formulários
@@ -271,15 +271,10 @@
             {% else %}bg-info text-dark{% endif %} me-2">
             {{ os.dias }} dia{{ 's' if os.dias|int != 1 else '' }}
           </span>
-          <i class="fas fa-chevron-down toggle-icon"></i>
         </div>
       </div>
-      <div class="card-body d-none"> {# Inicia oculto #}
-        <form action="{{ url_for('finalizar_os', os_numero_str=os.os) }}"  {# <<< CORREÇÃO APLICADA AQUI #}
-              method="POST"
-              class="needs-validation"
-              novalidate>
-          <div class="mb-3">
+      <div class="card-body">
+        <div class="mb-3">
             <small class="text-muted d-block mb-1">
               <i class="far fa-calendar-alt me-1"></i> Aberta em: {{ os.data }}
             </small>
@@ -290,44 +285,55 @@
             <p class="card-text mb-0">
               <i class="fas fa-tools me-1 text-muted"></i> {{ os.servico }}
             </p>
-          </div>
-          <div class="row g-2 mb-3">
-            <div class="col-md-4">
-              <label for="data_finalizacao_{{ os.os }}" class="form-label small">Data de Finalização <span class="text-danger">*</span></label>
-              <input type="date" id="data_finalizacao_{{ os.os }}"
-                     name="data_finalizacao"
-                     class="form-control form-control-sm"
-                     required
-                     max="{{ today_date }}" {# Passar today_date do backend #}
-                     data-bs-toggle="tooltip"
-                     title="Selecione a data de finalização da OS">
-              <div class="invalid-feedback">Por favor, informe a data.</div>
-            </div>
-            <div class="col-md-4">
-              <label for="hora_finalizacao_{{ os.os }}" class="form-label small">Hora <span class="text-danger">*</span></label>
-              <input type="time" id="hora_finalizacao_{{ os.os }}"
-                     name="hora_finalizacao"
-                     class="form-control form-control-sm"
-                     required
-                     data-bs-toggle="tooltip"
-                     title="Selecione a hora de finalização">
-              <div class="invalid-feedback">Por favor, informe a hora.</div>
-            </div>
-            <div class="col-md-4 d-flex align-items-end">
-              <button type="submit" class="btn btn-prats btn-sm w-100">
-                <i class="fas fa-check-circle me-1"></i> Finalizar
-              </button>
-            </div>
-          </div>
-          <div class="mb-2">
-            <label for="observacoes_{{ os.os }}" class="form-label small">Observações (opcional)</label>
-            <textarea id="observacoes_{{ os.os }}"
-                      name="observacoes"
-                      class="form-control form-control-sm"
-                      rows="3"
-                      placeholder="Digite suas observações aqui"></textarea>
-          </div>
-        </form>
+        </div>
+
+        <button class="btn btn-prats btn-sm w-100 btn-toggle-form">
+            <i class="fas fa-chevron-down me-1"></i> Resolver OS
+        </button>
+
+        <div class="collapse-form d-none mt-3">
+            <form action="{{ url_for('finalizar_os', os_numero_str=os.os) }}"
+                  method="POST"
+                  class="needs-validation"
+                  novalidate>
+              <div class="row g-2 mb-3">
+                <div class="col-md-4">
+                  <label for="data_finalizacao_{{ os.os }}" class="form-label small">Data de Finalização <span class="text-danger">*</span></label>
+                  <input type="date" id="data_finalizacao_{{ os.os }}"
+                         name="data_finalizacao"
+                         class="form-control form-control-sm"
+                         required
+                         max="{{ today_date }}"
+                         data-bs-toggle="tooltip"
+                         title="Selecione a data de finalização da OS">
+                  <div class="invalid-feedback">Por favor, informe a data.</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="hora_finalizacao_{{ os.os }}" class="form-label small">Hora <span class="text-danger">*</span></label>
+                  <input type="time" id="hora_finalizacao_{{ os.os }}"
+                         name="hora_finalizacao"
+                         class="form-control form-control-sm"
+                         required
+                         data-bs-toggle="tooltip"
+                         title="Selecione a hora de finalização">
+                  <div class="invalid-feedback">Por favor, informe a hora.</div>
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                  <button type="submit" class="btn btn-success btn-sm w-100">
+                    <i class="fas fa-check-circle me-1"></i> Finalizar
+                  </button>
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="observacoes_{{ os.os }}" class="form-label small">Observações (opcional)</label>
+                <textarea id="observacoes_{{ os.os }}"
+                          name="observacoes"
+                          class="form-control form-control-sm"
+                          rows="3"
+                          placeholder="Digite suas observações aqui"></textarea>
+              </div>
+            </form>
+        </div>
       </div>
     </div>
     {% endfor %}
