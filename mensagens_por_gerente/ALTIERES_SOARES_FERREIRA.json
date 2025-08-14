@@ -1,12 +1,5 @@
 [
   {
-    "frota": "5136",
-    "os": "116541",
-    "data": "13/08/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Substituir parafusos de fixação do eixo das rodas devido a desgaste que impede o correto aperto. - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5363",
     "os": "116500",
     "data": "12/08/2025",
@@ -45,7 +38,7 @@
     "frota": "100",
     "os": "116264",
     "data": "07/08/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar ruído anormal no câmbio - (Fazenda Pedra Verde/Oficina)"
   },
   {
@@ -68,19 +61,5 @@
     "data": "30/07/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento no sensor de pressão do óleo do motor - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "223",
-    "os": "114043",
-    "data": "10/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar a confecção e instalação de proteção lateral nos para-lamas do trator, com o objetivo de reforçar a estrutura e evitar danos ou quebras durante o uso - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "217",
-    "os": "114042",
-    "data": "10/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Adequar e reforçar as proteções laterais dos para-lamas do trator, com o objetivo de evitar futuras quebras e danos nas peças durante a operação - (Fazenda Pedra Verde)"
   }
 ]

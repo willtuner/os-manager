@@ -14,20 +14,6 @@
     "servico": "Vazamento de óleo na tampa do cárter - (Fazenda São Pedro)"
   },
   {
-    "frota": "5148",
-    "os": "116433",
-    "data": "11/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro) |Parado|"
-  },
-  {
-    "frota": "10226",
-    "os": "116418",
-    "data": "11/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D dianteiro furado - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5726",
     "os": "116320",
     "data": "08/08/2025",
@@ -40,13 +26,6 @@
     "data": "07/08/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Verificar sistema de vazão da adubadeira não funciona, e vazamento no motor hidráulico. (Fazenda São Pedro)"
-  },
-  {
-    "frota": "264",
-    "os": "116278",
-    "data": "07/08/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Vazamento de óleo na junta da tampa do hidráulico - (Fazenda São Pedro)"
   },
   {
     "frota": "10120",
@@ -96,5 +75,19 @@
     "data": "21/07/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Fazer solda em trinca no chassi - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "276",
+    "os": "114513",
+    "data": "16/07/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Revisar bomba de combustivel - Faz São Pedro"
+  },
+  {
+    "frota": "156",
+    "os": "114113",
+    "data": "10/07/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Vazamento na bomba injetora (Fazenda São Pedro)"
   }
 ]

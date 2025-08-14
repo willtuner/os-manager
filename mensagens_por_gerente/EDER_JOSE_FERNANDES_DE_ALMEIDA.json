@@ -1,5 +1,12 @@
 [
   {
+    "frota": "224",
+    "os": "116598",
+    "data": "14/08/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Vazamento de óleo diesel na bomba injetora - (Fazenda Terra Branca)"
+  },
+  {
     "frota": "10222",
     "os": "116519",
     "data": "12/08/2025",
@@ -14,32 +21,11 @@
     "servico": "Quebra da porta - (Fazenda Terra Branca)"
   },
   {
-    "frota": "10222",
-    "os": "116498",
-    "data": "12/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/D furado - (Fazenda Terra Branca) |Parado|"
-  },
-  {
     "frota": "286",
     "os": "116423",
     "data": "11/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar alternador - (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5657",
-    "os": "116282",
-    "data": "07/08/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento no regulador de pressão (Fazenda Terra Branca)"
-  },
-  {
-    "frota": "5398",
-    "os": "113963",
-    "data": "08/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Confeccionar os ramais para distribuição dos bicos do SPE - (Fazenda Terra Branca)"
   },
   {
     "frota": "220",
