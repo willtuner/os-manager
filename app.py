@@ -3,6 +3,7 @@ import json
 import logging
 from datetime import datetime, timedelta
 import pytz
+import random
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
 from reportlab.pdfgen import canvas
@@ -95,6 +96,24 @@ def format_datetime(dt_input):
 @app.context_processor
 def utility_processor():
     return dict(format_datetime=format_datetime)
+
+# --- Lista de Saudações Aleatórias ---
+GREETINGS = [
+    "Que bom te ver por aqui!",
+    "Espero que seu dia seja produtivo.",
+    "Você está ótimo(a) hoje!",
+    "O trabalho duro de hoje é o suco de laranja de amanhã!",
+    "Vamos fazer a diferença hoje!",
+    "Qual é o cúmulo da velocidade? Contornar a Terra e dar um tapa na própria nuca.",
+    "O que o pagodeiro foi fazer na igreja? Cantar 'Pá God'.",
+    "Por que a planta não responde? Porque ela é uma planta.",
+    "Preparado para mais um dia de sucesso?",
+    "Sua presença ilumina o sistema!"
+]
+
+@app.context_processor
+def inject_random_greeting():
+    return dict(random_greeting=random.choice(GREETINGS))
 
 # --- Models ---
 class User(db.Model):
