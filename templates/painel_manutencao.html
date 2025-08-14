@@ -2,6 +2,21 @@
 
 {% block title %}Painel de Manutenção – {{ nome|capitalize_name }}{% endblock %}
 
+{% block page_title %}Painel de Manutenção{% endblock %}
+
+{% block header_actions %}
+    {% if manutencao and manutencao.lower() in ['arthur', 'mauricio'] and profile_picture %}
+        <div class="profile-avatar">
+            <img src="{{ url_for('static', filename=profile_picture) }}" alt="Foto de Perfil" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover; border: 2px solid var(--verde-agro);">
+        </div>
+    {% elif manutencao and manutencao.lower() in ['arthur', 'mauricio'] %}
+        <div class="profile-avatar">
+             <img src="{{ url_for('static', filename='uploads/default_profile.jpg') }}" alt="Foto de Perfil Padrão" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover; border: 2px solid var(--cinza-medio);">
+        </div>
+    {% endif %}
+{% endblock %}
+
+
 {% block extra_css %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <style>
@@ -272,35 +287,16 @@
 {% block content %}
 <div class="container">
     
-    <div class="d-flex justify-content-between align-items-center mb-3 mt-3">
-        <div class="d-flex align-items-center">
-            {% if manutencao and manutencao.lower() in ['arthur', 'mauricio'] and profile_picture %}
-                <div class="profile-avatar me-3">
-                    <img src="{{ url_for('static', filename=profile_picture) }}" alt="Foto de Perfil" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--verde-agro);">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
-            {% elif manutencao and manutencao.lower() in ['arthur', 'mauricio'] %}
-                <div class="profile-avatar me-3">
-                     <img src="{{ url_for('static', filename='uploads/default_profile.jpg') }}" alt="Foto de Perfil Padrão" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--cinza-medio);">
-                </div>
-            {% endif %}
-            <div>
-                <h2 class="h4 mb-0">
-                    <i class="fas fa-tractor icon-agro"></i>Painel de Manutenção – {{ nome|capitalize_name }}
-                </h2>
-                {% if manutencao and manutencao.lower() in ['arthur', 'mauricio'] %}
-                <form action="{{ url_for('upload_profile_picture') }}" method="post" enctype="multipart/form-data" class="mt-1">
-                    <input type="file" id="profile_picture_upload_btn" name="profile_picture" accept="image/png, image/jpeg, image/gif" style="display: none;" onchange="this.form.submit()">
-                    <label for="profile_picture_upload_btn" class="btn btn-outline-secondary btn-sm" style="cursor: pointer;">
-                        <i class="fas fa-camera"></i> Trocar Foto
-                    </label>
-                </form>
-                {% endif %}
-            </div>
-        </div>
-        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
-            <i class="fas fa-sign-out-alt me-1"></i>Desconectar
-        </a>
-    </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
 
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}

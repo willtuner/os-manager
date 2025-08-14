@@ -2,6 +2,19 @@
 
 {% block title %}Painel de OS – {{ gerente }}{% endblock %}
 
+{% block page_title %}Ordens de Serviço{% endblock %}
+
+{% block header_actions %}
+    {% if profile_picture %}
+        <img src="{{ profile_picture }}" alt="Foto de Perfil" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
+    {% endif %}
+    {% if session.get('is_admin') %}
+    <a href="{{ url_for('admin_panel') }}" class="btn btn-admin btn-sm ms-2">
+      <i class="fas fa-cog me-1"></i> Painel Admin
+    </a>
+    {% endif %}
+{% endblock %}
+
 {% block extra_css %}
 <style>
     :root {
@@ -172,25 +185,6 @@
     </div>
   </div>
   {# --- Fim do Bloco de Saudação com Mascote --- #}
-
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <div>
-      <h2 class="h4 mb-1">
-        <i class="fas fa-tools text-success me-2"></i> Ordens de Serviço em Aberto
-      </h2>
-      <p class="text-muted mb-0">Gerente: <strong>{{ gerente|capitalize_name }}</strong></p>
-    </div>
-    <div>
-        {% if profile_picture %}
-            <img src="{{ profile_picture }}" alt="Foto de Perfil" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
-        {% endif %}
-        {% if session.get('is_admin') %}
-        <a href="{{ url_for('admin_panel') }}" class="btn btn-prats btn-sm">
-          <i class="fas fa-cog me-1"></i> Painel Admin
-        </a>
-        {% endif %}
-    </div>
-  </div>
 
   {% if os_pendentes %}
     {% for os in os_pendentes %}

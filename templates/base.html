@@ -128,15 +128,16 @@
     </div>
 
     <header class="py-3 mb-4 border-bottom bg-white shadow-sm">
-        <div class="container d-flex flex-wrap justify-content-center">
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-lg-auto text-dark text-decoration-none">
                 <img src="/static/logo.png" alt="Suco Prats" class="logo-header me-2">
-                <span class="fs-4">Painel de OS</span>
+                <span class="fs-4">{% block page_title %}Painel de OS{% endblock %}</span>
             </a>
             <div class="d-flex align-items-center">
+                {% block header_actions %}{% endblock %}
                 {% if session.get('gerente') or session.get('prestador') or session.get('manutencao') %}
-                    <div class="text-end">
-                        <span class="me-3">
+                    <div class="text-end ms-3">
+                        <span class="me-2">
                             {% if request.endpoint not in ['painel', 'painel_prestador', 'admin_panel'] %}
                                 {{ random_greeting }}
                             {% endif %}
