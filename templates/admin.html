@@ -337,7 +337,12 @@
 <div class="container">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h2 class="h4 mb-0"><i class="fas fa-tractor icon-agro"></i>Painel de Manutenção Agrícola</h2>
-    <div>
+    <div class="d-flex align-items-center">
+      {% if admin_user and admin_user.profile_picture %}
+        <img src="{{ url_for('static', filename=admin_user.profile_picture) }}" alt="Foto de Perfil" class="rounded-circle me-3" style="width: 40px; height: 40px; object-fit: cover;">
+      {% else %}
+        <i class="fas fa-user-circle fa-2x text-muted me-3"></i>
+      {% endif %}
       <a href="{{ url_for('exportar_os_finalizadas', periodo=periodo, data_inicio=data_inicio, data_fim=data_fim) }}" class="btn btn-agro btn-sm me-2">
         <i class="fas fa-file-export icon-agro"></i>Exportar Relatório
       </a>
@@ -369,288 +374,229 @@
   </div>
   {# --- Fim do Bloco de Saudação com Mascote --- #}
 
-  <!-- Abas -->
-  <ul class="nav nav-tabs mb-4" id="adminTabs" role="tablist">
-    <li class="nav-item" role="presentation">
-      <button class="nav-link active" id="historico-tab" data-bs-toggle="tab" data-bs-target="#historico" type="button" role="tab" aria-controls="historico" aria-selected="true">
-        <i class="fas fa-history icon-agro"></i>Histórico
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="pendencias-tab" data-bs-toggle="tab" data-bs-target="#pendencias" type="button" role="tab" aria-controls="pendencias" aria-selected="false">
-        <i class="fas fa-pause-circle icon-agro"></i>Pendências & Rankings
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <button class="nav-link" id="perfil-tab" data-bs-toggle="tab" data-bs-target="#perfil" type="button" role="tab" aria-controls="perfil" aria-selected="false">
-        <i class="fas fa-user-circle icon-agro"></i>Meu Perfil
-      </button>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a href="{{ url_for('frota_leve') }}" class="nav-link">
-        <i class="fas fa-car-side icon-agro"></i>Frota Leve
-      </a>
-    </li>
-  </ul>
-
-  <div class="tab-content" id="adminTabContent">
-    <!-- Aba: Histórico -->
-    <div class="tab-pane fade show active" id="historico" role="tabpanel" aria-labelledby="historico-tab">
-      <!-- Cartões de Estatísticas -->
-      <div class="row mb-4">
-        <div class="col-md-3 col-sm-6">
-          <div class="stat-card primary">
-            <h3><i class="fas fa-tools icon-agro"></i>{{ total_os }}</h3>
-            <p>Manutenções Concluídas</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="stat-card success">
-            <h3><i class="fas fa-users icon-agro"></i>{{ gerentes|length }}</h3>
-            <p>Supervisores Ativos</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="stat-card warning">
-            <h3><i class="fas fa-calendar-day icon-agro"></i>{{ now.strftime('%d/%m/%Y') }}</h3>
-            <p>Última Atualização</p>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="stat-card danger">
-            <h3><i class="fas fa-exclamation-circle icon-agro"></i>{{ os_abertas.values()|sum }}</h3>
-            <p>Manutenções Pendentes</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Filtros e Histórico de Manutenções -->
-      <div class="card-modern mb-4">
-        <div class="card-header historico-os d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-tools icon-agro"></i>Histórico de Manutenções</h4>
-          {% if finalizadas|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="finalizada-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <div class="filter-container">
-            <div class="btn-group">
-              <button class="btn period-btn {% if periodo == 'todos' %}active{% endif %}" data-periodo="todos">Todas</button>
-              <button class="btn period-btn {% if periodo == 'diario' %}active{% endif %}" data-periodo="diario">Diário</button>
-              <button class="btn period-btn {% if periodo == 'semanal' %}active{% endif %}" data-periodo="semanal">Semanal</button>
-              <button class="btn period-btn {% if periodo == 'mensal' %}active{% endif %}" data-periodo="mensal">Mensal</button>
-              <button class="btn period-btn {% if periodo == 'anual' %}active{% endif %}" data-periodo="anual">Anual</button>
-            </div>
-            <input type="text" id="date-range" class="flatpickr-input form-control" placeholder="Intervalo de datas" value="{% if data_inicio and data_fim %}{{ data_inicio }} to {{ data_fim }}{% endif %}">
-            <input type="text" id="filter-os" class="form-control form-control-sm" placeholder="Filtrar por OS, supervisor ou observações...">
-          </div>
-          <div class="table-responsive">
-            <table class="table table-modern table-sm">
-              <thead>
-                <tr>
-                  <th>OS</th>
-                  <th>Supervisor</th>
-                  <th>Data</th>
-                  <th>Hora</th>
-                  <th>Observações</th>
-                  <th>Status PIMNS</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for os in finalizadas %}
-                <tr class="{% if loop.index > 3 %}finalizada-row hidden-row{% endif %}">
-                  <td>{{ os.os_numero }}</td>
-                  <td>{{ os.gerente|capitalize_name }}</td>
-                  <td>{{ os.data_fin }}</td>
-                  <td>{{ os.hora_fin }}</td>
-                  <td>{{ os.observacoes or '-' }}</td>
-                  <td>
-                      <form action="{{ url_for('update_pimns_status', os_id=os.id) }}" method="POST" class="d-flex align-items-center">
-                          <input type="checkbox" name="status_pimns" {% if os.status_pimns %}checked{% endif %} onchange="this.form.submit()">
-                          <span class="ms-2">{{ 'Marcado' if os.status_pimns else 'Desmarcado' }}</span>
-                      </form>
-                  </td>
-                </tr>
-                {% endfor %}
-                {% if not finalizadas %}
-                <tr><td colspan="5" class="text-center py-3">Nenhuma manutenção concluída</td></tr>
-                {% endif %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <!-- Histórico de Logins -->
-      <div class="card-modern">
-        <div class="card-header historico-logins d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de Acesso (Últimos 50)</h4>
-          {% if login_events|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="login-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-modern table-sm">
-              <thead>
-                <tr><th>Usuário</th><th>Tipo</th><th>Login</th><th>Logout</th><th>Duração</th></tr>
-              </thead>
-              <tbody>
-                {% for ev in login_events %}
-                <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
-                  <td>{{ ev.username|capitalize_name }}</td>
-                  <td>{{ ev.user_type.capitalize() }}</td>
-                  <td>{{ ev.login_time_formatted }}</td>
-                  <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
-                  <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
-                </tr>
-                {% endfor %}
-                {% if not login_events %}
-                <tr><td colspan="5" class="text-center py-3">Nenhum evento de acesso</td></tr>
-                {% endif %}
-              </tbody>
-            </table>
-          </div>
-        </div>
+  <!-- Cartões de Estatísticas -->
+  <div class="row mb-4">
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-card primary">
+        <h3><i class="fas fa-tools icon-agro"></i>{{ total_os }}</h3>
+        <p>Manutenções Concluídas</p>
       </div>
     </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-card success">
+        <h3><i class="fas fa-users icon-agro"></i>{{ gerentes|length }}</h3>
+        <p>Supervisores Ativos</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-card warning">
+        <h3><i class="fas fa-calendar-day icon-agro"></i>{{ now.strftime('%d/%m/%Y') }}</h3>
+        <p>Última Atualização</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="stat-card danger">
+        <h3><i class="fas fa-exclamation-circle icon-agro"></i>{{ os_abertas.values()|sum }}</h3>
+        <p>Manutenções Pendentes</p>
+      </div>
+    </div>
+  </div>
 
-    <!-- Aba: Pendências e Rankings -->
-    <div class="tab-pane fade" id="pendencias" role="tabpanel" aria-labelledby="pendencias-tab">
-      <!-- Tabela de OS Pendentes -->
-      {% if os_pendentes_todas %}
-      <div class="card-modern mb-4">
-        <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-pause-circle icon-agro"></i>Manutenções Pendentes Atualmente</h4>
-          {% if os_pendentes_todas|length > 5 %}
-          <button class="btn btn-sm btn-toggle" data-target="pendente-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-modern table-sm table-hover">
-              <thead>
-                <tr><th>OS</th><th>Frota</th><th>Prestador</th><th>Motivo da Pendência</th><th>Data Status</th></tr>
-              </thead>
-              <tbody>
-                {% for p in os_pendentes_todas %}
-                <tr class="{% if loop.index > 5 %}pendente-row hidden-row{% endif %}">
-                  <td><span class="badge bg-secondary">{{ p.os }}</span></td>
-                  <td>{{ p.frota }}</td>
-                  <td>{{ p.status_definido_por | default('N/A') }}</td>
-                  <td>{{ p.status_motivo | default('N/A') }}</td>
-                  <td>{{ p.status_data | default('N/A') }}</td>
-                </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      {% else %}
-      <div class="alert alert-success text-center">
-        <i class="fas fa-check-circle fa-2x mb-2"></i>
-        <h4 class="alert-heading">Tudo em ordem!</h4>
-        <p>Nenhuma ordem de serviço marcada como pendente no momento.</p>
-      </div>
+  <!-- Filtros e Histórico de Manutenções -->
+  <div class="card-modern mb-4">
+    <div class="card-header historico-os d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-tools icon-agro"></i>Histórico de Manutenções</h4>
+      {% if finalizadas|length > 3 %}
+      <button class="btn btn-sm btn-toggle" data-target="finalizada-row">
+        <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+      </button>
       {% endif %}
-      <!-- Ranking de OS Pendentes (Supervisores) -->
-      <div class="card-modern mb-4">
-        <div class="card-header ranking-gerentes d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Supervisores)</h4>
-          {% if ranking_os_abertas|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="gerente-ranking-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
+    </div>
+    <div class="card-body">
+      <div class="filter-container">
+        <div class="btn-group">
+          <button class="btn period-btn {% if periodo == 'todos' %}active{% endif %}" data-periodo="todos">Todas</button>
+          <button class="btn period-btn {% if periodo == 'diario' %}active{% endif %}" data-periodo="diario">Diário</button>
+          <button class="btn period-btn {% if periodo == 'semanal' %}active{% endif %}" data-periodo="semanal">Semanal</button>
+          <button class="btn period-btn {% if periodo == 'mensal' %}active{% endif %}" data-periodo="mensal">Mensal</button>
+          <button class="btn period-btn {% if periodo == 'anual' %}active{% endif %}" data-periodo="anual">Anual</button>
         </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-modern table-sm">
-              <thead>
-                <tr><th>Posição</th><th>Supervisor</th><th>OS Pendentes</th></tr>
-              </thead>
-              <tbody>
-                {% for gerente, count in ranking_os_abertas %}
-                <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
-                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
-                  <td>{{ gerente|capitalize_name }}</td>
-                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-                </tr>
-                {% endfor %}
-                {% if not ranking_os_abertas %}
-                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-                {% endif %}
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <input type="text" id="date-range" class="flatpickr-input form-control" placeholder="Intervalo de datas" value="{% if data_inicio and data_fim %}{{ data_inicio }} to {{ data_fim }}{% endif %}">
+        <input type="text" id="filter-os" class="form-control form-control-sm" placeholder="Filtrar por OS, supervisor ou observações...">
       </div>
-
-      <!-- Ranking de OS Pendentes (Prestadores) -->
-      <div class="card-modern mb-4">
-        <div class="card-header ranking-prestadores d-flex justify-content-between align-items-center">
-          <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Prestadores)</h4>
-          {% if ranking_os_prestadores|length > 3 %}
-          <button class="btn btn-sm btn-toggle" data-target="prestador-ranking-row">
-            <i class="fas fa-plus-circle icon-agro"></i> Ver mais
-          </button>
-          {% endif %}
-        </div>
-        <div class="card-body">
-          <div class="table-responsive">
-            <table class="table table-modern table-sm">
-              <thead>
-                <tr><th>Posição</th><th>Prestador</th><th>OS Pendentes</th></tr>
-              </thead>
-              <tbody>
-                {% for prestador, count in ranking_os_prestadores %}
-                <tr class="{% if loop.index > 3 %}prestador-ranking-row hidden-row{% endif %}">
-                  <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
-                  <td>{{ prestador|capitalize_name }}</td>
-                  <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
-                </tr>
-                {% endfor %}
-                {% if not ranking_os_prestadores %}
-                <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
-                {% endif %}
-              </tbody>
-            </table>
-          </div>
-        </div>
+      <div class="table-responsive">
+        <table class="table table-modern table-sm">
+          <thead>
+            <tr>
+              <th>OS</th>
+              <th>Supervisor</th>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Observações</th>
+              <th>Status PIMNS</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for os in finalizadas %}
+            <tr class="{% if loop.index > 3 %}finalizada-row hidden-row{% endif %}">
+              <td>{{ os.os_numero }}</td>
+              <td>{{ os.gerente|capitalize_name }}</td>
+              <td>{{ os.data_fin }}</td>
+              <td>{{ os.hora_fin }}</td>
+              <td>{{ os.observacoes or '-' }}</td>
+              <td>
+                  <form action="{{ url_for('update_pimns_status', os_id=os.id) }}" method="POST" class="d-flex align-items-center">
+                      <input type="checkbox" name="status_pimns" {% if os.status_pimns %}checked{% endif %} onchange="this.form.submit()">
+                      <span class="ms-2">{{ 'Marcado' if os.status_pimns else 'Desmarcado' }}</span>
+                  </form>
+              </td>
+            </tr>
+            {% endfor %}
+            {% if not finalizadas %}
+            <tr><td colspan="5" class="text-center py-3">Nenhuma manutenção concluída</td></tr>
+            {% endif %}
+          </tbody>
+        </table>
       </div>
     </div>
+  </div>
 
-    <!-- Aba: Meu Perfil -->
-    <div class="tab-pane fade" id="perfil" role="tabpanel" aria-labelledby="perfil-tab">
-      <div class="card-modern">
-        <div class="card-header">
-          <h4 class="mb-0"><i class="fas fa-camera-retro icon-agro"></i>Sua Foto de Perfil</h4>
-        </div>
-        <div class="card-body text-center">
-          {% if admin_user and admin_user.profile_picture %}
-            <img src="{{ url_for('static', filename=admin_user.profile_picture) }}" alt="Foto de Perfil" class="img-thumbnail rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
-          {% else %}
-            <div class="mb-3">
-              <i class="fas fa-user-circle fa-9x text-muted"></i>
-            </div>
-            <p class="text-muted">Nenhuma foto de perfil definida.</p>
-          {% endif %}
+  <!-- Histórico de Logins -->
+  <div class="card-modern mb-4">
+    <div class="card-header historico-logins d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-history icon-agro"></i>Histórico de Acesso (Últimos 50)</h4>
+      {% if login_events|length > 3 %}
+      <button class="btn btn-sm btn-toggle" data-target="login-row">
+        <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+      </button>
+      {% endif %}
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-modern table-sm">
+          <thead>
+            <tr><th>Usuário</th><th>Tipo</th><th>Login</th><th>Logout</th><th>Duração</th></tr>
+          </thead>
+          <tbody>
+            {% for ev in login_events %}
+            <tr class="{% if loop.index > 3 %}login-row hidden-row{% endif %}">
+              <td>{{ ev.username|capitalize_name }}</td>
+              <td>{{ ev.user_type.capitalize() }}</td>
+              <td>{{ ev.login_time_formatted }}</td>
+              <td>{% if ev.logout_time_formatted %}{{ ev.logout_time_formatted }}{% else %}<span class="text-muted">ativo</span>{% endif %}</td>
+              <td>{% if ev.duration_secs %}{{ (ev.duration_secs // 3600) }}h {{ ((ev.duration_secs % 3600)//60) }}m {{ (ev.duration_secs % 60) }}s{% else %}<span class="text-muted">—</span>{% endif %}</td>
+            </tr>
+            {% endfor %}
+            {% if not login_events %}
+            <tr><td colspan="5" class="text-center py-3">Nenhum evento de acesso</td></tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 
-          <form action="{{ url_for('upload_profile_picture') }}" method="POST" enctype="multipart/form-data" class="mt-4">
-            <div class="mb-3">
-              <label for="profile_picture" class="form-label">Escolha uma nova foto (PNG, JPG, GIF):</label>
-              <input type="file" class="form-control" name="profile_picture" id="profile_picture" accept=".png,.jpg,.jpeg,.gif" required>
-            </div>
-            <button type="submit" class="btn btn-agro"><i class="fas fa-upload me-2"></i>Enviar Foto</button>
-          </form>
-        </div>
+  <!-- Tabela de OS Pendentes -->
+  {% if os_pendentes_todas %}
+  <div class="card-modern mb-4">
+    <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-pause-circle icon-agro"></i>Manutenções Pendentes Atualmente</h4>
+      {% if os_pendentes_todas|length > 5 %}
+      <button class="btn btn-sm btn-toggle" data-target="pendente-row">
+        <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+      </button>
+      {% endif %}
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-modern table-sm table-hover">
+          <thead>
+            <tr><th>OS</th><th>Frota</th><th>Prestador</th><th>Motivo da Pendência</th><th>Data Status</th></tr>
+          </thead>
+          <tbody>
+            {% for p in os_pendentes_todas %}
+            <tr class="{% if loop.index > 5 %}pendente-row hidden-row{% endif %}">
+              <td><span class="badge bg-secondary">{{ p.os }}</span></td>
+              <td>{{ p.frota }}</td>
+              <td>{{ p.status_definido_por | default('N/A') }}</td>
+              <td>{{ p.status_motivo | default('N/A') }}</td>
+              <td>{{ p.status_data | default('N/A') }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="alert alert-success text-center">
+    <i class="fas fa-check-circle fa-2x mb-2"></i>
+    <h4 class="alert-heading">Tudo em ordem!</h4>
+    <p>Nenhuma ordem de serviço marcada como pendente no momento.</p>
+  </div>
+  {% endif %}
+  <!-- Ranking de OS Pendentes (Supervisores) -->
+  <div class="card-modern mb-4">
+    <div class="card-header ranking-gerentes d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Supervisores)</h4>
+      {% if ranking_os_abertas|length > 3 %}
+      <button class="btn btn-sm btn-toggle" data-target="gerente-ranking-row">
+        <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+      </button>
+      {% endif %}
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-modern table-sm">
+          <thead>
+            <tr><th>Posição</th><th>Supervisor</th><th>OS Pendentes</th></tr>
+          </thead>
+          <tbody>
+            {% for gerente, count in ranking_os_abertas %}
+            <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
+              <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+              <td>{{ gerente|capitalize_name }}</td>
+              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+            </tr>
+            {% endfor %}
+            {% if not ranking_os_abertas %}
+            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ranking de OS Pendentes (Prestadores) -->
+  <div class="card-modern mb-4">
+    <div class="card-header ranking-prestadores d-flex justify-content-between align-items-center">
+      <h4 class="mb-0"><i class="fas fa-trophy icon-agro"></i>Ranking Manutenções Pendentes (Prestadores)</h4>
+      {% if ranking_os_prestadores|length > 3 %}
+      <button class="btn btn-sm btn-toggle" data-target="prestador-ranking-row">
+        <i class="fas fa-plus-circle icon-agro"></i> Ver mais
+      </button>
+      {% endif %}
+    </div>
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-modern table-sm">
+          <thead>
+            <tr><th>Posição</th><th>Prestador</th><th>OS Pendentes</th></tr>
+          </thead>
+          <tbody>
+            {% for prestador, count in ranking_os_prestadores %}
+            <tr class="{% if loop.index > 3 %}prestador-ranking-row hidden-row{% endif %}">
+              <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
+              <td>{{ prestador|capitalize_name }}</td>
+              <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
+            </tr>
+            {% endfor %}
+            {% if not ranking_os_prestadores %}
+            <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>
+            {% endif %}
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
