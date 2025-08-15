@@ -1,5 +1,19 @@
 [
   {
+    "frota": "165",
+    "os": "116731",
+    "data": "15/08/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu L/E furado traseiro - (Fazenda Casa Branca)"
+  },
+  {
+    "frota": "90",
+    "os": "116718",
+    "data": "15/08/2025",
+    "prestador": "nan",
+    "servico": "Verificar tração dianteira não aciona - (Fazenda Casa Branca) |Parado|"
+  },
+  {
     "frota": "263",
     "os": "116610",
     "data": "14/08/2025",
@@ -28,32 +42,11 @@
     "servico": "Relogio horimetro parou de funcionar - (Fazenda Casa Branca)"
   },
   {
-    "frota": "5205",
-    "os": "116579",
-    "data": "13/08/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Vazamento de óleo na caixa de facas - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "165",
     "os": "116578",
     "data": "13/08/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento de aditivo na colmeia do radiador - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "165",
-    "os": "116558",
-    "data": "13/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar degrau da escada quebrado - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5482",
-    "os": "116557",
-    "data": "13/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Quebra do chicote do eletroventilador- (Fazenda Casa Branca)"
   },
   {
     "frota": "263",
@@ -68,13 +61,6 @@
     "data": "08/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar lanterna - Faz Casa Branca"
-  },
-  {
-    "frota": "86",
-    "os": "115490",
-    "data": "29/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar relogio horimetro não funciona - (Fazenda Casa Branca)"
   },
   {
     "frota": "136",
@@ -98,31 +84,10 @@
     "servico": "Realizar serviço de fibra na capota do trator, recuperando danos estruturais e garantindo proteção adequada ao operador. - (Fazenda  Casa Branca)"
   },
   {
-    "frota": "5365",
-    "os": "114245",
-    "data": "14/07/2025",
-    "prestador": "nan",
-    "servico": "Fazer fibra na torre após pegar na bica de abastecimento - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "265",
-    "os": "113551",
-    "data": "01/07/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu traseiro L/E furado - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "265",
     "os": "113516",
     "data": "30/06/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Instalar proteção das lanternas L/?? - (Fazenda Casa Branca)"
-  },
-  {
-    "frota": "5559",
-    "os": "112296",
-    "data": "11/06/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Base da régua torta e batedor das facas quebrada - (Fazenda Casa Branca)"
   }
 ]
