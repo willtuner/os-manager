@@ -25,11 +25,12 @@
         z-index: -1;
     }
 
-    .login-container {
+    .main-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: center; /* Center the card vertically */
+        padding: 20px 0; /* Add some padding for smaller screens */
     }
 
     .login-card {
@@ -42,6 +43,7 @@
         border-radius: 15px;
         padding: 2.5rem;
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        margin: auto; /* Center horizontally */
     }
 
     .logo-img {
@@ -79,10 +81,8 @@
     }
 
     .footer-text {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 2rem;
         color: white;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
     }
@@ -91,7 +91,7 @@
 
 {% block content %}
 <div class="bg-image"></div>
-<div class="login-container">
+<div class="main-container">
     <div class="login-card">
         <div class="text-center">
             <img src="/static/logo.png" alt="Suco Prats" class="logo-img">
@@ -118,6 +118,9 @@
             <div class="input-group mb-4">
                 <span class="input-group-text"><i class="fas fa-lock"></i></span>
                 <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+                <button class="btn" type="button" id="togglePassword" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); z-index: 3; border: none;">
+                    <i class="fas fa-eye"></i>
+                </button>
             </div>
 
             <button type="submit" class="btn btn-login w-100 text-white">
@@ -125,8 +128,23 @@
             </button>
         </form>
     </div>
+    <div class="footer-text">
+        <small>&copy; {{ now.strftime('%Y') }} Suco Prats - Desenvolvido por Wilson</small>
+    </div>
 </div>
-<div class="footer-text">
-    <small>&copy; {{ now.strftime('%Y') }} Suco Prats - Desenvolvido por Wilson</small>
-</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#senha');
+
+    togglePassword.addEventListener('click', function (e) {
+        // toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        // toggle the eye slash icon
+        this.querySelector('i').classList.toggle('fa-eye-slash');
+    });
+});
+</script>
 {% endblock %}
