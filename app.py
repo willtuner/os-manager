@@ -170,6 +170,15 @@ class LoginEvent(db.Model):
     logout_time = db.Column(db.DateTime(timezone=True))
     duration_secs = db.Column(db.Integer)
 
+class OSPendente(db.Model):
+    __tablename__ = 'os_pendente'
+    os_numero = db.Column(db.String(50), primary_key=True)
+    frota = db.Column(db.String(50))
+    servico = db.Column(db.Text)
+    status_motivo = db.Column(db.Text, nullable=False)
+    status_definido_por = db.Column(db.String(80), nullable=False)
+    status_data = db.Column(db.String(20), nullable=False)
+
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
 MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
@@ -253,6 +262,12 @@ def init_db():
                 db.session.execute(text('ALTER TABLE frota_leve ADD COLUMN email_fiscal_enviado BOOLEAN DEFAULT FALSE'))
                 db.session.commit()
                 logger.info("Coluna email_fiscal_enviado adicionada com sucesso")
+
+            if 'os_pendente' not in inspector.get_table_names():
+                logger.info("Tabela os_pendente não encontrada, criando...")
+                OSPendente.__table__.create(db.engine)
+                logger.info("Tabela os_pendente criada com sucesso.")
+
         except Exception as e:
             logger.error(f"Erro ao verificar/adicionar colunas: {e}")
             db.session.rollback()
@@ -459,23 +474,18 @@ def carregar_os_manutencao(username_manut):
     return lista_os_manut
 
 def carregar_todas_os_pendentes():
+    pendentes_db = OSPendente.query.all()
     lista_os_pendentes = []
-    # Itera sobre os arquivos de prestadores e gerentes
-    for diretorio in [MENSAGENS_PRESTADOR_DIR, MENSAGENS_DIR]:
-        for nome_arquivo in os.listdir(diretorio):
-            if nome_arquivo.lower().endswith('.json'):
-                caminho_arquivo = os.path.join(diretorio, nome_arquivo)
-                try:
-                    with open(caminho_arquivo, 'r', encoding='utf-8') as f:
-                        lista_os = json.load(f)
-
-                    for os_item in lista_os:
-                        if os_item.get('status') == 'Pendente':
-                            # Adiciona informação do arquivo de origem para referência
-                            os_item['arquivo_origem'] = nome_arquivo
-                            lista_os_pendentes.append(os_item)
-                except Exception as e:
-                    logger.error(f"Erro ao ler arquivo de OS pendente {caminho_arquivo}: {e}")
+    for p in pendentes_db:
+        lista_os_pendentes.append({
+            'os': p.os_numero,
+            'frota': p.frota,
+            'servico': p.servico,
+            'status_motivo': p.status_motivo,
+            'status_definido_por': p.status_definido_por,
+            'status_data': p.status_data,
+            'status': 'Pendente' # Adiciona o status para consistência
+        })
     return lista_os_pendentes
 
 def carregar_os_sem_prestador():
@@ -862,6 +872,12 @@ def finalizar_os(os_numero_str):
                     registrado_em=saopaulo_tz.localize(datetime.now())
                 )
                 db.session.add(nova_finalizacao)
+
+                # Remove da tabela de pendentes, se existir
+                pendente_a_remover = OSPendente.query.get(os_numero_str)
+                if pendente_a_remover:
+                    db.session.delete(pendente_a_remover)
+
                 db.session.commit()
                 
                 # Garante que a OS seja removida de todos os diretórios relevantes
@@ -894,49 +910,75 @@ def finalizar_os(os_numero_str):
 @app.route('/marcar_pendente/<os_numero>', methods=['POST'])
 def marcar_pendente(os_numero):
     if 'prestador' not in session:
-        flash('Acesso negado. Apenas prestadores podem marcar OS como pendente.', 'danger')
+        flash('Acesso negado.', 'danger')
         return redirect(url_for('login'))
 
     prestador_username = session['prestador']
     motivo = request.form.get('motivo', 'Motivo não especificado.')
 
-    # Encontrar o arquivo JSON do prestador
+    # 1. Encontrar a OS no arquivo JSON para obter os detalhes
     dados_prestador = next((p for p in carregar_prestadores() if p.get('usuario', '').lower() == prestador_username), None)
     if not dados_prestador or not dados_prestador.get('arquivo_os'):
-        flash('Não foi possível encontrar o arquivo de OS para este prestador.', 'danger')
+        flash('Configuração de arquivo de OS não encontrada para seu usuário.', 'danger')
         return redirect(url_for('painel_prestador'))
 
     caminho_arquivo_os = os.path.join(MENSAGENS_PRESTADOR_DIR, dados_prestador['arquivo_os'])
-
     if not os.path.exists(caminho_arquivo_os):
-        flash(f'Arquivo de OS não encontrado: {dados_prestador["arquivo_os"]}', 'danger')
+        flash('Arquivo de OS não encontrado.', 'danger')
         return redirect(url_for('painel_prestador'))
 
+    os_details = None
+    lista_os = []
     try:
-        with open(caminho_arquivo_os, 'r+', encoding='utf-8') as f:
+        with open(caminho_arquivo_os, 'r', encoding='utf-8') as f:
             lista_os = json.load(f)
 
-            os_encontrada = False
-            for os_item in lista_os:
-                if str(os_item.get('os') or os_item.get('OS', '')) == os_numero:
-                    os_item['status'] = 'Pendente'
-                    os_item['status_motivo'] = motivo
-                    os_item['status_data'] = datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')
-                    os_item['status_definido_por'] = session.get('prestador_nome', prestador_username)
-                    os_encontrada = True
-                    break
+        for os_item in lista_os:
+            if str(os_item.get('os') or os_item.get('OS', '')) == os_numero:
+                os_details = os_item
+                break
+    except Exception as e:
+        logger.error(f"Erro ao ler o arquivo JSON {caminho_arquivo_os}: {e}")
+        flash('Erro ao ler seu arquivo de OS.', 'danger')
+        return redirect(url_for('painel_prestador'))
 
-            if os_encontrada:
-                f.seek(0)
-                json.dump(lista_os, f, ensure_ascii=False, indent=2)
-                f.truncate()
-                flash(f'OS {os_numero} marcada como pendente.', 'success')
-            else:
-                flash(f'OS {os_numero} não encontrada na sua lista.', 'warning')
+    if not os_details:
+        flash(f'OS {os_numero} não encontrada na sua lista.', 'warning')
+        return redirect(url_for('painel_prestador'))
+
+    # 2. Salvar no banco de dados
+    try:
+        pendente_existente = OSPendente.query.get(os_numero)
+        if pendente_existente:
+            # Atualiza se já existir
+            pendente_existente.status_motivo = motivo
+            pendente_existente.status_definido_por = session.get('prestador_nome', prestador_username)
+            pendente_existente.status_data = datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')
+        else:
+            # Cria uma nova entrada
+            nova_pendencia = OSPendente(
+                os_numero=os_numero,
+                frota=os_details.get('frota', ''),
+                servico=os_details.get('servico', ''),
+                status_motivo=motivo,
+                status_definido_por=session.get('prestador_nome', prestador_username),
+                status_data=datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')
+            )
+            db.session.add(nova_pendencia)
+
+        db.session.commit()
+
+        # 3. Remover do arquivo JSON após sucesso no DB
+        lista_os_atualizada = [item for item in lista_os if str(item.get('os') or item.get('OS', '')) != os_numero]
+        with open(caminho_arquivo_os, 'w', encoding='utf-8') as f:
+            json.dump(lista_os_atualizada, f, ensure_ascii=False, indent=2)
+
+        flash(f'OS {os_numero} marcada como pendente e movida da sua lista ativa.', 'success')
 
     except Exception as e:
-        logger.error(f"Erro ao marcar OS {os_numero} como pendente para {prestador_username}: {e}")
-        flash('Ocorreu um erro ao atualizar a OS.', 'danger')
+        db.session.rollback()
+        logger.error(f"Erro ao salvar OS pendente {os_numero} no banco de dados: {e}")
+        flash('Ocorreu um erro ao salvar a pendência no banco de dados.', 'danger')
 
     return redirect(url_for('painel_prestador'))
 
