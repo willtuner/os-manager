@@ -99,16 +99,20 @@ def utility_processor():
 
 # --- Lista de Saudações Aleatórias ---
 GREETINGS = [
-    "Que bom te ver por aqui!",
-    "Espero que seu dia seja produtivo.",
-    "Você está ótimo(a) hoje!",
-    "O trabalho duro de hoje é o suco de laranja de amanhã!",
-    "Vamos fazer a diferença hoje!",
-    "Qual é o cúmulo da velocidade? Contornar a Terra e dar um tapa na própria nuca.",
-    "O que o pagodeiro foi fazer na igreja? Cantar 'Pá God'.",
-    "Por que a planta não responde? Porque ela é uma planta.",
-    "Preparado para mais um dia de sucesso?",
-    "Sua presença ilumina o sistema!"
+    "Olha só quem resolveu aparecer…",
+    "Sumiu e agora volta como se nada tivesse acontecido.",
+    "Entrou? Então finge que trabalha agora.",
+    "Achou que as OS iam se fechar sozinhas? Fofo.",
+    "Hoje vai fechar OS ou só vai ficar me olhando?",
+    "Demorou tanto que achei que tinha mudado de emprego.",
+    "Se continuar nesse ritmo, a OS vai entrar pra história.",
+    "Finalmente! Achei que meu servidor tinha sido desligado.",
+    "Chegou… e já deve estar pensando na hora de ir embora.",
+    "Vamos trabalhar? Ou vai abrir outra aba do YouTube?",
+    "Faz de conta que tá ocupado, eu finjo que acredito.",
+    "Entrou só pra ver se ainda tem OS? Spoiler: tem.",
+    "Hoje é dia de fechar OS ou inventar desculpa?",
+    "O sistema tava tranquilo… até você logar."
 ]
 
 @app.context_processor
