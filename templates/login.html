@@ -4,63 +4,129 @@
 
 {% block extra_css %}
 <style>
-    .login-container {
-        max-width: 400px;
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
+    .bg-image {
+        background-image: url('https://images.unsplash.com/photo-1489945891631-ec3f0d557901');
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
     .login-card {
-        border-top: 4px solid var(--verde-prats);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 420px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 15px;
+        padding: 2.5rem;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    }
+
+    .logo-img {
+        height: 70px;
+        margin-bottom: 1rem;
+    }
+
+    .form-control {
+        border-radius: 8px;
+        padding: 0.75rem 1rem;
+        padding-left: 2.5rem; /* Space for icon */
+    }
+
+    .input-group-text {
+        background: transparent;
+        border: none;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        color: #6c757d;
+    }
+
+    .btn-login {
+        border-radius: 8px;
+        padding: 0.75rem;
+        font-weight: 600;
+        background-color: var(--verde-prats);
+        border: none;
+        transition: background-color 0.3s;
+    }
+    .btn-login:hover {
+        background-color: #1e5a23;
+    }
+
+    .footer-text {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
     }
 </style>
 {% endblock %}
 
 {% block content %}
-<div class="d-flex justify-content-center">
-    <div class="login-container">
-        <div class="text-center mb-4">
-            <img src="/static/logo.png" alt="Suco Prats" style="height: 80px;">
-            <h4 class="mt-3">Acesso ao Sistema</h4>
-            <p class="text-muted">Para gerentes e prestadores</p>
+<div class="bg-image"></div>
+<div class="login-container">
+    <div class="login-card">
+        <div class="text-center">
+            <img src="/static/logo.png" alt="Suco Prats" class="logo-img">
+            <h4 class="mb-4">Bem-vindo ao Painel de OS</h4>
         </div>
         
-        <div class="card login-card">
-            <div class="card-body p-4">
-                {% with messages = get_flashed_messages(with_categories=true) %}
-                    {% if messages %}
-                        {% for category, message in messages %}
-                        <div class="alert alert-{{ category }} alert-dismissible fade show">
-                            {{ message }}
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                        </div>
-                        {% endfor %}
-                    {% endif %}
-                {% endwith %}
-                
-                <form method="POST" action="{{ url_for('login') }}">
-                    <div class="mb-3">
-                        <label for="username" class="form-label">
-                            <i class="fas fa-user me-1"></i> Usuário
-                        </label>
-                        <input type="text" class="form-control" id="username" name="username" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="senha" class="form-label">
-                            <i class="fas fa-lock me-1"></i> Senha
-                        </label>
-                        <input type="password" class="form-control" id="senha" name="senha" required>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-prats w-100 py-2">
-                        <i class="fas fa-sign-in-alt me-1"></i> Entrar
-                    </button>
-                </form>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show">
+                    {{ message }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <form method="POST" action="{{ url_for('login') }}">
+            <div class="input-group mb-3">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Usuário" required>
             </div>
-        </div>
-        
-        <div class="text-center mt-3 text-muted">
-            <small>Sistema de Gestão de OS - Suco Prats</small>
-        </div>
+
+            <div class="input-group mb-4">
+                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha" required>
+            </div>
+
+            <button type="submit" class="btn btn-login w-100 text-white">
+                Entrar
+            </button>
+        </form>
     </div>
+</div>
+<div class="footer-text">
+    <small>&copy; {{ now.strftime('%Y') }} Suco Prats - Desenvolvido por Wilson</small>
 </div>
 {% endblock %}
