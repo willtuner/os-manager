@@ -156,11 +156,20 @@
     <div class="mascot-container">
         <div class="mascot-icon">🚜</div>
         <div class="speech-bubble {{ bubble_class }}">
-          <h5 class="fw-bold mb-1">{{ random_greeting }} {{ nome|capitalize_name }}!</h5>
+      <h5 class="fw-bold mb-1" id="greeting-text">{{ nome|capitalize_name }}!</h5>
           <p class="mb-0">{{ message }}</p>
         </div>
     </div>
     {# --- Fim do Bloco de Saudação com Mascote --- #}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const greetings = {{ greetings_list|tojson }};
+    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+    const greetingElement = document.getElementById('greeting-text');
+    greetingElement.innerHTML = randomGreeting + ' ' + greetingElement.innerHTML;
+});
+</script>
 
     {% if os_list %}
         {% for item in os_list %}
