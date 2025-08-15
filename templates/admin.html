@@ -2,7 +2,7 @@
 
 {% block title %}Painel Admin – Suco Prats Agro{% endblock %}
 
-{% block page_title %}Painel de Manutenção Agrícola{% endblock %}
+{% block page_title %}Painel de Manutenção Agrícola <span class="ms-2">🚜</span>{% endblock %}
 
 {% block header_actions %}
   <a href="{{ url_for('exportar_os_finalizadas', periodo=periodo, data_inicio=data_inicio, data_fim=data_fim) }}" class="btn btn-agro btn-sm">
@@ -215,47 +215,6 @@
   }
   .hidden-row { display: none; }
 
-  /* Estilos para o mascote */
-  .mascot-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
-  }
-  .mascot-icon {
-    font-size: 3rem;
-    animation: bounce 2s infinite;
-  }
-  .speech-bubble {
-    position: relative;
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-    flex-grow: 1;
-  }
-  .speech-bubble::before {
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-  }
-  .speech-bubble.bubble-success { background-color: #28a745; }
-  .speech-bubble.bubble-success::before { border-right: 10px solid #28a745; }
-  .speech-bubble.bubble-info { background-color: #17a2b8; }
-  .speech-bubble.bubble-info::before { border-right: 10px solid #17a2b8; }
-  .speech-bubble.bubble-warning { background-color: #ffc107; color: #212529; }
-  .speech-bubble.bubble-warning::before { border-right: 10px solid #ffc107; }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-10px);}
-    60% {transform: translateY(-5px);}
-  }
-
   @media (max-width: 576px) {
     .stat-card h3 { font-size: 1.3rem; }
     .table-modern { font-size: 0.85rem; }
@@ -347,28 +306,6 @@
 
 {% block content %}
 <div class="container">
-  {# --- Bloco de Saudação com Mascote --- #}
-  {% set os_count = os_abertas.values()|sum %}
-  {% if os_count == 0 %}
-    {% set bubble_class = 'bubble-success' %}
-    {% set message = 'Tudo certo por aqui! Nenhuma OS em aberto no sistema. ✅' %}
-  {% elif os_count <= 10 %}
-    {% set bubble_class = 'bubble-info' %}
-    {% set message = 'Existem ' ~ os_count ~ ' OS em aberto no total. 👍' %}
-  {% else %}
-    {% set bubble_class = 'bubble-warning' %}
-    {% set message = 'Atenção! O sistema tem ' ~ os_count ~ ' OS em aberto. Priorize as mais antigas! ⚠️' %}
-  {% endif %}
-
-  <div class="mascot-container">
-    <div class="mascot-icon">🚜</div>
-    <div class="speech-bubble {{ bubble_class }}">
-      <h5 class="fw-bold mb-1">{{ random_greeting }} {{ session.get('gerente')|capitalize_name }}!</h5>
-      <p class="mb-0">{{ message }}</p>
-    </div>
-  </div>
-  {# --- Fim do Bloco de Saudação com Mascote --- #}
-
   <!-- Cartões de Estatísticas -->
   <div class="row mb-4">
     <div class="col-md-3 col-sm-6">
