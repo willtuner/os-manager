@@ -478,14 +478,9 @@ def carregar_todas_os_pendentes():
                     logger.error(f"Erro ao ler arquivo de OS pendente {caminho_arquivo}: {e}")
     return lista_os_pendentes
 
-def carregar_os_sem_prestador(username_manut=None):
+def carregar_os_sem_prestador():
     lista_os_sem_p = []
     data_hoje_sem_p = saopaulo_tz.localize(datetime.now()).date()
-
-    termo_busca_regex = None
-    if username_manut:
-        # Using regex for a more robust, case-insensitive search
-        termo_busca_regex = re.compile(f"Responsavel Sr. {re.escape(username_manut)}", re.IGNORECASE)
 
     for nome_arquivo_json_gerente in os.listdir(MENSAGENS_DIR):
         if nome_arquivo_json_gerente.lower().endswith('.json'):
@@ -497,11 +492,6 @@ def carregar_os_sem_prestador(username_manut=None):
                     nome_prestador = str(os_item_g.get('prestador') or os_item_g.get('Prestador', '')).lower().strip()
                     if nome_prestador in ('nan', '', 'none', 'não definido', 'prestador não definido'):
                         servico_str = str(os_item_g.get('servico') or os_item_g.get('Servico') or os_item_g.get('observacao') or os_item_g.get('Observacao', ''))
-
-                        # If we have a search term, and it's not found in the service string, skip this OS
-                        if termo_busca_regex and not termo_busca_regex.search(servico_str):
-                            continue
-
                         data_os_g_str = str(os_item_g.get('data') or os_item_g.get('Data', ''))
                         data_abertura_os_g = None
                         if data_os_g_str:
@@ -518,7 +508,7 @@ def carregar_os_sem_prestador(username_manut=None):
                             'frota': str(os_item_g.get('frota') or os_item_g.get('Frota', '')),
                             'data_entrada': data_os_g_str,
                             'modelo': str(os_item_g.get('modelo') or os_item_g.get('Modelo', 'Desconhecido') or 'Desconhecido'),
-                            'servico': servico_str, # Use the original case servico_str
+                            'servico': servico_str,
                             'arquivo_origem': nome_arquivo_json_gerente,
                             'dias_abertos': dias_abertos_g
                         })
@@ -714,7 +704,7 @@ def painel_manutencao():
         return redirect(url_for('login'))
 
     lista_os_manutencao = carregar_os_manutencao(session['manutencao'])
-    lista_os_sem_p_manut = carregar_os_sem_prestador(session['manutencao'])
+    lista_os_sem_p_manut = carregar_os_sem_prestador()
     
     ordenar_por = request.args.get('ordenar', 'data_desc')
     if lista_os_manutencao: 
