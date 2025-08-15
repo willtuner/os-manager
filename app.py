@@ -138,8 +138,8 @@ GREETINGS = [
 ]
 
 @app.context_processor
-def inject_random_greeting():
-    return dict(random_greeting=random.choice(GREETINGS))
+def inject_greetings_list():
+    return dict(greetings_list=GREETINGS)
 
 # --- Models ---
 class User(db.Model):
