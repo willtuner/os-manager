@@ -99,20 +99,41 @@ def utility_processor():
 
 # --- Lista de Saudações Aleatórias ---
 GREETINGS = [
+    # 🐾 Fofinhos
+    "Olha quem chegou! Tava te esperando 🐾",
+    "Sua presença ilumina mais que a tela do monitor.",
+    "Hoje o sistema tá mais feliz só porque você logou.",
+    "Se eu pudesse, te trazia um café agora.",
+    "Chegou! Agora sim posso dizer que meu dia começou.",
+    "Bem-vindo(a)! Preparei minhas melhores linhas de código só pra você.",
+    "Sem você aqui, esse sistema fica parecendo planilha sem fórmula.",
+    "Login aceito… e carinho virtual enviado.",
+    "Você chegou! Agora o sistema tá 100% carregado.",
+    "Bom te ver! Bora deixar tudo em ordem por aqui.",
+
+    # 😏 Irônicos
     "Olha só quem resolveu aparecer…",
-    "Sumiu e agora volta como se nada tivesse acontecido.",
-    "Entrou? Então finge que trabalha agora.",
-    "Achou que as OS iam se fechar sozinhas? Fofo.",
     "Hoje vai fechar OS ou só vai ficar me olhando?",
     "Demorou tanto que achei que tinha mudado de emprego.",
-    "Se continuar nesse ritmo, a OS vai entrar pra história.",
-    "Finalmente! Achei que meu servidor tinha sido desligado.",
-    "Chegou… e já deve estar pensando na hora de ir embora.",
-    "Vamos trabalhar? Ou vai abrir outra aba do YouTube?",
-    "Faz de conta que tá ocupado, eu finjo que acredito.",
     "Entrou só pra ver se ainda tem OS? Spoiler: tem.",
-    "Hoje é dia de fechar OS ou inventar desculpa?",
-    "O sistema tava tranquilo… até você logar."
+    "Vamos trabalhar? Ou abrir outra aba do YouTube?",
+    "O sistema tava tranquilo… até você logar.",
+    "Já tava achando que você tinha esquecido sua senha.",
+    "Mais perdido que mouse sem pilha.",
+    "Se continuar nesse ritmo, a OS vai se aposentar aberta.",
+    "Deixa eu adivinhar… veio só espiar e sair, né?",
+
+    # ⚡ Motivadores
+    "Bora transformar OS abertas em vitórias de hoje!",
+    "Trabalhar duro agora é colher resultado depois.",
+    "Cada OS fechada é um passo pra paz no setor.",
+    "Se for pra fazer, faz bem feito. Bora!",
+    "Hoje é o dia perfeito pra zerar essa fila.",
+    "Você é mais rápido que deadline… prova aí!",
+    "Não é só mais uma OS, é mais uma missão cumprida.",
+    "Sua organização hoje define o descanso de amanhã.",
+    "Mais foco, menos desculpa. Bora pro jogo!",
+    "Quem fecha OS fecha ciclos. Bora encerrar o dia bem!"
 ]
 
 @app.context_processor
