@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5552",
+    "cd_equipamento": "5552",
+    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
+    "os": "116704",
+    "data_entrada": "15/08/2025",
+    "servico": "Revisar embuchamento dos pratos com folga e realizar emenda da corrente. - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5604",
+    "cd_equipamento": "5604",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "116701",
+    "data_entrada": "15/08/2025",
+    "servico": "Inspecionar rolamentos e verificar alinhamento das polias, corrigindo desvios se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5545",
     "cd_equipamento": "5545",
     "modelo": "PULVERIZADOR BARRAS TRICICLO",
@@ -54,30 +70,6 @@
     "os": "115517",
     "data_entrada": "30/07/2025",
     "servico": "Avaliar quebra das correias da turbina com quebra recorrente - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "115410",
-    "data_entrada": "28/07/2025",
-    "servico": "Colocar agulhas de fixação  perdidas e confeccionar chapas de fixação dos ramais quebrada - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5626",
-    "cd_equipamento": "5626",
-    "modelo": "ROCADEIRA NINJA ECO300 CRUIS",
-    "os": "115339",
-    "data_entrada": "25/07/2025",
-    "servico": "Vazamento de óleo no retentor do rotor principal - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5403",
-    "cd_equipamento": "5403",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "115152",
-    "data_entrada": "23/07/2025",
-    "servico": "Verificar rolamento e eixo da turbina, ruído anormal - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5760",

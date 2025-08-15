@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5523",
+    "cd_equipamento": "5523",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "116696",
+    "data_entrada": "15/08/2025",
+    "servico": "Trocar graxeta - (Fazenda São Severino)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5522",
     "cd_equipamento": "5522",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
@@ -8,28 +16,12 @@
     "servico": "Revisar válvulas da bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5264",
-    "cd_equipamento": "5264",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "116616",
-    "data_entrada": "14/08/2025",
-    "servico": "Verificar vazamento nos retentores da bomba e trocar mangueiras - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5603",
     "cd_equipamento": "5603",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "116606",
     "data_entrada": "14/08/2025",
     "servico": "Trocar rolamento da turbina estourado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "116576",
-    "data_entrada": "13/08/2025",
-    "servico": "Rolamento do eixo da turbina quebrado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5345",
@@ -61,6 +53,6 @@
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
     "os": "114211",
     "data_entrada": "14/07/2025",
-    "servico": "Refazer ramais - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
+    "servico": "Trocar os ramais para distribuição dos bicos do SPE - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Maurício"
   }
 ]

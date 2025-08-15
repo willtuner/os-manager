@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5225",
+    "cd_equipamento": "5225",
+    "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
+    "os": "116705",
+    "data_entrada": "15/08/2025",
+    "servico": "Executar emenda na mangueira do sistema hidroroll. - (Fazenda SP)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5102",
+    "cd_equipamento": "5102",
+    "modelo": "CARRETA GUINCHO - SCHULTER",
+    "os": "116703",
+    "data_entrada": "15/08/2025",
+    "servico": "Verificar alavancas do comando apresentando travamento (engastanhando).- (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5298",
+    "cd_equipamento": "5298",
+    "modelo": "CARRETA TRANSBORDO SCHULTER",
+    "os": "116690",
+    "data_entrada": "15/08/2025",
+    "servico": "Reapertar parafusos da roda e da rala, e trocar suporte do eixo - (Fazenda Estrela)\nSolicitado Sr. Gilson\nResponsavel Sr. Izaias"
+  },
+  {
+    "frota": "5784",
+    "cd_equipamento": "5784",
+    "modelo": "DESENROLADOR DE MANGUEIRA",
+    "os": "116688",
+    "data_entrada": "15/08/2025",
+    "servico": "Montar arco de ferro e solda na estrutura do chassi - (Fazenda Santa Luiza)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5779",
+    "cd_equipamento": "5779",
+    "modelo": "VALETADEIRA",
+    "os": "116687",
+    "data_entrada": "15/08/2025",
+    "servico": "Reforma da corrente - (Fazenda SL III) \nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5572",
     "cd_equipamento": "5572",
     "modelo": "CARRETA TRANSBORDO GTM",
@@ -14,14 +54,6 @@
     "os": "116565",
     "data_entrada": "13/08/2025",
     "servico": "Quebra do gomo da corrente - (Fazenda SL1) |Parado|\nSolicitado Sr. Wagner\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5181",
-    "cd_equipamento": "5181",
-    "modelo": "CARRETINHA DE FERRO",
-    "os": "116556",
-    "data_entrada": "13/08/2025",
-    "servico": "Executar modificação estrutural na carretinha, aumentando largura e altura da estrutura para adequação ao transporte de tubos do sistema de irrigação - (Fazenda SL1)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio\nAutorizado Sr. Rafael/Izabela (Gestores do departamento)"
   },
   {
     "frota": "5645",

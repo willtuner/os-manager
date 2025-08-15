@@ -1,5 +1,21 @@
 [
   {
+    "frota": "220",
+    "cd_equipamento": "220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116728",
+    "data_entrada": "15/08/2025",
+    "servico": "Refazer proteção para os para-lamas - (Fazenda Terra Branca/Oficina)\nSolicitado Sr. Carlos"
+  },
+  {
+    "frota": "5105",
+    "cd_equipamento": "5105",
+    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
+    "os": "116698",
+    "data_entrada": "15/08/2025",
+    "servico": "Executar reforma estrutural no sistema de engate da grade aradora - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5264",
     "cd_equipamento": "5264",
     "modelo": "PULVERIZADOR 2000 LT",
@@ -24,14 +40,6 @@
     "servico": "Consertar para-lamas - (SP/Oficina)\nSolicitado Sr. Carlos"
   },
   {
-    "frota": "165",
-    "cd_equipamento": "165",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "116558",
-    "data_entrada": "13/08/2025",
-    "servico": "Soldar degrau da escada quebrado - (Fazenda Casa Branca)\nSolicitado Sr João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "263",
     "cd_equipamento": "263",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -46,14 +54,6 @@
     "os": "116408",
     "data_entrada": "11/08/2025",
     "servico": "Aumentar cesto traseiro para transporte de produto e instalar mais uma saída de vazão no ramal - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio\nAutorizado fazer Sr. Rafael gerente de manutenção.\n*Lançar custo como investimento.*"
-  },
-  {
-    "frota": "5492",
-    "cd_equipamento": "5492",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "116230",
-    "data_entrada": "06/08/2025",
-    "servico": "Sacar parafuso da asa traseira L/D - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
   },
   {
     "frota": "226",
@@ -78,14 +78,6 @@
     "os": "114334",
     "data_entrada": "15/07/2025",
     "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5718",
-    "cd_equipamento": "5718",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "114143",
-    "data_entrada": "11/07/2025",
-    "servico": "Asa L/D torta - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "91",

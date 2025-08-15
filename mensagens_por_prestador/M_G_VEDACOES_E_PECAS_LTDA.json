@@ -16,14 +16,6 @@
     "servico": "Quebra da corrente e engrenagens do sistema de transmissão - (Fazenda Alvorada) - |Parado|\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5205",
-    "cd_equipamento": "5205",
-    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
-    "os": "116579",
-    "data_entrada": "13/08/2025",
-    "servico": "Vazamento de óleo na caixa de facas - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5489",
     "cd_equipamento": "5489",
     "modelo": "CONJUNTO PODADOR WWD",
@@ -102,13 +94,5 @@
     "os": "113933",
     "data_entrada": "08/07/2025",
     "servico": "Mancal trincado (Pecuária)\nLiberado Sr. Maurício"
-  },
-  {
-    "frota": "5559",
-    "cd_equipamento": "5559",
-    "modelo": "PODADEIRA HIDRAUTEC HLC6",
-    "os": "112296",
-    "data_entrada": "11/06/2025",
-    "servico": "Base da régua torta e batedor das facas quebrada - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
   }
 ]

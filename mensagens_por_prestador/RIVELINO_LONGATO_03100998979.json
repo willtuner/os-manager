@@ -1,5 +1,37 @@
 [
   {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "116731",
+    "data_entrada": "15/08/2025",
+    "servico": "Pneu L/E furado traseiro - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5233",
+    "cd_equipamento": "5233",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116702",
+    "data_entrada": "15/08/2025",
+    "servico": "Verificar pneu lado direito com presença de bolhas e banda de rodagem deslocada - (Fazenda São Pedro)\nSolicitado Sr. Romes Rosa\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5572",
+    "cd_equipamento": "5572",
+    "modelo": "CARRETA TRANSBORDO GTM",
+    "os": "116684",
+    "data_entrada": "15/08/2025",
+    "servico": "Pneu L/E furado - (Fazenda Estrela) |Parado|\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5248",
+    "cd_equipamento": "5248",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "116683",
+    "data_entrada": "15/08/2025",
+    "servico": "Pneu L/E traseiro furado - (Fazenda São Paulo) |Parado|\nSolicitado Sr. Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5646",
     "cd_equipamento": "5646",
     "modelo": "TRANSBORDO MOD.TC-7000 GTM",
@@ -22,14 +54,6 @@
     "os": "116585",
     "data_entrada": "14/08/2025",
     "servico": "Pneu dianteiro L/E furado - (Fazenda Santa Izabel) |Parado|\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5632",
-    "cd_equipamento": "5632",
-    "modelo": "DISTRIBUIDO FARTUS 15.0 GRANEL",
-    "os": "116582",
-    "data_entrada": "13/08/2025",
-    "servico": "Pneu L/E traseiro furado - (Fazenda São Paulo) |Parado|\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "26",
@@ -86,14 +110,6 @@
     "os": "114194",
     "data_entrada": "14/07/2025",
     "servico": "Trocar os pneus dianteiro - Faz Minuano\nAutorizado Mauricio"
-  },
-  {
-    "frota": "265",
-    "cd_equipamento": "265",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113551",
-    "data_entrada": "01/07/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda Casa Branca)\nSolicitado Sr. João \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "255",

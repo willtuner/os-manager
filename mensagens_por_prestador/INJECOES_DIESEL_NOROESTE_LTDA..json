@@ -1,13 +1,5 @@
 [
   {
-    "frota": "224",
-    "cd_equipamento": "224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116598",
-    "data_entrada": "14/08/2025",
-    "servico": "Vazamento de óleo diesel na bomba injetora - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "269",
     "cd_equipamento": "269",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -30,6 +22,22 @@
     "os": "114513",
     "data_entrada": "16/07/2025",
     "servico": "Revisar bomba de combustivel - Faz São Pedro\nAutorizado Arthur"
+  },
+  {
+    "frota": "257",
+    "cd_equipamento": "257",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114512",
+    "data_entrada": "16/07/2025",
+    "servico": "Revisar bomba de combustível - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "159",
+    "cd_equipamento": "159",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "114137",
+    "data_entrada": "11/07/2025",
+    "servico": "Verificar vazamento de óleo na bomba injetora - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "156",
