@@ -1,5 +1,49 @@
 [
     {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "5739",
+        "modelo": "ROCADEIRA RC2 E 3100 S0516",
+        "os": "116759",
+        "data_entrada": "16/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Troca suporte dos fações quebrado - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ALTIERES SOARES FERREIRA",
+        "frota": "5383",
+        "modelo": "CARRINHO MOTOR DE IRRIGACAO",
+        "os": "116758",
+        "data_entrada": "15/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Substituir mangueira do sistema Hidro Roll danificada devido a impacto e esmagamento ocasionados por queda durante o transporte. - (Fazenda Pedra Verde) |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOHN LENNON DA SILVA",
+        "frota": "228",
+        "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+        "os": "116746",
+        "data_entrada": "15/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Pneu traseiro L/D furado - (Fazenda São Severino) |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5613",
+        "modelo": "PULVERIZADOR 4000 LT JACTO",
+        "os": "116744",
+        "data_entrada": "15/08/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Solda parafuso da  chapa de proteção - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
         "frota": "5128",
         "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -129,17 +173,6 @@
         "previsao_saida": "---",
         "prestador": "RIVELINO LONGATO 03100998979",
         "servico": "Verificar pneu lado direito com presença de bolhas e banda de rodagem deslocada - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "5604",
-        "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-        "os": "116701",
-        "data_entrada": "15/08/2025",
-        "previsao_saida": "---",
-        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Inspecionar rolamentos e verificar alinhamento das polias, corrigindo desvios se necessário. - (Fazenda Pedra Verde)",
         "liberado_por": "Mauricio"
     },
     {
@@ -496,17 +529,6 @@
     },
     {
         "solicitante": "ROMES ROSA SILVA",
-        "frota": "5726",
-        "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-        "os": "116320",
-        "data_entrada": "08/08/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Vazamento nas válvulas do comando - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ROMES ROSA SILVA",
         "frota": "5745",
         "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
         "os": "116291",
@@ -558,17 +580,6 @@
         "previsao_saida": "---",
         "prestador": "MG - GARCIA MONTAGEM INDUSTRIAL LTDA",
         "servico": "Vazamento no de óleo no motor hidráulico - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "MURILO J ONCK LEMES DA SILVA",
-        "frota": "5662",
-        "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-        "os": "116049",
-        "data_entrada": "05/08/2025",
-        "previsao_saida": "---",
-        "prestador": "GRANEL IMPLEMENTOS AGRICOLA LTDA",
-        "servico": "Verificar motor hidráulico que toca as esteiras travado - (Fazenda Bela Manhã)",
         "liberado_por": "Mauricio"
     },
     {
@@ -649,17 +660,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "ADRIANO CLAUDIO FIRMINO",
-        "frota": "5610",
-        "modelo": "PODADEIRA HIDRAUTEC HLC 4",
-        "os": "115555",
-        "data_entrada": "30/07/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Vazamento de óleo no pistão - (Fazenda Nova Manhã)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "JOSE VACELI NETO",
         "frota": "5136",
         "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -701,17 +701,6 @@
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS",
         "servico": "Vazamento no comando - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "DIEGO GOMES CAMBOI",
-        "frota": "5721",
-        "modelo": "TANQUE DE AGUA 2000 LT",
-        "os": "115181",
-        "data_entrada": "24/07/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Coroa do pinhão da bomba com desgaste por atrito (roçada). Necessário substituir - (Fazenda Santa Izabel)",
         "liberado_por": "Mauricio"
     },
     {
