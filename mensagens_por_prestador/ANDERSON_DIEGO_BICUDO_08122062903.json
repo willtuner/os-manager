@@ -1,5 +1,13 @@
 [
   {
+    "frota": "308",
+    "cd_equipamento": "308",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "116760",
+    "data_entrada": "16/08/2025",
+    "servico": "Efetuar troca de óleo completa - (Fazenda SP)\nSolicitado Sr. Wilson"
+  },
+  {
     "frota": "259",
     "cd_equipamento": "259",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -8,28 +16,12 @@
     "servico": "Verificar trator escapando 3° marcha - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Carlos"
   },
   {
-    "frota": "102",
-    "cd_equipamento": "102",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "116710",
-    "data_entrada": "15/08/2025",
-    "servico": "Vazamento de óleo no MAP e na junta da bomba de hidráulico - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Wilson"
-  },
-  {
     "frota": "216",
     "cd_equipamento": "216",
     "modelo": "TRATOR JOHN DEERE 5070 E",
     "os": "116595",
     "data_entrada": "14/08/2025",
     "servico": "Trocar anel dos cachimbo do freio e consertar cano do A/C e mangueira da direção - (Fazenda SP/Oficina)\nSolicitado Sr. Diego (DMA)\nResponsavel Sr. Carlos Mariano"
-  },
-  {
-    "frota": "165",
-    "cd_equipamento": "165",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "116578",
-    "data_entrada": "13/08/2025",
-    "servico": "Vazamento de aditivo na colmeia do radiador - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "10222",
@@ -70,14 +62,6 @@
     "os": "116275",
     "data_entrada": "07/08/2025",
     "servico": "Verificar vazamento de óleo hidráulico na tampa da TDP - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "113",
-    "cd_equipamento": "113",
-    "modelo": "TRATOR JOHN DEERE 5603 4X4",
-    "os": "116265",
-    "data_entrada": "07/08/2025",
-    "servico": "Cruzeta do eixo dianteiro estourada - (Fazenda Pedra Verde) |Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur \nP.S Serviço feito recentemente na OS 114315 (DMA)"
   },
   {
     "frota": "100",
