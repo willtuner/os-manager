@@ -5,9 +5,19 @@
 {% block page_title %}Painel de Manutenção{% endblock %}
 
 {% block header_actions %}
-  {% if profile_picture %}
-      <img src="{{ profile_picture }}" alt="Foto de Perfil" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
-  {% endif %}
+<div class="d-flex align-items-center">
+    <div class="position-relative">
+        <img src="{{ profile_picture or url_for('static', filename='images/default_avatar.png') }}"
+             alt="Foto de Perfil"
+             class="rounded-circle"
+             style="width: 40px; height: 40px; object-fit: cover; cursor: pointer;"
+             data-bs-toggle="modal"
+             data-bs-target="#profilePictureModal">
+    </div>
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-secondary ms-3">
+      <i class="fas fa-sign-out-alt"></i> Sair
+    </a>
+</div>
 {% endblock %}
 
 
@@ -20,17 +30,23 @@
         --laranja-suco: #f39c12;
         --cinza-claro: #f8f9fa;
         --vermelho-erro: #e74c3c;
+        --cinza-borda: #dee2e6;
     }
     .card-os {
-        border-left: 4px solid var(--verde-agro);
+        border-left: 5px solid var(--verde-agro);
         background: #fff;
         border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.08);
         transition: all 0.3s ease;
+        overflow: hidden; /* Garante que o conteúdo não vaze */
     }
     .card-os:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+    .card-header-os {
+        background-color: var(--cinza-claro);
+        border-bottom: 1px solid var(--cinza-borda);
     }
     .btn-agro {
         background-color: var(--verde-agro);
@@ -38,19 +54,29 @@
         color: white;
         font-weight: 500;
     }
+    .nav-tabs .nav-link {
+        color: var(--azul-escuro);
+    }
     .nav-tabs .nav-link.active {
         background-color: var(--verde-agro);
         color: white;
+        border-color: var(--verde-agro);
     }
     .badge-os {
-        background-color: var(--vermelho-erro);
+        font-size: 0.9em;
+        padding: 0.4em 0.7em;
     }
-    /* Estilos para o mascote */
+    .badge-urgente { background-color: var(--vermelho-erro); }
+    .badge-moderado { background-color: var(--laranja-suco); }
+    .badge-normal { background-color: var(--verde-agro); }
     .mascot-container {
         display: flex;
         align-items: center;
         gap: 15px;
         margin-bottom: 1.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: #e9f5e9; /* Fundo verde claro */
     }
     .mascot-icon {
         font-size: 3rem;
@@ -95,38 +121,32 @@
     {% if os_count == 0 %}
       {% set bubble_class = 'bubble-success' %}
       {% set message = 'Tudo limpo por aqui! Nenhuma OS para você. ✅' %}
-    {% else %}
+    {% elif os_count > 5 %}
       {% set bubble_class = 'bubble-warning' %}
       {% set message = 'Você tem ' ~ os_count ~ ' OS que precisam da sua atenção. Foco na missão! ⚠️' %}
+    {% else %}
+      {% set bubble_class = 'bubble-info' %}
+      {% set message = 'Apenas ' ~ os_count ~ ' OS para resolver. Você consegue! 👍' %}
     {% endif %}
 
     <div class="mascot-container">
         <div class="mascot-icon">🚜</div>
         <div class="speech-bubble {{ bubble_class }}">
-      <h5 class="fw-bold mb-1" id="greeting-text">{{ nome|capitalize_name }}!</h5>
-          <p class="mb-0">{{ message }}</p>
+            <h5 class="fw-bold mb-1" id="greeting-text">{{ nome|capitalize_name }}!</h5>
+            <p class="mb-0">{{ message }}</p>
         </div>
     </div>
     {# --- Fim do Bloco de Saudação com Mascote --- #}
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const greetings = {{ greetings_list|tojson }};
-    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-    const greetingElement = document.getElementById('greeting-text');
-    greetingElement.innerHTML = randomGreeting + ' ' + greetingElement.innerHTML;
-});
-</script>
-
-    <ul class="nav nav-tabs mb-3" id="manutencaoTabs" role="tablist">
+    <ul class="nav nav-tabs mb-4" id="manutencaoTabs" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="pendentes-tab" data-bs-toggle="tab" data-bs-target="#pendentes" type="button" role="tab" aria-controls="pendentes" aria-selected="true">
-                <i class="fas fa-tools me-1"></i>OS Próprias <span class="badge bg-secondary">{{ total_os }}</span>
+                <i class="fas fa-tools me-1"></i>Minhas OS <span class="badge bg-danger ms-2">{{ total_os }}</span>
             </button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="sem-prestador-tab" data-bs-toggle="tab" data-bs-target="#sem-prestador" type="button" role="tab" aria-controls="sem-prestador" aria-selected="false">
-                <i class="fas fa-user-plus me-1"></i>Atribuir OS <span class="badge bg-secondary">{{ total_os_sem_prestador }}</span>
+                <i class="fas fa-user-plus me-1"></i>Atribuir OS <span class="badge bg-warning text-dark ms-2">{{ total_os_sem_prestador }}</span>
             </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -138,61 +158,92 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="tab-content" id="manutencaoTabContent">
         <div class="tab-pane fade show active" id="pendentes" role="tabpanel" aria-labelledby="pendentes-tab">
-            <!-- Content for OS Próprias -->
             {% if os_list %}
+                <div class="row row-cols-1 row-cols-md-2 g-4">
                 {% for os in os_list %}
-                <div class="card card-os mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title mb-2"><span class="badge badge-os">OS {{ os.os }}</span> Frota {{ os.frota }}</h5>
-                        <p class="card-text"><small class="text-muted">Abertura: {{ os.data_entrada }} (Aberta há {{ os.dias_abertos }} dias)</small></p>
-                        <p class="card-text">{{ os.servico }}</p>
-                        <hr>
-                        <div class="finalize-section">
-                            <form action="{{ url_for('finalizar_os', os_numero_str=os.os) }}" method="POST">
-                                <div class="row g-2 mb-2">
-                                    <div class="col-md-4">
-                                        <label class="form-label small">Data Finalização</label>
-                                        <input type="date" class="form-control form-control-sm" name="data_finalizacao" required max="{{ today_date }}">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label class="form-label small">Hora</label>
-                                        <input type="time" class="form-control form-control-sm" name="hora_finalizacao" required>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <label class="form-label small d-block">&nbsp;</label>
-                                        <button type="submit" class="btn btn-agro btn-sm w-100">Finalizar OS</button>
-                                    </div>
+                    <div class="col">
+                        <div class="card card-os h-100">
+                            <div class="card-header-os d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0"><b>OS {{ os.os }}</b></h6>
+                                <span class="badge
+                                    {% if os.dias_abertos > 7 %}badge-urgente
+                                    {% elif os.dias_abertos > 3 %}badge-moderado
+                                    {% else %}badge-normal
+                                    {% endif %}">
+                                    {{ os.dias_abertos }} dias
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-1"><b>Frota:</b> {{ os.frota }}</p>
+                                <p class="text-muted small">Abertura: {{ os.data_entrada }}</p>
+                                <p class="card-text mt-2">{{ os.servico }}</p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <div class="d-grid">
+                                    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#finalize-{{ os.os }}" aria-expanded="false">
+                                        <i class="fas fa-check-circle me-1"></i> Finalizar OS
+                                    </button>
                                 </div>
-                                <div class="mt-2">
-                                    <label class="form-label small">Observações</label>
-                                    <textarea class="form-control form-control-sm" name="observacoes" rows="2"></textarea>
+                                <div class="collapse mt-3" id="finalize-{{ os.os }}">
+                                    <form action="{{ url_for('finalizar_os', os_numero_str=os.os) }}" method="POST" enctype="multipart/form-data">
+                                        <div class="row g-2 mb-2">
+                                            <div class="col-md-6">
+                                                <label class="form-label small">Data Finalização</label>
+                                                <input type="date" class="form-control form-control-sm" name="data_finalizacao" required max="{{ today_date }}">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label small">Hora</label>
+                                                <input type="time" class="form-control form-control-sm" name="hora_finalizacao" required>
+                                            </div>
+                                        </div>
+                                        <div class="mb-2">
+                                            <label class="form-label small">Observações</label>
+                                            <textarea class="form-control form-control-sm" name="observacoes" rows="2"></textarea>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button type="submit" class="btn btn-agro btn-sm">Confirmar Finalização</button>
+                                        </div>
+                                    </form>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
-                </div>
                 {% endfor %}
+                </div>
             {% else %}
-                <div class="text-center py-5"><p>Nenhuma OS própria pendente.</p></div>
+                <div class="text-center py-5">
+                    <i class="fas fa-check-circle fa-3x text-success mb-3"></i>
+                    <h4>Nenhuma OS pendente!</h4>
+                    <p class="text-muted">Ótimo trabalho mantendo tudo em dia.</p>
+                </div>
             {% endif %}
         </div>
 
         <div class="tab-pane fade" id="sem-prestador" role="tabpanel" aria-labelledby="sem-prestador-tab">
-            <!-- Content for Atribuir OS -->
             {% if os_sem_prestador %}
+                <div class="row row-cols-1 row-cols-md-2 g-4">
                 {% for os_sp in os_sem_prestador %}
-                <div class="card card-os mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title mb-2"><span class="badge badge-os">OS {{ os_sp.os }}</span> Frota {{ os_sp.frota }}</h5>
-                        <p class="card-text"><small class="text-muted">Abertura: {{ os_sp.data_entrada }} (Aberta há {{ os_sp.dias_abertos }} dias)</small></p>
-                        <p class="card-text">{{ os_sp.servico }}</p>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h6 class="text-muted">Opção 1: Atribuir</h6>
-                                <form action="{{ url_for('atribuir_prestador', os_numero_str=os_sp.os) }}" method="POST" class="mt-2">
+                    <div class="col">
+                        <div class="card card-os h-100">
+                            <div class="card-header-os d-flex justify-content-between align-items-center">
+                                <h6 class="mb-0"><b>OS {{ os_sp.os }}</b></h6>
+                                <span class="badge
+                                    {% if os_sp.dias_abertos > 7 %}badge-urgente
+                                    {% elif os_sp.dias_abertos > 3 %}badge-moderado
+                                    {% else %}badge-normal
+                                    {% endif %}">
+                                    {{ os_sp.dias_abertos }} dias
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-1"><b>Frota:</b> {{ os_sp.frota }}</p>
+                                <p class="text-muted small">Abertura: {{ os_sp.data_entrada }}</p>
+                                <p class="card-text mt-2">{{ os_sp.servico }}</p>
+                            </div>
+                            <div class="card-footer bg-white">
+                                <form action="{{ url_for('atribuir_prestador', os_numero_str=os_sp.os) }}" method="POST">
                                     <div class="input-group">
-                                        <select class="form-select" name="prestador_usuario" required>
+                                        <select class="form-select form-select-sm" name="prestador_usuario" required>
                                             <option value="" selected disabled>Selecione um prestador...</option>
                                             {% for p in prestadores_disponiveis %}
                                                 {% if p.tipo != 'manutencao' %}
@@ -200,54 +251,79 @@ document.addEventListener('DOMContentLoaded', function() {
                                                 {% endif %}
                                             {% endfor %}
                                         </select>
-                                        <button class="btn btn-primary btn-sm" type="submit">Atribuir</button>
+                                        <button class="btn btn-primary btn-sm" type="submit"><i class="fas fa-user-check me-1"></i> Atribuir</button>
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-md-6">
-                                <h6 class="text-muted">Opção 2: Finalizar</h6>
-                                <div class="finalize-section">
-                                    <form action="{{ url_for('finalizar_os', os_numero_str=os_sp.os) }}" method="POST">
-                                        <div class="row g-2 mb-2">
-                                            <div class="col-md-6">
-                                                <input type="date" class="form-control form-control-sm" name="data_finalizacao" required max="{{ today_date }}" placeholder="Data">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <input type="time" class="form-control form-control-sm" name="hora_finalizacao" required placeholder="Hora">
-                                            </div>
-                                        </div>
-                                        <div class="mt-2">
-                                            <textarea class="form-control form-control-sm" name="observacoes" rows="1" placeholder="Observações..."></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-agro btn-sm w-100 mt-2">Finalizar OS</button>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div>
                 {% endfor %}
+                </div>
             {% else %}
-                <div class="text-center py-5"><p>Nenhuma OS para atribuir.</p></div>
+                <div class="text-center py-5">
+                    <i class="fas fa-inbox fa-3x text-muted mb-3"></i>
+                    <h4>Caixa de Entrada Limpa!</h4>
+                    <p class="text-muted">Nenhuma OS aguardando atribuição no momento.</p>
+                </div>
             {% endif %}
         </div>
 
         <div class="tab-pane fade" id="finalizadas" role="tabpanel" aria-labelledby="finalizadas-tab">
-            <!-- Content for Histórico Geral -->
+            <div class="list-group">
             {% if finalizadas %}
                 {% for f in finalizadas %}
-                <div class="card card-os mb-3">
-                     <div class="card-body">
-                        <h5 class="card-title mb-2"><span class="badge bg-success text-white">OS {{ f.os_numero }}</span></h5>
-                        <p class="card-text"><small class="text-muted">Finalizada por {{ f.gerente|capitalize_name }} em {{ f.data_fin }} às {{ f.hora_fin }}</small></p>
-                        <p class="card-text">{{ f.observacoes or 'Sem observações.' }}</p>
+                <div class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">OS {{ f.os_numero }}</h5>
+                        <small class="text-muted">{{ format_datetime(f.registrado_em) }}</small>
                     </div>
+                    <p class="mb-1">{{ f.observacoes or 'Sem observações.' }}</p>
+                    <small class="text-muted">Finalizada por {{ f.gerente|capitalize_name }} em {{ f.data_fin }} às {{ f.hora_fin }}.</small>
                 </div>
                 {% endfor %}
             {% else %}
-                <div class="text-center py-5"><p>Nenhuma OS finalizada encontrada.</p></div>
+                <div class="text-center py-5">
+                    <i class="fas fa-history fa-3x text-muted mb-3"></i>
+                    <h4>Sem Histórico</h4>
+                    <p class="text-muted">Nenhuma OS foi finalizada recentemente.</p>
+                </div>
             {% endif %}
+            </div>
         </div>
     </div>
 </div>
+
+<!-- Modal para Foto de Perfil -->
+<div class="modal fade" id="profilePictureModal" tabindex="-1" aria-labelledby="profilePictureModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profilePictureModalLabel">Atualizar Foto de Perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Escolha uma nova foto para o seu perfil.</p>
+        <form action="{{ url_for('upload_profile_picture') }}" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <input class="form-control" type="file" name="profile_picture" accept="image/*" required>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-agro">Salvar Nova Foto</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const greetings = {{ greetings_list|tojson }};
+    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+    const greetingElement = document.getElementById('greeting-text');
+    if (greetingElement) {
+        greetingElement.innerHTML = randomGreeting + ' ' + greetingElement.innerHTML;
+    }
+});
+</script>
 {% endblock %}

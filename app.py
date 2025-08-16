@@ -488,9 +488,20 @@ def carregar_todas_os_pendentes():
         })
     return lista_os_pendentes
 
-def carregar_os_sem_prestador():
+def carregar_os_sem_prestador(username_manutencao=None):
+    """
+    Carrega todas as OS que não têm um prestador definido.
+    Se um username_manutencao for fornecido, a lista é filtrada para mostrar
+    apenas as OS onde o 'servico' contém o nome do responsável.
+    """
     lista_os_sem_p = []
     data_hoje_sem_p = saopaulo_tz.localize(datetime.now()).date()
+
+    # Extrai o nome do responsável do username (ex: 'arthur.manutencao' -> 'arthur')
+    nome_responsavel_filtro = None
+    if username_manutencao:
+        # Pega a primeira parte do username, antes do ponto, e capitaliza.
+        nome_responsavel_filtro = username_manutencao.split('.')[0].capitalize()
 
     for nome_arquivo_json_gerente in os.listdir(MENSAGENS_DIR):
         if nome_arquivo_json_gerente.lower().endswith('.json'):
@@ -500,8 +511,16 @@ def carregar_os_sem_prestador():
                     dados_os_gerente = json.load(f_gerente)
                 for os_item_g in dados_os_gerente:
                     nome_prestador = str(os_item_g.get('prestador') or os_item_g.get('Prestador', '')).lower().strip()
+                    # Condição 1: A OS não tem prestador definido
                     if nome_prestador in ('nan', '', 'none', 'não definido', 'prestador não definido'):
                         servico_str = str(os_item_g.get('servico') or os_item_g.get('Servico') or os_item_g.get('observacao') or os_item_g.get('Observacao', ''))
+
+                        # Condição 2: Se um filtro de responsável foi passado, verificar se o nome está no serviço
+                        if nome_responsavel_filtro:
+                            # Procura pelo nome do responsável no campo de serviço, ignorando maiúsculas/minúsculas
+                            if nome_responsavel_filtro.lower() not in servico_str.lower():
+                                continue # Pula para a próxima OS se o nome não for encontrado
+
                         data_os_g_str = str(os_item_g.get('data') or os_item_g.get('Data', ''))
                         data_abertura_os_g = None
                         if data_os_g_str:
@@ -714,7 +733,8 @@ def painel_manutencao():
         return redirect(url_for('login'))
 
     lista_os_manutencao = carregar_os_manutencao(session['manutencao'])
-    lista_os_sem_p_manut = carregar_os_sem_prestador()
+    # Passa o nome de usuário da manutenção para filtrar as OS sem prestador
+    lista_os_sem_p_manut = carregar_os_sem_prestador(session['manutencao'])
     
     ordenar_por = request.args.get('ordenar', 'data_desc')
     if lista_os_manutencao: 
@@ -986,48 +1006,79 @@ def marcar_pendente(os_numero):
 @app.route('/atribuir_prestador/<os_numero_str>', methods=['POST'])
 def atribuir_prestador(os_numero_str):
     if 'manutencao' not in session:
-        flash('Acesso negado.', 'danger')
+        flash('Acesso negado. Faça login como usuário de manutenção.', 'danger')
         return redirect(url_for('login'))
-    
+
     responsavel_atribuicao = session['manutencao']
     username_prestador_destino = request.form.get('prestador_usuario', '').strip()
 
     if not username_prestador_destino:
         flash('Nome de usuário do prestador não pode ser vazio.', 'danger')
-    else:
-        os_alvo_para_atribuicao = next((os_item for os_item in carregar_os_sem_prestador() if str(os_item.get('os')) == os_numero_str), None)
-        if not os_alvo_para_atribuicao:
-            flash(f'OS {os_numero_str} não encontrada ou já possui prestador.', 'warning')
+        return redirect(url_for('painel_manutencao'))
+
+    # Usar a mesma função que o painel usa para carregar a lista de OS visíveis
+    os_alvo_para_atribuicao = next(
+        (os_item for os_item in carregar_os_sem_prestador(responsavel_atribuicao)
+         if str(os_item.get('os')) == os_numero_str),
+        None
+    )
+
+    if not os_alvo_para_atribuicao:
+        flash(f'OS {os_numero_str} não encontrada na sua lista de pendências ou já foi atribuída.', 'warning')
+        return redirect(url_for('painel_manutencao'))
+
+    dados_prestador_destino = next(
+        (p for p in carregar_prestadores()
+         if p.get('usuario', '').lower() == username_prestador_destino.lower()),
+        None
+    )
+
+    if not dados_prestador_destino or not dados_prestador_destino.get('arquivo_os'):
+        flash(f'Prestador "{username_prestador_destino}" não encontrado ou sem arquivo OS configurado.', 'danger')
+        return redirect(url_for('painel_manutencao'))
+
+    caminho_arq_prest_destino = os.path.join(MENSAGENS_PRESTADOR_DIR, dados_prestador_destino['arquivo_os'])
+
+    os_formatada_para_prestador = {
+        "os": os_alvo_para_atribuicao.get('os'),
+        "frota": os_alvo_para_atribuicao.get('frota'),
+        "data_entrada": os_alvo_para_atribuicao.get('data_entrada'),
+        "modelo": os_alvo_para_atribuicao.get('modelo'),
+        "servico": os_alvo_para_atribuicao.get('servico'),
+        "observacao": f"Atribuída por {responsavel_atribuicao} em {datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')}"
+    }
+
+    try:
+        lista_os_atuais_prest = []
+        if os.path.exists(caminho_arq_prest_destino):
+            with open(caminho_arq_prest_destino, 'r', encoding='utf-8') as f_leitura_prest:
+                # Trata o caso de arquivo vazio ou com JSON inválido
+                content = f_leitura_prest.read()
+                if content:
+                    lista_os_atuais_prest = json.loads(content)
+
+        # Verifica se a OS já está na lista do prestador para evitar duplicatas
+        if any(str(item.get('os') or item.get('OS','')) == os_numero_str for item in lista_os_atuais_prest):
+            flash(f'OS {os_numero_str} já consta na lista do prestador {dados_prestador_destino.get("nome_exibicao", username_prestador_destino)}.', 'info')
         else:
-            dados_prestador_destino = next((p for p in carregar_prestadores() if p.get('usuario','').lower() == username_prestador_destino.lower()), None)
-            if not dados_prestador_destino or not dados_prestador_destino.get('arquivo_os'):
-                flash(f'Prestador "{username_prestador_destino}" não encontrado ou sem arquivo OS configurado.', 'danger')
-            else:
-                caminho_arq_prest_destino = os.path.join(MENSAGENS_PRESTADOR_DIR, dados_prestador_destino['arquivo_os'])
-                os_formatada_para_prestador = {
-                    "os": os_alvo_para_atribuicao.get('os'), "frota": os_alvo_para_atribuicao.get('frota'),
-                    "data": os_alvo_para_atribuicao.get('data_entrada'), "Data": os_alvo_para_atribuicao.get('data_entrada'),
-                    "modelo": os_alvo_para_atribuicao.get('modelo'), "servico": os_alvo_para_atribuicao.get('servico'),
-                    "observacao": f"Atribuída por {responsavel_atribuicao} em {datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')}."
-                }
-                try:
-                    lista_os_atuais_prest = []
-                    if os.path.exists(caminho_arq_prest_destino):
-                        with open(caminho_arq_prest_destino, 'r', encoding='utf-8') as f_leitura_prest:
-                            lista_os_atuais_prest = json.load(f_leitura_prest)
-                    
-                    if not any(str(item.get('os') or item.get('OS','')) == os_numero_str for item in lista_os_atuais_prest):
-                        lista_os_atuais_prest.append(os_formatada_para_prestador)
-                        with open(caminho_arq_prest_destino, 'w', encoding='utf-8') as f_escrita_prest:
-                            json.dump(lista_os_atuais_prest, f_escrita_prest, ensure_ascii=False, indent=2)
-                        
-                        remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str) 
-                        flash(f'OS {os_numero_str} atribuída a {dados_prestador_destino.get("nome_exibicao", username_prestador_destino)}!', 'success')
-                    else:
-                        flash(f'OS {os_numero_str} já consta para o prestador {username_prestador_destino}.', 'info')
-                except Exception as e_atrib:
-                    logger.error(f"Erro ao atribuir OS {os_numero_str} a {username_prestador_destino}: {e_atrib}")
-                    flash(f'Erro ao atribuir OS: {e_atrib}', 'danger')
+            lista_os_atuais_prest.append(os_formatada_para_prestador)
+            with open(caminho_arq_prest_destino, 'w', encoding='utf-8') as f_escrita_prest:
+                json.dump(lista_os_atuais_prest, f_escrita_prest, ensure_ascii=False, indent=2)
+
+            # Após atribuir com sucesso, remove a OS da lista original do gerente
+            removidos = remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str)
+            if removidos:
+                 logger.info(f"OS {os_numero_str} removida dos arquivos de gerente: {removidos}")
+
+            flash(f'OS {os_numero_str} atribuída com sucesso para {dados_prestador_destino.get("nome_exibicao", username_prestador_destino)}!', 'success')
+
+    except (IOError, json.JSONDecodeError) as e_atrib:
+        logger.error(f"Erro de arquivo ao tentar atribuir OS {os_numero_str} a {username_prestador_destino}: {e_atrib}")
+        flash(f'Erro de arquivo ao acessar a lista do prestador. Verifique as permissões e o formato do arquivo.', 'danger')
+    except Exception as e_geral:
+        logger.error(f"Erro inesperado ao atribuir OS {os_numero_str} a {username_prestador_destino}: {e_geral}")
+        flash(f'Ocorreu um erro inesperado durante a atribuição.', 'danger')
+
     return redirect(url_for('painel_manutencao'))
 
 # ##########################################################################
