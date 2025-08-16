@@ -430,7 +430,6 @@
   </div>
 
   <!-- Tabela de OS Pendentes -->
-  {% if os_pendentes_todas %}
   <div class="card-modern mb-4">
     <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
       <h4 class="mb-0"><i class="fas fa-pause-circle icon-agro"></i>Manutenções Pendentes Atualmente</h4>
@@ -444,30 +443,35 @@
       <div class="table-responsive">
         <table class="table table-modern table-sm table-hover">
           <thead>
-            <tr><th>OS</th><th>Frota</th><th>Prestador</th><th>Motivo da Pendência</th><th>Data Status</th></tr>
+            <tr><th>OS</th><th>Frota</th><th>Prestador / Motivo</th><th>Definido Por</th><th>Data Status</th></tr>
           </thead>
           <tbody>
-            {% for p in os_pendentes_todas %}
-            <tr class="{% if loop.index > 5 %}pendente-row hidden-row{% endif %}">
-              <td><span class="badge bg-secondary">{{ p.os }}</span></td>
-              <td>{{ p.frota }}</td>
-              <td>{{ p.status_definido_por | default('N/A') }}</td>
-              <td>{{ p.status_motivo | default('N/A') }}</td>
-              <td>{{ p.status_data | default('N/A') }}</td>
-            </tr>
-            {% endfor %}
+            {% if os_pendentes_todas %}
+              {% for p in os_pendentes_todas %}
+              <tr class="{% if loop.index > 5 %}pendente-row hidden-row{% endif %}">
+                <td><span class="badge bg-secondary">{{ p.os }}</span></td>
+                <td>{{ p.frota }}</td>
+                <td>{{ p.status_motivo | default('N/A') }}</td>
+                <td>{{ p.status_definido_por | default('N/A') }}</td>
+                <td>{{ p.status_data | default('N/A') }}</td>
+              </tr>
+              {% endfor %}
+            {% else %}
+              <tr>
+                <td colspan="5" class="text-center py-4">
+                  <div class="alert alert-success mb-0">
+                    <i class="fas fa-check-circle fa-2x mb-2"></i>
+                    <h4 class="alert-heading">Tudo em ordem!</h4>
+                    <p>Nenhuma ordem de serviço marcada como pendente no momento.</p>
+                  </div>
+                </td>
+              </tr>
+            {% endif %}
           </tbody>
         </table>
       </div>
     </div>
   </div>
-  {% else %}
-  <div class="alert alert-success text-center">
-    <i class="fas fa-check-circle fa-2x mb-2"></i>
-    <h4 class="alert-heading">Tudo em ordem!</h4>
-    <p>Nenhuma ordem de serviço marcada como pendente no momento.</p>
-  </div>
-  {% endif %}
   <!-- Ranking de OS Pendentes (Supervisores) -->
   <div class="card-modern mb-4">
     <div class="card-header ranking-gerentes d-flex justify-content-between align-items-center">

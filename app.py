@@ -990,62 +990,68 @@ def atribuir_prestador(os_numero_str):
         return redirect(url_for('login'))
 
     responsavel_atribuicao = session['manutencao']
-    username_prestador_destino = request.form.get('prestador_usuario', '').strip()
+    # O nome do prestador agora pode ser um novo nome ou um usuário existente
+    prestador_selecionado = request.form.get('prestador_usuario', '').strip()
+    novo_prestador_nome = request.form.get('novo_prestador', '').strip()
 
-    if not username_prestador_destino:
-        flash('Nome de usuário do prestador não pode ser vazio.', 'danger')
+    username_prestador_final = None
+    nome_exibicao_prestador = None
+
+    if novo_prestador_nome:
+        # Lógica para um novo prestador (não o salva, apenas usa o nome)
+        username_prestador_final = novo_prestador_nome.lower().replace(" ", "_")
+        nome_exibicao_prestador = novo_prestador_nome
+    elif prestador_selecionado:
+        # Lógica para um prestador existente
+        dados_prestador_destino = next((p for p in carregar_prestadores() if p.get('usuario', '').lower() == prestador_selecionado.lower()), None)
+        if dados_prestador_destino:
+            username_prestador_final = dados_prestador_destino.get('usuario')
+            nome_exibicao_prestador = dados_prestador_destino.get('nome_exibicao', username_prestador_final)
+        else:
+            flash(f'Prestador selecionado "{prestador_selecionado}" não foi encontrado.', 'danger')
+            return redirect(url_for('painel_manutencao'))
+    else:
+        flash('Selecione um prestador ou digite um novo nome.', 'danger')
         return redirect(url_for('painel_manutencao'))
 
-    os_alvo_para_atribuicao = next((os_item for os_item in carregar_os_sem_prestador() if str(os_item.get('os')) == os_numero_str), None)
+    os_alvo = next((os_item for os_item in carregar_os_sem_prestador() if str(os_item.get('os')) == os_numero_str), None)
 
-    if not os_alvo_para_atribuicao:
-        flash(f'OS {os_numero_str} não encontrada ou já possui prestador.', 'warning')
+    if not os_alvo:
+        flash(f'OS {os_numero_str} não encontrada ou já foi atribuída.', 'warning')
         return redirect(url_for('painel_manutencao'))
-
-    dados_prestador_destino = next((p for p in carregar_prestadores() if p.get('usuario','').lower() == username_prestador_destino.lower()), None)
-
-    if not dados_prestador_destino or not dados_prestador_destino.get('arquivo_os'):
-        flash(f'Prestador "{username_prestador_destino}" não encontrado ou sem arquivo OS configurado.', 'danger')
-        return redirect(url_for('painel_manutencao'))
-
-    caminho_arq_prest_destino = os.path.join(MENSAGENS_PRESTADOR_DIR, dados_prestador_destino['arquivo_os'])
-
-    os_formatada_para_prestador = {
-        "os": os_alvo_para_atribuicao.get('os'),
-        "frota": os_alvo_para_atribuicao.get('frota'),
-        "data_entrada": os_alvo_para_atribuicao.get('data_entrada'),
-        "modelo": os_alvo_para_atribuicao.get('modelo'),
-        "servico": os_alvo_para_atribuicao.get('servico'),
-        "observacao": f"Atribuída por {responsavel_atribuicao} em {datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')}"
-    }
 
     try:
-        lista_os_atuais_prest = []
-        if os.path.exists(caminho_arq_prest_destino):
-            with open(caminho_arq_prest_destino, 'r', encoding='utf-8') as f_leitura_prest:
-                content = f_leitura_prest.read()
-                if content:
-                    lista_os_atuais_prest = json.loads(content)
-
-        if any(str(item.get('os') or item.get('OS','')) == os_numero_str for item in lista_os_atuais_prest):
-            flash(f'OS {os_numero_str} já consta na lista do prestador {dados_prestador_destino.get("nome_exibicao", username_prestador_destino)}.', 'info')
+        # Adicionar a OS à tabela de pendências para o admin
+        pendencia_existente = OSPendente.query.get(os_numero_str)
+        if pendencia_existente:
+            # Atualiza o motivo e quem definiu
+            pendencia_existente.status_motivo = f"Reatribuído ao prestador: {nome_exibicao_prestador}"
+            pendencia_existente.status_definido_por = responsavel_atribuicao
+            pendencia_existente.status_data = datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')
         else:
-            lista_os_atuais_prest.append(os_formatada_para_prestador)
-            with open(caminho_arq_prest_destino, 'w', encoding='utf-8') as f_escrita_prest:
-                json.dump(lista_os_atuais_prest, f_escrita_prest, ensure_ascii=False, indent=2)
+            # Cria uma nova pendência
+            nova_pendencia = OSPendente(
+                os_numero=os_alvo.get('os'),
+                frota=os_alvo.get('frota'),
+                servico=os_alvo.get('servico'),
+                status_motivo=f"Atribuído ao prestador: {nome_exibicao_prestador}",
+                status_definido_por=responsavel_atribuicao,
+                status_data=datetime.now(saopaulo_tz).strftime('%d/%m/%Y %H:%M')
+            )
+            db.session.add(nova_pendencia)
 
-            removidos = remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str)
-            if removidos:
-                 logger.info(f"OS {os_numero_str} removida dos arquivos de gerente: {removidos}")
+        # Remover a OS da lista de origem do gerente
+        removidos = remover_os_de_todos_json(MENSAGENS_DIR, os_numero_str)
+        if removidos:
+            logger.info(f"OS {os_numero_str} removida do arquivo de origem: {', '.join(removidos)}")
 
-            flash(f'OS {os_numero_str} atribuída com sucesso para {dados_prestador_destino.get("nome_exibicao", username_prestador_destino)}!', 'success')
+        db.session.commit()
+        flash(f'OS {os_numero_str} atribuída a "{nome_exibicao_prestador}" e enviada para pendências do Admin.', 'success')
 
-    except (IOError, json.JSONDecodeError) as e_atrib:
-        logger.error(f"Erro de arquivo ao tentar atribuir OS {os_numero_str} a {username_prestador_destino}: {e_atrib}")
-        flash('Erro de arquivo ao acessar a lista do prestador.', 'danger')
-    except Exception as e_geral:
-        logger.error(f"Erro inesperado ao atribuir OS {os_numero_str} a {username_prestador_destino}: {e_geral}")
-        flash('Ocorreu um erro inesperado durante a atribuição.', 'danger')
+    except Exception as e:
+        db.session.rollback()
+        logger.error(f"Erro ao atribuir OS {os_numero_str} para pendências: {e}")
+        flash('Ocorreu um erro ao processar a atribuição.', 'danger')
 
     return redirect(url_for('painel_manutencao'))
 
