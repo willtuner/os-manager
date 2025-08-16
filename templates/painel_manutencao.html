@@ -242,15 +242,22 @@
                             </div>
                             <div class="card-footer bg-white">
                                 <form action="{{ url_for('atribuir_prestador', os_numero_str=os_sp.os) }}" method="POST">
-                                    <div class="input-group">
-                                        <select class="form-select form-select-sm" name="prestador_usuario" required>
-                                            <option value="" selected disabled>Selecione um prestador...</option>
+                                    <div class="mb-2">
+                                        <label class="form-label small">Atribuir a (Existente):</label>
+                                        <select class="form-select form-select-sm" name="prestador_usuario">
+                                            <option value="" selected>Selecione um prestador...</option>
                                             {% for p in prestadores_disponiveis %}
                                                 {% if p.tipo != 'manutencao' %}
                                                 <option value="{{ p.usuario }}">{{ p.nome_exibicao|capitalize_name }}</option>
                                                 {% endif %}
                                             {% endfor %}
                                         </select>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label class="form-label small">Ou Atribuir a (Novo):</label>
+                                        <input type="text" class="form-control form-control-sm" name="novo_prestador" placeholder="Digite o nome do novo prestador">
+                                    </div>
+                                    <div class="d-grid">
                                         <button class="btn btn-primary btn-sm" type="submit"><i class="fas fa-user-check me-1"></i> Atribuir</button>
                                     </div>
                                 </form>
