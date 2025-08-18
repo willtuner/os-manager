@@ -16,35 +16,27 @@
     "servico": "Equipamento não dá partida. Durante a verificação, foi identificado filtro de diesel sujo - (Fazenda Minuano)\nSolicitado Sr. Antônio Paulo\nResponsavel Sr.  Rafael"
   },
   {
-    "frota": "276",
-    "cd_equipamento": "276",
+    "frota": "296",
+    "cd_equipamento": "296",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114513",
-    "data_entrada": "16/07/2025",
-    "servico": "Revisar bomba de combustivel - Faz São Pedro\nAutorizado Arthur"
+    "os": "113949",
+    "data_entrada": "08/07/2025",
+    "servico": "Vazamento de diesel no eixo da bomba injetora - (Fazenda São José)\nSolicitado Sr. Gilberto"
   },
   {
-    "frota": "257",
-    "cd_equipamento": "257",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114512",
-    "data_entrada": "16/07/2025",
-    "servico": "Revisar bomba de combustível - Faz São Paulo\nAutorizado Arthur"
+    "frota": "105",
+    "cd_equipamento": "105",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "113674",
+    "data_entrada": "02/07/2025",
+    "servico": "Vazamento no eixo da bomba injetora  - (Fazenda SL1)\nSolicitado Sr. Wagner\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "159",
-    "cd_equipamento": "159",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "114137",
-    "data_entrada": "11/07/2025",
-    "servico": "Verificar vazamento de óleo na bomba injetora - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "156",
-    "cd_equipamento": "156",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "114113",
-    "data_entrada": "10/07/2025",
-    "servico": "Vazamento na bomba injetora (Fazenda São Pedro)\nSolicitante Sr. Romes\nResponsável Sr. Arthur"
+    "frota": "22",
+    "cd_equipamento": "22",
+    "modelo": "TRATOR VALTRA BH 180 4X4",
+    "os": "112705",
+    "data_entrada": "19/06/2025",
+    "servico": "Verificar falha no funcionamento do motor devido a possível entrada de ar no sistema de alimentação de combustível  - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Arthur"
   }
 ]

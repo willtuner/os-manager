@@ -1,27 +1,19 @@
 [
   {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "116760",
+    "frota": "274",
+    "cd_equipamento": "274",
+    "modelo": "TRATOR VALTRA T250 CVT",
+    "os": "116785",
+    "data_entrada": "18/08/2025",
+    "servico": "Trocar rolamentos do paralama - Faz Úrsula\nAutorizado Arthur"
+  },
+  {
+    "frota": "26",
+    "cd_equipamento": "26",
+    "modelo": "TRATOR MASSEY FERGUSON 275/2",
+    "os": "116800",
     "data_entrada": "16/08/2025",
-    "servico": "Efetuar troca de óleo completa - (Fazenda SP)\nSolicitado Sr. Wilson"
-  },
-  {
-    "frota": "259",
-    "cd_equipamento": "259",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116711",
-    "data_entrada": "15/08/2025",
-    "servico": "Verificar trator escapando 3° marcha - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "116595",
-    "data_entrada": "14/08/2025",
-    "servico": "Trocar anel dos cachimbo do freio e consertar cano do A/C e mangueira da direção - (Fazenda SP/Oficina)\nSolicitado Sr. Diego (DMA)\nResponsavel Sr. Carlos Mariano"
+    "servico": "Colocar uma manopla de marchas; Trocar vareta nível óleo; Trocar correia alternador; Verificar radiador de diesel; Trocar cinta da carga do filtro; Ajustar folga do pino da articulação do eixo; Conferir todos os níveis de óleo; Abrir caixa de câmbio e fazer análise; Montar caixa de câmbio; Analisar embreagem; Trocar vareta do óleo da transmissão; Alinhar para deixar braços hidráulicos com regulagem; Fazer testes freios; Falta parafusos do prato lado esquerdo e lado direito - roda traseira - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   },
   {
     "frota": "10222",
@@ -96,11 +88,27 @@
     "servico": "Vazamento no sensor de pressão do óleo do motor - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Artrhur"
   },
   {
+    "frota": "10229",
+    "cd_equipamento": "10229",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "114566",
+    "data_entrada": "16/07/2025",
+    "servico": "Vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "289",
     "cd_equipamento": "289",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "114527",
     "data_entrada": "16/07/2025",
     "servico": "Avaliar vazamento de óleo na parte frontal do trator - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "219",
+    "cd_equipamento": "219",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "113847",
+    "data_entrada": "07/07/2025",
+    "servico": "Substituição da bomba manual da bomba injetora devido a falha no funcionamento. - (Fazenda São Paulo)\nSolicitado Sr. Geovane \nResponsavel Sr. Arthur"
   }
 ]

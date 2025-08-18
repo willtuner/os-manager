@@ -1,5 +1,13 @@
 [
   {
+    "frota": "297",
+    "cd_equipamento": "297",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116812",
+    "data_entrada": "18/08/2025",
+    "servico": "Trocar os paralamas laterais para os de ferro - Faz Biscui\nE instalar proteção frontal\nPendencia 4208-4209\nAutorizado Arthur"
+  },
+  {
     "frota": "5613",
     "cd_equipamento": "5613",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -38,14 +46,6 @@
     "os": "116596",
     "data_entrada": "14/08/2025",
     "servico": "Fabricar proteção das lanternas traseiras - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "116588",
-    "data_entrada": "14/08/2025",
-    "servico": "Consertar para-lamas - (SP/Oficina)\nSolicitado Sr. Carlos"
   },
   {
     "frota": "263",
@@ -88,12 +88,52 @@
     "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
   },
   {
+    "frota": "5360",
+    "cd_equipamento": "5360",
+    "modelo": "GRADE NIVELADORA",
+    "os": "114197",
+    "data_entrada": "14/07/2025",
+    "servico": "Quebra do  disco da secção dianteira - (Fazenda Estrela 6)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5072",
+    "cd_equipamento": "5072",
+    "modelo": "GRADE NIVELADORA",
+    "os": "113915",
+    "data_entrada": "09/07/2025",
+    "servico": "Revisar mancal afastado e instalar bico graxeiro da secção dianteira L/D - (Fazenda Estrela 6)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5099",
+    "cd_equipamento": "5099",
+    "modelo": "GRADE NIVELADORA DE CONTROLE",
+    "os": "113561",
+    "data_entrada": "01/07/2025",
+    "servico": "Realizar revisão completa no equipamento, devido à quebra de mancais e discos. - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "91",
     "cd_equipamento": "91",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "113543",
     "data_entrada": "30/06/2025",
     "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
+  },
+  {
+    "frota": "5401",
+    "cd_equipamento": "5401",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "113066",
+    "data_entrada": "24/06/2025",
+    "servico": "Realinhas estrutura do braço, amassado após colisão, feito ajustes nas barras e após foi pintado. - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5360",
+    "cd_equipamento": "5360",
+    "modelo": "GRADE NIVELADORA",
+    "os": "112713",
+    "data_entrada": "18/06/2025",
+    "servico": "Quebra da ponta de eixo, montado mancais, flange novos, porcas do eixo novo - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nLiberado Sr. Mauricio"
   },
   {
     "frota": "5045",

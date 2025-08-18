@@ -48,27 +48,27 @@
     "servico": "Verificar regulador de pressão não está trabalhando de maneira a proporcionar a pressão de trabalho adequada.\nFazenda Pedra Verde\nSolicitado Sr. Cléber\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "116157",
-    "data_entrada": "06/08/2025",
-    "servico": "Verificar ramal do lado esquerdo não está fechando.\nFazenda São Pedro\nSolicitado Sr. Arthur\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5136",
-    "cd_equipamento": "5136",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "115517",
-    "data_entrada": "30/07/2025",
-    "servico": "Avaliar quebra das correias da turbina com quebra recorrente - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5760",
     "cd_equipamento": "5760",
     "modelo": "PULVERIZADOR 4000 SMART DUPLO",
     "os": "114866",
     "data_entrada": "21/07/2025",
     "servico": "Fazer solda em trinca no chassi - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5479",
+    "cd_equipamento": "5479",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "113059",
+    "data_entrada": "10/07/2025",
+    "servico": "Revisar bomba, misturando água no óleo - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5404",
+    "cd_equipamento": "5404",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "113300",
+    "data_entrada": "01/07/2025",
+    "servico": "Trocar retentor do rotor L/E - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   }
 ]

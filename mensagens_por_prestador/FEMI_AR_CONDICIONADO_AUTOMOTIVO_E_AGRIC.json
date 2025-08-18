@@ -1,17 +1,17 @@
 [
   {
+    "frota": "5659",
+    "cd_equipamento": "5659",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "116850",
+    "data_entrada": "18/08/2025",
+    "servico": "Soldar fios do terminal rompido e L/E do SPE não funciona - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5275",
     "cd_equipamento": "5275",
     "modelo": "ATOMIZADOR FMC 4000 LT",
     "os": "116714",
-    "data_entrada": "15/08/2025",
-    "servico": "Revisar sistema SPE - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano \nResponsavel Sr. Adriano"
-  },
-  {
-    "frota": "5128",
-    "cd_equipamento": "5128",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "116713",
     "data_entrada": "15/08/2025",
     "servico": "Revisar sistema SPE - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano \nResponsavel Sr. Adriano"
   },
@@ -22,14 +22,6 @@
     "os": "116712",
     "data_entrada": "15/08/2025",
     "servico": "Revisar sistema SPE - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano \nResponsavel Sr. Adriano"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "116577",
-    "data_entrada": "13/08/2025",
-    "servico": "Soldar fios dos terminais do sistema de SPE quebrados - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5803",
