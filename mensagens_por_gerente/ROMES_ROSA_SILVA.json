@@ -1,10 +1,17 @@
 [
   {
-    "frota": "5739",
-    "os": "116759",
-    "data": "16/08/2025",
+    "frota": "5126",
+    "os": "116846",
+    "data": "18/08/2025",
     "prestador": "nan",
-    "servico": "Troca suporte dos fações quebrado - (Fazenda São Pedro)"
+    "servico": "Vazamento no motor hidráulico da esteira - (Fazenda São Pedro)"
+  },
+  {
+    "frota": "287",
+    "os": "116784",
+    "data": "18/08/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/E furado - (Fazenda São Pedro) |Parado|"
   },
   {
     "frota": "5233",
@@ -35,20 +42,6 @@
     "servico": "Verificar sistema de vazão da adubadeira não funciona, e vazamento no motor hidráulico. (Fazenda São Pedro)"
   },
   {
-    "frota": "5659",
-    "os": "116157",
-    "data": "06/08/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar ramal do lado esquerdo não está fechando."
-  },
-  {
-    "frota": "5552",
-    "os": "116050",
-    "data": "05/08/2025",
-    "prestador": "MG - GARCIA MONTAGEM INDUSTRIAL LTDA",
-    "servico": "Vazamento no de óleo no motor hidráulico - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5611",
     "os": "115588",
     "data": "31/07/2025",
@@ -63,13 +56,6 @@
     "servico": "Verificar vazamento no motor hidráulico - (Fazenda São Pedro)"
   },
   {
-    "frota": "5676",
-    "os": "115465",
-    "data": "29/07/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS",
-    "servico": "Vazamento no comando - (Fazenda São Pedro)"
-  },
-  {
     "frota": "5760",
     "os": "114866",
     "data": "21/07/2025",
@@ -77,24 +63,17 @@
     "servico": "Fazer solda em trinca no chassi - (Fazenda São Pedro)"
   },
   {
-    "frota": "276",
-    "os": "114513",
-    "data": "16/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Revisar bomba de combustivel - Faz São Pedro"
-  },
-  {
-    "frota": "159",
-    "os": "114137",
-    "data": "11/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Verificar vazamento de óleo na bomba injetora - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "156",
-    "os": "114113",
+    "frota": "5760",
+    "os": "114075",
     "data": "10/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento na bomba injetora (Fazenda São Pedro)"
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Corrigir vazamento de óleo no pistão de abertura da barra direita e acertar haste torta."
+  },
+  {
+    "frota": "5404",
+    "os": "113300",
+    "data": "01/07/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Trocar retentor do rotor L/E - (Fazenda São Pedro)"
   }
 ]

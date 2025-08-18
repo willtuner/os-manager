@@ -1,6 +1,27 @@
 [
   {
     "frota": "102",
+    "os": "116836",
+    "data": "18/08/2025",
+    "prestador": "nan",
+    "servico": "Trocar da bomba manual de diesel danificada e bujão de óleo do motor espanado - (Fazenda Bela Manhã) |Parado|"
+  },
+  {
+    "frota": "102",
+    "os": "116783",
+    "data": "18/08/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar trator sem partida - (Fazenda Bela Manhã) |Parado|"
+  },
+  {
+    "frota": "5724",
+    "os": "116773",
+    "data": "18/08/2025",
+    "prestador": "nan",
+    "servico": "Consertar batedor, faltando mola e barra roscada - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "102",
     "os": "116707",
     "data": "15/08/2025",
     "prestador": "nan",
@@ -14,25 +35,11 @@
     "servico": "Recuperar cubo da hélice da turbina."
   },
   {
-    "frota": "5522",
-    "os": "116622",
-    "data": "14/08/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Revisar válvulas da bomba - (Fazenda Bela Manhã)"
-  },
-  {
     "frota": "5603",
     "os": "116606",
     "data": "14/08/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Trocar rolamento da turbina estourado - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5345",
-    "os": "116569",
-    "data": "13/08/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar reparo do mexedor mecânico - (Fazenda Bela Manhã)"
   },
   {
     "frota": "319",

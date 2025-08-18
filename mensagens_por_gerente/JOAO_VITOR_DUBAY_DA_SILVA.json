@@ -1,5 +1,19 @@
 [
   {
+    "frota": "274",
+    "os": "116811",
+    "data": "18/08/2025",
+    "prestador": "nan",
+    "servico": "Verificar A/C oscilando - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "274",
+    "os": "116785",
+    "data": "18/08/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar rolamentos do paralama - Faz Úrsula"
+  },
+  {
     "frota": "305",
     "os": "116732",
     "data": "15/08/2025",
@@ -42,18 +56,32 @@
     "servico": "Verificar fechadura, porta não está fechando completamente. - (Fazenda Úrsula)"
   },
   {
-    "frota": "274",
-    "os": "115852",
-    "data": "04/08/2025",
-    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI",
-    "servico": "Revisão de 400 hrs  - (Preparo de solo)"
+    "frota": "5360",
+    "os": "114197",
+    "data": "14/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Quebra do  disco da secção dianteira - (Fazenda Estrela 6)"
   },
   {
-    "frota": "145",
-    "os": "115696",
-    "data": "01/08/2025",
-    "prestador": "nan",
-    "servico": "Ruído anormal no sistema hidráulico - (Fazenda Terra Branca)"
+    "frota": "5072",
+    "os": "113915",
+    "data": "09/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Revisar mancal afastado e instalar bico graxeiro da secção dianteira L/D - (Fazenda Estrela 6)"
+  },
+  {
+    "frota": "5099",
+    "os": "113561",
+    "data": "01/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Realizar revisão completa no equipamento, devido à quebra de mancais e discos. - (Fazenda Bela Manhã)"
+  },
+  {
+    "frota": "5360",
+    "os": "112713",
+    "data": "18/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Quebra da ponta de eixo, montado mancais, flange novos, porcas do eixo novo - (Fazenda Bela Manhã)"
   },
   {
     "frota": "5490",
