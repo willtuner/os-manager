@@ -1,5 +1,21 @@
 [
   {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "116926",
+    "data_entrada": "19/08/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Casa Branca) |Parado|\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "149",
+    "cd_equipamento": "149",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "116855",
+    "data_entrada": "19/08/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda Estrela) \nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5526",
     "cd_equipamento": "5526",
     "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
@@ -46,46 +62,6 @@
     "os": "116772",
     "data_entrada": "18/08/2025",
     "servico": "Pneu dianteiro L/E furado - (Fazenda São Severino) |Parado|\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "165",
-    "cd_equipamento": "165",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "116731",
-    "data_entrada": "15/08/2025",
-    "servico": "Pneu L/E furado traseiro - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5233",
-    "cd_equipamento": "5233",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "116702",
-    "data_entrada": "15/08/2025",
-    "servico": "Verificar pneu lado direito com presença de bolhas e banda de rodagem deslocada - (Fazenda São Pedro)\nSolicitado Sr. Romes Rosa\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "26",
-    "cd_equipamento": "26",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "116559",
-    "data_entrada": "13/08/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Minuano) |Parado|\nSolicitado Sr. Antônio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5102",
-    "cd_equipamento": "5102",
-    "modelo": "CARRETA GUINCHO - SCHULTER",
-    "os": "116535",
-    "data_entrada": "13/08/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda São Severino) | Parado|\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "10228",
-    "cd_equipamento": "10228",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116426",
-    "data_entrada": "11/08/2025",
-    "servico": "Substituir pneu traseiro devido a corte profundo na banda de rodagem, expondo as lonas e comprometendo a segurança operacional. - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio\nPendencia N° 4028"
   },
   {
     "frota": "5128",

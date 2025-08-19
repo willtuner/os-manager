@@ -1,5 +1,69 @@
 [
   {
+    "frota": "5022",
+    "cd_equipamento": "5022",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116920",
+    "data_entrada": "19/08/2025",
+    "servico": "Verificar tanque que não libera produto ao acionar; avaliar possível falha na bomba ou obstrução na tubulação. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116908",
+    "data_entrada": "19/08/2025",
+    "servico": "Troca do rolamento do eixo da turbina - (Fazenda SP)\nSolicitado Sr. Geovane \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5521",
+    "cd_equipamento": "5521",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "116900",
+    "data_entrada": "19/08/2025",
+    "servico": "Corrigir vazamento de produto nos cabeçotes das válvulas - (Fazenda São Severino) \nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5367",
+    "cd_equipamento": "5367",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116897",
+    "data_entrada": "19/08/2025",
+    "servico": "Sacar e trocar parafuso de fixação da torre - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116867",
+    "data_entrada": "19/08/2025",
+    "servico": "Verificar pistão da barra abrindo sozinho e fazer solda no defletor da asa - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5009",
+    "cd_equipamento": "5009",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116808",
+    "data_entrada": "18/08/2025",
+    "servico": "Instalar tubo pescador (tubo de sucção) no tanque, para garantir a captação total da calda remanescente - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5491",
+    "cd_equipamento": "5491",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "116795",
+    "data_entrada": "18/08/2025",
+    "servico": "Verificar desgaste do eixo da bomba, verificar possibilidade de colocar chaveta maior - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5486",
+    "cd_equipamento": "5486",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116722",
+    "data_entrada": "15/08/2025",
+    "servico": "Ruído anormal no rolamento do eixo da turbina - (Fazenda Estrela)\nSolicitado Sr. Carlos Henrique\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5603",
     "cd_equipamento": "5603",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -14,14 +78,6 @@
     "os": "116254",
     "data_entrada": "07/08/2025",
     "servico": "Quebra da esteira da adubadeira - (Fazenda Santa Izabel) |Parado|\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5451",
-    "cd_equipamento": "5451",
-    "modelo": "PULVERIZADOR BARRAS TRICICLO",
-    "os": "115837",
-    "data_entrada": "04/08/2025",
-    "servico": "Revisar embuchamento com folga - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5529",

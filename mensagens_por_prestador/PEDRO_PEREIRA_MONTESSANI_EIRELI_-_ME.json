@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5725",
+    "cd_equipamento": "5725",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "116911",
+    "data_entrada": "19/08/2025",
+    "servico": "Trocar botão do painel do comando  - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "226",
+    "cd_equipamento": "226",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "116903",
+    "data_entrada": "19/08/2025",
+    "servico": "Limpador de para-brisa não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "263",
+    "cd_equipamento": "263",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116899",
+    "data_entrada": "19/08/2025",
+    "servico": "Limpador de para-brisa não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "350",
     "cd_equipamento": "350",
     "modelo": "TRATOR LS PLUS 90 CABINADO",
@@ -8,28 +32,20 @@
     "servico": "Instalação de chicote da balança do vagão - (Pecuaria)\nSolicitado Sr. Bruno Franco (ADM)\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "26",
-    "cd_equipamento": "26",
-    "modelo": "TRATOR MASSEY FERGUSON 275/2",
-    "os": "116803",
-    "data_entrada": "18/08/2025",
-    "servico": "Revisão elétrica completa - (Fazenda Minuano/Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "102",
-    "cd_equipamento": "102",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "116783",
-    "data_entrada": "18/08/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Bela Manhã) |Parado|\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5674",
-    "cd_equipamento": "5674",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "116724",
+    "frota": "219",
+    "cd_equipamento": "219",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116695",
     "data_entrada": "15/08/2025",
-    "servico": "Verificar botão de acionamento da barra de herbicida - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Carlos"
+    "servico": "Trocar lanterna do teto L/E - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Carlos"
+  },
+  {
+    "frota": "263",
+    "cd_equipamento": "263",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116610",
+    "data_entrada": "14/08/2025",
+    "servico": "Verificar limpador de para-brisa não liga - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "165",
@@ -70,14 +86,6 @@
     "os": "116575",
     "data_entrada": "13/08/2025",
     "servico": "Relógio horimetro  não funciona e luz do alternador acessa no painel  - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinicio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5736",
-    "cd_equipamento": "5736",
-    "modelo": "ADUBADORA E SEMEADORA MS100",
-    "os": "116562",
-    "data_entrada": "13/08/2025",
-    "servico": "Quebra do sistema de abertura da comporta do dosador - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "43",

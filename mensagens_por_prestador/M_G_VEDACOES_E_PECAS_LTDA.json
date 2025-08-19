@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5633",
+    "cd_equipamento": "5633",
+    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+    "os": "116847",
+    "data_entrada": "18/08/2025",
+    "servico": "Trocar reparo do motor hidráulico L/D - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5126",
+    "cd_equipamento": "5126",
+    "modelo": "ADUBADEIRA KAMAQ 1500 KG",
+    "os": "116846",
+    "data_entrada": "18/08/2025",
+    "servico": "Vazamento no motor hidráulico da esteira - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5674",
     "cd_equipamento": "5674",
     "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
@@ -14,14 +30,6 @@
     "os": "116620",
     "data_entrada": "14/08/2025",
     "servico": "Vazamento de óleo na caixa de facas - (Fazenda São Severino)\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio\nP.S Mechido há 3 dias na OS 116440"
-  },
-  {
-    "frota": "5489",
-    "cd_equipamento": "5489",
-    "modelo": "CONJUNTO PODADOR WWD",
-    "os": "116492",
-    "data_entrada": "12/08/2025",
-    "servico": "Vazamento de óleo na caixa de facas - (Fazenda São Severino)\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5721",

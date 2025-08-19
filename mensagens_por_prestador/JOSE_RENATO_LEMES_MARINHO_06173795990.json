@@ -1,11 +1,67 @@
 [
   {
+    "frota": "5451",
+    "cd_equipamento": "5451",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "116909",
+    "data_entrada": "19/08/2025",
+    "servico": "Quebra do suporte de fixação do amortecedor dianteiro L/E - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5061",
+    "cd_equipamento": "5061",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116898",
+    "data_entrada": "19/08/2025",
+    "servico": "Substituir parafusos do eixo, pois encontram-se travados, sem possibilidade de aperto ou folga - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116892",
+    "data_entrada": "19/08/2025",
+    "servico": "Soldar barra de sustentação do defletor da asa esquerdo.\nFazenda Bela Manhã\nSolicitado Sr. Murilo\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5275",
+    "cd_equipamento": "5275",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "116865",
+    "data_entrada": "19/08/2025",
+    "servico": "Desamassar escada danificada por impacto com árvore. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5491",
+    "cd_equipamento": "5491",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "116854",
+    "data_entrada": "19/08/2025",
+    "servico": "Recuperar abas responsáveis pelo deslocamento das asas do tanque, quebradas na região de contato com a polia e inverter caixa de transporte de produtos - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "297",
     "cd_equipamento": "297",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "116812",
     "data_entrada": "18/08/2025",
     "servico": "Trocar os paralamas laterais para os de ferro - Faz Biscui\nE instalar proteção frontal\nPendencia 4208-4209\nAutorizado Arthur"
+  },
+  {
+    "frota": "5347",
+    "cd_equipamento": "5347",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "116806",
+    "data_entrada": "18/08/2025",
+    "servico": "Quebra do rolamento da polia das correias - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5270",
+    "cd_equipamento": "5270",
+    "modelo": "PULVERIZADOR FACCHINI 6000 LT",
+    "os": "116768",
+    "data_entrada": "18/08/2025",
+    "servico": "Quebra do pino do cabeçario - (Fazenda Úrsula) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5613",
@@ -24,20 +80,28 @@
     "servico": "Refazer proteção para os para-lamas - (Fazenda Terra Branca/Oficina)\nSolicitado Sr. Carlos"
   },
   {
+    "frota": "5539",
+    "cd_equipamento": "5539",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "116725",
+    "data_entrada": "15/08/2025",
+    "servico": "Fazer solda em trincas na estrutura e na proteção das partes moveis - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5044",
+    "cd_equipamento": "5044",
+    "modelo": "GUINCHO HIDRAULICO REFORCADO",
+    "os": "116721",
+    "data_entrada": "15/08/2025",
+    "servico": "Executar solda no engate do guincho para recuperação estrutural. - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5105",
     "cd_equipamento": "5105",
     "modelo": "GRADE ARADORA C.CONTROLE BALDA",
     "os": "116698",
     "data_entrada": "15/08/2025",
     "servico": "Executar reforma estrutural no sistema de engate da grade aradora - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5264",
-    "cd_equipamento": "5264",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "116615",
-    "data_entrada": "14/08/2025",
-    "servico": "Fabricar suporte para transporte de cones de sinalização, fabricar caixa de transporte de produtos, ajustar o pé de apoio e fabricar suporte para as mangueiras - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "165",
@@ -48,22 +112,6 @@
     "servico": "Fabricar proteção das lanternas traseiras - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116528",
-    "data_entrada": "12/08/2025",
-    "servico": "Reinstalar proteção dianteira do trator - (Fazenda Casa Branca)\nSolicitado Sr. João  Paulo\nResponsavel Sr. Artrhur"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "116408",
-    "data_entrada": "11/08/2025",
-    "servico": "Aumentar cesto traseiro para transporte de produto e instalar mais uma saída de vazão no ramal - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio\nAutorizado fazer Sr. Rafael gerente de manutenção.\n*Lançar custo como investimento.*"
-  },
-  {
     "frota": "226",
     "cd_equipamento": "226",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -72,12 +120,44 @@
     "servico": "Teto da cabine do trator danificado, com estrutura comprometida (podre) e presença de furos, permitindo a entrada de sujeira e impurezas oriundas da pulverização. - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5061",
-    "cd_equipamento": "5061",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "115065",
+    "frota": "106",
+    "cd_equipamento": "106",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "114664",
     "data_entrada": "22/07/2025",
-    "servico": "Fabricar caixa de transporte de produtos - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+    "servico": "Confeccionar proteção do farol de teto - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5012",
+    "cd_equipamento": "5012",
+    "modelo": "ADUBADEIRA CACAMBA TATU",
+    "os": "114780",
+    "data_entrada": "22/07/2025",
+    "servico": "Soldado rachaduras, aplicado reforços e soldado gonzos na proteção das correias. (Fazenda Nova Manhã)\nSolicitante Sr. Paulo\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5202",
+    "cd_equipamento": "5202",
+    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
+    "os": "114302",
+    "data_entrada": "16/07/2025",
+    "servico": "Rolamento da roda L/E quebrado, soldado travessas no gigante.  - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5204",
+    "cd_equipamento": "5204",
+    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
+    "os": "115341",
+    "data_entrada": "16/07/2025",
+    "servico": "Desmontado engate e soldado e feito suporte para corrente de segurança (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5273",
+    "cd_equipamento": "5273",
+    "modelo": "PAM 600-PA AGRICOLA P/TRATORES",
+    "os": "114335",
+    "data_entrada": "15/07/2025",
+    "servico": "Fazer solda em trincas - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5529",
@@ -88,28 +168,20 @@
     "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5360",
-    "cd_equipamento": "5360",
-    "modelo": "GRADE NIVELADORA",
-    "os": "114197",
+    "frota": "5191",
+    "cd_equipamento": "5191",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "112759",
+    "data_entrada": "15/07/2025",
+    "servico": "Fazer proteção de partes móveis (Correia da turbina) e instalar escada na torra  (Avaliar necessidade) - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5012",
+    "cd_equipamento": "5012",
+    "modelo": "ADUBADEIRA CACAMBA TATU",
+    "os": "114223",
     "data_entrada": "14/07/2025",
-    "servico": "Quebra do  disco da secção dianteira - (Fazenda Estrela 6)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5072",
-    "cd_equipamento": "5072",
-    "modelo": "GRADE NIVELADORA",
-    "os": "113915",
-    "data_entrada": "09/07/2025",
-    "servico": "Revisar mancal afastado e instalar bico graxeiro da secção dianteira L/D - (Fazenda Estrela 6)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5099",
-    "cd_equipamento": "5099",
-    "modelo": "GRADE NIVELADORA DE CONTROLE",
-    "os": "113561",
-    "data_entrada": "01/07/2025",
-    "servico": "Realizar revisão completa no equipamento, devido à quebra de mancais e discos. - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+    "servico": "Fazer solda em trinca na estrutura - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "91",
@@ -120,20 +192,20 @@
     "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
   },
   {
-    "frota": "5401",
-    "cd_equipamento": "5401",
-    "modelo": "ATOMIZADOR JACTO 4000 LT",
-    "os": "113066",
-    "data_entrada": "24/06/2025",
-    "servico": "Realinhas estrutura do braço, amassado após colisão, feito ajustes nas barras e após foi pintado. - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+    "frota": "5679",
+    "cd_equipamento": "5679",
+    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
+    "os": "115418",
+    "data_entrada": "18/06/2025",
+    "servico": "Soldado gigante, feito avaliação para pedido de peças, soldado rachaduras instalado travas no gigante, retirado jogo do cubo direito, feito limpeza no reparo e rolamento do cubo esquerdo, retirado jogo e montado. (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsável Sr. Mauricio"
   },
   {
-    "frota": "5360",
-    "cd_equipamento": "5360",
-    "modelo": "GRADE NIVELADORA",
-    "os": "112713",
+    "frota": "5600",
+    "cd_equipamento": "5600",
+    "modelo": "ATOMIZADOR NATALI 4000 LT",
+    "os": "112762",
     "data_entrada": "18/06/2025",
-    "servico": "Quebra da ponta de eixo, montado mancais, flange novos, porcas do eixo novo - (Fazenda Bela Manhã)\nSolicitado Sr. João Vitor Dubay\nLiberado Sr. Mauricio"
+    "servico": "Instalar proteções na correia da bomba de pulverização e no cardan e mudar posição do comando que está em cima da bomba trazendo para a lateral.\nFazenda Nova Manhã \nSolicitado Sr. Adriano\nResponsável Sr. Maurício"
   },
   {
     "frota": "5045",
@@ -142,13 +214,5 @@
     "os": "112338",
     "data_entrada": "11/06/2025",
     "servico": "Revisão geral - (Oficina)\n- Verificar ajuste das 4 rodas, trocar parte da chapa do assoalho, parte traseira recuperar tones dos pratos, fixar pintar e fazer montagem, montar redutor, correias montar as duas esteiras, recuperar lixar e pintar.\nLiberado Sr. Rafael"
-  },
-  {
-    "frota": "504",
-    "cd_equipamento": "504",
-    "modelo": "ONIBUS",
-    "os": "111421",
-    "data_entrada": "19/03/2025",
-    "servico": "Cortar e abrir laterais e fazer moldura nas bordas em ambos os lados, retirar chapa traseira e efetuar o fechamento da mesma, instalar chapa na dianteira afim de fechar o acesso a cabine do motorista, recuperar para-choques dianteiro e traseiro, desamassar e alinhar chapas internas dos para-lamas, fazer solda nas escadas, fixar com arrebites as chapas de alumínio que estão soltas, fazer adaptação dos tanques e bombas, serviço de solda em geral.\nÔnibus Calda Pronta GPZ-0174 (Oficina)\nLiberado Sr. Zacarias"
   }
 ]

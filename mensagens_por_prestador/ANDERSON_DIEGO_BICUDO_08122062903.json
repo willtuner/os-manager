@@ -1,11 +1,59 @@
 [
   {
-    "frota": "274",
-    "cd_equipamento": "274",
-    "modelo": "TRATOR VALTRA T250 CVT",
-    "os": "116785",
+    "frota": "74",
+    "cd_equipamento": "74",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116918",
+    "data_entrada": "19/08/2025",
+    "servico": "Trocar mangueira do comando hidráulico estourada - (Fazenda SP)\nSolicitado Sr. Geovane\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "310",
+    "cd_equipamento": "310",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "116904",
+    "data_entrada": "19/08/2025",
+    "servico": "Trocar filtros de ar do motor e avaliar radiador sujo - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "285",
+    "cd_equipamento": "285",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116868",
+    "data_entrada": "19/08/2025",
+    "servico": "Verificar e corrigir vazamento de óleo hidráulico nos tuchos do comando ou em suas proximidades. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo \nResponsavel Sr.l Arthur"
+  },
+  {
+    "frota": "275",
+    "cd_equipamento": "275",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116861",
+    "data_entrada": "19/08/2025",
+    "servico": "Verificar trator escapando marcha, embreagem não da mais regulagem e vazamento de óleo na junta do cárter - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "288",
+    "cd_equipamento": "288",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116842",
     "data_entrada": "18/08/2025",
-    "servico": "Trocar rolamentos do paralama - Faz Úrsula\nAutorizado Arthur"
+    "servico": "Verificar embreagem, regulagem no ultimo - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsaevel Sr. Arthur"
+  },
+  {
+    "frota": "102",
+    "cd_equipamento": "102",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "116836",
+    "data_entrada": "18/08/2025",
+    "servico": "Trocar da bomba manual de diesel danificada e bujão de óleo do motor espanado - (Fazenda Bela Manhã) |Parado|\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "95",
+    "cd_equipamento": "95",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "116824",
+    "data_entrada": "18/08/2025",
+    "servico": "Vazamento de óleo nos tuchos do comando hidráulico e direção dura - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "26",
@@ -14,6 +62,38 @@
     "os": "116800",
     "data_entrada": "16/08/2025",
     "servico": "Colocar uma manopla de marchas; Trocar vareta nível óleo; Trocar correia alternador; Verificar radiador de diesel; Trocar cinta da carga do filtro; Ajustar folga do pino da articulação do eixo; Conferir todos os níveis de óleo; Abrir caixa de câmbio e fazer análise; Montar caixa de câmbio; Analisar embreagem; Trocar vareta do óleo da transmissão; Alinhar para deixar braços hidráulicos com regulagem; Fazer testes freios; Falta parafusos do prato lado esquerdo e lado direito - roda traseira - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116764",
+    "data_entrada": "16/08/2025",
+    "servico": "Verificar embreagem - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Carlos"
+  },
+  {
+    "frota": "90",
+    "cd_equipamento": "90",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116718",
+    "data_entrada": "15/08/2025",
+    "servico": "Verificar tração dianteira não aciona - (Fazenda Casa Branca) |Parado|\nSolicitado Sr. João Paulo\nResponsavel Sr. Carlos"
+  },
+  {
+    "frota": "219",
+    "cd_equipamento": "219",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116717",
+    "data_entrada": "15/08/2025",
+    "servico": "Corrigir vazamento de diesel na mangueira de alimentação, vazamento de óleo de motor entre a caixa seca e o motor, e substituir regulador do cabo do afogador devido a desgaste que impede o aperto - (Fazenda São Severino)\nSolicitado Sr. Paulo Edson/Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "67",
+    "cd_equipamento": "67",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "116626",
+    "data_entrada": "14/08/2025",
+    "servico": "Perda total dos freios; identificado derretimento no tanque de óleo diesel, possivelmente causado por superaquecimento no sistema hidráulico. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
   },
   {
     "frota": "10222",
@@ -86,14 +166,6 @@
     "os": "115524",
     "data_entrada": "30/07/2025",
     "servico": "Vazamento no sensor de pressão do óleo do motor - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Artrhur"
-  },
-  {
-    "frota": "10229",
-    "cd_equipamento": "10229",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114566",
-    "data_entrada": "16/07/2025",
-    "servico": "Vazamento de óleo nos tuchos do comando hidráulico - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "289",
