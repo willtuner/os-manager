@@ -1,9 +1,16 @@
 [
   {
+    "frota": "5779",
+    "os": "116852",
+    "data": "19/08/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Soldar bits na corrente, confeccionar calço para elevação do raspador e corrigir vazamento no eixo da corrente -  (Fazenda SL1)"
+  },
+  {
     "frota": "5260",
     "os": "116730",
     "data": "15/08/2025",
-    "prestador": "nan",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Avaliar e corrigir empenamento da haste (popularmente chamada de 'pica-pau') do sistema Hidro Roll, por meio de recuperação ou substituição. - (Fazenda Casa Branca)"
   },
   {
@@ -35,11 +42,18 @@
     "servico": "Prensar mangueira - (Fazenda SL1)"
   },
   {
-    "frota": "47",
-    "os": "116584",
-    "data": "14/08/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Misturando óleo na agua - (Fazenda Santa Luiza)"
+    "frota": "5225",
+    "os": "115379",
+    "data": "28/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Realizar regulagem do guia responsável pelo enrolamento da mangueira do carretel do sistema HidroRoll, garantindo alinhamento adequado durante o recolhimento. - (Fazenda São Paulo)"
+  },
+  {
+    "frota": "5779",
+    "os": "115322",
+    "data": "25/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Retentor do eixo do cardã estourado - (Fazenda Pedra Verde)"
   },
   {
     "frota": "5774",
@@ -47,5 +61,19 @@
     "data": "22/07/2025",
     "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5779",
+    "os": "114861",
+    "data": "21/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Efetuar troca do retentor - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5779",
+    "os": "114610",
+    "data": "14/07/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Reformar corrente da valetadeira - (Fazenda Pedra Verde)"
   }
 ]

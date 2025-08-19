@@ -1,16 +1,37 @@
 [
   {
+    "frota": "314",
+    "os": "116893",
+    "data": "19/08/2025",
+    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Revisão de 1200 hrs - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5275",
+    "os": "116865",
+    "data": "19/08/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desamassar escada danificada por impacto com árvore. - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "147",
+    "os": "116862",
+    "data": "19/08/2025",
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar A/C não gela - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "95",
     "os": "116824",
     "data": "18/08/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Vazamento de óleo nos tuchos do comando hidráulico e direção dura - (Fazenda Nova Manhã)"
   },
   {
     "frota": "251",
     "os": "116689",
     "data": "15/08/2025",
-    "prestador": "nan",
+    "prestador": "JOCAR LTDA",
     "servico": "Revisar A/C, trocado recentemente condensador de vapor - (Fazenda Nova Manhã)"
   },
   {

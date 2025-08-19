@@ -1,9 +1,16 @@
 [
   {
+    "frota": "5749",
+    "os": "116894",
+    "data": "19/08/2025",
+    "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
+    "servico": "Fabricar mangueira - (Fazenda Minuano) |Parado|"
+  },
+  {
     "frota": "26",
     "os": "116803",
     "data": "18/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "prestador": "TEREZA DIAS DO PRADO",
     "servico": "Revisão elétrica completa - (Fazenda Minuano/Oficina)"
   },
   {
@@ -24,7 +31,7 @@
     "frota": "254",
     "os": "116767",
     "data": "18/08/2025",
-    "prestador": "nan",
+    "prestador": "JOCAR LTDA",
     "servico": "Condensador de A/C furado - (Fazenda Minuano)"
   },
   {
@@ -35,32 +42,11 @@
     "servico": "Colocar uma manopla de marchas; Trocar vareta nível óleo; Trocar correia alternador; Verificar radiador de diesel; Trocar cinta da carga do filtro; Ajustar folga do pino da articulação do eixo; Conferir todos os níveis de óleo; Abrir caixa de câmbio e fazer análise; Montar caixa de câmbio; Analisar embreagem; Trocar vareta do óleo da transmissão; Alinhar para deixar braços hidráulicos com regulagem; Fazer testes freios; Falta parafusos do prato lado esquerdo e lado direito - roda traseira - (Oficina)"
   },
   {
-    "frota": "5674",
-    "os": "116724",
-    "data": "15/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar botão de acionamento da barra de herbicida - (Fazenda Minuano)"
-  },
-  {
     "frota": "5488",
     "os": "116620",
     "data": "14/08/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Vazamento de óleo na caixa de facas - (Fazenda São Severino)"
-  },
-  {
-    "frota": "25",
-    "os": "116560",
-    "data": "13/08/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Verificar trator sem embreagem - (Fazenda Minuano) |Parado|"
-  },
-  {
-    "frota": "26",
-    "os": "116559",
-    "data": "13/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Minuano) |Parado|"
   },
   {
     "frota": "118",
@@ -82,12 +68,5 @@
     "data": "25/07/2025",
     "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "Equipamento não dá partida. Durante a verificação, foi identificado filtro de diesel sujo - (Fazenda Minuano)"
-  },
-  {
-    "frota": "5401",
-    "os": "113066",
-    "data": "24/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realinhas estrutura do braço, amassado após colisão, feito ajustes nas barras e após foi pintado. - (Fazenda São Pedro)"
   }
 ]

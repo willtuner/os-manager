@@ -1,45 +1,66 @@
 [
   {
+    "frota": "5022",
+    "os": "116920",
+    "data": "19/08/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar tanque que não libera produto ao acionar; avaliar possível falha na bomba ou obstrução na tubulação. - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5061",
+    "os": "116898",
+    "data": "19/08/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Substituir parafusos do eixo, pois encontram-se travados, sem possibilidade de aperto ou folga - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5367",
+    "os": "116897",
+    "data": "19/08/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Sacar e trocar parafuso de fixação da torre - (Fazenda Estrela)"
+  },
+  {
+    "frota": "5491",
+    "os": "116854",
+    "data": "19/08/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Recuperar abas responsáveis pelo deslocamento das asas do tanque, quebradas na região de contato com a polia e inverter caixa de transporte de produtos - (Fazenda Estrela)"
+  },
+  {
     "frota": "5009",
     "os": "116808",
     "data": "18/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Instalar tubo pescador (tubo de sucção) no tanque, para garantir a captação total da calda remanescente - (Fazenda Estrela)"
   },
   {
     "frota": "5491",
     "os": "116795",
     "data": "18/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar desgaste do eixo da bomba, verificar possibilidade de colocar chaveta maior - (Fazenda Estrela)"
   },
   {
     "frota": "219",
     "os": "116717",
     "data": "15/08/2025",
-    "prestador": "nan",
-    "servico": "Corrigir vazamento de diesel na mangueira de alimentação, vazamento de óleo de motor entre a caixa seca e o motor, e substituir regulador do cabo do afogador devido a desgaste que impede o aperto - (Fazenda São Severino/Estrela)"
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Corrigir vazamento de diesel na mangueira de alimentação, vazamento de óleo de motor entre a caixa seca e o motor, e substituir regulador do cabo do afogador devido a desgaste que impede o aperto - (Fazenda São Severino)"
   },
   {
     "frota": "250",
     "os": "116716",
     "data": "15/08/2025",
-    "prestador": "nan",
+    "prestador": "JOCAR LTDA",
     "servico": "Verificar A/C liga mas não gela - (Fazenda Estrela)"
   },
   {
     "frota": "219",
     "os": "116695",
     "data": "15/08/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Trocar lanterna do teto L/E - (Fazenda Estrela)"
-  },
-  {
-    "frota": "221",
-    "os": "116685",
-    "data": "15/08/2025",
-    "prestador": "nan",
-    "servico": "Quebra espontânea do vidro da porta - (Fazenda Estrela) |Parado|"
   },
   {
     "frota": "248",

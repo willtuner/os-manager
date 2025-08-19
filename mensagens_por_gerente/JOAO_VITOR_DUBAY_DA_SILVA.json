@@ -1,17 +1,17 @@
 [
   {
-    "frota": "274",
-    "os": "116811",
-    "data": "18/08/2025",
+    "frota": "5727",
+    "os": "116921",
+    "data": "19/08/2025",
     "prestador": "nan",
-    "servico": "Verificar A/C oscilando - (Fazenda Úrsula)"
+    "servico": "Trocar filtro de Combustível"
   },
   {
     "frota": "274",
-    "os": "116785",
+    "os": "116811",
     "data": "18/08/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar rolamentos do paralama - Faz Úrsula"
+    "prestador": "JOCAR LTDA",
+    "servico": "Verificar A/C oscilando - (Fazenda Úrsula)"
   },
   {
     "frota": "305",
@@ -19,13 +19,6 @@
     "data": "15/08/2025",
     "prestador": "nan",
     "servico": "Fazer troca das unhas - (Fazenda Úrsula)"
-  },
-  {
-    "frota": "5665",
-    "os": "116720",
-    "data": "15/08/2025",
-    "prestador": "nan",
-    "servico": "Rolamento da roda traseira L/D quebrado - (Fazenda Santa Izabel) |Parado|"
   },
   {
     "frota": "5105",
@@ -42,46 +35,11 @@
     "servico": "Roda lado esquerdo com excesso de folga; avaliar e substituir rolamento se necessário. - (Fazenda Úrsula)"
   },
   {
-    "frota": "326",
-    "os": "116554",
-    "data": "13/08/2025",
-    "prestador": "nan",
-    "servico": "Verificar polia da correia do ar-condicionado com superaquecimento e correia danificada. - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "274",
     "os": "116550",
     "data": "13/08/2025",
     "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
     "servico": "Verificar fechadura, porta não está fechando completamente. - (Fazenda Úrsula)"
-  },
-  {
-    "frota": "5360",
-    "os": "114197",
-    "data": "14/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra do  disco da secção dianteira - (Fazenda Estrela 6)"
-  },
-  {
-    "frota": "5072",
-    "os": "113915",
-    "data": "09/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Revisar mancal afastado e instalar bico graxeiro da secção dianteira L/D - (Fazenda Estrela 6)"
-  },
-  {
-    "frota": "5099",
-    "os": "113561",
-    "data": "01/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar revisão completa no equipamento, devido à quebra de mancais e discos. - (Fazenda Bela Manhã)"
-  },
-  {
-    "frota": "5360",
-    "os": "112713",
-    "data": "18/06/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra da ponta de eixo, montado mancais, flange novos, porcas do eixo novo - (Fazenda Bela Manhã)"
   },
   {
     "frota": "5490",

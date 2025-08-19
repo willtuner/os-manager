@@ -1,12 +1,5 @@
 [
   {
-    "frota": "106",
-    "os": "116818",
-    "data": "18/08/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu dianteiro L/E dianteiro furado - (Fazenda Nova Manhã) |Parado|"
-  },
-  {
     "frota": "5275",
     "os": "116714",
     "data": "15/08/2025",
@@ -24,7 +17,7 @@
     "frota": "235",
     "os": "116657",
     "data": "14/08/2025",
-    "prestador": "nan",
+    "prestador": "JOCAR LTDA",
     "servico": "Verificar A/C não gela - (Fazenda Nova Manhã)"
   },
   {
@@ -56,10 +49,38 @@
     "servico": "Verificar pneu 275/80R22.5 danificado."
   },
   {
+    "frota": "5204",
+    "os": "115341",
+    "data": "16/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Desmontado engate e soldado e feito suporte para corrente de segurança (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "92",
     "os": "114516",
     "data": "16/07/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Substituir os dois pneus dianteiro com desgaste."
+  },
+  {
+    "frota": "5191",
+    "os": "112759",
+    "data": "15/07/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Fazer proteção de partes móveis (Correia da turbina) e instalar escada na torra  (Avaliar necessidade) - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5679",
+    "os": "115418",
+    "data": "18/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldado gigante, feito avaliação para pedido de peças, soldado rachaduras instalado travas no gigante, retirado jogo do cubo direito, feito limpeza no reparo e rolamento do cubo esquerdo, retirado jogo e montado. (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5600",
+    "os": "112762",
+    "data": "18/06/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Instalar proteções na correia da bomba de pulverização e no cardan e mudar posição do comando que está em cima da bomba trazendo para a lateral."
   }
 ]
