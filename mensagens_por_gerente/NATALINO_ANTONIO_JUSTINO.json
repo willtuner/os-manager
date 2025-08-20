@@ -1,17 +1,17 @@
 [
   {
+    "frota": "245",
+    "os": "116996",
+    "data": "20/08/2025",
+    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
+    "servico": "Vazamento de óleo no cubo da roda dianteira L/E - (Fazenda Alvorada)"
+  },
+  {
     "frota": "247",
     "os": "116935",
     "data": "19/08/2025",
     "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
     "servico": "Substituir vidro da porta (um lado) e vidro fixo do lado oposto do trator, ambos quebrados. (Fazenda Alvorada) |Parado|"
-  },
-  {
-    "frota": "121",
-    "os": "116928",
-    "data": "19/08/2025",
-    "prestador": "TEREZA DIAS DO PRADO",
-    "servico": "Revisar elétrica e A/C - (Fazenda Alvorada)"
   },
   {
     "frota": "249",
@@ -40,12 +40,5 @@
     "data": "13/08/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer fibra no capô quebrado - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "304",
-    "os": "116549",
-    "data": "13/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar iluminação não ascende nada - (Fazenda Alvorada)"
   }
 ]
