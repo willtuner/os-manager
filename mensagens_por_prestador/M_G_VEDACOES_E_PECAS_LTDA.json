@@ -54,53 +54,5 @@
     "os": "115566",
     "data_entrada": "31/07/2025",
     "servico": "Verificar vazamento no motor hidráulico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5760",
-    "cd_equipamento": "5760",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "114075",
-    "data_entrada": "10/07/2025",
-    "servico": "Corrigir vazamento de óleo no pistão de abertura da barra direita e acertar haste torta.\nFazenda São Pedro\nSolicitado Sr. Romes\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5314",
-    "cd_equipamento": "5314",
-    "modelo": "PODADOR FRONTAL/LATERAL",
-    "os": "114071",
-    "data_entrada": "08/07/2025",
-    "servico": "Corrigir vazamento no pistão de levante.\nFazenda São José\nSolicitado Sr. Gilberto\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5559",
-    "cd_equipamento": "5559",
-    "modelo": "PODADEIRA HIDRAUTEC HLC6",
-    "os": "113891",
-    "data_entrada": "07/07/2025",
-    "servico": "Quebra da corrente do sistema de transmissão e parafusos que seguram o rotor - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Mauricio\n\nDIA 1 DESLOCAMENTO ATE A FAZENDA PARA VERIFICAR PROBLEMA NO ACOPLAMENTO E NA CHAPA SUPORTE DO MOTOR, AO CHEGAR NO EQUIPAMENTO FOI IDENTIFICADO MAIS PROBLEMAS, NA FIXACAO DA CAIXA DE ACIONAMENTO, COM PARAFUSOS QUEBRADOS, CHAPA COM DESGASTE E MOTOR COM VAZAMENTO. OS MESMOS FORAM REMOVIDOS E RECOLHIDOS PARA MANUTENCAO, PROBLEMA ACONTECEU DEVIDO MONTAGEM ERRADA DOS GUIAS DO CONJUNTO DE CORTE ONDE OS MESMOS ESTAVAM ENFORCADOS TRAVANDO A BARRA DE CORTE. DIA 2 TESTE NO MOTOR HIDRAULICO NA BANCADA ONDE O MESMO ALEM DE VAZAMENTO DE OLEO EXTERNO APRESENTOU VAZAMENTO INTERNO IMPOSSIBILITANDO A REPARACAO, SENDO SUBSTITUIDO POR UM NOVO RETIRADO NO ALMOXARIFADO DA PRATS. A CAIXA DE ACIONAMENTO FOI DESMONTADA PARA REVISAO E TROCA DOS ITENS COM DESGASTE, FOI REMOVIDO PARAFUSOS QUEBRADOS DA CARCAÇA, A BASE ONDE FIXA A CAIXA DE FACA PRECISOU SER ECHI"
-  },
-  {
-    "frota": "5489",
-    "cd_equipamento": "5489",
-    "modelo": "CONJUNTO PODADOR WWD",
-    "os": "113722",
-    "data_entrada": "03/07/2025",
-    "servico": "Substituir parafuso de fixação das réguas ao rotor do conjunto podador WWD, devido à quebra do componente, comprometendo a fixação e o funcionamento do sistema de corte - (Fazenda São Severino)\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "79",
-    "cd_equipamento": "79",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "113691",
-    "data_entrada": "03/07/2025",
-    "servico": "Verificar vazamento de óleo no comando hidráulico das barras de herbicida - (Fazenda Terra Branca)\nSolicitado Sr. João Victor (Subgerente)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5229",
-    "cd_equipamento": "5229",
-    "modelo": "PODADEIRA HIDRAUTEC HLC 3",
-    "os": "113679",
-    "data_entrada": "02/07/2025",
-    "servico": "Verificar barra de corte danificada - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
   }
 ]

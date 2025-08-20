@@ -1,5 +1,13 @@
 [
   {
+    "frota": "196",
+    "cd_equipamento": "196",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "116969",
+    "data_entrada": "20/08/2025",
+    "servico": "Avaliar vazamento de óleo diesel na bomba injetora - (Fazenda Casa Branca)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "269",
     "cd_equipamento": "269",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -14,29 +22,5 @@
     "os": "115342",
     "data_entrada": "25/07/2025",
     "servico": "Equipamento não dá partida. Durante a verificação, foi identificado filtro de diesel sujo - (Fazenda Minuano)\nSolicitado Sr. Antônio Paulo\nResponsavel Sr.  Rafael"
-  },
-  {
-    "frota": "296",
-    "cd_equipamento": "296",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113949",
-    "data_entrada": "08/07/2025",
-    "servico": "Vazamento de diesel no eixo da bomba injetora - (Fazenda São José)\nSolicitado Sr. Gilberto"
-  },
-  {
-    "frota": "105",
-    "cd_equipamento": "105",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "113674",
-    "data_entrada": "02/07/2025",
-    "servico": "Vazamento no eixo da bomba injetora  - (Fazenda SL1)\nSolicitado Sr. Wagner\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "22",
-    "cd_equipamento": "22",
-    "modelo": "TRATOR VALTRA BH 180 4X4",
-    "os": "112705",
-    "data_entrada": "19/06/2025",
-    "servico": "Verificar falha no funcionamento do motor devido a possível entrada de ar no sistema de alimentação de combustível  - (Fazenda Estrela)\nSolicitado Sr. Danilo\nLiberado Sr. Arthur"
   }
 ]
