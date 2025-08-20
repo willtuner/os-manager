@@ -3,7 +3,7 @@
     "frota": "10219",
     "os": "116963",
     "data": "19/08/2025",
-    "prestador": "nan",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Horimetro e ponteiro da rotação não funciona - (Fazenda Estrela)"
   },
   {
@@ -84,13 +84,6 @@
     "servico": "Trocar borrachas de vedação da porta e banco danificado -  (Fazenda Estrela)"
   },
   {
-    "frota": "165",
-    "os": "114252",
-    "data": "14/07/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Verificar trator não tem força para levantar lança da podadeira - (Fazenda Estrela)"
-  },
-  {
     "frota": "309",
     "os": "114100",
     "data": "10/07/2025",
@@ -103,19 +96,5 @@
     "data": "09/07/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Quebra da fixação das lanternas dianteiras - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5061",
-    "os": "110953",
-    "data": "20/05/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Fazer fibra na torre e trocar barra roscada - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5068",
-    "os": "110021",
-    "data": "06/05/2025",
-    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Durante manobra no barracão, a roçadeira colidiu com o tanque de herbicida, provocando dano estrutural e vazamento do produto necessário realizar serviço de recuperação em fibra de vidro de forma definitiva para garantir vedação e integridade do reservatório - (Fazenda Estrela)"
   }
 ]
