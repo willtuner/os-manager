@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5600",
+    "cd_equipamento": "5600",
+    "modelo": "ATOMIZADOR NATALI 4000 LT",
+    "os": "116959",
+    "data_entrada": "19/08/2025",
+    "servico": "Fabricar caixa de transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5451",
     "cd_equipamento": "5451",
     "modelo": "PULVERIZADOR BARRAS TRICICLO",
@@ -112,6 +120,14 @@
     "servico": "Fabricar proteção das lanternas traseiras - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "329",
+    "cd_equipamento": "329",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "115669",
+    "data_entrada": "01/08/2025",
+    "servico": "Fabricar e instalar proteções nos faróis laterais - Faz Estrela\nAutorizado Arthur"
+  },
+  {
     "frota": "226",
     "cd_equipamento": "226",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -120,44 +136,12 @@
     "servico": "Teto da cabine do trator danificado, com estrutura comprometida (podre) e presença de furos, permitindo a entrada de sujeira e impurezas oriundas da pulverização. - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "106",
-    "cd_equipamento": "106",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "114664",
-    "data_entrada": "22/07/2025",
-    "servico": "Confeccionar proteção do farol de teto - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5012",
-    "cd_equipamento": "5012",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "114780",
-    "data_entrada": "22/07/2025",
-    "servico": "Soldado rachaduras, aplicado reforços e soldado gonzos na proteção das correias. (Fazenda Nova Manhã)\nSolicitante Sr. Paulo\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5202",
-    "cd_equipamento": "5202",
-    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
-    "os": "114302",
-    "data_entrada": "16/07/2025",
-    "servico": "Rolamento da roda L/E quebrado, soldado travessas no gigante.  - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsável Sr. Mauricio"
-  },
-  {
     "frota": "5204",
     "cd_equipamento": "5204",
     "modelo": "CARRETINHA DE MADEIRA VERMELHA",
     "os": "115341",
     "data_entrada": "16/07/2025",
     "servico": "Desmontado engate e soldado e feito suporte para corrente de segurança (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5273",
-    "cd_equipamento": "5273",
-    "modelo": "PAM 600-PA AGRICOLA P/TRATORES",
-    "os": "114335",
-    "data_entrada": "15/07/2025",
-    "servico": "Fazer solda em trincas - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5529",
@@ -174,14 +158,6 @@
     "os": "112759",
     "data_entrada": "15/07/2025",
     "servico": "Fazer proteção de partes móveis (Correia da turbina) e instalar escada na torra  (Avaliar necessidade) - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5012",
-    "cd_equipamento": "5012",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "114223",
-    "data_entrada": "14/07/2025",
-    "servico": "Fazer solda em trinca na estrutura - (Fazenda Nova Manhã)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "91",

@@ -46,5 +46,53 @@
     "os": "114789",
     "data_entrada": "19/07/2025",
     "servico": "Realizar serviço de fibra na capota do trator, recuperando danos estruturais e garantindo proteção adequada ao operador. - (Fazenda  Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "110669",
+    "data_entrada": "16/05/2025",
+    "servico": "Fazer fibra na torre - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5290",
+    "cd_equipamento": "5290",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "110440",
+    "data_entrada": "13/05/2025",
+    "servico": "Quebra da proteção das correias da bomba  - (Fazenda Santa Izabel)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5068",
+    "cd_equipamento": "5068",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "110021",
+    "data_entrada": "06/05/2025",
+    "servico": "Durante manobra no barracão, a roçadeira colidiu com o tanque de herbicida, provocando dano estrutural e vazamento do produto necessário realizar serviço de recuperação em fibra de vidro de forma definitiva para garantir vedação e integridade do reservatório - (Fazenda Estrela)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "109621",
+    "data_entrada": "28/04/2025",
+    "servico": "Fazer fibra - (Fazenda Casa Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "109599",
+    "data_entrada": "28/04/2025",
+    "servico": "Fazer fibra na torre - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5398",
+    "cd_equipamento": "5398",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "109003",
+    "data_entrada": "16/04/2025",
+    "servico": "Fazer fibra em trincas na estrutura da torre - (Fazenda Terra Branca)\nLiberado Sr. Mauricio"
   }
 ]

@@ -1,11 +1,11 @@
 [
   {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "116850",
-    "data_entrada": "18/08/2025",
-    "servico": "Soldar fios do terminal rompido e L/E do SPE não funciona - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+    "frota": "5820",
+    "cd_equipamento": "5820",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "116976",
+    "data_entrada": "20/08/2025",
+    "servico": "Instalar SPE - Faz Bela Manha\nAutorizado Arthur"
   },
   {
     "frota": "5275",
@@ -22,13 +22,5 @@
     "os": "116712",
     "data_entrada": "15/08/2025",
     "servico": "Revisar sistema SPE - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano \nResponsavel Sr. Adriano"
-  },
-  {
-    "frota": "5803",
-    "cd_equipamento": "5803",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "116532",
-    "data_entrada": "13/08/2025",
-    "servico": "Verificar SPE com fio do terminal quebrado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   }
 ]

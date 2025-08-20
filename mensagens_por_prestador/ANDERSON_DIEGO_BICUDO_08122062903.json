@@ -1,19 +1,19 @@
 [
   {
+    "frota": "349",
+    "cd_equipamento": "349",
+    "modelo": "JOHN DEERE 6110E",
+    "os": "116977",
+    "data_entrada": "20/08/2025",
+    "servico": "Troca de óleo geral \nTroca da correia do motor\nTroca dos rolamentos, pinos e retentores\nTirar banco para consertar cinto de segurança \nTrocar reservatório de água\nTrocar coifas dos terminais e regular direção - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos"
+  },
+  {
     "frota": "74",
     "cd_equipamento": "74",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "116918",
     "data_entrada": "19/08/2025",
     "servico": "Trocar mangueira do comando hidráulico estourada - (Fazenda SP)\nSolicitado Sr. Geovane\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "310",
-    "cd_equipamento": "310",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "116904",
-    "data_entrada": "19/08/2025",
-    "servico": "Trocar filtros de ar do motor e avaliar radiador sujo - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
   },
   {
     "frota": "285",
@@ -30,22 +30,6 @@
     "os": "116861",
     "data_entrada": "19/08/2025",
     "servico": "Verificar trator escapando marcha, embreagem não da mais regulagem e vazamento de óleo na junta do cárter - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "288",
-    "cd_equipamento": "288",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116842",
-    "data_entrada": "18/08/2025",
-    "servico": "Verificar embreagem, regulagem no ultimo - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsaevel Sr. Arthur"
-  },
-  {
-    "frota": "102",
-    "cd_equipamento": "102",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "116836",
-    "data_entrada": "18/08/2025",
-    "servico": "Trocar da bomba manual de diesel danificada e bujão de óleo do motor espanado - (Fazenda Bela Manhã) |Parado|\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "95",
@@ -104,22 +88,6 @@
     "servico": "Vazamento de óleo na caixa seca - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "198",
-    "cd_equipamento": "198",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116404",
-    "data_entrada": "09/08/2025",
-    "servico": "Aferir pressão da bomba hidráulica - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "258",
-    "cd_equipamento": "258",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116385",
-    "data_entrada": "08/08/2025",
-    "servico": "Rolamento da TDP quebrado - (Fazenda Casa Branca)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "220",
     "cd_equipamento": "220",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -142,14 +110,6 @@
     "os": "116264",
     "data_entrada": "07/08/2025",
     "servico": "Verificar ruído anormal no câmbio - (Fazenda Pedra Verde/Oficina) \nSolicitado Sr. Altieres\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "90",
-    "cd_equipamento": "90",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "116181",
-    "data_entrada": "06/08/2025",
-    "servico": "Aumentar/adequar tubagem do escapamento. Jogando fumaça no operador - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "119",
