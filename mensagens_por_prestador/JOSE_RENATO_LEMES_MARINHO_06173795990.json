@@ -1,19 +1,27 @@
 [
   {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "117001",
+    "data_entrada": "20/08/2025",
+    "servico": "Rolamento da roda L/E estourado - (Fazenda NSA) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5367",
+    "cd_equipamento": "5367",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116983",
+    "data_entrada": "20/08/2025",
+    "servico": "Solda em trinca na estrutura da torre - (Fazenda Estrela) |Parado|\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5600",
     "cd_equipamento": "5600",
     "modelo": "ATOMIZADOR NATALI 4000 LT",
     "os": "116959",
     "data_entrada": "19/08/2025",
     "servico": "Fabricar caixa de transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5451",
-    "cd_equipamento": "5451",
-    "modelo": "PULVERIZADOR BARRAS TRICICLO",
-    "os": "116909",
-    "data_entrada": "19/08/2025",
-    "servico": "Quebra do suporte de fixação do amortecedor dianteiro L/E - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5061",
@@ -30,22 +38,6 @@
     "os": "116892",
     "data_entrada": "19/08/2025",
     "servico": "Soldar barra de sustentação do defletor da asa esquerdo.\nFazenda Bela Manhã\nSolicitado Sr. Murilo\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5275",
-    "cd_equipamento": "5275",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "116865",
-    "data_entrada": "19/08/2025",
-    "servico": "Desamassar escada danificada por impacto com árvore. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5491",
-    "cd_equipamento": "5491",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "116854",
-    "data_entrada": "19/08/2025",
-    "servico": "Recuperar abas responsáveis pelo deslocamento das asas do tanque, quebradas na região de contato com a polia e inverter caixa de transporte de produtos - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "297",
@@ -70,14 +62,6 @@
     "os": "116768",
     "data_entrada": "18/08/2025",
     "servico": "Quebra do pino do cabeçario - (Fazenda Úrsula) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5613",
-    "cd_equipamento": "5613",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "116744",
-    "data_entrada": "15/08/2025",
-    "servico": "Solda parafuso da  chapa de proteção - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "220",
@@ -134,14 +118,6 @@
     "os": "115526",
     "data_entrada": "30/07/2025",
     "servico": "Teto da cabine do trator danificado, com estrutura comprometida (podre) e presença de furos, permitindo a entrada de sujeira e impurezas oriundas da pulverização. - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5529",
-    "cd_equipamento": "5529",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "114334",
-    "data_entrada": "15/07/2025",
-    "servico": "Fabricar caixa traseira para transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "91",

@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "116995",
+    "data_entrada": "20/08/2025",
+    "servico": "Trocar agitador de calda com as pás quebradas - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5600",
+    "cd_equipamento": "5600",
+    "modelo": "ATOMIZADOR NATALI 4000 LT",
+    "os": "116993",
+    "data_entrada": "20/08/2025",
+    "servico": "Vazamento no comando - (Fazenda Nova Manhã) \nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5614",
     "cd_equipamento": "5614",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -53,15 +69,7 @@
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "116867",
     "data_entrada": "19/08/2025",
-    "servico": "Verificar pistão da barra abrindo sozinho e fazer solda no defletor da asa - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5009",
-    "cd_equipamento": "5009",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "116808",
-    "data_entrada": "18/08/2025",
-    "servico": "Instalar tubo pescador (tubo de sucção) no tanque, para garantir a captação total da calda remanescente - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+    "servico": "Alinhar a polia do agitador - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5491",

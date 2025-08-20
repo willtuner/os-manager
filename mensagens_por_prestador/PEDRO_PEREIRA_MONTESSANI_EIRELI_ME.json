@@ -1,11 +1,11 @@
 [
   {
-    "frota": "289",
-    "cd_equipamento": "289",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116974",
+    "frota": "244",
+    "cd_equipamento": "244",
+    "modelo": "TRATOR MASSEY FERGUSON 3307",
+    "os": "117021",
     "data_entrada": "20/08/2025",
-    "servico": "Verificar alternador - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
+    "servico": "Revisão elétrica - (Oficina)\nResponsavel Sr. Carlos Aparecido"
   },
   {
     "frota": "195",
@@ -30,14 +30,6 @@
     "os": "116963",
     "data_entrada": "19/08/2025",
     "servico": "Horimetro e ponteiro da rotação não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5725",
-    "cd_equipamento": "5725",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "116911",
-    "data_entrada": "19/08/2025",
-    "servico": "Trocar botão do painel do comando  - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
   },
   {
     "frota": "226",
@@ -120,22 +112,6 @@
     "servico": "Revisão do sistema eletrico do trator - Oficina OMC\nAutorizado Arthur"
   },
   {
-    "frota": "304",
-    "cd_equipamento": "304",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116549",
-    "data_entrada": "13/08/2025",
-    "servico": "Verificar iluminação não ascende nada - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5658",
-    "cd_equipamento": "5658",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "116546",
-    "data_entrada": "13/08/2025",
-    "servico": "Revisar sistema eletrico - Faz São Severino\nAutorizado Arthur"
-  },
-  {
     "frota": "5657",
     "cd_equipamento": "5657",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
@@ -176,14 +152,6 @@
     "servico": "\"Verificar cibiés de teto que não acendem. Operador já verificou conectores, fusíveis e demais componentes básicos. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "74",
-    "cd_equipamento": "74",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "116141",
-    "data_entrada": "05/08/2025",
-    "servico": "Quebra da correia do alternador - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "329",
     "cd_equipamento": "329",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -198,14 +166,6 @@
     "os": "116048",
     "data_entrada": "05/08/2025",
     "servico": "Relogio horimetro apagado, verificar possível substituição do painel - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "116019",
-    "data_entrada": "05/08/2025",
-    "servico": "Verificar trator sem partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "342",
