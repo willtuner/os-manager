@@ -170,10 +170,15 @@
   "wilson.santana": {
     "senha": "admin321",
     "tipo": "admin"
-  },
-  "zacarias.oliveira": {
-    "senha": "1234",
+   },
+  "izaias.francisco": {
+    "senha": "12345",
     "tipo": "gerente"
+  },
+  "joao.dubay": {
+    "senha": "1234",
+    "tipo": "gerente",
+    "arquivo_os": "JOAO_VITOR_DUBAY_DA_SILVA.json"
   },
   "zylton.figueredo": {
     "senha": "1234",

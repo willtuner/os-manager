@@ -2,6 +2,8 @@
 
 {% block title %}Painel de OS – {{ nome }}{% endblock %}
 
+{% block page_title %}OS Atribuídas{% endblock %}
+
 {% block content %}
 <style>
     :root {
@@ -90,31 +92,84 @@
         color: var(--verde-agro);
         margin-bottom: 0.75rem;
     }
+
+    /* Estilos para o mascote */
+    .mascot-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 1.5rem;
+    }
+    .mascot-icon {
+        font-size: 3rem;
+        animation: bounce 2s infinite;
+    }
+    .speech-bubble {
+        position: relative;
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        flex-grow: 1;
+    }
+    .speech-bubble::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+    .speech-bubble.bubble-success { background-color: #28a745; }
+    .speech-bubble.bubble-success::before { border-right: 10px solid #28a745; }
+    .speech-bubble.bubble-info { background-color: #17a2b8; }
+    .speech-bubble.bubble-info::before { border-right: 10px solid #17a2b8; }
+    .speech-bubble.bubble-warning { background-color: #ffc107; color: #212529; }
+    .speech-bubble.bubble-warning::before { border-right: 10px solid #ffc107; }
+    .speech-bubble.bubble-danger { background-color: #dc3545; }
+    .speech-bubble.bubble-danger::before { border-right: 10px solid #dc3545; }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-10px);}
+        60% {transform: translateY(-5px);}
+    }
 </style>
 
 <div class="container">
-    {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                <div class="alert alert-{{ category }} alert-dismissible fade show mt-3" role="alert">
-                    {{ message }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
+    {# --- Bloco de Saudação com Mascote --- #}
+    {% set os_count = os_list|length %}
+    {% if os_count == 0 %}
+      {% set bubble_class = 'bubble-success' %}
+      {% set message = 'Você não tem nenhuma OS pendente no momento. ✅' %}
+    {% elif os_count <= 5 %}
+      {% set bubble_class = 'bubble-info' %}
+      {% set message = 'Você tem ' ~ os_count ~ ' OS aberta' ~ ('s' if os_count > 1 else '') ~ '. 👍' %}
+    {% elif os_count <= 15 %}
+      {% set bubble_class = 'bubble-warning' %}
+      {% set message = 'Você tem ' ~ os_count ~ ' OS abertas. Fique atento! ⚠️' %}
+    {% else %}
+      {% set bubble_class = 'bubble-danger' %}
+      {% set message = 'Você tem ' ~ os_count ~ ' OS abertas. Priorize as mais antigas! 🚨' %}
+    {% endif %}
 
-    <div class="d-flex justify-content-between align-items-center my-3">
-        <div>
-            <h2 class="h4 text-dark mb-0">
-                <i class="fas fa-tools text-success me-2"></i>Ordens de Serviço Atribuídas
-            </h2>
-            <p class="text-muted small mb-0">Prestador: <strong>{{ nome | capitalize_name }}</strong></p>
+    <div class="mascot-container">
+        <div class="mascot-icon">🚜</div>
+        <div class="speech-bubble {{ bubble_class }}">
+      <h5 class="fw-bold mb-1" id="greeting-text">{{ nome|capitalize_name }}!</h5>
+          <p class="mb-0">{{ message }}</p>
         </div>
-        <a href="{{ url_for('logout') }}" class="btn btn-outline-danger btn-sm">
-            <i class="fas fa-sign-out-alt me-1"></i>Sair
-        </a>
     </div>
+    {# --- Fim do Bloco de Saudação com Mascote --- #}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const greetings = {{ greetings_list|tojson }};
+    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+    const greetingElement = document.getElementById('greeting-text');
+    greetingElement.innerHTML = randomGreeting + ' ' + greetingElement.innerHTML;
+});
+</script>
 
     {% if os_list %}
         {% for item in os_list %}
@@ -157,14 +212,34 @@
                     <span style="white-space: pre-wrap;">{{ item.servico | default('Serviço não especificado.') }}</span>
                 </p>
                 
+                {% if item.status == 'Pendente' %}
+                <div class="alert alert-warning p-2" role="alert">
+                    <h6 class="alert-heading h6 mb-1"><i class="fas fa-pause-circle me-1"></i>OS Pendente</h6>
+                    <p class="mb-1 small"><strong>Motivo:</strong> {{ item.status_motivo }}</p>
+                    <p class="small text-muted mb-0">
+                        Definido por: {{ item.status_definido_por }} em {{ item.status_data }}
+                    </p>
+                </div>
+                {% endif %}
+
                 <hr class="form-section-divider">
 
-                <form action="{{ url_for('finalizar_os', os_numero_str=item.os) }}"
-                      method="POST"
-                      enctype="multipart/form-data"
-                      class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
-                    
-                    <h6 class="finalization-header"><i class="fas fa-check-square me-1"></i>Finalizar esta OS:</h6>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <button type="button" class="btn btn-success btn-sm btn-toggle-form">
+                            <i class="fas fa-chevron-down me-1"></i> Finalizar esta OS
+                        </button>
+                    </div>
+                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#pendenteModal-{{ item.os }}">
+                        <i class="fas fa-pause-circle me-1"></i>Marcar Pendente
+                    </button>
+                </div>
+
+                <div class="collapse-form d-none mt-3">
+                    <form action="{{ url_for('finalizar_os', os_numero_str=item.os) }}"
+                          method="POST"
+                          enctype="multipart/form-data"
+                          class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
                     
                     <div class="row g-2 mb-2">
                         <div class="col-md-6">
@@ -202,6 +277,7 @@
                         </button>
                     </div>
                 </form>
+                </div>
             </div>
         </div>
 
@@ -233,6 +309,32 @@
                 </div>
             </div>
         </div>
+
+        <!-- Modal para Marcar como Pendente -->
+        <div class="modal fade" id="pendenteModal-{{ item.os }}" tabindex="-1" aria-labelledby="pendenteModalLabel-{{ item.os }}" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form action="{{ url_for('marcar_pendente', os_numero=item.os) }}" method="POST" class="needs-validation" novalidate>
+                        <div class="modal-header bg-warning text-dark">
+                            <h5 class="modal-title" id="pendenteModalLabel-{{ item.os }}"><i class="fas fa-pause-circle me-2"></i>Marcar OS {{ item.os }} como Pendente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>A OS ficará com o status "Pendente" e será destacada para o gerente e administrador.</p>
+                            <div class="mb-3">
+                                <label for="motivo_{{ item.os }}" class="form-label"><strong>Motivo da Pendência <span class="text-danger">*</span></strong></label>
+                                <textarea class="form-control" id="motivo_{{ item.os }}" name="motivo" rows="4" placeholder="Ex: Aguardando chegada de peças, Necessário aprovação do cliente, etc." required></textarea>
+                                <div class="invalid-feedback">Por favor, informe o motivo da pendência.</div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-warning text-dark"><i class="fas fa-save me-1"></i>Salvar Pendência</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         {% endfor %}
     {% else %}
         <div class="text-center py-5 bg-light rounded shadow-sm mt-4">
@@ -250,6 +352,27 @@
 </div>
 
 <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Novo Toggle para formulário de finalização
+        document.querySelectorAll('.btn-toggle-form').forEach(button => {
+            button.addEventListener('click', () => {
+                const cardBody = button.closest('.card-body');
+                const formWrapper = cardBody.querySelector('.collapse-form');
+                const icon = button.querySelector('i');
+
+                formWrapper.classList.toggle('d-none');
+
+                if (formWrapper.classList.contains('d-none')) {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+    });
+
     // Ativar validação Bootstrap para formulários com a classe 'needs-validation'
     (() => {
       'use strict'
