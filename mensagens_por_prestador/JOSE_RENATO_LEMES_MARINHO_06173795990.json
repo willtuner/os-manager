@@ -1,11 +1,35 @@
 [
   {
+    "frota": "5264",
+    "cd_equipamento": "5264",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "117147",
+    "data_entrada": "22/08/2025",
+    "servico": "Instalar argolas de ferro nas asas para suporte das mangueiras. - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5696",
+    "cd_equipamento": "5696",
+    "modelo": "GUINCHO BIG BAG GT 2200",
+    "os": "117130",
+    "data_entrada": "22/08/2025",
+    "servico": "Quebra do pino de sustentação do guincho - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5290",
     "cd_equipamento": "5290",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
     "os": "117129",
     "data_entrada": "22/08/2025",
     "servico": "Fazer solda em trinca na estrutura da asa - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117128",
+    "data_entrada": "22/08/2025",
+    "servico": "Trocar registro do bocal - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5156",
@@ -38,6 +62,14 @@
     "os": "117065",
     "data_entrada": "21/08/2025",
     "servico": "Desamassar asa do alma - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "300",
+    "cd_equipamento": "300",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117056",
+    "data_entrada": "21/08/2025",
+    "servico": "Solda grade de proteção dianteira - (Fazenda Minuano)\nSolicitado Sr. Marcio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5197",

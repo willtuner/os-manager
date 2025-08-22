@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5040",
+    "cd_equipamento": "5040",
+    "modelo": "GERADOR DE ENERGIA",
+    "os": "117149",
+    "data_entrada": "22/08/2025",
+    "servico": "Troca de óleo e filtros (Revisão) - (Fazenda NSA)\nSolicitado Rennan\nResponsavel Sr. Rafael"
+  },
+  {
+    "frota": "5484",
+    "cd_equipamento": "5484",
+    "modelo": "GERADOR DE ENERGIA",
+    "os": "117133",
+    "data_entrada": "22/08/2025",
+    "servico": "Troca de óleo e filtros (Revisão) - (Fazenda Minuano)\nSolicitado Zylton\nResponsavel Sr. Rafael"
+  },
+  {
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117092",
+    "data_entrada": "21/08/2025",
+    "servico": "Vazamento na bomba junta da bomba injetora - (Fazenda Terra Branca)\nSolicitado Sr. Eder \nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "216",
     "cd_equipamento": "216",
     "modelo": "TRATOR JOHN DEERE 5070 E",

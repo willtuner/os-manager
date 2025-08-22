@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5706",
+    "cd_equipamento": "5706",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "117122",
+    "data_entrada": "22/08/2025",
+    "servico": "Verificar sistema do Dransh que não está interrompendo a vazão do produto ao ser desligado. - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "117115",
+    "data_entrada": "22/08/2025",
+    "servico": "Substituir botão de acionamento da pistola do dransh - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "254",
     "cd_equipamento": "254",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -88,8 +104,8 @@
     "servico": "Limpador de para-brisa não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "263",
-    "cd_equipamento": "263",
+    "frota": "219",
+    "cd_equipamento": "219",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "116899",
     "data_entrada": "19/08/2025",

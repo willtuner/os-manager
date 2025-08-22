@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "117136",
+    "data_entrada": "22/08/2025",
+    "servico": "Verificar bomba sem pressão - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5130",
     "cd_equipamento": "5130",
     "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
@@ -134,6 +142,14 @@
     "os": "116606",
     "data_entrada": "14/08/2025",
     "servico": "Trocar rolamento da turbina estourado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5288",
+    "cd_equipamento": "5288",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "115676",
+    "data_entrada": "01/08/2025",
+    "servico": "Revisar bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5529",
