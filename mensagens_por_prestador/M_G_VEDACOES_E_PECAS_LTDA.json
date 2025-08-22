@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5442",
+    "cd_equipamento": "5442",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "117106",
+    "data_entrada": "22/08/2025",
+    "servico": "Vazamento de óleo nos reparos do comando hidráulico - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "204",
+    "cd_equipamento": "204",
+    "modelo": "ESCAVADEIRA HID. 320GC",
+    "os": "117085",
+    "data_entrada": "21/08/2025",
+    "servico": "Desmontar e trocar cilindro boom L/D - (Oficina MG)\nSolicitado Sr. Rafael"
+  },
+  {
+    "frota": "95",
+    "cd_equipamento": "95",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "117075",
+    "data_entrada": "21/08/2025",
+    "servico": "Revisar bloco hidraulico - Faz Nova Manha\nAutorizado Arthur"
+  },
+  {
     "frota": "5345",
     "cd_equipamento": "5345",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -22,14 +46,6 @@
     "os": "116846",
     "data_entrada": "18/08/2025",
     "servico": "Vazamento no motor hidráulico da esteira - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5674",
-    "cd_equipamento": "5674",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "116813",
-    "data_entrada": "18/08/2025",
-    "servico": "Verificar comando das barras de aplicação não está fechando a saída de produto em ambos os lados.\nFazenda Minuano\nSolicitado Sr. Antônio\nResponsável Sr. Maurício"
   },
   {
     "frota": "5488",

@@ -1,5 +1,13 @@
 [
   {
+    "frota": "249",
+    "cd_equipamento": "249",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "117126",
+    "data_entrada": "22/08/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5258",
     "cd_equipamento": "5258",
     "modelo": "JATAO 2000 LT",
@@ -8,67 +16,11 @@
     "servico": "Verificar pneus danificados, avaliando necessidade de troca.\nFazenda Estrela\nSolicitado Sr. Geovane\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5494",
-    "cd_equipamento": "5494",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "116986",
-    "data_entrada": "20/08/2025",
-    "servico": "Pneu traseiro L/E danificado - (Fazenda São Severino) |Parado|\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "149",
-    "cd_equipamento": "149",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "116855",
-    "data_entrada": "19/08/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda Estrela) \nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5526",
     "cd_equipamento": "5526",
     "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
     "os": "116815",
     "data_entrada": "18/08/2025",
     "servico": "Pneu L/E furado  - (Fazenda SL1) - |Parado|\nSolicitado Sr. Wagner\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5027",
-    "cd_equipamento": "5027",
-    "modelo": "CARRETA SCHULTER 12 BEGUES",
-    "os": "116796",
-    "data_entrada": "18/08/2025",
-    "servico": "Pneu L/E furado - (Fazenda NSA) |Parado|\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "287",
-    "cd_equipamento": "287",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116784",
-    "data_entrada": "18/08/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda São Pedro) |Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5571",
-    "cd_equipamento": "5571",
-    "modelo": "CARRETA TRANSBORDO GTM",
-    "os": "116782",
-    "data_entrada": "18/08/2025",
-    "servico": "Pneu L/? furado - (Fazenda Santa Luiza) |Parado|\nSolicitado Sr. Vadim\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "249",
-    "cd_equipamento": "249",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "116774",
-    "data_entrada": "18/08/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada) |Parado|\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5247",
-    "cd_equipamento": "5247",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "116772",
-    "data_entrada": "18/08/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda São Severino) |Parado|\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio"
   }
 ]

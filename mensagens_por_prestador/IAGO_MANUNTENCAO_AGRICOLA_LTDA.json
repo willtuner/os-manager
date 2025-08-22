@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5130",
+    "cd_equipamento": "5130",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "117118",
+    "data_entrada": "22/08/2025",
+    "servico": "Trocar cruzeta do eixo central - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117112",
+    "data_entrada": "22/08/2025",
+    "servico": "Vazamento de óleo no retentor da bomba - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5191",
+    "cd_equipamento": "5191",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "117109",
+    "data_entrada": "22/08/2025",
+    "servico": "Retentor dianteiro e traseiro da bomba com vazamento de óleo - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5718",
+    "cd_equipamento": "5718",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117059",
+    "data_entrada": "21/08/2025",
+    "servico": "Trocar reparos das canecas da bomba - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5603",
+    "cd_equipamento": "5603",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "117047",
+    "data_entrada": "21/08/2025",
+    "servico": "Substituir caixa incorporadora danificada após o operador engatar ré e colidir com a estrutura - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5345",
     "cd_equipamento": "5345",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -94,14 +134,6 @@
     "os": "116606",
     "data_entrada": "14/08/2025",
     "servico": "Trocar rolamento da turbina estourado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5414",
-    "cd_equipamento": "5414",
-    "modelo": "DIST. ADUBO DCA2 7500 S-0114",
-    "os": "116254",
-    "data_entrada": "07/08/2025",
-    "servico": "Quebra da esteira da adubadeira - (Fazenda Santa Izabel) |Parado|\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5529",

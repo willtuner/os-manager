@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5636",
+    "cd_equipamento": "5636",
+    "modelo": "TRANSBORDO MOD.TC-7000 GTM",
+    "os": "117105",
+    "data_entrada": "22/08/2025",
+    "servico": "Trocar reparo do pistão da lança - (Fazenda São José)\nSolicitado Sr. Gilberto Cordeiro\nResponsavel Sr. Rafael"
+  },
+  {
     "frota": "5646",
     "cd_equipamento": "5646",
     "modelo": "TRANSBORDO MOD.TC-7000 GTM",
@@ -22,14 +30,6 @@
     "os": "116894",
     "data_entrada": "19/08/2025",
     "servico": "Fabricar mangueira - (Fazenda Minuano) |Parado|\nSolicitado Sr. Marcio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "273",
-    "cd_equipamento": "273",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116805",
-    "data_entrada": "18/08/2025",
-    "servico": "Prensar mangueiras do hidráulico - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5779",

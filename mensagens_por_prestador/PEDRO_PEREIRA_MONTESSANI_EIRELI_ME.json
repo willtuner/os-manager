@@ -1,5 +1,29 @@
 [
   {
+    "frota": "254",
+    "cd_equipamento": "254",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117108",
+    "data_entrada": "22/08/2025",
+    "servico": "Conjunto de faróis traseiros (cibié) permanece inoperante, mesmo após substituição realizada pelo gerente. - (Fazenda Minuano)\nSolicitado Sr. Marcio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10227",
+    "cd_equipamento": "10227",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117098",
+    "data_entrada": "21/08/2025",
+    "servico": "Cabo da bateria quebrado - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5673",
+    "cd_equipamento": "5673",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "117061",
+    "data_entrada": "21/08/2025",
+    "servico": "Verificar acionamento da solenoide - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "301",
     "cd_equipamento": "301",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -94,14 +118,6 @@
     "os": "116610",
     "data_entrada": "14/08/2025",
     "servico": "Verificar limpador de para-brisa não liga - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5705",
-    "cd_equipamento": "5705",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "116594",
-    "data_entrada": "14/08/2025",
-    "servico": "Avaria no comando eletrônico de abertura e fechamento dos bicos; após emissão de fumaça, equipamento parou de funcionar. - (Fazenda Santa Luiza) |Parado|\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
   },
   {
     "frota": "329",
