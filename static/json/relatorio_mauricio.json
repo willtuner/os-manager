@@ -1,5 +1,82 @@
 [
     {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "308",
+        "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+        "os": "117158",
+        "data_entrada": "22/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu dianteiro L/D vazando no bico - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
+        "frota": "5205",
+        "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
+        "os": "117156",
+        "data_entrada": "22/08/2025",
+        "previsao_saida": "---",
+        "prestador": "M G VEDACOES E PECAS LTDA",
+        "servico": "Desamassar haste da régua amassada por impacto com árvore. - (Fazenda Casa Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "5101",
+        "modelo": "CARRETA TRANSBORDO IFLO",
+        "os": "117155",
+        "data_entrada": "22/08/2025",
+        "previsao_saida": "---",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+        "servico": "Substituir parafuso do gancho - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "RENNAN ARCANJO CREPALDI",
+        "frota": "5264",
+        "modelo": "PULVERIZADOR 2000 LT",
+        "os": "117147",
+        "data_entrada": "22/08/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Instalar argolas de ferro nas asas para suporte das mangueiras. - (Fazenda NSA)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ELVIO CARLOS PORTANTE",
+        "frota": "5728",
+        "modelo": "ROCADEIRA COSTAL FS 221 STIHL",
+        "os": "117142",
+        "data_entrada": "22/08/2025",
+        "previsao_saida": "---",
+        "prestador": "MORENA - MAQUINAS E FERRAGENS",
+        "servico": "Equipamento ruim de pegar - (Pecuaria)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
+        "frota": "5197",
+        "modelo": "PULVERIZADOR 2000 LT JACTO",
+        "os": "117136",
+        "data_entrada": "22/08/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Verificar bomba sem pressão - (Fazenda Casa Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "DIEGO GOMES CAMBOI",
+        "frota": "5696",
+        "modelo": "GUINCHO BIG BAG GT 2200",
+        "os": "117130",
+        "data_entrada": "22/08/2025",
+        "previsao_saida": "---",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+        "servico": "Quebra do pino de sustentação do guincho - (Fazenda Santa Izabel)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "DIEGO GOMES CAMBOI",
         "frota": "5290",
         "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -17,7 +94,7 @@
         "os": "117128",
         "data_entrada": "22/08/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
         "servico": "Trocar registro do bocal - (Fazenda Estrela)",
         "liberado_por": "Mauricio"
     },
@@ -622,7 +699,7 @@
         "os": "115676",
         "data_entrada": "01/08/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
         "servico": "Revisar bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)",
         "liberado_por": "Mauricio"
     },
