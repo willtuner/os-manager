@@ -1,10 +1,17 @@
 [
   {
-    "frota": "5705",
-    "os": "116968",
-    "data": "20/08/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Rolamento do eixo do ventilador quebrado - (Fazenda Santa Izabel) |Parado|"
+    "frota": "10227",
+    "os": "117098",
+    "data": "21/08/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Cabo da bateria quebrado - (Fazenda Santa Luiza)"
+  },
+  {
+    "frota": "5571",
+    "os": "117083",
+    "data": "21/08/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Mangueira do hidráulico furada - (Fazenda Santa Luiza)"
   },
   {
     "frota": "67",
@@ -12,12 +19,5 @@
     "data": "14/08/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Perda total dos freios; identificado derretimento no tanque de óleo diesel, possivelmente causado por superaquecimento no sistema hidráulico. - (Fazenda Santa Luiza)"
-  },
-  {
-    "frota": "5705",
-    "os": "116594",
-    "data": "14/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaria no comando eletrônico de abertura e fechamento dos bicos; após emissão de fumaça, equipamento parou de funcionar. - (Fazenda Santa Luiza) |Parado|"
   }
 ]
