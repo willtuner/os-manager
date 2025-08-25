@@ -1,11 +1,43 @@
 [
   {
-    "frota": "82",
-    "cd_equipamento": "82",
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "117196",
+    "data_entrada": "25/08/2025",
+    "servico": "Verificar cabo do acelerador e trocar bomba manual de combustivel - Faz São Severino\nAutorizado Arthur"
+  },
+  {
+    "frota": "196",
+    "cd_equipamento": "196",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117181",
+    "data_entrada": "25/08/2025",
+    "servico": "Avaliar vazamento de óleo na bomba hidráulica - (Fazenda SL1)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "68",
+    "cd_equipamento": "68",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117113",
+    "os": "117172",
+    "data_entrada": "25/08/2025",
+    "servico": "Avaliar sistema de transmissão do trator, apresentando raspagem ao engatar e retardo na resposta após seleção de marchas - (Pecuaria) \nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "257",
+    "cd_equipamento": "257",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117165",
+    "data_entrada": "23/08/2025",
+    "servico": "Sacar bujão do cárter - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10224",
+    "cd_equipamento": "10224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117143",
     "data_entrada": "22/08/2025",
-    "servico": "Trator apresentando múltiplos vazamentos de óleo em diferentes pontos: bujão do cárter, junta do cárter, tuchos do comando hidráulico e tampa da TDP - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+    "servico": "Verificar ruído anormal na bomba de hidráulico e mangueira de diesel furada - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
   },
   {
     "frota": "225",
@@ -16,44 +48,12 @@
     "servico": "Verificar TDP sem rotação - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "88",
-    "cd_equipamento": "88",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117101",
-    "data_entrada": "22/08/2025",
-    "servico": "Vazamento de óleo de motor na junta do cárter e vazamento de óleo identificado na região da junta central do trator (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "265",
-    "cd_equipamento": "265",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117058",
-    "data_entrada": "21/08/2025",
-    "servico": "Verificar e reparar fechadura da porta travada, impossibilitando a abertura. - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "155",
-    "cd_equipamento": "155",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "117055",
-    "data_entrada": "21/08/2025",
-    "servico": "Sacar bujão do cárter - (Fazenda Minuano)\nSolicitado Sr. Marcio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "288",
     "cd_equipamento": "288",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117054",
     "data_entrada": "21/08/2025",
     "servico": "vazamento nos bicos e na saída do ar quente no bloco - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "259",
-    "cd_equipamento": "259",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117041",
-    "data_entrada": "21/08/2025",
-    "servico": "Mangueiras de diesel do filtro de combustível furada - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
   },
   {
     "frota": "349",
@@ -80,14 +80,6 @@
     "servico": "Verificar e corrigir vazamento de óleo hidráulico nos tuchos do comando ou em suas proximidades. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo \nResponsavel Sr.l Arthur"
   },
   {
-    "frota": "95",
-    "cd_equipamento": "95",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "116824",
-    "data_entrada": "18/08/2025",
-    "servico": "Vazamento de óleo nos tuchos do comando hidráulico e direção dura - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "298",
     "cd_equipamento": "298",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -102,14 +94,6 @@
     "os": "116718",
     "data_entrada": "15/08/2025",
     "servico": "Verificar tração dianteira não aciona - (Fazenda Casa Branca) |Parado|\nSolicitado Sr. João Paulo\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "219",
-    "cd_equipamento": "219",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116717",
-    "data_entrada": "15/08/2025",
-    "servico": "Corrigir vazamento de diesel na mangueira de alimentação, vazamento de óleo de motor entre a caixa seca e o motor, e substituir regulador do cabo do afogador devido a desgaste que impede o aperto - (Fazenda São Severino)\nSolicitado Sr. Paulo Edson/Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
     "frota": "67",

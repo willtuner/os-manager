@@ -1,11 +1,27 @@
 [
   {
+    "frota": "223",
+    "cd_equipamento": "223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117161",
+    "data_entrada": "23/08/2025",
+    "servico": "Substituir vidro traseiro e vidro lateral traseiro quebrados - (Fazenda Pedra Verde) |Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "221",
     "cd_equipamento": "221",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117132",
     "data_entrada": "22/08/2025",
     "servico": "Quebra do vidro da porta - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur\nPS. Tercveira quebra no mês"
+  },
+  {
+    "frota": "248",
+    "cd_equipamento": "248",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "117107",
+    "data_entrada": "22/08/2025",
+    "servico": "Banco do operador apresentando rigidez excessiva, não realizando amortecimento adequado durante a operação - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
   },
   {
     "frota": "125",

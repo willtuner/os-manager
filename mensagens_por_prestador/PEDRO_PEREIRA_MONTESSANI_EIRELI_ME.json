@@ -1,5 +1,29 @@
 [
   {
+    "frota": "217",
+    "cd_equipamento": "217",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117190",
+    "data_entrada": "25/08/2025",
+    "servico": "Verificar motor de partida fumaceando - (Fazenda Pedra Verde) |Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "308",
+    "cd_equipamento": "308",
+    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
+    "os": "117176",
+    "data_entrada": "25/08/2025",
+    "servico": "Verificar trator sem partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "233",
+    "cd_equipamento": "233",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "117163",
+    "data_entrada": "23/08/2025",
+    "servico": "Verificar trator não pega na partida - (Fazenda São Severino) |Parado|\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5706",
     "cd_equipamento": "5706",
     "modelo": "PULVERIZADOR BARRAS TRICICLO",

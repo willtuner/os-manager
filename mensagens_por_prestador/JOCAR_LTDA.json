@@ -1,59 +1,11 @@
 [
   {
-    "frota": "274",
-    "cd_equipamento": "274",
-    "modelo": "TRATOR VALTRA T250 CVT",
-    "os": "117127",
+    "frota": "270",
+    "cd_equipamento": "270",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117157",
     "data_entrada": "22/08/2025",
-    "servico": "Verificar A/C não gela, compressor desacoplando sozinho - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "218",
-    "cd_equipamento": "218",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117084",
-    "data_entrada": "21/08/2025",
-    "servico": "Verificar A/C não gela - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "147",
-    "cd_equipamento": "147",
-    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
-    "os": "116862",
-    "data_entrada": "19/08/2025",
-    "servico": "Verificar A/C não gela - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "258",
-    "cd_equipamento": "258",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116858",
-    "data_entrada": "19/08/2025",
-    "servico": "Condensador de vapor furado - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "274",
-    "cd_equipamento": "274",
-    "modelo": "TRATOR VALTRA T250 CVT",
-    "os": "116811",
-    "data_entrada": "18/08/2025",
-    "servico": "Verificar A/C oscilando - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "254",
-    "cd_equipamento": "254",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116767",
-    "data_entrada": "18/08/2025",
-    "servico": "Condensador de A/C furado - (Fazenda Minuano)\nSolicitado Sr. Marcio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "250",
-    "cd_equipamento": "250",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "116716",
-    "data_entrada": "15/08/2025",
-    "servico": "Verificar A/C liga mas não gela - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Carlos"
+    "servico": "Verificar caindo fluido do teto dentro da cabine - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "251",
@@ -62,29 +14,5 @@
     "os": "116689",
     "data_entrada": "15/08/2025",
     "servico": "Revisar A/C, trocado recentemente condensador de vapor - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "235",
-    "cd_equipamento": "235",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "116657",
-    "data_entrada": "14/08/2025",
-    "servico": "Verificar A/C não gela - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "130",
-    "cd_equipamento": "130",
-    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
-    "os": "116561",
-    "data_entrada": "13/08/2025",
-    "servico": "Verificar A/C não funciona - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "118",
-    "cd_equipamento": "118",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "116543",
-    "data_entrada": "13/08/2025",
-    "servico": "Verificar A/C parou de gelar - (Fazenda Minuano)\nSolicitado Sr. Antônio\nResponsavel Sr. Arthur"
   }
 ]

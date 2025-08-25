@@ -24,14 +24,6 @@
     "servico": "Desmontar e trocar cilindro boom L/D - (Oficina MG)\nSolicitado Sr. Rafael"
   },
   {
-    "frota": "95",
-    "cd_equipamento": "95",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "117075",
-    "data_entrada": "21/08/2025",
-    "servico": "Revisar bloco hidraulico - Faz Nova Manha\nAutorizado Arthur"
-  },
-  {
     "frota": "5345",
     "cd_equipamento": "5345",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -46,14 +38,6 @@
     "os": "116847",
     "data_entrada": "18/08/2025",
     "servico": "Trocar reparo do motor hidráulico L/D - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5126",
-    "cd_equipamento": "5126",
-    "modelo": "ADUBADEIRA KAMAQ 1500 KG",
-    "os": "116846",
-    "data_entrada": "18/08/2025",
-    "servico": "Vazamento no motor hidráulico da esteira - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5488",
@@ -78,13 +62,5 @@
     "os": "116289",
     "data_entrada": "07/08/2025",
     "servico": "Substituir alavanca do registro de fluxo de óleo (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5745",
-    "cd_equipamento": "5745",
-    "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
-    "os": "115566",
-    "data_entrada": "31/07/2025",
-    "servico": "Verificar vazamento no motor hidráulico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   }
 ]
