@@ -1,5 +1,159 @@
 [
     {
+        "solicitante": "DANILO MULARI GONZAGA",
+        "frota": "5667",
+        "modelo": "PODADEIRA HIDRAUTEC HLD1",
+        "os": "117197",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento de óleo nas conexões das mangueira hidráulica - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "5083",
+        "modelo": "CARRETA BAG C/ GUINCHO",
+        "os": "117195",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/D furado - (Fazenda SL1) |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "5430",
+        "modelo": "PULVERIZADOR 600 LT FMC",
+        "os": "117193",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento no reparo da bomba - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
+        "frota": "165",
+        "modelo": "TRATOR JOHN DEERE 6415 4X4",
+        "os": "117191",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu dianteiro L/D furado - (Fazenda Casa Branca) |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "5126",
+        "modelo": "ADUBADEIRA KAMAQ 1500 KG",
+        "os": "117189",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Executar remoção da flange e retrabalho nos furos de fixação, que se encontram alargados, ocasionando folgas e trancos durante a operação - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "RENNAN ARCANJO CREPALDI",
+        "frota": "5264",
+        "modelo": "PULVERIZADOR 2000 LT",
+        "os": "117182",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/E furado - (Fazenda Úrsula) |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "10226",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "117179",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro) |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "5233",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "117178",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento nos retentores do eixo da polia -  (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "DIEGO GOMES CAMBOI",
+        "frota": "5739",
+        "modelo": "ROCADEIRA RC2 E 3100 S0516",
+        "os": "117177",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Soldar proteção do cardam - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "5347",
+        "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+        "os": "117175",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/E furado - (Fazenda SP)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ZYLTON FIGUEREDO SPIGUEL",
+        "frota": "5235",
+        "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
+        "os": "117174",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Desentortar pé de apoio - (Fazenda Casa Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "GABRIEL AUGUSTO BASSO",
+        "frota": "5352",
+        "modelo": "ADUBADEIRA DCCO 10500 S-0114",
+        "os": "117173",
+        "data_entrada": "25/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Verificar vazamento no bico do pneu L/? - (Pecuaria)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "DANILO MULARI GONZAGA",
+        "frota": "5214",
+        "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+        "os": "117169",
+        "data_entrada": "23/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar e corrigir acoplamento das engrenagens e correntes de transmissão; avaliar desgaste dos dentes e necessidade de substituição - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ALTIERES SOARES FERREIRA",
+        "frota": "97",
+        "modelo": "TRATOR JOHN DEERE 5065 4X4",
+        "os": "117162",
+        "data_entrada": "23/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Verificar e avaliar pneu 9.5-24 com corte na parte de cima, expondo a câmara de ar - risco de falha iminente.- (Fazenda Pedra Verde)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
         "frota": "308",
         "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
@@ -173,17 +327,6 @@
         "previsao_saida": "---",
         "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
         "servico": "Mangueira do hidráulico furada - (Fazenda Santa Luiza)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "5422",
-        "modelo": "PULVERIZADOR 600 LT FMC",
-        "os": "117069",
-        "data_entrada": "21/08/2025",
-        "previsao_saida": "---",
-        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Trocar reparos da guarda-chuva - (Fazenda São Pedro)",
         "liberado_por": "Mauricio"
     },
     {
@@ -473,17 +616,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "5126",
-        "modelo": "ADUBADEIRA KAMAQ 1500 KG",
-        "os": "116846",
-        "data_entrada": "18/08/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Vazamento no motor hidráulico da esteira - (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "WAGNER GALDINO DA SILVA",
         "frota": "5526",
         "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
@@ -660,17 +792,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "5745",
-        "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
-        "os": "116291",
-        "data_entrada": "07/08/2025",
-        "previsao_saida": "---",
-        "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-        "servico": "Verificar sistema de vazão da adubadeira não funciona, e vazamento no motor hidráulico. (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
         "frota": "93",
         "modelo": "TRATOR JOHN DEERE 5065 4X4",
@@ -704,17 +825,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "5611",
-        "modelo": "TRINCHA LEVE ARTI. TRLA 180H",
-        "os": "115588",
-        "data_entrada": "31/07/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Soldar trinca na base dos parafusos de fixação do multiplicador (Fazenda São Pedro)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "MURILO J ONCK LEMES DA SILVA",
         "frota": "5355",
         "modelo": "ATOMIZADOR JACTO 4000 LT",
@@ -723,17 +833,6 @@
         "previsao_saida": "---",
         "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
         "servico": "Vazamento de produto na fibra - (Fazenda Bela Manhã)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ROMES ROSA SILVA",
-        "frota": "5745",
-        "modelo": "DIST. ADUBO DCA DC 7500 S-0114",
-        "os": "115566",
-        "data_entrada": "31/07/2025",
-        "previsao_saida": "---",
-        "prestador": "M G VEDACOES E PECAS LTDA",
-        "servico": "Verificar vazamento no motor hidráulico - (Fazenda São Pedro)",
         "liberado_por": "Mauricio"
     },
     {
