@@ -1,19 +1,35 @@
 [
   {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "117196",
-    "data_entrada": "25/08/2025",
-    "servico": "Verificar cabo do acelerador e trocar bomba manual de combustivel - Faz São Severino\nAutorizado Arthur"
+    "frota": "25",
+    "cd_equipamento": "25",
+    "modelo": "TRATOR VALTRA BF 75 4X4",
+    "os": "117263",
+    "data_entrada": "26/08/2025",
+    "servico": "Revisar freio das cornetas - Faz Minuano\nAutorizado Arthur"
   },
   {
-    "frota": "196",
-    "cd_equipamento": "196",
+    "frota": "219",
+    "cd_equipamento": "219",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117181",
+    "os": "117235",
+    "data_entrada": "26/08/2025",
+    "servico": "Verificar trator não atinge rotação e freio não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinivius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "117232",
+    "data_entrada": "26/08/2025",
+    "servico": "Quebra da sinta do acelerador de mão  - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "211",
+    "cd_equipamento": "211",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "117220",
     "data_entrada": "25/08/2025",
-    "servico": "Avaliar vazamento de óleo na bomba hidráulica - (Fazenda SL1)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+    "servico": "Avaliar sistema de embreagem do trator, apresentando dificuldade de acionamento e possível desgaste de componentes. - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "68",
@@ -32,30 +48,6 @@
     "servico": "Sacar bujão do cárter - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "10224",
-    "cd_equipamento": "10224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117143",
-    "data_entrada": "22/08/2025",
-    "servico": "Verificar ruído anormal na bomba de hidráulico e mangueira de diesel furada - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "225",
-    "cd_equipamento": "225",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "117111",
-    "data_entrada": "22/08/2025",
-    "servico": "Verificar TDP sem rotação - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "288",
-    "cd_equipamento": "288",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117054",
-    "data_entrada": "21/08/2025",
-    "servico": "vazamento nos bicos e na saída do ar quente no bloco - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "349",
     "cd_equipamento": "349",
     "modelo": "JOHN DEERE 6110E",
@@ -70,38 +62,6 @@
     "os": "116918",
     "data_entrada": "19/08/2025",
     "servico": "Trocar mangueira do comando hidráulico estourada - (Fazenda SP)\nSolicitado Sr. Geovane\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "285",
-    "cd_equipamento": "285",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116868",
-    "data_entrada": "19/08/2025",
-    "servico": "Verificar e corrigir vazamento de óleo hidráulico nos tuchos do comando ou em suas proximidades. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo \nResponsavel Sr.l Arthur"
-  },
-  {
-    "frota": "298",
-    "cd_equipamento": "298",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116764",
-    "data_entrada": "16/08/2025",
-    "servico": "Verificar embreagem - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "90",
-    "cd_equipamento": "90",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "116718",
-    "data_entrada": "15/08/2025",
-    "servico": "Verificar tração dianteira não aciona - (Fazenda Casa Branca) |Parado|\nSolicitado Sr. João Paulo\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "67",
-    "cd_equipamento": "67",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "116626",
-    "data_entrada": "14/08/2025",
-    "servico": "Perda total dos freios; identificado derretimento no tanque de óleo diesel, possivelmente causado por superaquecimento no sistema hidráulico. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
   },
   {
     "frota": "10222",

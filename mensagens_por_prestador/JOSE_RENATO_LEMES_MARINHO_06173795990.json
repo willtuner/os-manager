@@ -1,5 +1,37 @@
 [
   {
+    "frota": "125",
+    "cd_equipamento": "125",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "117279",
+    "data_entrada": "26/08/2025",
+    "servico": "Instalar grade frontal e fazer proteção para para-lamas - (Oficina)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "118",
+    "cd_equipamento": "118",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "117240",
+    "data_entrada": "26/08/2025",
+    "servico": "Fazer solda no cotovelo do escapamento - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsvel Sr. Arthur"
+  },
+  {
+    "frota": "5819",
+    "cd_equipamento": "5819",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117208",
+    "data_entrada": "25/08/2025",
+    "servico": "Adaptação pra instalação do SPE - Faz SL1\nAutorizado Arthur"
+  },
+  {
+    "frota": "5820",
+    "cd_equipamento": "5820",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117207",
+    "data_entrada": "25/08/2025",
+    "servico": "Adaptar asas para instalar sistema de SPE - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5264",
     "cd_equipamento": "5264",
     "modelo": "PULVERIZADOR 2000 LT",
@@ -24,28 +56,12 @@
     "servico": "Fazer solda em trinca na estrutura da asa - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "117128",
-    "data_entrada": "22/08/2025",
-    "servico": "Trocar registro do bocal - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5156",
     "cd_equipamento": "5156",
     "modelo": "PULVERIZADOR 600 LT FMC",
     "os": "117103",
     "data_entrada": "22/08/2025",
     "servico": "Reforma - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsável Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "5579",
-    "cd_equipamento": "5579",
-    "modelo": "TRITURADOR TFI-1600 GTM",
-    "os": "117091",
-    "data_entrada": "21/08/2025",
-    "servico": "Substituir facas de corte da trincha - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "331",
@@ -64,14 +80,6 @@
     "servico": "Desamassar asa do alma - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "300",
-    "cd_equipamento": "300",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117056",
-    "data_entrada": "21/08/2025",
-    "servico": "Solda grade de proteção dianteira - (Fazenda Minuano)\nSolicitado Sr. Marcio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5197",
     "cd_equipamento": "5197",
     "modelo": "PULVERIZADOR 2000 LT JACTO",
@@ -86,14 +94,6 @@
     "os": "116959",
     "data_entrada": "19/08/2025",
     "servico": "Fabricar caixa de transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "297",
-    "cd_equipamento": "297",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116812",
-    "data_entrada": "18/08/2025",
-    "servico": "Trocar os paralamas laterais para os de ferro - Faz Biscui\nE instalar proteção frontal\nPendencia 4208-4209\nAutorizado Arthur"
   },
   {
     "frota": "5270",
@@ -142,14 +142,6 @@
     "os": "116408",
     "data_entrada": "11/08/2025",
     "servico": "Aumentar cesto traseiro para transporte de produto e instalar mais uma saída de vazão no ramal - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio\nAutorizado fazer Sr. Rafael gerente de manutenção.\n*Lançar custo como investimento.*"
-  },
-  {
-    "frota": "226",
-    "cd_equipamento": "226",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "115526",
-    "data_entrada": "30/07/2025",
-    "servico": "Teto da cabine do trator danificado, com estrutura comprometida (podre) e presença de furos, permitindo a entrada de sujeira e impurezas oriundas da pulverização. - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
   },
   {
     "frota": "91",

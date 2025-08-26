@@ -1,5 +1,13 @@
 [
   {
+    "frota": "262",
+    "cd_equipamento": "262",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117264",
+    "data_entrada": "26/08/2025",
+    "servico": "Verificar trator perdendo potencia - (Fazenda São José)\nSolicitado Sr. Rafael \nResponsável Sr. Rafael"
+  },
+  {
     "frota": "5040",
     "cd_equipamento": "5040",
     "modelo": "GERADOR DE ENERGIA",
@@ -14,38 +22,6 @@
     "os": "117133",
     "data_entrada": "22/08/2025",
     "servico": "Troca de óleo e filtros (Revisão) - (Fazenda Minuano)\nSolicitado Zylton\nResponsavel Sr. Rafael"
-  },
-  {
-    "frota": "286",
-    "cd_equipamento": "286",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117092",
-    "data_entrada": "21/08/2025",
-    "servico": "Vazamento na bomba junta da bomba injetora - (Fazenda Terra Branca)\nSolicitado Sr. Eder \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "116991",
-    "data_entrada": "20/08/2025",
-    "servico": "Vazamento de óleo na bomba injetora - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5470",
-    "cd_equipamento": "5470",
-    "modelo": "MOTOBOMBA MWM MOD 6.12TCA",
-    "os": "116979",
-    "data_entrada": "20/08/2025",
-    "servico": "Verificar moto bomba fumaceando (fumaça preta) e afogando - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "196",
-    "cd_equipamento": "196",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116969",
-    "data_entrada": "20/08/2025",
-    "servico": "Avaliar vazamento de óleo diesel na bomba injetora - (Fazenda Casa Branca)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "269",

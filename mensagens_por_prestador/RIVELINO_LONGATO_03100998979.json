@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5349",
+    "cd_equipamento": "5349",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "117228",
+    "data_entrada": "26/08/2025",
+    "servico": "Pneu L/E traseiro vazando pelo bico - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117128",
+    "data_entrada": "26/08/2025",
+    "servico": "Trocar pneu traseiro direito estourado \nFazenda Casa Branca\nSolicitado Sr. Paulo Vinicius\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5083",
     "cd_equipamento": "5083",
     "modelo": "CARRETA BAG C/ GUINCHO",
@@ -46,53 +62,5 @@
     "os": "117173",
     "data_entrada": "25/08/2025",
     "servico": "Verificar vazamento no bico do pneu L/? - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "97",
-    "cd_equipamento": "97",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "117162",
-    "data_entrada": "23/08/2025",
-    "servico": "Verificar e avaliar pneu 9.5-24 com corte na parte de cima, expondo a câmara de ar - risco de falha iminente.- (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "69",
-    "cd_equipamento": "69",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117160",
-    "data_entrada": "23/08/2025",
-    "servico": "Verificar e avaliar necessidade de troca dos pneus dianteiro, segundo o gerente estão ruins.\nFazenda Pedra Verde\nSolicitado Sr. Altieres\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "117158",
-    "data_entrada": "22/08/2025",
-    "servico": "Pneu dianteiro L/D vazando no bico - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "249",
-    "cd_equipamento": "249",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "117126",
-    "data_entrada": "22/08/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5258",
-    "cd_equipamento": "5258",
-    "modelo": "JATAO 2000 LT",
-    "os": "117035",
-    "data_entrada": "21/08/2025",
-    "servico": "Verificar pneus danificados, avaliando necessidade de troca.\nFazenda Estrela\nSolicitado Sr. Geovane\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5526",
-    "cd_equipamento": "5526",
-    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
-    "os": "116815",
-    "data_entrada": "18/08/2025",
-    "servico": "Pneu L/E furado  - (Fazenda SL1) - |Parado|\nSolicitado Sr. Wagner\nResponsavel Sr. Mauricio"
   }
 ]

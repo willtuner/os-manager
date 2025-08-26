@@ -1,43 +1,27 @@
 [
   {
-    "frota": "5197",
-    "cd_equipamento": "5197",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "117136",
-    "data_entrada": "22/08/2025",
-    "servico": "Verificar bomba sem pressão - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+    "frota": "5348",
+    "cd_equipamento": "5348",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117225",
+    "data_entrada": "25/08/2025",
+    "servico": "Substituir coroas do sistema de transmissão por modelos de maior diâmetro, visando aumento da vazão, uma vez que o sistema atual não atinge a capacidade necessária - (Fazenda SP)\nSolicitado Sr. Geovane Libero\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5130",
-    "cd_equipamento": "5130",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "117118",
-    "data_entrada": "22/08/2025",
-    "servico": "Trocar cruzeta do eixo central - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthur"
+    "frota": "5347",
+    "cd_equipamento": "5347",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117224",
+    "data_entrada": "25/08/2025",
+    "servico": "Substituir coroas do sistema de transmissão por modelos de maior diâmetro, visando aumento da vazão, uma vez que o sistema atual não atinge a capacidade necessária - (Fazenda SP)\nSolicitado Sr. Geovane Libero\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "117112",
-    "data_entrada": "22/08/2025",
-    "servico": "Vazamento de óleo no retentor da bomba - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5191",
-    "cd_equipamento": "5191",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "117109",
-    "data_entrada": "22/08/2025",
-    "servico": "Retentor dianteiro e traseiro da bomba com vazamento de óleo - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5718",
-    "cd_equipamento": "5718",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "117059",
-    "data_entrada": "21/08/2025",
-    "servico": "Trocar reparos das canecas da bomba - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Mauricio"
+    "frota": "5248",
+    "cd_equipamento": "5248",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117223",
+    "data_entrada": "25/08/2025",
+    "servico": "Substituir coroas do sistema de transmissão por modelos de maior diâmetro, visando aumento da vazão, uma vez que o sistema atual não atinge a capacidade necessária - (Fazenda SP)\nSolicitado Sr. Geovane Libero\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5603",
@@ -48,92 +32,12 @@
     "servico": "Substituir caixa incorporadora danificada após o operador engatar ré e colidir com a estrutura - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "116995",
-    "data_entrada": "20/08/2025",
-    "servico": "Trocar agitador de calda com as pás quebradas - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5600",
-    "cd_equipamento": "5600",
-    "modelo": "ATOMIZADOR NATALI 4000 LT",
-    "os": "116993",
-    "data_entrada": "20/08/2025",
-    "servico": "Vazamento no comando e vazamento e  vazamento no retentor da bomba - (Fazenda Nova Manhã) \nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5614",
-    "cd_equipamento": "5614",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "116934",
-    "data_entrada": "19/08/2025",
-    "servico": "Avaliar falha na hélice traseira, que não está promovendo ventilação adequada. - (Fazenda São Severino)|Parado|\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5399",
-    "cd_equipamento": "5399",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "116925",
-    "data_entrada": "19/08/2025",
-    "servico": "Substituir hélice da turbina quebrada devido a impacto com galho. - (Fazenda Terra Branca) |Parado|\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5022",
-    "cd_equipamento": "5022",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "116920",
-    "data_entrada": "19/08/2025",
-    "servico": "Verificar tanque que não libera produto ao acionar; avaliar possível falha na bomba ou obstrução na tubulação. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5211",
-    "cd_equipamento": "5211",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "116908",
-    "data_entrada": "19/08/2025",
-    "servico": "Troca do rolamento do eixo da turbina - (Fazenda SP)\nSolicitado Sr. Geovane \nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5521",
     "cd_equipamento": "5521",
     "modelo": "PULVERIZADOR GULIVER 4000",
     "os": "116900",
     "data_entrada": "19/08/2025",
     "servico": "Corrigir vazamento de produto nos cabeçotes das válvulas - (Fazenda São Severino) \nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5367",
-    "cd_equipamento": "5367",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "116897",
-    "data_entrada": "19/08/2025",
-    "servico": "Sacar e trocar parafuso de fixação da torre - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "116867",
-    "data_entrada": "19/08/2025",
-    "servico": "Alinhar a polia do agitador - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5491",
-    "cd_equipamento": "5491",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "116795",
-    "data_entrada": "18/08/2025",
-    "servico": "Verificar desgaste do eixo da bomba, verificar possibilidade de colocar chaveta maior - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5486",
-    "cd_equipamento": "5486",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "116722",
-    "data_entrada": "15/08/2025",
-    "servico": "Ruído anormal no rolamento do eixo da turbina - (Fazenda Estrela)\nSolicitado Sr. Carlos Henrique\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5603",
@@ -150,13 +54,5 @@
     "os": "115676",
     "data_entrada": "01/08/2025",
     "servico": "Revisar bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5529",
-    "cd_equipamento": "5529",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "114211",
-    "data_entrada": "14/07/2025",
-    "servico": "Trocar os ramais para distribuição dos bicos do SPE - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Maurício"
   }
 ]

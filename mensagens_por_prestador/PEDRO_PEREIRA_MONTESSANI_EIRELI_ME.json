@@ -1,27 +1,51 @@
 [
   {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117270",
+    "data_entrada": "26/08/2025",
+    "servico": "Verificar chicote eletrico do cibies e reinstalar proteção dianteira - Faz Estrela\nAutorizado Arthur"
+  },
+  {
+    "frota": "269",
+    "cd_equipamento": "269",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117269",
+    "data_entrada": "26/08/2025",
+    "servico": "Instalar  cibié traseiro L/D quebrado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "82",
+    "cd_equipamento": "82",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "117242",
+    "data_entrada": "26/08/2025",
+    "servico": "Verificar painel de instrumentos apagado e farol L/D queimado - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "226",
+    "cd_equipamento": "226",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "117226",
+    "data_entrada": "25/08/2025",
+    "servico": "Verificar faróis e meia-luz que não acendem, apesar de as lâmpadas não estarem queimadas; substituir Cibiés traseiros queimados (sem estoque disponível no momento) - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5672",
+    "cd_equipamento": "5672",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "117204",
+    "data_entrada": "25/08/2025",
+    "servico": "Verificar conexões do terminal eletrico do painel - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "217",
     "cd_equipamento": "217",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117190",
     "data_entrada": "25/08/2025",
     "servico": "Verificar motor de partida fumaceando - (Fazenda Pedra Verde) |Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "117176",
-    "data_entrada": "25/08/2025",
-    "servico": "Verificar trator sem partida - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "233",
-    "cd_equipamento": "233",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "117163",
-    "data_entrada": "23/08/2025",
-    "servico": "Verificar trator não pega na partida - (Fazenda São Severino) |Parado|\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5706",
@@ -48,68 +72,12 @@
     "servico": "Conjunto de faróis traseiros (cibié) permanece inoperante, mesmo após substituição realizada pelo gerente. - (Fazenda Minuano)\nSolicitado Sr. Marcio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "10227",
-    "cd_equipamento": "10227",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117098",
-    "data_entrada": "21/08/2025",
-    "servico": "Cabo da bateria quebrado - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5673",
-    "cd_equipamento": "5673",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "117061",
-    "data_entrada": "21/08/2025",
-    "servico": "Verificar acionamento da solenoide - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "301",
     "cd_equipamento": "301",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117045",
     "data_entrada": "21/08/2025",
     "servico": "Verificar luz da bateria acessa no painel, indicando que o alternador não está carregando a bateria - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "117030",
-    "data_entrada": "21/08/2025",
-    "servico": "Verificar trator sem partida - (Fazenda São Paulo) |Parado|\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "324",
-    "cd_equipamento": "324",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "117028",
-    "data_entrada": "21/08/2025",
-    "servico": "Verificar pisca alerta e setas não ascendem. E verificar farol do teto queimado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "244",
-    "cd_equipamento": "244",
-    "modelo": "TRATOR MASSEY FERGUSON 3307",
-    "os": "117021",
-    "data_entrada": "20/08/2025",
-    "servico": "Revisão elétrica - (Oficina)\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "195",
-    "cd_equipamento": "195",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116973",
-    "data_entrada": "20/08/2025",
-    "servico": "Verificar faróis não ascendem - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10120",
-    "cd_equipamento": "10120",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116971",
-    "data_entrada": "20/08/2025",
-    "servico": "Terminais dos faróis derretidos - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "10219",
@@ -198,14 +166,6 @@
     "os": "116444",
     "data_entrada": "11/08/2025",
     "servico": "Trocar sensores do freio, limpador de parabrisa e revisar - Faz Severino\nAutorizado Arthur"
-  },
-  {
-    "frota": "308",
-    "cd_equipamento": "308",
-    "modelo": "TRATO NEW HOLLAND TL 5.100 CAB",
-    "os": "116374",
-    "data_entrada": "08/08/2025",
-    "servico": "Trocar lanterna - Faz Casa Branca\nAutorizado Arthur"
   },
   {
     "frota": "165",
