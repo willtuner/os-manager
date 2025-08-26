@@ -1,5 +1,26 @@
 [
   {
+    "frota": "349",
+    "os": "117259",
+    "data": "26/08/2025",
+    "prestador": "M G VEDACOES E PECAS LTDA",
+    "servico": "Confeccionar e instalar proteção para operação na trincheira - (Oficina M.G)"
+  },
+  {
+    "frota": "5275",
+    "os": "117238",
+    "data": "26/08/2025",
+    "prestador": "nan",
+    "servico": "Reduzir altura da torre - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "94",
+    "os": "117202",
+    "data": "25/08/2025",
+    "prestador": "NILSON DA SILVA 06145762969",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "27",
     "os": "117188",
     "data": "25/08/2025",
@@ -7,25 +28,11 @@
     "servico": "Verificar trator sem freio - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "5275",
-    "os": "117183",
-    "data": "25/08/2025",
-    "prestador": "nan",
-    "servico": "Soldar proteção dos bicos - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "27",
     "os": "117110",
     "data": "22/08/2025",
     "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
     "servico": "Verificar direção dura - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5191",
-    "os": "117109",
-    "data": "22/08/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Retentor dianteiro e traseiro da bomba com vazamento de óleo - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5600",
@@ -40,13 +47,6 @@
     "data": "21/08/2025",
     "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
     "servico": "Terminal da direção L/E estourado - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5600",
-    "os": "116993",
-    "data": "20/08/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento no comando e vazamento e  vazamento no retentor da bomba - (Fazenda Nova Manhã)"
   },
   {
     "frota": "349",
@@ -131,12 +131,5 @@
     "data": "14/07/2025",
     "prestador": "nan",
     "servico": "Trocar os ramais para distribuição dos bicos do SPE e instalar pistões de abertura do comando abre e fecha - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5529",
-    "os": "114211",
-    "data": "14/07/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar os ramais para distribuição dos bicos do SPE - (Fazenda Nova Manhã)"
   }
 ]

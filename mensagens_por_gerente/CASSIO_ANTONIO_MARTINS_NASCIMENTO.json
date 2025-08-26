@@ -1,52 +1,24 @@
 [
   {
-    "frota": "233",
-    "os": "117196",
-    "data": "25/08/2025",
+    "frota": "234",
+    "os": "117232",
+    "data": "26/08/2025",
     "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar cabo do acelerador e trocar bomba manual de combustivel - Faz São Severino"
+    "servico": "Quebra da sinta do acelerador de mão  - (Fazenda São Severino)"
   },
   {
-    "frota": "308",
-    "os": "117176",
+    "frota": "226",
+    "os": "117226",
     "data": "25/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator sem partida - (Fazenda São Severino)"
+    "servico": "Verificar faróis e meia-luz que não acendem, apesar de as lâmpadas não estarem queimadas; substituir Cibiés traseiros queimados (sem estoque disponível no momento) - (Fazenda São Severino)"
   },
   {
-    "frota": "233",
-    "os": "117163",
-    "data": "23/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar trator não pega na partida - (Fazenda São Severino) |Parado|"
-  },
-  {
-    "frota": "308",
-    "os": "117158",
-    "data": "22/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D vazando no bico - (Fazenda São Severino)"
-  },
-  {
-    "frota": "225",
-    "os": "117111",
-    "data": "22/08/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar TDP sem rotação - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5579",
-    "os": "117091",
-    "data": "21/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir facas de corte da trincha - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5614",
-    "os": "116934",
-    "data": "19/08/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Avaliar falha na hélice traseira, que não está promovendo ventilação adequada. - (Fazenda São Severino)|Parado|"
+    "frota": "5612",
+    "os": "117219",
+    "data": "25/08/2025",
+    "prestador": "nan",
+    "servico": "Verificar bomba de pulverização apresentando óleo esbranquiçado (possível contaminação por água). - (Fazenda São Severino)"
   },
   {
     "frota": "226",
@@ -75,12 +47,5 @@
     "data": "08/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "\"Verificar cibiés de teto que não acendem. Operador já verificou conectores, fusíveis e demais componentes básicos. - (Fazenda São Severino)"
-  },
-  {
-    "frota": "226",
-    "os": "115526",
-    "data": "30/07/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Teto da cabine do trator danificado, com estrutura comprometida (podre) e presença de furos, permitindo a entrada de sujeira e impurezas oriundas da pulverização. - (Fazenda São Severino)"
   }
 ]
