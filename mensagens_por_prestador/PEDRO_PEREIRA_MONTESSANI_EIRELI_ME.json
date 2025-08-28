@@ -1,5 +1,21 @@
 [
   {
+    "frota": "10222",
+    "cd_equipamento": "10222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117356",
+    "data_entrada": "27/08/2025",
+    "servico": "Verificar funcionamento do trator e verificar o fusível geral - Faz Terra Branca\nAutorizado Arthur"
+  },
+  {
+    "frota": "83",
+    "cd_equipamento": "83",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "117301",
+    "data_entrada": "27/08/2025",
+    "servico": "Verificar sistema de segurança do trator; máquina está dando partida com marcha engatada. - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "258",
     "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -16,52 +32,12 @@
     "servico": "Instalar  cibié traseiro L/D quebrado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "82",
-    "cd_equipamento": "82",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117242",
-    "data_entrada": "26/08/2025",
-    "servico": "Verificar painel de instrumentos apagado e farol L/D queimado - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "226",
-    "cd_equipamento": "226",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "117226",
-    "data_entrada": "25/08/2025",
-    "servico": "Verificar faróis e meia-luz que não acendem, apesar de as lâmpadas não estarem queimadas; substituir Cibiés traseiros queimados (sem estoque disponível no momento) - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5672",
-    "cd_equipamento": "5672",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "117204",
-    "data_entrada": "25/08/2025",
-    "servico": "Verificar conexões do terminal eletrico do painel - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "217",
     "cd_equipamento": "217",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117190",
     "data_entrada": "25/08/2025",
     "servico": "Verificar motor de partida fumaceando - (Fazenda Pedra Verde) |Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5706",
-    "cd_equipamento": "5706",
-    "modelo": "PULVERIZADOR BARRAS TRICICLO",
-    "os": "117122",
-    "data_entrada": "22/08/2025",
-    "servico": "Verificar sistema do Dransh que não está interrompendo a vazão do produto ao ser desligado. - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5697",
-    "cd_equipamento": "5697",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "117115",
-    "data_entrada": "22/08/2025",
-    "servico": "Substituir botão de acionamento da pistola do dransh - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "254",
@@ -120,14 +96,6 @@
     "servico": "Trocar lanterna do teto L/E - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Carlos"
   },
   {
-    "frota": "263",
-    "cd_equipamento": "263",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116610",
-    "data_entrada": "14/08/2025",
-    "servico": "Verificar limpador de para-brisa não liga - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "329",
     "cd_equipamento": "329",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -142,14 +110,6 @@
     "os": "116555",
     "data_entrada": "13/08/2025",
     "servico": "Revisão do sistema eletrico do trator - Oficina OMC\nAutorizado Arthur"
-  },
-  {
-    "frota": "5657",
-    "cd_equipamento": "5657",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "116514",
-    "data_entrada": "12/08/2025",
-    "servico": "Substituir chicote da lança do aplicador - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo \nResponsavel Sr. Arthur"
   },
   {
     "frota": "208",
@@ -206,14 +166,6 @@
     "os": "115453",
     "data_entrada": "29/07/2025",
     "servico": "Revisar sinalização - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "203",
-    "cd_equipamento": "203",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "115230",
-    "data_entrada": "24/07/2025",
-    "servico": "Verificar sirene de ré e buzina não funcionam - (Fazenda Bela Manhã)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
   },
   {
     "frota": "329",

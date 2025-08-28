@@ -1,35 +1,43 @@
 [
   {
-    "frota": "5027",
-    "cd_equipamento": "5027",
-    "modelo": "CARRETA SCHULTER 12 BEGUES",
-    "os": "117171",
+    "frota": "5461",
+    "cd_equipamento": "5461",
+    "modelo": "GUINCHO AGRICOLA HIDRA GAHG-T",
+    "os": "117310",
+    "data_entrada": "27/08/2025",
+    "servico": "Confeccionar e instalar barra de engate do terceiro ponto, ausente neste implemento. - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5093",
+    "cd_equipamento": "5093",
+    "modelo": "GUINCHO HIDRAULICO",
+    "os": "117309",
+    "data_entrada": "27/08/2025",
+    "servico": "Vazamento no pistão e reparar terceiro ponto - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5659",
+    "cd_equipamento": "5659",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117267",
+    "data_entrada": "26/08/2025",
+    "servico": "Tirar folga do cabeçalho - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5461",
+    "cd_equipamento": "5461",
+    "modelo": "GUINCHO AGRICOLA HIDRA GAHG-T",
+    "os": "117230",
+    "data_entrada": "26/08/2025",
+    "servico": "Quebra do suporte do giro do pistão - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5235",
+    "cd_equipamento": "5235",
+    "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
+    "os": "117174",
     "data_entrada": "25/08/2025",
-    "servico": "Trocar reparos do pistão do giro - (Fazenda SP)\nSolicitado Sr. Gilson\nResponsavel Sr. Izaias"
-  },
-  {
-    "frota": "5564",
-    "cd_equipamento": "5564",
-    "modelo": "BARRA APLICACAO DE HERBICIDA",
-    "os": "117090",
-    "data_entrada": "21/08/2025",
-    "servico": "Fazer solda em trincas na estrutura - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5571",
-    "cd_equipamento": "5571",
-    "modelo": "CARRETA TRANSBORDO GTM",
-    "os": "117083",
-    "data_entrada": "21/08/2025",
-    "servico": "Mangueira do hidráulico furada - (Fazenda Santa Luiza) \nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5783",
-    "cd_equipamento": "5783",
-    "modelo": "DESENROLADOR DE MANGUEIRA",
-    "os": "117049",
-    "data_entrada": "21/08/2025",
-    "servico": "Verificar braço de articulação esquerdo solto, instalar tampa de apoio das mangueiras por uma de metal e colocar mola do freio que está faltando. - (Fazenda Santa Luiza)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+    "servico": "Desentortar pé de apoio - (Fazenda Casa Branca)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5779",
@@ -40,35 +48,11 @@
     "servico": "Soldar bits na corrente, confeccionar calço para elevação do raspador e corrigir vazamento no eixo da corrente -  (Fazenda SL1)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5260",
-    "cd_equipamento": "5260",
-    "modelo": "MOTOR IRRIGA TURBOMAQ 125 GS",
-    "os": "116730",
-    "data_entrada": "15/08/2025",
-    "servico": "Avaliar e corrigir empenamento da haste (popularmente chamada de 'pica-pau') do sistema Hidro Roll, por meio de recuperação ou substituição. - (Fazenda Casa Branca)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5784",
-    "cd_equipamento": "5784",
-    "modelo": "DESENROLADOR DE MANGUEIRA",
-    "os": "116688",
-    "data_entrada": "15/08/2025",
-    "servico": "Montar arco de ferro e solda na estrutura do chassi - (Fazenda Santa Luiza)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5645",
     "cd_equipamento": "5645",
     "modelo": "TRANSBORDO MOD.TC-7000 GTM",
     "os": "116503",
     "data_entrada": "12/08/2025",
     "servico": "Quebra dos dentes do eixo do giro  - (Fazenda Alvorada)}\nSolicitado Sr Gilson (Mecânico)"
-  },
-  {
-    "frota": "5774",
-    "cd_equipamento": "5774",
-    "modelo": "VALETADEIRA RTX 250",
-    "os": "114993",
-    "data_entrada": "22/07/2025",
-    "servico": "Trava de segurança apresentando travamento, dificultando ou impedindo o acionamento do sistema. Necessário avaliar causa e realizar ajuste ou substituição, se necessário. - (Fazenda Pedra Verde)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
   }
 ]

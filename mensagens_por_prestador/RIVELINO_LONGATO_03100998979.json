@@ -1,11 +1,43 @@
 [
   {
-    "frota": "5349",
-    "cd_equipamento": "5349",
-    "modelo": "ROCADEIRA RC2 E 4500 TATU",
-    "os": "117228",
+    "frota": "5495",
+    "cd_equipamento": "5495",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117340",
+    "data_entrada": "27/08/2025",
+    "servico": "Pneu L/E traseiro furado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "117302",
+    "data_entrada": "27/08/2025",
+    "servico": "Pneu dianteiro L/E - (Fazenda Casa Branca) |Parado|\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "315",
+    "cd_equipamento": "315",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "117294",
+    "data_entrada": "27/08/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda São Paulo) |Parado|\nSolicitado Sr. Geovane\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5545",
+    "cd_equipamento": "5545",
+    "modelo": "PULVERIZADOR BARRA QUADRICICLO",
+    "os": "117283",
+    "data_entrada": "27/08/2025",
+    "servico": "Pneu traseiro L/E traseiro - (Oficina)\nSolicitado Sr. Carlos Aparecido \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5455",
+    "cd_equipamento": "5455",
+    "modelo": "CARRETA TRASNP LAR 510/154/030",
+    "os": "117243",
     "data_entrada": "26/08/2025",
-    "servico": "Pneu L/E traseiro vazando pelo bico - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson \nResponsavel Sr. Mauricio"
+    "servico": "Sacar e substituir parafusos da roda L/E - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5487",
@@ -22,45 +54,5 @@
     "os": "117195",
     "data_entrada": "25/08/2025",
     "servico": "Pneu L/D furado - (Fazenda SL1) |Parado|\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "165",
-    "cd_equipamento": "165",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "117191",
-    "data_entrada": "25/08/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Casa Branca) |Parado|\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5264",
-    "cd_equipamento": "5264",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "117182",
-    "data_entrada": "25/08/2025",
-    "servico": "Pneu L/E furado - (Fazenda Úrsula) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "10226",
-    "cd_equipamento": "10226",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117179",
-    "data_entrada": "25/08/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro) |Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5347",
-    "cd_equipamento": "5347",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "117175",
-    "data_entrada": "25/08/2025",
-    "servico": "Pneu L/E furado - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5352",
-    "cd_equipamento": "5352",
-    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
-    "os": "117173",
-    "data_entrada": "25/08/2025",
-    "servico": "Verificar vazamento no bico do pneu L/? - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Mauricio"
   }
 ]

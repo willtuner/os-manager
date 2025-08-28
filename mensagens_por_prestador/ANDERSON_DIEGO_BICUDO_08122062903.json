@@ -1,5 +1,29 @@
 [
   {
+    "frota": "10224",
+    "cd_equipamento": "10224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117337",
+    "data_entrada": "27/08/2025",
+    "servico": "Trocar caixa de filtro quebrada - (Fazenda NSA) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "192",
+    "cd_equipamento": "192",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "117316",
+    "data_entrada": "27/08/2025",
+    "servico": "Cabo do acelerador de mão quebrado - (Fazenda NSA)\nSolicitado Sr. Izaias \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "102",
+    "cd_equipamento": "102",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "117296",
+    "data_entrada": "27/08/2025",
+    "servico": "Vazamento de óleo no MAP e no redutor do diferencial dianteiro - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResposanvel Sr. Arthur"
+  },
+  {
     "frota": "25",
     "cd_equipamento": "25",
     "modelo": "TRATOR VALTRA BF 75 4X4",
@@ -16,14 +40,6 @@
     "servico": "Verificar trator não atinge rotação e freio não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinivius\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "234",
-    "cd_equipamento": "234",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "117232",
-    "data_entrada": "26/08/2025",
-    "servico": "Quebra da sinta do acelerador de mão  - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "211",
     "cd_equipamento": "211",
     "modelo": "TRATOR JOHN DEERE 5070 E",
@@ -38,14 +54,6 @@
     "os": "117172",
     "data_entrada": "25/08/2025",
     "servico": "Avaliar sistema de transmissão do trator, apresentando raspagem ao engatar e retardo na resposta após seleção de marchas - (Pecuaria) \nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "257",
-    "cd_equipamento": "257",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117165",
-    "data_entrada": "23/08/2025",
-    "servico": "Sacar bujão do cárter - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "349",

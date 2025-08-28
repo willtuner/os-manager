@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5050",
+    "cd_equipamento": "5050",
+    "modelo": "MOTOR VERMEL IRRIGACAO MB1935",
+    "os": "117344",
+    "data_entrada": "27/08/2025",
+    "servico": "Verificar silencioso do escapamento estourado - (Fazenda SL1)\nSolicitado Sr. Wagner\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117295",
+    "data_entrada": "27/08/2025",
+    "servico": "Avaliar sistema hidráulico traseiro do trator, identificando e corrigindo ponto de vazamento de óleo. - (Fazenda  Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "27",
     "cd_equipamento": "27",
     "modelo": "TRATOR MASSEY FERGUSON 275/2",

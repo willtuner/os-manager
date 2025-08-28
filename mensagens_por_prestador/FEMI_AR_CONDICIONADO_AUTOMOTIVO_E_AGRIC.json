@@ -1,19 +1,35 @@
 [
   {
+    "frota": "5748",
+    "cd_equipamento": "5748",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117292",
+    "data_entrada": "27/08/2025",
+    "servico": "Consertar fio do terminal do SPE quebrado - (Fazenda SP)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5803",
+    "cd_equipamento": "5803",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117287",
+    "data_entrada": "27/08/2025",
+    "servico": "Consertar fio do terminal do SPE quebrado - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5804",
+    "cd_equipamento": "5804",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117286",
+    "data_entrada": "27/08/2025",
+    "servico": "Consertar fio do terminal do SPE quebrado - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5819",
     "cd_equipamento": "5819",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "117209",
     "data_entrada": "25/08/2025",
     "servico": "Instalação do SPE - Faz SL1\nAutorizado Arthur"
-  },
-  {
-    "frota": "5820",
-    "cd_equipamento": "5820",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "116976",
-    "data_entrada": "20/08/2025",
-    "servico": "Instalar SPE - Faz Bela Manha\nAutorizado Arthur"
   },
   {
     "frota": "5275",

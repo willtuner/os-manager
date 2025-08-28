@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5346",
+    "cd_equipamento": "5346",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117311",
+    "data_entrada": "27/08/2025",
+    "servico": "Efetuar troca de corroa e corrente do sistema de transmissão - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5061",
+    "cd_equipamento": "5061",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117298",
+    "data_entrada": "27/08/2025",
+    "servico": "Substituir parafusos da bomba, que não permitem aperto ou remoção, sendo necessário cortar os atuais. Equipamento encontra-se parado devido à bomba solta - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5355",
+    "cd_equipamento": "5355",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "117266",
+    "data_entrada": "26/08/2025",
+    "servico": "Revisar bomba perdendo pressão e com vazamento - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117248",
+    "data_entrada": "26/08/2025",
+    "servico": "Trocar reparos da bomba - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5492",
+    "cd_equipamento": "5492",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "117241",
+    "data_entrada": "26/08/2025",
+    "servico": "Vazamento de óleo na bomba - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5348",
     "cd_equipamento": "5348",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
@@ -24,6 +64,22 @@
     "servico": "Substituir coroas do sistema de transmissão por modelos de maior diâmetro, visando aumento da vazão, uma vez que o sistema atual não atinge a capacidade necessária - (Fazenda SP)\nSolicitado Sr. Geovane Libero\nResponsavel Sr. Mauricio"
   },
   {
+    "frota": "5612",
+    "cd_equipamento": "5612",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117219",
+    "data_entrada": "25/08/2025",
+    "servico": "Verificar bomba de pulverização apresentando óleo esbranquiçado (possível contaminação por água). - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5399",
+    "cd_equipamento": "5399",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "117284",
+    "data_entrada": "25/08/2025",
+    "servico": "Verificar eixo da turbina quebrado e rolamento danificado.\nFazenda Terra Branca\nSolicitado Sr. Éder\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5603",
     "cd_equipamento": "5603",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -38,14 +94,6 @@
     "os": "116900",
     "data_entrada": "19/08/2025",
     "servico": "Corrigir vazamento de produto nos cabeçotes das válvulas - (Fazenda São Severino) \nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5603",
-    "cd_equipamento": "5603",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "116606",
-    "data_entrada": "14/08/2025",
-    "servico": "Trocar rolamento da turbina estourado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5288",

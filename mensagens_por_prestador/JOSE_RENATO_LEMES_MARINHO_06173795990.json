@@ -1,5 +1,77 @@
 [
   {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "117352",
+    "data_entrada": "27/08/2025",
+    "servico": "Solda na abraçadeira que liga a barra ao ramal - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "121",
+    "cd_equipamento": "121",
+    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+    "os": "117342",
+    "data_entrada": "27/08/2025",
+    "servico": "Fazer proteção de partes moveis (Entre a TDP e o cardam) - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "5264",
+    "cd_equipamento": "5264",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "117332",
+    "data_entrada": "27/08/2025",
+    "servico": "Roda L/D caiu novamente, verificar porca de fixação da roda no eixo - (Fazenda NSA)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr Mauricio"
+  },
+  {
+    "frota": "5346",
+    "cd_equipamento": "5346",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117323",
+    "data_entrada": "27/08/2025",
+    "servico": "Instalar proteção de partes moveis - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5009",
+    "cd_equipamento": "5009",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117297",
+    "data_entrada": "27/08/2025",
+    "servico": "Soldar e recuperar suporte da bomba trincado e suporte de carregamento de produtos com trinca - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "156",
+    "cd_equipamento": "156",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "117293",
+    "data_entrada": "27/08/2025",
+    "servico": "Substituir parafuso espanado da região frontal do trator L/D, se necessário recuperar rosca - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5486",
+    "cd_equipamento": "5486",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117291",
+    "data_entrada": "27/08/2025",
+    "servico": "Sacar e trocar parafusos de fixação da torre - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5504",
+    "cd_equipamento": "5504",
+    "modelo": "PUL.TURBO 4000 NATALI ALFA",
+    "os": "117285",
+    "data_entrada": "27/08/2025",
+    "servico": "Substituir parafuso prisioneiro (parafuso em 'T') de fixação do cabeçote do filtro do pulverizador - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5658",
+    "cd_equipamento": "5658",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117282",
+    "data_entrada": "27/08/2025",
+    "servico": "Ramal furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "125",
     "cd_equipamento": "125",
     "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
@@ -8,12 +80,12 @@
     "servico": "Instalar grade frontal e fazer proteção para para-lamas - (Oficina)\nSolicitado Sr. Carlos Aparecido"
   },
   {
-    "frota": "118",
-    "cd_equipamento": "118",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "117240",
+    "frota": "265",
+    "cd_equipamento": "265",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117275",
     "data_entrada": "26/08/2025",
-    "servico": "Fazer solda no cotovelo do escapamento - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsvel Sr. Arthur"
+    "servico": "Degrau da escada do trator quebrada - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5819",
@@ -32,28 +104,20 @@
     "servico": "Adaptar asas para instalar sistema de SPE - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "5214",
+    "cd_equipamento": "5214",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117169",
+    "data_entrada": "23/08/2025",
+    "servico": "Verificar e corrigir acoplamento das engrenagens e correntes de transmissão; avaliar desgaste dos dentes e necessidade de substituição - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5264",
     "cd_equipamento": "5264",
     "modelo": "PULVERIZADOR 2000 LT",
     "os": "117147",
     "data_entrada": "22/08/2025",
     "servico": "Instalar argolas de ferro nas asas para suporte das mangueiras. - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5696",
-    "cd_equipamento": "5696",
-    "modelo": "GUINCHO BIG BAG GT 2200",
-    "os": "117130",
-    "data_entrada": "22/08/2025",
-    "servico": "Quebra do pino de sustentação do guincho - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5290",
-    "cd_equipamento": "5290",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "117129",
-    "data_entrada": "22/08/2025",
-    "servico": "Fazer solda em trinca na estrutura da asa - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5156",
@@ -64,44 +128,12 @@
     "servico": "Reforma - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsável Sr. Carlos Aparecido"
   },
   {
-    "frota": "331",
-    "cd_equipamento": "331",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "117082",
-    "data_entrada": "21/08/2025",
-    "servico": "Soldar suporte do farol traseiro - Faz Aparecida\nAutorizado Arthur"
-  },
-  {
-    "frota": "5210",
-    "cd_equipamento": "5210",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "117065",
-    "data_entrada": "21/08/2025",
-    "servico": "Desamassar asa do alma - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5197",
-    "cd_equipamento": "5197",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "117040",
-    "data_entrada": "21/08/2025",
-    "servico": "Fazer solda no suporte do regulador de pressão - (Fazenda Casa Branca)\nSolicitado Sr. Vitor \nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5600",
     "cd_equipamento": "5600",
     "modelo": "ATOMIZADOR NATALI 4000 LT",
     "os": "116959",
     "data_entrada": "19/08/2025",
     "servico": "Fabricar caixa de transporte de produtos - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5270",
-    "cd_equipamento": "5270",
-    "modelo": "PULVERIZADOR FACCHINI 6000 LT",
-    "os": "116768",
-    "data_entrada": "18/08/2025",
-    "servico": "Quebra do pino do cabeçario - (Fazenda Úrsula) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "220",
@@ -120,14 +152,6 @@
     "servico": "Fazer solda em trincas na estrutura e na proteção das partes moveis - (Fazenda NSA)\nSolicitado Sr. Rennan \nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5105",
-    "cd_equipamento": "5105",
-    "modelo": "GRADE ARADORA C.CONTROLE BALDA",
-    "os": "116698",
-    "data_entrada": "15/08/2025",
-    "servico": "Executar reforma estrutural no sistema de engate da grade aradora - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "165",
     "cd_equipamento": "165",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
@@ -136,27 +160,11 @@
     "servico": "Fabricar proteção das lanternas traseiras - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "116408",
-    "data_entrada": "11/08/2025",
-    "servico": "Aumentar cesto traseiro para transporte de produto e instalar mais uma saída de vazão no ramal - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio\nAutorizado fazer Sr. Rafael gerente de manutenção.\n*Lançar custo como investimento.*"
-  },
-  {
     "frota": "91",
     "cd_equipamento": "91",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "113543",
     "data_entrada": "30/06/2025",
     "servico": "Instalar proteções do trator - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "5045",
-    "cd_equipamento": "5045",
-    "modelo": "ADUBADERA CACAMBA TATU DC 5500",
-    "os": "112338",
-    "data_entrada": "11/06/2025",
-    "servico": "Revisão geral - (Oficina)\n- Verificar ajuste das 4 rodas, trocar parte da chapa do assoalho, parte traseira recuperar tones dos pratos, fixar pintar e fazer montagem, montar redutor, correias montar as duas esteiras, recuperar lixar e pintar.\nLiberado Sr. Rafael"
   }
 ]

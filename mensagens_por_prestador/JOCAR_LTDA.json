@@ -1,11 +1,19 @@
 [
   {
-    "frota": "270",
-    "cd_equipamento": "270",
+    "frota": "113",
+    "cd_equipamento": "113",
+    "modelo": "TRATOR JOHN DEERE 5603 4X4",
+    "os": "117350",
+    "data_entrada": "27/08/2025",
+    "servico": "Verificar acionamento do eletroventilador da podadeira, que apresenta falha intermitente (ora liga, ora não) - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "217",
+    "cd_equipamento": "217",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117157",
-    "data_entrada": "22/08/2025",
-    "servico": "Verificar caindo fluido do teto dentro da cabine - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+    "os": "117338",
+    "data_entrada": "27/08/2025",
+    "servico": "Verificar A/C não gela, apenas ventila - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber (Subgerente)\nResponsavel Sr. Arthur"
   },
   {
     "frota": "251",
