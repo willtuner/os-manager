@@ -1,23 +1,37 @@
 [
   {
-    "frota": "331",
-    "os": "117277",
-    "data": "26/08/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 600 hrs - (Fazenda NSA)"
+    "frota": "10224",
+    "os": "117337",
+    "data": "27/08/2025",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
+    "servico": "Trocar caixa de filtro quebrada - (Fazenda NSA) |Parado|"
+  },
+  {
+    "frota": "5264",
+    "os": "117332",
+    "data": "27/08/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Roda L/D caiu novamente, verificar porca de fixação da roda no eixo - (Fazenda NSA)"
+  },
+  {
+    "frota": "5270",
+    "os": "117299",
+    "data": "27/08/2025",
+    "prestador": "nan",
+    "servico": "Quebra do eixo da roda dianteira L/D - (Fazenda NSA) |Parado|"
   },
   {
     "frota": "5418",
     "os": "117248",
     "data": "26/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Trocar reparos da bomba - (Fazenda NSA)"
   },
   {
     "frota": "5492",
     "os": "117241",
     "data": "26/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Vazamento de óleo na bomba - (Fazenda NSA)"
   },
   {
@@ -26,13 +40,6 @@
     "data": "25/08/2025",
     "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
     "servico": "Fazer PMP e verificar embreagem - Faz Aparecida"
-  },
-  {
-    "frota": "5264",
-    "os": "117182",
-    "data": "25/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/E furado - (Fazenda Úrsula) |Parado|"
   },
   {
     "frota": "5040",
@@ -52,15 +59,8 @@
     "frota": "259",
     "os": "117099",
     "data": "22/08/2025",
-    "prestador": "nan",
+    "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
     "servico": "Verificar 3° marcha escapando - (Fazenda NSA)"
-  },
-  {
-    "frota": "331",
-    "os": "117082",
-    "data": "21/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar suporte do farol traseiro - Faz Aparecida"
   },
   {
     "frota": "5603",
@@ -70,25 +70,11 @@
     "servico": "Substituir caixa incorporadora danificada após o operador engatar ré e colidir com a estrutura - (Fazenda NSA)"
   },
   {
-    "frota": "5197",
-    "os": "117040",
-    "data": "21/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda no suporte do regulador de pressão - (Fazenda Casa Branca)"
-  },
-  {
     "frota": "5502",
     "os": "116982",
     "data": "20/08/2025",
     "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
     "servico": "Reforma da torre"
-  },
-  {
-    "frota": "5270",
-    "os": "116768",
-    "data": "18/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra do pino do cabeçario - (Fazenda Úrsula) |Parado|"
   },
   {
     "frota": "5539",

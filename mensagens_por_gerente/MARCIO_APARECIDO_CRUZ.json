@@ -1,5 +1,33 @@
 [
   {
+    "frota": "253",
+    "os": "117359",
+    "data": "27/08/2025",
+    "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
+    "servico": "Verificar ruído anormal na transmissão  - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5461",
+    "os": "117310",
+    "data": "27/08/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Confeccionar e instalar barra de engate do terceiro ponto, ausente neste implemento. - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5093",
+    "os": "117309",
+    "data": "27/08/2025",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+    "servico": "Vazamento no pistão e reparar terceiro ponto - (Fazenda Minuano)"
+  },
+  {
+    "frota": "5366",
+    "os": "117306",
+    "data": "27/08/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Vazamento na graxeta do batedor - (Fazenda Minuano)"
+  },
+  {
     "frota": "25",
     "os": "117263",
     "data": "26/08/2025",
@@ -7,17 +35,10 @@
     "servico": "Revisar freio das cornetas - Faz Minuano"
   },
   {
-    "frota": "118",
-    "os": "117240",
-    "data": "26/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda no cotovelo do escapamento - (Fazenda Minuano)"
-  },
-  {
     "frota": "5461",
     "os": "117230",
     "data": "26/08/2025",
-    "prestador": "nan",
+    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
     "servico": "Quebra do suporte do giro do pistão - (Fazenda Minuano)"
   }
 ]

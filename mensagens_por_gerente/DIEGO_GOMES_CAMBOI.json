@@ -1,31 +1,10 @@
 [
   {
-    "frota": "5696",
-    "os": "117130",
-    "data": "22/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra do pino de sustentação do guincho - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "5290",
-    "os": "117129",
-    "data": "22/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na estrutura da asa - (Fazenda Santa Izabel)"
-  },
-  {
     "frota": "267",
     "os": "117100",
     "data": "22/08/2025",
     "prestador": "nan",
     "servico": "Remover vazamento na valvula de freio - Faz Santa Izabel"
-  },
-  {
-    "frota": "5210",
-    "os": "117065",
-    "data": "21/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Desamassar asa do alma - (Fazenda Santa Izabel)"
   },
   {
     "frota": "5414",
@@ -40,12 +19,5 @@
     "data": "11/08/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Instalar suporte com niple para desengatar tanque com mais facilidade - (Fazenda Santa Izabel)"
-  },
-  {
-    "frota": "203",
-    "os": "115230",
-    "data": "24/07/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sirene de ré e buzina não funcionam - (Fazenda Bela Manhã)"
   }
 ]
