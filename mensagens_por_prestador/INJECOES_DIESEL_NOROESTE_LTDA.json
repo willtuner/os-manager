@@ -1,11 +1,27 @@
 [
   {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "117368",
-    "data_entrada": "27/08/2025",
-    "servico": "Verificar trator não mantem rotação de trabalho, já trocado filtros de diesel - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+    "frota": "46",
+    "cd_equipamento": "46",
+    "modelo": "TRATOR JOHN DEERE 5600 4X4",
+    "os": "117457",
+    "data_entrada": "29/08/2025",
+    "servico": "Verificar trator sem partida, gira e não pega. Já avaliado sistema eletrico - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117398",
+    "data_entrada": "28/08/2025",
+    "servico": "Vazamento de óleo diesel na bomba injetora - (Fazenda São Pedro)\nSolicitado Sr.  Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117375",
+    "data_entrada": "28/08/2025",
+    "servico": "Vazamento de óleo diesel no reparo da bomba injetora - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "73",
@@ -30,22 +46,6 @@
     "os": "117264",
     "data_entrada": "26/08/2025",
     "servico": "Verificar trator perdendo potencia - (Fazenda São José)\nSolicitado Sr. Rafael \nResponsável Sr. Rafael"
-  },
-  {
-    "frota": "5040",
-    "cd_equipamento": "5040",
-    "modelo": "GERADOR DE ENERGIA",
-    "os": "117149",
-    "data_entrada": "22/08/2025",
-    "servico": "Troca de óleo e filtros (Revisão) - (Fazenda NSA)\nSolicitado Rennan\nResponsavel Sr. Rafael"
-  },
-  {
-    "frota": "5484",
-    "cd_equipamento": "5484",
-    "modelo": "GERADOR DE ENERGIA",
-    "os": "117133",
-    "data_entrada": "22/08/2025",
-    "servico": "Troca de óleo e filtros (Revisão) - (Fazenda Minuano)\nSolicitado Zylton\nResponsavel Sr. Rafael"
   },
   {
     "frota": "269",

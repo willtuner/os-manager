@@ -1,11 +1,51 @@
 [
   {
-    "frota": "10222",
-    "cd_equipamento": "10222",
+    "frota": "138",
+    "cd_equipamento": "138",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "117462",
+    "data_entrada": "29/08/2025",
+    "servico": "Verificar sirene de ré não funciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "137",
+    "cd_equipamento": "137",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "117461",
+    "data_entrada": "29/08/2025",
+    "servico": "Verificar sistema eletrico, trator deu pane e não ascende nada. Verificar motor de partida pesado - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Artrhur"
+  },
+  {
+    "frota": "208",
+    "cd_equipamento": "208",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117356",
-    "data_entrada": "27/08/2025",
-    "servico": "Verificar funcionamento do trator e verificar o fusível geral - Faz Terra Branca\nAutorizado Arthur"
+    "os": "117445",
+    "data_entrada": "28/08/2025",
+    "servico": "Verificar sistema eletrico de iluminação, trocado cibié porem não ascende - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "135",
+    "cd_equipamento": "135",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "117399",
+    "data_entrada": "28/08/2025",
+    "servico": "Verificar equipamento sem partida - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5706",
+    "cd_equipamento": "5706",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
+    "os": "117397",
+    "data_entrada": "28/08/2025",
+    "servico": "Verificar equipamento não pega na partida - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "252",
+    "cd_equipamento": "252",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117384",
+    "data_entrada": "28/08/2025",
+    "servico": "Verificar falha de partida do trator; possível defeito no sensor da alavanca de estacionamento (parking). - (Fazenda São Pedro)|Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "83",

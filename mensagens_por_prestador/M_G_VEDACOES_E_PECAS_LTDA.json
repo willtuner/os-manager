@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5205",
+    "cd_equipamento": "5205",
+    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
+    "os": "117411",
+    "data_entrada": "28/08/2025",
+    "servico": "Vazamento de óleo no retentor do rotor - (Fazenda Casa Branca)_\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5488",
+    "cd_equipamento": "5488",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "117376",
+    "data_entrada": "28/08/2025",
+    "servico": "Vazamento de óleo na caixa  de facas - (Fazenda São Severino)\nSolicitado Sr. Marcio Junio\nResposavel Sr. Marcio"
+  },
+  {
     "frota": "5266",
     "cd_equipamento": "5266",
     "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
@@ -16,22 +32,6 @@
     "servico": "Confeccionar e instalar proteção para operação na trincheira - (Oficina M.G)\nSolicitado Sr. Carlos Aparecido"
   },
   {
-    "frota": "5482",
-    "cd_equipamento": "5482",
-    "modelo": "PODADEIRA HID.GLOBAL 3500",
-    "os": "117218",
-    "data_entrada": "25/08/2025",
-    "servico": "Avaliar esticador da correia que atingiu limite de ajuste, impossibilitando novo tensionamento. - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5667",
-    "cd_equipamento": "5667",
-    "modelo": "PODADEIRA HIDRAUTEC HLD1",
-    "os": "117197",
-    "data_entrada": "25/08/2025",
-    "servico": "Vazamento de óleo nas conexões das mangueira hidráulica - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5442",
     "cd_equipamento": "5442",
     "modelo": "CONJUNTO PODADOR WWD",
@@ -46,21 +46,5 @@
     "os": "117085",
     "data_entrada": "21/08/2025",
     "servico": "Desmontar e trocar cilindro boom L/D - (Oficina MG)\nSolicitado Sr. Rafael"
-  },
-  {
-    "frota": "5721",
-    "cd_equipamento": "5721",
-    "modelo": "TANQUE DE AGUA 2000 LT",
-    "os": "116429",
-    "data_entrada": "11/08/2025",
-    "servico": "Instalar suporte com niple para desengatar tanque com mais facilidade - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "91",
-    "cd_equipamento": "91",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "116289",
-    "data_entrada": "07/08/2025",
-    "servico": "Substituir alavanca do registro de fluxo de óleo (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur"
   }
 ]

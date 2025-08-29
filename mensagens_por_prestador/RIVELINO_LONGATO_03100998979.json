@@ -1,19 +1,51 @@
 [
   {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117472",
+    "data_entrada": "29/08/2025",
+    "servico": "Verificar pneu esquerdo abrindo na lateral próximo ao talão (trocado recentemente dia 05/08).\nFazenda Alvorada\nSolicitado Sr. Natalino\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "228",
+    "cd_equipamento": "228",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "117471",
+    "data_entrada": "29/08/2025",
+    "servico": "Verificar roda dianteira L/E com jogo  (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5615",
+    "cd_equipamento": "5615",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "117453",
+    "data_entrada": "29/08/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5226",
+    "cd_equipamento": "5226",
+    "modelo": "CARRETINHA DUAS RODAS (CARRO)",
+    "os": "117387",
+    "data_entrada": "28/08/2025",
+    "servico": "Pneu L/E estourado |175/70R13| - (Fazenda São Pedro) |Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "144",
+    "cd_equipamento": "144",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "117382",
+    "data_entrada": "28/08/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada) |Parado|\nSolicitado Sr. Natalino\nResponsavel Sr. Maurício"
+  },
+  {
     "frota": "5495",
     "cd_equipamento": "5495",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
     "os": "117340",
     "data_entrada": "27/08/2025",
     "servico": "Pneu L/E traseiro furado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "165",
-    "cd_equipamento": "165",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "117302",
-    "data_entrada": "27/08/2025",
-    "servico": "Pneu dianteiro L/E - (Fazenda Casa Branca) |Parado|\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "315",
@@ -26,7 +58,7 @@
   {
     "frota": "5545",
     "cd_equipamento": "5545",
-    "modelo": "PULVERIZADOR BARRA QUADRICICLO",
+    "modelo": "PULVERIZADOR BARRAS TRICICLO",
     "os": "117283",
     "data_entrada": "27/08/2025",
     "servico": "Pneu traseiro L/E traseiro - (Oficina)\nSolicitado Sr. Carlos Aparecido \nResponsavel Sr. Mauricio"

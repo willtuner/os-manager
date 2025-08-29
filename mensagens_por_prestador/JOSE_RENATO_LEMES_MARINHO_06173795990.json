@@ -1,5 +1,53 @@
 [
   {
+    "frota": "79",
+    "cd_equipamento": "79",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "117451",
+    "data_entrada": "29/08/2025",
+    "servico": "Barra de suporte do tecnil L/D quebrada - (Fazenda Terra Branca)\nSolicitado Sr. João Victor (Subgerente)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5579",
+    "cd_equipamento": "5579",
+    "modelo": "TRITURADOR TFI-1600 GTM",
+    "os": "117440",
+    "data_entrada": "28/08/2025",
+    "servico": "Repor facas que estão faltando - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5197",
+    "cd_equipamento": "5197",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "117438",
+    "data_entrada": "28/08/2025",
+    "servico": "Fazer solda em trinca na estrutura - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5350",
+    "cd_equipamento": "5350",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "117409",
+    "data_entrada": "28/08/2025",
+    "servico": "Fazer solda em trinca - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5755",
+    "cd_equipamento": "5755",
+    "modelo": "ROCADEIRA RC2 E 3100 S0516",
+    "os": "117404",
+    "data_entrada": "28/08/2025",
+    "servico": "Instalar correntes de proteção anti arremesso - (Fazenda Biscui)\nSolicitado Sr. Geovane \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5063",
+    "cd_equipamento": "5063",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117391",
+    "data_entrada": "28/08/2025",
+    "servico": "Fazer enchimento do rabicho e trocar corrente de segurança por mais grossa - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5345",
     "cd_equipamento": "5345",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -32,6 +80,14 @@
     "servico": "Instalar proteção de partes moveis - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
+    "frota": "5270",
+    "cd_equipamento": "5270",
+    "modelo": "PULVERIZADOR FACCHINI 6000 LT",
+    "os": "117299",
+    "data_entrada": "27/08/2025",
+    "servico": "Quebra do eixo da roda dianteira L/D - (Fazenda NSA) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5009",
     "cd_equipamento": "5009",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -54,14 +110,6 @@
     "os": "117291",
     "data_entrada": "27/08/2025",
     "servico": "Sacar e trocar parafusos de fixação da torre - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5504",
-    "cd_equipamento": "5504",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "117285",
-    "data_entrada": "27/08/2025",
-    "servico": "Substituir parafuso prisioneiro (parafuso em 'T') de fixação do cabeçote do filtro do pulverizador - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5658",
