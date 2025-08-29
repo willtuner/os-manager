@@ -1,5 +1,19 @@
 [
   {
+    "frota": "266",
+    "os": "117452",
+    "data": "29/08/2025",
+    "prestador": "COCAMAR MAQUINAS AGRICOLAS LTDA.",
+    "servico": "Verificar sistema de GPS não funciona - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "230",
+    "os": "117381",
+    "data": "28/08/2025",
+    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
+    "servico": "Regular sistema de freio e substituir coxins da cabine - (Fazenda Úrsula)"
+  },
+  {
     "frota": "305",
     "os": "116732",
     "data": "15/08/2025",
@@ -12,13 +26,6 @@
     "data": "15/08/2025",
     "prestador": "nan",
     "servico": "Roda lado esquerdo com excesso de folga; avaliar e substituir rolamento se necessário. - (Fazenda Úrsula)"
-  },
-  {
-    "frota": "274",
-    "os": "116550",
-    "data": "13/08/2025",
-    "prestador": "COMERCIAL AGRICOLA DE PARANAVAI LTDA",
-    "servico": "Verificar fechadura, porta não está fechando completamente. - (Fazenda Úrsula)"
   },
   {
     "frota": "5490",
