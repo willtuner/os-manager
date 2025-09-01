@@ -1,5 +1,12 @@
 [
   {
+    "frota": "5487",
+    "os": "117583",
+    "data": "01/09/2025",
+    "prestador": "nan",
+    "servico": "Reparar barra de proteção traseira do tanque, quebrada após tentativa de arraste pelo local inadequado. Executar soldagem/reforço estrutural e reinstalação. - (Fazenda Estrela)"
+  },
+  {
     "frota": "5486",
     "os": "117291",
     "data": "27/08/2025",
@@ -26,12 +33,5 @@
     "data": "18/08/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Reinstalar chapas de fixação dos cibié traseiros - (Fazenda Estrela)"
-  },
-  {
-    "frota": "269",
-    "os": "115457",
-    "data": "29/07/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Vazamento de óleo diesel na bomba - (Fazenda Estrela)"
   }
 ]

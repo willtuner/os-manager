@@ -1,12 +1,5 @@
 [
   {
-    "frota": "5615",
-    "os": "117453",
-    "data": "29/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu L/D furado - (Fazenda São Pedro)"
-  },
-  {
     "frota": "156",
     "os": "117396",
     "data": "28/08/2025",
@@ -28,13 +21,6 @@
     "servico": "Fazer solda em trinca na estrutura e avaliar necessidade de fazer reforço na mesma e trocar cabo - (Fazenda São Pedro)"
   },
   {
-    "frota": "252",
-    "os": "117384",
-    "data": "28/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar falha de partida do trator; possível defeito no sensor da alavanca de estacionamento (parking). - (Fazenda São Pedro)|Parado|"
-  },
-  {
     "frota": "156",
     "os": "117293",
     "data": "27/08/2025",
@@ -47,12 +33,5 @@
     "data": "25/08/2025",
     "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
     "servico": "Executar remoção da flange e retrabalho nos furos de fixação, que se encontram alargados, ocasionando folgas e trancos durante a operação - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5233",
-    "os": "117178",
-    "data": "25/08/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "Vazamento nos retentores do eixo da polia -  (Fazenda São Pedro)"
   }
 ]

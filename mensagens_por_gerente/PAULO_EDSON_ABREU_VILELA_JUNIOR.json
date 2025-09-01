@@ -1,12 +1,5 @@
 [
   {
-    "frota": "5804",
-    "os": "117541",
-    "data": "01/09/2025",
-    "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
-    "servico": "Consertar fio do terminal do SPE quebrado - (Fazenda SP)"
-  },
-  {
     "frota": "5509",
     "os": "117449",
     "data": "29/08/2025",
@@ -19,13 +12,6 @@
     "data": "28/08/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Repor facas que estão faltando - (Fazenda SP)"
-  },
-  {
-    "frota": "216",
-    "os": "117439",
-    "data": "28/08/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Trocar mangueira de diesel furada - (Fazenda São Paulo)"
   },
   {
     "frota": "5350",
@@ -82,12 +68,5 @@
     "data": "27/08/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Instalar proteção de partes moveis - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "5063",
-    "os": "117033",
-    "data": "21/08/2025",
-    "prestador": "nan",
-    "servico": "Verificar desgaste e esfarelamento da estrutura interna do tanque. - (Fazenda São Paulo)"
   }
 ]
