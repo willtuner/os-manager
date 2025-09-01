@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5326",
+    "cd_equipamento": "5326",
+    "modelo": "CARRETA SCHULTER 12 BEGUES",
+    "os": "117589",
+    "data_entrada": "01/09/2025",
+    "servico": "Trocar alavanca do desarme danificada e e trocar parafuso do desarme - (Fazenda NSA)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
+  },
+  {
     "frota": "5401",
     "cd_equipamento": "5401",
     "modelo": "ATOMIZADOR JACTO 4000 LT",
@@ -30,14 +38,6 @@
     "os": "117309",
     "data_entrada": "27/08/2025",
     "servico": "Vazamento no pistão e reparar terceiro ponto - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "117267",
-    "data_entrada": "26/08/2025",
-    "servico": "Tirar folga do cabeçalho - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5461",

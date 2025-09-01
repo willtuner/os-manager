@@ -8,12 +8,28 @@
     "servico": "Adaptar bomba com motor hidráulico - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   },
   {
+    "frota": "5363",
+    "cd_equipamento": "5363",
+    "modelo": "PULVERIZADOR 600 LT JACTO",
+    "os": "117569",
+    "data_entrada": "29/08/2025",
+    "servico": "Recuperar pistão de ajuste do pescoço danificado e corrigir rosca na tubulação de duto de ar.\nFazenda Pedra Verde\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5205",
     "cd_equipamento": "5205",
     "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
     "os": "117411",
     "data_entrada": "28/08/2025",
     "servico": "Vazamento de óleo no retentor do rotor - (Fazenda Casa Branca)_\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5597",
+    "cd_equipamento": "5597",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "117402",
+    "data_entrada": "28/08/2025",
+    "servico": "Quebra do eixo da bomba - (Fazenda Bela Manhã) |Parado|\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5488",

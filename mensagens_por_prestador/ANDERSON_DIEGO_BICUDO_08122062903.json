@@ -1,5 +1,21 @@
 [
   {
+    "frota": "89",
+    "cd_equipamento": "89",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "117536",
+    "data_entrada": "01/09/2025",
+    "servico": "Avaliar braços hidráulicos não funcionam - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "215",
+    "cd_equipamento": "215",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "117534",
+    "data_entrada": "01/09/2025",
+    "servico": "Vazamento no retentor da roda dianteira L/D - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "165",
     "cd_equipamento": "165",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
@@ -16,20 +32,20 @@
     "servico": "Verificar conjunto planetário/redução final da roda dianteira lado direito do trator apresentando saída de limalha de ferro. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "216",
-    "cd_equipamento": "216",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "117439",
-    "data_entrada": "28/08/2025",
-    "servico": "Trocar mangueira de diesel furada - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "91",
     "cd_equipamento": "91",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "117412",
     "data_entrada": "28/08/2025",
     "servico": "Vazamento de óleo na junta do cárter - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "302",
+    "cd_equipamento": "302",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117406",
+    "data_entrada": "28/08/2025",
+    "servico": "Verificar alavanca de cambio \"bamba\" - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
   },
   {
     "frota": "135",
@@ -54,14 +70,6 @@
     "os": "117337",
     "data_entrada": "27/08/2025",
     "servico": "Trocar caixa de filtro quebrada - (Fazenda NSA) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "102",
-    "cd_equipamento": "102",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "117296",
-    "data_entrada": "27/08/2025",
-    "servico": "Vazamento de óleo no MAP e no redutor do diferencial dianteiro - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResposanvel Sr. Arthur"
   },
   {
     "frota": "25",
@@ -102,14 +110,6 @@
     "os": "116918",
     "data_entrada": "19/08/2025",
     "servico": "Trocar mangueira do comando hidráulico estourada - (Fazenda SP)\nSolicitado Sr. Geovane\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10222",
-    "cd_equipamento": "10222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116519",
-    "data_entrada": "12/08/2025",
-    "servico": "Vazamento de óleo na caixa seca - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
   },
   {
     "frota": "220",
