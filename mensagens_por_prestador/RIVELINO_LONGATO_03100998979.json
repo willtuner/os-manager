@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5110",
+    "cd_equipamento": "5110",
+    "modelo": "SUBSOLADOR STARA",
+    "os": "117513",
+    "data_entrada": "30/08/2025",
+    "servico": "Pneu L/E furado - (Fazenda Úrsula) |Parado|\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "144",
+    "cd_equipamento": "144",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "117514",
+    "data_entrada": "30/08/2025",
+    "servico": "Substituir os dois pneus dianteiros danificados (8.3-24) por novos (9.5-24).\nFazenda Alvorada\nSolicitado Sr. Natalino\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5035",
     "cd_equipamento": "5035",
     "modelo": "ATOMIZADOR FMC 4000 LT",

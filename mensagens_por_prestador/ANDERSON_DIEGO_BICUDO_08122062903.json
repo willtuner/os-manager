@@ -1,11 +1,19 @@
 [
   {
-    "frota": "72",
-    "cd_equipamento": "72",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117450",
+    "frota": "165",
+    "cd_equipamento": "165",
+    "modelo": "TRATOR JOHN DEERE 6415 4X4",
+    "os": "117466",
     "data_entrada": "29/08/2025",
-    "servico": "Troca de óleo completa - (Industria)\n - Filtros de ar do motor interno e externo\n- Filtros de óleo hidráulico\n- Filtro de óleo de motor\n- Óleo de motor\n- Óleo de transmissão \n- Óleo do eixo dianteiro e ponteiras\n- Filtro de diesel\nSolicitado Sr. Jeovane \nResponsavel Sr. Wilson"
+    "servico": "Vazamento de óleo no retentor do pistão do eixo dianteiro  - (Fazenda Estrela)_\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "94",
+    "cd_equipamento": "94",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "117454",
+    "data_entrada": "29/08/2025",
+    "servico": "Verificar conjunto planetário/redução final da roda dianteira lado direito do trator apresentando saída de limalha de ferro. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "216",
@@ -16,20 +24,28 @@
     "servico": "Trocar mangueira de diesel furada - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
+    "frota": "91",
+    "cd_equipamento": "91",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "117412",
+    "data_entrada": "28/08/2025",
+    "servico": "Vazamento de óleo na junta do cárter - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "135",
+    "cd_equipamento": "135",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "117403",
+    "data_entrada": "28/08/2025",
+    "servico": "Verificar orbitrol - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "156",
     "cd_equipamento": "156",
     "modelo": "TRATOR JOHN DEERE 5055E",
     "os": "117396",
     "data_entrada": "28/08/2025",
     "servico": "Remover eixo dianteiro e montar - Faz São Pedro\nAutorizado Arthur"
-  },
-  {
-    "frota": "227",
-    "cd_equipamento": "227",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "117377",
-    "data_entrada": "28/08/2025",
-    "servico": "Trocar borrachas de vedação das portas, verificar alavanca de acionamento do hidráulico - (Oficina)\nSolicitado Sr. Carlos Aparecido"
   },
   {
     "frota": "10224",
@@ -70,14 +86,6 @@
     "os": "117220",
     "data_entrada": "25/08/2025",
     "servico": "Avaliar sistema de embreagem do trator, apresentando dificuldade de acionamento e possível desgaste de componentes. - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "68",
-    "cd_equipamento": "68",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117172",
-    "data_entrada": "25/08/2025",
-    "servico": "Avaliar sistema de transmissão do trator, apresentando raspagem ao engatar e retardo na resposta após seleção de marchas - (Pecuaria) \nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
   },
   {
     "frota": "349",
