@@ -1,12 +1,67 @@
 [
     {
+        "solicitante": "RENNAN ARCANJO CREPALDI",
+        "frota": "215",
+        "modelo": "TRATOR JOHN DEERE 5070 E",
+        "os": "117534",
+        "data_entrada": "01/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento no retentor da roda dianteira L/D - (Fazenda NSA)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
+        "frota": "5657",
+        "modelo": "PULVERIZADOR 4000 LT JACTO",
+        "os": "117515",
+        "data_entrada": "30/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Remover eixo da bomba e realizar usinagem em torno para corrigir trinca localizada na extremidade. - (Fazenda Terra Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOAO VITOR DUBAY DA SILVA",
+        "frota": "5110",
+        "modelo": "SUBSOLADOR STARA",
+        "os": "117513",
+        "data_entrada": "30/08/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/E furado - (Fazenda Úrsula) |Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MARCIO APARECIDO CRUZ",
+        "frota": "5749",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "117512",
+        "data_entrada": "30/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Soldar trilho das roldanas do extensor da torre do pulverizador - (Fazenda Minuano)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ZYLTON FIGUEREDO SPIGUEL",
+        "frota": "5295",
+        "modelo": "MOTOR IRRIGA TURBOMAQ 125 GS",
+        "os": "117510",
+        "data_entrada": "29/08/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Quebra do rolamento da roda - (Fazenda Casa Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "DIEGO GOMES CAMBOI",
         "frota": "5137",
         "modelo": "PULVERIZADOR 2000 LT JACTO",
         "os": "117490",
         "data_entrada": "29/08/2025",
         "previsao_saida": "---",
-        "prestador": "nan",
+        "prestador": "MICHEL CESAR PRATA 226.747.018-70",
         "servico": "Verificar tanque de pulverização apresentando rachadura na parte inferior.  - (Fazenda Santa Izabel)",
         "liberado_por": "Mauricio"
     },
