@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5652",
+    "cd_equipamento": "5652",
+    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
+    "os": "117633",
+    "data_entrada": "02/09/2025",
+    "servico": "Pneu L/D furado - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5053",
+    "cd_equipamento": "5053",
+    "modelo": "CARRETINHA DE FERRO",
+    "os": "117624",
+    "data_entrada": "02/09/2025",
+    "servico": "Pneu L/D furado - (Fazenda Terra Branca)|Parado|\nSolicitado Sr. João Victor \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5238",
     "cd_equipamento": "5238",
     "modelo": "GUINCHO HIDRAULICO GT-1200",
@@ -16,14 +32,6 @@
     "servico": "Pneu L/E furado - (Fazenda Úrsula) |Parado|\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "144",
-    "cd_equipamento": "144",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "117514",
-    "data_entrada": "30/08/2025",
-    "servico": "Substituir os dois pneus dianteiros danificados (8.3-24) por novos (9.5-24).\nFazenda Alvorada\nSolicitado Sr. Natalino\nResponsável Sr. Maurício"
-  },
-  {
     "frota": "5035",
     "cd_equipamento": "5035",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -37,55 +45,7 @@
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
     "os": "117471",
     "data_entrada": "29/08/2025",
-    "servico": "Verificar roda dianteira L/E com jogo  (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5226",
-    "cd_equipamento": "5226",
-    "modelo": "CARRETINHA DUAS RODAS (CARRO)",
-    "os": "117387",
-    "data_entrada": "28/08/2025",
-    "servico": "Pneu L/E estourado |175/70R13| - (Fazenda São Pedro) |Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "144",
-    "cd_equipamento": "144",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "117382",
-    "data_entrada": "28/08/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada) |Parado|\nSolicitado Sr. Natalino\nResponsavel Sr. Maurício"
-  },
-  {
-    "frota": "5495",
-    "cd_equipamento": "5495",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "117340",
-    "data_entrada": "27/08/2025",
-    "servico": "Pneu L/E traseiro furado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "315",
-    "cd_equipamento": "315",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "117294",
-    "data_entrada": "27/08/2025",
-    "servico": "Pneu traseiro L/D furado - (Fazenda São Paulo) |Parado|\nSolicitado Sr. Geovane\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5455",
-    "cd_equipamento": "5455",
-    "modelo": "CARRETA TRASNP LAR 510/154/030",
-    "os": "117243",
-    "data_entrada": "26/08/2025",
-    "servico": "Sacar e substituir parafusos da roda L/E - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5487",
-    "cd_equipamento": "5487",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "117128",
-    "data_entrada": "26/08/2025",
-    "servico": "Trocar pneu traseiro direito estourado \nFazenda Casa Branca\nSolicitado Sr. Paulo Vinicius\nResponsável Sr. Maurício"
+    "servico": "Verificar roda dianteira L/E com jogo  (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5083",

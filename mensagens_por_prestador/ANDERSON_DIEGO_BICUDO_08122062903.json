@@ -1,5 +1,29 @@
 [
   {
+    "frota": "276",
+    "cd_equipamento": "276",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117244",
+    "data_entrada": "02/09/2025",
+    "servico": "Vazamento no MAP, transmissão e abrir embreagem para dar passe no volante - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "117635",
+    "data_entrada": "02/09/2025",
+    "servico": "Quebra da trava do volante - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "132",
+    "cd_equipamento": "132",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "117630",
+    "data_entrada": "02/09/2025",
+    "servico": "Trator com cambio encavalado 3° marcha - (Fazenda Terra Branca)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "89",
     "cd_equipamento": "89",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -40,28 +64,12 @@
     "servico": "Vazamento de óleo na junta do cárter - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "302",
-    "cd_equipamento": "302",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117406",
-    "data_entrada": "28/08/2025",
-    "servico": "Verificar alavanca de cambio \"bamba\" - (Fazenda Santa Izabel)\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "135",
     "cd_equipamento": "135",
     "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
     "os": "117403",
     "data_entrada": "28/08/2025",
     "servico": "Verificar orbitrol - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "156",
-    "cd_equipamento": "156",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "117396",
-    "data_entrada": "28/08/2025",
-    "servico": "Remover eixo dianteiro e montar - Faz São Pedro\nAutorizado Arthur"
   },
   {
     "frota": "10224",
@@ -102,14 +110,6 @@
     "os": "116977",
     "data_entrada": "20/08/2025",
     "servico": "Troca de óleo geral \nTroca da correia do motor\nTroca dos rolamentos, pinos e retentores\nTirar banco para consertar cinto de segurança \nTrocar reservatório de água\nTrocar coifas dos terminais e regular direção - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "74",
-    "cd_equipamento": "74",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "116918",
-    "data_entrada": "19/08/2025",
-    "servico": "Trocar mangueira do comando hidráulico estourada - (Fazenda SP)\nSolicitado Sr. Geovane\nResponsavel Sr. Arthur"
   },
   {
     "frota": "220",

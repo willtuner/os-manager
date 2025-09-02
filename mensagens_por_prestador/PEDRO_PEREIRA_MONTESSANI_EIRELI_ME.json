@@ -1,11 +1,67 @@
 [
   {
+    "frota": "220",
+    "cd_equipamento": "220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117645",
+    "data_entrada": "02/09/2025",
+    "servico": "Revisão elétrica (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "5705",
+    "cd_equipamento": "5705",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "117620",
+    "data_entrada": "02/09/2025",
+    "servico": "Verificar sistema de iluminação do pulverizador: substituir cibiés e revisar chicote elétrico, uma vez que, mesmo após troca realizada pelo gerente, permanece a falha de acionamento. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5723",
+    "cd_equipamento": "5723",
+    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+    "os": "117619",
+    "data_entrada": "02/09/2025",
+    "servico": "Verificar sistema de iluminação do pulverizador: substituir cibiés e revisar chicote elétrico, uma vez que, mesmo após troca realizada pelo gerente, permanece a falha de acionamento. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "125",
+    "cd_equipamento": "125",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "117618",
+    "data_entrada": "02/09/2025",
+    "servico": "Revisão elétrica completa - (Oficina)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "319",
+    "cd_equipamento": "319",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "117617",
+    "data_entrada": "02/09/2025",
+    "servico": "Verificar alternador, não carrega a bateria - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "140",
     "cd_equipamento": "140",
     "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
     "os": "117590",
     "data_entrada": "01/09/2025",
     "servico": "Verificar sistema eletrico - Faz Úrsula\nAutorizado Arthur"
+  },
+  {
+    "frota": "5660",
+    "cd_equipamento": "5660",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117584",
+    "data_entrada": "01/09/2025",
+    "servico": "Avaliar falha no comando do ramal, que permanece ativo sem desligar individualmente os lados, comprometendo o controle de aplicação - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5614",
+    "cd_equipamento": "5614",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117545",
+    "data_entrada": "01/09/2025",
+    "servico": "Consertar chicote eletrico quebrado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "138",
@@ -24,30 +80,6 @@
     "servico": "Verificar sistema eletrico, trator deu pane e não ascende nada. Verificar motor de partida pesado - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Artrhur"
   },
   {
-    "frota": "136",
-    "cd_equipamento": "136",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "117447",
-    "data_entrada": "29/08/2025",
-    "servico": "Suporte de fixação dos cibie de teto quebrado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "251",
-    "cd_equipamento": "251",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117444",
-    "data_entrada": "28/08/2025",
-    "servico": "Verificar sistema eletrico de iluminação, trocado cibié porem não ascende - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "46",
-    "cd_equipamento": "46",
-    "modelo": "TRATOR JOHN DEERE 5600 4X4",
-    "os": "117437",
-    "data_entrada": "28/08/2025",
-    "servico": "Verificar relógio horimetro não funciona e sem partida  - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "257",
     "cd_equipamento": "257",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -64,36 +96,12 @@
     "servico": "Verificar equipamento sem partida - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5706",
-    "cd_equipamento": "5706",
-    "modelo": "PULVERIZADOR BARRAS TRICICLO",
-    "os": "117397",
-    "data_entrada": "28/08/2025",
-    "servico": "Verificar equipamento não pega na partida - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "83",
     "cd_equipamento": "83",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
     "os": "117301",
     "data_entrada": "27/08/2025",
     "servico": "Verificar sistema de segurança do trator; máquina está dando partida com marcha engatada. - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "258",
-    "cd_equipamento": "258",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117270",
-    "data_entrada": "26/08/2025",
-    "servico": "Verificar chicote eletrico do cibies e reinstalar proteção dianteira - Faz Estrela\nAutorizado Arthur"
-  },
-  {
-    "frota": "269",
-    "cd_equipamento": "269",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117269",
-    "data_entrada": "26/08/2025",
-    "servico": "Instalar  cibié traseiro L/D quebrado - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "217",
@@ -104,28 +112,12 @@
     "servico": "Verificar motor de partida fumaceando - (Fazenda Pedra Verde) |Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "254",
-    "cd_equipamento": "254",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117108",
-    "data_entrada": "22/08/2025",
-    "servico": "Conjunto de faróis traseiros (cibié) permanece inoperante, mesmo após substituição realizada pelo gerente. - (Fazenda Minuano)\nSolicitado Sr. Marcio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "301",
     "cd_equipamento": "301",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117045",
     "data_entrada": "21/08/2025",
     "servico": "Verificar luz da bateria acessa no painel, indicando que o alternador não está carregando a bateria - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10219",
-    "cd_equipamento": "10219",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116963",
-    "data_entrada": "19/08/2025",
-    "servico": "Horimetro e ponteiro da rotação não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   },
   {
     "frota": "226",
@@ -142,14 +134,6 @@
     "os": "116899",
     "data_entrada": "19/08/2025",
     "servico": "Limpador de para-brisa não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "350",
-    "cd_equipamento": "350",
-    "modelo": "TRATOR LS PLUS 90 CABINADO",
-    "os": "116807",
-    "data_entrada": "18/08/2025",
-    "servico": "Instalação de chicote da balança do vagão - (Pecuaria)\nSolicitado Sr. Bruno Franco (ADM)\nResponsavel Sr. Arthur"
   },
   {
     "frota": "219",
@@ -184,14 +168,6 @@
     "servico": "\"Verificar cibiés de teto que não acendem. Operador já verificou conectores, fusíveis e demais componentes básicos. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "329",
-    "cd_equipamento": "329",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "116105",
-    "data_entrada": "05/08/2025",
-    "servico": "Chicote do cibié L/D rompido - (Fazenda Estrela)\nSolicitado Sr. Danilo Mulari\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "70",
     "cd_equipamento": "70",
     "modelo": "TRATOR MASSEY FERGUSON 4275/4",
@@ -206,14 +182,6 @@
     "os": "115597",
     "data_entrada": "31/07/2025",
     "servico": "Trocar lanterna traseira lado esquerdo (Fazenda SP)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "134",
-    "cd_equipamento": "134",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "115453",
-    "data_entrada": "29/07/2025",
-    "servico": "Revisar sinalização - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "265",

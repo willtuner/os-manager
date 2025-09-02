@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5425",
+    "cd_equipamento": "5425",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "117631",
+    "data_entrada": "02/09/2025",
+    "servico": "Trocar rolamento da roda guia L/E quebrado - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsvel Sr. Mauricio"
+  },
+  {
+    "frota": "5348",
+    "cd_equipamento": "5348",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117580",
+    "data_entrada": "01/09/2025",
+    "servico": "Alterar engrenagens do sistema de transmissão da adubadeira, adequando para aplicação de calcário - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5521",
+    "cd_equipamento": "5521",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "117546",
+    "data_entrada": "01/09/2025",
+    "servico": "Verificar extensor da torre não abre e trocar parafusos de fixação do eixo da roda  oxidados - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5657",
+    "cd_equipamento": "5657",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117515",
+    "data_entrada": "30/08/2025",
+    "servico": "Remover eixo da bomba e realizar usinagem em torno para corrigir trinca localizada na extremidade. - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5295",
+    "cd_equipamento": "5295",
+    "modelo": "MOTOR IRRIGA TURBOMAQ 125 GS",
+    "os": "117510",
+    "data_entrada": "29/08/2025",
+    "servico": "Quebra do rolamento da roda - (Fazenda Casa Branca)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5352",
     "cd_equipamento": "5352",
     "modelo": "ADUBADEIRA DCCO 10500 S-0114",
@@ -112,6 +152,14 @@
     "servico": "Vazamento de óleo na bomba - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
+    "frota": "5275",
+    "cd_equipamento": "5275",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117238",
+    "data_entrada": "26/08/2025",
+    "servico": "Reduzir altura da torre, avaliar necessidade de troca da correia da turbina e verificar rolamento do eixo da hélice - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5348",
     "cd_equipamento": "5348",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
@@ -173,6 +221,6 @@
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "115676",
     "data_entrada": "01/08/2025",
-    "servico": "Revisar bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+    "servico": "Revisar equipamento, bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
   }
 ]

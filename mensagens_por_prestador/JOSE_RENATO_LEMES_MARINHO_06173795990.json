@@ -1,11 +1,59 @@
 [
   {
+    "frota": "276",
+    "cd_equipamento": "276",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117652",
+    "data_entrada": "02/09/2025",
+    "servico": "Trocar gonzo da proteção dianteira - (Oficina)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "5009",
+    "cd_equipamento": "5009",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117622",
+    "data_entrada": "02/09/2025",
+    "servico": "Fazer solda na grade de transporte de produtos - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "117613",
+    "data_entrada": "02/09/2025",
+    "servico": "Fazer solda no degrau da escada do trator - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117612",
+    "data_entrada": "02/09/2025",
+    "servico": "Fazer solda em trinca no chassi - (Fazenda SP)\nSolicito Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5487",
+    "cd_equipamento": "5487",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117583",
+    "data_entrada": "01/09/2025",
+    "servico": "Reparar barra de proteção traseira do tanque, quebrada após tentativa de arraste pelo local inadequado. Executar soldagem/reforço estrutural e reinstalação. - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsaevel Sr. Mauricio"
+  },
+  {
     "frota": "253",
     "cd_equipamento": "253",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117581",
     "data_entrada": "01/09/2025",
     "servico": "Confeccionar proteção de para -lamas e lanternas - (Fazenda Minuano/Oficina Cocamar)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "5749",
+    "cd_equipamento": "5749",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117512",
+    "data_entrada": "30/08/2025",
+    "servico": "Soldar trilho das roldanas do extensor da torre do pulverizador - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "79",
@@ -54,6 +102,22 @@
     "os": "117391",
     "data_entrada": "28/08/2025",
     "servico": "Fazer enchimento do rabicho e trocar corrente de segurança por mais grossa - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5401",
+    "cd_equipamento": "5401",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "117386",
+    "data_entrada": "28/08/2025",
+    "servico": "Fazer solda em trinca na estrutura e avaliar necessidade de fazer reforço na mesma e trocar cabo - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5219",
+    "cd_equipamento": "5219",
+    "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
+    "os": "117380",
+    "data_entrada": "28/08/2025",
+    "servico": "Soldar pescoço, desentortar ferro de apoio e conectar mangueira ao carrinho. Danos ocasionados por impacto com toco no meio do pomar durante operação noturna - (Fazenda SP)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5345",
