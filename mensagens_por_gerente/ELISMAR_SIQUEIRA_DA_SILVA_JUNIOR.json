@@ -1,10 +1,17 @@
 [
   {
-    "frota": "5529",
-    "os": "117456",
-    "data": "29/08/2025",
+    "frota": "147",
+    "os": "117621",
+    "data": "02/09/2025",
     "prestador": "nan",
-    "servico": "Vazamento de óleo na bomba e  na conexão do registro com a bomba - (Fazenda Nova Manhã)"
+    "servico": "Sacar parafusos comprometidos e substituir por novos na fixação do suporte do rabicho, garantindo alinhamento e segurança estrutural - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "5529",
+    "os": "117607",
+    "data": "01/09/2025",
+    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
+    "servico": "Tampar buracos do ramal velho na fibra nos dois lados da torre."
   },
   {
     "frota": "5201",
@@ -21,13 +28,6 @@
     "servico": "Verificar conjunto planetário/redução final da roda dianteira lado direito do trator apresentando saída de limalha de ferro. - (Fazenda Nova Manhã)"
   },
   {
-    "frota": "251",
-    "os": "117444",
-    "data": "28/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sistema eletrico de iluminação, trocado cibié porem não ascende - (Fazenda Nova Manhã)"
-  },
-  {
     "frota": "349",
     "os": "117259",
     "data": "26/08/2025",
@@ -38,22 +38,8 @@
     "frota": "5275",
     "os": "117238",
     "data": "26/08/2025",
-    "prestador": "nan",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Reduzir altura da torre, avaliar necessidade de troca da correia da turbina e verificar rolamento do eixo da hélice - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "27",
-    "os": "117188",
-    "data": "25/08/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Verificar trator sem freio - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "27",
-    "os": "117110",
-    "data": "22/08/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Verificar direção dura - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5600",
@@ -61,13 +47,6 @@
     "data": "21/08/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Tampar buracos do ramal velho na fibra nos dois lados da torre."
-  },
-  {
-    "frota": "251",
-    "os": "117025",
-    "data": "21/08/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Terminal da direção L/E estourado - (Fazenda Nova Manhã)"
   },
   {
     "frota": "349",
@@ -137,7 +116,7 @@
     "os": "115676",
     "data": "01/08/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Revisar bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)"
+    "servico": "Revisar equipamento, bomba do tanque que está á muito tempo parada - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5600",

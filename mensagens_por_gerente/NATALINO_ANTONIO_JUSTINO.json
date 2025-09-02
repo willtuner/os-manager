@@ -1,5 +1,12 @@
 [
   {
+    "frota": "121",
+    "os": "117627",
+    "data": "02/09/2025",
+    "prestador": "MASON EQUIPAMENTOS AGRICOLAS LTDA",
+    "servico": "Vazamento de óleo no cudo da roda dianteira L/E - (Fazenda Alvorada)"
+  },
+  {
     "frota": "5138",
     "os": "117592",
     "data": "01/09/2025",
@@ -10,15 +17,8 @@
     "frota": "5558",
     "os": "117578",
     "data": "01/09/2025",
-    "prestador": "nan",
+    "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Recuperar suporte de fixação frontal da podadeira, quebrado na região de acoplamento ao trator. - (Fazenda Alvorada)|Parado|"
-  },
-  {
-    "frota": "144",
-    "os": "117514",
-    "data": "30/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Substituir os dois pneus dianteiros danificados (8.3-24) por novos (9.5-24)."
   },
   {
     "frota": "5035",
@@ -26,34 +26,6 @@
     "data": "29/08/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Verificar pneu esquerdo abrindo na lateral próximo ao talão (trocado recentemente dia 05/08)."
-  },
-  {
-    "frota": "144",
-    "os": "117382",
-    "data": "28/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Alvorada) |Parado|"
-  },
-  {
-    "frota": "73",
-    "os": "117303",
-    "data": "27/08/2025",
-    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
-    "servico": "Verificar trator afogado, motor gira mas não entra em funcionamento. - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "245",
-    "os": "117265",
-    "data": "26/08/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Marcha  remontada - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "245",
-    "os": "116996",
-    "data": "20/08/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Vazamento de óleo no cubo da roda dianteira L/E - (Fazenda Alvorada)"
   },
   {
     "frota": "245",
