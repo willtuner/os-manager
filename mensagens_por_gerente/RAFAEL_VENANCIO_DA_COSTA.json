@@ -1,5 +1,26 @@
 [
   {
+    "frota": "5242",
+    "os": "117663",
+    "data": "02/09/2025",
+    "prestador": "WIESE TRANSPORTES LTDA",
+    "servico": "Frete indústria"
+  },
+  {
+    "frota": "5105",
+    "os": "117662",
+    "data": "02/09/2025",
+    "prestador": "WIESE TRANSPORTES LTDA",
+    "servico": "Frete indústria"
+  },
+  {
+    "frota": "274",
+    "os": "117661",
+    "data": "02/09/2025",
+    "prestador": "WIESE TRANSPORTES LTDA",
+    "servico": "Frete indústria"
+  },
+  {
     "frota": "5087",
     "os": "117605",
     "data": "01/09/2025",
@@ -47,13 +68,6 @@
     "data": "13/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisão do sistema eletrico do trator - Oficina OMC"
-  },
-  {
-    "frota": "5155",
-    "os": "115590",
-    "data": "18/07/2025",
-    "prestador": "JORGINHO IMPLEMENTO E TRATORES AGRICOLA",
-    "servico": "- Reforma Geral."
   },
   {
     "frota": "43",
