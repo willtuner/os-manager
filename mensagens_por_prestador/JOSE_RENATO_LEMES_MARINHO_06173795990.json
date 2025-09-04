@@ -1,19 +1,67 @@
 [
   {
+    "frota": "222",
+    "cd_equipamento": "222",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117808",
+    "data_entrada": "04/09/2025",
+    "servico": "Fazer preenchimento no rabicho com folga  - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "106",
+    "cd_equipamento": "106",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "117773",
+    "data_entrada": "04/09/2025",
+    "servico": "Soldar trinca na roda dianteira direita.\nFazenda Nova Manhã\nSolicitado Sr. Adriano\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5129",
+    "cd_equipamento": "5129",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "117772",
+    "data_entrada": "04/09/2025",
+    "servico": "Reduzir altura da torre, avaliar necessidade de troca da correia da turbina e verificar rolamento do eixo da hélice - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5275",
+    "cd_equipamento": "5275",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "117771",
+    "data_entrada": "04/09/2025",
+    "servico": "Reduzir altura da torre - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5191",
+    "cd_equipamento": "5191",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "117758",
+    "data_entrada": "04/09/2025",
+    "servico": "Soldar fixação de proteção de partes móveis - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsvel Sr. Mauiricio"
+  },
+  {
+    "frota": "5352",
+    "cd_equipamento": "5352",
+    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
+    "os": "117687",
+    "data_entrada": "03/09/2025",
+    "servico": "Quebra da trava da esteira - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5451",
+    "cd_equipamento": "5451",
+    "modelo": "PULVERIZADOR BARRA QUADRICICLO",
+    "os": "117659",
+    "data_entrada": "02/09/2025",
+    "servico": "Quebra da barra de direção L/E - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "276",
     "cd_equipamento": "276",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117652",
     "data_entrada": "02/09/2025",
     "servico": "Trocar gonzo da proteção dianteira - (Oficina)\nSolicitado Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "5009",
-    "cd_equipamento": "5009",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "117622",
-    "data_entrada": "02/09/2025",
-    "servico": "Fazer solda na grade de transporte de produtos - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "216",
@@ -152,22 +200,6 @@
     "servico": "Instalar proteção de partes moveis - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5270",
-    "cd_equipamento": "5270",
-    "modelo": "PULVERIZADOR FACCHINI 6000 LT",
-    "os": "117299",
-    "data_entrada": "27/08/2025",
-    "servico": "Quebra do eixo da roda dianteira L/D - (Fazenda NSA) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5009",
-    "cd_equipamento": "5009",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "117297",
-    "data_entrada": "27/08/2025",
-    "servico": "Soldar e recuperar suporte da bomba trincado e suporte de carregamento de produtos com trinca - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "156",
     "cd_equipamento": "156",
     "modelo": "TRATOR JOHN DEERE 5055E",
@@ -222,14 +254,6 @@
     "os": "117207",
     "data_entrada": "25/08/2025",
     "servico": "Adaptar asas para instalar sistema de SPE - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5214",
-    "cd_equipamento": "5214",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "117169",
-    "data_entrada": "23/08/2025",
-    "servico": "Verificar e corrigir acoplamento das engrenagens e correntes de transmissão; avaliar desgaste dos dentes e necessidade de substituição - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5264",

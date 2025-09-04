@@ -1,5 +1,101 @@
 [
   {
+    "frota": "47",
+    "cd_equipamento": "47",
+    "modelo": "TRATOR JOHN DEERE 5403 4X2",
+    "os": "117761",
+    "data_entrada": "04/09/2025",
+    "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "197",
+    "cd_equipamento": "197",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117734",
+    "data_entrada": "04/09/2025",
+    "servico": "Revisar sinalização - (Fazenda São Severino) \nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "113",
+    "cd_equipamento": "113",
+    "modelo": "TRATOR JOHN DEERE 5603 4X4",
+    "os": "117724",
+    "data_entrada": "03/09/2025",
+    "servico": "Chave de alta/baixa do farol quebrada - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "152",
+    "cd_equipamento": "152",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "117723",
+    "data_entrada": "03/09/2025",
+    "servico": "Verificar meia luz e luz de freio não funciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "69",
+    "cd_equipamento": "69",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "117722",
+    "data_entrada": "03/09/2025",
+    "servico": "Farol não funciona (terminais da lâmpada derretidos) sirene não funciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "221",
+    "cd_equipamento": "221",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117708",
+    "data_entrada": "03/09/2025",
+    "servico": "Verificar injetador de água do para-brisa não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "268",
+    "cd_equipamento": "268",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117707",
+    "data_entrada": "03/09/2025",
+    "servico": "Verificar injetador de água do para-brisa não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5659",
+    "cd_equipamento": "5659",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117703",
+    "data_entrada": "03/09/2025",
+    "servico": "Executar substituição do chicote elétrico do tanque de pulverização, danificado em decorrência do rompimento do eixo cardan, que se enroscou no mesmo - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5521",
+    "cd_equipamento": "5521",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "117688",
+    "data_entrada": "03/09/2025",
+    "servico": "Verificar sistema de ramal que não está desligando os lados. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117684",
+    "data_entrada": "03/09/2025",
+    "servico": "Verificar faróis que não acendem; responsável informa que as lâmpadas não estão queimadas - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "522",
+    "cd_equipamento": "522",
+    "modelo": "MOTOR VERMEL IRRIGACAO MB1935",
+    "os": "117674",
+    "data_entrada": "03/09/2025",
+    "servico": "Verificar equipamento sem partida, já trocado as baterias porem continua sem ignição - (Fazenda São Paulo)\nSolicitado Sr. Zylton \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "130",
+    "cd_equipamento": "130",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "117668",
+    "data_entrada": "03/09/2025",
+    "servico": "Revisar chicote eletrico em curto - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "220",
     "cd_equipamento": "220",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -30,14 +126,6 @@
     "os": "117618",
     "data_entrada": "02/09/2025",
     "servico": "Revisão elétrica completa - (Oficina)\nSolicitado Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "319",
-    "cd_equipamento": "319",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "117617",
-    "data_entrada": "02/09/2025",
-    "servico": "Verificar alternador, não carrega a bateria - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "140",
@@ -136,14 +224,6 @@
     "servico": "Limpador de para-brisa não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "219",
-    "cd_equipamento": "219",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116695",
-    "data_entrada": "15/08/2025",
-    "servico": "Trocar lanterna do teto L/E - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Carlos"
-  },
-  {
     "frota": "329",
     "cd_equipamento": "329",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -174,22 +254,6 @@
     "os": "116048",
     "data_entrada": "05/08/2025",
     "servico": "Relogio horimetro apagado, verificar possível substituição do painel - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "342",
-    "cd_equipamento": "342",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "115597",
-    "data_entrada": "31/07/2025",
-    "servico": "Trocar lanterna traseira lado esquerdo (Fazenda SP)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "265",
-    "cd_equipamento": "265",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "113516",
-    "data_entrada": "30/06/2025",
-    "servico": "Instalar proteção das lanternas L/?? - (Fazenda Casa Branca)\nSolicitado Sr. João\nResponsavel Sr. Arthur"
   },
   {
     "frota": "127",

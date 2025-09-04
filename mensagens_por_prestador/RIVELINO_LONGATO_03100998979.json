@@ -1,5 +1,77 @@
 [
   {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117813",
+    "data_entrada": "04/09/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)||Parado|\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5697",
+    "cd_equipamento": "5697",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "117769",
+    "data_entrada": "04/09/2025",
+    "servico": "Pneu L/? furado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "10226",
+    "cd_equipamento": "10226",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117767",
+    "data_entrada": "04/09/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)|Parado|\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5290",
+    "cd_equipamento": "5290",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "117760",
+    "data_entrada": "04/09/2025",
+    "servico": "Pneu L/D furado - (Fazenda Santa Izabel)|Parado|\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "266",
+    "cd_equipamento": "266",
+    "modelo": "TRATOR JOHN DEERE 7230J",
+    "os": "117725",
+    "data_entrada": "03/09/2025",
+    "servico": "Consertar pneu traseiro esquerdo furado (com corte na lateral interna do mesmo)\nFazenda Ursula\nSolicitado Sr. João Dubay\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "209",
+    "cd_equipamento": "209",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117697",
+    "data_entrada": "03/09/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5336",
+    "cd_equipamento": "5336",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "117678",
+    "data_entrada": "03/09/2025",
+    "servico": "Pneu L/E furado - (Fazenda Bela Manhã) |Parado|\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "140",
+    "cd_equipamento": "140",
+    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+    "os": "117672",
+    "data_entrada": "03/09/2025",
+    "servico": "Pneu L/D furado - (Fazenda Terra Branca)|Parado|\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "286",
+    "cd_equipamento": "286",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117671",
+    "data_entrada": "03/09/2025",
+    "servico": "Pneu traseiro L/E furado  - (Fazenda Terra Branca)|Parado|\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5652",
     "cd_equipamento": "5652",
     "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",

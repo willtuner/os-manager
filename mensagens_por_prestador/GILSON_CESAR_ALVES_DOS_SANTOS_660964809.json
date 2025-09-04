@@ -1,11 +1,35 @@
 [
   {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117754",
+    "data_entrada": "04/09/2025",
+    "servico": "Soldar e colocar parafusos do rabicho - (Fazenda Minuano)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5083",
+    "cd_equipamento": "5083",
+    "modelo": "CARRETA BAG C/ GUINCHO",
+    "os": "117705",
+    "data_entrada": "02/09/2025",
+    "servico": "Trocar haste e reparo do pistão - (Fazenda SL1)\nSolicitado Sr. Gilson\nResponsavel Sr. Izaias"
+  },
+  {
     "frota": "5326",
     "cd_equipamento": "5326",
     "modelo": "CARRETA SCHULTER 12 BEGUES",
     "os": "117589",
     "data_entrada": "01/09/2025",
     "servico": "Trocar alavanca do desarme danificada e e trocar parafuso do desarme - (Fazenda NSA)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
+  },
+  {
+    "frota": "5823",
+    "cd_equipamento": "5823",
+    "modelo": "CARRETA TRANSBORDO SCHULTER",
+    "os": "117696",
+    "data_entrada": "28/08/2025",
+    "servico": "Revisar equipamento: revisar guincho, fazer embuchamento, reforçar caixa e bica, corrigir folga no cabeçalho e engate do mesmo.\nCorporativo (Oficina Gilson)\nSolicitado Sr. Elton Pratinha"
   },
   {
     "frota": "5461",
