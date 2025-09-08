@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+
+{% block title %}Planos de Lubrificação{% endblock %}
+
+{% block page_title %}Gerenciamento de Planos de Lubrificação{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <!-- Abas de Navegação -->
+    <ul class="nav nav-tabs mb-4" id="lubrificacaoTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="planos-tab" data-bs-toggle="tab" data-bs-target="#planos" type="button" role="tab" aria-controls="planos" aria-selected="true">
+                <i class="fas fa-clipboard-list me-1"></i> Planos
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="componentes-tab" data-bs-toggle="tab" data-bs-target="#componentes" type="button" role="tab" aria-controls="componentes" aria-selected="false">
+                <i class="fas fa-cogs me-1"></i> Componentes
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sistemas-tab" data-bs-toggle="tab" data-bs-target="#sistemas" type="button" role="tab" aria-controls="sistemas" aria-selected="false">
+                <i class="fas fa-sitemap me-1"></i> Sistemas e Subsistemas
+            </button>
+        </li>
+    </ul>
+
+    <!-- Conteúdo das Abas -->
+    <div class="tab-content" id="lubrificacaoTabContent">
+        <!-- Aba de Planos -->
+        <div class="tab-pane fade" id="planos" role="tabpanel" aria-labelledby="planos-tab">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Criar Novo Plano</h5>
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="{{ url_for('add_lub_plano') }}" method="POST">
+                                <div class="mb-3">
+                                    <label for="nome_plano" class="form-label">Nome do Plano</label>
+                                    <input type="text" class="form-control" id="nome_plano" name="nome_plano" placeholder="Ex: Plano JD 5080E" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="modelo_veiculo" class="form-label">Modelo do Veículo</label>
+                                    <input type="text" class="form-control" id="modelo_veiculo" name="modelo_veiculo" placeholder="Ex: JD 5080E" required>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-plus-circle me-1"></i> Criar Plano
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h5>Planos Existentes</h5>
+                    <div class="list-group">
+                        {% if planos %}
+                            {% for plano in planos %}
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <a href="{{ url_for('lub_plano_detalhe', plano_id=plano.id) }}" class="text-decoration-none flex-grow-1">
+                                    <strong>{{ plano.nome_plano }}</strong>
+                                    <small class="text-muted d-block">Modelo: {{ plano.modelo_veiculo }}</small>
+                                </a>
+                                <form action="{{ url_for('delete_lub_plano', plano_id=plano.id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja remover este plano e todas as suas revisões?');">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger ms-3">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="list-group-item text-center text-muted">
+                                Nenhum plano de lubrificação cadastrado.
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba de Componentes -->
+        <div class="tab-pane fade show active" id="componentes" role="tabpanel" aria-labelledby="componentes-tab">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Adicionar Novo Componente</h5>
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="{{ url_for('add_lub_componente') }}" method="POST">
+                                <div class="mb-3">
+                                    <label for="codigo_pimns" class="form-label">Código PIMNS</label>
+                                    <input type="text" class="form-control" id="codigo_pimns" name="codigo_pimns" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome do Componente</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" required>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-plus-circle me-1"></i> Adicionar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h5>Componentes Cadastrados</h5>
+                    <div class="list-group" style="max-height: 400px; overflow-y: auto;">
+                        {% if componentes %}
+                            {% for comp in componentes %}
+                            <div class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong class="text-primary">[{{ comp.codigo_pimns }}]</strong> {{ comp.nome }}
+                                </div>
+                                <form action="{{ url_for('delete_lub_componente', componente_id=comp.id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja remover este componente?');">
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="list-group-item text-center text-muted">
+                                Nenhum componente cadastrado ainda.
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba de Sistemas e Subsistemas -->
+        <div class="tab-pane fade" id="sistemas" role="tabpanel" aria-labelledby="sistemas-tab">
+            <h5>Sistemas e Subsistemas Base</h5>
+            <p class="text-muted">Estes são os dados base do sistema. Para alterá-los, um administrador precisa modificar a configuração inicial.</p>
+            <div class="accordion" id="accordionSistemas">
+                {% for sistema in sistemas %}
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-{{ sistema.id }}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ sistema.id }}" aria-expanded="false" aria-controls="collapse-{{ sistema.id }}">
+                            <strong>{{ sistema.nome }}</strong>
+                        </button>
+                    </h2>
+                    <div id="collapse-{{ sistema.id }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ sistema.id }}" data-bs-parent="#accordionSistemas">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                {% for subsistema in sistema.subsistemas %}
+                                <li class="list-group-item">{{ subsistema.nome }}</li>
+                                {% else %}
+                                <li class="list-group-item text-muted">Nenhum subsistema cadastrado.</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <div class="alert alert-warning">Nenhum sistema base foi encontrado.</div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
