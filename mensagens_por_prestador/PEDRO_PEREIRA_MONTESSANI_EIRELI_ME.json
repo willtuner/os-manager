@@ -1,11 +1,35 @@
 [
   {
-    "frota": "47",
-    "cd_equipamento": "47",
-    "modelo": "TRATOR JOHN DEERE 5403 4X2",
-    "os": "117761",
+    "frota": "104",
+    "cd_equipamento": "104",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "117833",
+    "data_entrada": "05/09/2025",
+    "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117818",
+    "data_entrada": "05/09/2025",
+    "servico": "Verificar chicote eletrico do cibié dianteiro e cibié traseiro quebrado suporte de fixação - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "121",
+    "cd_equipamento": "121",
+    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+    "os": "117815",
+    "data_entrada": "05/09/2025",
+    "servico": "Verificar alternador - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5006",
+    "cd_equipamento": "5006",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "117807",
     "data_entrada": "04/09/2025",
-    "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
+    "servico": "Verificar plug do painel com mau contato - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsvel Sr. Arthur"
   },
   {
     "frota": "197",
@@ -64,14 +88,6 @@
     "servico": "Executar substituição do chicote elétrico do tanque de pulverização, danificado em decorrência do rompimento do eixo cardan, que se enroscou no mesmo - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5521",
-    "cd_equipamento": "5521",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "117688",
-    "data_entrada": "03/09/2025",
-    "servico": "Verificar sistema de ramal que não está desligando os lados. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "218",
     "cd_equipamento": "218",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -94,14 +110,6 @@
     "os": "117668",
     "data_entrada": "03/09/2025",
     "servico": "Revisar chicote eletrico em curto - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "220",
-    "cd_equipamento": "220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117645",
-    "data_entrada": "02/09/2025",
-    "servico": "Revisão elétrica (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   },
   {
     "frota": "5705",

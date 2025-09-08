@@ -1,5 +1,13 @@
 [
   {
+    "frota": "25",
+    "cd_equipamento": "25",
+    "modelo": "TRATOR VALTRA BF 75 4X4",
+    "os": "117817",
+    "data_entrada": "05/09/2025",
+    "servico": "Revisar orbitrol - Faz Minuano\nAutorizado Arthur"
+  },
+  {
     "frota": "5488",
     "cd_equipamento": "5488",
     "modelo": "CONJUNTO PODADOR WWD",
@@ -62,14 +70,6 @@
     "os": "117376",
     "data_entrada": "28/08/2025",
     "servico": "Vazamento de óleo na caixa  de facas - (Fazenda São Severino)\nSolicitado Sr. Marcio Junio\nResposavel Sr. Marcio"
-  },
-  {
-    "frota": "5266",
-    "cd_equipamento": "5266",
-    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
-    "os": "117354",
-    "data_entrada": "27/08/2025",
-    "servico": "Avaliar sistema hidráulico da régua, que apresenta descida involuntária durante a operação e corrigir vazamento na válvula de controle de vazão de óleo. - (Fazenda SL1)\nSolicitado Sr. Wagner\nResponsável Sr. Maurício"
   },
   {
     "frota": "349",
