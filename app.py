@@ -222,6 +222,16 @@ class LubItemRevisao(db.Model):
     componente_id = db.Column(db.Integer, db.ForeignKey('lub_componente.id'), nullable=False)
     quantidade = db.Column(db.Float, nullable=False, default=1)
 
+class FrotaVeiculo(db.Model):
+    __tablename__ = 'frota_veiculo'
+    id = db.Column(db.Integer, primary_key=True)
+    tag_veiculo = db.Column(db.String(50), unique=True, nullable=False)
+    modelo = db.Column(db.String(100), nullable=False)
+    ano = db.Column(db.Integer)
+    horimetro_atual = db.Column(db.Float, nullable=False, default=0.0)
+    plano_id = db.Column(db.Integer, db.ForeignKey('lub_plano.id'), nullable=True)
+    plano = db.relationship('LubPlano', backref='veiculos')
+
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
 MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
@@ -351,7 +361,7 @@ def init_db():
                     logger.info("Coluna quantidade adicionada com sucesso.")
 
             # Verifica e cria as tabelas de lubrificação
-            lub_tables = ['lub_sistema', 'lub_subsistema', 'lub_componente', 'lub_plano', 'lub_revisao', 'lub_item_revisao']
+            lub_tables = ['lub_sistema', 'lub_subsistema', 'lub_componente', 'lub_plano', 'lub_revisao', 'lub_item_revisao', 'frota_veiculo']
             for table_name in lub_tables:
                 if table_name not in inspector.get_table_names():
                     logger.info(f"Tabela {table_name} não encontrada, criando...")
@@ -1500,6 +1510,90 @@ def delete_lub_item_revisao(item_id):
         flash(f'Erro ao remover item da revisão: {e}', 'danger')
 
     return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+
+# --- Rotas para Gestão da Frota ---
+@app.route('/frota')
+def frota_index():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    veiculos = FrotaVeiculo.query.order_by(FrotaVeiculo.tag_veiculo).all()
+    planos = LubPlano.query.order_by(LubPlano.nome_plano).all()
+
+    return render_template('frota.html', veiculos=veiculos, planos=planos)
+
+@app.route('/frota/add', methods=['POST'])
+def add_veiculo():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    tag_veiculo = request.form.get('tag_veiculo')
+    modelo = request.form.get('modelo')
+    ano = request.form.get('ano')
+    horimetro_atual = request.form.get('horimetro_atual', '0').replace(',', '.')
+    plano_id = request.form.get('plano_id')
+
+    if not tag_veiculo or not modelo:
+        flash('Tag e Modelo do veículo são obrigatórios.', 'danger')
+        return redirect(url_for('frota_index'))
+
+    if FrotaVeiculo.query.filter_by(tag_veiculo=tag_veiculo).first():
+        flash(f'Já existe um veículo com a tag "{tag_veiculo}".', 'warning')
+        return redirect(url_for('frota_index'))
+
+    try:
+        novo_veiculo = FrotaVeiculo(
+            tag_veiculo=tag_veiculo,
+            modelo=modelo,
+            ano=int(ano) if ano else None,
+            horimetro_atual=float(horimetro_atual),
+            plano_id=int(plano_id) if plano_id else None
+        )
+        db.session.add(novo_veiculo)
+        db.session.commit()
+        flash('Veículo adicionado à frota com sucesso!', 'success')
+    except ValueError:
+        flash('Ano ou Horímetro inválido. Por favor, insira números válidos.', 'danger')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao adicionar veículo: {e}', 'danger')
+
+    return redirect(url_for('frota_index'))
+
+
+@app.route('/frota/atualizar_horimetros', methods=['GET', 'POST'])
+def atualizar_horimetros():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    if request.method == 'POST':
+        try:
+            for key, value in request.form.items():
+                if key.startswith('horimetro_'):
+                    veiculo_id = int(key.split('_')[1])
+                    if value:
+                        horimetro = float(value.replace(',', '.'))
+                        veiculo = FrotaVeiculo.query.get(veiculo_id)
+                        if veiculo:
+                            veiculo.horimetro_atual = horimetro
+            db.session.commit()
+            flash('Horímetros atualizados com sucesso!', 'success')
+        except ValueError:
+            db.session.rollback()
+            flash('Erro: Horímetro inválido. Por favor, insira apenas números.', 'danger')
+        except Exception as e:
+            db.session.rollback()
+            flash(f'Ocorreu um erro ao atualizar os horímetros: {e}', 'danger')
+
+        return redirect(url_for('atualizar_horimetros'))
+
+    veiculos = FrotaVeiculo.query.order_by(FrotaVeiculo.tag_veiculo).all()
+    return render_template('atualizar_horimetros.html', veiculos=veiculos)
+
 
 @app.route('/api/subsistemas/<int:sistema_id>')
 def api_get_subsistemas(sistema_id):

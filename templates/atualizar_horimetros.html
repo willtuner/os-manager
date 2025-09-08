@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Atualização de Horímetros em Massa{% endblock %}
+
+{% block page_title %}Atualização de Horímetros em Massa{% endblock %}
+
+{% block header_actions %}
+  <a href="{{ url_for('frota_index') }}" class="btn btn-secondary btn-sm">
+    <i class="fas fa-arrow-left me-1"></i>Voltar para Frota
+  </a>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text text-muted">
+                Atualize os horímetros de múltiplos veículos de uma só vez. Insira os novos valores e clique em "Salvar Alterações" no final da página.
+            </p>
+            <form action="{{ url_for('atualizar_horimetros') }}" method="POST">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Tag do Veículo</th>
+                                <th>Modelo</th>
+                                <th style="width: 25%;">Horímetro Atual</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for veiculo in veiculos %}
+                            <tr>
+                                <td><strong>{{ veiculo.tag_veiculo }}</strong></td>
+                                <td>{{ veiculo.modelo }}</td>
+                                <td>
+                                    <input type="number" step="any" class="form-control"
+                                           name="horimetro_{{ veiculo.id }}"
+                                           value="{{ veiculo.horimetro_atual }}">
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-grid mt-3">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-save me-1"></i> Salvar Alterações
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
