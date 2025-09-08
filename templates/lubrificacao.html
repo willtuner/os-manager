@@ -9,12 +9,15 @@
     <!-- Abas de Navegação -->
     <ul class="nav nav-tabs mb-4" id="lubrificacaoTabs" role="tablist">
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="planos-tab" data-bs-toggle="tab" data-bs-target="#planos" type="button" role="tab" aria-controls="planos" aria-selected="true">
+            <a class="nav-link" href="{{ url_for('frota_index') }}"><i class="fas fa-tractor me-1"></i> Frota</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="planos-tab" data-bs-toggle="tab" data-bs-target="#planos" type="button" role="tab" aria-controls="planos" aria-selected="true">
                 <i class="fas fa-clipboard-list me-1"></i> Planos
             </button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="componentes-tab" data-bs-toggle="tab" data-bs-target="#componentes" type="button" role="tab" aria-controls="componentes" aria-selected="false">
+            <button class="nav-link" id="componentes-tab" data-bs-toggle="tab" data-bs-target="#componentes" type="button" role="tab" aria-controls="componentes" aria-selected="false">
                 <i class="fas fa-cogs me-1"></i> Componentes
             </button>
         </li>
