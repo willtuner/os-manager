@@ -22,7 +22,7 @@
                     <table class="table table-bordered">
                         <thead class="table-light">
                             <tr>
-                                <th>Tag do Veículo</th>
+                                <th>Frota</th>
                                 <th>Modelo</th>
                                 <th style="width: 25%;">Horímetro Atual</th>
                             </tr>
@@ -30,7 +30,7 @@
                         <tbody>
                             {% for veiculo in veiculos %}
                             <tr>
-                                <td><strong>{{ veiculo.tag_veiculo }}</strong></td>
+                                <td><strong>{{ veiculo.frota }}</strong></td>
                                 <td>{{ veiculo.modelo }}</td>
                                 <td>
                                     <input type="number" step="any" class="form-control"
