@@ -227,10 +227,21 @@ class FrotaVeiculo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     frota = db.Column(db.String(50), unique=True, nullable=False)
     modelo = db.Column(db.String(100), nullable=False)
-    ano = db.Column(db.Integer)
+    ano = db.Column(db.Integer, nullable=True)
     horimetro_atual = db.Column(db.Float, nullable=False, default=0.0)
     plano_id = db.Column(db.Integer, db.ForeignKey('lub_plano.id'), nullable=True)
     plano = db.relationship('LubPlano', backref='veiculos')
+
+    # New detailed fields from user's spreadsheet
+    fazenda = db.Column(db.String(100), nullable=True)
+    descricao = db.Column(db.Text, nullable=True)
+    chassi = db.Column(db.String(100), nullable=True)
+    data_aquisicao = db.Column(db.String(50), nullable=True)
+    especie = db.Column(db.String(100), nullable=True)
+    marca = db.Column(db.String(100), nullable=True)
+    tipo_propriedade = db.Column(db.String(50), nullable=True)
+    operacao_principal = db.Column(db.String(100), nullable=True)
+    gabinado = db.Column(db.Boolean, default=False)
 
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
@@ -362,6 +373,28 @@ def init_db():
 
             # Verifica e cria as tabelas de lubrificação
             lub_tables = ['lub_sistema', 'lub_subsistema', 'lub_componente', 'lub_plano', 'lub_revisao', 'lub_item_revisao', 'frota_veiculo']
+
+            # Adiciona colunas detalhadas à tabela frota_veiculo se não existirem
+            if 'frota_veiculo' in inspector.get_table_names():
+                columns_frota = [col['name'] for col in inspector.get_columns('frota_veiculo')]
+                new_cols = {
+                    'fazenda': 'VARCHAR(100)',
+                    'descricao': 'TEXT',
+                    'chassi': 'VARCHAR(100)',
+                    'data_aquisicao': 'VARCHAR(50)',
+                    'especie': 'VARCHAR(100)',
+                    'marca': 'VARCHAR(100)',
+                    'tipo_propriedade': 'VARCHAR(50)',
+                    'operacao_principal': 'VARCHAR(100)',
+                    'gabinado': 'BOOLEAN'
+                }
+                for col, col_type in new_cols.items():
+                    if col not in columns_frota:
+                        logger.info(f"Adicionando coluna {col} à tabela frota_veiculo")
+                        db.session.execute(text(f'ALTER TABLE frota_veiculo ADD COLUMN {col} {col_type}'))
+                        db.session.commit()
+                        logger.info(f"Coluna {col} adicionada com sucesso.")
+
             for table_name in lub_tables:
                 if table_name not in inspector.get_table_names():
                     logger.info(f"Tabela {table_name} não encontrada, criando...")
@@ -1530,11 +1563,21 @@ def add_veiculo():
         flash('Acesso negado.', 'danger')
         return redirect(url_for('login'))
 
+    # Coletando todos os dados do formulário
     frota = request.form.get('frota')
     modelo = request.form.get('modelo')
     ano = request.form.get('ano')
     horimetro_atual = request.form.get('horimetro_atual', '0').replace(',', '.')
     plano_id = request.form.get('plano_id')
+    fazenda = request.form.get('fazenda')
+    descricao = request.form.get('descricao')
+    chassi = request.form.get('chassi')
+    data_aquisicao = request.form.get('data_aquisicao')
+    especie = request.form.get('especie')
+    marca = request.form.get('marca')
+    tipo_propriedade = request.form.get('tipo_propriedade')
+    operacao_principal = request.form.get('operacao_principal')
+    gabinado = 'gabinado' in request.form # Checkbox value
 
     if not frota or not modelo:
         flash('Frota e Modelo do veículo são obrigatórios.', 'danger')
@@ -1550,7 +1593,16 @@ def add_veiculo():
             modelo=modelo,
             ano=int(ano) if ano else None,
             horimetro_atual=float(horimetro_atual),
-            plano_id=int(plano_id) if plano_id else None
+            plano_id=int(plano_id) if plano_id else None,
+            fazenda=fazenda,
+            descricao=descricao,
+            chassi=chassi,
+            data_aquisicao=data_aquisicao,
+            especie=especie,
+            marca=marca,
+            tipo_propriedade=tipo_propriedade,
+            operacao_principal=operacao_principal,
+            gabinado=gabinado
         )
         db.session.add(novo_veiculo)
         db.session.commit()
