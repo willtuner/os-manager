@@ -2,7 +2,7 @@
 
 {% block title %}Painel de OS – {{ nome }}{% endblock %}
 
-{% block page_title %}OS Atribuídas{% endblock %}
+{% block page_title %}Painel do Prestador{% endblock %}
 
 {% block content %}
 <style>
@@ -28,12 +28,7 @@
         border-radius: .5rem; /* Bordas mais suaves */
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        /* Removido hover para não interferir com os campos de formulário */
     }
-    /* .card-os:hover { 
-        transform: translateY(-3px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    } */
     .card-body {
         padding: 1rem 1.25rem;
     }
@@ -134,6 +129,17 @@
         40% {transform: translateY(-10px);}
         60% {transform: translateY(-5px);}
     }
+
+    /* Estilos para as abas */
+    .nav-tabs .nav-link {
+        color: var(--azul-escuro);
+        font-weight: 500;
+    }
+    .nav-tabs .nav-link.active {
+        background-color: var(--verde-agro);
+        color: white;
+        border-color: var(--verde-agro);
+    }
 </style>
 
 <div class="container">
@@ -156,309 +162,337 @@
     <div class="mascot-container">
         <div class="mascot-icon">🚜</div>
         <div class="speech-bubble {{ bubble_class }}">
-      <h5 class="fw-bold mb-1" id="greeting-text">{{ nome|capitalize_name }}!</h5>
-          <p class="mb-0">{{ message }}</p>
+            <h5 class="fw-bold mb-1" id="greeting-text">{{ nome|capitalize_name }}!</h5>
+            <p class="mb-0">{{ message }}</p>
         </div>
     </div>
     {# --- Fim do Bloco de Saudação com Mascote --- #}
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const greetings = {{ greetings_list|tojson }};
-    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
-    const greetingElement = document.getElementById('greeting-text');
-    greetingElement.innerHTML = randomGreeting + ' ' + greetingElement.innerHTML;
-});
-</script>
+    <!-- ABAS DE NAVEGAÇÃO -->
+    <ul class="nav nav-tabs mb-4" id="prestadorTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="ativas-tab" data-bs-toggle="tab" data-bs-target="#ativas" type="button" role="tab" aria-controls="ativas" aria-selected="true">
+                <i class="fas fa-wrench me-1"></i> OS Ativas <span class="badge bg-primary ms-2">{{ os_list|length }}</span>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="historico-tab" data-bs-toggle="tab" data-bs-target="#historico" type="button" role="tab" aria-controls="historico" aria-selected="false">
+                <i class="fas fa-history me-1"></i> Meu Histórico
+            </button>
+        </li>
+    </ul>
 
-    {% if os_list %}
-        {% for item in os_list %}
-        <div class="card card-os mb-3">
-            <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div>
-                        <h5 class="card-title mb-2">
-                            <span class="badge bg-dark me-2">OS {{ item.os }}</span>
-                            Frota {{ item.frota | default('N/A') }}
-                        </h5>
-                        <p class="card-text mb-1">
-                            <small class="text-muted">
-                                Aberta em: {{ item.data_entrada if item.data_entrada else 'Data não informada' }}
-                                &bull; Modelo: {{ item.modelo | default('N/A') }}
-                            </small>
-                        </p>
-                        <p class="card-text mb-2">
-                            <small class="text-muted">
-                                Status: <span class="fw-bold
-                                {% if item.dias_abertos > 30 %}text-danger
-                                {% elif item.dias_abertos > 15 %}text-warning
-                                {% else %}text-primary
-                                {% endif %}">
-                                Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
-                                </span>
-                            </small>
-                        </p>
-                    </div>
-                    <button type="button"
-                            class="btn btn-outline-primary btn-sm ms-2 flex-shrink-0"
-                            data-bs-toggle="modal"
-                            data-bs-target="#detalhesModal-{{ item.os }}">
-                        <i class="fas fa-eye me-1"></i>Detalhes
-                    </button>
-                </div>
-
-                <p class="card-text mt-1 mb-3">
-                    <i class="fas fa-wrench me-1 text-muted"></i>
-                    <span style="white-space: pre-wrap;">{{ item.servico | default('Serviço não especificado.') }}</span>
-                </p>
-                
-                {% if item.status == 'Pendente' %}
-                <div class="alert alert-warning p-2" role="alert">
-                    <h6 class="alert-heading h6 mb-1"><i class="fas fa-pause-circle me-1"></i>OS Pendente</h6>
-                    <p class="mb-1 small"><strong>Motivo:</strong> {{ item.status_motivo }}</p>
-                    <p class="small text-muted mb-0">
-                        Definido por: {{ item.status_definido_por }} em {{ item.status_data }}
-                    </p>
-                </div>
-                {% endif %}
-
-                <hr class="form-section-divider">
-
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <button type="button" class="btn btn-success btn-sm btn-toggle-form">
-                            <i class="fas fa-chevron-down me-1"></i> Finalizar esta OS
-                        </button>
-                    </div>
-                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#pendenteModal-{{ item.os }}">
-                        <i class="fas fa-pause-circle me-1"></i>Marcar Pendente
-                    </button>
-                </div>
-
-                <div class="collapse-form d-none mt-3">
-                    <form action="{{ url_for('finalizar_os', os_numero_str=item.os) }}"
-                          method="POST"
-                          enctype="multipart/form-data"
-                          class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
-                    
-                    <div class="row g-2 mb-2">
-                        <div class="col-md-6">
-                            <label for="data_finalizacao_{{ item.os }}" class="form-label small">Data de Finalização <span class="text-danger">*</span></label>
-                            <input type="date" id="data_finalizacao_{{ item.os }}" name="data_finalizacao"
-                                   class="form-control form-control-sm"
-                                   required
-                                   max="{{ today_date }}"> 
-                            <div class="invalid-feedback">Campo obrigatório.</div>
+    <!-- CONTEÚDO DAS ABAS -->
+    <div class="tab-content" id="prestadorTabContent">
+        <!-- ABA DE OS ATIVAS -->
+        <div class="tab-pane fade show active" id="ativas" role="tabpanel" aria-labelledby="ativas-tab">
+            {% if os_list %}
+                {% for item in os_list %}
+                <div class="card card-os mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div>
+                                <h5 class="card-title mb-2">
+                                    <span class="badge bg-dark me-2">OS {{ item.os }}</span>
+                                    Frota {{ item.frota | default('N/A') }}
+                                </h5>
+                                <p class="card-text mb-1">
+                                    <small class="text-muted">
+                                        Aberta em: {{ item.data_entrada if item.data_entrada else 'Data não informada' }}
+                                        &bull; Modelo: {{ item.modelo | default('N/A') }}
+                                    </small>
+                                </p>
+                                <p class="card-text mb-2">
+                                    <small class="text-muted">
+                                        Status: <span class="fw-bold
+                                        {% if item.dias_abertos > 30 %}text-danger
+                                        {% elif item.dias_abertos > 15 %}text-warning
+                                        {% else %}text-primary
+                                        {% endif %}">
+                                        Aberta há {{ item.dias_abertos }} dia{% if item.dias_abertos != 1 %}s{% endif %}
+                                        </span>
+                                    </small>
+                                </p>
+                            </div>
+                            <button type="button"
+                                    class="btn btn-outline-primary btn-sm ms-2 flex-shrink-0"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal-{{ item.os }}">
+                                <i class="fas fa-eye me-1"></i>Detalhes
+                            </button>
                         </div>
-                        <div class="col-md-6">
-                            <label for="hora_finalizacao_{{ item.os }}" class="form-label small">Hora de Finalização <span class="text-danger">*</span></label>
-                            <input type="time" id="hora_finalizacao_{{ item.os }}" name="hora_finalizacao"
-                                   class="form-control form-control-sm"
-                                   required>
-                            <div class="invalid-feedback">Campo obrigatório.</div>
-                        </div>
-                    </div>
-                    <div class="mb-2">
-                        <label for="observacoes_final_{{ item.os }}" class="form-label small">Observações da Finalização</label>
-                        <textarea id="observacoes_final_{{ item.os }}" name="observacoes"
-                                  class="form-control form-control-sm"
-                                  rows="3"
-                                  placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
-                    </div>
-                     <div class="mb-3">
-                        <label for="evidencia_{{ item.os }}" class="form-label small">Anexar Evidência (Opcional: Imagem ou PDF)</label>
-                        <input type="file" id="evidencia_{{ item.os }}" name="evidencia"
-                               class="form-control form-control-sm"
-                               accept="image/*,.pdf">
-                    </div>
-                    <div class="text-end">
-                        <button type="submit" class="btn btn-success btn-sm" id="submit-btn-{{ item.os }}">
-                            <i class="fas fa-check-circle me-1"></i>Confirmar Finalização
-                        </button>
-                    </div>
-                </form>
-                </div>
-            </div>
-        </div>
 
-        <div class="modal fade" id="detalhesModal-{{ item.os }}" tabindex="-1" aria-labelledby="detalhesModalLabel-{{ item.os }}" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="detalhesModalLabel-{{ item.os }}">Detalhes da OS {{ item.os }}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><strong>OS:</strong> {{ item.os }}</p>
-                        <p><strong>Frota:</strong> {{ item.frota | default('N/A') }}</p>
-                        <p><strong>Modelo:</strong> {{ item.modelo | default('N/A') }}</p>
-                        <p><strong>Data de Entrada:</strong> {{ item.data_entrada if item.data_entrada else 'N/A' }}</p>
-                        <p><strong>Dias em Aberto:</strong> {{ item.dias_abertos }}</p>
-                        <hr>
-                        <p><strong>Serviço Solicitado:</strong></p>
-                        <p style="white-space: pre-wrap;">{{ item.servico | default('N/A') }}</p>
-                        {% if item.observacao or item.Observacao %} 
-                            <hr>
-                            <p><strong>Observações de Abertura:</strong></p>
-                            <p style="white-space: pre-wrap;">{{ item.observacao or item.Observacao }}</p>
+                        <p class="card-text mt-1 mb-3">
+                            <i class="fas fa-wrench me-1 text-muted"></i>
+                            <span style="white-space: pre-wrap;">{{ item.servico | default('Serviço não especificado.') }}</span>
+                        </p>
+
+                        {% if item.status == 'Pendente' %}
+                        <div class="alert alert-warning p-2" role="alert">
+                            <h6 class="alert-heading h6 mb-1"><i class="fas fa-pause-circle me-1"></i>OS Pendente</h6>
+                            <p class="mb-1 small"><strong>Motivo:</strong> {{ item.status_motivo }}</p>
+                            <p class="small text-muted mb-0">
+                                Definido por: {{ item.status_definido_por }} em {{ item.status_data }}
+                            </p>
+                        </div>
                         {% endif %}
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
+
+                        <hr class="form-section-divider">
+
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <button type="button" class="btn btn-success btn-sm btn-toggle-form">
+                                    <i class="fas fa-chevron-down me-1"></i> Finalizar esta OS
+                                </button>
+                            </div>
+                            <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#pendenteModal-{{ item.os }}">
+                                <i class="fas fa-pause-circle me-1"></i>Marcar Pendente
+                            </button>
+                        </div>
+
+                        <div class="collapse-form d-none mt-3">
+                            <form action="{{ url_for('finalizar_os', os_numero_str=item.os) }}"
+                                  method="POST"
+                                  enctype="multipart/form-data"
+                                  class="needs-validation" novalidate onsubmit="return validateFinalizationForm(this, '{{ item.data_entrada }}')">
+
+                            <div class="row g-2 mb-2">
+                                <div class="col-md-6">
+                                    <label for="data_finalizacao_{{ item.os }}" class="form-label small">Data de Finalização <span class="text-danger">*</span></label>
+                                    <input type="date" id="data_finalizacao_{{ item.os }}" name="data_finalizacao"
+                                           class="form-control form-control-sm"
+                                           required
+                                           max="{{ today_date }}">
+                                    <div class="invalid-feedback">Campo obrigatório.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="hora_finalizacao_{{ item.os }}" class="form-label small">Hora de Finalização <span class="text-danger">*</span></label>
+                                    <input type="time" id="hora_finalizacao_{{ item.os }}" name="hora_finalizacao"
+                                           class="form-control form-control-sm"
+                                           required>
+                                    <div class="invalid-feedback">Campo obrigatório.</div>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <label for="observacoes_final_{{ item.os }}" class="form-label small">Observações da Finalização</label>
+                                <textarea id="observacoes_final_{{ item.os }}" name="observacoes"
+                                          class="form-control form-control-sm"
+                                          rows="3"
+                                          placeholder="Descreva os detalhes da manutenção (ex.: vazamento corrigido, peça trocada)"></textarea>
+                            </div>
+                             <div class="mb-3">
+                                <label for="evidencia_{{ item.os }}" class="form-label small">Anexar Evidência (Opcional: Imagem ou PDF)</label>
+                                <input type="file" id="evidencia_{{ item.os }}" name="evidencia"
+                                       class="form-control form-control-sm"
+                                       accept="image/*,.pdf">
+                            </div>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-success btn-sm" id="submit-btn-{{ item.os }}">
+                                    <i class="fas fa-check-circle me-1"></i>Confirmar Finalização
+                                </button>
+                            </div>
+                        </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Modal para Marcar como Pendente -->
-        <div class="modal fade" id="pendenteModal-{{ item.os }}" tabindex="-1" aria-labelledby="pendenteModalLabel-{{ item.os }}" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <form action="{{ url_for('marcar_pendente', os_numero=item.os) }}" method="POST" class="needs-validation" novalidate>
-                        <div class="modal-header bg-warning text-dark">
-                            <h5 class="modal-title" id="pendenteModalLabel-{{ item.os }}"><i class="fas fa-pause-circle me-2"></i>Marcar OS {{ item.os }} como Pendente</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>A OS ficará com o status "Pendente" e será destacada para o gerente e administrador.</p>
-                            <div class="mb-3">
-                                <label for="motivo_{{ item.os }}" class="form-label"><strong>Motivo da Pendência <span class="text-danger">*</span></strong></label>
-                                <textarea class="form-control" id="motivo_{{ item.os }}" name="motivo" rows="4" placeholder="Ex: Aguardando chegada de peças, Necessário aprovação do cliente, etc." required></textarea>
-                                <div class="invalid-feedback">Por favor, informe o motivo da pendência.</div>
+                <div class="modal fade" id="detalhesModal-{{ item.os }}" tabindex="-1" aria-labelledby="detalhesModalLabel-{{ item.os }}" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="detalhesModalLabel-{{ item.os }}">Detalhes da OS {{ item.os }}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>OS:</strong> {{ item.os }}</p>
+                                <p><strong>Frota:</strong> {{ item.frota | default('N/A') }}</p>
+                                <p><strong>Modelo:</strong> {{ item.modelo | default('N/A') }}</p>
+                                <p><strong>Data de Entrada:</strong> {{ item.data_entrada if item.data_entrada else 'N/A' }}</p>
+                                <p><strong>Dias em Aberto:</strong> {{ item.dias_abertos }}</p>
+                                <hr>
+                                <p><strong>Serviço Solicitado:</strong></p>
+                                <p style="white-space: pre-wrap;">{{ item.servico | default('N/A') }}</p>
+                                {% if item.observacao or item.Observacao %}
+                                    <hr>
+                                    <p><strong>Observações de Abertura:</strong></p>
+                                    <p style="white-space: pre-wrap;">{{ item.observacao or item.Observacao }}</p>
+                                {% endif %}
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-warning text-dark"><i class="fas fa-save me-1"></i>Salvar Pendência</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+
+                <!-- Modal para Marcar como Pendente -->
+                <div class="modal fade" id="pendenteModal-{{ item.os }}" tabindex="-1" aria-labelledby="pendenteModalLabel-{{ item.os }}" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <form action="{{ url_for('marcar_pendente', os_numero=item.os) }}" method="POST" class="needs-validation" novalidate>
+                                <div class="modal-header bg-warning text-dark">
+                                    <h5 class="modal-title" id="pendenteModalLabel-{{ item.os }}"><i class="fas fa-pause-circle me-2"></i>Marcar OS {{ item.os }} como Pendente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>A OS ficará com o status "Pendente" e será destacada para o gerente e administrador.</p>
+                                    <div class="mb-3">
+                                        <label for="motivo_{{ item.os }}" class="form-label"><strong>Motivo da Pendência <span class="text-danger">*</span></strong></label>
+                                        <textarea class="form-control" id="motivo_{{ item.os }}" name="motivo" rows="4" placeholder="Ex: Aguardando chegada de peças, Necessário aprovação do cliente, etc." required></textarea>
+                                        <div class="invalid-feedback">Por favor, informe o motivo da pendência.</div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-warning text-dark"><i class="fas fa-save me-1"></i>Salvar Pendência</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="text-center py-5 bg-light rounded shadow-sm mt-4">
+                    <i class="fas fa-check-circle empty-state-icon mb-3"></i>
+                    <h4 class="text-muted">Nenhuma OS pendente</h4>
+                    <p class="text-secondary">Todas as ordens de serviço atribuídas estão em dia!</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- ABA DE HISTÓRICO -->
+        <div class="tab-pane fade" id="historico" role="tabpanel" aria-labelledby="historico-tab">
+            <div class="list-group">
+            {% if finalizadas %}
+                {% for f in finalizadas %}
+                <div class="list-group-item list-group-item-action flex-column align-items-start mb-2 border rounded">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1 text-success"><i class="fas fa-check-circle me-2"></i>OS {{ f.os_numero }}</h5>
+                        <small class="text-muted" title="Registrado em {{ format_datetime(f.registrado_em) }}">Finalizada em {{ f.data_fin }}</small>
+                    </div>
+                    <p class="mb-1 fst-italic ps-1">"{{ f.observacoes or 'Nenhuma observação foi registrada.' }}"</p>
+                    <small class="text-muted ps-1">Confirmado às {{ f.hora_fin }}.</small>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="text-center py-5 bg-light rounded shadow-sm">
+                    <i class="fas fa-box-open empty-state-icon mb-3" style="color: #6c757d;"></i>
+                    <h4 class="text-muted">Nenhum histórico de finalização</h4>
+                    <p class="text-secondary">As ordens de serviço que você finalizar aparecerão aqui.</p>
+                </div>
+            {% endif %}
             </div>
         </div>
-        {% endfor %}
-    {% else %}
-        <div class="text-center py-5 bg-light rounded shadow-sm mt-4">
-            <i class="fas fa-check-circle empty-state-icon mb-3"></i>
-            <h4 class="text-muted">Nenhuma OS pendente</h4>
-            <p class="text-secondary">Todas as ordens de serviço atribuídas estão em dia!</p>
-        </div>
-    {% endif %}
+    </div>
 
     <div class="text-center mt-4">
-        <a href="/" class="btn btn-sm btn-outline-secondary">
-            <i class="fas fa-arrow-left me-1"></i>Voltar à Página Inicial
+        <a href="{{ url_for('logout') }}" class="btn btn-sm btn-outline-secondary">
+            <i class="fas fa-sign-out-alt me-1"></i> Sair
         </a>
     </div>
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Novo Toggle para formulário de finalização
-        document.querySelectorAll('.btn-toggle-form').forEach(button => {
-            button.addEventListener('click', () => {
-                const cardBody = button.closest('.card-body');
-                const formWrapper = cardBody.querySelector('.collapse-form');
-                const icon = button.querySelector('i');
+document.addEventListener('DOMContentLoaded', function() {
+    // Script do mascote de saudação
+    const greetings = {{ greetings_list|tojson|safe }};
+    const randomGreeting = greetings[Math.floor(Math.random() * greetings.length)];
+    const greetingElement = document.getElementById('greeting-text');
+    if (greetingElement) {
+        greetingElement.innerHTML = randomGreeting + ' ' + greetingElement.innerHTML;
+    }
 
-                formWrapper.classList.toggle('d-none');
+    // Toggle para formulário de finalização
+    document.querySelectorAll('.btn-toggle-form').forEach(button => {
+        button.addEventListener('click', () => {
+            const cardBody = button.closest('.card-body');
+            const formWrapper = cardBody.querySelector('.collapse-form');
+            const icon = button.querySelector('i');
 
-                if (formWrapper.classList.contains('d-none')) {
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                } else {
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-up');
-                }
-            });
+            formWrapper.classList.toggle('d-none');
+
+            if (formWrapper.classList.contains('d-none')) {
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
         });
     });
 
-    // Ativar validação Bootstrap para formulários com a classe 'needs-validation'
-    (() => {
-      'use strict'
-      const forms = document.querySelectorAll('.needs-validation')
-      Array.from(forms).forEach(form => {
+    // Ativar validação Bootstrap
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
-          if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-          }
-          form.classList.add('was-validated')
-        }, false)
-      })
-    })()
-
-    function validateFinalizationForm(form, dataAberturaStr) {
-        const dataFinalizacaoInput = form.querySelector('input[name="data_finalizacao"]');
-        const horaFinalizacaoInput = form.querySelector('input[name="hora_finalizacao"]');
-        
-        form.classList.add('was-validated');
-
-        if (!dataFinalizacaoInput.value || !horaFinalizacaoInput.value) {
-            if (!dataFinalizacaoInput.value) dataFinalizacaoInput.focus();
-            else if (!horaFinalizacaoInput.value) horaFinalizacaoInput.focus();
-            return false; 
-        }
-
-        if (dataAberturaStr && dataAberturaStr !== 'Data não informada' && dataAberturaStr !== '' && dataAberturaStr !== 'N/A') {
-            try {
-                // Suporta múltiplos formatos para data de abertura
-                let dataAberturaObj = null;
-                const formatosAbertura = ['%d/%m/%Y', '%Y-%m-%d', '%d-%m-%y', '%Y/%m/%d'];
-                for (let fmt of formatosAbertura) {
-                    try {
-                        const parts = fmt.replace(/%[dmyY]/g, '(\\d+)').replace(/\//g, '\\/');
-                        const regex = new RegExp(parts);
-                        if (regex.test(dataAberturaStr)) {
-                            dataAberturaObj = new Date(dataAberturaStr.replace(/(\d+)\/(\d+)\/(\d+)/, '$3-$2-$1'));
-                            break;
-                        }
-                    } catch (e) {
-                        continue;
-                    }
-                }
-
-                if (!dataAberturaObj || isNaN(dataAberturaObj)) {
-                    throw new Error('Data de abertura inválida');
-                }
-
-                // A data de finalização vem no formato YYYY-MM-DD
-                const dataFinalizacaoValue = dataFinalizacaoInput.value;
-                const dataFinalizacaoObj = new Date(dataFinalizacaoValue);
-                
-                if (isNaN(dataFinalizacaoObj)) {
-                    alert('Data de finalização inválida.');
-                    dataFinalizacaoInput.focus();
-                    dataFinalizacaoInput.classList.add('is-invalid');
-                    return false;
-                }
-
-                // Normaliza as datas para comparação
-                dataAberturaObj.setHours(0, 0, 0, 0);
-                dataFinalizacaoObj.setHours(0, 0, 0, 0);
-
-                if (dataFinalizacaoObj < dataAberturaObj) {
-                    alert('A data de finalização (' + dataFinalizacaoObj.toLocaleDateString('pt-BR') + 
-                          ') não pode ser anterior à data de abertura da OS (' + dataAberturaObj.toLocaleDateString('pt-BR') + ').');
-                    dataFinalizacaoInput.focus();
-                    dataFinalizacaoInput.classList.add('is-invalid');
-                    return false;
-                } else {
-                    dataFinalizacaoInput.classList.remove('is-invalid');
-                }
-            } catch (e) {
-                console.error("Erro ao parsear datas para validação no JS: ", e, "Data de abertura recebida:", dataAberturaStr);
-                alert('Houve um problema ao validar internamente a data de abertura da OS ('+ dataAberturaStr +'). Verifique o formato esperado (ex.: DD/MM/YYYY) ou se a data é válida.');
-                return false;
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
             }
-        }
-        
-        const submitBtn = form.querySelector('button[type="submit"]');
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Confirmando...';
-        }
-        return true;
+            form.classList.add('was-validated');
+        }, false);
+    });
+});
+
+function validateFinalizationForm(form, dataAberturaStr) {
+    const dataFinalizacaoInput = form.querySelector('input[name="data_finalizacao"]');
+    const horaFinalizacaoInput = form.querySelector('input[name="hora_finalizacao"]');
+
+    form.classList.add('was-validated');
+
+    if (!dataFinalizacaoInput.value || !horaFinalizacaoInput.value) {
+        if (!dataFinalizacaoInput.value) dataFinalizacaoInput.focus();
+        else if (!horaFinalizacaoInput.value) horaFinalizacaoInput.focus();
+        return false;
     }
+
+    if (dataAberturaStr && dataAberturaStr !== 'Data não informada' && dataAberturaStr !== '' && dataAberturaStr !== 'N/A') {
+        try {
+            let dataAberturaObj = null;
+            const match = dataAberturaStr.match(/(\d{2})\/(\d{2})\/(\d{4})/);
+            if (match) {
+                // Formato DD/MM/YYYY
+                dataAberturaObj = new Date(`${match[3]}-${match[2]}-${match[1]}`);
+            } else {
+                // Tenta formato YYYY-MM-DD
+                dataAberturaObj = new Date(dataAberturaStr);
+            }
+
+            if (isNaN(dataAberturaObj.getTime())) {
+                throw new Error('Data de abertura inválida');
+            }
+
+            const dataFinalizacaoObj = new Date(dataFinalizacaoInput.value);
+
+            if (isNaN(dataFinalizacaoObj.getTime())) {
+                 dataFinalizacaoInput.classList.add('is-invalid');
+                 return false;
+            }
+
+            // Normaliza as datas para comparação (ignora a hora)
+            dataAberturaObj.setHours(0, 0, 0, 0);
+            const dataFinalizacaoComp = new Date(dataFinalizacaoObj.getTime() + dataFinalizacaoObj.getTimezoneOffset() * 60000);
+
+            if (dataFinalizacaoComp < dataAberturaObj) {
+                alert('A data de finalização não pode ser anterior à data de abertura da OS.');
+                dataFinalizacaoInput.classList.add('is-invalid');
+                return false;
+            } else {
+                dataFinalizacaoInput.classList.remove('is-invalid');
+            }
+        } catch (e) {
+            console.error("Erro ao validar datas:", e);
+            // Não bloqueia o envio se a data de abertura for inválida, mas avisa.
+            console.warn("Não foi possível validar a data de abertura:", dataAberturaStr);
+        }
+    }
+
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Confirmando...';
+    }
+    return true;
+}
 </script>
 {% endblock %}

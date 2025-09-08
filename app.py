@@ -840,9 +840,12 @@ def painel_prestador():
                 logger.error(f"Erro processando OS de {caminho_arq_os_prest}: {e}")
                 flash("Erro ao carregar OS.", 'danger')
 
+    finalizadas_prestador = Finalizacao.query.filter_by(gerente=session['prestador']).order_by(Finalizacao.registrado_em.desc()).limit(100).all()
+
     return render_template('painel_prestador.html',
         nome=dados_prestador_atual.get('nome_exibicao', session['prestador'].capitalize()),
         os_list=lista_os_do_prestador,
+        finalizadas=finalizadas_prestador,
         now=datetime.now(saopaulo_tz), 
         today_date=datetime.now(saopaulo_tz).strftime('%Y-%m-%d'))
 
