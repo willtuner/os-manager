@@ -1,5 +1,21 @@
 [
   {
+    "frota": "268",
+    "cd_equipamento": "268",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117908",
+    "data_entrada": "08/09/2025",
+    "servico": "Fazer solda em trinca no rabicho - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "248",
+    "cd_equipamento": "248",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "117881",
+    "data_entrada": "08/09/2025",
+    "servico": "Quebra dos parafusos de suporte do rabicho - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "106",
     "cd_equipamento": "106",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
@@ -54,6 +70,14 @@
     "os": "117758",
     "data_entrada": "04/09/2025",
     "servico": "Soldar fixação de proteção de partes móveis - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsvel Sr. Mauiricio"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117754",
+    "data_entrada": "04/09/2025",
+    "servico": "Soldar e colocar parafusos do rabicho - (Fazenda Minuano)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "234",

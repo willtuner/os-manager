@@ -1,27 +1,43 @@
 [
   {
-    "frota": "10224",
-    "cd_equipamento": "10224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117823",
-    "data_entrada": "05/09/2025",
-    "servico": "Vazamento de óleo na bomba de óleo hidráulico - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo\nResponsvel Sr. Arthur"
+    "frota": "125",
+    "cd_equipamento": "125",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "117907",
+    "data_entrada": "08/09/2025",
+    "servico": "Lavar tanque\n\nAbrir transmissão e reparar vazamento\n\nTrocar engate rápido\n\nEliminar folga do eixo dianteiro\n\nTrocar reparo do pistão de direção\n\nTrocar pistão da porta\n\nRetirar para-lama para revisão - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   },
   {
-    "frota": "288",
-    "cd_equipamento": "288",
+    "frota": "254",
+    "cd_equipamento": "254",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117797",
-    "data_entrada": "04/09/2025",
-    "servico": "Retentor da TDP estourado - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+    "os": "117887",
+    "data_entrada": "08/09/2025",
+    "servico": "Vazamento de óleo no cubo da roda dianteira L/D - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "77",
-    "cd_equipamento": "77",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117792",
-    "data_entrada": "04/09/2025",
-    "servico": "Verificar acionamento da embreagem - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
+    "frota": "157",
+    "cd_equipamento": "157",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "117883",
+    "data_entrada": "08/09/2025",
+    "servico": "Verificar funcionamento do bloqueio do diferencial traseiro do trator, apresentando falha de acionamento - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "159",
+    "cd_equipamento": "159",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "117882",
+    "data_entrada": "08/09/2025",
+    "servico": "Verificar vazamento de óleo próximo a tampa do hidráulico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsvel Sr. Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117880",
+    "data_entrada": "08/09/2025",
+    "servico": "Verificar trator travando o parker - (Fazenda Estrela)\nSolicitado Sr. Arthur \nResponsavel Sr. Arthur"
   },
   {
     "frota": "285",

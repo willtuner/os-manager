@@ -1,10 +1,18 @@
 [
   {
-    "frota": "348",
-    "cd_equipamento": "348",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "117357",
-    "data_entrada": "27/08/2025",
-    "servico": "Fazenda São José ----> Fazenda Minuano \nSolicitado Sr. Carlos Aparecido"
+    "frota": "259",
+    "cd_equipamento": "259",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117902",
+    "data_entrada": "08/09/2025",
+    "servico": "Fazenda NSA ----> Oficina Prats\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "275",
+    "cd_equipamento": "275",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117901",
+    "data_entrada": "08/09/2025",
+    "servico": "Cocamar máquinas ---> fazenda NSA\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   }
 ]

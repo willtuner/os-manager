@@ -1,5 +1,29 @@
 [
   {
+    "frota": "97",
+    "cd_equipamento": "97",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "117900",
+    "data_entrada": "08/09/2025",
+    "servico": "Pneu dianteiro L/D estourado e L/E ruim  - (Fazenda Pedra Verde)|Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5001",
+    "cd_equipamento": "5001",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "117896",
+    "data_entrada": "08/09/2025",
+    "servico": "Pneu L/E furado - (fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "311",
+    "cd_equipamento": "311",
+    "modelo": "RETROESCAVADEIRA 416 CAT",
+    "os": "117894",
+    "data_entrada": "08/09/2025",
+    "servico": "Pneu dianteiro L/D aparentemente furado (Baixando) - (Fazenda NSA)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5248",
     "cd_equipamento": "5248",
     "modelo": "ADUBADEIRA DCA2 7500 S-0118",
