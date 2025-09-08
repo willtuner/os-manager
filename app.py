@@ -5,7 +5,7 @@ import re
 from datetime import datetime, timedelta
 import pytz
 import random
-from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
+from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
@@ -179,6 +179,48 @@ class OSPendente(db.Model):
     status_definido_por = db.Column(db.String(80), nullable=False)
     status_data = db.Column(db.String(20), nullable=False)
 
+# --- Modelos para o Plano de Lubrificação ---
+class LubSistema(db.Model):
+    __tablename__ = 'lub_sistema'
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(100), unique=True, nullable=False)
+    subsistemas = db.relationship('LubSubsistema', backref='sistema', lazy=True, cascade="all, delete-orphan")
+
+class LubSubsistema(db.Model):
+    __tablename__ = 'lub_subsistema'
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(100), nullable=False)
+    sistema_id = db.Column(db.Integer, db.ForeignKey('lub_sistema.id'), nullable=False)
+    itens_revisao = db.relationship('LubItemRevisao', backref='subsistema', lazy=True)
+
+class LubComponente(db.Model):
+    __tablename__ = 'lub_componente'
+    id = db.Column(db.Integer, primary_key=True)
+    codigo_pimns = db.Column(db.String(50), unique=True, nullable=False)
+    nome = db.Column(db.String(200), nullable=False)
+    itens_revisao = db.relationship('LubItemRevisao', backref='componente', lazy=True)
+
+class LubPlano(db.Model):
+    __tablename__ = 'lub_plano'
+    id = db.Column(db.Integer, primary_key=True)
+    nome_plano = db.Column(db.String(150), unique=True, nullable=False)
+    modelo_veiculo = db.Column(db.String(100), nullable=False)
+    revisoes = db.relationship('LubRevisao', backref='plano', lazy=True, cascade="all, delete-orphan")
+
+class LubRevisao(db.Model):
+    __tablename__ = 'lub_revisao'
+    id = db.Column(db.Integer, primary_key=True)
+    nome_revisao = db.Column(db.String(100), nullable=False) # Ex: "400h", "1200h"
+    plano_id = db.Column(db.Integer, db.ForeignKey('lub_plano.id'), nullable=False)
+    itens = db.relationship('LubItemRevisao', backref='revisao', lazy=True, cascade="all, delete-orphan")
+
+class LubItemRevisao(db.Model):
+    __tablename__ = 'lub_item_revisao'
+    id = db.Column(db.Integer, primary_key=True)
+    revisao_id = db.Column(db.Integer, db.ForeignKey('lub_revisao.id'), nullable=False)
+    subsistema_id = db.Column(db.Integer, db.ForeignKey('lub_subsistema.id'), nullable=False)
+    componente_id = db.Column(db.Integer, db.ForeignKey('lub_componente.id'), nullable=False)
+
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
 MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
@@ -217,6 +259,36 @@ def remover_os_de_todos_json(diretorio, os_numero):
     else:
         logger.info(f"OS {os_numero} removida dos arquivos: {removido_de}")
     return removido_de
+
+def seed_initial_lub_data():
+    """Popula o banco de dados com os sistemas e subsistemas iniciais de lubrificação."""
+    if LubSistema.query.first():
+        return
+
+    logger.info("Populando dados iniciais de sistema de lubrificação...")
+    sistemas_data = {
+        'Motor': ['Cárter', 'Filtro Óleo'],
+        'Transmissão': ['Diferencial 1º eixo', 'Diferencial 2º eixo'],
+        'Hidráulico': ['Filtro óleo hidráulico'],
+        'Diferenciais/Planetárias': ['Planetária Dianteira Dir.', 'Planetária Dianteira Esq.'],
+        'Alimentação Combustível': ['Filtro Diesel'],
+        'Ar/Motor (admissão)': ['Filtro ar externo', 'Filtro ar interno'],
+        'Cabine': ['Filtro ar condicionado'],
+        'Arrefecimento': ['Radiador', 'Aditivo']
+    }
+    try:
+        for nome_sistema, nomes_subsistemas in sistemas_data.items():
+            novo_sistema = LubSistema(nome=nome_sistema)
+            db.session.add(novo_sistema)
+            db.session.flush()
+            for nome_subsistema in nomes_subsistemas:
+                novo_subsistema = LubSubsistema(nome=nome_subsistema, sistema_id=novo_sistema.id)
+                db.session.add(novo_subsistema)
+        db.session.commit()
+        logger.info("Dados iniciais de lubrificação populados com sucesso.")
+    except Exception as e:
+        logger.error(f"Erro ao popular dados iniciais de lubrificação: {e}")
+        db.session.rollback()
 
 def init_db():
     with app.app_context():  # Garante contexto de aplicação para operações de BD
@@ -268,8 +340,25 @@ def init_db():
                 OSPendente.__table__.create(db.engine)
                 logger.info("Tabela os_pendente criada com sucesso.")
 
+            # Verifica e cria as tabelas de lubrificação
+            lub_tables = ['lub_sistema', 'lub_subsistema', 'lub_componente', 'lub_plano', 'lub_revisao', 'lub_item_revisao']
+            for table_name in lub_tables:
+                if table_name not in inspector.get_table_names():
+                    logger.info(f"Tabela {table_name} não encontrada, criando...")
+                    # A criação de uma tabela cria todas as outras que ainda não existem
+                    db.create_all()
+                    logger.info("Tabelas de lubrificação criadas com sucesso.")
+                    break # Sai do loop pois db.create_all() cria todas
+
         except Exception as e:
             logger.error(f"Erro ao verificar/adicionar colunas: {e}")
+            db.session.rollback()
+
+        # Popula os dados iniciais de lubrificação
+        try:
+            seed_initial_lub_data()
+        except Exception as e:
+            logger.error(f"Erro ao executar o seed dos dados de lubrificação: {e}")
             db.session.rollback()
 
         # Sincronização de usuários do JSON para o Banco de Dados
@@ -1196,6 +1285,210 @@ def admin_panel():
 # ##########################################################################
 # FIM DA FUNÇÃO admin_panel ATUALIZADA
 # ##########################################################################
+
+@app.route('/lubrificacao')
+def painel_lubrificacao():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado. Faça login como manutenção ou administrador.', 'danger')
+        return redirect(url_for('login'))
+
+    sistemas = LubSistema.query.order_by(LubSistema.nome).all()
+    componentes = LubComponente.query.order_by(LubComponente.nome).all()
+    planos = LubPlano.query.order_by(LubPlano.nome_plano).all()
+
+    return render_template('lubrificacao.html', sistemas=sistemas, componentes=componentes, planos=planos)
+
+@app.route('/lubrificacao/componente/add', methods=['POST'])
+def add_lub_componente():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    codigo_pimns = request.form.get('codigo_pimns')
+    nome = request.form.get('nome')
+
+    if not codigo_pimns or not nome:
+        flash('Código PIMNS e Nome são obrigatórios.', 'danger')
+        return redirect(url_for('painel_lubrificacao'))
+
+    if LubComponente.query.filter_by(codigo_pimns=codigo_pimns).first():
+        flash(f'Componente com código PIMNS "{codigo_pimns}" já existe.', 'warning')
+        return redirect(url_for('painel_lubrificacao'))
+
+    try:
+        novo_componente = LubComponente(codigo_pimns=codigo_pimns, nome=nome)
+        db.session.add(novo_componente)
+        db.session.commit()
+        flash('Componente adicionado com sucesso!', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao adicionar componente: {e}', 'danger')
+
+    return redirect(url_for('painel_lubrificacao'))
+
+@app.route('/lubrificacao/componente/delete/<int:componente_id>', methods=['POST'])
+def delete_lub_componente(componente_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    componente = LubComponente.query.get_or_404(componente_id)
+    try:
+        db.session.delete(componente)
+        db.session.commit()
+        flash('Componente removido com sucesso!', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao remover componente: {e}', 'danger')
+
+    return redirect(url_for('painel_lubrificacao'))
+
+@app.route('/lubrificacao/plano/add', methods=['POST'])
+def add_lub_plano():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    nome_plano = request.form.get('nome_plano')
+    modelo_veiculo = request.form.get('modelo_veiculo')
+
+    if not nome_plano or not modelo_veiculo:
+        flash('Nome do Plano e Modelo do Veículo são obrigatórios.', 'danger')
+        return redirect(url_for('painel_lubrificacao'))
+
+    if LubPlano.query.filter_by(nome_plano=nome_plano).first():
+        flash('Já existe um plano com este nome.', 'warning')
+        return redirect(url_for('painel_lubrificacao'))
+
+    try:
+        novo_plano = LubPlano(nome_plano=nome_plano, modelo_veiculo=modelo_veiculo)
+        db.session.add(novo_plano)
+        db.session.commit()
+        flash('Plano criado com sucesso! Agora adicione as revisões e itens.', 'success')
+        return redirect(url_for('lub_plano_detalhe', plano_id=novo_plano.id))
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao criar plano: {e}', 'danger')
+        return redirect(url_for('painel_lubrificacao'))
+
+@app.route('/lubrificacao/plano/delete/<int:plano_id>', methods=['POST'])
+def delete_lub_plano(plano_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    plano = LubPlano.query.get_or_404(plano_id)
+    try:
+        db.session.delete(plano)
+        db.session.commit()
+        flash('Plano removido com sucesso!', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao remover plano: {e}', 'danger')
+    return redirect(url_for('painel_lubrificacao'))
+
+@app.route('/lubrificacao/plano/<int:plano_id>')
+def lub_plano_detalhe(plano_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    plano = LubPlano.query.get_or_404(plano_id)
+    sistemas = LubSistema.query.order_by(LubSistema.nome).all()
+    componentes = LubComponente.query.order_by(LubComponente.nome).all()
+
+    return render_template('lub_plano_detalhe.html', plano=plano, sistemas=sistemas, componentes=componentes)
+
+@app.route('/lubrificacao/plano/<int:plano_id>/revisao/add', methods=['POST'])
+def add_lub_revisao(plano_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    nome_revisao = request.form.get('nome_revisao')
+    if not nome_revisao:
+        flash('Nome da revisão é obrigatório.', 'danger')
+        return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+    try:
+        nova_revisao = LubRevisao(nome_revisao=nome_revisao, plano_id=plano_id)
+        db.session.add(nova_revisao)
+        db.session.commit()
+        flash('Revisão adicionada com sucesso.', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao adicionar revisão: {e}', 'danger')
+
+    return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+@app.route('/lubrificacao/revisao/delete/<int:revisao_id>', methods=['POST'])
+def delete_lub_revisao(revisao_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    revisao = LubRevisao.query.get_or_404(revisao_id)
+    plano_id = revisao.plano_id
+    try:
+        db.session.delete(revisao)
+        db.session.commit()
+        flash('Revisão removida com sucesso.', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao remover revisão: {e}', 'danger')
+
+    return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+@app.route('/lubrificacao/revisao/<int:revisao_id>/item/add', methods=['POST'])
+def add_lub_item_revisao(revisao_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    revisao = LubRevisao.query.get_or_404(revisao_id)
+    subsistema_id = request.form.get('subsistema_id')
+    componente_id = request.form.get('componente_id')
+
+    if not subsistema_id or not componente_id:
+        flash('Sistema, Subsistema e Componente são obrigatórios.', 'danger')
+        return redirect(url_for('lub_plano_detalhe', plano_id=revisao.plano_id))
+
+    try:
+        novo_item = LubItemRevisao(revisao_id=revisao_id, subsistema_id=subsistema_id, componente_id=componente_id)
+        db.session.add(novo_item)
+        db.session.commit()
+        flash('Item adicionado à revisão com sucesso.', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao adicionar item: {e}', 'danger')
+
+    return redirect(url_for('lub_plano_detalhe', plano_id=revisao.plano_id))
+
+@app.route('/lubrificacao/item/delete/<int:item_id>', methods=['POST'])
+def delete_lub_item_revisao(item_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    item = LubItemRevisao.query.get_or_404(item_id)
+    plano_id = item.revisao.plano_id
+    try:
+        db.session.delete(item)
+        db.session.commit()
+        flash('Item da revisão removido com sucesso.', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao remover item da revisão: {e}', 'danger')
+
+    return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+@app.route('/api/subsistemas/<int:sistema_id>')
+def api_get_subsistemas(sistema_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        return jsonify({'error': 'Acesso não autorizado'}), 403
+
+    subsistemas = LubSubsistema.query.filter_by(sistema_id=sistema_id).order_by(LubSubsistema.nome).all()
+    return jsonify([{'id': s.id, 'nome': s.nome} for s in subsistemas])
 
 @app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():
