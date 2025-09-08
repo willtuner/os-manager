@@ -1595,6 +1595,47 @@ def atualizar_horimetros():
     return render_template('atualizar_horimetros.html', veiculos=veiculos)
 
 
+@app.route('/frota/associar_planos', methods=['GET', 'POST'])
+def associar_planos():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    if request.method == 'POST':
+        modelo = request.form.get('modelo')
+        plano_id = request.form.get('plano_id')
+
+        if not modelo or not plano_id:
+            flash('Você precisa selecionar um modelo e um plano.', 'danger')
+            return redirect(url_for('associar_planos'))
+
+        try:
+            veiculos_para_atualizar = FrotaVeiculo.query.filter_by(modelo=modelo, plano_id=None).all()
+
+            if not veiculos_para_atualizar:
+                flash('Nenhum veículo encontrado para este modelo que precise de um plano.', 'info')
+                return redirect(url_for('associar_planos'))
+
+            for veiculo in veiculos_para_atualizar:
+                veiculo.plano_id = int(plano_id)
+
+            db.session.commit()
+            flash(f'{len(veiculos_para_atualizar)} veículo(s) do modelo "{modelo}" foram associados ao plano com sucesso!', 'success')
+
+        except Exception as e:
+            db.session.rollback()
+            flash(f'Ocorreu um erro ao associar os planos: {e}', 'danger')
+
+        return redirect(url_for('associar_planos'))
+
+    # GET request
+    modelos_query = db.session.query(FrotaVeiculo.modelo).distinct().order_by(FrotaVeiculo.modelo).all()
+    modelos = [m[0] for m in modelos_query]
+    planos = LubPlano.query.order_by(LubPlano.nome_plano).all()
+
+    return render_template('associar_planos.html', modelos=modelos, planos=planos)
+
+
 @app.route('/api/subsistemas/<int:sistema_id>')
 def api_get_subsistemas(sistema_id):
     if 'manutencao' not in session and not session.get('is_admin'):
@@ -1602,6 +1643,15 @@ def api_get_subsistemas(sistema_id):
 
     subsistemas = LubSubsistema.query.filter_by(sistema_id=sistema_id).order_by(LubSubsistema.nome).all()
     return jsonify([{'id': s.id, 'nome': s.nome} for s in subsistemas])
+
+@app.route('/api/veiculos_sem_plano/<path:modelo>')
+def api_get_veiculos_sem_plano(modelo):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        return jsonify({'error': 'Acesso não autorizado'}), 403
+
+    veiculos = FrotaVeiculo.query.filter_by(modelo=modelo, plano_id=None).order_by(FrotaVeiculo.frota).all()
+
+    return jsonify([{'id': v.id, 'frota': v.frota} for v in veiculos])
 
 @app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():
