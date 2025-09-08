@@ -16,37 +16,78 @@
 {% block content %}
 <div class="container py-4">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
             <h5>Adicionar Novo Veículo</h5>
             <div class="card">
                 <div class="card-body">
                     <form action="{{ url_for('add_veiculo') }}" method="POST">
-                        <div class="mb-3">
-                            <label for="frota" class="form-label">Frota</label>
-                            <input type="text" class="form-control" id="frota" name="frota" placeholder="Ex: TR-267" required>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="frota" class="form-label">Frota</label>
+                                <input type="text" class="form-control" id="frota" name="frota" placeholder="Ex: TR-267" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="marca" class="form-label">Marca</label>
+                                <input type="text" class="form-control" id="marca" name="marca" placeholder="Ex: John Deere">
+                            </div>
+                            <div class="col-12">
+                                <label for="modelo" class="form-label">Modelo</label>
+                                <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Ex: 5080E" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="ano" class="form-label">Ano</label>
+                                <input type="number" class="form-control" id="ano" name="ano" placeholder="Ex: 2022">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="horimetro_atual" class="form-label">Horímetro Atual</label>
+                                <input type="number" step="any" class="form-control" id="horimetro_atual" name="horimetro_atual" value="0">
+                            </div>
+                            <div class="col-12">
+                                <label for="chassi" class="form-label">Chassi</label>
+                                <input type="text" class="form-control" id="chassi" name="chassi">
+                            </div>
+                            <div class="col-12">
+                                <label for="descricao" class="form-label">Descrição Completa</label>
+                                <textarea class="form-control" id="descricao" name="descricao" rows="2"></textarea>
+                            </div>
+                            <hr class="my-3">
+                            <div class="col-md-6">
+                                <label for="fazenda" class="form-label">Fazenda (Locação)</label>
+                                <input type="text" class="form-control" id="fazenda" name="fazenda">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="operacao_principal" class="form-label">Operação Principal</label>
+                                <input type="text" class="form-control" id="operacao_principal" name="operacao_principal">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="especie" class="form-label">Espécie</label>
+                                <input type="text" class="form-control" id="especie" name="especie">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="tipo_propriedade" class="form-label">Tipo de Propriedade</label>
+                                <input type="text" class="form-control" id="tipo_propriedade" name="tipo_propriedade" placeholder="Ex: Próprio">
+                            </div>
+                             <div class="col-md-6">
+                                <label for="data_aquisicao" class="form-label">Data de Aquisição</label>
+                                <input type="text" class="form-control" id="data_aquisicao" name="data_aquisicao" placeholder="Ex: 15/01/2022">
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="form-check form-switch mt-3">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="gabinado" name="gabinado">
+                                    <label class="form-check-label" for="gabinado">Gabinado</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="plano_id" class="form-label">Plano de Lubrificação</label>
+                                <select class="form-select" id="plano_id" name="plano_id">
+                                    <option value="">Nenhum</option>
+                                    {% for plano in planos %}
+                                    <option value="{{ plano.id }}">{{ plano.nome_plano }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="modelo" class="form-label">Modelo</label>
-                            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Ex: JD 5080E" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="ano" class="form-label">Ano</label>
-                            <input type="number" class="form-control" id="ano" name="ano" placeholder="Ex: 2022">
-                        </div>
-                        <div class="mb-3">
-                            <label for="horimetro_atual" class="form-label">Horímetro Atual</label>
-                            <input type="number" step="any" class="form-control" id="horimetro_atual" name="horimetro_atual" value="0">
-                        </div>
-                        <div class="mb-3">
-                            <label for="plano_id" class="form-label">Plano de Lubrificação</label>
-                            <select class="form-select" id="plano_id" name="plano_id">
-                                <option value="">Nenhum</option>
-                                {% for plano in planos %}
-                                <option value="{{ plano.id }}">{{ plano.nome_plano }}</option>
-                                {% endfor %}
-                            </select>
-                        </div>
-                        <div class="d-grid">
+                        <div class="d-grid mt-4">
                             <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-plus-circle me-1"></i> Adicionar Veículo
                             </button>
@@ -55,15 +96,16 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-8">
             <h5>Frota Cadastrada</h5>
             <div class="table-responsive">
-                <table class="table table-striped table-bordered">
+                <table class="table table-striped table-bordered table-sm">
                     <thead class="table-light">
                         <tr>
                             <th>Frota</th>
+                            <th>Marca</th>
                             <th>Modelo</th>
-                            <th>Ano</th>
+                            <th>Fazenda</th>
                             <th>Horímetro</th>
                             <th>Plano Associado</th>
                             <th>Ações</th>
@@ -73,18 +115,21 @@
                         {% for veiculo in veiculos %}
                         <tr>
                             <td><strong>{{ veiculo.frota }}</strong></td>
+                            <td>{{ veiculo.marca or 'N/A' }}</td>
                             <td>{{ veiculo.modelo }}</td>
-                            <td>{{ veiculo.ano or 'N/A' }}</td>
+                            <td>{{ veiculo.fazenda or 'N/A' }}</td>
                             <td>{{ veiculo.horimetro_atual }}h</td>
-                            <td>{{ veiculo.plano.nome_plano if veiculo.plano else 'Nenhum' }}</td>
+                            <td><span class="badge bg-secondary">{{ veiculo.plano.nome_plano if veiculo.plano else 'Nenhum' }}</span></td>
                             <td>
                                 <!-- Botões de Editar e Remover virão aqui -->
-                                <button class="btn btn-sm btn-outline-secondary" disabled>Editar</button>
+                                <button class="btn btn-sm btn-outline-secondary" disabled title="Em breve">
+                                    <i class="fas fa-edit"></i>
+                                </button>
                             </td>
                         </tr>
                         {% else %}
                         <tr>
-                            <td colspan="6" class="text-center text-muted">Nenhum veículo cadastrado na frota.</td>
+                            <td colspan="7" class="text-center text-muted">Nenhum veículo cadastrado na frota.</td>
                         </tr>
                         {% endfor %}
                     </tbody>
