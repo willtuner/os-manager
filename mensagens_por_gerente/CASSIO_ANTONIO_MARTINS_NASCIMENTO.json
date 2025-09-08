@@ -1,16 +1,16 @@
 [
   {
-    "frota": "225",
-    "os": "117756",
-    "data": "04/09/2025",
+    "frota": "5599",
+    "os": "117865",
+    "data": "08/09/2025",
     "prestador": "nan",
-    "servico": "Quebra do suporte do cabo do acelerador - (Fazenda São Severino)"
+    "servico": "Revisar chicote eletrico do pré-mix - (Fazenda São Severino)"
   },
   {
     "frota": "234",
     "os": "117751",
     "data": "04/09/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Avaliar e substituir barra de direção lado direito e barra de sustentação da grade de proteção, danificadas em colisão ocasionada pelo operador ao adormecer e atingir um poste - (Fazenda São Severino)"
   },
   {
@@ -19,27 +19,6 @@
     "data": "03/09/2025",
     "prestador": "nan",
     "servico": "Ramal furado - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5521",
-    "os": "117688",
-    "data": "03/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar sistema de ramal que não está desligando os lados. - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5451",
-    "os": "117659",
-    "data": "02/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Quebra da barra de direção L/E - (Fazenda São Severino)"
-  },
-  {
-    "frota": "234",
-    "os": "117635",
-    "data": "02/09/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Quebra da trava do volante - (Fazenda São Severino)"
   },
   {
     "frota": "5425",
@@ -89,13 +68,6 @@
     "data": "29/08/2025",
     "prestador": "RIVELINO LONGATO 03100998979",
     "servico": "Verificar roda dianteira L/E com jogo  (Fazenda São Severino)"
-  },
-  {
-    "frota": "5658",
-    "os": "117282",
-    "data": "27/08/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Ramal furado - (Fazenda São Severino)"
   },
   {
     "frota": "226",
