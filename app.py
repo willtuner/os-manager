@@ -220,6 +220,7 @@ class LubItemRevisao(db.Model):
     revisao_id = db.Column(db.Integer, db.ForeignKey('lub_revisao.id'), nullable=False)
     subsistema_id = db.Column(db.Integer, db.ForeignKey('lub_subsistema.id'), nullable=False)
     componente_id = db.Column(db.Integer, db.ForeignKey('lub_componente.id'), nullable=False)
+    quantidade = db.Column(db.Float, nullable=False, default=1)
 
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
@@ -339,6 +340,15 @@ def init_db():
                 logger.info("Tabela os_pendente não encontrada, criando...")
                 OSPendente.__table__.create(db.engine)
                 logger.info("Tabela os_pendente criada com sucesso.")
+
+            # Adiciona a coluna 'quantidade' se não existir
+            if 'lub_item_revisao' in inspector.get_table_names():
+                columns_lub_item_revisao = [col['name'] for col in inspector.get_columns('lub_item_revisao')]
+                if 'quantidade' not in columns_lub_item_revisao:
+                    logger.info("Adicionando coluna quantidade à tabela lub_item_revisao")
+                    db.session.execute(text('ALTER TABLE lub_item_revisao ADD COLUMN quantidade FLOAT NOT NULL DEFAULT 1'))
+                    db.session.commit()
+                    logger.info("Coluna quantidade adicionada com sucesso.")
 
             # Verifica e cria as tabelas de lubrificação
             lub_tables = ['lub_sistema', 'lub_subsistema', 'lub_componente', 'lub_plano', 'lub_revisao', 'lub_item_revisao']
@@ -1448,16 +1458,25 @@ def add_lub_item_revisao(revisao_id):
     revisao = LubRevisao.query.get_or_404(revisao_id)
     subsistema_id = request.form.get('subsistema_id')
     componente_id = request.form.get('componente_id')
+    quantidade = request.form.get('quantidade', '1').replace(',', '.')
 
     if not subsistema_id or not componente_id:
         flash('Sistema, Subsistema e Componente são obrigatórios.', 'danger')
         return redirect(url_for('lub_plano_detalhe', plano_id=revisao.plano_id))
 
     try:
-        novo_item = LubItemRevisao(revisao_id=revisao_id, subsistema_id=subsistema_id, componente_id=componente_id)
+        quantidade_float = float(quantidade)
+        novo_item = LubItemRevisao(
+            revisao_id=revisao_id,
+            subsistema_id=subsistema_id,
+            componente_id=componente_id,
+            quantidade=quantidade_float
+        )
         db.session.add(novo_item)
         db.session.commit()
         flash('Item adicionado à revisão com sucesso.', 'success')
+    except ValueError:
+        flash('Quantidade inválida. Por favor, insira um número.', 'danger')
     except Exception as e:
         db.session.rollback()
         flash(f'Erro ao adicionar item: {e}', 'danger')

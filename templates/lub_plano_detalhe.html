@@ -67,7 +67,8 @@
                                         <th>Sistema</th>
                                         <th>Subsistema</th>
                                         <th>Componente (Código PIMNS)</th>
-                                        <th>Ação</th>
+                                        <th style="width: 10%;">Qtd.</th>
+                                        <th style="width: 10%;">Ação</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -76,6 +77,7 @@
                                         <td>{{ item.subsistema.sistema.nome }}</td>
                                         <td>{{ item.subsistema.nome }}</td>
                                         <td>{{ item.componente.nome }} ({{ item.componente.codigo_pimns }})</td>
+                                        <td>{{ item.quantidade }}</td>
                                         <td>
                                             <form action="{{ url_for('delete_lub_item_revisao', item_id=item.id) }}" method="POST">
                                                 <button type="submit" class="btn btn-sm btn-outline-danger" title="Remover Item">
@@ -86,7 +88,7 @@
                                     </tr>
                                     {% else %}
                                     <tr>
-                                        <td colspan="4" class="text-center text-muted">Nenhum item adicionado a esta revisão.</td>
+                                        <td colspan="5" class="text-center text-muted">Nenhum item adicionado a esta revisão.</td>
                                     </tr>
                                     {% endfor %}
                                 </tbody>
@@ -96,8 +98,8 @@
 
                             <h6>Adicionar Novo Item à Revisão</h6>
                             <form action="{{ url_for('add_lub_item_revisao', revisao_id=revisao.id) }}" method="POST" class="p-3 border rounded bg-light">
-                                <div class="row g-3">
-                                    <div class="col-md-4">
+                                <div class="row g-3 align-items-end">
+                                    <div class="col-md-3">
                                         <label class="form-label">Sistema</label>
                                         <select class="form-select sistema-select" data-revisao-id="{{ revisao.id }}" required>
                                             <option value="" selected disabled>Selecione...</option>
@@ -106,10 +108,10 @@
                                             {% endfor %}
                                         </select>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <label class="form-label">Subsistema</label>
                                         <select class="form-select subsistema-select" name="subsistema_id" id="subsistema-select-{{ revisao.id }}" required>
-                                            <option value="" selected disabled>Selecione um sistema primeiro</option>
+                                            <option value="" selected disabled>Selecione um sistema</option>
                                         </select>
                                     </div>
                                     <div class="col-md-4">
@@ -121,8 +123,12 @@
                                             {% endfor %}
                                         </select>
                                     </div>
-                                    <div class="col-12 d-grid">
-                                        <button type="submit" class="btn btn-primary mt-2">
+                                    <div class="col-md-2">
+                                        <label class="form-label">Quantidade</label>
+                                        <input type="number" step="any" class="form-control" name="quantidade" value="1" required>
+                                    </div>
+                                    <div class="col-12 d-grid mt-3">
+                                        <button type="submit" class="btn btn-primary">
                                             <i class="fas fa-plus-circle me-1"></i> Adicionar Item
                                         </button>
                                     </div>
