@@ -1549,74 +1549,19 @@ def delete_lub_item_revisao(item_id):
 
 
 # --- Rotas para Gestão da Frota ---
+# --- Rotas para Gestão da Frota ---
 @app.route('/frota')
 def frota_index():
+    # --- VERSÃO DE TESTE PARA DEBUG ---
+    # Temporariamente removemos o acesso ao banco de dados.
+    # Se esta página carregar, o problema está na consulta ao banco.
     if 'manutencao' not in session and not session.get('is_admin'):
         flash('Acesso negado.', 'danger')
         return redirect(url_for('login'))
-
-    veiculos = FrotaVeiculo.query.order_by(FrotaVeiculo.frota).all()
-    planos = LubPlano.query.order_by(LubPlano.nome_plano).all()
-
-    return render_template('frota.html', veiculos=veiculos, planos=planos)
-
-@app.route('/frota/add', methods=['POST'])
-def add_veiculo():
-    if 'manutencao' not in session and not session.get('is_admin'):
-        flash('Acesso negado.', 'danger')
-        return redirect(url_for('login'))
-
-    # Coletando todos os dados do formulário
-    frota = request.form.get('frota')
-    modelo = request.form.get('modelo')
-    ano = request.form.get('ano')
-    horimetro_atual = request.form.get('horimetro_atual', '0').replace(',', '.')
-    plano_id = request.form.get('plano_id')
-    fazenda = request.form.get('fazenda')
-    descricao = request.form.get('descricao')
-    chassi = request.form.get('chassi')
-    data_aquisicao = request.form.get('data_aquisicao')
-    especie = request.form.get('especie')
-    marca = request.form.get('marca')
-    tipo_propriedade = request.form.get('tipo_propriedade')
-    operacao_principal = request.form.get('operacao_principal')
-    gabinado = 'gabinado' in request.form # Checkbox value
-
-    if not frota or not modelo:
-        flash('Frota e Modelo do veículo são obrigatórios.', 'danger')
-        return redirect(url_for('frota_index'))
-
-    if FrotaVeiculo.query.filter_by(frota=frota).first():
-        flash(f'Já existe um veículo com a frota "{frota}".', 'warning')
-        return redirect(url_for('frota_index'))
-
-    try:
-        novo_veiculo = FrotaVeiculo(
-            frota=frota,
-            modelo=modelo,
-            ano=int(ano) if ano else None,
-            horimetro_atual=float(horimetro_atual),
-            plano_id=int(plano_id) if plano_id else None,
-            fazenda=fazenda,
-            descricao=descricao,
-            chassi=chassi,
-            data_aquisicao=data_aquisicao,
-            especie=especie,
-            marca=marca,
-            tipo_propriedade=tipo_propriedade,
-            operacao_principal=operacao_principal,
-            gabinado=gabinado
-        )
-        db.session.add(novo_veiculo)
-        db.session.commit()
-        flash('Veículo adicionado à frota com sucesso!', 'success')
-    except ValueError:
-        flash('Ano ou Horímetro inválido. Por favor, insira números válidos.', 'danger')
-    except Exception as e:
-        db.session.rollback()
-        flash(f'Erro ao adicionar veículo: {e}', 'danger')
-
-    return redirect(url_for('frota_index'))
+    
+    # Passando listas vazias para o template não quebrar
+    veiculos = []
+    planos = []
 
 
 @app.route('/frota/atualizar_horimetros', methods=['GET', 'POST'])
