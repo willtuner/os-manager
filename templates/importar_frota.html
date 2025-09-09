@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Importação de Frota em Massa{% endblock %}
+
+{% block page_title %}Importação de Frota em Massa{% endblock %}
+
+{% block header_actions %}
+  <a href="{{ url_for('frota_index') }}" class="btn btn-secondary btn-sm">
+    <i class="fas fa-arrow-left me-1"></i>Voltar para Frota
+  </a>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="mb-0">Enviar Planilha de Frota</h5>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-info">
+                <h6 class="alert-heading">Instruções</h6>
+                <p>O arquivo deve ser um Excel (.xlsx) ou CSV (.csv). As colunas na planilha devem corresponder aos campos do sistema. A primeira linha deve ser o cabeçalho.</p>
+                <p>Colunas esperadas (a ordem não importa, desde que o nome no cabeçalho seja o mesmo):</p>
+                <ul class="small">
+                    <li><strong>frota</strong> (Obrigatório - Identificador único do veículo, ex: TR-267)</li>
+                    <li><strong>modelo</strong> (Obrigatório)</li>
+                    <li><strong>ano</strong></li>
+                    <li><strong>horimetro_atual</strong></li>
+                    <li><strong>fazenda</strong></li>
+                    <li><strong>descricao</strong></li>
+                    <li><strong>chassi</strong></li>
+                    <li><strong>data_aquisicao</strong></li>
+                    <li><strong>especie</strong></li>
+                    <li><strong>marca</strong></li>
+                    <li><strong>tipo_propriedade</strong></li>
+                    <li><strong>operacao_principal</strong></li>
+                    <li><strong>gabinado</strong> (Use "Sim" ou "Não")</li>
+                </ul>
+                <p class="small mb-0"><strong>Atenção:</strong> Veículos cuja coluna 'frota' já exista no sistema serão ignorados para evitar duplicatas.</p>
+            </div>
+
+            <form action="{{ url_for('importar_frota') }}" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="file" class="form-label">Selecione o arquivo da planilha:</label>
+                    <input class="form-control" type="file" id="file" name="file" accept=".xlsx, .csv" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-file-import me-1"></i> Iniciar Importação
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

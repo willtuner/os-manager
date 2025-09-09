@@ -5,7 +5,7 @@ import re
 from datetime import datetime, timedelta
 import pytz
 import random
-from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file, jsonify
+from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
@@ -179,70 +179,6 @@ class OSPendente(db.Model):
     status_definido_por = db.Column(db.String(80), nullable=False)
     status_data = db.Column(db.String(20), nullable=False)
 
-# --- Modelos para o Plano de Lubrificação ---
-class LubSistema(db.Model):
-    __tablename__ = 'lub_sistema'
-    id = db.Column(db.Integer, primary_key=True)
-    nome = db.Column(db.String(100), unique=True, nullable=False)
-    subsistemas = db.relationship('LubSubsistema', backref='sistema', lazy=True, cascade="all, delete-orphan")
-
-class LubSubsistema(db.Model):
-    __tablename__ = 'lub_subsistema'
-    id = db.Column(db.Integer, primary_key=True)
-    nome = db.Column(db.String(100), nullable=False)
-    sistema_id = db.Column(db.Integer, db.ForeignKey('lub_sistema.id'), nullable=False)
-    itens_revisao = db.relationship('LubItemRevisao', backref='subsistema', lazy=True)
-
-class LubComponente(db.Model):
-    __tablename__ = 'lub_componente'
-    id = db.Column(db.Integer, primary_key=True)
-    codigo_pimns = db.Column(db.String(50), unique=True, nullable=False)
-    nome = db.Column(db.String(200), nullable=False)
-    itens_revisao = db.relationship('LubItemRevisao', backref='componente', lazy=True)
-
-class LubPlano(db.Model):
-    __tablename__ = 'lub_plano'
-    id = db.Column(db.Integer, primary_key=True)
-    nome_plano = db.Column(db.String(150), unique=True, nullable=False)
-    modelo_veiculo = db.Column(db.String(100), nullable=False)
-    revisoes = db.relationship('LubRevisao', backref='plano', lazy=True, cascade="all, delete-orphan")
-
-class LubRevisao(db.Model):
-    __tablename__ = 'lub_revisao'
-    id = db.Column(db.Integer, primary_key=True)
-    nome_revisao = db.Column(db.String(100), nullable=False) # Ex: "400h", "1200h"
-    plano_id = db.Column(db.Integer, db.ForeignKey('lub_plano.id'), nullable=False)
-    itens = db.relationship('LubItemRevisao', backref='revisao', lazy=True, cascade="all, delete-orphan")
-
-class LubItemRevisao(db.Model):
-    __tablename__ = 'lub_item_revisao'
-    id = db.Column(db.Integer, primary_key=True)
-    revisao_id = db.Column(db.Integer, db.ForeignKey('lub_revisao.id'), nullable=False)
-    subsistema_id = db.Column(db.Integer, db.ForeignKey('lub_subsistema.id'), nullable=False)
-    componente_id = db.Column(db.Integer, db.ForeignKey('lub_componente.id'), nullable=False)
-    quantidade = db.Column(db.Float, nullable=False, default=1)
-
-class FrotaVeiculo(db.Model):
-    __tablename__ = 'frota_veiculo'
-    id = db.Column(db.Integer, primary_key=True)
-    frota = db.Column(db.String(50), unique=True, nullable=False)
-    modelo = db.Column(db.String(100), nullable=False)
-    ano = db.Column(db.Integer, nullable=True)
-    horimetro_atual = db.Column(db.Float, nullable=False, default=0.0)
-    plano_id = db.Column(db.Integer, db.ForeignKey('lub_plano.id'), nullable=True)
-    plano = db.relationship('LubPlano', backref='veiculos')
-
-    # New detailed fields from user's spreadsheet
-    fazenda = db.Column(db.String(100), nullable=True)
-    descricao = db.Column(db.Text, nullable=True)
-    chassi = db.Column(db.String(100), nullable=True)
-    data_aquisicao = db.Column(db.String(50), nullable=True)
-    especie = db.Column(db.String(100), nullable=True)
-    marca = db.Column(db.String(100), nullable=True)
-    tipo_propriedade = db.Column(db.String(50), nullable=True)
-    operacao_principal = db.Column(db.String(100), nullable=True)
-    gabinado = db.Column(db.Boolean, default=False)
-
 # --- Constantes de caminho e inicialização do JSON ---
 BASE_DIR = os.path.dirname(__file__)
 MENSAGENS_DIR = os.path.join(BASE_DIR, 'mensagens_por_gerente')
@@ -281,36 +217,6 @@ def remover_os_de_todos_json(diretorio, os_numero):
     else:
         logger.info(f"OS {os_numero} removida dos arquivos: {removido_de}")
     return removido_de
-
-def seed_initial_lub_data():
-    """Popula o banco de dados com os sistemas e subsistemas iniciais de lubrificação."""
-    if LubSistema.query.first():
-        return
-
-    logger.info("Populando dados iniciais de sistema de lubrificação...")
-    sistemas_data = {
-        'Motor': ['Cárter', 'Filtro Óleo'],
-        'Transmissão': ['Diferencial 1º eixo', 'Diferencial 2º eixo'],
-        'Hidráulico': ['Filtro óleo hidráulico'],
-        'Diferenciais/Planetárias': ['Planetária Dianteira Dir.', 'Planetária Dianteira Esq.'],
-        'Alimentação Combustível': ['Filtro Diesel'],
-        'Ar/Motor (admissão)': ['Filtro ar externo', 'Filtro ar interno'],
-        'Cabine': ['Filtro ar condicionado'],
-        'Arrefecimento': ['Radiador', 'Aditivo']
-    }
-    try:
-        for nome_sistema, nomes_subsistemas in sistemas_data.items():
-            novo_sistema = LubSistema(nome=nome_sistema)
-            db.session.add(novo_sistema)
-            db.session.flush()
-            for nome_subsistema in nomes_subsistemas:
-                novo_subsistema = LubSubsistema(nome=nome_subsistema, sistema_id=novo_sistema.id)
-                db.session.add(novo_subsistema)
-        db.session.commit()
-        logger.info("Dados iniciais de lubrificação populados com sucesso.")
-    except Exception as e:
-        logger.error(f"Erro ao popular dados iniciais de lubrificação: {e}")
-        db.session.rollback()
 
 def init_db():
     with app.app_context():  # Garante contexto de aplicação para operações de BD
@@ -362,66 +268,8 @@ def init_db():
                 OSPendente.__table__.create(db.engine)
                 logger.info("Tabela os_pendente criada com sucesso.")
 
-            # Adiciona a coluna 'quantidade' se não existir
-            if 'lub_item_revisao' in inspector.get_table_names():
-                columns_lub_item_revisao = [col['name'] for col in inspector.get_columns('lub_item_revisao')]
-                if 'quantidade' not in columns_lub_item_revisao:
-                    logger.info("Adicionando coluna quantidade à tabela lub_item_revisao")
-                    db.session.execute(text('ALTER TABLE lub_item_revisao ADD COLUMN quantidade FLOAT NOT NULL DEFAULT 1'))
-                    db.session.commit()
-                    logger.info("Coluna quantidade adicionada com sucesso.")
-
-            # Verifica e cria as tabelas de lubrificação
-            lub_tables = ['lub_sistema', 'lub_subsistema', 'lub_componente', 'lub_plano', 'lub_revisao', 'lub_item_revisao', 'frota_veiculo']
-
-            # Adiciona colunas detalhadas à tabela frota_veiculo se não existirem
-            if 'frota_veiculo' in inspector.get_table_names():
-                columns_frota = [col['name'] for col in inspector.get_columns('frota_veiculo')]
-
-                # Renomeia a coluna se o nome antigo ainda existir
-                if 'tag_veiculo' in columns_frota and 'frota' not in columns_frota:
-                    logger.info("Renomeando coluna de 'tag_veiculo' para 'frota'")
-                    db.session.execute(text('ALTER TABLE frota_veiculo RENAME COLUMN tag_veiculo TO frota'))
-                    db.session.commit()
-                    logger.info("Coluna 'frota' renomeada com sucesso.")
-                    # Refresh columns list after rename
-                    columns_frota = [col['name'] for col in inspector.get_columns('frota_veiculo')]
-
-                new_cols = {
-                    'fazenda': 'VARCHAR(100)',
-                    'descricao': 'TEXT',
-                    'chassi': 'VARCHAR(100)',
-                    'data_aquisicao': 'VARCHAR(50)',
-                    'especie': 'VARCHAR(100)',
-                    'marca': 'VARCHAR(100)',
-                    'tipo_propriedade': 'VARCHAR(50)',
-                    'operacao_principal': 'VARCHAR(100)',
-                    'gabinado': 'BOOLEAN'
-                }
-                for col, col_type in new_cols.items():
-                    if col not in columns_frota:
-                        logger.info(f"Adicionando coluna {col} à tabela frota_veiculo")
-                        db.session.execute(text(f'ALTER TABLE frota_veiculo ADD COLUMN {col} {col_type}'))
-                        db.session.commit()
-                        logger.info(f"Coluna {col} adicionada com sucesso.")
-
-            for table_name in lub_tables:
-                if table_name not in inspector.get_table_names():
-                    logger.info(f"Tabela {table_name} não encontrada, criando...")
-                    # A criação de uma tabela cria todas as outras que ainda não existem
-                    db.create_all()
-                    logger.info("Tabelas de lubrificação criadas com sucesso.")
-                    break # Sai do loop pois db.create_all() cria todas
-
         except Exception as e:
             logger.error(f"Erro ao verificar/adicionar colunas: {e}")
-            db.session.rollback()
-
-        # Popula os dados iniciais de lubrificação
-        try:
-            seed_initial_lub_data()
-        except Exception as e:
-            logger.error(f"Erro ao executar o seed dos dados de lubrificação: {e}")
             db.session.rollback()
 
         # Sincronização de usuários do JSON para o Banco de Dados
@@ -1351,7 +1199,6 @@ def admin_panel():
 # ##########################################################################
 # FIM DA FUNÇÃO admin_panel ATUALIZADA
 # ##########################################################################
-
 @app.route('/lubrificacao')
 def painel_lubrificacao():
     if 'manutencao' not in session and not session.get('is_admin'):
@@ -2032,9 +1879,116 @@ def update_pimns_status(os_id):
 
     return redirect(url_for("admin_panel"))
 
+@app.route('/frota/importar', methods=['GET', 'POST'])
+def importar_frota():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    if request.method == 'POST':
+        if 'file' not in request.files:
+            flash('Nenhum arquivo selecionado.', 'danger')
+            return redirect(request.url)
+
+        file = request.files['file']
+        if file.filename == '':
+            flash('Nenhum arquivo selecionado.', 'danger')
+            return redirect(request.url)
+
+        if file and (file.filename.endswith('.csv') or file.filename.endswith('.xlsx')):
+            filepath = None
+            try:
+                filename = secure_filename(file.filename)
+                filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+                file.save(filepath)
+
+                if filename.endswith('.csv'):
+                    df = pd.read_csv(filepath, sep=None, engine='python', encoding='utf-8', on_bad_lines='skip')
+                else:
+                    df = pd.read_excel(filepath)
+
+                # Normalize column names from spreadsheet
+                df.columns = [str(col).strip().lower().replace(' ', '_').replace('/', '_') for col in df.columns]
+
+                # Map expected spreadsheet columns to our model's field names
+                column_map = {
+                    'frota': 'frota',
+                    'tipo_do_trator': 'modelo',
+                    'ano': 'ano',
+                    'fazenda': 'fazenda',
+                    'frota_descrição': 'descricao',
+                    'chassi': 'chassi',
+                    'data_aquisição': 'data_aquisicao',
+                    'especie': 'especie',
+                    'marca': 'marca',
+                    'tipo': 'tipo_propriedade',
+                    'operação_principal': 'operacao_principal',
+                    'gabinado': 'gabinado',
+                    'horimetro_atual': 'horimetro_atual'
+                }
+
+                df.rename(columns=column_map, inplace=True)
+
+                existing_frotas = {str(v.frota) for v in FrotaVeiculo.query.with_entities(FrotaVeiculo.frota).all()}
+                added_count = 0
+                skipped_count = 0
+
+                for index, row in df.iterrows():
+                    if 'frota' not in df.columns or 'modelo' not in df.columns:
+                        flash("A planilha precisa conter as colunas 'frota' e 'modelo'.", "danger")
+                        return redirect(url_for('importar_frota'))
+
+                    frota_val = str(row.get('frota', '')).strip()
+                    if not frota_val:
+                        skipped_count += 1
+                        continue
+
+                    if frota_val in existing_frotas:
+                        skipped_count += 1
+                        continue
+
+                    new_vehicle_data = {
+                        'frota': frota_val,
+                        'modelo': row.get('modelo'),
+                        'ano': int(row.get('ano')) if pd.notna(row.get('ano')) else None,
+                        'horimetro_atual': float(str(row.get('horimetro_atual','0')).replace(',','.')) if pd.notna(row.get('horimetro_atual')) else 0.0,
+                        'fazenda': row.get('fazenda'),
+                        'descricao': row.get('descricao'),
+                        'chassi': row.get('chassi'),
+                        'data_aquisicao': str(row.get('data_aquisicao')) if pd.notna(row.get('data_aquisicao')) else None,
+                        'especie': row.get('especie'),
+                        'marca': row.get('marca'),
+                        'tipo_propriedade': row.get('tipo_propriedade'),
+                        'operacao_principal': row.get('operacao_principal'),
+                        'gabinado': str(row.get('gabinado', 'Não')).strip().lower() in ['sim', 'true', '1', 's']
+                    }
+
+                    novo_veiculo = FrotaVeiculo(**new_vehicle_data)
+                    db.session.add(novo_veiculo)
+                    added_count += 1
+                    existing_frotas.add(frota_val)
+
+                db.session.commit()
+                flash(f'Importação concluída! {added_count} veículos novos adicionados. {skipped_count} veículos ignorados (já existentes ou sem dados obrigatórios).', 'success')
+
+            except Exception as e:
+                db.session.rollback()
+                logger.error(f"Erro ao processar arquivo de importação: {e}")
+                flash(f'Ocorreu um erro ao processar o arquivo: {e}', 'danger')
+
+            finally:
+                if filepath and os.path.exists(filepath):
+                    os.remove(filepath)
+
+            return redirect(url_for('frota_index'))
+        else:
+            flash('Formato de arquivo inválido. Por favor, envie um arquivo .csv ou .xlsx.', 'danger')
+            return redirect(request.url)
+
+    return render_template('importar_frota.html')
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
            port=int(os.environ.get('PORT', 10000)),
            debug=True)
-
-# Forçando a atualização para nova tentativa de PR
