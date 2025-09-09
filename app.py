@@ -377,6 +377,16 @@ def init_db():
             # Adiciona colunas detalhadas à tabela frota_veiculo se não existirem
             if 'frota_veiculo' in inspector.get_table_names():
                 columns_frota = [col['name'] for col in inspector.get_columns('frota_veiculo')]
+
+                # Renomeia a coluna se o nome antigo ainda existir
+                if 'tag_veiculo' in columns_frota and 'frota' not in columns_frota:
+                    logger.info("Renomeando coluna de 'tag_veiculo' para 'frota'")
+                    db.session.execute(text('ALTER TABLE frota_veiculo RENAME COLUMN tag_veiculo TO frota'))
+                    db.session.commit()
+                    logger.info("Coluna 'frota' renomeada com sucesso.")
+                    # Refresh columns list after rename
+                    columns_frota = [col['name'] for col in inspector.get_columns('frota_veiculo')]
+
                 new_cols = {
                     'fazenda': 'VARCHAR(100)',
                     'descricao': 'TEXT',
