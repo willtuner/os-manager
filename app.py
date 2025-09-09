@@ -698,9 +698,12 @@ def painel_prestador():
                 logger.error(f"Erro processando OS de {caminho_arq_os_prest}: {e}")
                 flash("Erro ao carregar OS.", 'danger')
 
+    finalizadas_prestador = Finalizacao.query.filter_by(gerente=session['prestador']).order_by(Finalizacao.registrado_em.desc()).limit(100).all()
+
     return render_template('painel_prestador.html',
         nome=dados_prestador_atual.get('nome_exibicao', session['prestador'].capitalize()),
         os_list=lista_os_do_prestador,
+        finalizadas=finalizadas_prestador,
         now=datetime.now(saopaulo_tz), 
         today_date=datetime.now(saopaulo_tz).strftime('%Y-%m-%d'))
 
@@ -1196,6 +1199,356 @@ def admin_panel():
 # ##########################################################################
 # FIM DA FUNÇÃO admin_panel ATUALIZADA
 # ##########################################################################
+@app.route('/lubrificacao')
+def painel_lubrificacao():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado. Faça login como manutenção ou administrador.', 'danger')
+        return redirect(url_for('login'))
+
+    sistemas = LubSistema.query.order_by(LubSistema.nome).all()
+    componentes = LubComponente.query.order_by(LubComponente.nome).all()
+    planos = LubPlano.query.order_by(LubPlano.nome_plano).all()
+
+    return render_template('lubrificacao.html', sistemas=sistemas, componentes=componentes, planos=planos)
+
+@app.route('/lubrificacao/componente/add', methods=['POST'])
+def add_lub_componente():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    codigo_pimns = request.form.get('codigo_pimns')
+    nome = request.form.get('nome')
+
+    if not codigo_pimns or not nome:
+        flash('Código PIMNS e Nome são obrigatórios.', 'danger')
+        return redirect(url_for('painel_lubrificacao'))
+
+    if LubComponente.query.filter_by(codigo_pimns=codigo_pimns).first():
+        flash(f'Componente com código PIMNS "{codigo_pimns}" já existe.', 'warning')
+        return redirect(url_for('painel_lubrificacao'))
+
+    try:
+        novo_componente = LubComponente(codigo_pimns=codigo_pimns, nome=nome)
+        db.session.add(novo_componente)
+        db.session.commit()
+        flash('Componente adicionado com sucesso!', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao adicionar componente: {e}', 'danger')
+
+    return redirect(url_for('painel_lubrificacao'))
+
+@app.route('/lubrificacao/componente/delete/<int:componente_id>', methods=['POST'])
+def delete_lub_componente(componente_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    componente = LubComponente.query.get_or_404(componente_id)
+    try:
+        db.session.delete(componente)
+        db.session.commit()
+        flash('Componente removido com sucesso!', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao remover componente: {e}', 'danger')
+
+    return redirect(url_for('painel_lubrificacao'))
+
+@app.route('/lubrificacao/plano/add', methods=['POST'])
+def add_lub_plano():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    nome_plano = request.form.get('nome_plano')
+    modelo_veiculo = request.form.get('modelo_veiculo')
+
+    if not nome_plano or not modelo_veiculo:
+        flash('Nome do Plano e Modelo do Veículo são obrigatórios.', 'danger')
+        return redirect(url_for('painel_lubrificacao'))
+
+    if LubPlano.query.filter_by(nome_plano=nome_plano).first():
+        flash('Já existe um plano com este nome.', 'warning')
+        return redirect(url_for('painel_lubrificacao'))
+
+    try:
+        novo_plano = LubPlano(nome_plano=nome_plano, modelo_veiculo=modelo_veiculo)
+        db.session.add(novo_plano)
+        db.session.commit()
+        flash('Plano criado com sucesso! Agora adicione as revisões e itens.', 'success')
+        return redirect(url_for('lub_plano_detalhe', plano_id=novo_plano.id))
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao criar plano: {e}', 'danger')
+        return redirect(url_for('painel_lubrificacao'))
+
+@app.route('/lubrificacao/plano/delete/<int:plano_id>', methods=['POST'])
+def delete_lub_plano(plano_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    plano = LubPlano.query.get_or_404(plano_id)
+    try:
+        db.session.delete(plano)
+        db.session.commit()
+        flash('Plano removido com sucesso!', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao remover plano: {e}', 'danger')
+    return redirect(url_for('painel_lubrificacao'))
+
+@app.route('/lubrificacao/plano/<int:plano_id>')
+def lub_plano_detalhe(plano_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    plano = LubPlano.query.get_or_404(plano_id)
+    sistemas = LubSistema.query.order_by(LubSistema.nome).all()
+    componentes = LubComponente.query.order_by(LubComponente.nome).all()
+
+    return render_template('lub_plano_detalhe.html', plano=plano, sistemas=sistemas, componentes=componentes)
+
+@app.route('/lubrificacao/plano/<int:plano_id>/revisao/add', methods=['POST'])
+def add_lub_revisao(plano_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    nome_revisao = request.form.get('nome_revisao')
+    if not nome_revisao:
+        flash('Nome da revisão é obrigatório.', 'danger')
+        return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+    try:
+        nova_revisao = LubRevisao(nome_revisao=nome_revisao, plano_id=plano_id)
+        db.session.add(nova_revisao)
+        db.session.commit()
+        flash('Revisão adicionada com sucesso.', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao adicionar revisão: {e}', 'danger')
+
+    return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+@app.route('/lubrificacao/revisao/delete/<int:revisao_id>', methods=['POST'])
+def delete_lub_revisao(revisao_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    revisao = LubRevisao.query.get_or_404(revisao_id)
+    plano_id = revisao.plano_id
+    try:
+        db.session.delete(revisao)
+        db.session.commit()
+        flash('Revisão removida com sucesso.', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao remover revisão: {e}', 'danger')
+
+    return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+@app.route('/lubrificacao/revisao/<int:revisao_id>/item/add', methods=['POST'])
+def add_lub_item_revisao(revisao_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    revisao = LubRevisao.query.get_or_404(revisao_id)
+    subsistema_id = request.form.get('subsistema_id')
+    componente_id = request.form.get('componente_id')
+    quantidade = request.form.get('quantidade', '1').replace(',', '.')
+
+    if not subsistema_id or not componente_id:
+        flash('Sistema, Subsistema e Componente são obrigatórios.', 'danger')
+        return redirect(url_for('lub_plano_detalhe', plano_id=revisao.plano_id))
+
+    try:
+        quantidade_float = float(quantidade)
+        novo_item = LubItemRevisao(
+            revisao_id=revisao_id,
+            subsistema_id=subsistema_id,
+            componente_id=componente_id,
+            quantidade=quantidade_float
+        )
+        db.session.add(novo_item)
+        db.session.commit()
+        flash('Item adicionado à revisão com sucesso.', 'success')
+    except ValueError:
+        flash('Quantidade inválida. Por favor, insira um número.', 'danger')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao adicionar item: {e}', 'danger')
+
+    return redirect(url_for('lub_plano_detalhe', plano_id=revisao.plano_id))
+
+@app.route('/lubrificacao/item/delete/<int:item_id>', methods=['POST'])
+def delete_lub_item_revisao(item_id):
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    item = LubItemRevisao.query.get_or_404(item_id)
+    plano_id = item.revisao.plano_id
+    try:
+        db.session.delete(item)
+        db.session.commit()
+        flash('Item da revisão removido com sucesso.', 'success')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao remover item da revisão: {e}', 'danger')
+
+    return redirect(url_for('lub_plano_detalhe', plano_id=plano_id))
+
+
+# --- Rotas para Gestão da Frota ---
+# --- Rotas para Gestão da Frota ---
+# --- Rotas para Gestão da Frota ---
+@app.route('/frota/add', methods=['POST'])
+def add_veiculo():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    # Coletando todos os dados do formulário
+    frota = request.form.get('frota')
+    modelo = request.form.get('modelo')
+    ano = request.form.get('ano')
+    horimetro_atual = request.form.get('horimetro_atual', '0').replace(',', '.')
+    plano_id = request.form.get('plano_id')
+    fazenda = request.form.get('fazenda')
+    descricao = request.form.get('descricao')
+    chassi = request.form.get('chassi')
+    data_aquisicao = request.form.get('data_aquisicao')
+    especie = request.form.get('especie')
+    marca = request.form.get('marca')
+    tipo_propriedade = request.form.get('tipo_propriedade')
+    operacao_principal = request.form.get('operacao_principal')
+    gabinado = 'gabinado' in request.form # Checkbox value
+
+    if not frota or not modelo:
+        flash('Frota e Modelo do veículo são obrigatórios.', 'danger')
+        return redirect(url_for('frota_index'))
+
+    if FrotaVeiculo.query.filter_by(frota=frota).first():
+        flash(f'Já existe um veículo com a frota "{frota}".', 'warning')
+        return redirect(url_for('frota_index'))
+
+    try:
+        novo_veiculo = FrotaVeiculo(
+            frota=frota,
+            modelo=modelo,
+            ano=int(ano) if ano else None,
+            horimetro_atual=float(horimetro_atual),
+            plano_id=int(plano_id) if plano_id else None,
+            fazenda=fazenda,
+            descricao=descricao,
+            chassi=chassi,
+            data_aquisicao=data_aquisicao,
+            especie=especie,
+            marca=marca,
+            tipo_propriedade=tipo_propriedade,
+            operacao_principal=operacao_principal,
+            gabinado=gabinado
+        )
+        db.session.add(novo_veiculo)
+        db.session.commit()
+        flash('Veículo adicionado à frota com sucesso!', 'success')
+    except ValueError:
+        flash('Ano ou Horímetro inválido. Por favor, insira números válidos.', 'danger')
+    except Exception as e:
+        db.session.rollback()
+        flash(f'Erro ao adicionar veículo: {e}', 'danger')
+
+    return redirect(url_for('frota_index'))
+
+
+@app.route('/frota/atualizar_horimetros', methods=['GET', 'POST'])
+def atualizar_horimetros():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    if request.method == 'POST':
+        try:
+            for key, value in request.form.items():
+                if key.startswith('horimetro_'):
+                    veiculo_id = int(key.split('_')[1])
+                    if value:
+                        horimetro = float(value.replace(',', '.'))
+                        veiculo = FrotaVeiculo.query.get(veiculo_id)
+                        if veiculo:
+                            veiculo.horimetro_atual = horimetro
+            db.session.commit()
+            flash('Horímetros atualizados com sucesso!', 'success')
+        except ValueError:
+            db.session.rollback()
+            flash('Erro: Horímetro inválido. Por favor, insira apenas números.', 'danger')
+        except Exception as e:
+            db.session.rollback()
+            flash(f'Ocorreu um erro ao atualizar os horímetros: {e}', 'danger')
+        
+        return redirect(url_for('atualizar_horimetros'))
+
+    veiculos = FrotaVeiculo.query.order_by(FrotaVeiculo.frota).all()
+    return render_template('atualizar_horimetros.html', veiculos=veiculos)
+
+
+@app.route('/frota/associar_planos', methods=['GET', 'POST'])
+def associar_planos():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    if request.method == 'POST':
+        modelo = request.form.get('modelo')
+        plano_id = request.form.get('plano_id')
+
+        if not modelo or not plano_id:
+            flash('Você precisa selecionar um modelo e um plano.', 'danger')
+            return redirect(url_for('associar_planos'))
+
+        try:
+            veiculos_para_atualizar = FrotaVeiculo.query.filter_by(modelo=modelo, plano_id=None).all()
+            
+            if not veiculos_para_atualizar:
+                flash('Nenhum veículo encontrado para este modelo que precise de um plano.', 'info')
+                return redirect(url_for('associar_planos'))
+
+            for veiculo in veiculos_para_atualizar:
+                veiculo.plano_id = int(plano_id)
+            
+            db.session.commit()
+            flash(f'{len(veiculos_para_atualizar)} veículo(s) do modelo "{modelo}" foram associados ao plano com sucesso!', 'success')
+        
+        except Exception as e:
+            db.session.rollback()
+            flash(f'Ocorreu um erro ao associar os planos: {e}', 'danger')
+        
+        return redirect(url_for('associar_planos'))
+
+    # GET request
+    modelos_query = db.session.query(FrotaVeiculo.modelo).distinct().order_by(FrotaVeiculo.modelo).all()
+    modelos = [m[0] for m in modelos_query]
+    planos = LubPlano.query.order_by(LubPlano.nome_plano).all()
+
+    return render_template('associar_planos.html', modelos=modelos, planos=planos)
+
+
+@app.route('/frota')
+def frota_index():
+    if 'manutencao' not in session and not session.get('is_admin'):
+        flash('Acesso negado.', 'danger')
+        return redirect(url_for('login'))
+
+    veiculos = FrotaVeiculo.query.order_by(FrotaVeiculo.frota).all()
+    planos = LubPlano.query.order_by(LubPlano.nome_plano).all()
+
+    return render_template('frota.html', veiculos=veiculos, planos=planos)
 
 @app.route('/exportar_os_finalizadas')
 def exportar_os_finalizadas():

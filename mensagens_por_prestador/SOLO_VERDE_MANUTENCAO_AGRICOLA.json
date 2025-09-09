@@ -1,5 +1,37 @@
 [
   {
+    "frota": "90",
+    "cd_equipamento": "90",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "117845",
+    "data_entrada": "05/09/2025",
+    "servico": "Vazamento de óleo na mangueira da direção - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsvel Sr. Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117839",
+    "data_entrada": "05/09/2025",
+    "servico": "Quebra do cabo do acelerador de pé - (Fazenda Minuano)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117795",
+    "data_entrada": "04/09/2025",
+    "servico": "Quebra da alavanca de cambio - (Fazenda Minuano)|Parado|\nSolicitado Sr. Izaias\nResponsvel Sr. Arthur"
+  },
+  {
+    "frota": "216",
+    "cd_equipamento": "216",
+    "modelo": "TRATOR JOHN DEERE 5070 E",
+    "os": "117779",
+    "data_entrada": "04/09/2025",
+    "servico": "Vazamento no cachimbo do freio - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "103",
     "cd_equipamento": "103",
     "modelo": "TRATOR JOHN DEERE 5065 4X4",

@@ -1,11 +1,59 @@
 [
   {
-    "frota": "47",
-    "cd_equipamento": "47",
-    "modelo": "TRATOR JOHN DEERE 5403 4X2",
-    "os": "117761",
+    "frota": "10223",
+    "cd_equipamento": "10223",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117891",
+    "data_entrada": "08/09/2025",
+    "servico": "Instalar cibié traseiro para operação noturna - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "251",
+    "cd_equipamento": "251",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117886",
+    "data_entrada": "08/09/2025",
+    "servico": "Verificar sistema eletrico dos cibié, queimando imediatamente após a troca - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5786",
+    "cd_equipamento": "5786",
+    "modelo": "PULVERIZADOR 600 LT",
+    "os": "117885",
+    "data_entrada": "08/09/2025",
+    "servico": "Verificar acionamento das pistolas - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinicius \nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "5599",
+    "cd_equipamento": "5599",
+    "modelo": "PREMIX PRIME 2T 2000",
+    "os": "117865",
+    "data_entrada": "08/09/2025",
+    "servico": "Revisar chicote eletrico do pré-mix - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "104",
+    "cd_equipamento": "104",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "117833",
+    "data_entrada": "05/09/2025",
+    "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "121",
+    "cd_equipamento": "121",
+    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
+    "os": "117815",
+    "data_entrada": "05/09/2025",
+    "servico": "Verificar alternador - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5006",
+    "cd_equipamento": "5006",
+    "modelo": "PULVERIZADOR 2000 LT JACTO",
+    "os": "117807",
     "data_entrada": "04/09/2025",
-    "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
+    "servico": "Verificar plug do painel com mau contato - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsvel Sr. Arthur"
   },
   {
     "frota": "197",
@@ -40,36 +88,12 @@
     "servico": "Farol não funciona (terminais da lâmpada derretidos) sirene não funciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "221",
-    "cd_equipamento": "221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117708",
-    "data_entrada": "03/09/2025",
-    "servico": "Verificar injetador de água do para-brisa não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "268",
-    "cd_equipamento": "268",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117707",
-    "data_entrada": "03/09/2025",
-    "servico": "Verificar injetador de água do para-brisa não funciona - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5659",
     "cd_equipamento": "5659",
     "modelo": "PULVERIZADOR 4000 LT JACTO",
     "os": "117703",
     "data_entrada": "03/09/2025",
     "servico": "Executar substituição do chicote elétrico do tanque de pulverização, danificado em decorrência do rompimento do eixo cardan, que se enroscou no mesmo - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5521",
-    "cd_equipamento": "5521",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "117688",
-    "data_entrada": "03/09/2025",
-    "servico": "Verificar sistema de ramal que não está desligando os lados. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "218",
@@ -86,22 +110,6 @@
     "os": "117674",
     "data_entrada": "03/09/2025",
     "servico": "Verificar equipamento sem partida, já trocado as baterias porem continua sem ignição - (Fazenda São Paulo)\nSolicitado Sr. Zylton \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "130",
-    "cd_equipamento": "130",
-    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
-    "os": "117668",
-    "data_entrada": "03/09/2025",
-    "servico": "Revisar chicote eletrico em curto - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "220",
-    "cd_equipamento": "220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117645",
-    "data_entrada": "02/09/2025",
-    "servico": "Revisão elétrica (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   },
   {
     "frota": "5705",
@@ -184,14 +192,6 @@
     "servico": "Verificar equipamento sem partida - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "83",
-    "cd_equipamento": "83",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117301",
-    "data_entrada": "27/08/2025",
-    "servico": "Verificar sistema de segurança do trator; máquina está dando partida com marcha engatada. - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "217",
     "cd_equipamento": "217",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -206,14 +206,6 @@
     "os": "117045",
     "data_entrada": "21/08/2025",
     "servico": "Verificar luz da bateria acessa no painel, indicando que o alternador não está carregando a bateria - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "226",
-    "cd_equipamento": "226",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "116903",
-    "data_entrada": "19/08/2025",
-    "servico": "Limpador de para-brisa não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "219",

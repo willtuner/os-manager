@@ -1,19 +1,43 @@
 [
   {
-    "frota": "198",
-    "cd_equipamento": "198",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117813",
-    "data_entrada": "04/09/2025",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Minuano)||Parado|\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+    "frota": "97",
+    "cd_equipamento": "97",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "117900",
+    "data_entrada": "08/09/2025",
+    "servico": "Pneu dianteiro L/D estourado e L/E ruim  - (Fazenda Pedra Verde)|Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5697",
-    "cd_equipamento": "5697",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "117769",
-    "data_entrada": "04/09/2025",
-    "servico": "Pneu L/? furado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+    "frota": "5001",
+    "cd_equipamento": "5001",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "117896",
+    "data_entrada": "08/09/2025",
+    "servico": "Pneu L/E furado - (fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "311",
+    "cd_equipamento": "311",
+    "modelo": "RETROESCAVADEIRA 416 CAT",
+    "os": "117894",
+    "data_entrada": "08/09/2025",
+    "servico": "Pneu dianteiro L/D aparentemente furado (Baixando) - (Fazenda NSA)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5248",
+    "cd_equipamento": "5248",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117876",
+    "data_entrada": "08/09/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5401",
+    "cd_equipamento": "5401",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "117864",
+    "data_entrada": "08/09/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "10226",
@@ -24,84 +48,12 @@
     "servico": "Pneu dianteiro L/D furado - (Fazenda São Pedro)|Parado|\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5290",
-    "cd_equipamento": "5290",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "117760",
-    "data_entrada": "04/09/2025",
-    "servico": "Pneu L/D furado - (Fazenda Santa Izabel)|Parado|\nSolicitado Sr. Diego Camboi\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "266",
-    "cd_equipamento": "266",
-    "modelo": "TRATOR JOHN DEERE 7230J",
-    "os": "117725",
-    "data_entrada": "03/09/2025",
-    "servico": "Consertar pneu traseiro esquerdo furado (com corte na lateral interna do mesmo)\nFazenda Ursula\nSolicitado Sr. João Dubay\nResponsável Sr. Maurício"
-  },
-  {
     "frota": "209",
     "cd_equipamento": "209",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117697",
     "data_entrada": "03/09/2025",
     "servico": "Pneu traseiro L/D furado - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5336",
-    "cd_equipamento": "5336",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "117678",
-    "data_entrada": "03/09/2025",
-    "servico": "Pneu L/E furado - (Fazenda Bela Manhã) |Parado|\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "140",
-    "cd_equipamento": "140",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "117672",
-    "data_entrada": "03/09/2025",
-    "servico": "Pneu L/D furado - (Fazenda Terra Branca)|Parado|\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "286",
-    "cd_equipamento": "286",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117671",
-    "data_entrada": "03/09/2025",
-    "servico": "Pneu traseiro L/E furado  - (Fazenda Terra Branca)|Parado|\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5652",
-    "cd_equipamento": "5652",
-    "modelo": "ADUBADEIRA FARTUS 5.0 GRANEL",
-    "os": "117633",
-    "data_entrada": "02/09/2025",
-    "servico": "Pneu L/D furado - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5053",
-    "cd_equipamento": "5053",
-    "modelo": "CARRETINHA DE FERRO",
-    "os": "117624",
-    "data_entrada": "02/09/2025",
-    "servico": "Pneu L/D furado - (Fazenda Terra Branca)|Parado|\nSolicitado Sr. João Victor \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5238",
-    "cd_equipamento": "5238",
-    "modelo": "GUINCHO HIDRAULICO GT-1200",
-    "os": "117575",
-    "data_entrada": "01/09/2025",
-    "servico": "Pneu L/E estourado (7.50-16) - (Fazenda São Severino) |Parado|\nSolicitado Sr. Marcio Junio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5110",
-    "cd_equipamento": "5110",
-    "modelo": "SUBSOLADOR STARA",
-    "os": "117513",
-    "data_entrada": "30/08/2025",
-    "servico": "Pneu L/E furado - (Fazenda Úrsula) |Parado|\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5035",

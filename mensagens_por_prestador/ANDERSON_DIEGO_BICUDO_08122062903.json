@@ -1,19 +1,43 @@
 [
   {
-    "frota": "298",
-    "cd_equipamento": "298",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117695",
-    "data_entrada": "03/09/2025",
-    "servico": "Abrir tampa da TDP para verificar possível falha - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+    "frota": "125",
+    "cd_equipamento": "125",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "117907",
+    "data_entrada": "08/09/2025",
+    "servico": "Lavar tanque\n\nAbrir transmissão e reparar vazamento\n\nTrocar engate rápido\n\nEliminar folga do eixo dianteiro\n\nTrocar reparo do pistão de direção\n\nTrocar pistão da porta\n\nRetirar para-lama para revisão - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   },
   {
-    "frota": "83",
-    "cd_equipamento": "83",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117686",
-    "data_entrada": "03/09/2025",
-    "servico": "Mangueira de diesel estourada - (Fazenda Terra Branca)|Parado|\nSolicitado Sr. João Victor\nResponsavel Sr. Arthur"
+    "frota": "254",
+    "cd_equipamento": "254",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117887",
+    "data_entrada": "08/09/2025",
+    "servico": "Vazamento de óleo no cubo da roda dianteira L/D - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "157",
+    "cd_equipamento": "157",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "117883",
+    "data_entrada": "08/09/2025",
+    "servico": "Verificar funcionamento do bloqueio do diferencial traseiro do trator, apresentando falha de acionamento - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "159",
+    "cd_equipamento": "159",
+    "modelo": "TRATOR JOHN DEERE 5055E",
+    "os": "117882",
+    "data_entrada": "08/09/2025",
+    "servico": "Verificar vazamento de óleo próximo a tampa do hidráulico - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsvel Sr. Arthur"
+  },
+  {
+    "frota": "198",
+    "cd_equipamento": "198",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117880",
+    "data_entrada": "08/09/2025",
+    "servico": "Verificar trator travando o parker - (Fazenda Estrela)\nSolicitado Sr. Arthur \nResponsavel Sr. Arthur"
   },
   {
     "frota": "285",
@@ -22,38 +46,6 @@
     "os": "117679",
     "data_entrada": "03/09/2025",
     "servico": "Verificar sistema hidráulico apresentando trancos/socos durante a operação. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsalve Sr. Arthur"
-  },
-  {
-    "frota": "218",
-    "cd_equipamento": "218",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117677",
-    "data_entrada": "03/09/2025",
-    "servico": "Verificar vazamento de água na mangueira do radiador - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "224",
-    "cd_equipamento": "224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117673",
-    "data_entrada": "03/09/2025",
-    "servico": "Vazamento de óleo diesel na mangueira da bomba - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "234",
-    "cd_equipamento": "234",
-    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "117635",
-    "data_entrada": "02/09/2025",
-    "servico": "Quebra da trava do volante - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "89",
-    "cd_equipamento": "89",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117536",
-    "data_entrada": "01/09/2025",
-    "servico": "Avaliar braços hidráulicos não funcionam - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "165",
@@ -72,14 +64,6 @@
     "servico": "Verificar conjunto planetário/redução final da roda dianteira lado direito do trator apresentando saída de limalha de ferro. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "91",
-    "cd_equipamento": "91",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117412",
-    "data_entrada": "28/08/2025",
-    "servico": "Vazamento de óleo na junta do cárter - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "10224",
     "cd_equipamento": "10224",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -96,14 +80,6 @@
     "servico": "Revisar freio das cornetas - Faz Minuano\nAutorizado Arthur"
   },
   {
-    "frota": "211",
-    "cd_equipamento": "211",
-    "modelo": "TRATOR JOHN DEERE 5070 E",
-    "os": "117220",
-    "data_entrada": "25/08/2025",
-    "servico": "Avaliar sistema de embreagem do trator, apresentando dificuldade de acionamento e possível desgaste de componentes. - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "349",
     "cd_equipamento": "349",
     "modelo": "JOHN DEERE 6110E",
@@ -112,28 +88,12 @@
     "servico": "Troca de óleo geral \nTroca da correia do motor\nTroca dos rolamentos, pinos e retentores\nTirar banco para consertar cinto de segurança \nTrocar reservatório de água\nTrocar coifas dos terminais e regular direção - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos"
   },
   {
-    "frota": "220",
-    "cd_equipamento": "220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116327",
-    "data_entrada": "08/08/2025",
-    "servico": "Lavar radiador\nRevisar caixa de tração\nTrocar engate rápido\nTirar para-lamas\nMangueira de freio ressecada\nCoifas axial rasgadas\nMangueira do intercooler furada\nDesmontar alavanca e conferir folgas - (Oficina)\nSolicitado Sr. Diego (DMA)\nResponsavel Sr. Carlos"
-  },
-  {
     "frota": "132",
     "cd_equipamento": "132",
     "modelo": "TRATOR NEW HOLLAND TL75E",
     "os": "116275",
     "data_entrada": "07/08/2025",
     "servico": "Verificar vazamento de óleo hidráulico na tampa da TDP - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "100",
-    "cd_equipamento": "100",
-    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
-    "os": "116264",
-    "data_entrada": "07/08/2025",
-    "servico": "Verificar ruído anormal no câmbio - (Fazenda Pedra Verde/Oficina) \nSolicitado Sr. Altieres\nResponsavel Sr. Carlos Aparecido"
   },
   {
     "frota": "119",
