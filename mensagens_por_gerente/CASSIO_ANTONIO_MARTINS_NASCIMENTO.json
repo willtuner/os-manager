@@ -1,5 +1,19 @@
 [
   {
+    "frota": "5614",
+    "os": "117960",
+    "data": "09/09/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar ventilação do pulverizador não funciona - (Fazenda São Severino)|Parado|"
+  },
+  {
+    "frota": "5613",
+    "os": "117947",
+    "data": "09/09/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Trocar correias traseiras da torre - (Fazenda São Severino)"
+  },
+  {
     "frota": "5599",
     "os": "117865",
     "data": "08/09/2025",
@@ -12,13 +26,6 @@
     "data": "04/09/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Avaliar e substituir barra de direção lado direito e barra de sustentação da grade de proteção, danificadas em colisão ocasionada pelo operador ao adormecer e atingir um poste - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5613",
-    "os": "117712",
-    "data": "03/09/2025",
-    "prestador": "nan",
-    "servico": "Ramal furado - (Fazenda São Severino)"
   },
   {
     "frota": "5425",
@@ -35,13 +42,6 @@
     "servico": "Efetuar troca do jogo de facas - (Fazenda São Severino)"
   },
   {
-    "frota": "5660",
-    "os": "117584",
-    "data": "01/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Avaliar falha no comando do ramal, que permanece ativo sem desligar individualmente os lados, comprometendo o controle de aplicação - (Fazenda São Severino)"
-  },
-  {
     "frota": "225",
     "os": "117574",
     "data": "01/09/2025",
@@ -56,18 +56,11 @@
     "servico": "Folga nos terminais de direção - (Fazenda São Severino)"
   },
   {
-    "frota": "5614",
-    "os": "117545",
-    "data": "01/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Consertar chicote eletrico quebrado - (Fazenda São Severino)"
-  },
-  {
     "frota": "228",
     "os": "117471",
     "data": "29/08/2025",
-    "prestador": "RIVELINO LONGATO 03100998979",
-    "servico": "Verificar roda dianteira L/E com jogo  (Fazenda São Severino)"
+    "prestador": "nan",
+    "servico": "Verificar roda dianteira L/E com jogo(folga no terminal de direção)  (Fazenda São Severino)"
   },
   {
     "frota": "219",
