@@ -1552,17 +1552,7 @@ def delete_lub_item_revisao(item_id):
 # --- Rotas para Gestão da Frota ---
 @app.route('/frota')
 def frota_index():
-    # --- VERSÃO DE TESTE PARA DEBUG ---
-    # Temporariamente removemos o acesso ao banco de dados.
-    # Se esta página carregar, o problema está na consulta ao banco.
-    if 'manutencao' not in session and not session.get('is_admin'):
-        flash('Acesso negado.', 'danger')
-        return redirect(url_for('login'))
-    
-    # Passando listas vazias para o template não quebrar
-    veiculos = []
-    planos = []
-
+    return "Página de Teste da Frota"
 
 @app.route('/frota/atualizar_horimetros', methods=['GET', 'POST'])
 def atualizar_horimetros():
