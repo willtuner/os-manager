@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5336",
+    "cd_equipamento": "5336",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "117951",
+    "data_entrada": "09/09/2025",
+    "servico": "Vazamento na bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5205",
+    "cd_equipamento": "5205",
+    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
+    "os": "117860",
+    "data_entrada": "05/09/2025",
+    "servico": "Vazamento de óleo no redutor - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "25",
     "cd_equipamento": "25",
     "modelo": "TRATOR VALTRA BF 75 4X4",
@@ -22,14 +38,6 @@
     "os": "117698",
     "data_entrada": "03/09/2025",
     "servico": "Vazamento de óleo no retentor da caixa de facas traseira - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5082",
-    "cd_equipamento": "5082",
-    "modelo": "SULCADOR P/ PLANTIO LARANJA",
-    "os": "117693",
-    "data_entrada": "03/09/2025",
-    "servico": "Vazamento nos pistões - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5052",
@@ -78,13 +86,5 @@
     "os": "117259",
     "data_entrada": "26/08/2025",
     "servico": "Confeccionar e instalar proteção para operação na trincheira - (Oficina M.G)\nSolicitado Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "204",
-    "cd_equipamento": "204",
-    "modelo": "ESCAVADEIRA HID. 320GC",
-    "os": "117085",
-    "data_entrada": "21/08/2025",
-    "servico": "Desmontar e trocar cilindro boom L/D - (Oficina MG)\nSolicitado Sr. Rafael"
   }
 ]

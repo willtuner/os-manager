@@ -1,27 +1,19 @@
 [
   {
+    "frota": "74",
+    "cd_equipamento": "74",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "117982",
+    "data_entrada": "09/09/2025",
+    "servico": "Verificar vazamento nos tuchos do comando - (Fazenda Casa Branca)\nSolicitado Sr. João Porteiro\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "125",
     "cd_equipamento": "125",
     "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
     "os": "117907",
     "data_entrada": "08/09/2025",
     "servico": "Lavar tanque\n\nAbrir transmissão e reparar vazamento\n\nTrocar engate rápido\n\nEliminar folga do eixo dianteiro\n\nTrocar reparo do pistão de direção\n\nTrocar pistão da porta\n\nRetirar para-lama para revisão - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "254",
-    "cd_equipamento": "254",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117887",
-    "data_entrada": "08/09/2025",
-    "servico": "Vazamento de óleo no cubo da roda dianteira L/D - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "157",
-    "cd_equipamento": "157",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "117883",
-    "data_entrada": "08/09/2025",
-    "servico": "Verificar funcionamento do bloqueio do diferencial traseiro do trator, apresentando falha de acionamento - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "159",

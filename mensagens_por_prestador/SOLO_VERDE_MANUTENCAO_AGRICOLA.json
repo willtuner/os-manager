@@ -1,11 +1,11 @@
 [
   {
-    "frota": "90",
-    "cd_equipamento": "90",
+    "frota": "69",
+    "cd_equipamento": "69",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "117845",
-    "data_entrada": "05/09/2025",
-    "servico": "Vazamento de óleo na mangueira da direção - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsvel Sr. Arthur"
+    "os": "117950",
+    "data_entrada": "09/09/2025",
+    "servico": "Sacar parafuso quebrado na alavanca da TDP - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
     "frota": "198",
@@ -32,14 +32,6 @@
     "servico": "Vazamento no cachimbo do freio - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "103",
-    "cd_equipamento": "103",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "117685",
-    "data_entrada": "03/09/2025",
-    "servico": "Revisar sistema de freio - Faz Minuano\nAutorizado Arthur"
-  },
-  {
     "frota": "189",
     "cd_equipamento": "189",
     "modelo": "TRATOR NEW HOLAND TL 5.80",
@@ -54,5 +46,13 @@
     "os": "117381",
     "data_entrada": "28/08/2025",
     "servico": "Regular sistema de freio e substituir coxins da cabine - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "47",
+    "cd_equipamento": "47",
+    "modelo": "TRATOR JOHN DEERE 5403 4X2",
+    "os": "117973",
+    "data_entrada": "03/08/2025",
+    "servico": "Verificação de todos os bicos graxeiros, garantindo a passagem de graxa.\nInspeção da fechadura do capô, trava e amortecedor.\nChecagem das manoplas de marcha, grupo e comando na alavanca.\nAvaliação do embuchamento do eixo (balança), verificando folga ou desgaste.\nConferência do nível de óleo dos cubos redutores.\nInspeção das cruzetas de articulação dupla quanto à folga.\nVerificação de mangueiras, tubos e cilindro da direção para identificar vazamentos.\nChecagem dos bicos graxeiros das cruzetas, garantindo a lubrificação adequada.\nAjuste e conferência da altura do pedal de embreagem.\nInspeção do sistema hidráulico de 3 pontos (braços hidráulicos).\nLimpeza do filtro de ventilação do tanque de combustíveis. - (Oficina)\nSolicitado Sr. Carlos Aparecido \nResponsavel Sr. Carlos Aparecido"
   }
 ]

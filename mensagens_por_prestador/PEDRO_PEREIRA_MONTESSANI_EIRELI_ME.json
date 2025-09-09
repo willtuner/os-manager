@@ -1,19 +1,51 @@
 [
   {
+    "frota": "252",
+    "cd_equipamento": "252",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118011",
+    "data_entrada": "09/09/2025",
+    "servico": "Substituir sensor da TDP  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "267",
+    "cd_equipamento": "267",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "117931",
+    "data_entrada": "09/09/2025",
+    "servico": "Verificar sistema eletrico, queimando fusivel direto - Faz Santa Izabel\nAutorizado Arthur"
+  },
+  {
+    "frota": "1005",
+    "cd_equipamento": "1005",
+    "modelo": "CAMINHAO MERCEDES B. AXOR 2831",
+    "os": "117929",
+    "data_entrada": "09/09/2025",
+    "servico": "Reparar sistema de sinalização - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "117918",
+    "data_entrada": "09/09/2025",
+    "servico": "Verificar botões de acionamento não funcionam \nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "5673",
+    "cd_equipamento": "5673",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "117916",
+    "data_entrada": "09/09/2025",
+    "servico": "Botão de acionamento do L/E da barra de aplicação de herbicida não funciona - (Fazenda NSA)\nSolicitado Sr. Vitor (Subgerente)\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "10223",
     "cd_equipamento": "10223",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "117891",
     "data_entrada": "08/09/2025",
     "servico": "Instalar cibié traseiro para operação noturna - (Pecuaria)\nSolicitado Sr. Gabriel\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "251",
-    "cd_equipamento": "251",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117886",
-    "data_entrada": "08/09/2025",
-    "servico": "Verificar sistema eletrico dos cibié, queimando imediatamente após a troca - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5786",
@@ -40,14 +72,6 @@
     "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido"
   },
   {
-    "frota": "121",
-    "cd_equipamento": "121",
-    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
-    "os": "117815",
-    "data_entrada": "05/09/2025",
-    "servico": "Verificar alternador - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5006",
     "cd_equipamento": "5006",
     "modelo": "PULVERIZADOR 2000 LT JACTO",
@@ -62,22 +86,6 @@
     "os": "117734",
     "data_entrada": "04/09/2025",
     "servico": "Revisar sinalização - (Fazenda São Severino) \nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "113",
-    "cd_equipamento": "113",
-    "modelo": "TRATOR JOHN DEERE 5603 4X4",
-    "os": "117724",
-    "data_entrada": "03/09/2025",
-    "servico": "Chave de alta/baixa do farol quebrada - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "152",
-    "cd_equipamento": "152",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "117723",
-    "data_entrada": "03/09/2025",
-    "servico": "Verificar meia luz e luz de freio não funciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
     "frota": "69",
@@ -112,22 +120,6 @@
     "servico": "Verificar equipamento sem partida, já trocado as baterias porem continua sem ignição - (Fazenda São Paulo)\nSolicitado Sr. Zylton \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5705",
-    "cd_equipamento": "5705",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "117620",
-    "data_entrada": "02/09/2025",
-    "servico": "Verificar sistema de iluminação do pulverizador: substituir cibiés e revisar chicote elétrico, uma vez que, mesmo após troca realizada pelo gerente, permanece a falha de acionamento. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5723",
-    "cd_equipamento": "5723",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "117619",
-    "data_entrada": "02/09/2025",
-    "servico": "Verificar sistema de iluminação do pulverizador: substituir cibiés e revisar chicote elétrico, uma vez que, mesmo após troca realizada pelo gerente, permanece a falha de acionamento. - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "125",
     "cd_equipamento": "125",
     "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
@@ -142,22 +134,6 @@
     "os": "117590",
     "data_entrada": "01/09/2025",
     "servico": "Verificar sistema eletrico - Faz Úrsula\nAutorizado Arthur"
-  },
-  {
-    "frota": "5660",
-    "cd_equipamento": "5660",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "117584",
-    "data_entrada": "01/09/2025",
-    "servico": "Avaliar falha no comando do ramal, que permanece ativo sem desligar individualmente os lados, comprometendo o controle de aplicação - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5614",
-    "cd_equipamento": "5614",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "117545",
-    "data_entrada": "01/09/2025",
-    "servico": "Consertar chicote eletrico quebrado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "138",
@@ -190,14 +166,6 @@
     "os": "117399",
     "data_entrada": "28/08/2025",
     "servico": "Verificar equipamento sem partida - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "217",
-    "cd_equipamento": "217",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117190",
-    "data_entrada": "25/08/2025",
-    "servico": "Verificar motor de partida fumaceando - (Fazenda Pedra Verde) |Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
     "frota": "301",
@@ -246,13 +214,5 @@
     "os": "116048",
     "data_entrada": "05/08/2025",
     "servico": "Relogio horimetro apagado, verificar possível substituição do painel - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "127",
-    "cd_equipamento": "127",
-    "modelo": "GATOR JOHNN DEERE",
-    "os": "106664",
-    "data_entrada": "06/03/2025",
-    "servico": "Revisão elétrica (Oficina)\n(solicitante William)"
   }
 ]

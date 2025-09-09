@@ -1,5 +1,69 @@
 [
   {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "117983",
+    "data_entrada": "09/09/2025",
+    "servico": "Verificar eixo do mancal da bomba \"correndo\" - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5614",
+    "cd_equipamento": "5614",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117960",
+    "data_entrada": "09/09/2025",
+    "servico": "Verificar ventilação do pulverizador não funciona - (Fazenda São Severino)|Parado|\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5693",
+    "cd_equipamento": "5693",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "117956",
+    "data_entrada": "09/09/2025",
+    "servico": "Vazamento na graxeta e na vedação do agitador - (Fazenda São Paulo)\nSolicitado Sr. Geovane\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5613",
+    "cd_equipamento": "5613",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "117947",
+    "data_entrada": "09/09/2025",
+    "servico": "Trocar correias traseiras da torre - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5347",
+    "cd_equipamento": "5347",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "117912",
+    "data_entrada": "09/09/2025",
+    "servico": "Revisar sistema de cardan, engrenagens e sistema de transmissão do equipamento - (Fazenda Minuano)\nSolicitado Sr. Marcio \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5365",
+    "cd_equipamento": "5365",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "117910",
+    "data_entrada": "09/09/2025",
+    "servico": "Trocar correias do agitador e jogo de válvulas batendo - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5759",
+    "cd_equipamento": "5759",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "117879",
+    "data_entrada": "08/09/2025",
+    "servico": "Vazamento de óleo na bomba - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5355",
+    "cd_equipamento": "5355",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "117872",
+    "data_entrada": "08/09/2025",
+    "servico": "Vazamento de óleo no agitador de calda - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5523",
     "cd_equipamento": "5523",
     "modelo": "PUL.TURBO 4000 NATALI ALFA",
