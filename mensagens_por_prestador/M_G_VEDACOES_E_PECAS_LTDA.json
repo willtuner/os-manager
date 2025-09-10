@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "118037",
+    "data_entrada": "10/09/2025",
+    "servico": "Vazamento de óleo no pistão L/D - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5532",
+    "cd_equipamento": "5532",
+    "modelo": "PODADEIRA HIDRAUTEC HLC6",
+    "os": "118028",
+    "data_entrada": "10/09/2025",
+    "servico": "Equipamento apresenta falha: ao ligar o rotor, o mesmo desarma e para de funcionar quando o motor é acelerado - (Fazenda Casa Branca)\nSolicitado: João Paulo\nResponsável: Sr. Maurício"
+  },
+  {
+    "frota": "5481",
+    "cd_equipamento": "5481",
+    "modelo": "CONJUNTO PODADOR WWD",
+    "os": "118027",
+    "data_entrada": "10/09/2025",
+    "servico": "Quebra do pino de articulação que liga o rotor às facas da podadeira - necessário substituir pino/trava e revisar demais pontos de fixação - (Fazenda Casa Branca)\nSolicitado: João Porteiro\nResponsável: Sr. Maurício"
+  },
+  {
     "frota": "5336",
     "cd_equipamento": "5336",
     "modelo": "PULVERIZADOR 2000 LT FMC",

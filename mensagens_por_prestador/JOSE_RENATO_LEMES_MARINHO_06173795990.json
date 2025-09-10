@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5133",
+    "cd_equipamento": "5133",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "118073",
+    "data_entrada": "10/09/2025",
+    "servico": "Conserto do suporte dos comandos - (Faz. Pedra Verde)\nSolicitado Sr. Cleber\nLiberado Sr. Mauricio"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "118036",
+    "data_entrada": "10/09/2025",
+    "servico": "Desentortar asa de tanque que amassou ao pegar em curva de nível - (Fazenda [informar)\nSolicitado: Sr. Murilo\nResponsável: Sr. Mauricio"
+  },
+  {
     "frota": "5455",
     "cd_equipamento": "5455",
     "modelo": "CARRETA TRASNP LAR 510/154/030",
@@ -8,68 +24,12 @@
     "servico": "Trocar engate do rabicho quebrado - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5066",
-    "cd_equipamento": "5066",
-    "modelo": "ADUBADEIRA CACAMBA TATU",
-    "os": "117955",
-    "data_entrada": "09/09/2025",
-    "servico": "Substituir eixo da  alavanca de regulagem e soldar corrente nos direcionadores - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5336",
     "cd_equipamento": "5336",
     "modelo": "PULVERIZADOR 2000 LT FMC",
     "os": "117953",
     "data_entrada": "09/09/2025",
     "servico": "Sacar pino do cardam quebrado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5671",
-    "cd_equipamento": "5671",
-    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
-    "os": "117925",
-    "data_entrada": "09/09/2025",
-    "servico": "Confeccionar chapa de divisória da faixa do herbicida - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5248",
-    "cd_equipamento": "5248",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "117919",
-    "data_entrada": "09/09/2025",
-    "servico": "Substituir chapa do direcionador e proteção - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "268",
-    "cd_equipamento": "268",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117908",
-    "data_entrada": "08/09/2025",
-    "servico": "Fazer solda em trinca no rabicho - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "248",
-    "cd_equipamento": "248",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "117881",
-    "data_entrada": "08/09/2025",
-    "servico": "Quebra dos parafusos de suporte do rabicho - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "327",
-    "cd_equipamento": "327",
-    "modelo": "PA CARREGADEIRA LONKING",
-    "os": "117869",
-    "data_entrada": "08/09/2025",
-    "servico": "Fazer solda em suporte do filtro quebrado - (Fazenda Estrela)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "222",
-    "cd_equipamento": "222",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117808",
-    "data_entrada": "04/09/2025",
-    "servico": "Fazer preenchimento no rabicho com folga  - (Fazenda Estrela)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5129",

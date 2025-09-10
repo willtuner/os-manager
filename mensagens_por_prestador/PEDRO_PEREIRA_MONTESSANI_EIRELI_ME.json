@@ -1,5 +1,37 @@
 [
   {
+    "frota": "290",
+    "cd_equipamento": "290",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118055",
+    "data_entrada": "10/09/2025",
+    "servico": "Trocar soquete do farol derretido e lâmpada do farol da lanterna - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "82",
+    "cd_equipamento": "82",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "118023",
+    "data_entrada": "10/09/2025",
+    "servico": "Trator não acende os cibié, já verificado sistema elétrico pelo operador e não encontrada falha - (Fazenda São Pedro)\nSolicitado: Sr. Josimar\nResponsável: Sr. Arthur"
+  },
+  {
+    "frota": "142",
+    "cd_equipamento": "142",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "118021",
+    "data_entrada": "10/09/2025",
+    "servico": "Revisar sistema eletrico - Faz Nova Manha(Oficina Cicero)\nAutorizado Arthur"
+  },
+  {
+    "frota": "10224",
+    "cd_equipamento": "10224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118020",
+    "data_entrada": "10/09/2025",
+    "servico": "Fusível principal (125A - 57M7960) queimado, necessário substituir para normalizar o sistema elétrico. - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "252",
     "cd_equipamento": "252",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -8,12 +40,12 @@
     "servico": "Substituir sensor da TDP  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "267",
-    "cd_equipamento": "267",
+    "frota": "217",
+    "cd_equipamento": "217",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117931",
+    "os": "117974",
     "data_entrada": "09/09/2025",
-    "servico": "Verificar sistema eletrico, queimando fusivel direto - Faz Santa Izabel\nAutorizado Arthur"
+    "servico": "Verificar fusível derretido. (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsável Sr. Arthur"
   },
   {
     "frota": "1005",
@@ -72,14 +104,6 @@
     "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido"
   },
   {
-    "frota": "5006",
-    "cd_equipamento": "5006",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "117807",
-    "data_entrada": "04/09/2025",
-    "servico": "Verificar plug do painel com mau contato - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsvel Sr. Arthur"
-  },
-  {
     "frota": "197",
     "cd_equipamento": "197",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -94,14 +118,6 @@
     "os": "117722",
     "data_entrada": "03/09/2025",
     "servico": "Farol não funciona (terminais da lâmpada derretidos) sirene não funciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "5659",
-    "cd_equipamento": "5659",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "117703",
-    "data_entrada": "03/09/2025",
-    "servico": "Executar substituição do chicote elétrico do tanque de pulverização, danificado em decorrência do rompimento do eixo cardan, que se enroscou no mesmo - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "218",
@@ -174,14 +190,6 @@
     "os": "117045",
     "data_entrada": "21/08/2025",
     "servico": "Verificar luz da bateria acessa no painel, indicando que o alternador não está carregando a bateria - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "219",
-    "cd_equipamento": "219",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "116899",
-    "data_entrada": "19/08/2025",
-    "servico": "Limpador de para-brisa não funciona - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
     "frota": "329",

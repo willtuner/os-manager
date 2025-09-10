@@ -1,5 +1,13 @@
 [
   {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "118054",
+    "data_entrada": "10/09/2025",
+    "servico": "Isolar mecanismo do agitador e instalar agitador hidráulico (mecânico foi adaptado e não para de apresentar problemas) - (Fazenda Bela Manhã)\nSolicitado: Murilo\nResponsável: Mauricio\nAutorizado: Sr. Rafael"
+  },
+  {
     "frota": "5365",
     "cd_equipamento": "5365",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -62,14 +70,6 @@
     "os": "117872",
     "data_entrada": "08/09/2025",
     "servico": "Vazamento de óleo no agitador de calda - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5523",
-    "cd_equipamento": "5523",
-    "modelo": "PUL.TURBO 4000 NATALI ALFA",
-    "os": "117827",
-    "data_entrada": "05/09/2025",
-    "servico": "Substituir as conexões da caixa incorporadora - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5107",
