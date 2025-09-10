@@ -1,17 +1,10 @@
 [
   {
-    "frota": "46",
-    "os": "118008",
-    "data": "09/09/2025",
+    "frota": "5667",
+    "os": "118030",
+    "data": "10/09/2025",
     "prestador": "nan",
-    "servico": "Verificar luz de temperatura acessa no painel - (Fazenda Estrela)"
-  },
-  {
-    "frota": "22",
-    "os": "118003",
-    "data": "09/09/2025",
-    "prestador": "nan",
-    "servico": "Alavanca da caixa do câmbio não engata - (Fazenda Estrela)"
+    "servico": "Verifica sistema hidraulico do implemento  - (Fazenda Estrela)"
   },
   {
     "frota": "5455",
@@ -19,41 +12,6 @@
     "data": "09/09/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Trocar engate do rabicho quebrado - (Fazenda Estrela)"
-  },
-  {
-    "frota": "329",
-    "os": "117977",
-    "data": "09/09/2025",
-    "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
-    "servico": "Revisão de 600 hrs - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5066",
-    "os": "117955",
-    "data": "09/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir eixo da  alavanca de regulagem e soldar corrente nos direcionadores - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5248",
-    "os": "117954",
-    "data": "09/09/2025",
-    "prestador": "nan",
-    "servico": "Substituir engrenagens e corrente do sistema de transmissão - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5248",
-    "os": "117919",
-    "data": "09/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Substituir chapa do direcionador e proteção - (Fazenda Estrela)"
-  },
-  {
-    "frota": "5523",
-    "os": "117827",
-    "data": "05/09/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Substituir as conexões da caixa incorporadora - (Fazenda Estrela)"
   },
   {
     "frota": "5205",
