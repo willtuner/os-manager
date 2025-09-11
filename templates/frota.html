@@ -5,15 +5,6 @@
 {% block page_title %}Gestão de Frota{% endblock %}
 
 {% block header_actions %}
-  <a href="{{ url_for('atualizar_horimetros') }}" class="btn btn-success btn-sm">
-    <i class="fas fa-tachometer-alt me-1"></i>Atualizar Horímetros em Massa
-  </a>
-  <a href="{{ url_for('associar_planos') }}" class="btn btn-info btn-sm ms-2">
-    <i class="fas fa-link me-1"></i>Associar Planos em Massa
-  </a>
-  <a href="{{ url_for('importar_frota') }}" class="btn btn-warning btn-sm ms-2">
-    <i class="fas fa-file-import me-1"></i>Importar Frota de Planilha
-  </a>
 {% endblock %}
 
 {% block content %}
@@ -80,15 +71,6 @@
                                     <label class="form-check-label" for="gabinado">Gabinado</label>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <label for="plano_id" class="form-label">Plano de Lubrificação</label>
-                                <select class="form-select" id="plano_id" name="plano_id">
-                                    <option value="">Nenhum</option>
-                                    {% for plano in planos %}
-                                    <option value="{{ plano.id }}">{{ plano.nome_plano }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
                         </div>
                         <div class="d-grid mt-4">
                             <button type="submit" class="btn btn-primary">
@@ -110,7 +92,6 @@
                             <th>Modelo</th>
                             <th>Fazenda</th>
                             <th>Horímetro</th>
-                            <th>Plano Associado</th>
                             <th>Ações</th>
                         </tr>
                     </thead>
@@ -122,7 +103,6 @@
                             <td>{{ veiculo.modelo }}</td>
                             <td>{{ veiculo.fazenda or 'N/A' }}</td>
                             <td>{{ veiculo.horimetro_atual }}h</td>
-                            <td><span class="badge bg-secondary">{{ veiculo.plano.nome_plano if veiculo.plano else 'Nenhum' }}</span></td>
                             <td>
                                 <!-- Botões de Editar e Remover virão aqui -->
                                 <button class="btn btn-sm btn-outline-secondary" disabled title="Em breve">
@@ -132,7 +112,7 @@
                         </tr>
                         {% else %}
                         <tr>
-                            <td colspan="7" class="text-center text-muted">Nenhum veículo cadastrado na frota.</td>
+                            <td colspan="6" class="text-center text-muted">Nenhum veículo cadastrado na frota.</td>
                         </tr>
                         {% endfor %}
                     </tbody>
