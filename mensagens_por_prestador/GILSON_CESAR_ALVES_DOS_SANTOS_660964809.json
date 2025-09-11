@@ -1,27 +1,19 @@
 [
   {
+    "frota": "5326",
+    "cd_equipamento": "5326",
+    "modelo": "CARRETA SCHULTER 12 BEGUES",
+    "os": "118137",
+    "data_entrada": "11/09/2025",
+    "servico": "Quebra da chapinha chapa de fixação do pistão (Fazenda N. S. A.)\nSolicitado Sr. Gilson\nResponsável Izaias"
+  },
+  {
     "frota": "192",
     "cd_equipamento": "192",
     "modelo": "TRATOR NEW HOLAND TL 5.80",
     "os": "117897",
     "data_entrada": "08/09/2025",
     "servico": "Trocar rabicho - (Fazenda Estrela)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
-  },
-  {
-    "frota": "5083",
-    "cd_equipamento": "5083",
-    "modelo": "CARRETA BAG C/ GUINCHO",
-    "os": "117705",
-    "data_entrada": "02/09/2025",
-    "servico": "Trocar haste e reparo do pistão - (Fazenda SL1)\nSolicitado Sr. Gilson\nResponsavel Sr. Izaias"
-  },
-  {
-    "frota": "5326",
-    "cd_equipamento": "5326",
-    "modelo": "CARRETA SCHULTER 12 BEGUES",
-    "os": "117589",
-    "data_entrada": "01/09/2025",
-    "servico": "Trocar alavanca do desarme danificada e e trocar parafuso do desarme - (Fazenda NSA)\nSolicitado Sr. Izaias\nResponsavel Sr. Izaias"
   },
   {
     "frota": "5823",
@@ -62,22 +54,6 @@
     "os": "117230",
     "data_entrada": "26/08/2025",
     "servico": "Quebra do suporte do giro do pistão - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5235",
-    "cd_equipamento": "5235",
-    "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
-    "os": "117174",
-    "data_entrada": "25/08/2025",
-    "servico": "Desentortar pé de apoio - (Fazenda Casa Branca)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5779",
-    "cd_equipamento": "5779",
-    "modelo": "VALETADEIRA",
-    "os": "116852",
-    "data_entrada": "19/08/2025",
-    "servico": "Soldar bits na corrente, confeccionar calço para elevação do raspador e corrigir vazamento no eixo da corrente -  (Fazenda SL1)\nSolicitado Sr. Zylton \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5645",

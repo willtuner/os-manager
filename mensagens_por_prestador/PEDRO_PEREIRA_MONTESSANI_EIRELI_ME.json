@@ -96,14 +96,6 @@
     "servico": "Revisar chicote eletrico do pré-mix - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "104",
-    "cd_equipamento": "104",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "117833",
-    "data_entrada": "05/09/2025",
-    "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido"
-  },
-  {
     "frota": "197",
     "cd_equipamento": "197",
     "modelo": "TRATOR JOHN DEERE 5080E",
@@ -168,28 +160,12 @@
     "servico": "Verificar sistema eletrico, trator deu pane e não ascende nada. Verificar motor de partida pesado - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Artrhur"
   },
   {
-    "frota": "257",
-    "cd_equipamento": "257",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117408",
-    "data_entrada": "28/08/2025",
-    "servico": "Trocar conector do sensor de restrição com fio quebrado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "135",
-    "cd_equipamento": "135",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "117399",
-    "data_entrada": "28/08/2025",
-    "servico": "Verificar equipamento sem partida - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "301",
-    "cd_equipamento": "301",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117045",
-    "data_entrada": "21/08/2025",
-    "servico": "Verificar luz da bateria acessa no painel, indicando que o alternador não está carregando a bateria - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
+    "frota": "349",
+    "cd_equipamento": "349",
+    "modelo": "JOHN DEERE 6110E",
+    "os": "116978",
+    "data_entrada": "20/08/2025",
+    "servico": "Revisão elétrica - (Oficina)\nSolicitado Sr. Carlos Aparecido"
   },
   {
     "frota": "329",

@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5784",
+    "cd_equipamento": "5784",
+    "modelo": "DESENROLADOR DE MANGUEIRA",
+    "os": "118132",
+    "data_entrada": "11/09/2025",
+    "servico": "Fazer solda em trinca e trocar parafuso de fixação travado - (Fazenda Estrela)\nSolicitado Sr. Zylton\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5748",
+    "cd_equipamento": "5748",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "118111",
+    "data_entrada": "11/09/2025",
+    "servico": "Foi identificado que a barra de apoio (barra da agulha) do tanque apresenta ruptura/soltura em sua estrutura, comprometendo a fixação e segurança do equipamento. - (Fazenda Casa Branca)\nSolicitado Sr. Carlos (Comboio)\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5718",
+    "cd_equipamento": "5718",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "118098",
+    "data_entrada": "11/09/2025",
+    "servico": "Fazer reforço no suporte da asa L/D que está podre - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5716",
+    "cd_equipamento": "5716",
+    "modelo": "TANQUE DE AGUA 6500",
+    "os": "118091",
+    "data_entrada": "11/09/2025",
+    "servico": "Instalar corrente de segurança no rabicho - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5219",
+    "cd_equipamento": "5219",
+    "modelo": "MOTOR IRRIGACAO AZUL HR140.400",
+    "os": "117828",
+    "data_entrada": "11/09/2025",
+    "servico": "Fazer a instalação e fixação do conjunto do carrinho de irrigação no hidrorrol.\nSolicitado Sr. Zylton\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5133",
     "cd_equipamento": "5133",
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
@@ -104,14 +144,6 @@
     "servico": "Fazer proteção de partes moveis (Entre a TDP e o cardam) - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Carlos Aparecido"
   },
   {
-    "frota": "156",
-    "cd_equipamento": "156",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "117293",
-    "data_entrada": "27/08/2025",
-    "servico": "Substituir parafuso espanado da região frontal do trator L/D, se necessário recuperar rosca - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "125",
     "cd_equipamento": "125",
     "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
@@ -120,28 +152,12 @@
     "servico": "Instalar grade frontal e fazer proteção para para-lamas - (Oficina)\nSolicitado Sr. Carlos Aparecido"
   },
   {
-    "frota": "265",
-    "cd_equipamento": "265",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117275",
-    "data_entrada": "26/08/2025",
-    "servico": "Degrau da escada do trator quebrada - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "5819",
     "cd_equipamento": "5819",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "117208",
     "data_entrada": "25/08/2025",
     "servico": "Adaptação pra instalação do SPE - Faz SL1\nAutorizado Arthur"
-  },
-  {
-    "frota": "5820",
-    "cd_equipamento": "5820",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "117207",
-    "data_entrada": "25/08/2025",
-    "servico": "Adaptar asas para instalar sistema de SPE - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5156",

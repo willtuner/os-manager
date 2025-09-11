@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5155",
+    "cd_equipamento": "5155",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118134",
+    "data_entrada": "11/09/2025",
+    "servico": "Pneu L/D estourado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5015",
+    "cd_equipamento": "5015",
+    "modelo": "CARPIDEIRA",
+    "os": "118124",
+    "data_entrada": "11/09/2025",
+    "servico": "Pneu dianteiro L/E furado - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "247",
+    "cd_equipamento": "247",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "118089",
+    "data_entrada": "11/09/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Alvorada)|Parado|\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "266",
     "cd_equipamento": "266",
     "modelo": "TRATOR JOHN DEERE 7230J",
@@ -48,28 +72,12 @@
     "servico": "Verificar pneus direito e esquerdo danificados.\nOficina Jorginho Tratores\nSolicitado Sr. Carlos\nResponsável Sr. Maurício"
   },
   {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "118018",
-    "data_entrada": "10/09/2025",
-    "servico": "Identificado que o pneu L/D  (275/80R22.5) apresenta abertura na lateral da carcaça - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5694",
     "cd_equipamento": "5694",
     "modelo": "PULVERIZADOR 2000 LT",
     "os": "117981",
     "data_entrada": "09/09/2025",
     "servico": "Pneu L/E soldando banda de rodagem |235/70R16|- (Fazenda Santa Luiza)|Parado|\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "10228",
-    "cd_equipamento": "10228",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117966",
-    "data_entrada": "09/09/2025",
-    "servico": "Pneu traseiro L/E furado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "249",

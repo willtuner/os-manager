@@ -1,5 +1,21 @@
 [
   {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "118090",
+    "data_entrada": "11/09/2025",
+    "servico": "Verificar vazamento no retentor da bomba - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5486",
+    "cd_equipamento": "5486",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118088",
+    "data_entrada": "11/09/2025",
+    "servico": "Montar caixa incorporadora nova - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5345",
     "cd_equipamento": "5345",
     "modelo": "PULVERIZADOR 4000 LT - NATALI",
@@ -77,15 +93,7 @@
     "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
     "os": "117819",
     "data_entrada": "05/09/2025",
-    "servico": "Sacar e trocar parafusos de fixação da roda L/E - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5502",
-    "cd_equipamento": "5502",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "117780",
-    "data_entrada": "04/09/2025",
-    "servico": "Verificar vazamento de óleo no rotor dos multiplicadores - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson \nResponsavel Sr. Mauricio"
+    "servico": "Sacar e trocar parafusos de fixação da roda L/E e trocar correia da turbina do tanque - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius / Danilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5693",
