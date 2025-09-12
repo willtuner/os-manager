@@ -6,9 +6,21 @@
 
 {% block content %}
 <div class="container py-4">
+
+  <div class="card mb-4">
+    <div class="card-header">
+      <h4 class="mb-0">Relatórios Rápidos</h4>
+    </div>
+    <div class="card-body">
+        <p>Acesse os relatórios mais comuns com um clique.</p>
+        <a href="{{ url_for('gerar_relatorio', username='arthur.sousa') }}" class="btn btn-secondary">Relatório Arthur</a>
+        <a href="{{ url_for('gerar_relatorio', username='mauricio.jose') }}" class="btn btn-secondary">Relatório Mauricio</a>
+    </div>
+  </div>
+
   <div class="card">
     <div class="card-header">
-      <h4 class="mb-0">Gerar Novo Relatório</h4>
+      <h4 class="mb-0">Gerar Relatório Personalizado</h4>
     </div>
     <div class="card-body">
       <form action="{{ url_for('gerar_relatorio') }}" method="POST">
