@@ -9,6 +9,8 @@ from flask import Flask, render_template, request, redirect, session, url_for, f
 from flask_sqlalchemy import SQLAlchemy
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
+from reportlab.platypus import Paragraph
+from reportlab.lib.styles import getSampleStyleSheet
 from collections import Counter
 from sqlalchemy.sql import text
 from dateutil.parser import parse
@@ -1327,6 +1329,107 @@ def exportar_os_finalizadas():
         if os.path.exists(caminho_pdf_salvo): 
             logger.info(f"PDF {caminho_pdf_salvo} gerado.")
 
+
+def gerar_relatorio_pdf_gerente(manager_name):
+    """
+    Gera um relatório em PDF para as OS de um gerente específico.
+    """
+    if manager_name.lower() == 'arthur':
+        json_path = os.path.join(JSON_DIR, 'relatorio_arthur.json')
+    elif manager_name.lower() == 'mauricio':
+        json_path = os.path.join(JSON_DIR, 'relatorio_mauricio.json')
+    else:
+        return None  # Gerente não encontrado
+
+    if not os.path.exists(json_path):
+        return None  # Arquivo JSON não encontrado
+
+    with open(json_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    file_name = f'relatorio_{manager_name.lower()}.pdf'
+    path_name = os.path.join(BASE_DIR, file_name)
+
+    c = canvas.Canvas(path_name, pagesize=A4)
+    width, height = A4
+
+    styles = getSampleStyleSheet()
+    style_normal = styles['Normal']
+    style_normal.fontName = 'Helvetica'
+    style_normal.fontSize = 8
+    style_bold = styles['Normal']
+    style_bold.fontName = 'Helvetica-Bold'
+    style_bold.fontSize = 8
+
+
+    # Cabeçalho
+    c.setFont("Helvetica-Bold", 16)
+    c.drawCentredString(width / 2, height - 50, f"Relatório de OS em Aberto - {manager_name.capitalize()}")
+
+    # Títulos da Tabela
+    c.setFont("Helvetica-Bold", 10)
+    y_position = height - 100
+    x_positions = [40, 90, 240, 320, 400]
+    headers = ["OS", "Frota", "Modelo", "Data Entrada", "Solicitante"]
+
+    for i, header in enumerate(headers):
+        c.drawString(x_positions[i], y_position, header)
+
+    # Linha abaixo dos títulos
+    y_position -= 5
+    c.line(40, y_position, width - 40, y_position)
+    y_position -= 15
+
+    # Conteúdo da Tabela
+    c.setFont("Helvetica", 8)
+    for item in data:
+
+        servico_text = f"<b>Serviço:</b> {item.get('servico', '')}"
+        p = Paragraph(servico_text, style_normal)
+        p_width, p_height = p.wrapOn(c, width - 80, 100)
+
+        if y_position - p_height < 50:
+            c.showPage()
+            c.setFont("Helvetica-Bold", 10)
+            y_position = height - 100
+            for i, header in enumerate(headers):
+                c.drawString(x_positions[i], y_position, header)
+            y_position -= 5
+            c.line(40, y_position, width - 40, y_position)
+            y_position -= 15
+            c.setFont("Helvetica", 8)
+
+
+        c.drawString(x_positions[0], y_position, str(item.get("os", "")))
+        c.drawString(x_positions[1], y_position, str(item.get("frota", "")))
+        c.drawString(x_positions[2], y_position, str(item.get("modelo", "")))
+        c.drawString(x_positions[3], y_position, str(item.get("data_entrada", "")))
+        c.drawString(x_positions[4], y_position, str(item.get("solicitante", "")))
+        y_position -= 20
+
+        p.drawOn(c, 40, y_position - p_height)
+        y_position -= p_height + 10
+
+
+    c.save()
+    return path_name
+
+@app.route('/relatorio/pdf/<manager_name>')
+def download_relatorio_pdf(manager_name):
+    if not session.get('is_admin'):
+        flash('Acesso negado', 'danger')
+        return redirect(url_for('login'))
+
+    pdf_path = gerar_relatorio_pdf_gerente(manager_name)
+    if pdf_path:
+        try:
+            return send_file(pdf_path, as_attachment=True, download_name=os.path.basename(pdf_path))
+        finally:
+            if os.path.exists(pdf_path):
+                os.remove(pdf_path)
+    else:
+        flash(f'Não foi possível gerar o relatório para {manager_name}.', 'danger')
+        return redirect(url_for('admin_panel'))
 
 @app.route('/logout')
 def logout():
