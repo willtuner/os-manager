@@ -1419,8 +1419,15 @@ def gerar_relatorio_os_abertas(json_path, report_title):
     if not os.path.exists(json_path):
         return None
 
-    with open(json_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, UnicodeDecodeError) as e:
+        logger.error(f"Erro ao ler ou decodificar o arquivo JSON {json_path}: {e}")
+        return None
+
+    if not data: # Se o JSON estiver vazio
+        return None
 
     file_name = f"relatorio_{report_title.replace(' ', '_').lower()}.pdf"
     path_name = os.path.join(BASE_DIR, file_name)
@@ -1437,39 +1444,46 @@ def gerar_relatorio_os_abertas(json_path, report_title):
     c.setFont("Helvetica-Bold", 16)
     c.drawCentredString(width / 2, height - 50, f"Relatório de OS em Aberto - {report_title}")
 
+    # Títulos da Tabela - Usando um conjunto fixo para consistência
     y_position = height - 100
+    headers = ["OS", "Frota", "Modelo", "Data Entrada", "Solicitante", "Prestador"]
+    x_positions = [40, 80, 200, 320, 400, 480]
 
+    def draw_headers(canv, y_pos):
+        canv.setFont("Helvetica-Bold", 10)
+        for i, header in enumerate(headers):
+            canv.drawString(x_positions[i], y_pos, header)
+        y_pos -= 5
+        canv.line(40, y_pos, width - 40, y_pos)
+        return y_pos - 15
+
+    y_position = draw_headers(c, y_position)
+
+    # Conteúdo da Tabela
     for item in data:
-        # Define os cabeçalhos e posições com base nas chaves do item
-        headers = list(item.keys())
-        # Heurística para definir colunas e posições (pode ser melhorado)
-        num_headers = len(headers)
-        x_positions = [40 + (i * ((width - 80) / num_headers)) for i in range(num_headers)]
-
         servico_text = f"<b>Serviço:</b> {item.get('servico', item.get('Servico', ''))}"
         p = Paragraph(servico_text, style_normal)
         p_width, p_height = p.wrapOn(c, width - 80, 100)
 
-        if y_position - p_height < 50:
+        # Verificar se há espaço suficiente para o item inteiro
+        required_height = 20 + p_height + 10 # Altura da linha de dados + altura do parágrafo + espaçamento
+        if y_position - required_height < 50:
             c.showPage()
             y_position = height - 100
-
-        c.setFont("Helvetica-Bold", 9)
-        for i, header in enumerate(headers):
-            if header not in ['servico', 'Servico']:
-                 c.drawString(x_positions[i], y_position, header.capitalize())
-        y_position -= 15
+            y_position = draw_headers(c, y_position)
 
         c.setFont("Helvetica", 8)
-        for i, header in enumerate(headers):
-            if header not in ['servico', 'Servico']:
-                c.drawString(x_positions[i], y_position, str(item.get(header, '')))
+        c.drawString(x_positions[0], y_position, str(item.get("os", "")))
+        c.drawString(x_positions[1], y_position, str(item.get("frota", "")))
+        c.drawString(x_positions[2], y_position, str(item.get("modelo", "")))
+        c.drawString(x_positions[3], y_position, str(item.get("data_entrada", item.get("data", ""))))
+        c.drawString(x_positions[4], y_position, str(item.get("solicitante", "")))
+        c.drawString(x_positions[5], y_position, str(item.get("prestador", "")))
+
         y_position -= 20
 
         p.drawOn(c, 40, y_position - p_height)
-        y_position -= (p_height + 20)
-        c.line(40, y_position + 10, width - 40, y_position + 10)
-
+        y_position -= (p_height + 10)
 
     c.save()
     return path_name
