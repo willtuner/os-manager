@@ -221,66 +221,57 @@ def remover_os_de_todos_json(diretorio, os_numero):
     return removido_de
 
 def init_db():
-    with app.app_context():  # Garante contexto de aplicação para operações de BD
-        db.create_all()
-        try:
+    try:
+        logger.info("Iniciando a função init_db.")
+        with app.app_context():
+            logger.info("Contexto da aplicação criado.")
+            
+            # Checando a URI do banco de dados
+            db_uri = app.config.get('SQLALCHEMY_DATABASE_URI')
+            if not db_uri:
+                logger.error("SQLALCHEMY_DATABASE_URI não está configurada.")
+                return
+            
+            logger.info(f"Conectando ao banco de dados: {db_uri.split('@')[-1]}") # Log sem credenciais
+            
+            logger.info("Executando db.create_all() para garantir que as tabelas existam.")
+            db.create_all()
+            logger.info("db.create_all() concluído.")
+
             from sqlalchemy import inspect
             inspector = inspect(db.engine)
-            columns_login_events = [col['name'] for col in inspector.get_columns('login_events')]
-            if 'user_type' not in columns_login_events:
-                logger.info("Adicionando coluna user_type à tabela login_events")
-                db.session.execute(text('ALTER TABLE login_events ADD COLUMN user_type VARCHAR(20) DEFAULT "gerente" NOT NULL'))
-                db.session.commit()
-                logger.info("Coluna user_type adicionada com sucesso")
-            
-            columns_users = [col['name'] for col in inspector.get_columns('users')]
-            if 'profile_picture' not in columns_users:
-                logger.info("Adicionando coluna profile_picture à tabela users")
-                db.session.execute(text('ALTER TABLE users ADD COLUMN profile_picture VARCHAR(256)'))
-                db.session.commit()
-                logger.info("Coluna profile_picture adicionada com sucesso")
-            
-            columns_finalizacoes = [col['name'] for col in inspector.get_columns('finalizacoes')]
-            if 'status_pimns' not in columns_finalizacoes:
-                logger.info("Adicionando coluna status_pimns à tabela finalizacoes")
-                db.session.execute(text('ALTER TABLE finalizacoes ADD COLUMN status_pimns BOOLEAN DEFAULT FALSE NOT NULL'))
-                db.session.commit()
-                logger.info("Coluna status_pimns adicionada com sucesso")
-            else:
-                # Verifica o tipo da coluna existente e converte se for VARCHAR
-                column_info = next((col for col in inspector.get_columns('finalizacoes') if col['name'] == 'status_pimns'), None)
-                if column_info and column_info['type'].__class__.__name__ == 'VARCHAR':
-                    logger.info("Convertendo coluna status_pimns de VARCHAR para BOOLEAN")
-                    db.session.execute(text('ALTER TABLE finalizacoes ADD COLUMN temp_status_pimns BOOLEAN DEFAULT FALSE NOT NULL'))
-                    db.session.execute(text('UPDATE finalizacoes SET temp_status_pimns = CASE WHEN status_pimns = \'Pendente\' THEN FALSE ELSE TRUE END'))
-                    db.session.execute(text('ALTER TABLE finalizacoes DROP COLUMN status_pimns'))
-                    db.session.execute(text('ALTER TABLE finalizacoes RENAME COLUMN temp_status_pimns TO status_pimns'))
+            logger.info("Iniciando verificação e migração de colunas.")
+
+            # Migração da coluna 'user_type' em 'login_events'
+            if 'login_events' in inspector.get_table_names():
+                columns_login_events = [col['name'] for col in inspector.get_columns('login_events')]
+                if 'user_type' not in columns_login_events:
+                    logger.info("Adicionando coluna 'user_type' à tabela 'login_events'.")
+                    db.session.execute(text('ALTER TABLE login_events ADD COLUMN user_type VARCHAR(20) DEFAULT \'gerente\' NOT NULL'))
                     db.session.commit()
-                    logger.info("Coluna status_pimns convertida com sucesso")
-            
-            columns_frota_leve = [col['name'] for col in inspector.get_columns('frota_leve')]
-            if 'email_fiscal_enviado' not in columns_frota_leve:
-                logger.info("Adicionando coluna email_fiscal_enviado à tabela frota_leve")
-                db.session.execute(text('ALTER TABLE frota_leve ADD COLUMN email_fiscal_enviado BOOLEAN DEFAULT FALSE'))
-                db.session.commit()
-                logger.info("Coluna email_fiscal_enviado adicionada com sucesso")
+                    logger.info("Coluna 'user_type' adicionada com sucesso.")
+            else:
+                logger.warning("Tabela 'login_events' não encontrada para migração.")
 
-            if 'os_pendente' not in inspector.get_table_names():
-                logger.info("Tabela os_pendente não encontrada, criando...")
-                OSPendente.__table__.create(db.engine)
-                logger.info("Tabela os_pendente criada com sucesso.")
+            # Migração da coluna 'profile_picture' em 'users'
+            if 'users' in inspector.get_table_names():
+                columns_users = [col['name'] for col in inspector.get_columns('users')]
+                if 'profile_picture' not in columns_users:
+                    logger.info("Adicionando coluna 'profile_picture' à tabela 'users'.")
+                    db.session.execute(text('ALTER TABLE users ADD COLUMN profile_picture VARCHAR(256)'))
+                    db.session.commit()
+                    logger.info("Coluna 'profile_picture' adicionada com sucesso.")
+            else:
+                logger.warning("Tabela 'users' não encontrada para migração.")
 
-        except Exception as e:
-            logger.error(f"Erro ao verificar/adicionar colunas: {e}")
-            db.session.rollback()
-
-        # Sincronização de usuários do JSON para o Banco de Dados
-        if os.path.exists(USERS_FILE):
-            try:
+            # Sincronização de usuários do JSON para o Banco de Dados
+            logger.info("Iniciando sincronização de usuários do users.json.")
+            if os.path.exists(USERS_FILE):
                 with open(USERS_FILE, encoding='utf-8') as f:
                     js_users = json.load(f)
 
-                db_users = {user.username: user for user in User.query.all()}
+                db_users_query = User.query.all()
+                db_users = {user.username: user for user in db_users_query}
                 admins = {'wilson.santana'}
 
                 for u_name, u_data in js_users.items():
@@ -290,30 +281,29 @@ def init_db():
                     is_admin_val = username_lower in admins
 
                     if username_lower in db_users:
-                        # Usuário existe, verificar se precisa de atualização
                         user_in_db = db_users[username_lower]
                         if user_in_db.password != senha_val or user_in_db.is_admin != is_admin_val or user_in_db.profile_picture != pic_val:
                             user_in_db.password = senha_val
                             user_in_db.is_admin = is_admin_val
                             user_in_db.profile_picture = pic_val
-                            logger.info(f"Usuário '{username_lower}' atualizado no banco de dados.")
+                            logger.info(f"Usuário '{username_lower}' atualizado.")
                     else:
-                        # Novo usuário, adicionar ao banco de dados
-                        new_user = User(
-                            username=username_lower,
-                            password=senha_val,
-                            is_admin=is_admin_val,
-                            profile_picture=pic_val
-                        )
+                        new_user = User(username=username_lower, password=senha_val, is_admin=is_admin_val, profile_picture=pic_val)
                         db.session.add(new_user)
-                        logger.info(f"Novo usuário '{username_lower}' adicionado ao banco de dados.")
+                        logger.info(f"Novo usuário '{username_lower}' adicionado.")
 
                 db.session.commit()
-                logger.info("Sincronização de usuários do users.json para o banco de dados concluída.")
+                logger.info("Sincronização de usuários concluída com sucesso.")
+            else:
+                logger.warning(f"Arquivo {USERS_FILE} não encontrado. Pulando sincronização de usuários.")
 
-            except Exception as e:
-                logger.error(f"Erro ao sincronizar usuários do JSON: {e}")
-                db.session.rollback()
+            logger.info("Função init_db concluída com sucesso.")
+
+    except Exception as e:
+        logger.error(f"ERRO CRÍTICO em init_db: {e}", exc_info=True)
+        # Em um ambiente de produção, talvez você queira levantar a exceção
+        # para impedir que a aplicação inicie em um estado inconsistente.
+        raise
 
 # ... (Suas funções de carregamento de dados como carregar_os_gerente, carregar_prestadores, etc.)
 def carregar_os_gerente(gerente_username):
