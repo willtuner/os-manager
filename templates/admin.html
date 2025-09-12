@@ -5,8 +5,8 @@
 {% block page_title %}Painel de Manutenção Agrícola <span class="ms-2">🚜</span>{% endblock %}
 
 {% block header_actions %}
-  <a href="{{ url_for('exportar_os_finalizadas', periodo=periodo, data_inicio=data_inicio, data_fim=data_fim) }}" class="btn btn-agro btn-sm">
-    <i class="fas fa-file-export me-1"></i>Exportar Relatório
+  <a href="{{ url_for('relatorios') }}" class="btn btn-agro btn-sm">
+    <i class="fas fa-file-export me-1"></i>Central de Relatórios
   </a>
   <a href="{{ url_for('frota_leve') }}" class="btn btn-info btn-sm ms-2">
     <i class="fas fa-car-side me-1"></i>Frota Leve

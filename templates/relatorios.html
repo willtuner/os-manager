@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Central de Relatórios – Suco Prats Agro{% endblock %}
+
+{% block page_title %}Central de Relatórios{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+  <div class="card">
+    <div class="card-header">
+      <h4 class="mb-0">Gerar Novo Relatório</h4>
+    </div>
+    <div class="card-body">
+      <form action="{{ url_for('gerar_relatorio') }}" method="POST">
+        <div class="mb-3">
+          <label for="report_type" class="form-label">Tipo de Relatório</label>
+          <select class="form-select" id="report_type" name="report_type" required>
+            <option value="os_fechadas">OS Finalizadas</option>
+            <option value="os_abertas_supervisor">OS em Aberto (Supervisor)</option>
+            <option value="os_abertas_prestador">OS em Aberto (Prestador)</option>
+          </select>
+        </div>
+
+        <div id="supervisor_selector" class="mb-3 d-none">
+          <label for="supervisor_select" class="form-label">Selecione o Supervisor</label>
+          <select class="form-select" id="supervisor_select" name="supervisor_file">
+            {% for supervisor in supervisores %}
+              <option value="{{ supervisor }}">{{ supervisor.replace('.json', '').replace('_', ' ')|capitalize }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div id="prestador_selector" class="mb-3 d-none">
+          <label for="prestador_select" class="form-label">Selecione o Prestador</label>
+          <select class="form-select" id="prestador_select" name="prestador_file">
+            {% for prestador in prestadores %}
+              <option value="{{ prestador }}">{{ prestador.replace('.json', '').replace('_', ' ')|capitalize }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Gerar PDF</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const reportTypeSelect = document.getElementById('report_type');
+    const supervisorSelector = document.getElementById('supervisor_selector');
+    const prestadorSelector = document.getElementById('prestador_selector');
+
+    function toggleSelectors() {
+      const selectedType = reportTypeSelect.value;
+      supervisorSelector.classList.toggle('d-none', selectedType !== 'os_abertas_supervisor');
+      prestadorSelector.classList.toggle('d-none', selectedType !== 'os_abertas_prestador');
+    }
+
+    reportTypeSelect.addEventListener('change', toggleSelectors);
+    toggleSelectors(); // Run on page load
+  });
+</script>
+{% endblock %}
