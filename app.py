@@ -1061,6 +1061,68 @@ def atribuir_prestador(os_numero_str):
     return redirect(url_for('painel_manutencao'))
 
 # ##########################################################################
+# ROTA PARA A NOVA TELA DE RELATÓRIOS
+# ##########################################################################
+@app.route('/relatorios')
+def relatorios():
+    if not session.get('is_admin'):
+        flash('Acesso negado', 'danger')
+        return redirect(url_for('login'))
+
+    supervisores = [f for f in os.listdir(MENSAGENS_DIR) if f.endswith('.json')]
+    prestadores = [f for f in os.listdir(MENSAGENS_PRESTADOR_DIR) if f.endswith('.json')]
+
+    supervisores.sort()
+    prestadores.sort()
+
+    return render_template('relatorios.html', supervisores=supervisores, prestadores=prestadores)
+
+@app.route('/gerar_relatorio', methods=['POST'])
+def gerar_relatorio():
+    if not session.get('is_admin'):
+        flash('Acesso negado', 'danger')
+        return redirect(url_for('login'))
+
+    report_type = request.form.get('report_type')
+
+    if report_type == 'os_fechadas':
+        return redirect(url_for('exportar_os_finalizadas'))
+
+    elif report_type == 'os_abertas_supervisor':
+        supervisor_file = request.form.get('supervisor_file')
+        if not supervisor_file:
+            flash('Nenhum supervisor selecionado.', 'danger')
+            return redirect(url_for('relatorios'))
+
+        json_path = os.path.join(MENSAGENS_DIR, supervisor_file)
+        report_title = supervisor_file.replace('.json', '').replace('_', ' ').capitalize()
+        pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+
+    elif report_type == 'os_abertas_prestador':
+        prestador_file = request.form.get('prestador_file')
+        if not prestador_file:
+            flash('Nenhum prestador selecionado.', 'danger')
+            return redirect(url_for('relatorios'))
+
+        json_path = os.path.join(MENSAGENS_PRESTADOR_DIR, prestador_file)
+        report_title = prestador_file.replace('.json', '').replace('_', ' ').capitalize()
+        pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+
+    else:
+        flash('Tipo de relatório inválido.', 'danger')
+        return redirect(url_for('relatorios'))
+
+    if pdf_path:
+        try:
+            return send_file(pdf_path, as_attachment=True, download_name=os.path.basename(pdf_path))
+        finally:
+            if os.path.exists(pdf_path):
+                os.remove(pdf_path)
+    else:
+        flash('Não foi possível gerar o relatório.', 'danger')
+        return redirect(url_for('relatorios'))
+
+# ##########################################################################
 # FUNÇÃO admin_panel ATUALIZADA
 # ##########################################################################
 @app.route('/admin')
@@ -1330,24 +1392,17 @@ def exportar_os_finalizadas():
             logger.info(f"PDF {caminho_pdf_salvo} gerado.")
 
 
-def gerar_relatorio_pdf_gerente(manager_name):
+def gerar_relatorio_os_abertas(json_path, report_title):
     """
-    Gera um relatório em PDF para as OS de um gerente específico.
+    Gera um relatório em PDF de OS em aberto a partir de um arquivo JSON.
     """
-    if manager_name.lower() == 'arthur':
-        json_path = os.path.join(JSON_DIR, 'relatorio_arthur.json')
-    elif manager_name.lower() == 'mauricio':
-        json_path = os.path.join(JSON_DIR, 'relatorio_mauricio.json')
-    else:
-        return None  # Gerente não encontrado
-
     if not os.path.exists(json_path):
-        return None  # Arquivo JSON não encontrado
+        return None
 
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    file_name = f'relatorio_{manager_name.lower()}.pdf'
+    file_name = f"relatorio_{report_title.replace(' ', '_').lower()}.pdf"
     path_name = os.path.join(BASE_DIR, file_name)
 
     c = canvas.Canvas(path_name, pagesize=A4)
@@ -1357,85 +1412,47 @@ def gerar_relatorio_pdf_gerente(manager_name):
     style_normal = styles['Normal']
     style_normal.fontName = 'Helvetica'
     style_normal.fontSize = 8
-    style_bold = styles['Normal']
-    style_bold.fontName = 'Helvetica-Bold'
-    style_bold.fontSize = 8
-
 
     # Cabeçalho
     c.setFont("Helvetica-Bold", 16)
-    c.drawCentredString(width / 2, height - 50, f"Relatório de OS em Aberto - {manager_name.capitalize()}")
+    c.drawCentredString(width / 2, height - 50, f"Relatório de OS em Aberto - {report_title}")
 
-    # Títulos da Tabela
-    c.setFont("Helvetica-Bold", 10)
     y_position = height - 100
-    x_positions = [40, 90, 240, 320, 400]
-    headers = ["OS", "Frota", "Modelo", "Data Entrada", "Solicitante"]
 
-    for i, header in enumerate(headers):
-        c.drawString(x_positions[i], y_position, header)
-
-    # Linha abaixo dos títulos
-    y_position -= 5
-    c.line(40, y_position, width - 40, y_position)
-    y_position -= 15
-
-    # Conteúdo da Tabela
-    c.setFont("Helvetica", 8)
     for item in data:
+        # Define os cabeçalhos e posições com base nas chaves do item
+        headers = list(item.keys())
+        # Heurística para definir colunas e posições (pode ser melhorado)
+        num_headers = len(headers)
+        x_positions = [40 + (i * ((width - 80) / num_headers)) for i in range(num_headers)]
 
-        servico_text = f"<b>Serviço:</b> {item.get('servico', '')}"
+        servico_text = f"<b>Serviço:</b> {item.get('servico', item.get('Servico', ''))}"
         p = Paragraph(servico_text, style_normal)
         p_width, p_height = p.wrapOn(c, width - 80, 100)
 
         if y_position - p_height < 50:
             c.showPage()
-            c.setFont("Helvetica-Bold", 10)
             y_position = height - 100
-            for i, header in enumerate(headers):
-                c.drawString(x_positions[i], y_position, header)
-            y_position -= 5
-            c.line(40, y_position, width - 40, y_position)
-            y_position -= 15
-            c.setFont("Helvetica", 8)
 
+        c.setFont("Helvetica-Bold", 9)
+        for i, header in enumerate(headers):
+            if header not in ['servico', 'Servico']:
+                 c.drawString(x_positions[i], y_position, header.capitalize())
+        y_position -= 15
 
-        c.drawString(x_positions[0], y_position, str(item.get("os", "")))
-        c.drawString(x_positions[1], y_position, str(item.get("frota", "")))
-        c.drawString(x_positions[2], y_position, str(item.get("modelo", "")))
-        c.drawString(x_positions[3], y_position, str(item.get("data_entrada", "")))
-        c.drawString(x_positions[4], y_position, str(item.get("solicitante", "")))
+        c.setFont("Helvetica", 8)
+        for i, header in enumerate(headers):
+            if header not in ['servico', 'Servico']:
+                c.drawString(x_positions[i], y_position, str(item.get(header, '')))
         y_position -= 20
 
         p.drawOn(c, 40, y_position - p_height)
-        y_position -= p_height + 10
+        y_position -= (p_height + 20)
+        c.line(40, y_position + 10, width - 40, y_position + 10)
 
 
     c.save()
     return path_name
-
-@app.route('/relatorio/pdf/<manager_name>')
-def download_relatorio_pdf(manager_name):
-    is_authorized = False
-    if session.get('is_admin'):
-        is_authorized = True
-    elif session.get('gerente') and session.get('gerente').split('.')[0].lower() == manager_name.lower():
-        is_authorized = True
-
-    if not is_authorized:
-        flash('Acesso negado', 'danger')
-        return redirect(url_for('login'))
-
-    pdf_path = gerar_relatorio_pdf_gerente(manager_name)
-    if pdf_path:
-        try:
-            return send_file(pdf_path, as_attachment=True, download_name=os.path.basename(pdf_path))
-        finally:
-            if os.path.exists(pdf_path):
-                os.remove(pdf_path)
-    else:
-        flash(f'Não foi possível gerar o relatório para {manager_name}.', 'danger')
-        return redirect(url_for('admin_panel'))
 
 @app.route('/logout')
 def logout():
