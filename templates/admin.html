@@ -496,8 +496,8 @@
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
               <td>
                 {% if gerente.lower() in ['arthur.sousa', 'mauricio.jose'] %}
-                <a href="{{ url_for('download_relatorio_pdf', manager_name=gerente.split('.')[0]) }}" class="btn btn-agro btn-sm">
-                  <i class="fas fa-file-pdf me-1"></i>
+                <a href="{{ url_for('gerar_relatorio', username=gerente) }}" class="btn btn-agro btn-sm" title="Gerar Relatório PDF">
+                  <i class="fas fa-file-pdf"></i>
                 </a>
                 {% endif %}
               </td>
