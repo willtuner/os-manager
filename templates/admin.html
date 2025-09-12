@@ -490,18 +490,18 @@
           </thead>
           <tbody>
             {% for gerente, count in ranking_os_abertas %}
-            {% if gerente.lower() in ['arthur.sousa', 'mauricio.jose'] %}
             <tr class="{% if loop.index > 3 %}gerente-ranking-row hidden-row{% endif %}">
               <td><span class="badge badge-ranking {% if loop.index == 1 %}ranking-1{% elif loop.index == 2 %}ranking-2{% elif loop.index == 3 %}ranking-3{% else %}ranking-other{% endif %}">{{ loop.index }}º</span></td>
               <td>{{ gerente|capitalize_name }}</td>
               <td>{{ count }} pendente{{ 's' if count != 1 else '' }}</td>
               <td>
+                {% if gerente.lower() in ['arthur.sousa', 'mauricio.jose'] %}
                 <a href="{{ url_for('download_relatorio_pdf', manager_name=gerente.split('.')[0]) }}" class="btn btn-agro btn-sm">
                   <i class="fas fa-file-pdf me-1"></i>
                 </a>
+                {% endif %}
               </td>
             </tr>
-            {% endif %}
             {% endfor %}
             {% if not ranking_os_abertas %}
             <tr><td colspan="3" class="text-center py-3">Nenhuma OS pendente</td></tr>

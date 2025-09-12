@@ -1416,7 +1416,13 @@ def gerar_relatorio_pdf_gerente(manager_name):
 
 @app.route('/relatorio/pdf/<manager_name>')
 def download_relatorio_pdf(manager_name):
-    if not session.get('is_admin'):
+    is_authorized = False
+    if session.get('is_admin'):
+        is_authorized = True
+    elif session.get('gerente') and session.get('gerente').split('.')[0].lower() == manager_name.lower():
+        is_authorized = True
+
+    if not is_authorized:
         flash('Acesso negado', 'danger')
         return redirect(url_for('login'))
 
