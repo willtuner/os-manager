@@ -9,7 +9,7 @@
         <img src="{{ profile_picture }}" alt="Foto de Perfil" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
     {% endif %}
     {% if session.get('gerente') in ['arthur.sousa', 'mauricio.jose'] %}
-    <a href="{{ url_for('download_relatorio_pdf', manager_name=session.get('gerente').split('.')[0]) }}" class="btn btn-info btn-sm ms-2">
+    <a href="{{ url_for('gerar_relatorio', username=session.get('gerente')) }}" class="btn btn-info btn-sm ms-2">
       <i class="fas fa-file-pdf me-1"></i> Relatório PDF
     </a>
     {% endif %}

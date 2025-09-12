@@ -1067,40 +1067,65 @@ def relatorios():
 
     return render_template('relatorios.html', supervisores=supervisores, prestadores=prestadores)
 
-@app.route('/gerar_relatorio', methods=['POST'])
+@app.route('/gerar_relatorio', methods=['GET', 'POST'])
 def gerar_relatorio():
     if not session.get('is_admin'):
         flash('Acesso negado', 'danger')
         return redirect(url_for('login'))
 
-    report_type = request.form.get('report_type')
+    if request.method == 'POST':
+        report_type = request.form.get('report_type')
 
-    if report_type == 'os_fechadas':
-        return redirect(url_for('exportar_os_finalizadas'))
+        if report_type == 'os_fechadas':
+            return redirect(url_for('exportar_os_finalizadas'))
 
-    elif report_type == 'os_abertas_supervisor':
-        supervisor_file = request.form.get('supervisor_file')
-        if not supervisor_file:
-            flash('Nenhum supervisor selecionado.', 'danger')
+        elif report_type == 'os_abertas_supervisor':
+            supervisor_file = request.form.get('supervisor_file')
+            if not supervisor_file:
+                flash('Nenhum supervisor selecionado.', 'danger')
+                return redirect(url_for('relatorios'))
+
+            json_path = os.path.join(MENSAGENS_DIR, supervisor_file)
+            report_title = supervisor_file.replace('.json', '').replace('_', ' ').capitalize()
+            pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+
+        elif report_type == 'os_abertas_prestador':
+            prestador_file = request.form.get('prestador_file')
+            if not prestador_file:
+                flash('Nenhum prestador selecionado.', 'danger')
+                return redirect(url_for('relatorios'))
+
+            json_path = os.path.join(MENSAGENS_PRESTADOR_DIR, prestador_file)
+            report_title = prestador_file.replace('.json', '').replace('_', ' ').capitalize()
+            pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+
+        else:
+            flash('Tipo de relatório inválido.', 'danger')
             return redirect(url_for('relatorios'))
 
-        json_path = os.path.join(MENSAGENS_DIR, supervisor_file)
-        report_title = supervisor_file.replace('.json', '').replace('_', ' ').capitalize()
-        pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+    elif request.method == 'GET':
+        # Rota para download direto do painel de admin
+        username = request.args.get('username')
+        if not username:
+            flash('Nome de usuário não fornecido.', 'danger')
+            return redirect(url_for('admin_panel'))
 
-    elif report_type == 'os_abertas_prestador':
-        prestador_file = request.form.get('prestador_file')
-        if not prestador_file:
-            flash('Nenhum prestador selecionado.', 'danger')
-            return redirect(url_for('relatorios'))
+        # Lógica para encontrar o arquivo JSON do supervisor
+        # Esta lógica é simplificada. A original em carregar_os_gerente é mais complexa.
+        # Replicando a lógica de busca de arquivo de `carregar_os_gerente`
+        caminho_encontrado = None
+        base_nome_gerente = username.upper().replace('.', '_')
+        for nome_arquivo_dir in os.listdir(MENSAGENS_DIR):
+            if nome_arquivo_dir.upper().startswith(base_nome_gerente) and nome_arquivo_dir.lower().endswith(".json"):
+                caminho_encontrado = os.path.join(MENSAGENS_DIR, nome_arquivo_dir)
+                break
 
-        json_path = os.path.join(MENSAGENS_PRESTADOR_DIR, prestador_file)
-        report_title = prestador_file.replace('.json', '').replace('_', ' ').capitalize()
-        pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+        if not caminho_encontrado:
+            flash(f'Arquivo de relatório para {username} não encontrado.', 'danger')
+            return redirect(url_for('admin_panel'))
 
-    else:
-        flash('Tipo de relatório inválido.', 'danger')
-        return redirect(url_for('relatorios'))
+        report_title = username.replace('.', ' ').capitalize()
+        pdf_path = gerar_relatorio_os_abertas(caminho_encontrado, report_title)
 
     if pdf_path:
         try:
