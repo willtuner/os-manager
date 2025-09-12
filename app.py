@@ -1073,6 +1073,8 @@ def gerar_relatorio():
         flash('Acesso negado', 'danger')
         return redirect(url_for('login'))
 
+    pdf_path = None
+
     if request.method == 'POST':
         report_type = request.form.get('report_type')
 
@@ -1104,28 +1106,31 @@ def gerar_relatorio():
             return redirect(url_for('relatorios'))
 
     elif request.method == 'GET':
-        # Rota para download direto do painel de admin
         username = request.args.get('username')
         if not username:
             flash('Nome de usuário não fornecido.', 'danger')
             return redirect(url_for('admin_panel'))
 
-        # Lógica para encontrar o arquivo JSON do supervisor
-        # Esta lógica é simplificada. A original em carregar_os_gerente é mais complexa.
-        # Replicando a lógica de busca de arquivo de `carregar_os_gerente`
-        caminho_encontrado = None
-        base_nome_gerente = username.upper().replace('.', '_')
-        for nome_arquivo_dir in os.listdir(MENSAGENS_DIR):
-            if nome_arquivo_dir.upper().startswith(base_nome_gerente) and nome_arquivo_dir.lower().endswith(".json"):
-                caminho_encontrado = os.path.join(MENSAGENS_DIR, nome_arquivo_dir)
-                break
+        # Tratamento especial para Arthur e Mauricio
+        if username.lower() in ['arthur.sousa', 'mauricio.jose']:
+            manager_name = username.split('.')[0]
+            json_path = os.path.join(JSON_DIR, f'relatorio_{manager_name}.json')
+            report_title = manager_name.capitalize()
+        else:
+            # Lógica para outros supervisores
+            json_path = None
+            base_nome_gerente = username.upper().replace('.', '_')
+            for nome_arquivo_dir in os.listdir(MENSAGENS_DIR):
+                if nome_arquivo_dir.upper().startswith(base_nome_gerente) and nome_arquivo_dir.lower().endswith(".json"):
+                    json_path = os.path.join(MENSAGENS_DIR, nome_arquivo_dir)
+                    break
 
-        if not caminho_encontrado:
-            flash(f'Arquivo de relatório para {username} não encontrado.', 'danger')
-            return redirect(url_for('admin_panel'))
+            if not json_path:
+                flash(f'Arquivo de relatório para {username} não encontrado.', 'danger')
+                return redirect(url_for('admin_panel'))
+            report_title = username.replace('.', ' ').capitalize()
 
-        report_title = username.replace('.', ' ').capitalize()
-        pdf_path = gerar_relatorio_os_abertas(caminho_encontrado, report_title)
+        pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
 
     if pdf_path:
         try:
