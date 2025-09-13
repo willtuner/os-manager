@@ -1,0 +1,52 @@
+[
+    {
+        "os": 118155,
+        "frota": 5383,
+        "modelo": "CARRINHO MOTOR DE IRRIGACAO",
+        "data_entrada": "20/07/2024",
+        "solicitante": "ALTIERES SOARES FERREIRA",
+        "prestador": "Oficina Interna",
+        "servico": "Quebra da conexão do cano da mangueira do hidroroll - (Fazenda Pedra Verde)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "os": 118156,
+        "frota": 5175,
+        "modelo": "TANQUE DE AGUA 4000L",
+        "data_entrada": "21/07/2024",
+        "solicitante": "MARCIO JUNIO NUNES DE OLIVEIRA",
+        "prestador": "Fornecedor Externo ABC",
+        "servico": "Trocar centro da roda (Fazenda São Severino) - serviço liberado",
+        "liberado_por": "Carlos"
+    },
+    {
+        "os": 118150,
+        "frota": 5759,
+        "modelo": "PULVERIZADOR 400L SID-A DUPLO",
+        "data_entrada": "22/07/2024",
+        "solicitante": "ANTONIO VINICIO MAZUTE",
+        "prestador": "nan",
+        "servico": "Pensar mangueira - (Fazenda Estrela) - equipamento parado",
+        "liberado_por": ""
+    },
+    {
+        "os": 118149,
+        "frota": 5491,
+        "modelo": "PULVERIZADOR GULIVER 2025",
+        "data_entrada": "22/07/2024",
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "prestador": "Oficina Interna",
+        "servico": "Prensar mangueira - (Fazenda Estrela) - serviço finalizado",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "os": 118134,
+        "frota": 5155,
+        "modelo": "ATOMIZADOR FMC 400L",
+        "data_entrada": "23/07/2024",
+        "solicitante": "NATALINO ANTONIO JUSTINO",
+        "prestador": "Fornecedor Externo XYZ",
+        "servico": "Verificar sistema de pulverização. Maquinário com defeito e parado na oficina.",
+        "liberado_por": ""
+    }
+]
