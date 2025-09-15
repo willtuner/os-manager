@@ -1,5 +1,29 @@
 [
   {
+    "frota": "247",
+    "cd_equipamento": "247",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "118247",
+    "data_entrada": "13/09/2025",
+    "servico": "Terminal da barra de direção L/D com parafuso expando - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "252",
+    "cd_equipamento": "252",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118245",
+    "data_entrada": "13/09/2025",
+    "servico": "Vazamento nos tuchos do comando comando hidráulico e trocar cabos da VCR - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "252",
+    "cd_equipamento": "252",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118243",
+    "data_entrada": "13/09/2025",
+    "servico": "Verificar cabo e trocar tuchos - Faz São Pedro\nAutorizado Arthur"
+  },
+  {
     "frota": "125",
     "cd_equipamento": "125",
     "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
@@ -16,28 +40,12 @@
     "servico": "Verificar trator travando o parker - (Fazenda Estrela)\nSolicitado Sr. Arthur \nResponsavel Sr. Arthur"
   },
   {
-    "frota": "285",
-    "cd_equipamento": "285",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117679",
-    "data_entrada": "03/09/2025",
-    "servico": "Verificar sistema hidráulico apresentando trancos/socos durante a operação. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsalve Sr. Arthur"
-  },
-  {
     "frota": "165",
     "cd_equipamento": "165",
     "modelo": "TRATOR JOHN DEERE 6415 4X4",
     "os": "117466",
     "data_entrada": "29/08/2025",
     "servico": "Vazamento de óleo no retentor do pistão do eixo dianteiro  - (Fazenda Estrela)_\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "94",
-    "cd_equipamento": "94",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "117454",
-    "data_entrada": "29/08/2025",
-    "servico": "Verificar conjunto planetário/redução final da roda dianteira lado direito do trator apresentando saída de limalha de ferro. - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   },
   {
     "frota": "10224",
@@ -54,22 +62,6 @@
     "os": "117263",
     "data_entrada": "26/08/2025",
     "servico": "Revisar freio das cornetas - Faz Minuano\nAutorizado Arthur"
-  },
-  {
-    "frota": "349",
-    "cd_equipamento": "349",
-    "modelo": "JOHN DEERE 6110E",
-    "os": "116977",
-    "data_entrada": "20/08/2025",
-    "servico": "Troca de óleo geral \nTroca da correia do motor\nTroca dos rolamentos, pinos e retentores\nTirar banco para consertar cinto de segurança \nTrocar reservatório de água\nTrocar coifas dos terminais e regular direção - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos"
-  },
-  {
-    "frota": "119",
-    "cd_equipamento": "119",
-    "modelo": "TRATOR VALTRA A750F 4X4",
-    "os": "116069",
-    "data_entrada": "05/08/2025",
-    "servico": "Verificar sistema de embreagem não aciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
     "frota": "119",

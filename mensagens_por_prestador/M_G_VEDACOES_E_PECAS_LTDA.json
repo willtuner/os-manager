@@ -1,43 +1,19 @@
 [
   {
+    "frota": "137",
+    "cd_equipamento": "137",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "118120",
+    "data_entrada": "15/09/2025",
+    "servico": "Quebra do suporte do rabicho, trocar mangueira da bomba da direção, consertar degrau da escada, melhorar grade de proteção fazer troca de óleo de 400 hrs   - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsável Sr. Carlos Aparecido"
+  },
+  {
     "frota": "253",
     "cd_equipamento": "253",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "118154",
     "data_entrada": "11/09/2025",
     "servico": "Prensar mangueira do sistema de direção - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "104",
-    "cd_equipamento": "104",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "118153",
-    "data_entrada": "11/09/2025",
-    "servico": "Prensar mangueira do sistema hidráulico - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "118037",
-    "data_entrada": "10/09/2025",
-    "servico": "Vazamento de óleo no pistão L/D - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5532",
-    "cd_equipamento": "5532",
-    "modelo": "PODADEIRA HIDRAUTEC HLC6",
-    "os": "118028",
-    "data_entrada": "10/09/2025",
-    "servico": "Equipamento apresenta falha: ao ligar o rotor, o mesmo desarma e para de funcionar quando o motor é acelerado - (Fazenda Casa Branca)\nSolicitado: João Paulo\nResponsável: Sr. Maurício"
-  },
-  {
-    "frota": "5481",
-    "cd_equipamento": "5481",
-    "modelo": "CONJUNTO PODADOR WWD",
-    "os": "118027",
-    "data_entrada": "10/09/2025",
-    "servico": "Quebra do pino de articulação que liga o rotor às facas da podadeira - necessário substituir pino/trava e revisar demais pontos de fixação - (Fazenda Casa Branca)\nSolicitado: João Porteiro\nResponsável: Sr. Maurício"
   },
   {
     "frota": "5336",
@@ -75,38 +51,6 @@
     "frota": "5205",
     "cd_equipamento": "5205",
     "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
-    "os": "117698",
-    "data_entrada": "03/09/2025",
-    "servico": "Vazamento de óleo no retentor da caixa de facas traseira - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5052",
-    "cd_equipamento": "5052",
-    "modelo": "TERRACIADOR CIVEMASA",
-    "os": "117692",
-    "data_entrada": "03/09/2025",
-    "servico": "Vazamento nos pistões - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5558",
-    "cd_equipamento": "5558",
-    "modelo": "PODADEIRA HIDRAUTEC HLC6",
-    "os": "117578",
-    "data_entrada": "01/09/2025",
-    "servico": "Recuperar suporte de fixação frontal da podadeira, quebrado na região de acoplamento ao trator. - (Fazenda Alvorada)|Parado|\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5156",
-    "cd_equipamento": "5156",
-    "modelo": "PULVERIZADOR 600 LT FMC",
-    "os": "117516",
-    "data_entrada": "30/08/2025",
-    "servico": "Adaptar bomba com motor hidráulico - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "5205",
-    "cd_equipamento": "5205",
-    "modelo": "PODADEIRA DUPLA LAT HIDRAUTEC",
     "os": "117411",
     "data_entrada": "28/08/2025",
     "servico": "Vazamento de óleo no retentor do rotor - (Fazenda Casa Branca)_\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
@@ -118,13 +62,5 @@
     "os": "117376",
     "data_entrada": "28/08/2025",
     "servico": "Vazamento de óleo na caixa  de facas - (Fazenda São Severino)\nSolicitado Sr. Marcio Junio\nResposavel Sr. Marcio"
-  },
-  {
-    "frota": "349",
-    "cd_equipamento": "349",
-    "modelo": "JOHN DEERE 6110E",
-    "os": "117259",
-    "data_entrada": "26/08/2025",
-    "servico": "Confeccionar e instalar proteção para operação na trincheira - (Oficina M.G)\nSolicitado Sr. Carlos Aparecido"
   }
 ]

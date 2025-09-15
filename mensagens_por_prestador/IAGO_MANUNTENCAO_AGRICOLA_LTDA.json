@@ -1,122 +1,26 @@
 [
   {
+    "frota": "5597",
+    "cd_equipamento": "5597",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "118164",
+    "data_entrada": "12/09/2025",
+    "servico": "Instalar capa de proteção do rolamento da roda L/E e verificar possíveis danos ou desgaste no rolamento, substituindo se necessário. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsvel Sr. Mauricio"
+  },
+  {
+    "frota": "5355",
+    "cd_equipamento": "5355",
+    "modelo": "ATOMIZADOR JACTO 4000 LT",
+    "os": "118163",
+    "data_entrada": "12/09/2025",
+    "servico": "Vazamento no agitador de calda - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio\nP.S Verificar possível garantia. Verificado recentemente 08/09 - Hiago Manutenções"
+  },
+  {
     "frota": "5418",
     "cd_equipamento": "5418",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
     "os": "118090",
     "data_entrada": "11/09/2025",
     "servico": "Verificar vazamento no retentor da bomba - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5486",
-    "cd_equipamento": "5486",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "118088",
-    "data_entrada": "11/09/2025",
-    "servico": "Montar caixa incorporadora nova - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "118054",
-    "data_entrada": "10/09/2025",
-    "servico": "Isolar mecanismo do agitador e instalar agitador hidráulico (mecânico foi adaptado e não para de apresentar problemas) - (Fazenda Bela Manhã)\nSolicitado: Murilo\nResponsável: Mauricio\nAutorizado: Sr. Rafael"
-  },
-  {
-    "frota": "5365",
-    "cd_equipamento": "5365",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "117983",
-    "data_entrada": "09/09/2025",
-    "servico": "Verificar eixo do mancal da bomba \"correndo\" - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5614",
-    "cd_equipamento": "5614",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "117960",
-    "data_entrada": "09/09/2025",
-    "servico": "Verificar ventilação do pulverizador não funciona - (Fazenda São Severino)|Parado|\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5693",
-    "cd_equipamento": "5693",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "117956",
-    "data_entrada": "09/09/2025",
-    "servico": "Vazamento na graxeta e na vedação do agitador - (Fazenda São Paulo)\nSolicitado Sr. Geovane\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5613",
-    "cd_equipamento": "5613",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "117947",
-    "data_entrada": "09/09/2025",
-    "servico": "Trocar correias traseiras da torre - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5347",
-    "cd_equipamento": "5347",
-    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
-    "os": "117912",
-    "data_entrada": "09/09/2025",
-    "servico": "Revisar sistema de cardan, engrenagens e sistema de transmissão do equipamento - (Fazenda Minuano)\nSolicitado Sr. Marcio \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5365",
-    "cd_equipamento": "5365",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "117910",
-    "data_entrada": "09/09/2025",
-    "servico": "Trocar correias do agitador e jogo de válvulas batendo - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5759",
-    "cd_equipamento": "5759",
-    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
-    "os": "117879",
-    "data_entrada": "08/09/2025",
-    "servico": "Vazamento de óleo na bomba - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5355",
-    "cd_equipamento": "5355",
-    "modelo": "ATOMIZADOR JACTO 4000 LT",
-    "os": "117872",
-    "data_entrada": "08/09/2025",
-    "servico": "Vazamento de óleo no agitador de calda - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5107",
-    "cd_equipamento": "5107",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "117819",
-    "data_entrada": "05/09/2025",
-    "servico": "Sacar e trocar parafusos de fixação da roda L/E e trocar correia da turbina do tanque - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius / Danilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5693",
-    "cd_equipamento": "5693",
-    "modelo": "PULVERIZADOR 2000 LT",
-    "os": "117768",
-    "data_entrada": "04/09/2025",
-    "servico": "Refazer rosca de conexão do tanque - (Fazenda SP)\nSolicitado Sr. Geovane\nResponsável Sr. Mauricio"
-  },
-  {
-    "frota": "5129",
-    "cd_equipamento": "5129",
-    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
-    "os": "117667",
-    "data_entrada": "03/09/2025",
-    "servico": "Quebra da ponta traseira do eixo cardan de transmissão e rolamento do mesmo roncando - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5425",
-    "cd_equipamento": "5425",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "117631",
-    "data_entrada": "02/09/2025",
-    "servico": "Trocar rolamento da roda guia L/E quebrado - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsvel Sr. Mauricio"
   }
 ]

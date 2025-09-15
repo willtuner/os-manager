@@ -1,5 +1,29 @@
 [
   {
+    "frota": "106",
+    "cd_equipamento": "106",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118125",
+    "data_entrada": "11/09/2025",
+    "servico": "Verificar TDP bem lenta (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "118",
+    "cd_equipamento": "118",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118113",
+    "data_entrada": "11/09/2025",
+    "servico": "Verificar volante não segura as travas e vazamento de óleo hidráulicos nos tuchos do comando - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "130",
+    "cd_equipamento": "130",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "118059",
+    "data_entrada": "10/09/2025",
+    "servico": "Retentor dianteiro estourado (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Arthur"
+  },
+  {
     "frota": "69",
     "cd_equipamento": "69",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
@@ -16,14 +40,6 @@
     "servico": "Quebra do cabo do acelerador de pé - (Fazenda Minuano)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "198",
-    "cd_equipamento": "198",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117795",
-    "data_entrada": "04/09/2025",
-    "servico": "Quebra da alavanca de cambio - (Fazenda Minuano)|Parado|\nSolicitado Sr. Izaias\nResponsvel Sr. Arthur"
-  },
-  {
     "frota": "216",
     "cd_equipamento": "216",
     "modelo": "TRATOR JOHN DEERE 5070 E",
@@ -32,27 +48,11 @@
     "servico": "Vazamento no cachimbo do freio - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "189",
-    "cd_equipamento": "189",
-    "modelo": "TRATOR NEW HOLAND TL 5.80",
-    "os": "117533",
-    "data_entrada": "01/09/2025",
-    "servico": "Verificar trator com direção dura - (Fazenda NSA)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur \nP.S Os recente para Solo Verde (116780)"
-  },
-  {
     "frota": "230",
     "cd_equipamento": "230",
     "modelo": "TRATOR VALTRA A124L 4X4",
     "os": "117381",
     "data_entrada": "28/08/2025",
     "servico": "Regular sistema de freio e substituir coxins da cabine - (Fazenda Úrsula)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "47",
-    "cd_equipamento": "47",
-    "modelo": "TRATOR JOHN DEERE 5403 4X2",
-    "os": "117973",
-    "data_entrada": "03/08/2025",
-    "servico": "Verificação de todos os bicos graxeiros, garantindo a passagem de graxa.\nInspeção da fechadura do capô, trava e amortecedor.\nChecagem das manoplas de marcha, grupo e comando na alavanca.\nAvaliação do embuchamento do eixo (balança), verificando folga ou desgaste.\nConferência do nível de óleo dos cubos redutores.\nInspeção das cruzetas de articulação dupla quanto à folga.\nVerificação de mangueiras, tubos e cilindro da direção para identificar vazamentos.\nChecagem dos bicos graxeiros das cruzetas, garantindo a lubrificação adequada.\nAjuste e conferência da altura do pedal de embreagem.\nInspeção do sistema hidráulico de 3 pontos (braços hidráulicos).\nLimpeza do filtro de ventilação do tanque de combustíveis. - (Oficina)\nSolicitado Sr. Carlos Aparecido \nResponsavel Sr. Carlos Aparecido"
   }
 ]

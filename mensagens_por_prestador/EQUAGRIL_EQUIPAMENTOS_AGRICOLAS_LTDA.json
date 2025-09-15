@@ -1,5 +1,21 @@
 [
   {
+    "frota": "342",
+    "cd_equipamento": "342",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "118252",
+    "data_entrada": "13/09/2025",
+    "servico": "Verificar lanterna, não trava lâmpada - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "320",
+    "cd_equipamento": "320",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "118224",
+    "data_entrada": "12/09/2025",
+    "servico": "Revisão de 900 hrs - (Fazenda SL1)\n- Filtro de diesel\n- Filtro sedimentador\n- Filtro de motor\n- Filtro de hidráulico\n- Óleo de motor\n- Óleo das ponteiras L/E e L/D\nResponsavel Sr. Wilson"
+  },
+  {
     "frota": "324",
     "cd_equipamento": "324",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -22,30 +38,6 @@
     "os": "118138",
     "data_entrada": "11/09/2025",
     "servico": "Revisão de 1200 Horas (Fazenda São Paulo)\nFiltro de diesel\nFiltro Sedmentador\nFiltros de ar interno e externo \nFiltro de hidráulico\nFiltro de óleo de motor \nÓleo de motor\nÓleo das ponteias L/E e L/D\nOleo da transmissão\nVerificar correias do motor e A/C.\nSolicitado Sr. Wilson\nResponsável Sr. Wilson"
-  },
-  {
-    "frota": "321",
-    "cd_equipamento": "321",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "117874",
-    "data_entrada": "08/09/2025",
-    "servico": "Verificar vazamento de óleo no comando hidráulico - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "315",
-    "cd_equipamento": "315",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "117858",
-    "data_entrada": "05/09/2025",
-    "servico": "Verificar A/C não gela, apenas ventila - (Fazenda Biscui)\nSolicitado Sr. Geovane\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "132",
-    "cd_equipamento": "132",
-    "modelo": "TRATOR NEW HOLLAND TL75E",
-    "os": "117843",
-    "data_entrada": "05/09/2025",
-    "servico": "Avaliar marchas remontada - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsável Sr. Carlos Aparecido"
   },
   {
     "frota": "324",
