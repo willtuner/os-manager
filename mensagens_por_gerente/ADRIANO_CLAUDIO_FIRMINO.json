@@ -3,15 +3,8 @@
     "frota": "106",
     "os": "118125",
     "data": "11/09/2025",
-    "prestador": "nan",
+    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
     "servico": "Verificar TDP bem lenta (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "106",
-    "os": "118096",
-    "data": "11/09/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu dianteiro L/D furado - (Fazenda Nova Manhã)|Parado|"
   },
   {
     "frota": "5201",
@@ -33,6 +26,13 @@
     "data": "05/09/2025",
     "prestador": "MARCELO SOLETTI E CIA LTDA ME",
     "servico": "Solda no cano de diesel da bomba - (Fazenda Nova Manhã)"
+  },
+  {
+    "frota": "510",
+    "os": "118228",
+    "data": "17/08/2025",
+    "prestador": "REVISA PECAS E SERVICOS LTDA",
+    "servico": "Manutenção Ônibus"
   },
   {
     "frota": "5275",

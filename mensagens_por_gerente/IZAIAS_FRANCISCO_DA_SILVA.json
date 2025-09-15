@@ -1,5 +1,19 @@
 [
   {
+    "frota": "191",
+    "os": "118180",
+    "data": "12/09/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Verificar trator sem partida - (Fazenda São Severino)|Parado|"
+  },
+  {
+    "frota": "10221",
+    "os": "118158",
+    "data": "12/09/2025",
+    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+    "servico": "Verificar curto na caixa de fusíveis - (Fazenda Minuano)|Parado|"
+  },
+  {
     "frota": "5326",
     "os": "118137",
     "data": "11/09/2025",
@@ -7,32 +21,11 @@
     "servico": "Quebra da chapinha chapa de fixação do pistão (Fazenda N. S. A.)"
   },
   {
-    "frota": "137",
-    "os": "117904",
-    "data": "08/09/2025",
-    "prestador": "nan",
-    "servico": "Vazamento de óleo nas mangueiras - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "192",
-    "os": "117897",
-    "data": "08/09/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Trocar rabicho - (Fazenda Estrela)"
-  },
-  {
     "frota": "198",
     "os": "117839",
     "data": "05/09/2025",
     "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
     "servico": "Quebra do cabo do acelerador de pé - (Fazenda Minuano)"
-  },
-  {
-    "frota": "198",
-    "os": "117795",
-    "data": "04/09/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Quebra da alavanca de cambio - (Fazenda Minuano)|Parado|"
   },
   {
     "frota": "198",
@@ -47,19 +40,5 @@
     "data": "04/09/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Revisar sinalização - (Fazenda São Severino)"
-  },
-  {
-    "frota": "189",
-    "os": "117533",
-    "data": "01/09/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Verificar trator com direção dura - (Fazenda NSA)"
-  },
-  {
-    "frota": "5645",
-    "os": "116503",
-    "data": "12/08/2025",
-    "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
-    "servico": "Quebra dos dentes do eixo do giro  - (Fazenda Alvorada)}"
   }
 ]

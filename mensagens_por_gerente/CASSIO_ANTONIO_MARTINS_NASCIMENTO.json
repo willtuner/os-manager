@@ -1,24 +1,52 @@
 [
   {
+    "frota": "5660",
+    "os": "118291",
+    "data": "15/09/2025",
+    "prestador": "nan",
+    "servico": "Verificar caixa de comando para abertura dos  ramais não funciona - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5599",
+    "os": "118249",
+    "data": "13/09/2025",
+    "prestador": "nan",
+    "servico": "Verificar vazamento no selo mecânico da bomba - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5425",
+    "os": "118182",
+    "data": "12/09/2025",
+    "prestador": "nan",
+    "servico": "Soldar tricas no chassi da barrinha (Fazenda São Severino)"
+  },
+  {
+    "frota": "5631",
+    "os": "118179",
+    "data": "12/09/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar suporte para instalar pé de apoio - (Fazenda Úrsula)"
+  },
+  {
+    "frota": "5612",
+    "os": "118178",
+    "data": "12/09/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Soldar trinca no suporte da caixa incorporadora - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5569",
+    "os": "118175",
+    "data": "12/09/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Retentor do distribuidor triplo estourado, colocar correntes de proteção faltando e verificar embuchamento do balancim - (Fazenda São Severino)"
+  },
+  {
     "frota": "64",
     "os": "118032",
     "data": "10/09/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda em trinca na tubagem do escapamento - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5614",
-    "os": "117960",
-    "data": "09/09/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Verificar ventilação do pulverizador não funciona - (Fazenda São Severino)|Parado|"
-  },
-  {
-    "frota": "5613",
-    "os": "117947",
-    "data": "09/09/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar correias traseiras da torre - (Fazenda São Severino)"
   },
   {
     "frota": "5599",
@@ -33,20 +61,6 @@
     "data": "04/09/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Avaliar e substituir barra de direção lado direito e barra de sustentação da grade de proteção, danificadas em colisão ocasionada pelo operador ao adormecer e atingir um poste - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5425",
-    "os": "117631",
-    "data": "02/09/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Trocar rolamento da roda guia L/E quebrado - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5777",
-    "os": "117623",
-    "data": "02/09/2025",
-    "prestador": "nan",
-    "servico": "Efetuar troca do jogo de facas - (Fazenda São Severino)"
   },
   {
     "frota": "225",
@@ -67,7 +81,7 @@
     "os": "117471",
     "data": "29/08/2025",
     "prestador": "nan",
-    "servico": "Verificar roda dianteira L/E com jogo(folga no terminal de direção)  (Fazenda São Severino)"
+    "servico": "Verificar roda dianteira L/E com jogo (folga no terminal de direção)  (Fazenda São Severino)"
   },
   {
     "frota": "165",

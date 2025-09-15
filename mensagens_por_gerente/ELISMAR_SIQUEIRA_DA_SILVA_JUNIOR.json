@@ -1,66 +1,17 @@
 [
   {
+    "frota": "106",
+    "os": "118168",
+    "data": "12/09/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Remover teto quebrado para recuperar - (Fazenda Nova Manhã)"
+  },
+  {
     "frota": "130",
     "os": "118059",
     "data": "10/09/2025",
-    "prestador": "nan",
+    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
     "servico": "Retentor dianteiro estourado (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5005",
-    "os": "117915",
-    "data": "09/09/2025",
-    "prestador": "SIDNEI LUQUES NUNES BORRACHARIA",
-    "servico": "Pneu L/D furado - (Fazenda Nova Manhã) |Parado|"
-  },
-  {
-    "frota": "5129",
-    "os": "117772",
-    "data": "04/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Reduzir altura da torre, avaliar necessidade de troca da correia da turbina e verificar rolamento do eixo da hélice - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5275",
-    "os": "117771",
-    "data": "04/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Reduzir altura da torre - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5129",
-    "os": "117667",
-    "data": "03/09/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Quebra da ponta traseira do eixo cardan de transmissão e rolamento do mesmo roncando - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "94",
-    "os": "117454",
-    "data": "29/08/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar conjunto planetário/redução final da roda dianteira lado direito do trator apresentando saída de limalha de ferro. - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "349",
-    "os": "117259",
-    "data": "26/08/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Confeccionar e instalar proteção para operação na trincheira - (Oficina M.G)"
-  },
-  {
-    "frota": "349",
-    "os": "116978",
-    "data": "20/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisão elétrica - (Oficina)"
-  },
-  {
-    "frota": "349",
-    "os": "116977",
-    "data": "20/08/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Troca de óleo geral"
   },
   {
     "frota": "5288",
@@ -68,13 +19,6 @@
     "data": "19/08/2025",
     "prestador": "DARCI CAPEL & CIA LTDA",
     "servico": "Substituir as duas pontas do eixo cardan de transmissão."
-  },
-  {
-    "frota": "251",
-    "os": "116689",
-    "data": "15/08/2025",
-    "prestador": "JOCAR LTDA",
-    "servico": "Revisar A/C, trocado recentemente condensador de vapor - (Fazenda Nova Manhã)"
   },
   {
     "frota": "5530",
@@ -89,12 +33,5 @@
     "data": "05/08/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Relogio horimetro apagado, verificar possível substituição do painel - (Fazenda Nova Manhã)"
-  },
-  {
-    "frota": "5600",
-    "os": "114212",
-    "data": "14/07/2025",
-    "prestador": "nan",
-    "servico": "Trocar os ramais para distribuição dos bicos do SPE e instalar pistões de abertura do comando abre e fecha - (Fazenda Nova Manhã)"
   }
 ]
