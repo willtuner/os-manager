@@ -11,14 +11,6 @@
     "frota": "252",
     "cd_equipamento": "252",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118245",
-    "data_entrada": "13/09/2025",
-    "servico": "Vazamento nos tuchos do comando comando hidráulico e trocar cabos da VCR - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "252",
-    "cd_equipamento": "252",
-    "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "118243",
     "data_entrada": "13/09/2025",
     "servico": "Verificar cabo e trocar tuchos - Faz São Pedro\nAutorizado Arthur"
@@ -56,27 +48,11 @@
     "servico": "Trocar caixa de filtro quebrada - (Fazenda NSA) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "25",
-    "cd_equipamento": "25",
-    "modelo": "TRATOR VALTRA BF 75 4X4",
-    "os": "117263",
-    "data_entrada": "26/08/2025",
-    "servico": "Revisar freio das cornetas - Faz Minuano\nAutorizado Arthur"
-  },
-  {
     "frota": "119",
     "cd_equipamento": "119",
     "modelo": "TRATOR VALTRA A750F 4X4",
     "os": "115524",
     "data_entrada": "30/07/2025",
     "servico": "Vazamento no sensor de pressão do óleo do motor - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Artrhur"
-  },
-  {
-    "frota": "289",
-    "cd_equipamento": "289",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "114527",
-    "data_entrada": "16/07/2025",
-    "servico": "Avaliar vazamento de óleo na parte frontal do trator - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Arthur"
   }
 ]

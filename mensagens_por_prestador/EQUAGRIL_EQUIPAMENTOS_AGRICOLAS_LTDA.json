@@ -1,43 +1,19 @@
 [
   {
-    "frota": "342",
-    "cd_equipamento": "342",
+    "frota": "341",
+    "cd_equipamento": "341",
     "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "118252",
-    "data_entrada": "13/09/2025",
-    "servico": "Verificar lanterna, não trava lâmpada - Faz São Paulo\nAutorizado Arthur"
+    "os": "118342",
+    "data_entrada": "16/09/2025",
+    "servico": "Verificar vazamento de óleo de hidráulico, aparentemente no retentor da caixa seca - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "320",
-    "cd_equipamento": "320",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "118224",
-    "data_entrada": "12/09/2025",
-    "servico": "Revisão de 900 hrs - (Fazenda SL1)\n- Filtro de diesel\n- Filtro sedimentador\n- Filtro de motor\n- Filtro de hidráulico\n- Óleo de motor\n- Óleo das ponteiras L/E e L/D\nResponsavel Sr. Wilson"
-  },
-  {
-    "frota": "324",
-    "cd_equipamento": "324",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "118139",
-    "data_entrada": "11/09/2025",
-    "servico": "Filtro de diesel\nFiltro Sedmentador\nFiltros de ar interno e externo \nFiltro de hidráulico\nFiltro de óleo de motor \nÓleo de motor\nÓleo das ponteias L/E e L/D\nOleo da transmissão\nVerificar correias do motor e A/C.\nSolicitado Sr. Wilson\nResponsável Sr. Wilson"
-  },
-  {
-    "frota": "342",
-    "cd_equipamento": "342",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "118140",
-    "data_entrada": "11/09/2025",
-    "servico": "Revisão de 600 hrs - (Fazenda São Paulo)\n- Troca de filtro de diesel \n- Troca do filtro Sedimentador\n- Troca do filtro de motor \n- Troca do óleo de motor\n- Troca filtro de hidráulico\n- Troca do óleo das ponteiras L/E e L/D\nResponsavel Sr. Wilson"
-  },
-  {
-    "frota": "315",
-    "cd_equipamento": "315",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "118138",
-    "data_entrada": "11/09/2025",
-    "servico": "Revisão de 1200 Horas (Fazenda São Paulo)\nFiltro de diesel\nFiltro Sedmentador\nFiltros de ar interno e externo \nFiltro de hidráulico\nFiltro de óleo de motor \nÓleo de motor\nÓleo das ponteias L/E e L/D\nOleo da transmissão\nVerificar correias do motor e A/C.\nSolicitado Sr. Wilson\nResponsável Sr. Wilson"
+    "frota": "189",
+    "cd_equipamento": "189",
+    "modelo": "TRATOR NEW HOLAND TL 5.80",
+    "os": "118339",
+    "data_entrada": "16/09/2025",
+    "servico": "Avaliar a direção do trator - Faz São Pedro\nAutorizado Arthur"
   },
   {
     "frota": "324",
@@ -46,13 +22,5 @@
     "os": "117425",
     "data_entrada": "28/08/2025",
     "servico": "Verificar alerta e relogio de combustível não funcionam - (Fazenda SP)\nSolicitado Sr. Arthur \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "348",
-    "cd_equipamento": "348",
-    "modelo": "TRATOR NEW HOLANDTL5.80",
-    "os": "117154",
-    "data_entrada": "26/08/2025",
-    "servico": "Revisão de 300hrs - (Faz. São José)\nLiberado Sr. Wilson"
   }
 ]

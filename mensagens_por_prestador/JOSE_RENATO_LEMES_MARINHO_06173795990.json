@@ -1,11 +1,43 @@
 [
   {
+    "frota": "5579",
+    "cd_equipamento": "5579",
+    "modelo": "TRITURADOR TFI-1600 GTM",
+    "os": "118287",
+    "data_entrada": "15/09/2025",
+    "servico": "Trocar jogo de facas - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5676",
+    "cd_equipamento": "5676",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "118250",
+    "data_entrada": "13/09/2025",
+    "servico": "Sacar parafuso do suporte de fixação do pistão - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "10226",
     "cd_equipamento": "10226",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "118248",
     "data_entrada": "13/09/2025",
     "servico": "Solda fixação do cibié traseiro - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Romes"
+  },
+  {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "118246",
+    "data_entrada": "13/09/2025",
+    "servico": "Pistão da barra apresenta falha: recolhe normalmente, porém não retorna à posição e recuperar suporte do ramal quebrado . - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5425",
+    "cd_equipamento": "5425",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "118182",
+    "data_entrada": "12/09/2025",
+    "servico": "Soldar trincas no chassi da barrinha (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsável Sr. Mauricio"
   },
   {
     "frota": "5631",
@@ -86,14 +118,6 @@
     "os": "118032",
     "data_entrada": "10/09/2025",
     "servico": "Fazer solda em trinca na tubagem do escapamento - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "198",
-    "cd_equipamento": "198",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117754",
-    "data_entrada": "04/09/2025",
-    "servico": "Soldar e colocar parafusos do rabicho - (Fazenda Minuano)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "234",
