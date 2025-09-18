@@ -8,9 +8,11 @@ import random
 from flask import Flask, render_template, request, redirect, session, url_for, flash, send_file
 from flask_sqlalchemy import SQLAlchemy
 from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import A4
-from reportlab.platypus import Paragraph
-from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.pagesizes import A4, landscape
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Table, TableStyle, Spacer
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.lib import colors
+from reportlab.lib.units import cm
 from collections import Counter
 from sqlalchemy.sql import text
 from dateutil.parser import parse
@@ -1073,7 +1075,8 @@ def gerar_relatorio():
         flash('Acesso negado', 'danger')
         return redirect(url_for('login'))
 
-    pdf_path = None
+    json_path = None
+    report_title = None
 
     if request.method == 'POST':
         report_type = request.form.get('report_type')
@@ -1086,20 +1089,16 @@ def gerar_relatorio():
             if not supervisor_file:
                 flash('Nenhum supervisor selecionado.', 'danger')
                 return redirect(url_for('relatorios'))
-
             json_path = os.path.join(MENSAGENS_DIR, supervisor_file)
-            report_title = supervisor_file.replace('.json', '').replace('_', ' ').capitalize()
-            pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+            report_title = supervisor_file.replace('.json', '').replace('_', ' ').title()
 
         elif report_type == 'os_abertas_prestador':
             prestador_file = request.form.get('prestador_file')
             if not prestador_file:
                 flash('Nenhum prestador selecionado.', 'danger')
                 return redirect(url_for('relatorios'))
-
             json_path = os.path.join(MENSAGENS_PRESTADOR_DIR, prestador_file)
-            report_title = prestador_file.replace('.json', '').replace('_', ' ').capitalize()
-            pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+            report_title = prestador_file.replace('.json', '').replace('_', ' ').title()
 
         else:
             flash('Tipo de relatório inválido.', 'danger')
@@ -1115,7 +1114,7 @@ def gerar_relatorio():
         if username.lower() in ['arthur.sousa', 'mauricio.jose']:
             manager_name = username.split('.')[0]
             json_path = os.path.join(JSON_DIR, f'relatorio_{manager_name}.json')
-            report_title = manager_name.capitalize()
+            report_title = manager_name.title()
         else:
             # Lógica para outros supervisores
             json_path = None
@@ -1123,23 +1122,44 @@ def gerar_relatorio():
             for nome_arquivo_dir in os.listdir(MENSAGENS_DIR):
                 if nome_arquivo_dir.upper().startswith(base_nome_gerente) and nome_arquivo_dir.lower().endswith(".json"):
                     json_path = os.path.join(MENSAGENS_DIR, nome_arquivo_dir)
+                    report_title = nome_arquivo_dir.replace('.json', '').replace('_', ' ').title()
                     break
 
             if not json_path:
                 flash(f'Arquivo de relatório para {username} não encontrado.', 'danger')
                 return redirect(url_for('admin_panel'))
-            report_title = username.replace('.', ' ').capitalize()
 
-        pdf_path = gerar_relatorio_os_abertas(json_path, report_title)
+    if not json_path:
+        flash('Não foi possível determinar o arquivo de dados para o relatório.', 'danger')
+        return redirect(url_for('relatorios'))
 
-    if pdf_path:
+    # --- Lógica Unificada de Geração de PDF ---
+    if not os.path.exists(json_path):
+        flash(f"Arquivo de dados '{os.path.basename(json_path)}' não encontrado.", 'danger')
+        return redirect(url_for('relatorios'))
+
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+    except Exception as e:
+        flash(f"Erro ao ler ou processar o arquivo de dados: {e}", 'danger')
+        logger.error(f"Erro ao ler JSON {json_path}: {e}", exc_info=True)
+        return redirect(url_for('relatorios'))
+
+    safe_title = re.sub(r'[^a-zA-Z0-9]', '_', report_title)
+    file_name = f"relatorio_{safe_title.lower()}_{datetime.now(saopaulo_tz).strftime('%Y%m%d%H%M%S')}.pdf"
+    output_path = os.path.join(BASE_DIR, file_name)
+
+    pdf_path = gerar_relatorio_os_abertas_compacto(data, report_title, output_path)
+
+    if pdf_path and os.path.exists(pdf_path):
         try:
             return send_file(pdf_path, as_attachment=True, download_name=os.path.basename(pdf_path))
         finally:
             if os.path.exists(pdf_path):
                 os.remove(pdf_path)
     else:
-        flash('Não foi possível gerar o relatório.', 'danger')
+        flash(f'Não foi possível gerar o relatório para "{report_title}". Pode ser que não haja dados em aberto.', 'warning')
         return redirect(url_for('relatorios'))
 
 # ##########################################################################
@@ -1412,81 +1432,138 @@ def exportar_os_finalizadas():
             logger.info(f"PDF {caminho_pdf_salvo} gerado.")
 
 
-def gerar_relatorio_os_abertas(json_path, report_title):
+# ##########################################################################
+# NOVA FUNÇÃO DE GERAÇÃO DE PDF COMPACTO (BASEADA EM gerador_relatorio.py)
+# ##########################################################################
+def create_pdf_styles():
+    """Cria e retorna os estilos de parágrafo para o PDF."""
+    styles = getSampleStyleSheet()
+    title_style = ParagraphStyle(
+        'TitleCustom',
+        parent=styles['Title'],
+        fontSize=18,
+        leading=22,
+        alignment=1,  # centralizado
+        spaceAfter=6
+    )
+    subtitle_style = ParagraphStyle(
+        'SubtitleCustom',
+        parent=styles['Normal'],
+        fontSize=10,
+        leading=12,
+        textColor=colors.gray,
+        alignment=1,
+        spaceAfter=12
+    )
+    header_style = ParagraphStyle(
+        'HeaderCell',
+        parent=styles['Normal'],
+        fontSize=8,
+        leading=10,
+        textColor=colors.white,
+        alignment=1,
+        padding=2
+    )
+    cell_style = ParagraphStyle(
+        'Cell',
+        parent=styles['Normal'],
+        fontSize=7.5,
+        leading=9.5,
+    )
+    return title_style, subtitle_style, header_style, cell_style
+
+def gerar_relatorio_os_abertas_compacto(data, report_title, output_path):
     """
-    Gera um relatório em PDF de OS em aberto a partir de um arquivo JSON.
+    Gera o relatório em PDF de forma compacta e organizada.
     """
-    if not os.path.exists(json_path):
+    if not data:
+        logger.warning(f"Tentativa de gerar relatório para '{report_title}' sem dados.")
         return None
+
+    doc = SimpleDocTemplate(
+        output_path,
+        pagesize=landscape(A4),
+        rightMargin=1*cm, leftMargin=1*cm, topMargin=1*cm, bottomMargin=1.5*cm
+    )
+
+    elements = []
+    title_style, subtitle_style, header_style, cell_style = create_pdf_styles()
+
+    today = datetime.now(saopaulo_tz).strftime("%d/%m/%Y %H:%M")
+
+    # --- Cabeçalho do Documento ---
+    elements.append(Paragraph(f"Relatório de OS em Aberto: {report_title}", title_style))
+    elements.append(Paragraph(f"Gerado em {today} • Total de OS: {len(data)}", subtitle_style))
+    elements.append(Spacer(1, 6))
+
+    # --- Tabela ---
+    headers = ["OS", "Frota", "Data", "Dias", "Prestador", "Serviço"]
+    header_paragraphs = [Paragraph(h, header_style) for h in headers]
+    rows = [header_paragraphs]
+
+    # Ordenar os dados pela data de entrada
+    def get_date(item):
+        date_str = item.get("data") or item.get("Data") or item.get("data_entrada") or ""
+        for fmt in ("%d/%m/%Y", "%Y-%m-%d", "%d-%m-%Y", "%d/%m/%y"):
+            try:
+                return datetime.strptime(date_str, fmt)
+            except (ValueError, TypeError):
+                continue
+        return datetime.min # Retorna uma data mínima para itens sem data ou com formato inválido
+
+    sorted_data = sorted(data, key=get_date)
+
+    for item in sorted_data:
+        item_lower = {k.lower(): v for k, v in item.items()}
+        row = [
+            Paragraph(str(item_lower.get("os", "")), cell_style),
+            Paragraph(str(item_lower.get("frota", "")), cell_style),
+            Paragraph(str(item_lower.get("data", item_lower.get("data_entrada", ""))), cell_style),
+            Paragraph(str(item_lower.get("dias", "")), cell_style),
+            Paragraph(str(item_lower.get("prestador", "")).replace("nan", "—"), cell_style),
+            Paragraph(str(item_lower.get("servico", item_lower.get("observacao", ""))), cell_style),
+        ]
+        rows.append(row)
+
+    col_widths = [2*cm, 2.5*cm, 2.5*cm, 1.5*cm, 5*cm, 13.2*cm]
+    table = Table(rows, colWidths=col_widths, repeatRows=1)
+
+    table_style = TableStyle([
+        ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#0F172A")),
+        ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
+        ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+        ("ALIGN", (0, 0), (-1, -1), "LEFT"),
+        ("VALIGN", (0, 0), (-1, -1), "TOP"),
+        ("GRID", (0, 0), (-1, -1), 0.25, colors.HexColor("#E5E7EB")),
+        ("PADDING", (0,0), (-1,-1), 4),
+    ])
+
+    for i in range(1, len(rows)):
+        bg = colors.HexColor("#F8FAFC") if i % 2 != 0 else colors.white
+        table_style.add("BACKGROUND", (0, i), (-1, i), bg)
+
+    table.setStyle(table_style)
+    elements.append(table)
+
+    def on_page(canvas, doc):
+        canvas.saveState()
+        footer_text = f"Página {doc.page}"
+        canvas.setFont("Helvetica", 8)
+        canvas.setFillColor(colors.gray)
+        canvas.drawRightString(landscape(A4)[0] - doc.rightMargin, 0.75*cm, footer_text)
+        canvas.restoreState()
 
     try:
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-    except (json.JSONDecodeError, UnicodeDecodeError) as e:
-        logger.error(f"Erro ao ler ou decodificar o arquivo JSON {json_path}: {e}")
+        doc.build(elements, onFirstPage=on_page, onLaterPages=on_page)
+        logger.info(f"PDF compacto gerado com sucesso em: {output_path}")
+        return output_path
+    except Exception as e:
+        logger.error(f"Ocorreu um erro ao gerar o PDF compacto: {e}", exc_info=True)
         return None
 
-    if not data: # Se o JSON estiver vazio
-        return None
-
-    file_name = f"relatorio_{report_title.replace(' ', '_').lower()}.pdf"
-    path_name = os.path.join(BASE_DIR, file_name)
-
-    c = canvas.Canvas(path_name, pagesize=A4)
-    width, height = A4
-
-    styles = getSampleStyleSheet()
-    style_normal = styles['Normal']
-    style_normal.fontName = 'Helvetica'
-    style_normal.fontSize = 8
-
-    # Cabeçalho
-    c.setFont("Helvetica-Bold", 16)
-    c.drawCentredString(width / 2, height - 50, f"Relatório de OS em Aberto - {report_title}")
-
-    # Títulos da Tabela - Usando um conjunto fixo para consistência
-    y_position = height - 100
-    headers = ["OS", "Frota", "Modelo", "Data Entrada", "Solicitante", "Prestador"]
-    x_positions = [40, 80, 200, 320, 400, 480]
-
-    def draw_headers(canv, y_pos):
-        canv.setFont("Helvetica-Bold", 10)
-        for i, header in enumerate(headers):
-            canv.drawString(x_positions[i], y_pos, header)
-        y_pos -= 5
-        canv.line(40, y_pos, width - 40, y_pos)
-        return y_pos - 15
-
-    y_position = draw_headers(c, y_position)
-
-    # Conteúdo da Tabela
-    for item in data:
-        servico_text = f"<b>Serviço:</b> {item.get('servico', item.get('Servico', ''))}"
-        p = Paragraph(servico_text, style_normal)
-        p_width, p_height = p.wrapOn(c, width - 80, 100)
-
-        # Verificar se há espaço suficiente para o item inteiro
-        required_height = 20 + p_height + 10 # Altura da linha de dados + altura do parágrafo + espaçamento
-        if y_position - required_height < 50:
-            c.showPage()
-            y_position = height - 100
-            y_position = draw_headers(c, y_position)
-
-        c.setFont("Helvetica", 8)
-        c.drawString(x_positions[0], y_position, str(item.get("os", "")))
-        c.drawString(x_positions[1], y_position, str(item.get("frota", "")))
-        c.drawString(x_positions[2], y_position, str(item.get("modelo", "")))
-        c.drawString(x_positions[3], y_position, str(item.get("data_entrada", item.get("data", ""))))
-        c.drawString(x_positions[4], y_position, str(item.get("solicitante", "")))
-        c.drawString(x_positions[5], y_position, str(item.get("prestador", "")))
-
-        y_position -= 20
-
-        p.drawOn(c, 40, y_position - p_height)
-        y_position -= (p_height + 10)
-
-    c.save()
-    return path_name
+# ##########################################################################
+# FIM DA NOVA FUNÇÃO
+# ##########################################################################
 
 @app.route('/logout')
 def logout():
