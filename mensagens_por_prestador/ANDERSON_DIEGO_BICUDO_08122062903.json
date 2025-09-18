@@ -1,19 +1,35 @@
 [
   {
-    "frota": "247",
-    "cd_equipamento": "247",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "118247",
-    "data_entrada": "13/09/2025",
-    "servico": "Terminal da barra de direção L/D com parafuso expando - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Arthur"
+    "frota": "283",
+    "cd_equipamento": "283",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118482",
+    "data_entrada": "18/09/2025",
+    "servico": "Verificar embreagem - Faz Pedra Verde\nAutorizado Arthur"
   },
   {
-    "frota": "252",
-    "cd_equipamento": "252",
+    "frota": "264",
+    "cd_equipamento": "264",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118243",
-    "data_entrada": "13/09/2025",
-    "servico": "Verificar cabo e trocar tuchos - Faz São Pedro\nAutorizado Arthur"
+    "os": "118421",
+    "data_entrada": "17/09/2025",
+    "servico": "Vazamento de óleo na tampa da caixa - (Faz. São Pedro)\nSolicitado Sr. Josimar\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "25",
+    "cd_equipamento": "25",
+    "modelo": "TRATOR VALTRA BF 75 4X4",
+    "os": "118408",
+    "data_entrada": "17/09/2025",
+    "servico": "Revisar diferencial\nTirar vazamento bomba de direção\nConferir níveis de óleo trator\nLubrificar trator\nTrocar engate rápidos\nVerificar folga na balança\nFazer testes de freio - (Oficina)\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "267",
+    "cd_equipamento": "267",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118407",
+    "data_entrada": "17/09/2025",
+    "servico": "Troca de óleo de 400 hrs\nTroca da embreagem\nTroca do retentor do virabrequim \nTroca do retentor da transmissão\nTroca da junta do cárter\nColocar travas da grade frontal e bateria\nTroca do eixo do terminal - (Santa Izabel/Oficina)\nResponsavel Sr. Carlos Aparecido"
   },
   {
     "frota": "125",
@@ -22,30 +38,6 @@
     "os": "117907",
     "data_entrada": "08/09/2025",
     "servico": "Lavar tanque\n\nAbrir transmissão e reparar vazamento\n\nTrocar engate rápido\n\nEliminar folga do eixo dianteiro\n\nTrocar reparo do pistão de direção\n\nTrocar pistão da porta\n\nRetirar para-lama para revisão - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "198",
-    "cd_equipamento": "198",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117880",
-    "data_entrada": "08/09/2025",
-    "servico": "Verificar trator travando o parker - (Fazenda Estrela)\nSolicitado Sr. Arthur \nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "165",
-    "cd_equipamento": "165",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "117466",
-    "data_entrada": "29/08/2025",
-    "servico": "Vazamento de óleo no retentor do pistão do eixo dianteiro  - (Fazenda Estrela)_\nSolicitado Sr. Danilo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10224",
-    "cd_equipamento": "10224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117337",
-    "data_entrada": "27/08/2025",
-    "servico": "Trocar caixa de filtro quebrada - (Fazenda NSA) |Parado|\nSolicitado Sr. Rennan\nResponsavel Sr. Arthur"
   },
   {
     "frota": "119",

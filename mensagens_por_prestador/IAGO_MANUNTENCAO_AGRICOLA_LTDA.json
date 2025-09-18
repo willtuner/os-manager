@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5803",
+    "cd_equipamento": "5803",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "118477",
+    "data_entrada": "18/09/2025",
+    "servico": "Vazamento de produto no regulador de pressão - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5597",
+    "cd_equipamento": "5597",
+    "modelo": "PULVERIZADOR 2000 LT FMC",
+    "os": "118402",
+    "data_entrada": "17/09/2025",
+    "servico": "Vazamento de produto na conexão do nível - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5542",
+    "cd_equipamento": "5542",
+    "modelo": "DISTRIBUIDOR FARTUS 8.0 GRANEL",
+    "os": "118401",
+    "data_entrada": "17/09/2025",
+    "servico": "Substituir esteira lateral - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5061",
+    "cd_equipamento": "5061",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118393",
+    "data_entrada": "17/09/2025",
+    "servico": "Verificar enbuchamentos das canecas estouradas - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinícius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5599",
+    "cd_equipamento": "5599",
+    "modelo": "PREMIX PRIME 2T 2000",
+    "os": "118392",
+    "data_entrada": "17/09/2025",
+    "servico": "Verificar rolamento do macaco do pezinho de apoio travando - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5355",
     "cd_equipamento": "5355",
     "modelo": "ATOMIZADOR JACTO 4000 LT",
@@ -16,22 +56,6 @@
     "servico": "Perca da roldana de suporte da asa L/D - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5061",
-    "cd_equipamento": "5061",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "118296",
-    "data_entrada": "15/09/2025",
-    "servico": "Trocar jogo de correias quebradas - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5352",
-    "cd_equipamento": "5352",
-    "modelo": "ADUBADEIRA DCCO 10500 S-0114",
-    "os": "118317",
-    "data_entrada": "15/09/2025",
-    "servico": "Retirar redutor para revisão e instalar outro reserva para o equipamento não parar.\nFazenda Biscuí Pecuária\nSolicitado Sr. Gabriel\nResponsável Sr. Maurício"
-  },
-  {
     "frota": "5599",
     "cd_equipamento": "5599",
     "modelo": "PREMIX PRIME 2T 2000",
@@ -40,27 +64,11 @@
     "servico": "Verificar vazamento no selo mecânico da bomba - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5597",
-    "cd_equipamento": "5597",
+    "frota": "5336",
+    "cd_equipamento": "5336",
     "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "118164",
-    "data_entrada": "12/09/2025",
-    "servico": "Instalar capa de proteção do rolamento da roda L/E e verificar possíveis danos ou desgaste no rolamento, substituindo se necessário. - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsvel Sr. Mauricio"
-  },
-  {
-    "frota": "5355",
-    "cd_equipamento": "5355",
-    "modelo": "ATOMIZADOR JACTO 4000 LT",
-    "os": "118163",
-    "data_entrada": "12/09/2025",
-    "servico": "Vazamento no agitador de calda - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio\nP.S Verificar possível garantia. Verificado recentemente 08/09 - Hiago Manutenções"
-  },
-  {
-    "frota": "5418",
-    "cd_equipamento": "5418",
-    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "118090",
-    "data_entrada": "11/09/2025",
-    "servico": "Verificar vazamento no retentor da bomba - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
+    "os": "117951",
+    "data_entrada": "09/09/2025",
+    "servico": "Vazamento na bomba - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   }
 ]

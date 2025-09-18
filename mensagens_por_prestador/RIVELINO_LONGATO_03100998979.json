@@ -1,34 +1,74 @@
 [
   {
-    "frota": "103",
-    "cd_equipamento": "103",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "118349",
-    "data_entrada": "16/09/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda SP)|Parado|\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+    "frota": "132",
+    "cd_equipamento": "132",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "118512",
+    "data_entrada": "18/09/2025",
+    "servico": "Desmontar pneu traseiro L/E para fazer serviço de solda - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "77",
-    "cd_equipamento": "77",
+    "frota": "5460",
+    "cd_equipamento": "5460",
+    "modelo": "TANQUE DE AGUA 4000 LT",
+    "os": "118508",
+    "data_entrada": "18/09/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda Estrela)|Parado|\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5213",
+    "cd_equipamento": "5213",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "118507",
+    "data_entrada": "18/09/2025",
+    "servico": "Pneu traseiro L/E vazando pelo bico - (Fazenda Alvorada)|Parado\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "234",
+    "cd_equipamento": "234",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "118488",
+    "data_entrada": "18/09/2025",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "83",
+    "cd_equipamento": "83",
     "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "118343",
+    "os": "118486",
+    "data_entrada": "18/09/2025",
+    "servico": "Pneu L/D dianteiro furado - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "117",
+    "cd_equipamento": "117",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118415",
+    "data_entrada": "17/09/2025",
+    "servico": "Emparelhar pneus traseiros - (Oficina)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "25",
+    "cd_equipamento": "25",
+    "modelo": "TRATOR VALTRA BF 75 4X4",
+    "os": "118410",
+    "data_entrada": "17/09/2025",
+    "servico": "Calibrar pneus - - (Oficina)\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "304",
+    "cd_equipamento": "304",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118389",
+    "data_entrada": "17/09/2025",
+    "servico": "Pneu traseiro L/D furado - (Fazenda Alvorada)\nSolicitado Sr. Natalino\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5348",
+    "cd_equipamento": "5348",
+    "modelo": "ADUBADEIRA DCA2 7500 S-0118",
+    "os": "118384",
     "data_entrada": "16/09/2025",
-    "servico": "Pneu dianteiro L/E furado - (Fazenda Santa Luiza)|Parado|\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5570",
-    "cd_equipamento": "5570",
-    "modelo": "CARRETA TRANSBORDO GTM",
-    "os": "118325",
-    "data_entrada": "15/09/2025",
-    "servico": "Pneu L/E furado - (Fazenda Minuano)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5001",
-    "cd_equipamento": "5001",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "118301",
-    "data_entrada": "15/09/2025",
-    "servico": "Pneu L/E furado - (Fazenda Terra Branca)|Parado|\nSolicitado Sr. João Victor\nResponsavel Sr. Mauricio"
+    "servico": "Pneu L/D furado - (Faz. Casa Branca)\nSolicitado Sr. João\nResponsável Sr. Mauricio"
   }
 ]

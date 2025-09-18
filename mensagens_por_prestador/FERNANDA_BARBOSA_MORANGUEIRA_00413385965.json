@@ -1,5 +1,29 @@
 [
   {
+    "frota": "227",
+    "cd_equipamento": "227",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "118436",
+    "data_entrada": "17/09/2025",
+    "servico": "Quebra do suporte do banco - (Fazenda São Severino)\nSolicitado Sr. Cassio \nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "270",
+    "cd_equipamento": "270",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118426",
+    "data_entrada": "17/09/2025",
+    "servico": "Arrumar borracha de vedação da janela e porta - (Faz. São Paulo)\nSolicitado Sr. Paulo\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "117",
+    "cd_equipamento": "117",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118413",
+    "data_entrada": "17/09/2025",
+    "servico": "Reparo na grade frontal e capô trator - (Oficina)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
     "frota": "137",
     "cd_equipamento": "137",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
@@ -22,13 +46,5 @@
     "os": "117261",
     "data_entrada": "26/08/2025",
     "servico": "Consertar banco - (Oficina)\nSolicitado Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "250",
-    "cd_equipamento": "250",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "115864",
-    "data_entrada": "04/08/2025",
-    "servico": "Trocar borrachas de vedação da porta e banco danificado -  (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
   }
 ]

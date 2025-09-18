@@ -1,11 +1,67 @@
 [
   {
-    "frota": "126",
-    "cd_equipamento": "126",
-    "modelo": "GATOR JOHNN DEERE",
-    "os": "118353",
-    "data_entrada": "16/09/2025",
-    "servico": "Revisar horimetro e verificar correria do alternador - Faz São Paulo\nAutorizado Arthur"
+    "frota": "250",
+    "cd_equipamento": "250",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "118483",
+    "data_entrada": "18/09/2025",
+    "servico": "O trator apresenta emissão de fumaça pelo difusor do ar-condicionado, indicando possível falha elétrica ou curto no sistema de climatização. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "86",
+    "cd_equipamento": "86",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "118474",
+    "data_entrada": "18/09/2025",
+    "servico": "Verificar trator sem partida - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "78",
+    "cd_equipamento": "78",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "118439",
+    "data_entrada": "17/09/2025",
+    "servico": "Verificar trator sem partida - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "10120",
+    "cd_equipamento": "10120",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118420",
+    "data_entrada": "17/09/2025",
+    "servico": "Rele da lanterna dianteira queimada - (Faz. São Pedro)\nSolicitado Sr. Josimar\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "98",
+    "cd_equipamento": "98",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "118418",
+    "data_entrada": "17/09/2025",
+    "servico": "Verificar causa do inchaço da bateria e instalar bateria nova compatível, testando sistema de carga (alternador/regulador) para evitar reincidência. - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "117",
+    "cd_equipamento": "117",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118414",
+    "data_entrada": "17/09/2025",
+    "servico": "Verificar alternador - (Oficina)\nResponsavel Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "25",
+    "cd_equipamento": "25",
+    "modelo": "TRATOR VALTRA BF 75 4X4",
+    "os": "118409",
+    "data_entrada": "17/09/2025",
+    "servico": "Revisar sistema eletrico - (Oficina)\nSolicitado Sr. Carlos Aparecido"
+  },
+  {
+    "frota": "136",
+    "cd_equipamento": "136",
+    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+    "os": "118390",
+    "data_entrada": "17/09/2025",
+    "servico": "Verificar cibiés apagaram  e não ascendem mais - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
   },
   {
     "frota": "197",
@@ -16,22 +72,6 @@
     "servico": "Verificar trator sem partida, motor de partida estalando - (Fazenda Alvorada)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "504",
-    "cd_equipamento": "504",
-    "modelo": "ONIBUS",
-    "os": "118345",
-    "data_entrada": "16/09/2025",
-    "servico": "Revisar sistema eletrico do onibus - Oficina\nAutorizado Arthur"
-  },
-  {
-    "frota": "195",
-    "cd_equipamento": "195",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118311",
-    "data_entrada": "15/09/2025",
-    "servico": "Verificar cibiés não ascendem - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "137",
     "cd_equipamento": "137",
     "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
@@ -40,139 +80,11 @@
     "servico": "Revisar chicote eletrico, luzes do painel não funciona e indicador de restrição de ar - (Oficina MG)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   },
   {
-    "frota": "260",
-    "cd_equipamento": "260",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118244",
-    "data_entrada": "13/09/2025",
-    "servico": "Trocar terminais com porta fusível do tanque de pulverização (Alma)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "195",
-    "cd_equipamento": "195",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118177",
-    "data_entrada": "12/09/2025",
-    "servico": "Verificar cibiés não ascendem - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10221",
-    "cd_equipamento": "10221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118158",
-    "data_entrada": "12/09/2025",
-    "servico": "Verificar curto na caixa de fusíveis - (Fazenda Minuano)|Parado|\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10226",
-    "cd_equipamento": "10226",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118109",
-    "data_entrada": "11/09/2025",
-    "servico": "Verificar luzes do alerta não funciona - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "142",
-    "cd_equipamento": "142",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "118021",
-    "data_entrada": "10/09/2025",
-    "servico": "Revisar sistema eletrico - Faz Nova Manha(Oficina Cicero)\nAutorizado Arthur"
-  },
-  {
-    "frota": "252",
-    "cd_equipamento": "252",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118011",
-    "data_entrada": "09/09/2025",
-    "servico": "Substituir sensor da TDP  - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "135",
-    "cd_equipamento": "135",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "117930",
-    "data_entrada": "09/09/2025",
-    "servico": "Verificar relógio horimetro não funciona - (Fazenda Biscui)\nSolicitado Sr. Geovane \nResponsavel  Sr. Arthur"
-  },
-  {
-    "frota": "5599",
-    "cd_equipamento": "5599",
-    "modelo": "PREMIX PRIME 2T 2000",
-    "os": "117865",
-    "data_entrada": "08/09/2025",
-    "servico": "Revisar chicote eletrico do pré-mix - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "197",
-    "cd_equipamento": "197",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117734",
-    "data_entrada": "04/09/2025",
-    "servico": "Revisar sinalização - (Fazenda São Severino) \nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "522",
-    "cd_equipamento": "522",
-    "modelo": "MOTOR VERMEL IRRIGACAO MB1935",
-    "os": "117674",
-    "data_entrada": "03/09/2025",
-    "servico": "Verificar equipamento sem partida, já trocado as baterias porem continua sem ignição - (Fazenda São Paulo)\nSolicitado Sr. Zylton \nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "125",
     "cd_equipamento": "125",
     "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
     "os": "117618",
     "data_entrada": "02/09/2025",
     "servico": "Revisão elétrica completa - (Oficina)\nSolicitado Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "140",
-    "cd_equipamento": "140",
-    "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
-    "os": "117590",
-    "data_entrada": "01/09/2025",
-    "servico": "Verificar sistema eletrico - Faz Úrsula\nAutorizado Arthur"
-  },
-  {
-    "frota": "138",
-    "cd_equipamento": "138",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "117462",
-    "data_entrada": "29/08/2025",
-    "servico": "Verificar sirene de ré não funciona - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "137",
-    "cd_equipamento": "137",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "117461",
-    "data_entrada": "29/08/2025",
-    "servico": "Verificar sistema eletrico, trator deu pane e não ascende nada. Verificar motor de partida pesado - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Artrhur"
-  },
-  {
-    "frota": "43",
-    "cd_equipamento": "43",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "116555",
-    "data_entrada": "13/08/2025",
-    "servico": "Revisão do sistema eletrico do trator - Oficina OMC\nAutorizado Arthur"
-  },
-  {
-    "frota": "165",
-    "cd_equipamento": "165",
-    "modelo": "TRATOR JOHN DEERE 6415 4X4",
-    "os": "116337",
-    "data_entrada": "08/08/2025",
-    "servico": "\"Verificar cibiés de teto que não acendem. Operador já verificou conectores, fusíveis e demais componentes básicos. - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "70",
-    "cd_equipamento": "70",
-    "modelo": "TRATOR MASSEY FERGUSON 4275/4",
-    "os": "116048",
-    "data_entrada": "05/08/2025",
-    "servico": "Relogio horimetro apagado, verificar possível substituição do painel - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
   }
 ]

@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5760",
+    "cd_equipamento": "5760",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "118442",
+    "data_entrada": "17/09/2025",
+    "servico": "Arrumar regulador de pressão - (Faz. São Pedro)\nSolicitado Sr. Romes\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5133",
+    "cd_equipamento": "5133",
+    "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+    "os": "118404",
+    "data_entrada": "17/09/2025",
+    "servico": "Verificar folga na polia - (Fazenda Pedra Verde)\nSolicitado Sr. Cleber \nResponsavel Sr. Altieres"
+  },
+  {
+    "frota": "5661",
+    "cd_equipamento": "5661",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "118376",
+    "data_entrada": "16/09/2025",
+    "servico": "Rolamento da turbina estourado - (Faz. Pedra Verde)\nSolicitado Sr. Cleber\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5710",
     "cd_equipamento": "5710",
     "modelo": "TRITURADOR ROADMASTER 1902-S",
@@ -8,28 +32,12 @@
     "servico": "Quebra dos parafusos do rolete - (Fazenda Pedra Verde)|Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5118",
-    "cd_equipamento": "5118",
-    "modelo": "TANQUE DE AGUA 4000 LT",
-    "os": "118297",
-    "data_entrada": "15/09/2025",
-    "servico": "Quebra da bucha que segura os braços da direção do tanque - (Fazenda Pedra Verde) |Parado|\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5188",
     "cd_equipamento": "5188",
     "modelo": "PULVERIZADOR 600 LT MONTANA",
     "os": "118293",
     "data_entrada": "15/09/2025",
     "servico": "Identificada ruptura no duto flexível de ar da turbina (jatão), ocasionando perda de pressão e comprometendo a eficiência da pulverização - (Fazenda São Pedro)|Parado|\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5615",
-    "cd_equipamento": "5615",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "118251",
-    "data_entrada": "13/09/2025",
-    "servico": "Verificar agitador de calda não funciona - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5028",
