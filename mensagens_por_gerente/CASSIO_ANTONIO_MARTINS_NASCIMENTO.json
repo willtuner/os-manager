@@ -1,5 +1,54 @@
 [
   {
+    "frota": "5175",
+    "os": "118490",
+    "data": "18/09/2025",
+    "prestador": "nan",
+    "servico": "Fazer solda em trinca na estrutura do tanque - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5599",
+    "os": "118489",
+    "data": "18/09/2025",
+    "prestador": "nan",
+    "servico": "Fazer solda em trinca no suporte da bateria - (Fazenda São Severino)"
+  },
+  {
+    "frota": "234",
+    "os": "118488",
+    "data": "18/09/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu dianteiro L/D furado - (Fazenda São Severino)"
+  },
+  {
+    "frota": "227",
+    "os": "118436",
+    "data": "17/09/2025",
+    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
+    "servico": "Quebra do suporte do banco - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5084",
+    "os": "118395",
+    "data": "17/09/2025",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
+    "servico": "Instalar corote de água - (Fazenda São Severino)"
+  },
+  {
+    "frota": "5599",
+    "os": "118392",
+    "data": "17/09/2025",
+    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+    "servico": "Verificar rolamento do macaco do pezinho de apoio travando - (Fazenda São Severino)"
+  },
+  {
+    "frota": "227",
+    "os": "118391",
+    "data": "17/09/2025",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
+    "servico": "Verificar trator perdendo rotação, já trocado filtros de diesel e não resolveu - (Fazenda São Severino)"
+  },
+  {
     "frota": "5425",
     "os": "118352",
     "data": "16/09/2025",
@@ -7,94 +56,10 @@
     "servico": "Fazer embuchamento da roda guia da barrinha sem frota identificada."
   },
   {
-    "frota": "5660",
-    "os": "118291",
-    "data": "15/09/2025",
-    "prestador": "nan",
-    "servico": "Verificar caixa de comando para abertura dos  ramais não funciona - (Fazenda São Severino)"
-  },
-  {
     "frota": "5599",
     "os": "118249",
     "data": "13/09/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Verificar vazamento no selo mecânico da bomba - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5425",
-    "os": "118182",
-    "data": "12/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar trincas no chassi da barrinha (Fazenda São Severino)"
-  },
-  {
-    "frota": "5631",
-    "os": "118179",
-    "data": "12/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar suporte para instalar pé de apoio - (Fazenda Úrsula)"
-  },
-  {
-    "frota": "5612",
-    "os": "118178",
-    "data": "12/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Soldar trinca no suporte da caixa incorporadora - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5569",
-    "os": "118175",
-    "data": "12/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Retentor do distribuidor triplo estourado, colocar correntes de proteção faltando e verificar embuchamento do balancim - (Fazenda São Severino)"
-  },
-  {
-    "frota": "64",
-    "os": "118032",
-    "data": "10/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Fazer solda em trinca na tubagem do escapamento - (Fazenda São Severino)"
-  },
-  {
-    "frota": "5599",
-    "os": "117865",
-    "data": "08/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar chicote eletrico do pré-mix - (Fazenda São Severino)"
-  },
-  {
-    "frota": "234",
-    "os": "117751",
-    "data": "04/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Avaliar e substituir barra de direção lado direito e barra de sustentação da grade de proteção, danificadas em colisão ocasionada pelo operador ao adormecer e atingir um poste - (Fazenda São Severino)"
-  },
-  {
-    "frota": "225",
-    "os": "117574",
-    "data": "01/09/2025",
-    "prestador": "nan",
-    "servico": "Folga nos terminais de direção - (Fazenda São Severino)"
-  },
-  {
-    "frota": "227",
-    "os": "117550",
-    "data": "01/09/2025",
-    "prestador": "nan",
-    "servico": "Folga nos terminais de direção - (Fazenda São Severino)"
-  },
-  {
-    "frota": "228",
-    "os": "117471",
-    "data": "29/08/2025",
-    "prestador": "nan",
-    "servico": "Verificar roda dianteira L/E com jogo (folga no terminal de direção)  (Fazenda São Severino)"
-  },
-  {
-    "frota": "165",
-    "os": "116337",
-    "data": "08/08/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "\"Verificar cibiés de teto que não acendem. Operador já verificou conectores, fusíveis e demais componentes básicos. - (Fazenda São Severino)"
   }
 ]

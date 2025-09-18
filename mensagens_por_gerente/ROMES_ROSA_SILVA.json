@@ -1,17 +1,17 @@
 [
   {
-    "frota": "5760",
-    "os": "118357",
-    "data": "16/09/2025",
+    "frota": "5615",
+    "os": "118485",
+    "data": "18/09/2025",
     "prestador": "nan",
-    "servico": "Verificar sistema eletrico da abertura do pistão, verificar bobina queimada - (Fazenda São Pedro)"
+    "servico": "Verificar vazamento de óleo na bomba - (Fazenda São Pedro)"
   },
   {
-    "frota": "195",
-    "os": "118311",
-    "data": "15/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar cibiés não ascendem - (Fazenda São Pedro)"
+    "frota": "5760",
+    "os": "118442",
+    "data": "17/09/2025",
+    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
+    "servico": "Arrumar regulador de pressão - (Faz. São Pedro)"
   },
   {
     "frota": "5188",
@@ -21,66 +21,10 @@
     "servico": "Identificada ruptura no duto flexível de ar da turbina (jatão), ocasionando perda de pressão e comprometendo a eficiência da pulverização - (Fazenda São Pedro)|Parado|"
   },
   {
-    "frota": "5615",
-    "os": "118251",
-    "data": "13/09/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar agitador de calda não funciona - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5676",
-    "os": "118250",
-    "data": "13/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Sacar parafuso do suporte de fixação do pistão - (Fazenda São Pedro)"
-  },
-  {
     "frota": "10226",
     "os": "118248",
     "data": "13/09/2025",
     "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Solda fixação do cibié traseiro - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "5760",
-    "os": "118246",
-    "data": "13/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Pistão da barra apresenta falha: recolhe normalmente, porém não retorna à posição e recuperar suporte do ramal quebrado . - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "260",
-    "os": "118244",
-    "data": "13/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Trocar terminais com porta fusível do tanque de pulverização (Alma)"
-  },
-  {
-    "frota": "252",
-    "os": "118243",
-    "data": "13/09/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Verificar cabo e trocar tuchos - Faz São Pedro"
-  },
-  {
-    "frota": "10226",
-    "os": "118109",
-    "data": "11/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Verificar luzes do alerta não funciona - (Fazenda São Pedro)"
-  },
-  {
-    "frota": "117",
-    "os": "118062",
-    "data": "10/09/2025",
-    "prestador": "OMC MANUTENCAO DE MAQUINAS AGRICOLAS LT",
-    "servico": "Retirar vazamento da junta do carter (Fazenda São Pedro)"
-  },
-  {
-    "frota": "252",
-    "os": "118011",
-    "data": "09/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Substituir sensor da TDP  - (Fazenda São Pedro)"
   }
 ]

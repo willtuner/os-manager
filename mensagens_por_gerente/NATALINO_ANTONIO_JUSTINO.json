@@ -1,17 +1,24 @@
 [
   {
-    "frota": "247",
-    "os": "118247",
-    "data": "13/09/2025",
-    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-    "servico": "Terminal da barra de direção L/D com parafuso expando - (Fazenda Alvorada)"
+    "frota": "5213",
+    "os": "118507",
+    "data": "18/09/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/E vazando pelo bico - (Fazenda Alvorada)|Parado"
   },
   {
     "frota": "121",
-    "os": "118135",
-    "data": "11/09/2025",
+    "os": "118422",
+    "data": "17/09/2025",
     "prestador": "MASON EQUIPAMENTOS AGRICOLAS LTDA (UMUA)",
-    "servico": "Quebra do cabo do acelerador de mão - (Fazenda Alvorada)"
+    "servico": "Travando direção da bomba hidráulica - (Faz. Alvorada)"
+  },
+  {
+    "frota": "304",
+    "os": "118389",
+    "data": "17/09/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Pneu traseiro L/D furado - (Fazenda Alvorada)"
   },
   {
     "frota": "5138",
@@ -19,19 +26,5 @@
     "data": "01/09/2025",
     "prestador": "MEGAFLEX MANGUEIRAS E COMPONENTES HIDRA",
     "servico": "Prensar mangueira - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "245",
-    "os": "116553",
-    "data": "13/08/2025",
-    "prestador": "CICERO MUNIZ DA SILVA",
-    "servico": "Vazamento de óleo no retentor da  TDP - (Fazenda Alvorada)"
-  },
-  {
-    "frota": "44",
-    "os": "116552",
-    "data": "13/08/2025",
-    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Fazer fibra no capô quebrado - (Fazenda Alvorada)"
   }
 ]
