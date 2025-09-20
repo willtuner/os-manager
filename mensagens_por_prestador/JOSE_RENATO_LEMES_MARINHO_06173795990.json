@@ -1,11 +1,43 @@
 [
   {
-    "frota": "5597",
-    "cd_equipamento": "5597",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "118514",
+    "frota": "5270",
+    "cd_equipamento": "5270",
+    "modelo": "PULVERIZADOR FACCHINI 6000 LT",
+    "os": "118569",
+    "data_entrada": "19/09/2025",
+    "servico": "Pneu traseiro L/E furado - (Fazenda NSA)\nSolicitado Sr. Vitor \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5264",
+    "cd_equipamento": "5264",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "118568",
+    "data_entrada": "19/09/2025",
+    "servico": "Quebra do suporte de fixação da caixa traseira para transporte de produtos - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5759",
+    "cd_equipamento": "5759",
+    "modelo": "PULVERIZADOR 4000 SMART DUPLO",
+    "os": "118552",
+    "data_entrada": "19/09/2025",
+    "servico": "Soldar suporte registro - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5491",
+    "cd_equipamento": "5491",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "118547",
+    "data_entrada": "19/09/2025",
+    "servico": "Fazer solda em parafuso de fixação da torre - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5398",
+    "cd_equipamento": "5398",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "118528",
     "data_entrada": "18/09/2025",
-    "servico": "Soldar suporte das mangueiras quebrado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
+    "servico": "Soldar trincas na proteção dos bicos do lado direto (Fazenda Terra Branca)\nSolicitado Sr. Eder \nResponsável Sr. Mauricio"
   },
   {
     "frota": "102",
@@ -16,12 +48,20 @@
     "servico": "Fazer solda em trinca no rabicho - (Fazenda Bela Manhã)\nSolicitado Sr. Guilherme\nResponsavel Sr. Arthur"
   },
   {
-    "frota": "5240",
-    "cd_equipamento": "5240",
-    "modelo": "MOTOR IRRIGA TURBOMAQ 125 GS",
-    "os": "118438",
-    "data_entrada": "17/09/2025",
-    "servico": "Realizar o desentortamento ou substituição do suporte do pezinho de sustentação direito, restabelecendo a integridade estrutural. - (Fazenda Pedra Verde)\nObservação:\nServiço urgente, necessário para retorno imediato da atividade de irrigação.\nSolicitado Sr. Altieres\nResponsavel Sr. Mauricio"
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "118509",
+    "data_entrada": "18/09/2025",
+    "servico": "Fazer solda no suporte da roda guia L/E - (Fazenda Estrela)\nSolicitado Sr. Danilo \nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "118491",
+    "data_entrada": "18/09/2025",
+    "servico": "Desamassar barra amassado - (Fazenda Bela  Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "117",
@@ -48,14 +88,6 @@
     "servico": "Trocar jogo de faca - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5084",
-    "cd_equipamento": "5084",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "118395",
-    "data_entrada": "17/09/2025",
-    "servico": "Instalar corote de água - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5261",
     "cd_equipamento": "5261",
     "modelo": "PULVERIZADOR 2000 LT",
@@ -80,52 +112,12 @@
     "servico": "Proteção anti-arremesso amassada - (Fazenda Casa Branca)\nSolicitado Sr. Rafael\nResponsavel Sr. Mauricio"
   },
   {
-    "frota": "5291",
-    "cd_equipamento": "5291",
-    "modelo": "PAM 600-PA AGRICOLA P/TRATORES",
-    "os": "118363",
-    "data_entrada": "16/09/2025",
-    "servico": "Cano do óleo hidráulico furado - (Fazenda Casa Branca)|Parado\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5716",
-    "cd_equipamento": "5716",
-    "modelo": "TANQUE DE AGUA 6500",
-    "os": "118354",
-    "data_entrada": "16/09/2025",
-    "servico": "Quebra do engate do cabeçario - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5459",
-    "cd_equipamento": "5459",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "118347",
-    "data_entrada": "16/09/2025",
-    "servico": "Fazer solda trinca no cabeçalho trincado - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr.  Mauricio"
-  },
-  {
-    "frota": "5579",
-    "cd_equipamento": "5579",
-    "modelo": "TRITURADOR TFI-1600 GTM",
-    "os": "118287",
-    "data_entrada": "15/09/2025",
-    "servico": "Trocar jogo de facas - (Fazenda Minuano)\nSolicitado Sr. Marcio Aparecido\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "10226",
     "cd_equipamento": "10226",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "118248",
     "data_entrada": "13/09/2025",
     "servico": "Solda fixação do cibié traseiro - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Romes"
-  },
-  {
-    "frota": "5350",
-    "cd_equipamento": "5350",
-    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
-    "os": "118128",
-    "data_entrada": "11/09/2025",
-    "servico": NaN
   },
   {
     "frota": "5718",

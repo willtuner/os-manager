@@ -1,43 +1,27 @@
 [
   {
-    "frota": "250",
-    "cd_equipamento": "250",
-    "modelo": "TRATOR JOHN DEERE 5080EN",
-    "os": "118483",
-    "data_entrada": "18/09/2025",
-    "servico": "O trator apresenta emissão de fumaça pelo difusor do ar-condicionado, indicando possível falha elétrica ou curto no sistema de climatização. - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Arthur"
+    "frota": "314",
+    "cd_equipamento": "314",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "118585",
+    "data_entrada": "19/09/2025",
+    "servico": "Pisca alerta e farol dianteiro queimado - (Faz. Nova Manhã)\nSolicitado Sr. Adriano\nResponsável Sr. Arthur"
   },
   {
-    "frota": "86",
-    "cd_equipamento": "86",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "118474",
-    "data_entrada": "18/09/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "78",
-    "cd_equipamento": "78",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "118439",
-    "data_entrada": "17/09/2025",
-    "servico": "Verificar trator sem partida - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "10120",
-    "cd_equipamento": "10120",
+    "frota": "208",
+    "cd_equipamento": "208",
     "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118420",
-    "data_entrada": "17/09/2025",
-    "servico": "Rele da lanterna dianteira queimada - (Faz. São Pedro)\nSolicitado Sr. Josimar\nResponsável Sr. Arthur"
+    "os": "118534",
+    "data_entrada": "18/09/2025",
+    "servico": "Verificar alavanca da embreagem (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Arthur"
   },
   {
-    "frota": "98",
-    "cd_equipamento": "98",
-    "modelo": "TRATOR JOHN DEERE 5065 4X4",
-    "os": "118418",
-    "data_entrada": "17/09/2025",
-    "servico": "Verificar causa do inchaço da bateria e instalar bateria nova compatível, testando sistema de carga (alternador/regulador) para evitar reincidência. - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+    "frota": "10220",
+    "cd_equipamento": "10220",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118531",
+    "data_entrada": "18/09/2025",
+    "servico": "Trocar faróis dianteiros queimados. (Fazenda Casa Branca)\nSolicitado Sr. João\nResponsável Sr. Arthur"
   },
   {
     "frota": "117",
@@ -62,14 +46,6 @@
     "os": "118390",
     "data_entrada": "17/09/2025",
     "servico": "Verificar cibiés apagaram  e não ascendem mais - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "197",
-    "cd_equipamento": "197",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118351",
-    "data_entrada": "16/09/2025",
-    "servico": "Verificar trator sem partida, motor de partida estalando - (Fazenda Alvorada)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "137",
