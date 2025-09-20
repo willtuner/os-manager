@@ -1,10 +1,24 @@
 [
   {
+    "frota": "5601",
+    "os": "118572",
+    "data": "19/09/2025",
+    "prestador": "nan",
+    "servico": "Confeccionar um eixo ponteira para o cano do cardam, fazer a troca das ponteiras, alinhar cardam, fazer rasgo de chaveta, preencher e tornar a outra ponta da cruzeta e fazer rasgo para chaveta"
+  },
+  {
+    "frota": "5021",
+    "os": "118571",
+    "data": "19/09/2025",
+    "prestador": "nan",
+    "servico": "Preenchimento do cardam, tornear e ajustar para cruzeta, tornear e ajustar para rolamento, tornear luva da cruzeta, cortar cano e alinhar, confeccionar rasgo de chaveta e duas chavetas"
+  },
+  {
     "frota": "348",
     "os": "118441",
     "data": "17/09/2025",
     "prestador": "nan",
-    "servico": "Revisão de 600 Hrs (Fazenda São José)"
+    "servico": "Revisão de 600 Hrs (Fazenda Minuano)"
   },
   {
     "frota": "5055",
@@ -21,13 +35,6 @@
     "servico": "Serviço de ar condicionado - (Faz. São José)"
   },
   {
-    "frota": "5021",
-    "os": "117867",
-    "data": "08/09/2025",
-    "prestador": "SERRALHERIA E CENTRO DE MOLAS SANTA CAT",
-    "servico": "Troca dos rolamentos do eixo central - (Fazenda São José)"
-  },
-  {
     "frota": "210",
     "os": "118457",
     "data": "02/09/2025",
@@ -40,26 +47,5 @@
     "data": "02/09/2025",
     "prestador": "CARLOS HENRIQUE DE OLIVEIRA 09476981911",
     "servico": "Troca de mangueira e vedação do comando hidráulico - (Faz. São José)"
-  },
-  {
-    "frota": "5212",
-    "os": "117654",
-    "data": "02/09/2025",
-    "prestador": "CLAUDIOMAR COLOGNESE 02537602919",
-    "servico": "Tornear ponta do eixo central - (Fazenda São José)"
-  },
-  {
-    "frota": "5212",
-    "os": "117572",
-    "data": "01/09/2025",
-    "prestador": "CARLOS HENRIQUE DE OLIVEIRA 09476981911",
-    "servico": "Trocar rolamento dianteiro do eixo principal - (Fazenda São José)"
-  },
-  {
-    "frota": "5636",
-    "os": "117544",
-    "data": "01/09/2025",
-    "prestador": "CARLOS HENRIQUE DE OLIVEIRA 09476981911",
-    "servico": "Troca dois reparos do pistão - (Fazenda São José)"
   }
 ]

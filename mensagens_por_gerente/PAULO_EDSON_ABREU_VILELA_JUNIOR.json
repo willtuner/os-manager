@@ -1,19 +1,5 @@
 [
   {
-    "frota": "5803",
-    "os": "118477",
-    "data": "18/09/2025",
-    "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-    "servico": "Vazamento de produto no regulador de pressão - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "257",
-    "os": "118476",
-    "data": "18/09/2025",
-    "prestador": "SOLO VERDE - MANUTENÇÃO AGRÍCOLA",
-    "servico": "Vazamento de óleo nos tuchos hidráulicos - (Fazenda São Paulo)"
-  },
-  {
     "frota": "270",
     "os": "118426",
     "data": "17/09/2025",
@@ -26,19 +12,5 @@
     "data": "17/09/2025",
     "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
     "servico": "Verificar cibiés apagaram  e não ascendem mais - (Fazenda SP)"
-  },
-  {
-    "frota": "5350",
-    "os": "118128",
-    "data": "11/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "nan"
-  },
-  {
-    "frota": "5205",
-    "os": "117860",
-    "data": "05/09/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Vazamento de óleo no redutor - (Fazenda SP)"
   }
 ]

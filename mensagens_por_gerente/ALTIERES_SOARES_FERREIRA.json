@@ -1,5 +1,26 @@
 [
   {
+    "frota": "217",
+    "os": "118575",
+    "data": "19/09/2025",
+    "prestador": "nan",
+    "servico": "A caixa de fusíveis apresenta sinais de derretimento, indicando falha elétrica com risco de curto-circuito e incêndio. - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "5661",
+    "os": "118561",
+    "data": "19/09/2025",
+    "prestador": "nan",
+    "servico": "Chicote do painel de controle em curto - (Fazenda Pedra Verde)"
+  },
+  {
+    "frota": "69",
+    "os": "118536",
+    "data": "18/09/2025",
+    "prestador": "nan",
+    "servico": "Sacar e trocar parafuso da alavanca de acionamento da TDP - (Fazenda Pedra Verde)"
+  },
+  {
     "frota": "283",
     "os": "118482",
     "data": "18/09/2025",
@@ -14,13 +35,6 @@
     "servico": "Trocar rolamentos e retentores das rodas - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "5240",
-    "os": "118438",
-    "data": "17/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Realizar o desentortamento ou substituição do suporte do pezinho de sustentação direito, restabelecendo a integridade estrutural. - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "138",
     "os": "118419",
     "data": "17/09/2025",
@@ -28,25 +42,11 @@
     "servico": "Trator apresenta barulho na região central, possivelmente oriundo da embreagem - (Fazenda Pedra Verde)"
   },
   {
-    "frota": "5133",
-    "os": "118404",
-    "data": "17/09/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Verificar folga na polia - (Fazenda Pedra Verde)"
-  },
-  {
     "frota": "5136",
     "os": "118403",
     "data": "17/09/2025",
     "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
     "servico": "Fazer reparo de fibra na estrutura do tanque - (Fazenda Pedra Verde)"
-  },
-  {
-    "frota": "5661",
-    "os": "118376",
-    "data": "16/09/2025",
-    "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
-    "servico": "Rolamento da turbina estourado - (Faz. Pedra Verde)"
   },
   {
     "frota": "5710",
