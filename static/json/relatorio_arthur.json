@@ -1,5 +1,71 @@
 [
     {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "321",
+        "modelo": "TRATOR NEW HOLANDTL5.80",
+        "os": "118604",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar vazamento de óleo no engate do comando, e pino de fechamento da janela traseira perdido - (Fazenda Bela Manhã)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "134",
+        "modelo": "TRATOR NEW HOLLAND TL75E",
+        "os": "118602",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar lanternas de posição não funcionam - (Fazenda SP)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "134",
+        "modelo": "TRATOR NEW HOLLAND TL75E",
+        "os": "118601",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Rosca da conexão da alavanca do comando danificada - (Fazenda São Paulo)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "288",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118598",
+        "data_entrada": "20/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vidro da cabina L/D soldo - (Fazenda Estrela)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "258",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118593",
+        "data_entrada": "20/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar A/C não gela, apenas ventila - (Fazenda Estrela)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "219",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118592",
+        "data_entrada": "20/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar braços hidráulicos não fecham - (Fazenda Estrela)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "WAGNER GALDINO DA SILVA",
         "frota": "272",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -184,17 +250,6 @@
         "previsao_saida": "---",
         "prestador": "INJECOES DIESEL NOROESTE LTDA.",
         "servico": "Verificar trator perdendo força - (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-        "frota": "268",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "118546",
-        "data_entrada": "19/09/2025",
-        "previsao_saida": "---",
-        "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-        "servico": "O trator sofreu quebra da porta após impacto com galho seco durante a operação - (Fazenda Estrela)|Parado|",
         "liberado_por": "Arthur"
     },
     {

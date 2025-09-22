@@ -1,5 +1,49 @@
 [
     {
+        "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
+        "frota": "5235",
+        "modelo": "MOTOR IRRIGACAO TURBOMAQ 140",
+        "os": "118605",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/D furado - (Fazenda Casa Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "5615",
+        "modelo": "PULVERIZADOR 2000 LT JACTO",
+        "os": "118603",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento de óleo na bomba (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "189",
+        "modelo": "TRATOR NEW HOLAND TL 5.80",
+        "os": "118597",
+        "data_entrada": "20/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vareta do varão da embreagem quebrado - (Fazenda São Pedro)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "GEOVANE LIBERO DA SILVA",
+        "frota": "5598",
+        "modelo": "ATOMIZADOR FMC COPLING 4000 LT",
+        "os": "118594",
+        "data_entrada": "20/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Quebra do suporte da haste do pistão - (Fazenda Biscui)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "MARCIO JUNIO NUNES DE OLIVEIRA",
         "frota": "5175",
         "modelo": "TANQUE DE AGUA 4000 LT",
