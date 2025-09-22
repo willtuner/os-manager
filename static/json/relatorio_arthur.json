@@ -1,5 +1,60 @@
 [
     {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "268",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118625",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer solda de arruela na tampa da bateria com desgaste - (Fazenda Estrela)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "276",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118624",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+        "servico": "Fazer solda no suporte do filtro de diesel quebrado - (Fazenda São Pedro)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "NATALINO ANTONIO JUSTINO",
+        "frota": "304",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118612",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento nos tuchos do comando e  alanca de marchas \"bamba\" - (Fazenda Alvorada)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "EDVALDO CUBAS NOGUEIRA",
+        "frota": "141",
+        "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
+        "os": "118611",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Verificar alternador. Trator sem partida - (Fazenda Úrsula)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "EDVALDO CUBAS NOGUEIRA",
+        "frota": "22",
+        "modelo": "TRATOR VALTRA BH 180 4X4",
+        "os": "118610",
+        "data_entrada": "22/09/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "Verificar alternador. Trator sem partida - (Fazenda Úrsula)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "MURILO J ONCK LEMES DA SILVA",
         "frota": "321",
         "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -41,6 +96,17 @@
         "previsao_saida": "---",
         "prestador": "nan",
         "servico": "Vidro da cabina L/D soldo - (Fazenda Estrela)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "189",
+        "modelo": "TRATOR NEW HOLAND TL 5.80",
+        "os": "118597",
+        "data_entrada": "20/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vareta do varão da embreagem quebrado - (Fazenda São Pedro)",
         "liberado_por": "Arthur"
     },
     {
@@ -209,17 +275,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
-        "frota": "231",
-        "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-        "os": "118555",
-        "data_entrada": "19/09/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Verificar trator com a embreagem dura - (Fazenda São Severino)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "ANTONIO VINICIO MAZUTE",
         "frota": "289",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -294,28 +349,6 @@
         "previsao_saida": "---",
         "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
         "servico": "Trocar faróis dianteiros queimados. (Fazenda Casa Branca)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "MURILO J ONCK LEMES DA SILVA",
-        "frota": "102",
-        "modelo": "TRATOR JOHN DEERE 5065 4X4",
-        "os": "118511",
-        "data_entrada": "18/09/2025",
-        "previsao_saida": "---",
-        "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-        "servico": "Fazer solda em trinca no rabicho - (Fazenda Bela Manhã)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-        "frota": "219",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "118484",
-        "data_entrada": "18/09/2025",
-        "previsao_saida": "---",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Avaliar alavanca de cambio \"boba\" - (Fazenda Estrela)",
         "liberado_por": "Arthur"
     },
     {
