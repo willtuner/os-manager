@@ -1,5 +1,93 @@
 [
     {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5614",
+        "modelo": "PULVERIZADOR 4000 LT JACTO",
+        "os": "118662",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "FEMI AR CONDICIONADO AUTOMOTIVO E AGRIC",
+        "servico": "Verificar chicote do SPE com mau contato - (Fazenda São Severino)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "319",
+        "modelo": "TRATOR NEW HOLANDTL5.80",
+        "os": "118657",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "EQUAGRIL EQUIPAMENTOS AGRICOLAS LTDA",
+        "servico": "Vazamento de óleo nos engate rápido - (Fazenda Bela Manhã)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "258",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118652",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Fazer fibra em buraco onde ficava os cibié traseiro L/E - (Fazenda Estrela)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "218",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118648",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar sensor da TDP acusando no painel acoplamentos, mesmo desacoplado - (Fazenda Bela Manhã)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "JOSIMAR BADIAS DE JESUS",
+        "frota": "298",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118647",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar TDP com alta vibração - (Fazenda São Pedro)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
+        "frota": "10222",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118646",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar sistema elétrico do cibié, não ascendem e queimando fusível - (Fazenda  Terra Branca)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "5570",
+        "modelo": "CARRETA TRANSBORDO GTM",
+        "os": "118634",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento nos reparos do comando - (Fazenda São Severino)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "198",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118631",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Confeccionar tapete de borracha - (Fazenda Pedra Verde)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
         "frota": "268",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -198,17 +286,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "217",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "118575",
-        "data_entrada": "19/09/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "A caixa de fusíveis apresenta sinais de derretimento, indicando falha elétrica com risco de curto-circuito e incêndio. - (Fazenda Pedra Verde)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "CARLOS APARECIDO MARIANO DOS SANTOS",
         "frota": "98",
         "modelo": "TRATOR JOHN DEERE 5065 4X4",
@@ -305,17 +382,6 @@
         "previsao_saida": "---",
         "prestador": "INJECOES DIESEL NOROESTE LTDA.",
         "servico": "Verificar trator perdendo força - (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "ALTIERES SOARES FERREIRA",
-        "frota": "69",
-        "modelo": "TRATOR JOHN DEERE 5403 4X4",
-        "os": "118536",
-        "data_entrada": "18/09/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Sacar e trocar parafuso da alavanca de acionamento da TDP - (Fazenda Pedra Verde)",
         "liberado_por": "Arthur"
     },
     {

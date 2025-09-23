@@ -1,5 +1,104 @@
 [
     {
+        "solicitante": "CASSIO ANTONIO MARTINS NASCIMENTO",
+        "frota": "5614",
+        "modelo": "PULVERIZADOR 4000 LT JACTO",
+        "os": "118664",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar ruído no rolamento da correia traseira - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "221",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118658",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/E traseiro furado - (Fazenda Estrela)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5345",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "118656",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/D furado - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
+        "frota": "79",
+        "modelo": "TRATOR JOHN DEERE 5403 4X4",
+        "os": "118654",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
+        "servico": "O trator encontra-se sem partida, não apresenta acionamento, emitindo apenas estalos ao girar a chave de ignição - (Fazenda Terra Branca)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "5718",
+        "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+        "os": "118653",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Foi identificado o estouro da louça do conjunto, ocasionando danos às válvulas e às buchas associadas, comprometendo o funcionamento adequado do sistema - (Fazenda Estrela)|Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "5345",
+        "modelo": "PULVERIZADOR 4000 LT - NATALI",
+        "os": "118651",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
+        "servico": "Cabo da abertura da válvula empeirado - (Fazenda Bela Manhã)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "JOHN LENNON DA SILVA",
+        "frota": "5723",
+        "modelo": "PULVERIZADOR ALCITOWER 4000LT",
+        "os": "118649",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/D furado - (Fazenda Santa Luiza)|Parado|",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "5326",
+        "modelo": "CARRETA SCHULTER 12 BEGUES",
+        "os": "118636",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "RIVELINO LONGATO 03100998979",
+        "servico": "Pneu L/D furado - (Fazenda São Severino)",
+        "liberado_por": "Mauricio"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "5101",
+        "modelo": "CARRETA TRANSBORDO IFLO",
+        "os": "118629",
+        "data_entrada": "23/09/2025",
+        "previsao_saida": "---",
+        "prestador": "GILSON CESAR ALVES DOS SANTOS 660964809",
+        "servico": "Soldar suporta que segura as mangueiras - (Fazenda SP)",
+        "liberado_por": "Mauricio"
+    },
+    {
         "solicitante": "ANTONIO VINICIO MAZUTE",
         "frota": "5759",
         "modelo": "PULVERIZADOR 4000 SMART DUPLO",
@@ -41,17 +140,6 @@
         "previsao_saida": "---",
         "prestador": "M G VEDACOES E PECAS LTDA",
         "servico": "Verificar pistão do braço da podadeira torto - (Fazenda São Paulo)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
-        "frota": "5005",
-        "modelo": "PULVERIZADOR 2000 LT MARTHGNIA",
-        "os": "118560",
-        "data_entrada": "19/09/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Vazamento de óleo nos retentores da bomba, dianteiro e traseiro - (Fazenda Nova Manhã)",
         "liberado_por": "Mauricio"
     },
     {
@@ -110,17 +198,6 @@
         "liberado_por": "Mauricio"
     },
     {
-        "solicitante": "JOAO PAULO DE OLIVEIRA PORTEIRO",
-        "frota": "5197",
-        "modelo": "PULVERIZADOR 2000 LT JACTO",
-        "os": "118510",
-        "data_entrada": "18/09/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Trocar correias quebrando - (Fazenda Casa Branca)",
-        "liberado_por": "Mauricio"
-    },
-    {
         "solicitante": "ROMES ROSA SILVA",
         "frota": "5615",
         "modelo": "PULVERIZADOR 2000 LT JACTO",
@@ -151,17 +228,6 @@
         "previsao_saida": "---",
         "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
         "servico": "Fazer reparo de fibra na estrutura do tanque - (Fazenda Pedra Verde)",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "MURILO J ONCK LEMES DA SILVA",
-        "frota": "5597",
-        "modelo": "PULVERIZADOR 2000 LT FMC",
-        "os": "118402",
-        "data_entrada": "17/09/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Vazamento de produto na conexão do nível - (Fazenda Bela Manhã)",
         "liberado_por": "Mauricio"
     },
     {
@@ -206,17 +272,6 @@
         "previsao_saida": "---",
         "prestador": "MATEUS APARECIDO DE LIMA SANTOS",
         "servico": "Quebra dos parafusos do rolete - (Fazenda Pedra Verde)|Parado|",
-        "liberado_por": "Mauricio"
-    },
-    {
-        "solicitante": "RENNAN ARCANJO CREPALDI",
-        "frota": "5492",
-        "modelo": "PULVERIZADOR GULIVER 4000",
-        "os": "118302",
-        "data_entrada": "15/09/2025",
-        "previsao_saida": "---",
-        "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
-        "servico": "Perca da roldana de suporte da asa L/D - (Fazenda NSA)",
         "liberado_por": "Mauricio"
     }
 ]
