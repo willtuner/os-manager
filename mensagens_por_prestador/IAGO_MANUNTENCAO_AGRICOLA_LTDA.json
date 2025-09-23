@@ -1,11 +1,19 @@
 [
   {
-    "frota": "5005",
-    "cd_equipamento": "5005",
-    "modelo": "PULVERIZADOR 2000 LT MARTHGNIA",
-    "os": "118560",
-    "data_entrada": "19/09/2025",
-    "servico": "Vazamento de óleo nos retentores da bomba, dianteiro e traseiro - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+    "frota": "5718",
+    "cd_equipamento": "5718",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "118653",
+    "data_entrada": "23/09/2025",
+    "servico": "Foi identificado o estouro da louça do conjunto, ocasionando danos às válvulas e às buchas associadas, comprometendo o funcionamento adequado do sistema - (Fazenda Estrela)|Parado|\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5345",
+    "cd_equipamento": "5345",
+    "modelo": "PULVERIZADOR 4000 LT - NATALI",
+    "os": "118651",
+    "data_entrada": "23/09/2025",
+    "servico": "Cabo da abertura da válvula empeirado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5165",
@@ -14,29 +22,5 @@
     "os": "118557",
     "data_entrada": "19/09/2025",
     "servico": "Embuchamento do suporte da roda guia L/D estourado e rolamento da roda L/E com jogo - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5197",
-    "cd_equipamento": "5197",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "118510",
-    "data_entrada": "18/09/2025",
-    "servico": "Trocar correias quebrando - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5597",
-    "cd_equipamento": "5597",
-    "modelo": "PULVERIZADOR 2000 LT FMC",
-    "os": "118402",
-    "data_entrada": "17/09/2025",
-    "servico": "Vazamento de produto na conexão do nível - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5492",
-    "cd_equipamento": "5492",
-    "modelo": "PULVERIZADOR GULIVER 4000",
-    "os": "118302",
-    "data_entrada": "15/09/2025",
-    "servico": "Perca da roldana de suporte da asa L/D - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
   }
 ]
