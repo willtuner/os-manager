@@ -1,27 +1,11 @@
 [
   {
-    "frota": "79",
-    "cd_equipamento": "79",
-    "modelo": "TRATOR JOHN DEERE 5403 4X4",
-    "os": "118654",
+    "frota": "266",
+    "cd_equipamento": "266",
+    "modelo": "TRATOR JOHN DEERE 7230J",
+    "os": "118690",
     "data_entrada": "23/09/2025",
-    "servico": "O trator encontra-se sem partida, não apresenta acionamento, emitindo apenas estalos ao girar a chave de ignição - (Fazenda Terra Branca)\nSolicitado Sr. Eder\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "141",
-    "cd_equipamento": "141",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "118611",
-    "data_entrada": "22/09/2025",
-    "servico": "Verificar alternador. Trator sem partida - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "22",
-    "cd_equipamento": "22",
-    "modelo": "TRATOR VALTRA BH 180 4X4",
-    "os": "118610",
-    "data_entrada": "22/09/2025",
-    "servico": "Verificar alternador. Trator sem partida - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr. Arthur"
+    "servico": "Trocar lâmpadas dos cibié queimados - (Fazenda Santa Izabel)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Artrhur"
   },
   {
     "frota": "113",
@@ -48,14 +32,6 @@
     "servico": "Verificar alavanca da embreagem (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Arthur"
   },
   {
-    "frota": "10220",
-    "cd_equipamento": "10220",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118531",
-    "data_entrada": "18/09/2025",
-    "servico": "Trocar faróis dianteiros queimados. (Fazenda Casa Branca)\nSolicitado Sr. João\nResponsável Sr. Arthur"
-  },
-  {
     "frota": "117",
     "cd_equipamento": "117",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
@@ -70,22 +46,6 @@
     "os": "118409",
     "data_entrada": "17/09/2025",
     "servico": "Revisar sistema eletrico - (Oficina)\nSolicitado Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "136",
-    "cd_equipamento": "136",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "118390",
-    "data_entrada": "17/09/2025",
-    "servico": "Verificar cibiés apagaram  e não ascendem mais - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "137",
-    "cd_equipamento": "137",
-    "modelo": "TRATOR MASSEY FERGUSON 4275 4R",
-    "os": "118307",
-    "data_entrada": "15/09/2025",
-    "servico": "Revisar chicote eletrico, luzes do painel não funciona e indicador de restrição de ar - (Oficina MG)\nSolicitado Sr. Carlos Aparecido\nResponsavel Sr. Carlos Aparecido"
   },
   {
     "frota": "125",

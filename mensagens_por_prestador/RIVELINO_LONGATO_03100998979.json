@@ -1,5 +1,37 @@
 [
   {
+    "frota": "10224",
+    "cd_equipamento": "10224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118718",
+    "data_entrada": "24/09/2025",
+    "servico": "Colocar lastro líquidos nos pneu traseiros - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5048",
+    "cd_equipamento": "5048",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118703",
+    "data_entrada": "24/09/2025",
+    "servico": "Pneu L/D furado  - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5063",
+    "cd_equipamento": "5063",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118694",
+    "data_entrada": "24/09/2025",
+    "servico": "Pneu L/E furado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5063",
+    "cd_equipamento": "5063",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118672",
+    "data_entrada": "23/09/2025",
+    "servico": "Pneu lado direito com rachaduras (275/80R22.5) - (Faz. São Paulo)\nSolicitado Sr. Paulo\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "221",
     "cd_equipamento": "221",
     "modelo": "TRATOR JOHN DEERE 5080E",

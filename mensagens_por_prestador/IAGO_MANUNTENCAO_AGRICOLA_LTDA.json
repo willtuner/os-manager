@@ -3,9 +3,25 @@
     "frota": "5718",
     "cd_equipamento": "5718",
     "modelo": "PULVERIZADOR FMC 4000 BILATERA",
-    "os": "118653",
+    "os": "118695",
+    "data_entrada": "24/09/2025",
+    "servico": "Vazamento nos reparos do comando - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5613",
+    "cd_equipamento": "5613",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "118681",
     "data_entrada": "23/09/2025",
-    "servico": "Foi identificado o estouro da louça do conjunto, ocasionando danos às válvulas e às buchas associadas, comprometendo o funcionamento adequado do sistema - (Fazenda Estrela)|Parado|\nSolicitado Sr. Paulo Vinicius\nResponsavel Sr. Mauricio"
+    "servico": "Verificar abertura do ramal com mau funcionamento - (Faz. São Severino)\nSolicitado Sr. Cássio\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5614",
+    "cd_equipamento": "5614",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "118664",
+    "data_entrada": "23/09/2025",
+    "servico": "Verificar ruído no rolamento da correia traseira - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5345",

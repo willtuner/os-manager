@@ -1,19 +1,27 @@
 [
   {
+    "frota": "5298",
+    "cd_equipamento": "5298",
+    "modelo": "CARRETA TRANSBORDO SCHULTER",
+    "os": "118719",
+    "data_entrada": "24/09/2025",
+    "servico": "Troca do pistão - (Faz. São Pedro)\nSolicitado Sr. Gilson\nResponsável Izaias"
+  },
+  {
+    "frota": "5570",
+    "cd_equipamento": "5570",
+    "modelo": "CARRETA TRANSBORDO GTM",
+    "os": "118698",
+    "data_entrada": "24/09/2025",
+    "servico": "Troca de reparo do comando - (Fazenda Casa Branca)\nSolicitado Sr. Izaias \nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5101",
     "cd_equipamento": "5101",
     "modelo": "CARRETA TRANSBORDO IFLO",
     "os": "118629",
     "data_entrada": "23/09/2025",
     "servico": "Soldar suporta que segura as mangueiras - (Fazenda SP)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "276",
-    "cd_equipamento": "276",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118624",
-    "data_entrada": "22/09/2025",
-    "servico": "Fazer solda no suporte do filtro de diesel quebrado - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
   },
   {
     "frota": "5326",

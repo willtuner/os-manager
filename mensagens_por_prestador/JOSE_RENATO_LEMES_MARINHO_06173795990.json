@@ -1,19 +1,35 @@
 [
   {
+    "frota": "5716",
+    "cd_equipamento": "5716",
+    "modelo": "TANQUE DE AGUA 6500",
+    "os": "118711",
+    "data_entrada": "24/09/2025",
+    "servico": "Instalar pé de apoio do cabeçário - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinício\nResponsável Sr. Mauricio"
+  },
+  {
+    "frota": "5072",
+    "cd_equipamento": "5072",
+    "modelo": "GRADE NIVELADORA",
+    "os": "118680",
+    "data_entrada": "23/09/2025",
+    "servico": "Colocar calco no eixo da secção dianteira L/D - (Fazenda Santa Izabel)\nSolicitado Sr. João Dubay\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5053",
+    "cd_equipamento": "5053",
+    "modelo": "CARRETINHA DE FERRO",
+    "os": "118668",
+    "data_entrada": "23/09/2025",
+    "servico": "Quebra da solda do cabeçário - (Faz. Terra Branca)\nSolicitado Sr. Eder\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "5759",
     "cd_equipamento": "5759",
     "modelo": "PULVERIZADOR 4000 SMART DUPLO",
     "os": "118618",
     "data_entrada": "22/09/2025",
     "servico": "Impacto com árvore amassou o sistema de abertura e fechamento, impedindo o recolhimento das asas. - (Fazenda Estrela)\nSolicitado Sr. Antônio Vinicius\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "118591",
-    "data_entrada": "20/09/2025",
-    "servico": "Trocar rolamento dianteiro estourado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Paulo Edson"
   },
   {
     "frota": "5759",
@@ -46,14 +62,6 @@
     "os": "118346",
     "data_entrada": "16/09/2025",
     "servico": "Quebra do suporte da asa L/D - (Fazenda NSA)\nSolicitado Sr. Rennan\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "253",
-    "cd_equipamento": "253",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "117581",
-    "data_entrada": "01/09/2025",
-    "servico": "Confeccionar proteção de para -lamas e lanternas - (Fazenda Minuano/Oficina Cocamar)\nSolicitado Sr. Carlos Aparecido"
   },
   {
     "frota": "125",

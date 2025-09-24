@@ -1,5 +1,29 @@
 [
   {
+    "frota": "5421",
+    "cd_equipamento": "5421",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "118709",
+    "data_entrada": "24/09/2025",
+    "servico": "Quebra do rolamento do eixo dianteiro  - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5659",
+    "cd_equipamento": "5659",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "118700",
+    "data_entrada": "24/09/2025",
+    "servico": "Vazamento de produto no reparo da bomba - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5403",
+    "cd_equipamento": "5403",
+    "modelo": "PULVERIZADOR GULIVER 4000",
+    "os": "118699",
+    "data_entrada": "24/09/2025",
+    "servico": "Trocar rolamento do eixo traseiro - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5615",
     "cd_equipamento": "5615",
     "modelo": "PULVERIZADOR 2000 LT JACTO",
@@ -22,22 +46,6 @@
     "os": "118544",
     "data_entrada": "19/09/2025",
     "servico": "Quebra da fixação do suporte da torre - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5615",
-    "cd_equipamento": "5615",
-    "modelo": "PULVERIZADOR 2000 LT JACTO",
-    "os": "118485",
-    "data_entrada": "18/09/2025",
-    "servico": "Verificar vazamento de óleo na bomba - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5705",
-    "cd_equipamento": "5705",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "118355",
-    "data_entrada": "16/09/2025",
-    "servico": "Quebra da conexão do misturado de produtos - (Fazenda Santa Luiza)\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5710",
