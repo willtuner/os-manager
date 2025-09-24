@@ -1,5 +1,19 @@
 [
   {
+    "frota": "68",
+    "os": "118687",
+    "data": "23/09/2025",
+    "prestador": "JOAO CARLOS CORDEIRO RADIADORES - ME",
+    "servico": "Manutenção do radiador (Oficina)"
+  },
+  {
+    "frota": "97",
+    "os": "118685",
+    "data": "23/09/2025",
+    "prestador": "JOAO CARLOS CORDEIRO RADIADORES - ME",
+    "servico": "Manutenção do radiador (Oficina)"
+  },
+  {
     "frota": "5457",
     "os": "118627",
     "data": "23/09/2025",
@@ -47,13 +61,6 @@
     "data": "19/09/2025",
     "prestador": "M G VEDACOES E PECAS LTDA",
     "servico": "Verificar pistão do braço da podadeira torto - (Fazenda São Paulo)"
-  },
-  {
-    "frota": "98",
-    "os": "118573",
-    "data": "19/09/2025",
-    "prestador": "nan",
-    "servico": "O banco do trator não está realizando a regulagem, impossibilitando o ajuste adequado para o operador. - (Fazenda São Paulo)"
   },
   {
     "frota": "137",
@@ -126,41 +133,6 @@
     "servico": "Revisar diferencial"
   },
   {
-    "frota": "137",
-    "os": "118309",
-    "data": "15/09/2025",
-    "prestador": "51.329.335 ALTAIR FERNANDO DA SILVA ZAN",
-    "servico": "Reparo no banco do operador - (Oficina MG)"
-  },
-  {
-    "frota": "137",
-    "os": "118307",
-    "data": "15/09/2025",
-    "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
-    "servico": "Revisar chicote eletrico, luzes do painel não funciona e indicador de restrição de ar - (Oficina MG)"
-  },
-  {
-    "frota": "137",
-    "os": "118306",
-    "data": "15/09/2025",
-    "prestador": "FERNANDA BARBOSA MORANGUEIRA 00413385965",
-    "servico": "Troiar borrachas do capô - (Oficina MG)"
-  },
-  {
-    "frota": "253",
-    "os": "118232",
-    "data": "12/09/2025",
-    "prestador": "DARCI CAPEL & CIA LTDA",
-    "servico": "Dar passe volante - (Oficina)"
-  },
-  {
-    "frota": "253",
-    "os": "118154",
-    "data": "11/09/2025",
-    "prestador": "M G VEDACOES E PECAS LTDA",
-    "servico": "Prensar mangueira do sistema de direção - (Oficina)"
-  },
-  {
     "frota": "125",
     "os": "117907",
     "data": "08/09/2025",
@@ -182,20 +154,6 @@
     "servico": "Revisão elétrica completa - (Oficina)"
   },
   {
-    "frota": "253",
-    "os": "117595",
-    "data": "01/09/2025",
-    "prestador": "55.387.737 MICHEL LEANDRO DA SILVA",
-    "servico": "Concerto e pintura dos para-lamas (Minuano/Oficina Cocamar)"
-  },
-  {
-    "frota": "253",
-    "os": "117581",
-    "data": "01/09/2025",
-    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
-    "servico": "Confeccionar proteção de para -lamas e lanternas - (Fazenda Minuano/Oficina Cocamar)"
-  },
-  {
     "frota": "125",
     "os": "117279",
     "data": "26/08/2025",
@@ -215,13 +173,6 @@
     "data": "16/08/2025",
     "prestador": "MASON EQUIPAMENTOS AGRICOLAS LTDA",
     "servico": "Colocar uma manopla de marchas; Trocar vareta nível óleo; Trocar correia alternador; Verificar radiador de diesel; Trocar cinta da carga do filtro; Ajustar folga do pino da articulação do eixo; Conferir todos os níveis de óleo; Abrir caixa de câmbio e fazer análise; Montar caixa de câmbio; Analisar embreagem; Trocar vareta do óleo da transmissão; Alinhar para deixar braços hidráulicos com regulagem; Fazer testes freios; Falta parafusos do prato lado esquerdo e lado direito - roda traseira - (Oficina)"
-  },
-  {
-    "frota": "5177",
-    "os": "115114",
-    "data": "23/07/2025",
-    "prestador": "nan",
-    "servico": "Instalar proteção do motor - (Corporativo)"
   },
   {
     "frota": "5078",
