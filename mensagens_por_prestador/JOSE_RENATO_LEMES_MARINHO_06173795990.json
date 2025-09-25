@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5673",
+    "cd_equipamento": "5673",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "118784",
+    "data_entrada": "25/09/2025",
+    "servico": "Soldar batente L/E - (Fazenda NSA)\nSolicitado Sr. Vitor\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5264",
+    "cd_equipamento": "5264",
+    "modelo": "PULVERIZADOR 2000 LT",
+    "os": "118781",
+    "data_entrada": "25/09/2025",
+    "servico": "Fazer solda em trinca na estrutura - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5106",
+    "cd_equipamento": "5106",
+    "modelo": "ROCADEIRA RC2/E 3100 LSL S701",
+    "os": "118780",
+    "data_entrada": "25/09/2025",
+    "servico": "Fazer solda na roda guia L/D - (Fazenda Estrela)\nSolicitado Sr. Danilo\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "117",
+    "cd_equipamento": "117",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118723",
+    "data_entrada": "24/09/2025",
+    "servico": "Alinhar escada e trocar degrau - (Oficina OMC)\nSolicitado Sr. Carlos\nResponsável Sr. Carlos"
+  },
+  {
     "frota": "5716",
     "cd_equipamento": "5716",
     "modelo": "TANQUE DE AGUA 6500",
@@ -46,14 +78,6 @@
     "os": "118412",
     "data_entrada": "17/09/2025",
     "servico": "Conserto escada operador - (Oficina)\nResponsavel Sr. Carlos Aparecido"
-  },
-  {
-    "frota": "5473",
-    "cd_equipamento": "5473",
-    "modelo": "TRITURADOR TFI-1600 GTM",
-    "os": "118397",
-    "data_entrada": "17/09/2025",
-    "servico": "Trocar jogo de faca - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5418",

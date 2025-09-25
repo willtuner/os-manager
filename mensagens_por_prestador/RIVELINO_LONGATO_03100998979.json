@@ -1,27 +1,51 @@
 [
   {
+    "frota": "80",
+    "cd_equipamento": "80",
+    "modelo": "TRATOR JOHN DEERE 5403 4X4",
+    "os": "118806",
+    "data_entrada": "25/09/2025",
+    "servico": "Trocar os dois pneus traseiros\nFazenda Severino\nSolicitado Sr. Cássio\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "96",
+    "cd_equipamento": "96",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "118779",
+    "data_entrada": "25/09/2025",
+    "servico": "Trocar os dois pneus traseiros.\nFazenda Aparecida\nSolicitado Sr. Rennan\nResponsável Sr. Maurício\nPendência 4552"
+  },
+  {
+    "frota": "5204",
+    "cd_equipamento": "5204",
+    "modelo": "CARRETINHA DE MADEIRA VERMELHA",
+    "os": "118734",
+    "data_entrada": "24/09/2025",
+    "servico": "Pneu furado lado direito - (Faz. Nova Manhã)\nSolicitado Sr. Adriano\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5101",
+    "cd_equipamento": "5101",
+    "modelo": "CARRETA TRANSBORDO IFLO",
+    "os": "118733",
+    "data_entrada": "24/09/2025",
+    "servico": "Pneu L/D furado - (Fazenda São Paulo)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5035",
+    "cd_equipamento": "5035",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118729",
+    "data_entrada": "24/09/2025",
+    "servico": "Pneu do tanque lado esquerdo furado (275/80R22.5) - (Faz. Alvorada)\nSolicitado Sr. Natalino\nResponsável Sr. Maurício"
+  },
+  {
     "frota": "10224",
     "cd_equipamento": "10224",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "118718",
     "data_entrada": "24/09/2025",
     "servico": "Colocar lastro líquidos nos pneu traseiros - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo Cubas\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5048",
-    "cd_equipamento": "5048",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "118703",
-    "data_entrada": "24/09/2025",
-    "servico": "Pneu L/D furado  - (Fazenda Casa Branca)\nSolicitado Sr. João Paulo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5063",
-    "cd_equipamento": "5063",
-    "modelo": "ATOMIZADOR FMC 4000 LT",
-    "os": "118694",
-    "data_entrada": "24/09/2025",
-    "servico": "Pneu L/E furado - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5063",
@@ -32,52 +56,12 @@
     "servico": "Pneu lado direito com rachaduras (275/80R22.5) - (Faz. São Paulo)\nSolicitado Sr. Paulo\nResponsável Sr. Maurício"
   },
   {
-    "frota": "221",
-    "cd_equipamento": "221",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118658",
-    "data_entrada": "23/09/2025",
-    "servico": "Pneu L/E traseiro furado - (Fazenda Estrela)\nSolicitado Sr. Paulo Vinicius \nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5345",
-    "cd_equipamento": "5345",
-    "modelo": "PULVERIZADOR 4000 LT - NATALI",
-    "os": "118656",
-    "data_entrada": "23/09/2025",
-    "servico": "Pneu L/D furado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5723",
-    "cd_equipamento": "5723",
-    "modelo": "PULVERIZADOR ALCITOWER 4000LT",
-    "os": "118649",
-    "data_entrada": "23/09/2025",
-    "servico": "Pneu L/D furado - (Fazenda Santa Luiza)|Parado|\nSolicitado Sr. Jonh Lennon\nResponsavel Sr. Mauricio"
-  },
-  {
-    "frota": "5326",
-    "cd_equipamento": "5326",
-    "modelo": "CARRETA SCHULTER 12 BEGUES",
-    "os": "118636",
-    "data_entrada": "23/09/2025",
-    "servico": "Pneu L/D furado - (Fazenda São Severino)\nSolicitado Sr. Izaias\nResponsavel Sr. Mauricio"
-  },
-  {
     "frota": "5134",
     "cd_equipamento": "5134",
     "modelo": "CARRETA GUINCHO - SCHULTER",
     "os": "118617",
     "data_entrada": "22/09/2025",
     "servico": "Consertar pneu furado\nFazenda São Pedro\nSolicitado Sr. Valdomiro\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5298",
-    "cd_equipamento": "5298",
-    "modelo": "CARRETA TRANSBORDO SCHULTER",
-    "os": "118616",
-    "data_entrada": "22/09/2025",
-    "servico": "Pneu L/E traseiro furado (Fazenda São Pedro)|Parado|\n500/60-22.5\nSolicitado Sr. Valdomiro \nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5352",

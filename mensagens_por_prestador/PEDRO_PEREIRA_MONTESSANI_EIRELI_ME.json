@@ -1,11 +1,59 @@
 [
   {
+    "frota": "522",
+    "cd_equipamento": "522",
+    "modelo": "MOTOR VERMEL IRRIGACAO MB1935",
+    "os": "118774",
+    "data_entrada": "25/09/2025",
+    "servico": "Trocar valvula de segurança de corte de combustivel - Faz São Paulo\nAutorizado Arthur"
+  },
+  {
+    "frota": "252",
+    "cd_equipamento": "252",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118764",
+    "data_entrada": "25/09/2025",
+    "servico": "Verificar sensor da alavanca da TDP - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "117",
+    "cd_equipamento": "117",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118722",
+    "data_entrada": "24/09/2025",
+    "servico": "Revidar alternador - (Oficina OMC)\nSolicitado Sr. Carlos\nResponsável Sr. Carlos"
+  },
+  {
+    "frota": "332",
+    "cd_equipamento": "332",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "118706",
+    "data_entrada": "24/09/2025",
+    "servico": "Verificar sinalização, equipamento apagou luzes e não ascendem mais - (Fazenda SP)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "266",
     "cd_equipamento": "266",
     "modelo": "TRATOR JOHN DEERE 7230J",
     "os": "118690",
     "data_entrada": "23/09/2025",
     "servico": "Trocar lâmpadas dos cibié queimados - (Fazenda Santa Izabel)\nSolicitado Sr. João Vitor Dubay\nResponsavel Sr. Artrhur"
+  },
+  {
+    "frota": "218",
+    "cd_equipamento": "218",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118648",
+    "data_entrada": "23/09/2025",
+    "servico": "Verificar sensor da TDP acusando no painel acoplamentos, mesmo desacoplado - (Fazenda Bela Manhã)\nSolicitado Sr. Murilo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "134",
+    "cd_equipamento": "134",
+    "modelo": "TRATOR NEW HOLLAND TL75E",
+    "os": "118602",
+    "data_entrada": "22/09/2025",
+    "servico": "Verificar lanternas de posição não funcionam - (Fazenda SP)\nSolicitado Sr. Izaias\nResponsavel Sr. Arthur"
   },
   {
     "frota": "113",
@@ -24,12 +72,12 @@
     "servico": "Pisca alerta e farol dianteiro queimado - (Faz. Nova Manhã)\nSolicitado Sr. Adriano\nResponsável Sr. Arthur"
   },
   {
-    "frota": "208",
-    "cd_equipamento": "208",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118534",
-    "data_entrada": "18/09/2025",
-    "servico": "Verificar alavanca da embreagem (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Arthur"
+    "frota": "5661",
+    "cd_equipamento": "5661",
+    "modelo": "PULVERIZADOR 4000 LT JACTO",
+    "os": "118561",
+    "data_entrada": "19/09/2025",
+    "servico": "Chicote do painel de controle em curto - (Fazenda Pedra Verde)\nSolicitado Sr. Altieres\nResponsavel Sr. Arthur"
   },
   {
     "frota": "117",

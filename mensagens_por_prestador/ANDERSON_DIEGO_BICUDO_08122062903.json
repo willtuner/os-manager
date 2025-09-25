@@ -1,5 +1,53 @@
 [
   {
+    "frota": "314",
+    "cd_equipamento": "314",
+    "modelo": "TRATOR NEW HOLANDTL5.80",
+    "os": "118776",
+    "data_entrada": "25/09/2025",
+    "servico": "Verificar vazamento da TDP - Faz Nova Manha\nAutorizado Arthur"
+  },
+  {
+    "frota": "235",
+    "cd_equipamento": "235",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "118775",
+    "data_entrada": "25/09/2025",
+    "servico": "Verificar alavanca da reversão - Faz Nova Manha\nAutorizado Arthur"
+  },
+  {
+    "frota": "10224",
+    "cd_equipamento": "10224",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118717",
+    "data_entrada": "24/09/2025",
+    "servico": "Vazamento de óleo hidráulico no cabeçote do filtro - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118702",
+    "data_entrada": "24/09/2025",
+    "servico": "Vazamento na mangueira de diesel da bomba injetora - (Fazenda Estrela)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "264",
+    "cd_equipamento": "264",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118689",
+    "data_entrada": "23/09/2025",
+    "servico": "Vazamento de óleo na tampa do carter (Fazenda São Pedro)\nSolicitado Sr.. Josimar\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "208",
+    "cd_equipamento": "208",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118534",
+    "data_entrada": "18/09/2025",
+    "servico": "Verificar alavanca da embreagem (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsável Sr. Arthur"
+  },
+  {
     "frota": "106",
     "cd_equipamento": "106",
     "modelo": "TRATOR JOHN DEERE 5078 E 4X4",

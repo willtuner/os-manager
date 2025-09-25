@@ -1,5 +1,37 @@
 [
   {
+    "frota": "5673",
+    "cd_equipamento": "5673",
+    "modelo": "PULV.BARRA SUBCOPA DUPLA FRON",
+    "os": "118783",
+    "data_entrada": "25/09/2025",
+    "servico": "Vazamento de óleo na válvula solenoide - (Fazenda NSA)\nSolicitado Sr. Vitor\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5569",
+    "cd_equipamento": "5569",
+    "modelo": "ROCADEIRA RC2 E 4500 TATU",
+    "os": "118748",
+    "data_entrada": "24/09/2025",
+    "servico": "Revisar roda guia e embuchamentos\nRevisar 3 redutores, revisar caixa de engrenagem\nAdequar caixas de pistão em geral\nTrocar correntes de proteção, corrigir trincas em geral na estrutura, verificar folga nos tubos da roda guia, colocar pé de apoio\nFazer lubrificação geral do equipamento, verificar medidas das embreagens, trocar as 4 facas de corte\nSem os patins (esquis), colocar trava de segurança, verificar embuchamentos eixo traseiro esquerdo das rodas guias traseiras\nRealizar pintura - (Oficina)\nSolicitado Sr. Carlos\nResponsável Sr. Carlos"
+  },
+  {
+    "frota": "104",
+    "cd_equipamento": "104",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "118724",
+    "data_entrada": "24/09/2025",
+    "servico": "Fazer teste de pressão implemento podadeira\nTrocar válvula cilindro N2 - (Oficina)\nSolicitado Sr. Carlos\nResponsável Sr. Carlos"
+  },
+  {
+    "frota": "5570",
+    "cd_equipamento": "5570",
+    "modelo": "CARRETA TRANSBORDO GTM",
+    "os": "118634",
+    "data_entrada": "23/09/2025",
+    "servico": "Vazamento nos reparos do comando - (Fazenda São Severino)\nSolicitado Sr Izaias\nResponsavel Sr. Arthur"
+  },
+  {
     "frota": "5336",
     "cd_equipamento": "5336",
     "modelo": "PULVERIZADOR 2000 LT FMC",

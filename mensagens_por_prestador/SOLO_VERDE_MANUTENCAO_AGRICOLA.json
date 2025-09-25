@@ -1,10 +1,18 @@
 [
   {
-    "frota": "148",
-    "cd_equipamento": "148",
-    "modelo": "TRATOR JOHN DEERE 5055E",
-    "os": "118715",
-    "data_entrada": "24/09/2025",
-    "servico": "Verificar sistema hidraulico do equipamento - Faz Santa Izabel\nAutorizado Arthur"
+    "frota": "102",
+    "cd_equipamento": "102",
+    "modelo": "TRATOR JOHN DEERE 5065 4X4",
+    "os": "118670",
+    "data_entrada": "23/09/2025",
+    "servico": "Vazamento no diferencial traseiro - (Faz. Bela Manhã)\nSolicitado Sr. Murilo\nResponsável Sr. Arthur"
+  },
+  {
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118647",
+    "data_entrada": "23/09/2025",
+    "servico": "Verificar TDP com alta vibração - (Fazenda São Pedro)\nSolicitado Sr. Josimar\nResponsavel Sr. Arthur"
   }
 ]
