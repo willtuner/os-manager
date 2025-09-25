@@ -1,5 +1,26 @@
 [
   {
+    "frota": "80",
+    "os": "118806",
+    "data": "25/09/2025",
+    "prestador": "RIVELINO LONGATO 03100998979",
+    "servico": "Trocar os dois pneus traseiros"
+  },
+  {
+    "frota": "225",
+    "os": "118797",
+    "data": "25/09/2025",
+    "prestador": "nan",
+    "servico": "Trocar correia do alternador (Fazenda São Severino)"
+  },
+  {
+    "frota": "5612",
+    "os": "118737",
+    "data": "24/09/2025",
+    "prestador": "nan",
+    "servico": "Verificar chicote do SPE com mau contato - (Fazenda São Severino)"
+  },
+  {
     "frota": "5613",
     "os": "118681",
     "data": "23/09/2025",
@@ -38,7 +59,7 @@
     "frota": "234",
     "os": "118697",
     "data": "02/09/2025",
-    "prestador": "nan",
+    "prestador": "INJECOES DIESEL NOROESTE LTDA.",
     "servico": "O trator encontra-se sem partida, o motor de arranque gira normalmente, porém o equipamento não entra em funcionamento. Foi realizada a substituição do solenoide da bomba injetora, mas a falha persiste, sem possibilidade de acionamento - (Fazenda São Severino)"
   }
 ]
