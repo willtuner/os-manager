@@ -1,5 +1,21 @@
 [
   {
+    "frota": "235",
+    "cd_equipamento": "235",
+    "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
+    "os": "118897",
+    "data_entrada": "26/09/2025",
+    "servico": "Quebra dos parafusos de fixação do eixo estriado com flange da TDP - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "147",
+    "cd_equipamento": "147",
+    "modelo": "TRATOR JOHN DEERE 5075 EF 4X4",
+    "os": "118894",
+    "data_entrada": "26/09/2025",
+    "servico": "Trocar mangueira da turbina e remover vazamentos - Faz Nova Manha\nAutorizado Arthur"
+  },
+  {
     "frota": "314",
     "cd_equipamento": "314",
     "modelo": "TRATOR NEW HOLANDTL5.80",
@@ -16,28 +32,12 @@
     "servico": "Verificar alavanca da reversão - Faz Nova Manha\nAutorizado Arthur"
   },
   {
-    "frota": "10224",
-    "cd_equipamento": "10224",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118717",
-    "data_entrada": "24/09/2025",
-    "servico": "Vazamento de óleo hidráulico no cabeçote do filtro - (Fazenda Úrsula)\nSolicitado Sr. Edvaldo\nResponsavel Sr. Arthur"
-  },
-  {
     "frota": "258",
     "cd_equipamento": "258",
     "modelo": "TRATOR JOHN DEERE 5080E",
     "os": "118702",
     "data_entrada": "24/09/2025",
     "servico": "Vazamento na mangueira de diesel da bomba injetora - (Fazenda Estrela)\nSolicitado Sr. João Paulo\nResponsavel Sr. Arthur"
-  },
-  {
-    "frota": "264",
-    "cd_equipamento": "264",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118689",
-    "data_entrada": "23/09/2025",
-    "servico": "Vazamento de óleo na tampa do carter (Fazenda São Pedro)\nSolicitado Sr.. Josimar\nResponsável Sr. Arthur"
   },
   {
     "frota": "208",
@@ -54,14 +54,6 @@
     "os": "118506",
     "data_entrada": "18/09/2025",
     "servico": "Avaliar TDP não atinge rotação de trabalho - (Fazenda Nova Manhã)\nSolicitado Sr. Adriano\nResponsavel Sr. Arthrur"
-  },
-  {
-    "frota": "264",
-    "cd_equipamento": "264",
-    "modelo": "TRATOR JOHN DEERE 5080E",
-    "os": "118421",
-    "data_entrada": "17/09/2025",
-    "servico": "Vazamento de óleo na tampa da caixa - (Faz. São Pedro)\nSolicitado Sr. Josimar\nResponsável Sr. Arthur"
   },
   {
     "frota": "25",

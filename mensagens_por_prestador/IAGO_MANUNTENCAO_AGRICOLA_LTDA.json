@@ -1,5 +1,45 @@
 [
   {
+    "frota": "5048",
+    "cd_equipamento": "5048",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118886",
+    "data_entrada": "26/09/2025",
+    "servico": "Trocar correias da hélice - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5275",
+    "cd_equipamento": "5275",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118864",
+    "data_entrada": "26/09/2025",
+    "servico": "Identificado vazamento na louça da bomba do tanque de pulverização - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5418",
+    "cd_equipamento": "5418",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "118859",
+    "data_entrada": "26/09/2025",
+    "servico": "Trocar mancal e rolamento danificado do eixo cardan dianteiro, avaliar correias da bomba e turbina, verificar rolamento e mancal traseiro do eixo cardan de transmissão.\nFazenda Aparecida\nSolicitado Sr. Rennan\nResponsável Sr. Maurício"
+  },
+  {
+    "frota": "5804",
+    "cd_equipamento": "5804",
+    "modelo": "PULVERIZADOR FMC 4000 BILATERA",
+    "os": "118794",
+    "data_entrada": "25/09/2025",
+    "servico": "Vazamento no regulador de pressão - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
+    "frota": "5211",
+    "cd_equipamento": "5211",
+    "modelo": "ATOMIZADOR FMC 4000 LT",
+    "os": "118792",
+    "data_entrada": "25/09/2025",
+    "servico": "Trocar correias da turbina - (Fazenda São Paulo)\nSolicitado Sr. Paulo Edson\nResponsavel Sr. Mauricio"
+  },
+  {
     "frota": "5063",
     "cd_equipamento": "5063",
     "modelo": "ATOMIZADOR FMC 4000 LT",
@@ -30,14 +70,6 @@
     "os": "118681",
     "data_entrada": "23/09/2025",
     "servico": "Verificar abertura do ramal com mau funcionamento - (Faz. São Severino)\nSolicitado Sr. Cássio\nResponsável Sr. Maurício"
-  },
-  {
-    "frota": "5614",
-    "cd_equipamento": "5614",
-    "modelo": "PULVERIZADOR 4000 LT JACTO",
-    "os": "118664",
-    "data_entrada": "23/09/2025",
-    "servico": "Verificar ruído no rolamento da correia traseira - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Mauricio"
   },
   {
     "frota": "5345",

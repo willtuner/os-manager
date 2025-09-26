@@ -1,11 +1,27 @@
 [
   {
-    "frota": "522",
-    "cd_equipamento": "522",
-    "modelo": "MOTOR VERMEL IRRIGACAO MB1935",
-    "os": "118774",
+    "frota": "298",
+    "cd_equipamento": "298",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118870",
+    "data_entrada": "26/09/2025",
+    "servico": "Motor de partida apresenta acionamento lento (cansado), girando com baixa força e dificultando a partida do motor. - (Fazenda São Pedro)\nSolicitado Sr. Romes\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "130",
+    "cd_equipamento": "130",
+    "modelo": "TRATOR JOHN DEERE 5075 E 4X4",
+    "os": "118861",
+    "data_entrada": "26/09/2025",
+    "servico": "Verificar trator sem partida - (Fazenda Nova Manhã)\nSolicitado Sr. Elismar\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "106",
+    "cd_equipamento": "106",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118808",
     "data_entrada": "25/09/2025",
-    "servico": "Trocar valvula de segurança de corte de combustivel - Faz São Paulo\nAutorizado Arthur"
+    "servico": "Verificar arranque - Faz Nova Manha\nAutorizado Arthur"
   },
   {
     "frota": "252",
