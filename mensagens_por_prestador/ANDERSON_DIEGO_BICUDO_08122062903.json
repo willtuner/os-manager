@@ -1,5 +1,13 @@
 [
   {
+    "frota": "100",
+    "cd_equipamento": "100",
+    "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
+    "os": "118922",
+    "data_entrada": "26/09/2025",
+    "servico": "Trocar cremalheira do trator - Faz Pedra Verde\nAutorizado Arthur"
+  },
+  {
     "frota": "235",
     "cd_equipamento": "235",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
@@ -30,6 +38,22 @@
     "os": "118775",
     "data_entrada": "25/09/2025",
     "servico": "Verificar alavanca da reversão - Faz Nova Manha\nAutorizado Arthur"
+  },
+  {
+    "frota": "24",
+    "cd_equipamento": "24",
+    "modelo": "TRATOR VALTRA BF 75 4X4",
+    "os": "118728",
+    "data_entrada": "24/09/2025",
+    "servico": "Trocar correia do motor, e verificar radiador (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsavel Sr. Arthur"
+  },
+  {
+    "frota": "250",
+    "cd_equipamento": "250",
+    "modelo": "TRATOR JOHN DEERE 5080EN",
+    "os": "118727",
+    "data_entrada": "24/09/2025",
+    "servico": "Verificar trancão sem funcionamento (Fazenda Estrela)\nSolicitado Sr. Paulo\nResponsável Sr. Arthur"
   },
   {
     "frota": "258",

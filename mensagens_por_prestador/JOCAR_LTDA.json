@@ -1,10 +1,18 @@
 [
   {
-    "frota": "227",
-    "cd_equipamento": "227",
+    "frota": "228",
+    "cd_equipamento": "228",
     "modelo": "TRATO NEW HOLLAND 5.8 4W DW",
-    "os": "118903",
+    "os": "118910",
     "data_entrada": "26/09/2025",
     "servico": "Manutenção preventiva no sistema de A/C - (Fazenda São Severino)\nSolicitado Sr. Cassio\nResponsavel Sr. Wilson"
+  },
+  {
+    "frota": "258",
+    "cd_equipamento": "258",
+    "modelo": "TRATOR JOHN DEERE 5080E",
+    "os": "118732",
+    "data_entrada": "24/09/2025",
+    "servico": "Condensador furado (Fazenda Casa Branca)\nSolicitado Sr. João\nResponsável Sr. Arthur"
   }
 ]
