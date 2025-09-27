@@ -1,16 +1,30 @@
 [
   {
-    "frota": "221",
-    "os": "118800",
-    "data": "25/09/2025",
-    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Fazer serviço de fibra (Fazenda Estrela)"
+    "frota": "269",
+    "os": "118872",
+    "data": "26/09/2025",
+    "prestador": "nan",
+    "servico": "Fazer soldas na escada - (Fazenda Estrela)"
+  },
+  {
+    "frota": "258",
+    "os": "118871",
+    "data": "26/09/2025",
+    "prestador": "nan",
+    "servico": "Vazamento de óleo nos tuchos do comando - (Fazenda Estrela)"
+  },
+  {
+    "frota": "268",
+    "os": "118868",
+    "data": "26/09/2025",
+    "prestador": "nan",
+    "servico": "Verificar A/C não gela - (Fazenda Estrela)"
   },
   {
     "frota": "5009",
     "os": "118791",
     "data": "25/09/2025",
-    "prestador": "nan",
+    "prestador": "JOSE RENATO LEMES MARINHO 06173795990",
     "servico": "Fazer solda no esticador (Fazenda Estrela)"
   },
   {
@@ -21,24 +35,17 @@
     "servico": "Substituir banco - (Fazenda Estrela)"
   },
   {
-    "frota": "219",
-    "os": "118762",
-    "data": "25/09/2025",
-    "prestador": "nan",
-    "servico": "Quebra da fibra do para-lamas esquerdo, ocasionada por impacto com galho próximo à escada de acesso do trator. - (Fazenda Estrela)"
-  },
-  {
     "frota": "24",
     "os": "118728",
     "data": "24/09/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Trocar correia do motor, e verificar radiador (Fazenda Estrela)"
   },
   {
     "frota": "250",
     "os": "118727",
     "data": "24/09/2025",
-    "prestador": "nan",
+    "prestador": "ANDERSON DIEGO BICUDO 08122062903",
     "servico": "Verificar trancão sem funcionamento (Fazenda Estrela)"
   },
   {
@@ -47,20 +54,6 @@
     "data": "24/09/2025",
     "prestador": "IAGO MANUNTENCAO AGRICOLA LTDA",
     "servico": "Vazamento nos reparos do comando - (Fazenda Estrela)"
-  },
-  {
-    "frota": "258",
-    "os": "118652",
-    "data": "23/09/2025",
-    "prestador": "MICHEL LEANDRO DA SILVA 02465062964",
-    "servico": "Fazer fibra em buraco onde ficava os cibié traseiro L/E - (Fazenda Estrela)"
-  },
-  {
-    "frota": "219",
-    "os": "118592",
-    "data": "20/09/2025",
-    "prestador": "nan",
-    "servico": "Verificar braços hidráulicos não fecham - (Fazenda Estrela)"
   },
   {
     "frota": "5430",
