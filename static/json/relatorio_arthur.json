@@ -1,5 +1,104 @@
 [
     {
+        "solicitante": "RENNAN ARCANJO CREPALDI",
+        "frota": "259",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "119046",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Soldar tubagem do escape trincada - (Fazenda NSA)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "PAULO EDSON ABREU VILELA JUNIOR",
+        "frota": "324",
+        "modelo": "TRATOR NEW HOLANDTL5.80",
+        "os": "119003",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Falha geral no sistema elétrico de iluminação, com todas as luzes do trator inoperantes - (Fazenda SP)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "MURILO J ONCK LEMES DA SILVA",
+        "frota": "218",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "119001",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar trator sem partida, já feito transferência de carga porem continua inoperante - (Fazenda Bela Manhã)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "IZAIAS FRANCISCO DA SILVA",
+        "frota": "131",
+        "modelo": "TRATOR NEW HOLLAND TL75E",
+        "os": "118992",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar freio de mão que não aciona corretamente, verificar banco do operador danificado e tração não desliga no botão - (Fazenda SP)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "EDER JOSE FERNANDES DE ALMEIDA",
+        "frota": "83",
+        "modelo": "TRATOR JOHN DEERE 5403 4X4",
+        "os": "118991",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Trocar banco danificado - (Fazenda Terra Branca)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "GEOVANE LIBERO DA SILVA",
+        "frota": "135",
+        "modelo": "TRATOR NEW HOLLAND TT3880F 4X4",
+        "os": "118983",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento no cubo L/D - (Fazenda Biscui)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
+        "frota": "248",
+        "modelo": "TRATOR JOHN DEERE 5080EN",
+        "os": "118978",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Quebra da correia do alternador e avaliar jogando aditivo do radiador fora - (Fazenda Estrela)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ROMES ROSA SILVA",
+        "frota": "264",
+        "modelo": "TRATOR JOHN DEERE 5080E",
+        "os": "118976",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Vazamento no cabeçote do filtro de diesel - (Fazenda São Pedro)",
+        "liberado_por": "Arthur"
+    },
+    {
+        "solicitante": "ZYLTON FIGUEREDO SPIGUEL",
+        "frota": "522",
+        "modelo": "MOTOR VERMEL IRRIGACAO MB1935",
+        "os": "118970",
+        "data_entrada": "29/09/2025",
+        "previsao_saida": "---",
+        "prestador": "nan",
+        "servico": "Verificar motor sem partida - (Fazenda SP)",
+        "liberado_por": "Arthur"
+    },
+    {
         "solicitante": "ROMES ROSA SILVA",
         "frota": "100",
         "modelo": "TRATOR JOHN DEERE 5078 E 4X4",
@@ -8,17 +107,6 @@
         "previsao_saida": "---",
         "prestador": "PEDRO PEREIRA MONTESSANI EIRELI - ME",
         "servico": "Verificar motor de partida \"isolando\" - (Fazenda Pedra Verde)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "MURILO J ONCK LEMES DA SILVA",
-        "frota": "218",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "118906",
-        "data_entrada": "26/09/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Vazamento de óleo nos tuchos do comando - (Fazenda Bela Manhã)",
         "liberado_por": "Arthur"
     },
     {
@@ -52,17 +140,6 @@
         "previsao_saida": "---",
         "prestador": "nan",
         "servico": "Vazamento de óleo na junta cárter - (Fazenda Santa Izabel)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "DIEGO GOMES CAMBOI",
-        "frota": "302",
-        "modelo": "TRATOR JOHN DEERE 5080E",
-        "os": "118882",
-        "data_entrada": "26/09/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Quebra da trava do cambio - (Fazenda Santa Izabel)",
         "liberado_por": "Arthur"
     },
     {
@@ -198,17 +275,6 @@
         "liberado_por": "Arthur"
     },
     {
-        "solicitante": "ADRIANO CLAUDIO FIRMINO",
-        "frota": "92",
-        "modelo": "TRATOR JOHN DEERE 5065 4X4",
-        "os": "118788",
-        "data_entrada": "25/09/2025",
-        "previsao_saida": "---",
-        "prestador": "nan",
-        "servico": "Vazamento na tampa de válvula, vazamento na TDP e engate rápido e vazamento de óleo na mangueira da turbina - (Fazenda Nova Manhã)",
-        "liberado_por": "Arthur"
-    },
-    {
         "solicitante": "ELISMAR SIQUEIRA DA SILVA JUNIOR",
         "frota": "251",
         "modelo": "TRATOR JOHN DEERE 5080E",
@@ -316,17 +382,6 @@
         "previsao_saida": "---",
         "prestador": "ANDERSON DIEGO BICUDO 08122062903",
         "servico": "Trocar correia do motor, e verificar radiador (Fazenda Estrela)",
-        "liberado_por": "Arthur"
-    },
-    {
-        "solicitante": "PAULO VINICIUS DOS ANJOS DA CRUZ",
-        "frota": "250",
-        "modelo": "TRATOR JOHN DEERE 5080EN",
-        "os": "118727",
-        "data_entrada": "24/09/2025",
-        "previsao_saida": "---",
-        "prestador": "ANDERSON DIEGO BICUDO 08122062903",
-        "servico": "Verificar trancão sem funcionamento (Fazenda Estrela)",
         "liberado_por": "Arthur"
     },
     {
